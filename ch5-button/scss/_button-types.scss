@@ -1,0 +1,188 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+.ch5-button--text {
+  border: $ch5-button-text-border-width $ch5-button-text-border-style $ch5-button-text-default-border-color;
+  background-color: $ch5-button-text-default-background-color;
+  color: $ch5-button-text-default-font-color;
+  &.ch5-button--selected {
+    border-color: $ch5-button-text-selected-border-color;
+    background-color: $ch5-button-text-selected-background-color;
+    color: $ch5-button-text-selected-font-color;
+  }
+  &.ch5-button--pressed {
+    border-color: $ch5-button-text-pressed-border-color;
+    background-color: $ch5-button-text-pressed-background-color;
+    color: $ch5-button-text-pressed-font-color;
+  }
+  &.ch5-button--disabled {
+    border-color: $ch5-button-text-disabled-border-color;
+    background-color: $ch5-button-text-disabled-background-color;
+    color: $ch5-button-text-disabled-font-color;
+  }
+}
+
+.ch5-button--danger {
+  border: $ch5-button-danger-border-width $ch5-button-danger-border-style $ch5-button-danger-default-border-color;
+  background-color: $ch5-button-danger-default-background-color;
+  color: $ch5-button-danger-default-font-color;
+  &.ch5-button--selected {
+    border-color: $ch5-button-danger-selected-border-color;
+    background-color: $ch5-button-danger-selected-background-color;
+    color: $ch5-button-danger-selected-font-color;
+  }
+  &.ch5-button--pressed {
+    border-color: $ch5-button-danger-pressed-border-color;
+    background-color: $ch5-button-danger-pressed-background-color;
+    color: $ch5-button-danger-pressed-font-color;
+  }
+  &.ch5-button--disabled {
+    border-color: $ch5-button-danger-disabled-border-color;
+    background-color: $ch5-button-danger-disabled-background-color;
+    color: $ch5-button-danger-disabled-font-color;
+  }
+}
+
+.ch5-button--warning {
+  border: $ch5-button-warning-border-width $ch5-button-warning-border-style $ch5-button-warning-default-border-color;
+  background-color: $ch5-button-warning-default-background-color;
+  color: $ch5-button-warning-default-font-color;
+  &.ch5-button--selected {
+    border-color: $ch5-button-warning-selected-border-color;
+    background-color: $ch5-button-warning-selected-background-color;
+    color: $ch5-button-warning-selected-font-color;
+  }
+  &.ch5-button--pressed {
+    border-color: $ch5-button-warning-pressed-border-color;
+    background-color: $ch5-button-warning-pressed-background-color;
+    color: $ch5-button-warning-pressed-font-color;
+  }
+  &.ch5-button--disabled {
+    border-color: $ch5-button-warning-disabled-border-color;
+    background-color: $ch5-button-warning-disabled-background-color;
+    color: $ch5-button-warning-disabled-font-color;
+  }
+}
+
+.ch5-button--info {
+  border: $ch5-button-info-border-width $ch5-button-info-border-style $ch5-button-info-default-border-color;
+  background-color: $ch5-button-info-default-background-color;
+  color: $ch5-button-info-default-font-color;
+  &.ch5-button--selected {
+    border-color: $ch5-button-info-selected-border-color;
+    background-color: $ch5-button-info-selected-background-color;
+    color: $ch5-button-info-selected-font-color;
+  }
+  &.ch5-button--pressed {
+    border-color: $ch5-button-info-pressed-border-color;
+    background-color: $ch5-button-info-pressed-background-color;
+    color: $ch5-button-info-pressed-font-color;
+  }
+  &.ch5-button--disabled {
+    border-color: $ch5-button-info-disabled-border-color;
+    background-color: $ch5-button-info-disabled-background-color;
+    color: $ch5-button-info-disabled-font-color;
+  }
+}
+
+.ch5-button--success {
+  border: $ch5-button-success-border-width $ch5-button-success-border-style $ch5-button-success-default-border-color;
+  background-color: $ch5-button-success-default-background-color;
+  color: $ch5-button-success-default-font-color;
+  &.ch5-button--selected {
+    border-color: $ch5-button-success-selected-border-color;
+    background-color: $ch5-button-success-selected-background-color;
+    color: $ch5-button-success-selected-font-color;
+  }
+  &.ch5-button--pressed {
+    border-color: $ch5-button-success-pressed-border-color;
+    background-color: $ch5-button-success-pressed-background-color;
+    color: $ch5-button-success-pressed-font-color;
+  }
+  &.ch5-button--disabled {
+    border-color: $ch5-button-success-disabled-border-color;
+    background-color: $ch5-button-success-disabled-background-color;
+    color: $ch5-button-success-disabled-font-color;
+  }
+}
+
+.ch5-button--default {
+  border: $ch5-button-default-border-width $ch5-button-default-border-style $ch5-button-default-default-border-color;
+  background-color: $ch5-button-default-default-background-color;
+  color: $ch5-button-default-default-font-color;
+  &.ch5-button--selected {
+    border-color: $ch5-button-default-selected-border-color;
+    background-color: $ch5-button-default-selected-background-color;
+    color: $ch5-button-default-selected-font-color;
+  }
+  &.ch5-button--pressed {
+    border-color: $ch5-button-default-pressed-border-color;
+    background-color: $ch5-button-default-pressed-background-color;
+    color: $ch5-button-default-pressed-font-color;
+  }
+  &.ch5-button--disabled {
+    border-color: $ch5-button-default-disabled-border-color;
+    background-color: $ch5-button-default-disabled-background-color;
+    color: $ch5-button-default-disabled-font-color;
+  }
+}
+
+.ch5-button--primary {
+  border: $ch5-button-primary-border-width $ch5-button-primary-border-style $ch5-button-primary-default-border-color;
+  background-color: $ch5-button-primary-default-background-color;
+  color: $ch5-button-primary-default-font-color;
+  &.ch5-button--selected {
+    border-color: $ch5-button-primary-selected-border-color;
+    background-color: $ch5-button-primary-selected-background-color;
+    color: $ch5-button-primary-selected-font-color;
+  }
+  &.ch5-button--pressed {
+    border-color: $ch5-button-primary-pressed-border-color;
+    background-color: $ch5-button-primary-pressed-background-color;
+    color: $ch5-button-primary-pressed-font-color;
+  }
+  &.ch5-button--disabled {
+    border-color: $ch5-button-primary-disabled-border-color;
+    background-color: $ch5-button-primary-disabled-background-color;
+    color: $ch5-button-primary-disabled-font-color;
+  }
+}
+
+.ch5-button--secondary {
+  border: $ch5-button-secondary-border-width $ch5-button-secondary-border-style $ch5-button-secondary-default-border-color;
+  background-color: $ch5-button-secondary-default-background-color;
+  color: $ch5-button-secondary-default-font-color;
+  &.ch5-button--selected {
+    border-color: $ch5-button-secondary-selected-border-color;
+    background-color: $ch5-button-secondary-selected-background-color;
+    color: $ch5-button-secondary-selected-font-color;
+  }
+  &.ch5-button--pressed {
+    border-color: $ch5-button-secondary-pressed-border-color;
+    background-color: $ch5-button-secondary-pressed-background-color;
+    color: $ch5-button-secondary-pressed-font-color;
+  }
+  &.ch5-button--disabled {
+    border-color: $ch5-button-secondary-disabled-border-color;
+    background-color: $ch5-button-secondary-disabled-background-color;
+    color: $ch5-button-secondary-disabled-font-color;
+  }
+}
+
+.ch5-button {
+  &--size {
+    &-regular {
+      &.ch5-button--circle {
+        .ch5-button--icon {
+          height: $ch5-button-circle-icon-height;
+          width: $ch5-button-circle-icon-width;
+          line-height: $ch5-button-circle-icon-line-height;
+        }
+      }
+    }
+  }
+}

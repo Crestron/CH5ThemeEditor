@@ -1,0 +1,260 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import "./variables";
+
+ch5-button {
+  display: inline-block;
+  vertical-align: top;
+  pointer-events: none;
+  font-size: $ch5-button-font-size;
+  font-style: $ch5-button-font-style;
+  font-weight: $ch5-button-font-weight;
+
+  div {
+    pointer-events: all;
+  }
+}
+
+ch5-button[hidden] {
+  display: none;
+}
+
+/* Button elements align */
+.ch5-button,
+.ch5-button--label,
+.ch5-button--icon,
+.ch5-button--img{
+  position: relative;
+  display: inline-block;
+  width: auto;
+  cursor: pointer;
+  user-select: none;
+}
+.ch5-button {
+  button,
+  .ch5-button--label {
+    background-color: transparent;
+    border: none;
+    color: inherit; /* get from the .ch5-button--{{type}} classes */
+    padding: $ch5-button-text-padding;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .ch5-button--icon {
+    vertical-align: middle;
+    color: inherit;
+    padding: $ch5-button-icon-padding;
+  }
+
+  .ch5-button--img {
+    vertical-align: middle;
+    color: inherit;
+    margin: $ch5-button-img-margin;
+    height: $ch5-button-img-height;
+    width: $ch5-button-img-width;
+  }
+
+  .cx-button-icon-pos-bottom, .cx-button-icon-pos-top {
+    display: flex;
+    margin: 5px auto;
+  }
+}
+
+/* Button container shapes */
+.ch5-button--rectangle {
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+
+.ch5-button--rounded-rectangle {
+  border-radius: $ch5-button-border-radius;
+  -moz-border-radius: $ch5-button-border-radius;
+  -webkit-border-radius:$ch5-button-border-radius;
+}
+
+.ch5-button--circle {
+  display: inline-block;
+  padding:0;
+  min-width: 30px;
+  max-width: 600px;
+  @include border-radius($ch5-button-circle-border-radius);
+  text-decoration: none;
+  outline: none;
+  border-style: none;
+  overflow: auto;
+  text-align: center;
+  &:before {
+    content:'';
+    display:inline-block;;
+    vertical-align:middle;
+    padding-top:100%;
+  }
+}
+
+.ch5-button--oval {
+  @include border-radius($ch5-button-oval-border-radius);
+  overflow: auto;
+}
+
+.ch5-button--tab {
+  @include border-radius($ch5-button-tab-border-radius);
+}
+
+/* Button stretch */
+/* stretch does not apply for circle and oval shapes */
+
+ch5-button[stretch="width"] {
+  width: 100%;
+}
+
+ch5-button[stretch="height"] {
+  height: 100%;
+}
+
+ch5-button[stretch="both"] {
+  width: 100%;
+  height: 100%;
+}
+
+/* by width */
+.ch5-button--stretch-width {
+
+ width:100%;
+
+  .cb-btn{
+    width:100%;
+  }
+}
+
+/* by height */
+.ch5-button--stretch-height {
+
+  height:100%;
+
+  .cb-btn {
+    height:100%;
+  }
+  .ch5-button--label,
+  .ch5-button--icon,
+  .ch5-button--img{
+    position: relative;
+  }
+}
+
+/* by height and width */
+.ch5-button--stretch-both {
+
+  width: 100%;
+  height: 100%;
+
+  .cb-btn {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* Button orientation */
+.ch5-button--vertical .cb-btn {
+  transform: rotate(180deg);
+}
+
+.ch5-button--vertical button span {
+  writing-mode: vertical-lr !important;
+  height: max-content;
+}
+
+.ch5-button--vertical button i span {
+  writing-mode: vertical-lr !important;
+  height: max-content;
+}
+
+.ch5-button--vertical button i {
+  display: block !important;
+}
+
+.ch5-button--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Sizes */
+
+.ch5-button--size-x-small {
+  .cb-btn{
+    font-size: $ch5-button-x-small-font-size;
+    font-style: $ch5-button-x-small-font-style;
+    font-weight: $ch5-button-x-small-font-weight;
+    padding: $ch5-button-x-small-padding;
+  }
+}
+
+.ch5-button--size-small {
+  .cb-btn{
+    font-size: $ch5-button-small-font-size;
+    font-style: $ch5-button-small-font-style;
+    font-weight: $ch5-button-small-font-weight;
+    padding: $ch5-button-small-padding;
+  }
+}
+
+.ch5-button--size-large {
+  .cb-btn{
+    font-size: $ch5-button-large-font-size;
+    font-style: $ch5-button-large-font-style;
+    font-weight: $ch5-button-large-font-weight;
+    padding: $ch5-button-large-padding;
+  }
+}
+
+.ch5-button--size-x-large {
+  .cb-btn{
+    font-size: $ch5-button-x-large-font-size;
+    font-style: $ch5-button-x-large-font-style;
+    font-weight: $ch5-button-x-large-font-weight;
+    padding: $ch5-button-x-large-padding;
+  }
+}
+
+/* icon positions */
+i.cb-icon.cx-button-icon-pos-first,
+i.cb-icon.cx-button-icon-pos-last {
+  display: inline-block;
+}
+i.cb-icon.cx-button-icon-pos-top,
+i.cb-icon.cx-button-icon-pos-bottom {
+  display: block;
+}
+
+/* icon positions */
+.cb-img.cx-button-icon-pos-first,
+.cb-img.cx-button-icon-pos-last {
+  display: inline-block;
+}
+.cb-img.cx-button-icon-pos-top,
+.cb-img.cx-button-icon-pos-bottom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ch5-button--vertical--icon-top {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center
+}
+
+.ch5-button--vertical--icon-bottom {
+  @extend .ch5-button--vertical--icon-top
+}

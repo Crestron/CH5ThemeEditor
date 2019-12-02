@@ -1,0 +1,36 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import "./../../ch5-core/variables";
+
+// default
+$ch5-spinner-border-width: 1px;
+$ch5-spinner-border-style: solid;
+
+$ch5-spinner-font-size-unit: $ch5-font-size-unit !default;
+$ch5-spinner-font-size-value: 22 !default;
+$ch5-spinner-font-size: $ch5-spinner-font-size-value + $ch5-spinner-font-size-unit !default;
+$ch5-spinner-font-style: $ch5-font-style !default;
+$ch5-spinner-font-weight: $ch5-font-weight !default;
+
+$ch5-spinner-icon-font-size: $ch5-spinner-font-size !default;
+
+// icon padding
+$ch5-spinner-icon-left-padding: 10px !default;
+$ch5-spinner-icon-right-padding: 10px !default;
+$ch5-spinner-icon-top-padding: 0 !default;
+$ch5-spinner-icon-bottom-padding: 0 !default;
+$ch5-spinner-icon-padding: 0px 0 !default;
+
+// icon margin
+$ch5-spinner-icon-left-margin: 10px !default;
+$ch5-spinner-icon-right-margin: 10px !default;
+$ch5-spinner-icon-top-margin: 0 !default;
+$ch5-spinner-icon-bottom-margin: 0 !default;
+$ch5-spinner-icon-margin: 0px 0 !default;
+
+$ch5-spinner-overlay-opacity: 0.0 !default;

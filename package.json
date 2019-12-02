@@ -1,0 +1,59 @@
+{
+  "name": "crestron-components-sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Crestron/CH5ThemeEditor.git"
+  },
+  "scripts": {
+    "clean": "rimraf output",
+    "cleanjs": "rimraf output/**/*.js",
+    "create-theme": "node ./create-theme.js",
+    "bundle-theme": "node ./bundle-theme.js",
+    "bundle-theme-all": "webpack --config webpack.build.js --mode development && npm run cleanjs",
+    "bundle-theme-all-app-compile": "webpack --config webpack.compile.js && npm run cleanjs",
+    "bundle-theme-all-app-run": "webpack --config webpack.run.js && npm run cleanjs",
+    "bundle-theme-all-cli-dist-path": "webpack --config webpack.run.js --outputpath='../showcase-app/dist/crestron-components-assets' && npm run cleanjs",
+    "bundle-theme-for-showcase": "webpack --config webpack.run.js --outputpath='../showcase-app/static/crestron-components-assets' && npm run cleanjs",
+    "bundle-and-watch": "webpack --config webpack.run.js --watch",
+    "start": "webpack --config webpack.run.js --watchmode && npm run cleanjs && webpack --config app.config.dev.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^3.0.0",
+    "dotenv": "^8.0.0",
+    "glob": "^7.1.4",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "path": "^0.12.7",
+    "rimraf": "^2.6.3",
+    "sass-loader": "^7.1.0",
+    "scss-bundle": "^2.4.0",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.3.0",
+    "webpack": "^4.39.2",
+    "webpack-clean": "^1.2.3",
+    "webpack-cli": "^3.3.4",
+    "webpack-merge": "^4.2.1",
+    "webpack-merge-and-include-globally": "^2.1.16"
+  },
+  "resolutions": {
+    "**/event-stream": "^4.0.1"
+  },
+  "dependencies": {
+    "@crestron/ch5-crcomlib": "^0.1.21",
+    "@crestron/ch5-utilities-cli": "0.0.4",
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "install": "^0.12.2",
+    "lodash": "^4.17.11",
+    "nouislider": "^13.1.5"
+  }
+}

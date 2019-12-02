@@ -1,0 +1,32 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import './scss/_variables';
+
+ch5-triggerview {
+    --ch5-triggerview-gap: #{$ch5-triggerview-gap} ;
+    --ch5-triggerview-background-color: #{$ch5-triggerview-background-color};
+    --ch5-triggerview-slide-min-height: #{$ch5-triggerview-slide-min-height};
+    --ch5-triggerview-slide-max-height: #{$ch5-triggerview-slide-max-height};
+    --ch5-triggerview-transition-duration: #{$ch5-triggerview-transition-duration};
+    --ch5-triggerview-transition-timing-function: #{$ch5-triggerview-transition-timing-function};
+    --ch5-triggerview-fallback-message-color-background: #{$ch5-triggerview-fallback-message-color-background};
+
+    font-size: $ch5-triggerview-font-size;
+    font-style: $ch5-triggerview-font-style;
+    font-weight: $ch5-triggerview-font-weight;
+
+    .swiper-wrapper {
+        transition-timing-function: $ch5-triggerview-transition-timing-function;
+    }
+}
+
+
+.ch5-viewchild {
+    box-sizing: border-box;
+}
+

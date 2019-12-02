@@ -1,0 +1,30 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import "./../../ch5-core/variables";
+
+$ch5-toggle-font-size-unit: $ch5-font-size-unit !default;
+$ch5-toggle-font-size-value: $ch5-font-size-value !default;
+$ch5-toggle-font-size: $ch5-toggle-font-size-value + $ch5-toggle-font-size-unit !default;
+$ch5-toggle-font-style: $ch5-font-style !default;
+$ch5-toggle-font-weight: $ch5-font-weight !default;
+
+$ch5-toggle-label-font-size: $ch5-toggle-font-size !default;
+$ch5-toggle-label-font-style: $ch5-toggle-font-style !default;
+$ch5-toggle-label-font-weight: $ch5-toggle-font-weight !default;
+$ch5-toggle-label-margin: 10px !default;
+
+$ch5-toggle-text-font-size: $ch5-toggle-font-size !default;
+$ch5-toggle-text-font-style: $ch5-toggle-font-style !default;
+$ch5-toggle-text-font-weight: $ch5-toggle-font-weight !default;
+
+$ch5-toggle-icon-font-size: $ch5-toggle-font-size !default;
+$ch5-toggle-icon-font-style: $ch5-toggle-font-style !default;
+$ch5-toggle-icon-font-weight: 900 !default;
+
+$ch5-toggle-handle-circle-margin: 10px !default;
+$ch5-toggle-handle-rectangle-margin: 10px !default;

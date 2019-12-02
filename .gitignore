@@ -1,2 +1,7 @@
 .sass-cache/
 *.css.map
+dist
+output
+node_modules
+.idea
+.DS_Store

@@ -1,0 +1,511 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import 'scss/_variables';
+
+ch5-video {
+
+    &>canvas {
+        .ch5-video--aratio--16x9 {
+            .ch5-video--display--xx-large {
+                width: $ch5-video-aratio16x9-width-xx-large;
+                height: $ch5-video-aratio16x9-height-xx-large;
+            }
+
+            .ch5-video--display--x-large {
+                width: $ch5-video-aratio16x9-width-x-large;
+                height: $ch5-video-aratio16x9-height-x-large;
+            }
+
+            .ch5-video--display--large {
+                width: $ch5-video-aratio16x9-width-large;
+                height: $ch5-video-aratio16x9-height-large;
+            }
+
+            .ch5-video--display--regular {
+                width: $ch5-video-aratio16x9-width-regular;
+                height: $ch5-video-aratio16x9-height-regular;
+            }
+
+            .ch5-video--display--small {
+                width: $ch5-video-aratio16x9-width-small;
+                height: $ch5-video-aratio16x9-height-small;
+            }
+
+            .ch5-video--display--x-small {
+                width: $ch5-video-aratio16x9-width-x-small;
+                height: $ch5-video-aratio16x9-height-x-small;
+            }
+        }
+
+        &.ch5-video--aratio--4x3 {
+            .ch5-video--display--xx-large {
+                width: $ch5-video-aratio4x3-width-xx-large;
+                height: $ch5-video-aratio4x3-height-xx-large;
+            }
+
+            .ch5-video--display--x-large {
+                width: $ch5-video-aratio4x3-width-x-large;
+                height: $ch5-video-aratio4x3-height-x-large;
+            }
+
+            .ch5-video--display--large {
+                width: $ch5-video-aratio4x3-width-large;
+                height: $ch5-video-aratio4x3-height-large;
+            }
+
+            .ch5-video--display--regular {
+                width: $ch5-video-aratio4x3-width-regular;
+                height: $ch5-video-aratio4x3-height-regular;
+            }
+
+            .ch5-video--display--small {
+                width: $ch5-video-aratio4x3-width-small;
+                height: $ch5-video-aratio4x3-height-small;
+            }
+
+            .ch5-video--display--x-small {
+                width: $ch5-video-aratio4x3-width-x-small;
+                height: $ch5-video-aratio4x3-height-x-small;
+            }
+
+        }
+    }
+
+    &>.ch5-video--display--fit {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    &>.ch5-video--display--color {
+        background-color: $ch5-display-color
+    }
+
+    &>.ch5-video--nosource {
+        position: absolute;
+        background: #868686;
+        text-align: center;
+    }
+
+    &>.ch5-video--video {
+        height: 100vh;
+        /* For 100% screen height */
+        width: 100vw;
+        /* For 100% screen width */
+    }
+
+    .ch5-video--label {
+        position: absolute;
+        z-index: $ch5-video-label-z-index;
+        font-size: 2rem;
+
+        &-top-left {
+            top: 0;
+            left: 0;
+        }
+
+        &-top-right {
+            top: 0;
+            right: 0;
+        }
+
+        &-top-center {
+            top: 15px;
+            right: 0;
+            text-align: center;
+            left: 0;
+        }
+
+        &-bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+
+        &-bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+
+        &-bottom-center {
+            right: 0;
+            text-align: center;
+            left: 0;
+            bottom: 15px;
+        }
+    }
+
+    .preLoader {
+        position: absolute;
+        background: #868686;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .preLoaderText {
+        position: absolute;
+        color: #fff;
+        margin: 20% -10% auto;
+    }
+
+    .ch5-video-image-auto-refresh {
+        position: absolute;
+        z-index: $ch5-video-autorefresh-z-index;
+    }
+
+    .videoElements {
+        position: relative;
+        font-size: 0;
+        display: inline-block;
+    }
+
+    .videoControls {
+        z-index: $ch5-z-index;
+    }
+
+    .videoLabel {
+        position: absolute;
+        z-index: $ch5-video-label-z-index;
+    }
+
+    .loader {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: $ch5-video-loader-z-index;
+            margin: -21px 0 0 -21px;
+            border: 3px solid rgba(255, 255, 255, .15);
+            border-radius: 50%;
+            border-top-color: rgba(255, 255, 255, .75);
+            width: 42px;
+            height: 42px;
+            -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+        }
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    &.fullScreenStyle {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+
+.control-panel {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $ch5-video-controls-z-index;
+}
+
+.video-ctrl {
+    z-index: $ch5-video-controls-z-index;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    /*left: 48%;
+    margin-left: -50px;
+    top: 48%;
+    margin-top: -50px;*/
+    border-radius: 50%;
+
+    svg {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        fill: #fff;
+        left: 50%;
+        top: 50%;
+        margin: -16px 0 0 -16px;
+    }
+
+    &.play {
+        animation: ripple 0.7s;
+        background-color: rgba(111, 111, 111, 0.5);
+        opacity: 0;
+    }
+
+    &.stop {
+        animation: ripple2 0.7s;
+        background-color: rgba(111, 111, 111, 0.5);
+    }
+}
+
+@keyframes ripple {
+    from {
+        opacity: 1;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1.8);
+    }
+}
+
+@keyframes ripple2 {
+    from {
+        opacity: 0;
+        transform: scale(1.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    .ratio {
+        margin-right: 20px;
+    }
+
+    .fa {
+        display: block;
+    }
+
+    &.main-control {
+        border-top: 3px solid #ff0000;
+    }
+
+    .live-card {
+        background-color: #ff0000;
+        color: #fff;
+        padding: 5px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-family: arial;
+
+        &.x-small {
+            font-size: 8px;
+        }
+    
+        &.small {
+            font-size: 11px;
+        }
+    
+        &.regular {
+            font-size: 13px;
+        }
+    
+        &.large {
+            font-size: 16px;
+        }
+    
+        &.x-large {
+            font-size: 18px;
+        }
+    
+        &.xx-large {
+            font-size: 20px;
+        }
+    
+        &.fullScreen {
+            font-size: 18px;
+        }
+
+    }
+
+    .control {
+        display: block;
+        padding: 0.5rem;
+        color: #fff;
+
+        &.ratio {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    a:hover {
+        text-decoration: none !important;
+        color: #fff;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .controls-right {
+        display: flex;
+        align-items: center;
+
+        .toggle {
+            padding: 00.5rem;
+        }
+    }
+
+    .dropup-menu {
+        position: relative;
+
+        .dropup {
+            position: absolute;
+            background-color: #2b2b2b;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            left: 0;
+            bottom: 100%;
+            display: none;
+            min-width: 100%;
+            z-index: $ch5-video-controls-z-index;
+            color: #fff;
+            opacity: 0.7;
+
+            &>li {
+                padding: 0.5rem;
+            }
+        }
+
+        &.open.dropup {
+            display: block;
+        }
+    }
+
+    &.x-small {
+        font-size: 12px;
+    }
+
+    &.small {
+        font-size: 16px;
+    }
+
+    &.regular {
+        font-size: 20px;
+    }
+
+    &.large {
+        font-size: 24px;
+    }
+
+    &.x-large {
+        font-size: 28px;
+    }
+
+    &.xx-large {
+        font-size: 32px;
+    }
+
+    &.fullScreen {
+        font-size: 34px;
+    }
+
+    .svgIcons {
+
+        &.x-small {
+            width: 22px;
+            height: 22px;
+        }
+
+        &.small {
+            width: 35px;
+            height: 35px;
+        }
+
+        &.regular {
+            width: 45px;
+            height: 45px;
+        }
+
+        &.large {
+            width: 55px;
+            height: 55px;
+        }
+
+        &.x-large {
+            width: 65px;
+            height: 65px;
+        }
+
+        &.xx-large {
+            width: 75px;
+            height: 75px;
+        }
+
+        &.fullScreen {
+            width: 55px;
+            height: 55px;
+        }
+    }
+
+    .svgIconStyle {
+        width: inherit;
+        height: inherit;
+        fill: #fff;
+
+        &.x-small {
+            width: 18px;
+            height: 18px;
+        }
+
+        &.small {
+            width: 25px;
+            height: 25px;
+        }
+
+        &.regular {
+            width: 35px;
+            height: 35px;
+        }
+
+        &.large {
+            width: 45px;
+            height: 45px;
+        }
+
+        &.x-large {
+            width: 55px;
+            height: 55px;
+        }
+
+        &.xx-large {
+            width: 65px;
+            height: 65px;
+        }
+
+        &.fullScreen {
+            width: 55px;
+            height: 55px;
+        }
+    }
+}

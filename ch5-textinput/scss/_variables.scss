@@ -1,0 +1,99 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import "./../../ch5-core/variables";
+
+// default
+$ch5-textinput-input-border-radius: 5px !default;
+$ch5-textinput-input-box-shadow-color: #eee !default;
+$ch5-textinput-input-border-width: 1px !default;
+
+$ch5-textinput-font-size-unit: $ch5-font-size-unit !default;
+$ch5-textinput-font-size-value: $ch5-font-size-value !default;
+$ch5-textinput-font-size: $ch5-textinput-font-size-value + $ch5-textinput-font-size-unit !default;
+$ch5-textinput-font-style: $ch5-font-style !default;
+$ch5-textinput-font-weight: $ch5-font-weight !default;
+
+// borders
+$ch5-textinput-input-border-width: 1px;
+
+// regular size setup
+$ch5-textinput-input-regular-tb-padding: 15px !default;
+$ch5-textinput-input-regular-lr-padding: 20px !default;
+$ch5-textinput-input-regular-min-width: 400px !default;
+$ch5-textinput-regular-font-size-unit: px !default;
+$ch5-textinput-regular-font-size-value: 16 !default;
+$ch5-textinput-regular-font-size: $ch5-textinput-regular-font-size-value + $ch5-textinput-regular-font-size-unit !default;
+$ch5-textinput-regular-font-style: $ch5-textinput-font-style !default;
+$ch5-textinput-regular-font-weight: $ch5-textinput-font-weight !default;
+
+$ch5-textinput-icon-regular-font-size: $ch5-textinput-input-regular-tb-padding !default;
+$ch5-textinput-icon-regular-tb-margin: $ch5-textinput-regular-font-size !default;
+$ch5-textinput-icon-regular-lr-margin: $ch5-textinput-regular-font-size !default;
+
+// x-small
+$ch5-textinput-x-small-font-size-unit: $ch5-textinput-font-size-unit !default;
+$ch5-textinput-x-small-font-size-value: 12 !default;
+$ch5-textinput-x-small-font-size: $ch5-textinput-x-small-font-size-value + $ch5-textinput-x-small-font-size-unit !default;
+$ch5-textinput-x-small-font-style: $ch5-textinput-font-style !default;
+$ch5-textinput-x-small-font-weight: $ch5-textinput-font-weight !default;
+
+$ch5-textinput-input-x-small-tb-padding: 10px !default;
+$ch5-textinput-input-x-small-lr-padding: 10px !default;
+$ch5-textinput-input-x-small-min-width: 200px !default;
+
+$ch5-textinput-icon-x-small-font-size: $ch5-textinput-input-x-small-tb-padding !default;
+$ch5-textinput-icon-x-small-tb-margin: $ch5-textinput-x-small-font-size !default;
+$ch5-textinput-icon-x-small-lr-margin: $ch5-textinput-x-small-font-size !default;
+
+// small size
+$ch5-textinput-input-small-tb-padding: 15px !default;
+$ch5-textinput-input-small-lr-padding: 20px !default;
+
+$ch5-textinput-small-font-size-unit: $ch5-textinput-font-size-unit !default;
+$ch5-textinput-small-font-size-value: 14 !default;
+$ch5-textinput-small-font-size: $ch5-textinput-small-font-size-value + $ch5-textinput-small-font-size-unit !default;
+$ch5-textinput-small-font-style: $ch5-textinput-font-style !default;
+$ch5-textinput-small-font-weight: $ch5-textinput-font-weight !default;
+
+$ch5-textinput-input-small-min-width: 250px !default;
+
+$ch5-textinput-icon-small-font-size: $ch5-textinput-small-font-size !default;
+$ch5-textinput-icon-small-tb-margin: $ch5-textinput-small-font-size !default;
+$ch5-textinput-icon-small-lr-margin: $ch5-textinput-small-font-size !default;
+
+// large size
+$ch5-textinput-input-large-tb-padding: 20px !default;
+$ch5-textinput-input-large-lr-padding: 15px !default;
+
+$ch5-textinput-large-font-size-unit: $ch5-textinput-font-size-unit !default;
+$ch5-textinput-large-font-size-value: 18 !default;
+$ch5-textinput-large-font-size: $ch5-textinput-large-font-size-value + $ch5-textinput-large-font-size-unit !default;
+$ch5-textinput-large-font-style: $ch5-textinput-font-style !default;
+$ch5-textinput-large-font-weight: $ch5-textinput-font-weight !default;
+
+$ch5-textinput-input-large-min-width: 500px !default;
+
+$ch5-textinput-icon-large-font-size: $ch5-textinput-large-font-size !default;
+$ch5-textinput-icon-large-tb-margin: $ch5-textinput-large-font-size !default;
+$ch5-textinput-icon-large-lr-margin: $ch5-textinput-large-font-size !default;
+
+// x-large size
+$ch5-textinput-input-x-large-tb-padding: $ch5-textinput-input-large-tb-padding !default;
+$ch5-textinput-input-x-large-lr-padding: $ch5-textinput-input-large-lr-padding !default;
+
+$ch5-textinput-x-large-font-size-unit: $ch5-textinput-font-size-unit !default;
+$ch5-textinput-x-large-font-size-value: 22 !default;
+$ch5-textinput-x-large-font-size: $ch5-textinput-x-large-font-size-value + $ch5-textinput-x-large-font-size-unit !default;
+$ch5-textinput-x-large-font-style: $ch5-textinput-font-style !default;
+$ch5-textinput-x-large-font-weight: $ch5-textinput-font-weight !default;
+
+$ch5-textinput-input-x-large-min-width: $ch5-textinput-input-large-min-width !default;
+
+$ch5-textinput-icon-x-large-font-size:  $ch5-textinput-x-large-font-size !default;
+$ch5-textinput-icon-x-large-tb-margin: $ch5-textinput-x-large-font-size !default;
+$ch5-textinput-icon-x-large-lr-margin: $ch5-textinput-x-large-font-size !default;
