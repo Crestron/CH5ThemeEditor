@@ -1,0 +1,20 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import "./../../ch5-core/variables";
+
+$ch5-triggerview-font-size-unit: $ch5-font-size-unit !default;
+$ch5-triggerview-font-size-value: $ch5-font-size-value !default;
+$ch5-triggerview-font-size: $ch5-triggerview-font-size-value + $ch5-triggerview-font-size-unit !default;
+$ch5-triggerview-font-style: $ch5-font-style !default;
+$ch5-triggerview-font-weight: $ch5-font-weight !default;
+
+$ch5-triggerview-gap:                                  16px;
+$ch5-triggerview-slide-min-height:                     0px;
+$ch5-triggerview-slide-max-height:                     none;
+$ch5-triggerview-transition-duration:                  0.6s;
+$ch5-triggerview-transition-timing-function:           ease-out;

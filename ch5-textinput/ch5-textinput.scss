@@ -1,0 +1,108 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import './scss/_variables';
+@import './scss/label';
+@import './scss/input';
+@import './scss/icon';
+
+ch5-textinput {
+  display: inline-block;
+}
+
+.ch5-textinput {
+
+  color: $ch5-textinput-text-color;
+
+  &__assets {
+
+    display: flex;
+    align-items: center;
+    border: $ch5-textinput-input-border-width solid $ch5-textinput-input-border-color;
+    border-radius: $ch5-textinput-input-border-radius;
+    box-shadow: 3px 3px 5px $ch5-textinput-input-box-shadow-color;
+    height: 100%;
+    width: 100%;
+
+  }
+
+  // text-transform
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--lowercase {
+    text-transform: lowercase;
+  }
+
+  &--capitalize {
+    text-transform: capitalize;
+  }
+
+  &--none {
+    text-transform: none;
+  }
+
+  &--x-small {
+    span {
+      font-style: $ch5-textinput-x-small-font-style;
+      font-size: $ch5-textinput-x-small-font-size;
+      font-weight: $ch5-textinput-x-small-font-weight;
+    }
+  }
+
+  &--small {
+    span {
+      font-style: $ch5-textinput-small-font-style;
+      font-size: $ch5-textinput-small-font-size;
+      font-weight: $ch5-textinput-small-font-weight;
+    }
+  }
+
+  &--large {
+    span {
+      font-style: $ch5-textinput-large-font-style;
+      font-size: $ch5-textinput-large-font-size;
+      font-weight: $ch5-textinput-large-font-weight;
+    }
+  }
+
+  &--x-large {
+    span {
+      font-style: $ch5-textinput-x-large-font-style;
+      font-size: $ch5-textinput-x-large-font-size;
+      font-weight: $ch5-textinput-x-large-font-weight;
+    }
+  }
+
+  &--content {
+
+    height: 100%;
+    width: 100%;
+    .ch5-textinput__assets {
+      height: 100%;
+      width: 100%;
+      input {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &--width {
+    width: 100%;
+    .ch5-textinput__assets {
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.ch5-textinput--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}

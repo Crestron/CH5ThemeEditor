@@ -1,0 +1,153 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import "./scss/_mixins-size";
+@import "./scss/_variables";
+
+@import "./scss/_slider-size";
+@import "./scss/_handle-size";
+@import "./scss/_handle-shape";
+
+ch5-slider:focus {
+  outline: none;
+}
+
+/* ch5-slider - the container */
+.ch5-slider {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  // padding: 0px 15px 30px 15px;
+  font-size: $ch5-slider-font-size;
+  font-style: $ch5-slider-font-style;
+  font-weight: $ch5-slider-font-weight;
+
+  &.ch5-hide-dis {
+    display: none;
+  }
+
+  &:focus, .noUi-connects:focus, .noUi-base, .noUi-handle:focus{
+    outline: none;
+  }
+
+  .noUi-target {
+    display: inline-block;
+  }
+
+  &[nohandle] .noUi-handle {
+    visibility: hidden;
+  }
+
+  &.ch5-slider--orientation--horizontal {
+    .noUi-target {
+      height: $ui-target-size;
+    }
+  }
+
+  &.ch5-slider--orientation--vertical {
+    .noUi-target {
+      width: $ui-target-size;
+    }
+  }
+
+  .noUi-handle {
+    &:before, &:after {
+      content: none;
+    }
+  }
+
+  /* ===============================================
+    COLORS
+   ============================================= */
+  .noUi-target {
+    background: $ui-target-bg;
+    border-style: $ui-target-border-style;
+    border-color: $ui-target-border-color;
+    border-width: $ui-target-border-width;
+    box-shadow: none;
+  }
+  .noUi-connect {
+    background: $ui-connect-bg;
+  }
+  .noUi-handle{
+    border-style: $ui-handle-border-style;
+    border-color: $ui-handle-border-color;
+    border-width: $ui-handle-border-width;
+    background: $ui-handle-bg;
+    box-shadow: none;
+  }
+
+  /* ===============================================
+    STRECH
+   ============================================= */
+  &.ch5-slider--strech--width.ch5-slider--orientation--horizontal{
+    width: 100% !important;
+  }
+
+  &.ch5-slider--strech--height.ch5-slider--orientation--vertical{
+    height: 100% !important;
+  }
+
+
+  &.ch5-slider--strech--height.ch5-slider--orientation--horizontal {
+    height: 100% !important;
+    .noUi-target {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &.ch5-slider--strech--width.ch5-slider--orientation--vertical {
+    width: 100% !important;
+    .noUi-target {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &.ch5-slider--strech--both.ch5-slider--orientation--horizontal{
+    width: 100% !important;
+    height: 100% !important;
+
+    .noUi-target {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &.ch5-slider--strech--both.ch5-slider--orientation--vertical{
+    height: 100% !important;
+    width: 100% !important;
+
+    .noUi-target {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle  .noUi-horizontal .noUi-handle {
+  right:-26px;
+}
+
+/* Tooltip */
+
+.ch5-slider--tooltip--auto {
+  .noUi-tooltip {
+    display: none;
+  }
+  .noUi-active .noUi-tooltip {
+    display: block;
+  }
+}
+
+/* Ticks */
+.noUi-pips {
+  .noUi-marker-normal {
+    visibility: hidden;
+  }
+}

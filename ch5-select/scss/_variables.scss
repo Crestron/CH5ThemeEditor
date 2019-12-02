@@ -1,0 +1,32 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import "./../../ch5-core/variables";
+
+// default
+$ch5-select-font-size-unit: $ch5-font-size-unit !default;
+$ch5-select-font-size-value: $ch5-font-size-value !default;
+$ch5-select-font-size: $ch5-select-font-size-value + $ch5-select-font-size-unit !default;
+$ch5-select-font-style: $ch5-font-style !default;
+$ch5-select-font-weight: $ch5-font-weight !default;
+
+$ch5-select-padding: 4px !default;
+$ch5-select-border-width: 1px !default;
+$ch5-select-border-radius: 2px !default;
+
+// combo trigger
+$ch5-select-combo-trigger-margin: 0 !default;
+$ch5-select-combo-trigger-width: 24px !default;
+$ch5-select-combo-trigger-height: 24px !default;
+
+// items
+$ch5-select-item-selected-width: calc(100% - 40px) !default;
+$ch5-select-panel-item-border-width: 1px !default;
+$ch5-select-panel-item-padding: 8px !default;
+$ch5-select-panel-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                                      0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                                      0 3px 1px -2px rgba(0, 0, 0, 0.2) !default;

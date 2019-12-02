@@ -1,0 +1,16 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+// default
+$ch5-list-font-size-unit: $ch5-font-size-unit !default;
+$ch5-list-font-size-value: $ch5-font-size-value !default;
+$ch5-list-font-size: $ch5-font-size-value + $ch5-font-size-unit !default;
+$ch5-list-font-style: $ch5-font-style !default;
+$ch5-list-font-weight: $ch5-font-weight !default;
+
+$ch5-list-item-border: 1px solid transparent !default;
+$ch5-list-item-padding: 10px !default;
