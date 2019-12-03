@@ -10,13 +10,13 @@
 | ------ | ----------- |
 | Build Pipeline | ![Build status](https://dev.azure.com/crestron-mobile-devops/MobileApps/_apis/build/status/Blackbird/CoreBuild/CH5ThemeEditor?branchName=dev) |
 | Release Pipeline | ![Deployment status](https://vsrm.dev.azure.com/crestron-mobile-devops/_apis/public/Release/badge/0403b700-ab40-43cd-9990-961924c561bc/38/93) |
-| NPM | Work In Progress |
+| NPM | ![npm (tag)](https://img.shields.io/npm/v/@crestron/ch5-theme/latest-dev) |
 
 | MASTER-QE - latest-qe | Status |
 | ------ | ----------- |
 | Build Pipeline | ![Build status](https://dev.azure.com/crestron-mobile-devops/MobileApps/_apis/build/status/Blackbird/CoreBuild/CH5ThemeEditor?branchName=master) |
 | Release Pipeline | ![Deployment status](https://vsrm.dev.azure.com/crestron-mobile-devops/_apis/public/Release/badge/0403b700-ab40-43cd-9990-961924c561bc/38/94) |
-| NPM | Work In Progress |
+| NPM | ![npm (tag)](https://img.shields.io/npm/v/@crestron/ch5-theme/latest-qe) |
 
 ## Crestron provides three standard themes for CH5 components. 
 * light theme - dark text on light backgrounds
