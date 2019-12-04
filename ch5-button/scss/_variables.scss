@@ -1,0 +1,88 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import "../../ch5-core/variables";
+
+$ch5-button-font-size-unit: $ch5-font-size-unit !default;
+$ch5-button-font-size-value: $ch5-font-size-value !default;
+$ch5-button-font-size: $ch5-button-font-size-value + $ch5-button-font-size-unit !default;
+$ch5-button-font-style: $ch5-font-style !default;
+$ch5-button-font-weight: $ch5-font-weight !default;
+
+$ch5-button-icon-padding: 5px !default;
+$ch5-button-text-padding:  7px 15px !default;
+
+$ch5-button-img-margin: 5px !default;
+$ch5-button-img-height: 20px !default;
+$ch5-button-img-width: 20px !default;
+$ch5-button-circle-icon-height: 30px !default;
+$ch5-button-circle-icon-width: 30px !default;
+$ch5-button-circle-icon-line-height: 20px !default;
+
+// button solid-border
+$ch5-button-default-border-width:  1px;
+$ch5-button-primary-border-width:  1px;
+$ch5-button-secondary-border-width:  1px;
+$ch5-button-success-border-width:  1px;
+$ch5-button-info-border-width:  1px;
+$ch5-button-warning-border-width:  1px;
+$ch5-button-danger-border-width:  1px;
+$ch5-button-text-border-width:  1px;
+
+$ch5-button-default-border-style:  solid;
+$ch5-button-primary-border-style:  solid;
+$ch5-button-secondary-border-style:  solid;
+$ch5-button-success-border-style:  solid;
+$ch5-button-info-border-style:  dashed;
+$ch5-button-warning-border-style:  solid;
+$ch5-button-danger-border-style:  solid;
+$ch5-button-text-border-style:  dashed;
+
+
+// button rounded-rectangle
+$ch5-button-border-radius: 5px !default;
+
+//button circle
+$ch5-button-circle-border-radius: 50% !default;
+
+//button oval
+$ch5-button-oval-border-radius: 50% !default;
+
+//button tab
+$ch5-button-tab-border-radius: 10px 10px 0px 0px !default;
+
+// size x-small
+$ch5-button-x-small-font-size-unit: em !default;
+$ch5-button-x-small-font-size-value: 0.5 !default;
+$ch5-button-x-small-font-size: $ch5-button-x-small-font-size-value + $ch5-button-x-small-font-size-unit !default;
+$ch5-button-x-small-font-style: normal !default;
+$ch5-button-x-small-font-weight: normal !default;
+$ch5-button-x-small-padding: ($ch5-button-x-small-font-size-value / 1.25) + $ch5-button-x-small-font-size-unit !default;
+
+// size small
+$ch5-button-small-font-size-unit: em !default;
+$ch5-button-small-font-size-value: 0.75 !default;
+$ch5-button-small-font-size: $ch5-button-small-font-size-value + $ch5-button-small-font-size-unit !default;
+$ch5-button-small-font-style: normal !default;
+$ch5-button-small-font-weight: normal !default;
+$ch5-button-small-padding: ($ch5-button-small-font-size-value / 3) + $ch5-button-small-font-size-unit !default;
+
+// size large
+$ch5-button-large-font-size-unit: em !default;
+$ch5-button-large-font-size-value: 1.25 !default;
+$ch5-button-large-font-size: $ch5-button-large-font-size-value + $ch5-button-large-font-size-unit !default;
+$ch5-button-large-font-style: normal !default;
+$ch5-button-large-font-weight: normal !default;
+$ch5-button-large-padding: ($ch5-button-large-font-size-value / 3) + $ch5-button-large-font-size-unit !default;
+
+// size x-large
+$ch5-button-x-large-font-size-unit: em !default;
+$ch5-button-x-large-font-size-value: 1.5 !default;
+$ch5-button-x-large-font-size: $ch5-button-x-large-font-size-value + $ch5-button-x-large-font-size-unit !default;
+$ch5-button-x-large-font-style: normal !default;
+$ch5-button-x-large-font-weight: normal !default;
+$ch5-button-x-large-padding: ($ch5-button-x-large-font-size-value / 3) + $ch5-button-x-large-font-size-unit !default;

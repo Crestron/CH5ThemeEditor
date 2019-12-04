@@ -1,0 +1,49 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import "../../ch5-core/variables";
+
+$ch5-modal-font-size-unit: $ch5-font-size-unit !default;
+$ch5-modal-font-size-value: $ch5-font-size-value !default;
+$ch5-modal-font-size: $ch5-modal-font-size-value + $ch5-modal-font-size-unit !default;
+$ch5-modal-font-style: $ch5-font-style !default;
+$ch5-modal-font-weight: $ch5-font-weight !default;
+
+$ch5-modal-border-width:  1px;
+$ch5-modal-border-style:  solid;
+$ch5-modal-border-radius:  6px;
+$ch5-modal-padding: 1.25em;
+
+$ch5-modal-close-icon-margin: 0 5px;
+$ch5-modal-close-icon-padding: 0 5px 5px;
+$ch5-modal-close-icon-width: 20px;
+
+$ch5-modal-close-icon-font-size: $ch5-modal-font-size !default;
+$ch5-modal-close-icon-font-style: $ch5-modal-font-style !default;
+$ch5-modal-close-icon-font-weight: $ch5-modal-font-weight !default;
+
+$ch5-modal-default-close-icon-font-size: 24px !default;
+$ch5-modal-default-close-icon-font-style: $ch5-modal-font-style !default;
+$ch5-modal-default-close-icon-font-weight: $ch5-modal-font-weight !default;
+
+$ch5-modal-title-font-size: 1.3em !default;
+$ch5-modal-title-font-style: $ch5-modal-font-style !default;
+$ch5-modal-title-font-weight: bold !default;
+
+$ch5-modal-contents-padding: 10px;
+$ch5-modal-contents-font-size: 18px !default;
+$ch5-model-contents-font-style: $ch5-modal-font-style !default;
+$ch5-model-contents-font-weight: $ch5-modal-font-weight !default;
+
+$ch5-modal-prompt-padding: 30px 0 30px 0;
+$ch5-modal-prompt-icon-margin-right: 10px;
+$ch5-modal-prompt-icon-font-size: $ch5-modal-font-size !default;
+$ch5-modal-prompt-icon-font-style: $ch5-modal-font-style !default;
+$ch5-modal-prompt-icon-font-weight: $ch5-modal-font-weight !default;
+$ch5-modal-prompt-text-font-style: $ch5-modal-font-style !default;
+$ch5-modal-prompt-text-font-size: 16px !default;
+$ch5-modal-prompt-text-font-weight: $ch5-modal-font-weight !default;

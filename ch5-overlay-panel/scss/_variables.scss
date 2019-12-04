@@ -1,0 +1,32 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import "../../ch5-core/variables";
+
+$ch5-overlay-panel-font-size-unit: $ch5-font-size-unit !default;
+$ch5-overlay-panel-font-size-value: $ch5-font-size-value !default;
+$ch5-overlay-panel-font-size: $ch5-overlay-panel-font-size-value + $ch5-overlay-panel-font-size-unit !default;
+$ch5-overlay-panel-font-style: $ch5-font-style;
+$ch5-overlay-panel-font-weight: $ch5-font-weight;
+
+$ch5-overlay-panel-border-width:  1px;
+$ch5-overlay-panel-border-style:  solid;
+$ch5-overlay-panel-border-radius:  6px;
+$ch5-overlay-panel-padding: 1.25em;
+
+$ch5-overlay-panel-close-icon-margin: 0 5px;
+$ch5-overlay-panel-close-icon-padding: 0 5px 5px;
+$ch5-overlay-panel-close-icon-width: 20px;
+
+$ch5-overlay-default-close-icon-font-size: 24px !default;
+$ch5-overlay-default-close-icon-font-style: $ch5-overlay-panel-font-style !default;
+$ch5-overlay-default-close-icon-font-weight: $ch5-overlay-panel-font-weight !default;
+
+$ch5-overlay-panel-contents-padding: 20px;
+$ch5-overlay-panel-contents-font-size: 18px !default;
+$ch5-overlay-panel-contents-font-style: $ch5-overlay-panel-font-style !default;
+$ch5-overlay-panel-contents-font-weight: $ch5-overlay-panel-font-style !default;

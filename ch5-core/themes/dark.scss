@@ -1,0 +1,352 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+// Color system
+$default:       #0073bf !default;
+$primary:       #17171a !default;
+$secondary:     #5e5e66 !default;
+$success:       #2e7d32 !default;
+$info:          #00838f !default;
+$warning:       #ff8f00 !default;
+$danger:        #c62828 !default;
+$text:          $primary !default;
+
+
+// Button  Colors
+//default colors
+//text default color
+$ch5-button-text-border-color: #333 !default;
+$ch5-button-text-font-color: #e0e0e0 !default;
+
+$ch5-button-text-default-border-color: $ch5-button-text-border-color !default;
+$ch5-button-text-default-background-color: #343434 !default;
+$ch5-button-text-default-font-color: $ch5-button-text-font-color !default;
+
+//text selected color
+$ch5-button-text-selected-border-color: $ch5-button-text-border-color !default;
+$ch5-button-text-selected-background-color: #454545 !default;
+$ch5-button-text-selected-font-color: $ch5-button-text-font-color !default;
+
+//text pressed color
+$ch5-button-text-pressed-border-color:$ch5-button-text-border-color !default;
+$ch5-button-text-pressed-background-color: #666666 !default;
+$ch5-button-text-pressed-font-color: $ch5-button-text-font-color !default;
+
+//text disabled color
+$ch5-button-text-disabled-border-color: $ch5-button-text-default-border-color !default;
+$ch5-button-text-disabled-background-color: $ch5-button-text-default-background-color !default;
+$ch5-button-text-disabled-font-color: $ch5-button-text-default-font-color !default;
+
+// ------------------------------------------------------
+
+$ch5-button-danger-border-color: #a12020!default;
+$ch5-button-danger-font-color: #ffffff !default;
+
+//danger default color
+$ch5-button-danger-default-border-color: $ch5-button-danger-border-color !default;
+$ch5-button-danger-default-background-color: $danger !default;
+$ch5-button-danger-default-font-color: #ffffff !default;
+
+//danger selected color
+$ch5-button-danger-selected-border-color: $ch5-button-danger-border-color !default;
+$ch5-button-danger-selected-background-color: #a12020 !default;
+$ch5-button-danger-selected-font-color: $ch5-button-danger-font-color !default;
+
+//danger pressed color
+$ch5-button-danger-pressed-border-color: $ch5-button-danger-border-color;
+$ch5-button-danger-pressed-background-color: #b71c1c !default;
+$ch5-button-danger-pressed-font-color: $ch5-button-danger-font-color !default;
+
+//danger disabled color
+
+$ch5-button-danger-disabled-border-color: $ch5-button-danger-default-border-color !default;
+$ch5-button-danger-disabled-background-color: $ch5-button-danger-default-background-color !default;
+$ch5-button-danger-disabled-font-color: $ch5-button-danger-default-font-color !default;
+
+
+// ------------------------------------------------------
+
+$ch5-button-warning-border-color: #d97b00 !default;
+$ch5-button-warning-font-color: #333 !default;
+
+//warning default color
+$ch5-button-warning-default-border-color: $ch5-button-warning-border-color !default;
+$ch5-button-warning-default-background-color: $warning !default;
+$ch5-button-warning-default-font-color: $ch5-button-warning-font-color !default;
+
+//warning selected color
+$ch5-button-warning-selected-border-color: $ch5-button-warning-border-color !default;
+$ch5-button-warning-selected-background-color: #d97b00 !default;
+$ch5-button-warning-selected-font-color: #333 !default;
+
+//warning pressed color
+$ch5-button-warning-pressed-border-color: $ch5-button-warning-border-color;
+$ch5-button-warning-pressed-background-color: #ff6f00 !default;
+$ch5-button-warning-pressed-font-color: #f0fff0 !default;
+
+//warning disabled color
+$ch5-button-warning-disabled-border-color: $ch5-button-warning-default-border-color !default;
+$ch5-button-warning-disabled-background-color: $ch5-button-warning-default-background-color !default;
+$ch5-button-warning-disabled-font-color: $ch5-button-warning-default-font-color !default;
+
+// ------------------------------------------------------
+
+$ch5-button-info-border-color: #006069 !default;
+$ch5-button-info-font-color: #f0fff0 !default;
+
+//info default color
+$ch5-button-info-default-border-color: $ch5-button-info-border-color !default;
+$ch5-button-info-default-background-color: $info !default;
+$ch5-button-info-default-font-color: $ch5-button-info-font-color !default;
+
+//info selected color
+$ch5-button-info-selected-border-color: $ch5-button-info-border-color !default;
+$ch5-button-info-selected-background-color:#006069 !default;
+$ch5-button-info-selected-font-color: $ch5-button-info-font-color !default;
+
+//info pressed color
+$ch5-button-info-pressed-border-color: $ch5-button-info-border-color;
+$ch5-button-info-pressed-background-color: #0097a7 !default;
+$ch5-button-info-pressed-font-color: $ch5-button-info-font-color !default;
+
+//info disabled color
+
+$ch5-button-info-disabled-border-color: $ch5-button-info-default-border-color !default;
+$ch5-button-info-disabled-background-color: $ch5-button-info-default-background-color !default;
+$ch5-button-info-disabled-font-color: $ch5-button-info-default-font-color !default;
+
+
+// ------------------------------------------------------
+
+$ch5-button-success-border-color: #205723 !default;
+$ch5-button-success-font-color: #f0fff0 !default;
+
+//primary default color
+$ch5-button-success-default-border-color: $ch5-button-success-border-color !default;
+$ch5-button-success-default-background-color: $success !default;
+$ch5-button-success-default-font-color: $ch5-button-success-font-color !default;
+
+//success selected color
+$ch5-button-success-selected-border-color: $ch5-button-success-border-color !default;
+$ch5-button-success-selected-background-color: #205723 !default;
+$ch5-button-success-selected-font-color: $ch5-button-success-font-color !default;
+
+//success pressed color
+$ch5-button-success-pressed-border-color: $ch5-button-success-border-color;
+$ch5-button-success-pressed-background-color: #388e3c !default;
+$ch5-button-success-pressed-font-color: $ch5-button-success-font-color !default;
+
+//success disabled color
+$ch5-button-success-disabled-border-color: $ch5-button-success-default-border-color !default;
+$ch5-button-success-disabled-background-color: $ch5-button-success-default-border-color !default;
+$ch5-button-success-disabled-font-color: $ch5-button-success-default-font-color !default;
+
+// ------------------------------------------------------
+
+$ch5-button-default-border-color: #003d66 !default;
+$ch5-button-default-font-color: #ffffff !default;
+
+//default default color
+$ch5-button-default-default-border-color: $ch5-button-default-border-color !default;
+$ch5-button-default-default-background-color: $default !default;
+$ch5-button-default-default-font-color: $ch5-button-default-font-color !default;
+
+//default selected color
+$ch5-button-default-selected-border-color: $ch5-button-default-border-color !default;
+$ch5-button-default-selected-background-color: #005C99 !default;
+$ch5-button-default-selected-font-color: #f0fff0 !default;
+
+//default pressed color
+$ch5-button-default-pressed-border-color: $ch5-button-default-border-color;
+$ch5-button-default-pressed-background-color: #007acc !default;
+$ch5-button-default-pressed-font-color: #f0fff0 !default;
+
+//default disabled color
+$ch5-button-default-disabled-border-color: $ch5-button-default-default-border-color !default;
+$ch5-button-default-disabled-background-color: $ch5-button-default-default-background-color !default;
+$ch5-button-default-disabled-font-color: $ch5-button-default-default-font-color !default;
+
+// ------------------------------------------------------
+
+$ch5-button-primary-border-color: #232323 !default;
+$ch5-button-primary-font-color: #fefefe !default;
+
+//primary default color
+$ch5-button-primary-default-border-color: $ch5-button-primary-border-color !default;
+$ch5-button-primary-default-background-color: $primary !default;
+$ch5-button-primary-default-font-color: $ch5-button-primary-font-color !default;
+
+//primary selected color
+$ch5-button-primary-selected-border-color: $ch5-button-primary-border-color !default;
+$ch5-button-primary-selected-background-color: #3b3b40 !default;
+$ch5-button-primary-selected-font-color: $ch5-button-primary-font-color !default;
+
+//primary pressed color
+$ch5-button-primary-pressed-border-color: $ch5-button-primary-border-color;
+$ch5-button-primary-pressed-background-color: #5e5e66 !default;
+$ch5-button-primary-pressed-font-color: $ch5-button-primary-font-color !default;
+
+//primary disabled color
+$ch5-button-primary-disabled-border-color: $ch5-button-primary-default-border-color !default;
+$ch5-button-primary-disabled-background-color: $ch5-button-primary-default-background-color !default;
+$ch5-button-primary-disabled-font-color: $ch5-button-primary-default-font-color!default;
+
+// ------------------------------------------------------
+
+$ch5-button-secondary-border-color: #232323 !default;
+$ch5-button-secondary-font-color: #fefefe !default;
+
+//secondary default color
+$ch5-button-secondary-default-border-color: $ch5-button-secondary-border-color !default;
+$ch5-button-secondary-default-background-color: $secondary !default;
+$ch5-button-secondary-default-font-color: #fefefe !default;
+
+//secondary selected color
+$ch5-button-secondary-selected-border-color: $ch5-button-secondary-border-color !default;
+$ch5-button-secondary-selected-background-color: #9898a6 !default;
+$ch5-button-secondary-selected-font-color:  #ffffff !default;
+
+//secondary pressed color
+$ch5-button-secondary-pressed-border-color: $ch5-button-secondary-border-color;
+$ch5-button-secondary-pressed-background-color: #3b3b40 !default;
+$ch5-button-secondary-pressed-font-color: $ch5-button-secondary-font-color !default;
+
+//secondary disabled color
+$ch5-button-secondary-disabled-border-color: $ch5-button-secondary-default-border-color !default;
+$ch5-button-secondary-disabled-background-color: $ch5-button-secondary-default-background-color !default;
+$ch5-button-secondary-disabled-font-color: $ch5-button-secondary-default-font-color !default;
+
+/* ===============================================
+CH5-OVERLAY
+============================================= */
+
+$ch5-overlay-default-close-icon-color:#fefefe;
+$ch5-overlay-default-close-icon-color-hover:#9898a6;
+$ch5-overlay-default-mask-bg-color:rgba(94,94,102,0.3);
+
+$ch5-overlay-panel-close-icon-background-color: #17171a;
+$ch5-overlay-panel-background-color: #17171a;
+
+$ch5-overlay-panel-border-color:   #000000;
+$ch5-overlay-panel-text-color: #fefefe;
+$ch5-overlay-panel-contents-font-color: #fefefe;
+
+/* ===============================================
+CH5-SELECT PANEL
+============================================= */
+
+$ch5-select-border-color: #5e5e66 !default;
+$ch5-select-font-color: #797979 !default;
+
+$ch5-select-panel-item-selected-background-color: #004d80 !default;
+$ch5-select-panel-item-border-color: transparent !default;
+$ch5-select-panel-item-color: #9898a6 !default;
+$ch5-select-panel-item-background-color: transparent !default;
+$ch5-select-panel-item-hover-background-color: #fefefe !default;
+$ch5-select-panel-items-background-color: #3b3b40 !default;
+
+/* ===============================================
+CH5-SPINNER
+============================================= */
+
+$ch5-spinner-active-item-color: #fff !default;
+$ch5-spinner-item-color: #9898a6 !default;
+$ch5-spinner-overlay-background-color: #ff0000 !default;
+$ch5-spinner-highlight-box-shadow-color: rgba(0,0,0,0.3) !default;
+$ch5-spinner-highlight-border-color: #ff0000;
+
+// background
+$ch5-spinner-background-color: #3b3b40 !default;
+$ch5-spinner-background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, .05)) !default;
+$ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, .05), #fff 120%) !default;
+
+/* ===============================================
+CH5-TEXT INPUT
+============================================= */
+
+// base text color
+$ch5-textinput-text-color: $secondary !default;
+$ch5-textinput-input-text-color: $ch5-textinput-text-color !default;
+// text color for each element
+$ch5-textinput-icon-text-color: $success !default;
+$ch5-textinput-label-text-color: $ch5-textinput-text-color  !default;
+
+
+// base border color
+$ch5-textinput-border-color: $secondary !default;
+
+// border color for each element
+$ch5-textinput-input-border-color: $ch5-textinput-border-color !default;
+
+/* ===============================================
+CH5-TOGGLE
+============================================= */
+
+// default colors
+$ch5-toggle-handle-checked-color: #3aa64e !default;
+$ch5-toggle-label-font-color: #efefef !default;
+$ch5-toggle-text-font-color: #797979 !default;
+$ch5-toggle-icon-font-color: #17171a !default;
+
+// circle
+$ch5-toggle-handle-circle-background: #797979 !default;
+$ch5-toggle-circle-label-on-color: #fff !default;
+$ch5-toggle-circle-label-off-color:#666 !default;
+$ch5-toggle-circle-knob-color: #17171a !default;
+
+// rectangle
+$ch5-toggle-handle-rectangle-background: #383840 !default;
+$ch5-toggle-rectangle-label-on-color: #fff !default;
+$ch5-toggle-rectangle-label-off-color:#fff !default;
+$ch5-toggle-rectangle-knob-color: #7b7b8c !default;
+
+/* ===============================================
+CH5-TRIGGERVIEW
+============================================= */
+
+$ch5-triggerview-background-color: transparent;
+$ch5-triggerview-fallback-message-color-background:#fff;
+
+/* ===============================================
+CH5-MODAL
+============================================= */
+
+$ch5-modal-close-icon-color:#000;
+$ch5-modal-close-icon-color-hover:#333;
+$ch5-modal-mask-bg-color:rgba(72,72,72,0.7);
+
+$ch5-modal-close-icon-background-color: #17171a;
+$ch5-modal-background-color: #17171a;
+
+$ch5-modal-border-color:   #000000;
+$ch5-modal-text-color: #4a4a4a;
+$ch5-modal-contents-font-color: #333;
+
+$ch5-modal-border-color: #efefef;
+
+$ch5-modal-prompt-text-font-color: #4a4a4a;
+
+/* ===============================================
+CH5-SLIDER
+============================================= */
+$ui-target-size:                        18px;
+$ui-connect-bg:                       #0099ff;
+$ui-target-bg:                        #2f2f33;
+$ui-target-border-color:              #5e5e66;
+$ui-target-border-style:                solid;
+$ui-target-border-width:                1px;
+$ui-handle-bg:                        #17171a;
+$ui-handle-border-color:              #2f2f33;
+$ui-handle-border-style:                solid;
+$ui-handle-border-width:                1px;
+
+/* ===============================================
+CH5-LIST
+============================================= */
+$ch5-list-item-color: #fff !default;
+$ch5-list-item-background-color: #3b3b40 !default;
+$ch5-list-item-border-color: #5e5e66 !default;
