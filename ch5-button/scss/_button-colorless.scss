@@ -15,8 +15,17 @@ ch5-button {
   font-style: $ch5-button-font-style;
   font-weight: $ch5-button-font-weight;
 
+  &,
+  .ch5-button {
+    max-width: 100%;
+  }
+
   div {
     pointer-events: all;
+  }
+  &[iconPosition="top"] .ch5-button button,
+  &[iconPosition="bottom"] .ch5-button button {
+    display: block;
   }
 }
 
@@ -46,6 +55,16 @@ ch5-button[hidden] {
     &:focus {
       outline: none;
     }
+  }
+
+  .ch5-button--label {
+    display: block;
+    @include text-truncate;
+  }
+  button {
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
 
   .ch5-button--icon {

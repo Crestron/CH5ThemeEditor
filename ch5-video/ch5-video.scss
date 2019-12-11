@@ -9,6 +9,12 @@
 
 ch5-video {
 
+    &.video {
+        position: relative;
+        font-size: 0;
+        display: block;
+    }
+
     &>canvas {
         .ch5-video--aratio--16x9 {
             .ch5-video--display--xx-large {
@@ -138,13 +144,6 @@ ch5-video {
         }
     }
 
-    .preLoader {
-        position: absolute;
-        background: #868686;
-        text-align: center;
-        display: inline-block;
-    }
-
     .preLoaderText {
         position: absolute;
         color: #fff;
@@ -156,11 +155,7 @@ ch5-video {
         z-index: $ch5-video-autorefresh-z-index;
     }
 
-    .videoElements {
-        position: relative;
-        font-size: 0;
-        display: inline-block;
-    }
+
 
     .videoControls {
         z-index: $ch5-z-index;
@@ -214,13 +209,46 @@ ch5-video {
         }
     }
 
-    &.fullScreenStyle {
+    .fullScreenStyle {
         position: absolute;
         width: 100%;
         height: 100%;
         left: 0;
         top: 0;
     }
+
+    .videoElements {
+        position: relative;
+        font-size: 0;
+        display: inline-block;
+    }
+
+}
+
+
+.video-body :not(.ch5-video) {
+    visibility: hidden;
+}
+
+.fullscreen-overlay {
+    position: fixed;
+    background: $ch5-fullscreen-background-color;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.fullscreen-overlay-click {
+    position: fixed;
+    background: $ch5-fullscreen-click-background-color;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
 }
 
 .control-panel {
@@ -237,9 +265,9 @@ ch5-video {
     height: 60px;
     position: absolute;
     /*left: 48%;
-    margin-left: -50px;
-    top: 48%;
-    margin-top: -50px;*/
+        margin-left: -50px;
+        top: 48%;
+        margin-top: -50px;*/
     border-radius: 50%;
 
     svg {
@@ -319,27 +347,27 @@ ch5-video {
         &.x-small {
             font-size: 8px;
         }
-    
+
         &.small {
             font-size: 11px;
         }
-    
+
         &.regular {
             font-size: 13px;
         }
-    
+
         &.large {
             font-size: 16px;
         }
-    
+
         &.x-large {
             font-size: 18px;
         }
-    
+
         &.xx-large {
             font-size: 20px;
         }
-    
+
         &.fullScreen {
             font-size: 18px;
         }
