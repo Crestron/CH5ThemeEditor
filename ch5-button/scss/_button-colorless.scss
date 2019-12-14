@@ -64,8 +64,7 @@ ch5-button[hidden] {
     background-color: transparent;
     border: none;
     color: inherit;
-    /* get from the .ch5-button--{{type}} classes */
-    padding: $ch5-button-text-padding;
+    padding: $ch5-button-padding;
 
     &:focus {
       outline: none;
@@ -79,7 +78,7 @@ ch5-button[hidden] {
 
   &.ch5-button--vertical .ch5-button--label {
     max-width: inherit;
-    padding: $ch5-button-vertical-text-padding;
+    padding: $ch5-button-vertical-padding;
   }
 
   .cb-btn {
@@ -116,7 +115,6 @@ ch5-button[hidden] {
 .ch5-button--circle {
   display: inline-block;
   padding: 0;
-  width: 48px;
   text-decoration: none;
   outline: none;
   border-style: none;
@@ -147,19 +145,23 @@ ch5-button[hidden] {
   }
 
   &.ch5-button--size-x-small {
-    width: 32px;
+    width: 30px;
   }
 
   &.ch5-button--size-small {
     width: 36px;
   }
 
+  &.ch5-button--size-regular {
+    width: 46px;
+  }
+
   &.ch5-button--size-large {
-    width: 56px;
+    width: 58px;
   }
 
   &.ch5-button--size-x-large {
-    width: 68px;
+    width: 72px;
   }
 
 }
