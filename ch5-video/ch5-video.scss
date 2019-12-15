@@ -321,8 +321,8 @@ ch5-video {
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
 
     .ratio {
         margin-right: 20px;
@@ -339,37 +339,34 @@ ch5-video {
     .live-card {
         background-color: #ff0000;
         color: #fff;
-        padding: 5px;
+        padding: 3px;
         line-height: 1;
         text-transform: uppercase;
         font-family: arial;
+        margin-left: 1vw;
 
         &.x-small {
-            font-size: 8px;
+            font-size: 1.5vw;
         }
 
         &.small {
-            font-size: 11px;
-        }
-
-        &.regular {
-            font-size: 13px;
+            font-size: 1.7vw;
         }
 
         &.large {
-            font-size: 16px;
+            font-size: 2vw;
         }
 
         &.x-large {
-            font-size: 18px;
+            font-size: 2.5vw;
         }
 
         &.xx-large {
-            font-size: 20px;
+            font-size: 3vw;
         }
 
         &.fullScreen {
-            font-size: 18px;
+            font-size: 3.5vw;
         }
 
     }
@@ -431,68 +428,95 @@ ch5-video {
     }
 
     &.x-small {
-        font-size: 12px;
+        font-size: 0.3vw;
     }
 
     &.small {
-        font-size: 16px;
-    }
-
-    &.regular {
-        font-size: 20px;
+        font-size: 0.6vw;
     }
 
     &.large {
-        font-size: 24px;
+        font-size: 0.9vw;
     }
 
     &.x-large {
-        font-size: 28px;
+        font-size: 1.1vw;
     }
 
     &.xx-large {
-        font-size: 32px;
+        font-size: 1.2vw;
     }
 
     &.fullScreen {
-        font-size: 34px;
+        font-size: 1.2vw;
     }
 
     .svgIcons {
 
         &.x-small {
-            width: 22px;
-            height: 22px;
+            width: 2.25vw;
+            height: 2.25vw;
         }
 
         &.small {
-            width: 35px;
-            height: 35px;
-        }
-
-        &.regular {
-            width: 45px;
-            height: 45px;
+            width: 2.5vw;
+            height: 2.5vw;
         }
 
         &.large {
-            width: 55px;
-            height: 55px;
+            width: 2.75vw;
+            height: 2.75vw;
         }
 
         &.x-large {
-            width: 65px;
-            height: 65px;
+            width: 3.4vw;
+            height: 3.4vw;
         }
 
         &.xx-large {
-            width: 75px;
-            height: 75px;
+            width: 3.8vw;
+            height: 3.8vw;
         }
 
         &.fullScreen {
-            width: 55px;
-            height: 55px;
+            width: 4vw;
+            height: 4vw;
+        }
+    }
+
+
+    @media (min-width: 100px) and (max-width:500px) {
+        .svgIcons {
+
+            &.x-small {
+                width: 3.5vw;
+                height: 3.5vw;
+            }
+    
+            &.small {
+                width: 4vw;
+                height: 4vw;
+            }
+    
+            &.large {
+                width: 4.5vw;
+                height: 4.5vw;
+            }
+    
+            &.x-large {
+                width: 5vw;
+                height: 5vw;
+            }
+    
+            &.xx-large {
+                width: 5.5vw;
+                height: 5.5vw;
+            }
+    
+            &.fullScreen {
+                width: 7vw;
+                height: 7vw;
+            }
         }
     }
 
@@ -502,38 +526,33 @@ ch5-video {
         fill: #fff;
 
         &.x-small {
-            width: 18px;
-            height: 18px;
+            width: 0.3vw;
+            height: 0.3vw;
         }
 
         &.small {
-            width: 25px;
-            height: 25px;
-        }
-
-        &.regular {
-            width: 35px;
-            height: 35px;
+            width: 0.6vw;
+            height: 0.6vw;
         }
 
         &.large {
-            width: 45px;
-            height: 45px;
+            width: 0.9vw;
+            height: 0.9vw;
         }
 
         &.x-large {
-            width: 55px;
-            height: 55px;
+            width: 1.1vw;
+            height: 1.1vw;
         }
 
         &.xx-large {
-            width: 65px;
-            height: 65px;
+            width: 1.2vw;
+            height: 1.2vw;
         }
 
         &.fullScreen {
-            width: 55px;
-            height: 55px;
+            width: 1.2vw;
+            height: 1.2vw;
         }
     }
 }
