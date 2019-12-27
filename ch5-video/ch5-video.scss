@@ -218,9 +218,10 @@ ch5-video {
     }
 
     .videoElements {
+        display: inline-block;
         position: relative;
         font-size: 0;
-        display: inline-block;
+        overflow: hidden;
     }
 
 }
@@ -252,307 +253,45 @@ ch5-video {
 }
 
 .control-panel {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: $ch5-video-controls-z-index;
-}
-
-.video-ctrl {
-    z-index: $ch5-video-controls-z-index;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    /*left: 48%;
-        margin-left: -50px;
-        top: 48%;
-        margin-top: -50px;*/
-    border-radius: 50%;
-
-    svg {
-        width: 32px;
-        height: 32px;
-        position: absolute;
-        fill: #fff;
-        left: 50%;
-        top: 50%;
-        margin: -16px 0 0 -16px;
-    }
-
-    &.play {
-        animation: ripple 0.7s;
-        background-color: rgba(111, 111, 111, 0.5);
-        opacity: 0;
-    }
-
-    &.stop {
-        animation: ripple2 0.7s;
-        background-color: rgba(111, 111, 111, 0.5);
-    }
-}
-
-@keyframes ripple {
-    from {
-        opacity: 1;
-        transform: scale(0.5);
-    }
-
-    to {
-        opacity: 0;
-        transform: scale(1.8);
-    }
-}
-
-@keyframes ripple2 {
-    from {
-        opacity: 0;
-        transform: scale(1.8);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.controls {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     font-size: 14px;
-    padding-left: 0.2vw;
-    padding-right: 0.2vw;
-
-    .ratio {
-        margin-right: 20px;
-    }
-
-    .fa {
-        display: block;
-    }
-
-    &.main-control {
-        border-top: 3px solid #ff0000;
-    }
-
-    .live-card {
-        background-color: #ff0000;
-        color: #fff;
-        padding: 3px;
-        line-height: 1;
-        text-transform: uppercase;
-        font-family: arial;
-        margin-left: 1vw;
-
-        &.x-small {
-            font-size: 1.5vw;
-        }
-
-        &.small {
-            font-size: 1.7vw;
-        }
-
-        &.large {
-            font-size: 2vw;
-        }
-
-        &.x-large {
-            font-size: 2.5vw;
-        }
-
-        &.xx-large {
-            font-size: 3vw;
-        }
-
-        &.fullScreen {
-            font-size: 3.5vw;
-        }
-
-    }
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(black, transparent);
+    z-index: $ch5-video-controls-z-index;
+    transform: translateY(-100%);
+    transition: all 0.2s linear;
+    visibility: hidden;
 
     .control {
         display: block;
-        padding: 0.5rem;
-        color: #fff;
 
-        &.ratio {
-            display: flex;
-            align-items: center;
-        }
-    }
-
-    a:hover {
-        text-decoration: none !important;
-        color: #fff;
-    }
-
-    a {
-        color: #fff;
-    }
-
-    .controls-right {
-        display: flex;
-        align-items: center;
-
-        .toggle {
-            padding: 00.5rem;
-        }
-    }
-
-    .dropup-menu {
-        position: relative;
-
-        .dropup {
-            position: absolute;
-            background-color: #2b2b2b;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            left: 0;
-            bottom: 100%;
-            display: none;
-            min-width: 100%;
-            z-index: $ch5-video-controls-z-index;
-            color: #fff;
-            opacity: 0.7;
-
-            &>li {
-                padding: 0.5rem;
-            }
+        .svgIconStyle {
+            width: 32px;
+            height: 32px;
+            fill: #fff;
         }
 
-        &.open.dropup {
-            display: block;
+        &:hover {
+            text-decoration: none;
         }
-    }
-
-    &.x-small {
-        font-size: 0.3vw;
-    }
-
-    &.small {
-        font-size: 0.6vw;
-    }
-
-    &.large {
-        font-size: 0.9vw;
-    }
-
-    &.x-large {
-        font-size: 1.1vw;
-    }
-
-    &.xx-large {
-        font-size: 1.2vw;
     }
 
     &.fullScreen {
-        font-size: 1.2vw;
-    }
 
-    .svgIcons {
-
-        &.x-small {
-            width: 2.25vw;
-            height: 2.25vw;
-        }
-
-        &.small {
-            width: 2.5vw;
-            height: 2.5vw;
-        }
-
-        &.large {
-            width: 2.75vw;
-            height: 2.75vw;
-        }
-
-        &.x-large {
-            width: 3.4vw;
-            height: 3.4vw;
-        }
-
-        &.xx-large {
-            width: 3.8vw;
-            height: 3.8vw;
-        }
-
-        &.fullScreen {
-            width: 4vw;
-            height: 4vw;
+        &,
+        * {
+            visibility: visible;
         }
     }
 
-
-    @media (min-width: 100px) and (max-width:500px) {
-        .svgIcons {
-
-            &.x-small {
-                width: 3.5vw;
-                height: 3.5vw;
-            }
-    
-            &.small {
-                width: 4vw;
-                height: 4vw;
-            }
-    
-            &.large {
-                width: 4.5vw;
-                height: 4.5vw;
-            }
-    
-            &.x-large {
-                width: 5vw;
-                height: 5vw;
-            }
-    
-            &.xx-large {
-                width: 5.5vw;
-                height: 5.5vw;
-            }
-    
-            &.fullScreen {
-                width: 7vw;
-                height: 7vw;
-            }
-        }
-    }
-
-    .svgIconStyle {
-        width: inherit;
-        height: inherit;
-        fill: #fff;
-
-        &.x-small {
-            width: 0.3vw;
-            height: 0.3vw;
-        }
-
-        &.small {
-            width: 0.6vw;
-            height: 0.6vw;
-        }
-
-        &.large {
-            width: 0.9vw;
-            height: 0.9vw;
-        }
-
-        &.x-large {
-            width: 1.1vw;
-            height: 1.1vw;
-        }
-
-        &.xx-large {
-            width: 1.2vw;
-            height: 1.2vw;
-        }
-
-        &.fullScreen {
-            width: 1.2vw;
-            height: 1.2vw;
-        }
+    &.show-control {
+        transform: translateY(0);
+        visibility: visible;
     }
 }
