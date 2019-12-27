@@ -220,7 +220,8 @@ ch5-video {
     .videoElements {
         display: inline-block;
         position: relative;
-        font-size: 0;        
+        font-size: 0;
+        overflow: hidden;
     }
 
 }
