@@ -261,15 +261,15 @@ ch5-video {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    background-image: linear-gradient(black, transparent);
-    z-index: $ch5-video-controls-z-index;
     transform: translateY(-100%);
     transition: all 0.2s linear;
     visibility: hidden;
 
     .control {
         display: block;
+        padding: 2px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.2);
 
         .svgIconStyle {
             width: 32px;
@@ -279,14 +279,6 @@ ch5-video {
 
         &:hover {
             text-decoration: none;
-        }
-    }
-
-    &.fullScreen {
-
-        &,
-        * {
-            visibility: visible;
         }
     }
 
