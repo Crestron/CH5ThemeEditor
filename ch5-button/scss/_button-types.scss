@@ -172,17 +172,3 @@
     color: $ch5-button-secondary-disabled-font-color;
   }
 }
-
-.ch5-button {
-  &--size {
-    &-regular {
-      &.ch5-button--circle {
-        .ch5-button--icon {
-          height: $ch5-button-circle-icon-height;
-          width: $ch5-button-circle-icon-width;
-          line-height: $ch5-button-circle-icon-line-height;
-        }
-      }
-    }
-  }
-}

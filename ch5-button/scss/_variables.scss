@@ -14,7 +14,8 @@ $ch5-button-font-style: $ch5-font-style !default;
 $ch5-button-font-weight: $ch5-font-weight !default;
 
 $ch5-button-icon-padding: 5px !default;
-$ch5-button-text-padding:  7px 15px !default;
+$ch5-button-padding:  0.4rem 1rem !default;
+$ch5-button-vertical-padding:  1rem 0.4rem !default;
 
 $ch5-button-img-margin: 5px !default;
 $ch5-button-img-height: 20px !default;
@@ -69,20 +70,20 @@ $ch5-button-small-font-size-value: 0.75 !default;
 $ch5-button-small-font-size: $ch5-button-small-font-size-value + $ch5-button-small-font-size-unit !default;
 $ch5-button-small-font-style: normal !default;
 $ch5-button-small-font-weight: normal !default;
-$ch5-button-small-padding: ($ch5-button-small-font-size-value / 3) + $ch5-button-small-font-size-unit !default;
+$ch5-button-small-padding: ($ch5-button-small-font-size-value / 2.5) + $ch5-button-small-font-size-unit !default;
 
 // size large
 $ch5-button-large-font-size-unit: em !default;
-$ch5-button-large-font-size-value: 1.25 !default;
+$ch5-button-large-font-size-value: 1.15 !default;
 $ch5-button-large-font-size: $ch5-button-large-font-size-value + $ch5-button-large-font-size-unit !default;
 $ch5-button-large-font-style: normal !default;
 $ch5-button-large-font-weight: normal !default;
-$ch5-button-large-padding: ($ch5-button-large-font-size-value / 3) + $ch5-button-large-font-size-unit !default;
+$ch5-button-large-padding: ($ch5-button-large-font-size-value / 1.9) + $ch5-button-large-font-size-unit !default;
 
 // size x-large
 $ch5-button-x-large-font-size-unit: em !default;
-$ch5-button-x-large-font-size-value: 1.5 !default;
+$ch5-button-x-large-font-size-value: 1.15 !default;
 $ch5-button-x-large-font-size: $ch5-button-x-large-font-size-value + $ch5-button-x-large-font-size-unit !default;
 $ch5-button-x-large-font-style: normal !default;
 $ch5-button-x-large-font-weight: normal !default;
-$ch5-button-x-large-padding: ($ch5-button-x-large-font-size-value / 3) + $ch5-button-x-large-font-size-unit !default;
+$ch5-button-x-large-padding: ($ch5-button-x-large-font-size-value / 1.15) + $ch5-button-x-large-font-size-unit !default;

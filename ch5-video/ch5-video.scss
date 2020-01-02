@@ -209,8 +209,8 @@ ch5-video {
         }
     }
 
-    .fullScreenStyle {
-        position: absolute;
+    &.fullScreenStyle {
+        position: fixed;
         width: 100%;
         height: 100%;
         left: 0;
@@ -218,9 +218,10 @@ ch5-video {
     }
 
     .videoElements {
+        display: inline-block;
         position: relative;
         font-size: 0;
-        display: inline-block;
+        overflow: hidden;
     }
 
 }
@@ -252,288 +253,45 @@ ch5-video {
 }
 
 .control-panel {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: $ch5-video-controls-z-index;
-}
-
-.video-ctrl {
-    z-index: $ch5-video-controls-z-index;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    /*left: 48%;
-        margin-left: -50px;
-        top: 48%;
-        margin-top: -50px;*/
-    border-radius: 50%;
-
-    svg {
-        width: 32px;
-        height: 32px;
-        position: absolute;
-        fill: #fff;
-        left: 50%;
-        top: 50%;
-        margin: -16px 0 0 -16px;
-    }
-
-    &.play {
-        animation: ripple 0.7s;
-        background-color: rgba(111, 111, 111, 0.5);
-        opacity: 0;
-    }
-
-    &.stop {
-        animation: ripple2 0.7s;
-        background-color: rgba(111, 111, 111, 0.5);
-    }
-}
-
-@keyframes ripple {
-    from {
-        opacity: 1;
-        transform: scale(0.5);
-    }
-
-    to {
-        opacity: 0;
-        transform: scale(1.8);
-    }
-}
-
-@keyframes ripple2 {
-    from {
-        opacity: 0;
-        transform: scale(1.8);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.controls {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     font-size: 14px;
-    padding-left: 5px;
-    padding-right: 5px;
-
-    .ratio {
-        margin-right: 20px;
-    }
-
-    .fa {
-        display: block;
-    }
-
-    &.main-control {
-        border-top: 3px solid #ff0000;
-    }
-
-    .live-card {
-        background-color: #ff0000;
-        color: #fff;
-        padding: 5px;
-        line-height: 1;
-        text-transform: uppercase;
-        font-family: arial;
-
-        &.x-small {
-            font-size: 8px;
-        }
-
-        &.small {
-            font-size: 11px;
-        }
-
-        &.regular {
-            font-size: 13px;
-        }
-
-        &.large {
-            font-size: 16px;
-        }
-
-        &.x-large {
-            font-size: 18px;
-        }
-
-        &.xx-large {
-            font-size: 20px;
-        }
-
-        &.fullScreen {
-            font-size: 18px;
-        }
-
-    }
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(black, transparent);
+    z-index: $ch5-video-controls-z-index;
+    transform: translateY(-100%);
+    transition: all 0.2s linear;
+    visibility: hidden;
 
     .control {
         display: block;
-        padding: 0.5rem;
-        color: #fff;
 
-        &.ratio {
-            display: flex;
-            align-items: center;
-        }
-    }
-
-    a:hover {
-        text-decoration: none !important;
-        color: #fff;
-    }
-
-    a {
-        color: #fff;
-    }
-
-    .controls-right {
-        display: flex;
-        align-items: center;
-
-        .toggle {
-            padding: 00.5rem;
-        }
-    }
-
-    .dropup-menu {
-        position: relative;
-
-        .dropup {
-            position: absolute;
-            background-color: #2b2b2b;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            left: 0;
-            bottom: 100%;
-            display: none;
-            min-width: 100%;
-            z-index: $ch5-video-controls-z-index;
-            color: #fff;
-            opacity: 0.7;
-
-            &>li {
-                padding: 0.5rem;
-            }
+        .svgIconStyle {
+            width: 32px;
+            height: 32px;
+            fill: #fff;
         }
 
-        &.open.dropup {
-            display: block;
+        &:hover {
+            text-decoration: none;
         }
-    }
-
-    &.x-small {
-        font-size: 12px;
-    }
-
-    &.small {
-        font-size: 16px;
-    }
-
-    &.regular {
-        font-size: 20px;
-    }
-
-    &.large {
-        font-size: 24px;
-    }
-
-    &.x-large {
-        font-size: 28px;
-    }
-
-    &.xx-large {
-        font-size: 32px;
     }
 
     &.fullScreen {
-        font-size: 34px;
-    }
 
-    .svgIcons {
-
-        &.x-small {
-            width: 22px;
-            height: 22px;
-        }
-
-        &.small {
-            width: 35px;
-            height: 35px;
-        }
-
-        &.regular {
-            width: 45px;
-            height: 45px;
-        }
-
-        &.large {
-            width: 55px;
-            height: 55px;
-        }
-
-        &.x-large {
-            width: 65px;
-            height: 65px;
-        }
-
-        &.xx-large {
-            width: 75px;
-            height: 75px;
-        }
-
-        &.fullScreen {
-            width: 55px;
-            height: 55px;
+        &,
+        * {
+            visibility: visible;
         }
     }
 
-    .svgIconStyle {
-        width: inherit;
-        height: inherit;
-        fill: #fff;
-
-        &.x-small {
-            width: 18px;
-            height: 18px;
-        }
-
-        &.small {
-            width: 25px;
-            height: 25px;
-        }
-
-        &.regular {
-            width: 35px;
-            height: 35px;
-        }
-
-        &.large {
-            width: 45px;
-            height: 45px;
-        }
-
-        &.x-large {
-            width: 55px;
-            height: 55px;
-        }
-
-        &.xx-large {
-            width: 65px;
-            height: 65px;
-        }
-
-        &.fullScreen {
-            width: 55px;
-            height: 55px;
-        }
+    &.show-control {
+        transform: translateY(0);
+        visibility: visible;
     }
 }
