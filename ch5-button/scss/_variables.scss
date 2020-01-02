@@ -7,15 +7,12 @@
 
 @import "../../ch5-core/variables";
 
-$ch5-button-font-size-unit: $ch5-font-size-unit !default;
-$ch5-button-font-size-value: $ch5-font-size-value !default;
-$ch5-button-font-size: $ch5-button-font-size-value + $ch5-button-font-size-unit !default;
+$ch5-button-font-size: 14px !default;
 $ch5-button-font-style: $ch5-font-style !default;
 $ch5-button-font-weight: $ch5-font-weight !default;
 
 $ch5-button-icon-padding: 5px !default;
-$ch5-button-padding:  0.4rem 1rem !default;
-$ch5-button-vertical-padding:  1rem 0.4rem !default;
+$ch5-button-padding: 0.5rem !default;
 
 $ch5-button-img-margin: 5px !default;
 $ch5-button-img-height: 20px !default;
@@ -25,23 +22,23 @@ $ch5-button-circle-icon-width: 30px !default;
 $ch5-button-circle-icon-line-height: 20px !default;
 
 // button solid-border
-$ch5-button-default-border-width:  1px;
-$ch5-button-primary-border-width:  1px;
-$ch5-button-secondary-border-width:  1px;
-$ch5-button-success-border-width:  1px;
-$ch5-button-info-border-width:  1px;
-$ch5-button-warning-border-width:  1px;
-$ch5-button-danger-border-width:  1px;
-$ch5-button-text-border-width:  1px;
+$ch5-button-default-border-width: 1px;
+$ch5-button-primary-border-width: 1px;
+$ch5-button-secondary-border-width: 1px;
+$ch5-button-success-border-width: 1px;
+$ch5-button-info-border-width: 1px;
+$ch5-button-warning-border-width: 1px;
+$ch5-button-danger-border-width: 1px;
+$ch5-button-text-border-width: 1px;
 
-$ch5-button-default-border-style:  solid;
-$ch5-button-primary-border-style:  solid;
-$ch5-button-secondary-border-style:  solid;
-$ch5-button-success-border-style:  solid;
-$ch5-button-info-border-style:  dashed;
-$ch5-button-warning-border-style:  solid;
-$ch5-button-danger-border-style:  solid;
-$ch5-button-text-border-style:  dashed;
+$ch5-button-default-border-style: solid;
+$ch5-button-primary-border-style: solid;
+$ch5-button-secondary-border-style: solid;
+$ch5-button-success-border-style: solid;
+$ch5-button-info-border-style: dashed;
+$ch5-button-warning-border-style: solid;
+$ch5-button-danger-border-style: solid;
+$ch5-button-text-border-style: dashed;
 
 
 // button rounded-rectangle
@@ -56,34 +53,29 @@ $ch5-button-oval-border-radius: 50% !default;
 //button tab
 $ch5-button-tab-border-radius: 10px 10px 0px 0px !default;
 
+// sizes
+$ch5-button-size: 42px !default;
+
 // size x-small
-$ch5-button-x-small-font-size-unit: em !default;
-$ch5-button-x-small-font-size-value: 0.5 !default;
-$ch5-button-x-small-font-size: $ch5-button-x-small-font-size-value + $ch5-button-x-small-font-size-unit !default;
+$ch5-button-x-small-font-size: 11px !default;
 $ch5-button-x-small-font-style: normal !default;
 $ch5-button-x-small-font-weight: normal !default;
-$ch5-button-x-small-padding: ($ch5-button-x-small-font-size-value / 1.25) + $ch5-button-x-small-font-size-unit !default;
+$ch5-button-x-small-size: 32px !default;
 
 // size small
-$ch5-button-small-font-size-unit: em !default;
-$ch5-button-small-font-size-value: 0.75 !default;
-$ch5-button-small-font-size: $ch5-button-small-font-size-value + $ch5-button-small-font-size-unit !default;
+$ch5-button-small-font-size: 13px !default;
 $ch5-button-small-font-style: normal !default;
 $ch5-button-small-font-weight: normal !default;
-$ch5-button-small-padding: ($ch5-button-small-font-size-value / 2.5) + $ch5-button-small-font-size-unit !default;
+$ch5-button-small-size: 36px !default;
 
 // size large
-$ch5-button-large-font-size-unit: em !default;
-$ch5-button-large-font-size-value: 1.15 !default;
-$ch5-button-large-font-size: $ch5-button-large-font-size-value + $ch5-button-large-font-size-unit !default;
+$ch5-button-large-font-size: 16px !default;
 $ch5-button-large-font-style: normal !default;
 $ch5-button-large-font-weight: normal !default;
-$ch5-button-large-padding: ($ch5-button-large-font-size-value / 1.9) + $ch5-button-large-font-size-unit !default;
+$ch5-button-large-size: 52px !default;
 
 // size x-large
-$ch5-button-x-large-font-size-unit: em !default;
-$ch5-button-x-large-font-size-value: 1.15 !default;
-$ch5-button-x-large-font-size: $ch5-button-x-large-font-size-value + $ch5-button-x-large-font-size-unit !default;
+$ch5-button-x-large-font-size: 18px !default;
 $ch5-button-x-large-font-style: normal !default;
 $ch5-button-x-large-font-weight: normal !default;
-$ch5-button-x-large-padding: ($ch5-button-x-large-font-size-value / 1.15) + $ch5-button-x-large-font-size-unit !default;
+$ch5-button-x-large-size: 72px !default;
