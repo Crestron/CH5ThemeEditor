@@ -24,19 +24,34 @@ ch5-button {
     pointer-events: all;
   }
 
-  .ch5-button--vertical .cb-btn,
   &[iconPosition="top"] .ch5-button:not(.ch5-button--vertical) .cb-btn,
   &[iconPosition="bottom"] .ch5-button:not(.ch5-button--vertical) .cb-btn {
     display: block;
+    padding-top: $ch5-button-padding / 2;
+    padding-bottom: $ch5-button-padding / 2;
   }
 
   &[iconPosition="top"] .ch5-button--vertical .cb-btn,
   &[iconPosition="bottom"] .ch5-button--vertical .cb-btn {
-    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    padding-left: $ch5-button-padding / 2;
+    padding-right: $ch5-button-padding / 2;
+
+    .ch5-button--label {
+      min-width: max-content;
+      max-height: 100%;
+      flex: none;
+    }
+
+    .cx-button-icon-pos-top+.ch5-button--label,
+    .ch5-button--label+.cx-button-icon-pos-bottom {
+      padding-right: $ch5-button-icon-padding / 2;
+    }
   }
 
-  &[iconPosition="top"] .ch5-button--circle .cb-btn,
-  &[iconPosition="bottom"] .ch5-button--circle .cb-btn {
+  &[iconPosition="top"] .ch5-button.ch5-button--circle .cb-btn,
+  &[iconPosition="bottom"] .ch5-button.ch5-button--circle .cb-btn {
     display: inline-block;
   }
 }
@@ -64,7 +79,6 @@ ch5-button[hidden] {
     background-color: transparent;
     border: none;
     color: inherit;
-    padding: $ch5-button-padding;
 
     &:focus {
       outline: none;
@@ -76,22 +90,19 @@ ch5-button[hidden] {
     @include text-truncate;
   }
 
-  &.ch5-button--vertical .ch5-button--label {
-    max-width: inherit;
-    padding: $ch5-button-vertical-padding;
-  }
-
   .cb-btn {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 1.3;
+    padding: $ch5-button-padding;
+    width: $ch5-button-size * 2;
+    height: $ch5-button-size;
   }
 
   .ch5-button--icon {
     vertical-align: middle;
     color: inherit;
-    padding: $ch5-button-icon-padding;
   }
 
   .ch5-button--img {
@@ -100,6 +111,11 @@ ch5-button[hidden] {
     margin: $ch5-button-img-margin;
     height: $ch5-button-img-height;
     width: $ch5-button-img-width;
+  }
+
+  &:not(.ch5-button--vertical) .cx-button-icon-pos-first+.ch5-button--label,
+  &:not(.ch5-button--vertical) .ch5-button--label+.cx-button-icon-pos-last {
+    padding-left: $ch5-button-icon-padding;
   }
 }
 
@@ -114,7 +130,6 @@ ch5-button[hidden] {
 
 .ch5-button--circle {
   display: inline-block;
-  padding: 0;
   text-decoration: none;
   outline: none;
   border-style: none;
@@ -131,39 +146,7 @@ ch5-button[hidden] {
   .cb-btn {
     display: inline-flex;
     vertical-align: middle;
-    padding: 5px;
   }
-
-  .ch5-button--label,
-  .ch5-button--icon {
-    padding: 0;
-  }
-
-  .cx-button-icon-pos-first+.ch5-button--label,
-  .ch5-button--label+.cx-button-icon-pos-last {
-    padding-left: 4px;
-  }
-
-  &.ch5-button--size-x-small {
-    width: 30px;
-  }
-
-  &.ch5-button--size-small {
-    width: 36px;
-  }
-
-  &.ch5-button--size-regular {
-    width: 46px;
-  }
-
-  &.ch5-button--size-large {
-    width: 58px;
-  }
-
-  &.ch5-button--size-x-large {
-    width: 72px;
-  }
-
 }
 
 .ch5-button--oval {
@@ -193,7 +176,6 @@ ch5-button[stretch="both"] {
 
 /* by width */
 .ch5-button--stretch-width {
-
   width: 100%;
 
   .cb-btn {
@@ -203,7 +185,6 @@ ch5-button[stretch="both"] {
 
 /* by height */
 .ch5-button--stretch-height {
-
   height: 100%;
 
   .cb-btn {
@@ -219,7 +200,6 @@ ch5-button[stretch="both"] {
 
 /* by height and width */
 .ch5-button--stretch-both {
-
   width: 100%;
   height: 100%;
 
@@ -233,22 +213,47 @@ ch5-button[stretch="both"] {
 }
 
 /* Button orientation */
-.ch5-button--vertical .cb-btn {
-  transform: rotate(180deg);
-}
+.ch5-button--vertical:not(.ch5-button--circle) {
 
-.ch5-button--vertical button span {
-  writing-mode: vertical-lr !important;
-  height: max-content;
-}
+  .cb-btn {
+    transform: rotate(180deg);
+    width: $ch5-button-size;
+    height: $ch5-button-size * 2;
+    flex-direction: column;
 
-.ch5-button--vertical button i span {
-  writing-mode: vertical-lr !important;
-  height: max-content;
-}
+    .ch5-button--label {
+      max-width: inherit;
+      writing-mode: vertical-lr;
+      max-height: max-content;
+      flex: 1;
+    }
+  }
 
-.ch5-button--vertical button i {
-  display: block !important;
+  .cx-button-icon-pos-first+.ch5-button--label,
+  .ch5-button--label+.cx-button-icon-pos-last {
+    padding-top: $ch5-button-icon-padding;
+  }
+
+  /* vertical sizes */
+  &.ch5-button--size-x-small .cb-btn {
+    width: $ch5-button-x-small-size;
+    height: $ch5-button-x-small-size * 2;
+  }
+
+  &.ch5-button--size-small .cb-btn {
+    width: $ch5-button-small-size;
+    height: $ch5-button-small-size * 2;
+  }
+
+  &.ch5-button--size-large .cb-btn {
+    width: $ch5-button-large-size;
+    height: $ch5-button-large-size * 2;
+  }
+
+  &.ch5-button--size-x-large .cb-btn {
+    width: $ch5-button-x-large-size;
+    height: $ch5-button-x-large-size * 2;
+  }
 }
 
 .ch5-button--disabled {
@@ -257,13 +262,13 @@ ch5-button[stretch="both"] {
 }
 
 /* Sizes */
-
 .ch5-button--size-x-small {
   .cb-btn {
     font-size: $ch5-button-x-small-font-size;
     font-style: $ch5-button-x-small-font-style;
     font-weight: $ch5-button-x-small-font-weight;
-    padding: $ch5-button-x-small-padding;
+    width: $ch5-button-x-small-size * 2;
+    height: $ch5-button-x-small-size;
   }
 }
 
@@ -272,7 +277,8 @@ ch5-button[stretch="both"] {
     font-size: $ch5-button-small-font-size;
     font-style: $ch5-button-small-font-style;
     font-weight: $ch5-button-small-font-weight;
-    padding: $ch5-button-small-padding;
+    width: $ch5-button-small-size * 2;
+    height: $ch5-button-small-size;
   }
 }
 
@@ -281,7 +287,8 @@ ch5-button[stretch="both"] {
     font-size: $ch5-button-large-font-size;
     font-style: $ch5-button-large-font-style;
     font-weight: $ch5-button-large-font-weight;
-    padding: $ch5-button-large-padding;
+    width: $ch5-button-large-size * 2;
+    height: $ch5-button-large-size;
   }
 }
 
@@ -290,41 +297,24 @@ ch5-button[stretch="both"] {
     font-size: $ch5-button-x-large-font-size;
     font-style: $ch5-button-x-large-font-style;
     font-weight: $ch5-button-x-large-font-weight;
-    padding: $ch5-button-x-large-padding;
+    width: $ch5-button-x-large-size * 2;
+    height: $ch5-button-x-large-size;
   }
 }
 
 /* icon positions */
 i.cb-icon.cx-button-icon-pos-first,
-i.cb-icon.cx-button-icon-pos-last {
-  display: inline-block;
-}
-
-i.cb-icon.cx-button-icon-pos-top,
-i.cb-icon.cx-button-icon-pos-bottom {
-  display: block;
-  margin: 0 auto;
-}
-
-/* icon positions */
+i.cb-icon.cx-button-icon-pos-last,
 .cb-img.cx-button-icon-pos-first,
 .cb-img.cx-button-icon-pos-last {
   display: inline-block;
 }
 
 .cb-img.cx-button-icon-pos-top,
-.cb-img.cx-button-icon-pos-bottom {
+.cb-img.cx-button-icon-pos-bottom,
+i.cb-icon.cx-button-icon-pos-top,
+i.cb-icon.cx-button-icon-pos-bottom {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.ch5-button--vertical--icon-top {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center
-}
-
-.ch5-button--vertical--icon-bottom {
-  @extend .ch5-button--vertical--icon-top
 }
