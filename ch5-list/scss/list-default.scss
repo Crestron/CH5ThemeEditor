@@ -1,16 +1,24 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-list
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 @import "./variables";
 
+/// Off by default. Add the "disabled" attribute to the ch5-list tag in order to disable the list.
 .ch5-list--disabled {
     pointer-events: none;
     opacity: 0.5;
 }
 
+/// The list is displayed vertically by default, you can explicitly add the attribute orientation="vertical".
 .ch5-list-vertical {
     -webkit-overflow-scrolling: touch;
     touch-action: pan-y !important;
@@ -20,6 +28,7 @@
     }
 }
 
+/// Applied when orientation="horizontal" to display the list horizontally.
 .ch5-list-horizontal {
     -webkit-overflow-scrolling: touch;
     touch-action: pan-x !important;

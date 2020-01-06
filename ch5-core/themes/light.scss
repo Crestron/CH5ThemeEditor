@@ -1,9 +1,14 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-light-theme-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Color system
 $default:       #0099ff !default;
@@ -15,15 +20,19 @@ $warning:       #ffc107 !default;
 $danger:        #f44336 !default;
 $text:          $primary !default;
 
-
-// Button  Colors
-//default colors
-//text default color
+/// The border color of the button.
 $ch5-button-text-border-color: #e0e0e0 !default;
+
+/// The font color of the button.
 $ch5-button-text-font-color: #333 !default;
 
+/// The border color for text of the button.
 $ch5-button-text-default-border-color: $ch5-button-text-border-color !default;
+
+/// The background color for text of the button.
 $ch5-button-text-default-background-color: #efefef !default;
+
+/// The font color for text of the button.
 $ch5-button-text-default-font-color: $ch5-button-text-font-color !default;
 
 //text selected color
@@ -243,9 +252,13 @@ $ch5-overlay-panel-contents-font-color: #333;
 CH5-SELECT PANEL
 ============================================= */
 
+/// component border color
 $ch5-select-border-color: #c6c8ca !default;
+
+/// Component main font color
 $ch5-select-font-color: #000 !default;
 
+/// Selected item background color
 $ch5-select-panel-item-selected-background-color: #cce5ff !default;
 $ch5-select-panel-item-border-color: transparent !default;
 $ch5-select-panel-item-color: #212529 !default;
@@ -257,8 +270,13 @@ $ch5-select-panel-items-background-color: #ffffff !default;
 CH5-SPINNER
 ============================================= */
 
+/// The text color of the active item
 $ch5-spinner-active-item-color: #000 !default;
+
+/// The text color of the item.
 $ch5-spinner-item-color: #333 !default;
+
+/// The background color for the overlay of the spinner.
 $ch5-spinner-overlay-background-color: #000 !default;
 $ch5-spinner-highlight-box-shadow-color: rgba(0,0,0,0.3) !default;
 $ch5-spinner-highlight-border-color: #00ff00;
@@ -272,10 +290,13 @@ $ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, .05)
 CH5-TEXT INPUT
 ============================================= */
 
-// base text color
+/// The text color of the textinput.
 $ch5-textinput-text-color: #4a4a4a !default;
+
+/// Set the color of text for the textinput
 $ch5-textinput-input-text-color: $ch5-textinput-text-color !default;
-// text color for each element
+
+/// The color of the icon within the textinput
 $ch5-textinput-icon-text-color: $success !default;
 $ch5-textinput-label-text-color: $ch5-textinput-text-color !default;
 
@@ -290,8 +311,10 @@ $ch5-textinput-input-border-color: $ch5-textinput-border-color !default;
 CH5-TOGGLE
 ============================================= */
 
-// default colors
+/// The background color of the handle when value is true(checked).
 $ch5-toggle-handle-checked-color: #4BD865 !default;
+
+/// The text color of the label
 $ch5-toggle-label-font-color: #4a4a4a !default;
 $ch5-toggle-text-font-color: #4a4a4a !default;
 $ch5-toggle-icon-font-color: #fff !default;
@@ -312,14 +335,20 @@ $ch5-toggle-rectangle-knob-color: #888 !default;
 CH5-TRIGGERVIEW
 ============================================= */
 
+/// The background color of the triggerview.
 $ch5-triggerview-background-color: transparent;
+
+/// The background color of fallback message.
 $ch5-triggerview-fallback-message-color-background:#fff;
 
 /* ===============================================
 CH5-MODAL
 ============================================= */
 
+/// The color of the icon at the top of the modal
 $ch5-modal-close-icon-color:#555;
+
+/// The color of the icon at the top of the modal when it is hovered
 $ch5-modal-close-icon-color-hover:#333;
 $ch5-modal-mask-bg-color:rgba(150,150,150,0.3);
 
@@ -339,8 +368,14 @@ $ch5-modal-prompt-text-font-color: #4a4a4a;
 /* ===============================================
 CH5-SLIDER
 ============================================= */
+
+/// Height of the slider in px(when orientation="vertical" this will be the width of the slider).
 $ui-target-size:                        18px;
+
+/// Background between the handles.
 $ui-connect-bg:                       #0099ff;
+
+/// Background color of the slider
 $ui-target-bg:                          transparent;
 $ui-target-border-color:              #D3D3D3;
 $ui-target-border-style:                solid;
@@ -353,6 +388,12 @@ $ui-handle-border-width:                1px;
 /* ===============================================
 CH5-LIST
 ============================================= */
+
+/// Set the text color of list items.
 $ch5-list-item-color: #333 !default;
+
+/// Set the background color of list items, configurable for each theme
 $ch5-list-item-background-color: #fafafa !default;
+
+/// Set the border color of list items
 $ch5-list-item-border-color: #bdbdbd !default;

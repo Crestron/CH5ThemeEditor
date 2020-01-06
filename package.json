@@ -3,12 +3,12 @@
   "description": "Crestron HTML5 (CH5) Themes CSS",
   "version": "99.0.0",
   "main": "index.js",
-  "author": "Crestron",  
+  "author": "Crestron",
   "license": "SEE LICENSE IN LICENSE.txt",
   "keywords": [
     "ch5",
     "Theme"
-  ],  
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Crestron/CH5ThemeEditor.git"
@@ -25,7 +25,8 @@
     "bundle-theme-all-cli-dist-path": "webpack --config webpack.run.js --outputpath='../showcase-app/dist/crestron-components-assets' && npm run cleanjs",
     "bundle-theme-for-showcase": "webpack --config webpack.run.js --outputpath='../showcase-app/static/crestron-components-assets' && npm run cleanjs",
     "bundle-and-watch": "webpack --config webpack.run.js --watch",
-    "start": "webpack --config webpack.run.js --watchmode && npm run cleanjs && webpack --config app.config.dev.js"
+    "start": "webpack --config webpack.run.js --watchmode && npm run cleanjs && webpack --config app.config.dev.js",
+    "gen:sass-metadata": "node ./metadata-generator.js --writetofilepath ./generated-metadata/sass-schema.json"
   },
   "devDependencies": {
     "@crestron/ch5-crcomlib": "^0.1.22",
@@ -39,7 +40,7 @@
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^5.0.0",
     "install": "^0.12.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
     "nouislider": "^13.1.5",
@@ -60,7 +61,8 @@
     "**/event-stream": "^4.0.1"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.9.0"
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "sassdoc": "^2.7.1"
   },
   "files": [
     "LICENSE.txt",

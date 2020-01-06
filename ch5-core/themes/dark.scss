@@ -1,9 +1,14 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Color system
 $default:       #0073bf !default;
@@ -19,7 +24,13 @@ $text:          $primary !default;
 // Button  Colors
 //default colors
 //text default color
+
+
+
+/// color of button text border in dark scss
 $ch5-button-text-border-color: #333 !default;
+
+/// color of button text font in dark scss
 $ch5-button-text-font-color: #e0e0e0 !default;
 
 $ch5-button-text-default-border-color: $ch5-button-text-border-color !default;
@@ -347,6 +358,8 @@ $ui-handle-border-width:                1px;
 /* ===============================================
 CH5-LIST
 ============================================= */
+/// color of list item from dark them
 $ch5-list-item-color: #fff !default;
+/// color of list background from dark theme
 $ch5-list-item-background-color: #3b3b40 !default;
 $ch5-list-item-border-color: #5e5e66 !default;
