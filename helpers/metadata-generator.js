@@ -13,7 +13,6 @@ const sassdoc = require('sassdoc'),
 
 
 (function (sassdoc, fse, logging) {
-
   // sourceFilePath  SOURCE_FILE_PATH
   // detinationMetadata WRITE_TO_FILE_PATH
   const SOURCE_FILE_PATH = glob.sync('ch5-*/**');
@@ -39,8 +38,10 @@ const sassdoc = require('sassdoc'),
       }
 
       let includeProperty = {};
-      includeProperty.name = meta.context.name;
       includeProperty.type = meta.context.type === 'css' ? 'class' : meta.context.type;
+      includeProperty.name = includeProperty.type !== 'variable' ?
+        meta.context.name.split(' ')[0].replace("&", "").replace(".", "") : meta.context.name;
+
       includeProperty.description = meta.description;
       includeProperty.group = meta.group[0];
       if (includeProperty.type !== 'variable') {
