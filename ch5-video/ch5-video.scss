@@ -94,6 +94,10 @@ body.ch5-video-fullscreen {
     * {
         transition: none !important;
     }
+
+    .ch5-background--canvas {
+        opacity: 0 !important;
+    }
 }
 
 body.ch5-video-fullscreen .ch5-video {
