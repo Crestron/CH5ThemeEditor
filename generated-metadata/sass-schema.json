@@ -1,0 +1,838 @@
+[
+    {
+        "group": "ch5-button",
+        "schemadata": [
+            {
+                "type": "class",
+                "metadata": [
+                    {
+                        "name": ".ch5-button--stretch-width",
+                        "type": "class",
+                        "description": "Applied to make the width as much as its parent allows.\n",
+                        "value": "width: 100%;\n\n  .cb-btn {\n    width: 100%;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--stretch-height",
+                        "type": "class",
+                        "description": "Applied to make the height as much as its parent allows.\n",
+                        "value": "height: 100%;\n\n  .cb-btn {\n    height: 100%;\n  }\n\n  .ch5-button--label,\n  .ch5-button--icon,\n  .ch5-button--img {\n    position: relative;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--stretch-both",
+                        "type": "class",
+                        "description": "Applied to make both width and height as much as its parent allows.\n",
+                        "value": "width: 100%;\n  height: 100%;\n\n  .cb-btn {\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--vertical .cb-btn",
+                        "type": "class",
+                        "description": "Vertical orientation\n",
+                        "value": "transform: rotate(180deg);"
+                    },
+                    {
+                        "name": ".ch5-button--text",
+                        "type": "class",
+                        "description": "Applied when type='text'\n",
+                        "value": "border: $ch5-button-text-border-width $ch5-button-text-border-style $ch5-button-text-default-border-color;\n  background-color: $ch5-button-text-default-background-color;\n  color: $ch5-button-text-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-text-selected-border-color;\n    background-color: $ch5-button-text-selected-background-color;\n    color: $ch5-button-text-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-text-pressed-border-color;\n    background-color: $ch5-button-text-pressed-background-color;\n    color: $ch5-button-text-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-text-disabled-border-color;\n    background-color: $ch5-button-text-disabled-background-color;\n    color: $ch5-button-text-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--danger",
+                        "type": "class",
+                        "description": "Applied when type='danger'\n",
+                        "value": "border: $ch5-button-danger-border-width $ch5-button-danger-border-style $ch5-button-danger-default-border-color;\n  background-color: $ch5-button-danger-default-background-color;\n  color: $ch5-button-danger-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-danger-selected-border-color;\n    background-color: $ch5-button-danger-selected-background-color;\n    color: $ch5-button-danger-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-danger-pressed-border-color;\n    background-color: $ch5-button-danger-pressed-background-color;\n    color: $ch5-button-danger-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-danger-disabled-border-color;\n    background-color: $ch5-button-danger-disabled-background-color;\n    color: $ch5-button-danger-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--warning",
+                        "type": "class",
+                        "description": "Applied when type='warning'\n",
+                        "value": "border: $ch5-button-warning-border-width $ch5-button-warning-border-style $ch5-button-warning-default-border-color;\n  background-color: $ch5-button-warning-default-background-color;\n  color: $ch5-button-warning-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-warning-selected-border-color;\n    background-color: $ch5-button-warning-selected-background-color;\n    color: $ch5-button-warning-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-warning-pressed-border-color;\n    background-color: $ch5-button-warning-pressed-background-color;\n    color: $ch5-button-warning-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-warning-disabled-border-color;\n    background-color: $ch5-button-warning-disabled-background-color;\n    color: $ch5-button-warning-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--info",
+                        "type": "class",
+                        "description": "Applied when type='info'\n",
+                        "value": "border: $ch5-button-info-border-width $ch5-button-info-border-style $ch5-button-info-default-border-color;\n  background-color: $ch5-button-info-default-background-color;\n  color: $ch5-button-info-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-info-selected-border-color;\n    background-color: $ch5-button-info-selected-background-color;\n    color: $ch5-button-info-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-info-pressed-border-color;\n    background-color: $ch5-button-info-pressed-background-color;\n    color: $ch5-button-info-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-info-disabled-border-color;\n    background-color: $ch5-button-info-disabled-background-color;\n    color: $ch5-button-info-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--success",
+                        "type": "class",
+                        "description": "Applied when type='success'\n",
+                        "value": "border: $ch5-button-success-border-width $ch5-button-success-border-style $ch5-button-success-default-border-color;\n  background-color: $ch5-button-success-default-background-color;\n  color: $ch5-button-success-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-success-selected-border-color;\n    background-color: $ch5-button-success-selected-background-color;\n    color: $ch5-button-success-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-success-pressed-border-color;\n    background-color: $ch5-button-success-pressed-background-color;\n    color: $ch5-button-success-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-success-disabled-border-color;\n    background-color: $ch5-button-success-disabled-background-color;\n    color: $ch5-button-success-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--default",
+                        "type": "class",
+                        "description": "Default button\n",
+                        "value": "border: $ch5-button-default-border-width $ch5-button-default-border-style $ch5-button-default-default-border-color;\n  background-color: $ch5-button-default-default-background-color;\n  color: $ch5-button-default-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-default-selected-border-color;\n    background-color: $ch5-button-default-selected-background-color;\n    color: $ch5-button-default-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-default-pressed-border-color;\n    background-color: $ch5-button-default-pressed-background-color;\n    color: $ch5-button-default-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-default-disabled-border-color;\n    background-color: $ch5-button-default-disabled-background-color;\n    color: $ch5-button-default-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--primary",
+                        "type": "class",
+                        "description": "Applied when type='primary'\n",
+                        "value": "border: $ch5-button-primary-border-width $ch5-button-primary-border-style $ch5-button-primary-default-border-color;\n  background-color: $ch5-button-primary-default-background-color;\n  color: $ch5-button-primary-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-primary-selected-border-color;\n    background-color: $ch5-button-primary-selected-background-color;\n    color: $ch5-button-primary-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-primary-pressed-border-color;\n    background-color: $ch5-button-primary-pressed-background-color;\n    color: $ch5-button-primary-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-primary-disabled-border-color;\n    background-color: $ch5-button-primary-disabled-background-color;\n    color: $ch5-button-primary-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--secondary",
+                        "type": "class",
+                        "description": "Applied when type='secondary'\n",
+                        "value": "border: $ch5-button-secondary-border-width $ch5-button-secondary-border-style $ch5-button-secondary-default-border-color;\n  background-color: $ch5-button-secondary-default-background-color;\n  color: $ch5-button-secondary-default-font-color;\n\n  /// Applied when selected signal is applied\n  &.ch5-button--selected {\n    border-color: $ch5-button-secondary-selected-border-color;\n    background-color: $ch5-button-secondary-selected-background-color;\n    color: $ch5-button-secondary-selected-font-color;\n  }\n\n  /// Applied between press and release events\n  &.ch5-button--pressed {\n    border-color: $ch5-button-secondary-pressed-border-color;\n    background-color: $ch5-button-secondary-pressed-background-color;\n    color: $ch5-button-secondary-pressed-font-color;\n  }\n\n  /// Applied when the button is disabled\n  &.ch5-button--disabled {\n    border-color: $ch5-button-secondary-disabled-border-color;\n    background-color: $ch5-button-secondary-disabled-background-color;\n    color: $ch5-button-secondary-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": "&.ch5-button--selected",
+                        "type": "class",
+                        "description": "Applied when selected signal is applied\n",
+                        "value": "border-color: $ch5-button-secondary-selected-border-color;\n    background-color: $ch5-button-secondary-selected-background-color;\n    color: $ch5-button-secondary-selected-font-color;"
+                    },
+                    {
+                        "name": "&.ch5-button--pressed",
+                        "type": "class",
+                        "description": "Applied between press and release events\n",
+                        "value": "border-color: $ch5-button-secondary-pressed-border-color;\n    background-color: $ch5-button-secondary-pressed-background-color;\n    color: $ch5-button-secondary-pressed-font-color;"
+                    },
+                    {
+                        "name": "&.ch5-button--disabled",
+                        "type": "class",
+                        "description": "Applied when the button is disabled\n",
+                        "value": "border-color: $ch5-button-secondary-disabled-border-color;\n    background-color: $ch5-button-secondary-disabled-background-color;\n    color: $ch5-button-secondary-disabled-font-color;"
+                    },
+                    {
+                        "name": ".ch5-button--stretch-width",
+                        "type": "class",
+                        "description": "Applied to make the width as much as its parent allows.\n",
+                        "value": "width: 100%;\n\n  .cb-btn {\n    width: 100%;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--stretch-height",
+                        "type": "class",
+                        "description": "Applied to make the height as much as its parent allows.\n",
+                        "value": "height: 100%;\n\n  .cb-btn {\n    height: 100%;\n  }\n\n  .ch5-button--label,\n  .ch5-button--icon,\n  .ch5-button--img {\n    position: relative;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--stretch-both",
+                        "type": "class",
+                        "description": "Applied to make both width and height as much as its parent allows.\n",
+                        "value": "width: 100%;\n  height: 100%;\n\n  .cb-btn {\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--vertical .cb-btn",
+                        "type": "class",
+                        "description": "Vertical orientation\n",
+                        "value": "transform: rotate(180deg);"
+                    },
+                    {
+                        "name": ".ch5-button--text",
+                        "type": "class",
+                        "description": "Applied when type='text'\n",
+                        "value": "border: $ch5-button-text-border-width $ch5-button-text-border-style $ch5-button-text-default-border-color;\n  background-color: $ch5-button-text-default-background-color;\n  color: $ch5-button-text-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-text-selected-border-color;\n    background-color: $ch5-button-text-selected-background-color;\n    color: $ch5-button-text-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-text-pressed-border-color;\n    background-color: $ch5-button-text-pressed-background-color;\n    color: $ch5-button-text-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-text-disabled-border-color;\n    background-color: $ch5-button-text-disabled-background-color;\n    color: $ch5-button-text-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--danger",
+                        "type": "class",
+                        "description": "Applied when type='danger'\n",
+                        "value": "border: $ch5-button-danger-border-width $ch5-button-danger-border-style $ch5-button-danger-default-border-color;\n  background-color: $ch5-button-danger-default-background-color;\n  color: $ch5-button-danger-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-danger-selected-border-color;\n    background-color: $ch5-button-danger-selected-background-color;\n    color: $ch5-button-danger-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-danger-pressed-border-color;\n    background-color: $ch5-button-danger-pressed-background-color;\n    color: $ch5-button-danger-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-danger-disabled-border-color;\n    background-color: $ch5-button-danger-disabled-background-color;\n    color: $ch5-button-danger-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--warning",
+                        "type": "class",
+                        "description": "Applied when type='warning'\n",
+                        "value": "border: $ch5-button-warning-border-width $ch5-button-warning-border-style $ch5-button-warning-default-border-color;\n  background-color: $ch5-button-warning-default-background-color;\n  color: $ch5-button-warning-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-warning-selected-border-color;\n    background-color: $ch5-button-warning-selected-background-color;\n    color: $ch5-button-warning-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-warning-pressed-border-color;\n    background-color: $ch5-button-warning-pressed-background-color;\n    color: $ch5-button-warning-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-warning-disabled-border-color;\n    background-color: $ch5-button-warning-disabled-background-color;\n    color: $ch5-button-warning-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--info",
+                        "type": "class",
+                        "description": "Applied when type='info'\n",
+                        "value": "border: $ch5-button-info-border-width $ch5-button-info-border-style $ch5-button-info-default-border-color;\n  background-color: $ch5-button-info-default-background-color;\n  color: $ch5-button-info-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-info-selected-border-color;\n    background-color: $ch5-button-info-selected-background-color;\n    color: $ch5-button-info-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-info-pressed-border-color;\n    background-color: $ch5-button-info-pressed-background-color;\n    color: $ch5-button-info-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-info-disabled-border-color;\n    background-color: $ch5-button-info-disabled-background-color;\n    color: $ch5-button-info-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--success",
+                        "type": "class",
+                        "description": "Applied when type='success'\n",
+                        "value": "border: $ch5-button-success-border-width $ch5-button-success-border-style $ch5-button-success-default-border-color;\n  background-color: $ch5-button-success-default-background-color;\n  color: $ch5-button-success-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-success-selected-border-color;\n    background-color: $ch5-button-success-selected-background-color;\n    color: $ch5-button-success-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-success-pressed-border-color;\n    background-color: $ch5-button-success-pressed-background-color;\n    color: $ch5-button-success-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-success-disabled-border-color;\n    background-color: $ch5-button-success-disabled-background-color;\n    color: $ch5-button-success-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--default",
+                        "type": "class",
+                        "description": "Default button\n",
+                        "value": "border: $ch5-button-default-border-width $ch5-button-default-border-style $ch5-button-default-default-border-color;\n  background-color: $ch5-button-default-default-background-color;\n  color: $ch5-button-default-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-default-selected-border-color;\n    background-color: $ch5-button-default-selected-background-color;\n    color: $ch5-button-default-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-default-pressed-border-color;\n    background-color: $ch5-button-default-pressed-background-color;\n    color: $ch5-button-default-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-default-disabled-border-color;\n    background-color: $ch5-button-default-disabled-background-color;\n    color: $ch5-button-default-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--primary",
+                        "type": "class",
+                        "description": "Applied when type='primary'\n",
+                        "value": "border: $ch5-button-primary-border-width $ch5-button-primary-border-style $ch5-button-primary-default-border-color;\n  background-color: $ch5-button-primary-default-background-color;\n  color: $ch5-button-primary-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-primary-selected-border-color;\n    background-color: $ch5-button-primary-selected-background-color;\n    color: $ch5-button-primary-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-primary-pressed-border-color;\n    background-color: $ch5-button-primary-pressed-background-color;\n    color: $ch5-button-primary-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-primary-disabled-border-color;\n    background-color: $ch5-button-primary-disabled-background-color;\n    color: $ch5-button-primary-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": ".ch5-button--secondary",
+                        "type": "class",
+                        "description": "Applied when type='secondary'\n",
+                        "value": "border: $ch5-button-secondary-border-width $ch5-button-secondary-border-style $ch5-button-secondary-default-border-color;\n  background-color: $ch5-button-secondary-default-background-color;\n  color: $ch5-button-secondary-default-font-color;\n\n  /// Applied when selected signal is applied\n  &.ch5-button--selected {\n    border-color: $ch5-button-secondary-selected-border-color;\n    background-color: $ch5-button-secondary-selected-background-color;\n    color: $ch5-button-secondary-selected-font-color;\n  }\n\n  /// Applied between press and release events\n  &.ch5-button--pressed {\n    border-color: $ch5-button-secondary-pressed-border-color;\n    background-color: $ch5-button-secondary-pressed-background-color;\n    color: $ch5-button-secondary-pressed-font-color;\n  }\n\n  /// Applied when the button is disabled\n  &.ch5-button--disabled {\n    border-color: $ch5-button-secondary-disabled-border-color;\n    background-color: $ch5-button-secondary-disabled-background-color;\n    color: $ch5-button-secondary-disabled-font-color;\n  }"
+                    },
+                    {
+                        "name": "&.ch5-button--selected",
+                        "type": "class",
+                        "description": "Applied when selected signal is applied\n",
+                        "value": "border-color: $ch5-button-secondary-selected-border-color;\n    background-color: $ch5-button-secondary-selected-background-color;\n    color: $ch5-button-secondary-selected-font-color;"
+                    },
+                    {
+                        "name": "&.ch5-button--pressed",
+                        "type": "class",
+                        "description": "Applied between press and release events\n",
+                        "value": "border-color: $ch5-button-secondary-pressed-border-color;\n    background-color: $ch5-button-secondary-pressed-background-color;\n    color: $ch5-button-secondary-pressed-font-color;"
+                    },
+                    {
+                        "name": "&.ch5-button--disabled",
+                        "type": "class",
+                        "description": "Applied when the button is disabled\n",
+                        "value": "border-color: $ch5-button-secondary-disabled-border-color;\n    background-color: $ch5-button-secondary-disabled-background-color;\n    color: $ch5-button-secondary-disabled-font-color;"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "ch5-button-variables",
+        "schemadata": [
+            {
+                "type": "variable",
+                "metadata": [
+                    {
+                        "name": "ch5-button-font-size-unit",
+                        "type": "variable",
+                        "description": "The font size unit of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-font-size-value",
+                        "type": "variable",
+                        "description": "The font size value of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-font-size",
+                        "type": "variable",
+                        "description": "The font size of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-font-style",
+                        "type": "variable",
+                        "description": "The font style of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-font-weight",
+                        "type": "variable",
+                        "description": "The font weight of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-icon-padding",
+                        "type": "variable",
+                        "description": "The padding for icon of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-img-margin",
+                        "type": "variable",
+                        "description": "The margin for image of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-img-height",
+                        "type": "variable",
+                        "description": "The height for image of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-img-width",
+                        "type": "variable",
+                        "description": "The width for image of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-circle-icon-height",
+                        "type": "variable",
+                        "description": "The height for icon of the button with circle form.\n"
+                    },
+                    {
+                        "name": "ch5-button-circle-icon-width",
+                        "type": "variable",
+                        "description": "The width for icon of the button with circle form.\n"
+                    },
+                    {
+                        "name": "ch5-button-circle-icon-line-height",
+                        "type": "variable",
+                        "description": "The line height for icon of the button with circle form.\n"
+                    },
+                    {
+                        "name": "ch5-button-default-border-width",
+                        "type": "variable",
+                        "description": "Button solid-border\n"
+                    },
+                    {
+                        "name": "ch5-button-oval-border-radius",
+                        "type": "variable",
+                        "description": "button oval\n"
+                    },
+                    {
+                        "name": "ch5-button-tab-border-radius",
+                        "type": "variable",
+                        "description": "button tab\n"
+                    },
+                    {
+                        "name": "ch5-button-x-small-font-size-unit",
+                        "type": "variable",
+                        "description": "size x-small\n"
+                    },
+                    {
+                        "name": "ch5-button-small-font-size-unit",
+                        "type": "variable",
+                        "description": "size small\n"
+                    },
+                    {
+                        "name": "ch5-button-large-font-size-unit",
+                        "type": "variable",
+                        "description": "size large\n"
+                    },
+                    {
+                        "name": "ch5-button-x-large-font-size-unit",
+                        "type": "variable",
+                        "description": "size x-large\n"
+                    },
+                    {
+                        "name": "ch5-button-text-border-color",
+                        "type": "variable",
+                        "description": "color of button text border in dark scss\n"
+                    },
+                    {
+                        "name": "ch5-button-text-font-color",
+                        "type": "variable",
+                        "description": "color of button text font in dark scss\n"
+                    },
+                    {
+                        "name": "ch5-list-item-color",
+                        "type": "variable",
+                        "description": "color of list item from dark them\n"
+                    },
+                    {
+                        "name": "ch5-list-item-background-color",
+                        "type": "variable",
+                        "description": "color of list background from dark theme\n"
+                    },
+                    {
+                        "name": "ch5-button-font-size-unit",
+                        "type": "variable",
+                        "description": "The font size unit of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-font-size-value",
+                        "type": "variable",
+                        "description": "The font size value of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-font-size",
+                        "type": "variable",
+                        "description": "The font size of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-font-style",
+                        "type": "variable",
+                        "description": "The font style of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-font-weight",
+                        "type": "variable",
+                        "description": "The font weight of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-icon-padding",
+                        "type": "variable",
+                        "description": "The padding for icon of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-img-margin",
+                        "type": "variable",
+                        "description": "The margin for image of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-img-height",
+                        "type": "variable",
+                        "description": "The height for image of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-img-width",
+                        "type": "variable",
+                        "description": "The width for image of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-circle-icon-height",
+                        "type": "variable",
+                        "description": "The height for icon of the button with circle form.\n"
+                    },
+                    {
+                        "name": "ch5-button-circle-icon-width",
+                        "type": "variable",
+                        "description": "The width for icon of the button with circle form.\n"
+                    },
+                    {
+                        "name": "ch5-button-circle-icon-line-height",
+                        "type": "variable",
+                        "description": "The line height for icon of the button with circle form.\n"
+                    },
+                    {
+                        "name": "ch5-button-default-border-width",
+                        "type": "variable",
+                        "description": "Button solid-border\n"
+                    },
+                    {
+                        "name": "ch5-button-oval-border-radius",
+                        "type": "variable",
+                        "description": "button oval\n"
+                    },
+                    {
+                        "name": "ch5-button-tab-border-radius",
+                        "type": "variable",
+                        "description": "button tab\n"
+                    },
+                    {
+                        "name": "ch5-button-x-small-font-size-unit",
+                        "type": "variable",
+                        "description": "size x-small\n"
+                    },
+                    {
+                        "name": "ch5-button-small-font-size-unit",
+                        "type": "variable",
+                        "description": "size small\n"
+                    },
+                    {
+                        "name": "ch5-button-large-font-size-unit",
+                        "type": "variable",
+                        "description": "size large\n"
+                    },
+                    {
+                        "name": "ch5-button-x-large-font-size-unit",
+                        "type": "variable",
+                        "description": "size x-large\n"
+                    },
+                    {
+                        "name": "ch5-button-text-border-color",
+                        "type": "variable",
+                        "description": "color of button text border in dark scss\n"
+                    },
+                    {
+                        "name": "ch5-button-text-font-color",
+                        "type": "variable",
+                        "description": "color of button text font in dark scss\n"
+                    },
+                    {
+                        "name": "ch5-list-item-color",
+                        "type": "variable",
+                        "description": "color of list item from dark them\n"
+                    },
+                    {
+                        "name": "ch5-list-item-background-color",
+                        "type": "variable",
+                        "description": "color of list background from dark theme\n"
+                    },
+                    {
+                        "name": "ch5-button-text-border-color",
+                        "type": "variable",
+                        "description": "The border color of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-text-font-color",
+                        "type": "variable",
+                        "description": "The font color of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-text-default-border-color",
+                        "type": "variable",
+                        "description": "The border color for text of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-text-default-background-color",
+                        "type": "variable",
+                        "description": "The background color for text of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-text-default-font-color",
+                        "type": "variable",
+                        "description": "The font color for text of the button.\n"
+                    },
+                    {
+                        "name": "ch5-select-border-color",
+                        "type": "variable",
+                        "description": "component border color\n"
+                    },
+                    {
+                        "name": "ch5-select-font-color",
+                        "type": "variable",
+                        "description": "Component main font color\n"
+                    },
+                    {
+                        "name": "ch5-select-panel-item-selected-background-color",
+                        "type": "variable",
+                        "description": "Selected item background color\n"
+                    },
+                    {
+                        "name": "ch5-spinner-active-item-color",
+                        "type": "variable",
+                        "description": "The text color of the active item\n"
+                    },
+                    {
+                        "name": "ch5-spinner-item-color",
+                        "type": "variable",
+                        "description": "The text color of the item.\n"
+                    },
+                    {
+                        "name": "ch5-spinner-overlay-background-color",
+                        "type": "variable",
+                        "description": "The background color for the overlay of the spinner.\n"
+                    },
+                    {
+                        "name": "ch5-textinput-text-color",
+                        "type": "variable",
+                        "description": "The text color of the textinput.\n"
+                    },
+                    {
+                        "name": "ch5-textinput-input-text-color",
+                        "type": "variable",
+                        "description": "Set the color of text for the textinput\n"
+                    },
+                    {
+                        "name": "ch5-textinput-icon-text-color",
+                        "type": "variable",
+                        "description": "The color of the icon within the textinput\n"
+                    },
+                    {
+                        "name": "ch5-toggle-handle-checked-color",
+                        "type": "variable",
+                        "description": "The background color of the handle when value is true(checked).\n"
+                    },
+                    {
+                        "name": "ch5-toggle-label-font-color",
+                        "type": "variable",
+                        "description": "The text color of the label\n"
+                    },
+                    {
+                        "name": "ch5-triggerview-background-color",
+                        "type": "variable",
+                        "description": "The background color of the triggerview.\n"
+                    },
+                    {
+                        "name": "ch5-triggerview-fallback-message-color-background",
+                        "type": "variable",
+                        "description": "The background color of fallback message.\n"
+                    },
+                    {
+                        "name": "ch5-modal-close-icon-color",
+                        "type": "variable",
+                        "description": "The color of the icon at the top of the modal\n"
+                    },
+                    {
+                        "name": "ch5-modal-close-icon-color-hover",
+                        "type": "variable",
+                        "description": "The color of the icon at the top of the modal when it is hovered\n"
+                    },
+                    {
+                        "name": "ui-target-size",
+                        "type": "variable",
+                        "description": "Height of the slider in px(when orientation=\"vertical\" this will be the width of the slider).\n"
+                    },
+                    {
+                        "name": "ui-connect-bg",
+                        "type": "variable",
+                        "description": "Background between the handles.\n"
+                    },
+                    {
+                        "name": "ui-target-bg",
+                        "type": "variable",
+                        "description": "Background color of the slider\n"
+                    },
+                    {
+                        "name": "ch5-list-item-color",
+                        "type": "variable",
+                        "description": "Set the text color of list items.\n"
+                    },
+                    {
+                        "name": "ch5-list-item-background-color",
+                        "type": "variable",
+                        "description": "Set the background color of list items, configurable for each theme\n"
+                    },
+                    {
+                        "name": "ch5-list-item-border-color",
+                        "type": "variable",
+                        "description": "Set the border color of list items\n"
+                    },
+                    {
+                        "name": "ch5-button-text-border-color",
+                        "type": "variable",
+                        "description": "The border color of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-text-font-color",
+                        "type": "variable",
+                        "description": "The font color of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-text-default-border-color",
+                        "type": "variable",
+                        "description": "The border color for text of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-text-default-background-color",
+                        "type": "variable",
+                        "description": "The background color for text of the button.\n"
+                    },
+                    {
+                        "name": "ch5-button-text-default-font-color",
+                        "type": "variable",
+                        "description": "The font color for text of the button.\n"
+                    },
+                    {
+                        "name": "ch5-select-border-color",
+                        "type": "variable",
+                        "description": "component border color\n"
+                    },
+                    {
+                        "name": "ch5-select-font-color",
+                        "type": "variable",
+                        "description": "Component main font color\n"
+                    },
+                    {
+                        "name": "ch5-select-panel-item-selected-background-color",
+                        "type": "variable",
+                        "description": "Selected item background color\n"
+                    },
+                    {
+                        "name": "ch5-spinner-active-item-color",
+                        "type": "variable",
+                        "description": "The text color of the active item\n"
+                    },
+                    {
+                        "name": "ch5-spinner-item-color",
+                        "type": "variable",
+                        "description": "The text color of the item.\n"
+                    },
+                    {
+                        "name": "ch5-spinner-overlay-background-color",
+                        "type": "variable",
+                        "description": "The background color for the overlay of the spinner.\n"
+                    },
+                    {
+                        "name": "ch5-textinput-text-color",
+                        "type": "variable",
+                        "description": "The text color of the textinput.\n"
+                    },
+                    {
+                        "name": "ch5-textinput-input-text-color",
+                        "type": "variable",
+                        "description": "Set the color of text for the textinput\n"
+                    },
+                    {
+                        "name": "ch5-textinput-icon-text-color",
+                        "type": "variable",
+                        "description": "The color of the icon within the textinput\n"
+                    },
+                    {
+                        "name": "ch5-toggle-handle-checked-color",
+                        "type": "variable",
+                        "description": "The background color of the handle when value is true(checked).\n"
+                    },
+                    {
+                        "name": "ch5-toggle-label-font-color",
+                        "type": "variable",
+                        "description": "The text color of the label\n"
+                    },
+                    {
+                        "name": "ch5-triggerview-background-color",
+                        "type": "variable",
+                        "description": "The background color of the triggerview.\n"
+                    },
+                    {
+                        "name": "ch5-triggerview-fallback-message-color-background",
+                        "type": "variable",
+                        "description": "The background color of fallback message.\n"
+                    },
+                    {
+                        "name": "ch5-modal-close-icon-color",
+                        "type": "variable",
+                        "description": "The color of the icon at the top of the modal\n"
+                    },
+                    {
+                        "name": "ch5-modal-close-icon-color-hover",
+                        "type": "variable",
+                        "description": "The color of the icon at the top of the modal when it is hovered\n"
+                    },
+                    {
+                        "name": "ui-target-size",
+                        "type": "variable",
+                        "description": "Height of the slider in px(when orientation=\"vertical\" this will be the width of the slider).\n"
+                    },
+                    {
+                        "name": "ui-connect-bg",
+                        "type": "variable",
+                        "description": "Background between the handles.\n"
+                    },
+                    {
+                        "name": "ui-target-bg",
+                        "type": "variable",
+                        "description": "Background color of the slider\n"
+                    },
+                    {
+                        "name": "ch5-list-item-color",
+                        "type": "variable",
+                        "description": "Set the text color of list items.\n"
+                    },
+                    {
+                        "name": "ch5-list-item-background-color",
+                        "type": "variable",
+                        "description": "Set the background color of list items, configurable for each theme\n"
+                    },
+                    {
+                        "name": "ch5-list-item-border-color",
+                        "type": "variable",
+                        "description": "Set the border color of list items\n"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "ch5-list",
+        "schemadata": [
+            {
+                "type": "class",
+                "metadata": [
+                    {
+                        "name": ".ch5-list--disabled",
+                        "type": "class",
+                        "description": "Off by default. Add the \"disabled\" attribute to the ch5-list tag in order to disable the list.\n",
+                        "value": "pointer-events: none;\n    opacity: 0.5;"
+                    },
+                    {
+                        "name": ".ch5-list-vertical",
+                        "type": "class",
+                        "description": "The list is displayed vertically by default, you can explicitly add the attribute orientation=\"vertical\".\n",
+                        "value": "-webkit-overflow-scrolling: touch;\n    touch-action: pan-y !important;\n\n    & * {\n        touch-action: pan-y !important;\n    }"
+                    },
+                    {
+                        "name": ".ch5-list-horizontal",
+                        "type": "class",
+                        "description": "Applied when orientation=\"horizontal\" to display the list horizontally.\n",
+                        "value": "-webkit-overflow-scrolling: touch;\n    touch-action: pan-x !important;\n\n    & * {\n        touch-action: pan-x !important;\n    }"
+                    },
+                    {
+                        "name": ".ch5-list--disabled",
+                        "type": "class",
+                        "description": "Off by default. Add the \"disabled\" attribute to the ch5-list tag in order to disable the list.\n",
+                        "value": "pointer-events: none;\n    opacity: 0.5;"
+                    },
+                    {
+                        "name": ".ch5-list-vertical",
+                        "type": "class",
+                        "description": "The list is displayed vertically by default, you can explicitly add the attribute orientation=\"vertical\".\n",
+                        "value": "-webkit-overflow-scrolling: touch;\n    touch-action: pan-y !important;\n\n    & * {\n        touch-action: pan-y !important;\n    }"
+                    },
+                    {
+                        "name": ".ch5-list-horizontal",
+                        "type": "class",
+                        "description": "Applied when orientation=\"horizontal\" to display the list horizontally.\n",
+                        "value": "-webkit-overflow-scrolling: touch;\n    touch-action: pan-x !important;\n\n    & * {\n        touch-action: pan-x !important;\n    }"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "ch5-list-variables",
+        "schemadata": [
+            {
+                "type": "variable",
+                "metadata": [
+                    {
+                        "name": "ch5-list-font-size-unit",
+                        "type": "variable",
+                        "description": "Set the font size unit of the vertical list\n"
+                    },
+                    {
+                        "name": "ch5-list-font-size-value",
+                        "type": "variable",
+                        "description": "Set the font size value of the vertical list\n"
+                    },
+                    {
+                        "name": "ch5-list-font-size",
+                        "type": "variable",
+                        "description": "Set the font size of the vertical list\n"
+                    },
+                    {
+                        "name": "ch5-list-font-style",
+                        "type": "variable",
+                        "description": "Set the font style of the vertical list\n"
+                    },
+                    {
+                        "name": "ch5-list-font-weight",
+                        "type": "variable",
+                        "description": "Set the font weight of the vertical list\n"
+                    },
+                    {
+                        "name": "ch5-list-item-border",
+                        "type": "variable",
+                        "description": "Set the border style of list items, configurable for each theme\n"
+                    },
+                    {
+                        "name": "ch5-list-item-padding",
+                        "type": "variable",
+                        "description": "Set the padding of list items\n"
+                    },
+                    {
+                        "name": "ch5-list-font-size-unit",
+                        "type": "variable",
+                        "description": "Set the font size unit of the vertical list\n"
+                    },
+                    {
+                        "name": "ch5-list-font-size-value",
+                        "type": "variable",
+                        "description": "Set the font size value of the vertical list\n"
+                    },
+                    {
+                        "name": "ch5-list-font-size",
+                        "type": "variable",
+                        "description": "Set the font size of the vertical list\n"
+                    },
+                    {
+                        "name": "ch5-list-font-style",
+                        "type": "variable",
+                        "description": "Set the font style of the vertical list\n"
+                    },
+                    {
+                        "name": "ch5-list-font-weight",
+                        "type": "variable",
+                        "description": "Set the font weight of the vertical list\n"
+                    },
+                    {
+                        "name": "ch5-list-item-border",
+                        "type": "variable",
+                        "description": "Set the border style of list items, configurable for each theme\n"
+                    },
+                    {
+                        "name": "ch5-list-item-padding",
+                        "type": "variable",
+                        "description": "Set the padding of list items\n"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "undefined",
+        "schemadata": [
+            {
+                "type": "variable",
+                "metadata": [
+                    {
+                        "name": "ch5-button-text-disabled-border-color",
+                        "type": "variable",
+                        "description": "text disabled color\n"
+                    },
+                    {
+                        "name": "ch5-button-text-disabled-border-color",
+                        "type": "variable",
+                        "description": "text disabled color\n"
+                    }
+                ]
+            }
+        ]
+    }
+]
