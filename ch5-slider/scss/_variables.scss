@@ -69,11 +69,11 @@ $ch5-slider-size-large-horizontal-right:    -($ch5-slider-size-large-horizontal-
 $ch5-slider-size-x-large-horizontal-right:  -($ch5-slider-size-x-large-horizontal-width / 2) !default;
 
 // rectangle/rounded-rectangle top
-$ch5-slider-size-x-small-horizontal-top:    -($ch5-slider-size-x-small-horizontal-height - $ui-target-size) / 2 !default;
-$ch5-slider-size-small-horizontal-top:      -($ch5-slider-size-small-horizontal-height - $ui-target-size) / 2 !default;
-$ch5-slider-size-regular-horizontal-top:    -($ch5-slider-size-regular-horizontal-height - $ui-target-size) / 2 !default;
-$ch5-slider-size-large-horizontal-top:      -($ch5-slider-size-large-horizontal-height - $ui-target-size) / 2 !default;
-$ch5-slider-size-x-large-horizontal-top:    -($ch5-slider-size-x-large-horizontal-height - $ui-target-size) / 2 !default;
+$ch5-slider-size-x-small-horizontal-top:    -($ch5-slider-size-x-small-horizontal-height - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-small-horizontal-top:      -($ch5-slider-size-small-horizontal-height - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-regular-horizontal-top:    -($ch5-slider-size-regular-horizontal-height - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-large-horizontal-top:      -($ch5-slider-size-large-horizontal-height - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-x-large-horizontal-top:    -($ch5-slider-size-x-large-horizontal-height - $ch5-slider-target-size) / 2 !default;
 
 // circle right
 $ch5-slider-size-x-small-horizontal-circle-right:  -($ch5-slider-size-x-small-horizontal-circle-size / 2) !default;
@@ -83,11 +83,11 @@ $ch5-slider-size-large-horizontal-circle-right:    -($ch5-slider-size-large-hori
 $ch5-slider-size-x-large-horizontal-circle-right:  -($ch5-slider-size-x-large-horizontal-circle-size / 2) !default;
 
 // circle height top
-$ch5-slider-size-x-small-horizontal-circle-top:    -($ch5-slider-size-x-small-horizontal-circle-size - $ui-target-size) / 2 !default;
-$ch5-slider-size-small-horizontal-circle-top:      -($ch5-slider-size-small-horizontal-circle-size - $ui-target-size) / 2 !default;
-$ch5-slider-size-regular-horizontal-circle-top:    -($ch5-slider-size-regular-horizontal-circle-size - $ui-target-size) / 2 !default;
-$ch5-slider-size-large-horizontal-circle-top:      -($ch5-slider-size-large-horizontal-circle-size - $ui-target-size) / 2 !default;
-$ch5-slider-size-x-large-horizontal-circle-top:    -($ch5-slider-size-x-large-horizontal-circle-size - $ui-target-size) / 2 !default;
+$ch5-slider-size-x-small-horizontal-circle-top:    -($ch5-slider-size-x-small-horizontal-circle-size - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-small-horizontal-circle-top:      -($ch5-slider-size-small-horizontal-circle-size - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-regular-horizontal-circle-top:    -($ch5-slider-size-regular-horizontal-circle-size - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-large-horizontal-circle-top:      -($ch5-slider-size-large-horizontal-circle-size - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-x-large-horizontal-circle-top:    -($ch5-slider-size-x-large-horizontal-circle-size - $ch5-slider-target-size) / 2 !default;
 
 
 // oval right
@@ -98,11 +98,11 @@ $ch5-slider-size-large-horizontal-oval-right:    -($ch5-slider-size-large-horizo
 $ch5-slider-size-x-large-horizontal-oval-right:  -($ch5-slider-size-x-large-horizontal-oval-size) !default;
 
 // oval height top
-$ch5-slider-size-x-small-horizontal-oval-top:     -($ch5-slider-size-x-small-horizontal-oval-size - $ui-target-size) / 2 !default;
-$ch5-slider-size-small-horizontal-oval-top:       -($ch5-slider-size-small-horizontal-oval-size - $ui-target-size) / 2 !default;
-$ch5-slider-size-regular-horizontal-oval-top:     -($ch5-slider-size-regular-horizontal-oval-size - $ui-target-size) / 2 !default;
-$ch5-slider-size-large-horizontal-oval-top:       -($ch5-slider-size-large-horizontal-oval-size - $ui-target-size) / 2 !default;
-$ch5-slider-size-x-large-horizontal-oval-top:     -($ch5-slider-size-x-large-horizontal-oval-size - $ui-target-size) / 2 !default;
+$ch5-slider-size-x-small-horizontal-oval-top:     -($ch5-slider-size-x-small-horizontal-oval-size - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-small-horizontal-oval-top:       -($ch5-slider-size-small-horizontal-oval-size - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-regular-horizontal-oval-top:     -($ch5-slider-size-regular-horizontal-oval-size - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-large-horizontal-oval-top:       -($ch5-slider-size-large-horizontal-oval-size - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-x-large-horizontal-oval-top:     -($ch5-slider-size-x-large-horizontal-oval-size - $ch5-slider-target-size) / 2 !default;
 
 /* ===============================================
 HANDLESIZE VERTICAL SIDE EFECTS
