@@ -93,6 +93,8 @@ body.ch5-video-fullscreen {
 
     * {
         transition: none !important;
+        contain: none !important;
+        transform: none !important;
     }
 }
 
