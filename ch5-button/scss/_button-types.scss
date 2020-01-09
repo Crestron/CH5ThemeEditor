@@ -1,10 +1,16 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/// Applied when type='text'
 .ch5-button--text {
   border: $ch5-button-text-border-width $ch5-button-text-border-style $ch5-button-text-default-border-color;
   background-color: $ch5-button-text-default-background-color;
@@ -26,6 +32,7 @@
   }
 }
 
+/// Applied when type='danger'
 .ch5-button--danger {
   border: $ch5-button-danger-border-width $ch5-button-danger-border-style $ch5-button-danger-default-border-color;
   background-color: $ch5-button-danger-default-background-color;
@@ -47,6 +54,7 @@
   }
 }
 
+/// Applied when type='warning'
 .ch5-button--warning {
   border: $ch5-button-warning-border-width $ch5-button-warning-border-style $ch5-button-warning-default-border-color;
   background-color: $ch5-button-warning-default-background-color;
@@ -68,6 +76,7 @@
   }
 }
 
+/// Applied when type='info'
 .ch5-button--info {
   border: $ch5-button-info-border-width $ch5-button-info-border-style $ch5-button-info-default-border-color;
   background-color: $ch5-button-info-default-background-color;
@@ -89,6 +98,7 @@
   }
 }
 
+/// Applied when type='success'
 .ch5-button--success {
   border: $ch5-button-success-border-width $ch5-button-success-border-style $ch5-button-success-default-border-color;
   background-color: $ch5-button-success-default-background-color;
@@ -110,6 +120,7 @@
   }
 }
 
+/// Default button
 .ch5-button--default {
   border: $ch5-button-default-border-width $ch5-button-default-border-style $ch5-button-default-default-border-color;
   background-color: $ch5-button-default-default-background-color;
@@ -131,6 +142,7 @@
   }
 }
 
+/// Applied when type='primary'
 .ch5-button--primary {
   border: $ch5-button-primary-border-width $ch5-button-primary-border-style $ch5-button-primary-default-border-color;
   background-color: $ch5-button-primary-default-background-color;
@@ -152,20 +164,27 @@
   }
 }
 
+/// Applied when type='secondary'
 .ch5-button--secondary {
   border: $ch5-button-secondary-border-width $ch5-button-secondary-border-style $ch5-button-secondary-default-border-color;
   background-color: $ch5-button-secondary-default-background-color;
   color: $ch5-button-secondary-default-font-color;
+
+  /// Applied when selected signal is applied
   &.ch5-button--selected {
     border-color: $ch5-button-secondary-selected-border-color;
     background-color: $ch5-button-secondary-selected-background-color;
     color: $ch5-button-secondary-selected-font-color;
   }
+
+  /// Applied between press and release events
   &.ch5-button--pressed {
     border-color: $ch5-button-secondary-pressed-border-color;
     background-color: $ch5-button-secondary-pressed-background-color;
     color: $ch5-button-secondary-pressed-font-color;
   }
+
+  /// Applied when the button is disabled
   &.ch5-button--disabled {
     border-color: $ch5-button-secondary-disabled-border-color;
     background-color: $ch5-button-secondary-disabled-background-color;

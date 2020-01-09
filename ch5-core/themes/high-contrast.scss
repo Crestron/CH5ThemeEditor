@@ -36,7 +36,7 @@ $ch5-button-text-pressed-border-color:$ch5-button-text-border-color !default;
 $ch5-button-text-pressed-background-color: #8429d9 !default;
 $ch5-button-text-pressed-font-color: $ch5-button-text-font-color !default;
 
-//text disabled color
+///text disabled color
 $ch5-button-text-disabled-border-color: $ch5-button-text-default-border-color !default;
 $ch5-button-text-disabled-background-color: $ch5-button-text-default-background-color !default;
 $ch5-button-text-disabled-font-color: $ch5-button-text-default-font-color !default;
@@ -334,16 +334,16 @@ $ch5-modal-prompt-text-font-color: #4a4a4a;
 /* ===============================================
 CH5-SLIDER
 ============================================= */
-$ui-target-size:                        18px;
-$ui-connect-bg:                       #0000ff;
-$ui-target-bg:                          transparent;
-$ui-target-border-color:              #000;
-$ui-target-border-style:                solid;
-$ui-target-border-width:                1px;
-$ui-handle-bg:                        #fff;
-$ui-handle-border-color:              #000;
-$ui-handle-border-style:                solid;
-$ui-handle-border-width:                2px;
+$ch5-slider-target-size:                        18px;
+$ch5-slider-connect-bg:                       #0000ff;
+$ch5-slider-target-bg:                          transparent;
+$ch5-slider-target-border-color:              #000;
+$ch5-slider-target-border-style:                solid;
+$ch5-slider-target-border-width:                1px;
+$ch5-slider-handle-bg:                        #fff;
+$ch5-slider-handle-border-color:              #000;
+$ch5-slider-handle-border-style:                solid;
+$ch5-slider-handle-border-width:                2px;
 
 /* ===============================================
 CH5-LIST

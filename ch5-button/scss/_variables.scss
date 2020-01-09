@@ -1,24 +1,43 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import "../../ch5-core/variables";
 
 $ch5-button-font-size: 14px !default;
 $ch5-button-font-style: $ch5-font-style !default;
+
+/// The font weight of the button.
 $ch5-button-font-weight: $ch5-font-weight !default;
 
+/// The padding for icon of the button.
 $ch5-button-icon-padding: 5px !default;
 $ch5-button-padding: 0.5rem !default;
 
+/// The margin for image of the button.
 $ch5-button-img-margin: 5px !default;
+
+/// The height for image of the button.
 $ch5-button-img-height: 20px !default;
+
+/// The width for image of the button.
 $ch5-button-img-width: 20px !default;
+
+/// The height for icon of the button with circle form.
 $ch5-button-circle-icon-height: 30px !default;
+
+/// The width for icon of the button with circle form.
 $ch5-button-circle-icon-width: 30px !default;
+
+/// The line height for icon of the button with circle form.
 $ch5-button-circle-icon-line-height: 20px !default;
 
 // button solid-border
@@ -47,10 +66,10 @@ $ch5-button-border-radius: 5px !default;
 //button circle
 $ch5-button-circle-border-radius: 50% !default;
 
-//button oval
+/// button oval
 $ch5-button-oval-border-radius: 50% !default;
 
-//button tab
+/// button tab
 $ch5-button-tab-border-radius: 10px 10px 0px 0px !default;
 
 // sizes

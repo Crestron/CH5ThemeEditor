@@ -44,13 +44,13 @@ ch5-slider:focus {
 
   &.ch5-slider--orientation--horizontal {
     .noUi-target {
-      height: $ui-target-size;
+      height: $ch5-slider-target-size;
     }
   }
 
   &.ch5-slider--orientation--vertical {
     .noUi-target {
-      width: $ui-target-size;
+      width: $ch5-slider-target-size;
     }
   }
 
@@ -64,20 +64,20 @@ ch5-slider:focus {
     COLORS
    ============================================= */
   .noUi-target {
-    background: $ui-target-bg;
-    border-style: $ui-target-border-style;
-    border-color: $ui-target-border-color;
-    border-width: $ui-target-border-width;
+    background: $ch5-slider-target-bg;
+    border-style: $ch5-slider-target-border-style;
+    border-color: $ch5-slider-target-border-color;
+    border-width: $ch5-slider-target-border-width;
     box-shadow: none;
   }
   .noUi-connect {
-    background: $ui-connect-bg;
+    background: $ch5-slider-connect-bg;
   }
   .noUi-handle{
-    border-style: $ui-handle-border-style;
-    border-color: $ui-handle-border-color;
-    border-width: $ui-handle-border-width;
-    background: $ui-handle-bg;
+    border-style: $ch5-slider-handle-border-style;
+    border-color: $ch5-slider-handle-border-color;
+    border-width: $ch5-slider-handle-border-width;
+    background: $ch5-slider-handle-bg;
     box-shadow: none;
   }
 
