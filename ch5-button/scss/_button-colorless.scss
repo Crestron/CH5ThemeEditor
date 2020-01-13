@@ -36,8 +36,8 @@ ch5-button {
     padding-bottom: $ch5-button-padding / 2;
   }
 
-  &[iconPosition="top"] .ch5-button--vertical .cb-btn,
-  &[iconPosition="bottom"] .ch5-button--vertical .cb-btn {
+  &[iconPosition="top"] .ch5-button--vertical:not(.ch5-button--circle) .cb-btn,
+  &[iconPosition="bottom"] .ch5-button--vertical:not(.ch5-button--circle) .cb-btn {
     flex-direction: row;
     flex-direction: row-reverse;
     padding-left: $ch5-button-padding / 2;
@@ -49,8 +49,15 @@ ch5-button {
       flex: none;
     }
 
+    .ch5-button--ios-label {
+      flex: none;
+      height: 100%;
+    }
+
     .cx-button-icon-pos-top+.ch5-button--label,
-    .ch5-button--label+.cx-button-icon-pos-bottom {
+    .ch5-button--label+.cx-button-icon-pos-bottom,
+    .cx-button-icon-pos-top+.ch5-button--ios-label,
+    .ch5-button--ios-label+.cx-button-icon-pos-bottom {
       padding-right: $ch5-button-icon-padding / 2;
     }
   }
@@ -151,6 +158,7 @@ ch5-button[hidden] {
   .cb-btn {
     display: inline-flex;
     vertical-align: middle;
+    height: 100%;
   }
 }
 
@@ -218,46 +226,76 @@ ch5-button[stretch="both"] {
 }
 
 /* Button orientation */
-.ch5-button--vertical:not(.ch5-button--circle) {
+.ch5-button--vertical {
+  &:not(.ch5-button--circle) {
+    .cb-btn {
+      transform: rotate(180deg);
+      width: $ch5-button-size;
+      height: $ch5-button-size * 2;
+      flex-direction: column;
 
-  .cb-btn {
-    transform: rotate(180deg);
-    width: $ch5-button-size;
-    height: $ch5-button-size * 2;
-    flex-direction: column;
+      .ch5-button--label {
+        max-width: inherit;
+        writing-mode: vertical-lr;
+        max-height: max-content;
+        flex: 1;
+      }
+    }
 
-    .ch5-button--label {
-      max-width: inherit;
-      writing-mode: vertical-lr;
-      max-height: max-content;
+    // iOS dots
+    .ch5-button--ios-label {
+      display: block;
+      position: relative;
+      padding-bottom: 0.5rem;
       flex: 1;
+      overflow: hidden;
+      writing-mode: vertical-lr;
+
+      .ch5-button--label {
+        position: static;
+        writing-mode: inherit;
+      }
+
+      .dots {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+
+    .cx-button-icon-pos-first+.ch5-button--label,
+    .ch5-button--label+.cx-button-icon-pos-last,
+    .cx-button-icon-pos-first+.ch5-button--ios-label,
+    .ch5-button--ios-label+.cx-button-icon-pos-last {
+      padding-top: $ch5-button-icon-padding;
+    }
+
+    /* vertical sizes */
+    &.ch5-button--size-x-small .cb-btn {
+      width: $ch5-button-x-small-size;
+      height: $ch5-button-x-small-size * 2;
+    }
+
+    &.ch5-button--size-small .cb-btn {
+      width: $ch5-button-small-size;
+      height: $ch5-button-small-size * 2;
+    }
+
+    &.ch5-button--size-large .cb-btn {
+      width: $ch5-button-large-size;
+      height: $ch5-button-large-size * 2;
+    }
+
+    &.ch5-button--size-x-large .cb-btn {
+      width: $ch5-button-x-large-size;
+      height: $ch5-button-x-large-size * 2;
     }
   }
 
   .cx-button-icon-pos-first+.ch5-button--label,
   .ch5-button--label+.cx-button-icon-pos-last {
-    padding-top: $ch5-button-icon-padding;
-  }
-
-  /* vertical sizes */
-  &.ch5-button--size-x-small .cb-btn {
-    width: $ch5-button-x-small-size;
-    height: $ch5-button-x-small-size * 2;
-  }
-
-  &.ch5-button--size-small .cb-btn {
-    width: $ch5-button-small-size;
-    height: $ch5-button-small-size * 2;
-  }
-
-  &.ch5-button--size-large .cb-btn {
-    width: $ch5-button-large-size;
-    height: $ch5-button-large-size * 2;
-  }
-
-  &.ch5-button--size-x-large .cb-btn {
-    width: $ch5-button-x-large-size;
-    height: $ch5-button-x-large-size * 2;
+    padding-left: $ch5-button-icon-padding;
   }
 }
 
