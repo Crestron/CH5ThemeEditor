@@ -105,3 +105,14 @@ body.ch5-video-fullscreen {
 body.ch5-video-fullscreen .ch5-video {
     visibility: visible;
 }
+
+.fullscreen-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 0;
+    visibility: visible;
+}
