@@ -262,6 +262,10 @@ ch5-button[stretch="both"] {
         left: 0;
         right: 0;
       }
+
+      &:empty {
+        display: none !important;
+      }
     }
 
     .cx-button-icon-pos-first+.ch5-button--label,

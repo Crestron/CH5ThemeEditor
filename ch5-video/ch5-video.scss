@@ -29,16 +29,16 @@
         position: relative;
         overflow: hidden;
     }
-}
 
-.fullscreen-overlay {
-    position: fixed;
-    background: $ch5-fullscreen-background-color;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: 99999;
+    &--overlay {
+        position: fixed;
+        background: $ch5-fullscreen-background-color;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+    }
 }
 
 .fullscreen-overlay-click {
@@ -106,7 +106,7 @@ body.ch5-video-fullscreen .ch5-video {
     visibility: visible;
 }
 
-.fullscreen-container{
+.fullscreen-container {
     width: 100%;
     height: 100%;
     position: absolute;
