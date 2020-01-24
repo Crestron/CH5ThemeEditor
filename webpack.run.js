@@ -5,7 +5,6 @@ const merge = require('webpack-merge');
 const CopyPlugin = require('copy-webpack-plugin');
 const fs = require('fs');
 const common = require('./webpack.build.js');
-const WriteJsonPlugin = require('write-json-webpack-plugin');
 const glob = require('glob');
 let dotenv = require('dotenv').config().parsed;
 
