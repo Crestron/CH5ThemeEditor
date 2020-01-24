@@ -16,19 +16,9 @@ function loadCssFile(filename) {
 
   function changeTheme(val) {
     localStorage.setItem('THEME', val);
-    switch (val) {
-      case "Dark":
-        loadCssFile("css/dark-theme.css");
-        break;
-      case "Light":
-        loadCssFile("css/light-theme.css");
-        break;
-      case "Contrast":
-        loadCssFile("css/high-contrast-theme.css");
-        break;
-      default:
-        console.log("Somthing went wrong");
-    }
+    var selctedTheme = val.toLowerCase();
+    var themeFileName = `css/${selctedTheme}-theme.css`;
+    loadCssFile(themeFileName);
   }
 
   var storedTheme = localStorage.getItem('THEME');
@@ -43,7 +33,34 @@ function loadCssFile(filename) {
     }
     return;
   }
-
+  function loadJSON(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.overrideMimeType('application/json');
+    xhr.open('GET', url, true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            callback(xhr.responseText);
+        }
+    };
+    xhr.send(null);
+}
+function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+  function getAppVersionInfo() {
+    loadJSON('./manifest/app.manifest.json', function (response) {
+        response = JSON.parse(response);
+        var optionView = "";
+        response.themeName.forEach((item) => {
+          var themes = item.split("/");
+          var themeValue = themes[themes.length-1].replace("-theme.css","");
+          optionView+=`<option value="${themeValue}">${capitalize(themeValue)}</option>`;
+        });
+        var getSelect = document.getElementById("changeThemeId");
+        getSelect.innerHTML = optionView;
+    });
+}
+getAppVersionInfo();
   setSelectedIndex(storedTheme);
 
   if (storedTheme) {
