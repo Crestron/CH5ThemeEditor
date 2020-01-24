@@ -3,7 +3,9 @@ const path = require('path');
 const _ = require('lodash');
 const merge = require('webpack-merge');
 const CopyPlugin = require('copy-webpack-plugin');
+const fs = require('fs');
 const common = require('./webpack.build.js');
+const glob = require('glob');
 let dotenv = require('dotenv').config().parsed;
 
 const isDevMode = ["--watch","--watchmode"];
@@ -13,9 +15,18 @@ const fontsSourceFilepath = !!dotenv && !!dotenv.SOURCE_FONTS_FILE_PATH ? dotenv
 const fontsDestinationFilepath = !!dotenv && !!dotenv.DESTINATION_FONTS_FILE_PATH ? dotenv.DESTINATION_FONTS_FILE_PATH : './app/dist/fonts/';
 const webFontsSourceFilepath = !!dotenv && !!dotenv.SOURCE_WEBFONTS_FILE_PATH ? dotenv.SOURCE_WEBFONTS_FILE_PATH : 'output/webfonts/*';
 const webFontsDestinationFilepath = !!dotenv && !!dotenv.DESTINATION_WEBFONTS_FILE_PATH ? dotenv.DESTINATION_WEBFONTS_FILE_PATH : './app/dist/webfonts/';
-
 const basePath = path.resolve(__dirname);
 const sourceFilePath = !!dotenv && !!dotenv.SOURCE_THEMES_FILE_PATH ? dotenv.SOURCE_THEMES_FILE_PATH : 'output/themes/*.css';
+
+// get the all theme list
+const manifestSourceFilePath = "./app.manifest.json";
+const manifestDestFilePath = "./app/dist/manifest/";
+const themeList = {};
+themeList.themeName = glob.sync('output/themes/*-theme.css');
+const jsonData = JSON.stringify(themeList, null, 4);
+console.log("jsonData--",jsonData);
+fs.writeFileSync(manifestSourceFilePath,jsonData);
+
 
 let destinationFilePath = !!dotenv && !!dotenv.DESTINATION_THEMES_FILE_PATH
   ? dotenv.DESTINATION_THEMES_FILE_PATH
@@ -63,7 +74,14 @@ module.exports = merge(common, {
         to: path.resolve(basePath, webFontsDestinationFilepath),
         flatten: true,
         force: true
+      },
+      {
+        from: path.resolve(basePath, manifestSourceFilePath),
+        //Relative path for destination folder
+        to: path.resolve(basePath, manifestDestFilePath),
+        flatten: true,
+        force: true
       }
-    ])
+    ]),
   ]
 });
