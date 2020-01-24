@@ -24,6 +24,7 @@ const manifestDestFilePath = "./app/dist/manifest/";
 const themeList = {};
 themeList.themeName = glob.sync('output/themes/*-theme.css');
 const jsonData = JSON.stringify(themeList, null, 4);
+console.log("jsonData--",jsonData);
 fs.writeFileSync(manifestSourceFilePath,jsonData);
 
 

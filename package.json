@@ -24,7 +24,7 @@
     "bundle-theme-all-app-run": "webpack --config webpack.run.js && npm run cleanjs",
     "bundle-theme-all-cli-dist-path": "webpack --config webpack.run.js --outputpath='../showcase-app/dist/crestron-components-assets' && npm run cleanjs",
     "bundle-theme-for-showcase": "webpack --config webpack.run.js --outputpath='../showcase-app/static/crestron-components-assets' && npm run cleanjs",
-    "bundle-and-watch": "webpack --config webpack.run.js --watch",
+    "bundle-and-watch": "yarn run clean && webpack --config webpack.run.js --watch",
     "start": "webpack --config webpack.run.js --watchmode && npm run cleanjs && webpack --config app.config.dev.js",
     "gen:sass-metadata": "node ./metadata-generator.js --writetofilepath ./generated-metadata/sass-schema.json"
   },
