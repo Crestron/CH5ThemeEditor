@@ -26,6 +26,13 @@ const sassdoc = require('sassdoc'),
     return data = _.uniqWith(data, _.isEqual);
   }
 
+  function getUniqueData(metadata) {
+    return filteredData = _.uniqBy(metadata, function (e) {
+      return e.name;
+    });
+  }
+
+
   function includeProperTies(resultData) {
     resultData = removeDulicate(resultData);
     return resultData.map(meta => {
@@ -72,6 +79,12 @@ const sassdoc = require('sassdoc'),
         return _.zipObject(["group", "schemadata"], currentItem);
       })
       .value();
+    result = result.filter(res => res.group !== "undefined");
+    result.map((resultItem) => {
+      if (!!resultItem.schemadata[0]['metadata'] && !!resultItem.schemadata[0]['metadata'].length) {
+        return resultItem.schemadata[0]['metadata'] = getUniqueData(resultItem.schemadata[0]['metadata']);
+      }
+    });
     return result;
   }
 
