@@ -14,10 +14,29 @@ function loadCssFile(filename) {
   }
 }
 
+function updateLayoutStyle(selectedTheme) {
+  var mainWrapper = document.getElementById("mainSectionWrapper");
+  var h3Titles = [...document.getElementsByTagName("h3")];
+  var header = document.getElementById("layoutHeader");
+  
+  mainWrapper.style.backgroundColor = "#fefefe";
+  h3Titles.map((h3Ele) => { return h3Ele.style.color = "#000"; });
+  header.style.backgroundColor = "#000";
+  if (selectedTheme === "light") {
+    mainWrapper.style.backgroundColor = "#000";
+    header.style.backgroundColor = "#efefef";
+    h3Titles.map((h3Ele) => { return h3Ele.style.color = "#fff"; });
+  }
+  else if (selectedTheme === "high-contrast") {
+    mainWrapper.style.backgroundColor = "#939393";
+  }
+}
+
 function changeTheme(val) {
   localStorage.setItem('THEME', val);
   var selctedTheme = val.toLowerCase();
   var themeFileName = `css/${selctedTheme}-theme.css`;
+  updateLayoutStyle(selctedTheme);
   loadCssFile(themeFileName);
 }
 
@@ -54,7 +73,12 @@ function getThemeInfo() {
     response.themeName.forEach((item) => {
       var themes = item.split("/");
       var themeValue = themes[themes.length - 1].replace("-theme.css", "");
-      optionView += `<option value="${themeValue}">${capitalize(themeValue)}</option>`;
+      if (storedTheme === themeValue) {
+        optionView += `<option value="${themeValue}" selected>${capitalize(themeValue)}</option>`;
+      } else {
+        optionView += `<option value="${themeValue}">${capitalize(themeValue)}</option>`;
+      }
+      
     });
     var getSelect = document.getElementById("changeThemeId");
     getSelect.innerHTML = optionView;
