@@ -1,9 +1,14 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-spinner
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import './scss/_variables';
 
@@ -12,6 +17,7 @@ ch5-spinner {
   background-color: $ch5-spinner-background-color;
 }
 
+/// Main class
 .ch5-spinner {
 
   -webkit-user-select: none; /* Chrome all / Safari all */
@@ -23,7 +29,8 @@ ch5-spinner {
   font-weight: $ch5-spinner-font-weight;
   cursor: pointer;
   width: 100%;
-
+  /// @require .ch5-spinner
+  /// Class apply for spinner wrapper
   &__wrapper {
     overflow: hidden;
     position: relative;
@@ -49,11 +56,13 @@ ch5-spinner {
       top: 0;
     }
   }
-
+  /// @require .ch5-spinner
+  /// Class apply for scroll animation
   &__scrollarea--animate {
     transition: all .5s ease;
   }
-
+  /// @require .ch5-spinner
+  /// Class apply for the highlight section
   &__highlight {
     position: absolute;
     width: 100%;
@@ -77,7 +86,8 @@ ch5-spinner {
     opacity: $ch5-spinner-overlay-opacity;
     display: none;
   }
-
+  /// @require .ch5-spinner
+  /// Class apply on the item
   &__item {
     color:  $ch5-spinner-item-color;
     white-space: nowrap;
@@ -85,12 +95,14 @@ ch5-spinner {
     justify-content: center;
     align-items: center;
   }
-
+  /// @require .ch5-spinner
+  /// Class apply on the active item
   &--active {
     font-size: $ch5-spinner-font-size;
     color: $ch5-spinner-active-item-color;
   }
-
+  /// @require .ch5-spinner
+  /// Class apply on the icon
   &__icon {
     font-size: $ch5-spinner-icon-font-size;
     padding: $ch5-spinner-icon-padding;

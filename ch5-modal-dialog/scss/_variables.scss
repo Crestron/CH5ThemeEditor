@@ -1,49 +1,112 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-modal-dialog-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import "../../ch5-core/variables";
 
+/// the default font size unit of the modal
 $ch5-modal-font-size-unit: $ch5-font-size-unit !default;
+
+/// the default font size value of the modal
 $ch5-modal-font-size-value: $ch5-font-size-value !default;
+
+/// the default font size of the modal
 $ch5-modal-font-size: $ch5-modal-font-size-value + $ch5-modal-font-size-unit !default;
+
+/// the default font style of the modal
 $ch5-modal-font-style: $ch5-font-style !default;
+
+/// the default font weight of the modal
 $ch5-modal-font-weight: $ch5-font-weight !default;
 
+/// the border width of the modal
 $ch5-modal-border-width:  1px;
+
+/// the border style of the modal
 $ch5-modal-border-style:  solid;
+
+/// the border radius of the modal
 $ch5-modal-border-radius:  6px;
+
+/// set padding for the modal
 $ch5-modal-padding: 1.25em;
 
+/// the margin of the icon at the top of the modal.
 $ch5-modal-close-icon-margin: 0 5px;
+
+/// the padding of the icon at the top of the modal.
 $ch5-modal-close-icon-padding: 0 5px 5px;
+
+/// the width of the icon at the top of the modal.
 $ch5-modal-close-icon-width: 20px;
 
+/// the font size of the icon at the top of the modal
 $ch5-modal-close-icon-font-size: $ch5-modal-font-size !default;
+
+/// the font style of the icon at the top of the modal
 $ch5-modal-close-icon-font-style: $ch5-modal-font-style !default;
+
+/// the font weight of the icon at the top of the modal
 $ch5-modal-close-icon-font-weight: $ch5-modal-font-weight !default;
 
+/// the default font size of the icon at the top of the modal.
 $ch5-modal-default-close-icon-font-size: 24px !default;
+
+/// the default font style of the icon at the top of the modal
 $ch5-modal-default-close-icon-font-style: $ch5-modal-font-style !default;
+
+/// the default font weight of the icon at the top of the modal
 $ch5-modal-default-close-icon-font-weight: $ch5-modal-font-weight !default;
 
+/// the font size for the title of the modal
 $ch5-modal-title-font-size: 1.3em !default;
+
+/// the font style for the title of the modal
 $ch5-modal-title-font-style: $ch5-modal-font-style !default;
+
+/// the font weight for the title of the modal
 $ch5-modal-title-font-weight: bold !default;
 
+/// the padding of the modal's content
 $ch5-modal-contents-padding: 10px;
+
+/// the font size for the content of the modal.
 $ch5-modal-contents-font-size: 18px !default;
+
+/// the font style for the content of the modal.
 $ch5-model-contents-font-style: $ch5-modal-font-style !default;
+
+/// the font weight for the content of the modal.
 $ch5-model-contents-font-weight: $ch5-modal-font-weight !default;
 
+/// the padding for the prompt of the modal
 $ch5-modal-prompt-padding: 30px 0 30px 0;
+
+/// the right margin for the prompt icon of the modal
 $ch5-modal-prompt-icon-margin-right: 10px;
+
+/// the font size for the prompt icon of the modal
 $ch5-modal-prompt-icon-font-size: $ch5-modal-font-size !default;
+
+/// the font style for the prompt icon of the modal
 $ch5-modal-prompt-icon-font-style: $ch5-modal-font-style !default;
+
+/// the font weight for the prompt icon of the modal
 $ch5-modal-prompt-icon-font-weight: $ch5-modal-font-weight !default;
+
+/// the font style for the prompt text of the modal
 $ch5-modal-prompt-text-font-style: $ch5-modal-font-style !default;
+
+/// the font size for the prompt text of the modal
 $ch5-modal-prompt-text-font-size: 16px !default;
+
+/// the font weight for the prompt text of the modal
 $ch5-modal-prompt-text-font-weight: $ch5-modal-font-weight !default;

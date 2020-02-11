@@ -350,17 +350,26 @@ $ch5-modal-close-icon-color:#555;
 
 /// The color of the icon at the top of the modal when it is hovered
 $ch5-modal-close-icon-color-hover:#333;
+
+/// the background color of the mask element
 $ch5-modal-mask-bg-color:rgba(150,150,150,0.3);
 
+/// the background color of the icon at the top of the modal
 $ch5-modal-close-icon-background-color: #fff;
+
+/// the background color of the modal
 $ch5-modal-background-color: #fff;
 
-$ch5-modal-border-color:   #aeaeae;
+/// the text color of the modal
 $ch5-modal-text-color: #4a4a4a;
+
+/// the font color of the modal content
 $ch5-modal-contents-font-color: #333;
 
+/// the border color of the modal
 $ch5-modal-border-color: #efefef;
 
+/// the text color for the prompt text of the modal
 $ch5-modal-prompt-text-font-color: #4a4a4a;
 
 /* ===============================================

@@ -36,12 +36,24 @@ const sassdoc = require('sassdoc'),
   function includeProperTies(resultData) {
     resultData = removeDulicate(resultData);
     return resultData.map(meta => {
-
       if (meta.group[0] === 'ch5-light-theme-variables') {
         const newGroupNamePostFix = `variables`;
         const names = meta.context.name.split('-');
-        const newGroupName = `${names[0]}-${names[1]}-${newGroupNamePostFix}`;
+        let newGroupNamePrefix = `${names[0]}-${names[1]}`;
+        if (newGroupNamePrefix === "ch5-overlay") {
+          newGroupNamePrefix = newGroupNamePrefix + "-panel";
+        } else if (newGroupNamePrefix === "ch5-modal") {
+          newGroupNamePrefix = newGroupNamePrefix + "-dialog";
+        }
+        const newGroupName = `${newGroupNamePrefix}-${newGroupNamePostFix}`;
         meta.group[0] = newGroupName;
+      }
+      if (!!meta.require) {
+        if (meta.context.name.indexOf("&") === 0) {
+          let childClassName = meta.context.name.replace("&", "");
+          meta.context.name = meta.require[0].name + childClassName;
+        }
+        meta.description = meta.require[0].description;
       }
 
       let includeProperty = {};
