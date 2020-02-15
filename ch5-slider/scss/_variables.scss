@@ -1,29 +1,54 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-slider-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import "./../../ch5-core/variables";
 
 /* ===============================================
 SIZE HORIZONTAL
 ============================================= */
+
+/// x-small width in px of the slider when orientation="horizontal"
 $ch5-slider-size-x-small-horizontal:   200px !default;
+
+/// small width in px of the slider when orientation="horizontal"
 $ch5-slider-size-small-horizontal:     250px !default;
+
+/// regular width in px of the slider when orientation="horizontal"
 $ch5-slider-size-regular-horizontal:   300px !default;
+
+/// large width in px of the slider when orientation="horizontal"
 $ch5-slider-size-large-horizontal:     400px !default;
+
+/// x-large width in px of the slider when orientation="horizontal"
 $ch5-slider-size-x-large-horizontal:   500px !default;
 
 
 /* ===============================================
 SIZE VERTICAL
 ============================================= */
+
+/// x-small height in px of the slider when orientation="vertical"
 $ch5-slider-size-x-small-vertical:   200px !default;
+
+/// small height in px of the slider when orientation="vertical"
 $ch5-slider-size-small-vertical:     250px !default;
+
+/// regular height in px of the slider when orientation="vertical"
 $ch5-slider-size-regular-vertical:   300px !default;
+
+/// large height in px of the slider when orientation="vertical" 
 $ch5-slider-size-large-vertical:     350px !default;
+
+/// x-large height in px of the slider when orientation="vertical"
 $ch5-slider-size-x-large-vertical:   400px !default;
 
 
@@ -31,31 +56,65 @@ $ch5-slider-size-x-large-vertical:   400px !default;
 HANDLESIZE HORIZONTAL
 ============================================= */
 // rectangle/rounded-rectangle width
+
+/// x-small width in px of the handle when handleShape="rounded-rectangle|rectangle"
 $ch5-slider-size-x-small-horizontal-width:  22px !default;
+
+/// small width in px of the handle when handleShape="rounded-rectangle|rectangle"
 $ch5-slider-size-small-horizontal-width:    28px !default;
+
+/// regular width in px of the handle when handleShape="rounded-rectangle|rectangle"
 $ch5-slider-size-regular-horizontal-width:  34px !default;
+
+/// large width in px of the handle when handleShape="rounded-rectangle|rectangle"
 $ch5-slider-size-large-horizontal-width:    42px !default;
+
+/// x-large width in px of the handle when handleShape="rounded-rectangle|rectangle"
 $ch5-slider-size-x-large-horizontal-width:  54px !default;
 
-// rectangle/rounded-rectangle height
+/// x-small height in px of the handle when handleShape="rounded-rectangle|rectangle"
 $ch5-slider-size-x-small-horizontal-height: 20px !default;
+
+/// small height in px of the handle when handleShape="rounded-rectangle|rectangle"
 $ch5-slider-size-small-horizontal-height:   26px !default;
+
+/// regular height in px of the handle when handleShape="rounded-rectangle|rectangle"
 $ch5-slider-size-regular-horizontal-height: 28px !default;
+
+/// large height in px of the handle when handleShape="rounded-rectangle|rectangle"
 $ch5-slider-size-large-horizontal-height:   34px !default;
+
+/// x-large height in px of the handle when handleShape="rounded-rectangle|rectangle"
 $ch5-slider-size-x-large-horizontal-height: 40px !default;
 
-// circle size
+/// x-small size in px of the handle when handleShape="circle"
 $ch5-slider-size-x-small-horizontal-circle-size:  22px !default;
+
+/// small size in px of the handle when handleShape="circle"
 $ch5-slider-size-small-horizontal-circle-size:    28px !default;
+
+/// regular size in px of the handle when handleShape="circle"
 $ch5-slider-size-regular-horizontal-circle-size:  34px !default;
+
+/// large size in px of the handle when handleShape="circle"
 $ch5-slider-size-large-horizontal-circle-size:    42px !default;
+
+/// x-large size in px of the handle when handleShape="circle"
 $ch5-slider-size-x-large-horizontal-circle-size:  54px !default;
 
-// oval size
+/// x-small size in px of the handle when handleShape="oval"
 $ch5-slider-size-x-small-horizontal-oval-size:  20px !default;
+
+/// x-small size in px of the handle when handleShape="oval"
 $ch5-slider-size-small-horizontal-oval-size:    24px !default;
+
+/// regular size in px of the handle when handleShape="oval"
 $ch5-slider-size-regular-horizontal-oval-size:  30px !default;
+
+/// large size in px of the handle when handleShape="oval"
 $ch5-slider-size-large-horizontal-oval-size:    36px !default;
+
+/// x-large size in px of the handle when handleShape="oval"
 $ch5-slider-size-x-large-horizontal-oval-size:  42px !default;
 
 /* ===============================================
@@ -163,9 +222,17 @@ $ch5-slider-size-regular-vertical-oval-top:      -($ch5-slider-size-regular-hori
 $ch5-slider-size-large-vertical-oval-top:        -($ch5-slider-size-large-horizontal-oval-size) !default;
 $ch5-slider-size-x-large-vertical-oval-top:      -($ch5-slider-size-x-large-horizontal-oval-size) !default;
 
-// default font properties
+/// default font size unit for the slider
 $ch5-slider-font-size-unit: $ch5-font-size-unit !default;
+
+/// default font size value for the slider 
 $ch5-slider-font-size-value: $ch5-font-size-value !default;
+
+/// default font size for the slider
 $ch5-slider-font-size: $ch5-slider-font-size-value + $ch5-slider-font-size-unit !default;
+
+/// default font style for the slider
 $ch5-slider-font-style: $ch5-font-style !default;
+
+/// default font weight for the slider
 $ch5-slider-font-weight: $ch5-font-weight !default;

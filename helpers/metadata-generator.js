@@ -32,16 +32,46 @@ const sassdoc = require('sassdoc'),
     });
   }
 
+  function getGroupIndexValue(res, value) {
+    let obj = {};
+    obj['group'] = value;
+    const indexValue = _.findIndex(res, obj);
+    return indexValue;
+  }
+
+  function rearrangeGroupName(resultData) {
+    resultData.map((resItem) => {
+      if (resItem.group === "ch5-light-theme-variables") {
+        resItem.schemadata[0]['metadata'].map((schemadataItem) => {
+          const newGroupNamePostFix = `variables`;
+          const names = schemadataItem.name.split('-');
+          let newGroupNamePrefix = `${names[0]}-${names[1]}`;
+          if (newGroupNamePrefix === "ch5-overlay") {
+            newGroupNamePrefix = newGroupNamePrefix + "-panel";
+          } else if (newGroupNamePrefix === "ch5-modal") {
+            newGroupNamePrefix = newGroupNamePrefix + "-dialog";
+          }
+          const newGroupName = `${newGroupNamePrefix}-${newGroupNamePostFix}`;
+          const groupIndex = getGroupIndexValue(resultData, newGroupName);
+          resultData[groupIndex].schemadata[0]['metadata'].push(schemadataItem);
+        });
+
+      }
+    });
+
+    return resultData;
+  }
+
 
   function includeProperTies(resultData) {
     resultData = removeDulicate(resultData);
     return resultData.map(meta => {
-
-      if (meta.group[0] === 'ch5-light-theme-variables') {
-        const newGroupNamePostFix = `variables`;
-        const names = meta.context.name.split('-');
-        const newGroupName = `${names[0]}-${names[1]}-${newGroupNamePostFix}`;
-        meta.group[0] = newGroupName;
+      if (!!meta.require) {
+        if (meta.context.name.indexOf("&") === 0) {
+          let childClassName = meta.context.name.replace("&", "");
+          meta.context.name = meta.require[0].name + childClassName;
+        }
+        meta.description = meta.require[0].description;
       }
 
       let includeProperty = {};
@@ -85,6 +115,7 @@ const sassdoc = require('sassdoc'),
         return resultItem.schemadata[0]['metadata'] = getUniqueData(resultItem.schemadata[0]['metadata']);
       }
     });
+    result = rearrangeGroupName(result);
     return result;
   }
 

@@ -1,16 +1,21 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-toggle
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import './scss/_variables';
 
 ch5-toggle:focus{
     outline: none;
 }
-/* ch5-toggle - the container */
+/// the class added on the div that is the only direct child of the ch5-toggle element and wraps all its contents
 .ch5-toggle{
     position: relative;
     display: inline-block;
@@ -25,6 +30,7 @@ ch5-toggle:focus{
     }
 
     /* ch5-toggle - label */
+    /// class apply on label
     .ch5-toggle__label {
         display: inline-block;
         vertical-align: middle;
@@ -46,7 +52,14 @@ ch5-toggle:focus{
         font-size: $ch5-toggle-text-font-size;
         font-weight: $ch5-toggle-text-font-weight;
     }
-    .ch5-toggle__on-label, .ch5-toggle__off-label, .ch5-toggle__on-icon, .ch5-toggle__off-icon {
+    /// class apply on on label
+    .ch5-toggle__on-label,
+    /// class apply on off label
+    .ch5-toggle__off-label,
+    /// class apply on icon-on
+    .ch5-toggle__on-icon,
+    /// class apply on icon-off
+    .ch5-toggle__off-icon {
         margin: 0 2px 0 2px;
         color: $ch5-toggle-icon-font-color;
         font-style: $ch5-toggle-icon-font-style;
@@ -55,6 +68,7 @@ ch5-toggle:focus{
     }
 
     /* ch5-toggle - handle default */
+    /// class apply on the handle
     .ch5-toggle__handle {
         position: relative;
         overflow: hidden;
@@ -161,6 +175,7 @@ ch5-toggle:focus{
     }
 
     /* ch5-toggle - checked/on */
+    /// class apply when value is true
     &.ch5-toggle--on {
         .ch5-toggle__handle {
             a {
@@ -176,6 +191,7 @@ ch5-toggle:focus{
         }
 
         /* ch5-toggle - circle shape checked/on */
+        /// Class to apply when shape='circle'
         &.ch5-toggle--circle {
             .ch5-toggle__handle {
                 box-shadow: inset 0 0 0 30px $ch5-toggle-handle-checked-color;
@@ -197,6 +213,7 @@ ch5-toggle:focus{
         }
 
         /* ch5-toggle - rectangle shape checked/on */
+        /// Class to apply when shape='rectangle'
         &.ch5-toggle--rectangle{
             .ch5-toggle__handle {
                 div {
@@ -211,6 +228,7 @@ ch5-toggle:focus{
     }
 
     /* ch5-toggle - vertical orientation */
+    /// Class to apply when orientation='vertical'
     &.ch5-toggle--vertical {
 
         > div {

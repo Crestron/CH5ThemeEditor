@@ -1,9 +1,14 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-image
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import 'scss/_variables';
 ch5-image {
@@ -16,6 +21,7 @@ ch5-image {
     }
 }
 
+/// Added automatically on the first child of the ch5-image element.
 .ch5-image {
     // flip image
     &.ch5-image--dir--rtl {
@@ -28,6 +34,7 @@ ch5-image {
     }
 }
 
+/// Added automatically based on the disabled attribute or by receiveStateEnable.
 .ch5-image--disabled {
   pointer-events: none;
   opacity: 0.5;
