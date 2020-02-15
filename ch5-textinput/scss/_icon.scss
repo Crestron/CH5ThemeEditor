@@ -1,17 +1,22 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-textinput
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import './variables';
 
 .ch5-textinput {
-
+  /// @require .ch5-textinput
+  /// Class apply on the icon
   &__icon {
     color: $ch5-textinput-icon-text-color;
-
     &--x-large {
       font-size: $ch5-textinput-icon-x-large-font-size;
       margin: $ch5-textinput-icon-x-large-tb-margin $ch5-textinput-icon-x-large-lr-margin;
@@ -37,11 +42,13 @@
       margin: $ch5-textinput-icon-x-small-tb-margin $ch5-textinput-icon-x-small-lr-margin;
 
     }
-
+    /// @require .ch5-textinput__icon
+    /// Class apply on the icon when iconPosition attribute is set to 'last'
     &--last {
       margin-left: 0;
     }
-
+    /// @require .ch5-textinput__icon
+    /// Class apply on the icon when iconPosition attribute is set to 'first'
     &--first {
       margin-right: 0;
     }

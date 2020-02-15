@@ -1,20 +1,20 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-modal-dialog
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import './scss/_variables';
 @import './../ch5-core/themes/high-contrast.scss';
 
-//ch5-modal-dialog {
-//  position: fixed;
-//  top:0;
-//  margin:auto;
-//}
+/// the class added on the div that is the only direct child of the ch5-modal-dialog element and wraps all its contents
 .ch5-modal-dialog {
-  //display: inline-block;
   position: fixed;
   box-sizing: border-box;
   left: 50%;
@@ -64,9 +64,12 @@
     }
   }
 
+  /// the class added on the ok button
   .ch5-modal-dialog-btn-ok {
     float: left;
   }
+
+  /// the class of the cancel button
   .ch5-modal-dialog-btn-cancel {
     float:right;
   }
@@ -77,6 +80,8 @@
   font-style: $ch5-modal-title-font-style;
   font-weight: $ch5-modal-title-font-weight;
 }
+
+/// modal section (a div) that wraps the prompt-icon and the prompt-text
 .ch5-modal-dialog-prompt {
   &:before{
     clear: both;
@@ -84,6 +89,7 @@
   padding: $ch5-modal-prompt-padding;
   vertical-align: middle;
 
+  /// an image element.
   .ch5-modal-dialog-prompt-icon{
     vertical-align: middle;
     margin-right: $ch5-modal-prompt-icon-margin-right;
@@ -91,6 +97,8 @@
     font-style: $ch5-modal-prompt-icon-font-style;
     font-weight: $ch5-modal-prompt-icon-font-weight;
   }
+
+  /// a span element
   .ch5-modal-dialog-prompt-text{
     vertical-align: middle;
     font-size: $ch5-modal-prompt-text-font-size;
@@ -124,6 +132,7 @@
   height: 100%;
 }
 
+/// class added on the mask element
 .ch5-modal-dialog-mask {
   top:0;
   left:0;
@@ -137,6 +146,7 @@
   background-color: $ch5-modal-mask-bg-color;
 }
 
+/// wrap the html that is initially between the ch5-modal-dialog tags
 .ch5-modal-dialog-contents {
   padding: $ch5-modal-contents-padding;
   font-size: $ch5-modal-contents-font-size;

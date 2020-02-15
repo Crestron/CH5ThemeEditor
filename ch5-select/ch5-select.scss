@@ -1,12 +1,18 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-select
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import './scss/_variables';
 
+/// Main class
 .ch5-select {
   position: relative;
   display: block;
@@ -18,6 +24,7 @@
   cursor: pointer;
 }
 
+/// Top line container (holds selected items and combo trigger button)
 .ch5-select__main {
   // for direction rtl we might just have to set display to `row-reverse`
 
@@ -39,6 +46,7 @@
     @include rtl-style;
   }
 
+  /// Dropdown button
   .ch5-select__combo_trigger {
     display: block;
     width: $ch5-select-combo-trigger-width;
@@ -75,6 +83,7 @@
   /* W3C compliant browsers */
 }
 
+/// List container with items
 .ch5-select__panel__items {
   width: 100%;
   overflow-x: hidden;
@@ -99,6 +108,7 @@
   position: relative;
 }
 
+/// Each item
 .ch5-select__panel__item {
   @include layout-h;
   @include layout-flex;
@@ -116,12 +126,13 @@
   &:not(.ch5-select__panel__item--selected):hover {
     background-color: $ch5-select-panel-item-hover-background-color;
   }
-
+    /// Selected
   &.ch5-select__panel__item--selected {
     background-color: $ch5-select-panel-item-selected-background-color;
   }
 }
 
+/// Added automatically based on the disabled attribute or by receiveStateEnable
 .ch5-select--disabled {
     pointer-events: none;
     opacity: 0.5;

@@ -1,9 +1,15 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-slider
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 @import "./scss/_mixins-size";
 @import "./scss/_variables";
@@ -17,6 +23,8 @@ ch5-slider:focus {
 }
 
 /* ch5-slider - the container */
+
+/// the class added on the component and wraps all its contents
 .ch5-slider {
   position: relative;
   display: inline-block;
@@ -42,12 +50,14 @@ ch5-slider:focus {
     visibility: hidden;
   }
 
+  /// class apply when slider orientation="horizontal"
   &.ch5-slider--orientation--horizontal {
     .noUi-target {
       height: $ch5-slider-target-size;
     }
   }
 
+  /// class apply when slider orientation="vertical"
   &.ch5-slider--orientation--vertical {
     .noUi-target {
       width: $ch5-slider-target-size;
