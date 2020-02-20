@@ -41,17 +41,6 @@
     }
 }
 
-.fullscreen-overlay-click {
-    position: fixed;
-    background: $ch5-fullscreen-click-background-color;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    opacity: 0;
-}
-
 .control-panel {
     display: flex;
     justify-content: flex-end;
@@ -100,19 +89,4 @@ body.ch5-video-fullscreen {
     .ch5-background--canvas {
         opacity: 0 !important;
     }
-}
-
-body.ch5-video-fullscreen .ch5-video {
-    visibility: visible;
-}
-
-.fullscreen-container {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    opacity: 0;
-    visibility: visible;
 }
