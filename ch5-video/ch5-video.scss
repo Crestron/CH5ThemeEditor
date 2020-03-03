@@ -8,10 +8,8 @@
 @import 'scss/_variables';
 
 .ch5-video {
-    display: inline-block;
-    position: relative;
-    font-size: 0;
-    vertical-align: top;
+    display: flex;
+    justify-content: center;
 
     .ch5-video--display--color {
         background-color: $ch5-display-color
@@ -25,7 +23,7 @@
         top: 0;
     }
 
-    .video-wrapper {
+    .ch5-video--panel {
         position: relative;
         overflow: hidden;
     }
@@ -38,6 +36,30 @@
         top: 0;
         left: 0;
         z-index: 99999;
+    }
+
+    &--snapshot {
+        position: absolute;
+
+        &[src=""],
+        &:not([src]) {
+            display: none;
+        }
+    }
+
+    &--parent {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+
+        .ch5-video[stretch="true"] {
+            flex-direction: column;
+
+            &,
+            .ch5-video--panel {
+                flex: auto;
+            }
+        }
     }
 }
 
@@ -88,5 +110,9 @@ body.ch5-video-fullscreen {
 
     .ch5-background--canvas {
         opacity: 0 !important;
+    }
+
+    .control-panel {
+        visibility: hidden !important;
     }
 }
