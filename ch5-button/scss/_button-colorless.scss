@@ -20,25 +20,19 @@ ch5-button {
   &,
   .ch5-button {
     max-width: 100%;
-    padding: 0.25rem; /* Newly added - add as variable */
+    // padding: 0.25rem; /* Newly added - add as variable - test all components why? */
   }
   div {
     pointer-events: all;
   }
   &[activeIconPosition="top"] .ch5-button:not(.ch5-button--vertical) .cb-btn,
-  &[activeIconPosition="bottom"]
-    .ch5-button:not(.ch5-button--vertical)
-    .cb-btn {
+  &[activeIconPosition="bottom"] .ch5-button:not(.ch5-button--vertical) .cb-btn {
     display: block;
     padding-top: $ch5-button-padding / 2;
     padding-bottom: $ch5-button-padding / 2;
   }
-  &[activeIconPosition="top"]
-    .ch5-button--vertical:not(.ch5-button--circle)
-    .cb-btn,
-  &[activeIconPosition="bottom"]
-    .ch5-button--vertical:not(.ch5-button--circle)
-    .cb-btn {
+  &[activeIconPosition="top"] .ch5-button--vertical:not(.ch5-button--circle) .cb-btn,
+  &[activeIconPosition="bottom"] .ch5-button--vertical:not(.ch5-button--circle) .cb-btn {
     flex-direction: row;
     flex-direction: row-reverse;
     padding-left: $ch5-button-padding / 2;
@@ -73,10 +67,16 @@ ch5-button[hidden] {
 .ch5-button--icon,
 .ch5-button--img {
   position: relative;
-  display: inline-block;
+  // display: inline-block; // Commenting this to verify corner case of vAlignLabel Top
   width: auto;
   cursor: pointer;
   user-select: none;
+}
+.ch5-button--label,
+.ch5-button--icon,
+.ch5-button--img {
+  // line-height: 100%; // Comment since text is cut.
+  // border: solid 1px black !important;
 }
 .ch5-button {
   button,
@@ -208,67 +208,76 @@ ch5-button[stretch="both"] {
 }
 /* Button orientation */
 .ch5-button--vertical {
-  &:not(.ch5-button--circle) {
-    .ch5-button--span {
-      flex-direction: column;
+  // &:not(.ch5-button--circle) {
+
+  .ch5-button--span {
+    flex-direction: column;
+  }
+  .cb-btn {
+    transform: rotate(180deg);
+    width: $ch5-button-size;
+    height: $ch5-button-size * 2;
+    flex-direction: column;
+    // padding-left: $ch5-button-padding / 2; // Remove later if not required
+    // padding-right: $ch5-button-padding / 2; // Remove later if not required
+    .cb-icon,
+    .cb-img {
+      transform: rotate(90deg);
     }
-    .cb-btn {
-      transform: rotate(180deg);
-      width: $ch5-button-size;
-      height: $ch5-button-size * 2;
-      flex-direction: column;
-      // padding-left: $ch5-button-padding / 2; // Remove later if not required
-      // padding-right: $ch5-button-padding / 2; // Remove later if not required
-      .cb-icon,
-      .cb-img {
-        transform: rotate(90deg);
-      }
-      .ch5-button--label {
-        max-width: inherit;
-        writing-mode: vertical-lr;
-        max-height: max-content;
-        // flex: 1; // commented by Rags // Remove later if not required
-        padding-top: 2px;
-        padding-bottom: 2px;
-      }
-    }
-    .ch5-button--vertical-top {
-      align-items: flex-end;
-      height: 100%;
-    }
-    .ch5-button--vertical-bottom {
-      align-items: flex-start;
-      height: 100%;
-    }
-    // iOS dots
-    .ch5-button--ios-label {
-      display: block;
-      position: relative;
-      padding-bottom: 0.5rem;
-      flex: 1;
-      overflow: hidden;
+    .ch5-button--label {
+      max-width: inherit;
       writing-mode: vertical-lr;
-      .ch5-button--label {
-        position: static;
-        writing-mode: inherit;
-      }
-      .dots {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-      &:empty {
-        display: none !important;
-      }
+      max-height: max-content;
+      // flex: 1; // commented by Rags // Remove later if not required
+      padding-top: 2px;
+      padding-bottom: 2px;
     }
-    .cx-button-icon-pos-first + .ch5-button--label,
-    .ch5-button--label + .cx-button-icon-pos-last,
-    .cx-button-icon-pos-first + .ch5-button--ios-label,
-    .ch5-button--ios-label + .cx-button-icon-pos-last {
-      padding-top: $ch5-button-icon-padding;
+  }
+
+  .ch5-button--vertical-top {
+    align-items: flex-end;
+    height: 100%;
+  }
+  .ch5-button--vertical-bottom {
+    align-items: flex-start;
+    height: 100%;
+  }
+  // iOS dots
+  .ch5-button--ios-label {
+    display: block;
+    position: relative;
+    padding-bottom: 0.5rem;
+    flex: 1;
+    overflow: hidden;
+    writing-mode: vertical-lr;
+    .ch5-button--label {
+      position: static;
+      writing-mode: inherit;
     }
-    /* vertical sizes */
+    .dots {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    &:empty {
+      display: none !important;
+    }
+  }
+  .cx-button-icon-pos-first + .ch5-button--label,
+  .ch5-button--label + .cx-button-icon-pos-last,
+  .cx-button-icon-pos-first + .ch5-button--ios-label,
+  .ch5-button--ios-label + .cx-button-icon-pos-last {
+    padding-top: $ch5-button-icon-padding;
+  }
+  .cx-button-icon-pos-first + .ch5-button--label,
+  .ch5-button--label + .cx-button-icon-pos-last {
+    // padding-left: $ch5-button-icon-padding; // Remove later if not required
+  }
+}
+/* vertical sizes */
+.ch5-button--vertical {
+  &:not(.ch5-button--circle) {
     &.ch5-button--size-x-small .cb-btn {
       width: $ch5-button-x-small-size;
       height: $ch5-button-x-small-size * 2;
@@ -286,9 +295,30 @@ ch5-button[stretch="both"] {
       height: $ch5-button-x-large-size * 2;
     }
   }
-  .cx-button-icon-pos-first + .ch5-button--label,
-  .ch5-button--label + .cx-button-icon-pos-last {
-    // padding-left: $ch5-button-icon-padding; // Remove later if not required
+}
+
+.ch5-button--vertical {
+  &.ch5-button--circle {
+    &.ch5-button--size-x-small .cb-btn {
+      width: $ch5-button-x-small-size * 2;
+      height: $ch5-button-x-small-size * 2;
+    }
+    &.ch5-button--size-small .cb-btn {
+      width: $ch5-button-small-size * 2;
+      height: $ch5-button-small-size * 2;
+    }
+    &.ch5-button--size-large .cb-btn {
+      width: $ch5-button-large-size * 2;
+      height: $ch5-button-large-size * 2;
+    }
+    &.ch5-button--size-x-large .cb-btn {
+      width: $ch5-button-x-large-size * 2;
+      height: $ch5-button-x-large-size * 2;
+    }
+    .cb-btn {
+      width: $ch5-button-size * 2;
+      height: $ch5-button-size * 2;
+    }
   }
 }
 .ch5-button--disabled {
@@ -389,63 +419,44 @@ i.cb-icon.cx-button-icon-pos-bottom {
 .ch5-button--vertical-bottom {
   align-items: flex-end;
 }
+.ch5-button--circle,
+.ch5-button--oval {
+  .ch5-button--vertical-top {
+    align-items: center;
+  }
+  .ch5-button--vertical-bottom {
+    align-items: center;
+  }
+}
 
-ch5-button[activeIconPosition="bottom"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--span,
-ch5-button[activeIconPosition="top"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--span {
+ch5-button[activeIconPosition="bottom"] .ch5-button:not(.ch5-button--vertical) .ch5-button--span,
+ch5-button[activeIconPosition="top"] .ch5-button:not(.ch5-button--vertical) .ch5-button--span {
   display: flex;
   flex-direction: column;
 }
 
-ch5-button[activeIconPosition="bottom"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--horizontal-left,
-ch5-button[activeIconPosition="top"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--horizontal-left {
+ch5-button[activeIconPosition="bottom"] .ch5-button:not(.ch5-button--vertical) .ch5-button--horizontal-left,
+ch5-button[activeIconPosition="top"] .ch5-button:not(.ch5-button--vertical) .ch5-button--horizontal-left {
   align-items: flex-start;
 }
-ch5-button[activeIconPosition="bottom"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--horizontal-center,
-ch5-button[activeIconPosition="top"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--horizontal-center {
+ch5-button[activeIconPosition="bottom"] .ch5-button:not(.ch5-button--vertical) .ch5-button--horizontal-center,
+ch5-button[activeIconPosition="top"] .ch5-button:not(.ch5-button--vertical) .ch5-button--horizontal-center {
   align-items: center;
 }
-ch5-button[activeIconPosition="bottom"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--horizontal-right,
-ch5-button[activeIconPosition="top"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--horizontal-right {
+ch5-button[activeIconPosition="bottom"] .ch5-button:not(.ch5-button--vertical) .ch5-button--horizontal-right,
+ch5-button[activeIconPosition="top"] .ch5-button:not(.ch5-button--vertical) .ch5-button--horizontal-right {
   align-items: flex-end;
 }
-ch5-button[activeIconPosition="bottom"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--vertical-middle,
-ch5-button[activeIconPosition="top"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--vertical-middle {
+ch5-button[activeIconPosition="bottom"] .ch5-button:not(.ch5-button--vertical) .ch5-button--vertical-middle,
+ch5-button[activeIconPosition="top"] .ch5-button:not(.ch5-button--vertical) .ch5-button--vertical-middle {
   justify-content: center;
 }
-ch5-button[activeIconPosition="bottom"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--vertical-top,
-ch5-button[activeIconPosition="top"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--vertical-top {
+ch5-button[activeIconPosition="bottom"] .ch5-button:not(.ch5-button--vertical) .ch5-button--vertical-top,
+ch5-button[activeIconPosition="top"] .ch5-button:not(.ch5-button--vertical) .ch5-button--vertical-top {
   justify-content: flex-start;
 }
-ch5-button[activeIconPosition="bottom"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--vertical-bottom,
-ch5-button[activeIconPosition="top"]
-  .ch5-button:not(.ch5-button--vertical)
-  .ch5-button--vertical-bottom {
+ch5-button[activeIconPosition="bottom"] .ch5-button:not(.ch5-button--vertical) .ch5-button--vertical-bottom,
+ch5-button[activeIconPosition="top"] .ch5-button:not(.ch5-button--vertical) .ch5-button--vertical-bottom {
   justify-content: flex-end;
 }
 
@@ -476,12 +487,8 @@ ch5-button[activeIconPosition="top"]
 .ch5-button__checkbox--right {
   margin-left: $ch5-button-checkbox-margin;
 }
-ch5-button[activeIconPosition="bottom"]
-  .ch5-button:not(.ch5-button--vertical)
-  .cb-btn,
-ch5-button[activeIconPosition="top"]
-  .ch5-button:not(.ch5-button--vertical)
-  .cb-btn {
+ch5-button[activeIconPosition="bottom"] .ch5-button:not(.ch5-button--vertical) .cb-btn,
+ch5-button[activeIconPosition="top"] .ch5-button:not(.ch5-button--vertical) .cb-btn {
   display: flex;
 }
 .cx-button-checkbox-pos-left .ch5-button--span {
@@ -504,3 +511,13 @@ i.cb-icon.cx-button-icon-pos-top {
   margin-left: unset;
   margin-right: unset;
 }
+
+// TODO for stretch alignment 
+// .ch5-button--vertical.ch5-button--stretch-both,
+// .ch5-button--vertical.ch5-button--stretch-width,
+// .ch5-button--vertical.ch5-button--stretch-height {
+//   .cb-btn {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
