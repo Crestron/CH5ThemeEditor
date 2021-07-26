@@ -528,14 +528,14 @@ i.cb-icon.cx-button-icon-pos-bottom {
 .cx-button-checkbox-pos-right {
   padding-left: $ch5-button-checkbox-padding;
 }
-// .cb-img.cx-button-icon-pos-bottom,
-// .cb-img.cx-button-icon-pos-top,
-// i.cb-icon.cx-button-icon-pos-bottom,
-// i.cb-icon.cx-button-icon-pos-top {
-//   display: flex;
-//   margin-left: unset;
-//   margin-right: unset;
-// }
+.cb-img.cx-button-icon-pos-bottom,
+.cb-img.cx-button-icon-pos-top,
+i.cb-icon.cx-button-icon-pos-bottom,
+i.cb-icon.cx-button-icon-pos-top {
+  display: flex;
+  margin-left: unset;
+  margin-right: unset;
+}
 
 // TODO for stretch alignment
 // .ch5-button--vertical.ch5-button--stretch-both,
