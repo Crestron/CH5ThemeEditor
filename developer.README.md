@@ -164,6 +164,11 @@ The theme definition that is common across all themes, both Crestron standard th
 
 Should there be a directive that is currently common across themes that you wish to 'promote' to be changed specifically in your custom theme, to insure your custom theme can properly be upgraded with changes to the Crestron standard and common across other theme attributes, copy and paste the directive from the common location to the custom theme location and make the change in the custom theme location.   The compilation process will respect the specific theme directives and override the theme independent directives. 
 
+### Documentation
+
+Please note that /// (three slashes) are required to add documentation to each of the SASS attributes. This is a Crestron specific comment to 
+ensure that the sass-schema.json file is created correctly.
+
 ## Testing your updates
 
 __This Section will be written when a procedure is better documented__ 
