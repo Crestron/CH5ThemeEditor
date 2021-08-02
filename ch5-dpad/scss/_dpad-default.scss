@@ -12,6 +12,138 @@
 
 @import "./variables";
 
+@mixin ch5-dpad-content($property-default-background-color, $property-default-font-color) {
+    background-color: $property-default-background-color;
+    color: $property-default-font-color;
+}
+
+@mixin ch5-dpad-content--selected($property-selected-background-color, $property-selected-font-color) {
+    background-color: $property-selected-background-color;
+    color: $property-selected-font-color;
+}
+
+@mixin ch5-dpad-content--pressed($property-pressed-background-color, $property-pressed-font-color) {
+    background-color: $property-pressed-background-color;
+    color: $property-pressed-font-color;
+}
+
+@mixin ch5-dpad-content--disabled($property-disabled-background-color, $property-disabled-font-color) {
+    background-color: $property-disabled-background-color;
+    color: $property-disabled-font-color;
+}
+
+@mixin ch5-dpad-content-plus-top($property-commmonEdgeRadius, $property-default-background-color) {
+    margin: 0 33%;
+    border-top-left-radius: $property-commmonEdgeRadius;
+    border-top-right-radius: $property-commmonEdgeRadius;
+    &:before {
+        top: calc(100% - 20px);
+        right: 100%;
+        border-radius: 0 0 $property-commmonEdgeRadius 0;
+        -moz-border-radius: 0 0 $property-commmonEdgeRadius 0;
+        -webkit-border-radius: 0 0 $property-commmonEdgeRadius 0;
+        -webkit-box-shadow: $property-commmonEdgeRadius 0 0 0 $property-default-background-color;
+        box-shadow: $property-commmonEdgeRadius 0 0 0 $property-default-background-color;
+    }
+    &:after {
+        top: calc(100% - 20px);
+        left: 100%;
+        border-radius: 0 0 0 $property-commmonEdgeRadius;
+        -moz-border-radius: 0 0 0 $property-commmonEdgeRadius;
+        -webkit-border-radius: 0 0 0 $property-commmonEdgeRadius;
+        -webkit-box-shadow: (-$property-commmonEdgeRadius) 0 0 0 $property-default-background-color;
+        box-shadow: (-$property-commmonEdgeRadius) 0 0 0 $property-default-background-color;
+    }
+    span {
+        border-top-left-radius: $property-commmonEdgeRadius;
+        border-top-right-radius: $property-commmonEdgeRadius;
+    }
+}
+
+@mixin ch5-dpad-content-plus-bottom($property-commmonEdgeRadius, $property-default-background-color) {
+    margin: 0 33%;
+    border-bottom-left-radius: $property-commmonEdgeRadius;
+    border-bottom-right-radius: $property-commmonEdgeRadius;
+    &:before {
+        top: 0;
+        left: 100%;
+        border-radius: 0 $property-commmonEdgeRadius 0 0;
+        -moz-border-radius: 0 $property-commmonEdgeRadius 0 0;
+        -webkit-border-radius: 0 $property-commmonEdgeRadius 0 0;
+        -webkit-box-shadow: (-$property-commmonEdgeRadius) 0 0 0 $property-default-background-color;
+        box-shadow: (-$property-commmonEdgeRadius) 0 0 0 $property-default-background-color;
+    }
+    &:after {
+        top: 0;
+        right: 100%;
+        border-radius: 0 $property-commmonEdgeRadius 0 0;
+        -moz-border-radius: 0 $property-commmonEdgeRadius 0 0;
+        -webkit-border-radius: 0 $property-commmonEdgeRadius 0 0;
+        -webkit-box-shadow: $property-commmonEdgeRadius 0 0 0 $property-default-background-color;
+        box-shadow: $property-commmonEdgeRadius 0 0 0 $property-default-background-color;
+    }
+    span {
+        border-bottom-left-radius: $property-commmonEdgeRadius;
+        border-bottom-right-radius: $property-commmonEdgeRadius;
+    }
+}
+
+@mixin ch5-dpad-content-plus-left($property-commmonEdgeRadius, $property-default-background-color) {
+    margin-right: calc(33% / 2);
+    border-bottom-left-radius: $property-commmonEdgeRadius;
+    border-top-left-radius: $property-commmonEdgeRadius;
+    &:before {
+        top: 100%;
+        left: calc(100% - 20px);
+        border-radius: 0 $property-commmonEdgeRadius 0 0;
+        -moz-border-radius: 0 $property-commmonEdgeRadius 0 0;
+        -webkit-border-radius: 0 $property-commmonEdgeRadius 0 0;
+        -webkit-box-shadow: 0 (-$property-commmonEdgeRadius) 0 0 $property-default-background-color;
+        box-shadow: 0 (-$property-commmonEdgeRadius) 0 0 $property-default-background-color;
+    }
+    &:after {
+        bottom: 100%;
+        left: calc(100% - 20px);
+        border-radius: 0 0 $property-commmonEdgeRadius 0;
+        -moz-border-radius: 0 0 $property-commmonEdgeRadius 0;
+        -webkit-border-radius: 0 0 $property-commmonEdgeRadius 0;
+        -webkit-box-shadow: $property-commmonEdgeRadius 0 0 0 $property-default-background-color;
+        box-shadow: $property-commmonEdgeRadius 0 0 0 $property-default-background-color;
+    }
+    span {
+        border-bottom-left-radius: $property-commmonEdgeRadius;
+        border-top-left-radius: $property-commmonEdgeRadius;
+    }
+}
+
+@mixin ch5-dpad-content-plus-right($property-commmonEdgeRadius, $property-default-background-color) {
+    margin-left: calc(33% / 2);
+    border-bottom-right-radius: $property-commmonEdgeRadius;
+    border-top-right-radius: $property-commmonEdgeRadius;
+    &:before {
+        bottom: 100%;
+        left: 0;
+        border-radius: $property-commmonEdgeRadius 0 0 0;
+        -moz-border-radius: $property-commmonEdgeRadius 0 0 0;
+        -webkit-border-radius: $property-commmonEdgeRadius 0 0 0;
+        -webkit-box-shadow: 0 $property-commmonEdgeRadius 0 0 $property-default-background-color;
+        box-shadow: 0 $property-commmonEdgeRadius 0 0 $property-default-background-color;
+    }
+    &:after {
+        top: 100%;
+        left: 0;
+        border-radius: $property-commmonEdgeRadius 0 0 0;
+        -moz-border-radius: $property-commmonEdgeRadius 0 0 0;
+        -webkit-border-radius: $property-commmonEdgeRadius 0 0 0;
+        -webkit-box-shadow: 0 (-$property-commmonEdgeRadius) 0 0 $property-default-background-color;
+        box-shadow: 0 (-$property-commmonEdgeRadius) 0 0 $property-default-background-color;
+    }
+    span {
+        border-bottom-right-radius: $property-commmonEdgeRadius;
+        border-top-right-radius: $property-commmonEdgeRadius;
+    }
+}
+
 .ch5-dpad {
     position: relative;
     display: flex;
@@ -43,6 +175,31 @@
         }
     }
 
+    .ch5-dpad-button--type-default {
+        @include ch5-dpad-content($ch5-dpad-default-default-background-color, $ch5-dpad-default-default-font-color);
+    }
+    .ch5-dpad-button--type-primary {
+        @include ch5-dpad-content($ch5-dpad-primary-default-background-color, $ch5-dpad-primary-default-font-color);
+    }
+    .ch5-dpad-button--type-info {
+        @include ch5-dpad-content($ch5-dpad-info-default-background-color, $ch5-dpad-info-default-font-color);
+    }
+    .ch5-dpad-button--type-text {
+        @include ch5-dpad-content($ch5-dpad-text-default-background-color, $ch5-dpad-text-default-font-color);
+    }
+    .ch5-dpad-button--type-danger {
+        @include ch5-dpad-content($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
+    }
+    .ch5-dpad-button--type-warning {
+        @include ch5-dpad-content($ch5-dpad-warning-default-background-color, $ch5-dpad-warning-default-font-color);
+    }
+    .ch5-dpad-button--type-success {
+        @include ch5-dpad-content($ch5-dpad-success-default-background-color, $ch5-dpad-success-default-font-color);
+    }
+    .ch5-dpad-button--type-secondary {
+        @include ch5-dpad-content($ch5-dpad-secondary-default-background-color, $ch5-dpad-secondary-default-font-color);
+    }
+
     .center {
         position: absolute;
         display: flex;
@@ -53,8 +210,8 @@
         transform: translate(-50%, -50%);
         height: calc(#{$defaultDimension / 3 + 2});
         width: calc(#{$defaultDimension / 3 + 2});
-        color: $iconColor;
-        background-color: $backgroundColor;
+        // color: $iconColor;
+        // background-color: $backgroundColor;
         font-size: 2rem;
         overflow: hidden;
         z-index: 2;
@@ -93,7 +250,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        background-color: $backgroundColor;
+        // background-color: $backgroundColor;
         justify-content: center;
         align-items: center;
         color: $iconColor;
@@ -113,6 +270,7 @@
 }
 
 .ch5-dpad.plus {
+    //.ch5-dpad-button--type-default
     .direction-btn {
         flex: calc(#{$defaultDimension} / 3);
         height: $defaultDimension/3;
@@ -141,115 +299,129 @@
             line-height: $defaultDimension/3;
             text-align: center;
         }
+    }
 
+    .direction-btn.ch5-dpad-button--type-danger {
         &.top {
-            margin: 0 33%;
-            border-top-left-radius: $commmonEdgeRadius;
-            border-top-right-radius: $commmonEdgeRadius;
-            &:before {
-                top: calc(100% - 20px);
-                right: 100%;
-                border-radius: 0 0 $commmonEdgeRadius 0;
-                -moz-border-radius: 0 0 $commmonEdgeRadius 0;
-                -webkit-border-radius: 0 0 $commmonEdgeRadius 0;
-                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColor;
-                box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColor;
-            }
-            &:after {
-                top: calc(100% - 20px);
-                left: 100%;
-                border-radius: 0 0 0 $commmonEdgeRadius;
-                -moz-border-radius: 0 0 0 $commmonEdgeRadius;
-                -webkit-border-radius: 0 0 0 $commmonEdgeRadius;
-                -webkit-box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColor;
-                box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColor;
-            }
-            span {
-                border-top-left-radius: $commmonEdgeRadius;
-                border-top-right-radius: $commmonEdgeRadius;
-            }
+            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-danger-default-background-color);
         }
         &.left {
-            margin-right: calc(33% / 2);
-            border-bottom-left-radius: $commmonEdgeRadius;
-            border-top-left-radius: $commmonEdgeRadius;
-            &:before {
-                top: 100%;
-                left: calc(100% - 20px);
-                border-radius: 0 $commmonEdgeRadius 0 0;
-                -moz-border-radius: 0 $commmonEdgeRadius 0 0;
-                -webkit-border-radius: 0 $commmonEdgeRadius 0 0;
-                -webkit-box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColor;
-                box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColor;
-            }
-            &:after {
-                bottom: 100%;
-                left: calc(100% - 20px);
-                border-radius: 0 0 $commmonEdgeRadius 0;
-                -moz-border-radius: 0 0 $commmonEdgeRadius 0;
-                -webkit-border-radius: 0 0 $commmonEdgeRadius 0;
-                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColor;
-                box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColor;
-            }
-            span {
-                border-bottom-left-radius: $commmonEdgeRadius;
-                border-top-left-radius: $commmonEdgeRadius;
-            }
+            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-danger-default-background-color);
         }
         &.right {
-            margin-left: calc(33% / 2);
-            border-bottom-right-radius: $commmonEdgeRadius;
-            border-top-right-radius: $commmonEdgeRadius;
-            &:before {
-                bottom: 100%;
-                left: 0;
-                border-radius: $commmonEdgeRadius 0 0 0;
-                -moz-border-radius: $commmonEdgeRadius 0 0 0;
-                -webkit-border-radius: $commmonEdgeRadius 0 0 0;
-                -webkit-box-shadow: 0 $commmonEdgeRadius 0 0 $backgroundColor;
-                box-shadow: 0 $commmonEdgeRadius 0 0 $backgroundColor;
-            }
-            &:after {
-                top: 100%;
-                left: 0;
-                border-radius: $commmonEdgeRadius 0 0 0;
-                -moz-border-radius: $commmonEdgeRadius 0 0 0;
-                -webkit-border-radius: $commmonEdgeRadius 0 0 0;
-                -webkit-box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColor;
-                box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColor;
-            }
-            span {
-                border-bottom-right-radius: $commmonEdgeRadius;
-                border-top-right-radius: $commmonEdgeRadius;
-            }
+            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-danger-default-background-color);
         }
         &.bottom {
-            margin: 0 33%;
-            border-bottom-left-radius: $commmonEdgeRadius;
-            border-bottom-right-radius: $commmonEdgeRadius;
-            &:before {
-                top: 0;
-                left: 100%;
-                border-radius: 0 $commmonEdgeRadius 0 0;
-                -moz-border-radius: 0 $commmonEdgeRadius 0 0;
-                -webkit-border-radius: 0 $commmonEdgeRadius 0 0;
-                -webkit-box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColor;
-                box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColor;
-            }
-            &:after {
-                top: 0;
-                right: 100%;
-                border-radius: 0 $commmonEdgeRadius 0 0;
-                -moz-border-radius: 0 $commmonEdgeRadius 0 0;
-                -webkit-border-radius: 0 $commmonEdgeRadius 0 0;
-                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColor;
-                box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColor;
-            }
-            span {
-                border-bottom-left-radius: $commmonEdgeRadius;
-                border-bottom-right-radius: $commmonEdgeRadius;
-            }
+            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-danger-default-background-color);
         }
+    }
+
+    .direction-btn.ch5-dpad-button--type-primary {
+        &.top {
+            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-primary-default-background-color);
+        }
+        &.left {
+            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-primary-default-background-color);
+        }
+        &.right {
+            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-primary-default-background-color);
+        }
+        &.bottom {
+            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-primary-default-background-color);
+        }
+    }
+
+    .direction-btn.ch5-dpad-button--type-text {
+        &.top {
+            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-text-default-background-color);
+        }
+        &.left {
+            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-text-default-background-color);
+        }
+        &.right {
+            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-text-default-background-color);
+        }
+        &.bottom {
+            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-text-default-background-color);
+        }
+    }
+
+    .direction-btn.ch5-dpad-button--type-info {
+        &.top {
+            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-info-default-background-color);
+        }
+        &.left {
+            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-info-default-background-color);
+        }
+        &.right {
+            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-info-default-background-color);
+        }
+        &.bottom {
+            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-info-default-background-color);
+        }
+    }
+
+    .direction-btn.ch5-dpad-button--type-warning {
+        &.top {
+            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-warning-default-background-color);
+        }
+        &.left {
+            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-warning-default-background-color);
+        }
+        &.right {
+            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-warning-default-background-color);
+        }
+        &.bottom {
+            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-warning-default-background-color);
+        }
+    }
+
+    .direction-btn.ch5-dpad-button--type-success {
+        &.top {
+            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-success-default-background-color);
+        }
+        &.left {
+            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-success-default-background-color);
+        }
+        &.right {
+            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-success-default-background-color);
+        }
+        &.bottom {
+            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-success-default-background-color);
+        }
+    }
+
+    .direction-btn.ch5-dpad-button--type-secondary {
+        &.top {
+            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-secondary-default-background-color);
+        }
+        &.left {
+            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-secondary-default-background-color);
+        }
+        &.right {
+            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-secondary-default-background-color);
+        }
+        &.bottom {
+            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-secondary-default-background-color);
+        }
+    }
+
+    .direction-btn.ch5-dpad-button--type-default {
+        &.top {
+            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-default-default-background-color);
+        }
+        &.left {
+            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-default-default-background-color);
+        }
+        &.right {
+            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-default-default-background-color);
+        }
+        &.bottom {
+            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-default-default-background-color);
+        }
+    }
+
+    .direction-btn {
         &.top span.dpad-btn-icon {
             border-top-left-radius: $commmonEdgeRadius;
             border-top-right-radius: $commmonEdgeRadius;

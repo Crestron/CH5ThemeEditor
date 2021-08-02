@@ -25,8 +25,6 @@ $text:          $primary !default;
 //default colors
 //text default color
 
-
-
 /// color of button text border in dark scss
 $ch5-button-text-border-color: #333 !default;
 
@@ -230,6 +228,170 @@ $ch5-button-secondary-pressed-font-color: $ch5-button-secondary-font-color !defa
 $ch5-button-secondary-disabled-border-color: $ch5-button-secondary-default-border-color !default;
 $ch5-button-secondary-disabled-background-color: $ch5-button-secondary-default-background-color !default;
 $ch5-button-secondary-disabled-font-color: $ch5-button-secondary-default-font-color !default;
+
+
+/* ===============================================
+CH5-DPAD
+============================================= */
+
+$ch5-dpad-text-font-color: #e0e0e0 !default;
+
+/// color of button text font in dark scss
+$ch5-dpad-text-default-background-color: #343434 !default;
+$ch5-dpad-text-default-font-color: $ch5-dpad-text-font-color !default;
+
+//text selected color
+$ch5-dpad-text-selected-background-color: #454545 !default;
+$ch5-dpad-text-selected-font-color: $ch5-dpad-text-font-color !default;
+
+//text pressed color
+$ch5-dpad-text-pressed-background-color: #666666 !default;
+$ch5-dpad-text-pressed-font-color: $ch5-dpad-text-font-color !default;
+
+//text disabled color
+$ch5-dpad-text-disabled-background-color: $ch5-dpad-text-default-background-color !default;
+$ch5-dpad-text-disabled-font-color: $ch5-dpad-text-default-font-color !default;
+
+// ------------------------------------------------------
+
+$ch5-dpad-danger-font-color: #ffffff !default;
+
+//danger default color
+$ch5-dpad-danger-default-background-color: $danger !default;
+$ch5-dpad-danger-default-font-color: #ffffff !default;
+
+//danger selected color
+$ch5-dpad-danger-selected-background-color: #a12020 !default;
+$ch5-dpad-danger-selected-font-color: $ch5-dpad-danger-font-color !default;
+
+//danger pressed color
+$ch5-dpad-danger-pressed-background-color: #b71c1c !default;
+$ch5-dpad-danger-pressed-font-color: $ch5-dpad-danger-font-color !default;
+
+//danger disabled color
+$ch5-dpad-danger-disabled-background-color: $ch5-dpad-danger-default-background-color !default;
+$ch5-dpad-danger-disabled-font-color: $ch5-dpad-danger-default-font-color !default;
+
+// ------------------------------------------------------
+
+$ch5-dpad-warning-font-color: #333 !default;
+
+//warning default color
+$ch5-dpad-warning-default-background-color: $warning !default;
+$ch5-dpad-warning-default-font-color: $ch5-dpad-warning-font-color !default;
+
+//warning selected color
+$ch5-dpad-warning-selected-background-color: #d97b00 !default;
+$ch5-dpad-warning-selected-font-color: #333 !default;
+
+//warning pressed color
+$ch5-dpad-warning-pressed-background-color: #ff6f00 !default;
+$ch5-dpad-warning-pressed-font-color: #f0fff0 !default;
+
+//warning disabled color
+$ch5-dpad-warning-disabled-background-color: $ch5-dpad-warning-default-background-color !default;
+$ch5-dpad-warning-disabled-font-color: $ch5-dpad-warning-default-font-color !default;
+
+// ------------------------------------------------------
+
+$ch5-dpad-info-font-color: #f0fff0 !default;
+
+//info default color
+$ch5-dpad-info-default-background-color: $info !default;
+$ch5-dpad-info-default-font-color: $ch5-dpad-info-font-color !default;
+
+//info selected color
+$ch5-dpad-info-selected-background-color:#006069 !default;
+$ch5-dpad-info-selected-font-color: $ch5-dpad-info-font-color !default;
+
+//info pressed color
+$ch5-dpad-info-pressed-background-color: #0097a7 !default;
+$ch5-dpad-info-pressed-font-color: $ch5-dpad-info-font-color !default;
+
+//info disabled color
+$ch5-dpad-info-disabled-background-color: $ch5-dpad-info-default-background-color !default;
+$ch5-dpad-info-disabled-font-color: $ch5-dpad-info-default-font-color !default;
+
+
+// ------------------------------------------------------
+
+$ch5-dpad-success-font-color: #f0fff0 !default;
+
+//primary default color
+$ch5-dpad-success-default-background-color: $success !default;
+$ch5-dpad-success-default-font-color: $ch5-dpad-success-font-color !default;
+
+//success selected color
+$ch5-dpad-success-selected-background-color: #205723 !default;
+$ch5-dpad-success-selected-font-color: $ch5-dpad-success-font-color !default;
+
+//success pressed color
+$ch5-dpad-success-pressed-background-color: #388e3c !default;
+$ch5-dpad-success-pressed-font-color: $ch5-dpad-success-font-color !default;
+
+//success disabled color
+$ch5-dpad-success-disabled-background-color: $ch5-dpad-success-default-background-color !default;
+$ch5-dpad-success-disabled-font-color: $ch5-dpad-success-default-font-color !default;
+
+// ------------------------------------------------------
+
+$ch5-dpad-default-font-color: #ffffff !default;
+
+//default default color
+$ch5-dpad-default-default-background-color: $default !default;
+$ch5-dpad-default-default-font-color: $ch5-dpad-default-font-color !default;
+
+//default selected color
+$ch5-dpad-default-selected-background-color: #005C99 !default;
+$ch5-dpad-default-selected-font-color: #f0fff0 !default;
+
+//default pressed color
+$ch5-dpad-default-pressed-background-color: #007acc !default;
+$ch5-dpad-default-pressed-font-color: #f0fff0 !default;
+
+//default disabled color
+$ch5-dpad-default-disabled-background-color: $ch5-dpad-default-default-background-color !default;
+$ch5-dpad-default-disabled-font-color: $ch5-dpad-default-default-font-color !default;
+
+// ------------------------------------------------------
+
+$ch5-dpad-primary-font-color: #fefefe !default;
+
+//primary default color
+$ch5-dpad-primary-default-background-color: $primary !default;
+$ch5-dpad-primary-default-font-color: $ch5-dpad-primary-font-color !default;
+
+//primary selected color
+$ch5-dpad-primary-selected-background-color: #3b3b40 !default;
+$ch5-dpad-primary-selected-font-color: $ch5-dpad-primary-font-color !default;
+
+//primary pressed color
+$ch5-dpad-primary-pressed-background-color: #5e5e66 !default;
+$ch5-dpad-primary-pressed-font-color: $ch5-dpad-primary-font-color !default;
+
+//primary disabled color
+$ch5-dpad-primary-disabled-background-color: $ch5-dpad-primary-default-background-color !default;
+$ch5-dpad-primary-disabled-font-color: $ch5-dpad-primary-default-font-color!default;
+
+// ------------------------------------------------------
+
+$ch5-dpad-secondary-font-color: #fefefe !default;
+
+//secondary default color
+$ch5-dpad-secondary-default-background-color: $secondary !default;
+$ch5-dpad-secondary-default-font-color: #fefefe !default;
+
+//secondary selected color
+$ch5-dpad-secondary-selected-background-color: #9898a6 !default;
+$ch5-dpad-secondary-selected-font-color:  #ffffff !default;
+
+//secondary pressed color
+$ch5-dpad-secondary-pressed-background-color: #3b3b40 !default;
+$ch5-dpad-secondary-pressed-font-color: $ch5-dpad-secondary-font-color !default;
+
+//secondary disabled color
+$ch5-dpad-secondary-disabled-background-color: $ch5-dpad-secondary-default-background-color !default;
+$ch5-dpad-secondary-disabled-font-color: $ch5-dpad-secondary-default-font-color !default;
 
 /* ===============================================
 CH5-OVERLAY
