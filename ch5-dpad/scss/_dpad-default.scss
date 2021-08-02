@@ -1,0 +1,349 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2021 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-dpad
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@import "./variables";
+
+.ch5-dpad {
+    position: relative;
+    display: flex;
+    width: $defaultDimension;
+    height: $defaultDimension;
+    flex-wrap: wrap;
+    vertical-align: top;
+    &[show="false"] {
+        display: none;
+    }
+    &[disabled] {
+        pointer-events: none;
+        .center {
+            background-color: $backgroundColorDisabled !important;
+        }
+        .direction-btn {
+            background-color: $backgroundColorDisabled !important;
+        }
+    }
+
+    .image-url {
+        display: block;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        &::before,
+        &::after {
+            content: none;
+        }
+    }
+
+    .center {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: calc(#{$defaultDimension / 3 + 2});
+        width: calc(#{$defaultDimension / 3 + 2});
+        color: $iconColor;
+        background-color: $backgroundColor;
+        font-size: 2rem;
+        overflow: hidden;
+        z-index: 2;
+        cursor: pointer;
+        &.ch5-disabled {
+            background-color: $backgroundColorDisabled !important;
+            pointer-events: none;
+            z-index: 2;
+        }
+        span {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            line-height: calc(#{$defaultDimension / 3 + 2});
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-size: 80%;
+        }
+        &:hover {
+            span {
+                background-color: $backgroundColorHover !important;
+                z-index: 1;
+            }
+        }
+
+        .image-url {
+            border-radius: 50%;
+        }
+    }
+
+    .direction-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: $backgroundColor;
+        justify-content: center;
+        align-items: center;
+        color: $iconColor;
+        &.ch5-disabled {
+            background-color: $backgroundColorDisabled !important;
+            pointer-events: none;
+            z-index: 2;
+        }
+        span {
+            font-size: 2rem;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-size: 80%;
+        }
+    }
+}
+
+.ch5-dpad.plus {
+    .direction-btn {
+        flex: calc(#{$defaultDimension} / 3);
+        height: $defaultDimension/3;
+        &:after,
+        &:before {
+            content: "";
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            background-color: transparent;
+        }
+        &:hover {
+            position: relative;
+            z-index: 1;
+            i,
+            span {
+                background-color: $backgroundColorHover;
+                z-index: 1;
+            }
+        }
+        span {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            line-height: $defaultDimension/3;
+            text-align: center;
+        }
+
+        &.top {
+            margin: 0 33%;
+            border-top-left-radius: $commmonEdgeRadius;
+            border-top-right-radius: $commmonEdgeRadius;
+            &:before {
+                top: calc(100% - 20px);
+                right: 100%;
+                border-radius: 0 0 $commmonEdgeRadius 0;
+                -moz-border-radius: 0 0 $commmonEdgeRadius 0;
+                -webkit-border-radius: 0 0 $commmonEdgeRadius 0;
+                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColor;
+                box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColor;
+            }
+            &:after {
+                top: calc(100% - 20px);
+                left: 100%;
+                border-radius: 0 0 0 $commmonEdgeRadius;
+                -moz-border-radius: 0 0 0 $commmonEdgeRadius;
+                -webkit-border-radius: 0 0 0 $commmonEdgeRadius;
+                -webkit-box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColor;
+                box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColor;
+            }
+            span {
+                border-top-left-radius: $commmonEdgeRadius;
+                border-top-right-radius: $commmonEdgeRadius;
+            }
+        }
+        &.left {
+            margin-right: calc(33% / 2);
+            border-bottom-left-radius: $commmonEdgeRadius;
+            border-top-left-radius: $commmonEdgeRadius;
+            &:before {
+                top: 100%;
+                left: calc(100% - 20px);
+                border-radius: 0 $commmonEdgeRadius 0 0;
+                -moz-border-radius: 0 $commmonEdgeRadius 0 0;
+                -webkit-border-radius: 0 $commmonEdgeRadius 0 0;
+                -webkit-box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColor;
+                box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColor;
+            }
+            &:after {
+                bottom: 100%;
+                left: calc(100% - 20px);
+                border-radius: 0 0 $commmonEdgeRadius 0;
+                -moz-border-radius: 0 0 $commmonEdgeRadius 0;
+                -webkit-border-radius: 0 0 $commmonEdgeRadius 0;
+                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColor;
+                box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColor;
+            }
+            span {
+                border-bottom-left-radius: $commmonEdgeRadius;
+                border-top-left-radius: $commmonEdgeRadius;
+            }
+        }
+        &.right {
+            margin-left: calc(33% / 2);
+            border-bottom-right-radius: $commmonEdgeRadius;
+            border-top-right-radius: $commmonEdgeRadius;
+            &:before {
+                bottom: 100%;
+                left: 0;
+                border-radius: $commmonEdgeRadius 0 0 0;
+                -moz-border-radius: $commmonEdgeRadius 0 0 0;
+                -webkit-border-radius: $commmonEdgeRadius 0 0 0;
+                -webkit-box-shadow: 0 $commmonEdgeRadius 0 0 $backgroundColor;
+                box-shadow: 0 $commmonEdgeRadius 0 0 $backgroundColor;
+            }
+            &:after {
+                top: 100%;
+                left: 0;
+                border-radius: $commmonEdgeRadius 0 0 0;
+                -moz-border-radius: $commmonEdgeRadius 0 0 0;
+                -webkit-border-radius: $commmonEdgeRadius 0 0 0;
+                -webkit-box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColor;
+                box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColor;
+            }
+            span {
+                border-bottom-right-radius: $commmonEdgeRadius;
+                border-top-right-radius: $commmonEdgeRadius;
+            }
+        }
+        &.bottom {
+            margin: 0 33%;
+            border-bottom-left-radius: $commmonEdgeRadius;
+            border-bottom-right-radius: $commmonEdgeRadius;
+            &:before {
+                top: 0;
+                left: 100%;
+                border-radius: 0 $commmonEdgeRadius 0 0;
+                -moz-border-radius: 0 $commmonEdgeRadius 0 0;
+                -webkit-border-radius: 0 $commmonEdgeRadius 0 0;
+                -webkit-box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColor;
+                box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColor;
+            }
+            &:after {
+                top: 0;
+                right: 100%;
+                border-radius: 0 $commmonEdgeRadius 0 0;
+                -moz-border-radius: 0 $commmonEdgeRadius 0 0;
+                -webkit-border-radius: 0 $commmonEdgeRadius 0 0;
+                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColor;
+                box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColor;
+            }
+            span {
+                border-bottom-left-radius: $commmonEdgeRadius;
+                border-bottom-right-radius: $commmonEdgeRadius;
+            }
+        }
+        &.top span.dpad-btn-icon {
+            border-top-left-radius: $commmonEdgeRadius;
+            border-top-right-radius: $commmonEdgeRadius;
+        }
+        &.left span.dpad-btn-icon {
+            border-bottom-left-radius: $commmonEdgeRadius;
+            border-top-left-radius: $commmonEdgeRadius;
+        }
+        &.right span.dpad-btn-icon {
+            border-bottom-right-radius: $commmonEdgeRadius;
+            border-top-right-radius: $commmonEdgeRadius;
+        }
+        &.bottom span.dpad-btn-icon {
+            border-bottom-left-radius: $commmonEdgeRadius;
+            border-bottom-right-radius: $commmonEdgeRadius;
+        }
+    }
+
+    &[disabled] .direction-btn,
+    .direction-btn.ch5-disabled {
+        &.top {
+            &::before {
+                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorDisabled;
+                box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorDisabled;
+            }
+            &::after {
+                -webkit-box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColorDisabled;
+                box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColorDisabled;
+            }
+        }
+        &.left {
+            &::before {
+                -webkit-box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColorDisabled;
+                box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColorDisabled;
+            }
+            &::after {
+                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorDisabled;
+                box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorDisabled;
+            }
+        }
+        &.right {
+            &::before {
+                -webkit-box-shadow: 0 $commmonEdgeRadius 0 0 $backgroundColorDisabled;
+                box-shadow: 0 $commmonEdgeRadius 0 0 $backgroundColorDisabled;
+            }
+            &::after {
+                -webkit-box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColorDisabled;
+                box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColorDisabled;
+            }
+        }
+        &.bottom {
+            &::before {
+                -webkit-box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColorDisabled;
+                box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColorDisabled;
+            }
+            &::after {
+                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorDisabled;
+                box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorDisabled;
+            }
+        }
+    }
+}
+
+.ch5-dpad.circle {
+    transform: rotate(45deg);
+    border-radius: 50%;
+    overflow: hidden;
+    .center {
+        border-radius: 50%;
+        z-index: 3;
+        .dpad-btn-label {
+            display: block;
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 1.5rem;
+            transform: rotate(-45deg);
+            padding: 0 15%;
+        }
+        span.dpad-btn-icon {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .direction-btn {
+        flex: calc(#{$defaultDimension} / 2);
+        height: $defaultDimension / 2;
+        overflow: hidden;
+        &:hover {
+            background-color: $backgroundColorHover;
+        }
+        span {
+            transform: rotate(-45deg);
+        }
+    }
+}
