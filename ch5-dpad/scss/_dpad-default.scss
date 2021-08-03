@@ -13,23 +13,61 @@
 @import "./variables";
 
 @mixin ch5-dpad-content($property-default-background-color, $property-default-font-color) {
-    background-color: $property-default-background-color;
-    color: $property-default-font-color;
+    $backgroundColorHover: lighten($property-default-background-color, 10%);
+    .ch5-dpad-child {
+        background-color: $property-default-background-color;
+        color: $property-default-font-color;
+    }
+    .center:hover span {
+        background-color: $backgroundColorHover !important;
+        z-index: 1;
+    }
+    &.plus .direction-btn:hover span,
+    &.circle .direction-btn:hover {
+        background-color: $backgroundColorHover !important;
+        z-index: 1;
+    }
 }
 
 @mixin ch5-dpad-content--selected($property-selected-background-color, $property-selected-font-color) {
-    background-color: $property-selected-background-color;
-    color: $property-selected-font-color;
+    $backgroundColorHover: lighten($property-selected-background-color, 10%);
+    .ch5-dpad-child {
+        background-color: $property-default-background-color;
+        color: $property-default-font-color;
+    }
+    .center:hover span {
+        background-color: $backgroundColorHover !important;
+        z-index: 1;
+    }
+    &.plus .direction-btn:hover span,
+    &.circle .direction-btn:hover {
+        background-color: $backgroundColorHover !important;
+        z-index: 1;
+    }
 }
 
 @mixin ch5-dpad-content--pressed($property-pressed-background-color, $property-pressed-font-color) {
-    background-color: $property-pressed-background-color;
-    color: $property-pressed-font-color;
+    $backgroundColorHover: lighten($property-pressed-background-color, 10%);
+    .ch5-dpad-child {
+        background-color: $property-default-background-color;
+        color: $property-default-font-color;
+    }
+    center:hover span {
+        background-color: $backgroundColorHover !important;
+        z-index: 1;
+    }
+    &.plus .direction-btn:hover span,
+    &.circle .direction-btn:hover {
+        background-color: $backgroundColorHover !important;
+        z-index: 1;
+    }
 }
 
-@mixin ch5-dpad-content--disabled($property-disabled-background-color, $property-disabled-font-color) {
-    background-color: $property-disabled-background-color;
-    color: $property-disabled-font-color;
+@mixin ch5-dpad-content--disabled($ch5-dpad-text-disabled-background-color, $ch5-dpad-text-disabled-font-color) {
+    .ch5-dpad-child {
+        background-color: $ch5-dpad-text-disabled-background-color;
+        color: $ch5-dpad-text-disabled-font-color;
+    }
 }
 
 @mixin ch5-dpad-content-plus-top($property-commmonEdgeRadius, $property-default-background-color) {
@@ -146,7 +184,7 @@
 
 .ch5-dpad {
     position: relative;
-    display: flex;
+    display: inline-flex;
     width: $defaultDimension;
     height: $defaultDimension;
     flex-wrap: wrap;
@@ -156,11 +194,9 @@
     }
     &[disabled] {
         pointer-events: none;
-        .center {
-            background-color: $backgroundColorDisabled !important;
-        }
-        .direction-btn {
-            background-color: $backgroundColorDisabled !important;
+        .ch5-dpad-child {
+            background-color: $ch5-dpad-text-disabled-background-color !important;
+            color: $ch5-dpad-text-disabled-font-color !important;
         }
     }
 
@@ -175,28 +211,28 @@
         }
     }
 
-    .ch5-dpad-button--type-default {
+    &.ch5-dpad--type-default {
         @include ch5-dpad-content($ch5-dpad-default-default-background-color, $ch5-dpad-default-default-font-color);
     }
-    .ch5-dpad-button--type-primary {
+    &.ch5-dpad--type-primary {
         @include ch5-dpad-content($ch5-dpad-primary-default-background-color, $ch5-dpad-primary-default-font-color);
     }
-    .ch5-dpad-button--type-info {
+    &.ch5-dpad--type-info {
         @include ch5-dpad-content($ch5-dpad-info-default-background-color, $ch5-dpad-info-default-font-color);
     }
-    .ch5-dpad-button--type-text {
+    &.ch5-dpad--type-text {
         @include ch5-dpad-content($ch5-dpad-text-default-background-color, $ch5-dpad-text-default-font-color);
     }
-    .ch5-dpad-button--type-danger {
+    &.ch5-dpad--type-danger {
         @include ch5-dpad-content($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
     }
-    .ch5-dpad-button--type-warning {
+    &.ch5-dpad--type-warning {
         @include ch5-dpad-content($ch5-dpad-warning-default-background-color, $ch5-dpad-warning-default-font-color);
     }
-    .ch5-dpad-button--type-success {
+    &.ch5-dpad--type-success {
         @include ch5-dpad-content($ch5-dpad-success-default-background-color, $ch5-dpad-success-default-font-color);
     }
-    .ch5-dpad-button--type-secondary {
+    &.ch5-dpad--type-secondary {
         @include ch5-dpad-content($ch5-dpad-secondary-default-background-color, $ch5-dpad-secondary-default-font-color);
     }
 
@@ -210,14 +246,12 @@
         transform: translate(-50%, -50%);
         height: calc(#{$defaultDimension / 3 + 2});
         width: calc(#{$defaultDimension / 3 + 2});
-        // color: $iconColor;
-        // background-color: $backgroundColor;
         font-size: 2rem;
         overflow: hidden;
         z-index: 2;
         cursor: pointer;
         &.ch5-disabled {
-            background-color: $backgroundColorDisabled !important;
+            background-color: $ch5-dpad-text-disabled-background-color !important;
             pointer-events: none;
             z-index: 2;
         }
@@ -232,12 +266,6 @@
             background-position: center;
             background-size: 80%;
         }
-        &:hover {
-            span {
-                background-color: $backgroundColorHover !important;
-                z-index: 1;
-            }
-        }
 
         .image-url {
             border-radius: 50%;
@@ -250,12 +278,10 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        // background-color: $backgroundColor;
         justify-content: center;
         align-items: center;
-        color: $iconColor;
         &.ch5-disabled {
-            background-color: $backgroundColorDisabled !important;
+            background-color: $ch5-dpad-text-disabled-background-color !important;
             pointer-events: none;
             z-index: 2;
         }
@@ -270,7 +296,7 @@
 }
 
 .ch5-dpad.plus {
-    //.ch5-dpad-button--type-default
+    //.ch5-dpad--type-default
     .direction-btn {
         flex: calc(#{$defaultDimension} / 3);
         height: $defaultDimension/3;
@@ -285,11 +311,6 @@
         &:hover {
             position: relative;
             z-index: 1;
-            i,
-            span {
-                background-color: $backgroundColorHover;
-                z-index: 1;
-            }
         }
         span {
             height: 100%;
@@ -301,7 +322,7 @@
         }
     }
 
-    .direction-btn.ch5-dpad-button--type-danger {
+    &.ch5-dpad--type-danger .direction-btn {
         &.top {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-danger-default-background-color);
         }
@@ -316,7 +337,7 @@
         }
     }
 
-    .direction-btn.ch5-dpad-button--type-primary {
+    &.ch5-dpad--type-primary .direction-btn {
         &.top {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-primary-default-background-color);
         }
@@ -331,7 +352,7 @@
         }
     }
 
-    .direction-btn.ch5-dpad-button--type-text {
+    &.ch5-dpad--type-text .direction-btn {
         &.top {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-text-default-background-color);
         }
@@ -346,7 +367,7 @@
         }
     }
 
-    .direction-btn.ch5-dpad-button--type-info {
+    &.ch5-dpad--type-info .direction-btn {
         &.top {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-info-default-background-color);
         }
@@ -361,7 +382,7 @@
         }
     }
 
-    .direction-btn.ch5-dpad-button--type-warning {
+    &.ch5-dpad--type-warning .direction-btn {
         &.top {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-warning-default-background-color);
         }
@@ -376,7 +397,7 @@
         }
     }
 
-    .direction-btn.ch5-dpad-button--type-success {
+    &.ch5-dpad--type-success .direction-btn {
         &.top {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-success-default-background-color);
         }
@@ -391,7 +412,7 @@
         }
     }
 
-    .direction-btn.ch5-dpad-button--type-secondary {
+    &.ch5-dpad--type-secondary .direction-btn {
         &.top {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-secondary-default-background-color);
         }
@@ -406,7 +427,7 @@
         }
     }
 
-    .direction-btn.ch5-dpad-button--type-default {
+    &.ch5-dpad--type-default .direction-btn {
         &.top {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-default-default-background-color);
         }
@@ -444,42 +465,42 @@
     .direction-btn.ch5-disabled {
         &.top {
             &::before {
-                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorDisabled;
-                box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorDisabled;
+                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $ch5-dpad-text-disabled-background-color;
+                box-shadow: $commmonEdgeRadius 0 0 0 $ch5-dpad-text-disabled-background-color;
             }
             &::after {
-                -webkit-box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColorDisabled;
-                box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColorDisabled;
+                -webkit-box-shadow: (-$commmonEdgeRadius) 0 0 0 $ch5-dpad-text-disabled-background-color;
+                box-shadow: (-$commmonEdgeRadius) 0 0 0 $ch5-dpad-text-disabled-background-color;
             }
         }
         &.left {
             &::before {
-                -webkit-box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColorDisabled;
-                box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColorDisabled;
+                -webkit-box-shadow: 0 (-$commmonEdgeRadius) 0 0 $ch5-dpad-text-disabled-background-color;
+                box-shadow: 0 (-$commmonEdgeRadius) 0 0 $ch5-dpad-text-disabled-background-color;
             }
             &::after {
-                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorDisabled;
-                box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorDisabled;
+                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $ch5-dpad-text-disabled-background-color;
+                box-shadow: $commmonEdgeRadius 0 0 0 $ch5-dpad-text-disabled-background-color;
             }
         }
         &.right {
             &::before {
-                -webkit-box-shadow: 0 $commmonEdgeRadius 0 0 $backgroundColorDisabled;
-                box-shadow: 0 $commmonEdgeRadius 0 0 $backgroundColorDisabled;
+                -webkit-box-shadow: 0 $commmonEdgeRadius 0 0 $ch5-dpad-text-disabled-background-color;
+                box-shadow: 0 $commmonEdgeRadius 0 0 $ch5-dpad-text-disabled-background-color;
             }
             &::after {
-                -webkit-box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColorDisabled;
-                box-shadow: 0 (-$commmonEdgeRadius) 0 0 $backgroundColorDisabled;
+                -webkit-box-shadow: 0 (-$commmonEdgeRadius) 0 0 $ch5-dpad-text-disabled-background-color;
+                box-shadow: 0 (-$commmonEdgeRadius) 0 0 $ch5-dpad-text-disabled-background-color;
             }
         }
         &.bottom {
             &::before {
-                -webkit-box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColorDisabled;
-                box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColorDisabled;
+                -webkit-box-shadow: (-$commmonEdgeRadius) 0 0 0 $ch5-dpad-text-disabled-background-color;
+                box-shadow: (-$commmonEdgeRadius) 0 0 0 $ch5-dpad-text-disabled-background-color;
             }
             &::after {
-                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorDisabled;
-                box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorDisabled;
+                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $ch5-dpad-text-disabled-background-color;
+                box-shadow: $commmonEdgeRadius 0 0 0 $ch5-dpad-text-disabled-background-color;
             }
         }
     }
@@ -511,9 +532,6 @@
         flex: calc(#{$defaultDimension} / 2);
         height: $defaultDimension / 2;
         overflow: hidden;
-        &:hover {
-            background-color: $backgroundColorHover;
-        }
         span {
             transform: rotate(-45deg);
         }

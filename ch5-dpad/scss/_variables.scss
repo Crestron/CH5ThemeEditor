@@ -15,15 +15,3 @@ $defaultDimension: 150px;
 
 /// Set the border radius for 'plus' shape
 $commmonEdgeRadius: 10px;
-
-/// Set default icon color for the dpad child elements
-$iconColor: #fefefe;
-
-/// Set default background color for the dpad child elements
-$backgroundColor: blue;
-
-/// Set default background color on hover for the dpad child elements
-$backgroundColorHover: lighten($backgroundColor, 10%);
-
-/// Set default background color on disabled for the dpad child elements
-$backgroundColorDisabled: lighten(desaturate($backgroundColor, 100%), 10%);
