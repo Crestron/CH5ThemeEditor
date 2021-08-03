@@ -20,6 +20,12 @@ $warning:       #ffc107 !default;
 $danger:        #f44336 !default;
 $text:          $primary !default;
 
+/* ===============================================
+CH5-BUTTON
+============================================= */
+
+//text default color
+
 /// The border color of the button.
 $ch5-button-text-border-color: #e0e0e0 !default;
 
@@ -54,7 +60,6 @@ $ch5-button-text-pressed-background-color: #808080 !default;
 /// the font color for text of the pressed button
 $ch5-button-text-pressed-font-color: $ch5-button-text-font-color !default;
 
-//text disabled color
 /// the border color for text of the disabled button
 $ch5-button-text-disabled-border-color: $ch5-button-text-default-border-color !default;
 
@@ -92,7 +97,8 @@ $ch5-button-danger-selected-background-color: #c62828 !default;
 /// the font color for danger type of the selected button
 $ch5-button-danger-selected-font-color: $ch5-button-danger-font-color !default;
 
-// danger pressed color
+//danger pressed color
+
 /// the border color for danger type of the pressed button
 $ch5-button-danger-pressed-border-color: $ch5-button-danger-border-color;
 
@@ -111,7 +117,6 @@ $ch5-button-danger-disabled-background-color: #b71c1c !default;
 
 /// the font color for danger type of the disabled button
 $ch5-button-danger-disabled-font-color: #f0fff0 !default;
-
 
 
 // ------------------------------------------------------
@@ -209,7 +214,6 @@ $ch5-button-info-disabled-background-color: #006064 !default;
 $ch5-button-info-disabled-font-color: $ch5-button-info-font-color;
 
 
-
 // ------------------------------------------------------
 /// the border color of the button
 $ch5-button-success-border-color: #43a047 !default;
@@ -257,7 +261,6 @@ $ch5-button-success-disabled-background-color: #1b5e20 !default;
 /// the font color for success type of the disabled button
 $ch5-button-success-disabled-font-color: $ch5-button-success-font-color;
 
-
 // ------------------------------------------------------
 
 $ch5-button-default-border-color: #0091ea !default;
@@ -282,7 +285,6 @@ $ch5-button-default-pressed-font-color: #f0fff0 !default;
 $ch5-button-default-disabled-border-color: $ch5-button-default-border-color !default;
 $ch5-button-default-disabled-background-color: #004d80 !default;
 $ch5-button-default-disabled-font-color: $ch5-button-default-font-color;
-
 
 // ------------------------------------------------------
 
@@ -309,8 +311,6 @@ $ch5-button-primary-disabled-border-color: $ch5-button-primary-border-color !def
 $ch5-button-primary-disabled-background-color: #616161 !default;
 $ch5-button-primary-disabled-font-color: $ch5-button-primary-font-color;
 
-
-
 // ------------------------------------------------------
 
 $ch5-button-secondary-border-color: #9e9e9e !default;
@@ -335,7 +335,6 @@ $ch5-button-secondary-pressed-font-color: $ch5-button-secondary-font-color !defa
 $ch5-button-secondary-disabled-border-color: $ch5-button-secondary-border-color !default;
 $ch5-button-secondary-disabled-background-color: #616161 !default;
 $ch5-button-secondary-disabled-font-color: #ffffff !default;
-
 
 /* ===============================================
 CH5-DPAD
@@ -406,8 +405,6 @@ $ch5-dpad-danger-disabled-background-color: #b71c1c !default;
 
 /// the font color for danger type of the disabled dpad
 $ch5-dpad-danger-disabled-font-color: #f0fff0 !default;
-
-
 
 // ------------------------------------------------------
 
@@ -520,7 +517,6 @@ $ch5-dpad-success-disabled-background-color: #1b5e20 !default;
 /// the font color for success type of the disabled dpad
 $ch5-dpad-success-disabled-font-color: $ch5-dpad-success-font-color;
 
-
 // ------------------------------------------------------
 
 $ch5-dpad-default-font-color: #ffffff !default;
@@ -541,7 +537,6 @@ $ch5-dpad-default-pressed-font-color: #f0fff0 !default;
 $ch5-dpad-default-disabled-background-color: #004d80 !default;
 $ch5-dpad-default-disabled-font-color: $ch5-dpad-default-font-color;
 
-
 // ------------------------------------------------------
 
 $ch5-dpad-primary-font-color: #333 !default;
@@ -561,8 +556,6 @@ $ch5-dpad-primary-pressed-font-color: $ch5-dpad-primary-font-color !default;
 //primary disabled color
 $ch5-dpad-primary-disabled-background-color: #616161 !default;
 $ch5-dpad-primary-disabled-font-color: $ch5-dpad-primary-font-color;
-
-
 
 // ------------------------------------------------------
 
@@ -677,7 +670,6 @@ $ch5-textinput-icon-text-color: $success !default;
 /// the color for the label of the textinput
 $ch5-textinput-label-text-color: $ch5-textinput-text-color !default;
 
-
 // base border color
 $ch5-textinput-border-color: $danger !default;
 
@@ -747,6 +739,9 @@ $ch5-modal-close-icon-background-color: #fff;
 
 /// the background color of the modal
 $ch5-modal-background-color: #fff;
+
+/// the border color of the modal
+$ch5-modal-border-color:   #fff;
 
 /// the text color of the modal
 $ch5-modal-text-color: #4a4a4a;

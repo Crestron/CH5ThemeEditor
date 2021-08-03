@@ -1,9 +1,14 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-high-contrast-theme-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Color system
 $default:       #0000ff !default;
@@ -15,135 +20,245 @@ $warning:       #ff4500 !default;
 $danger:        #ff0000 !default;
 $text:          $primary !default;
 
+/* ===============================================
+CH5-BUTTON
+============================================= */
 
-// Button  Colors
-//default colors
 //text default color
 
+/// The border color of the button.
 $ch5-button-text-border-color: #561b8d !default;
+
+/// The font color of the button.
 $ch5-button-text-font-color: #ffffff !default;
 
+/// The border color for text of the button.
 $ch5-button-text-default-border-color: $ch5-button-text-border-color !default;
+
+/// The background color for text of the button.
 $ch5-button-text-default-background-color: #561b8d !default;
+
+/// The font color for text of the button.
 $ch5-button-text-default-font-color: $ch5-button-text-font-color !default;
 
-//text selected color
+/// the border color for text of the selected button
 $ch5-button-text-selected-border-color: $ch5-button-text-border-color #561b8d !default;
+
+/// the background color for text of the selected button
 $ch5-button-text-selected-background-color: #ffffff !default;
+
+/// the font color for text of the selected button
 $ch5-button-text-selected-font-color: #561b8d !default;
 
 //text pressed color
+/// the border color for text of the pressed button
 $ch5-button-text-pressed-border-color:$ch5-button-text-border-color !default;
+
+/// the background color for text of the pressed button
 $ch5-button-text-pressed-background-color: #8429d9 !default;
+
+/// the font color for text of the pressed button
 $ch5-button-text-pressed-font-color: $ch5-button-text-font-color !default;
 
-///text disabled color
+/// the border color for text of the disabled button
 $ch5-button-text-disabled-border-color: $ch5-button-text-default-border-color !default;
+
+/// the background color for text of the disabled button
 $ch5-button-text-disabled-background-color: $ch5-button-text-default-background-color !default;
+
+/// the font color for text of the disabled button
 $ch5-button-text-disabled-font-color: $ch5-button-text-default-font-color !default;
 
 // ------------------------------------------------------
 
+/// the border color of the button
 $ch5-button-danger-border-color: #ff0000 !default;
+
+/// the font color of the button
 $ch5-button-danger-font-color: #ffffff !default;
 
 //danger default color
+/// the border color for danger type of the button
 $ch5-button-danger-default-border-color: $ch5-button-danger-border-color !default;
+
+/// the background color for danger type of the button
 $ch5-button-danger-default-background-color: $danger !default;
+
+/// the font color for danger type of the button
 $ch5-button-danger-default-font-color: #ffffff !default;
 
 //danger selected color
+/// the border color for danger type of the selected button
 $ch5-button-danger-selected-border-color: $ch5-button-danger-border-color !default;
+
+/// the background color for danger type of the selected button
 $ch5-button-danger-selected-background-color: #ffffff !default;
+
+/// the font color for danger type of the selected button
 $ch5-button-danger-selected-font-color: #ff0000 !default;
 
 //danger pressed color
+
+/// the border color for danger type of the pressed button
 $ch5-button-danger-pressed-border-color: $ch5-button-danger-border-color;
+
+/// the background color for danger type of the pressed button
 $ch5-button-danger-pressed-background-color: #b71c1c !default;
+
+/// the font color for danger type of the pressed button
 $ch5-button-danger-pressed-font-color: $ch5-button-danger-font-color !default;
 
 //danger disabled color
-
+/// the border color for danger type of the disabled button
 $ch5-button-danger-disabled-border-color: $ch5-button-danger-default-border-color !default;
+
+/// the background color for danger type of the disabled button
 $ch5-button-danger-disabled-background-color: $ch5-button-danger-default-background-color !default;
+
+/// the font color for danger type of the disabled button
 $ch5-button-danger-disabled-font-color: $ch5-button-danger-default-font-color !default;
 
 
 // ------------------------------------------------------
-
+/// the border color of the button
 $ch5-button-warning-border-color:  #ff4500!default;
+
+/// the font color of the button
 $ch5-button-warning-font-color: #ffffff !default;
 
 //warning default color
+/// the border color for warning type of the button
 $ch5-button-warning-default-border-color: $ch5-button-warning-border-color !default;
+
+/// the background color for warning type of the button
 $ch5-button-warning-default-background-color: $warning !default;
+
+/// the font color for warning type of the button
 $ch5-button-warning-default-font-color: $ch5-button-warning-font-color !default;
 
 //warning selected color
+/// the border color for warning type of the selected button
 $ch5-button-warning-selected-border-color: $ch5-button-warning-border-color !default;
+
+/// the background color for warning type of the selected button
 $ch5-button-warning-selected-background-color: #ffffff !default;
+
+/// the font color for warning type of the selected button
 $ch5-button-warning-selected-font-color: #ff4500 !default;
 
 //warning pressed color
+/// the border color for warning type of the pressed button
 $ch5-button-warning-pressed-border-color: $ch5-button-warning-border-color;
+
+/// the background color for warning type of the pressed button
 $ch5-button-warning-pressed-background-color: #ff6f00 !default;
+
+/// the font color for warning type of the pressed button
 $ch5-button-warning-pressed-font-color: #f0fff0 !default;
 
 //warning disabled color
+/// the border color for warning type of the disabled button
 $ch5-button-warning-disabled-border-color: $ch5-button-warning-default-border-color !default;
+
+/// the background color for warning type of the disabled button
 $ch5-button-warning-disabled-background-color: $ch5-button-warning-default-background-color !default;
+
+/// the font color for warning type of the disabled button
 $ch5-button-warning-disabled-font-color: $ch5-button-warning-default-font-color !default;
 
 // ------------------------------------------------------
-
+/// the border color of the button
 $ch5-button-info-border-color: #00ffff !default;
+
+/// the font color of the button
 $ch5-button-info-font-color: #000000 !default;
 
 //info default color
+/// the border color for info type of the button
 $ch5-button-info-default-border-color: $ch5-button-info-border-color !default;
+
+/// the background color for info type of the button
 $ch5-button-info-default-background-color: $info !default;
+
+/// the font color for info type of the button
 $ch5-button-info-default-font-color: $ch5-button-info-font-color !default;
 
 //info selected color
+/// the border color for info type of the selected button
 $ch5-button-info-selected-border-color: $ch5-button-info-border-color !default;
+
+/// the background color for info type of the selected button
 $ch5-button-info-selected-background-color:#ffffff !default;
+
+/// the font color for info type of the selected button
 $ch5-button-info-selected-font-color: $ch5-button-info-font-color !default;
 
 //info pressed color
+/// he border color for info type of the pressed button
 $ch5-button-info-pressed-border-color: $ch5-button-info-border-color;
+
+/// the background color for info type of the pressed button
 $ch5-button-info-pressed-background-color: #00e6e6 !default;
+
+/// the font color for info type of the pressed button
 $ch5-button-info-pressed-font-color: $ch5-button-info-font-color !default;
 
 //info disabled color
-
+/// the border color for info type of the disabled button
 $ch5-button-info-disabled-border-color: $ch5-button-info-default-border-color !default;
+
+/// the background color for info type of the disabled button
 $ch5-button-info-disabled-background-color: $ch5-button-info-default-background-color !default;
+
+/// the font color for info type of the disabled button
 $ch5-button-info-disabled-font-color: $ch5-button-info-default-font-color !default;
 
 
 // ------------------------------------------------------
-
+/// the border color of the button
 $ch5-button-success-border-color: #00ff00 !default;
+
+/// the font color of the button
 $ch5-button-success-font-color: #000000 !default;
 
 //primary default color
+/// the border color for success type of the button
 $ch5-button-success-default-border-color: $ch5-button-success-border-color !default;
+
+/// the background color for success type of the button
 $ch5-button-success-default-background-color: $success !default;
+
+/// the font color for success type of the button
 $ch5-button-success-default-font-color: $ch5-button-success-font-color !default;
 
 //success selected color
+/// the border color for success type of the selected button
 $ch5-button-success-selected-border-color: $ch5-button-success-border-color !default;
+
+/// the background color for success type of the selected button
 $ch5-button-success-selected-background-color: #ffffff !default;
+
+/// the font color for success type of the selected button
 $ch5-button-success-selected-font-color: $ch5-button-success-font-color !default;
 
 //success pressed color
+/// the border color for success type of the pressed button
 $ch5-button-success-pressed-border-color: $ch5-button-success-border-color;
+
+/// the background color for success type of the pressed button
 $ch5-button-success-pressed-background-color: #00aa00 !default;
+
+/// the font color for success type of the pressed button
 $ch5-button-success-pressed-font-color: $ch5-button-success-font-color !default;
 
 //success disabled color
+/// the border color for success type of the disabled button
 $ch5-button-success-disabled-border-color: $ch5-button-success-default-border-color !default;
+
+/// the background color for success type of the disabled button
 $ch5-button-success-disabled-background-color: $ch5-button-success-default-border-color !default;
+
+/// the font color for success type of the disabled button
 $ch5-button-success-disabled-font-color: $ch5-button-success-default-font-color !default;
 
 // ------------------------------------------------------
@@ -171,7 +286,7 @@ $ch5-button-default-disabled-border-color: $ch5-button-default-default-border-co
 $ch5-button-default-disabled-background-color: $ch5-button-default-default-background-color !default;
 $ch5-button-default-disabled-font-color: $ch5-button-default-default-font-color !default;
 
-// ------------------------------------------------------
+ // ------------------------------------------------------
 
 $ch5-button-primary-border-color: #000000 !default;
 $ch5-button-primary-font-color: #ffffff !default;
@@ -225,104 +340,181 @@ $ch5-button-secondary-disabled-font-color: $ch5-button-secondary-default-font-co
 CH5-DPAD
 ============================================= */
 
-// dpad  Colors
-//default colors
-//text default color
+/// The font color of the dpad.
 $ch5-dpad-text-font-color: #ffffff !default;
 
+/// The background color for text of the dpad.
 $ch5-dpad-text-default-background-color: #561b8d !default;
+
+/// The font color for text of the dpad.
 $ch5-dpad-text-default-font-color: $ch5-dpad-text-font-color !default;
 
-//text selected color
+/// the background color for text of the selected dpad
 $ch5-dpad-text-selected-background-color: $ch5-dpad-text-font-color !default;
+
+/// the font color for text of the selected dpad
 $ch5-dpad-text-selected-font-color: #561b8d !default;
 
 //text pressed color
+
+/// the background color for text of the pressed dpad
 $ch5-dpad-text-pressed-background-color: #8429d9 !default;
+
+/// the font color for text of the pressed dpad
 $ch5-dpad-text-pressed-font-color: $ch5-dpad-text-font-color !default;
 
-///text disabled color
+/// the background color for text of the disabled dpad
 $ch5-dpad-text-disabled-background-color: $ch5-dpad-text-default-background-color !default;
+
+/// the font color for text of the disabled dpad
 $ch5-dpad-text-disabled-font-color: $ch5-dpad-text-default-font-color !default;
 
 // ------------------------------------------------------
 
+/// the font color of the dpad
 $ch5-dpad-danger-font-color: #ffffff !default;
 
 //danger default color
+
+/// the background color for danger type of the dpad
 $ch5-dpad-danger-default-background-color: $danger !default;
+
+/// the font color for danger type of the dpad
 $ch5-dpad-danger-default-font-color: #ffffff !default;
 
 //danger selected color
+
+/// the background color for danger type of the selected dpad
 $ch5-dpad-danger-selected-background-color: #ffffff !default;
+
+/// the font color for danger type of the selected dpad
 $ch5-dpad-danger-selected-font-color: #ff0000 !default;
 
-//danger pressed color
+// danger pressed color
+
+/// the background color for danger type of the pressed dpad
 $ch5-dpad-danger-pressed-background-color: #b71c1c !default;
+
+/// the font color for danger type of the pressed dpad
 $ch5-dpad-danger-pressed-font-color: $ch5-dpad-danger-font-color !default;
 
 //danger disabled color
+
+/// the background color for danger type of the disabled dpad
 $ch5-dpad-danger-disabled-background-color: $ch5-dpad-danger-default-background-color !default;
+
+/// the font color for danger type of the disabled dpad
 $ch5-dpad-danger-disabled-font-color: $ch5-dpad-danger-default-font-color !default;
 
 // ------------------------------------------------------
 
+/// the font color of the dpad
 $ch5-dpad-warning-font-color: #ffffff !default;
 
 //warning default color
+
+/// the background color for warning type of the dpad
 $ch5-dpad-warning-default-background-color: $warning !default;
+
+/// the font color for warning type of the dpad
 $ch5-dpad-warning-default-font-color: $ch5-dpad-warning-font-color !default;
 
 //warning selected color
+
+/// the background color for warning type of the selected dpad
 $ch5-dpad-warning-selected-background-color: #ffffff !default;
+
+/// the font color for warning type of the selected dpad
 $ch5-dpad-warning-selected-font-color: #ff4500 !default;
 
 //warning pressed color
+
+/// the background color for warning type of the pressed dpad
 $ch5-dpad-warning-pressed-background-color: #ff6f00 !default;
+
+/// the font color for warning type of the pressed dpad
 $ch5-dpad-warning-pressed-font-color: #f0fff0 !default;
 
 //warning disabled color
+
+/// the background color for warning type of the disabled dpad
 $ch5-dpad-warning-disabled-background-color: $ch5-dpad-warning-default-background-color !default;
+
+/// the font color for warning type of the disabled dpad
 $ch5-dpad-warning-disabled-font-color: $ch5-dpad-warning-default-font-color !default;
 
 // ------------------------------------------------------
 
+/// the font color of the dpad
 $ch5-dpad-info-font-color: #000000 !default;
 
 //info default color
+
+/// the background color for info type of the dpad
 $ch5-dpad-info-default-background-color: $info !default;
+
+/// the font color for info type of the dpad
 $ch5-dpad-info-default-font-color: $ch5-dpad-info-font-color !default;
 
 //info selected color
+
+/// the background color for info type of the selected dpad
 $ch5-dpad-info-selected-background-color:#ffffff !default;
+
+/// the font color for info type of the selected dpad
 $ch5-dpad-info-selected-font-color: $ch5-dpad-info-font-color !default;
 
 //info pressed color
+
+/// the background color for info type of the pressed dpad
 $ch5-dpad-info-pressed-background-color: #00e6e6 !default;
+
+/// the font color for info type of the pressed dpad
 $ch5-dpad-info-pressed-font-color: $ch5-dpad-info-font-color !default;
 
 //info disabled color
+
+/// the background color for info type of the disabled dpad
 $ch5-dpad-info-disabled-background-color: $ch5-dpad-info-default-background-color !default;
+
+/// the font color for info type of the disabled dpad
 $ch5-dpad-info-disabled-font-color: $ch5-dpad-info-default-font-color !default;
 
 // ------------------------------------------------------
 
+/// the font color of the dpad
 $ch5-dpad-success-font-color: #000000 !default;
 
 //primary default color
+
+/// the background color for success type of the dpad
 $ch5-dpad-success-default-background-color: $success !default;
+
+/// the font color for success type of the dpad
 $ch5-dpad-success-default-font-color: $ch5-dpad-success-font-color !default;
 
 //success selected color
+
+/// the background color for success type of the selected dpad
 $ch5-dpad-success-selected-background-color: #ffffff !default;
+
+/// the font color for success type of the selected dpad
 $ch5-dpad-success-selected-font-color: $ch5-dpad-success-font-color !default;
 
 //success pressed color
+
+/// the background color for success type of the pressed dpad
 $ch5-dpad-success-pressed-background-color: #00aa00 !default;
+
+/// the font color for success type of the pressed dpad
 $ch5-dpad-success-pressed-font-color: $ch5-dpad-success-font-color !default;
 
 //success disabled color
+
+/// the background color for success type of the disabled dpad
 $ch5-dpad-success-disabled-background-color: $ch5-dpad-success-default-background-color !default;
+
+/// the font color for success type of the disabled dpad
 $ch5-dpad-success-disabled-font-color: $ch5-dpad-success-default-font-color !default;
 
 // ------------------------------------------------------
@@ -388,41 +580,73 @@ $ch5-dpad-secondary-disabled-font-color: $ch5-dpad-secondary-default-font-color 
 /* ===============================================
 CH5-OVERLAY
 ============================================= */
-
+/// the color of the icon at the top of the overlay panel
 $ch5-overlay-default-close-icon-color:#000;
+
+/// the color of the icon at the top of the overlay panel when it is hovered
 $ch5-overlay-default-close-icon-color-hover:#000;
+
+/// the background color of the mask element
 $ch5-overlay-default-mask-bg-color:rgba(150,150,150,0.3);
 
+/// the background color of the icon at the top of the overlay panel
 $ch5-overlay-panel-close-icon-background-color: #fff;
+
+/// the background color of the overlay panel
 $ch5-overlay-panel-background-color: #fff;
 
+/// the border color of the overlay panel
 $ch5-overlay-panel-border-color:   #000000;
+
+/// the text color of the overlay panel
 $ch5-overlay-panel-text-color: #000000;
+
+/// the font color for the content of the overlay panel
 $ch5-overlay-panel-contents-font-color: #000000;
 
 /* ===============================================
 CH5-SELECT PANEL
 ============================================= */
 
+/// component border color
 $ch5-select-border-color: #000 !default;
+
+/// Component main font color
 $ch5-select-font-color: #000 !default;
 
+/// Selected item background color
 $ch5-select-panel-item-selected-background-color: #0000ff !default;
-$ch5-select-panel-item-selected-font-color: #fff !default;
+
+/// item border color
 $ch5-select-panel-item-border-color: transparent !default;
+
+/// item main text color
 $ch5-select-panel-item-color: $warning !default;
+
+/// item background color
 $ch5-select-panel-item-background-color: transparent !default;
+
+/// item background color on mouse over
 $ch5-select-panel-item-hover-background-color: #f8f9fa !default;
+
+/// select panel background color
 $ch5-select-panel-items-background-color: #ffffff !default;
 
 /* ===============================================
 CH5-SPINNER
 ============================================= */
 
+/// The text color of the active item
 $ch5-spinner-active-item-color: #fff !default;
+
+/// The text color of the item.
 $ch5-spinner-item-color: #939393 !default;
+
+/// The background color for the overlay of the spinner.
 $ch5-spinner-overlay-background-color: #000 !default;
+/// the box shadow color of the spinner
 $ch5-spinner-highlight-box-shadow-color: rgba(0,0,0,0.3) !default;
+/// the border color of the spinner
 $ch5-spinner-highlight-border-color: #ff0000;
 
 // background
@@ -434,66 +658,101 @@ $ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, .05)
 CH5-TEXT INPUT
 ============================================= */
 
-// base text color
+/// The text color of the textinput.
 $ch5-textinput-text-color: #4a4a4a !default;
-$ch5-textinput-input-text-color: $ch5-textinput-text-color !default;
-// text color for each element
-$ch5-textinput-icon-text-color: $success !default;
-$ch5-textinput-label-text-color: $ch5-textinput-text-color !default;
 
+/// Set the color of text for the textinput
+$ch5-textinput-input-text-color: $ch5-textinput-text-color !default;
+
+/// The color of the icon within the textinput
+$ch5-textinput-icon-text-color: $success !default;
+
+/// the color for the label of the textinput
+$ch5-textinput-label-text-color: $ch5-textinput-text-color !default;
 
 // base border color
 $ch5-textinput-border-color: $default !default;
 
 // border color for each element
+/// the color for the border of the textinput
 $ch5-textinput-input-border-color: $ch5-textinput-border-color !default;
 
 /* ===============================================
 CH5-TOGGLE
 ============================================= */
 
-// default colors
+/// The background color of the handle when value is true(checked).
 $ch5-toggle-handle-checked-color: #0000ff !default;
+
+/// The text color of the label
 $ch5-toggle-label-font-color: #000 !default;
+/// the text color of the on|off label
 $ch5-toggle-text-font-color: #000 !default;
+/// the color of the on|off icon
 $ch5-toggle-icon-font-color: #fff !default;
 
 // circle
+/// the background color of the handle when shape="circle"
 $ch5-toggle-handle-circle-background: #939393 !default;
+/// the text color of the on label when shape="circle"
 $ch5-toggle-circle-label-on-color: #fff !default;
+/// the text color of the off label when shape="circle"
 $ch5-toggle-circle-label-off-color:#000 !default;
+/// the background color of the knob when shape="circle"
 $ch5-toggle-circle-knob-color: #fff !default;
 
 // rectangle
+/// the background color of the handle when shape="rectangle"
 $ch5-toggle-handle-rectangle-background: #464747 !default;
+/// the text color of the on label when shape="rectangle"
 $ch5-toggle-rectangle-label-on-color: #fff !default;
+/// the text color of the off label when shape="rectangle"
 $ch5-toggle-rectangle-label-off-color:#fff !default;
+/// the background color of the knob when shape="rectangle"
 $ch5-toggle-rectangle-knob-color: #888 !default;
 
 /* ===============================================
 CH5-TRIGGERVIEW
 ============================================= */
 
+/// The background color of the triggerview.
 $ch5-triggerview-background-color: transparent;
+
+/// The background color of fallback message.
 $ch5-triggerview-fallback-message-color-background:#fff;
 
 /* ===============================================
 CH5-MODAL
 ============================================= */
 
+/// The color of the icon at the top of the modal
 $ch5-modal-close-icon-color:#000;
+
+/// The color of the icon at the top of the modal when it is hovered
 $ch5-modal-close-icon-color-hover:#0000ff;
+
+/// the background color of the mask element
 $ch5-modal-mask-bg-color:rgba(150,150,150,0.3);
 
+/// the background color of the icon at the top of the modal
 $ch5-modal-close-icon-background-color: #fff;
+
+/// the background color of the modal
 $ch5-modal-background-color: #fff;
 
+/// the border color of the modal
 $ch5-modal-border-color:   #939393;
+
+/// the text color of the modal
 $ch5-modal-text-color: #000;
+
+/// the font color of the modal content
 $ch5-modal-contents-font-color: #000;
 
+/// the border color of the modal
 $ch5-modal-border-color: #939393;
 
+/// the text color for the prompt text of the modal
 $ch5-modal-prompt-text-font-color: #4a4a4a;
 
 /* ===============================================
@@ -513,7 +772,12 @@ $ch5-slider-handle-border-width:                2px;
 /* ===============================================
 CH5-LIST
 ============================================= */
-$ch5-list-item-color: #fff !default;
-$ch5-list-item-background-color: #0000ff !default;
-$ch5-list-item-border-color: #fff !default;
 
+/// Set the text color of list items.
+$ch5-list-item-color: #fff !default;
+
+/// Set the background color of list items, configurable for each theme
+$ch5-list-item-background-color: #0000ff !default;
+
+/// Set the border color of list items
+$ch5-list-item-border-color: #fff !default;
