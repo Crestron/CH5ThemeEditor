@@ -13,52 +13,52 @@
 @import "./variables";
 
 @mixin ch5-dpad-content($property-default-background-color, $property-default-font-color) {
-    $backgroundColorHover: lighten($property-default-background-color, 10%);
+    $backgroundColorActive: lighten($property-default-background-color, 10%);
     .ch5-dpad-child {
         background-color: $property-default-background-color;
         color: $property-default-font-color;
     }
-    .center:hover span {
-        background-color: $backgroundColorHover !important;
+    .center:active span {
+        background-color: $backgroundColorActive !important;
         z-index: 1;
     }
-    &.plus .direction-btn:hover span,
-    &.circle .direction-btn:hover {
-        background-color: $backgroundColorHover !important;
+    &.plus .direction-btn:active span,
+    &.circle .direction-btn:active {
+        background-color: $backgroundColorActive !important;
         z-index: 1;
     }
 }
 
 @mixin ch5-dpad-content--selected($property-selected-background-color, $property-selected-font-color) {
-    $backgroundColorHover: lighten($property-selected-background-color, 10%);
+    $backgroundColorActive: lighten($property-selected-background-color, 10%);
     .ch5-dpad-child {
         background-color: $property-default-background-color;
         color: $property-default-font-color;
     }
-    .center:hover span {
-        background-color: $backgroundColorHover !important;
+    .center:active span {
+        background-color: $backgroundColorActive !important;
         z-index: 1;
     }
-    &.plus .direction-btn:hover span,
-    &.circle .direction-btn:hover {
-        background-color: $backgroundColorHover !important;
+    &.plus .direction-btn:active span,
+    &.circle .direction-btn:active {
+        background-color: $backgroundColorActive !important;
         z-index: 1;
     }
 }
 
 @mixin ch5-dpad-content--pressed($property-pressed-background-color, $property-pressed-font-color) {
-    $backgroundColorHover: lighten($property-pressed-background-color, 10%);
+    $backgroundColorActive: lighten($property-pressed-background-color, 10%);
     .ch5-dpad-child {
         background-color: $property-default-background-color;
         color: $property-default-font-color;
     }
-    center:hover span {
-        background-color: $backgroundColorHover !important;
+    center:active span {
+        background-color: $backgroundColorActive !important;
         z-index: 1;
     }
-    &.plus .direction-btn:hover span,
-    &.circle .direction-btn:hover {
-        background-color: $backgroundColorHover !important;
+    &.plus .direction-btn:active span,
+    &.circle .direction-btn:active {
+        background-color: $backgroundColorActive !important;
         z-index: 1;
     }
 }
