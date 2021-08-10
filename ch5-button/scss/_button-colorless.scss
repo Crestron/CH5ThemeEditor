@@ -11,6 +11,22 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 @import "./variables";
 
+@mixin ch5-button-image-width-height($property-font-size) {
+  .ch5-button--img {
+      display: block;
+      height: $property-font-size * 2;
+      width: $property-font-size * 2;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+
+      &::before,
+      &::after {
+        content: none;
+      }
+  }
+}
+
 ch5-button {
   display: inline-block;
   vertical-align: top;
@@ -68,7 +84,6 @@ ch5-button[hidden] {
 .ch5-button--icon,
 .ch5-button--img {
   position: relative;
-  // display: inline-block; // Commenting this to verify corner case of vAlignLabel Top
   width: auto;
   cursor: pointer;
   user-select: none;
@@ -79,6 +94,7 @@ ch5-button[hidden] {
   // line-height: 100%; // Comment since text is cut.
   // border: solid 1px black !important;
 }
+
 .ch5-button {
   button,
   .ch5-button--label {
@@ -120,7 +136,6 @@ ch5-button[hidden] {
     vertical-align: middle;
     color: inherit;
     fill: inherit;
-    // margin: $ch5-button-img-margin; // TODO - Rags - fix later if needed. If not, this can be removed
     height: $ch5-button-img-height;
     width: $ch5-button-img-width;
   }
@@ -164,6 +179,7 @@ ch5-button[hidden] {
 }
 /* Button stretch */
 /* stretch does not apply for circle and oval shapes */
+// TODO - should i remove stretch= and apply css classname
 ch5-button[stretch="width"] {
   width: 100%;
 }
@@ -221,7 +237,7 @@ ch5-button[stretch="both"] {
     // padding-left: $ch5-button-padding / 2; // Remove later if not required
     // padding-right: $ch5-button-padding / 2; // Remove later if not required
     .cb-icon,
-    .cb-img {
+    .cb-checkbox-icon {
       transform: rotate(90deg);
     }
     .ch5-button--label {
@@ -339,6 +355,9 @@ ch5-button[stretch="both"] {
   opacity: $ch5-button-disabled-opacity;
 }
 /* Sizes */
+
+@include ch5-button-image-width-height($ch5-button-font-size);
+
 .ch5-button--size-x-small {
   .cb-btn {
     font-size: $ch5-button-x-small-font-size;
@@ -351,6 +370,7 @@ ch5-button[stretch="both"] {
   .ch5-button__checkbox--unchecked:before {
     font-size: $ch5-button-x-small-font-size;
   }
+  @include ch5-button-image-width-height($ch5-button-x-small-font-size);
 }
 .ch5-button--size-small {
   .cb-btn {
@@ -364,6 +384,8 @@ ch5-button[stretch="both"] {
   .ch5-button__checkbox--unchecked:before {
     font-size: $ch5-button-small-font-size;
   }
+  @include ch5-button-image-width-height($ch5-button-small-font-size);
+
 }
 .ch5-button--size-large {
   .cb-btn {
@@ -377,6 +399,8 @@ ch5-button[stretch="both"] {
   .ch5-button__checkbox--unchecked:before {
     font-size: $ch5-button-large-font-size;
   }
+  @include ch5-button-image-width-height($ch5-button-large-font-size);
+
 }
 .ch5-button--size-x-large {
   .cb-btn {
@@ -390,16 +414,14 @@ ch5-button[stretch="both"] {
   .ch5-button__checkbox--unchecked:before {
     font-size: $ch5-button-x-large-font-size;
   }
+  @include ch5-button-image-width-height($ch5-button-x-large-font-size);
+
 }
 /* icon positions */
 i.cb-icon.cx-button-icon-pos-first,
-i.cb-icon.cx-button-icon-pos-last,
-.cb-img.cx-button-icon-pos-first,
-.cb-img.cx-button-icon-pos-last {
+i.cb-icon.cx-button-icon-pos-last {
   display: inline-block;
 }
-.cb-img.cx-button-icon-pos-top,
-.cb-img.cx-button-icon-pos-bottom,
 i.cb-icon.cx-button-icon-pos-top,
 i.cb-icon.cx-button-icon-pos-bottom {
   display: block;
@@ -407,7 +429,6 @@ i.cb-icon.cx-button-icon-pos-bottom {
   margin-right: auto;
 }
 
-/* Advanced button */
 .ch5-button--span {
   width: 100%;
   height: 100%;
@@ -484,7 +505,7 @@ i.cb-icon.cx-button-icon-pos-bottom {
     }
     .ch5-button--vertical-bottom {
       justify-content: center;
-    }    
+    }
   }
 }
 
@@ -527,21 +548,9 @@ i.cb-icon.cx-button-icon-pos-bottom {
 .cx-button-checkbox-pos-right {
   padding-left: $ch5-button-checkbox-padding;
 }
-.cb-img.cx-button-icon-pos-bottom,
-.cb-img.cx-button-icon-pos-top,
 i.cb-icon.cx-button-icon-pos-bottom,
 i.cb-icon.cx-button-icon-pos-top {
   display: flex;
   margin-left: unset;
   margin-right: unset;
 }
-
-// TODO for stretch alignment
-// .ch5-button--vertical.ch5-button--stretch-both,
-// .ch5-button--vertical.ch5-button--stretch-width,
-// .ch5-button--vertical.ch5-button--stretch-height {
-//   .cb-btn {
-//     width: 100%;
-//     height: 100%;
-//   }
-// }

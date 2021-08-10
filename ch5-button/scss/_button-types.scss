@@ -159,46 +159,47 @@
 }
 
 // $button-types: (
-//   "danger",
-//   "text",
-//   "info",
-//   "warning",
-//   "default",
-//   "primary",
-//   "secondary"
+//   "danger":  $ch5-button-danger-border-width,
+//   "text":  $ch5-button-danger-border-width,
+//   "info":  $ch5-button-danger-border-width,
+//   "warning":  $ch5-button-danger-border-width,
+//   "default":  $ch5-button-danger-border-width,
+//   "primary":  $ch5-button-danger-border-width,
+//   "secondary":  $ch5-button-danger-border-width
 // );
 
-// @each $button-type in $button-types {
+// @each $button-type, $button-value in $button-types {
 //   /// Applied when type='#{$button-type}'
 //   .ch5-button--#{$button-type} {
-//     border: $ch5-button-#{$button-type}-border-width $ch5-button-#{$button-type}-border-style $ch5-button-#{$button-type}-default-border-color;
-//     background-color: $ch5-button-#{$button-type}-default-background-color;
-//     color: $ch5-button-#{$button-type}-default-font-color;
-//     fill: $ch5-button-#{$button-type}-default-font-color;
+//     // border: #{$button-value};
+//     // border: $ch5-button-#{$button-type}-border-width $ch5-button-#{$button-type}-border-style $ch5-button-#{$button-type}-default-border-color;
+//     // background-color: $ch5-button-#{$button-type}-default-background-color;
+//     // color: $ch5-button-#{$button-type}-default-font-color;
+//     // fill: $ch5-button-#{$button-type}-default-font-color;
 
-//     /// Applied when selected signal is applied
-//     &.ch5-button--selected {
-//       border-color: $ch5-button-#{$button-type}-selected-border-color;
-//       background-color: $ch5-button-#{$button-type}-selected-background-color;
-//       color: $ch5-button-#{$button-type}-selected-font-color;
-//       fill: $ch5-button-#{$button-type}-selected-font-color;
-//     }
+//     // /// Applied when selected signal is applied
+//     // &.ch5-button--selected {
+//     //   border-color: $ch5-button-#{$button-type}-selected-border-color;
+//     //   background-color: $ch5-button-#{$button-type}-selected-background-color;
+//     //   color: $ch5-button-#{$button-type}-selected-font-color;
+//     //   fill: $ch5-button-#{$button-type}-selected-font-color;
+//     // }
 
-//     /// Applied between press and release events
-//     &.ch5-button--pressed {
-//       border-color: $ch5-button-#{$button-type}-pressed-border-color;
-//       background-color: $ch5-button-#{$button-type}-pressed-background-color;
-//       color: $ch5-button-#{$button-type}-pressed-font-color;
-//       fill: $ch5-button-#{$button-type}-pressed-font-color;
-//     }
+//     // /// Applied between press and release events
+//     // &.ch5-button--pressed {
+//     //   border-color: $ch5-button-#{$button-type}-pressed-border-color;
+//     //   background-color: $ch5-button-#{$button-type}-pressed-background-color;
+//     //   color: $ch5-button-#{$button-type}-pressed-font-color;
+//     //   fill: $ch5-button-#{$button-type}-pressed-font-color;
+//     // }
 
-//     /// Applied when the button is disabled
-//     &.ch5-button--disabled {
-//       border-color: $ch5-button-#{$button-type}-disabled-border-color;
-//       background-color: $ch5-button-#{$button-type}-disabled-background-color;
-//       color: $ch5-button-#{$button-type}-disabled-font-color;
-//       fill: $ch5-button-#{$button-type}-disabled-font-color;
-//     }
+//     // /// Applied when the button is disabled
+//     // &.ch5-button--disabled {
+//     //   border-color: $ch5-button-#{$button-type}-disabled-border-color;
+//     //   background-color: $ch5-button-#{$button-type}-disabled-background-color;
+//     //   color: $ch5-button-#{$button-type}-disabled-font-color;
+//     //   fill: $ch5-button-#{$button-type}-disabled-font-color;
+//     // }
 //   }
 // }
 
