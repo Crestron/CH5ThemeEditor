@@ -576,6 +576,247 @@ $ch5-dpad-secondary-disabled-background-color: $ch5-dpad-secondary-default-backg
 $ch5-dpad-secondary-disabled-font-color: $ch5-dpad-secondary-default-font-color !default;
 
 /* ===============================================
+CH5-keypad
+============================================= */
+
+/// The font color of the keypad.
+$ch5-keypad-text-font-color: #ffffff !default;
+
+/// The background color for text of the keypad.
+$ch5-keypad-text-default-background-color: #561b8d !default;
+
+/// The font color for text of the keypad.
+$ch5-keypad-text-default-font-color: $ch5-keypad-text-font-color !default;
+
+/// the background color for text of the selected keypad
+$ch5-keypad-text-selected-background-color: $ch5-keypad-text-font-color !default;
+
+/// the font color for text of the selected keypad
+$ch5-keypad-text-selected-font-color: #561b8d !default;
+
+//text pressed color
+
+/// the background color for text of the pressed keypad
+$ch5-keypad-text-pressed-background-color: #8429d9 !default;
+
+/// the font color for text of the pressed keypad
+$ch5-keypad-text-pressed-font-color: $ch5-keypad-text-font-color !default;
+
+/// the background color for text of the disabled keypad
+$ch5-keypad-text-disabled-background-color: $ch5-keypad-text-default-background-color !default;
+
+/// the font color for text of the disabled keypad
+$ch5-keypad-text-disabled-font-color: $ch5-keypad-text-default-font-color !default;
+
+// ------------------------------------------------------
+
+/// the font color of the keypad
+$ch5-keypad-danger-font-color: #ffffff !default;
+
+//danger default color
+
+/// the background color for danger type of the keypad
+$ch5-keypad-danger-default-background-color: $danger !default;
+
+/// the font color for danger type of the keypad
+$ch5-keypad-danger-default-font-color: #ffffff !default;
+
+//danger selected color
+
+/// the background color for danger type of the selected keypad
+$ch5-keypad-danger-selected-background-color: #ffffff !default;
+
+/// the font color for danger type of the selected keypad
+$ch5-keypad-danger-selected-font-color: #ff0000 !default;
+
+// danger pressed color
+
+/// the background color for danger type of the pressed keypad
+$ch5-keypad-danger-pressed-background-color: #b71c1c !default;
+
+/// the font color for danger type of the pressed keypad
+$ch5-keypad-danger-pressed-font-color: $ch5-keypad-danger-font-color !default;
+
+//danger disabled color
+
+/// the background color for danger type of the disabled keypad
+$ch5-keypad-danger-disabled-background-color: $ch5-keypad-danger-default-background-color !default;
+
+/// the font color for danger type of the disabled keypad
+$ch5-keypad-danger-disabled-font-color: $ch5-keypad-danger-default-font-color !default;
+
+// ------------------------------------------------------
+
+/// the font color of the keypad
+$ch5-keypad-warning-font-color: #ffffff !default;
+
+//warning default color
+
+/// the background color for warning type of the keypad
+$ch5-keypad-warning-default-background-color: $warning !default;
+
+/// the font color for warning type of the keypad
+$ch5-keypad-warning-default-font-color: $ch5-keypad-warning-font-color !default;
+
+//warning selected color
+
+/// the background color for warning type of the selected keypad
+$ch5-keypad-warning-selected-background-color: #ffffff !default;
+
+/// the font color for warning type of the selected keypad
+$ch5-keypad-warning-selected-font-color: #ff4500 !default;
+
+//warning pressed color
+
+/// the background color for warning type of the pressed keypad
+$ch5-keypad-warning-pressed-background-color: #ff6f00 !default;
+
+/// the font color for warning type of the pressed keypad
+$ch5-keypad-warning-pressed-font-color: #f0fff0 !default;
+
+//warning disabled color
+
+/// the background color for warning type of the disabled keypad
+$ch5-keypad-warning-disabled-background-color: $ch5-keypad-warning-default-background-color !default;
+
+/// the font color for warning type of the disabled keypad
+$ch5-keypad-warning-disabled-font-color: $ch5-keypad-warning-default-font-color !default;
+
+// ------------------------------------------------------
+
+/// the font color of the keypad
+$ch5-keypad-info-font-color: #000000 !default;
+
+//info default color
+
+/// the background color for info type of the keypad
+$ch5-keypad-info-default-background-color: $info !default;
+
+/// the font color for info type of the keypad
+$ch5-keypad-info-default-font-color: $ch5-keypad-info-font-color !default;
+
+//info selected color
+
+/// the background color for info type of the selected keypad
+$ch5-keypad-info-selected-background-color: #ffffff !default;
+
+/// the font color for info type of the selected keypad
+$ch5-keypad-info-selected-font-color: $ch5-keypad-info-font-color !default;
+
+//info pressed color
+
+/// the background color for info type of the pressed keypad
+$ch5-keypad-info-pressed-background-color: #00e6e6 !default;
+
+/// the font color for info type of the pressed keypad
+$ch5-keypad-info-pressed-font-color: $ch5-keypad-info-font-color !default;
+
+//info disabled color
+
+/// the background color for info type of the disabled keypad
+$ch5-keypad-info-disabled-background-color: $ch5-keypad-info-default-background-color !default;
+
+/// the font color for info type of the disabled keypad
+$ch5-keypad-info-disabled-font-color: $ch5-keypad-info-default-font-color !default;
+
+// ------------------------------------------------------
+
+/// the font color of the keypad
+$ch5-keypad-success-font-color: #000000 !default;
+
+//primary default color
+
+/// the background color for success type of the keypad
+$ch5-keypad-success-default-background-color: $success !default;
+
+/// the font color for success type of the keypad
+$ch5-keypad-success-default-font-color: $ch5-keypad-success-font-color !default;
+
+//success selected color
+
+/// the background color for success type of the selected keypad
+$ch5-keypad-success-selected-background-color: #ffffff !default;
+
+/// the font color for success type of the selected keypad
+$ch5-keypad-success-selected-font-color: $ch5-keypad-success-font-color !default;
+
+//success pressed color
+
+/// the background color for success type of the pressed keypad
+$ch5-keypad-success-pressed-background-color: #00aa00 !default;
+
+/// the font color for success type of the pressed keypad
+$ch5-keypad-success-pressed-font-color: $ch5-keypad-success-font-color !default;
+
+//success disabled color
+
+/// the background color for success type of the disabled keypad
+$ch5-keypad-success-disabled-background-color: $ch5-keypad-success-default-background-color !default;
+
+/// the font color for success type of the disabled keypad
+$ch5-keypad-success-disabled-font-color: $ch5-keypad-success-default-font-color !default;
+
+// ------------------------------------------------------
+
+$ch5-keypad-default-font-color: #ffffff !default;
+
+//default default color
+$ch5-keypad-default-default-background-color: $default !default;
+$ch5-keypad-default-default-font-color: $ch5-keypad-default-font-color !default;
+
+//default selected color
+$ch5-keypad-default-selected-background-color: #ffffff !default;
+$ch5-keypad-default-selected-font-color: #0000ff !default;
+
+//default pressed color
+$ch5-keypad-default-pressed-background-color: #00008b !default;
+$ch5-keypad-default-pressed-font-color: #f0fff0 !default;
+
+//default disabled color
+$ch5-keypad-default-disabled-background-color: $ch5-keypad-default-default-background-color !default;
+$ch5-keypad-default-disabled-font-color: $ch5-keypad-default-default-font-color !default;
+
+// ------------------------------------------------------
+
+$ch5-keypad-primary-font-color: #ffffff !default;
+
+//primary default color
+$ch5-keypad-primary-default-background-color: $primary !default;
+$ch5-keypad-primary-default-font-color: $ch5-keypad-primary-font-color !default;
+
+//primary selected color
+$ch5-keypad-primary-selected-background-color: #ffffff !default;
+$ch5-keypad-primary-selected-font-color: #000000 !default;
+
+//primary pressed color
+$ch5-keypad-primary-pressed-background-color: #2b2b2b !default;
+$ch5-keypad-primary-pressed-font-color: $ch5-keypad-primary-font-color !default;
+
+//primary disabled color
+$ch5-keypad-primary-disabled-background-color: $ch5-keypad-primary-default-background-color !default;
+$ch5-keypad-primary-disabled-font-color: $ch5-keypad-primary-default-font-color !default;
+
+// ------------------------------------------------------
+
+$ch5-keypad-secondary-font-color: #000000 !default;
+
+//secondary default color
+$ch5-keypad-secondary-default-background-color: $secondary !default;
+$ch5-keypad-secondary-default-font-color: #000000 !default;
+
+//secondary selected color
+$ch5-keypad-secondary-selected-background-color: #7e7e7e !default;
+$ch5-keypad-secondary-selected-font-color: #ffffff !default;
+
+//secondary pressed color
+$ch5-keypad-secondary-pressed-background-color: #939393 !default;
+$ch5-keypad-secondary-pressed-font-color: $ch5-keypad-secondary-font-color !default;
+
+//secondary disabled color
+$ch5-keypad-secondary-disabled-background-color: $ch5-keypad-secondary-default-background-color !default;
+$ch5-keypad-secondary-disabled-font-color: $ch5-keypad-secondary-default-font-color !default;
+
+/* ===============================================
 CH5-OVERLAY
 ============================================= */
 /// the color of the icon at the top of the overlay panel

@@ -1,0 +1,123 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2021 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-keypad
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@import "./variables";
+
+@mixin ch5-keypad-content($property-default-background-color, $property-default-font-color) {
+    $backgroundColorActive: lighten($property-default-background-color, 10%);
+}
+
+@mixin ch5-keypad-content--selected($property-selected-background-color, $property-selected-font-color) {
+    $backgroundColorActive: lighten($property-selected-background-color, 10%);
+}
+
+@mixin ch5-keypad-content--pressed($property-pressed-background-color, $property-pressed-font-color) {
+    $backgroundColorActive: lighten($property-pressed-background-color, 10%);
+}
+
+@mixin ch5-keypad-content--disabled($ch5-keypad-text-disabled-background-color, $ch5-keypad-text-disabled-font-color) {
+}
+
+.keypad {
+    display: inline-flex;
+    min-width: $defaultContainerWidth;
+    min-height: $defaultContainerHeight;
+    width: $defaultContainerWidth;
+    height: $defaultContainerHeight;
+}
+
+.keypad-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: $defaultContainerWidth;
+    height: $defaultContainerHeight;
+    flex-direction: column;
+}
+
+.keypad-row {
+    display: flex;
+    flex: 0 1 23%;
+    color: #fff;
+    justify-content: space-evenly;
+    .keypad-btn {
+        cursor: pointer;
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $btnBG;
+        border: 1px solid $bordercolor;
+        outline: none !important;
+        -webkit-transition: background 0.3s;
+        transition: background 0.3s;
+        &:active {
+            background: lightgreen;
+        }
+        &[data-misc="1"] {
+            .label-major {
+                font-size: 4.5rem;
+                margin-top: 2rem;
+            }
+        }
+        .label-major {
+            font-size: 2.6rem;
+            font-weight: 400;
+            line-height: 2.2rem;
+        }
+        .label-minor {
+            margin-top: 0;
+        }
+    }
+}
+
+.keypad.keypad-square {
+    .keypad-container {
+        .keypad-row {
+            .keypad-btn {
+                border-radius: 0;
+                // .label-major {
+                // }
+                // .label-minor {
+                // }
+            }
+        }
+    }
+}
+
+.keypad.keypad-circle {
+    .keypad-container {
+        .keypad-row {
+            .keypad-btn {
+                border-radius: 50%;
+                // .label-major {
+                // }
+                // .label-minor {
+                // }
+            }
+        }
+    }
+}
+
+.keypad.keypad-rounded-rectangle {
+    .keypad-container {
+        .keypad-row {
+            .keypad-btn {
+                border-radius: 10%;
+                // .label-major {
+                // }
+                // .label-minor {
+                // }
+            }
+        }
+    }
+}
