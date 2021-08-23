@@ -284,7 +284,6 @@
         span {
             font-size: 2rem;
             background-repeat: no-repeat;
-            background-size: contain;
             background-position: center;
             background-size: 80%;
         }
@@ -529,6 +528,7 @@
         overflow: hidden;
         span {
             transform: rotate(-45deg);
+            background-size: 50%;
         }
         &.top {
             border-top-left-radius: 100%;
