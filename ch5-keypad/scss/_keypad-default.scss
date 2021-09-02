@@ -27,12 +27,36 @@
 @mixin ch5-keypad-content--disabled($ch5-keypad-text-disabled-background-color, $ch5-keypad-text-disabled-font-color) {
 }
 
-.keypad {
+.ch5-keypad {
     display: inline-flex;
     min-width: $defaultContainerWidth;
     min-height: $defaultContainerHeight;
     width: $defaultContainerWidth;
     height: $defaultContainerHeight;
+
+    &[showextrabutton="true"] {
+        height: $defaultContainerHeight + 90;
+        .keypad-container {
+            height: $defaultContainerHeight + 90;
+            .keypad-row {
+                flex: 0 1 18%;
+
+                .keypad-btn.special-center button {
+                    color: #fff;
+                    background-color: $btnSpecialBG;
+                    border: 1px solid $btnSpecialBG;
+                    &:active {
+                        background: lighten($color: $btnSpecialBG, $amount: 10);
+                        border-color: lighten($color: $btnSpecialBG, $amount: 10);
+                    }
+                }
+
+                .keypad-btn.empty-btn {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 .keypad-container {
@@ -52,35 +76,54 @@
         cursor: pointer;
         display: flex;
         width: 30%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: $btnBG;
-        border: 1px solid $bordercolor;
-        outline: none !important;
-        -webkit-transition: background 0.3s;
-        transition: background 0.3s;
-        &:active {
-            background: lightgreen;
-        }
-        &[data-misc="1"] {
+        overflow: hidden;
+        button {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $btnBG;
+            border: 1px solid $bordercolor;
+            outline: none !important;
+            -webkit-transition: background 0.4s;
+            transition: background 0.4s;
+            &:active {
+                background: $kepadActiveBG;
+                border-color: $kepadActiveBG;
+            }
+            &[data-misc="1"] {
+                .label-major {
+                    font-size: 4.5rem;
+                    margin-top: 2rem;
+                }
+            }
+            span {
+                white-space: pre;
+            }
             .label-major {
-                font-size: 4.5rem;
-                margin-top: 2rem;
+                font-size: 2.6rem;
+                font-weight: 400;
+                line-height: 2.2rem;
+            }
+            .label-minor {
+                margin-top: 0;
             }
         }
-        .label-major {
-            font-size: 2.6rem;
-            font-weight: 400;
-            line-height: 2.2rem;
-        }
-        .label-minor {
-            margin-top: 0;
+
+        &.misc-btn {
+            &.misc-btn-one {
+                .label-major {
+                    font-size: 4.5rem;
+                    margin-top: 2rem;
+                }
+            }
         }
     }
 }
 
-.keypad.keypad-square {
+.ch5-keypad.ch5-keypad--shape-square {
     .keypad-container {
         .keypad-row {
             .keypad-btn {
@@ -94,7 +137,7 @@
     }
 }
 
-.keypad.keypad-circle {
+.ch5-keypad.ch5-keypad--shape-circle {
     .keypad-container {
         .keypad-row {
             .keypad-btn {
@@ -108,7 +151,7 @@
     }
 }
 
-.keypad.keypad-rounded-rectangle {
+.ch5-keypad.ch5-keypad--shape-rounded {
     .keypad-container {
         .keypad-row {
             .keypad-btn {
