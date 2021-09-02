@@ -120,18 +120,19 @@ const sassdoc = require('sassdoc'),
   }
 
   function createSassMetadata(srcFile, writeToFile) {
-    sassdoc.parse(srcFile, { verbose: false })
-      .then((data) => {
-        logging.loading(`Writing metadata to ${writeToFile}`);
-        if (!!parseMetadata(data)) {
-          fse.outputFileSync(writeToFile, JSON.stringify(parseMetadata(data), null, 4));
-          console.log("Sass json generated !!!!.");
-        } else {
-          logging.error(`Error occurred while data parsing.`);
-        }
-      });
+    sassdoc.parse(srcFile, { verbose: false }).then((data) => {
+      logging.loading(`Writing metadata to ${writeToFile}`);
+      const parsedData = parseMetadata(data);
+      if (parsedData) {
+        fse.outputFileSync(writeToFile, JSON.stringify(parsedData, null, 4));
+        logging.success("SASS JSON Generated !!!!.");
+      } else {
+        logging.error(`Error occurred while data parsing.`);
+      }
+    });
   }
 
   createSassMetadata(SOURCE_FILE_PATH, WRITE_TO_FILE_PATH);
+  
 })(sassdoc, fse, logging);
 
