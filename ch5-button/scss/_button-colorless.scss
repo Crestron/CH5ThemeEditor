@@ -37,7 +37,6 @@ ch5-button {
   &,
   .ch5-button {
     max-width: 100%;
-    // padding: 0.25rem; /* Newly added - add as variable - test all components why? */
   }
   div {
     pointer-events: all;
@@ -78,7 +77,7 @@ ch5-button {
 ch5-button[hidden] {
   display: none;
 }
-/* Button elements align */
+
 .ch5-button,
 .ch5-button--label,
 .ch5-button--icon,
@@ -144,7 +143,7 @@ ch5-button[hidden] {
     padding-left: $ch5-button-icon-padding;
   }
 }
-/* Button container shapes */
+
 .ch5-button--rectangle {
   @include border-radius(0);
 }
@@ -177,8 +176,8 @@ ch5-button[hidden] {
 .ch5-button--tab {
   @include border-radius($ch5-button-tab-border-radius);
 }
-/* Button stretch */
-/* stretch does not apply for circle and oval shapes */
+
+// stretch does not apply for circle and oval shapes
 // TODO - should i remove stretch= and apply css classname
 ch5-button[stretch="width"] {
   width: 100%;
@@ -223,7 +222,8 @@ ch5-button[stretch="both"] {
     white-space: nowrap;
   }
 }
-/* Button orientation */
+
+// Button orientation
 .ch5-button--vertical {
   .ch5-button--span {
     flex-direction: column;
@@ -244,7 +244,6 @@ ch5-button[stretch="both"] {
       max-width: inherit;
       writing-mode: vertical-lr;
       max-height: max-content;
-      // flex: 1; // commented by Rags // Remove later if not required
       padding-top: 2px;
       padding-bottom: 2px;
     }
@@ -304,7 +303,7 @@ ch5-button[stretch="both"] {
     }
   }
 }
-/* vertical sizes */
+// vertical sizes
 .ch5-button--vertical {
   &:not(.ch5-button--circle) {
     &.ch5-button--size-x-small .cb-btn {
@@ -354,8 +353,8 @@ ch5-button[stretch="both"] {
   pointer-events: none;
   opacity: $ch5-button-disabled-opacity;
 }
-/* Sizes */
 
+// Sizes
 @include ch5-button-image-width-height($ch5-button-font-size);
 
 .ch5-button--size-x-small {
@@ -417,7 +416,7 @@ ch5-button[stretch="both"] {
   @include ch5-button-image-width-height($ch5-button-x-large-font-size);
 
 }
-/* icon positions */
+// icon positions 
 i.cb-icon.cx-button-icon-pos-first,
 i.cb-icon.cx-button-icon-pos-last {
   display: inline-block;

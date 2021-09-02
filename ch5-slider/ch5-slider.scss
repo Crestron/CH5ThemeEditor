@@ -10,13 +10,13 @@
 /// @group ch5-slider
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 @import "./scss/_mixins-size";
 @import "./scss/_variables";
 
 @import "./scss/_slider-size";
 @import "./scss/_handle-size";
 @import "./scss/_handle-shape";
+@import "./scss/advanced";
 
 ch5-slider:focus {
   outline: none;
@@ -38,7 +38,10 @@ ch5-slider:focus {
     display: none;
   }
 
-  &:focus, .noUi-connects:focus, .noUi-base, .noUi-handle:focus{
+  &:focus,
+  .noUi-connects:focus,
+  .noUi-base,
+  .noUi-handle:focus {
     outline: none;
   }
 
@@ -65,7 +68,8 @@ ch5-slider:focus {
   }
 
   .noUi-handle {
-    &:before, &:after {
+    &:before,
+    &:after {
       content: none;
     }
   }
@@ -83,7 +87,7 @@ ch5-slider:focus {
   .noUi-connect {
     background: $ch5-slider-connect-bg;
   }
-  .noUi-handle{
+  .noUi-handle {
     border-style: $ch5-slider-handle-border-style;
     border-color: $ch5-slider-handle-border-color;
     border-width: $ch5-slider-handle-border-width;
@@ -92,16 +96,15 @@ ch5-slider:focus {
   }
 
   /* ===============================================
-    STRECH
+    STRETCH
    ============================================= */
-  &.ch5-slider--strech--width.ch5-slider--orientation--horizontal{
+  &.ch5-slider--strech--width.ch5-slider--orientation--horizontal {
     width: 100% !important;
   }
 
-  &.ch5-slider--strech--height.ch5-slider--orientation--vertical{
+  &.ch5-slider--strech--height.ch5-slider--orientation--vertical {
     height: 100% !important;
   }
-
 
   &.ch5-slider--strech--height.ch5-slider--orientation--horizontal {
     height: 100% !important;
@@ -119,7 +122,7 @@ ch5-slider:focus {
     }
   }
 
-  &.ch5-slider--strech--both.ch5-slider--orientation--horizontal{
+  &.ch5-slider--strech--both.ch5-slider--orientation--horizontal {
     width: 100% !important;
     height: 100% !important;
 
@@ -129,7 +132,7 @@ ch5-slider:focus {
     }
   }
 
-  &.ch5-slider--strech--both.ch5-slider--orientation--vertical{
+  &.ch5-slider--strech--both.ch5-slider--orientation--vertical {
     height: 100% !important;
     width: 100% !important;
 
@@ -140,12 +143,11 @@ ch5-slider:focus {
   }
 }
 
-html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle  .noUi-horizontal .noUi-handle {
-  right:-26px;
+html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle .noUi-horizontal .noUi-handle {
+  right: -26px;
 }
 
 /* Tooltip */
-
 .ch5-slider--tooltip--auto {
   .noUi-tooltip {
     display: none;

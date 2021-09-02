@@ -26,7 +26,11 @@
     "bundle-theme-for-showcase": "webpack --config webpack.run.js --outputpath='../showcase-app/static/crestron-components-assets' && npm run cleanjs",
     "bundle-and-watch": "yarn run clean && webpack --config webpack.run.js --watch",
     "start": "webpack --config webpack.run.js --watchmode && npm run cleanjs && webpack --config app.config.dev.js",
-    "gen:sass-metadata": "node ./metadata-generator.js --writetofilepath ./generated-metadata/sass-schema.json"
+    "gen:sass-metadata": "node ./metadata-generator.js --writetofilepath ./generated-metadata/sass-schema.json",
+    "rags:build:save": "yarn bundle-theme && webpack --config webpack.run.js  --outputpath='../../MyShellProjects/AdvancedButton/node_modules/@crestron/ch5-theme/output/themes/' && npm run cleanjs",
+    "rags:build:save:advancedButtonAngular": "yarn bundle-theme && webpack --config webpack.run.js  --outputpath='../../MyShellProjects/AdvancedButtonAngular/node_modules/@crestron/ch5-theme/output/themes/' && npm run cleanjs",
+    "rags:build:save:shell": "yarn bundle-theme && webpack --config webpack.run.js  --outputpath='../../CH5/CH5SampleProjects/UISampleProjects/Shell/node_modules/@crestron/ch5-theme/output/themes/' && npm run cleanjs",
+    "rags:build:all": "npm run rags:build:save && npm run rags:build:save:shell && npm run rags:build:save:advancedButtonAngular"
   },
   "devDependencies": {
     "@crestron/ch5-crcomlib": "^0.1.22",
