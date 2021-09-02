@@ -120,11 +120,12 @@ const sassdoc = require('sassdoc'),
   }
 
   function createSassMetadata(srcFile, writeToFile) {
-    sassdoc.parse(srcFile, { verbose: true })
+    sassdoc.parse(srcFile, { verbose: false })
       .then((data) => {
         logging.loading(`Writing metadata to ${writeToFile}`);
         if (!!parseMetadata(data)) {
           fse.outputFileSync(writeToFile, JSON.stringify(parseMetadata(data), null, 4));
+          console.log("Sass json generated !!!!.");
         } else {
           logging.error(`Error occurred while data parsing.`);
         }

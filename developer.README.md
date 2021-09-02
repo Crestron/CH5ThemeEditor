@@ -169,6 +169,8 @@ Should there be a directive that is currently common across themes that you wish
 Please note that /// (three slashes) are required to add documentation to each of the SASS attributes. This is a Crestron specific comment to 
 ensure that the sass-schema.json file is created correctly.
 
+Also, please ensure to add a comment with three slashes in each file. If not, the generate sass wil fail with error.
+
 ## Testing your updates
 
 __This Section will be written when a procedure is better documented__ 

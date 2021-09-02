@@ -37,85 +37,67 @@
                         "type": "class",
                         "name": "ch5-button--stretch-width",
                         "description": "Applied to make the width as much as its parent allows.\n",
-                        "value": "width: 100%;\n\n  .cb-btn {\n    width: 100%;\n  }"
+                        "value": "width: 100%;\n  .cb-btn {\n    width: 100%;\n  }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--stretch-height",
                         "description": "Applied to make the height as much as its parent allows.\n",
-                        "value": "height: 100%;\n\n  .cb-btn {\n    height: 100%;\n  }\n\n  .ch5-button--label,\n  .ch5-button--icon,\n  .ch5-button--img {\n    position: relative;\n  }"
+                        "value": "height: 100%;\n  .cb-btn {\n    height: 100%;\n    min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch\n  }\n  .ch5-button--label,\n  .ch5-button--icon,\n  .ch5-button--img {\n    position: relative;\n  }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--stretch-both",
                         "description": "Applied to make both width and height as much as its parent allows.\n",
-                        "value": "width: 100%;\n  height: 100%;\n\n  .cb-btn {\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n  }"
+                        "value": "width: 100%;\n  height: 100%;\n  .cb-btn {\n    width: 100%;\n    height: 100%;\n    min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n  }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--text",
                         "description": "Applied when type='text'\n",
-                        "value": "border: $ch5-button-text-border-width $ch5-button-text-border-style $ch5-button-text-default-border-color;\n  background-color: $ch5-button-text-default-background-color;\n  color: $ch5-button-text-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-text-selected-border-color;\n    background-color: $ch5-button-text-selected-background-color;\n    color: $ch5-button-text-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-text-pressed-border-color;\n    background-color: $ch5-button-text-pressed-background-color;\n    color: $ch5-button-text-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-text-disabled-border-color;\n    background-color: $ch5-button-text-disabled-background-color;\n    color: $ch5-button-text-disabled-font-color;\n  }"
+                        "value": "@include ch5-button-content($ch5-button-text-border-width, $ch5-button-text-border-style, $ch5-button-text-default-border-color, $ch5-button-text-default-background-color, $ch5-button-text-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-text-selected-border-color, $ch5-button-text-selected-background-color, $ch5-button-text-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-text-pressed-border-color, $ch5-button-text-pressed-background-color, $ch5-button-text-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-text-disabled-border-color, $ch5-button-text-disabled-background-color, $ch5-button-text-disabled-font-color);\n  }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--danger",
                         "description": "Applied when type='danger'\n",
-                        "value": "border: $ch5-button-danger-border-width $ch5-button-danger-border-style $ch5-button-danger-default-border-color;\n  background-color: $ch5-button-danger-default-background-color;\n  color: $ch5-button-danger-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-danger-selected-border-color;\n    background-color: $ch5-button-danger-selected-background-color;\n    color: $ch5-button-danger-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-danger-pressed-border-color;\n    background-color: $ch5-button-danger-pressed-background-color;\n    color: $ch5-button-danger-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-danger-disabled-border-color;\n    background-color: $ch5-button-danger-disabled-background-color;\n    color: $ch5-button-danger-disabled-font-color;\n  }"
+                        "value": "@include ch5-button-content($ch5-button-danger-border-width, $ch5-button-danger-border-style, $ch5-button-danger-default-border-color, $ch5-button-danger-default-background-color, $ch5-button-danger-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-danger-selected-border-color, $ch5-button-danger-selected-background-color, $ch5-button-danger-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-danger-pressed-border-color, $ch5-button-danger-pressed-background-color, $ch5-button-danger-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-danger-disabled-border-color, $ch5-button-danger-disabled-background-color, $ch5-button-danger-disabled-font-color);\n  }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--warning",
                         "description": "Applied when type='warning'\n",
-                        "value": "border: $ch5-button-warning-border-width $ch5-button-warning-border-style $ch5-button-warning-default-border-color;\n  background-color: $ch5-button-warning-default-background-color;\n  color: $ch5-button-warning-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-warning-selected-border-color;\n    background-color: $ch5-button-warning-selected-background-color;\n    color: $ch5-button-warning-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-warning-pressed-border-color;\n    background-color: $ch5-button-warning-pressed-background-color;\n    color: $ch5-button-warning-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-warning-disabled-border-color;\n    background-color: $ch5-button-warning-disabled-background-color;\n    color: $ch5-button-warning-disabled-font-color;\n  }"
+                        "value": "@include ch5-button-content($ch5-button-warning-border-width, $ch5-button-warning-border-style, $ch5-button-warning-default-border-color, $ch5-button-warning-default-background-color, $ch5-button-warning-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-warning-selected-border-color, $ch5-button-warning-selected-background-color, $ch5-button-warning-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-warning-pressed-border-color, $ch5-button-warning-pressed-background-color, $ch5-button-warning-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-warning-disabled-border-color, $ch5-button-warning-disabled-background-color, $ch5-button-warning-disabled-font-color);\n  }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--info",
                         "description": "Applied when type='info'\n",
-                        "value": "border: $ch5-button-info-border-width $ch5-button-info-border-style $ch5-button-info-default-border-color;\n  background-color: $ch5-button-info-default-background-color;\n  color: $ch5-button-info-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-info-selected-border-color;\n    background-color: $ch5-button-info-selected-background-color;\n    color: $ch5-button-info-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-info-pressed-border-color;\n    background-color: $ch5-button-info-pressed-background-color;\n    color: $ch5-button-info-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-info-disabled-border-color;\n    background-color: $ch5-button-info-disabled-background-color;\n    color: $ch5-button-info-disabled-font-color;\n  }"
+                        "value": "@include ch5-button-content($ch5-button-info-border-width, $ch5-button-info-border-style, $ch5-button-info-default-border-color, $ch5-button-info-default-background-color, $ch5-button-info-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-info-selected-border-color, $ch5-button-info-selected-background-color, $ch5-button-info-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-info-pressed-border-color, $ch5-button-info-pressed-background-color, $ch5-button-info-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-info-disabled-border-color, $ch5-button-info-disabled-background-color, $ch5-button-info-disabled-font-color);\n  }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--success",
                         "description": "Applied when type='success'\n",
-                        "value": "border: $ch5-button-success-border-width $ch5-button-success-border-style $ch5-button-success-default-border-color;\n  background-color: $ch5-button-success-default-background-color;\n  color: $ch5-button-success-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-success-selected-border-color;\n    background-color: $ch5-button-success-selected-background-color;\n    color: $ch5-button-success-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-success-pressed-border-color;\n    background-color: $ch5-button-success-pressed-background-color;\n    color: $ch5-button-success-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-success-disabled-border-color;\n    background-color: $ch5-button-success-disabled-background-color;\n    color: $ch5-button-success-disabled-font-color;\n  }"
+                        "value": "@include ch5-button-content($ch5-button-success-border-width, $ch5-button-success-border-style, $ch5-button-success-default-border-color, $ch5-button-success-default-background-color, $ch5-button-success-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-success-selected-border-color, $ch5-button-success-selected-background-color, $ch5-button-success-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-success-pressed-border-color, $ch5-button-success-pressed-background-color, $ch5-button-success-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-success-disabled-border-color, $ch5-button-success-disabled-background-color, $ch5-button-success-disabled-font-color);\n  }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--default",
                         "description": "Default button\n",
-                        "value": "border: $ch5-button-default-border-width $ch5-button-default-border-style $ch5-button-default-default-border-color;\n  background-color: $ch5-button-default-default-background-color;\n  color: $ch5-button-default-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-default-selected-border-color;\n    background-color: $ch5-button-default-selected-background-color;\n    color: $ch5-button-default-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-default-pressed-border-color;\n    background-color: $ch5-button-default-pressed-background-color;\n    color: $ch5-button-default-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-default-disabled-border-color;\n    background-color: $ch5-button-default-disabled-background-color;\n    color: $ch5-button-default-disabled-font-color;\n  }"
+                        "value": "@include ch5-button-content($ch5-button-default-border-width, $ch5-button-default-border-style, $ch5-button-default-default-border-color, $ch5-button-default-default-background-color, $ch5-button-default-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-default-selected-border-color, $ch5-button-default-selected-background-color, $ch5-button-default-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-default-pressed-border-color, $ch5-button-default-pressed-background-color, $ch5-button-default-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-default-disabled-border-color, $ch5-button-default-disabled-background-color, $ch5-button-default-disabled-font-color);\n  }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--primary",
                         "description": "Applied when type='primary'\n",
-                        "value": "border: $ch5-button-primary-border-width $ch5-button-primary-border-style $ch5-button-primary-default-border-color;\n  background-color: $ch5-button-primary-default-background-color;\n  color: $ch5-button-primary-default-font-color;\n  &.ch5-button--selected {\n    border-color: $ch5-button-primary-selected-border-color;\n    background-color: $ch5-button-primary-selected-background-color;\n    color: $ch5-button-primary-selected-font-color;\n  }\n  &.ch5-button--pressed {\n    border-color: $ch5-button-primary-pressed-border-color;\n    background-color: $ch5-button-primary-pressed-background-color;\n    color: $ch5-button-primary-pressed-font-color;\n  }\n  &.ch5-button--disabled {\n    border-color: $ch5-button-primary-disabled-border-color;\n    background-color: $ch5-button-primary-disabled-background-color;\n    color: $ch5-button-primary-disabled-font-color;\n  }"
+                        "value": "@include ch5-button-content($ch5-button-primary-border-width, $ch5-button-primary-border-style, $ch5-button-primary-default-border-color, $ch5-button-primary-default-background-color, $ch5-button-primary-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-primary-selected-border-color, $ch5-button-primary-selected-background-color, $ch5-button-primary-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-primary-pressed-border-color, $ch5-button-primary-pressed-background-color, $ch5-button-primary-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-primary-disabled-border-color, $ch5-button-primary-disabled-background-color, $ch5-button-primary-disabled-font-color);\n  }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--secondary",
                         "description": "Applied when type='secondary'\n",
-                        "value": "border: $ch5-button-secondary-border-width $ch5-button-secondary-border-style $ch5-button-secondary-default-border-color;\n  background-color: $ch5-button-secondary-default-background-color;\n  color: $ch5-button-secondary-default-font-color;\n\n  /// Applied when selected signal is applied\n  &.ch5-button--selected {\n    border-color: $ch5-button-secondary-selected-border-color;\n    background-color: $ch5-button-secondary-selected-background-color;\n    color: $ch5-button-secondary-selected-font-color;\n  }\n\n  /// Applied between press and release events\n  &.ch5-button--pressed {\n    border-color: $ch5-button-secondary-pressed-border-color;\n    background-color: $ch5-button-secondary-pressed-background-color;\n    color: $ch5-button-secondary-pressed-font-color;\n  }\n\n  /// Applied when the button is disabled\n  &.ch5-button--disabled {\n    border-color: $ch5-button-secondary-disabled-border-color;\n    background-color: $ch5-button-secondary-disabled-background-color;\n    color: $ch5-button-secondary-disabled-font-color;\n  }"
-                    },
-                    {
-                        "type": "class",
-                        "name": "ch5-button--selected",
-                        "description": "Applied when selected signal is applied\n",
-                        "value": "border-color: $ch5-button-secondary-selected-border-color;\n    background-color: $ch5-button-secondary-selected-background-color;\n    color: $ch5-button-secondary-selected-font-color;"
-                    },
-                    {
-                        "type": "class",
-                        "name": "ch5-button--pressed",
-                        "description": "Applied between press and release events\n",
-                        "value": "border-color: $ch5-button-secondary-pressed-border-color;\n    background-color: $ch5-button-secondary-pressed-background-color;\n    color: $ch5-button-secondary-pressed-font-color;"
-                    },
-                    {
-                        "type": "class",
-                        "name": "ch5-button--disabled",
-                        "description": "Applied when the button is disabled\n",
-                        "value": "border-color: $ch5-button-secondary-disabled-border-color;\n    background-color: $ch5-button-secondary-disabled-background-color;\n    color: $ch5-button-secondary-disabled-font-color;"
+                        "value": "@include ch5-button-content($ch5-button-secondary-border-width, $ch5-button-secondary-border-style, $ch5-button-secondary-default-border-color, $ch5-button-secondary-default-background-color, $ch5-button-secondary-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-secondary-selected-border-color, $ch5-button-secondary-selected-background-color, $ch5-button-secondary-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-secondary-pressed-border-color, $ch5-button-secondary-pressed-background-color, $ch5-button-secondary-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-secondary-disabled-border-color, $ch5-button-secondary-disabled-background-color, $ch5-button-secondary-disabled-font-color);\n  }"
                     }
                 ]
             }
@@ -179,23 +161,8 @@
                     },
                     {
                         "type": "variable",
-                        "name": "ch5-button-text-border-color",
-                        "description": "color of button text border in dark scss\n"
-                    },
-                    {
-                        "type": "variable",
-                        "name": "ch5-button-text-font-color",
-                        "description": "color of button text font in dark scss\n"
-                    },
-                    {
-                        "type": "variable",
-                        "name": "ch5-list-item-color",
-                        "description": "color of list item from dark them\n"
-                    },
-                    {
-                        "type": "variable",
-                        "name": "ch5-list-item-background-color",
-                        "description": "color of list background from dark theme\n"
+                        "name": "ch5-button-checkbox-checked-faicon",
+                        "description": "Checkbox variables for advanced button\n"
                     },
                     {
                         "type": "variable",
@@ -552,6 +519,1321 @@
         ]
     },
     {
+        "group": "ch5-dark-theme-variables",
+        "schemadata": [
+            {
+                "type": "variable",
+                "metadata": [
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-border-color",
+                        "description": "The border color of the button.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-font-color",
+                        "description": "The font color of the button.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-default-border-color",
+                        "description": "The border color for text of the button.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-default-background-color",
+                        "description": "The background color for text of the button.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-default-font-color",
+                        "description": "The font color for text of the button.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-selected-border-color",
+                        "description": "the border color for text of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-selected-background-color",
+                        "description": "the background color for text of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-selected-font-color",
+                        "description": "the font color for text of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-pressed-border-color",
+                        "description": "the border color for text of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-pressed-background-color",
+                        "description": "the background color for text of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-pressed-font-color",
+                        "description": "the font color for text of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-disabled-border-color",
+                        "description": "the border color for text of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-disabled-background-color",
+                        "description": "the background color for text of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-disabled-font-color",
+                        "description": "the font color for text of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-border-color",
+                        "description": "the border color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-font-color",
+                        "description": "the font color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-default-border-color",
+                        "description": "the border color for danger type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-default-background-color",
+                        "description": "the background color for danger type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-default-font-color",
+                        "description": "the font color for danger type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-selected-border-color",
+                        "description": "the border color for danger type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-selected-background-color",
+                        "description": "the background color for danger type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-selected-font-color",
+                        "description": "the font color for danger type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-pressed-border-color",
+                        "description": "the border color for danger type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-pressed-background-color",
+                        "description": "the background color for danger type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-pressed-font-color",
+                        "description": "the font color for danger type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-disabled-border-color",
+                        "description": "the border color for danger type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-disabled-background-color",
+                        "description": "the background color for danger type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-disabled-font-color",
+                        "description": "the font color for danger type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-border-color",
+                        "description": "the border color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-font-color",
+                        "description": "the font color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-default-border-color",
+                        "description": "the border color for warning type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-default-background-color",
+                        "description": "the background color for warning type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-default-font-color",
+                        "description": "the font color for warning type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-selected-border-color",
+                        "description": "the border color for warning type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-selected-background-color",
+                        "description": "the background color for warning type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-selected-font-color",
+                        "description": "the font color for warning type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-pressed-border-color",
+                        "description": "the border color for warning type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-pressed-background-color",
+                        "description": "the background color for warning type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-pressed-font-color",
+                        "description": "the font color for warning type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-disabled-border-color",
+                        "description": "the border color for warning type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-disabled-background-color",
+                        "description": "the background color for warning type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-disabled-font-color",
+                        "description": "the font color for warning type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-border-color",
+                        "description": "the border color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-font-color",
+                        "description": "the font color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-default-border-color",
+                        "description": "the border color for info type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-default-background-color",
+                        "description": "the background color for info type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-default-font-color",
+                        "description": "the font color for info type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-selected-border-color",
+                        "description": "the border color for info type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-selected-background-color",
+                        "description": "the background color for info type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-selected-font-color",
+                        "description": "the font color for info type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-pressed-border-color",
+                        "description": "he border color for info type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-pressed-background-color",
+                        "description": "the background color for info type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-pressed-font-color",
+                        "description": "the font color for info type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-disabled-border-color",
+                        "description": "the border color for info type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-disabled-background-color",
+                        "description": "the background color for info type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-disabled-font-color",
+                        "description": "the font color for info type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-border-color",
+                        "description": "the border color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-font-color",
+                        "description": "the font color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-default-border-color",
+                        "description": "the border color for success type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-default-background-color",
+                        "description": "the background color for success type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-default-font-color",
+                        "description": "the font color for success type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-selected-border-color",
+                        "description": "the border color for success type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-selected-background-color",
+                        "description": "the background color for success type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-selected-font-color",
+                        "description": "the font color for success type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-pressed-border-color",
+                        "description": "the border color for success type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-pressed-background-color",
+                        "description": "the background color for success type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-pressed-font-color",
+                        "description": "the font color for success type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-disabled-border-color",
+                        "description": "the border color for success type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-disabled-background-color",
+                        "description": "the background color for success type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-disabled-font-color",
+                        "description": "the font color for success type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-font-color",
+                        "description": "The font color of the dpad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-default-background-color",
+                        "description": "The background color for text of the dpad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-default-font-color",
+                        "description": "The font color for text of the dpad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-selected-background-color",
+                        "description": "the background color for text of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-selected-font-color",
+                        "description": "the font color for text of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-pressed-background-color",
+                        "description": "the background color for text of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-pressed-font-color",
+                        "description": "the font color for text of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-disabled-background-color",
+                        "description": "the background color for text of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-disabled-font-color",
+                        "description": "the font color for text of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-default-background-color",
+                        "description": "the background color for danger type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-default-font-color",
+                        "description": "the font color for danger type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-selected-background-color",
+                        "description": "the background color for danger type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-selected-font-color",
+                        "description": "the font color for danger type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-pressed-background-color",
+                        "description": "the background color for danger type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-pressed-font-color",
+                        "description": "the font color for danger type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-disabled-background-color",
+                        "description": "the background color for danger type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-disabled-font-color",
+                        "description": "the font color for danger type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-default-background-color",
+                        "description": "the background color for warning type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-default-font-color",
+                        "description": "the font color for warning type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-selected-background-color",
+                        "description": "the background color for warning type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-selected-font-color",
+                        "description": "the font color for warning type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-pressed-background-color",
+                        "description": "the background color for warning type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-pressed-font-color",
+                        "description": "the font color for warning type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-disabled-background-color",
+                        "description": "the background color for warning type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-disabled-font-color",
+                        "description": "the font color for warning type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-default-background-color",
+                        "description": "the background color for info type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-default-font-color",
+                        "description": "the font color for info type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-selected-background-color",
+                        "description": "the background color for info type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-selected-font-color",
+                        "description": "the font color for info type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-pressed-background-color",
+                        "description": "the background color for info type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-pressed-font-color",
+                        "description": "the font color for info type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-disabled-background-color",
+                        "description": "the background color for info type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-disabled-font-color",
+                        "description": "the font color for info type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-default-background-color",
+                        "description": "the background color for success type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-default-font-color",
+                        "description": "the font color for success type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-selected-background-color",
+                        "description": "the background color for success type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-selected-font-color",
+                        "description": "the font color for success type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-pressed-background-color",
+                        "description": "the background color for success type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-pressed-font-color",
+                        "description": "the font color for success type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-disabled-background-color",
+                        "description": "the background color for success type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-disabled-font-color",
+                        "description": "the font color for success type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-font-color",
+                        "description": "The font color of the keypad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-default-background-color",
+                        "description": "The background color for text of the keypad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-default-font-color",
+                        "description": "The font color for text of the keypad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-selected-background-color",
+                        "description": "the background color for text of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-selected-font-color",
+                        "description": "the font color for text of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-pressed-background-color",
+                        "description": "the background color for text of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-pressed-font-color",
+                        "description": "the font color for text of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-disabled-background-color",
+                        "description": "the background color for text of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-disabled-font-color",
+                        "description": "the font color for text of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-default-background-color",
+                        "description": "the background color for danger type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-default-font-color",
+                        "description": "the font color for danger type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-selected-background-color",
+                        "description": "the background color for danger type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-selected-font-color",
+                        "description": "the font color for danger type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-pressed-background-color",
+                        "description": "the background color for danger type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-pressed-font-color",
+                        "description": "the font color for danger type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-disabled-background-color",
+                        "description": "the background color for danger type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-disabled-font-color",
+                        "description": "the font color for danger type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-default-background-color",
+                        "description": "the background color for warning type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-default-font-color",
+                        "description": "the font color for warning type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-selected-background-color",
+                        "description": "the background color for warning type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-selected-font-color",
+                        "description": "the font color for warning type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-pressed-background-color",
+                        "description": "the background color for warning type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-pressed-font-color",
+                        "description": "the font color for warning type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-disabled-background-color",
+                        "description": "the background color for warning type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-disabled-font-color",
+                        "description": "the font color for warning type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-default-background-color",
+                        "description": "the background color for info type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-default-font-color",
+                        "description": "the font color for info type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-selected-background-color",
+                        "description": "the background color for info type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-selected-font-color",
+                        "description": "the font color for info type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-pressed-background-color",
+                        "description": "the background color for info type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-pressed-font-color",
+                        "description": "the font color for info type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-disabled-background-color",
+                        "description": "the background color for info type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-disabled-font-color",
+                        "description": "the font color for info type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-default-background-color",
+                        "description": "the background color for success type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-default-font-color",
+                        "description": "the font color for success type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-selected-background-color",
+                        "description": "the background color for success type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-selected-font-color",
+                        "description": "the font color for success type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-pressed-background-color",
+                        "description": "the background color for success type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-pressed-font-color",
+                        "description": "the font color for success type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-disabled-background-color",
+                        "description": "the background color for success type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-disabled-font-color",
+                        "description": "the font color for success type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-default-close-icon-color",
+                        "description": "the color of the icon at the top of the overlay panel\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-default-close-icon-color-hover",
+                        "description": "the color of the icon at the top of the overlay panel when it is hovered\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-default-mask-bg-color",
+                        "description": "the background color of the mask element\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-panel-close-icon-background-color",
+                        "description": "the background color of the icon at the top of the overlay panel\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-panel-background-color",
+                        "description": "the background color of the overlay panel\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-panel-border-color",
+                        "description": "the border color of the overlay panel\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-panel-text-color",
+                        "description": "the text color of the overlay panel\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-panel-contents-font-color",
+                        "description": "the font color for the content of the overlay panel\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-border-color",
+                        "description": "component border color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-font-color",
+                        "description": "Component main font color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-panel-item-selected-background-color",
+                        "description": "Selected item background color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-panel-item-border-color",
+                        "description": "item border color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-panel-item-color",
+                        "description": "item main text color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-panel-item-background-color",
+                        "description": "item background color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-panel-item-hover-background-color",
+                        "description": "item background color on mouse over\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-panel-items-background-color",
+                        "description": "select panel background color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-spinner-active-item-color",
+                        "description": "The text color of the active item\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-spinner-item-color",
+                        "description": "The text color of the item.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-spinner-overlay-background-color",
+                        "description": "The background color for the overlay of the spinner.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-spinner-highlight-box-shadow-color",
+                        "description": "the box shadow color of the spinner\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-spinner-highlight-border-color",
+                        "description": "the border color of the spinner\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-text-color",
+                        "description": "The text color of the textinput.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-input-text-color",
+                        "description": "Set the color of text for the textinput\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-icon-text-color",
+                        "description": "The color of the icon within the textinput\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-label-text-color",
+                        "description": "the color for the label of the textinput\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-input-border-color",
+                        "description": "the color for the border of the textinput\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-handle-checked-color",
+                        "description": "The background color of the handle when value is true(checked).\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-label-font-color",
+                        "description": "The text color of the label\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-text-font-color",
+                        "description": "the text color of the on|off label\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-icon-font-color",
+                        "description": "the color of the on|off icon\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-handle-circle-background",
+                        "description": "the background color of the handle when shape=\"circle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-circle-label-on-color",
+                        "description": "the text color of the on label when shape=\"circle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-circle-label-off-color",
+                        "description": "the text color of the off label when shape=\"circle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-circle-knob-color",
+                        "description": "the background color of the knob when shape=\"circle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-handle-rectangle-background",
+                        "description": "the background color of the handle when shape=\"rectangle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-rectangle-label-on-color",
+                        "description": "the text color of the on label when shape=\"rectangle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-rectangle-label-off-color",
+                        "description": "the text color of the off label when shape=\"rectangle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-rectangle-knob-color",
+                        "description": "the background color of the knob when shape=\"rectangle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-triggerview-background-color",
+                        "description": "The background color of the triggerview.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-triggerview-fallback-message-color-background",
+                        "description": "The background color of fallback message.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-close-icon-color",
+                        "description": "The color of the icon at the top of the modal\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-close-icon-color-hover",
+                        "description": "The color of the icon at the top of the modal when it is hovered\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-mask-bg-color",
+                        "description": "the background color of the mask element\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-close-icon-background-color",
+                        "description": "the background color of the icon at the top of the modal\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-background-color",
+                        "description": "the background color of the modal\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-border-color",
+                        "description": "the border color of the modal\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-text-color",
+                        "description": "the text color of the modal\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-contents-font-color",
+                        "description": "the font color of the modal content\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-prompt-text-font-color",
+                        "description": "the text color for the prompt text of the modal\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-list-item-color",
+                        "description": "Set the text color of list items.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-list-item-background-color",
+                        "description": "Set the background color of list items, configurable for each theme\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-list-item-border-color",
+                        "description": "Set the border color of list items\n"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "ch5-dpad-variables",
+        "schemadata": [
+            {
+                "type": "variable",
+                "metadata": [
+                    {
+                        "type": "variable",
+                        "name": "defaultDimension",
+                        "description": "Set the height and width of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "commmonEdgeRadius",
+                        "description": "Set the border radius for 'plus' shape\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-font-color",
+                        "description": "The font color of the dpad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-default-background-color",
+                        "description": "The background color for text of the dpad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-default-font-color",
+                        "description": "The font color for text of the dpad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-selected-background-color",
+                        "description": "the background color for text of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-selected-font-color",
+                        "description": "the font color for text of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-pressed-background-color",
+                        "description": "the background color for text of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-pressed-font-color",
+                        "description": "the font color for text of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-disabled-background-color",
+                        "description": "the background color for text of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-disabled-font-color",
+                        "description": "the font color for text of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-default-background-color",
+                        "description": "the background color for danger type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-default-font-color",
+                        "description": "the font color for danger type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-selected-background-color",
+                        "description": "the background color for danger type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-selected-font-color",
+                        "description": "the font color for danger type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-pressed-background-color",
+                        "description": "the background color for danger type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-pressed-font-color",
+                        "description": "the font color for danger type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-disabled-background-color",
+                        "description": "the background color for danger type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-disabled-font-color",
+                        "description": "the font color for danger type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-default-background-color",
+                        "description": "the background color for warning type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-default-font-color",
+                        "description": "the font color for warning type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-selected-background-color",
+                        "description": "the background color for warning type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-selected-font-color",
+                        "description": "the font color for warning type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-pressed-background-color",
+                        "description": "the background color for warning type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-pressed-font-color",
+                        "description": "the font color for warning type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-disabled-background-color",
+                        "description": "the background color for warning type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-disabled-font-color",
+                        "description": "the font color for warning type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-default-background-color",
+                        "description": "the background color for info type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-default-font-color",
+                        "description": "the font color for info type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-selected-background-color",
+                        "description": "the background color for info type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-selected-font-color",
+                        "description": "the font color for info type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-pressed-background-color",
+                        "description": "the background color for info type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-pressed-font-color",
+                        "description": "the font color for info type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-disabled-background-color",
+                        "description": "the background color for info type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-disabled-font-color",
+                        "description": "the font color for info type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-default-background-color",
+                        "description": "the background color for success type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-default-font-color",
+                        "description": "the font color for success type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-selected-background-color",
+                        "description": "the background color for success type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-selected-font-color",
+                        "description": "the font color for success type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-pressed-background-color",
+                        "description": "the background color for success type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-pressed-font-color",
+                        "description": "the font color for success type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-disabled-background-color",
+                        "description": "the background color for success type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-disabled-font-color",
+                        "description": "the font color for success type of the disabled dpad\n"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "group": "ch5-form-variables",
         "schemadata": [
             {
@@ -571,6 +1853,1076 @@
                         "type": "variable",
                         "name": "ch5-form-font-weight",
                         "description": "set the default font weight for the form\n"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "ch5-high-contrast-theme-variables",
+        "schemadata": [
+            {
+                "type": "variable",
+                "metadata": [
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-border-color",
+                        "description": "The border color of the button.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-font-color",
+                        "description": "The font color of the button.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-default-border-color",
+                        "description": "The border color for text of the button.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-default-background-color",
+                        "description": "The background color for text of the button.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-default-font-color",
+                        "description": "The font color for text of the button.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-selected-border-color",
+                        "description": "the border color for text of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-selected-background-color",
+                        "description": "the background color for text of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-selected-font-color",
+                        "description": "the font color for text of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-pressed-border-color",
+                        "description": "the border color for text of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-pressed-background-color",
+                        "description": "the background color for text of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-pressed-font-color",
+                        "description": "the font color for text of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-disabled-border-color",
+                        "description": "the border color for text of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-disabled-background-color",
+                        "description": "the background color for text of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-text-disabled-font-color",
+                        "description": "the font color for text of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-border-color",
+                        "description": "the border color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-font-color",
+                        "description": "the font color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-default-border-color",
+                        "description": "the border color for danger type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-default-background-color",
+                        "description": "the background color for danger type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-default-font-color",
+                        "description": "the font color for danger type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-selected-border-color",
+                        "description": "the border color for danger type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-selected-background-color",
+                        "description": "the background color for danger type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-selected-font-color",
+                        "description": "the font color for danger type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-pressed-border-color",
+                        "description": "the border color for danger type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-pressed-background-color",
+                        "description": "the background color for danger type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-pressed-font-color",
+                        "description": "the font color for danger type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-disabled-border-color",
+                        "description": "the border color for danger type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-disabled-background-color",
+                        "description": "the background color for danger type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-danger-disabled-font-color",
+                        "description": "the font color for danger type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-border-color",
+                        "description": "the border color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-font-color",
+                        "description": "the font color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-default-border-color",
+                        "description": "the border color for warning type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-default-background-color",
+                        "description": "the background color for warning type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-default-font-color",
+                        "description": "the font color for warning type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-selected-border-color",
+                        "description": "the border color for warning type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-selected-background-color",
+                        "description": "the background color for warning type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-selected-font-color",
+                        "description": "the font color for warning type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-pressed-border-color",
+                        "description": "the border color for warning type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-pressed-background-color",
+                        "description": "the background color for warning type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-pressed-font-color",
+                        "description": "the font color for warning type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-disabled-border-color",
+                        "description": "the border color for warning type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-disabled-background-color",
+                        "description": "the background color for warning type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-warning-disabled-font-color",
+                        "description": "the font color for warning type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-border-color",
+                        "description": "the border color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-font-color",
+                        "description": "the font color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-default-border-color",
+                        "description": "the border color for info type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-default-background-color",
+                        "description": "the background color for info type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-default-font-color",
+                        "description": "the font color for info type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-selected-border-color",
+                        "description": "the border color for info type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-selected-background-color",
+                        "description": "the background color for info type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-selected-font-color",
+                        "description": "the font color for info type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-pressed-border-color",
+                        "description": "he border color for info type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-pressed-background-color",
+                        "description": "the background color for info type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-pressed-font-color",
+                        "description": "the font color for info type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-disabled-border-color",
+                        "description": "the border color for info type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-disabled-background-color",
+                        "description": "the background color for info type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-info-disabled-font-color",
+                        "description": "the font color for info type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-border-color",
+                        "description": "the border color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-font-color",
+                        "description": "the font color of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-default-border-color",
+                        "description": "the border color for success type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-default-background-color",
+                        "description": "the background color for success type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-default-font-color",
+                        "description": "the font color for success type of the button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-selected-border-color",
+                        "description": "the border color for success type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-selected-background-color",
+                        "description": "the background color for success type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-selected-font-color",
+                        "description": "the font color for success type of the selected button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-pressed-border-color",
+                        "description": "the border color for success type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-pressed-background-color",
+                        "description": "the background color for success type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-pressed-font-color",
+                        "description": "the font color for success type of the pressed button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-disabled-border-color",
+                        "description": "the border color for success type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-disabled-background-color",
+                        "description": "the background color for success type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-button-success-disabled-font-color",
+                        "description": "the font color for success type of the disabled button\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-font-color",
+                        "description": "The font color of the dpad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-default-background-color",
+                        "description": "The background color for text of the dpad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-default-font-color",
+                        "description": "The font color for text of the dpad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-selected-background-color",
+                        "description": "the background color for text of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-selected-font-color",
+                        "description": "the font color for text of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-pressed-background-color",
+                        "description": "the background color for text of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-pressed-font-color",
+                        "description": "the font color for text of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-disabled-background-color",
+                        "description": "the background color for text of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-disabled-font-color",
+                        "description": "the font color for text of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-default-background-color",
+                        "description": "the background color for danger type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-default-font-color",
+                        "description": "the font color for danger type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-selected-background-color",
+                        "description": "the background color for danger type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-selected-font-color",
+                        "description": "the font color for danger type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-pressed-background-color",
+                        "description": "the background color for danger type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-pressed-font-color",
+                        "description": "the font color for danger type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-disabled-background-color",
+                        "description": "the background color for danger type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-disabled-font-color",
+                        "description": "the font color for danger type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-default-background-color",
+                        "description": "the background color for warning type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-default-font-color",
+                        "description": "the font color for warning type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-selected-background-color",
+                        "description": "the background color for warning type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-selected-font-color",
+                        "description": "the font color for warning type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-pressed-background-color",
+                        "description": "the background color for warning type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-pressed-font-color",
+                        "description": "the font color for warning type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-disabled-background-color",
+                        "description": "the background color for warning type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-disabled-font-color",
+                        "description": "the font color for warning type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-default-background-color",
+                        "description": "the background color for info type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-default-font-color",
+                        "description": "the font color for info type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-selected-background-color",
+                        "description": "the background color for info type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-selected-font-color",
+                        "description": "the font color for info type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-pressed-background-color",
+                        "description": "the background color for info type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-pressed-font-color",
+                        "description": "the font color for info type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-disabled-background-color",
+                        "description": "the background color for info type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-disabled-font-color",
+                        "description": "the font color for info type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-default-background-color",
+                        "description": "the background color for success type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-default-font-color",
+                        "description": "the font color for success type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-selected-background-color",
+                        "description": "the background color for success type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-selected-font-color",
+                        "description": "the font color for success type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-pressed-background-color",
+                        "description": "the background color for success type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-pressed-font-color",
+                        "description": "the font color for success type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-disabled-background-color",
+                        "description": "the background color for success type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-disabled-font-color",
+                        "description": "the font color for success type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-font-color",
+                        "description": "The font color of the keypad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-default-background-color",
+                        "description": "The background color for text of the keypad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-default-font-color",
+                        "description": "The font color for text of the keypad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-selected-background-color",
+                        "description": "the background color for text of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-selected-font-color",
+                        "description": "the font color for text of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-pressed-background-color",
+                        "description": "the background color for text of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-pressed-font-color",
+                        "description": "the font color for text of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-disabled-background-color",
+                        "description": "the background color for text of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-disabled-font-color",
+                        "description": "the font color for text of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-default-background-color",
+                        "description": "the background color for danger type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-default-font-color",
+                        "description": "the font color for danger type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-selected-background-color",
+                        "description": "the background color for danger type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-selected-font-color",
+                        "description": "the font color for danger type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-pressed-background-color",
+                        "description": "the background color for danger type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-pressed-font-color",
+                        "description": "the font color for danger type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-disabled-background-color",
+                        "description": "the background color for danger type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-disabled-font-color",
+                        "description": "the font color for danger type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-default-background-color",
+                        "description": "the background color for warning type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-default-font-color",
+                        "description": "the font color for warning type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-selected-background-color",
+                        "description": "the background color for warning type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-selected-font-color",
+                        "description": "the font color for warning type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-pressed-background-color",
+                        "description": "the background color for warning type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-pressed-font-color",
+                        "description": "the font color for warning type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-disabled-background-color",
+                        "description": "the background color for warning type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-disabled-font-color",
+                        "description": "the font color for warning type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-default-background-color",
+                        "description": "the background color for info type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-default-font-color",
+                        "description": "the font color for info type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-selected-background-color",
+                        "description": "the background color for info type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-selected-font-color",
+                        "description": "the font color for info type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-pressed-background-color",
+                        "description": "the background color for info type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-pressed-font-color",
+                        "description": "the font color for info type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-disabled-background-color",
+                        "description": "the background color for info type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-disabled-font-color",
+                        "description": "the font color for info type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-default-background-color",
+                        "description": "the background color for success type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-default-font-color",
+                        "description": "the font color for success type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-selected-background-color",
+                        "description": "the background color for success type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-selected-font-color",
+                        "description": "the font color for success type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-pressed-background-color",
+                        "description": "the background color for success type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-pressed-font-color",
+                        "description": "the font color for success type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-disabled-background-color",
+                        "description": "the background color for success type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-disabled-font-color",
+                        "description": "the font color for success type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-default-close-icon-color",
+                        "description": "the color of the icon at the top of the overlay panel\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-default-close-icon-color-hover",
+                        "description": "the color of the icon at the top of the overlay panel when it is hovered\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-default-mask-bg-color",
+                        "description": "the background color of the mask element\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-panel-close-icon-background-color",
+                        "description": "the background color of the icon at the top of the overlay panel\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-panel-background-color",
+                        "description": "the background color of the overlay panel\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-panel-border-color",
+                        "description": "the border color of the overlay panel\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-panel-text-color",
+                        "description": "the text color of the overlay panel\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-overlay-panel-contents-font-color",
+                        "description": "the font color for the content of the overlay panel\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-border-color",
+                        "description": "component border color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-font-color",
+                        "description": "Component main font color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-panel-item-selected-background-color",
+                        "description": "Selected item background color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-panel-item-border-color",
+                        "description": "item border color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-panel-item-color",
+                        "description": "item main text color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-panel-item-background-color",
+                        "description": "item background color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-panel-item-hover-background-color",
+                        "description": "item background color on mouse over\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-select-panel-items-background-color",
+                        "description": "select panel background color\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-spinner-active-item-color",
+                        "description": "The text color of the active item\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-spinner-item-color",
+                        "description": "The text color of the item.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-spinner-overlay-background-color",
+                        "description": "The background color for the overlay of the spinner.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-spinner-highlight-box-shadow-color",
+                        "description": "the box shadow color of the spinner\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-spinner-highlight-border-color",
+                        "description": "the border color of the spinner\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-text-color",
+                        "description": "The text color of the textinput.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-input-text-color",
+                        "description": "Set the color of text for the textinput\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-icon-text-color",
+                        "description": "The color of the icon within the textinput\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-label-text-color",
+                        "description": "the color for the label of the textinput\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-input-border-color",
+                        "description": "the color for the border of the textinput\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-handle-checked-color",
+                        "description": "The background color of the handle when value is true(checked).\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-label-font-color",
+                        "description": "The text color of the label\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-text-font-color",
+                        "description": "the text color of the on|off label\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-icon-font-color",
+                        "description": "the color of the on|off icon\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-handle-circle-background",
+                        "description": "the background color of the handle when shape=\"circle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-circle-label-on-color",
+                        "description": "the text color of the on label when shape=\"circle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-circle-label-off-color",
+                        "description": "the text color of the off label when shape=\"circle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-circle-knob-color",
+                        "description": "the background color of the knob when shape=\"circle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-handle-rectangle-background",
+                        "description": "the background color of the handle when shape=\"rectangle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-rectangle-label-on-color",
+                        "description": "the text color of the on label when shape=\"rectangle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-rectangle-label-off-color",
+                        "description": "the text color of the off label when shape=\"rectangle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-toggle-rectangle-knob-color",
+                        "description": "the background color of the knob when shape=\"rectangle\"\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-triggerview-background-color",
+                        "description": "The background color of the triggerview.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-triggerview-fallback-message-color-background",
+                        "description": "The background color of fallback message.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-close-icon-color",
+                        "description": "The color of the icon at the top of the modal\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-close-icon-color-hover",
+                        "description": "The color of the icon at the top of the modal when it is hovered\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-mask-bg-color",
+                        "description": "the background color of the mask element\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-close-icon-background-color",
+                        "description": "the background color of the icon at the top of the modal\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-background-color",
+                        "description": "the background color of the modal\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-border-color",
+                        "description": "the border color of the modal\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-text-color",
+                        "description": "the text color of the modal\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-contents-font-color",
+                        "description": "the font color of the modal content\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-modal-prompt-text-font-color",
+                        "description": "the text color for the prompt text of the modal\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-list-item-color",
+                        "description": "Set the text color of list items.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-list-item-background-color",
+                        "description": "Set the background color of list items, configurable for each theme\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-list-item-border-color",
+                        "description": "Set the border color of list items\n"
                     }
                 ]
             }
@@ -613,6 +2965,246 @@
                         "type": "variable",
                         "name": "ch5-image-width",
                         "description": "Set width of image\n"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "ch5-keypad-variables",
+        "schemadata": [
+            {
+                "type": "variable",
+                "metadata": [
+                    {
+                        "type": "variable",
+                        "name": "defaultContainerWidth",
+                        "description": "Variables below\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-font-color",
+                        "description": "The font color of the keypad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-default-background-color",
+                        "description": "The background color for text of the keypad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-default-font-color",
+                        "description": "The font color for text of the keypad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-selected-background-color",
+                        "description": "the background color for text of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-selected-font-color",
+                        "description": "the font color for text of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-pressed-background-color",
+                        "description": "the background color for text of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-pressed-font-color",
+                        "description": "the font color for text of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-disabled-background-color",
+                        "description": "the background color for text of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-disabled-font-color",
+                        "description": "the font color for text of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-default-background-color",
+                        "description": "the background color for danger type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-default-font-color",
+                        "description": "the font color for danger type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-selected-background-color",
+                        "description": "the background color for danger type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-selected-font-color",
+                        "description": "the font color for danger type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-pressed-background-color",
+                        "description": "the background color for danger type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-pressed-font-color",
+                        "description": "the font color for danger type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-disabled-background-color",
+                        "description": "the background color for danger type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-disabled-font-color",
+                        "description": "the font color for danger type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-default-background-color",
+                        "description": "the background color for warning type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-default-font-color",
+                        "description": "the font color for warning type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-selected-background-color",
+                        "description": "the background color for warning type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-selected-font-color",
+                        "description": "the font color for warning type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-pressed-background-color",
+                        "description": "the background color for warning type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-pressed-font-color",
+                        "description": "the font color for warning type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-disabled-background-color",
+                        "description": "the background color for warning type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-disabled-font-color",
+                        "description": "the font color for warning type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-default-background-color",
+                        "description": "the background color for info type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-default-font-color",
+                        "description": "the font color for info type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-selected-background-color",
+                        "description": "the background color for info type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-selected-font-color",
+                        "description": "the font color for info type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-pressed-background-color",
+                        "description": "the background color for info type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-pressed-font-color",
+                        "description": "the font color for info type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-disabled-background-color",
+                        "description": "the background color for info type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-disabled-font-color",
+                        "description": "the font color for info type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-default-background-color",
+                        "description": "the background color for success type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-default-font-color",
+                        "description": "the font color for success type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-selected-background-color",
+                        "description": "the background color for success type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-selected-font-color",
+                        "description": "the font color for success type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-pressed-background-color",
+                        "description": "the background color for success type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-pressed-font-color",
+                        "description": "the font color for success type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-disabled-background-color",
+                        "description": "the background color for success type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-disabled-font-color",
+                        "description": "the font color for success type of the disabled keypad\n"
                     }
                 ]
             }
@@ -976,6 +3568,456 @@
                     },
                     {
                         "type": "variable",
+                        "name": "ch5-dpad-text-font-color",
+                        "description": "The font color of the dpad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-default-background-color",
+                        "description": "The background color for text of the dpad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-default-font-color",
+                        "description": "The font color for text of the dpad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-selected-background-color",
+                        "description": "the background color for text of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-selected-font-color",
+                        "description": "the font color for text of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-pressed-background-color",
+                        "description": "the background color for text of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-pressed-font-color",
+                        "description": "the font color for text of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-disabled-background-color",
+                        "description": "the background color for text of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-text-disabled-font-color",
+                        "description": "the font color for text of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-default-background-color",
+                        "description": "the background color for danger type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-default-font-color",
+                        "description": "the font color for danger type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-selected-background-color",
+                        "description": "the background color for danger type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-selected-font-color",
+                        "description": "the font color for danger type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-pressed-background-color",
+                        "description": "the background color for danger type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-pressed-font-color",
+                        "description": "the font color for danger type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-disabled-background-color",
+                        "description": "the background color for danger type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-danger-disabled-font-color",
+                        "description": "the font color for danger type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-default-background-color",
+                        "description": "the background color for warning type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-default-font-color",
+                        "description": "the font color for warning type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-selected-background-color",
+                        "description": "the background color for warning type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-selected-font-color",
+                        "description": "the font color for warning type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-pressed-background-color",
+                        "description": "the background color for warning type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-pressed-font-color",
+                        "description": "the font color for warning type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-disabled-background-color",
+                        "description": "the background color for warning type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-warning-disabled-font-color",
+                        "description": "the font color for warning type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-default-background-color",
+                        "description": "the background color for info type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-default-font-color",
+                        "description": "the font color for info type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-selected-background-color",
+                        "description": "the background color for info type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-selected-font-color",
+                        "description": "the font color for info type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-pressed-background-color",
+                        "description": "the background color for info type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-pressed-font-color",
+                        "description": "the font color for info type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-disabled-background-color",
+                        "description": "the background color for info type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-info-disabled-font-color",
+                        "description": "the font color for info type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-font-color",
+                        "description": "the font color of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-default-background-color",
+                        "description": "the background color for success type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-default-font-color",
+                        "description": "the font color for success type of the dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-selected-background-color",
+                        "description": "the background color for success type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-selected-font-color",
+                        "description": "the font color for success type of the selected dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-pressed-background-color",
+                        "description": "the background color for success type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-pressed-font-color",
+                        "description": "the font color for success type of the pressed dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-disabled-background-color",
+                        "description": "the background color for success type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-dpad-success-disabled-font-color",
+                        "description": "the font color for success type of the disabled dpad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-font-color",
+                        "description": "The font color of the keypad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-default-background-color",
+                        "description": "The background color for text of the keypad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-default-font-color",
+                        "description": "The font color for text of the keypad.\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-selected-background-color",
+                        "description": "the background color for text of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-selected-font-color",
+                        "description": "the font color for text of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-pressed-background-color",
+                        "description": "the background color for text of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-pressed-font-color",
+                        "description": "the font color for text of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-disabled-background-color",
+                        "description": "the background color for text of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-text-disabled-font-color",
+                        "description": "the font color for text of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-default-background-color",
+                        "description": "the background color for danger type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-default-font-color",
+                        "description": "the font color for danger type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-selected-background-color",
+                        "description": "the background color for danger type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-selected-font-color",
+                        "description": "the font color for danger type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-pressed-background-color",
+                        "description": "the background color for danger type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-pressed-font-color",
+                        "description": "the font color for danger type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-disabled-background-color",
+                        "description": "the background color for danger type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-danger-disabled-font-color",
+                        "description": "the font color for danger type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-default-background-color",
+                        "description": "the background color for warning type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-default-font-color",
+                        "description": "the font color for warning type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-selected-background-color",
+                        "description": "the background color for warning type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-selected-font-color",
+                        "description": "the font color for warning type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-pressed-background-color",
+                        "description": "the background color for warning type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-pressed-font-color",
+                        "description": "the font color for warning type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-disabled-background-color",
+                        "description": "the background color for warning type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-warning-disabled-font-color",
+                        "description": "the font color for warning type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-default-background-color",
+                        "description": "the background color for info type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-default-font-color",
+                        "description": "the font color for info type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-selected-background-color",
+                        "description": "the background color for info type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-selected-font-color",
+                        "description": "the font color for info type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-pressed-background-color",
+                        "description": "the background color for info type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-pressed-font-color",
+                        "description": "the font color for info type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-disabled-background-color",
+                        "description": "the background color for info type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-info-disabled-font-color",
+                        "description": "the font color for info type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-font-color",
+                        "description": "the font color of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-default-background-color",
+                        "description": "the background color for success type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-default-font-color",
+                        "description": "the font color for success type of the keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-selected-background-color",
+                        "description": "the background color for success type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-selected-font-color",
+                        "description": "the font color for success type of the selected keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-pressed-background-color",
+                        "description": "the background color for success type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-pressed-font-color",
+                        "description": "the font color for success type of the pressed keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-disabled-background-color",
+                        "description": "the background color for success type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-keypad-success-disabled-font-color",
+                        "description": "the font color for success type of the disabled keypad\n"
+                    },
+                    {
+                        "type": "variable",
                         "name": "ch5-overlay-default-close-icon-color",
                         "description": "the color of the icon at the top of the overlay panel\n"
                     },
@@ -1201,6 +4243,11 @@
                     },
                     {
                         "type": "variable",
+                        "name": "ch5-modal-border-color",
+                        "description": "the border color of the modal\n"
+                    },
+                    {
+                        "type": "variable",
                         "name": "ch5-modal-text-color",
                         "description": "the text color of the modal\n"
                     },
@@ -1208,11 +4255,6 @@
                         "type": "variable",
                         "name": "ch5-modal-contents-font-color",
                         "description": "the font color of the modal content\n"
-                    },
-                    {
-                        "type": "variable",
-                        "name": "ch5-modal-border-color",
-                        "description": "the border color of the modal\n"
                     },
                     {
                         "type": "variable",
@@ -1582,6 +4624,11 @@
                     },
                     {
                         "type": "variable",
+                        "name": "ch5-modal-border-color",
+                        "description": "the border color of the modal\n"
+                    },
+                    {
+                        "type": "variable",
                         "name": "ch5-modal-text-color",
                         "description": "the text color of the modal\n"
                     },
@@ -1589,11 +4636,6 @@
                         "type": "variable",
                         "name": "ch5-modal-contents-font-color",
                         "description": "the font color of the modal content\n"
-                    },
-                    {
-                        "type": "variable",
-                        "name": "ch5-modal-border-color",
-                        "description": "the border color of the modal\n"
                     },
                     {
                         "type": "variable",
@@ -2030,7 +5072,7 @@
                         "type": "class",
                         "name": "ch5-slider",
                         "description": "the class added on the component and wraps all its contents\n",
-                        "value": "position: relative;\n  display: inline-block;\n  vertical-align: top;\n  // padding: 0px 15px 30px 15px;\n  font-size: $ch5-slider-font-size;\n  font-style: $ch5-slider-font-style;\n  font-weight: $ch5-slider-font-weight;\n\n  &.ch5-hide-dis {\n    display: none;\n  }\n\n  &:focus, .noUi-connects:focus, .noUi-base, .noUi-handle:focus{\n    outline: none;\n  }\n\n  .noUi-target {\n    display: inline-block;\n  }\n\n  &[nohandle] .noUi-handle {\n    visibility: hidden;\n  }\n\n  /// class apply when slider orientation=\"horizontal\"\n  &.ch5-slider--orientation--horizontal {\n    .noUi-target {\n      height: $ch5-slider-target-size;\n    }\n  }\n\n  /// class apply when slider orientation=\"vertical\"\n  &.ch5-slider--orientation--vertical {\n    .noUi-target {\n      width: $ch5-slider-target-size;\n    }\n  }\n\n  .noUi-handle {\n    &:before, &:after {\n      content: none;\n    }\n  }\n\n  /* ===============================================\n    COLORS\n   ============================================= */\n  .noUi-target {\n    background: $ch5-slider-target-bg;\n    border-style: $ch5-slider-target-border-style;\n    border-color: $ch5-slider-target-border-color;\n    border-width: $ch5-slider-target-border-width;\n    box-shadow: none;\n  }\n  .noUi-connect {\n    background: $ch5-slider-connect-bg;\n  }\n  .noUi-handle{\n    border-style: $ch5-slider-handle-border-style;\n    border-color: $ch5-slider-handle-border-color;\n    border-width: $ch5-slider-handle-border-width;\n    background: $ch5-slider-handle-bg;\n    box-shadow: none;\n  }\n\n  /* ===============================================\n    STRECH\n   ============================================= */\n  &.ch5-slider--strech--width.ch5-slider--orientation--horizontal{\n    width: 100% !important;\n  }\n\n  &.ch5-slider--strech--height.ch5-slider--orientation--vertical{\n    height: 100% !important;\n  }\n\n\n  &.ch5-slider--strech--height.ch5-slider--orientation--horizontal {\n    height: 100% !important;\n    .noUi-target {\n      top: 50%;\n      transform: translateY(-50%);\n    }\n  }\n\n  &.ch5-slider--strech--width.ch5-slider--orientation--vertical {\n    width: 100% !important;\n    .noUi-target {\n      left: 50%;\n      transform: translateX(-50%);\n    }\n  }\n\n  &.ch5-slider--strech--both.ch5-slider--orientation--horizontal{\n    width: 100% !important;\n    height: 100% !important;\n\n    .noUi-target {\n      top: 50%;\n      transform: translateY(-50%);\n    }\n  }\n\n  &.ch5-slider--strech--both.ch5-slider--orientation--vertical{\n    height: 100% !important;\n    width: 100% !important;\n\n    .noUi-target {\n      left: 50%;\n      transform: translateX(-50%);\n    }\n  }"
+                        "value": "position: relative;\n  display: inline-block;\n  vertical-align: top;\n  // padding: 0px 15px 30px 15px;\n  font-size: $ch5-slider-font-size;\n  font-style: $ch5-slider-font-style;\n  font-weight: $ch5-slider-font-weight;\n\n  &.ch5-hide-dis {\n    display: none;\n  }\n\n  &:focus,\n  .noUi-connects:focus,\n  .noUi-base,\n  .noUi-handle:focus {\n    outline: none;\n  }\n\n  .noUi-target {\n    display: inline-block;\n  }\n\n  &[nohandle] .noUi-handle {\n    visibility: hidden;\n  }\n\n  /// class apply when slider orientation=\"horizontal\"\n  &.ch5-slider--orientation--horizontal {\n    .noUi-target {\n      height: $ch5-slider-target-size;\n    }\n  }\n\n  /// class apply when slider orientation=\"vertical\"\n  &.ch5-slider--orientation--vertical {\n    .noUi-target {\n      width: $ch5-slider-target-size;\n    }\n  }\n\n  .noUi-handle {\n    &:before,\n    &:after {\n      content: none;\n    }\n  }\n\n  /* ===============================================\n    COLORS\n   ============================================= */\n  .noUi-target {\n    background: $ch5-slider-target-bg;\n    border-style: $ch5-slider-target-border-style;\n    border-color: $ch5-slider-target-border-color;\n    border-width: $ch5-slider-target-border-width;\n    box-shadow: none;\n  }\n  .noUi-connect {\n    background: $ch5-slider-connect-bg;\n  }\n  .noUi-handle {\n    border-style: $ch5-slider-handle-border-style;\n    border-color: $ch5-slider-handle-border-color;\n    border-width: $ch5-slider-handle-border-width;\n    background: $ch5-slider-handle-bg;\n    box-shadow: none;\n  }\n\n  /* ===============================================\n    STRETCH\n   ============================================= */\n  &.ch5-slider--strech--width.ch5-slider--orientation--horizontal {\n    width: 100% !important;\n  }\n\n  &.ch5-slider--strech--height.ch5-slider--orientation--vertical {\n    height: 100% !important;\n  }\n\n  &.ch5-slider--strech--height.ch5-slider--orientation--horizontal {\n    height: 100% !important;\n    .noUi-target {\n      top: 50%;\n      transform: translateY(-50%);\n    }\n  }\n\n  &.ch5-slider--strech--width.ch5-slider--orientation--vertical {\n    width: 100% !important;\n    .noUi-target {\n      left: 50%;\n      transform: translateX(-50%);\n    }\n  }\n\n  &.ch5-slider--strech--both.ch5-slider--orientation--horizontal {\n    width: 100% !important;\n    height: 100% !important;\n\n    .noUi-target {\n      top: 50%;\n      transform: translateY(-50%);\n    }\n  }\n\n  &.ch5-slider--strech--both.ch5-slider--orientation--vertical {\n    height: 100% !important;\n    width: 100% !important;\n\n    .noUi-target {\n      left: 50%;\n      transform: translateX(-50%);\n    }\n  }"
                     },
                     {
                         "type": "class",
@@ -2882,8 +5924,8 @@
                     },
                     {
                         "type": "class",
-                        "name": "ch5-toggle__off-icon",
-                        "description": "class apply on icon-off\n",
+                        "name": "ch5-toggle__off-label,\n",
+                        "description": "class apply on off label\n",
                         "value": "margin: 0 2px 0 2px;\n        color: $ch5-toggle-icon-font-color;\n        font-style: $ch5-toggle-icon-font-style;\n        font-size: $ch5-toggle-icon-font-size;\n        font-weight: $ch5-toggle-icon-font-weight;"
                     },
                     {
@@ -2894,8 +5936,8 @@
                     },
                     {
                         "type": "class",
-                        "name": "ch5-toggle__off-label,\n",
-                        "description": "class apply on off label\n",
+                        "name": "ch5-toggle__off-icon",
+                        "description": "class apply on icon-off\n",
                         "value": "margin: 0 2px 0 2px;\n        color: $ch5-toggle-icon-font-color;\n        font-style: $ch5-toggle-icon-font-style;\n        font-size: $ch5-toggle-icon-font-size;\n        font-weight: $ch5-toggle-icon-font-weight;"
                     },
                     {
