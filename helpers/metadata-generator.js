@@ -81,9 +81,9 @@ const sassdoc = require('sassdoc'),
 
       includeProperty.description = meta.description;
       includeProperty.group = meta.group[0];
-      if (includeProperty.type !== 'variable') {
+      // if (includeProperty.type !== 'variable') {
         includeProperty.value = meta.context.value;
-      }
+      // }
       return includeProperty;
     });
   }
