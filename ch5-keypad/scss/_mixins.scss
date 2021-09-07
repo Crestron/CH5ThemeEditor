@@ -1,0 +1,39 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2021 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-keypad-mixins
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@mixin ch5-keypad-content($property-default-background-color, $property-default-font-color) {
+    $backgroundColorActive: darken($property-default-background-color, 10%);
+    .keypad-row {
+        color: $property-default-font-color;
+        .keypad-btn {
+            button {
+                background-color: $property-default-background-color;
+                border: 1px solid $property-default-background-color;
+                &:active {
+                    background: $backgroundColorActive;
+                    border-color: $backgroundColorActive;
+                }
+            }
+        }
+    }
+}
+
+@mixin ch5-keypad-content--selected($property-selected-background-color, $property-selected-font-color) {
+    $backgroundColorActive: lighten($property-selected-background-color, 10%);
+}
+
+@mixin ch5-keypad-content--pressed($property-pressed-background-color, $property-pressed-font-color) {
+    $backgroundColorActive: lighten($property-pressed-background-color, 10%);
+}
+
+@mixin ch5-keypad-content--disabled($ch5-keypad-text-disabled-background-color, $ch5-keypad-text-disabled-font-color) {
+}
