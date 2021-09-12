@@ -585,6 +585,12 @@ $ch5-keypad-text-font-color: #333 !default;
 /// The background color for text of the keypad.
 $ch5-keypad-text-default-background-color: #efefef !default;
 
+/// The font color of the keypad for extra button.
+$ch5-keypad--extra-text-font-color: #ffffff !default;
+
+/// The background color for text of the keypad for extra button.
+$ch5-keypad-extra-text-default-background-color: #24dc24 !default;
+
 /// The font color for text of the keypad.
 $ch5-keypad-text-default-font-color: $ch5-keypad-text-font-color !default;
 

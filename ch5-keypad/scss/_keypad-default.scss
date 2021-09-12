@@ -11,21 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import "./variables";
-
-@mixin ch5-keypad-content($property-default-background-color, $property-default-font-color) {
-    $backgroundColorActive: lighten($property-default-background-color, 10%);
-}
-
-@mixin ch5-keypad-content--selected($property-selected-background-color, $property-selected-font-color) {
-    $backgroundColorActive: lighten($property-selected-background-color, 10%);
-}
-
-@mixin ch5-keypad-content--pressed($property-pressed-background-color, $property-pressed-font-color) {
-    $backgroundColorActive: lighten($property-pressed-background-color, 10%);
-}
-
-@mixin ch5-keypad-content--disabled($ch5-keypad-text-disabled-background-color, $ch5-keypad-text-disabled-font-color) {
-}
+@import "./mixins";
 
 .ch5-keypad {
     display: inline-flex;
@@ -35,19 +21,19 @@
     height: $defaultContainerHeight;
 
     &[showextrabutton="true"] {
-        height: $defaultContainerHeight + 90;
+        height: $defaultContainerHeightExtra;
         .keypad-container {
-            height: $defaultContainerHeight + 90;
+            height: $defaultContainerHeightExtra;
             .keypad-row {
                 flex: 0 1 18%;
 
                 .keypad-btn.special-center button {
-                    color: #fff;
-                    background-color: $btnSpecialBG;
-                    border: 1px solid $btnSpecialBG;
+                    color: $ch5-keypad--extra-text-font-color;
+                    background-color: $ch5-keypad-extra-text-default-background-color;                    ;
+                    border: 1px solid $ch5-keypad-extra-text-default-background-color;
                     &:active {
-                        background: lighten($color: $btnSpecialBG, $amount: 10);
-                        border-color: lighten($color: $btnSpecialBG, $amount: 10);
+                        background: lighten($color: $ch5-keypad-extra-text-default-background-color, $amount: 10);
+                        border-color: lighten($color: $ch5-keypad-extra-text-default-background-color, $amount: 10);
                     }
                 }
 
@@ -56,6 +42,46 @@
                 }
             }
         }
+    }
+
+    &.ch5-keypad--type-default {
+        @include ch5-keypad-content(
+            $ch5-keypad-default-default-background-color,
+            $ch5-keypad-default-default-font-color
+        );
+    }
+    &.ch5-keypad--type-primary {
+        @include ch5-keypad-content(
+            $ch5-keypad-primary-default-background-color,
+            $ch5-keypad-primary-default-font-color
+        );
+    }
+    &.ch5-keypad--type-info {
+        @include ch5-keypad-content($ch5-keypad-info-default-background-color, $ch5-keypad-info-default-font-color);
+    }
+    &.ch5-keypad--type-text {
+        @include ch5-keypad-content($ch5-keypad-text-default-background-color, $ch5-keypad-text-default-font-color);
+    }
+    &.ch5-keypad--type-danger {
+        @include ch5-keypad-content($ch5-keypad-danger-default-background-color, $ch5-keypad-danger-default-font-color);
+    }
+    &.ch5-keypad--type-warning {
+        @include ch5-keypad-content(
+            $ch5-keypad-warning-default-background-color,
+            $ch5-keypad-warning-default-font-color
+        );
+    }
+    &.ch5-keypad--type-success {
+        @include ch5-keypad-content(
+            $ch5-keypad-success-default-background-color,
+            $ch5-keypad-success-default-font-color
+        );
+    }
+    &.ch5-keypad--type-secondary {
+        @include ch5-keypad-content(
+            $ch5-keypad-secondary-default-background-color,
+            $ch5-keypad-secondary-default-font-color
+        );
     }
 }
 
@@ -84,14 +110,14 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: $btnBG;
-            border: 1px solid $bordercolor;
+            background-color: $ch5-keypad-default-default-background-color;
+            border: 1px solid $ch5-keypad-default-default-background-color;
             outline: none !important;
             -webkit-transition: background 0.4s;
             transition: background 0.4s;
             &:active {
-                background: $kepadActiveBG;
-                border-color: $kepadActiveBG;
+                background: darken($ch5-keypad-default-default-background-color, 10%);
+                border-color: darken($ch5-keypad-default-default-background-color, 10%);
             }
             &[data-misc="1"] {
                 .label-major {
@@ -128,10 +154,6 @@
         .keypad-row {
             .keypad-btn {
                 border-radius: 0;
-                // .label-major {
-                // }
-                // .label-minor {
-                // }
             }
         }
     }
@@ -142,10 +164,6 @@
         .keypad-row {
             .keypad-btn {
                 border-radius: 50%;
-                // .label-major {
-                // }
-                // .label-minor {
-                // }
             }
         }
     }
@@ -156,10 +174,6 @@
         .keypad-row {
             .keypad-btn {
                 border-radius: 10%;
-                // .label-major {
-                // }
-                // .label-minor {
-                // }
             }
         }
     }
