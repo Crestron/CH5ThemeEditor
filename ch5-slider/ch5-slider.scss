@@ -17,9 +17,16 @@
 @import "./scss/_handle-size";
 @import "./scss/_handle-shape";
 @import "./scss/advanced";
+@import "./scss/slider-button";
 
 ch5-slider:focus {
   outline: none;
+}
+
+ch5-slider {
+  &[nohandle] .noUi-handle {
+    visibility: hidden;
+  }
 }
 
 /* ch5-slider - the container */
@@ -49,9 +56,9 @@ ch5-slider:focus {
     display: inline-block;
   }
 
-  &[nohandle] .noUi-handle {
-    visibility: hidden;
-  }
+  // &[nohandle] .noUi-handle {
+  //   visibility: hidden;
+  // }
 
   /// class apply when slider orientation="horizontal"
   &.ch5-slider--orientation--horizontal {
@@ -86,6 +93,11 @@ ch5-slider:focus {
   }
   .noUi-connect {
     background: $ch5-slider-connect-bg;
+  }
+  &.ch5-slider--disabled {
+    .noUi-connect {
+      background: lighten($ch5-slider-connect-bg, $ch5-slider-background-lighten-percent);
+    }
   }
   .noUi-handle {
     border-style: $ch5-slider-handle-border-style;

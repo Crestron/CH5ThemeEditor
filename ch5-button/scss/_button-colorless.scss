@@ -12,18 +12,21 @@
 @import "./variables";
 
 @mixin ch5-button-image-width-height($property-font-size) {
-  .ch5-button--img {
-      display: block;
-      height: $property-font-size * 2;
-      width: $property-font-size * 2;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
+  height: $property-font-size * 2;
+  width: $property-font-size * 2; 
+}
 
-      &::before,
-      &::after {
-        content: none;
-      }
+@mixin ch5-button-set-icon-classes($property-font-size) {
+  .ch5-button--img {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @include ch5-button-image-width-height($property-font-size);
+    &::before,
+    &::after {
+      content: none;
+    }
   }
 }
 
@@ -355,7 +358,7 @@ ch5-button[stretch="both"] {
 }
 
 // Sizes
-@include ch5-button-image-width-height($ch5-button-font-size);
+@include ch5-button-set-icon-classes($ch5-button-font-size);
 
 .ch5-button--size-x-small {
   .cb-btn {
@@ -369,7 +372,7 @@ ch5-button[stretch="both"] {
   .ch5-button__checkbox--unchecked:before {
     font-size: $ch5-button-x-small-font-size;
   }
-  @include ch5-button-image-width-height($ch5-button-x-small-font-size);
+  @include ch5-button-set-icon-classes($ch5-button-x-small-font-size);
 }
 .ch5-button--size-small {
   .cb-btn {
@@ -383,8 +386,7 @@ ch5-button[stretch="both"] {
   .ch5-button__checkbox--unchecked:before {
     font-size: $ch5-button-small-font-size;
   }
-  @include ch5-button-image-width-height($ch5-button-small-font-size);
-
+  @include ch5-button-set-icon-classes($ch5-button-small-font-size);
 }
 .ch5-button--size-large {
   .cb-btn {
@@ -398,8 +400,7 @@ ch5-button[stretch="both"] {
   .ch5-button__checkbox--unchecked:before {
     font-size: $ch5-button-large-font-size;
   }
-  @include ch5-button-image-width-height($ch5-button-large-font-size);
-
+  @include ch5-button-set-icon-classes($ch5-button-large-font-size);
 }
 .ch5-button--size-x-large {
   .cb-btn {
@@ -413,10 +414,9 @@ ch5-button[stretch="both"] {
   .ch5-button__checkbox--unchecked:before {
     font-size: $ch5-button-x-large-font-size;
   }
-  @include ch5-button-image-width-height($ch5-button-x-large-font-size);
-
+  @include ch5-button-set-icon-classes($ch5-button-x-large-font-size);
 }
-// icon positions 
+// icon positions
 i.cb-icon.cx-button-icon-pos-first,
 i.cb-icon.cx-button-icon-pos-last {
   display: inline-block;

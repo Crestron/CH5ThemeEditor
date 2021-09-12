@@ -1,4 +1,3 @@
-
 .ch5-slider-range-section {
   .ch5-slider {
     display: flex;
@@ -7,46 +6,88 @@
   }
 }
 
-  .ch5-slider-label-base--horizontal-left {
-    justify-content: flex-start;
-  }
-  .ch5-slider-label-base--horizontal-center {
-    justify-content: center;
-  }
-  .ch5-slider-label-base--horizontal-right {
-    justify-content: flex-end;
-  }
-  .ch5-slider-label-base--vertical-middle {
-    align-items: center;
-  }
-  .ch5-slider-label-base--vertical-top {
-    align-items: flex-start;
-  }
-  .ch5-slider-label-base--vertical-bottom {
-    align-items: flex-end;
-  }
+.ch5-slider-label-base--horizontal-left {
+  justify-content: flex-start;
+}
+.ch5-slider-label-base--horizontal-center {
+  justify-content: center;
+}
+.ch5-slider-label-base--horizontal-right {
+  justify-content: flex-end;
+}
+.ch5-slider-label-base--vertical-middle {
+  align-items: center;
+}
+.ch5-slider-label-base--vertical-top {
+  align-items: flex-start;
+}
+.ch5-slider-label-base--vertical-bottom {
+  align-items: flex-end;
+}
 
 .ch5-slider-container {
   display: inline-block;
-  
+
   .ch5-slider-range-section {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .noUi-target {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
   }
 }
-ch5-slider-title-label, ch5-slider-percentage-label {
-  div{
+ch5-slider-title-label {
+  div {
     width: 100%;
     height: 100%;
-
-  span.cb-lbl {
-    width: 100%;
-    height: 100%;
-    display:flex;
+    display: flex;
+    
+    span.cb-lbl {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      font-size: 20px;
+      font-weight: bold;
+    }
   }
 }
+
+ch5-slider-percentage-label {
+  display: inline-flex;
+  div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span.cb-lbl {
+      white-space: nowrap;
+      width: 35px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
 }
+
+
+// .ch5-slider-label-base--horizontal-left {
+//   justify-content: flex-start;
+// }
+// .ch5-slider-label-base--horizontal-center {
+//   justify-content: center;
+// }
+// .ch5-slider-label-base--horizontal-right {
+//   justify-content: flex-end;
+// }
+// .ch5-slider-label-base--vertical-middle {
+//   align-items: center;
+// }
+// .ch5-slider-label-base--vertical-top {
+//   align-items: flex-start;
+// }
+// .ch5-slider-label-base--vertical-bottom {
+//   align-items: flex-end;
+// }

@@ -65,8 +65,8 @@ yarn install
 using shell command
 ## Linking betweens themes
 There are two types of theme linking:
-- soft linking DEFAULT(an import statement is being to be added in the generated file)
-- hard linking (the content of base theme will be copied in the new generated file)
+- soft linking DEFAULT(an import statement is being to be added in the generated file i.e. ch5-core/themes/<new-theme>.scss)
+- hard linking (the content of base theme will be copied in the new generated file i.e. ch5-core/themes/<new-theme>.scss)
 
 **soft link between default theme and the new theme:**
 ```sh
