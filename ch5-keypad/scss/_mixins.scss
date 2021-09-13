@@ -18,9 +18,14 @@
             button {
                 background-color: $property-default-background-color;
                 border: 1px solid $property-default-background-color;
+                color: inherit;
                 &:active {
                     background: $backgroundColorActive;
                     border-color: $backgroundColorActive;
+                }
+                .label-major,
+                .label-minor {
+                    color: inherit;
                 }
             }
         }
