@@ -83,6 +83,34 @@
             $ch5-keypad-secondary-default-font-color
         );
     }
+
+    &.ch5-keypad--orientation-top {
+        button {
+            flex-direction: column;
+        }
+    }
+
+    &.ch5-keypad--orientation-right {
+        button {
+            flex-direction: row-reverse;
+            margin-left: 2px;
+        }
+    }
+
+    &.ch5-keypad--orientation-bottom {
+        button {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &.ch5-keypad--orientation-left {
+        button {
+            flex-direction: row;
+            .label-major {
+                margin-right: 2px;
+            }
+        }
+    }
 }
 
 .keypad-container {
@@ -107,19 +135,12 @@
             display: flex;
             height: 100%;
             width: 100%;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: $ch5-keypad-default-default-background-color;
-            border: 1px solid $ch5-keypad-default-default-background-color;
             outline: none !important;
             color: inherit;
             -webkit-transition: background 0.4s;
             transition: background 0.4s;
-            &:active {
-                background: darken($ch5-keypad-default-default-background-color, 10%);
-                border-color: darken($ch5-keypad-default-default-background-color, 10%);
-            }
             span {
                 white-space: pre;
                 color: inherit;
