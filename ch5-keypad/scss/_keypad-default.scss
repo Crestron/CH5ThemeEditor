@@ -29,7 +29,7 @@
 
                 .keypad-btn.special-center button {
                     color: $ch5-keypad--extra-text-font-color;
-                    background-color: $ch5-keypad-extra-text-default-background-color;                    ;
+                    background-color: $ch5-keypad-extra-text-default-background-color;
                     border: 1px solid $ch5-keypad-extra-text-default-background-color;
                     &:active {
                         background: lighten($color: $ch5-keypad-extra-text-default-background-color, $amount: 10);
@@ -113,6 +113,7 @@
             background-color: $ch5-keypad-default-default-background-color;
             border: 1px solid $ch5-keypad-default-default-background-color;
             outline: none !important;
+            color: inherit;
             -webkit-transition: background 0.4s;
             transition: background 0.4s;
             &:active {
@@ -122,19 +123,23 @@
             &[data-misc="1"] {
                 .label-major {
                     font-size: 4.5rem;
-                    margin-top: 2rem;
+                    padding-top: 32%;
                 }
             }
             span {
                 white-space: pre;
+                color: inherit;
             }
             .label-major {
                 font-size: 2.6rem;
-                font-weight: 400;
-                line-height: 2.2rem;
+                font-weight: 300;
+                line-height: 2.6rem;
             }
             .label-minor {
                 margin-top: 0;
+                letter-spacing: 0.1rem;
+                font-size: 1rem;
+                line-height: 1rem;
             }
         }
 
