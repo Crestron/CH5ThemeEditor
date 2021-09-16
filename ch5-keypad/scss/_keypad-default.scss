@@ -120,12 +120,6 @@
                 background: darken($ch5-keypad-default-default-background-color, 10%);
                 border-color: darken($ch5-keypad-default-default-background-color, 10%);
             }
-            &[data-misc="1"] {
-                .label-major {
-                    font-size: 4.5rem;
-                    padding-top: 32%;
-                }
-            }
             span {
                 white-space: pre;
                 color: inherit;
@@ -147,8 +141,14 @@
             &.misc-btn-one {
                 .label-major {
                     font-size: 4.5rem;
-                    margin-top: 2rem;
+                    padding-top: 32%;
                 }
+            }
+        }
+        &[key="button0"] {
+            .label-minor {
+                font-size: 1.5rem;
+                margin-top: -2%;
             }
         }
     }
