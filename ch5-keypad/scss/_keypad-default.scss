@@ -24,6 +24,8 @@
         height: $defaultContainerHeightExtra;
         .keypad-container {
             height: $defaultContainerHeightExtra;
+            min-width: $defaultContainerWidth;
+            min-height: $defaultContainerHeightExtra;
             .keypad-row {
                 flex: 0 1 18%;
 
@@ -203,4 +205,21 @@
             }
         }
     }
+}
+
+.ch5-keypad.ch5-keypad--stretch-both {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ch5-keypad.ch5-keypad--stretch-height {
+    height: 100%;
+    align-items: center;
+}
+
+.ch5-keypad.ch5-keypad--stretch-width {
+    width: 100%;
+    justify-content: center;
 }

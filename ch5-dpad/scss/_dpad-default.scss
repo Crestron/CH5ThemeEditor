@@ -544,3 +544,21 @@
         }
     }
 }
+
+
+.ch5-dpad.ch5-dpad--stretch-both {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ch5-dpad.ch5-dpad--stretch-height {
+    height: 100%;
+    align-items: center;
+}
+
+.ch5-dpad.ch5-dpad--stretch-width {
+    width: 100%;
+    justify-content: center;
+}
