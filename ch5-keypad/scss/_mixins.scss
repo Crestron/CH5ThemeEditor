@@ -11,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @mixin ch5-keypad-content($property-default-background-color, $property-default-font-color) {
-    $backgroundColorActive: darken($property-default-background-color, 10%);
+    $backgroundColorActive: darken($property-default-background-color, 15%);
     .keypad-row {
         color: $property-default-font-color;
         .keypad-btn {

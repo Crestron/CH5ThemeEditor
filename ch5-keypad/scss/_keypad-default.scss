@@ -19,6 +19,16 @@
     min-height: $defaultContainerHeight;
     width: $defaultContainerWidth;
     height: $defaultContainerHeight;
+    vertical-align: top;
+
+    &[disabled] {
+        opacity: 0.5;
+        pointer-events: none;
+        cursor: default;
+        button {
+            cursor: default;
+        }
+    }
 
     &[showextrabutton="true"] {
         height: $defaultContainerHeightExtra;
@@ -120,6 +130,8 @@
     justify-content: space-evenly;
     width: $defaultContainerWidth;
     height: $defaultContainerHeight;
+    min-width: $defaultContainerWidth;
+    min-height: $defaultContainerHeight;
     flex-direction: column;
 }
 
@@ -141,6 +153,7 @@
             justify-content: center;
             outline: none !important;
             color: inherit;
+            cursor: pointer;
             -webkit-transition: background 0.4s;
             transition: background 0.4s;
             span {

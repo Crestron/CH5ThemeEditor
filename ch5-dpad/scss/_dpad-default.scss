@@ -54,13 +54,6 @@
     }
 }
 
-@mixin ch5-dpad-content--disabled($ch5-dpad-text-disabled-background-color, $ch5-dpad-text-disabled-font-color) {
-    .ch5-dpad-child {
-        background-color: $ch5-dpad-text-disabled-background-color;
-        color: $ch5-dpad-text-disabled-font-color;
-    }
-}
-
 @mixin ch5-dpad-content-plus-top($property-commmonEdgeRadius, $property-default-background-color) {
     margin: 0 33.33%;
     border-top-left-radius: $property-commmonEdgeRadius;
@@ -178,6 +171,7 @@
     display: inline-flex;
     min-width: $defaultDimension;
     min-height: $defaultDimension;
+    vertical-align: top;
     .dpad-container {
         position: relative;
         display: flex;
@@ -194,8 +188,8 @@
     &[disabled] {
         pointer-events: none;
         .ch5-dpad-child {
-            background-color: $ch5-dpad-text-disabled-background-color !important;
-            color: $ch5-dpad-text-disabled-font-color !important;
+            opacity: .5;
+            pointer-events: none;
         }
     }
 
@@ -250,7 +244,6 @@
         z-index: 2;
         cursor: pointer;
         &.ch5-disabled {
-            background-color: $ch5-dpad-text-disabled-background-color !important;
             pointer-events: none;
             z-index: 2;
         }
@@ -277,7 +270,6 @@
         justify-content: center;
         align-items: center;
         &.ch5-disabled {
-            background-color: $ch5-dpad-text-disabled-background-color !important;
             pointer-events: none;
             z-index: 2;
         }
@@ -455,49 +447,6 @@
         }
     }
 
-    &[disabled] .direction-btn,
-    .direction-btn.ch5-disabled {
-        &.top {
-            &::before {
-                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $ch5-dpad-text-disabled-background-color;
-                box-shadow: $commmonEdgeRadius 0 0 0 $ch5-dpad-text-disabled-background-color;
-            }
-            &::after {
-                -webkit-box-shadow: (-$commmonEdgeRadius) 0 0 0 $ch5-dpad-text-disabled-background-color;
-                box-shadow: (-$commmonEdgeRadius) 0 0 0 $ch5-dpad-text-disabled-background-color;
-            }
-        }
-        &.left {
-            &::before {
-                -webkit-box-shadow: 0 (-$commmonEdgeRadius) 0 0 $ch5-dpad-text-disabled-background-color;
-                box-shadow: 0 (-$commmonEdgeRadius) 0 0 $ch5-dpad-text-disabled-background-color;
-            }
-            &::after {
-                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $ch5-dpad-text-disabled-background-color;
-                box-shadow: $commmonEdgeRadius 0 0 0 $ch5-dpad-text-disabled-background-color;
-            }
-        }
-        &.right {
-            &::before {
-                -webkit-box-shadow: 0 $commmonEdgeRadius 0 0 $ch5-dpad-text-disabled-background-color;
-                box-shadow: 0 $commmonEdgeRadius 0 0 $ch5-dpad-text-disabled-background-color;
-            }
-            &::after {
-                -webkit-box-shadow: 0 (-$commmonEdgeRadius) 0 0 $ch5-dpad-text-disabled-background-color;
-                box-shadow: 0 (-$commmonEdgeRadius) 0 0 $ch5-dpad-text-disabled-background-color;
-            }
-        }
-        &.bottom {
-            &::before {
-                -webkit-box-shadow: (-$commmonEdgeRadius) 0 0 0 $ch5-dpad-text-disabled-background-color;
-                box-shadow: (-$commmonEdgeRadius) 0 0 0 $ch5-dpad-text-disabled-background-color;
-            }
-            &::after {
-                -webkit-box-shadow: $commmonEdgeRadius 0 0 0 $ch5-dpad-text-disabled-background-color;
-                box-shadow: $commmonEdgeRadius 0 0 0 $ch5-dpad-text-disabled-background-color;
-            }
-        }
-    }
 }
 
 .ch5-dpad.ch5-dpad--shape-circle {
