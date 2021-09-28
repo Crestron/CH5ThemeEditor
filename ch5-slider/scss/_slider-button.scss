@@ -15,7 +15,7 @@ ch5-slider-right-button[hidden] {
   display: none;
 }
 
-$ch5-slider-button-size: 40px;
+$ch5-slider-button-size: 50px;
 
 ch5-slider-left-button {
   // check orientation
@@ -29,58 +29,25 @@ ch5-slider-right-button {
 ch5-slider-left-button,
 ch5-slider-right-button {
   // Button orientation
-  .ch5-button--vertical {
-    .cb-btn {
-      width: $ch5-slider-button-size;
-      height: $ch5-slider-button-size;
-    }
+  .ch5-button .cb-btn {
+    width: $ch5-slider-button-size;
+    height: $ch5-slider-button-size;
   }
-
-  // vertical sizes
-  .ch5-button--vertical {
-    &:not(.ch5-button--circle) {
-      &.ch5-button--size-x-small .cb-btn {
-        width: $ch5-slider-button-size;
-        height: $ch5-slider-button-size;
-      }
-      &.ch5-button--size-small .cb-btn {
-        width: $ch5-slider-button-size;
-        height: $ch5-slider-button-size;
-      }
-      &.ch5-button--size-large .cb-btn {
-        width: $ch5-slider-button-size;
-        height: $ch5-slider-button-size;
-      }
-      &.ch5-button--size-x-large .cb-btn {
-        width: $ch5-slider-button-size;
-        height: $ch5-slider-button-size;
-      }
-    }
+  .ch5-button--size-x-small .cb-btn {
+    width: $ch5-slider-button-size;
+    height: $ch5-slider-button-size;
   }
-
-  .ch5-button--vertical {
-    &.ch5-button--circle {
-      &.ch5-button--size-x-small .cb-btn {
-        width: $ch5-slider-button-size;
-        height: $ch5-slider-button-size;
-      }
-      &.ch5-button--size-small .cb-btn {
-        width: $ch5-slider-button-size;
-        height: $ch5-slider-button-size;
-      }
-      &.ch5-button--size-large .cb-btn {
-        width: $ch5-slider-button-size;
-        height: $ch5-slider-button-size;
-      }
-      &.ch5-button--size-x-large .cb-btn {
-        width: $ch5-slider-button-size;
-        height: $ch5-slider-button-size;
-      }
-      .cb-btn {
-        width: $ch5-slider-button-size;
-        height: $ch5-slider-button-size;
-      }
-    }
+  .ch5-button--size-small .cb-btn {
+    width: $ch5-slider-button-size;
+    height: $ch5-slider-button-size;
+  }
+  .ch5-button--size-large .cb-btn {
+    width: $ch5-slider-button-size;
+    height: $ch5-slider-button-size;
+  }
+  .ch5-button--size-x-large .cb-btn {
+    width: $ch5-slider-button-size;
+    height: $ch5-slider-button-size;
   }
 
   // Sizes
@@ -89,40 +56,23 @@ ch5-slider-right-button {
   }
 
   .ch5-button--size-x-small {
-    .cb-btn {
-      width: $ch5-slider-button-size;
-      height: $ch5-slider-button-size;
-    }
     .ch5-button--img {
       @include ch5-button-image-width-height($ch5-button-x-small-font-size);
     }
   }
   .ch5-button--size-small {
-    .cb-btn {
-      width: $ch5-slider-button-size;
-      height: $ch5-slider-button-size;
-    }
     .ch5-button--img {
       @include ch5-button-image-width-height($ch5-button-small-font-size);
     }
   }
   .ch5-button--size-large {
-    .cb-btn {
-      width: $ch5-slider-button-size;
-      height: $ch5-slider-button-size;
-    }
     .ch5-button--img {
       @include ch5-button-image-width-height($ch5-button-large-font-size);
     }
   }
   .ch5-button--size-x-large {
-    .cb-btn {
-      width: $ch5-slider-button-size;
-      height: $ch5-slider-button-size;
-    }
     .ch5-button--img {
       @include ch5-button-image-width-height($ch5-button-x-large-font-size);
     }
   }
-
 }
