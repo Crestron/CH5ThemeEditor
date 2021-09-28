@@ -19,17 +19,29 @@
     min-height: $defaultContainerHeight;
     width: $defaultContainerWidth;
     height: $defaultContainerHeight;
+    vertical-align: top;
+
+    &[disabled] {
+        opacity: 0.5;
+        pointer-events: none;
+        cursor: default;
+        button {
+            cursor: default;
+        }
+    }
 
     &[showextrabutton="true"] {
         height: $defaultContainerHeightExtra;
         .keypad-container {
             height: $defaultContainerHeightExtra;
+            min-width: $defaultContainerWidth;
+            min-height: $defaultContainerHeightExtra;
             .keypad-row {
                 flex: 0 1 18%;
 
                 .keypad-btn.special-center button {
                     color: $ch5-keypad--extra-text-font-color;
-                    background-color: $ch5-keypad-extra-text-default-background-color;                    ;
+                    background-color: $ch5-keypad-extra-text-default-background-color;
                     border: 1px solid $ch5-keypad-extra-text-default-background-color;
                     &:active {
                         background: lighten($color: $ch5-keypad-extra-text-default-background-color, $amount: 10);
@@ -83,6 +95,34 @@
             $ch5-keypad-secondary-default-font-color
         );
     }
+
+    &.ch5-keypad--orientation-top {
+        button {
+            flex-direction: column;
+        }
+    }
+
+    &.ch5-keypad--orientation-right {
+        button {
+            flex-direction: row-reverse;
+            margin-left: 2px;
+        }
+    }
+
+    &.ch5-keypad--orientation-bottom {
+        button {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &.ch5-keypad--orientation-left {
+        button {
+            flex-direction: row;
+            .label-major {
+                margin-right: 2px;
+            }
+        }
+    }
 }
 
 .keypad-container {
@@ -90,6 +130,8 @@
     justify-content: space-evenly;
     width: $defaultContainerWidth;
     height: $defaultContainerHeight;
+    min-width: $defaultContainerWidth;
+    min-height: $defaultContainerHeight;
     flex-direction: column;
 }
 
@@ -107,34 +149,27 @@
             display: flex;
             height: 100%;
             width: 100%;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: $ch5-keypad-default-default-background-color;
-            border: 1px solid $ch5-keypad-default-default-background-color;
             outline: none !important;
+            color: inherit;
+            cursor: pointer;
             -webkit-transition: background 0.4s;
             transition: background 0.4s;
-            &:active {
-                background: darken($ch5-keypad-default-default-background-color, 10%);
-                border-color: darken($ch5-keypad-default-default-background-color, 10%);
-            }
-            &[data-misc="1"] {
-                .label-major {
-                    font-size: 4.5rem;
-                    margin-top: 2rem;
-                }
-            }
             span {
                 white-space: pre;
+                color: inherit;
             }
             .label-major {
                 font-size: 2.6rem;
-                font-weight: 400;
-                line-height: 2.2rem;
+                font-weight: 300;
+                line-height: 2.6rem;
             }
             .label-minor {
                 margin-top: 0;
+                letter-spacing: 0.1rem;
+                font-size: 1rem;
+                line-height: 1rem;
             }
         }
 
@@ -142,8 +177,14 @@
             &.misc-btn-one {
                 .label-major {
                     font-size: 4.5rem;
-                    margin-top: 2rem;
+                    padding-top: 32%;
                 }
+            }
+        }
+        &[key="button0"] {
+            .label-minor {
+                font-size: 1.5rem;
+                margin-top: -2%;
             }
         }
     }
@@ -169,7 +210,7 @@
     }
 }
 
-.ch5-keypad.ch5-keypad--shape-rounded {
+.ch5-keypad.ch5-keypad--shape-rounded-rectangle {
     .keypad-container {
         .keypad-row {
             .keypad-btn {
@@ -177,4 +218,21 @@
             }
         }
     }
+}
+
+.ch5-keypad.ch5-keypad--stretch-both {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ch5-keypad.ch5-keypad--stretch-height {
+    height: 100%;
+    align-items: center;
+}
+
+.ch5-keypad.ch5-keypad--stretch-width {
+    width: 100%;
+    justify-content: center;
 }
