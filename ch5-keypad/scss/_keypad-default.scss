@@ -236,3 +236,131 @@
     width: 100%;
     justify-content: center;
 }
+
+// sizes
+.ch5-keypad {
+    &.ch5-keypad--size-x-small {
+        min-width: $xsmallContainerWidth;
+        min-height: $xsmallContainerHeight;
+        width: $xsmallContainerWidth;
+        height: $xsmallContainerHeight;
+        .keypad-container {
+            min-width: $xsmallContainerWidth;
+            min-height: $xsmallContainerHeight;
+            width: $xsmallContainerWidth;
+            height: $xsmallContainerHeight;
+        }
+
+        &[showextrabutton="true"] {
+            height: $xsmallContainerHeightExtra;
+            .keypad-container {
+                height: $xsmallContainerHeightExtra;
+                min-width: $xsmallContainerWidth;
+                min-height: $xsmallContainerHeightExtra;
+            }
+        }
+
+        .keypad-row {
+            .keypad-btn {
+                button {
+                    .label-major {
+                        font-size: 2rem;
+                    }
+                    .label-minor {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &.ch5-keypad--size-small {
+        min-width: $smallContainerWidth;
+        min-height: $smallContainerHeight;
+        width: $smallContainerWidth;
+        height: $smallContainerHeight;
+
+        .keypad-container {
+            min-width: $smallContainerWidth;
+            min-height: $smallContainerHeight;
+            width: $smallContainerWidth;
+            height: $smallContainerHeight;
+        }
+
+        &[showextrabutton="true"] {
+            height: $smallContainerHeightExtra;
+            .keypad-container {
+                height: $smallContainerHeightExtra;
+                min-width: $smallContainerWidth;
+                min-height: $smallContainerHeightExtra;
+            }
+        }
+
+        .keypad-row {
+            .keypad-btn {
+                button {
+                    .label-major {
+                        font-size: 2rem;
+                    }
+                    .label-minor {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &.ch5-keypad--size-large {
+        min-width: $largeContainerWidth;
+        min-height: $largeContainerHeight;
+        width: $largeContainerWidth;
+        height: $largeContainerHeight;
+
+        .keypad-container {
+            min-width: $largeContainerWidth;
+            min-height: $largeContainerHeight;
+            width: $largeContainerWidth;
+            height: $largeContainerHeight;
+        }
+
+        &[showextrabutton="true"] {
+            height: $largeContainerHeightExtra;
+            .keypad-container {
+                height: $largeContainerHeightExtra;
+                min-width: $largeContainerWidth;
+                min-height: $largeContainerHeightExtra;
+            }
+        }
+    }
+
+    &.ch5-keypad--size-x-large {
+        min-width: $xlargeContainerWidth;
+        min-height: $xlargeContainerHeight;
+        width: $xlargeContainerWidth;
+        height: $xlargeContainerHeight;
+
+        .keypad-container {
+            min-width: $xlargeContainerWidth;
+            min-height: $xlargeContainerHeight;
+            width: $xlargeContainerWidth;
+            height: $xlargeContainerHeight;
+        }
+
+        &[showextrabutton="true"] {
+            height: $xlargeContainerHeightExtra;
+            .keypad-container {
+                height: $xlargeContainerHeightExtra;
+                min-width: $xlargeContainerWidth;
+                min-height: $xlargeContainerHeightExtra;
+            }
+        }
+    }
+}
+
+.ch5-keypad.ch5-keypad--size-x-small .keypad-btn[key="button0"] button .label-minor {
+    font-size: 1.5rem;
+}
+
+.ch5-keypad.ch5-keypad--size-small .keypad-btn[key="button0"] button .label-minor {
+    font-size: 1.5rem;
+}
