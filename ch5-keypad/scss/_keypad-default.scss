@@ -264,10 +264,11 @@
             .keypad-btn {
                 button {
                     .label-major {
-                        font-size: 2rem;
+                        font-size: 1.8rem;
                     }
                     .label-minor {
-                        font-size: 0.8rem;
+                        font-size: 0.6rem;
+                        margin-top: -15%;
                     }
                 }
             }
@@ -303,7 +304,7 @@
                         font-size: 2rem;
                     }
                     .label-minor {
-                        font-size: 0.9rem;
+                        font-size: 0.7rem;
                     }
                 }
             }
@@ -358,9 +359,21 @@
 }
 
 .ch5-keypad.ch5-keypad--size-x-small .keypad-btn[key="button0"] button .label-minor {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin-top: -25%;
 }
 
 .ch5-keypad.ch5-keypad--size-small .keypad-btn[key="button0"] button .label-minor {
     font-size: 1.5rem;
+    margin-top: -15%;
+}
+
+.ch5-keypad.ch5-keypad--size-x-small .keypad-row .keypad-btn.misc-btn.misc-btn-one .label-major {
+    font-size: 2.8rem;
+    padding-top: 15%;
+}
+
+.ch5-keypad.ch5-keypad--size-small .keypad-row .keypad-btn.misc-btn.misc-btn-one .label-major {
+    font-size: 2.8rem;
+    padding-top: 20%;
 }
