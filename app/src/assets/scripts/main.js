@@ -9,6 +9,8 @@ function loadCssFile(filename) {
   fileref.setAttribute("type", "text/css")
   fileref.setAttribute("href", filename)
   fileref.setAttribute("id", "themeLinkId")
+
+  /* coverity[check_after_deref] */
   if (typeof fileref != "undefined") {
     document.getElementsByTagName("head")[0].appendChild(fileref)
   }
