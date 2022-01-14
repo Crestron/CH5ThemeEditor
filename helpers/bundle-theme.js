@@ -11,7 +11,7 @@ logging = require('./logging'),
 NOTICE_MESSAGE = require('./notice-message');
 
 (function(path, fs, logging) {
-  const nodeSass = require('node-sass'),
+  const nodeSass = require('sass'),
     basePath = path.resolve(__dirname + '/../'),
     themesPath = basePath + '/themes';
     

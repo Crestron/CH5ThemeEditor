@@ -121,47 +121,47 @@ $ch5-slider-size-x-large-horizontal-oval-size:  42px !default;
 HANDLESIZE HORIZONTAL SIDE EFECTS
 ============================================= */
 // rectangle/rounded-rectangle right
-$ch5-slider-size-x-small-horizontal-right:  -($ch5-slider-size-x-small-horizontal-width / 2) !default;
-$ch5-slider-size-small-horizontal-right:    -($ch5-slider-size-small-horizontal-width / 2) !default;
-$ch5-slider-size-regular-horizontal-right:  -($ch5-slider-size-regular-horizontal-width / 2) !default;
-$ch5-slider-size-large-horizontal-right:    -($ch5-slider-size-large-horizontal-width / 2) !default;
-$ch5-slider-size-x-large-horizontal-right:  -($ch5-slider-size-x-large-horizontal-width / 2) !default;
+$ch5-slider-size-x-small-horizontal-right:  calc(-1 * $ch5-slider-size-x-small-horizontal-width / 2) !default;
+$ch5-slider-size-small-horizontal-right:    calc(-1 * $ch5-slider-size-small-horizontal-width / 2) !default;
+$ch5-slider-size-regular-horizontal-right:  calc(-1 * $ch5-slider-size-regular-horizontal-width / 2) !default;
+$ch5-slider-size-large-horizontal-right:    calc(-1 * $ch5-slider-size-large-horizontal-width / 2) !default;
+$ch5-slider-size-x-large-horizontal-right:  calc(-1 * $ch5-slider-size-x-large-horizontal-width / 2) !default;
 
 // rectangle/rounded-rectangle top
-$ch5-slider-size-x-small-horizontal-top:    -($ch5-slider-size-x-small-horizontal-height - $ch5-slider-target-size) / 2 !default;
-$ch5-slider-size-small-horizontal-top:      -($ch5-slider-size-small-horizontal-height - $ch5-slider-target-size) / 2 !default;
-$ch5-slider-size-regular-horizontal-top:    -($ch5-slider-size-regular-horizontal-height - $ch5-slider-target-size) / 2 !default;
-$ch5-slider-size-large-horizontal-top:      -($ch5-slider-size-large-horizontal-height - $ch5-slider-target-size) / 2 !default;
-$ch5-slider-size-x-large-horizontal-top:    -($ch5-slider-size-x-large-horizontal-height - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-x-small-horizontal-top:    calc(-1 * ($ch5-slider-size-x-small-horizontal-height - $ch5-slider-target-size) / 2) !default;
+$ch5-slider-size-small-horizontal-top:      calc(-1 * ($ch5-slider-size-small-horizontal-height - $ch5-slider-target-size) / 2) !default;
+$ch5-slider-size-regular-horizontal-top:    calc(-1 * ($ch5-slider-size-regular-horizontal-height - $ch5-slider-target-size) / 2) !default;
+$ch5-slider-size-large-horizontal-top:      calc(-1 * ($ch5-slider-size-large-horizontal-height - $ch5-slider-target-size) / 2) !default;
+$ch5-slider-size-x-large-horizontal-top:    calc(-1 * ($ch5-slider-size-x-large-horizontal-height - $ch5-slider-target-size) / 2) !default;
 
 // circle right
-$ch5-slider-size-x-small-horizontal-circle-right:  -($ch5-slider-size-x-small-horizontal-circle-size / 2) !default;
-$ch5-slider-size-small-horizontal-circle-right:    -($ch5-slider-size-small-horizontal-circle-size / 2) !default;
-$ch5-slider-size-regular-horizontal-circle-right:  -($ch5-slider-size-regular-horizontal-circle-size / 2) !default;
-$ch5-slider-size-large-horizontal-circle-right:    -($ch5-slider-size-large-horizontal-circle-size / 2) !default;
-$ch5-slider-size-x-large-horizontal-circle-right:  -($ch5-slider-size-x-large-horizontal-circle-size / 2) !default;
+$ch5-slider-size-x-small-horizontal-circle-right:  calc(-1 * $ch5-slider-size-x-small-horizontal-circle-size / 2) !default;
+$ch5-slider-size-small-horizontal-circle-right:    calc(-1 * $ch5-slider-size-small-horizontal-circle-size / 2) !default;
+$ch5-slider-size-regular-horizontal-circle-right:  calc(-1 * $ch5-slider-size-regular-horizontal-circle-size / 2) !default;
+$ch5-slider-size-large-horizontal-circle-right:    calc(-1 * $ch5-slider-size-large-horizontal-circle-size / 2) !default;
+$ch5-slider-size-x-large-horizontal-circle-right:  calc(-1 * $ch5-slider-size-x-large-horizontal-circle-size / 2) !default;
 
 // circle height top
-$ch5-slider-size-x-small-horizontal-circle-top:    -($ch5-slider-size-x-small-horizontal-circle-size - $ch5-slider-target-size) / 2 !default;
-$ch5-slider-size-small-horizontal-circle-top:      -($ch5-slider-size-small-horizontal-circle-size - $ch5-slider-target-size) / 2 !default;
-$ch5-slider-size-regular-horizontal-circle-top:    -($ch5-slider-size-regular-horizontal-circle-size - $ch5-slider-target-size) / 2 !default;
-$ch5-slider-size-large-horizontal-circle-top:      -($ch5-slider-size-large-horizontal-circle-size - $ch5-slider-target-size) / 2 !default;
-$ch5-slider-size-x-large-horizontal-circle-top:    -($ch5-slider-size-x-large-horizontal-circle-size - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-x-small-horizontal-circle-top:    calc(-1 * ($ch5-slider-size-x-small-horizontal-circle-size - $ch5-slider-target-size) / 2) !default;
+$ch5-slider-size-small-horizontal-circle-top:      calc(-1 * ($ch5-slider-size-small-horizontal-circle-size - $ch5-slider-target-size) / 2) !default;
+$ch5-slider-size-regular-horizontal-circle-top:    calc(-1 * ($ch5-slider-size-regular-horizontal-circle-size - $ch5-slider-target-size) / 2) !default;
+$ch5-slider-size-large-horizontal-circle-top:      calc(-1 * ($ch5-slider-size-large-horizontal-circle-size - $ch5-slider-target-size) / 2) !default;
+$ch5-slider-size-x-large-horizontal-circle-top:    calc(-1 * ($ch5-slider-size-x-large-horizontal-circle-size - $ch5-slider-target-size) / 2) !default;
 
 
 // oval right
-$ch5-slider-size-x-small-horizontal-oval-right:  -($ch5-slider-size-x-small-horizontal-oval-size) !default;
-$ch5-slider-size-small-horizontal-oval-right:    -($ch5-slider-size-small-horizontal-oval-size) !default;
-$ch5-slider-size-regular-horizontal-oval-right:  -($ch5-slider-size-regular-horizontal-oval-size) !default;
-$ch5-slider-size-large-horizontal-oval-right:    -($ch5-slider-size-large-horizontal-oval-size) !default;
-$ch5-slider-size-x-large-horizontal-oval-right:  -($ch5-slider-size-x-large-horizontal-oval-size) !default;
+$ch5-slider-size-x-small-horizontal-oval-right:  calc(-1 * $ch5-slider-size-x-small-horizontal-oval-size) !default;
+$ch5-slider-size-small-horizontal-oval-right:    calc(-1 * $ch5-slider-size-small-horizontal-oval-size) !default;
+$ch5-slider-size-regular-horizontal-oval-right:  calc(-1 * $ch5-slider-size-regular-horizontal-oval-size) !default;
+$ch5-slider-size-large-horizontal-oval-right:    calc(-1 * $ch5-slider-size-large-horizontal-oval-size) !default;
+$ch5-slider-size-x-large-horizontal-oval-right:  calc(-1 * $ch5-slider-size-x-large-horizontal-oval-size) !default;
 
 // oval height top
-$ch5-slider-size-x-small-horizontal-oval-top:     -($ch5-slider-size-x-small-horizontal-oval-size - $ch5-slider-target-size) / 2 !default;
-$ch5-slider-size-small-horizontal-oval-top:       -($ch5-slider-size-small-horizontal-oval-size - $ch5-slider-target-size) / 2 !default;
-$ch5-slider-size-regular-horizontal-oval-top:     -($ch5-slider-size-regular-horizontal-oval-size - $ch5-slider-target-size) / 2 !default;
-$ch5-slider-size-large-horizontal-oval-top:       -($ch5-slider-size-large-horizontal-oval-size - $ch5-slider-target-size) / 2 !default;
-$ch5-slider-size-x-large-horizontal-oval-top:     -($ch5-slider-size-x-large-horizontal-oval-size - $ch5-slider-target-size) / 2 !default;
+$ch5-slider-size-x-small-horizontal-oval-top:     calc(-1 * ($ch5-slider-size-x-small-horizontal-oval-size - $ch5-slider-target-size) / 2) !default;
+$ch5-slider-size-small-horizontal-oval-top:       calc(-1 * ($ch5-slider-size-small-horizontal-oval-size - $ch5-slider-target-size) / 2) !default;
+$ch5-slider-size-regular-horizontal-oval-top:     calc(-1 * ($ch5-slider-size-regular-horizontal-oval-size - $ch5-slider-target-size) / 2) !default;
+$ch5-slider-size-large-horizontal-oval-top:       calc(-1 * ($ch5-slider-size-large-horizontal-oval-size - $ch5-slider-target-size) / 2) !default;
+$ch5-slider-size-x-large-horizontal-oval-top:     calc(-1 * ($ch5-slider-size-x-large-horizontal-oval-size - $ch5-slider-target-size) / 2) !default;
 
 /* ===============================================
 HANDLESIZE VERTICAL SIDE EFECTS
@@ -188,11 +188,11 @@ $ch5-slider-size-large-vertical-left:       $ch5-slider-size-large-horizontal-to
 $ch5-slider-size-x-large-vertical-left:     $ch5-slider-size-x-large-horizontal-top;
 
 // rectangle/rounded-rectange top
-$ch5-slider-size-x-small-vertical-top:      -($ch5-slider-size-x-small-vertical-height / 2) !default;
-$ch5-slider-size-small-vertical-top:        -($ch5-slider-size-small-vertical-height / 2) !default;
-$ch5-slider-size-regular-vertical-top:      -($ch5-slider-size-regular-vertical-height / 2) !default;
-$ch5-slider-size-large-vertical-top:        -($ch5-slider-size-large-vertical-height / 2) !default;
-$ch5-slider-size-x-large-vertical-top:      -($ch5-slider-size-x-large-vertical-height / 2) !default;
+$ch5-slider-size-x-small-vertical-top:      calc(-1 * $ch5-slider-size-x-small-vertical-height / 2) !default;
+$ch5-slider-size-small-vertical-top:        calc(-1 * $ch5-slider-size-small-vertical-height / 2) !default;
+$ch5-slider-size-regular-vertical-top:      calc(-1 * $ch5-slider-size-regular-vertical-height / 2) !default;
+$ch5-slider-size-large-vertical-top:        calc(-1 * $ch5-slider-size-large-vertical-height / 2) !default;
+$ch5-slider-size-x-large-vertical-top:      calc(-1 * $ch5-slider-size-x-large-vertical-height / 2) !default;
 
 // circle left
 $ch5-slider-size-x-small-vertical-circle-left:    $ch5-slider-size-x-small-horizontal-circle-top;
@@ -202,11 +202,11 @@ $ch5-slider-size-large-vertical-circle-left:      $ch5-slider-size-large-horizon
 $ch5-slider-size-x-large-vertical-circle-left:    $ch5-slider-size-x-large-horizontal-circle-top;
 
 // circle top
-$ch5-slider-size-x-small-vertical-circle-top:      -($ch5-slider-size-x-small-horizontal-circle-size / 2) !default;
-$ch5-slider-size-small-vertical-circle-top:        -($ch5-slider-size-small-horizontal-circle-size / 2) !default;
-$ch5-slider-size-regular-vertical-circle-top:      -($ch5-slider-size-regular-horizontal-circle-size / 2) !default;
-$ch5-slider-size-large-vertical-circle-top:        -($ch5-slider-size-large-horizontal-circle-size / 2) !default;
-$ch5-slider-size-x-large-vertical-circle-top:      -($ch5-slider-size-x-large-horizontal-circle-size / 2) !default;
+$ch5-slider-size-x-small-vertical-circle-top:      calc(-1 * $ch5-slider-size-x-small-horizontal-circle-size / 2) !default;
+$ch5-slider-size-small-vertical-circle-top:        calc(-1 * $ch5-slider-size-small-horizontal-circle-size / 2) !default;
+$ch5-slider-size-regular-vertical-circle-top:      calc(-1 * $ch5-slider-size-regular-horizontal-circle-size / 2) !default;
+$ch5-slider-size-large-vertical-circle-top:        calc(-1 * $ch5-slider-size-large-horizontal-circle-size / 2) !default;
+$ch5-slider-size-x-large-vertical-circle-top:      calc(-1 * $ch5-slider-size-x-large-horizontal-circle-size / 2) !default;
 
 // oval left
 $ch5-slider-size-x-small-vertical-oval-left:    $ch5-slider-size-x-small-horizontal-oval-top;
@@ -216,11 +216,11 @@ $ch5-slider-size-large-vertical-oval-left:      $ch5-slider-size-large-horizonta
 $ch5-slider-size-x-large-vertical-oval-left:    $ch5-slider-size-x-large-horizontal-oval-top;
 
 // oval top
-$ch5-slider-size-x-small-vertical-oval-top:      -($ch5-slider-size-x-small-horizontal-oval-size) !default;
-$ch5-slider-size-small-vertical-oval-top:        -($ch5-slider-size-small-horizontal-oval-size) !default;
-$ch5-slider-size-regular-vertical-oval-top:      -($ch5-slider-size-regular-horizontal-oval-size) !default;
-$ch5-slider-size-large-vertical-oval-top:        -($ch5-slider-size-large-horizontal-oval-size) !default;
-$ch5-slider-size-x-large-vertical-oval-top:      -($ch5-slider-size-x-large-horizontal-oval-size) !default;
+$ch5-slider-size-x-small-vertical-oval-top:      calc(-1 * $ch5-slider-size-x-small-horizontal-oval-size) !default;
+$ch5-slider-size-small-vertical-oval-top:        calc(-1 * $ch5-slider-size-small-horizontal-oval-size) !default;
+$ch5-slider-size-regular-vertical-oval-top:      calc(-1 * $ch5-slider-size-regular-horizontal-oval-size) !default;
+$ch5-slider-size-large-vertical-oval-top:        calc(-1 * $ch5-slider-size-large-horizontal-oval-size) !default;
+$ch5-slider-size-x-large-vertical-oval-top:      calc(-1 * $ch5-slider-size-x-large-horizontal-oval-size) !default;
 
 /// default font size unit for the slider
 $ch5-slider-font-size-unit: $ch5-font-size-unit !default;
