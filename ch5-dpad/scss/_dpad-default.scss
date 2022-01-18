@@ -89,9 +89,9 @@
     &:before {
         top: 0;
         left: 100%;
-        border-radius: 0 $property-commmonEdgeRadius 0 0;
-        -moz-border-radius: 0 $property-commmonEdgeRadius 0 0;
-        -webkit-border-radius: 0 $property-commmonEdgeRadius 0 0;
+        border-radius: $property-commmonEdgeRadius 0 0 0;
+        -moz-border-radius: $property-commmonEdgeRadius 0 0 0;
+        -webkit-border-radius: $property-commmonEdgeRadius 0 0 0;
         -webkit-box-shadow: (-$property-commmonEdgeRadius) 0 0 0 $property-default-background-color;
         box-shadow: (-$property-commmonEdgeRadius) 0 0 0 $property-default-background-color;
     }
@@ -114,24 +114,6 @@
     margin-right: calc(33% / 2);
     border-bottom-left-radius: $property-commmonEdgeRadius;
     border-top-left-radius: $property-commmonEdgeRadius;
-    &:before {
-        top: 100%;
-        left: calc(100% - 20px);
-        border-radius: 0 $property-commmonEdgeRadius 0 0;
-        -moz-border-radius: 0 $property-commmonEdgeRadius 0 0;
-        -webkit-border-radius: 0 $property-commmonEdgeRadius 0 0;
-        -webkit-box-shadow: 0 (-$property-commmonEdgeRadius) 0 0 $property-default-background-color;
-        box-shadow: 0 (-$property-commmonEdgeRadius) 0 0 $property-default-background-color;
-    }
-    &:after {
-        bottom: 100%;
-        left: calc(100% - 20px);
-        border-radius: 0 0 $property-commmonEdgeRadius 0;
-        -moz-border-radius: 0 0 $property-commmonEdgeRadius 0;
-        -webkit-border-radius: 0 0 $property-commmonEdgeRadius 0;
-        -webkit-box-shadow: $property-commmonEdgeRadius 0 0 0 $property-default-background-color;
-        box-shadow: $property-commmonEdgeRadius 0 0 0 $property-default-background-color;
-    }
     span {
         border-bottom-left-radius: $property-commmonEdgeRadius;
         border-top-left-radius: $property-commmonEdgeRadius;
@@ -142,24 +124,6 @@
     margin-left: calc(33% / 2);
     border-bottom-right-radius: $property-commmonEdgeRadius;
     border-top-right-radius: $property-commmonEdgeRadius;
-    &:before {
-        bottom: 100%;
-        left: 0;
-        border-radius: $property-commmonEdgeRadius 0 0 0;
-        -moz-border-radius: $property-commmonEdgeRadius 0 0 0;
-        -webkit-border-radius: $property-commmonEdgeRadius 0 0 0;
-        -webkit-box-shadow: 0 $property-commmonEdgeRadius 0 0 $property-default-background-color;
-        box-shadow: 0 $property-commmonEdgeRadius 0 0 $property-default-background-color;
-    }
-    &:after {
-        top: 100%;
-        left: 0;
-        border-radius: $property-commmonEdgeRadius 0 0 0;
-        -moz-border-radius: $property-commmonEdgeRadius 0 0 0;
-        -webkit-border-radius: $property-commmonEdgeRadius 0 0 0;
-        -webkit-box-shadow: 0 (-$property-commmonEdgeRadius) 0 0 $property-default-background-color;
-        box-shadow: 0 (-$property-commmonEdgeRadius) 0 0 $property-default-background-color;
-    }
     span {
         border-bottom-right-radius: $property-commmonEdgeRadius;
         border-top-right-radius: $property-commmonEdgeRadius;
