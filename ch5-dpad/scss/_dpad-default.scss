@@ -151,8 +151,8 @@
     }
     &[disabled] {
         pointer-events: none;
+        opacity: .5;
         .ch5-dpad-child {
-            opacity: .5;
             pointer-events: none;
         }
     }
