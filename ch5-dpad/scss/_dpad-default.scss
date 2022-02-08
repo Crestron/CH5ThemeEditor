@@ -157,6 +157,13 @@
         }
     }
 
+    &:not([disabled]) {
+        .ch5-dpad-child[disabled] {
+            opacity: .5;
+            pointer-events: none;
+        }
+    }
+
     .image-url {
         display: block;
         height: 100%;
