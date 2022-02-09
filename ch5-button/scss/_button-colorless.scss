@@ -33,7 +33,7 @@
 ch5-button {
   display: inline-block;
   pointer-events: none;
-  vertical-align: top; // this is used to align buttons in same line for vertical oriented buttons
+  vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
 
   .ch5-button {
     max-width: 100%;
