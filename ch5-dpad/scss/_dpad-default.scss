@@ -280,7 +280,7 @@
     }
 
     &.ch5-dpad--type-danger .direction-btn {
-        &.top {
+        &.up {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-danger-default-background-color);
         }
         &.left {
@@ -289,13 +289,13 @@
         &.right {
             @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-danger-default-background-color);
         }
-        &.bottom {
+        &.down {
             @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-danger-default-background-color);
         }
     }
 
     &.ch5-dpad--type-primary .direction-btn {
-        &.top {
+        &.up {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-primary-default-background-color);
         }
         &.left {
@@ -304,13 +304,13 @@
         &.right {
             @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-primary-default-background-color);
         }
-        &.bottom {
+        &.down {
             @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-primary-default-background-color);
         }
     }
 
     &.ch5-dpad--type-text .direction-btn {
-        &.top {
+        &.up {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-text-default-background-color);
         }
         &.left {
@@ -319,13 +319,13 @@
         &.right {
             @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-text-default-background-color);
         }
-        &.bottom {
+        &.down {
             @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-text-default-background-color);
         }
     }
 
     &.ch5-dpad--type-info .direction-btn {
-        &.top {
+        &.up {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-info-default-background-color);
         }
         &.left {
@@ -334,13 +334,13 @@
         &.right {
             @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-info-default-background-color);
         }
-        &.bottom {
+        &.down {
             @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-info-default-background-color);
         }
     }
 
     &.ch5-dpad--type-warning .direction-btn {
-        &.top {
+        &.up {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-warning-default-background-color);
         }
         &.left {
@@ -349,13 +349,13 @@
         &.right {
             @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-warning-default-background-color);
         }
-        &.bottom {
+        &.down {
             @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-warning-default-background-color);
         }
     }
 
     &.ch5-dpad--type-success .direction-btn {
-        &.top {
+        &.up {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-success-default-background-color);
         }
         &.left {
@@ -364,13 +364,13 @@
         &.right {
             @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-success-default-background-color);
         }
-        &.bottom {
+        &.down {
             @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-success-default-background-color);
         }
     }
 
     &.ch5-dpad--type-secondary .direction-btn {
-        &.top {
+        &.up {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-secondary-default-background-color);
         }
         &.left {
@@ -379,13 +379,13 @@
         &.right {
             @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-secondary-default-background-color);
         }
-        &.bottom {
+        &.down {
             @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-secondary-default-background-color);
         }
     }
 
     &.ch5-dpad--type-default .direction-btn {
-        &.top {
+        &.up {
             @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-default-default-background-color);
         }
         &.left {
@@ -394,13 +394,13 @@
         &.right {
             @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-default-default-background-color);
         }
-        &.bottom {
+        &.down {
             @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-default-default-background-color);
         }
     }
 
     .direction-btn {
-        &.top span.dpad-btn-icon {
+        &.up span.dpad-btn-icon {
             border-top-left-radius: $commmonEdgeRadius;
             border-top-right-radius: $commmonEdgeRadius;
         }
@@ -412,7 +412,7 @@
             border-bottom-right-radius: $commmonEdgeRadius;
             border-top-right-radius: $commmonEdgeRadius;
         }
-        &.bottom span.dpad-btn-icon {
+        &.down span.dpad-btn-icon {
             border-bottom-left-radius: $commmonEdgeRadius;
             border-bottom-right-radius: $commmonEdgeRadius;
         }
@@ -450,7 +450,7 @@
             transform: rotate(-45deg);
             background-size: 50%;
         }
-        &.top {
+        &.up {
             border-top-left-radius: 100%;
         }
         &.right {
@@ -459,7 +459,7 @@
         &.left {
             border-bottom-left-radius: 100%;
         }
-        &.bottom {
+        &.down {
             border-bottom-right-radius: 100%;
         }
     }
