@@ -173,14 +173,7 @@
             }
         }
 
-        &.misc-btn {
-            &.misc-btn-one {
-                .label-major {
-                    font-size: 4.5rem;
-                    padding-top: 32%;
-                }
-            }
-        }
+
         &[key="button0"] {
             .label-minor {
                 font-size: 1.5rem;
@@ -369,22 +362,4 @@
     font-size: 1.2rem;
     margin-top: -6%;
     margin-left: 4%;
-}
-
-.ch5-keypad.ch5-keypad--size-x-small .keypad-row .keypad-btn.misc-btn.misc-btn-one .label-major {
-    font-size: 2.8rem;
-    padding-top: 15%;
-}
-
-.ch5-keypad.ch5-keypad--size-small .keypad-row .keypad-btn.misc-btn.misc-btn-one .label-major {
-    font-size: 2.8rem;
-    padding-top: 20%;
-}
-
-.ch5-keypad.ch5-keypad--size-large .keypad-row .keypad-btn.misc-btn.misc-btn-one .label-major {
-    padding-top: 25%;
-}
-
-.ch5-keypad.ch5-keypad--size-x-large .keypad-row .keypad-btn.misc-btn.misc-btn-one .label-major {
-    padding-top: 20%;
 }
