@@ -38,6 +38,10 @@ ch5-button {
   .ch5-button {
     max-width: 100%;
 
+    button {
+      cursor: pointer;
+    }
+    
     button,
     .ch5-button--label {
       background-color: transparent;
