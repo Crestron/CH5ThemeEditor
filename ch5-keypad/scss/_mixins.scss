@@ -32,7 +32,17 @@
 }
 
 @mixin ch5-keypad-content--pressed($property-pressed-background-color, $property-pressed-font-color) {
-    $backgroundColorActive: lighten($property-pressed-background-color, 10%);
+    $backgroundColorActive: darken($property-pressed-background-color, 15%);
+    &.keypad-btn {
+        button {
+            background-color: $backgroundColorActive;
+            border: 1px solid $backgroundColorActive;
+            &:active {
+                background: $backgroundColorActive;
+                border-color: $backgroundColorActive;
+            }
+        }
+    }
 }
 
 @mixin ch5-keypad-content--disabled($ch5-keypad-text-disabled-background-color, $ch5-keypad-text-disabled-font-color) {
