@@ -61,39 +61,87 @@
             $ch5-keypad-default-default-background-color,
             $ch5-keypad-default-default-font-color
         );
+        .keypad-btn-pressed {
+            @include ch5-keypad-content--pressed (
+                $ch5-keypad-default-default-background-color,
+                $ch5-keypad-default-default-font-color
+            );
+        }
     }
     &.ch5-keypad--type-primary {
         @include ch5-keypad-content(
             $ch5-keypad-primary-default-background-color,
             $ch5-keypad-primary-default-font-color
         );
+        .keypad-btn-pressed {
+            @include ch5-keypad-content--pressed (
+                $ch5-keypad-primary-default-background-color,
+                $ch5-keypad-primary-default-font-color
+            );
+        }
     }
     &.ch5-keypad--type-info {
         @include ch5-keypad-content($ch5-keypad-info-default-background-color, $ch5-keypad-info-default-font-color);
+        .keypad-btn-pressed {
+            @include ch5-keypad-content--pressed (
+                $ch5-keypad-info-default-background-color,
+                $ch5-keypad-info-default-font-color
+            );
+        }
     }
     &.ch5-keypad--type-text {
         @include ch5-keypad-content($ch5-keypad-text-default-background-color, $ch5-keypad-text-default-font-color);
+        .keypad-btn-pressed {
+            @include ch5-keypad-content--pressed (
+                $ch5-keypad-text-default-background-color,
+                $ch5-keypad-text-default-font-color
+            );
+        }
     }
     &.ch5-keypad--type-danger {
         @include ch5-keypad-content($ch5-keypad-danger-default-background-color, $ch5-keypad-danger-default-font-color);
+        .keypad-btn-pressed {
+            @include ch5-keypad-content--pressed (
+                $ch5-keypad-danger-default-background-color,
+                $ch5-keypad-danger-default-font-color
+            );
+        }
     }
     &.ch5-keypad--type-warning {
         @include ch5-keypad-content(
             $ch5-keypad-warning-default-background-color,
             $ch5-keypad-warning-default-font-color
         );
+        .keypad-btn-pressed {
+            @include ch5-keypad-content--pressed (
+                $ch5-keypad-warning-default-background-color,
+                $ch5-keypad-warning-default-font-color
+            );
+        }
     }
     &.ch5-keypad--type-success {
         @include ch5-keypad-content(
             $ch5-keypad-success-default-background-color,
             $ch5-keypad-success-default-font-color
         );
+        .keypad-btn-pressed {
+            @include ch5-keypad-content--pressed (
+                $ch5-keypad-success-default-background-color,
+                $ch5-keypad-success-default-font-color
+            );
+        }
     }
     &.ch5-keypad--type-secondary {
         @include ch5-keypad-content(
             $ch5-keypad-secondary-default-background-color,
             $ch5-keypad-secondary-default-font-color
         );
+        .keypad-btn-pressed {
+            @include ch5-keypad-content--pressed (
+                $ch5-keypad-secondary-default-background-color,
+                $ch5-keypad-secondary-default-font-color
+            );
+        }
     }
 
     &.ch5-keypad--orientation-top {
