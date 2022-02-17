@@ -41,7 +41,7 @@ ch5-button {
     button {
       cursor: pointer;
     }
-    
+
     button,
     .ch5-button--label {
       background-color: transparent;
@@ -451,7 +451,7 @@ i.cb-icon.cx-button-icon-pos-bottom {
 .ch5-button--vertical-bottom {
   align-items: flex-end;
 }
-// This one to be added
+
 .ch5-button--vertical {
   .ch5-button--span {
     display: flex;
@@ -503,8 +503,9 @@ i.cb-icon.cx-button-icon-pos-bottom {
     justify-content: flex-end;
   }
 }
-.ch5-button--circle,
-.ch5-button--oval {
+
+.ch5-button--circle.ch5-button--vertical:not(.ch5-button--iconposition-top):not(.ch5-button--iconposition-bottom),
+.ch5-button--oval.ch5-button--vertical:not(.ch5-button--iconposition-top):not(.ch5-button--iconposition-bottom) {
   .ch5-button--vertical-middle,
   .ch5-button--vertical-top,
   .ch5-button--vertical-bottom {
@@ -512,6 +513,36 @@ i.cb-icon.cx-button-icon-pos-bottom {
   }
 }
 
+.ch5-button--iconposition-top.ch5-button--vertical.ch5-button--circle,
+.ch5-button--iconposition-bottom.ch5-button--vertical.ch5-button--circle,
+.ch5-button--iconposition-top.ch5-button--vertical.ch5-button--oval,
+.ch5-button--iconposition-bottom.ch5-button--vertical.ch5-button--oval {
+  .ch5-button--vertical-middle,
+  .ch5-button--vertical-top,
+  .ch5-button--vertical-bottom {
+    justify-content: center;
+  }
+}
+
+.ch5-button--circle:not(.ch5-button--vertical):not(.ch5-button--iconposition-top):not(.ch5-button--iconposition-bottom),
+.ch5-button--oval:not(.ch5-button--vertical):not(.ch5-button--iconposition-top):not(.ch5-button--iconposition-bottom) {
+  .ch5-button--vertical-middle,
+  .ch5-button--vertical-top,
+  .ch5-button--vertical-bottom {
+    align-items: center;
+  }
+}
+
+.ch5-button--iconposition-top:not(.ch5-button--vertical).ch5-button--circle,
+.ch5-button--iconposition-bottom:not(.ch5-button--vertical).ch5-button--circle,
+.ch5-button--iconposition-top:not(.ch5-button--vertical).ch5-button--oval,
+.ch5-button--iconposition-bottom:not(.ch5-button--vertical).ch5-button--oval {
+  .ch5-button--vertical-middle,
+  .ch5-button--vertical-top,
+  .ch5-button--vertical-bottom {
+    justify-content: center;
+  }
+}
 .ch5-button--iconposition-bottom:not(.ch5-button--vertical):not(.ch5-button--circle):not(.ch5-button--oval),
 .ch5-button--iconposition-top:not(.ch5-button--vertical):not(.ch5-button--circle):not(.ch5-button--oval) {
   .cb-btn {
@@ -568,7 +599,8 @@ i.cb-icon.cx-button-icon-pos-top {
 // Managing line height for icon and text when aligned top
 .ch5-button--iconposition-last.ch5-button--vertical:not(.ch5-button--circle):not(.ch5-button--oval),
 .ch5-button--iconposition-first.ch5-button--vertical:not(.ch5-button--circle):not(.ch5-button--oval) {
-  .ch5-button--vertical-top, .ch5-button--vertical-bottom {
+  .ch5-button--vertical-top,
+  .ch5-button--vertical-bottom {
     i.cb-icon.cx-button-icon-pos-first,
     i.cb-icon.cx-button-icon-pos-last {
       padding-left: 5px;
