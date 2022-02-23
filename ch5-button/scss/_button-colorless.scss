@@ -589,6 +589,9 @@ i.cb-icon.cx-button-icon-pos-bottom {
 .cx-button-checkbox-pos-right {
   padding-left: $ch5-button-checkbox-padding;
 }
+i.cb-icon.material-icons {
+  font-size: inherit;
+}
 i.cb-icon.cx-button-icon-pos-bottom,
 i.cb-icon.cx-button-icon-pos-top {
   display: flex;
