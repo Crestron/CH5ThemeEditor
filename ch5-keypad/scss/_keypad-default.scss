@@ -224,8 +224,6 @@
 
         &[key="button0"] {
             .label-minor {
-                font-size: 1.5rem;
-                margin-top: -2%;
                 margin-left: 3%;
             }
         }
@@ -401,13 +399,11 @@
 }
 
 .ch5-keypad.ch5-keypad--size-x-small .keypad-btn[key="button0"] button .label-minor {
-    font-size: 1.1rem;
     margin-top: -15%;
     margin-left: 3%;
 }
 
 .ch5-keypad.ch5-keypad--size-small .keypad-btn[key="button0"] button .label-minor {
-    font-size: 1.2rem;
     margin-top: -6%;
     margin-left: 4%;
 }
