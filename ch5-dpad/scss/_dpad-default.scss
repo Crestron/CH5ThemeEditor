@@ -43,6 +43,7 @@
     $backgroundColorActive: lighten($property-pressed-background-color, 10%);
     &.ch5-dpad-child {
         color: $property-pressed-font-color;
+        background-color: $backgroundColorActive;
     }
     
     .center:active {
@@ -50,11 +51,11 @@
     }
     &.direction-btn.up:after,
     &.direction-btn.down:before {
-        box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColorActive !important;
+        box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColorActive;
     }
     &.direction-btn.up:before,
     &.direction-btn.down:after {
-        box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorActive !important;
+        box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorActive;
     }
 }
 
