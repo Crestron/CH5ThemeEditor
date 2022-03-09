@@ -224,7 +224,7 @@
             z-index: 2;
         }
         span {
-            font-size: 1em;
+            font-size: $labelFontSize;
             border-radius: 50%;
             text-align: center;
             background-repeat: no-repeat;
@@ -588,7 +588,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-            font-size: 1.5rem;
+            font-size: $labelFontSize;
             transform: rotate(-45deg);
             padding: 0 15%;
         }
