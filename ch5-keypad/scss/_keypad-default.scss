@@ -30,7 +30,7 @@
         }
     }
 
-    &[showextrabutton="true"] {
+    &[showextrabutton="true"], &[usecontractforextrabuttonshow="true"] {
         height: $defaultContainerHeightExtra;
         .keypad-container {
             height: $defaultContainerHeightExtra;
@@ -291,7 +291,7 @@
             height: $xsmallContainerHeight;
         }
 
-        &[showextrabutton="true"] {
+        &[showextrabutton="true"], &[usecontractforextrabuttonshow="true"] {
             height: $xsmallContainerHeightExtra;
             .keypad-container {
                 height: $xsmallContainerHeightExtra;
@@ -328,7 +328,7 @@
             height: $smallContainerHeight;
         }
 
-        &[showextrabutton="true"] {
+        &[showextrabutton="true"], &[usecontractforextrabuttonshow="true"] {
             height: $smallContainerHeightExtra;
             .keypad-container {
                 height: $smallContainerHeightExtra;
@@ -364,7 +364,7 @@
             height: $largeContainerHeight;
         }
 
-        &[showextrabutton="true"] {
+        &[showextrabutton="true"], &[usecontractforextrabuttonshow="true"] {
             height: $largeContainerHeightExtra;
             .keypad-container {
                 height: $largeContainerHeightExtra;
@@ -387,7 +387,7 @@
             height: $xlargeContainerHeight;
         }
 
-        &[showextrabutton="true"] {
+        &[showextrabutton="true"], &[usecontractforextrabuttonshow="true"] {
             height: $xlargeContainerHeightExtra;
             .keypad-container {
                 height: $xlargeContainerHeightExtra;
