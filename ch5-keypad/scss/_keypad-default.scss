@@ -153,7 +153,9 @@
     &.ch5-keypad--orientation-right {
         button {
             flex-direction: row-reverse;
-            margin-left: 2px;
+            .label-major {
+                margin-left: 2px;
+            }
         }
     }
 
