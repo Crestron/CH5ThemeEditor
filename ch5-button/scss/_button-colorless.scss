@@ -428,7 +428,6 @@ i.cb-icon.cx-button-icon-pos-bottom {
 
 .ch5-button--span {
   width: 100%;
-  height: 100%;
   display: flex;
   overflow: hidden;
 }
@@ -454,6 +453,7 @@ i.cb-icon.cx-button-icon-pos-bottom {
 
 .ch5-button--vertical {
   .ch5-button--span {
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
