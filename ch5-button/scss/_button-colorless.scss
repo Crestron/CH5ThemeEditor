@@ -36,6 +36,7 @@ ch5-button {
   vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
 
   .ch5-button {
+    display: flex;
     max-width: 100%;
 
     button {
@@ -59,7 +60,7 @@ ch5-button {
       display: inline-flex;
       align-items: center;
       justify-content: space-between;
-      line-height: 1.2;
+      line-height: $ch5-button-content-line-height;
       padding: $ch5-button-padding;
     }
   }
@@ -87,6 +88,10 @@ ch5-button[hidden] {
   width: auto;
   cursor: pointer;
   user-select: none;
+}
+.ch5-button--icon,
+.ch5-button--img {
+  line-height: $ch5-button-content-line-height;
 }
 
 // *** Button 'shape' attribute ***
@@ -428,6 +433,7 @@ i.cb-icon.cx-button-icon-pos-bottom {
 
 .ch5-button--span {
   width: 100%;
+  height: 100%;
   display: flex;
   overflow: hidden;
 }
@@ -453,7 +459,6 @@ i.cb-icon.cx-button-icon-pos-bottom {
 
 .ch5-button--vertical {
   .ch5-button--span {
-    height: 100%;
     display: flex;
     flex-direction: column;
   }
