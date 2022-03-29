@@ -10,40 +10,27 @@
 /// @group ch5-keypad-mixins
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@mixin ch5-keypad-content($property-default-background-color, $property-default-font-color) {
-    $backgroundColorActive: darken($property-default-background-color, 15%);
+@mixin ch5-keypad-content($property-default-background-color, $property-default-border-color, $property-default-font-color) {
     .keypad-row {
         color: $property-default-font-color;
         .keypad-btn {
             button {
                 background-color: $property-default-background-color;
-                border: 1px solid $property-default-background-color;
-                &:active {
-                    background: $backgroundColorActive;
-                    border-color: $backgroundColorActive;
-                }
+                border: 1px solid $property-default-border-color;
             }
         }
     }
 }
 
-@mixin ch5-keypad-content--selected($property-selected-background-color, $property-selected-font-color) {
-    $backgroundColorActive: lighten($property-selected-background-color, 10%);
-}
-
-@mixin ch5-keypad-content--pressed($property-pressed-background-color, $property-pressed-font-color) {
-    $backgroundColorActive: darken($property-pressed-background-color, 15%);
+@mixin ch5-keypad-content--pressed($property-pressed-background-color, $property-pressed-border-color, $property-pressed-font-color) {
     &.keypad-btn {
         button {
-            background-color: $backgroundColorActive;
-            border: 1px solid $backgroundColorActive;
-            &:active {
-                background: $backgroundColorActive;
-                border-color: $backgroundColorActive;
-            }
+            background-color: $property-pressed-background-color;
+            border: 1px solid $property-pressed-border-color;
+            color:  $property-pressed-font-color;
         }
     }
 }
 
-@mixin ch5-keypad-content--disabled($ch5-keypad-text-disabled-background-color, $ch5-keypad-text-disabled-font-color) {
+@mixin ch5-keypad-content--disabled($property-disabled-background-color, $property-disabled-border-color, $property-disabled-font-color) {
 }

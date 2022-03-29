@@ -15,10 +15,10 @@
 
 .ch5-keypad {
     display: inline-flex;
-    min-width: $defaultContainerWidth;
-    min-height: $defaultContainerHeight;
-    width: $defaultContainerWidth;
-    height: $defaultContainerHeight;
+    min-width: $ch5-keypad-default-container-width;
+    min-height: $ch5-keypad-default-container-height;
+    width: $ch5-keypad-default-container-width;
+    height: $ch5-keypad-default-container-height;
     vertical-align: top;
 
     &[disabled] {
@@ -30,25 +30,27 @@
         }
     }
 
-    &[showextrabutton="true"], &[usecontractforextrabuttonshow="true"] {
-        height: $defaultContainerHeightExtra;
+    &[showextrabutton="true"],
+    &[usecontractforextrabuttonshow="true"] {
+        height: $ch5-keypad-default-container-height-extra;
         .keypad-container {
-            height: $defaultContainerHeightExtra;
-            min-width: $defaultContainerWidth;
-            min-height: $defaultContainerHeightExtra;
+            height: $ch5-keypad-default-container-height-extra;
+            min-width: $ch5-keypad-default-container-width;
+            min-height: $ch5-keypad-default-container-height-extra;
             .keypad-row {
                 flex: 0 1 18%;
 
                 .keypad-btn.special-center button {
-                    color: $ch5-keypad--extra-text-font-color;
-                    background-color: $ch5-keypad-extra-text-default-background-color;
-                    border: 1px solid $ch5-keypad-extra-text-default-background-color;
-                    &:active {
-                        background: lighten($color: $ch5-keypad-extra-text-default-background-color, $amount: 10);
-                        border-color: lighten($color: $ch5-keypad-extra-text-default-background-color, $amount: 10);
-                    }
+                    color: $ch5-keypad-success-default-font-color;
+                    background-color: $ch5-keypad-success-default-background-color;
+                    border: 1px solid $ch5-keypad-success-default-border-color;
                 }
 
+                .keypad-btn.special-center.keypad-btn-pressed button {
+                    color: $ch5-keypad-success-pressed-font-color;
+                    background-color: $ch5-keypad-success-pressed-background-color;
+                    border: 1px solid $ch5-keypad-success-pressed-border-color;
+                }
                 .keypad-btn.empty-btn {
                     display: none;
                 }
@@ -59,87 +61,112 @@
     &.ch5-keypad--type-default {
         @include ch5-keypad-content(
             $ch5-keypad-default-default-background-color,
+            $ch5-keypad-default-default-border-color,
             $ch5-keypad-default-default-font-color
         );
         .keypad-btn-pressed {
-            @include ch5-keypad-content--pressed (
-                $ch5-keypad-default-default-background-color,
-                $ch5-keypad-default-default-font-color
+            @include ch5-keypad-content--pressed(
+                $ch5-keypad-default-pressed-background-color,
+                $ch5-keypad-default-pressed-border-color,
+                $ch5-keypad-default-pressed-font-color
             );
         }
     }
     &.ch5-keypad--type-primary {
         @include ch5-keypad-content(
             $ch5-keypad-primary-default-background-color,
+            $ch5-keypad-primary-default-border-color,
             $ch5-keypad-primary-default-font-color
         );
         .keypad-btn-pressed {
-            @include ch5-keypad-content--pressed (
-                $ch5-keypad-primary-default-background-color,
-                $ch5-keypad-primary-default-font-color
+            @include ch5-keypad-content--pressed(
+                $ch5-keypad-primary-pressed-background-color,
+                $ch5-keypad-primary-pressed-border-color,
+                $ch5-keypad-primary-pressed-font-color
             );
         }
     }
     &.ch5-keypad--type-info {
-        @include ch5-keypad-content($ch5-keypad-info-default-background-color, $ch5-keypad-info-default-font-color);
+        @include ch5-keypad-content(
+            $ch5-keypad-info-default-background-color,
+            $ch5-keypad-info-default-border-color,
+            $ch5-keypad-info-default-font-color
+        );
         .keypad-btn-pressed {
-            @include ch5-keypad-content--pressed (
-                $ch5-keypad-info-default-background-color,
-                $ch5-keypad-info-default-font-color
+            @include ch5-keypad-content--pressed(
+                $ch5-keypad-info-pressed-background-color,
+                $ch5-keypad-info-pressed-border-color,
+                $ch5-keypad-info-pressed-font-color
             );
         }
     }
     &.ch5-keypad--type-text {
-        @include ch5-keypad-content($ch5-keypad-text-default-background-color, $ch5-keypad-text-default-font-color);
+        @include ch5-keypad-content(
+            $ch5-keypad-text-default-background-color,
+            $ch5-keypad-text-default-border-color,
+            $ch5-keypad-text-default-font-color
+        );
         .keypad-btn-pressed {
-            @include ch5-keypad-content--pressed (
-                $ch5-keypad-text-default-background-color,
-                $ch5-keypad-text-default-font-color
+            @include ch5-keypad-content--pressed(
+                $ch5-keypad-text-pressed-background-color,
+                $ch5-keypad-text-pressed-border-color,
+                $ch5-keypad-text-pressed-font-color
             );
         }
     }
     &.ch5-keypad--type-danger {
-        @include ch5-keypad-content($ch5-keypad-danger-default-background-color, $ch5-keypad-danger-default-font-color);
+        @include ch5-keypad-content(
+            $ch5-keypad-danger-default-background-color,
+            $ch5-keypad-danger-default-border-color,
+            $ch5-keypad-danger-default-font-color
+        );
         .keypad-btn-pressed {
-            @include ch5-keypad-content--pressed (
-                $ch5-keypad-danger-default-background-color,
-                $ch5-keypad-danger-default-font-color
+            @include ch5-keypad-content--pressed(
+                $ch5-keypad-danger-pressed-background-color,
+                $ch5-keypad-danger-pressed-border-color,
+                $ch5-keypad-danger-pressed-font-color
             );
         }
     }
     &.ch5-keypad--type-warning {
         @include ch5-keypad-content(
             $ch5-keypad-warning-default-background-color,
+            $ch5-keypad-warning-default-border-color,
             $ch5-keypad-warning-default-font-color
         );
         .keypad-btn-pressed {
-            @include ch5-keypad-content--pressed (
-                $ch5-keypad-warning-default-background-color,
-                $ch5-keypad-warning-default-font-color
+            @include ch5-keypad-content--pressed(
+                $ch5-keypad-warning-pressed-background-color,
+                $ch5-keypad-warning-pressed-border-color,
+                $ch5-keypad-warning-pressed-font-color
             );
         }
     }
     &.ch5-keypad--type-success {
         @include ch5-keypad-content(
             $ch5-keypad-success-default-background-color,
+            $ch5-keypad-success-default-border-color,
             $ch5-keypad-success-default-font-color
         );
         .keypad-btn-pressed {
-            @include ch5-keypad-content--pressed (
-                $ch5-keypad-success-default-background-color,
-                $ch5-keypad-success-default-font-color
+            @include ch5-keypad-content--pressed(
+                $ch5-keypad-success-pressed-background-color,
+                $ch5-keypad-success-pressed-border-color,
+                $ch5-keypad-success-pressed-font-color
             );
         }
     }
     &.ch5-keypad--type-secondary {
         @include ch5-keypad-content(
             $ch5-keypad-secondary-default-background-color,
+            $ch5-keypad-secondary-default-border-color,
             $ch5-keypad-secondary-default-font-color
         );
         .keypad-btn-pressed {
-            @include ch5-keypad-content--pressed (
-                $ch5-keypad-secondary-default-background-color,
-                $ch5-keypad-secondary-default-font-color
+            @include ch5-keypad-content--pressed(
+                $ch5-keypad-secondary-pressed-background-color,
+                $ch5-keypad-secondary-pressed-border-color,
+                $ch5-keypad-secondary-pressed-font-color
             );
         }
     }
@@ -178,10 +205,10 @@
 .keypad-container {
     display: flex;
     justify-content: space-evenly;
-    width: $defaultContainerWidth;
-    height: $defaultContainerHeight;
-    min-width: $defaultContainerWidth;
-    min-height: $defaultContainerHeight;
+    width: $ch5-keypad-default-container-width;
+    height: $ch5-keypad-default-container-height;
+    min-width: $ch5-keypad-default-container-width;
+    min-height: $ch5-keypad-default-container-height;
     flex-direction: column;
 }
 
@@ -204,8 +231,6 @@
             outline: none !important;
             color: inherit;
             cursor: pointer;
-            -webkit-transition: background 0.4s;
-            transition: background 0.4s;
             span {
                 white-space: pre;
                 color: inherit;
@@ -222,7 +247,6 @@
                 line-height: 1rem;
             }
         }
-
 
         &[key="button0"] {
             .label-minor {
@@ -282,23 +306,24 @@
 // sizes
 .ch5-keypad {
     &.ch5-keypad--size-x-small {
-        min-width: $xsmallContainerWidth;
-        min-height: $xsmallContainerHeight;
-        width: $xsmallContainerWidth;
-        height: $xsmallContainerHeight;
+        min-width: $ch5-keypad-xsmall-container-width;
+        min-height: $ch5-keypad-xsmall-container-height;
+        width: $ch5-keypad-xsmall-container-width;
+        height: $ch5-keypad-xsmall-container-height;
         .keypad-container {
-            min-width: $xsmallContainerWidth;
-            min-height: $xsmallContainerHeight;
-            width: $xsmallContainerWidth;
-            height: $xsmallContainerHeight;
+            min-width: $ch5-keypad-xsmall-container-width;
+            min-height: $ch5-keypad-xsmall-container-height;
+            width: $ch5-keypad-xsmall-container-width;
+            height: $ch5-keypad-xsmall-container-height;
         }
 
-        &[showextrabutton="true"], &[usecontractforextrabuttonshow="true"] {
-            height: $xsmallContainerHeightExtra;
+        &[showextrabutton="true"],
+        &[usecontractforextrabuttonshow="true"] {
+            height: $ch5-keypad-xsmall-container-height-extra;
             .keypad-container {
-                height: $xsmallContainerHeightExtra;
-                min-width: $xsmallContainerWidth;
-                min-height: $xsmallContainerHeightExtra;
+                height: $ch5-keypad-xsmall-container-height-extra;
+                min-width: $ch5-keypad-xsmall-container-width;
+                min-height: $ch5-keypad-xsmall-container-height-extra;
             }
         }
 
@@ -318,24 +343,25 @@
     }
 
     &.ch5-keypad--size-small {
-        min-width: $smallContainerWidth;
-        min-height: $smallContainerHeight;
-        width: $smallContainerWidth;
-        height: $smallContainerHeight;
+        min-width: $ch5-keypad-small-container-width;
+        min-height: $ch5-keypad-small-container-height;
+        width: $ch5-keypad-small-container-width;
+        height: $ch5-keypad-small-container-height;
 
         .keypad-container {
-            min-width: $smallContainerWidth;
-            min-height: $smallContainerHeight;
-            width: $smallContainerWidth;
-            height: $smallContainerHeight;
+            min-width: $ch5-keypad-small-container-width;
+            min-height: $ch5-keypad-small-container-height;
+            width: $ch5-keypad-small-container-width;
+            height: $ch5-keypad-small-container-height;
         }
 
-        &[showextrabutton="true"], &[usecontractforextrabuttonshow="true"] {
-            height: $smallContainerHeightExtra;
+        &[showextrabutton="true"],
+        &[usecontractforextrabuttonshow="true"] {
+            height: $ch5-keypad-small-container-height-extra;
             .keypad-container {
-                height: $smallContainerHeightExtra;
-                min-width: $smallContainerWidth;
-                min-height: $smallContainerHeightExtra;
+                height: $ch5-keypad-small-container-height-extra;
+                min-width: $ch5-keypad-small-container-width;
+                min-height: $ch5-keypad-small-container-height-extra;
             }
         }
 
@@ -354,47 +380,49 @@
     }
 
     &.ch5-keypad--size-large {
-        min-width: $largeContainerWidth;
-        min-height: $largeContainerHeight;
-        width: $largeContainerWidth;
-        height: $largeContainerHeight;
+        min-width: $ch5-keypad-large-container-width;
+        min-height: $ch5-keypad-large-container-height;
+        width: $ch5-keypad-large-container-width;
+        height: $ch5-keypad-large-container-height;
 
         .keypad-container {
-            min-width: $largeContainerWidth;
-            min-height: $largeContainerHeight;
-            width: $largeContainerWidth;
-            height: $largeContainerHeight;
+            min-width: $ch5-keypad-large-container-width;
+            min-height: $ch5-keypad-large-container-height;
+            width: $ch5-keypad-large-container-width;
+            height: $ch5-keypad-large-container-height;
         }
 
-        &[showextrabutton="true"], &[usecontractforextrabuttonshow="true"] {
-            height: $largeContainerHeightExtra;
+        &[showextrabutton="true"],
+        &[usecontractforextrabuttonshow="true"] {
+            height: $ch5-keypad-large-container-height-extra;
             .keypad-container {
-                height: $largeContainerHeightExtra;
-                min-width: $largeContainerWidth;
-                min-height: $largeContainerHeightExtra;
+                height: $ch5-keypad-large-container-height-extra;
+                min-width: $ch5-keypad-large-container-width;
+                min-height: $ch5-keypad-large-container-height-extra;
             }
         }
     }
 
     &.ch5-keypad--size-x-large {
-        min-width: $xlargeContainerWidth;
-        min-height: $xlargeContainerHeight;
-        width: $xlargeContainerWidth;
-        height: $xlargeContainerHeight;
+        min-width: $ch5-keypad-xlarge-container-width;
+        min-height: $ch5-keypad-xlarge-container-height;
+        width: $ch5-keypad-xlarge-container-width;
+        height: $ch5-keypad-xlarge-container-height;
 
         .keypad-container {
-            min-width: $xlargeContainerWidth;
-            min-height: $xlargeContainerHeight;
-            width: $xlargeContainerWidth;
-            height: $xlargeContainerHeight;
+            min-width: $ch5-keypad-xlarge-container-width;
+            min-height: $ch5-keypad-xlarge-container-height;
+            width: $ch5-keypad-xlarge-container-width;
+            height: $ch5-keypad-xlarge-container-height;
         }
 
-        &[showextrabutton="true"], &[usecontractforextrabuttonshow="true"] {
-            height: $xlargeContainerHeightExtra;
+        &[showextrabutton="true"],
+        &[usecontractforextrabuttonshow="true"] {
+            height: $ch5-keypad-xlarge-container-height-extra;
             .keypad-container {
-                height: $xlargeContainerHeightExtra;
-                min-width: $xlargeContainerWidth;
-                min-height: $xlargeContainerHeightExtra;
+                height: $ch5-keypad-xlarge-container-height-extra;
+                min-width: $ch5-keypad-xlarge-container-width;
+                min-height: $ch5-keypad-xlarge-container-height-extra;
             }
         }
     }
