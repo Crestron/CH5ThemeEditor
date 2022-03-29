@@ -13,7 +13,6 @@
 @import "./variables";
 
 @mixin ch5-dpad-content($property-default-background-color, $property-default-font-color) {
-    $backgroundColorActive: lighten($property-default-background-color, 10%);
     .ch5-dpad-child {
         background-color: $property-default-background-color;
         color: $property-default-font-color;
@@ -22,132 +21,129 @@
     .center:active,
     &.ch5-dpad--shape-plus .direction-btn:active span,
     &.ch5-dpad--shape-circle .direction-btn:active {
-        background-color: $backgroundColorActive;
+        background-color: $property-default-background-color;
         z-index: 1;
     }
 }
 
 @mixin ch5-dpad-content--selected($property-selected-background-color, $property-selected-font-color) {
-    $backgroundColorActive: lighten($property-selected-background-color, 10%);
-
     .ch5-dpad-child {
         color: $property-selected-font-color;
     }
 
     .center:active {
-        background-color: $backgroundColorActive;
+        background-color: $property-selected-background-color;
     }
 }
 
 @mixin ch5-dpad-content--pressed($property-pressed-background-color, $property-pressed-font-color) {
-    $backgroundColorActive: lighten($property-pressed-background-color, 10%);
     &.ch5-dpad-child {
         color: $property-pressed-font-color;
-        background-color: $backgroundColorActive;
+        background-color: $property-pressed-background-color;
     }
     
     .center:active {
-        background-color: $backgroundColorActive;
+        background-color: $property-pressed-background-color;
     }
     &.direction-btn.up:after,
     &.direction-btn.down:before {
-        box-shadow: (-$commmonEdgeRadius) 0 0 0 $backgroundColorActive;
+        box-shadow: (-$ch5-dpad-common-edge-radius) 0 0 0 $property-pressed-background-color;
     }
     &.direction-btn.up:before,
     &.direction-btn.down:after {
-        box-shadow: $commmonEdgeRadius 0 0 0 $backgroundColorActive;
+        box-shadow: $ch5-dpad-common-edge-radius 0 0 0 $property-pressed-background-color;
     }
 }
 
-@mixin ch5-dpad-content-plus-top($property-commmonEdgeRadius, $property-default-background-color) {
+@mixin ch5-dpad-content-plus-top($property-common-edge-radius, $property-default-background-color) {
     margin: 0 33.33%;
-    border-top-left-radius: $property-commmonEdgeRadius;
-    border-top-right-radius: $property-commmonEdgeRadius;
+    border-top-left-radius: $property-common-edge-radius;
+    border-top-right-radius: $property-common-edge-radius;
     &:before {
         top: calc(100% - 20px);
         right: 100%;
-        border-radius: 0 0 $property-commmonEdgeRadius 0;
-        -moz-border-radius: 0 0 $property-commmonEdgeRadius 0;
-        -webkit-border-radius: 0 0 $property-commmonEdgeRadius 0;
-        -webkit-box-shadow: $property-commmonEdgeRadius 0 0 0 $property-default-background-color;
-        box-shadow: $property-commmonEdgeRadius 0 0 0 $property-default-background-color;
+        border-radius: 0 0 $property-common-edge-radius 0;
+        -moz-border-radius: 0 0 $property-common-edge-radius 0;
+        -webkit-border-radius: 0 0 $property-common-edge-radius 0;
+        -webkit-box-shadow: $property-common-edge-radius 0 0 0 $property-default-background-color;
+        box-shadow: $property-common-edge-radius 0 0 0 $property-default-background-color;
     }
     &:after {
         top: calc(100% - 20px);
         left: 100%;
-        border-radius: 0 0 0 $property-commmonEdgeRadius;
-        -moz-border-radius: 0 0 0 $property-commmonEdgeRadius;
-        -webkit-border-radius: 0 0 0 $property-commmonEdgeRadius;
-        -webkit-box-shadow: (-$property-commmonEdgeRadius) 0 0 0 $property-default-background-color;
-        box-shadow: (-$property-commmonEdgeRadius) 0 0 0 $property-default-background-color;
+        border-radius: 0 0 0 $property-common-edge-radius;
+        -moz-border-radius: 0 0 0 $property-common-edge-radius;
+        -webkit-border-radius: 0 0 0 $property-common-edge-radius;
+        -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0 $property-default-background-color;
+        box-shadow: (-$property-common-edge-radius) 0 0 0 $property-default-background-color;
     }
     span {
-        border-top-left-radius: $property-commmonEdgeRadius;
-        border-top-right-radius: $property-commmonEdgeRadius;
+        border-top-left-radius: $property-common-edge-radius;
+        border-top-right-radius: $property-common-edge-radius;
     }
 }
 
-@mixin ch5-dpad-content-plus-bottom($property-commmonEdgeRadius, $property-default-background-color) {
+@mixin ch5-dpad-content-plus-bottom($property-common-edge-radius, $property-default-background-color) {
     margin: 0 33.33%;
-    border-bottom-left-radius: $property-commmonEdgeRadius;
-    border-bottom-right-radius: $property-commmonEdgeRadius;
+    border-bottom-left-radius: $property-common-edge-radius;
+    border-bottom-right-radius: $property-common-edge-radius;
     &:before {
         top: 0;
         left: 100%;
-        border-radius: $property-commmonEdgeRadius 0 0 0;
-        -moz-border-radius: $property-commmonEdgeRadius 0 0 0;
-        -webkit-border-radius: $property-commmonEdgeRadius 0 0 0;
-        -webkit-box-shadow: (-$property-commmonEdgeRadius) 0 0 0 $property-default-background-color;
-        box-shadow: (-$property-commmonEdgeRadius) 0 0 0 $property-default-background-color;
+        border-radius: $property-common-edge-radius 0 0 0;
+        -moz-border-radius: $property-common-edge-radius 0 0 0;
+        -webkit-border-radius: $property-common-edge-radius 0 0 0;
+        -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0 $property-default-background-color;
+        box-shadow: (-$property-common-edge-radius) 0 0 0 $property-default-background-color;
     }
     &:after {
         top: 0;
         right: 100%;
-        border-radius: 0 $property-commmonEdgeRadius 0 0;
-        -moz-border-radius: 0 $property-commmonEdgeRadius 0 0;
-        -webkit-border-radius: 0 $property-commmonEdgeRadius 0 0;
-        -webkit-box-shadow: $property-commmonEdgeRadius 0 0 0 $property-default-background-color;
-        box-shadow: $property-commmonEdgeRadius 0 0 0 $property-default-background-color;
+        border-radius: 0 $property-common-edge-radius 0 0;
+        -moz-border-radius: 0 $property-common-edge-radius 0 0;
+        -webkit-border-radius: 0 $property-common-edge-radius 0 0;
+        -webkit-box-shadow: $property-common-edge-radius 0 0 0 $property-default-background-color;
+        box-shadow: $property-common-edge-radius 0 0 0 $property-default-background-color;
     }
     span {
-        border-bottom-left-radius: $property-commmonEdgeRadius;
-        border-bottom-right-radius: $property-commmonEdgeRadius;
+        border-bottom-left-radius: $property-common-edge-radius;
+        border-bottom-right-radius: $property-common-edge-radius;
     }
 }
 
-@mixin ch5-dpad-content-plus-left($property-commmonEdgeRadius, $property-default-background-color) {
+@mixin ch5-dpad-content-plus-left($property-common-edge-radius, $property-default-background-color) {
     margin-right: calc(33% / 2);
-    border-bottom-left-radius: $property-commmonEdgeRadius;
-    border-top-left-radius: $property-commmonEdgeRadius;
+    border-bottom-left-radius: $property-common-edge-radius;
+    border-top-left-radius: $property-common-edge-radius;
     span {
-        border-bottom-left-radius: $property-commmonEdgeRadius;
-        border-top-left-radius: $property-commmonEdgeRadius;
+        border-bottom-left-radius: $property-common-edge-radius;
+        border-top-left-radius: $property-common-edge-radius;
     }
 }
 
-@mixin ch5-dpad-content-plus-right($property-commmonEdgeRadius, $property-default-background-color) {
+@mixin ch5-dpad-content-plus-right($property-common-edge-radius, $property-default-background-color) {
     margin-left: calc(33% / 2);
-    border-bottom-right-radius: $property-commmonEdgeRadius;
-    border-top-right-radius: $property-commmonEdgeRadius;
+    border-bottom-right-radius: $property-common-edge-radius;
+    border-top-right-radius: $property-common-edge-radius;
     span {
-        border-bottom-right-radius: $property-commmonEdgeRadius;
-        border-top-right-radius: $property-commmonEdgeRadius;
+        border-bottom-right-radius: $property-common-edge-radius;
+        border-top-right-radius: $property-common-edge-radius;
     }
 }
 
 .ch5-dpad {
     position: relative;
     display: inline-flex;
-    min-width: $defaultDimension;
-    min-height: $defaultDimension;
+    min-width: $ch5-dpad-default-dimension;
+    min-height: $ch5-dpad-default-dimension;
     vertical-align: top;
     .dpad-container {
         position: relative;
         display: flex;
-        min-width: $defaultDimension;
-        min-height: $defaultDimension;
-        width: $defaultDimension;
-        height: $defaultDimension;
+        min-width: $ch5-dpad-default-dimension;
+        min-height: $ch5-dpad-default-dimension;
+        width: $ch5-dpad-default-dimension;
+        height: $ch5-dpad-default-dimension;
         flex-wrap: wrap;
         vertical-align: top;
     }
@@ -224,7 +220,7 @@
             z-index: 2;
         }
         span {
-            font-size: $labelFontSize;
+            font-size: $ch5-dpad-label-font-size;
             border-radius: 50%;
             text-align: center;
             background-repeat: no-repeat;
@@ -279,32 +275,32 @@
             width: 100%;
             position: relative;
             z-index: 1;
-            line-height: calc(#{$defaultDimension} / 3);
+            line-height: calc(#{$ch5-dpad-default-dimension} / 3);
             text-align: center;
         }
     }
 
     &.ch5-dpad--type-danger .direction-btn {
         &.up {
-            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-danger-default-background-color);
+            @include ch5-dpad-content-plus-top($ch5-dpad-common-edge-radius, $ch5-dpad-danger-default-background-color);
         }
         &.left {
-            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-danger-default-background-color);
+            @include ch5-dpad-content-plus-left($ch5-dpad-common-edge-radius, $ch5-dpad-danger-default-background-color);
         }
         &.right {
-            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-danger-default-background-color);
+            @include ch5-dpad-content-plus-right($ch5-dpad-common-edge-radius, $ch5-dpad-danger-default-background-color);
         }
         &.down {
-            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-danger-default-background-color);
+            @include ch5-dpad-content-plus-bottom($ch5-dpad-common-edge-radius, $ch5-dpad-danger-default-background-color);
         }
 
         &.ch5-dpad-button-up--pressed {
             @include ch5-dpad-content--pressed($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
             // &::before {
-            //     box-shadow: $commmonEdgeRadius 0 0 0 lighten($ch5-dpad-danger-default-background-color, 10%);
+            //     box-shadow: $ch5-dpad-common-edge-radius 0 0 0 lighten($ch5-dpad-danger-default-background-color, 10%);
             // }
             // &::after {
-            //     box-shadow: -$commmonEdgeRadius 0 0 0 lighten($ch5-dpad-danger-default-background-color, 10%);
+            //     box-shadow: -$ch5-dpad-common-edge-radius 0 0 0 lighten($ch5-dpad-danger-default-background-color, 10%);
             // }
         }
         &.ch5-dpad-button-left--pressed {
@@ -325,16 +321,16 @@
 
     &.ch5-dpad--type-primary .direction-btn {
         &.up {
-            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-primary-default-background-color);
+            @include ch5-dpad-content-plus-top($ch5-dpad-common-edge-radius, $ch5-dpad-primary-default-background-color);
         }
         &.left {
-            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-primary-default-background-color);
+            @include ch5-dpad-content-plus-left($ch5-dpad-common-edge-radius, $ch5-dpad-primary-default-background-color);
         }
         &.right {
-            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-primary-default-background-color);
+            @include ch5-dpad-content-plus-right($ch5-dpad-common-edge-radius, $ch5-dpad-primary-default-background-color);
         }
         &.down {
-            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-primary-default-background-color);
+            @include ch5-dpad-content-plus-bottom($ch5-dpad-common-edge-radius, $ch5-dpad-primary-default-background-color);
         }
 
         &.ch5-dpad-button-up--pressed {
@@ -358,16 +354,16 @@
 
     &.ch5-dpad--type-text .direction-btn {
         &.up {
-            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-text-default-background-color);
+            @include ch5-dpad-content-plus-top($ch5-dpad-common-edge-radius, $ch5-dpad-text-default-background-color);
         }
         &.left {
-            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-text-default-background-color);
+            @include ch5-dpad-content-plus-left($ch5-dpad-common-edge-radius, $ch5-dpad-text-default-background-color);
         }
         &.right {
-            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-text-default-background-color);
+            @include ch5-dpad-content-plus-right($ch5-dpad-common-edge-radius, $ch5-dpad-text-default-background-color);
         }
         &.down {
-            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-text-default-background-color);
+            @include ch5-dpad-content-plus-bottom($ch5-dpad-common-edge-radius, $ch5-dpad-text-default-background-color);
         }
 
         &.ch5-dpad-button-up--pressed {
@@ -391,16 +387,16 @@
 
     &.ch5-dpad--type-info .direction-btn {
         &.up {
-            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-info-default-background-color);
+            @include ch5-dpad-content-plus-top($ch5-dpad-common-edge-radius, $ch5-dpad-info-default-background-color);
         }
         &.left {
-            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-info-default-background-color);
+            @include ch5-dpad-content-plus-left($ch5-dpad-common-edge-radius, $ch5-dpad-info-default-background-color);
         }
         &.right {
-            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-info-default-background-color);
+            @include ch5-dpad-content-plus-right($ch5-dpad-common-edge-radius, $ch5-dpad-info-default-background-color);
         }
         &.down {
-            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-info-default-background-color);
+            @include ch5-dpad-content-plus-bottom($ch5-dpad-common-edge-radius, $ch5-dpad-info-default-background-color);
         }
 
         &.ch5-dpad-button-up--pressed {
@@ -424,16 +420,16 @@
 
     &.ch5-dpad--type-warning .direction-btn {
         &.up {
-            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-warning-default-background-color);
+            @include ch5-dpad-content-plus-top($ch5-dpad-common-edge-radius, $ch5-dpad-warning-default-background-color);
         }
         &.left {
-            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-warning-default-background-color);
+            @include ch5-dpad-content-plus-left($ch5-dpad-common-edge-radius, $ch5-dpad-warning-default-background-color);
         }
         &.right {
-            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-warning-default-background-color);
+            @include ch5-dpad-content-plus-right($ch5-dpad-common-edge-radius, $ch5-dpad-warning-default-background-color);
         }
         &.down {
-            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-warning-default-background-color);
+            @include ch5-dpad-content-plus-bottom($ch5-dpad-common-edge-radius, $ch5-dpad-warning-default-background-color);
         }
 
         &.ch5-dpad-button-up--pressed {
@@ -457,16 +453,16 @@
 
     &.ch5-dpad--type-success .direction-btn {
         &.up {
-            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-success-default-background-color);
+            @include ch5-dpad-content-plus-top($ch5-dpad-common-edge-radius, $ch5-dpad-success-default-background-color);
         }
         &.left {
-            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-success-default-background-color);
+            @include ch5-dpad-content-plus-left($ch5-dpad-common-edge-radius, $ch5-dpad-success-default-background-color);
         }
         &.right {
-            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-success-default-background-color);
+            @include ch5-dpad-content-plus-right($ch5-dpad-common-edge-radius, $ch5-dpad-success-default-background-color);
         }
         &.down {
-            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-success-default-background-color);
+            @include ch5-dpad-content-plus-bottom($ch5-dpad-common-edge-radius, $ch5-dpad-success-default-background-color);
         }
 
         &.ch5-dpad-button-up--pressed {
@@ -490,16 +486,16 @@
 
     &.ch5-dpad--type-secondary .direction-btn {
         &.up {
-            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-secondary-default-background-color);
+            @include ch5-dpad-content-plus-top($ch5-dpad-common-edge-radius, $ch5-dpad-secondary-default-background-color);
         }
         &.left {
-            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-secondary-default-background-color);
+            @include ch5-dpad-content-plus-left($ch5-dpad-common-edge-radius, $ch5-dpad-secondary-default-background-color);
         }
         &.right {
-            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-secondary-default-background-color);
+            @include ch5-dpad-content-plus-right($ch5-dpad-common-edge-radius, $ch5-dpad-secondary-default-background-color);
         }
         &.down {
-            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-secondary-default-background-color);
+            @include ch5-dpad-content-plus-bottom($ch5-dpad-common-edge-radius, $ch5-dpad-secondary-default-background-color);
         }
 
         &.ch5-dpad-button-up--pressed {
@@ -523,16 +519,16 @@
 
     &.ch5-dpad--type-default .direction-btn {
         &.up {
-            @include ch5-dpad-content-plus-top($commmonEdgeRadius, $ch5-dpad-default-default-background-color);
+            @include ch5-dpad-content-plus-top($ch5-dpad-common-edge-radius, $ch5-dpad-default-default-background-color);
         }
         &.left {
-            @include ch5-dpad-content-plus-left($commmonEdgeRadius, $ch5-dpad-default-default-background-color);
+            @include ch5-dpad-content-plus-left($ch5-dpad-common-edge-radius, $ch5-dpad-default-default-background-color);
         }
         &.right {
-            @include ch5-dpad-content-plus-right($commmonEdgeRadius, $ch5-dpad-default-default-background-color);
+            @include ch5-dpad-content-plus-right($ch5-dpad-common-edge-radius, $ch5-dpad-default-default-background-color);
         }
         &.down {
-            @include ch5-dpad-content-plus-bottom($commmonEdgeRadius, $ch5-dpad-default-default-background-color);
+            @include ch5-dpad-content-plus-bottom($ch5-dpad-common-edge-radius, $ch5-dpad-default-default-background-color);
         }
 
         &.ch5-dpad-button-up--pressed {
@@ -556,20 +552,20 @@
 
     .direction-btn {
         &.up span.dpad-btn-icon {
-            border-top-left-radius: $commmonEdgeRadius;
-            border-top-right-radius: $commmonEdgeRadius;
+            border-top-left-radius: $ch5-dpad-common-edge-radius;
+            border-top-right-radius: $ch5-dpad-common-edge-radius;
         }
         &.left span.dpad-btn-icon {
-            border-bottom-left-radius: $commmonEdgeRadius;
-            border-top-left-radius: $commmonEdgeRadius;
+            border-bottom-left-radius: $ch5-dpad-common-edge-radius;
+            border-top-left-radius: $ch5-dpad-common-edge-radius;
         }
         &.right span.dpad-btn-icon {
-            border-bottom-right-radius: $commmonEdgeRadius;
-            border-top-right-radius: $commmonEdgeRadius;
+            border-bottom-right-radius: $ch5-dpad-common-edge-radius;
+            border-top-right-radius: $ch5-dpad-common-edge-radius;
         }
         &.down span.dpad-btn-icon {
-            border-bottom-left-radius: $commmonEdgeRadius;
-            border-bottom-right-radius: $commmonEdgeRadius;
+            border-bottom-left-radius: $ch5-dpad-common-edge-radius;
+            border-bottom-right-radius: $ch5-dpad-common-edge-radius;
         }
     }
 
@@ -588,7 +584,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-            font-size: $labelFontSize;
+            font-size: $ch5-dpad-label-font-size;
             transform: rotate(-45deg);
             padding: 0 15%;
         }
@@ -801,72 +797,72 @@
 // Sizes
 .ch5-dpad {
     &.ch5-dpad--size-x-small  {
-        min-width: $xsmallDimension;
-        min-height: $xsmallDimension;
+        min-width: $ch5-dpad-xsmall-dimension;
+        min-height: $ch5-dpad-xsmall-dimension;
         .dpad-container {
-            min-width: $xsmallDimension;
-            min-height: $xsmallDimension;
-            width: $xsmallDimension;
-            height: $xsmallDimension;
+            min-width: $ch5-dpad-xsmall-dimension;
+            min-height: $ch5-dpad-xsmall-dimension;
+            width: $ch5-dpad-xsmall-dimension;
+            height: $ch5-dpad-xsmall-dimension;
         }
         &.ch5-dpad--shape-plus {
             .direction-btn {
                 span {
-                    line-height: calc(#{$xsmallDimension} / 3);
+                    line-height: calc(#{$ch5-dpad-xsmall-dimension} / 3);
                 }
             }
         }
     }
 
     &.ch5-dpad--size-small  {
-        min-width: $smallDimension;
-        min-height: $smallDimension;
+        min-width: $ch5-dpad-small-dimension;
+        min-height: $ch5-dpad-small-dimension;
         .dpad-container {
-            min-width: $smallDimension;
-            min-height: $smallDimension;
-            width: $smallDimension;
-            height: $smallDimension;
+            min-width: $ch5-dpad-small-dimension;
+            min-height: $ch5-dpad-small-dimension;
+            width: $ch5-dpad-small-dimension;
+            height: $ch5-dpad-small-dimension;
         }
         &.ch5-dpad--shape-plus {
             .direction-btn {
                 span {
-                    line-height: calc(#{$smallDimension} / 3);
+                    line-height: calc(#{$ch5-dpad-small-dimension} / 3);
                 }
             }
         }
     }
 
     &.ch5-dpad--size-large  {
-        min-width: $largeDimension;
-        min-height: $largeDimension;
+        min-width: $ch5-dpad-large-dimension;
+        min-height: $ch5-dpad-large-dimension;
         .dpad-container {
-            min-width: $largeDimension;
-            min-height: $largeDimension;
-            width: $largeDimension;
-            height: $largeDimension;
+            min-width: $ch5-dpad-large-dimension;
+            min-height: $ch5-dpad-large-dimension;
+            width: $ch5-dpad-large-dimension;
+            height: $ch5-dpad-large-dimension;
         }
         &.ch5-dpad--shape-plus {
             .direction-btn {
                 span {
-                    line-height: calc(#{$largeDimension} / 3);
+                    line-height: calc(#{$ch5-dpad-large-dimension} / 3);
                 }
             }
         }
     }
 
     &.ch5-dpad--size-x-large  {
-        min-width: $xlargeDimension;
-        min-height: $xlargeDimension;
+        min-width: $ch5-dpad-xlarge-dimension;
+        min-height: $ch5-dpad-xlarge-dimension;
         .dpad-container {
-            min-width: $xlargeDimension;
-            min-height: $xlargeDimension;
-            width: $xlargeDimension;
-            height: $xlargeDimension;
+            min-width: $ch5-dpad-xlarge-dimension;
+            min-height: $ch5-dpad-xlarge-dimension;
+            width: $ch5-dpad-xlarge-dimension;
+            height: $ch5-dpad-xlarge-dimension;
         }
         &.ch5-dpad--shape-plus {
             .direction-btn {
                 span {
-                    line-height: calc(#{$xlargeDimension} / 3);
+                    line-height: calc(#{$ch5-dpad-xlarge-dimension} / 3);
                 }
             }
         }
