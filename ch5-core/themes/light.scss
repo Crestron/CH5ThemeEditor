@@ -199,7 +199,7 @@ CH5-TEXT INPUT
 ============================================= */
 
 /// The text color of the textinput.
-$ch5-textinput-text-color: #4a4a4a !default;
+$ch5-textinput-text-color: #000000 !default;
 
 /// Set the color of text for the textinput
 $ch5-textinput-input-text-color: $ch5-textinput-text-color !default;
@@ -211,7 +211,7 @@ $ch5-textinput-icon-text-color: $success-background-color !default;
 $ch5-textinput-label-text-color: $ch5-textinput-text-color !default;
 
 // base border color
-$ch5-textinput-border-color: $danger-background-color !default;
+$ch5-textinput-border-color: #666666 !default;
 
 // border color for each element
 /// the color for the border of the textinput
@@ -299,13 +299,14 @@ $ch5-slider-target-size: 18px;
 $ch5-slider-connect-bg: #0099ff;
 $ch5-slider-background-lighten-percent: 30%;
 $ch5-slider-target-bg: transparent;
-$ch5-slider-target-border-color: #d3d3d3;
+$ch5-slider-target-border-color: #8f8f8f;
 $ch5-slider-target-border-style: solid;
 $ch5-slider-target-border-width: 1px;
 $ch5-slider-handle-bg: #fff;
-$ch5-slider-handle-border-color: #d9d9d9;
+$ch5-slider-handle-border-color: #8f8f8f;
 $ch5-slider-handle-border-style: solid;
 $ch5-slider-handle-border-width: 1px;
+$ch5-slider-pips-color: #8f8f8f;
 
 /* ===============================================
 CH5-LIST

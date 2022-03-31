@@ -25,15 +25,12 @@ ch5-textinput {
   color: $ch5-textinput-text-color;
 
   &__assets {
-
     display: flex;
     align-items: center;
     border: $ch5-textinput-input-border-width solid $ch5-textinput-input-border-color;
     border-radius: $ch5-textinput-input-border-radius;
-    box-shadow: 3px 3px 5px $ch5-textinput-input-box-shadow-color;
     height: 100%;
     width: 100%;
-
   }
 
   // text-transform

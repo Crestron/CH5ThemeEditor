@@ -12,109 +12,109 @@
 
 // Color system
 
-$default-background-color: #0073bf !default;
-$default-border-color: #003d66 !default;
+$default-background-color: #0099ff !default;
+$default-border-color: #0099ff !default;
 $default-font-color: #ffffff !default;
-$default-pressed-background-color: #0073bf !default;
-$default-pressed-border-color: #003d66 !default;
-$default-pressed-font-color: #f0fff0 !default;
-$default-selected-background-color: #005c99 !default;
-$default-selected-border-color: #003d66 !default;
-$default-selected-font-color: #f0fff0 !default;
-$default-disabled-background-color: #0073bf !default;
-$default-disabled-border-color: #003d66 !default;
+$default-pressed-background-color: #008ae6 !default;
+$default-pressed-border-color: #0099ff !default;
+$default-pressed-font-color: #ffffff !default;
+$default-selected-background-color: #0079c9 !default;
+$default-selected-border-color: #0099ff !default;
+$default-selected-font-color: #ffffff !default;
+$default-disabled-background-color: #004d80 !default;
+$default-disabled-border-color: #0099ff !default;
 $default-disabled-font-color: #ffffff !default;
 
-$primary-background-color: #17171a !default;
-$primary-border-color: #232323 !default;
-$primary-font-color: #fefefe !default;
-$primary-pressed-background-color: #5e5e66 !default;
-$primary-pressed-border-color: #232323 !default;
-$primary-pressed-font-color: #fefefe !default;
-$primary-selected-background-color: #3b3b40 !default;
-$primary-selected-border-color: #232323 !default;
-$primary-selected-font-color: #fefefe !default;
-$primary-disabled-background-color: #17171a !default;
-$primary-disabled-border-color: #232323 !default;
-$primary-disabled-font-color: #fefefe !default;
+$primary-background-color: #17171A !default;
+$primary-border-color: #F8F7F8 !default;
+$primary-font-color: #ffffff !default;
+$primary-pressed-background-color: #353539 !default;
+$primary-pressed-border-color: #F8F7F8 !default;
+$primary-pressed-font-color: #ffffff !default;
+$primary-selected-background-color: #29292E !default;
+$primary-selected-border-color: #F8F7F8 !default;
+$primary-selected-font-color: #ffffff !default;
+$primary-disabled-background-color: #616161 !default;
+$primary-disabled-border-color: #F8F7F8 !default;
+$primary-disabled-font-color: #ffffff !default;
 
-$info-background-color: #00838f !default;
-$info-border-color: #006069 !default;
-$info-font-color: #f0fff0 !default;
+$info-background-color: #00bcd4 !default;
+$info-border-color: #00bcd4 !default;
+$info-font-color: #ffffff !default;
 $info-pressed-background-color: #0097a7 !default;
-$info-pressed-border-color: #006069 !default;
-$info-pressed-font-color: #f0fff0 !default;
-$info-selected-background-color: #006069 !default;
-$info-selected-border-color: #006069 !default;
-$info-selected-font-color: #f0fff0 !default;
-$info-disabled-background-color: #00838f !default;
-$info-disabled-border-color: #006069 !default;
-$info-disabled-font-color: #f0fff0 !default;
+$info-pressed-border-color: #00bcd4 !default;
+$info-pressed-font-color: #ffffff !default;
+$info-selected-background-color: #0094A7 !default;
+$info-selected-border-color: #00bcd4 !default;
+$info-selected-font-color: #ffffff !default;
+$info-disabled-background-color: #006064 !default;
+$info-disabled-border-color: #00bcd4 !default;
+$info-disabled-font-color: #ffffff !default;
 
-$danger-background-color: #c62828 !default;
-$danger-border-color: #a12020 !default;
+$danger-background-color: #f44336 !default;
+$danger-border-color: #f44337 !default;
 $danger-font-color: #ffffff !default;
 $danger-pressed-background-color: #b71c1c !default;
-$danger-pressed-border-color: #a12020 !default;
+$danger-pressed-border-color: #f44337 !default;
 $danger-pressed-font-color: #ffffff !default;
-$danger-selected-background-color: #a12020 !default;
-$danger-selected-border-color: #a12020 !default;
+$danger-selected-background-color: #c62828 !default;
+$danger-selected-border-color: #f44337 !default;
 $danger-selected-font-color: #ffffff !default;
-$danger-disabled-background-color: #c62828 !default;
-$danger-disabled-border-color: #a12020 !default;
+$danger-disabled-background-color: #C1362B !default;
+$danger-disabled-border-color: #f44337 !default;
 $danger-disabled-font-color: #ffffff !default;
 
-$secondary-background-color: #5e5e66 !default;
-$secondary-border-color: #232323 !default;
-$secondary-font-color: #fefefe !default;
-$secondary-pressed-background-color: #3b3b40 !default;
-$secondary-pressed-border-color: #232323 !default;
-$secondary-pressed-font-color: #fefefe !default;
-$secondary-selected-background-color: #9898a6 !default;
-$secondary-selected-border-color: #232323 !default;
-$secondary-selected-font-color: #fefefe !default;
-$secondary-disabled-background-color: #5e5e66 !default;
-$secondary-disabled-border-color: #232323 !default;
-$secondary-disabled-font-color: #fefefe !default;
+$secondary-background-color: #5E5E66 !default;
+$secondary-border-color: #9e9e9e !default;
+$secondary-font-color: #ffffff !default;
+$secondary-pressed-background-color: #9e9e9e !default;
+$secondary-pressed-border-color: #9e9e9e !default;
+$secondary-pressed-font-color: #ffffff !default;
+$secondary-selected-background-color: #4A4A50 !default;
+$secondary-selected-border-color: #9e9e9e !default;
+$secondary-selected-font-color: #ffffff !default;
+$secondary-disabled-background-color: #616161 !default;
+$secondary-disabled-border-color: #9e9e9e !default;
+$secondary-disabled-font-color: #ffffff !default;
 
-$success-background-color: #2e7d32 !default;
-$success-border-color: #205723 !default;
+$success-background-color: #4caf50 !default;
+$success-border-color: #4caf50 !default;
 $success-font-color: #f0fff0 !default;
 $success-pressed-background-color: #388e3c !default;
-$success-pressed-border-color: #205723 !default;
+$success-pressed-border-color: #4caf50 !default;
 $success-pressed-font-color: #f0fff0 !default;
-$success-selected-background-color: #205723 !default;
-$success-selected-border-color: #205723 !default;
+$success-selected-background-color: #3C8A3F !default;
+$success-selected-border-color: #4caf50 !default;
 $success-selected-font-color: #f0fff0 !default;
-$success-disabled-background-color: #2e7d32 !default;
-$success-disabled-border-color: #205723 !default;
+$success-disabled-background-color: #1b5e20 !default;
+$success-disabled-border-color: #4caf50 !default;
 $success-disabled-font-color: #f0fff0 !default;
 
-$warning-background-color: #ff8f00 !default;
-$warning-border-color: #d97b00 !default;
+$warning-background-color: #FFC009 !default;
+$warning-border-color: #FFC009 !default;
 $warning-font-color: #333 !default;
-$warning-pressed-background-color: #ff6f00 !default;
-$warning-pressed-border-color: #d97b00 !default;
-$warning-pressed-font-color: #f0fff0 !default;
-$warning-selected-background-color: #d97b00 !default;
-$warning-selected-border-color: #d97b00 !default;
+$warning-pressed-background-color: #f7cd4f !default;
+$warning-pressed-border-color: #FFC009 !default;
+$warning-pressed-font-color: #333 !default;
+$warning-selected-background-color: #C99807 !default;
+$warning-selected-border-color: #FFC009 !default;
 $warning-selected-font-color: #333 !default;
-$warning-disabled-background-color: #ff8f00 !default;
-$warning-disabled-border-color: #d97b00 !default;
+$warning-disabled-background-color: #fcd251 !default;
+$warning-disabled-border-color: #FFC009 !default;
 $warning-disabled-font-color: #333 !default;
 
-$text-background-color: #343434 !default;
-$text-border-color: #333 !default;
-$text-font-color: #e0e0e0 !default;
-$text-pressed-background-color: #666666 !default;
-$text-pressed-border-color: #333 !default;
-$text-pressed-font-color: #e0e0e0 !default;
-$text-selected-background-color: #454545 !default;
-$text-selected-border-color: #333 !default;
-$text-selected-font-color: #e0e0e0 !default;
-$text-disabled-background-color: #343434 !default;
-$text-disabled-border-color: #333 !default;
-$text-disabled-font-color: #e0e0e0 !default;
+$text-background-color: #efefef !default;
+$text-border-color: #9E9E9E !default;
+$text-font-color: #6D6D6D !default;
+$text-pressed-background-color: #d7d4d4 !default;
+$text-pressed-border-color: #9E9E9E !default;
+$text-pressed-font-color: #6D6D6D !default;
+$text-selected-background-color: #BDBDBD !default;
+$text-selected-border-color: #9E9E9E !default;
+$text-selected-font-color: #6D6D6D !default;
+$text-disabled-background-color: rgb(172, 170, 170) !default;
+$text-disabled-border-color: #9E9E9E !default;
+$text-disabled-font-color: #6D6D6D !default;
 
 
 /* ===============================================
@@ -199,7 +199,7 @@ CH5-TEXT INPUT
 ============================================= */
 
 /// The text color of the textinput.
-$ch5-textinput-text-color: #4a4a4a !default;
+$ch5-textinput-text-color: #EFEFEF !default;
 
 /// Set the color of text for the textinput
 $ch5-textinput-input-text-color: $ch5-textinput-text-color !default;
@@ -211,7 +211,7 @@ $ch5-textinput-icon-text-color: $success-background-color !default;
 $ch5-textinput-label-text-color: $ch5-textinput-text-color !default;
 
 // base border color
-$ch5-textinput-border-color: $secondary-background-color !default;
+$ch5-textinput-border-color: $ch5-textinput-text-color !default;
 
 // border color for each element
 /// the color for the border of the textinput
@@ -298,14 +298,15 @@ CH5-SLIDER
 $ch5-slider-target-size: 18px;
 $ch5-slider-connect-bg: #0099ff;
 $ch5-slider-background-lighten-percent: 30%;
-$ch5-slider-target-bg: #2f2f33;
-$ch5-slider-target-border-color: #5e5e66;
+$ch5-slider-target-bg: #2F2F33;
+$ch5-slider-target-border-color: #EFEFEF;
 $ch5-slider-target-border-style: solid;
 $ch5-slider-target-border-width: 1px;
-$ch5-slider-handle-bg: #17171a;
-$ch5-slider-handle-border-color: #2f2f33;
+$ch5-slider-handle-bg: #EFEFEF;
+$ch5-slider-handle-border-color: #EFEFEF;
 $ch5-slider-handle-border-style: solid;
 $ch5-slider-handle-border-width: 1px;
+$ch5-slider-pips-color: #EFEFEF;
 
 /* ===============================================
 CH5-LIST
