@@ -14,7 +14,7 @@
 @import "./mixins";
 
 .ch5-keypad {
-    display: inline-flex;
+    display: inline-block; // Changing from inline-flex - identify if any issues
     min-width: $ch5-keypad-default-container-width;
     min-height: $ch5-keypad-default-container-height;
     width: $ch5-keypad-default-container-width;
@@ -260,7 +260,9 @@
     .keypad-container {
         .keypad-row {
             .keypad-btn {
-                border-radius: 0;
+                button {
+                    border-radius: 0;
+                }
             }
         }
     }
@@ -270,7 +272,9 @@
     .keypad-container {
         .keypad-row {
             .keypad-btn {
-                border-radius: 50%;
+                button {
+                    border-radius: 50%;
+                }
             }
         }
     }
@@ -280,7 +284,9 @@
     .keypad-container {
         .keypad-row {
             .keypad-btn {
-                border-radius: 10%;
+                button {
+                    border-radius: 10%;
+                }
             }
         }
     }
