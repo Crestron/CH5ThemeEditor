@@ -12,50 +12,36 @@
 
 @import "./variables";
 
-@mixin ch5-dpad-content($property-default-background-color, $property-default-font-color) {
+@mixin ch5-dpad-content($property-background-color, $property-font-color) {
     .ch5-dpad-child {
-        background-color: $property-default-background-color;
-        color: $property-default-font-color;
-    }
-
-    .center:active,
-    &.ch5-dpad--shape-plus .direction-btn:active span,
-    &.ch5-dpad--shape-circle .direction-btn:active {
-        background-color: $property-default-background-color;
-        z-index: 1;
+        background-color: $property-background-color;
+        color: $property-font-color;
     }
 }
 
-@mixin ch5-dpad-content--selected($property-selected-background-color, $property-selected-font-color) {
+@mixin ch5-dpad-content--selected($property-background-color, $property-font-color) {
     .ch5-dpad-child {
-        color: $property-selected-font-color;
-    }
-
-    .center:active {
-        background-color: $property-selected-background-color;
+        color: $property-font-color;
+        background-color: $property-background-color;
     }
 }
 
-@mixin ch5-dpad-content--pressed($property-pressed-background-color, $property-pressed-font-color) {
+@mixin ch5-dpad-content--pressed($property-background-color, $property-font-color) {
     &.ch5-dpad-child {
-        color: $property-pressed-font-color;
-        background-color: $property-pressed-background-color;
-    }
-    
-    .center:active {
-        background-color: $property-pressed-background-color;
+        color: $property-font-color;
+        background-color: $property-background-color;
     }
     &.direction-btn.up:after,
     &.direction-btn.down:before {
-        box-shadow: (-$ch5-dpad-common-edge-radius) 0 0 0 $property-pressed-background-color;
+        box-shadow: (-$ch5-dpad-common-edge-radius) 0 0 0 $property-background-color;
     }
     &.direction-btn.up:before,
     &.direction-btn.down:after {
-        box-shadow: $ch5-dpad-common-edge-radius 0 0 0 $property-pressed-background-color;
+        box-shadow: $ch5-dpad-common-edge-radius 0 0 0 $property-background-color;
     }
 }
 
-@mixin ch5-dpad-content-plus-top($property-common-edge-radius, $property-default-background-color) {
+@mixin ch5-dpad-content-plus-top($property-common-edge-radius, $property-background-color) {
     margin: 0 33.33%;
     border-top-left-radius: $property-common-edge-radius;
     border-top-right-radius: $property-common-edge-radius;
@@ -65,8 +51,8 @@
         border-radius: 0 0 $property-common-edge-radius 0;
         -moz-border-radius: 0 0 $property-common-edge-radius 0;
         -webkit-border-radius: 0 0 $property-common-edge-radius 0;
-        -webkit-box-shadow: $property-common-edge-radius 0 0 0 $property-default-background-color;
-        box-shadow: $property-common-edge-radius 0 0 0 $property-default-background-color;
+        -webkit-box-shadow: $property-common-edge-radius 0 0 0 $property-background-color;
+        box-shadow: $property-common-edge-radius 0 0 0 $property-background-color;
     }
     &:after {
         top: calc(100% - 20px);
@@ -74,8 +60,8 @@
         border-radius: 0 0 0 $property-common-edge-radius;
         -moz-border-radius: 0 0 0 $property-common-edge-radius;
         -webkit-border-radius: 0 0 0 $property-common-edge-radius;
-        -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0 $property-default-background-color;
-        box-shadow: (-$property-common-edge-radius) 0 0 0 $property-default-background-color;
+        -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0 $property-background-color;
+        box-shadow: (-$property-common-edge-radius) 0 0 0 $property-background-color;
     }
     span {
         border-top-left-radius: $property-common-edge-radius;
@@ -83,7 +69,7 @@
     }
 }
 
-@mixin ch5-dpad-content-plus-bottom($property-common-edge-radius, $property-default-background-color) {
+@mixin ch5-dpad-content-plus-bottom($property-common-edge-radius, $property-background-color) {
     margin: 0 33.33%;
     border-bottom-left-radius: $property-common-edge-radius;
     border-bottom-right-radius: $property-common-edge-radius;
@@ -93,8 +79,8 @@
         border-radius: $property-common-edge-radius 0 0 0;
         -moz-border-radius: $property-common-edge-radius 0 0 0;
         -webkit-border-radius: $property-common-edge-radius 0 0 0;
-        -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0 $property-default-background-color;
-        box-shadow: (-$property-common-edge-radius) 0 0 0 $property-default-background-color;
+        -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0 $property-background-color;
+        box-shadow: (-$property-common-edge-radius) 0 0 0 $property-background-color;
     }
     &:after {
         top: 0;
@@ -102,8 +88,8 @@
         border-radius: 0 $property-common-edge-radius 0 0;
         -moz-border-radius: 0 $property-common-edge-radius 0 0;
         -webkit-border-radius: 0 $property-common-edge-radius 0 0;
-        -webkit-box-shadow: $property-common-edge-radius 0 0 0 $property-default-background-color;
-        box-shadow: $property-common-edge-radius 0 0 0 $property-default-background-color;
+        -webkit-box-shadow: $property-common-edge-radius 0 0 0 $property-background-color;
+        box-shadow: $property-common-edge-radius 0 0 0 $property-background-color;
     }
     span {
         border-bottom-left-radius: $property-common-edge-radius;
@@ -111,7 +97,7 @@
     }
 }
 
-@mixin ch5-dpad-content-plus-left($property-common-edge-radius, $property-default-background-color) {
+@mixin ch5-dpad-content-plus-left($property-common-edge-radius, $property-background-color) {
     margin-right: calc(33% / 2);
     border-bottom-left-radius: $property-common-edge-radius;
     border-top-left-radius: $property-common-edge-radius;
@@ -121,7 +107,7 @@
     }
 }
 
-@mixin ch5-dpad-content-plus-right($property-common-edge-radius, $property-default-background-color) {
+@mixin ch5-dpad-content-plus-right($property-common-edge-radius, $property-background-color) {
     margin-left: calc(33% / 2);
     border-bottom-right-radius: $property-common-edge-radius;
     border-top-right-radius: $property-common-edge-radius;
@@ -146,6 +132,9 @@
         height: $ch5-dpad-default-dimension;
         flex-wrap: wrap;
         vertical-align: top;
+        .dpad-btn-icon {
+            font-size: $ch5-dpad-icon-font-size;
+        }
     }
     &[show="false"] {
         display: none;
@@ -211,7 +200,9 @@
         transform: translate(-50%, -50%);
         height: 34%;
         width: 34%;
-        font-size: 2rem;
+        .dpad-btn-label {
+            font-size: $ch5-dpad-label-font-size;
+        }
         overflow: hidden;
         z-index: 2;
         cursor: pointer;
@@ -220,7 +211,6 @@
             z-index: 2;
         }
         span {
-            font-size: $ch5-dpad-label-font-size;
             border-radius: 50%;
             text-align: center;
             background-repeat: no-repeat;
@@ -266,10 +256,10 @@
             position: absolute;
             background-color: transparent;
         }
-        &:hover {
-            position: relative;
-            z-index: 1;
-        }
+        // &:hover {
+        //     position: relative;
+        //     z-index: 1;
+        // }
         span {
             height: 100%;
             width: 100%;
@@ -295,7 +285,7 @@
         }
 
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-danger-pressed-background-color, $ch5-dpad-danger-pressed-font-color);
             // &::before {
             //     box-shadow: $ch5-dpad-common-edge-radius 0 0 0 lighten($ch5-dpad-danger-default-background-color, 10%);
             // }
@@ -304,18 +294,18 @@
             // }
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-danger-pressed-background-color, $ch5-dpad-danger-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-danger-pressed-background-color, $ch5-dpad-danger-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-danger-pressed-background-color, $ch5-dpad-danger-pressed-font-color);
         }
     }
     &.ch5-dpad--type-danger .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-danger-pressed-background-color, $ch5-dpad-danger-pressed-font-color);
         }
     }
 
@@ -334,21 +324,21 @@
         }
 
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-primary-default-background-color, $ch5-dpad-primary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-primary-pressed-background-color, $ch5-dpad-primary-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-primary-default-background-color, $ch5-dpad-primary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-primary-pressed-background-color, $ch5-dpad-primary-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-primary-default-background-color, $ch5-dpad-primary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-primary-pressed-background-color, $ch5-dpad-primary-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-primary-default-background-color, $ch5-dpad-primary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-primary-pressed-background-color, $ch5-dpad-primary-pressed-font-color);
         }
     }
     &.ch5-dpad--type-primary .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-primary-default-background-color, $ch5-dpad-primary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-primary-pressed-background-color, $ch5-dpad-primary-pressed-font-color);
         }
     }
 
@@ -367,21 +357,21 @@
         }
 
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-text-default-background-color, $ch5-dpad-text-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-text-pressed-background-color, $ch5-dpad-text-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-text-default-background-color, $ch5-dpad-text-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-text-pressed-background-color, $ch5-dpad-text-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-text-default-background-color, $ch5-dpad-text-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-text-pressed-background-color, $ch5-dpad-text-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-text-default-background-color, $ch5-dpad-text-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-text-pressed-background-color, $ch5-dpad-text-pressed-font-color);
         }
     }
     &.ch5-dpad--type-text .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-text-default-background-color, $ch5-dpad-text-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-text-pressed-background-color, $ch5-dpad-text-pressed-font-color);
         }
     }
 
@@ -400,21 +390,21 @@
         }
 
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-info-default-background-color, $ch5-dpad-info-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-info-pressed-background-color, $ch5-dpad-info-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-info-default-background-color, $ch5-dpad-info-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-info-pressed-background-color, $ch5-dpad-info-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-info-default-background-color, $ch5-dpad-info-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-info-pressed-background-color, $ch5-dpad-info-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-info-default-background-color, $ch5-dpad-info-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-info-pressed-background-color, $ch5-dpad-info-pressed-font-color);
         }
     }
     &.ch5-dpad--type-info .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-info-default-background-color, $ch5-dpad-info-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-info-pressed-background-color, $ch5-dpad-info-pressed-font-color);
         }
     }
 
@@ -433,21 +423,21 @@
         }
 
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-warning-default-background-color, $ch5-dpad-warning-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-warning-pressed-background-color, $ch5-dpad-warning-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-warning-default-background-color, $ch5-dpad-warning-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-warning-pressed-background-color, $ch5-dpad-warning-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-warning-default-background-color, $ch5-dpad-warning-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-warning-pressed-background-color, $ch5-dpad-warning-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-warning-default-background-color, $ch5-dpad-warning-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-warning-pressed-background-color, $ch5-dpad-warning-pressed-font-color);
         }
     }
     &.ch5-dpad--type-warning .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-warning-default-background-color, $ch5-dpad-warning-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-warning-pressed-background-color, $ch5-dpad-warning-pressed-font-color);
         }
     }
 
@@ -466,21 +456,21 @@
         }
 
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-success-default-background-color, $ch5-dpad-success-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-success-pressed-background-color, $ch5-dpad-success-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-success-default-background-color, $ch5-dpad-success-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-success-pressed-background-color, $ch5-dpad-success-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-success-default-background-color, $ch5-dpad-success-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-success-pressed-background-color, $ch5-dpad-success-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-success-default-background-color, $ch5-dpad-success-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-success-pressed-background-color, $ch5-dpad-success-pressed-font-color);
         }
     }
     &.ch5-dpad--type-success .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-success-default-background-color, $ch5-dpad-success-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-success-pressed-background-color, $ch5-dpad-success-pressed-font-color);
         }
     }
 
@@ -499,21 +489,21 @@
         }
 
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-secondary-default-background-color, $ch5-dpad-secondary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-secondary-pressed-background-color, $ch5-dpad-secondary-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-secondary-default-background-color, $ch5-dpad-secondary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-secondary-pressed-background-color, $ch5-dpad-secondary-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-secondary-default-background-color, $ch5-dpad-secondary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-secondary-pressed-background-color, $ch5-dpad-secondary-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-secondary-default-background-color, $ch5-dpad-secondary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-secondary-pressed-background-color, $ch5-dpad-secondary-pressed-font-color);
         }
     }
     &.ch5-dpad--type-secondary .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-secondary-default-background-color, $ch5-dpad-secondary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-secondary-pressed-background-color, $ch5-dpad-secondary-pressed-font-color);
         }
     }
 
@@ -532,21 +522,21 @@
         }
 
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-default-default-background-color, $ch5-dpad-default-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-default-pressed-background-color, $ch5-dpad-default-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-default-default-background-color, $ch5-dpad-default-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-default-pressed-background-color, $ch5-dpad-default-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-default-default-background-color, $ch5-dpad-default-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-default-pressed-background-color, $ch5-dpad-default-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-default-default-background-color, $ch5-dpad-default-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-default-pressed-background-color, $ch5-dpad-default-pressed-font-color);
         }    
     }
     &.ch5-dpad--type-default .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-default-default-background-color, $ch5-dpad-default-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-default-pressed-background-color, $ch5-dpad-default-pressed-font-color);
         }
     }
 
@@ -584,7 +574,6 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-            font-size: $ch5-dpad-label-font-size;
             transform: rotate(-45deg);
             padding: 0 15%;
         }
@@ -617,161 +606,161 @@
 
     &.ch5-dpad--type-danger .direction-btn {
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-danger-pressed-background-color, $ch5-dpad-danger-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-danger-pressed-background-color, $ch5-dpad-danger-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-danger-pressed-background-color, $ch5-dpad-danger-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-danger-pressed-background-color, $ch5-dpad-danger-pressed-font-color);
         }
     }
     &.ch5-dpad--type-danger .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-danger-pressed-background-color, $ch5-dpad-danger-pressed-font-color);
         }
     }
 
     &.ch5-dpad--type-primary .direction-btn {
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-primary-default-background-color, $ch5-dpad-primary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-primary-pressed-background-color, $ch5-dpad-primary-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-primary-default-background-color, $ch5-dpad-primary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-primary-pressed-background-color, $ch5-dpad-primary-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-primary-default-background-color, $ch5-dpad-primary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-primary-pressed-background-color, $ch5-dpad-primary-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-primary-default-background-color, $ch5-dpad-primary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-primary-pressed-background-color, $ch5-dpad-primary-pressed-font-color);
         }
     }
     &.ch5-dpad--type-primary .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-primary-default-background-color, $ch5-dpad-primary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-primary-pressed-background-color, $ch5-dpad-primary-pressed-font-color);
         }
     }
 
     &.ch5-dpad--type-text .direction-btn {
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-text-default-background-color, $ch5-dpad-text-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-text-pressed-background-color, $ch5-dpad-text-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-text-default-background-color, $ch5-dpad-text-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-text-pressed-background-color, $ch5-dpad-text-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-text-default-background-color, $ch5-dpad-text-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-text-pressed-background-color, $ch5-dpad-text-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-text-default-background-color, $ch5-dpad-text-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-text-pressed-background-color, $ch5-dpad-text-pressed-font-color);
         }
     }
     &.ch5-dpad--type-text .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-text-default-background-color, $ch5-dpad-text-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-text-pressed-background-color, $ch5-dpad-text-pressed-font-color);
         }
     }
 
     &.ch5-dpad--type-info .direction-btn {
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-info-default-background-color, $ch5-dpad-info-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-info-pressed-background-color, $ch5-dpad-info-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-info-default-background-color, $ch5-dpad-info-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-info-pressed-background-color, $ch5-dpad-info-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-info-default-background-color, $ch5-dpad-info-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-info-pressed-background-color, $ch5-dpad-info-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-info-default-background-color, $ch5-dpad-info-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-info-pressed-background-color, $ch5-dpad-info-pressed-font-color);
         }
     }
     &.ch5-dpad--type-info .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-info-default-background-color, $ch5-dpad-info-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-info-pressed-background-color, $ch5-dpad-info-pressed-font-color);
         }
     }
 
     &.ch5-dpad--type-warning .direction-btn {
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-warning-default-background-color, $ch5-dpad-warning-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-warning-pressed-background-color, $ch5-dpad-warning-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-warning-default-background-color, $ch5-dpad-warning-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-warning-pressed-background-color, $ch5-dpad-warning-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-warning-default-background-color, $ch5-dpad-warning-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-warning-pressed-background-color, $ch5-dpad-warning-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-warning-default-background-color, $ch5-dpad-warning-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-warning-pressed-background-color, $ch5-dpad-warning-pressed-font-color);
         }
     }
     &.ch5-dpad--type-warning .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-warning-default-background-color, $ch5-dpad-warning-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-warning-pressed-background-color, $ch5-dpad-warning-pressed-font-color);
         }
     }
 
     &.ch5-dpad--type-success .direction-btn {
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-success-default-background-color, $ch5-dpad-success-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-success-pressed-background-color, $ch5-dpad-success-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-success-default-background-color, $ch5-dpad-success-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-success-pressed-background-color, $ch5-dpad-success-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-success-default-background-color, $ch5-dpad-success-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-success-pressed-background-color, $ch5-dpad-success-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-success-default-background-color, $ch5-dpad-success-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-success-pressed-background-color, $ch5-dpad-success-pressed-font-color);
         }
     }
     &.ch5-dpad--type-success .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-success-default-background-color, $ch5-dpad-success-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-success-pressed-background-color, $ch5-dpad-success-pressed-font-color);
         }
     }
 
     &.ch5-dpad--type-secondary .direction-btn {
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-secondary-default-background-color, $ch5-dpad-secondary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-secondary-pressed-background-color, $ch5-dpad-secondary-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-secondary-default-background-color, $ch5-dpad-secondary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-secondary-pressed-background-color, $ch5-dpad-secondary-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-secondary-default-background-color, $ch5-dpad-secondary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-secondary-pressed-background-color, $ch5-dpad-secondary-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-secondary-default-background-color, $ch5-dpad-secondary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-secondary-pressed-background-color, $ch5-dpad-secondary-pressed-font-color);
         }
     }
     &.ch5-dpad--type-secondary .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-secondary-default-background-color, $ch5-dpad-secondary-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-secondary-pressed-background-color, $ch5-dpad-secondary-pressed-font-color);
         }
     }
 
     &.ch5-dpad--type-default .direction-btn {
         &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-default-default-background-color, $ch5-dpad-default-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-default-pressed-background-color, $ch5-dpad-default-pressed-font-color);
         }
         &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-default-default-background-color, $ch5-dpad-default-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-default-pressed-background-color, $ch5-dpad-default-pressed-font-color);
         }
         &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-default-default-background-color, $ch5-dpad-default-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-default-pressed-background-color, $ch5-dpad-default-pressed-font-color);
         }
         &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-default-default-background-color, $ch5-dpad-default-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-default-pressed-background-color, $ch5-dpad-default-pressed-font-color);
         }
     }
     &.ch5-dpad--type-default .center {
         &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($ch5-dpad-default-default-background-color, $ch5-dpad-default-default-font-color);
+            @include ch5-dpad-content--pressed($ch5-dpad-default-pressed-background-color, $ch5-dpad-default-pressed-font-color);
         }
     }
 }
