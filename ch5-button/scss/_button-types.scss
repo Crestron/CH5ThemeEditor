@@ -11,31 +11,23 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @mixin ch5-button-content($property-border-width, $property-border-style, $property-default-border-color, $property-default-background-color, $property-default-font-color) {
-  border: $property-border-width $property-border-style  $property-default-border-color;
+  border-style: $property-border-style;
+  border-width: $property-border-width;
+  border-color: $property-default-border-color;
   background-color: $property-default-background-color;
   color: $property-default-font-color;
-  fill: $property-default-font-color;
 }
 
 @mixin ch5-button-content--selected($property-selected-border-color, $property-selected-background-color, $property-selected-font-color) {
   border-color: $property-selected-border-color;
   background-color: $property-selected-background-color;
   color: $property-selected-font-color;
-  fill: $property-selected-font-color;
 }
 
 @mixin ch5-button-content--pressed($property-pressed-border-color, $property-pressed-background-color, $property-pressed-font-color) {
   border-color: $property-pressed-border-color;
   background-color: $property-pressed-background-color;
   color: $property-pressed-font-color;
-  fill: $property-pressed-font-color;
-}
-
-@mixin ch5-button-content--disabled($property-disabled-border-color, $property-disabled-background-color, $property-disabled-font-color) {
-  border-color: $property-disabled-border-color;
-  background-color: $property-disabled-background-color;
-  color: $property-disabled-font-color;
-  fill: $property-disabled-font-color;
 }
 
 /// Applied when type='text'
@@ -47,9 +39,6 @@
   }
   &.ch5-button--pressed {
     @include ch5-button-content--pressed($ch5-button-text-pressed-border-color, $ch5-button-text-pressed-background-color, $ch5-button-text-pressed-font-color);
-  }
-  &.ch5-button--disabled {
-    @include ch5-button-content--disabled($ch5-button-text-disabled-border-color, $ch5-button-text-disabled-background-color, $ch5-button-text-disabled-font-color);
   }
 }
 
@@ -63,9 +52,6 @@
   &.ch5-button--pressed {
     @include ch5-button-content--pressed($ch5-button-danger-pressed-border-color, $ch5-button-danger-pressed-background-color, $ch5-button-danger-pressed-font-color);
   }
-  &.ch5-button--disabled {
-    @include ch5-button-content--disabled($ch5-button-danger-disabled-border-color, $ch5-button-danger-disabled-background-color, $ch5-button-danger-disabled-font-color);
-  }
 }
 
 /// Applied when type='warning'
@@ -77,9 +63,6 @@
   }
   &.ch5-button--pressed {
     @include ch5-button-content--pressed($ch5-button-warning-pressed-border-color, $ch5-button-warning-pressed-background-color, $ch5-button-warning-pressed-font-color);
-  }
-  &.ch5-button--disabled {
-    @include ch5-button-content--disabled($ch5-button-warning-disabled-border-color, $ch5-button-warning-disabled-background-color, $ch5-button-warning-disabled-font-color);
   }
 }
 
@@ -93,9 +76,6 @@
   &.ch5-button--pressed {
     @include ch5-button-content--pressed($ch5-button-info-pressed-border-color, $ch5-button-info-pressed-background-color, $ch5-button-info-pressed-font-color);
   }
-  &.ch5-button--disabled {
-    @include ch5-button-content--disabled($ch5-button-info-disabled-border-color, $ch5-button-info-disabled-background-color, $ch5-button-info-disabled-font-color);
-  }
 }
 
 /// Applied when type='success'
@@ -107,9 +87,6 @@
   }
   &.ch5-button--pressed {
     @include ch5-button-content--pressed($ch5-button-success-pressed-border-color, $ch5-button-success-pressed-background-color, $ch5-button-success-pressed-font-color);
-  }
-  &.ch5-button--disabled {
-    @include ch5-button-content--disabled($ch5-button-success-disabled-border-color, $ch5-button-success-disabled-background-color, $ch5-button-success-disabled-font-color);
   }
 }
 
@@ -123,9 +100,6 @@
   &.ch5-button--pressed {
     @include ch5-button-content--pressed($ch5-button-default-pressed-border-color, $ch5-button-default-pressed-background-color, $ch5-button-default-pressed-font-color);
   }
-  &.ch5-button--disabled {
-    @include ch5-button-content--disabled($ch5-button-default-disabled-border-color, $ch5-button-default-disabled-background-color, $ch5-button-default-disabled-font-color);
-  }
 }
 
 /// Applied when type='primary'
@@ -137,9 +111,6 @@
   }
   &.ch5-button--pressed {
     @include ch5-button-content--pressed($ch5-button-primary-pressed-border-color, $ch5-button-primary-pressed-background-color, $ch5-button-primary-pressed-font-color);
-  }
-  &.ch5-button--disabled {
-    @include ch5-button-content--disabled($ch5-button-primary-disabled-border-color, $ch5-button-primary-disabled-background-color, $ch5-button-primary-disabled-font-color);
   }
 }
 
@@ -153,53 +124,5 @@
   &.ch5-button--pressed {
     @include ch5-button-content--pressed($ch5-button-secondary-pressed-border-color, $ch5-button-secondary-pressed-background-color, $ch5-button-secondary-pressed-font-color);
   }
-  &.ch5-button--disabled {
-    @include ch5-button-content--disabled($ch5-button-secondary-disabled-border-color, $ch5-button-secondary-disabled-background-color, $ch5-button-secondary-disabled-font-color);
-  }
 }
-
-// $button-types: (
-//   "danger":  $ch5-button-danger-border-width,
-//   "text":  $ch5-button-danger-border-width,
-//   "info":  $ch5-button-danger-border-width,
-//   "warning":  $ch5-button-danger-border-width,
-//   "default":  $ch5-button-danger-border-width,
-//   "primary":  $ch5-button-danger-border-width,
-//   "secondary":  $ch5-button-danger-border-width
-// );
-
-// @each $button-type, $button-value in $button-types {
-//   /// Applied when type='#{$button-type}'
-//   .ch5-button--#{$button-type} {
-//     // border: #{$button-value};
-//     // border: $ch5-button-#{$button-type}-border-width $ch5-button-#{$button-type}-border-style $ch5-button-#{$button-type}-default-border-color;
-//     // background-color: $ch5-button-#{$button-type}-default-background-color;
-//     // color: $ch5-button-#{$button-type}-default-font-color;
-//     // fill: $ch5-button-#{$button-type}-default-font-color;
-
-//     // /// Applied when selected signal is applied
-//     // &.ch5-button--selected {
-//     //   border-color: $ch5-button-#{$button-type}-selected-border-color;
-//     //   background-color: $ch5-button-#{$button-type}-selected-background-color;
-//     //   color: $ch5-button-#{$button-type}-selected-font-color;
-//     //   fill: $ch5-button-#{$button-type}-selected-font-color;
-//     // }
-
-//     // /// Applied between press and release events
-//     // &.ch5-button--pressed {
-//     //   border-color: $ch5-button-#{$button-type}-pressed-border-color;
-//     //   background-color: $ch5-button-#{$button-type}-pressed-background-color;
-//     //   color: $ch5-button-#{$button-type}-pressed-font-color;
-//     //   fill: $ch5-button-#{$button-type}-pressed-font-color;
-//     // }
-
-//     // /// Applied when the button is disabled
-//     // &.ch5-button--disabled {
-//     //   border-color: $ch5-button-#{$button-type}-disabled-border-color;
-//     //   background-color: $ch5-button-#{$button-type}-disabled-background-color;
-//     //   color: $ch5-button-#{$button-type}-disabled-font-color;
-//     //   fill: $ch5-button-#{$button-type}-disabled-font-color;
-//     // }
-//   }
-// }
 
