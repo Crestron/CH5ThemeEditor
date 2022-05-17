@@ -60,8 +60,6 @@ ch5-button {
       display: inline-flex;
       align-items: center;
       justify-content: space-between;
-      line-height: $ch5-button-content-line-height;
-      padding: $ch5-button-padding;
     }
   }
 
@@ -78,6 +76,13 @@ ch5-button {
 
 ch5-button[hidden] {
   display: none;
+}
+
+.ch5-button { 
+  .cb-btn {
+    line-height: $ch5-button-content-line-height;
+    padding: $ch5-button-padding;
+  }
 }
 
 .ch5-button,
@@ -164,7 +169,6 @@ ch5-button[hidden] {
   .ch5-button--img {
     vertical-align: middle;
     color: inherit;
-    fill: inherit;
     height: $ch5-button-img-height;
     width: $ch5-button-img-width;
   }
