@@ -11,26 +11,35 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// Variables below
-$ch5-keypad-default-container-width: 270px;
-$ch5-keypad-default-container-height: 352.2px;
-$ch5-keypad-default-container-height-extra: 450px;
-$ch5-keypad-cell-dimension: 50px;
-
-$ch5-keypad-xsmall-container-width: 207px;
-$ch5-keypad-xsmall-container-height: 270px;
-$ch5-keypad-xsmall-container-height-extra: 345px;
+$ch5-keypad-x-small-container-width: 207px;
+$ch5-keypad-x-small-container-height: 270px;
+$ch5-keypad-x-small-container-height-extra: 345px;
+$ch5-keypad-x-small-font-size-major: 1.8rem;
+$ch5-keypad-x-small-font-size-minor: 0.65rem;
 
 $ch5-keypad-small-container-width: 250px;
 $ch5-keypad-small-container-height: 326.1px;
 $ch5-keypad-small-container-height-extra: 416.7px;
+$ch5-keypad-small-font-size-major: 2rem;
+$ch5-keypad-small-font-size-minor: 0.75rem;
+
+$ch5-keypad-regular-container-width: 270px;
+$ch5-keypad-regular-container-height: 352.2px;
+$ch5-keypad-regular-container-height-extra: 450px;
+$ch5-keypad-regular-font-size-major: 2.4rem;
+$ch5-keypad-regular-font-size-minor: 0.85rem;
 
 $ch5-keypad-large-container-width: 300px;
 $ch5-keypad-large-container-height: 391.35px;
 $ch5-keypad-large-container-height-extra: 500px;
+$ch5-keypad-large-font-size-major: 2.8rem;
+$ch5-keypad-large-font-size-minor: 0.95rem;
 
-$ch5-keypad-xlarge-container-width: 320px;
-$ch5-keypad-xlarge-container-height: 417.45px;
-$ch5-keypad-xlarge-container-height-extra: 533.4px;
+$ch5-keypad-x-large-container-width: 320px;
+$ch5-keypad-x-large-container-height: 417.45px;
+$ch5-keypad-x-large-container-height-extra: 533.4px;
+$ch5-keypad-x-large-font-size-major: 3.0rem;
+$ch5-keypad-x-large-font-size-minor: 1.05rem;
 
 // ------------------------------------------------------
 
