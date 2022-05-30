@@ -186,7 +186,7 @@ ch5-button[stretch="both"] {
   }
   .ch5-button__checkbox--checked:before,
   .ch5-button__checkbox--unchecked:before {
-    font-size: $ch5-button-size;
+    font-size: $ch5-button-font-size;
   }
   @include ch5-button-set-icon-classes($ch5-button-font-size, $ch5-button-icon-color, $ch5-button-icon-font-size);
 }
