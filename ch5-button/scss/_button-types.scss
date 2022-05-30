@@ -10,14 +10,6 @@
 /// @group ch5-button
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@mixin ch5-button-content($property-border-width, $property-border-style, $property-default-border-color, $property-default-background-color, $property-default-font-color) {
-  border-style: $property-border-style;
-  border-width: $property-border-width;
-  border-color: $property-default-border-color;
-  background-color: $property-default-background-color;
-  color: $property-default-font-color;
-}
-
 @mixin ch5-button-content--selected($property-selected-border-color, $property-selected-background-color, $property-selected-font-color) {
   border-color: $property-selected-border-color;
   background-color: $property-selected-background-color;
@@ -28,6 +20,14 @@
   border-color: $property-pressed-border-color;
   background-color: $property-pressed-background-color;
   color: $property-pressed-font-color;
+}
+
+@mixin ch5-button-content($property-border-width, $property-border-style, $property-default-border-color, $property-default-background-color, $property-default-font-color) {
+  border-style: $property-border-style;
+  border-width: $property-border-width;
+  border-color: $property-default-border-color;
+  background-color: $property-default-background-color;
+  color: $property-default-font-color;
 }
 
 /// Applied when type='text'

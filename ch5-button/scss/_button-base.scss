@@ -1,0 +1,64 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ch5-button {
+  display: inline-block;
+  pointer-events: none;
+  vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
+
+  .ch5-button {
+    display: flex;
+    max-width: 100%;
+
+    button {
+      cursor: pointer;
+    }
+
+    button,
+    .ch5-button--label {
+      background-color: transparent;
+      border: none;
+      color: inherit;
+      &:focus {
+        outline: none;
+      }
+    }
+    .ch5-button--label {
+      display: block;
+      @include text-truncate;
+    }
+    .cb-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  div {
+    cursor: pointer;
+    pointer-events: all;
+  }
+
+  .ch5-button--ios-label {
+    flex: none;
+    height: 100%;
+  }
+}
+
+ch5-button[hidden] {
+  display: none;
+}
+
+.ch5-button--disabled {
+  pointer-events: none;
+  opacity: $ch5-button-disabled-opacity;
+}
