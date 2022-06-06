@@ -30,15 +30,20 @@
 		}
 	}
 
-	&[showextrabutton="true"],
-	&[usecontractforextrabuttonshow="true"] {
+	&.ch5-keypad--for-extra-button {
 		height: $ch5-keypad-regular-container-height-extra;
+
 		.keypad-container {
 			height: $ch5-keypad-regular-container-height-extra;
 			min-width: $ch5-keypad-regular-container-width;
 			min-height: $ch5-keypad-regular-container-height-extra;
+
 			.keypad-row {
-				flex: 0 1 18%;
+				flex: 1 1;
+
+				.keypad-btn.special-center {
+					width: calc(33.334% - 4px);
+				}
 
 				.keypad-btn.special-center button {
 					color: $ch5-keypad-success-default-font-color;
@@ -51,6 +56,7 @@
 					background-color: $ch5-keypad-success-pressed-background-color;
 					border: 1px solid $ch5-keypad-success-pressed-border-color;
 				}
+
 				.keypad-btn.empty-btn {
 					display: none;
 				}
@@ -204,24 +210,29 @@
 
 .keypad-container {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	width: $ch5-keypad-regular-container-width;
 	height: $ch5-keypad-regular-container-height;
 	min-width: $ch5-keypad-regular-container-width;
 	min-height: $ch5-keypad-regular-container-height;
 	flex-direction: column;
+	gap: 6px;
+	padding: 6px;
 }
 
 .keypad-row {
 	display: flex;
-	flex: 0 1 23%;
+	flex: 1 1;
 	color: #fff;
-	justify-content: space-evenly;
+	gap: 6px;
+	justify-content: center;
+
 	.keypad-btn {
 		cursor: pointer;
 		display: flex;
-		width: 30%;
+		width: 33.3%;
 		overflow: hidden;
+
 		button {
 			display: flex;
 			height: 100%;
@@ -231,13 +242,16 @@
 			outline: none !important;
 			color: inherit;
 			cursor: pointer;
+
 			span {
 				white-space: pre;
 				color: inherit;
 			}
+
 			.label-major {
 				font-weight: 300;
 			}
+
 			.label-minor {
 				margin-top: 0;
 				letter-spacing: 0.1rem;
@@ -286,23 +300,6 @@
 			}
 		}
 	}
-}
-
-.ch5-keypad.ch5-keypad--stretch-both {
-	height: 100%;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-}
-
-.ch5-keypad.ch5-keypad--stretch-height {
-	height: 100%;
-	align-items: center;
-}
-
-.ch5-keypad.ch5-keypad--stretch-width {
-	width: 100%;
-	justify-content: center;
 }
 
 // sizes
@@ -357,4 +354,3 @@
 		);
 	}
 }
-

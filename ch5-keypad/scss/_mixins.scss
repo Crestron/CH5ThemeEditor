@@ -58,9 +58,9 @@
 		height: $property-container-height;
 	}
 
-	&[showextrabutton="true"],
-	&[usecontractforextrabuttonshow="true"] {
+	&.ch5-keypad--for-extra-button {
 		height: $property-container-height-extra;
+
 		.keypad-container {
 			height: $property-container-height-extra;
 			min-width: $property-container-width;
@@ -80,5 +80,22 @@
 				}
 			}
 		}
+	}
+
+	&.ch5-keypad.ch5-keypad--stretch-both {
+		height: 100%;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&.ch5-keypad.ch5-keypad--stretch-height {
+		height: 100%;
+		align-items: center;
+	}
+
+	&.ch5-keypad.ch5-keypad--stretch-width {
+		width: 100%;
+		justify-content: center;
 	}
 }
