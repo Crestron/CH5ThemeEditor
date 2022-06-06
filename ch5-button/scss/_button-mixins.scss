@@ -34,7 +34,7 @@
   }
 }
 
-@mixin ch5-button-size-set($property-size, $property-font-size, $property-font-style, $property-font-weight, $property-size, $property-icon-color, $property-icon-font-size) {
+@mixin ch5-button-size-set($property-size, $property-font-size, $property-font-style, $property-font-weight, $property-icon-color, $property-icon-font-size) {
   .cb-btn {
     width: $property-size * 2;
     height: $property-size;
