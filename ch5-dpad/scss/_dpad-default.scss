@@ -131,7 +131,7 @@
         vertical-align: top;
     }
 
-    &[disabled] {
+    &.ch5-disabled {
         pointer-events: none;
         opacity: .5;
 
@@ -140,8 +140,8 @@
         }
     }
 
-    &:not([disabled]) {
-        .ch5-dpad-child[disabled] {
+    &:not(.ch5-disabled) {
+        .ch5-dpad-child.ch5-disabled {
             opacity: .5;
             pointer-events: none;
         }

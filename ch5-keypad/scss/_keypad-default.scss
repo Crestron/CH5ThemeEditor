@@ -14,14 +14,14 @@
 @import "./mixins";
 
 .ch5-keypad {
-	display: inline-block; // Changing from inline-flex - identify if any issues
+	display: inline-block;
 	min-width: $ch5-keypad-regular-container-width;
 	min-height: $ch5-keypad-regular-container-height;
 	width: $ch5-keypad-regular-container-width;
 	height: $ch5-keypad-regular-container-height;
 	vertical-align: top;
 
-	&[disabled] {
+	&.ch5-disabled {
 		opacity: 0.5;
 		pointer-events: none;
 		cursor: default;
