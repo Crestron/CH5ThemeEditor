@@ -123,10 +123,12 @@
     .dpad-container {
         position: relative;
         display: flex;
+        min-width: $ch5-dpad-default-dimension;
+        min-height: $ch5-dpad-default-dimension;
+        width: $ch5-dpad-default-dimension;
+        height: $ch5-dpad-default-dimension;
         flex-wrap: wrap;
         vertical-align: top;
-
-
     }
 
     &[disabled] {
