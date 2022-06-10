@@ -45,6 +45,7 @@
 
 @mixin ch5-dpad-content-plus-top($property-common-edge-radius, $property-background-color) {
     margin: 0 33.33%;
+
     border-top-left-radius: $property-common-edge-radius;
     border-top-right-radius: $property-common-edge-radius;
 
@@ -123,8 +124,6 @@
     .dpad-container {
         position: relative;
         display: flex;
-        min-width: $ch5-dpad-default-dimension;
-        min-height: $ch5-dpad-default-dimension;
         width: $ch5-dpad-default-dimension;
         height: $ch5-dpad-default-dimension;
         flex-wrap: wrap;
@@ -596,28 +595,6 @@
         }
     }
 
-    .direction-btn {
-        &.up span.dpad-btn-icon {
-            border-top-left-radius: $ch5-dpad-common-edge-radius;
-            border-top-right-radius: $ch5-dpad-common-edge-radius;
-        }
-
-        &.left span.dpad-btn-icon {
-            border-bottom-left-radius: $ch5-dpad-common-edge-radius;
-            border-top-left-radius: $ch5-dpad-common-edge-radius;
-        }
-
-        &.right span.dpad-btn-icon {
-            border-bottom-right-radius: $ch5-dpad-common-edge-radius;
-            border-top-right-radius: $ch5-dpad-common-edge-radius;
-        }
-
-        &.down span.dpad-btn-icon {
-            border-bottom-left-radius: $ch5-dpad-common-edge-radius;
-            border-bottom-right-radius: $ch5-dpad-common-edge-radius;
-        }
-    }
-
 }
 
 .ch5-dpad.ch5-dpad--shape-circle {
@@ -868,18 +845,14 @@
 .ch5-dpad.ch5-dpad--stretch-both {
     height: 100%;
     width: 100%;
-    justify-content: center;
-    align-items: center;
 }
 
 .ch5-dpad.ch5-dpad--stretch-height {
     height: 100%;
-    align-items: center;
 }
 
 .ch5-dpad.ch5-dpad--stretch-width {
     width: 100%;
-    justify-content: center;
 }
 
 // Sizes
@@ -889,8 +862,6 @@
         min-height: $ch5-dpad-xsmall-dimension;
 
         .dpad-container {
-            min-width: $ch5-dpad-xsmall-dimension;
-            min-height: $ch5-dpad-xsmall-dimension;
             width: $ch5-dpad-xsmall-dimension;
             height: $ch5-dpad-xsmall-dimension;
 
@@ -905,6 +876,26 @@
                     line-height: calc(#{$ch5-dpad-xsmall-dimension} / 3);
                 }
             }
+
+            .direction-btn.up {
+                border-top-left-radius: $ch5-dpad-x-small-edge-radius;
+                border-top-right-radius: $ch5-dpad-x-small-edge-radius;
+            }
+
+            .direction-btn.left {
+                border-bottom-left-radius: $ch5-dpad-x-small-edge-radius;
+                border-top-left-radius: $ch5-dpad-x-small-edge-radius;
+            }
+
+            .direction-btn.right {
+                border-bottom-right-radius: $ch5-dpad-x-small-edge-radius;
+                border-top-right-radius: $ch5-dpad-x-small-edge-radius;
+            }
+
+            .direction-btn.up {
+                border-bottom-left-radius: $ch5-dpad-x-small-edge-radius;
+                border-bottom-right-radius: $ch5-dpad-x-small-edge-radius;
+            }
         }
     }
 
@@ -913,8 +904,6 @@
         min-height: $ch5-dpad-small-dimension;
 
         .dpad-container {
-            min-width: $ch5-dpad-small-dimension;
-            min-height: $ch5-dpad-small-dimension;
             width: $ch5-dpad-small-dimension;
             height: $ch5-dpad-small-dimension;
 
@@ -937,8 +926,6 @@
         min-height: $ch5-dpad-large-dimension;
 
         .dpad-container {
-            min-width: $ch5-dpad-large-dimension;
-            min-height: $ch5-dpad-large-dimension;
             width: $ch5-dpad-large-dimension;
             height: $ch5-dpad-large-dimension;
 
@@ -961,8 +948,6 @@
         min-height: $ch5-dpad-xlarge-dimension;
 
         .dpad-container {
-            min-width: $ch5-dpad-xlarge-dimension;
-            min-height: $ch5-dpad-xlarge-dimension;
             width: $ch5-dpad-xlarge-dimension;
             height: $ch5-dpad-xlarge-dimension;
 
