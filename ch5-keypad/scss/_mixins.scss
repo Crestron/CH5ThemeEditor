@@ -10,11 +10,9 @@
 /// @group ch5-keypad-mixins
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@mixin ch5-keypad-content(
-	$property-default-background-color,
+@mixin ch5-keypad-content($property-default-background-color,
 	$property-default-border-color,
-	$property-default-font-color
-) {
+	$property-default-font-color) {
 	.keypad-row {
 		color: $property-default-font-color;
 		.keypad-btn {
@@ -26,11 +24,9 @@
 	}
 }
 
-@mixin ch5-keypad-content--pressed(
-	$property-pressed-background-color,
+@mixin ch5-keypad-content--pressed($property-pressed-background-color,
 	$property-pressed-border-color,
-	$property-pressed-font-color
-) {
+	$property-pressed-font-color) {
 	&.keypad-btn {
 		button {
 			background-color: $property-pressed-background-color;
@@ -40,20 +36,15 @@
 	}
 }
 
-@mixin ch5-keypad-fonts-sizes(
-	$property-container-width,
+@mixin ch5-keypad-fonts-sizes($property-container-width,
 	$property-container-height,
 	$property-container-height-extra,
 	$property-container-font-major,
-	$property-container-font-minor
-) {
-	min-width: $property-container-width;
-	min-height: $property-container-height;
+	$property-container-font-minor) {
 	width: $property-container-width;
 	height: $property-container-height;
+
 	.keypad-container {
-		min-width: $property-container-width;
-		min-height: $property-container-height;
 		width: $property-container-width;
 		height: $property-container-height;
 	}
@@ -64,7 +55,6 @@
 		.keypad-container {
 			height: $property-container-height-extra;
 			min-width: $property-container-width;
-			min-height: $property-container-height-extra;
 		}
 	}
 
@@ -85,17 +75,13 @@
 	&.ch5-keypad.ch5-keypad--stretch-both {
 		height: 100%;
 		width: 100%;
-		justify-content: center;
-		align-items: center;
 	}
 
 	&.ch5-keypad.ch5-keypad--stretch-height {
 		height: 100%;
-		align-items: center;
 	}
 
 	&.ch5-keypad.ch5-keypad--stretch-width {
 		width: 100%;
-		justify-content: center;
 	}
 }
