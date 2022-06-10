@@ -15,8 +15,6 @@
 
 .ch5-keypad {
 	display: inline-block;
-	min-width: $ch5-keypad-regular-container-width;
-	min-height: $ch5-keypad-regular-container-height;
 	width: $ch5-keypad-regular-container-width;
 	height: $ch5-keypad-regular-container-height;
 	vertical-align: top;
@@ -36,7 +34,6 @@
 		.keypad-container {
 			height: $ch5-keypad-regular-container-height-extra;
 			min-width: $ch5-keypad-regular-container-width;
-			min-height: $ch5-keypad-regular-container-height-extra;
 
 			.keypad-row {
 				flex: 1 1;
@@ -55,10 +52,6 @@
 					color: $ch5-keypad-success-pressed-font-color;
 					background-color: $ch5-keypad-success-pressed-background-color;
 					border: 1px solid $ch5-keypad-success-pressed-border-color;
-				}
-
-				.keypad-btn.empty-btn {
-					display: none;
 				}
 			}
 		}
@@ -213,8 +206,6 @@
 	justify-content: center;
 	width: $ch5-keypad-regular-container-width;
 	height: $ch5-keypad-regular-container-height;
-	min-width: $ch5-keypad-regular-container-width;
-	min-height: $ch5-keypad-regular-container-height;
 	flex-direction: column;
 	gap: 6px;
 	padding: 6px;

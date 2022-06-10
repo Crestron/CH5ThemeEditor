@@ -918,6 +918,26 @@
                     line-height: calc(#{$ch5-dpad-small-dimension} / 3);
                 }
             }
+
+            .direction-btn.up {
+                border-top-left-radius: $ch5-dpad-small-edge-radius;
+                border-top-right-radius: $ch5-dpad-small-edge-radius;
+            }
+
+            .direction-btn.left {
+                border-bottom-left-radius: $ch5-dpad-small-edge-radius;
+                border-top-left-radius: $ch5-dpad-small-edge-radius;
+            }
+
+            .direction-btn.right {
+                border-bottom-right-radius: $ch5-dpad-small-edge-radius;
+                border-top-right-radius: $ch5-dpad-small-edge-radius;
+            }
+
+            .direction-btn.up {
+                border-bottom-left-radius: $ch5-dpad-small-edge-radius;
+                border-bottom-right-radius: $ch5-dpad-small-edge-radius;
+            }
         }
     }
 
@@ -940,6 +960,26 @@
                     line-height: calc(#{$ch5-dpad-large-dimension} / 3);
                 }
             }
+
+            .direction-btn.up {
+                border-top-left-radius: $ch5-dpad-large-edge-radius;
+                border-top-right-radius: $ch5-dpad-large-edge-radius;
+            }
+
+            .direction-btn.left {
+                border-bottom-left-radius: $ch5-dpad-large-edge-radius;
+                border-top-left-radius: $ch5-dpad-large-edge-radius;
+            }
+
+            .direction-btn.right {
+                border-bottom-right-radius: $ch5-dpad-large-edge-radius;
+                border-top-right-radius: $ch5-dpad-large-edge-radius;
+            }
+
+            .direction-btn.up {
+                border-bottom-left-radius: $ch5-dpad-large-edge-radius;
+                border-bottom-right-radius: $ch5-dpad-large-edge-radius;
+            }
         }
     }
 
@@ -961,6 +1001,26 @@
                 span {
                     line-height: calc(#{$ch5-dpad-xlarge-dimension} / 3);
                 }
+            }
+
+            .direction-btn.up {
+                border-top-left-radius: $ch5-dpad-x-large-edge-radius;
+                border-top-right-radius: $ch5-dpad-x-large-edge-radius;
+            }
+
+            .direction-btn.left {
+                border-bottom-left-radius: $ch5-dpad-x-large-edge-radius;
+                border-top-left-radius: $ch5-dpad-x-large-edge-radius;
+            }
+
+            .direction-btn.right {
+                border-bottom-right-radius: $ch5-dpad-x-large-edge-radius;
+                border-top-right-radius: $ch5-dpad-x-large-edge-radius;
+            }
+
+            .direction-btn.up {
+                border-bottom-left-radius: $ch5-dpad-x-large-edge-radius;
+                border-bottom-right-radius: $ch5-dpad-x-large-edge-radius;
             }
         }
     }
