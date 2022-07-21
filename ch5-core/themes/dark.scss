@@ -199,7 +199,7 @@ CH5-TEXT INPUT
 ============================================= */
 
 /// The text color of the textinput.
-$ch5-textinput-text-color: #EFEFEF !default;
+$ch5-textinput-text-color: #121212 !default; // dark grey on white background
 
 /// Set the color of text for the textinput
 $ch5-textinput-input-text-color: $ch5-textinput-text-color !default;
@@ -225,7 +225,7 @@ CH5-TOGGLE
 $ch5-toggle-handle-checked-color: #3aa64e !default;
 
 /// The text color of the label
-$ch5-toggle-label-font-color: #efefef !default;
+$ch5-toggle-label-font-color: #121212 !default; // dark grey on white background
 /// the text color of the on|off label
 $ch5-toggle-text-font-color: #797979 !default;
 /// the color of the on|off icon

@@ -36,9 +36,9 @@ function updateLayoutStyle(selectedTheme) {
 
 function changeTheme(val) {
   localStorage.setItem('THEME', val);
-  var selctedTheme = val.toLowerCase();
-  var themeFileName = `css/${selctedTheme}-theme.css`;
-  updateLayoutStyle(selctedTheme);
+  var selectedTheme = val.toLowerCase();
+  var themeFileName = `css/${selectedTheme}-theme.css`;
+  updateLayoutStyle(selectedTheme);
   loadCssFile(themeFileName);
 }
 
