@@ -20,13 +20,13 @@ function updateLayoutStyle(selectedTheme) {
   var mainWrapper = document.getElementById("mainSectionWrapper");
   var h3Titles = [...document.getElementsByTagName("h3")];
   var header = document.getElementById("layoutHeader");
-  
-  mainWrapper.style.backgroundColor = "#fefefe";
+
+  mainWrapper.style.backgroundColor = "#000";
   h3Titles.map((h3Ele) => { return h3Ele.style.color = "#000"; });
-  header.style.backgroundColor = "#000";
+  header.style.backgroundColor = "#efefef";
   if (selectedTheme === "light") {
-    mainWrapper.style.backgroundColor = "#000";
-    header.style.backgroundColor = "#efefef";
+    mainWrapper.style.backgroundColor = "#fefefe";
+    header.style.backgroundColor = "#000";
     h3Titles.map((h3Ele) => { return h3Ele.style.color = "#fff"; });
   }
   else if (selectedTheme === "high-contrast") {
@@ -80,7 +80,7 @@ function getThemeInfo() {
       } else {
         optionView += `<option value="${themeValue}">${capitalize(themeValue)}</option>`;
       }
-      
+
     });
     var getSelect = document.getElementById("changeThemeId");
     getSelect.innerHTML = optionView;
