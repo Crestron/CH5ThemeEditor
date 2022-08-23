@@ -10,10 +10,10 @@
 /// @group ch5-triggerview
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import './scss/_variables';
+@import "./scss/_variables";
 
 ch5-triggerview {
-    --ch5-triggerview-gap: #{$ch5-triggerview-gap} ;
+    --ch5-triggerview-gap: #{$ch5-triggerview-gap};
     --ch5-triggerview-background-color: #{$ch5-triggerview-background-color};
     --ch5-triggerview-slide-min-height: #{$ch5-triggerview-slide-min-height};
     --ch5-triggerview-slide-max-height: #{$ch5-triggerview-slide-max-height};
@@ -25,13 +25,28 @@ ch5-triggerview {
     font-style: $ch5-triggerview-font-style;
     font-weight: $ch5-triggerview-font-weight;
 
+    .swiper-container, .swiper {
+        width: 100%;
+        height: 100%;
+    }
     .swiper-wrapper {
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        -o-transition-property: transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
         transition-timing-function: $ch5-triggerview-transition-timing-function;
     }
+    .slider-full-width-page {
+        width: 100%;
+    }
 }
-
 
 .ch5-viewchild {
     box-sizing: border-box;
 }
-

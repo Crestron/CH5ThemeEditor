@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
 /// All rights reserved.
 /// No part of this software may be reproduced in any form, machine
 /// or natural, without the express written consent of Crestron Electronics.
@@ -7,11 +7,9 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-textinput
+/// @group ch5-template
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import './scss/_variables';
-@import './scss/_base';
-@import './scss/label';
-@import './scss/input';
-@import './scss/icon';
+ch5-template {
+  display: inline;
+}

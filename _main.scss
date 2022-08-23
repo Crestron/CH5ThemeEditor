@@ -8,8 +8,10 @@
 @import './node_modules/nouislider/distribute/nouislider';
 
 ch5-button,
+ch5-dpad,
 ch5-form,
 ch5-image,
+ch5-keypad,
 ch5-list,
 ch5-modal-dialog,
 ch5-overlay-panel,
@@ -51,6 +53,8 @@ ch5-triggerview{
 
 @import 'ch5-triggerview/triggerview';
 
+@import 'ch5-template/ch5-template';
+
 @import 'ch5-form/form-default';
 
 @import 'ch5-modal-dialog/ch5-modal-dialog';
@@ -60,3 +64,7 @@ ch5-triggerview{
 @import 'ch5-background/ch5-background';
 
 @import 'ch5-video/ch5-video';
+
+@import 'ch5-dpad/ch5-dpad';
+
+@import 'ch5-keypad/ch5-keypad';

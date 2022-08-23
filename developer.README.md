@@ -65,8 +65,8 @@ yarn install
 using shell command
 ## Linking betweens themes
 There are two types of theme linking:
-- soft linking DEFAULT(an import statement is being to be added in the generated file)
-- hard linking (the content of base theme will be copied in the new generated file)
+- soft linking DEFAULT(an import statement is being to be added in the generated file i.e. ch5-core/themes/<new-theme>.scss)
+- hard linking (the content of base theme will be copied in the new generated file i.e. ch5-core/themes/<new-theme>.scss)
 
 **soft link between default theme and the new theme:**
 ```sh
@@ -163,6 +163,13 @@ The theme definition that is common across all themes, both Crestron standard th
 ### Promoting theme independent directives to a Custom Theme. 
 
 Should there be a directive that is currently common across themes that you wish to 'promote' to be changed specifically in your custom theme, to insure your custom theme can properly be upgraded with changes to the Crestron standard and common across other theme attributes, copy and paste the directive from the common location to the custom theme location and make the change in the custom theme location.   The compilation process will respect the specific theme directives and override the theme independent directives. 
+
+### Documentation
+
+Please note that /// (three slashes) are required to add documentation to each of the SASS attributes. This is a Crestron specific comment to 
+ensure that the sass-schema.json file is created correctly.
+
+Also, please ensure to add a comment with three slashes in each file. If not, the generate sass wil fail with error.
 
 ## Testing your updates
 

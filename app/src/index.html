@@ -115,9 +115,22 @@
       customStyle="margin-top:40px"></ch5-slider>
     <hr>
     <h3>CH5 Text Input</h3>
-    <ch5-textinput icon="fa fa-plane" placeholder="Firstname"></ch5-textinput>
-    <ch5-textinput icon="fa fa-plane" iconPosition="first" placeholder="Lastname"></ch5-textinput>
-    <ch5-textinput label="Phone number:" icon="fa fa-phone" placeholder="Phone Number" mask="(+99) 999 999 999" id="phoneNumber"></ch5-textinput>
+    <ch5-textinput icon="fa fa-plane" placeholder="Firstname" type="text"></ch5-textinput>
+    <ch5-textinput icon="fa fa-plane" iconPosition="first" placeholder="Lastname" type="text"></ch5-textinput>
+    <ch5-textinput icon="fa fa-phone" placeholder="Phone Number" mask="(+99) 999 999 999" id="phoneNumber" iconPosition="last"></ch5-textinput>
+    <ch5-textinput placeholder="email" type="email" value="support@crestron.com"></ch5-textinput>
+    <br/>
+    <ch5-textinput label="Points" placeholder="points" type="number" value="100"></ch5-textinput>
+    <br/>
+    <ch5-textinput label="Size: x-small" placeholder="size x-small" size="x-small"></ch5-textinput>
+    <br/>
+    <ch5-textinput label="Size: small" placeholder="size small" size="small"> </ch5-textinput>
+    <br/>
+    <ch5-textinput label="Size: regular" placeholder="size regular" size="regular"></ch5-textinput>
+    <br/>
+    <ch5-textinput label="Size: large" placeholder="size large" size="large"></ch5-textinput>
+    <br/>
+    <ch5-textinput label="Size: x-large" placeholder="size x-large" size="x-large"></ch5-textinput>
     <hr>
     <h3>CH5 Spinner Object</h3>
     <ch5-spinner label="item {{idx}}" indexId="idx" size="40" itemHeight="100" visibleItemScroll="3"></ch5-spinner>

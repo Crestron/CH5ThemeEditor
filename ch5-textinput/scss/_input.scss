@@ -10,39 +10,43 @@
 /// @group ch5-textinput
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 @import './variables';
 
 .ch5-textinput {
+
     /// @require .ch5-textinput
     /// Class apply on the input
     &__input {
         background: transparent;
         border: 0;
         color: $ch5-textinput-input-text-color;
-        max-width: 100%;
+        // max-width: 100%;
         outline: 0;
+
         /// @require .ch5-textinput__input
         /// Class apply on the input when text-transform="uppercase"
         &--uppercase {
             text-transform: uppercase
         }
+
         /// @require .ch5-textinput__input
         /// Class apply on the input when text-transform="lowercase"
         &--lowercase {
             text-transform: lowercase;
         }
+
         /// @require .ch5-textinput__input
         /// Class apply on the input when text-transform="capitalize"
         &--capitalize {
             text-transform: capitalize;
         }
 
-         /// @require .ch5-textinput__input
+        /// @require .ch5-textinput__input
         /// Class apply on the input when text-transform="none"
         &--none {
             text-transform: none;
         }
+
         /// @require .ch5-textinput__input
         /// Class apply on the input when size="x-small"
         &--x-small {
@@ -50,8 +54,11 @@
             font-style: $ch5-textinput-x-small-font-style;
             font-size: $ch5-textinput-x-small-font-size;
             font-weight: $ch5-textinput-x-small-font-weight;
-            min-width: $ch5-textinput-input-x-small-min-width;
+            width: 100%;
+            height: $ch5-textinput-size-x-small-height;
+            // min-width: $ch5-textinput-input-x-small-min-width;
         }
+
         /// @require .ch5-textinput__input
         /// Class apply on the input when size="small"
         &--small {
@@ -59,8 +66,11 @@
             font-style: $ch5-textinput-small-font-style;
             font-size: $ch5-textinput-small-font-size;
             font-weight: $ch5-textinput-small-font-weight;
-            min-width: $ch5-textinput-input-small-min-width;
+            width: 100%;
+            height: $ch5-textinput-size-small-height;
+            // min-width: $ch5-textinput-input-small-min-width;
         }
+
         /// @require .ch5-textinput__input
         /// Class apply on the input when size="regular"
         &--regular {
@@ -68,17 +78,22 @@
             font-style: $ch5-textinput-regular-font-style;
             font-size: $ch5-textinput-regular-font-size;
             font-weight: $ch5-textinput-regular-font-weight;
-            min-width: $ch5-textinput-input-regular-min-width;
+            width: 100%;
+            height: $ch5-textinput-size-regular-height; 
+            // min-width: $ch5-textinput-input-regular-min-width;
         }
-         /// @require .ch5-textinput__input
+        /// @require .ch5-textinput__input
         /// Class apply on the input when size="large"
         &--large {
             padding: $ch5-textinput-input-large-tb-padding $ch5-textinput-input-large-lr-padding;
             font-style: $ch5-textinput-large-font-style;
             font-size: $ch5-textinput-large-font-size;
             font-weight: $ch5-textinput-large-font-weight;
-            min-width: $ch5-textinput-input-large-min-width;
+            width: 100%;
+            height: $ch5-textinput-size-large-height; 
+            // min-width: $ch5-textinput-input-large-min-width;
         }
+
         /// @require .ch5-textinput__input
         /// Class apply on the input when size="x-large"
         &--x-large {
@@ -86,7 +101,9 @@
             font-style: $ch5-textinput-x-large-font-style;
             font-size: $ch5-textinput-x-large-font-size;
             font-weight: $ch5-textinput-x-large-font-weight;
-            min-width: $ch5-textinput-input-x-large-min-width;
+            width: 100%;
+            height: $ch5-textinput-size-x-large-height;
+            // min-width: $ch5-textinput-input-x-large-min-width;
         }
     }
 }

@@ -1,0 +1,347 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2021 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-keypad
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@import "./variables";
+@import "./mixins";
+
+.ch5-keypad {
+	display: inline-block;
+	width: $ch5-keypad-regular-container-width;
+	height: $ch5-keypad-regular-container-height;
+	vertical-align: top;
+
+	&.ch5-disabled {
+		opacity: 0.5;
+		pointer-events: none;
+		cursor: default;
+		button {
+			cursor: default;
+		}
+	}
+
+	&.ch5-keypad--for-extra-button {
+		height: $ch5-keypad-regular-container-height-extra;
+
+		.keypad-container {
+			height: $ch5-keypad-regular-container-height-extra;
+			min-width: $ch5-keypad-regular-container-width;
+
+			.keypad-row {
+				flex: 1 1;
+
+				.keypad-btn.special-center {
+					width: calc(33.334% - 4px);
+				}
+
+				.keypad-btn.special-center button {
+					color: $ch5-keypad-success-default-font-color;
+					background-color: $ch5-keypad-success-default-background-color;
+					border: 1px solid $ch5-keypad-success-default-border-color;
+				}
+
+				.keypad-btn.special-center.keypad-btn-pressed button {
+					color: $ch5-keypad-success-pressed-font-color;
+					background-color: $ch5-keypad-success-pressed-background-color;
+					border: 1px solid $ch5-keypad-success-pressed-border-color;
+				}
+			}
+		}
+	}
+
+	&.ch5-keypad--type-default {
+		@include ch5-keypad-content(
+			$ch5-keypad-default-default-background-color,
+			$ch5-keypad-default-default-border-color,
+			$ch5-keypad-default-default-font-color
+		);
+		.keypad-btn-pressed {
+			@include ch5-keypad-content--pressed(
+				$ch5-keypad-default-pressed-background-color,
+				$ch5-keypad-default-pressed-border-color,
+				$ch5-keypad-default-pressed-font-color
+			);
+		}
+	}
+	&.ch5-keypad--type-primary {
+		@include ch5-keypad-content(
+			$ch5-keypad-primary-default-background-color,
+			$ch5-keypad-primary-default-border-color,
+			$ch5-keypad-primary-default-font-color
+		);
+		.keypad-btn-pressed {
+			@include ch5-keypad-content--pressed(
+				$ch5-keypad-primary-pressed-background-color,
+				$ch5-keypad-primary-pressed-border-color,
+				$ch5-keypad-primary-pressed-font-color
+			);
+		}
+	}
+	&.ch5-keypad--type-info {
+		@include ch5-keypad-content(
+			$ch5-keypad-info-default-background-color,
+			$ch5-keypad-info-default-border-color,
+			$ch5-keypad-info-default-font-color
+		);
+		.keypad-btn-pressed {
+			@include ch5-keypad-content--pressed(
+				$ch5-keypad-info-pressed-background-color,
+				$ch5-keypad-info-pressed-border-color,
+				$ch5-keypad-info-pressed-font-color
+			);
+		}
+	}
+	&.ch5-keypad--type-text {
+		@include ch5-keypad-content(
+			$ch5-keypad-text-default-background-color,
+			$ch5-keypad-text-default-border-color,
+			$ch5-keypad-text-default-font-color
+		);
+		.keypad-btn-pressed {
+			@include ch5-keypad-content--pressed(
+				$ch5-keypad-text-pressed-background-color,
+				$ch5-keypad-text-pressed-border-color,
+				$ch5-keypad-text-pressed-font-color
+			);
+		}
+	}
+	&.ch5-keypad--type-danger {
+		@include ch5-keypad-content(
+			$ch5-keypad-danger-default-background-color,
+			$ch5-keypad-danger-default-border-color,
+			$ch5-keypad-danger-default-font-color
+		);
+		.keypad-btn-pressed {
+			@include ch5-keypad-content--pressed(
+				$ch5-keypad-danger-pressed-background-color,
+				$ch5-keypad-danger-pressed-border-color,
+				$ch5-keypad-danger-pressed-font-color
+			);
+		}
+	}
+	&.ch5-keypad--type-warning {
+		@include ch5-keypad-content(
+			$ch5-keypad-warning-default-background-color,
+			$ch5-keypad-warning-default-border-color,
+			$ch5-keypad-warning-default-font-color
+		);
+		.keypad-btn-pressed {
+			@include ch5-keypad-content--pressed(
+				$ch5-keypad-warning-pressed-background-color,
+				$ch5-keypad-warning-pressed-border-color,
+				$ch5-keypad-warning-pressed-font-color
+			);
+		}
+	}
+	&.ch5-keypad--type-success {
+		@include ch5-keypad-content(
+			$ch5-keypad-success-default-background-color,
+			$ch5-keypad-success-default-border-color,
+			$ch5-keypad-success-default-font-color
+		);
+		.keypad-btn-pressed {
+			@include ch5-keypad-content--pressed(
+				$ch5-keypad-success-pressed-background-color,
+				$ch5-keypad-success-pressed-border-color,
+				$ch5-keypad-success-pressed-font-color
+			);
+		}
+	}
+	&.ch5-keypad--type-secondary {
+		@include ch5-keypad-content(
+			$ch5-keypad-secondary-default-background-color,
+			$ch5-keypad-secondary-default-border-color,
+			$ch5-keypad-secondary-default-font-color
+		);
+		.keypad-btn-pressed {
+			@include ch5-keypad-content--pressed(
+				$ch5-keypad-secondary-pressed-background-color,
+				$ch5-keypad-secondary-pressed-border-color,
+				$ch5-keypad-secondary-pressed-font-color
+			);
+		}
+	}
+
+	&.ch5-keypad--orientation-top {
+		button {
+			flex-direction: column;
+		}
+	}
+
+	&.ch5-keypad--orientation-right {
+		button {
+			flex-direction: row-reverse;
+			.label-major {
+				margin-left: 2px;
+			}
+		}
+	}
+
+	&.ch5-keypad--orientation-bottom {
+		button {
+			flex-direction: column-reverse;
+		}
+	}
+
+	&.ch5-keypad--orientation-left {
+		button {
+			flex-direction: row;
+			.label-major {
+				margin-right: 2px;
+			}
+		}
+	}
+}
+
+.keypad-container {
+	display: flex;
+	justify-content: center;
+	width: $ch5-keypad-regular-container-width;
+	height: $ch5-keypad-regular-container-height;
+	flex-direction: column;
+	gap: 6px;
+	padding: 6px;
+}
+
+.keypad-row {
+	display: flex;
+	flex: 1 1;
+	color: #fff;
+	gap: 6px;
+	justify-content: center;
+
+	.keypad-btn {
+		cursor: pointer;
+		display: flex;
+		width: 33.3%;
+		overflow: hidden;
+
+		button {
+			display: flex;
+			height: 100%;
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+			outline: none !important;
+			color: inherit;
+			cursor: pointer;
+
+			span {
+				white-space: pre;
+				color: inherit;
+			}
+
+			.label-major {
+				font-weight: 300;
+			}
+
+			.label-minor {
+				margin-top: 0;
+				letter-spacing: 0.1rem;
+			}
+		}
+
+		&[key="button0"] {
+			.label-minor {
+				margin-left: 3%;
+			}
+		}
+	}
+}
+
+.ch5-keypad.ch5-keypad--shape-square {
+	.keypad-container {
+		.keypad-row {
+			.keypad-btn {
+				button {
+					border-radius: 0;
+				}
+			}
+		}
+	}
+}
+
+.ch5-keypad.ch5-keypad--shape-circle {
+	.keypad-container {
+		.keypad-row {
+			.keypad-btn {
+				button {
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}
+
+.ch5-keypad.ch5-keypad--shape-rounded-rectangle {
+	.keypad-container {
+		.keypad-row {
+			.keypad-btn {
+				button {
+					border-radius: 10%;
+				}
+			}
+		}
+	}
+}
+
+// sizes
+.ch5-keypad {
+	&.ch5-keypad--size-x-small {
+		@include ch5-keypad-fonts-sizes(
+			$ch5-keypad-x-small-container-width,
+			$ch5-keypad-x-small-container-height,
+			$ch5-keypad-x-small-container-height-extra,
+			$ch5-keypad-x-small-font-size-major,
+			$ch5-keypad-x-small-font-size-minor
+		);
+	}
+
+	&.ch5-keypad--size-small {
+		@include ch5-keypad-fonts-sizes(
+			$ch5-keypad-small-container-width,
+			$ch5-keypad-small-container-height,
+			$ch5-keypad-small-container-height-extra,
+			$ch5-keypad-small-font-size-major,
+			$ch5-keypad-small-font-size-minor
+		);
+	}
+
+	&.ch5-keypad--size-regular {
+		@include ch5-keypad-fonts-sizes(
+			$ch5-keypad-regular-container-width,
+			$ch5-keypad-regular-container-height,
+			$ch5-keypad-regular-container-height-extra,
+			$ch5-keypad-regular-font-size-major,
+			$ch5-keypad-regular-font-size-minor
+		);
+	}
+
+	&.ch5-keypad--size-large {
+		@include ch5-keypad-fonts-sizes(
+			$ch5-keypad-large-container-width,
+			$ch5-keypad-large-container-height,
+			$ch5-keypad-large-container-height-extra,
+			$ch5-keypad-large-font-size-major,
+			$ch5-keypad-large-font-size-minor
+		);
+	}
+
+	&.ch5-keypad--size-x-large {
+		@include ch5-keypad-fonts-sizes(
+			$ch5-keypad-x-large-container-width,
+			$ch5-keypad-x-large-container-height,
+			$ch5-keypad-x-large-container-height-extra,
+			$ch5-keypad-x-large-font-size-major,
+			$ch5-keypad-x-large-font-size-minor
+		);
+	}
+}
