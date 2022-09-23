@@ -57,12 +57,25 @@ ch5-slider:focus {
     .noUi-target {
       height: $ch5-slider-target-size;
     }
+      &.ch5-slider--tooltip--on {
+        margin-top: 2.5em;
+      }
+    &.ch5-slider--tooltip--auto { 
+      margin-top: 2.5em;
+    }
   }
 
   /// class apply when slider orientation="vertical"
   &.ch5-slider--orientation--vertical {
     .noUi-target {
       width: $ch5-slider-target-size;
+    }
+   
+    &.ch5-slider--tooltip--on {
+      margin-left: 2.5em;
+    }
+    &.ch5-slider--tooltip--auto { 
+      margin-left: 2.5em;
     }
   }
   &.ch5-slider--disabled {
@@ -153,7 +166,7 @@ html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle .noUi-horizontal .no
 /* Tooltip */
 
 .ch5-slider--tooltip--auto {
-  margin-top: 2.5em;
+
   .noUi-tooltip {
     display: none;
   }
@@ -162,9 +175,6 @@ html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle .noUi-horizontal .no
   }
 }
 
-.ch5-slider--tooltip--on {
-  margin-top: 2.5em;
-}
 
 /* Ticks */
 .noUi-pips {
