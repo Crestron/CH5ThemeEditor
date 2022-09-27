@@ -35,10 +35,6 @@ This project provides the source code to reproduce the Crestron provided themes 
 
 install Node from https://nodejs.org
 
-### Yarn
-
-install Yarn from https://yarnpkg.com/en/docs/install 
-
 ### Code Editor
 
 Many choices of available to edit the SASS source code used to create themes. 
@@ -56,7 +52,7 @@ Use an unzipping tool to expand the content of the theme building project onto a
 
 using shell command 
 ```sh
-yarn install 
+npm install 
 ```
 
 
@@ -70,44 +66,44 @@ There are two types of theme linking:
 
 **soft link between default theme and the new theme:**
 ```sh
-yarn run create-theme THEME_NAME --soft-link
+npm run create-theme THEME_NAME --soft-link
 ```
 or
 ```sh
-yarn run create-theme THEME_NAME
+npm run create-theme THEME_NAME
 ```
 **hard link between default theme and the new theme:**
 ```sh
-yarn run create-theme THEME_NAME --hard-link 
+npm run create-theme THEME_NAME --hard-link 
 ```
 **In order to change the default theme just add the default theme name before --soft-link or --hard-link:**
 ```sh
-yarn run create-theme THEME_NAME light --soft-link
+npm run create-theme THEME_NAME light --soft-link
 ```
 ## Bundling the themes
 **bundling default theme**
 ```sh
-yarn run bundle-theme-all
+npm run bundle-theme-all
 ```
 **bundling default theme and watch**
 ```sh
-yarn run bundle-and-watch
+npm run bundle-and-watch
 ```
 **run scss app in order to view themes changes**
 ```sh
-yarn run start
+npm run start
 ```
 **bundle and copy themes to another directory with webpack shell command**  
 Note:-Install webpack globally before running webpack shell command.  
 In order to  install webpack globally use command
 ```sh
-yarn add webpack -g
+npm install webpack -g
 ```
 Then run below command   
 ```sh
 webpack --config webpack.run.js --outputpath=RELATIVE_PATH_FOR_DESTINATION_DIRECTORY
 ex:-
-webpack --config webpack.run.js --outputpath='../showcase-app/dist/crestron-components-assets' && yarn run cleanjs
+webpack --config webpack.run.js --outputpath='../showcase-app/dist/crestron-components-assets' && npm run cleanjs
 ```
 **bundle and copy themes to another directory via env config**  
 Create '.env' file under 'BlackbirdComponentLibrary/library/crestron-components-sass/' directory  
@@ -126,7 +122,7 @@ DESTINATION_FONTS_FILE_PATH = '../showcase-app/dist/fonts'
 ```
 Then run shell command
 ```sh
-yarn run bundle-theme-all-app-run
+npm run bundle-theme-all-app-run
 ```
 ## Creating custom themes
 
@@ -137,14 +133,14 @@ Custom themes can be thought of as overwrite of certain portions of an establish
 A script to create a custom theme is provided.  The general syntax is below
 
 ```sh
-yarn run create-theme NewCustomThemeName ExistingThemeName 
+npm run create-theme NewCustomThemeName ExistingThemeName 
 ```
 where NewCustomThemeName is the name of your custom theme
 and ExistingThemeName is the name of the theme to be extended
 
 example would be 
 ```sh
-yarn run create-theme big-bucks-customer light 
+v run create-theme big-bucks-customer light 
 ```
 will create the sources that when compiled will create a big-bucks-customer-theme.css file
 
