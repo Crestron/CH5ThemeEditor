@@ -31,7 +31,7 @@ function updateLayoutStyle(selectedTheme) {
     header.style.backgroundColor = "#efefef";
     h3Titles.map((h3Ele) => { return h3Ele.style.color = "#000"; });
   } else {
-    mainWrapper.style.backgroundColor = "#000";
+    mainWrapper.style.backgroundColor = "#1a1a1a"; // to match showcase-app
     header.style.backgroundColor = "#efefef";
     h3Titles.map((h3Ele) => { return h3Ele.style.color = "#fff"; });
   }
