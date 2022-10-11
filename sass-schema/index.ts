@@ -150,7 +150,7 @@ async function initialize() {
     'ch5-select': 'Ch5Select',
     'ch5-slider': 'Ch5Slider',
     'ch5-spinner': 'Ch5Spinner',
-    'ch5-textinput': 'Ch5Textinput',
+    'ch5-textinput': 'Ch5TextInput',
     'ch5-toggle': 'Ch5Toggle',
     'ch5-video': 'Ch5Video',
     'ch5-dpad': 'Ch5Dpad',
