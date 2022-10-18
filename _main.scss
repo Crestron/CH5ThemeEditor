@@ -9,6 +9,7 @@
 
 ch5-button,
 ch5-color-chip,
+ch5-color-picker,
 ch5-dpad,
 ch5-form,
 ch5-image,
@@ -71,3 +72,5 @@ ch5-triggerview {
 @import "ch5-keypad/ch5-keypad";
 
 @import "ch5-color-chip/ch5-color-chip";
+
+@import 'ch5-color-picker/ch5-color-picker';

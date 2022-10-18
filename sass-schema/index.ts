@@ -154,7 +154,9 @@ async function initialize() {
     'ch5-toggle': 'Ch5Toggle',
     'ch5-video': 'Ch5Video',
     'ch5-dpad': 'Ch5Dpad',
-    'ch5-keypad': 'Ch5Keypad'
+    'ch5-keypad': 'Ch5Keypad',
+    'ch5-color-chip':'Ch5ColorChip',
+    'ch5-color-picker':'Ch5ColorPicker'
   };
 
   // For each component flatten its scss
