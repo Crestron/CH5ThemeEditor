@@ -1,0 +1,30 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-animation
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@import "./variables";
+
+.ch5-animation {
+  position: relative;
+
+  .ch5-animation--startAnimating-true {
+    animation-play-state: running;
+  }
+
+  .ch5-animation--startAnimating-false {
+    animation-play-state: paused;
+  }
+}
+
+.ch5-animation--disabled {
+  pointer-events: none;
+  opacity: $ch5-animation-disabled-opacity;
+}
