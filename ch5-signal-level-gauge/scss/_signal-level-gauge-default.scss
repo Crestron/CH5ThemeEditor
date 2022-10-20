@@ -1,0 +1,48 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-signal-level-gauge
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@import "./variables";
+
+.ch5-signal-level-gauge {
+  position: relative;
+}
+
+.ch5-signal-level-gauge--disabled {
+  pointer-events: none;
+  opacity: $ch5-signal-level-gauge-disabled-opacity;
+}
+@mixin setSize($size, $height, $width) {
+  &.ch5-signal-level-gauge--size-#{$size} {
+    height: $height;
+    width: $width;
+  }
+}
+.ch5-signal-level-gauge {
+  display: inline-flex;
+  .bar-color {
+    background-color: grey;
+  }
+  .color-blue {
+    background-color: rgb(103, 190, 240);
+  }
+  &.ch5-signal-level-gauge--orientation-vertical {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  &.ch5-signal-level-gauge--orientation-horizontal {
+    align-items: flex-end;
+  }
+  @include setSize("small", 24px, 36px);
+  @include setSize("regular", 35px, 45px);
+  @include setSize("large", 60px, 90px);
+  @include setSize("x-large", 96px, 180px);
+}

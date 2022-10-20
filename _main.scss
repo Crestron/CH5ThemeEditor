@@ -8,6 +8,7 @@
 @import './node_modules/nouislider/distribute/nouislider';
 
 ch5-button,
+ch5-signal-level-gauge,
 ch5-dpad,
 ch5-form,
 ch5-image,
@@ -46,6 +47,8 @@ ch5-triggerview{
 @import 'ch5-image/ch5-image';
 
 @import 'ch5-slider/ch5-slider';
+
+@import 'ch5-signal-level-gauge/ch5-signal-level-gauge';
 
 @import 'ch5-textinput/ch5-textinput';
 
