@@ -7,7 +7,8 @@
 @import 'style/_base';
 @import './node_modules/nouislider/distribute/nouislider';
 
-ch5-button,ch5-animation,
+ch5-button,
+ch5-animation,
 ch5-dpad,
 ch5-form,
 ch5-image,
@@ -20,7 +21,7 @@ ch5-slider,
 ch5-textinput,
 ch5-spinner,
 ch5-toggle,
-ch5-triggerview{
+ch5-triggerview {
   outline: 0 !important;
 
   * {
@@ -68,6 +69,5 @@ ch5-triggerview{
 @import 'ch5-dpad/ch5-dpad';
 
 @import 'ch5-keypad/ch5-keypad';
-
 
 @import 'ch5-animation/ch5-animation';
