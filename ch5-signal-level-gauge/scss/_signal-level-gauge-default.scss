@@ -29,10 +29,10 @@
 .ch5-signal-level-gauge {
   display: inline-flex;
   .bar-color {
-    background-color: grey;
+    background-color: $ch5-signal-level-gauge-bar-color;
   }
   .color-blue {
-    background-color: rgb(103, 190, 240);
+    background-color: $ch5-signal-level-gauge-selected-bar-color;
   }
   &.ch5-signal-level-gauge--orientation-vertical {
     align-items: center;
