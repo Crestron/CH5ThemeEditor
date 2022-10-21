@@ -14,6 +14,7 @@
 
 .ch5-animation {
   position: relative;
+  display: inline-block;
 
   .ch5-animation--startAnimating-true {
     animation-play-state: running;
