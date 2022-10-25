@@ -141,22 +141,24 @@ async function initialize() {
 
   // All the components that are interested in are hardcoded. We will compute the path based on THEME_EDITOR_PATH constant + values below
   const componentsPath: any = {
+    'ch5-animation': 'Ch5Animation',
     'ch5-background': 'Ch5Background',
     'ch5-button': 'Ch5Button',
+    'ch5-color-chip':'Ch5ColorChip',
+    'ch5-color-picker':'Ch5ColorPicker'
+    'ch5-dpad': 'Ch5Dpad',
     'ch5-image': 'Ch5Image',
+    'ch5-keypad': 'Ch5Keypad',
     'ch5-list': 'Ch5List',
     'ch5-modal-dialog': 'Ch5ModalDialog',
     'ch5-overlay-panel': 'Ch5OverlayPanel',
     'ch5-select': 'Ch5Select',
+    'ch5-signal-level-gauge': 'Ch5SignalLevelGauge',
     'ch5-slider': 'Ch5Slider',
     'ch5-spinner': 'Ch5Spinner',
     'ch5-textinput': 'Ch5TextInput',
     'ch5-toggle': 'Ch5Toggle',
-    'ch5-video': 'Ch5Video',
-    'ch5-dpad': 'Ch5Dpad',
-    'ch5-keypad': 'Ch5Keypad',
-    'ch5-color-chip':'Ch5ColorChip',
-    'ch5-color-picker':'Ch5ColorPicker'
+    'ch5-video': 'Ch5Video'
   };
 
   // For each component flatten its scss
