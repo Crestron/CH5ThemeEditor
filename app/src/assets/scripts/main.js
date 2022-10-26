@@ -21,16 +21,19 @@ function updateLayoutStyle(selectedTheme) {
   var h3Titles = [...document.getElementsByTagName("h3")];
   var header = document.getElementById("layoutHeader");
 
-  mainWrapper.style.backgroundColor = "#000";
-  h3Titles.map((h3Ele) => { return h3Ele.style.color = "#000"; });
-  header.style.backgroundColor = "#efefef";
   if (selectedTheme === "light") {
     mainWrapper.style.backgroundColor = "#fefefe";
     header.style.backgroundColor = "#000";
-    h3Titles.map((h3Ele) => { return h3Ele.style.color = "#fff"; });
+    h3Titles.map((h3Ele) => { return h3Ele.style.color = "#000"; });
   }
   else if (selectedTheme === "high-contrast") {
     mainWrapper.style.backgroundColor = "#939393";
+    header.style.backgroundColor = "#efefef";
+    h3Titles.map((h3Ele) => { return h3Ele.style.color = "#000"; });
+  } else {
+    mainWrapper.style.backgroundColor = "#1a1a1a"; // to match showcase-app
+    header.style.backgroundColor = "#efefef";
+    h3Titles.map((h3Ele) => { return h3Ele.style.color = "#fff"; });
   }
 }
 
