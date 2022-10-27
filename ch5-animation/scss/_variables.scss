@@ -10,8 +10,10 @@
 /// @group ch5-animation-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-$ch5-animation-disabled-opacity: 0.5;
-$ch5-animtion-font-size-regular: 72px;
-$ch5-animation-font-size-small: 40px;
-$ch5-animation-font-size-large: 104px;
-$ch5-animation-font-size-x-large: 136px;
+@import "../../ch5-core/variables";
+
+$ch5-animation-disabled-opacity: 0.5 !default;
+$ch5-animation-font-size-regular: 72px !default;
+$ch5-animation-font-size-small: 40px !default;
+$ch5-animation-font-size-large: 104px !default;
+$ch5-animation-font-size-x-large: 136px !default;

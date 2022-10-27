@@ -13,7 +13,7 @@
 @mixin ch5-animation-set-size() {
     .ch5-animation {
         .ch5-animation--size-regular {
-            font-size: $ch5-animtion-font-size-regular;
+            font-size: $ch5-animation-font-size-regular;
         }
 
         .ch5-animation--size-small {
@@ -31,5 +31,3 @@
 }
 
 @include ch5-animation-set-size();
-
-@import "./variables";
