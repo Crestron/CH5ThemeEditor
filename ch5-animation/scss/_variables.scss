@@ -10,10 +10,13 @@
 /// @group ch5-animation-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "../../ch5-core/variables";
+@import "./../../ch5-core/variables";
+
+/// Variables below
 
 $ch5-animation-disabled-opacity: 0.5 !default;
 $ch5-animation-font-size-regular: 72px !default;
 $ch5-animation-font-size-small: 40px !default;
 $ch5-animation-font-size-large: 104px !default;
 $ch5-animation-font-size-x-large: 136px !default;
+$ch5-animation-color: $theme-foreground-color !default;

@@ -116,6 +116,7 @@ $text-disabled-background-color: rgb(172, 170, 170) !default;
 $text-disabled-border-color: #9E9E9E !default;
 $text-disabled-font-color: #6D6D6D !default;
 
+$theme-foreground-color: #fff !default;
 
 /* ===============================================
 CH5-OVERLAY
@@ -321,9 +322,3 @@ $ch5-list-item-background-color: #3b3b40 !default;
 /// Set the border color of list items
 $ch5-list-item-border-color: #5e5e66 !default;
 
-/* ===============================================
-CH5-ANIMATION
-============================================= */
-
-/// Set the animation color
-$ch5-animation-color: #fff !default;
