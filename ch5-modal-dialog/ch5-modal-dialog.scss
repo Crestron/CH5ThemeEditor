@@ -11,7 +11,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import './scss/_variables';
-@import './../ch5-core/themes/high-contrast.scss';
 
 /// the class added on the div that is the only direct child of the ch5-modal-dialog element and wraps all its contents
 .ch5-modal-dialog {
@@ -43,10 +42,11 @@
     font-style: $ch5-modal-close-icon-font-style;
     font-weight: $ch5-modal-close-icon-font-weight;
 
-    &.f-left{
+    &.f-left {
       float: left;
     }
-    &.f-right{
+
+    &.f-right {
       float: right;
     }
   }
@@ -56,10 +56,12 @@
     font-size: $ch5-modal-default-close-icon-font-size;
     font-style: $ch5-modal-default-close-icon-font-style;
     font-weight: $ch5-modal-default-close-icon-font-weight;
-    &:before{
-      content:'\00d7';
+
+    &:before {
+      content: '\00d7';
     }
-    &:hover{
+
+    &:hover {
       color: $ch5-modal-close-icon-color-hover;
     }
   }
@@ -71,11 +73,11 @@
 
   /// the class of the cancel button
   .ch5-modal-dialog-btn-cancel {
-    float:right;
+    float: right;
   }
 }
 
-.ch5-modal-dialog-title{
+.ch5-modal-dialog-title {
   font-size: $ch5-modal-title-font-size;
   font-style: $ch5-modal-title-font-style;
   font-weight: $ch5-modal-title-font-weight;
@@ -83,14 +85,15 @@
 
 /// modal section (a div) that wraps the prompt-icon and the prompt-text
 .ch5-modal-dialog-prompt {
-  &:before{
+  &:before {
     clear: both;
   }
+
   padding: $ch5-modal-prompt-padding;
   vertical-align: middle;
 
   /// an image element.
-  .ch5-modal-dialog-prompt-icon{
+  .ch5-modal-dialog-prompt-icon {
     vertical-align: middle;
     margin-right: $ch5-modal-prompt-icon-margin-right;
     font-size: $ch5-modal-prompt-icon-font-size;
@@ -99,7 +102,7 @@
   }
 
   /// a span element
-  .ch5-modal-dialog-prompt-text{
+  .ch5-modal-dialog-prompt-text {
     vertical-align: middle;
     font-size: $ch5-modal-prompt-text-font-size;
     font-style: $ch5-modal-prompt-text-font-style;
@@ -114,19 +117,22 @@
 }
 
 .ch5-modal-dialog--overflow-scroll {
-  overflow:auto;
+  overflow: auto;
 }
+
 .ch5-modal-dialog--overflow-show {
-  overflow:visible;
+  overflow: visible;
 }
 
 .ch5-modal-dialog--stretch-width {
   width: 100%;
   height: auto;
 }
+
 .ch5-modal-dialog--stretch-height {
   height: 100%;
 }
+
 .ch5-modal-dialog--stretch-both {
   width: 100%;
   height: 100%;
@@ -134,8 +140,8 @@
 
 /// class added on the mask element
 .ch5-modal-dialog-mask {
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -154,4 +160,3 @@
   font-weight: $ch5-model-contents-font-weight;
   color: $ch5-modal-contents-font-color;
 }
-
