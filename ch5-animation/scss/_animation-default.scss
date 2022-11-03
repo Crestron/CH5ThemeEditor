@@ -15,11 +15,11 @@
   display: inline-block;
   color: $ch5-animation-color;
 
-  .ch5-animation--startAnimating-true {
+  .ch5-animation--start-animating-true {
     animation-play-state: running;
   }
 
-  .ch5-animation--startAnimating-false {
+  .ch5-animation--start-animating-false {
     animation-play-state: paused;
   }
 }
