@@ -26,10 +26,10 @@
 }
 .ch5-signal-level-gauge {
   display: inline-flex;
-  .ch5-bar-color {
+  .ch5-signal-level-gauge--bar-color {
     background-color: $ch5-signal-level-gauge-bar-color;
   }
-  .ch5-selected-bar-color {
+  .ch5-signal-level-gauge--selected-bar-color {
     background-color: $ch5-signal-level-gauge-selected-bar-color;
   }
   &.ch5-signal-level-gauge--orientation-vertical {
