@@ -12,6 +12,9 @@
 
 .ch5-color-picker {
   position: relative;
+  display: inline-flex;
+  // width: 240px;
+  // height: 240px;
 }
 
 .ch5-color-picker--disabled {
@@ -54,11 +57,17 @@ ch5-color-picker {
   /* main dimensions */
   .colorPicker .twod,
   .colorPicker .twod .bg {
+    // min-width: 100px;
+    // min-height: 100px;
+    // width: 100%;
+    // height: 100%;
     width: 240px;
     height: 240px;
   }
   .colorPicker .oned,
   .colorPicker .oned .bg {
+    // min-height: 100px;
+    // height: 100%;
     height: 240px;
   }
   .colorPicker .oned,
@@ -69,13 +78,8 @@ ch5-color-picker {
 
   .colorPicker .twod .bg {
     position: absolute;
-
-    /* These seem to cause issues in some browsers, careful!
-  border: 1px solid #BBB;
-  -moz-border-radius: .3em;
-  border-radius: .3em;
-  */
   }
+
   .colorPicker .twod .pointer {
     position: relative;
     z-index: 2;
@@ -109,11 +113,8 @@ ch5-color-picker {
 
   .colorPicker .oned .bg {
     border: 1px solid #bbb;
-    /*
-  -moz-border-radius: .3em;
-  border-radius: .3em;
-  */
   }
+
   .colorPicker .oned .pointer {
     position: relative;
     z-index: 2;
