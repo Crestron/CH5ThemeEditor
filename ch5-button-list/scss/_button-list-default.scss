@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button-list
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Main class
+.ch5-button-list {
+  position: relative;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+  display: grid;
+  height: auto;
+  border: 1px solid #eee;
+
+  &.active {
+    cursor: -webkit-grabbing;
+  }
+
+  &.ch5-button-list::-webkit-scrollbar {
+    height: 7px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .button-container {
+    min-width: 92px;
+    min-height: 52px;
+    padding: 4px;
+  }
+}
+
+
+.ch5-button-list--disabled {
+  pointer-events: none;
+  opacity: $ch5-button-list-disabled-opacity;
+}
