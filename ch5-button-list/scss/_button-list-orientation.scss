@@ -12,7 +12,7 @@
 
 .ch5-button-list {
   &.ch5-button-list--orientation-horizontal {
-    width: 920px;
+    // width: 368px;
     grid-auto-flow: column;
 
     &.ch5-button-list--scrollbar-true {
@@ -23,7 +23,7 @@
       overflow-x: hidden;
     }
 
-    @for $var from 1 to 100 {
+    @for $var from 1 to 500 {
       &.ch5-button-list--rows-#{$var} {
         grid-template-rows: repeat($var, 1fr);
       }
@@ -34,7 +34,7 @@
     height: 100%;
     grid-auto-flow: row;
 
-    @for $var from 1 to 100 {
+    @for $var from 1 to 500 {
       &.ch5-button-list--columns-#{$var} {
         grid-template-columns: repeat($var, 1fr);
       }
