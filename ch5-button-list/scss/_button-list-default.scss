@@ -22,21 +22,46 @@
   display: grid;
   height: auto;
   border: 1px solid #eee;
+  scrollbar-width: none;
 
   &.active {
     cursor: -webkit-grabbing;
   }
 
   &.ch5-button-list::-webkit-scrollbar {
-    height: 7px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
+    height: 0px;
+    width: 0px;
   }
 
   .button-container {
-    min-width: 92px;
-    min-height: 52px;
-    padding: 4px;
+    min-width: $ch5-button-list-button-container-min-width;
+    min-height: $ch5-button-list-button-container-min-height;
+    padding: $ch5-button-list-button-container-padding;
+  }
+
+  &~.scrollbar-container {
+    position: relative;
+    background-color: $ch5-scrollbar-track-color;
+    border-radius: $ch5-scrollbar-border-radius;
+
+    .scrollbar {
+      will-change: width, transform;
+      position: relative;
+      border-radius: $ch5-scrollbar-border-radius;
+      background: $ch5-scrollbar-thumb-color;
+    }
+  }
+
+  &.ch5-button-list--scrollbar-true {
+    &~.scrollbar-container {
+      display: block;
+    }
+  }
+
+  &.ch5-button-list--scrollbar-false {
+    &~.scrollbar-container {
+      display: none;
+    }
   }
 }
 

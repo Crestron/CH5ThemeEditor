@@ -12,15 +12,15 @@
 
 .ch5-button-list {
   &.ch5-button-list--orientation-horizontal {
-    // width: 368px;
     grid-auto-flow: column;
 
-    &.ch5-button-list--scrollbar-true {
-      overflow-x: scroll;
-    }
+    &~.scrollbar-container {
+      width: 100%;
+      height: $ch5-scrollbar-width;
 
-    &.ch5-button-list--scrollbar-false {
-      overflow-x: hidden;
+      .scrollbar {
+        height: $ch5-scrollbar-width;
+      }
     }
 
     @for $var from 1 to 500 {
@@ -33,6 +33,15 @@
   &.ch5-button-list--orientation-vertical {
     height: 100%;
     grid-auto-flow: row;
+
+    &~.scrollbar-container {
+      height: 100%;
+      width: $ch5-scrollbar-width;
+
+      .scrollbar {
+        width: $ch5-scrollbar-width;
+      }
+    }
 
     @for $var from 1 to 500 {
       &.ch5-button-list--columns-#{$var} {
