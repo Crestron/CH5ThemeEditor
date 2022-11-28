@@ -24,6 +24,7 @@ ch5-slider,
 ch5-textinput,
 ch5-spinner,
 ch5-toggle,
+ch5-wifi-signal-level-gauge,
 ch5-triggerview {
   outline: 0 !important;
 
@@ -80,3 +81,5 @@ ch5-triggerview {
 @import "ch5-triggerview/triggerview";
 
 @import "ch5-video/ch5-video";
+
+@import 'ch5-wifi-signal-level-gauge/ch5-wifi-signal-level-gauge';
