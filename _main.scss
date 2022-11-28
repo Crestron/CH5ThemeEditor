@@ -18,6 +18,7 @@ ch5-keypad,
 ch5-list,
 ch5-modal-dialog,
 ch5-overlay-panel,
+ch5-segmented-gauge,
 ch5-select,
 ch5-signal-level-gauge,
 ch5-slider,
@@ -62,6 +63,8 @@ ch5-triggerview {
 @import "ch5-modal-dialog/ch5-modal-dialog";
 
 @import "ch5-overlay-panel/ch5-overlay-panel";
+
+@import "ch5-segmented-gauge/ch5-segmented-gauge";
 
 @import "ch5-select/ch5-select";
 

@@ -1,0 +1,32 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-segmented-gauge
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@mixin ch5-segmented-gauge-set-style() {
+  .ch5-segmented-gauge {
+    &.ch5-segmented-gauge--gauge-led-style-segmentedGaugeRectPip {
+      .ch5-segmented-gauge-segment {
+        height: $ch5-segmented-gauge-led-style-height;
+        width: $ch5-segmented-gauge-led-style-width;
+      }
+    }
+
+    &.ch5-segmented-gauge--gauge-led-style-segmentedGaugeRoundPip {
+      .ch5-segmented-gauge-segment {
+        height: $ch5-segmented-gauge-led-style-height;
+        width: $ch5-segmented-gauge-led-style-width;
+        border-radius: $ch5-segmented-gauge-led-style-border-radius;
+      }
+    }
+  }
+}
+
+@include ch5-segmented-gauge-set-style();
