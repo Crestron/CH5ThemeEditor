@@ -10,17 +10,12 @@
 /// @group ch5-segmented-gauge
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@mixin ch5-segmented-gauge-set-orientation() {
-  .ch5-segmented-gauge {
-    
-    &.ch5-segmented-gauge--orientation-horizontal {
-      flex-direction: row;
-    }
+.ch5-segmented-gauge {
+  &.ch5-segmented-gauge--orientation-horizontal {
+    flex-direction: row;
+  }
 
-    &.ch5-segmented-gauge--orientation-vertical {
-      flex-direction: column-reverse;
-    }
+  &.ch5-segmented-gauge--orientation-vertical {
+    flex-direction: column-reverse;
   }
 }
-
-@include ch5-segmented-gauge-set-orientation();

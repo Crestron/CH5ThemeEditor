@@ -21,10 +21,13 @@ $ch5-segmented-gauge-disabled-opacity: 0.5 !default;
 $ch5-segmented-gauge-led-style-height: 20px;
 
 /// Led style gauge style width
-$ch5-segmented-gauge-led-style-width: 20px; 
+$ch5-segmented-gauge-led-style-width: 20px;
+
+/// Border for segmented gauge
+$ch5-segmented-gauge-border: solid 1px white;
 
 /// Led style border radius
-$ch5-segmented-gauge-led-style-border-radius: 50%; 
+$ch5-segmented-gauge-led-style-border-radius: 50%;
 
 /// State graphic green
 $ch5-segmented-gauge-state-graphic-green: #22c55e;

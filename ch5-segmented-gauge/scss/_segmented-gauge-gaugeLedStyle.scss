@@ -10,23 +10,19 @@
 /// @group ch5-segmented-gauge
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@mixin ch5-segmented-gauge-set-style() {
-  .ch5-segmented-gauge {
-    &.ch5-segmented-gauge--gauge-led-style-segmentedGaugeRectPip {
-      .ch5-segmented-gauge-segment {
-        height: $ch5-segmented-gauge-led-style-height;
-        width: $ch5-segmented-gauge-led-style-width;
-      }
+.ch5-segmented-gauge {
+  &.ch5-segmented-gauge--gauge-led-style-rectangle {
+    .ch5-segmented-gauge-segment {
+      height: $ch5-segmented-gauge-led-style-height;
+      width: $ch5-segmented-gauge-led-style-width;
     }
+  }
 
-    &.ch5-segmented-gauge--gauge-led-style-segmentedGaugeRoundPip {
-      .ch5-segmented-gauge-segment {
-        height: $ch5-segmented-gauge-led-style-height;
-        width: $ch5-segmented-gauge-led-style-width;
-        border-radius: $ch5-segmented-gauge-led-style-border-radius;
-      }
+  &.ch5-segmented-gauge--gauge-led-style-circle {
+    .ch5-segmented-gauge-segment {
+      height: $ch5-segmented-gauge-led-style-height;
+      width: $ch5-segmented-gauge-led-style-width;
+      border-radius: $ch5-segmented-gauge-led-style-border-radius;
     }
   }
 }
-
-@include ch5-segmented-gauge-set-style();

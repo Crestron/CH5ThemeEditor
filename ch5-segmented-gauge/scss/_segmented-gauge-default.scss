@@ -17,7 +17,7 @@
 
   .ch5-segmented-gauge-segment {
     background-color: $ch5-segmented-gauge-state-graphic-inactive;
-    border: solid 1px white;
+    border: $ch5-segmented-gauge-border;
   }
 }
 
