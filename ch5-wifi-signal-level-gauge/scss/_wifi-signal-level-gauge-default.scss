@@ -31,7 +31,6 @@
 @mixin getWifi($size) {
   $anim: 1.8s linear infinite;
   $trans: 0.3s linear;
-  $border-color-light: rgb(148, 147, 147);
   $border-width: calc($size/8.46);
 
   box-sizing: border-box;
@@ -76,24 +75,24 @@
   }
 
   &.ch5-wifi-bars-selected-0 {
-    border-top-color: $border-color-light;
+    border-top-color: $ch5-wifi-signal-level-gauge-border-color;
 
     &:before,
     &:after {
-      border-top-color: $border-color-light;
+      border-top-color: $ch5-wifi-signal-level-gauge-border-color;
     }
   }
 
   &.ch5-wifi-bars-selected-1 {
-    border-top-color: $border-color-light;
+    border-top-color: $ch5-wifi-signal-level-gauge-border-color;
 
     &:before {
-      border-top-color: $border-color-light;
+      border-top-color: $ch5-wifi-signal-level-gauge-border-color;
     }
   }
 
   &.ch5-wifi-bars-selected-2 {
-    border-top-color: $border-color-light;
+    border-top-color: $ch5-wifi-signal-level-gauge-border-color;
   }
 }
 
@@ -125,15 +124,15 @@ $alignment: (
 .ch5-wifi-signal-level-gauge {
   @each $align, $value in $alignment {
     &.ch5-wifi-signal-level-gauge--alignment-#{$align} {
-    transform: rotate($value);
+      transform: rotate($value);
     }
   }
 }
 
 $gaugeStyle: (
-  "light": white,
-  "dark": black,
-  "accents": skyblue,
+  "light": $ch5-wifi-signal-level-gauge-style-light,
+  "dark": $ch5-wifi-signal-level-gauge-style-dark,
+  "accents": $ch5-wifi-signal-level-gauge-style-accents,
 );
 
 @each $theme, $color in $gaugeStyle {
