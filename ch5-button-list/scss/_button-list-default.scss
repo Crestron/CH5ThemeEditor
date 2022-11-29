@@ -11,9 +11,13 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// Main class
+ch5-button-list {
+  position: relative;
+}
+
 .ch5-button-list {
   position: relative;
-  overflow-y: hidden;
+  overflow: scroll;
   white-space: nowrap;
   transition: all 0.2s;
   will-change: transform;
@@ -22,7 +26,6 @@
   display: grid;
   height: auto;
   border: 1px solid #eee;
-  scrollbar-width: none;
 
   &.active {
     cursor: -webkit-grabbing;
@@ -40,13 +43,14 @@
   }
 
   &~.scrollbar-container {
-    position: relative;
+    position: absolute;
     background-color: $ch5-scrollbar-track-color;
     border-radius: $ch5-scrollbar-border-radius;
 
     .scrollbar {
+      position: absolute;
       will-change: width, transform;
-      position: relative;
+      position: absolute;
       border-radius: $ch5-scrollbar-border-radius;
       background: $ch5-scrollbar-thumb-color;
     }
@@ -64,7 +68,6 @@
     }
   }
 }
-
 
 .ch5-button-list--disabled {
   pointer-events: none;

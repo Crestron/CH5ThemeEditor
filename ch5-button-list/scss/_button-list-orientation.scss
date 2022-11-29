@@ -14,12 +14,17 @@
   &.ch5-button-list--orientation-horizontal {
     grid-auto-flow: column;
 
-    &~.scrollbar-container {
-      width: 100%;
-      height: $ch5-scrollbar-width;
+    &.ch5-button-list--scrollbar-true {
+      padding-bottom: $ch5-scrollbar-width;
 
-      .scrollbar {
+      &~.scrollbar-container {
+        width: 100%;
+        bottom: 0;
         height: $ch5-scrollbar-width;
+
+        .scrollbar {
+          height: 100%;
+        }
       }
     }
 
@@ -34,12 +39,19 @@
     height: 100%;
     grid-auto-flow: row;
 
-    &~.scrollbar-container {
-      height: 100%;
-      width: $ch5-scrollbar-width;
+    &.ch5-button-list--scrollbar-true {
+      padding-right: $ch5-scrollbar-width;
 
-      .scrollbar {
+      &~.scrollbar-container {
+        top: 0;
+        height: 100%;
+        right: 0;
+        left: auto;
         width: $ch5-scrollbar-width;
+
+        .scrollbar {
+          width: 100%;
+        }
       }
     }
 
