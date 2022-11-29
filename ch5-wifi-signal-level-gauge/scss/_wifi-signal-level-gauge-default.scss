@@ -1,0 +1,152 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-wifi-signal-level-gauge
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Main class
+.ch5-wifi-signal-level-gauge {
+  position: relative;
+  display: inline-block;
+
+  .ch5-wifi-signal-level-gauge--inner-container {
+    position: absolute;
+    left: -15%;
+  }
+
+  :after,
+  :before,
+  .ch5-wifi-signal-level-gauge--inner-container {
+    border-color: transparent;
+    border-style: solid;
+  }
+}
+
+@mixin getWifi($size) {
+  $anim: 1.8s linear infinite;
+  $trans: 0.3s linear;
+  $border-color-light: rgb(148, 147, 147);
+  $border-width: calc($size/8.46);
+
+  box-sizing: border-box;
+  background-color: transparent;
+  border-width: $border-width;
+  border-radius: calc($size/2);
+  height: $size;
+  transition: border-top-color $trans;
+  width: $size;
+
+  &:before,
+  &:after {
+    content: "";
+    box-sizing: border-box;
+    background-color: transparent;
+    position: absolute;
+    transition: border-top-color $trans;
+  }
+
+  &:before {
+    $factor: 1.5;
+
+    border-width: calc($border-width);
+    border-radius: calc($size/$factor/2);
+    height: calc($size/$factor);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc($size/$factor);
+  }
+
+  &:after {
+    $factor: 5.6;
+
+    border-width: calc($size/$factor);
+    border-radius: calc($size/$factor);
+    height: calc($size/$factor);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc($size/$factor);
+  }
+
+  &.ch5-wifi-bars-selected-0 {
+    border-top-color: $border-color-light;
+
+    &:before,
+    &:after {
+      border-top-color: $border-color-light;
+    }
+  }
+
+  &.ch5-wifi-bars-selected-1 {
+    border-top-color: $border-color-light;
+
+    &:before {
+      border-top-color: $border-color-light;
+    }
+  }
+
+  &.ch5-wifi-bars-selected-2 {
+    border-top-color: $border-color-light;
+  }
+}
+
+@mixin setSize($size, $height) {
+  .ch5-wifi-signal-level-gauge {
+    &.ch5-wifi-signal-level-gauge--size-#{$size} {
+      width: calc($height * 1.5);
+      height: $height;
+
+      .ch5-wifi-signal-level-gauge--inner-container {
+        @include getWifi($height * 2);
+      }
+    }
+  }
+}
+
+@include setSize("small", $ch5-wifi-signal-level-gauge-small-height);
+@include setSize("regular", $ch5-wifi-signal-level-gauge-regular-height);
+@include setSize("large", $ch5-wifi-signal-level-gauge-large-height);
+@include setSize("x-large", $ch5-wifi-signal-level-gauge-x-large-height);
+
+$alignment: (
+  "left": 270deg,
+  "right": 90deg,
+  "up": 0deg,
+  "down": 180deg,
+);
+
+.ch5-wifi-signal-level-gauge {
+  @each $align, $value in $alignment {
+    &.ch5-wifi-signal-level-gauge--alignment-#{$align} {
+    transform: rotate($value);
+    }
+  }
+}
+
+$gaugeStyle: (
+  "light": white,
+  "dark": black,
+  "accents": skyblue,
+);
+
+@each $theme, $color in $gaugeStyle {
+  .ch5-wifi-signal-level-gauge--gauge-style-#{$theme} {
+    :before,
+    :after,
+    .ch5-wifi-signal-level-gauge--inner-container {
+      border-top-color: $color;
+    }
+  }
+}
+
+.ch5-wifi-signal-level-gauge--disabled {
+  pointer-events: none;
+  opacity: $ch5-wifi-signal-level-gauge-disabled-opacity;
+}
