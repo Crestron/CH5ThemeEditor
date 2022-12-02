@@ -1,0 +1,241 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-wifi-signal-level-gauge
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Main class
+ch5-wifi-signal-level-gauge {
+  display: inline-flex;
+}
+
+.ch5-wifi-signal-level-gauge {
+  position: relative;
+  display: inline-block;
+
+  :after,
+  :before,
+  .ch5-wifi-signal-level-gauge--inner-container {
+    border-color: transparent;
+    border-style: solid;
+  }
+}
+
+$gaugeStyle: (
+  "light": $ch5-wifi-signal-level-gauge-style-light,
+  "dark": $ch5-wifi-signal-level-gauge-style-dark,
+  "accents": $ch5-wifi-signal-level-gauge-style-accents,
+);
+
+@mixin getWifi($size, $alignmentValue) {
+  $anim: 1.8s linear infinite;
+  $trans: 0.3s linear;
+  $border-width: calc($size/8);
+
+  box-sizing: border-box;
+  background-color: transparent;
+  border-width: $border-width;
+  border-radius: 100%;
+  @if $alignmentValue == left {
+    transition: border-left-color $trans;
+  } @else if $alignmentValue == right {
+    transition: border-right-color $trans;
+  } @else if $alignmentValue == up {
+    transition: border-top-color $trans;
+  } @else if $alignmentValue == down {
+    transition: border-bottom-color $trans;
+  }
+  height: $size;
+  width: $size;
+
+  &:before,
+  &:after {
+    content: "";
+    box-sizing: border-box;
+    background-color: transparent;
+    position: absolute;
+    @if $alignmentValue == left {
+      transition: border-left-color $trans;
+    } @else if $alignmentValue == right {
+      transition: border-right-color $trans;
+    } @else if $alignmentValue == up {
+      transition: border-top-color $trans;
+    } @else if $alignmentValue == down {
+      transition: border-bottom-color $trans;
+    }
+  }
+
+  &:before {
+    $factor: 1.5;
+
+    border-width: $border-width;
+    border-radius: 100%;
+    height: calc($size/$factor);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc($size/$factor);
+  }
+
+  &:after {
+    $factor: 6;
+
+    border-width: calc($size/$factor);
+    border-radius: 100%;
+    height: calc($size/$factor);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc($size/$factor);
+  }
+
+  &.ch5-wifi-bars-selected-0 {
+    @include setBorderColorWifi($alignmentValue);
+
+    &:before,
+    &:after {
+      @include setBorderColorWifi($alignmentValue);
+    }
+  }
+
+  &.ch5-wifi-bars-selected-1 {
+    @include setBorderColorWifi($alignmentValue);
+
+    &:before {
+      @include setBorderColorWifi($alignmentValue);
+    }
+  }
+
+  &.ch5-wifi-bars-selected-2 {
+    @include setBorderColorWifi($alignmentValue);
+  }
+}
+
+@mixin setSize($size, $height, $width, $alignmentValue) {
+  &.ch5-wifi-signal-level-gauge--size-#{$size} {
+    @if $alignmentValue == left {
+      height: $width;
+      width: $height;
+    } @else if $alignmentValue == right {
+      height: $width;
+      width: $height;
+    } @else if $alignmentValue == up {
+      width: $width;
+      height: $height;
+    } @else if $alignmentValue == down {
+      width: $width;
+      height: $height;
+    }
+
+    .ch5-wifi-signal-level-gauge--inner-container {
+      position: absolute;
+      @if $alignmentValue == left {
+        top: -16%;
+      } @else if $alignmentValue == right {
+        bottom: -16%;
+        left: -100%;
+      } @else if $alignmentValue == up {
+        left: -16%;
+      } @else if $alignmentValue == down {
+        right: -16%;
+        top: -100%;
+      }
+    }
+
+    .ch5-wifi-signal-level-gauge--inner-container {
+      @include getWifi(calc($width / 0.75), $alignmentValue);
+    }
+  }
+}
+
+$alignment: (
+  "left": 270deg,
+  "right": 90deg,
+  "up": 0deg,
+  "down": 180deg,
+);
+
+@mixin setBorderColorWifi($alignmentValue) {
+  @if $alignmentValue == left {
+    border-left-color: $ch5-wifi-signal-level-gauge-border-color;
+  } @else if $alignmentValue == right {
+    border-right-color: $ch5-wifi-signal-level-gauge-border-color;
+  } @else if $alignmentValue == up {
+    border-top-color: $ch5-wifi-signal-level-gauge-border-color;
+  } @else if $alignmentValue == down {
+    border-bottom-color: $ch5-wifi-signal-level-gauge-border-color;
+  }
+}
+
+.ch5-wifi-signal-level-gauge {
+  @each $align, $value in $alignment {
+    &.ch5-wifi-signal-level-gauge--alignment-#{$align} {
+      @include setSize(
+        "small",
+        $ch5-wifi-signal-level-gauge-small-height,
+        $ch5-wifi-signal-level-gauge-small-width,
+        $align
+      );
+      @include setSize(
+        "regular",
+        $ch5-wifi-signal-level-gauge-regular-height,
+        $ch5-wifi-signal-level-gauge-regular-width,
+        $align
+      );
+      @include setSize(
+        "large",
+        $ch5-wifi-signal-level-gauge-large-height,
+        $ch5-wifi-signal-level-gauge-large-width,
+        $align
+      );
+      @include setSize(
+        "x-large",
+        $ch5-wifi-signal-level-gauge-x-large-height,
+        $ch5-wifi-signal-level-gauge-x-large-width,
+        $align
+      );
+    }
+  }
+}
+
+@each $theme, $color in $gaugeStyle {
+  .ch5-wifi-signal-level-gauge--alignment-up.ch5-wifi-signal-level-gauge--gauge-style-#{$theme} {
+    :before,
+    :after,
+    .ch5-wifi-signal-level-gauge--inner-container {
+      border-top-color: $color;
+    }
+  }
+  .ch5-wifi-signal-level-gauge--alignment-left.ch5-wifi-signal-level-gauge--gauge-style-#{$theme} {
+    :before,
+    :after,
+    .ch5-wifi-signal-level-gauge--inner-container {
+      border-left-color: $color;
+    }
+  }
+  .ch5-wifi-signal-level-gauge--alignment-down.ch5-wifi-signal-level-gauge--gauge-style-#{$theme} {
+    :before,
+    :after,
+    .ch5-wifi-signal-level-gauge--inner-container {
+      border-bottom-color: $color;
+    }
+  }
+  .ch5-wifi-signal-level-gauge--alignment-right.ch5-wifi-signal-level-gauge--gauge-style-#{$theme} {
+    :before,
+    :after,
+    .ch5-wifi-signal-level-gauge--inner-container {
+      border-right-color: $color;
+    }
+  }
+}
+
+.ch5-wifi-signal-level-gauge--disabled {
+  pointer-events: none;
+  opacity: $ch5-wifi-signal-level-gauge-disabled-opacity;
+}
