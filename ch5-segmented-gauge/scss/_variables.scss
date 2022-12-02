@@ -1,0 +1,51 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-segmented-gauge-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@import "./../../ch5-core/variables";
+
+/// Variables below
+
+/// Disabled opacity
+$ch5-segmented-gauge-disabled-opacity: 0.5 !default;
+
+/// Led style gauge style height
+$ch5-segmented-gauge-led-style-height: 20px;
+
+/// Led style gauge style width
+$ch5-segmented-gauge-led-style-width: 20px;
+
+/// Border for segmented gauge
+$ch5-segmented-gauge-border: solid 1px white;
+
+/// Led style border radius
+$ch5-segmented-gauge-led-style-border-radius: 50%;
+
+/// State graphic green
+$ch5-segmented-gauge-state-graphic-green: #22c55e;
+
+/// State graphic inactive
+$ch5-segmented-gauge-state-graphic-inactive: #909090;
+
+/// State graphic yellow
+$ch5-segmented-gauge-state-graphic-yellow: #eab308;
+
+/// State graphic green
+$ch5-segmented-gauge-state-graphic-red: #ef4444;
+
+/// State graphic green
+$ch5-segmented-gauge-state-graphic-blue: #3b82f6;
+
+/// State graphic green
+$ch5-segmented-gauge-state-graphic-orange: #f97316;
+
+/// State graphic green
+$ch5-segmented-gauge-state-graphic-white: #f8fafc;

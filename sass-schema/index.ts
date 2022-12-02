@@ -106,7 +106,7 @@ async function flattenScssComponents(paths: string[]) {
         flattenedScss: output,
         name: componentPath
       })
-    } catch (err:any) {
+    } catch (err: any) {
       console.warn("ERROR:" + err.message); //, componentPath, 'FLATTEN SCSS');
     }
   }
@@ -150,6 +150,7 @@ async function initialize() {
     'ch5-list': 'Ch5List',
     'ch5-modal-dialog': 'Ch5ModalDialog',
     'ch5-overlay-panel': 'Ch5OverlayPanel',
+    'ch5-segmented-gauge': 'Ch5SegmentedGauge',
     'ch5-select': 'Ch5Select',
     'ch5-signal-level-gauge': 'Ch5SignalLevelGauge',
     'ch5-slider': 'Ch5Slider',
