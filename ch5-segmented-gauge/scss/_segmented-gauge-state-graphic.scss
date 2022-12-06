@@ -11,31 +11,82 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-segmented-gauge {
-  .ch5-segmented-gauge--segment-state-graphic-green {
+  .ch5-segmented-gauge--segment-state-graphic-green.active {
     background-color: $ch5-segmented-gauge-state-graphic-green;
   }
 
-  .ch5-segmented-gauge--segment-state-graphic-yellow {
+  .ch5-segmented-gauge--segment-state-graphic-yellow.active {
     background-color: $ch5-segmented-gauge-state-graphic-yellow;
   }
 
-  .ch5-segmented-gauge--segment-state-graphic-red {
+  .ch5-segmented-gauge--segment-state-graphic-red.active {
     background-color: $ch5-segmented-gauge-state-graphic-red;
   }
 
-  .ch5-segmented-gauge--segment-state-graphic-inactive {
+  .ch5-segmented-gauge--segment-state-graphic-inactive.active {
     background-color: $ch5-segmented-gauge-state-graphic-inactive;
   }
 
-  .ch5-segmented-gauge--segment-state-graphic-white {
+  .ch5-segmented-gauge--segment-state-graphic-white.active {
     background-color: $ch5-segmented-gauge-state-graphic-white;
   }
 
-  .ch5-segmented-gauge--segment-state-graphic-blue {
+  .ch5-segmented-gauge--segment-state-graphic-blue.active {
     background-color: $ch5-segmented-gauge-state-graphic-blue;
   }
 
-  .ch5-segmented-gauge--segment-state-graphic-orange {
+  .ch5-segmented-gauge--segment-state-graphic-orange.active {
     background-color: $ch5-segmented-gauge-state-graphic-orange;
   }
+}
+
+.range-details {
+  position: absolute;
+  width: 100%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  /*   background: #053a5f; */
+  height: 20px;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  /*   background: #053a5f; */
+  height: 20px;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  margin-top: 0;
+  /* Centers thumb on the track */
+  background-color: transparent;
+  border: solid 1px red; // TODO - remove this - used for temporary testing purpose
+  height: 20px;
+  width: 22px;
+}
+
+/***** Firefox *****/
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  /*Removes extra border that FF applies*/
+  border-radius: 0;
+  /*Removes default border-radius that FF applies*/
+  background-color: transparent;
+  height: 20px;
+  width: 22px;
 }

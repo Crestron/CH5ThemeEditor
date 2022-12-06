@@ -11,10 +11,13 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-segmented-gauge {
+
+  /// Orientation horizontal class
   &.ch5-segmented-gauge--orientation-horizontal {
     flex-direction: row;
   }
 
+  /// Orientation vertical class
   &.ch5-segmented-gauge--orientation-vertical {
     flex-direction: column-reverse;
   }
