@@ -11,10 +11,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// Main class
-ch5-wifi-signal-level-gauge {
-  display: inline-flex;
-}
-
 .ch5-wifi-signal-level-gauge {
   position: relative;
   display: inline-block;
@@ -25,6 +21,10 @@ ch5-wifi-signal-level-gauge {
     border-color: transparent;
     border-style: solid;
   }
+}
+
+ch5-wifi-signal-level-gauge {
+  display: inline-flex;
 }
 
 $gaugeStyle: (
@@ -138,12 +138,12 @@ $gaugeStyle: (
       @if $alignmentValue == left {
         top: -16%;
       } @else if $alignmentValue == right {
-        bottom: -16%;
+        bottom: -17%;
         left: -100%;
       } @else if $alignmentValue == up {
         left: -16%;
       } @else if $alignmentValue == down {
-        right: -16%;
+        right: -17%;
         top: -100%;
       }
     }
@@ -235,6 +235,7 @@ $alignment: (
   }
 }
 
+/// Disabled Class
 .ch5-wifi-signal-level-gauge--disabled {
   pointer-events: none;
   opacity: $ch5-wifi-signal-level-gauge-disabled-opacity;
