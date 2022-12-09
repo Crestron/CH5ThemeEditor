@@ -11,6 +11,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-segmented-gauge {
+
+  /// Led style rectangle class
   &.ch5-segmented-gauge--gauge-led-style-rectangle {
     .ch5-segmented-gauge-segment {
       height: $ch5-segmented-gauge-led-style-height;
@@ -18,6 +20,7 @@
     }
   }
 
+  /// Led style circle class
   &.ch5-segmented-gauge--gauge-led-style-circle {
     .ch5-segmented-gauge-segment {
       height: $ch5-segmented-gauge-led-style-height;

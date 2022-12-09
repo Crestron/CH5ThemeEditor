@@ -21,7 +21,23 @@
   }
 }
 
+/// Disabled class
 .ch5-segmented-gauge--disabled {
   pointer-events: none;
   opacity: $ch5-segmented-gauge-disabled-opacity;
+}
+
+// Applied only for segmented gauge orientation = "vertical", to remove extra width i.e created after applying rotate property
+.ch5-segmented-gauge--inner-container-1 {
+  display: inline-block;
+}
+
+.ch5-segmented-gauge--inner-container-2 {
+  height: $ch5-segmented-gauge-inner-container-height;
+  width: $ch5-segmented-gauge-inner-container-width;
+}
+
+.ch5-segmented-gauge--inner-container-3 {
+  display: inline-block;
+  position: relative;
 }
