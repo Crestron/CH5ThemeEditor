@@ -11,10 +11,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// Main class
-ch5-button-list {
-  position: relative;
-}
-
 .ch5-button-list {
   position: relative;
   overflow: scroll;
@@ -25,7 +21,6 @@ ch5-button-list {
   cursor: pointer;
   display: grid;
   height: auto;
-  border: 1px solid #eee;
 
   &.active {
     cursor: -webkit-grabbing;
@@ -67,6 +62,10 @@ ch5-button-list {
       display: none;
     }
   }
+}
+
+ch5-button-list {
+  position: relative;
 }
 
 .ch5-button-list--disabled {
