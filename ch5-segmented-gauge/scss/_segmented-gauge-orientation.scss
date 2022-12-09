@@ -19,6 +19,9 @@
 
   /// Orientation vertical class
   &.ch5-segmented-gauge--orientation-vertical {
-    flex-direction: column-reverse;
+    display: inline-flex;
+    transform: $ch5-segmented-gauge-orientation-vertical;
+    margin-top: $ch5-segmented-gauge-vertical-margin-top;
+    transform-origin: $ch5-segmented-gauge-orientation-vertical-transform-origin;
   }
 }
