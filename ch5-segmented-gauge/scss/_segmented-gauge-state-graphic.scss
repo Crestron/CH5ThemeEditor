@@ -96,16 +96,16 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: $ch5-segmented-gauge-range-appearance; // Override default look 
   appearance: $ch5-segmented-gauge-range-appearance;
   margin-top: $ch5-segmented-gauge-range-margin-top;
-  background-color: $ch5-segmented-gauge-range-background-color;
   height: $ch5-segmented-gauge-range-runnable-height;
   width: $ch5-segmented-gauge-slider-thumb-width;
+  visibility: hidden; // For ios devices background:transparent is not working, adding visibility hidden property
 }
 
 // Thumb Styles for Firefox
 input[type="range"]::-moz-range-thumb {
   border: $ch5-segmented-gauge-range-thumb-border; // Removes extra border that firefox 
   border-radius: $ch5-segmented-gauge-range-border-radius; // Removes default border-radius that FF applies
-  background-color: $ch5-segmented-gauge-range-background-color;
   height: $ch5-segmented-gauge-range-runnable-height;
   width: $ch5-segmented-gauge-slider-thumb-width;
+  visibility: hidden; // For ios devices background:transparent is not working, adding visibility hidden property
 }
