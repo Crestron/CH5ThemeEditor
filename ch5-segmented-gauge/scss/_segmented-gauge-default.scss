@@ -10,6 +10,12 @@
 /// @group ch5-segmented-gauge
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// styles to avoid extra width for segmented gauge
+ch5-segmented-gauge {
+  display: inline-flex;
+  max-width: max-content;
+}
+
 /// Main class
 .ch5-segmented-gauge {
   position: relative;
@@ -17,7 +23,7 @@
 
   .ch5-segmented-gauge-segment {
     background-color: $ch5-segmented-gauge-state-graphic-inactive;
-    border: $ch5-segmented-gauge-border;
+    margin-right: $ch5-segmented-gauge-margin-right;
   }
 }
 
@@ -33,7 +39,6 @@
 }
 
 .ch5-segmented-gauge--inner-container-2 {
-  height: $ch5-segmented-gauge-inner-container-height;
   width: $ch5-segmented-gauge-inner-container-width;
 }
 
