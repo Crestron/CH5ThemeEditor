@@ -15,13 +15,18 @@
   /// Orientation horizontal class
   &.ch5-segmented-gauge--orientation-horizontal {
     flex-direction: row;
+
+    .ch5-segmented-gauge-segment {
+      margin-right: $ch5-segmented-gauge-segment-margin;
+    }
   }
 
   /// Orientation vertical class
   &.ch5-segmented-gauge--orientation-vertical {
-    display: inline-flex;
-    transform: $ch5-segmented-gauge-orientation-vertical;
-    margin-top: $ch5-segmented-gauge-vertical-margin-top;
-    transform-origin: $ch5-segmented-gauge-orientation-vertical-transform-origin;
+    flex-direction: column-reverse;
+
+    .ch5-segmented-gauge-segment {
+      margin-bottom: $ch5-segmented-gauge-segment-margin;
+    }
   }
 }

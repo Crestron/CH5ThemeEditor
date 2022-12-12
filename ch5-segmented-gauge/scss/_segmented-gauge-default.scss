@@ -23,7 +23,6 @@ ch5-segmented-gauge {
 
   .ch5-segmented-gauge-segment {
     background-color: $ch5-segmented-gauge-state-graphic-inactive;
-    margin-right: $ch5-segmented-gauge-margin-right;
   }
 }
 
@@ -31,18 +30,4 @@ ch5-segmented-gauge {
 .ch5-segmented-gauge--disabled {
   pointer-events: none;
   opacity: $ch5-segmented-gauge-disabled-opacity;
-}
-
-// Applied only for segmented gauge orientation = "vertical", to remove extra width i.e created after applying rotate property
-.ch5-segmented-gauge--inner-container-1 {
-  display: inline-block;
-}
-
-.ch5-segmented-gauge--inner-container-2 {
-  width: $ch5-segmented-gauge-inner-container-width;
-}
-
-.ch5-segmented-gauge--inner-container-3 {
-  display: inline-block;
-  position: relative;
 }
