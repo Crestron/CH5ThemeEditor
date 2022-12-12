@@ -48,49 +48,40 @@
   }
 }
 
-.ch5-segmented-gauge--orientation-horizontal {
-  .range-details {
-    position: absolute;
-    width: $ch5-segmented-gauge-range-details-width;
-  }
+// Css classes used for slider 
+.ch5-segmented-gauge--orientation-horizontal .ch5-segmented-gauge--input-range {
+  position: absolute;
+  cursor: pointer;
+  -webkit-appearance: $ch5-segmented-gauge-range-appearance;
+  appearance: $ch5-segmented-gauge-range-appearance;
+  background: $ch5-segmented-gauge-range-background-color;
 }
 
 .ch5-segmented-gauge--orientation-vertical {
-  .range-details {
+  .ch5-segmented-gauge--input-range {
     position: absolute;
-    width: $ch5-segmented-gauge-range-details-width;
+    cursor: pointer;
+    -webkit-appearance: $ch5-segmented-gauge-range-appearance;
+    appearance: $ch5-segmented-gauge-range-appearance;
+    background: $ch5-segmented-gauge-range-background-color;
+    transform: $ch5-segmented-gauge-orientation-vertical;
+    transform-origin: $ch5-segmented-gauge-orientation-vertical-transform-origin;
+    bottom: $ch5-segmented-gauge-orientation-vertical-bottom;
   }
 }
 
-// Css classes used for slider 
-.ch5-segmented-gauge--orientation-horizontal input[type="range"] {
-  cursor: pointer;
-  -webkit-appearance: $ch5-segmented-gauge-range-appearance;
-  appearance: $ch5-segmented-gauge-range-appearance;
-  background: $ch5-segmented-gauge-range-background-color;
-  width: $ch5-segmented-gauge-range-width;
-}
-
-.ch5-segmented-gauge--orientation-vertical input[type="range"] {
-  cursor: pointer;
-  -webkit-appearance: $ch5-segmented-gauge-range-appearance;
-  appearance: $ch5-segmented-gauge-range-appearance;
-  background: $ch5-segmented-gauge-range-background-color;
-  width: $ch5-segmented-gauge-range-width;
-}
-
 // Track Styles for Chrome, Safari, Opera, and Edge Chromium 
-input[type="range"]::-webkit-slider-runnable-track {
+.ch5-segmented-gauge--input-range::-webkit-slider-runnable-track {
   height: $ch5-segmented-gauge-range-runnable-height;
 }
 
 // Track styles for Firefox
-input[type="range"]::-moz-range-track {
+.ch5-segmented-gauge--input-range::-moz-range-track {
   height: $ch5-segmented-gauge-range-runnable-height;
 }
 
 // Thumb Styles for Chrome, Safari, Opera, and Edge Chromium
-input[type="range"]::-webkit-slider-thumb {
+.ch5-segmented-gauge--input-range::-webkit-slider-thumb {
   margin-top: $ch5-segmented-gauge-slider-thumb-margin-top;
   margin-left: $ch5-segmented-gauge-slider-thumb-margin-left; // Centers thumb on the track 
   -webkit-appearance: $ch5-segmented-gauge-range-appearance; // Override default look 
@@ -102,7 +93,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 // Thumb Styles for Firefox
-input[type="range"]::-moz-range-thumb {
+.ch5-segmented-gauge--input-range::-moz-range-thumb {
   border: $ch5-segmented-gauge-range-thumb-border; // Removes extra border that firefox 
   border-radius: $ch5-segmented-gauge-range-border-radius; // Removes default border-radius that FF applies
   height: $ch5-segmented-gauge-range-runnable-height;

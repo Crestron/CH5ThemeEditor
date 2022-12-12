@@ -23,8 +23,8 @@ $ch5-segmented-gauge-led-style-height: 20px;
 /// Led style gauge style width
 $ch5-segmented-gauge-led-style-width: 20px;
 
-/// Margin right for segmented gauge
-$ch5-segmented-gauge-margin-right: 2px;
+/// Margin for segmented gauge children
+$ch5-segmented-gauge-segment-margin: 2px;
 
 /// Led style border radius
 $ch5-segmented-gauge-led-style-border-radius: 50%;
@@ -100,3 +100,6 @@ $ch5-segmented-gauge-slider-thumb-margin-left: -2px;
 
 /// Thumb style width
 $ch5-segmented-gauge-slider-thumb-width: 24px;
+
+/// Segmented gauge vertical bottom pixel
+$ch5-segmented-gauge-orientation-vertical-bottom: -18px;
