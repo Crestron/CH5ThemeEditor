@@ -12,14 +12,35 @@
 
 /// Variables below
 
+/// Disable opacity
 $ch5-signal-level-gauge-disabled-opacity: 0.5;
+
+/// Height small
 $ch5-signal-level-gauge-small-height: 24px;
+
+/// Width small
 $ch5-signal-level-gauge-small-width: 36px;
+
+/// Height regular
 $ch5-signal-level-gauge-regular-height: 35px;
+
+/// Width regular
 $ch5-signal-level-gauge-regular-width: 45px;
+
+/// Height large
 $ch5-signal-level-gauge-large-height: 60px;
+
+/// Width large
 $ch5-signal-level-gauge-large-width: 90px;
+
+/// Height x-large
 $ch5-signal-level-gauge-xlarge-height: 96px;
+
+/// Width x-large
 $ch5-signal-level-gauge-xlarge-width: 180px;
+
+/// Bar color
 $ch5-signal-level-gauge-bar-color: grey;
+
+/// Selected bar color
 $ch5-signal-level-gauge-selected-bar-color: rgb(103, 190, 240);

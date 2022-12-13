@@ -7,27 +7,25 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-animation-variables
+/// @group ch5-segmented-gauge
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "./../../ch5-core/variables";
+.ch5-segmented-gauge {
 
-/// Variables below
+  /// Led style rectangle class
+  &.ch5-segmented-gauge--gauge-led-style-rectangle {
+    .ch5-segmented-gauge-segment {
+      height: $ch5-segmented-gauge-led-style-height;
+      width: $ch5-segmented-gauge-led-style-width;
+    }
+  }
 
-/// Disabled opacity
-$ch5-animation-disabled-opacity: 0.5 !default;
-
-/// Font size regular
-$ch5-animation-font-size-regular: 72px !default;
-
-/// Font size small
-$ch5-animation-font-size-small: 40px !default;
-
-/// Font size large
-$ch5-animation-font-size-large: 104px !default;
-
-/// Font size x-large
-$ch5-animation-font-size-x-large: 136px !default;
-
-/// Animation color
-$ch5-animation-color: $theme-foreground-color !default;
+  /// Led style circle class
+  &.ch5-segmented-gauge--gauge-led-style-circle {
+    .ch5-segmented-gauge-segment {
+      height: $ch5-segmented-gauge-led-style-height;
+      width: $ch5-segmented-gauge-led-style-width;
+      border-radius: $ch5-segmented-gauge-led-style-border-radius;
+    }
+  }
+}

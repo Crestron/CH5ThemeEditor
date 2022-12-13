@@ -12,6 +12,9 @@
 
 .ch5-color-picker {
   position: relative;
+  display: inline-flex;
+  width: $ch5-color-picker-width;
+  height: $ch5-color-picker-height;
 }
 
 .ch5-color-picker--disabled {
@@ -22,6 +25,8 @@
 ch5-color-picker {
   .colorPicker {
     display: inline-flex;
+    width: 100%;
+    height: 100%;
   }
 
   .colorPicker .extras {
@@ -54,12 +59,15 @@ ch5-color-picker {
   /* main dimensions */
   .colorPicker .twod,
   .colorPicker .twod .bg {
-    width: 240px;
-    height: 240px;
+    min-width: 100px;
+    min-height: 100px;
+    width: calc(100% - 30px);
+    height: 100%;
   }
   .colorPicker .oned,
   .colorPicker .oned .bg {
-    height: 240px;
+    min-height: 100px;
+    height: 100%;
   }
   .colorPicker .oned,
   .colorPicker .oned .bg,
@@ -69,13 +77,8 @@ ch5-color-picker {
 
   .colorPicker .twod .bg {
     position: absolute;
-
-    /* These seem to cause issues in some browsers, careful!
-  border: 1px solid #BBB;
-  -moz-border-radius: .3em;
-  border-radius: .3em;
-  */
   }
+
   .colorPicker .twod .pointer {
     position: relative;
     z-index: 2;
@@ -109,11 +112,8 @@ ch5-color-picker {
 
   .colorPicker .oned .bg {
     border: 1px solid #bbb;
-    /*
-  -moz-border-radius: .3em;
-  border-radius: .3em;
-  */
   }
+
   .colorPicker .oned .pointer {
     position: relative;
     z-index: 2;

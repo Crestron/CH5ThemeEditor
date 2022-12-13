@@ -7,27 +7,27 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-animation-variables
+/// @group ch5-segmented-gauge
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "./../../ch5-core/variables";
+// styles to avoid extra width for segmented gauge
+ch5-segmented-gauge {
+  display: inline-flex;
+  max-width: max-content;
+}
 
-/// Variables below
+/// Main class
+.ch5-segmented-gauge {
+  position: relative;
+  display: inline-flex;
 
-/// Disabled opacity
-$ch5-animation-disabled-opacity: 0.5 !default;
+  .ch5-segmented-gauge-segment {
+    background-color: $ch5-segmented-gauge-state-graphic-inactive;
+  }
+}
 
-/// Font size regular
-$ch5-animation-font-size-regular: 72px !default;
-
-/// Font size small
-$ch5-animation-font-size-small: 40px !default;
-
-/// Font size large
-$ch5-animation-font-size-large: 104px !default;
-
-/// Font size x-large
-$ch5-animation-font-size-x-large: 136px !default;
-
-/// Animation color
-$ch5-animation-color: $theme-foreground-color !default;
+/// Disabled class
+.ch5-segmented-gauge--disabled {
+  pointer-events: none;
+  opacity: $ch5-segmented-gauge-disabled-opacity;
+}
