@@ -34,7 +34,6 @@ $gaugeStyle: (
 );
 
 @mixin getWifi($size, $alignmentValue) {
-  $anim: 1.8s linear infinite;
   $trans: 0.3s linear;
   $border-width: calc($size/8);
 
@@ -44,15 +43,21 @@ $gaugeStyle: (
   border-radius: 100%;
   @if $alignmentValue == left {
     transition: border-left-color $trans;
+    width: 200%;
+    height: 134%;
   } @else if $alignmentValue == right {
     transition: border-right-color $trans;
+    width: 200%;
+    height: 134%;
   } @else if $alignmentValue == up {
     transition: border-top-color $trans;
+    height: 200%;
+    width: 134%;
   } @else if $alignmentValue == down {
     transition: border-bottom-color $trans;
+    height: 200%;
+    width: 134%;
   }
-  height: $size;
-  width: $size;
 
   &:before,
   &:after {
@@ -73,26 +78,24 @@ $gaugeStyle: (
 
   &:before {
     $factor: 1.5;
-
     border-width: $border-width;
     border-radius: 100%;
-    height: calc($size/$factor);
+    height: 88%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: calc($size/$factor);
+    width: 88%;
   }
 
   &:after {
     $factor: 6;
-
     border-width: calc($size/$factor);
     border-radius: 100%;
-    height: calc($size/$factor);
+    height: 25%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: calc($size/$factor);
+    width: 25%;
   }
 
   &.ch5-wifi-bars-selected-0 {
@@ -100,7 +103,7 @@ $gaugeStyle: (
 
     &:before,
     &:after {
-      @include setBorderColorWifi($alignmentValue);
+      @include setBorderColorWifiExtend($alignmentValue);
     }
   }
 
@@ -108,7 +111,7 @@ $gaugeStyle: (
     @include setBorderColorWifi($alignmentValue);
 
     &:before {
-      @include setBorderColorWifi($alignmentValue);
+      @include setBorderColorWifiExtend($alignmentValue);
     }
   }
 
@@ -162,14 +165,27 @@ $alignment: (
 );
 
 @mixin setBorderColorWifi($alignmentValue) {
+  color: $ch5-wifi-signal-level-gauge-border-color;
   @if $alignmentValue == left {
-    border-left-color: $ch5-wifi-signal-level-gauge-border-color;
+    border-left-color: currentColor;
   } @else if $alignmentValue == right {
-    border-right-color: $ch5-wifi-signal-level-gauge-border-color;
+    border-right-color: currentColor;
   } @else if $alignmentValue == up {
-    border-top-color: $ch5-wifi-signal-level-gauge-border-color;
+    border-top-color: currentColor;
   } @else if $alignmentValue == down {
-    border-bottom-color: $ch5-wifi-signal-level-gauge-border-color;
+    border-bottom-color: currentColor;
+  }
+}
+
+@mixin setBorderColorWifiExtend($alignmentValue) {
+  @if $alignmentValue == left {
+    border-left-color: currentColor;
+  } @else if $alignmentValue == right {
+    border-right-color: currentColor;
+  } @else if $alignmentValue == up {
+    border-top-color: currentColor;
+  } @else if $alignmentValue == down {
+    border-bottom-color: currentColor;
   }
 }
 

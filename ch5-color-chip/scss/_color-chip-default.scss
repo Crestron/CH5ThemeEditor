@@ -10,6 +10,7 @@
 /// @group ch5-color-chip
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/// Color Chip parent class
 .ch5-color-chip {
   position: relative;
   display: inline-block;
@@ -18,6 +19,7 @@
   width: $ch5-color-chip-div-width;
 }
 
+/// Color Chip disabled class
 .ch5-color-chip--disabled {
   pointer-events: none;
   opacity: $ch5-color-chip-disabled-opacity;
