@@ -121,7 +121,7 @@ function extractMixins(data: string) {
 }
 
 function processMixinsSelfInclude(mixins: { name: string, content: string }[]) {
-  // Unlike the regex below whichi uses 'g' we don't use 'g' because we want only the first occurance to identify and replace.
+  // Unlike the regex below which uses 'g' we don't use 'g' because we want only the first occurrence to identify and replace.
   const includeRegex = new RegExp(/(@include[ a-zA-Z0-9-$,();]+)/, '');
   const includeNameRegex = new RegExp(/(@include[ a-zA-Z0-9-]+)/, '');
   for (const mixin of mixins) {
