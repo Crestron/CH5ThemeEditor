@@ -3,6 +3,7 @@ import { extractMixins, processSassFile } from './sassToJson';
 import { BASE_OBJECT_INTERFACE, OUTPUT_JSON, OUTPUT_PROPERTIES, OUTPUT_SCSS, PROPERTIES_INTERFACE, THEME_EDITOR_PATH } from "./utils";
 import * as packageJson from "./../package.json";
 
+const _ = require('lodash');
 const fs = require('fs');
 const flatten = require('sass-flatten');
 const jsonfile = require('jsonfile');
@@ -64,11 +65,16 @@ async function buildJsonStructure(flattenedComponents: { flattenedScss: string, 
   // For each flattened SCSS component
   for (const component of flattenedComponents) {
     try {
-      const properties = await GET_PROPERTIES(componentsPath[component.name]);
+      let properties = await GET_PROPERTIES(componentsPath[component.name]);
+
       // TODO: Hardcoded for now, to be later updated (CH5C-2039)
       const componentThemeVersion = '1.0.0';
       const businessRules = jsonfile.readFileSync("./sass-schema/business-rules/" + component.name + ".rules.json").businessRules;
       // Save the properties to a json for future reference
+      if (_.isNil(properties)) {
+        properties = {};
+        console.warn("No properties defined for " + component.name); 
+      }
       generatePropertiesJson(properties, component.name);
       // Process the flattened scss
       const outputJson = await processSassFile(component.flattenedScss, component.name, properties, globalMixins, businessRules);
@@ -144,6 +150,8 @@ async function initialize() {
     'ch5-animation': 'Ch5Animation',
     'ch5-background': 'Ch5Background',
     'ch5-button': 'Ch5Button',
+    'ch5-color-chip': 'Ch5ColorChip',
+    'ch5-color-picker': 'Ch5ColorPicker',
     'ch5-dpad': 'Ch5Dpad',
     'ch5-image': 'Ch5Image',
     'ch5-keypad': 'Ch5Keypad',
@@ -157,7 +165,8 @@ async function initialize() {
     'ch5-spinner': 'Ch5Spinner',
     'ch5-textinput': 'Ch5TextInput',
     'ch5-toggle': 'Ch5Toggle',
-    'ch5-video': 'Ch5Video'
+    'ch5-video': 'Ch5Video',
+    'ch5-wifi-signal-level-gauge': 'Ch5WifiSignalLevelGauge'
   };
 
   // For each component flatten its scss
