@@ -50,19 +50,17 @@
 // Css classes used for range slider
 .ch5-segmented-gauge--orientation-horizontal {
   .ch5-segmented-gauge--input-range {
-    width: 100%;
     position: absolute;
     cursor: pointer;
     -webkit-appearance: $ch5-segmented-gauge-range-appearance;
     appearance: $ch5-segmented-gauge-range-appearance;
     background: $ch5-segmented-gauge-range-background-color;
-    left: $ch5-segmented-gauge-orientation-horizontal-left;
+    height: 100%;
   }
 }
 
 .ch5-segmented-gauge--orientation-vertical {
   .ch5-segmented-gauge--input-range {
-    height: 100%;
     position: absolute;
     cursor: pointer;
     -webkit-appearance: $ch5-segmented-gauge-range-appearance;
@@ -70,7 +68,7 @@
     background: $ch5-segmented-gauge-range-background-color;
     transform: $ch5-segmented-gauge-orientation-vertical;
     transform-origin: $ch5-segmented-gauge-orientation-vertical-transform-origin;
-    bottom: $ch5-segmented-gauge-orientation-vertical-bottom;
+    width: 100%;
   }
 }
 
