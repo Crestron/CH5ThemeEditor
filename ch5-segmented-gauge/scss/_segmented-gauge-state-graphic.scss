@@ -55,7 +55,7 @@
     -webkit-appearance: $ch5-segmented-gauge-range-appearance;
     appearance: $ch5-segmented-gauge-range-appearance;
     background: $ch5-segmented-gauge-range-background-color;
-    height: 100%;
+    height: 100%; // required if we want the range to show pointer when height is extended
   }
 }
 
@@ -68,7 +68,6 @@
     background: $ch5-segmented-gauge-range-background-color;
     transform: $ch5-segmented-gauge-orientation-vertical;
     transform-origin: $ch5-segmented-gauge-orientation-vertical-transform-origin;
-    width: 100%;
   }
 }
 
