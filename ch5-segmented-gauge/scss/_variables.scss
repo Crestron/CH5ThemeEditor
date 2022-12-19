@@ -12,8 +12,6 @@
 
 @import "./../../ch5-core/variables";
 
-/// Variables below
-
 /// Disabled opacity
 $ch5-segmented-gauge-disabled-opacity: 0.5 !default;
 
@@ -77,12 +75,6 @@ $ch5-segmented-gauge-range-appearance: none;
 /// Input range thumb border
 $ch5-segmented-gauge-range-thumb-border: none;
 
-/// Width for segmented gauge inner parent
-$ch5-segmented-gauge-inner-container-width: 20px;
-
-/// Height for segmented gauge inner parent
-$ch5-segmented-gauge-inner-container-height: 20px;
-
 /// Rotate for vertical segmented gauge
 $ch5-segmented-gauge-orientation-vertical: rotate(270deg);
 
@@ -100,9 +92,3 @@ $ch5-segmented-gauge-slider-thumb-margin-left: -2px;
 
 /// Thumb style width
 $ch5-segmented-gauge-slider-thumb-width: 24px;
-
-/// Segmented gauge vertical bottom pixel
-$ch5-segmented-gauge-orientation-vertical-bottom: -40px;
-
-/// Segmented gauge horizontal left
-$ch5-segmented-gauge-orientation-horizontal-left: -20px;

@@ -83,6 +83,7 @@ $gaugeStyle: (
       .ch5-wifi-signal-level-gauge-top-signal,
       .ch5-wifi-signal-level-gauge-middle-signal,
       .ch5-wifi-signal-level-gauge-bottom-signal {
+        /// class for unselcted Bar color
         &.ch5-wifi-signal-level-gauge--selected-false {
           $trans: 0.3s linear;
           @if $alignmentValue == left {
@@ -96,6 +97,7 @@ $gaugeStyle: (
           }
           transition: currentColor $trans;
         }
+        /// class for selcted Bar color
         &.ch5-wifi-signal-level-gauge--selected-true {
           $trans: 0.3s linear;
           @if $alignmentValue == left {
