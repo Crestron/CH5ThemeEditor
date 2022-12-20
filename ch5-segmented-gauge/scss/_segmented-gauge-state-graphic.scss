@@ -11,6 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-segmented-gauge {
+
   /// State graphic green class
   .ch5-segmented-gauge--segment-state-graphic-green.active {
     background-color: $ch5-segmented-gauge-state-graphic-green;
@@ -45,59 +46,4 @@
   .ch5-segmented-gauge--segment-state-graphic-orange.active {
     background-color: $ch5-segmented-gauge-state-graphic-orange;
   }
-}
-
-// Css classes used for range slider
-.ch5-segmented-gauge--orientation-horizontal {
-  .ch5-segmented-gauge--input-range {
-    position: absolute;
-    cursor: pointer;
-    -webkit-appearance: $ch5-segmented-gauge-range-appearance;
-    appearance: $ch5-segmented-gauge-range-appearance;
-    background: $ch5-segmented-gauge-range-background-color;
-    height: 100%; // required if we want the range to show pointer when height is extended
-  }
-}
-
-.ch5-segmented-gauge--orientation-vertical {
-  .ch5-segmented-gauge--input-range {
-    position: absolute;
-    cursor: pointer;
-    -webkit-appearance: $ch5-segmented-gauge-range-appearance;
-    appearance: $ch5-segmented-gauge-range-appearance;
-    background: $ch5-segmented-gauge-range-background-color;
-    transform: $ch5-segmented-gauge-orientation-vertical;
-    transform-origin: $ch5-segmented-gauge-orientation-vertical-transform-origin;
-  }
-}
-
-// Track Styles for Chrome, Safari, Opera, and Edge Chromium
-.ch5-segmented-gauge--input-range::-webkit-slider-runnable-track {
-  height: $ch5-segmented-gauge-range-runnable-height;
-}
-
-// Track styles for Firefox
-.ch5-segmented-gauge--input-range::-moz-range-track {
-  height: $ch5-segmented-gauge-range-runnable-height;
-}
-
-// Thumb Styles for Chrome, Safari, Opera, and Edge Chromium
-.ch5-segmented-gauge--input-range::-webkit-slider-thumb {
-  margin-top: $ch5-segmented-gauge-slider-thumb-margin-top;
-  margin-left: $ch5-segmented-gauge-slider-thumb-margin-left; // Centers thumb on the track
-  -webkit-appearance: $ch5-segmented-gauge-range-appearance; // Override default look
-  appearance: $ch5-segmented-gauge-range-appearance;
-  margin-top: $ch5-segmented-gauge-range-margin-top;
-  height: $ch5-segmented-gauge-range-runnable-height;
-  width: $ch5-segmented-gauge-slider-thumb-width;
-  visibility: hidden; // For ios devices background:transparent is not working, adding visibility hidden property
-}
-
-// Thumb Styles for Firefox
-.ch5-segmented-gauge--input-range::-moz-range-thumb {
-  border: $ch5-segmented-gauge-range-thumb-border; // Removes extra border that firefox
-  border-radius: $ch5-segmented-gauge-range-border-radius; // Removes default border-radius that FF applies
-  height: $ch5-segmented-gauge-range-runnable-height;
-  width: $ch5-segmented-gauge-slider-thumb-width;
-  visibility: hidden; // For ios devices background:transparent is not working, adding visibility hidden property
 }

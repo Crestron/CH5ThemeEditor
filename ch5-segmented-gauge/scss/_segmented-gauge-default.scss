@@ -20,6 +20,7 @@ ch5-segmented-gauge {
 .ch5-segmented-gauge {
   position: relative;
   display: inline-flex;
+  cursor: pointer;
 
   .ch5-segmented-gauge-segment {
     background-color: $ch5-segmented-gauge-state-graphic-inactive;
