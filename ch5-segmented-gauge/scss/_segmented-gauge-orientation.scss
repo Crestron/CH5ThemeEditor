@@ -15,6 +15,7 @@
   /// Orientation horizontal class
   &.ch5-segmented-gauge--orientation-horizontal {
     flex-direction: row;
+    padding-left: $ch5-segmented-gauge-horizontal-padding-left; /// to remove the color for first segment
 
     .ch5-segmented-gauge-segment {
       margin-right: $ch5-segmented-gauge-segment-margin;
@@ -25,6 +26,7 @@
   &.ch5-segmented-gauge--orientation-vertical {
     flex-direction: column;
     transform: $ch5-segmented-gauge-orientation-vertical;
+    padding-top: $ch5-segmented-gauge-horizontal-padding-top; /// to remove the color for first segment
 
     .ch5-segmented-gauge-segment {
       margin-top: $ch5-segmented-gauge-segment-margin;
