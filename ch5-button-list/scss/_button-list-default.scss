@@ -31,6 +31,11 @@
     width: 0px;
   }
 
+  &.ch5-button-list--center-items-true {
+    justify-content: center;
+    align-items: center;
+  }
+
   .button-container {
     min-width: $ch5-button-list-button-container-min-width;
     min-height: $ch5-button-list-button-container-min-height;
@@ -66,6 +71,7 @@
 
 ch5-button-list {
   position: relative;
+  display: block;
 }
 
 .ch5-button-list--disabled {
