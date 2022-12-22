@@ -12,6 +12,10 @@
 
 .ch5-segmented-gauge {
 
+  .ch5-segmented-gauge--segment--state-graphic-hidden {
+    background-color: transparent;
+  }
+
   /// State graphic green class
   .ch5-segmented-gauge--segment-state-graphic-green.active {
     background-color: $ch5-segmented-gauge-state-graphic-green;
