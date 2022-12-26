@@ -31,7 +31,6 @@
     @for $var from 1 to 500 {
       &.ch5-button-list--rows-#{$var} {
         grid-template-rows: repeat($var, 1fr);
-        height: $ch5-button-list-button-container-min-height * $var + 7px;
       }
     }
   }
@@ -59,7 +58,6 @@
     @for $var from 1 to 500 {
       &.ch5-button-list--columns-#{$var} {
         grid-template-columns: repeat($var, 1fr);
-        width: $ch5-button-list-button-container-min-width * $var + 7px;
       }
     }
   }
