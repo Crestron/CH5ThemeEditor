@@ -36,12 +36,6 @@
     align-items: center;
   }
 
-  .button-container {
-    width: $ch5-button-list-button-container-width;
-    height: $ch5-button-list-button-container-height;
-    padding: $ch5-button-list-button-container-padding;
-  }
-
   &~.scrollbar-container {
     position: absolute;
     background-color: $ch5-scrollbar-track-color;
@@ -84,4 +78,10 @@ ch5-button-list {
     pointer-events: none;
     opacity: $ch5-button-list-disabled-opacity;
   }
+}
+
+.ch5-button-list-button-container {
+  width: $ch5-button-list-button-container-width;
+  height: $ch5-button-list-button-container-height;
+  padding: $ch5-button-list-button-container-padding;
 }
