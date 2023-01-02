@@ -18,7 +18,6 @@
   transition: all 0.2s;
   will-change: transform;
   user-select: none;
-  cursor: pointer;
   display: grid;
   height: auto;
 
@@ -80,7 +79,7 @@ ch5-button-list {
   }
 }
 
-.ch5-button-list-button-container {
+.ch5-button-list--button-container {
   width: $ch5-button-list-button-container-width;
   height: $ch5-button-list-button-container-height;
   padding: $ch5-button-list-button-container-padding;

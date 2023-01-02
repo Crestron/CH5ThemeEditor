@@ -16,12 +16,27 @@ ch5-button-list {
     }
 
     &.ch5-button-list--stretch-height {
-      height: 100%;
+      .ch5-button-list--button-container {
+        height: 100%;
+      }
     }
 
     &.ch5-button-list--stretch-both {
       width: 100%;
-      height: 100%;
+
+      .ch5-button-list--button-container {
+        height: 100%;
+      }
+    }
+
+    &.ch5-button-list--scrollbar-false {
+
+      &.ch5-button-list--stretch-width,
+      &.ch5-button-list--stretch-both {
+        .ch5-button-list--button-container {
+          width: 100%;
+        }
+      }
     }
   }
 }
