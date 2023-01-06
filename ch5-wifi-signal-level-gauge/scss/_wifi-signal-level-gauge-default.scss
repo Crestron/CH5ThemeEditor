@@ -24,6 +24,14 @@ $gaugeStyle: (
   top: 50%;
   transform: translate(-50%, -50%);
 }
+@keyframes redrawForIOS {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @mixin setSize($size, $height, $width, $alignmentValue) {
   @each $theme, $color in $gaugeStyle {
@@ -33,6 +41,7 @@ $gaugeStyle: (
       }
       .ch5-wifi-signal-level-gauge--selected-true {
         color: $color;
+        animation: redrawForIOS 1s linear infinite; // This is required for CH5C-4037
       }
     }
 

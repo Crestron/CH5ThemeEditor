@@ -13,13 +13,13 @@
 // styles to avoid extra width for segmented gauge
 ch5-segmented-gauge {
   display: inline-flex;
-  max-width: max-content;
 }
 
 /// Main class
 .ch5-segmented-gauge {
   position: relative;
   display: inline-flex;
+  cursor: pointer;
 
   .ch5-segmented-gauge-segment {
     background-color: $ch5-segmented-gauge-state-graphic-inactive;

@@ -19,14 +19,25 @@
     .ch5-segmented-gauge-segment {
       margin-right: $ch5-segmented-gauge-segment-margin;
     }
+
+    .ch5-segmented-gauge--segment--state-graphic-hidden {
+      width: $ch5-segmented-gauge-hidden-segment; /// to remove the color for first segment
+      margin-right: $ch5-segmented-gauge-hidden-margin;
+    }
   }
 
   /// Orientation vertical class
   &.ch5-segmented-gauge--orientation-vertical {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    transform: $ch5-segmented-gauge-orientation-vertical;
 
     .ch5-segmented-gauge-segment {
-      margin-bottom: $ch5-segmented-gauge-segment-margin;
+      margin-top: $ch5-segmented-gauge-segment-margin;
+    }
+
+    .ch5-segmented-gauge--segment--state-graphic-hidden {
+      height: $ch5-segmented-gauge-hidden-segment; /// to remove the color for first segment
+      margin-top: $ch5-segmented-gauge-hidden-margin;
     }
   }
 }
