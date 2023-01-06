@@ -14,6 +14,13 @@
   &.ch5-button-list--orientation-horizontal {
     grid-auto-flow: column;
 
+    &.ch5-button-list--button-container-stretch-width {
+
+      .ch5-button-list--button-container {
+        width: 100%;
+      }
+    }
+
     .ch5-button-list--button-container {
       height: 100%;
     }
