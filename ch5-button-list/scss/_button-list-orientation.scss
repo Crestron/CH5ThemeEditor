@@ -14,6 +14,10 @@
   &.ch5-button-list--orientation-horizontal {
     grid-auto-flow: column;
 
+    .ch5-button-list--button-container {
+      height: 100%;
+    }
+
     &.ch5-button-list--scrollbar-true {
       padding-bottom: $ch5-scrollbar-width;
 
@@ -52,6 +56,10 @@
           width: 100%;
         }
       }
+    }
+
+    .ch5-button-list--button-container {
+      width: 100%;
     }
 
     @for $var from 1 to 500 {
