@@ -32,7 +32,13 @@
 
   &.ch5-button-list--center-items-true {
     justify-content: center;
-    align-items: center;
+    align-content: center;
+  }
+
+  &.ch5-button-list--center-items-false {
+    align-content: start;
+    justify-content: start;
+
   }
 
   &~.scrollbar-container {
@@ -83,6 +89,6 @@ ch5-button-list {
   width: $ch5-button-list-button-container-width;
   height: $ch5-button-list-button-container-height;
   padding: $ch5-button-list-button-container-padding;
-  min-width: $ch5-button-list-button-container-min-width;
-  min-height: $ch5-button-list-button-container-min-height;
+  min-width: $ch5-button-list-button-container-width;
+  min-height: $ch5-button-list-button-container-height;
 }
