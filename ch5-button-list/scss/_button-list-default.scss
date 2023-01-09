@@ -38,7 +38,11 @@
   &.ch5-button-list--center-items-false {
     align-content: start;
     justify-content: start;
+  }
 
+  &.ch5-button-list--stretch-true {
+    align-content: stretch;
+    justify-content: stretch;
   }
 
   &~.scrollbar-container {

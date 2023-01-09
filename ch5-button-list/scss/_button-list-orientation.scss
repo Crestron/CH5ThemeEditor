@@ -18,6 +18,12 @@
       height: 100%;
     }
 
+    &.ch5-button-list--stretch-true {
+      .ch5-button-list--button-container {
+        width: 100%;
+      }
+    }
+
     &.ch5-button-list--scrollbar-true {
       padding-bottom: $ch5-scrollbar-width;
 
@@ -60,6 +66,12 @@
 
     .ch5-button-list--button-container {
       width: 100%;
+    }
+
+    &.ch5-button-list--stretch-true {
+      .ch5-button-list--button-container {
+        height: 100%;
+      }
     }
 
     @for $var from 1 to 500 {
