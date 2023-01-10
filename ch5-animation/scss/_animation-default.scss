@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
 /// All rights reserved.
 /// No part of this software may be reproduced in any form, machine
 /// or natural, without the express written consent of Crestron Electronics.
@@ -7,14 +7,24 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-slider
+/// @group ch5-animation
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "./scss/mixins-size";
-@import "./scss/variables";
+.ch5-animation {
+  position: relative;
+  display: inline-block;
+  color: $ch5-animation-color;
 
-@import "./scss/slider-size";
-@import "./scss/handle-size";
-@import "./scss/handle-shape";
+  .ch5-animation--start-animating-true {
+    animation-play-state: running;
+  }
 
-@import "./scss/slider-default";
+  .ch5-animation--start-animating-false {
+    animation-play-state: paused;
+  }
+}
+
+.ch5-animation--disabled {
+  pointer-events: none;
+  opacity: $ch5-animation-disabled-opacity;
+}

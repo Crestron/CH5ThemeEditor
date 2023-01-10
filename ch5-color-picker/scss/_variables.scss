@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
 /// All rights reserved.
 /// No part of this software may be reproduced in any form, machine
 /// or natural, without the express written consent of Crestron Electronics.
@@ -7,14 +7,16 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-slider
+/// @group ch5-color-picker-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "./scss/mixins-size";
-@import "./scss/variables";
+/// Variables below
 
-@import "./scss/slider-size";
-@import "./scss/handle-size";
-@import "./scss/handle-shape";
+/// Disabled opacity
+$ch5-color-picker-disabled-opacity: 0.5;
 
-@import "./scss/slider-default";
+/// Height for color picker
+$ch5-color-picker-height: 240px;
+
+/// Width for color picker
+$ch5-color-picker-width: 240px;

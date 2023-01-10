@@ -22,7 +22,7 @@ const sassdoc = require('sassdoc'),
     return false;
   }
 
-  function removeDulicate(data) {
+  function removeDuplicate(data) {
     return data = _.uniqWith(data, _.isEqual);
   }
 
@@ -64,7 +64,7 @@ const sassdoc = require('sassdoc'),
 
 
   function includeProperTies(resultData) {
-    resultData = removeDulicate(resultData);
+    resultData = removeDuplicate(resultData);
     return resultData.map(meta => {
       if (!!meta.require) {
         if (meta.context.name.indexOf("&") === 0) {

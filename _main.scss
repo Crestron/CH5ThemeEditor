@@ -4,10 +4,13 @@
 // or natural, without the express written consent of Crestron Electronics.
 // Use of this source code is subject to the terms of the Crestron Software License Agreement
 // under which you licensed this source code.
-@import 'style/_base';
-@import './node_modules/nouislider/distribute/nouislider';
+@import "style/_base";
+@import "./node_modules/nouislider/distribute/nouislider";
 
+ch5-animation,
 ch5-button,
+ch5-color-chip,
+ch5-color-picker,
 ch5-dpad,
 ch5-form,
 ch5-image,
@@ -16,11 +19,12 @@ ch5-list,
 ch5-modal-dialog,
 ch5-overlay-panel,
 ch5-select,
+ch5-signal-level-gauge,
 ch5-slider,
 ch5-textinput,
 ch5-spinner,
 ch5-toggle,
-ch5-triggerview{
+ch5-triggerview {
   outline: 0 !important;
 
   * {
@@ -28,43 +32,51 @@ ch5-triggerview{
   }
 }
 
-@import 'style/_global';
-@import 'style/_mixins';
-@import 'style/_when_not_defined';
+@import "style/_global";
+@import "style/_mixins";
+@import "style/_when_not_defined";
 
-@import 'style/ch5-custom-attrs';
-@import 'style/z-index_variables';
+@import "style/ch5-custom-attrs";
+@import "style/z-index_variables";
 
-@import 'ch5-button/ch5-button';
+@import "ch5-animation/ch5-animation";
 
-@import 'ch5-list/ch5-list';
+@import "ch5-background/ch5-background";
 
-@import 'ch5-select/ch5-select';
+@import "ch5-button/ch5-button";
 
-@import 'ch5-toggle/ch5-toggle';
+@import "ch5-color-chip/ch5-color-chip";
 
-@import 'ch5-image/ch5-image';
+@import "ch5-color-picker/ch5-color-picker";
 
-@import 'ch5-slider/ch5-slider';
+@import "ch5-dpad/ch5-dpad";
+
+@import "ch5-form/form-default";
+
+@import "ch5-image/ch5-image";
+
+@import "ch5-keypad/ch5-keypad";
+
+@import "ch5-list/ch5-list";
+
+@import "ch5-modal-dialog/ch5-modal-dialog";
+
+@import "ch5-overlay-panel/ch5-overlay-panel";
+
+@import "ch5-select/ch5-select";
+
+@import "ch5-slider/ch5-slider";
+
+@import "ch5-signal-level-gauge/ch5-signal-level-gauge";
+
+@import "ch5-spinner/ch5-spinner";
+
+@import "ch5-template/ch5-template";
 
 @import 'ch5-textinput/ch5-textinput';
 
-@import 'ch5-overlay-panel/ch5-overlay-panel';
+@import "ch5-toggle/ch5-toggle";
 
-@import 'ch5-triggerview/triggerview';
+@import "ch5-triggerview/triggerview";
 
-@import 'ch5-template/ch5-template';
-
-@import 'ch5-form/form-default';
-
-@import 'ch5-modal-dialog/ch5-modal-dialog';
-
-@import 'ch5-spinner/ch5-spinner';
-
-@import 'ch5-background/ch5-background';
-
-@import 'ch5-video/ch5-video';
-
-@import 'ch5-dpad/ch5-dpad';
-
-@import 'ch5-keypad/ch5-keypad';
+@import "ch5-video/ch5-video";

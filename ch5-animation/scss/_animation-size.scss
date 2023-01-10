@@ -1,0 +1,33 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-animation
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@mixin ch5-animation-set-size() {
+    .ch5-animation {
+        .ch5-animation--size-regular {
+            font-size: $ch5-animation-font-size-regular;
+        }
+
+        .ch5-animation--size-small {
+            font-size: $ch5-animation-font-size-small;
+        }
+
+        .ch5-animation--size-large {
+            font-size: $ch5-animation-font-size-large;
+        }
+
+        .ch5-animation--size-x-large {
+            font-size: $ch5-animation-font-size-x-large;
+        }
+    }
+}
+
+@include ch5-animation-set-size();
