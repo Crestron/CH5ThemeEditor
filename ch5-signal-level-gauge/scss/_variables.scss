@@ -10,8 +10,6 @@
 /// @group ch5-signal-level-gauge-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Variables below
-
 /// Disable opacity
 $ch5-signal-level-gauge-disabled-opacity: 0.5;
 
@@ -40,7 +38,7 @@ $ch5-signal-level-gauge-xlarge-height: 96px;
 $ch5-signal-level-gauge-xlarge-width: 180px;
 
 /// Bar color
-$ch5-signal-level-gauge-bar-color: grey;
+$ch5-signal-level-gauge-bar-color: #808080;
 
 /// Selected bar color
-$ch5-signal-level-gauge-selected-bar-color: rgb(103, 190, 240);
+$ch5-signal-level-gauge-selected-bar-color: #67bef0;

@@ -1,0 +1,54 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-segmented-gauge
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ch5-segmented-gauge {
+
+  .ch5-segmented-gauge--segment--state-graphic-hidden {
+    background-color: transparent;
+    position: absolute;
+  }
+
+  /// State graphic green class
+  .ch5-segmented-gauge--segment-state-graphic-green.active {
+    background-color: $ch5-segmented-gauge-state-graphic-green;
+  }
+
+  /// State graphic yellow class
+  .ch5-segmented-gauge--segment-state-graphic-yellow.active {
+    background-color: $ch5-segmented-gauge-state-graphic-yellow;
+  }
+
+  /// State graphic red class
+  .ch5-segmented-gauge--segment-state-graphic-red.active {
+    background-color: $ch5-segmented-gauge-state-graphic-red;
+  }
+
+  /// State graphic inactive class
+  .ch5-segmented-gauge--segment-state-graphic-inactive.active {
+    background-color: $ch5-segmented-gauge-state-graphic-inactive;
+  }
+
+  /// State graphic white class
+  .ch5-segmented-gauge--segment-state-graphic-white.active {
+    background-color: $ch5-segmented-gauge-state-graphic-white;
+  }
+
+  /// State graphic blue class
+  .ch5-segmented-gauge--segment-state-graphic-blue.active {
+    background-color: $ch5-segmented-gauge-state-graphic-blue;
+  }
+
+  /// State graphic orange class
+  .ch5-segmented-gauge--segment-state-graphic-orange.active {
+    background-color: $ch5-segmented-gauge-state-graphic-orange;
+  }
+}

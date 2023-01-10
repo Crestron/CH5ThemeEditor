@@ -1,5 +1,51 @@
 [
     {
+        "group": "ch5-animation-variables",
+        "schemadata": [
+            {
+                "type": "variable",
+                "metadata": [
+                    {
+                        "type": "variable",
+                        "name": "ch5-animation-disabled-opacity",
+                        "description": "Disabled opacity\n",
+                        "value": "0.5"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-animation-font-size-regular",
+                        "description": "Font size regular\n",
+                        "value": "72px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-animation-font-size-small",
+                        "description": "Font size small\n",
+                        "value": "40px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-animation-font-size-large",
+                        "description": "Font size large\n",
+                        "value": "104px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-animation-font-size-x-large",
+                        "description": "Font size x-large\n",
+                        "value": "136px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-animation-color",
+                        "description": "Animation color\n",
+                        "value": "$theme-foreground-color"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "group": "ch5-background",
         "schemadata": [
             {
@@ -55,49 +101,49 @@
                         "type": "class",
                         "name": "ch5-button--text",
                         "description": "Applied when type='text'\n",
-                        "value": "@include ch5-button-content($ch5-button-text-border-width, $ch5-button-text-border-style, $ch5-button-text-default-border-color, $ch5-button-text-default-background-color, $ch5-button-text-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-text-selected-border-color, $ch5-button-text-selected-background-color, $ch5-button-text-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-text-pressed-border-color, $ch5-button-text-pressed-background-color, $ch5-button-text-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-text-disabled-border-color, $ch5-button-text-disabled-background-color, $ch5-button-text-disabled-font-color);\n  }"
+                        "value": "@include ch5-button-content(\n      $ch5-button-text-border-width,\n      $ch5-button-text-border-style,\n      $ch5-button-text-default-border-color,\n      $ch5-button-text-default-background-color,\n      $ch5-button-text-default-font-color\n    );\n\n    &.ch5-button--selected {\n      @include ch5-button-content--selected(\n        $ch5-button-text-selected-border-color,\n        $ch5-button-text-selected-background-color,\n        $ch5-button-text-selected-font-color\n      );\n    }\n    &.ch5-button--pressed {\n      @include ch5-button-content--pressed(\n        $ch5-button-text-pressed-border-color,\n        $ch5-button-text-pressed-background-color,\n        $ch5-button-text-pressed-font-color\n      );\n    }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--danger",
                         "description": "Applied when type='danger'\n",
-                        "value": "@include ch5-button-content($ch5-button-danger-border-width, $ch5-button-danger-border-style, $ch5-button-danger-default-border-color, $ch5-button-danger-default-background-color, $ch5-button-danger-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-danger-selected-border-color, $ch5-button-danger-selected-background-color, $ch5-button-danger-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-danger-pressed-border-color, $ch5-button-danger-pressed-background-color, $ch5-button-danger-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-danger-disabled-border-color, $ch5-button-danger-disabled-background-color, $ch5-button-danger-disabled-font-color);\n  }"
+                        "value": "@include ch5-button-content(\n      $ch5-button-danger-border-width,\n      $ch5-button-danger-border-style,\n      $ch5-button-danger-default-border-color,\n      $ch5-button-danger-default-background-color,\n      $ch5-button-danger-default-font-color\n    );\n\n    &.ch5-button--selected {\n      @include ch5-button-content--selected(\n        $ch5-button-danger-selected-border-color,\n        $ch5-button-danger-selected-background-color,\n        $ch5-button-danger-selected-font-color\n      );\n    }\n    &.ch5-button--pressed {\n      @include ch5-button-content--pressed(\n        $ch5-button-danger-pressed-border-color,\n        $ch5-button-danger-pressed-background-color,\n        $ch5-button-danger-pressed-font-color\n      );\n    }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--warning",
                         "description": "Applied when type='warning'\n",
-                        "value": "@include ch5-button-content($ch5-button-warning-border-width, $ch5-button-warning-border-style, $ch5-button-warning-default-border-color, $ch5-button-warning-default-background-color, $ch5-button-warning-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-warning-selected-border-color, $ch5-button-warning-selected-background-color, $ch5-button-warning-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-warning-pressed-border-color, $ch5-button-warning-pressed-background-color, $ch5-button-warning-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-warning-disabled-border-color, $ch5-button-warning-disabled-background-color, $ch5-button-warning-disabled-font-color);\n  }"
+                        "value": "@include ch5-button-content(\n      $ch5-button-warning-border-width,\n      $ch5-button-warning-border-style,\n      $ch5-button-warning-default-border-color,\n      $ch5-button-warning-default-background-color,\n      $ch5-button-warning-default-font-color\n    );\n\n    &.ch5-button--selected {\n      @include ch5-button-content--selected(\n        $ch5-button-warning-selected-border-color,\n        $ch5-button-warning-selected-background-color,\n        $ch5-button-warning-selected-font-color\n      );\n    }\n    &.ch5-button--pressed {\n      @include ch5-button-content--pressed(\n        $ch5-button-warning-pressed-border-color,\n        $ch5-button-warning-pressed-background-color,\n        $ch5-button-warning-pressed-font-color\n      );\n    }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--info",
                         "description": "Applied when type='info'\n",
-                        "value": "@include ch5-button-content($ch5-button-info-border-width, $ch5-button-info-border-style, $ch5-button-info-default-border-color, $ch5-button-info-default-background-color, $ch5-button-info-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-info-selected-border-color, $ch5-button-info-selected-background-color, $ch5-button-info-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-info-pressed-border-color, $ch5-button-info-pressed-background-color, $ch5-button-info-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-info-disabled-border-color, $ch5-button-info-disabled-background-color, $ch5-button-info-disabled-font-color);\n  }"
+                        "value": "@include ch5-button-content(\n      $ch5-button-info-border-width,\n      $ch5-button-info-border-style,\n      $ch5-button-info-default-border-color,\n      $ch5-button-info-default-background-color,\n      $ch5-button-info-default-font-color\n    );\n\n    &.ch5-button--selected {\n      @include ch5-button-content--selected(\n        $ch5-button-info-selected-border-color,\n        $ch5-button-info-selected-background-color,\n        $ch5-button-info-selected-font-color\n      );\n    }\n    &.ch5-button--pressed {\n      @include ch5-button-content--pressed(\n        $ch5-button-info-pressed-border-color,\n        $ch5-button-info-pressed-background-color,\n        $ch5-button-info-pressed-font-color\n      );\n    }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--success",
                         "description": "Applied when type='success'\n",
-                        "value": "@include ch5-button-content($ch5-button-success-border-width, $ch5-button-success-border-style, $ch5-button-success-default-border-color, $ch5-button-success-default-background-color, $ch5-button-success-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-success-selected-border-color, $ch5-button-success-selected-background-color, $ch5-button-success-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-success-pressed-border-color, $ch5-button-success-pressed-background-color, $ch5-button-success-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-success-disabled-border-color, $ch5-button-success-disabled-background-color, $ch5-button-success-disabled-font-color);\n  }"
+                        "value": "@include ch5-button-content(\n      $ch5-button-success-border-width,\n      $ch5-button-success-border-style,\n      $ch5-button-success-default-border-color,\n      $ch5-button-success-default-background-color,\n      $ch5-button-success-default-font-color\n    );\n\n    &.ch5-button--selected {\n      @include ch5-button-content--selected(\n        $ch5-button-success-selected-border-color,\n        $ch5-button-success-selected-background-color,\n        $ch5-button-success-selected-font-color\n      );\n    }\n    &.ch5-button--pressed {\n      @include ch5-button-content--pressed(\n        $ch5-button-success-pressed-border-color,\n        $ch5-button-success-pressed-background-color,\n        $ch5-button-success-pressed-font-color\n      );\n    }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--default",
                         "description": "Default button\n",
-                        "value": "@include ch5-button-content($ch5-button-default-border-width, $ch5-button-default-border-style, $ch5-button-default-default-border-color, $ch5-button-default-default-background-color, $ch5-button-default-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-default-selected-border-color, $ch5-button-default-selected-background-color, $ch5-button-default-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-default-pressed-border-color, $ch5-button-default-pressed-background-color, $ch5-button-default-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-default-disabled-border-color, $ch5-button-default-disabled-background-color, $ch5-button-default-disabled-font-color);\n  }"
+                        "value": "@include ch5-button-content(\n      $ch5-button-default-border-width,\n      $ch5-button-default-border-style,\n      $ch5-button-default-default-border-color,\n      $ch5-button-default-default-background-color,\n      $ch5-button-default-default-font-color\n    );\n\n    &.ch5-button--selected {\n      @include ch5-button-content--selected(\n        $ch5-button-default-selected-border-color,\n        $ch5-button-default-selected-background-color,\n        $ch5-button-default-selected-font-color\n      );\n    }\n    &.ch5-button--pressed {\n      @include ch5-button-content--pressed(\n        $ch5-button-default-pressed-border-color,\n        $ch5-button-default-pressed-background-color,\n        $ch5-button-default-pressed-font-color\n      );\n    }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--primary",
                         "description": "Applied when type='primary'\n",
-                        "value": "@include ch5-button-content($ch5-button-primary-border-width, $ch5-button-primary-border-style, $ch5-button-primary-default-border-color, $ch5-button-primary-default-background-color, $ch5-button-primary-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-primary-selected-border-color, $ch5-button-primary-selected-background-color, $ch5-button-primary-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-primary-pressed-border-color, $ch5-button-primary-pressed-background-color, $ch5-button-primary-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-primary-disabled-border-color, $ch5-button-primary-disabled-background-color, $ch5-button-primary-disabled-font-color);\n  }"
+                        "value": "@include ch5-button-content(\n      $ch5-button-primary-border-width,\n      $ch5-button-primary-border-style,\n      $ch5-button-primary-default-border-color,\n      $ch5-button-primary-default-background-color,\n      $ch5-button-primary-default-font-color\n    );\n\n    &.ch5-button--selected {\n      @include ch5-button-content--selected(\n        $ch5-button-primary-selected-border-color,\n        $ch5-button-primary-selected-background-color,\n        $ch5-button-primary-selected-font-color\n      );\n    }\n    &.ch5-button--pressed {\n      @include ch5-button-content--pressed(\n        $ch5-button-primary-pressed-border-color,\n        $ch5-button-primary-pressed-background-color,\n        $ch5-button-primary-pressed-font-color\n      );\n    }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-button--secondary",
                         "description": "Applied when type='secondary'\n",
-                        "value": "@include ch5-button-content($ch5-button-secondary-border-width, $ch5-button-secondary-border-style, $ch5-button-secondary-default-border-color, $ch5-button-secondary-default-background-color, $ch5-button-secondary-default-font-color);\n  \n  &.ch5-button--selected {\n    @include ch5-button-content--selected($ch5-button-secondary-selected-border-color, $ch5-button-secondary-selected-background-color, $ch5-button-secondary-selected-font-color);\n  }\n  &.ch5-button--pressed {\n    @include ch5-button-content--pressed($ch5-button-secondary-pressed-border-color, $ch5-button-secondary-pressed-background-color, $ch5-button-secondary-pressed-font-color);\n  }\n  &.ch5-button--disabled {\n    @include ch5-button-content--disabled($ch5-button-secondary-disabled-border-color, $ch5-button-secondary-disabled-background-color, $ch5-button-secondary-disabled-font-color);\n  }"
+                        "value": "@include ch5-button-content(\n      $ch5-button-secondary-border-width,\n      $ch5-button-secondary-border-style,\n      $ch5-button-secondary-default-border-color,\n      $ch5-button-secondary-default-background-color,\n      $ch5-button-secondary-default-font-color\n    );\n\n    &.ch5-button--selected {\n      @include ch5-button-content--selected(\n        $ch5-button-secondary-selected-border-color,\n        $ch5-button-secondary-selected-background-color,\n        $ch5-button-secondary-selected-font-color\n      );\n    }\n    &.ch5-button--pressed {\n      @include ch5-button-content--pressed(\n        $ch5-button-secondary-pressed-border-color,\n        $ch5-button-secondary-pressed-background-color,\n        $ch5-button-secondary-pressed-font-color\n      );\n    }"
                     }
                 ]
             }
@@ -117,9 +163,9 @@
                     },
                     {
                         "type": "variable",
-                        "name": "ch5-button-icon-padding",
+                        "name": "ch5-button-icon-color",
                         "description": "The padding for icon of the button.\n",
-                        "value": "5px"
+                        "value": "inherit"
                     },
                     {
                         "type": "variable",
@@ -756,6 +802,62 @@
         ]
     },
     {
+        "group": "ch5-color-chip-variables",
+        "schemadata": [
+            {
+                "type": "variable",
+                "metadata": [
+                    {
+                        "type": "variable",
+                        "name": "ch5-color-chip-disabled-opacity",
+                        "description": "Disabled opacity\n",
+                        "value": "0.5"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-color-chip-div-height",
+                        "description": "The height for div of the color-chip.\n",
+                        "value": "40px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-color-chip-div-width",
+                        "description": "The width for div of the color-chip.\n",
+                        "value": "40px"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "ch5-color-picker-variables",
+        "schemadata": [
+            {
+                "type": "variable",
+                "metadata": [
+                    {
+                        "type": "variable",
+                        "name": "ch5-color-picker-disabled-opacity",
+                        "description": "Disabled opacity\n",
+                        "value": "0.5"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-color-picker-height",
+                        "description": "Height for color picker\n",
+                        "value": "240px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-color-picker-width",
+                        "description": "Width for color picker\n",
+                        "value": "240px"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "group": "ch5-core-variables",
         "schemadata": [
             {
@@ -1167,9 +1269,9 @@
                     },
                     {
                         "type": "variable",
-                        "name": "ch5-dpad-icon-font-size",
+                        "name": "ch5-dpad-icon-font-size-x-small",
                         "description": "Set the icon font size\n",
-                        "value": "2rem"
+                        "value": "1.3rem"
                     },
                     {
                         "type": "variable",
@@ -1919,13 +2021,13 @@
                         "type": "class",
                         "name": "ch5-image",
                         "description": "Added automatically on the first child of the ch5-image element.\n",
-                        "value": "// flip image\n    &.ch5-image--dir--rtl {\n        -moz-transform: scaleX(-1);\n        -o-transform: scaleX(-1);\n        -webkit-transform: scaleX(-1);\n        transform: scaleX(-1);\n        filter: FlipH;\n        -ms-filter: \"FlipH\";\n    }"
+                        "value": "&.ch5-image__img {\n        height: $ch5-image-height;\n        width: $ch5-image-width;\n        max-height: 100%;\n        max-width: 100%;\n        object-fit: $ch5-image-object-fit;\n        display: inline-block;\n    }\n    // flip image\n    &.ch5-image--dir--rtl {\n        -moz-transform: scaleX(-1);\n        -o-transform: scaleX(-1);\n        -webkit-transform: scaleX(-1);\n        transform: scaleX(-1);\n        filter: FlipH;\n        -ms-filter: \"FlipH\";\n    }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-image--disabled",
                         "description": "Added automatically based on the disabled attribute or by receiveStateEnable.\n",
-                        "value": "pointer-events: none;\n  opacity: 0.5;"
+                        "value": "pointer-events: none;\n    opacity: 0.5;"
                     }
                 ]
             }
@@ -1961,9 +2063,9 @@
                 "metadata": [
                     {
                         "type": "variable",
-                        "name": "ch5-keypad-default-container-width",
+                        "name": "ch5-keypad-x-small-container-width",
                         "description": "Variables below\n",
-                        "value": "270px"
+                        "value": "210px"
                     },
                     {
                         "type": "variable",
@@ -2975,7 +3077,7 @@
                         "type": "class",
                         "name": "ch5-modal-dialog",
                         "description": "the class added on the div that is the only direct child of the ch5-modal-dialog element and wraps all its contents\n",
-                        "value": "position: fixed;\n  box-sizing: border-box;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  z-index: $ch5-modal-z-index;\n\n  background-color: $ch5-modal-background-color;\n  border-radius: $ch5-modal-border-radius;\n  border: $ch5-modal-border-width $ch5-modal-border-style $ch5-modal-border-color;\n  color: $ch5-modal-text-color;\n  padding: $ch5-modal-padding;\n  min-width: 200px;\n\n  .ch5-modal-dialog-close-icon-btn {\n    border: none;\n    outline: none;\n    cursor: pointer;\n    float: right;\n\n    background-color: $ch5-modal-close-icon-background-color;\n    margin: $ch5-modal-close-icon-margin;\n    padding: $ch5-modal-close-icon-padding;\n    width: $ch5-modal-close-icon-width;\n    font-size: $ch5-modal-close-icon-font-size;\n    font-style: $ch5-modal-close-icon-font-style;\n    font-weight: $ch5-modal-close-icon-font-weight;\n\n    &.f-left{\n      float: left;\n    }\n    &.f-right{\n      float: right;\n    }\n  }\n\n  .ch5-modal-dialog-default-close-icon {\n    color: $ch5-modal-close-icon-color;\n    font-size: $ch5-modal-default-close-icon-font-size;\n    font-style: $ch5-modal-default-close-icon-font-style;\n    font-weight: $ch5-modal-default-close-icon-font-weight;\n    &:before{\n      content:'\\00d7';\n    }\n    &:hover{\n      color: $ch5-modal-close-icon-color-hover;\n    }\n  }\n\n  /// the class added on the ok button\n  .ch5-modal-dialog-btn-ok {\n    float: left;\n  }\n\n  /// the class of the cancel button\n  .ch5-modal-dialog-btn-cancel {\n    float:right;\n  }"
+                        "value": "position: fixed;\n  box-sizing: border-box;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  z-index: $ch5-modal-z-index;\n\n  background-color: $ch5-modal-background-color;\n  border-radius: $ch5-modal-border-radius;\n  border: $ch5-modal-border-width $ch5-modal-border-style $ch5-modal-border-color;\n  color: $ch5-modal-text-color;\n  padding: $ch5-modal-padding;\n  min-width: 200px;\n\n  .ch5-modal-dialog-close-icon-btn {\n    border: none;\n    outline: none;\n    cursor: pointer;\n    float: right;\n\n    background-color: $ch5-modal-close-icon-background-color;\n    margin: $ch5-modal-close-icon-margin;\n    padding: $ch5-modal-close-icon-padding;\n    width: $ch5-modal-close-icon-width;\n    font-size: $ch5-modal-close-icon-font-size;\n    font-style: $ch5-modal-close-icon-font-style;\n    font-weight: $ch5-modal-close-icon-font-weight;\n\n    &.f-left {\n      float: left;\n    }\n\n    &.f-right {\n      float: right;\n    }\n  }\n\n  .ch5-modal-dialog-default-close-icon {\n    color: $ch5-modal-close-icon-color;\n    font-size: $ch5-modal-default-close-icon-font-size;\n    font-style: $ch5-modal-default-close-icon-font-style;\n    font-weight: $ch5-modal-default-close-icon-font-weight;\n\n    &:before {\n      content: '\\00d7';\n    }\n\n    &:hover {\n      color: $ch5-modal-close-icon-color-hover;\n    }\n  }\n\n  /// the class added on the ok button\n  .ch5-modal-dialog-btn-ok {\n    float: left;\n  }\n\n  /// the class of the cancel button\n  .ch5-modal-dialog-btn-cancel {\n    float: right;\n  }"
                     },
                     {
                         "type": "class",
@@ -2987,13 +3089,13 @@
                         "type": "class",
                         "name": "ch5-modal-dialog-btn-cancel",
                         "description": "the class of the cancel button\n",
-                        "value": "float:right;"
+                        "value": "float: right;"
                     },
                     {
                         "type": "class",
                         "name": "ch5-modal-dialog-prompt",
                         "description": "modal section (a div) that wraps the prompt-icon and the prompt-text\n",
-                        "value": "&:before{\n    clear: both;\n  }\n  padding: $ch5-modal-prompt-padding;\n  vertical-align: middle;\n\n  /// an image element.\n  .ch5-modal-dialog-prompt-icon{\n    vertical-align: middle;\n    margin-right: $ch5-modal-prompt-icon-margin-right;\n    font-size: $ch5-modal-prompt-icon-font-size;\n    font-style: $ch5-modal-prompt-icon-font-style;\n    font-weight: $ch5-modal-prompt-icon-font-weight;\n  }\n\n  /// a span element\n  .ch5-modal-dialog-prompt-text{\n    vertical-align: middle;\n    font-size: $ch5-modal-prompt-text-font-size;\n    font-style: $ch5-modal-prompt-text-font-style;\n    font-weight: $ch5-modal-prompt-text-font-weight;\n    color: $ch5-modal-prompt-text-font-color;\n  }"
+                        "value": "&:before {\n    clear: both;\n  }\n\n  padding: $ch5-modal-prompt-padding;\n  vertical-align: middle;\n\n  /// an image element.\n  .ch5-modal-dialog-prompt-icon {\n    vertical-align: middle;\n    margin-right: $ch5-modal-prompt-icon-margin-right;\n    font-size: $ch5-modal-prompt-icon-font-size;\n    font-style: $ch5-modal-prompt-icon-font-style;\n    font-weight: $ch5-modal-prompt-icon-font-weight;\n  }\n\n  /// a span element\n  .ch5-modal-dialog-prompt-text {\n    vertical-align: middle;\n    font-size: $ch5-modal-prompt-text-font-size;\n    font-style: $ch5-modal-prompt-text-font-style;\n    font-weight: $ch5-modal-prompt-text-font-weight;\n    color: $ch5-modal-prompt-text-font-color;\n  }"
                     },
                     {
                         "type": "class",
@@ -3011,7 +3113,7 @@
                         "type": "class",
                         "name": "ch5-modal-dialog-mask",
                         "description": "class added on the mask element\n",
-                        "value": "top:0;\n  left:0;\n  position: fixed;\n  width: 100%;\n  height: 100%;\n  z-index: $ch5-modal-mask-z-index;"
+                        "value": "top: 0;\n  left: 0;\n  position: fixed;\n  width: 100%;\n  height: 100%;\n  z-index: $ch5-modal-mask-z-index;"
                     },
                     {
                         "type": "class",
@@ -3534,6 +3636,278 @@
         ]
     },
     {
+        "group": "ch5-segmented-gauge",
+        "schemadata": [
+            {
+                "type": "class",
+                "metadata": [
+                    {
+                        "type": "class",
+                        "name": "ch5-segmented-gauge",
+                        "description": "Main class\n",
+                        "value": "position: relative;\n  display: inline-flex;\n\n  .ch5-segmented-gauge-segment {\n    background-color: $ch5-segmented-gauge-state-graphic-inactive;\n    border: $ch5-segmented-gauge-border;\n  }"
+                    },
+                    {
+                        "type": "class",
+                        "name": "ch5-segmented-gauge--disabled",
+                        "description": "Disabled class\n",
+                        "value": "pointer-events: none;\n  opacity: $ch5-segmented-gauge-disabled-opacity;"
+                    },
+                    {
+                        "type": "class",
+                        "name": "ch5-segmented-gauge--gauge-led-style-rectangle",
+                        "description": "Led style rectangle class\n",
+                        "value": ".ch5-segmented-gauge-segment {\n      height: $ch5-segmented-gauge-led-style-height;\n      width: $ch5-segmented-gauge-led-style-width;\n    }"
+                    },
+                    {
+                        "type": "class",
+                        "name": "ch5-segmented-gauge--gauge-led-style-circle",
+                        "description": "Led style circle class\n",
+                        "value": ".ch5-segmented-gauge-segment {\n      height: $ch5-segmented-gauge-led-style-height;\n      width: $ch5-segmented-gauge-led-style-width;\n      border-radius: $ch5-segmented-gauge-led-style-border-radius;\n    }"
+                    },
+                    {
+                        "type": "class",
+                        "name": "ch5-segmented-gauge--orientation-horizontal",
+                        "description": "Orientation horizontal class\n",
+                        "value": "flex-direction: row;"
+                    },
+                    {
+                        "type": "class",
+                        "name": "ch5-segmented-gauge--orientation-vertical",
+                        "description": "Orientation vertical class\n",
+                        "value": "display: inline-flex;\n    transform: $ch5-segmented-gauge-orientation-vertical;\n    margin-top: $ch5-segmented-gauge-vertical-margin-top;\n    transform-origin: $ch5-segmented-gauge-orientation-vertical-transform-origin;"
+                    },
+                    {
+                        "type": "class",
+                        "name": "ch5-segmented-gauge--segment-state-graphic-green.active",
+                        "description": "State graphic green class\n",
+                        "value": "background-color: $ch5-segmented-gauge-state-graphic-green;"
+                    },
+                    {
+                        "type": "class",
+                        "name": "ch5-segmented-gauge--segment-state-graphic-yellow.active",
+                        "description": "State graphic yellow class\n",
+                        "value": "background-color: $ch5-segmented-gauge-state-graphic-yellow;"
+                    },
+                    {
+                        "type": "class",
+                        "name": "ch5-segmented-gauge--segment-state-graphic-red.active",
+                        "description": "State graphic red class\n",
+                        "value": "background-color: $ch5-segmented-gauge-state-graphic-red;"
+                    },
+                    {
+                        "type": "class",
+                        "name": "ch5-segmented-gauge--segment-state-graphic-inactive.active",
+                        "description": "State graphic inactive class\n",
+                        "value": "background-color: $ch5-segmented-gauge-state-graphic-inactive;"
+                    },
+                    {
+                        "type": "class",
+                        "name": "ch5-segmented-gauge--segment-state-graphic-white.active",
+                        "description": "State graphic white class\n",
+                        "value": "background-color: $ch5-segmented-gauge-state-graphic-white;"
+                    },
+                    {
+                        "type": "class",
+                        "name": "ch5-segmented-gauge--segment-state-graphic-blue.active",
+                        "description": "State graphic blue class\n",
+                        "value": "background-color: $ch5-segmented-gauge-state-graphic-blue;"
+                    },
+                    {
+                        "type": "class",
+                        "name": "ch5-segmented-gauge--segment-state-graphic-orange.active",
+                        "description": "State graphic orange class\n",
+                        "value": "background-color: $ch5-segmented-gauge-state-graphic-orange;"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "ch5-segmented-gauge-variables",
+        "schemadata": [
+            {
+                "type": "variable",
+                "metadata": [
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-disabled-opacity",
+                        "description": "Disabled opacity\n",
+                        "value": "0.5"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-led-style-height",
+                        "description": "Led style gauge style height\n",
+                        "value": "20px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-led-style-width",
+                        "description": "Led style gauge style width\n",
+                        "value": "20px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-border",
+                        "description": "Border for segmented gauge\n",
+                        "value": "solid 1px white"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-led-style-border-radius",
+                        "description": "Led style border radius\n",
+                        "value": "50%"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-state-graphic-green",
+                        "description": "State graphic green\n",
+                        "value": "#22c55e"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-state-graphic-inactive",
+                        "description": "State graphic inactive\n",
+                        "value": "#909090"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-state-graphic-yellow",
+                        "description": "State graphic yellow\n",
+                        "value": "#eab308"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-state-graphic-red",
+                        "description": "State graphic green\n",
+                        "value": "#ef4444"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-state-graphic-blue",
+                        "description": "State graphic green\n",
+                        "value": "#3b82f6"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-state-graphic-orange",
+                        "description": "State graphic green\n",
+                        "value": "#f97316"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-state-graphic-white",
+                        "description": "State graphic green\n",
+                        "value": "#f8fafc"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-range-details-width",
+                        "description": "Range details width\n",
+                        "value": "100%"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-range-background-color",
+                        "description": "Range background color\n",
+                        "value": "transparent"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-range-width",
+                        "description": "Range width\n",
+                        "value": "100%"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-range-runnable-height",
+                        "description": "Slider height\n",
+                        "value": "20px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-range-thumb-width",
+                        "description": "Slider width\n",
+                        "value": "22px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-range-margin-top",
+                        "description": "Range margin top\n",
+                        "value": "0"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-range-border-radius",
+                        "description": "Range border radius\n",
+                        "value": "0"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-range-appearance",
+                        "description": "Range appearance\n",
+                        "value": "none"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-range-thumb-border",
+                        "description": "Input range thumb border\n",
+                        "value": "none"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-inner-container-width",
+                        "description": "Width for segmented gauge inner parent\n",
+                        "value": "20px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-inner-container-height",
+                        "description": "Height for segmented gauge inner parent\n",
+                        "value": "20px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-orientation-vertical",
+                        "description": "Rotate for vertical segmented gauge\n",
+                        "value": "rotate(270deg)"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-vertical-margin-top",
+                        "description": "Margin top for vertical segmented gauge\n",
+                        "value": "100%"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-orientation-vertical-transform-origin",
+                        "description": "Transform origin for vertical segmented gauge\n",
+                        "value": "0 0"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-slider-thumb-margin-top",
+                        "description": "Thumb style margin top\n",
+                        "value": "-2px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-slider-thumb-margin-left",
+                        "description": "Thumb style margin left\n",
+                        "value": "-2px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-segmented-gauge-slider-thumb-width",
+                        "description": "Thumb style width\n",
+                        "value": "24px"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "group": "ch5-select",
         "schemadata": [
             {
@@ -3734,6 +4108,82 @@
         ]
     },
     {
+        "group": "ch5-signal-level-gauge-variables",
+        "schemadata": [
+            {
+                "type": "variable",
+                "metadata": [
+                    {
+                        "type": "variable",
+                        "name": "ch5-signal-level-gauge-disabled-opacity",
+                        "description": "Disable opacity\n",
+                        "value": "0.5"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-signal-level-gauge-small-height",
+                        "description": "Height small\n",
+                        "value": "24px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-signal-level-gauge-small-width",
+                        "description": "Width small\n",
+                        "value": "36px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-signal-level-gauge-regular-height",
+                        "description": "Height regular\n",
+                        "value": "35px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-signal-level-gauge-regular-width",
+                        "description": "Width regular\n",
+                        "value": "45px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-signal-level-gauge-large-height",
+                        "description": "Height large\n",
+                        "value": "60px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-signal-level-gauge-large-width",
+                        "description": "Width large\n",
+                        "value": "90px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-signal-level-gauge-xlarge-height",
+                        "description": "Height x-large\n",
+                        "value": "96px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-signal-level-gauge-xlarge-width",
+                        "description": "Width x-large\n",
+                        "value": "180px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-signal-level-gauge-bar-color",
+                        "description": "Bar color\n",
+                        "value": "grey"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-signal-level-gauge-selected-bar-color",
+                        "description": "Selected bar color\n",
+                        "value": "rgb(103, 190, 240)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "group": "ch5-slider",
         "schemadata": [
             {
@@ -3761,19 +4211,19 @@
                         "type": "class",
                         "name": "ch5-slider",
                         "description": "the class added on the component and wraps all its contents\n",
-                        "value": "position: relative;\n  display: inline-block;\n  vertical-align: top;\n  // padding: 0px 15px 30px 15px;\n  font-size: $ch5-slider-font-size;\n  font-style: $ch5-slider-font-style;\n  font-weight: $ch5-slider-font-weight;\n\n  &.ch5-hide-dis {\n    display: none;\n  }\n\n  &:focus, .noUi-connects:focus, .noUi-base, .noUi-handle:focus{\n    outline: none;\n  }\n\n  .noUi-target {\n    display: inline-block;\n  }\n\n  &[nohandle] .noUi-handle {\n    visibility: hidden;\n  }\n\n  /// class apply when slider orientation=\"horizontal\"\n  &.ch5-slider--orientation--horizontal {\n    .noUi-target {\n      height: $ch5-slider-target-size;\n    }\n  }\n\n  /// class apply when slider orientation=\"vertical\"\n  &.ch5-slider--orientation--vertical {\n    .noUi-target {\n      width: $ch5-slider-target-size;\n    }\n  }\n  &.ch5-slider--disabled {\n    .noUi-connect {\n      background: lighten($ch5-slider-connect-bg, $ch5-slider-background-lighten-percent);\n    }\n  }\n  .noUi-handle {\n    &:before, &:after {\n      content: none;\n    }\n  }\n\n  /* ===============================================\n    COLORS\n   ============================================= */\n  .noUi-target {\n    background: $ch5-slider-target-bg;\n    border-style: $ch5-slider-target-border-style;\n    border-color: $ch5-slider-target-border-color;\n    border-width: $ch5-slider-target-border-width;\n    box-shadow: none;\n  }\n  .noUi-connect {\n    background: $ch5-slider-connect-bg;\n  }\n  .noUi-handle{\n    border-style: $ch5-slider-handle-border-style;\n    border-color: $ch5-slider-handle-border-color;\n    border-width: $ch5-slider-handle-border-width;\n    background: $ch5-slider-handle-bg;\n    box-shadow: none;\n  }\n\n  /* ===============================================\n    STRETCH\n   ============================================= */\n  &.ch5-slider--stretch--width.ch5-slider--orientation--horizontal{\n    width: 100% !important;\n  }\n\n  &.ch5-slider--stretch--height.ch5-slider--orientation--vertical{\n    height: 100% !important;\n  }\n\n\n  &.ch5-slider--stretch--height.ch5-slider--orientation--horizontal {\n    height: 100% !important;\n    .noUi-target {\n      top: 50%;\n      transform: translateY(-50%);\n    }\n  }\n\n  &.ch5-slider--stretch--width.ch5-slider--orientation--vertical {\n    width: 100% !important;\n    .noUi-target {\n      left: 50%;\n      transform: translateX(-50%);\n    }\n  }\n\n  &.ch5-slider--stretch--both.ch5-slider--orientation--horizontal{\n    width: 100% !important;\n    height: 100% !important;\n\n    .noUi-target {\n      top: 50%;\n      transform: translateY(-50%);\n    }\n  }\n\n  &.ch5-slider--stretch--both.ch5-slider--orientation--vertical{\n    height: 100% !important;\n    width: 100% !important;\n\n    .noUi-target {\n      left: 50%;\n      transform: translateX(-50%);\n    }\n  }"
+                        "value": "position: relative;\n  display: inline-block;\n  vertical-align: top;\n  // padding: 0px 15px 30px 15px;\n  font-size: $ch5-slider-font-size;\n  font-style: $ch5-slider-font-style;\n  font-weight: $ch5-slider-font-weight;\n\n  &.ch5-hide-dis {\n    display: none;\n  }\n\n  &:focus,\n  .noUi-connects:focus,\n  .noUi-base,\n  .noUi-handle:focus {\n    outline: none;\n  }\n\n  .noUi-target {\n    display: inline-block;\n  }\n\n  &[nohandle] .noUi-handle {\n    visibility: hidden;\n  }\n\n  /// class apply when slider orientation=\"horizontal\"\n  &.ch5-slider--orientation--horizontal {\n    .noUi-target {\n      height: $ch5-slider-target-size;\n    }\n\n    &.ch5-slider--tooltip--on {\n      margin-top: 2.5em;\n    }\n\n    &.ch5-slider--tooltip--auto {\n      // margin-top: 2.5em;  CH5C -3150\n    }\n  }\n\n  /// class apply when slider orientation=\"vertical\"\n  &.ch5-slider--orientation--vertical {\n    .noUi-target {\n      width: $ch5-slider-target-size;\n    }\n\n    &.ch5-slider--tooltip--on {\n      margin-left: 2.5em;\n    }\n\n    &.ch5-slider--tooltip--auto {\n      // margin-left: 2.5em;   CH5C -3150     \n    }\n  }\n\n  &.ch5-slider--disabled {\n    .noUi-connect {\n      background: lighten($ch5-slider-connect-bg, $ch5-slider-background-lighten-percent);\n    }\n  }\n\n  .noUi-handle {\n\n    &:before,\n    &:after {\n      content: none;\n    }\n  }\n\n  /* ===============================================\n    COLORS\n   ============================================= */\n  .noUi-target {\n    background: $ch5-slider-target-bg;\n    border-style: $ch5-slider-target-border-style;\n    border-color: $ch5-slider-target-border-color;\n    border-width: $ch5-slider-target-border-width;\n    box-shadow: none;\n  }\n\n  .noUi-connect {\n    background: $ch5-slider-connect-bg;\n  }\n\n  .noUi-handle {\n    border-style: $ch5-slider-handle-border-style;\n    border-color: $ch5-slider-handle-border-color;\n    border-width: $ch5-slider-handle-border-width;\n    background: $ch5-slider-handle-bg;\n    box-shadow: none;\n  }\n\n  /* ===============================================\n    STRETCH\n   ============================================= */\n  &.ch5-slider--stretch--width.ch5-slider--orientation--horizontal {\n    width: 100% !important;\n  }\n\n  &.ch5-slider--stretch--height.ch5-slider--orientation--vertical {\n    height: 100% !important;\n  }\n\n  &.ch5-slider--stretch--height.ch5-slider--orientation--horizontal {\n    height: 100% !important;\n\n    .noUi-target {\n      top: 50%;\n      transform: translateY(-50%);\n    }\n  }\n\n  &.ch5-slider--stretch--width.ch5-slider--orientation--vertical {\n    width: 100% !important;\n\n    .noUi-target {\n      left: 50%;\n      transform: translateX(-50%);\n    }\n  }\n\n  &.ch5-slider--stretch--both.ch5-slider--orientation--horizontal {\n    width: 100% !important;\n    height: 100% !important;\n\n    .noUi-target {\n      top: 50%;\n      transform: translateY(-50%);\n    }\n  }\n\n  &.ch5-slider--stretch--both.ch5-slider--orientation--vertical {\n    height: 100% !important;\n    width: 100% !important;\n\n    .noUi-target {\n      left: 50%;\n      transform: translateX(-50%);\n    }\n  }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-slider--orientation--horizontal",
                         "description": "class apply when slider orientation=\"horizontal\"\n",
-                        "value": ".noUi-target {\n      height: $ch5-slider-target-size;\n    }"
+                        "value": ".noUi-target {\n      height: $ch5-slider-target-size;\n    }\n\n    &.ch5-slider--tooltip--on {\n      margin-top: 2.5em;\n    }\n\n    &.ch5-slider--tooltip--auto {\n      // margin-top: 2.5em;  CH5C -3150\n    }"
                     },
                     {
                         "type": "class",
                         "name": "ch5-slider--orientation--vertical",
                         "description": "class apply when slider orientation=\"vertical\"\n",
-                        "value": ".noUi-target {\n      width: $ch5-slider-target-size;\n    }"
+                        "value": ".noUi-target {\n      width: $ch5-slider-target-size;\n    }\n\n    &.ch5-slider--tooltip--on {\n      margin-left: 2.5em;\n    }\n\n    &.ch5-slider--tooltip--auto {\n      // margin-left: 2.5em;   CH5C -3150     \n    }"
                     }
                 ]
             }
@@ -4215,7 +4665,7 @@
                         "type": "class",
                         "name": "ch5-textinput__input",
                         "description": "Class apply on the input",
-                        "value": "background: transparent;\n        border: 0;\n        color: $ch5-textinput-input-text-color;\n        max-width: 100%;\n        outline: 0;\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when text-transform=\"uppercase\"\n        &--uppercase {\n            text-transform: uppercase\n        }\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when text-transform=\"lowercase\"\n        &--lowercase {\n            text-transform: lowercase;\n        }\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when text-transform=\"capitalize\"\n        &--capitalize {\n            text-transform: capitalize;\n        }\n\n         /// @require .ch5-textinput__input\n        /// Class apply on the input when text-transform=\"none\"\n        &--none {\n            text-transform: none;\n        }\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when size=\"x-small\"\n        &--x-small {\n            padding: $ch5-textinput-input-x-small-tb-padding $ch5-textinput-input-x-small-lr-padding;\n            font-style: $ch5-textinput-x-small-font-style;\n            font-size: $ch5-textinput-x-small-font-size;\n            font-weight: $ch5-textinput-x-small-font-weight;\n            min-width: $ch5-textinput-input-x-small-min-width;\n        }\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when size=\"small\"\n        &--small {\n            padding: $ch5-textinput-input-small-tb-padding $ch5-textinput-input-small-lr-padding;\n            font-style: $ch5-textinput-small-font-style;\n            font-size: $ch5-textinput-small-font-size;\n            font-weight: $ch5-textinput-small-font-weight;\n            min-width: $ch5-textinput-input-small-min-width;\n        }\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when size=\"regular\"\n        &--regular {\n            padding: $ch5-textinput-input-regular-tb-padding $ch5-textinput-input-regular-lr-padding;\n            font-style: $ch5-textinput-regular-font-style;\n            font-size: $ch5-textinput-regular-font-size;\n            font-weight: $ch5-textinput-regular-font-weight;\n            min-width: $ch5-textinput-input-regular-min-width;\n        }\n         /// @require .ch5-textinput__input\n        /// Class apply on the input when size=\"large\"\n        &--large {\n            padding: $ch5-textinput-input-large-tb-padding $ch5-textinput-input-large-lr-padding;\n            font-style: $ch5-textinput-large-font-style;\n            font-size: $ch5-textinput-large-font-size;\n            font-weight: $ch5-textinput-large-font-weight;\n            min-width: $ch5-textinput-input-large-min-width;\n        }\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when size=\"x-large\"\n        &--x-large {\n            padding: $ch5-textinput-input-x-large-tb-padding $ch5-textinput-input-x-large-lr-padding;\n            font-style: $ch5-textinput-x-large-font-style;\n            font-size: $ch5-textinput-x-large-font-size;\n            font-weight: $ch5-textinput-x-large-font-weight;\n            min-width: $ch5-textinput-input-x-large-min-width;\n        }"
+                        "value": "background: transparent;\n        border: 0;\n        color: $ch5-textinput-input-text-color;\n        // max-width: 100%;\n        outline: 0;\n\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when text-transform=\"uppercase\"\n        &--uppercase {\n            text-transform: uppercase\n        }\n\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when text-transform=\"lowercase\"\n        &--lowercase {\n            text-transform: lowercase;\n        }\n\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when text-transform=\"capitalize\"\n        &--capitalize {\n            text-transform: capitalize;\n        }\n\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when text-transform=\"none\"\n        &--none {\n            text-transform: none;\n        }\n\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when size=\"x-small\"\n        &--x-small {\n            padding: $ch5-textinput-input-x-small-tb-padding $ch5-textinput-input-x-small-lr-padding;\n            font-style: $ch5-textinput-x-small-font-style;\n            font-size: $ch5-textinput-x-small-font-size;\n            font-weight: $ch5-textinput-x-small-font-weight;\n            width: 100%;\n            height: $ch5-textinput-size-x-small-height;\n            // min-width: $ch5-textinput-input-x-small-min-width;\n        }\n\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when size=\"small\"\n        &--small {\n            padding: $ch5-textinput-input-small-tb-padding $ch5-textinput-input-small-lr-padding;\n            font-style: $ch5-textinput-small-font-style;\n            font-size: $ch5-textinput-small-font-size;\n            font-weight: $ch5-textinput-small-font-weight;\n            width: 100%;\n            height: $ch5-textinput-size-small-height;\n            // min-width: $ch5-textinput-input-small-min-width;\n        }\n\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when size=\"regular\"\n        &--regular {\n            padding: $ch5-textinput-input-regular-tb-padding $ch5-textinput-input-regular-lr-padding;\n            font-style: $ch5-textinput-regular-font-style;\n            font-size: $ch5-textinput-regular-font-size;\n            font-weight: $ch5-textinput-regular-font-weight;\n            width: 100%;\n            height: $ch5-textinput-size-regular-height; \n            // min-width: $ch5-textinput-input-regular-min-width;\n        }\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when size=\"large\"\n        &--large {\n            padding: $ch5-textinput-input-large-tb-padding $ch5-textinput-input-large-lr-padding;\n            font-style: $ch5-textinput-large-font-style;\n            font-size: $ch5-textinput-large-font-size;\n            font-weight: $ch5-textinput-large-font-weight;\n            width: 100%;\n            height: $ch5-textinput-size-large-height; \n            // min-width: $ch5-textinput-input-large-min-width;\n        }\n\n        /// @require .ch5-textinput__input\n        /// Class apply on the input when size=\"x-large\"\n        &--x-large {\n            padding: $ch5-textinput-input-x-large-tb-padding $ch5-textinput-input-x-large-lr-padding;\n            font-style: $ch5-textinput-x-large-font-style;\n            font-size: $ch5-textinput-x-large-font-size;\n            font-weight: $ch5-textinput-x-large-font-weight;\n            width: 100%;\n            height: $ch5-textinput-size-x-large-height;\n            // min-width: $ch5-textinput-input-x-large-min-width;\n        }"
                     },
                     {
                         "type": "class",
@@ -4245,49 +4695,37 @@
                         "type": "class",
                         "name": "ch5-textinput__input--x-small",
                         "description": "Class apply on the input when size=\"x-small\"",
-                        "value": "padding: $ch5-textinput-input-x-small-tb-padding $ch5-textinput-input-x-small-lr-padding;\n            font-style: $ch5-textinput-x-small-font-style;\n            font-size: $ch5-textinput-x-small-font-size;\n            font-weight: $ch5-textinput-x-small-font-weight;\n            min-width: $ch5-textinput-input-x-small-min-width;"
+                        "value": "padding: $ch5-textinput-input-x-small-tb-padding $ch5-textinput-input-x-small-lr-padding;\n            font-style: $ch5-textinput-x-small-font-style;\n            font-size: $ch5-textinput-x-small-font-size;\n            font-weight: $ch5-textinput-x-small-font-weight;\n            width: 100%;\n            height: $ch5-textinput-size-x-small-height;\n            // min-width: $ch5-textinput-input-x-small-min-width;"
                     },
                     {
                         "type": "class",
                         "name": "ch5-textinput__input--small",
                         "description": "Class apply on the input when size=\"small\"",
-                        "value": "padding: $ch5-textinput-input-small-tb-padding $ch5-textinput-input-small-lr-padding;\n            font-style: $ch5-textinput-small-font-style;\n            font-size: $ch5-textinput-small-font-size;\n            font-weight: $ch5-textinput-small-font-weight;\n            min-width: $ch5-textinput-input-small-min-width;"
+                        "value": "padding: $ch5-textinput-input-small-tb-padding $ch5-textinput-input-small-lr-padding;\n            font-style: $ch5-textinput-small-font-style;\n            font-size: $ch5-textinput-small-font-size;\n            font-weight: $ch5-textinput-small-font-weight;\n            width: 100%;\n            height: $ch5-textinput-size-small-height;\n            // min-width: $ch5-textinput-input-small-min-width;"
                     },
                     {
                         "type": "class",
                         "name": "ch5-textinput__input--regular",
                         "description": "Class apply on the input when size=\"regular\"",
-                        "value": "padding: $ch5-textinput-input-regular-tb-padding $ch5-textinput-input-regular-lr-padding;\n            font-style: $ch5-textinput-regular-font-style;\n            font-size: $ch5-textinput-regular-font-size;\n            font-weight: $ch5-textinput-regular-font-weight;\n            min-width: $ch5-textinput-input-regular-min-width;"
+                        "value": "padding: $ch5-textinput-input-regular-tb-padding $ch5-textinput-input-regular-lr-padding;\n            font-style: $ch5-textinput-regular-font-style;\n            font-size: $ch5-textinput-regular-font-size;\n            font-weight: $ch5-textinput-regular-font-weight;\n            width: 100%;\n            height: $ch5-textinput-size-regular-height; \n            // min-width: $ch5-textinput-input-regular-min-width;"
                     },
                     {
                         "type": "class",
                         "name": "ch5-textinput__input--large",
                         "description": "Class apply on the input when size=\"large\"",
-                        "value": "padding: $ch5-textinput-input-large-tb-padding $ch5-textinput-input-large-lr-padding;\n            font-style: $ch5-textinput-large-font-style;\n            font-size: $ch5-textinput-large-font-size;\n            font-weight: $ch5-textinput-large-font-weight;\n            min-width: $ch5-textinput-input-large-min-width;"
+                        "value": "padding: $ch5-textinput-input-large-tb-padding $ch5-textinput-input-large-lr-padding;\n            font-style: $ch5-textinput-large-font-style;\n            font-size: $ch5-textinput-large-font-size;\n            font-weight: $ch5-textinput-large-font-weight;\n            width: 100%;\n            height: $ch5-textinput-size-large-height; \n            // min-width: $ch5-textinput-input-large-min-width;"
                     },
                     {
                         "type": "class",
                         "name": "ch5-textinput__input--x-large",
                         "description": "Class apply on the input when size=\"x-large\"",
-                        "value": "padding: $ch5-textinput-input-x-large-tb-padding $ch5-textinput-input-x-large-lr-padding;\n            font-style: $ch5-textinput-x-large-font-style;\n            font-size: $ch5-textinput-x-large-font-size;\n            font-weight: $ch5-textinput-x-large-font-weight;\n            min-width: $ch5-textinput-input-x-large-min-width;"
+                        "value": "padding: $ch5-textinput-input-x-large-tb-padding $ch5-textinput-input-x-large-lr-padding;\n            font-style: $ch5-textinput-x-large-font-style;\n            font-size: $ch5-textinput-x-large-font-size;\n            font-weight: $ch5-textinput-x-large-font-weight;\n            width: 100%;\n            height: $ch5-textinput-size-x-large-height;\n            // min-width: $ch5-textinput-input-x-large-min-width;"
                     },
                     {
                         "type": "class",
                         "name": "ch5-textinput__label",
                         "description": "Class apply on the label",
                         "value": "display: block;\n    color: $ch5-textinput-label-text-color;\n\n    &--x-large {\n      font-style: $ch5-textinput-x-large-font-style;\n      font-size: $ch5-textinput-x-large-font-size;\n      font-weight: $ch5-textinput-x-large-font-weight;\n    }\n\n    &--large {\n      font-style: $ch5-textinput-large-font-style;\n      font-size: $ch5-textinput-large-font-size;\n      font-weight: $ch5-textinput-large-font-weight;\n    }\n\n    &--regular {\n      font-style: $ch5-textinput-regular-font-style;\n      font-size: $ch5-textinput-regular-font-size;\n      font-weight: $ch5-textinput-regular-font-weight;\n    }\n\n    &--small {\n      font-style: $ch5-textinput-small-font-style;\n      font-size: $ch5-textinput-small-font-size;\n      font-weight: $ch5-textinput-small-font-weight;\n    }\n\n    &--x-small {\n      font-style: $ch5-textinput-x-small-font-style;\n      font-size: $ch5-textinput-x-small-font-size;\n      font-weight: $ch5-textinput-x-small-font-weight;\n    }"
-                    },
-                    {
-                        "type": "class",
-                        "name": "ch5-textinput",
-                        "description": "Main class\n",
-                        "value": "color: $ch5-textinput-text-color;\n\n  &__assets {\n    display: flex;\n    align-items: center;\n    border: $ch5-textinput-input-border-width solid $ch5-textinput-input-border-color;\n    border-radius: $ch5-textinput-input-border-radius;\n    height: 100%;\n    width: 100%;\n  }\n\n  // text-transform\n  &--uppercase {\n    text-transform: uppercase;\n  }\n\n  &--lowercase {\n    text-transform: lowercase;\n  }\n\n  &--capitalize {\n    text-transform: capitalize;\n  }\n\n  &--none {\n    text-transform: none;\n  }\n\n  &--x-small {\n    span {\n      font-style: $ch5-textinput-x-small-font-style;\n      font-size: $ch5-textinput-x-small-font-size;\n      font-weight: $ch5-textinput-x-small-font-weight;\n    }\n  }\n\n  &--small {\n    span {\n      font-style: $ch5-textinput-small-font-style;\n      font-size: $ch5-textinput-small-font-size;\n      font-weight: $ch5-textinput-small-font-weight;\n    }\n  }\n\n  &--large {\n    span {\n      font-style: $ch5-textinput-large-font-style;\n      font-size: $ch5-textinput-large-font-size;\n      font-weight: $ch5-textinput-large-font-weight;\n    }\n  }\n\n  &--x-large {\n    span {\n      font-style: $ch5-textinput-x-large-font-style;\n      font-size: $ch5-textinput-x-large-font-size;\n      font-weight: $ch5-textinput-x-large-font-weight;\n    }\n  }\n\n  &--content {\n\n    height: 100%;\n    width: 100%;\n    .ch5-textinput__assets {\n      height: 100%;\n      width: 100%;\n      input {\n        width: 100%;\n        height: 100%;\n      }\n    }\n  }\n  &--width {\n    width: 100%;\n    .ch5-textinput__assets {\n      input {\n        width: 100%;\n      }\n    }\n  }"
-                    },
-                    {
-                        "type": "class",
-                        "name": "ch5-textinput--disabled",
-                        "description": "Added automatically based on the disabled attribute or by receiveStateEnable\n",
-                        "value": "pointer-events: none;\n  opacity: 0.5;"
                     }
                 ]
             }
@@ -4367,6 +4805,12 @@
                     },
                     {
                         "type": "variable",
+                        "name": "ch5-textinput-size-regular-width",
+                        "description": "set the width for regular size of the textinput\n",
+                        "value": "400px"
+                    },
+                    {
+                        "type": "variable",
                         "name": "ch5-textinput-regular-font-size-unit",
                         "description": "set the font size unit for regular size of the textinput\n",
                         "value": "px"
@@ -4382,6 +4826,12 @@
                         "name": "ch5-textinput-regular-font-size",
                         "description": "set the font size for regular size of the textinput\n",
                         "value": "$ch5-textinput-regular-font-size-value + $ch5-textinput-regular-font-size-unit"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-regular-mask-font-size",
+                        "description": "set the font size for regular size of the textinput\n",
+                        "value": "calc($ch5-textinput-regular-font-size - 2px)"
                     },
                     {
                         "type": "variable",
@@ -4433,6 +4883,12 @@
                     },
                     {
                         "type": "variable",
+                        "name": "ch5-textinput-x-small-mask-font-size",
+                        "description": "set the font size for x-small size of the textinput\n",
+                        "value": "calc($ch5-textinput-x-small-font-size - 1px)"
+                    },
+                    {
+                        "type": "variable",
                         "name": "ch5-textinput-x-small-font-style",
                         "description": "set the font style for x-small size of the textinput\n",
                         "value": "$ch5-textinput-font-style"
@@ -4463,6 +4919,12 @@
                     },
                     {
                         "type": "variable",
+                        "name": "ch5-textinput-size-x-small-width",
+                        "description": "set the width for x-small size of the textinput\n",
+                        "value": "200px"
+                    },
+                    {
+                        "type": "variable",
                         "name": "ch5-textinput-icon-x-small-font-size",
                         "description": "set the font size of icon for x-small size of the textinput\n",
                         "value": "$ch5-textinput-input-x-small-tb-padding"
@@ -4489,7 +4951,7 @@
                         "type": "variable",
                         "name": "ch5-textinput-input-small-lr-padding",
                         "description": "set left and right padding for small size of the textinput\n",
-                        "value": "20px"
+                        "value": "15px"
                     },
                     {
                         "type": "variable",
@@ -4511,6 +4973,12 @@
                     },
                     {
                         "type": "variable",
+                        "name": "ch5-textinput-small-mask-font-size",
+                        "description": "set the font size for small size of the textinput\n",
+                        "value": "calc($ch5-textinput-small-font-size - 1px)"
+                    },
+                    {
+                        "type": "variable",
                         "name": "ch5-textinput-small-font-style",
                         "description": "set the font style for small size of the textinput\n",
                         "value": "$ch5-textinput-font-style"
@@ -4525,6 +4993,12 @@
                         "type": "variable",
                         "name": "ch5-textinput-input-small-min-width",
                         "description": "set the min width for small size of the textinput\n",
+                        "value": "250px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-size-small-width",
+                        "description": "set the width for small size of the textinput\n",
                         "value": "250px"
                     },
                     {
@@ -4549,13 +5023,13 @@
                         "type": "variable",
                         "name": "ch5-textinput-input-large-tb-padding",
                         "description": "set top and bottom padding for large size of the textinput\n",
-                        "value": "20px"
+                        "value": "15px"
                     },
                     {
                         "type": "variable",
                         "name": "ch5-textinput-input-large-lr-padding",
                         "description": "set left and right padding for large size of the textinput\n",
-                        "value": "15px"
+                        "value": "20px"
                     },
                     {
                         "type": "variable",
@@ -4577,6 +5051,12 @@
                     },
                     {
                         "type": "variable",
+                        "name": "ch5-textinput-large-mask-font-size",
+                        "description": "set the font size for large size of the textinput\n",
+                        "value": "calc($ch5-textinput-large-font-size - 4px)"
+                    },
+                    {
+                        "type": "variable",
                         "name": "ch5-textinput-large-font-style",
                         "description": "set the font style for large size of the textinput\n",
                         "value": "$ch5-textinput-font-style"
@@ -4591,6 +5071,12 @@
                         "type": "variable",
                         "name": "ch5-textinput-input-large-min-width",
                         "description": "set the min width for large size of the textinput\n",
+                        "value": "500px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-size-large-width",
+                        "description": "set the width for large size of the textinput\n",
                         "value": "500px"
                     },
                     {
@@ -4643,6 +5129,12 @@
                     },
                     {
                         "type": "variable",
+                        "name": "ch5-textinput-x-large-mask-font-size",
+                        "description": "set the font size for x-large size of the textinput\n",
+                        "value": "calc($ch5-textinput-x-large-font-size - 4px)"
+                    },
+                    {
+                        "type": "variable",
                         "name": "ch5-textinput-x-large-font-style",
                         "description": "set the font style for x-large size of the textinput\n",
                         "value": "$ch5-textinput-font-style"
@@ -4661,6 +5153,12 @@
                     },
                     {
                         "type": "variable",
+                        "name": "ch5-textinput-size-x-large-width",
+                        "description": "set the width for x-large size of the textinput\n",
+                        "value": "$ch5-textinput-size-large-width"
+                    },
+                    {
+                        "type": "variable",
                         "name": "ch5-textinput-icon-x-large-font-size",
                         "description": "set the font size of icon for x-large size of the textinput\n",
                         "value": "$ch5-textinput-x-large-font-size"
@@ -4676,6 +5174,36 @@
                         "name": "ch5-textinput-icon-x-large-lr-margin",
                         "description": "set left and right margin of icon for x-large size of the textinput\n",
                         "value": "$ch5-textinput-x-large-font-size"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-size-x-small-height",
+                        "description": "set minimum height for size - x-small of the textinput\n",
+                        "value": "40px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-size-small-height",
+                        "description": "set minimum height for size - small of the textinput\n",
+                        "value": "48px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-size-regular-height",
+                        "description": "set minimum height for size - regular of the textinput\n",
+                        "value": "52px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-size-large-height",
+                        "description": "set minimum height for size - large of the textinput\n",
+                        "value": "56px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-textinput-size-x-large-height",
+                        "description": "set minimum height for size - x-large of the textinput\n",
+                        "value": "60px"
                     },
                     {
                         "type": "variable",
@@ -5048,6 +5576,116 @@
                         "name": "ch5-triggerview-fallback-message-color-background",
                         "description": "The background color of fallback message.\n",
                         "value": "#fff"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "ch5-wifi-signal-level-gauge",
+        "schemadata": [
+            {
+                "type": "class",
+                "metadata": [
+                    {
+                        "type": "class",
+                        "name": "ch5-wifi-signal-level-gauge",
+                        "description": "Main class\n",
+                        "value": "position: relative;\n  display: inline-block;\n\n  :after,\n  :before,\n  .ch5-wifi-signal-level-gauge--inner-container {\n    border-color: transparent;\n    border-style: solid;\n  }"
+                    },
+                    {
+                        "type": "class",
+                        "name": "ch5-wifi-signal-level-gauge--disabled",
+                        "description": "Disabled Class\n",
+                        "value": "pointer-events: none;\n  opacity: $ch5-wifi-signal-level-gauge-disabled-opacity;"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "group": "ch5-wifi-signal-level-gauge-variables",
+        "schemadata": [
+            {
+                "type": "variable",
+                "metadata": [
+                    {
+                        "type": "variable",
+                        "name": "ch5-wifi-signal-level-gauge-disabled-opacity",
+                        "description": "Disable opacity\n",
+                        "value": "0.5"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-wifi-signal-level-gauge-small-height",
+                        "description": "Size Height small\n",
+                        "value": "24px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-wifi-signal-level-gauge-small-width",
+                        "description": "Size Width small\n",
+                        "value": "36px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-wifi-signal-level-gauge-regular-height",
+                        "description": "Size Height regular\n",
+                        "value": "36px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-wifi-signal-level-gauge-regular-width",
+                        "description": "Size Width regular\n",
+                        "value": "54px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-wifi-signal-level-gauge-large-height",
+                        "description": "Size Height large\n",
+                        "value": "60px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-wifi-signal-level-gauge-large-width",
+                        "description": "Size Width large\n",
+                        "value": "90px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-wifi-signal-level-gauge-x-large-height",
+                        "description": "Size Height x-large\n",
+                        "value": "96px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-wifi-signal-level-gauge-x-large-width",
+                        "description": "Size Width x-large\n",
+                        "value": "144px"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-wifi-signal-level-gauge-style-accents",
+                        "description": "gaugeStyle accents\n",
+                        "value": "skyblue"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-wifi-signal-level-gauge-style-light",
+                        "description": "gaugeStyle light\n",
+                        "value": "white"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-wifi-signal-level-gauge-style-dark",
+                        "description": "gaugeStyle dark\n",
+                        "value": "black"
+                    },
+                    {
+                        "type": "variable",
+                        "name": "ch5-wifi-signal-level-gauge-border-color",
+                        "description": "border Color\n",
+                        "value": "rgb(147, 147, 147)"
                     }
                 ]
             }

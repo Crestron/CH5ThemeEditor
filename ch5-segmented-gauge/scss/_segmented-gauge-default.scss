@@ -7,20 +7,27 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-color-chip
+/// @group ch5-segmented-gauge
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Color Chip parent class
-.ch5-color-chip {
-  position: relative;
-  display: inline-block;
-  background-color: #000;
-  height: $ch5-color-chip-div-height;
-  width: $ch5-color-chip-div-width;
+// styles to avoid extra width for segmented gauge
+ch5-segmented-gauge {
+  display: inline-flex;
 }
 
-/// Color Chip disabled class
-.ch5-color-chip--disabled {
+/// Main class
+.ch5-segmented-gauge {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+
+  .ch5-segmented-gauge-segment {
+    background-color: $ch5-segmented-gauge-state-graphic-inactive;
+  }
+}
+
+/// Disabled class
+.ch5-segmented-gauge--disabled {
   pointer-events: none;
-  opacity: $ch5-color-chip-disabled-opacity;
+  opacity: $ch5-segmented-gauge-disabled-opacity;
 }
