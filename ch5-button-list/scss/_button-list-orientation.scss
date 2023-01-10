@@ -38,7 +38,7 @@
       }
     }
 
-    @for $var from 1 to 500 {
+    @for $var from 1 to 501 {
       &.ch5-button-list--rows-#{$var} {
         grid-template-rows: repeat($var, 1fr);
       }
@@ -74,7 +74,7 @@
       }
     }
 
-    @for $var from 1 to 500 {
+    @for $var from 1 to 501 {
       &.ch5-button-list--columns-#{$var} {
         grid-template-columns: repeat($var, 1fr);
       }
