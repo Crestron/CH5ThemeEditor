@@ -150,6 +150,7 @@ async function initialize() {
     'ch5-animation': 'Ch5Animation',
     'ch5-background': 'Ch5Background',
     'ch5-button': 'Ch5Button',
+    'ch5-button-list': 'Ch5ButtonList',
     'ch5-color-chip': 'Ch5ColorChip',
     'ch5-color-picker': 'Ch5ColorPicker',
     'ch5-dpad': 'Ch5Dpad',
