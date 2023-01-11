@@ -164,6 +164,7 @@ async function initialize() {
     'ch5-signal-level-gauge': 'Ch5SignalLevelGauge',
     'ch5-slider': 'Ch5Slider',
     'ch5-spinner': 'Ch5Spinner',
+    'ch5-tab-button': 'Ch5TabButton',
     'ch5-textinput': 'Ch5TextInput',
     'ch5-toggle': 'Ch5Toggle',
     'ch5-video': 'Ch5Video',
