@@ -11,6 +11,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-tab-button {
+
+  /// Applied when orientation is horizontal
   &.ch5-tab-button--orientation-horizontal {
     grid-auto-flow: column;
 
@@ -31,6 +33,7 @@
     }
   }
 
+  /// Applied when orientation is vertical
   &.ch5-tab-button--orientation-vertical {
     grid-auto-flow: row;
 

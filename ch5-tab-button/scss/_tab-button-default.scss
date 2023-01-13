@@ -13,11 +13,10 @@
 /// Main class
 .ch5-tab-button {
   position: relative;
-  overflow: scroll;
-  white-space: nowrap;
+  height: fit-content;
+  user-select: none;
   transition: all 0.2s;
   will-change: transform;
-  user-select: none;
   display: grid;
   height: auto;
 
@@ -51,6 +50,7 @@ ch5-tab-button {
   display: grid;
 }
 
+/// Applied tab button is set to disabled
 .ch5-tab-button--disabled {
   pointer-events: none;
   opacity: $ch5-tab-button-disabled-opacity;
@@ -66,7 +66,11 @@ ch5-tab-button {
 .ch5-tab-button--button-container {
   width: $ch5-tab-button-button-container-width;
   height: $ch5-tab-button-button-container-height;
-  padding: $ch5-tab-button-button-container-padding;
   min-width: $ch5-tab-button-button-container-width;
+  padding: $ch5-tab-button-button-container-padding;
   min-height: $ch5-tab-button-button-container-height;
 }
+
+// .ch5-button--stretch-both .cb-btn {
+//   white-space: pre-wrap;
+// }
