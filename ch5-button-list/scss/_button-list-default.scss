@@ -20,6 +20,7 @@
   user-select: none;
   display: grid;
   height: auto;
+  scrollbar-width: none; // needed to hide the firefox scrollbar 
 
   &.active {
     cursor: -webkit-grabbing;
