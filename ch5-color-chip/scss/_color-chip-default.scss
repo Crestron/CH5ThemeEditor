@@ -10,6 +10,10 @@
 /// @group ch5-color-chip
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-color-chip {
+  display: inline-flex;
+}
+
 /// Color Chip parent class
 .ch5-color-chip {
   position: relative;
