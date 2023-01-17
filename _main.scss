@@ -23,6 +23,8 @@ ch5-segmented-gauge,
 ch5-select,
 ch5-signal-level-gauge,
 ch5-slider,
+ch5-subpage-reference-list,
+ch5-tab-button,
 ch5-textinput,
 ch5-spinner,
 ch5-toggle,
@@ -78,6 +80,8 @@ ch5-triggerview {
 
 @import "ch5-spinner/ch5-spinner";
 
+@import "ch5-tab-button/ch5-tab-button";
+
 @import "ch5-template/ch5-template";
 
 @import 'ch5-textinput/ch5-textinput';
@@ -89,3 +93,5 @@ ch5-triggerview {
 @import "ch5-video/ch5-video";
 
 @import "ch5-wifi-signal-level-gauge/ch5-wifi-signal-level-gauge";
+
+@import "ch5-subpage-reference-list/ch5-subpage-reference-list";
