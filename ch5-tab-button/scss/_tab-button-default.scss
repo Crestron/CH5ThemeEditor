@@ -24,21 +24,6 @@
     cursor: -webkit-grabbing;
   }
 
-  &.ch5-tab-button::-webkit-scrollbar {
-    height: 0px;
-    width: 0px;
-  }
-
-  &.ch5-tab-button--center-items-true {
-    justify-content: center;
-    align-content: center;
-  }
-
-  &.ch5-tab-button--center-items-false {
-    align-content: start;
-    justify-content: start;
-  }
-
   &.ch5-tab-button--stretch-both {
     align-content: stretch;
     justify-content: stretch;
