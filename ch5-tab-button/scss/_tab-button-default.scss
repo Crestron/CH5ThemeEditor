@@ -24,21 +24,6 @@
     cursor: -webkit-grabbing;
   }
 
-  &.ch5-tab-button::-webkit-scrollbar {
-    height: 0px;
-    width: 0px;
-  }
-
-  &.ch5-tab-button--center-items-true {
-    justify-content: center;
-    align-content: center;
-  }
-
-  &.ch5-tab-button--center-items-false {
-    align-content: start;
-    justify-content: start;
-  }
-
   &.ch5-tab-button--stretch-both {
     align-content: stretch;
     justify-content: stretch;
@@ -67,10 +52,5 @@ ch5-tab-button {
   width: $ch5-tab-button-button-container-width;
   height: $ch5-tab-button-button-container-height;
   min-width: $ch5-tab-button-button-container-width;
-  padding: $ch5-tab-button-button-container-padding;
   min-height: $ch5-tab-button-button-container-height;
 }
-
-// .ch5-button--stretch-both .cb-btn {
-//   white-space: pre-wrap;
-// }
