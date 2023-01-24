@@ -19,7 +19,7 @@
   will-change: transform;
   user-select: none;
   display: grid;
-  height: auto;
+  height: 100%;
   padding: $ch5-button-list-padding;
   scrollbar-width: none; // needed to hide the firefox scrollbar 
 
@@ -76,8 +76,6 @@
 
 ch5-button-list {
   position: relative;
-  display: block;
-  height: 100%; // This is specifically added to support orientation verticals
 }
 
 .ch5-button-list--disabled {
