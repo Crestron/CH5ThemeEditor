@@ -47,7 +47,6 @@
 
   &.ch5-button-list--orientation-vertical {
     grid-auto-flow: row;
-    height: 100%;
 
     &.ch5-button-list--scrollbar-true {
       padding-right: $ch5-scrollbar-width;
