@@ -16,6 +16,7 @@
 
     .ch5-subpage-reference-list--subpage-container {
       height: 100%;
+      padding: $ch5-subpage-reference-list-container-padding;
     }
 
     &.ch5-subpage-reference-list--stretch-both {
@@ -27,7 +28,7 @@
     &.ch5-subpage-reference-list--scrollbar-true {
       padding-bottom: $ch5-scrollbar-width;
 
-      &~.scrollbar-container {
+      & ~ .scrollbar-container {
         width: 100%;
         bottom: 0;
         height: $ch5-scrollbar-width;
@@ -38,7 +39,7 @@
       }
     }
 
-    @for $var from 1 to 501 {
+    @for $var from 1 to 601 {
       &.ch5-subpage-reference-list--rows-#{$var} {
         grid-template-rows: repeat($var, 1fr);
       }
@@ -51,7 +52,7 @@
     &.ch5-subpage-reference-list--scrollbar-true {
       padding-right: $ch5-scrollbar-width;
 
-      &~.scrollbar-container {
+      & ~ .scrollbar-container {
         top: 0;
         height: 100%;
         right: 0;
@@ -66,6 +67,7 @@
 
     .ch5-subpage-reference-list--subpage-container {
       width: 100%;
+      padding: $ch5-subpage-reference-list-container-padding;
     }
 
     &.ch5-subpage-reference-list--stretch-both {
@@ -74,7 +76,7 @@
       }
     }
 
-    @for $var from 1 to 501 {
+    @for $var from 1 to 601 {
       &.ch5-subpage-reference-list--columns-#{$var} {
         grid-template-columns: repeat($var, 1fr);
       }

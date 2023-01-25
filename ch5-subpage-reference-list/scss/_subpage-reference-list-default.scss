@@ -19,7 +19,9 @@
   will-change: transform;
   user-select: none;
   display: grid;
-  height: auto;
+  height: 100%;
+  padding: $ch5-subpage-reference-list-padding;
+  scrollbar-width: none; // needed to hide the firefox scrollbar
 
   &.active {
     cursor: -webkit-grabbing;
@@ -45,7 +47,7 @@
     justify-content: stretch;
   }
 
-  &~.scrollbar-container {
+  & ~ .scrollbar-container {
     position: absolute;
     background-color: $ch5-scrollbar-track-color;
     border-radius: $ch5-scrollbar-border-radius;
@@ -60,13 +62,13 @@
   }
 
   &.ch5-subpage-reference-list--scrollbar-true {
-    &~.scrollbar-container {
+    & ~ .scrollbar-container {
       display: block;
     }
   }
 
   &.ch5-subpage-reference-list--scrollbar-false {
-    &~.scrollbar-container {
+    & ~ .scrollbar-container {
       display: none;
     }
   }
@@ -74,7 +76,8 @@
 
 ch5-subpage-reference-list {
   position: relative;
-  display: grid;
+  display: block;
+  height: 100%;
 }
 
 .ch5-subpage-reference-list--disabled {
@@ -83,7 +86,7 @@ ch5-subpage-reference-list {
 }
 
 .ch5-subpage-reference-list.ch5-subpage-reference-list--disabled {
-  &~.scrollbar-container {
+  & ~ .scrollbar-container {
     pointer-events: none;
     opacity: $ch5-subpage-reference-list-disabled-opacity;
   }
