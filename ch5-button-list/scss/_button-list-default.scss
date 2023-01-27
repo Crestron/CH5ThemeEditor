@@ -76,6 +76,12 @@
 
 ch5-button-list {
   position: relative;
+  display: block;
+  height: 100%;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .ch5-button-list--disabled {
