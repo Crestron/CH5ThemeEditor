@@ -41,7 +41,7 @@
     align-content: start;
     justify-content: start;
   }
-
+  /// subpage reference list stretch-both class
   &.ch5-subpage-reference-list--stretch-both {
     align-content: stretch;
     justify-content: stretch;
@@ -83,7 +83,7 @@ ch5-subpage-reference-list {
     display: none;
   }
 }
-
+  /// subpage reference list disable class
 .ch5-subpage-reference-list--disabled {
   pointer-events: none;
   opacity: $ch5-subpage-reference-list-disabled-opacity;
@@ -95,11 +95,3 @@ ch5-subpage-reference-list {
     opacity: $ch5-subpage-reference-list-disabled-opacity;
   }
 }
-
-// .ch5-subpage-reference-list--subpage-container {
-//   width: $ch5-subpage-reference-list-subpage-container-width;
-//   height: $ch5-subpage-reference-list-subpage-container-height;
-//   padding: $ch5-subpage-reference-list-subpage-container-padding;
-//   min-width: $ch5-subpage-reference-list-subpage-container-width;
-//   min-height: $ch5-subpage-reference-list-subpage-container-height;
-// }

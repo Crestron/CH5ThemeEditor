@@ -11,9 +11,10 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-subpage-reference-list {
+  /// csubpage reference list orientation horizontal class
   &.ch5-subpage-reference-list--orientation-horizontal {
     grid-auto-flow: column;
-
+  /// csubpage reference list subpage container class
     .ch5-subpage-reference-list--subpage-container {
       height: 100%;
       padding: $ch5-subpage-reference-list-container-padding;
@@ -45,7 +46,7 @@
       }
     }
   }
-
+  /// subpage reference list orientation vertical class
   &.ch5-subpage-reference-list--orientation-vertical {
     grid-auto-flow: row;
 
