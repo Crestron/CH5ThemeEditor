@@ -13,9 +13,85 @@
 /// Main class
 .ch5-subpage-reference-list {
   position: relative;
+  overflow: scroll;
+  white-space: nowrap;
+  transition: all 0.2s;
+  will-change: transform;
+  user-select: none;
+  display: grid;
+  height: 100%;
+  padding: $ch5-subpage-reference-list-padding;
+  scrollbar-width: none; // needed to hide the firefox scrollbar
+
+  &.active {
+    cursor: -webkit-grabbing;
+  }
+
+  &.ch5-subpage-reference-list::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+  }
+
+  &.ch5-subpage-reference-list--center-items-true {
+    justify-content: center;
+    align-content: center;
+  }
+
+  &.ch5-subpage-reference-list--center-items-false {
+    align-content: start;
+    justify-content: start;
+  }
+  /// subpage reference list stretch-both class
+  &.ch5-subpage-reference-list--stretch-both {
+    align-content: stretch;
+    justify-content: stretch;
+  }
+
+  & ~ .scrollbar-container {
+    position: absolute;
+    background-color: $ch5-scrollbar-track-color;
+    border-radius: $ch5-scrollbar-border-radius;
+
+    .scrollbar {
+      position: absolute;
+      will-change: width, transform;
+      position: absolute;
+      border-radius: $ch5-scrollbar-border-radius;
+      background: $ch5-scrollbar-thumb-color;
+    }
+  }
+
+  &.ch5-subpage-reference-list--scrollbar-true {
+    & ~ .scrollbar-container {
+      display: block;
+    }
+  }
+
+  &.ch5-subpage-reference-list--scrollbar-false {
+    & ~ .scrollbar-container {
+      display: none;
+    }
+  }
 }
 
+ch5-subpage-reference-list {
+  position: relative;
+  display: block;
+  height: 100%;
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+  /// subpage reference list disable class
 .ch5-subpage-reference-list--disabled {
   pointer-events: none;
   opacity: $ch5-subpage-reference-list-disabled-opacity;
+}
+
+.ch5-subpage-reference-list.ch5-subpage-reference-list--disabled {
+  & ~ .scrollbar-container {
+    pointer-events: none;
+    opacity: $ch5-subpage-reference-list-disabled-opacity;
+  }
 }

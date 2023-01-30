@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// Copyright (C) 2023 to the present, Crestron Electronics, Inc.
 /// All rights reserved.
 /// No part of this software may be reproduced in any form, machine
 /// or natural, without the express written consent of Crestron Electronics.
@@ -7,27 +7,29 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-button-list
+/// @group ch5-subpage-reference-list
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-.ch5-button-list {
-  &.ch5-button-list--orientation-horizontal {
+.ch5-subpage-reference-list {
+  /// csubpage reference list orientation horizontal class
+  &.ch5-subpage-reference-list--orientation-horizontal {
     grid-auto-flow: column;
-
-    .ch5-button-list--button-container {
+  /// csubpage reference list subpage container class
+    .ch5-subpage-reference-list--subpage-container {
       height: 100%;
+      padding: $ch5-subpage-reference-list-container-padding;
     }
 
-    &.ch5-button-list--stretch-both {
-      .ch5-button-list--button-container {
+    &.ch5-subpage-reference-list--stretch-both {
+      .ch5-subpage-reference-list--subpage-container {
         width: 100%;
       }
     }
 
-    &.ch5-button-list--scrollbar-true {
+    &.ch5-subpage-reference-list--scrollbar-true {
       padding-bottom: $ch5-scrollbar-width;
 
-      &~.scrollbar-container {
+      & ~ .scrollbar-container {
         width: 100%;
         bottom: 0;
         height: $ch5-scrollbar-width;
@@ -38,20 +40,20 @@
       }
     }
 
-    @for $var from 1 to 501 {
-      &.ch5-button-list--rows-#{$var} {
+    @for $var from 1 to 601 {
+      &.ch5-subpage-reference-list--rows-#{$var} {
         grid-template-rows: repeat($var, 1fr);
       }
     }
   }
-
-  &.ch5-button-list--orientation-vertical {
+  /// subpage reference list orientation vertical class
+  &.ch5-subpage-reference-list--orientation-vertical {
     grid-auto-flow: row;
 
-    &.ch5-button-list--scrollbar-true {
+    &.ch5-subpage-reference-list--scrollbar-true {
       padding-right: $ch5-scrollbar-width;
 
-      &~.scrollbar-container {
+      & ~ .scrollbar-container {
         top: 0;
         height: 100%;
         right: 0;
@@ -64,18 +66,19 @@
       }
     }
 
-    .ch5-button-list--button-container {
+    .ch5-subpage-reference-list--subpage-container {
       width: 100%;
+      padding: $ch5-subpage-reference-list-container-padding;
     }
 
-    &.ch5-button-list--stretch-both {
-      .ch5-button-list--button-container {
+    &.ch5-subpage-reference-list--stretch-both {
+      .ch5-subpage-reference-list--subpage-container {
         height: 100%;
       }
     }
 
-    @for $var from 1 to 501 {
-      &.ch5-button-list--columns-#{$var} {
+    @for $var from 1 to 601 {
+      &.ch5-subpage-reference-list--columns-#{$var} {
         grid-template-columns: repeat($var, 1fr);
       }
     }
