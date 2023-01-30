@@ -7,16 +7,20 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-tab-button-variables
+/// @group ch5-tab-button
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Variables below
 
-/// Disabled opacity
-$ch5-tab-button-disabled-opacity: 0.5 !default;
+.ch5-tab-button {
+  .ch5-tab-button--lefttabstyle- {
 
-/// button container width
-$ch5-tab-button-button-container-width: 5px !default;
+  }
 
-/// button container height
-$ch5-tab-button-button-container-height: 5px !default;
+  .ch5-tab-button--centertabstyle- {
+
+  }
+
+  .ch5-tab-button-righttabstyle- {
+    
+  }
+}
