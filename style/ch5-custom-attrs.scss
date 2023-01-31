@@ -15,5 +15,7 @@
 .ch5-disabled,
 .ch5-disabled div {
   pointer-events: none !important;
+}
+.ch5-disabled {
   opacity: 0.5 !important;
 }

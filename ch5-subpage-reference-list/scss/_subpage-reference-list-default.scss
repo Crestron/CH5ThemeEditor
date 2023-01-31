@@ -20,7 +20,6 @@
   user-select: none;
   display: grid;
   height: 100%;
-  padding: $ch5-subpage-reference-list-padding;
   scrollbar-width: none; // needed to hide the firefox scrollbar
 
   &.active {
