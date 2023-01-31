@@ -12,7 +12,8 @@
 .ch5-hide-dis {
   display: none !important;
 }
-.ch5-disabled {
-  pointer-events: none;
-  opacity: 0.5;
+.ch5-disabled,
+.ch5-disabled div {
+  pointer-events: none !important;
+  opacity: 0.5 !important;
 }
