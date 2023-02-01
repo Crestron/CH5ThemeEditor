@@ -11,6 +11,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-button-list {
+
+  /// Applied when orientation='horizontal'
   &.ch5-button-list--orientation-horizontal {
     grid-auto-flow: column;
 
@@ -60,6 +62,7 @@
     }
   }
 
+  /// Applied when orientation='vertical'
   &.ch5-button-list--orientation-vertical {
     grid-auto-flow: row;
 
