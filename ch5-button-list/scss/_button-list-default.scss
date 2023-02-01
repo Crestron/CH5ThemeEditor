@@ -32,20 +32,6 @@
     width: 0px;
   }
 
-  &.ch5-button-list--center-items-true {
-    justify-content: center;
-    align-content: center;
-  }
-
-  &.ch5-button-list--center-items-false {
-    align-content: start;
-    justify-content: start;
-  }
-
-  &.ch5-button-list--stretch-both {
-    align-content: stretch;
-    justify-content: stretch;
-  }
 
   &~.scrollbar-container {
     position: absolute;

@@ -14,6 +14,21 @@
   &.ch5-button-list--orientation-horizontal {
     grid-auto-flow: column;
 
+    &.ch5-button-list--center-items-true {
+      justify-content: center;
+      align-content: start;
+    }
+
+    &.ch5-button-list--center-items-false {
+      align-content: start;
+      justify-content: start;
+    }
+
+    &.ch5-button-list--stretch-both {
+      align-content: stretch;
+      justify-content: stretch;
+    }
+
     .ch5-button-list--button-container {
       height: 100%;
     }
@@ -47,6 +62,21 @@
 
   &.ch5-button-list--orientation-vertical {
     grid-auto-flow: row;
+
+    &.ch5-button-list--center-items-true {
+      justify-content: start;
+      align-content: center;
+    }
+
+    &.ch5-button-list--center-items-false {
+      align-content: start;
+      justify-content: start;
+    }
+
+    &.ch5-button-list--stretch-both {
+      align-content: stretch;
+      justify-content: stretch;
+    }
 
     &.ch5-button-list--scrollbar-true {
       padding-right: $ch5-scrollbar-width;
