@@ -70,6 +70,7 @@ ch5-button-list {
   }
 }
 
+/// Applied when the component is disabled
 .ch5-button-list--disabled {
   pointer-events: none;
   opacity: $ch5-button-list-disabled-opacity;
@@ -82,6 +83,7 @@ ch5-button-list {
   }
 }
 
+/// Applied for the container of ch5-button
 .ch5-button-list--button-container {
   width: $ch5-button-list-button-container-width;
   height: $ch5-button-list-button-container-height;
