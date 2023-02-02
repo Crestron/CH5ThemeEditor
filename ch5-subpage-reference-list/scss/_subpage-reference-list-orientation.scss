@@ -11,10 +11,28 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-subpage-reference-list {
-  /// csubpage reference list orientation horizontal class
+
+  /// Applied when orientation='horizontal'
   &.ch5-subpage-reference-list--orientation-horizontal {
     grid-auto-flow: column;
-  /// csubpage reference list subpage container class
+
+    &.ch5-subpage-reference-list--center-items-true {
+      justify-content: center;
+      align-content: start;
+    }
+
+    &.ch5-subpage-reference-list--center-items-false {
+      align-content: start;
+      justify-content: start;
+    }
+
+    /// Applied when stretch='both'
+    &.ch5-subpage-reference-list--stretch-both {
+      align-content: stretch;
+      justify-content: stretch;
+    }
+
+    /// Applied for the container of subpage
     .ch5-subpage-reference-list--subpage-container {
       height: 100%;
       padding: $ch5-subpage-reference-list-container-padding;
@@ -29,7 +47,7 @@
     &.ch5-subpage-reference-list--scrollbar-true {
       padding-bottom: $ch5-scrollbar-width;
 
-      & ~ .scrollbar-container {
+      &~.scrollbar-container {
         width: 100%;
         bottom: 0;
         height: $ch5-scrollbar-width;
@@ -46,14 +64,30 @@
       }
     }
   }
-  /// subpage reference list orientation vertical class
+
+  /// Applied when orientation='vertical'
   &.ch5-subpage-reference-list--orientation-vertical {
     grid-auto-flow: row;
+
+    &.ch5-subpage-reference-list--center-items-true {
+      justify-content: start;
+      align-content: center;
+    }
+
+    &.ch5-subpage-reference-list--center-items-false {
+      align-content: start;
+      justify-content: start;
+    }
+
+    &.ch5-subpage-reference-list--stretch-both {
+      align-content: stretch;
+      justify-content: stretch;
+    }
 
     &.ch5-subpage-reference-list--scrollbar-true {
       padding-right: $ch5-scrollbar-width;
 
-      & ~ .scrollbar-container {
+      &~.scrollbar-container {
         top: 0;
         height: 100%;
         right: 0;
