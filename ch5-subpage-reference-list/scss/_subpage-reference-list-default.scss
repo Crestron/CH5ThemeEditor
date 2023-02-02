@@ -67,7 +67,7 @@ ch5-subpage-reference-list {
     display: none;
   }
 }
-  /// subpage reference list disable class
+  /// Applied when the subpage reference list is disabled
 .ch5-subpage-reference-list--disabled {
   pointer-events: none;
   opacity: $ch5-subpage-reference-list-disabled-opacity;
