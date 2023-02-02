@@ -31,21 +31,6 @@
     width: 0px;
   }
 
-  &.ch5-subpage-reference-list--center-items-true {
-    justify-content: center;
-    align-content: center;
-  }
-
-  &.ch5-subpage-reference-list--center-items-false {
-    align-content: start;
-    justify-content: start;
-  }
-  /// subpage reference list stretch-both class
-  &.ch5-subpage-reference-list--stretch-both {
-    align-content: stretch;
-    justify-content: stretch;
-  }
-
   & ~ .scrollbar-container {
     position: absolute;
     background-color: $ch5-scrollbar-track-color;

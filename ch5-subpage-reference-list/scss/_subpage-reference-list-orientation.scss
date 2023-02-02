@@ -14,7 +14,22 @@
   /// csubpage reference list orientation horizontal class
   &.ch5-subpage-reference-list--orientation-horizontal {
     grid-auto-flow: column;
-  /// csubpage reference list subpage container class
+    &.ch5-subpage-reference-list--center-items-true {
+      justify-content: center;
+      align-content: start;
+    }
+
+    &.ch5-subpage-reference-list--center-items-false {
+      align-content: start;
+      justify-content: start;
+    }
+
+    &.ch5-subpage-reference-list--stretch-both {
+      align-content: stretch;
+      justify-content: stretch;
+    }
+
+    /// csubpage reference list subpage container class
     .ch5-subpage-reference-list--subpage-container {
       height: 100%;
       padding: $ch5-subpage-reference-list-container-padding;
@@ -49,7 +64,20 @@
   /// subpage reference list orientation vertical class
   &.ch5-subpage-reference-list--orientation-vertical {
     grid-auto-flow: row;
+    &.ch5-subpage-reference-list--center-items-true {
+      justify-content: start;
+      align-content: center;
+    }
 
+    &.ch5-subpage-reference-list--center-items-false {
+      align-content: start;
+      justify-content: start;
+    }
+
+    &.ch5-subpage-reference-list--stretch-both {
+      align-content: stretch;
+      justify-content: stretch;
+    }
     &.ch5-subpage-reference-list--scrollbar-true {
       padding-right: $ch5-scrollbar-width;
 
