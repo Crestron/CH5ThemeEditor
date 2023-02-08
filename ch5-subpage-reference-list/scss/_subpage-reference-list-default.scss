@@ -62,12 +62,12 @@ ch5-subpage-reference-list {
   position: relative;
   display: block;
   height: 100%;
-  
+
   ::-webkit-scrollbar {
     display: none;
   }
 }
-  /// Applied when the subpage reference list is disabled
+/// Applied when the subpage reference list is disabled
 .ch5-subpage-reference-list--disabled {
   pointer-events: none;
   opacity: $ch5-subpage-reference-list-disabled-opacity;
