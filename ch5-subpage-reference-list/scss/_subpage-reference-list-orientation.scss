@@ -11,7 +11,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-subpage-reference-list {
-
   /// Applied when orientation='horizontal'
   &.ch5-subpage-reference-list--orientation-horizontal {
     grid-auto-flow: column;
@@ -26,7 +25,6 @@
       justify-content: start;
     }
 
-    /// Applied when stretch='both'
     &.ch5-subpage-reference-list--stretch-both {
       align-content: stretch;
       justify-content: stretch;
@@ -47,7 +45,7 @@
     &.ch5-subpage-reference-list--scrollbar-true {
       padding-bottom: $ch5-scrollbar-width;
 
-      &~.scrollbar-container {
+      & ~ .scrollbar-container {
         width: 100%;
         bottom: 0;
         height: $ch5-scrollbar-width;
@@ -87,7 +85,7 @@
     &.ch5-subpage-reference-list--scrollbar-true {
       padding-right: $ch5-scrollbar-width;
 
-      &~.scrollbar-container {
+      & ~ .scrollbar-container {
         top: 0;
         height: 100%;
         right: 0;
