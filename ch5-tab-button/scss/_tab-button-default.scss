@@ -19,14 +19,11 @@
   will-change: transform;
   display: grid;
   height: auto;
+  align-content: stretch;
+  justify-content: stretch;
 
   &.active {
     cursor: -webkit-grabbing;
-  }
-
-  &.ch5-tab-button--stretch-both {
-    align-content: stretch;
-    justify-content: stretch;
   }
 }
 
