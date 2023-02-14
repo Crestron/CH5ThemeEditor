@@ -66,11 +66,12 @@ ch5-subpage-reference-list {
     display: none;
   }
 }
-/// Applied when the subpage reference list is disabled
+
 .ch5-subpage-reference-list--disabled,
 .ch5-subpage-reference-list--disabled div {
   pointer-events: none !important;
 }
+/// Applied when the subpage reference list is disabled
 .ch5-subpage-reference-list--disabled {
   opacity: 0.5 !important;
 }
