@@ -41,7 +41,7 @@
     "my:pack": "reset && npm run bundle-theme-all && yarn pack"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/fontawesome-free": "^6.3.0",
     "@material-icons/font": "^1.0.20",
     "sassdoc": "^2.7.1"
   },
