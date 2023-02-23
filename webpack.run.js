@@ -25,6 +25,7 @@ const manifestSourceFilePath = "./app.manifest.json";
 const manifestDestFilePath = "./app/dist/manifest/";
 const themeList = {};
 themeList.themeName = glob.sync('output/themes/*-theme.css');
+
 const jsonData = JSON.stringify(themeList, null, 4);
 fs.writeFileSync(manifestSourceFilePath, jsonData);
 
@@ -33,7 +34,7 @@ let fontAwesomeDestinationFilePath = !!dotenv && !!dotenv.DESTINATION_THEMES_FIL
 let materialIconsDestinationFilePath = !!dotenv && !!dotenv.DESTINATION_THEMES_FILE_PATH ? dotenv.DESTINATION_THEMES_FILE_PATH : './app/dist/css/material-icons/';
 
 const searches = ['--outputpath'];
-let transformURL = function (cliUrl) {
+const transformURL = function (cliUrl) {
   let cliDestPath = {};
   cliUrl.map((item) => {
     let [cliKey, cliValue] = item.split('=');
@@ -44,14 +45,14 @@ let transformURL = function (cliUrl) {
   return cliDestPath;
 };
 
-let pathMatches = _.filter(process.argv, (item) => { return item.indexOf(searches[0]) !== -1 });
-
+const pathMatches = _.filter(process.argv, (item) => { return item.indexOf(searches[0]) !== -1 });
 if (pathMatches.length) {
   let processArgv = transformURL(pathMatches);
   destinationFilePath = !processArgv['outputpath'] ? destinationFilePath : processArgv.outputpath;
   fontAwesomeDestinationFilePath = !processArgv['outputpath'] ? fontAwesomeDestinationFilePath : processArgv.outputpath + '/font-awesome/';
   materialIconsDestinationFilePath = !processArgv['outputpath'] ? materialIconsDestinationFilePath : processArgv.outputpath + '/material-icons/';
 }
+
 module.exports = merge(common, {
   mode: !!process.argv[4] && isDevMode.includes(process.argv[4]) ? 'development' : 'production',
   plugins: [
@@ -104,6 +105,6 @@ module.exports = merge(common, {
         flatten: true,
         force: true
       }
-    ]),
+    ])
   ]
 });

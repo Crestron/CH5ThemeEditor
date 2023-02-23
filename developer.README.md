@@ -122,7 +122,7 @@ DESTINATION_FONTS_FILE_PATH = '../showcase-app/dist/fonts'
 ```
 Then run shell command
 ```sh
-npm run bundle-theme-all-app-run
+npm run bundle-theme-all
 ```
 ## Creating custom themes
 
