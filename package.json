@@ -20,7 +20,7 @@
   "scripts": {
     "bundle-theme": "node ./bundle-theme.js",
     "bundle-theme-for-showcase": "webpack --config webpack.run.js --outputpath='../CH5ShowcaseApp/static/crestron-components-assets' && npm run cleanjs",
-    "bundle-theme-all": "webpack --config webpack.run.js --outputpath='./output/themes' && npm run cleanjs",
+    "bundle-theme-all": "webpack --config webpack.build.js --outputpath='./output/themes' && npm run cleanjs",
     "bundle-and-watch": "npm run clean && webpack --config webpack.run.js --watch",
     "bundle-theme-all-app-compile": "webpack --config webpack.compile.js && npm run cleanjs",
     "bundle-theme-all-dev": "webpack --config webpack.build.js --mode development && npm run cleanjs",

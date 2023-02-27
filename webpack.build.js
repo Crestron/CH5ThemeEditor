@@ -8,6 +8,7 @@ const basePath = path.resolve(__dirname);
 const fileList = glob.sync('themes/**/*.scss');
 const nodeModules = `./node_modules/`;
 const fontAwesomeCssBasePath = `${nodeModules}@fortawesome/fontawesome-free/css`;
+const materialIconsFilePath = `${nodeModules}@material-icons/font/css`;
 
 let createEntryList = function () {
     let filesObj = {};
@@ -22,10 +23,8 @@ let createEntryList = function () {
 
 let entryList = createEntryList();
 entryList['themes/external'] = [
-    path.resolve(basePath, `${fontAwesomeCssBasePath}/fontawesome.css`),
-    path.resolve(basePath, `${fontAwesomeCssBasePath}/regular.css`),
-    path.resolve(basePath, `${fontAwesomeCssBasePath}/solid.css`),
-    path.resolve(basePath, `${fontAwesomeCssBasePath}/brands.css`)
+    path.resolve(basePath, `${fontAwesomeCssBasePath}/all.css`),
+    path.resolve(basePath, `${materialIconsFilePath}/all.css`)
 ];
 
 module.exports = {
