@@ -89,3 +89,13 @@
 .ch5-button-list--button-shape-rounded-rectangle {
   // DO NOT DELETE - used for Component Reference
 }
+
+/// Applied when buttonPressed='true'. Note - use !important css property to override the styles of child button. 
+.ch5-button-list--pressed {
+  // DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when buttonSelected='true'. Note - use !important css property to override the styles of child button. 
+.ch5-button-list--selected {
+  // DO NOT DELETE - used for Component Reference
+}
