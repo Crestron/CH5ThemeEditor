@@ -99,3 +99,13 @@
 .ch5-tab-button--center-tab-style {
   // DO NOT DELETE - used for Component Reference
 }
+
+/// Applied when buttonPressed='true'. Note - use !important css property to override the styles of child button. 
+.ch5-tab-button--pressed {
+  // DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when buttonSelected='true'. Note - use !important css property to override the styles of child button.
+.ch5-tab-button--selected {
+  // DO NOT DELETE - used for Component Reference
+}
