@@ -75,6 +75,10 @@ ch5-button-list {
   opacity: $ch5-button-list-disabled-opacity;
 }
 
+.ch5-button-list--disabled div {
+  pointer-events: none;
+}
+
 .ch5-button-list.ch5-button-list--disabled {
   &~.scrollbar-container {
     pointer-events: none;

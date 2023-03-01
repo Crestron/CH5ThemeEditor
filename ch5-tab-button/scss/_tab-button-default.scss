@@ -37,6 +37,10 @@ ch5-tab-button {
   opacity: $ch5-tab-button-disabled-opacity;
 }
 
+.ch5-tab-button--disabled div {
+  pointer-events: none;
+}
+
 .ch5-tab-button.ch5-tab-button--disabled {
   &~.scrollbar-container {
     pointer-events: none;
