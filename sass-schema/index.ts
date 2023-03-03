@@ -147,6 +147,7 @@ async function initialize() {
 
   // All the components that are interested in are hardcoded. We will compute the path based on THEME_EDITOR_PATH constant + values below
   const componentsPath: any = {
+'ch5-sample': 'Ch5Sample',
     'ch5-animation': 'Ch5Animation',
     'ch5-background': 'Ch5Background',
     'ch5-button': 'Ch5Button',
