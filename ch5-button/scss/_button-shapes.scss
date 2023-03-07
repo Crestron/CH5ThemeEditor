@@ -28,15 +28,16 @@
   border-style: none;
   text-align: center;
   @include border-radius($ch5-button-circle-border-radius);
-  &:before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    padding-top: 100%;
-  }
+  // &:before {
+  //   content: "";
+  //   display: inline-block;
+  //   vertical-align: middle;
+  //   padding-top: 100%;
+  // }
   .cb-btn {
     display: inline-flex;
     vertical-align: middle;
+    width: 100%;
     height: 100%;
   }
 }
