@@ -19,6 +19,9 @@
   @include border-radius($ch5-button-border-radius);
 }
 .ch5-button--circle {
+  button {
+    border-radius: 100%;
+  }
   display: inline-block;
   text-decoration: none;
   outline: none;
@@ -42,5 +45,8 @@
   overflow: auto;
 }
 .ch5-button--tab {
+  button {
+    border-radius: 10px 10px 0 0;
+  }
   @include border-radius($ch5-button-tab-border-radius);
 }

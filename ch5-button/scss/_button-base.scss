@@ -52,6 +52,22 @@ ch5-button {
     flex: none;
     height: 100%;
   }
+  .ch5-button--backgroundImageSize-stretch button {
+    background-size: cover;
+  }
+
+  .ch5-button--backgroundImageSize-tile button {
+    background-size: auto;
+  }
+
+  .ch5-button--backgroundImageSize-center button {
+    background-size: contain;
+    background-position: center; /* Center the image */
+  }
+
+  .ch5-button--backgroundImageSize-stretch-aspect button {
+    background-size: 100% 100%;
+  }
 }
 
 ch5-button[hidden] {
