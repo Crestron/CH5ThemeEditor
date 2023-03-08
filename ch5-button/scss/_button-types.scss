@@ -39,7 +39,7 @@
   }
 
   /// Applied when type='danger'
-  .ch5-button--danger, .ch5-button--danger button {
+  .ch5-button--danger {
     @include ch5-button-content(
       $ch5-button-danger-border-width,
       $ch5-button-danger-border-style,

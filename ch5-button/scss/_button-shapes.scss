@@ -14,9 +14,13 @@
 // *** Button 'shape' attribute ***
 .ch5-button--rectangle {
   @include border-radius(0);
+
+  overflow: hidden;
 }
 .ch5-button--rounded-rectangle {
   @include border-radius($ch5-button-border-radius);
+
+  overflow: hidden;
 }
 .ch5-button--circle {
   button {
@@ -27,6 +31,8 @@
   outline: none;
   border-style: none;
   text-align: center;
+
+  overflow: hidden;
   @include border-radius($ch5-button-circle-border-radius);
   // &:before {
   //   content: "";
@@ -43,7 +49,8 @@
 }
 .ch5-button--oval {
   @include border-radius($ch5-button-oval-border-radius);
-  overflow: auto;
+  // overflow: auto;
+  overflow: hidden;
 }
 .ch5-button--tab:not(.ch5-button--vertical) {
   border-radius: $ch5-button-tab-border-radius;
@@ -52,6 +59,8 @@
     border-radius: $ch5-button-tab-border-radius;
     @include border-radius($ch5-button-tab-border-radius);
   }
+
+  overflow: hidden;
 }
 
 .ch5-button--tab.ch5-button--vertical {
@@ -61,4 +70,6 @@
     border-radius: $ch5-button-tab-border-radius;
     @include border-radius($ch5-button-tab-border-radius);
   }
+
+  overflow: hidden;
 }
