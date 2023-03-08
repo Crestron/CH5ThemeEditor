@@ -45,9 +45,20 @@
   @include border-radius($ch5-button-oval-border-radius);
   overflow: auto;
 }
-.ch5-button--tab {
-  button {
-    border-radius: 10px 10px 0 0;
-  }
+.ch5-button--tab:not(.ch5-button--vertical) {
+  border-radius: $ch5-button-tab-border-radius;
   @include border-radius($ch5-button-tab-border-radius);
+  button {
+    border-radius: $ch5-button-tab-border-radius;
+    @include border-radius($ch5-button-tab-border-radius);
+  }
+}
+
+.ch5-button--tab.ch5-button--vertical {
+  border-radius: $ch5-button-tab-border-radius-vertical;
+  @include border-radius($ch5-button-tab-border-radius-vertical);
+  button {
+    border-radius: $ch5-button-tab-border-radius;
+    @include border-radius($ch5-button-tab-border-radius);
+  }
 }

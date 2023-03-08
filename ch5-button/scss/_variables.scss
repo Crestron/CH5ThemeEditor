@@ -73,7 +73,8 @@ $ch5-button-circle-border-radius: 50% !default;
 $ch5-button-oval-border-radius: 50% !default;
 
 /// button tab
-$ch5-button-tab-border-radius: 10px 10px 0px 0px !default;
+$ch5-button-tab-border-radius: 10px 10px 0 0 !default;
+$ch5-button-tab-border-radius-vertical: 10px 0 0 10px !default;
 
 // sizes
 $ch5-button-size: 42px !default;
