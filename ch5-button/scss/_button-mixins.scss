@@ -9,7 +9,6 @@
 /// @author Crestron
 /// @group ch5-button
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-@import "./variables";
 
 @mixin ch5-button-set-icon-classes($property-image-height, $property-icon-color, $property-icon-font-size) {
   .ch5-button--img {

@@ -9,7 +9,6 @@
 /// @author Crestron
 /// @group ch5-button
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-@import "./button-mixins";
 
 @mixin ch5-button-set-types() {
   /// Applied when type='text'
@@ -229,18 +228,5 @@ ch5-button[mode="?"] {
   ch5-button-mode-state[state="pressed"],
   ch5-button-mode-state[state="selected"] {
     @include ch5-button-set-types();
-  }
-}
-
-ch5-button {
-  .ch5-button.ch5-button--vertical {
-      position: relative;
-      button.cb-btn {
-        transform: rotate(270deg);
-        transform-origin: top left;
-        position: absolute;
-        top: 100%;
-        bottom: 0;
-    }
   }
 }
