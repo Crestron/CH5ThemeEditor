@@ -33,7 +33,14 @@ ch5-sample {
   overflow: hidden;
   background: #000;
 
+  img {
+    height: 100%;
+    width: 100%;
+  }
 
+  img.hide {
+    display: none;
+  }
 
   .full-screen-icon {
     display: flex;
@@ -65,9 +72,6 @@ ch5-sample {
     }
   }
 }
-
-
-
 
 body.ch5-sample-fullscreen {
   visibility: hidden;
