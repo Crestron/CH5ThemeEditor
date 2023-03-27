@@ -15,6 +15,7 @@ ch5-button {
   pointer-events: none;
   vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
 
+  /// Main Class
   .ch5-button {
     display: flex;
     max-width: 100%;
@@ -32,6 +33,7 @@ ch5-button {
         outline: none;
       }
     }
+    /// Applied on label
     .ch5-button--label {
       display: block;
       @include text-truncate;
@@ -58,6 +60,7 @@ ch5-button[hidden] {
   display: none;
 }
 
+/// Applied when the button is disabled
 .ch5-button--disabled {
   pointer-events: none;
   opacity: $ch5-button-disabled-opacity;

@@ -38,7 +38,7 @@
     }
 }
 
-.ch5-list-pointer-events-disabled>div {
+.ch5-list-pointer-events-disabled > div {
     pointer-events: none;
 }
 
@@ -77,7 +77,7 @@ ch5-list {
     .ch5-list-vertical-scrollbar {
         padding-right: $ch5-scrollbar-width;
 
-        &~.scrollbar-container {
+        & ~ .scrollbar-container {
             top: 0;
             height: 100%;
             right: 0;
@@ -88,7 +88,7 @@ ch5-list {
     .ch5-list-horizontal-scrollbar {
         padding-bottom: $ch5-scrollbar-width;
 
-        &~.scrollbar-container {
+        & ~ .scrollbar-container {
             width: 100%;
             bottom: 0;
         }
@@ -102,4 +102,14 @@ ch5-list {
         color: $ch5-list-item-color;
         vertical-align: text-top;
     }
+}
+
+/// Main class, added by default.
+.ch5--list {
+    // DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when scrollbar="true" is added
+.ch5-list--scrollbar {
+    // DO NOT DELETE - used for Component Reference
 }

@@ -12,12 +12,16 @@
 @import "./variables";
 
 // *** Button 'shape' attribute ***
+
+/// Applied when shape='rectangle'
 .ch5-button--rectangle {
   @include border-radius(0);
 }
+/// Applied when shape='rounded-rectangle'
 .ch5-button--rounded-rectangle {
   @include border-radius($ch5-button-border-radius);
 }
+/// Applied when shape='circle'
 .ch5-button--circle {
   display: inline-block;
   text-decoration: none;
@@ -37,10 +41,12 @@
     height: 100%;
   }
 }
+/// Applied when shape='oval'
 .ch5-button--oval {
   @include border-radius($ch5-button-oval-border-radius);
   overflow: auto;
 }
+/// Applied when shape='tab'
 .ch5-button--tab {
   @include border-radius($ch5-button-tab-border-radius);
 }

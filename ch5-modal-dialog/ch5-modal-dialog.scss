@@ -10,7 +10,7 @@
 /// @group ch5-modal-dialog
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import './scss/_variables';
+@import "./scss/_variables";
 
 /// the class added on the div that is the only direct child of the ch5-modal-dialog element and wraps all its contents
 .ch5-modal-dialog {
@@ -58,7 +58,7 @@
     font-weight: $ch5-modal-default-close-icon-font-weight;
 
     &:before {
-      content: '\00d7';
+      content: "\00d7";
     }
 
     &:hover {
@@ -159,4 +159,14 @@
   font-style: $ch5-model-contents-font-style;
   font-weight: $ch5-model-contents-font-weight;
   color: $ch5-modal-contents-font-color;
+}
+
+/// the modal header; the title string is placed here
+.ch5-modal-dialog-header {
+  // DO NOT DELETE - used for Component Reference
+}
+
+/// modal section ( a div ) that contains the two buttons
+.ch5-modal-dialog-footer {
+  // DO NOT DELETE - used for Component Reference
 }

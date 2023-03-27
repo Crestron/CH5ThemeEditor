@@ -10,7 +10,7 @@
 /// @group ch5-select
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import './scss/_variables';
+@import "./scss/_variables";
 
 /// Main class
 .ch5-select {
@@ -55,7 +55,7 @@
     margin: $ch5-select-combo-trigger-margin;
   }
 
-
+  /// Selected
   .ch5-select__selected_items {
     width: $ch5-select-item-selected-width;
     overflow: hidden;
@@ -63,7 +63,6 @@
     @include layout-flex;
     @include layout-center;
   }
-
 }
 
 .ch5-select__panel .ch5-select__main .ch5-select__combo_trigger {
@@ -126,7 +125,7 @@
   &:not(.ch5-select__panel__item--selected):hover {
     background-color: $ch5-select-panel-item-hover-background-color;
   }
-    /// Selected
+  /// Selected
   &.ch5-select__panel__item--selected {
     background-color: $ch5-select-panel-item-selected-background-color;
   }
@@ -134,6 +133,32 @@
 
 /// Added automatically based on the disabled attribute or by receiveStateEnable
 .ch5-select--disabled {
-    pointer-events: none;
-    opacity: 0.5;
+  pointer-events: none;
+  opacity: 0.5;
 }
+
+/// Applied when item is selected
+.ch5-select--selected {
+  // DO NOT DELETE - used for Component Reference
+}
+
+/// Applied while finger on the item being selected
+.ch5-select-pressed {
+  // DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when in 'plain', combobox mode
+.ch5-select__combo {
+  // DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when in 'panel' mode
+.ch5-select__panel {
+  // DO NOT DELETE - used for Component Reference
+}
+
+/// Overlay panel is open
+.ch5-select__panel--open {
+  // DO NOT DELETE - used for Component Reference
+}
+
