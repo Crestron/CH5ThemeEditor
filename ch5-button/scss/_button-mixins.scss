@@ -41,12 +41,13 @@
     font-style: $property-font-style;
     font-weight: $property-font-weight;
   }
+
   .ch5-button__checkbox--checked:before,
   .ch5-button__checkbox--unchecked:before {
     font-size: $property-font-size;
   }
 
-  @include ch5-button-set-icon-classes($property-font-size, $property-icon-color, $property-icon-font-size);  
+  @include ch5-button-set-icon-classes($property-font-size, $property-icon-color, $property-icon-font-size);
 }
 
 @mixin ch5-button-content--selected($property-selected-border-color, $property-selected-background-color, $property-selected-font-color) {
