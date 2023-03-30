@@ -549,7 +549,6 @@ ch5-button[mode="?"] {
 }
 
 // *** Button 'iconUrlFillType' attribute ***
-
 ch5-button[iconUrlFillType="stretch"] .ch5-button--img {
   background-size: 100% 100% !important;
   width: 100% !important;
@@ -593,4 +592,46 @@ ch5-button[iconUrlFillType="initial"] .ch5-button--img {
   height: 100% !important;
   width: 100% !important;
   position: absolute;
+
+  &.ch5-button--horizontal-icon-center {
+    &.ch5-button--vertical-icon-middle {
+      background-position: center center;
+    }
+
+    &.ch5-button--vertical-icon-top {
+      background-position: center top;
+    }
+
+    &.ch5-button--vertical-icon-bottom {
+      background-position: center bottom;
+    }
+  }
+
+  &.ch5-button--horizontal-icon-left {
+    &.ch5-button--vertical-icon-middle {
+      background-position: left center;
+    }
+
+    &.ch5-button--vertical-icon-top {
+      background-position: left top;
+    }
+
+    &.ch5-button--vertical-icon-bottom {
+      background-position: left bottom;
+    }
+  }
+
+  &.ch5-button--horizontal-icon-right {
+    &.ch5-button--vertical-icon-middle {
+      background-position: right center;
+    }
+
+    &.ch5-button--vertical-icon-top {
+      background-position: right top;
+    }
+
+    &.ch5-button--vertical-icon-bottom {
+      background-position: right bottom;
+    }
+  }
 }
