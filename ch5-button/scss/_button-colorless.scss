@@ -176,6 +176,8 @@ ch5-button[stretch="both"] {
 }
 
 // Sizes
+
+/// Default Size
 .ch5-button--size-regular {
   @include ch5-button-size-set(
     $ch5-button-size,
@@ -187,6 +189,7 @@ ch5-button[stretch="both"] {
   );
 }
 
+/// Applied when size="x-small"
 .ch5-button--size-x-small {
   @include ch5-button-size-set(
     $ch5-button-x-small-size,
@@ -198,6 +201,7 @@ ch5-button[stretch="both"] {
   );
 }
 
+/// Applied when size="small"
 .ch5-button--size-small {
   @include ch5-button-size-set(
     $ch5-button-small-size,
@@ -209,6 +213,7 @@ ch5-button[stretch="both"] {
   );
 }
 
+/// Applied when size="large"
 .ch5-button--size-large {
   @include ch5-button-size-set(
     $ch5-button-large-size,
@@ -220,6 +225,7 @@ ch5-button[stretch="both"] {
   );
 }
 
+/// Applied when size="x-large"
 .ch5-button--size-x-large {
   @include ch5-button-size-set(
     $ch5-button-x-large-size,
@@ -510,10 +516,12 @@ i.cb-icon.cx-button-icon-pos-bottom {
 }
 
 .ch5-button--circle {
-  &.ch5-button--stretch-width, &.ch5-button--stretch-height , &.ch5-button--stretch-both {
-  width: 100% !important;
-  height: 100% !important;
-  .cb-btn {
+  &.ch5-button--stretch-width,
+  &.ch5-button--stretch-height,
+  &.ch5-button--stretch-both {
+    width: 100% !important;
+    height: 100% !important;
+    .cb-btn {
       width: 100% !important;
       height: 100% !important;
     }

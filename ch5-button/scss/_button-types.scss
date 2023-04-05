@@ -152,6 +152,7 @@
       $ch5-button-default-default-font-color
     );
 
+    /// Applied when selected signal is applied
     &.ch5-button--selected {
       @include ch5-button-content--selected(
         $ch5-button-default-selected-border-color,
@@ -159,6 +160,7 @@
         $ch5-button-default-selected-font-color
       );
     }
+    /// Applied on press event
     &.ch5-button--pressed {
       @include ch5-button-content--pressed(
         $ch5-button-default-pressed-border-color,

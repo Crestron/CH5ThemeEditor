@@ -10,7 +10,7 @@
 /// @group ch5-spinner
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import './scss/_variables';
+@import './scss/variables';
 
 ch5-spinner {
   display: inline-block;
@@ -30,7 +30,7 @@ ch5-spinner {
   cursor: pointer;
   width: 100%;
   /// @require .ch5-spinner
-  /// Class apply for spinner wrapper
+  /// Applied for spinner wrapper
   &__wrapper {
     overflow: hidden;
     position: relative;
@@ -57,12 +57,12 @@ ch5-spinner {
     }
   }
   /// @require .ch5-spinner
-  /// Class apply for scroll animation
+  /// Applied for scroll animation
   &__scrollarea--animate {
     transition: all .5s ease;
   }
   /// @require .ch5-spinner
-  /// Class apply for the highlight section
+  /// Applied for the highlight section
   &__highlight {
     position: absolute;
     width: 100%;
@@ -87,7 +87,7 @@ ch5-spinner {
     display: none;
   }
   /// @require .ch5-spinner
-  /// Class apply on the item
+  /// Applied on the item
   &__item {
     color:  $ch5-spinner-item-color;
     white-space: nowrap;
@@ -96,13 +96,13 @@ ch5-spinner {
     align-items: center;
   }
   /// @require .ch5-spinner
-  /// Class apply on the active item
+  /// Applied on the active item
   &--active {
     font-size: $ch5-spinner-font-size;
     color: $ch5-spinner-active-item-color;
   }
   /// @require .ch5-spinner
-  /// Class apply on the icon
+  /// Applied on the icon
   &__icon {
     font-size: $ch5-spinner-icon-font-size;
     padding: $ch5-spinner-icon-padding;
