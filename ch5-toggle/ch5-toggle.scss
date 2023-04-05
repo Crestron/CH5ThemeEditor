@@ -10,11 +10,12 @@
 /// @group ch5-toggle
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "./scss/_variables";
+@import "./scss/variables";
 
 ch5-toggle:focus {
     outline: none;
 }
+
 /// the class added on the div that is the only direct child of the ch5-toggle element and wraps all its contents
 .ch5-toggle {
     position: relative;
@@ -37,7 +38,7 @@ ch5-toggle:focus {
     }
 
     /* ch5-toggle - label */
-    /// class apply on label
+    /// Applied on label
     .ch5-toggle__label {
         display: inline-flex;
         vertical-align: middle;
@@ -60,13 +61,13 @@ ch5-toggle:focus {
         font-size: $ch5-toggle-text-font-size;
         font-weight: $ch5-toggle-text-font-weight;
     }
-    /// class apply on on label
+    /// Applied for on label
     .ch5-toggle__on-label,
-    /// class apply on off label
+    /// Applied for off label
     .ch5-toggle__off-label,
-    /// class apply on icon-on
+    /// Applied for icon-on
     .ch5-toggle__on-icon,
-    /// class apply on icon-off
+    /// Applied for icon-off
     .ch5-toggle__off-icon {
         margin: 0 2px 0 2px;
         color: $ch5-toggle-icon-font-color;
@@ -76,7 +77,7 @@ ch5-toggle:focus {
     }
 
     /* ch5-toggle - handle default */
-    /// class apply on the handle
+    /// Applied on the handle
     .ch5-toggle__handle {
         position: relative;
         overflow: hidden;
@@ -186,7 +187,7 @@ ch5-toggle:focus {
     }
 
     /* ch5-toggle - checked/on */
-    /// class apply when value is true
+    /// Applied when value is true
     &.ch5-toggle--on {
         .ch5-toggle__handle {
             a {

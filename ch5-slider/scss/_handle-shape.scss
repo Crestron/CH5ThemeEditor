@@ -15,7 +15,7 @@
     SHAPE RECTANGLE 
     ============================================= */
 
-    /// class apply when slider shape="rectangle"
+    /// Applied when slider shape="rectangle"
     &.ch5-slider--shape--rectangle{
         .noUi-handle, .noUi-target, .noUi-connects {
             border-radius: 0;
@@ -25,7 +25,7 @@
     /* ===============================================
     SHAPE CIRCLE 
     ============================================= */
-    /// class apply when slider shape="circle"
+    /// Applied when slider shape="circle"
     &.ch5-slider--shape--circle{
         .noUi-target, .noUi-connects {
             border-radius: 8px;
@@ -38,7 +38,7 @@
     /* ===============================================
     SHAPE OVAL 
     ============================================= */
-    /// class apply when slider shape="oval"
+    /// Applied when slider shape="oval"
     &.ch5-slider--shape--oval{
         padding: 0px 22px 30px 22px;
         

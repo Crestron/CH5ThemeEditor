@@ -160,7 +160,7 @@
         $ch5-button-default-selected-font-color
       );
     }
-    /// Applied between press and release events
+    /// Applied on press event
     &.ch5-button--pressed {
       @include ch5-button-content--pressed(
         $ch5-button-default-pressed-border-color,

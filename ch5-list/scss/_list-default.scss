@@ -10,9 +10,12 @@
 /// @group ch5-list
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "./variables";
+/// Main class, added by default.
+.ch5-list {
+    // DO NOT DELETE - used for Component Reference
+}
 
-/// Off by default. Add the "disabled" attribute to the ch5-list tag in order to disable the list.
+/// Add the "disabled" attribute to the ch5-list tag in order to disable the list.
 .ch5-list--disabled {
     pointer-events: none;
     opacity: 0.5;
@@ -102,14 +105,4 @@ ch5-list {
         color: $ch5-list-item-color;
         vertical-align: text-top;
     }
-}
-
-/// Main class, added by default.
-.ch5--list {
-    // DO NOT DELETE - used for Component Reference
-}
-
-/// Applied when scrollbar="true" is added
-.ch5-list--scrollbar {
-    // DO NOT DELETE - used for Component Reference
 }

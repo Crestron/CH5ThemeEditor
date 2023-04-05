@@ -10,8 +10,6 @@
 /// @group ch5-dpad
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "./variables";
-
 @mixin ch5-dpad-content($property-background-color, $property-font-color) {
     .ch5-dpad-child {
         background-color: $property-background-color;
@@ -159,42 +157,42 @@
         }
     }
 
-    /// class apply when type="default"
+    /// Applied when type="default"
     &.ch5-dpad--type-default {
         @include ch5-dpad-content($ch5-dpad-default-default-background-color, $ch5-dpad-default-default-font-color);
     }
 
-    /// class apply when type="primary"
+    /// Applied when type="primary"
     &.ch5-dpad--type-primary {
         @include ch5-dpad-content($ch5-dpad-primary-default-background-color, $ch5-dpad-primary-default-font-color);
     }
 
-    /// class apply when type="info"
+    /// Applied when type="info"
     &.ch5-dpad--type-info {
         @include ch5-dpad-content($ch5-dpad-info-default-background-color, $ch5-dpad-info-default-font-color);
     }
 
-    /// class apply when type="text"
+    /// Applied when type="text"
     &.ch5-dpad--type-text {
         @include ch5-dpad-content($ch5-dpad-text-default-background-color, $ch5-dpad-text-default-font-color);
     }
 
-    /// class apply when type="danger"
+    /// Applied when type="danger"
     &.ch5-dpad--type-danger {
         @include ch5-dpad-content($ch5-dpad-danger-default-background-color, $ch5-dpad-danger-default-font-color);
     }
 
-    /// class apply when type="warning"
+    /// Applied when type="warning"
     &.ch5-dpad--type-warning {
         @include ch5-dpad-content($ch5-dpad-warning-default-background-color, $ch5-dpad-warning-default-font-color);
     }
 
-    /// class apply when type="success"
+    /// Applied when type="success"
     &.ch5-dpad--type-success {
         @include ch5-dpad-content($ch5-dpad-success-default-background-color, $ch5-dpad-success-default-font-color);
     }
 
-    /// class apply when type="secondary"
+    /// Applied when type="secondary"
     &.ch5-dpad--type-secondary {
         @include ch5-dpad-content($ch5-dpad-secondary-default-background-color, $ch5-dpad-secondary-default-font-color);
     }
@@ -1363,17 +1361,17 @@
     // DO NOT DELETE - used for Component Reference
 }
 
-/// class apply when button in the selected state
+/// Applied when button in the selected state
 .ch5-dpad--selected {
     // DO NOT DELETE - used for Component Reference
 }
 
-/// class apply when button in the pressed state
+/// Applied when button in the pressed state
 .ch5-dpad--pressed {
     // DO NOT DELETE - used for Component Reference
 }
 
-/// class apply when button in the disabled state
+/// Applied when button in the disabled state
 .ch5-dpad--disabled {
     // DO NOT DELETE - used for Component Reference
 }

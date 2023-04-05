@@ -86,7 +86,7 @@
 			);
 		}
 	}
-	/// class apply when type="info"
+	/// Applied when type="info"
 	&.ch5-keypad--type-info {
 		@include ch5-keypad-content(
 			$ch5-keypad-info-default-background-color,
@@ -101,7 +101,7 @@
 			);
 		}
 	}
-	/// class apply when type="text"
+	/// Applied when type="text"
 	&.ch5-keypad--type-text {
 		@include ch5-keypad-content(
 			$ch5-keypad-text-default-background-color,
@@ -116,7 +116,7 @@
 			);
 		}
 	}
-	/// class apply when type="danger"
+	/// Applied when type="danger"
 	&.ch5-keypad--type-danger {
 		@include ch5-keypad-content(
 			$ch5-keypad-danger-default-background-color,
@@ -131,7 +131,7 @@
 			);
 		}
 	}
-	/// class apply when type="warning"
+	/// Applied when type="warning"
 	&.ch5-keypad--type-warning {
 		@include ch5-keypad-content(
 			$ch5-keypad-warning-default-background-color,
@@ -146,7 +146,7 @@
 			);
 		}
 	}
-	/// class apply when type="success"
+	/// Applied when type="success"
 	&.ch5-keypad--type-success {
 		@include ch5-keypad-content(
 			$ch5-keypad-success-default-background-color,
@@ -161,7 +161,7 @@
 			);
 		}
 	}
-	/// class apply when type="secondary"
+	/// Applied when type="secondary"
 	&.ch5-keypad--type-secondary {
 		@include ch5-keypad-content(
 			$ch5-keypad-secondary-default-background-color,
@@ -184,7 +184,7 @@
 		}
 	}
 
-	/// class apply when button in the textOrientation="right"
+	/// Applied when button in the textOrientation="right"
 	&.ch5-keypad--orientation-right {
 		button {
 			flex-direction: row-reverse;
@@ -194,14 +194,14 @@
 		}
 	}
 
-	/// class apply when button in the textOrientation="bottom"
+	/// Applied when button in the textOrientation="bottom"
 	&.ch5-keypad--orientation-bottom {
 		button {
 			flex-direction: column-reverse;
 		}
 	}
 
-	/// class apply when button in the textOrientation="left"
+	/// Applied when button in the textOrientation="left"
 	&.ch5-keypad--orientation-left {
 		button {
 			flex-direction: row;
@@ -357,17 +357,17 @@
 	}
 }
 
-/// class apply when shape="rounded-rectangle"
-.ch5-keypad--rounded-rectangle {
+/// Applied when shape="rounded-rectangle"
+.ch5-keypad--shape-rounded-rectangle {
 	// DO NOT DELETE - used for Component Reference
 }
 
-/// class apply when shape="square"
+/// Applied when shape="square"
 .ch5-keypad--shape-square {
 	// DO NOT DELETE - used for Component Reference
 }
 
-/// class apply when shape="circle"
+/// Applied when shape="circle"
 .ch5-keypad--shape-circle {
 	// DO NOT DELETE - used for Component Reference
 }

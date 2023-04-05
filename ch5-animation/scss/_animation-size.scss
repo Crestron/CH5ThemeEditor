@@ -10,28 +10,26 @@
 /// @group ch5-animation
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@mixin ch5-animation-set-size() {
-    .ch5-animation {
-        /// Applied when size='regular'
-        .ch5-animation--size-regular {
-            font-size: $ch5-animation-font-size-regular;
-        }
+.ch5-animation {
 
-        /// Applied when size='small'
-        .ch5-animation--size-small {
-            font-size: $ch5-animation-font-size-small;
-        }
-
-        /// Applied when size='large'
-        .ch5-animation--size-large {
-            font-size: $ch5-animation-font-size-large;
-        }
-
-        /// Applied when size='x-large'
-        .ch5-animation--size-x-large {
-            font-size: $ch5-animation-font-size-x-large;
-        }
+    /// Applied when size='regular'
+    .ch5-animation--size-regular {
+        font-size: $ch5-animation-font-size-regular;
     }
-}
 
-@include ch5-animation-set-size();
+    /// Applied when size='small'
+    .ch5-animation--size-small {
+        font-size: $ch5-animation-font-size-small;
+    }
+
+    /// Applied when size='large'
+    .ch5-animation--size-large {
+        font-size: $ch5-animation-font-size-large;
+    }
+
+    /// Applied when size='x-large'
+    .ch5-animation--size-x-large {
+        font-size: $ch5-animation-font-size-x-large;
+    }
+
+}
