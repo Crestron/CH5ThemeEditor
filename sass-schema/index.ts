@@ -73,7 +73,7 @@ async function buildJsonStructure(flattenedComponents: { flattenedScss: string, 
       // Save the properties to a json for future reference
       if (_.isNil(properties)) {
         properties = {};
-        console.warn("No properties defined for " + component.name); 
+        console.warn("No properties defined for " + component.name);
       }
       generatePropertiesJson(properties, component.name);
       // Process the flattened scss
@@ -150,6 +150,7 @@ async function initialize() {
     'ch5-animation': 'Ch5Animation',
     'ch5-background': 'Ch5Background',
     'ch5-button': 'Ch5Button',
+    'ch5-button-list': 'Ch5ButtonList',
     'ch5-color-chip': 'Ch5ColorChip',
     'ch5-color-picker': 'Ch5ColorPicker',
     'ch5-dpad': 'Ch5Dpad',
@@ -161,8 +162,10 @@ async function initialize() {
     'ch5-segmented-gauge': 'Ch5SegmentedGauge',
     'ch5-select': 'Ch5Select',
     'ch5-signal-level-gauge': 'Ch5SignalLevelGauge',
+    'ch5-subpage-reference-list': 'Ch5SubpageReferenceList',
     'ch5-slider': 'Ch5Slider',
     'ch5-spinner': 'Ch5Spinner',
+    'ch5-tab-button': 'Ch5TabButton',
     'ch5-textinput': 'Ch5TextInput',
     'ch5-toggle': 'Ch5Toggle',
     'ch5-video': 'Ch5Video',

@@ -1,0 +1,116 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button-list
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ch5-button-list {
+
+  /// Applied when orientation='horizontal'
+  &.ch5-button-list--orientation-horizontal {
+    grid-auto-flow: column;
+
+    &.ch5-button-list--center-items-true {
+      justify-content: center;
+      align-content: start;
+    }
+
+    &.ch5-button-list--center-items-false {
+      align-content: start;
+      justify-content: start;
+    }
+
+    &.ch5-button-list--stretch-both {
+      align-content: stretch;
+      justify-content: stretch;
+    }
+
+    .ch5-button-list--button-container {
+      height: 100%;
+    }
+
+    &.ch5-button-list--stretch-both {
+      .ch5-button-list--button-container {
+        width: 100%;
+      }
+    }
+
+    &.ch5-button-list--scrollbar-true {
+      padding-bottom: $ch5-scrollbar-width;
+
+      &~.scrollbar-container {
+        width: 100%;
+        bottom: 0;
+        height: $ch5-scrollbar-width;
+
+        .scrollbar {
+          height: 100%;
+        }
+      }
+    }
+
+    @for $var from 1 to 501 {
+      &.ch5-button-list--rows-#{$var} {
+        grid-template-rows: repeat($var, 1fr);
+      }
+    }
+  }
+
+  /// Applied when orientation='vertical'
+  &.ch5-button-list--orientation-vertical {
+    grid-auto-flow: row;
+
+    &.ch5-button-list--center-items-true {
+      justify-content: start;
+      align-content: center;
+    }
+
+    &.ch5-button-list--center-items-false {
+      align-content: start;
+      justify-content: start;
+    }
+
+    &.ch5-button-list--stretch-both {
+      align-content: stretch;
+      justify-content: stretch;
+    }
+
+    &.ch5-button-list--scrollbar-true {
+      padding-right: $ch5-scrollbar-width;
+
+      &~.scrollbar-container {
+        top: 0;
+        height: 100%;
+        right: 0;
+        left: auto;
+        width: $ch5-scrollbar-width;
+
+        .scrollbar {
+          width: 100%;
+        }
+      }
+    }
+
+    .ch5-button-list--button-container {
+      width: 100%;
+    }
+
+    &.ch5-button-list--stretch-both {
+      .ch5-button-list--button-container {
+        height: 100%;
+      }
+    }
+
+    @for $var from 1 to 501 {
+      &.ch5-button-list--columns-#{$var} {
+        grid-template-columns: repeat($var, 1fr);
+      }
+    }
+  }
+}

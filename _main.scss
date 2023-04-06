@@ -9,6 +9,7 @@
 
 ch5-animation,
 ch5-button,
+ch5-button-list,
 ch5-color-chip,
 ch5-color-picker,
 ch5-dpad,
@@ -22,6 +23,8 @@ ch5-segmented-gauge,
 ch5-select,
 ch5-signal-level-gauge,
 ch5-slider,
+ch5-subpage-reference-list,
+ch5-tab-button,
 ch5-textinput,
 ch5-spinner,
 ch5-toggle,
@@ -46,6 +49,8 @@ ch5-triggerview {
 @import "ch5-background/ch5-background";
 
 @import "ch5-button/ch5-button";
+
+@import "ch5-button-list/ch5-button-list";
 
 @import "ch5-color-chip/ch5-color-chip";
 
@@ -74,6 +79,10 @@ ch5-triggerview {
 @import "ch5-signal-level-gauge/ch5-signal-level-gauge";
 
 @import "ch5-spinner/ch5-spinner";
+
+@import "ch5-subpage-reference-list/ch5-subpage-reference-list";
+
+@import "ch5-tab-button/ch5-tab-button";
 
 @import "ch5-template/ch5-template";
 

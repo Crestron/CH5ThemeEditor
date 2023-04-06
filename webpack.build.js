@@ -3,13 +3,13 @@ const glob = require('glob');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-//config details
-const srcRoot = `src/`;
 const distDir = 'output';
 const basePath = path.resolve(__dirname);
 const fileList = glob.sync('themes/**/*.scss');
 const nodeModules = `./node_modules/`;
 const fontAwesomeCssBasePath = `${nodeModules}@fortawesome/fontawesome-free/css`;
+const materialIconsFilePath = `${nodeModules}@material-icons/font/css`;
+
 let createEntryList = function () {
     let filesObj = {};
     fileList.map((item) => {
@@ -22,12 +22,9 @@ let createEntryList = function () {
 };
 
 let entryList = createEntryList();
-
 entryList['themes/external'] = [
-    path.resolve(basePath, `${fontAwesomeCssBasePath}/fontawesome.css`),
-    path.resolve(basePath, `${fontAwesomeCssBasePath}/regular.css`),
-    path.resolve(basePath, `${fontAwesomeCssBasePath}/solid.css`),
-    path.resolve(basePath, `${fontAwesomeCssBasePath}/brands.css`)
+    path.resolve(basePath, `${fontAwesomeCssBasePath}/all.css`),
+    path.resolve(basePath, `${materialIconsFilePath}/all.css`)
 ];
 
 module.exports = {
@@ -40,7 +37,7 @@ module.exports = {
         extensions: ['.scss', '.css']
     },
     optimization: {
-        //css minify only production mode
+        // css minify only production mode
         minimizer: [new OptimizeCSSAssetsPlugin()]
     },
     module: {

@@ -1,50 +1,51 @@
 {
+    "name": "@crestron/ch5-theme", 
+    "version": "2.3.0", 
+    "description": "Crestron HTML5 (CH5) Themes CSS", 
+    "author": "Crestron", 
+    "license": "SEE LICENSE IN LICENSE.txt", 
+    "main": "index.js", 
     "files": [
         "LICENSE.txt", 
         "output/themes/**theme.css"
     ], 
-    "license": "SEE LICENSE IN LICENSE.txt", 
-    "name": "@crestron/ch5-theme", 
     "repository": {
         "url": "https://github.com/Crestron/CH5ThemeEditor.git", 
         "type": "git"
-    }, 
-    "author": "Crestron", 
-    "version": "2.2.0", 
-    "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.15.3", 
-        "@material-icons/font": "^1.0.20", 
-        "sassdoc": "^2.7.1"
-    }, 
-    "scripts": {
-        "bundle-theme-for-showcase": "webpack --config webpack.run.js --outputpath='../CH5ComponentLibrary/showcase-app/static/crestron-components-assets' && npm run cleanjs", 
-        "bundle-theme-all": "webpack --config webpack.build.js && npm run cleanjs", 
-        "gen:sass-json-output": "ts-node ./sass-schema/index.ts --writeTo ./generated-metadata/sass-output.json", 
-        "gen:sass-json": "ts-node ./sass-schema/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json", 
-        "bundle-theme": "node ./bundle-theme.js", 
-        "cleanjs": "rimraf output/**/*.js", 
-        "gen:sass-metadata": "node ./metadata-generator.js --writetofilepath ./generated-metadata/sass-schema.json", 
-        "create-theme": "node ./create-theme.js", 
-        "start": "webpack --config webpack.run.js --watchmode && npm run cleanjs && webpack --config app.config.dev.js", 
-        "bundle-and-watch": "npm run clean && webpack --config webpack.run.js --watch", 
-        "bundle-theme-all-app-compile": "webpack --config webpack.compile.js && npm run cleanjs", 
-        "clean": "rimraf output", 
-        "bundle-theme-all-dev": "webpack --config webpack.build.js --mode development && npm run cleanjs", 
-        "bundle-theme-all-cli-dist-path": "webpack --config webpack.run.js --outputpath='../showcase-app/dist/crestron-components-assets' && npm run cleanjs", 
-        "bundle-theme-all-app-run": "webpack --config webpack.run.js && npm run cleanjs", 
-        "sass-converter": "ts-node index.ts"
     }, 
     "keywords": [
         "ch5", 
         "Theme"
     ], 
+    "scripts": {
+        "bundle-theme": "node ./bundle-theme.js", 
+        "bundle-theme-for-showcase": "webpack --config webpack.run.js --outputpath='../CH5ShowcaseApp/static/crestron-components-assets' && npm run cleanjs", 
+        "bundle-theme-all": "webpack --config webpack.build.js --outputpath='./output/themes' && npm run cleanjs", 
+        "bundle-and-watch": "npm run clean && webpack --config webpack.run.js --watch", 
+        "bundle-theme-all-app-compile": "webpack --config webpack.compile.js && npm run cleanjs", 
+        "bundle-theme-all-dev": "webpack --config webpack.build.js --mode development && npm run cleanjs", 
+        "clean": "rimraf output", 
+        "cleanjs": "rimraf output/**/*.js", 
+        "create-theme": "node ./create-theme.js", 
+        "gen:icon-library": "node ./helpers/icon-library.js --writeTo ./generated-metadata/icon-library.json", 
+        "gen:sass-json-output": "ts-node ./sass-schema/index.ts --writeTo ./generated-metadata/sass-output.json", 
+        "gen:sass-json": "ts-node ./sass-schema/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json", 
+        "gen:sass-metadata": "node ./metadata-generator.js --writetofilepath ./generated-metadata/sass-schema.json", 
+        "start": "webpack --config webpack.run.js --watchmode && npm run cleanjs && webpack --config app.config.dev.js", 
+        "sass-converter": "ts-node index.ts"
+    }, 
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.3.0", 
+        "@material-icons/font": "^1.0.20", 
+        "sassdoc": "^2.7.1"
+    }, 
     "devDependencies": {
         "style-loader": "^0.23.1", 
         "browser-sync-webpack-plugin": "^2.2.2", 
         "copy-webpack-plugin": "^5.0.3", 
         "webpack-merge": "^4.2.1", 
         "sass-flatten": "^0.1.1", 
-        "@crestron/ch5-crcomlib": "^2.2.0", 
+        "@crestron/ch5-crcomlib": "^2.3.0", 
         "sass-loader": "^7.1.0", 
         "ts-node": "^10.2.1", 
         "terser-webpack-plugin": "^1.3.0", 
@@ -77,7 +78,5 @@
     }, 
     "resolutions": {
         "**/event-stream": "^4.0.1"
-    }, 
-    "main": "index.js", 
-    "description": "Crestron HTML5 (CH5) Themes CSS"
+    }
 }
