@@ -11,84 +11,77 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @mixin ch5-button-set-icon-classes($property-image-height, $property-icon-color, $property-icon-font-size) {
-  /// Applied on images
-  .ch5-button--img {
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    color: inherit;
-    height: $property-image-height * 1.5;
-    width: $property-image-height * 1.5;
 
-    &::before,
-    &::after {
-      content: none;
-    }
-  }
+	/// Applied on images
+	.ch5-button--img {
+		display: block;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		color: inherit;
+		height: $property-image-height * 1.5;
+		width: $property-image-height * 1.5;
 
-  /// Applied on icons
-  .ch5-button--icon {
-    vertical-align: middle;
-    color: $property-icon-color;
-    font-size: $property-icon-font-size;
-  }
+		&::before,
+		&::after {
+			content: none;
+		}
+	}
+
+	/// Applied on icons
+	.ch5-button--icon {
+		vertical-align: middle;
+		color: $property-icon-color;
+		font-size: $property-icon-font-size;
+	}
 }
 
-@mixin ch5-button-size-set(
-  $property-size,
-  $property-font-size,
-  $property-font-style,
-  $property-font-weight,
-  $property-icon-color,
-  $property-icon-font-size
-) {
-  .cb-btn {
-    width: $property-size * 2;
-    height: $property-size;
-    font-size: $property-font-size;
-    font-style: $property-font-style;
-    font-weight: $property-font-weight;
-  }
+@mixin ch5-button-size-set($property-size,
+	$property-font-size,
+	$property-font-style,
+	$property-font-weight,
+	$property-icon-color,
+	$property-icon-font-size) {
+	.cb-btn {
+		width: $property-size * 2;
+		height: $property-size;
+		font-size: $property-font-size;
+		font-style: $property-font-style;
+		font-weight: $property-font-weight;
+	}
 
-  .ch5-button__checkbox--checked:before,
-  .ch5-button__checkbox--unchecked:before {
-    font-size: $property-font-size;
-  }
+	.ch5-button__checkbox--checked:before,
+	.ch5-button__checkbox--unchecked:before {
+		font-size: $property-font-size;
+	}
 
-  @include ch5-button-set-icon-classes($property-font-size, $property-icon-color, $property-icon-font-size);
+	@include ch5-button-set-icon-classes($property-font-size, $property-icon-color, $property-icon-font-size);
 }
 
-@mixin ch5-button-content--selected(
-  $property-selected-border-color,
-  $property-selected-background-color,
-  $property-selected-font-color
-) {
-  border-color: $property-selected-border-color;
-  background-color: $property-selected-background-color;
-  color: $property-selected-font-color;
+@mixin ch5-button-content--selected($property-selected-border-color,
+	$property-selected-background-color,
+	$property-selected-font-color) {
+	border-color: $property-selected-border-color;
+	background-color: $property-selected-background-color;
+	color: $property-selected-font-color;
 }
 
-@mixin ch5-button-content--pressed(
-  $property-pressed-border-color,
-  $property-pressed-background-color,
-  $property-pressed-font-color
-) {
-  border-color: $property-pressed-border-color;
-  background-color: $property-pressed-background-color;
-  color: $property-pressed-font-color;
+@mixin ch5-button-content--pressed($property-pressed-border-color,
+	$property-pressed-background-color,
+	$property-pressed-font-color) {
+	border-color: $property-pressed-border-color;
+	background-color: $property-pressed-background-color;
+	color: $property-pressed-font-color;
 }
 
-@mixin ch5-button-content(
-  $property-border-width,
-  $property-border-style,
-  $property-default-border-color,
-  $property-default-background-color,
-  $property-default-font-color
-) {
-  border-style: $property-border-style;
-  border-width: $property-border-width;
-  border-color: $property-default-border-color;
-  background-color: $property-default-background-color;
-  color: $property-default-font-color;
+@mixin ch5-button-content($property-border-width,
+	$property-border-style,
+	$property-default-border-color,
+	$property-default-background-color,
+	$property-default-font-color) {
+	border-style: $property-border-style;
+	border-width: $property-border-width;
+	border-color: $property-default-border-color;
+	background-color: $property-default-background-color;
+	color: $property-default-font-color;
 }
