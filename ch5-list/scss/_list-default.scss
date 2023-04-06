@@ -10,9 +10,8 @@
 /// @group ch5-list
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "./variables";
 
-/// Off by default. Add the "disabled" attribute to the ch5-list tag in order to disable the list.
+/// Add the "disabled" attribute to the ch5-list tag in order to disable the list.
 .ch5-list--disabled {
     pointer-events: none;
     opacity: 0.5;
@@ -38,7 +37,7 @@
     }
 }
 
-.ch5-list-pointer-events-disabled>div {
+.ch5-list-pointer-events-disabled > div {
     pointer-events: none;
 }
 
@@ -77,7 +76,7 @@ ch5-list {
     .ch5-list-vertical-scrollbar {
         padding-right: $ch5-scrollbar-width;
 
-        &~.scrollbar-container {
+        & ~ .scrollbar-container {
             top: 0;
             height: 100%;
             right: 0;
@@ -88,7 +87,7 @@ ch5-list {
     .ch5-list-horizontal-scrollbar {
         padding-bottom: $ch5-scrollbar-width;
 
-        &~.scrollbar-container {
+        & ~ .scrollbar-container {
             width: 100%;
             bottom: 0;
         }

@@ -13,6 +13,7 @@
 @import "./variables";
 @import "./mixins";
 
+/// Primary Class
 .ch5-keypad {
 	display: inline-block;
 	width: $ch5-keypad-regular-container-width;
@@ -85,6 +86,7 @@
 			);
 		}
 	}
+	/// Applied when type="info"
 	&.ch5-keypad--type-info {
 		@include ch5-keypad-content(
 			$ch5-keypad-info-default-background-color,
@@ -99,6 +101,7 @@
 			);
 		}
 	}
+	/// Applied when type="text"
 	&.ch5-keypad--type-text {
 		@include ch5-keypad-content(
 			$ch5-keypad-text-default-background-color,
@@ -113,6 +116,7 @@
 			);
 		}
 	}
+	/// Applied when type="danger"
 	&.ch5-keypad--type-danger {
 		@include ch5-keypad-content(
 			$ch5-keypad-danger-default-background-color,
@@ -127,6 +131,7 @@
 			);
 		}
 	}
+	/// Applied when type="warning"
 	&.ch5-keypad--type-warning {
 		@include ch5-keypad-content(
 			$ch5-keypad-warning-default-background-color,
@@ -141,6 +146,7 @@
 			);
 		}
 	}
+	/// Applied when type="success"
 	&.ch5-keypad--type-success {
 		@include ch5-keypad-content(
 			$ch5-keypad-success-default-background-color,
@@ -155,6 +161,7 @@
 			);
 		}
 	}
+	/// Applied when type="secondary"
 	&.ch5-keypad--type-secondary {
 		@include ch5-keypad-content(
 			$ch5-keypad-secondary-default-background-color,
@@ -170,12 +177,14 @@
 		}
 	}
 
+	/// Applied when button in the textOrientation="top"
 	&.ch5-keypad--orientation-top {
 		button {
 			flex-direction: column;
 		}
 	}
 
+	/// Applied when button in the textOrientation="right"
 	&.ch5-keypad--orientation-right {
 		button {
 			flex-direction: row-reverse;
@@ -185,12 +194,14 @@
 		}
 	}
 
+	/// Applied when button in the textOrientation="bottom"
 	&.ch5-keypad--orientation-bottom {
 		button {
 			flex-direction: column-reverse;
 		}
 	}
 
+	/// Applied when button in the textOrientation="left"
 	&.ch5-keypad--orientation-left {
 		button {
 			flex-direction: row;
@@ -344,4 +355,19 @@
 			$ch5-keypad-x-large-font-size-minor
 		);
 	}
+}
+
+/// Applied when shape="rounded-rectangle"
+.ch5-keypad--shape-rounded-rectangle {
+	// DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when shape="square"
+.ch5-keypad--shape-square {
+	// DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when shape="circle"
+.ch5-keypad--shape-circle {
+	// DO NOT DELETE - used for Component Reference
 }
