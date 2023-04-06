@@ -42,7 +42,7 @@ $ch5-button-circle-icon-width: 30px !default;
 /// The line height for icon of the button with circle form.
 $ch5-button-circle-icon-line-height: 20px !default;
 
-$ch5-button-content-line-height: 1.2;
+$ch5-button-content-line-height: 1.2 !default;
 
 // button solid-border
 $ch5-button-default-border-width: 1px !default;
@@ -73,7 +73,7 @@ $ch5-button-circle-border-radius: 50% !default;
 $ch5-button-oval-border-radius: 50% !default;
 
 /// button tab
-$ch5-button-tab-border-radius: 10px 10px 0px 0px !default;
+$ch5-button-tab-border-radius: 10px 10px 0 0 !default;
 
 // sizes
 $ch5-button-size: 42px !default;
