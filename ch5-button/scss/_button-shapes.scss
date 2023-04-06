@@ -11,14 +11,17 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // *** Button 'shape' attribute ***
+/// Applied when shape='rectangle'
 .ch5-button--rectangle {
   @include border-radius(0);
   overflow: hidden;
 }
+/// Applied when shape='rounded-rectangle'
 .ch5-button--rounded-rectangle {
   @include border-radius($ch5-button-border-radius);
   overflow: hidden;
 }
+/// Applied when shape='circle'
 .ch5-button--circle {
   // button {
   //   @include border-radius($ch5-button-circle-border-radius);
@@ -43,11 +46,13 @@
     height: 100%;
   }
 }
+/// Applied when shape='oval'
 .ch5-button--oval {
   @include border-radius($ch5-button-oval-border-radius);
   // overflow: auto;
   overflow: hidden;
 }
+/// Applied when shape='tab'
 .ch5-button--tab {
   @include border-radius($ch5-button-tab-border-radius);
   overflow: hidden;
