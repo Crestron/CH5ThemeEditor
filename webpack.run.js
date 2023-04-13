@@ -19,6 +19,7 @@ const basePath = path.resolve(__dirname);
 const sourceFilePath = !!dotenv && !!dotenv.SOURCE_THEMES_FILE_PATH ? dotenv.SOURCE_THEMES_FILE_PATH : 'output/themes/*.css';
 const fontAwesomeFilePath = "./node_modules/@fortawesome/fontawesome-free";
 const materialIconsFilePath = "./node_modules/@material-icons/font";
+const sgIconsPath = "./sg-icons";
 
 // get the all theme list
 const manifestSourceFilePath = "./app.manifest.json";
@@ -51,6 +52,7 @@ if (pathMatches.length) {
   destinationFilePath = !processArgv['outputpath'] ? destinationFilePath : processArgv.outputpath;
   fontAwesomeDestinationFilePath = !processArgv['outputpath'] ? fontAwesomeDestinationFilePath : processArgv.outputpath + '/font-awesome/';
   materialIconsDestinationFilePath = !processArgv['outputpath'] ? materialIconsDestinationFilePath : processArgv.outputpath + '/material-icons/';
+  sgIconsDestinationFilePath = !processArgv['outputpath'] ? materialIconsDestinationFilePath : processArgv.outputpath + '/sg-icons/';
 }
 
 module.exports = merge(common, {
@@ -90,6 +92,18 @@ module.exports = merge(common, {
       {
         from: path.resolve(basePath, materialIconsFilePath + "/font/*"),
         to: path.resolve(basePath, materialIconsDestinationFilePath + "/font"),
+        flatten: true,
+        force: true
+      },
+      {
+        from: path.resolve(basePath, sgIconsPath + "/css/all.css"),
+        to: path.resolve(basePath, sgIconsDestinationFilePath + "/css/all.css"),
+        flatten: true,
+        force: true
+      },
+      {
+        from: path.resolve(basePath, sgIconsPath + "/svgs/**/*"),
+        to: path.resolve(basePath, sgIconsDestinationFilePath + "/svgs"),
         flatten: true,
         force: true
       },

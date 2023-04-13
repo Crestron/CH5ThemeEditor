@@ -1,0 +1,19 @@
+.sg {
+}
+
+.sg-icon-lg {
+  height: 100px;
+  width: 100px;
+}
+
+.sg-icon-sm {
+  height: 20px;
+  width: 20px;
+}
+
+.sg-airmedia {
+  background: url('./../svgs/Airplay.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}

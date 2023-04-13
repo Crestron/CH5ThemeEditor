@@ -1,0 +1,37 @@
+{
+	"themeDef": [
+		{
+			"name": "Icons Lg",
+			"value": "icons-lg"
+		},
+		{
+			"name": "Icons Sm",
+			"value": "icons-sm"
+		},
+		{
+			"name": "Media Transport Light",
+			"value": "media-transport-light"
+		},
+		{
+			"name": "Media Transport Dark",
+			"value": "media-transport-dark"
+		},
+		{
+			"name": "Media Transport Accents",
+			"value": "media-transport-accents"
+		}
+	],
+	"icons": [
+		{
+			"label": "am-fm",
+			"aliases": [
+				"0",
+				"AM-FM"
+			],
+			"themes": [
+				"icons-lg",
+				"icons-sm"
+			]
+		}
+	]
+}
