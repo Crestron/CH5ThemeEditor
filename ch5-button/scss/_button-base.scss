@@ -117,12 +117,12 @@ ch5-button {
 	/// Applied when iconUrlFillType="stretch"
 	.ch5-button--icon-url-fill-type-stretch {
 		.ch5-button--img {
+			position: absolute;
 			background-size: 100% 100%;
 			width: 100%;
 			height: 100%;
 			background-position: center;
 			background-repeat: no-repeat;
-			position: absolute;
 		}
 	}
 
@@ -153,12 +153,12 @@ ch5-button {
 	/// Applied when iconUrlFillType="tile"
 	.ch5-button--icon-url-fill-type-tile {
 		.ch5-button--img {
+			position: absolute;
 			background-size: auto;
 			width: 100%;
 			height: 100%;
 			background-position: 0;
 			background-repeat: repeat;
-			position: absolute;
 		}
 	}
 
@@ -207,12 +207,6 @@ ch5-button {
 		.cb-btn {
 			height: 100% !important;
 			min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
-		}
-
-		.ch5-button--label,
-		.ch5-button--icon,
-		.ch5-button--img {
-			position: relative;
 		}
 	}
 
@@ -526,6 +520,15 @@ ch5-button {
 	&.ch5-button--size-x-large {
 		width: $ch5-button-x-large-size;
 		height: $ch5-button-x-large-size * 2;
+	}
+
+	&.ch5-button--stretch-height {
+		height: 100%;
+
+		.cb-btn {
+			height: 100% !important;
+			min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
+		}
 	}
 }
 
