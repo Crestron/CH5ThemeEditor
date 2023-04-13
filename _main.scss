@@ -8,7 +8,7 @@
 @import "./node_modules/nouislider/distribute/nouislider";
 
 ch5-animation,
-ch5-button,
+ch5-button,ch5-label,ch5-slider-button,ch5-button-new,
 ch5-button-list,
 ch5-color-chip,
 ch5-color-picker,
@@ -95,3 +95,10 @@ ch5-triggerview {
 @import "ch5-video/ch5-video";
 
 @import "ch5-wifi-signal-level-gauge/ch5-wifi-signal-level-gauge";
+
+
+@import "ch5-button-new/ch5-button-new";
+
+@import "ch5-slider-button/ch5-slider-button";
+
+@import "ch5-label/ch5-label";

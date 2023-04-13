@@ -1,0 +1,99 @@
+.slider-off-button,
+.slider-on-button {
+  display: inline-flex;
+  pointer-events: none;
+  vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
+
+  .ch5-button {
+    display: flex;
+    max-width: 100%;
+
+    button {
+      cursor: pointer;
+    }
+
+    button,
+    .ch5-button--label {
+      background-color: transparent;
+      border: none;
+      color: inherit;
+      &:focus {
+        outline: none;
+      }
+    }
+    .ch5-button--label {
+      display: block;
+      @include text-truncate;
+    }
+    .cb-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  div {
+    cursor: pointer;
+    pointer-events: all;
+  }
+
+  .ch5-button--ios-label {
+    flex: none;
+    height: 100%;
+  }
+}
+
+.slider-off-button[hidden],
+.slider-on-button[hidden] {
+  display: none;
+}
+.adv-slider-btn {
+  display: none;
+}
+ch5-slider {
+  ch5-slider-button[key="on"] {
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: transparent;
+  }
+
+  ch5-slider-button[key="off"] {
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: transparent;
+  }
+}
+
+ch5-slider[orientation="vertical"] {
+  ch5-slider-button[key="on"] {
+    z-index: 1;
+    position: absolute;
+    top: 24px;
+    left: 0px;
+    background-color: transparent;
+  }
+
+  ch5-slider-button[key="off"] {
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: transparent;
+  }
+}
+
+ch5-slider {
+  ch5-slider-button {
+    width: $ch5-slider-size-regular-horizontal-width;
+    height: $ch5-slider-size-regular-horizontal-height;
+  }
+}
+
+.ch5-label-prop{
+  overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -9,21 +9,28 @@
     /* ===============================================
     HANDLESIZE HORIZONTAL 
     ============================================= */
-    &.ch5-slider--orientation--horizontal .noUi-target{
+    &.ch5-slider--orientation--horizontal .noUi-target {
         width: 100% !important;
     }
     // rectangle/rounded-rectangle
-    &.ch5-slider--orientation--horizontal.ch5-slider--shape--rectangle,  
-    &.ch5-slider--orientation--horizontal.ch5-slider--shape--rounded-rectangle{
+    &.ch5-slider--orientation--horizontal.ch5-slider--shape--rectangle,
+    &.ch5-slider--orientation--horizontal.ch5-slider--shape--rounded-rectangle {
         /* ch5-slider handleSize - x-small */
         &.ch5-slider--handle-size--x-small {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-x-small-horizontal-width,
-                $ch5-slider-size-x-small-horizontal-height,
-                $ch5-slider-size-x-small-horizontal-right,
-                $ch5-slider-size-x-small-horizontal-top
-                )
+                    $ch5-slider-size-x-small-horizontal-width,
+                    $ch5-slider-size-x-small-horizontal-height,
+                    $ch5-slider-size-x-small-horizontal-right,
+                    $ch5-slider-size-x-small-horizontal-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-x-small-horizontal-width;
+                height: $ch5-slider-size-x-small-horizontal-height;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-x-small-horizontal-width/2;
             }
             line-height: $ch5-slider-size-x-small-horizontal-height;
             padding: 0 calc($ch5-slider-size-x-small-horizontal-width / 2);
@@ -32,11 +39,18 @@
         &.ch5-slider--handle-size--small {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-small-horizontal-width,
-                $ch5-slider-size-small-horizontal-height,
-                $ch5-slider-size-small-horizontal-right,
-                $ch5-slider-size-small-horizontal-top
-                )
+                    $ch5-slider-size-small-horizontal-width,
+                    $ch5-slider-size-small-horizontal-height,
+                    $ch5-slider-size-small-horizontal-right,
+                    $ch5-slider-size-small-horizontal-top
+                );
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-small-horizontal-width/2;
+            }
+            .cb-btn {
+                width: $ch5-slider-size-small-horizontal-width;
+                height: $ch5-slider-size-small-horizontal-height;
             }
             line-height: $ch5-slider-size-small-horizontal-height;
             padding: 0 calc($ch5-slider-size-small-horizontal-width / 2);
@@ -45,24 +59,38 @@
         &.ch5-slider--handle-size--regular {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-regular-horizontal-width,
-                $ch5-slider-size-regular-horizontal-height,
-                $ch5-slider-size-regular-horizontal-right,
-                $ch5-slider-size-regular-horizontal-top
-                )
+                    $ch5-slider-size-regular-horizontal-width,
+                    $ch5-slider-size-regular-horizontal-height,
+                    $ch5-slider-size-regular-horizontal-right,
+                    $ch5-slider-size-regular-horizontal-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-regular-horizontal-width;
+                height: $ch5-slider-size-regular-horizontal-height;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-regular-horizontal-width/2;
             }
             line-height: $ch5-slider-size-regular-horizontal-height;
-            padding:0 calc($ch5-slider-size-regular-horizontal-width / 2);
+            padding: 0 calc($ch5-slider-size-regular-horizontal-width / 2);
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-large-horizontal-width,
-                $ch5-slider-size-large-horizontal-height,
-                $ch5-slider-size-large-horizontal-right,
-                $ch5-slider-size-large-horizontal-top
-                )
+                    $ch5-slider-size-large-horizontal-width,
+                    $ch5-slider-size-large-horizontal-height,
+                    $ch5-slider-size-large-horizontal-right,
+                    $ch5-slider-size-large-horizontal-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-large-horizontal-width;
+                height: $ch5-slider-size-large-horizontal-height;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-large-horizontal-width/2;
             }
             line-height: $ch5-slider-size-large-horizontal-height;
             padding: 0 calc($ch5-slider-size-large-horizontal-width / 2);
@@ -71,11 +99,18 @@
         &.ch5-slider--handle-size--x-large {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-x-large-horizontal-width,
-                $ch5-slider-size-x-large-horizontal-height,
-                $ch5-slider-size-x-large-horizontal-right,
-                $ch5-slider-size-x-large-horizontal-top
-                )
+                    $ch5-slider-size-x-large-horizontal-width,
+                    $ch5-slider-size-x-large-horizontal-height,
+                    $ch5-slider-size-x-large-horizontal-right,
+                    $ch5-slider-size-x-large-horizontal-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-x-large-horizontal-width;
+                height: $ch5-slider-size-x-large-horizontal-height;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-x-large-horizontal-width/2;
             }
             line-height: $ch5-slider-size-x-large-horizontal-height;
             padding: 0 calc($ch5-slider-size-x-large-horizontal-width / 2);
@@ -88,11 +123,18 @@
         &.ch5-slider--handle-size--x-small {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-x-small-horizontal-oval-size * 2,
-                $ch5-slider-size-x-small-horizontal-oval-size,
-                $ch5-slider-size-x-small-horizontal-oval-right,
-                $ch5-slider-size-x-small-horizontal-oval-top
-                )
+                    $ch5-slider-size-x-small-horizontal-oval-size * 2,
+                    $ch5-slider-size-x-small-horizontal-oval-size,
+                    $ch5-slider-size-x-small-horizontal-oval-right,
+                    $ch5-slider-size-x-small-horizontal-oval-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-x-small-horizontal-oval-size * 2;
+                height: $ch5-slider-size-x-small-horizontal-oval-size;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-x-small-horizontal-oval-size;
             }
             line-height: $ch5-slider-size-x-small-horizontal-oval-size;
             padding: 0 ($ch5-slider-size-x-small-horizontal-oval-size);
@@ -101,11 +143,18 @@
         &.ch5-slider--handle-size--small {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-small-horizontal-oval-size * 2,
-                $ch5-slider-size-small-horizontal-oval-size,
-                $ch5-slider-size-small-horizontal-oval-right,
-                $ch5-slider-size-small-horizontal-oval-top
-                )
+                    $ch5-slider-size-small-horizontal-oval-size * 2,
+                    $ch5-slider-size-small-horizontal-oval-size,
+                    $ch5-slider-size-small-horizontal-oval-right,
+                    $ch5-slider-size-small-horizontal-oval-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-small-horizontal-oval-size * 2;
+                height: $ch5-slider-size-small-horizontal-oval-size;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-small-horizontal-oval-size;
             }
             line-height: $ch5-slider-size-small-horizontal-oval-size;
             padding: 0 ($ch5-slider-size-small-horizontal-oval-size);
@@ -114,24 +163,38 @@
         &.ch5-slider--handle-size--regular {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-regular-horizontal-oval-size * 2,
-                $ch5-slider-size-regular-horizontal-oval-size,
-                $ch5-slider-size-regular-horizontal-oval-right,
-                $ch5-slider-size-regular-horizontal-oval-top
-                )
+                    $ch5-slider-size-regular-horizontal-oval-size * 2,
+                    $ch5-slider-size-regular-horizontal-oval-size,
+                    $ch5-slider-size-regular-horizontal-oval-right,
+                    $ch5-slider-size-regular-horizontal-oval-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-regular-horizontal-oval-size * 2;
+                height: $ch5-slider-size-regular-horizontal-oval-size;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-regular-horizontal-oval-size;
             }
             line-height: $ch5-slider-size-regular-horizontal-oval-size;
-            padding:0 ($ch5-slider-size-regular-horizontal-oval-size);
+            padding: 0 ($ch5-slider-size-regular-horizontal-oval-size);
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-large-horizontal-oval-size * 2,
-                $ch5-slider-size-large-horizontal-oval-size,
-                $ch5-slider-size-large-horizontal-oval-right,
-                $ch5-slider-size-large-horizontal-oval-top
-                )
+                    $ch5-slider-size-large-horizontal-oval-size * 2,
+                    $ch5-slider-size-large-horizontal-oval-size,
+                    $ch5-slider-size-large-horizontal-oval-right,
+                    $ch5-slider-size-large-horizontal-oval-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-large-horizontal-oval-size * 2;
+                height: $ch5-slider-size-large-horizontal-oval-size;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-large-horizontal-oval-size;
             }
             line-height: $ch5-slider-size-large-horizontal-oval-size;
             padding: 0 ($ch5-slider-size-large-horizontal-oval-size);
@@ -140,11 +203,18 @@
         &.ch5-slider--handle-size--x-large {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-x-large-horizontal-oval-size * 2,
-                $ch5-slider-size-x-large-horizontal-oval-size,
-                $ch5-slider-size-x-large-horizontal-oval-right,
-                $ch5-slider-size-x-large-horizontal-oval-top
-                )
+                    $ch5-slider-size-x-large-horizontal-oval-size * 2,
+                    $ch5-slider-size-x-large-horizontal-oval-size,
+                    $ch5-slider-size-x-large-horizontal-oval-right,
+                    $ch5-slider-size-x-large-horizontal-oval-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-x-large-horizontal-oval-size * 2;
+                height: $ch5-slider-size-x-large-horizontal-oval-size;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-x-large-horizontal-oval-size;
             }
             line-height: $ch5-slider-size-x-large-horizontal-oval-size;
             padding: 0 ($ch5-slider-size-x-large-horizontal-oval-size);
@@ -157,11 +227,18 @@
         &.ch5-slider--handle-size--x-small {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-x-small-horizontal-circle-size,
-                $ch5-slider-size-x-small-horizontal-circle-size,
-                $ch5-slider-size-x-small-horizontal-circle-right,
-                $ch5-slider-size-x-small-horizontal-circle-top
-                )
+                    $ch5-slider-size-x-small-horizontal-circle-size,
+                    $ch5-slider-size-x-small-horizontal-circle-size,
+                    $ch5-slider-size-x-small-horizontal-circle-right,
+                    $ch5-slider-size-x-small-horizontal-circle-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-x-small-horizontal-circle-size;
+                height: $ch5-slider-size-x-small-horizontal-circle-size;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-x-small-horizontal-circle-size/2;
             }
             line-height: $ch5-slider-size-x-small-horizontal-circle-size;
             padding: 0 calc($ch5-slider-size-x-small-horizontal-circle-size / 2);
@@ -170,11 +247,18 @@
         &.ch5-slider--handle-size--small {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-small-horizontal-circle-size,
-                $ch5-slider-size-small-horizontal-circle-size,
-                $ch5-slider-size-small-horizontal-circle-right,
-                $ch5-slider-size-small-horizontal-circle-top
-                )
+                    $ch5-slider-size-small-horizontal-circle-size,
+                    $ch5-slider-size-small-horizontal-circle-size,
+                    $ch5-slider-size-small-horizontal-circle-right,
+                    $ch5-slider-size-small-horizontal-circle-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-small-horizontal-circle-size;
+                height: $ch5-slider-size-small-horizontal-circle-size;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-small-horizontal-circle-size/2;
             }
             line-height: $ch5-slider-size-small-horizontal-circle-size;
             padding: 0 calc($ch5-slider-size-small-horizontal-circle-size / 2);
@@ -183,24 +267,38 @@
         &.ch5-slider--handle-size--regular {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-regular-horizontal-circle-size,
-                $ch5-slider-size-regular-horizontal-circle-size,
-                $ch5-slider-size-regular-horizontal-circle-right,
-                $ch5-slider-size-regular-horizontal-circle-top
-                )
+                    $ch5-slider-size-regular-horizontal-circle-size,
+                    $ch5-slider-size-regular-horizontal-circle-size,
+                    $ch5-slider-size-regular-horizontal-circle-right,
+                    $ch5-slider-size-regular-horizontal-circle-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-regular-horizontal-circle-size;
+                height: $ch5-slider-size-regular-horizontal-circle-size;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-regular-horizontal-circle-size/2;
             }
             line-height: $ch5-slider-size-regular-horizontal-circle-size;
-            padding:0 calc($ch5-slider-size-regular-horizontal-circle-size / 2);
+            padding: 0 calc($ch5-slider-size-regular-horizontal-circle-size / 2);
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-large-horizontal-circle-size,
-                $ch5-slider-size-large-horizontal-circle-size,
-                $ch5-slider-size-large-horizontal-circle-right,
-                $ch5-slider-size-large-horizontal-circle-top
-                )
+                    $ch5-slider-size-large-horizontal-circle-size,
+                    $ch5-slider-size-large-horizontal-circle-size,
+                    $ch5-slider-size-large-horizontal-circle-right,
+                    $ch5-slider-size-large-horizontal-circle-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-large-horizontal-circle-size;
+                height: $ch5-slider-size-large-horizontal-circle-size;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-large-horizontal-circle-size/2;
             }
             line-height: $ch5-slider-size-large-horizontal-circle-size;
             padding: 0 calc($ch5-slider-size-large-horizontal-circle-size / 2);
@@ -209,11 +307,18 @@
         &.ch5-slider--handle-size--x-large {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                $ch5-slider-size-x-large-horizontal-circle-size,
-                $ch5-slider-size-x-large-horizontal-circle-size,
-                $ch5-slider-size-x-large-horizontal-circle-right,
-                $ch5-slider-size-x-large-horizontal-circle-top
-                )
+                    $ch5-slider-size-x-large-horizontal-circle-size,
+                    $ch5-slider-size-x-large-horizontal-circle-size,
+                    $ch5-slider-size-x-large-horizontal-circle-right,
+                    $ch5-slider-size-x-large-horizontal-circle-top
+                );
+            }
+            .cb-btn {
+                width: $ch5-slider-size-x-large-horizontal-circle-size;
+                height: $ch5-slider-size-x-large-horizontal-circle-size;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-x-large-horizontal-circle-size/2;
             }
             line-height: $ch5-slider-size-x-large-horizontal-circle-size;
             padding: 0 calc($ch5-slider-size-x-large-horizontal-circle-size / 2);
@@ -223,144 +328,224 @@
     /* ===============================================
     HANDLESIZE VERTICAL 
     ============================================= */
-    &.ch5-slider--orientation--vertical .noUi-target{
+    &.ch5-slider--orientation--vertical .noUi-target {
         height: 100% !important;
     }
     &.ch5-slider--orientation--vertical.ch5-slider--shape--rectangle,
-    &.ch5-slider--orientation--vertical.ch5-slider--shape--rounded-rectangle{
+    &.ch5-slider--orientation--vertical.ch5-slider--shape--rounded-rectangle {
         /* ch5-slider handlesize - x-small */
         &.ch5-slider--handle-size--x-small {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-x-small-vertical-width,
-                $ch5-slider-size-x-small-vertical-height,
-                $ch5-slider-size-x-small-vertical-left,
-                $ch5-slider-size-x-small-vertical-top
-                )
+                    $ch5-slider-size-x-small-vertical-width,
+                    $ch5-slider-size-x-small-vertical-height,
+                    $ch5-slider-size-x-small-vertical-left,
+                    $ch5-slider-size-x-small-vertical-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-x-small-vertical-width;
+                width: $ch5-slider-size-x-small-vertical-height;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-x-small-vertical-height/2;
             }
             min-width: $ch5-slider-size-x-small-vertical-width;
+            max-width: $ch5-slider-size-x-small-vertical-width * 2;
             padding: calc($ch5-slider-size-x-small-vertical-height / 2) abs($ch5-slider-size-x-small-vertical-left);
         }
         /* ch5-slider handlesize - small */
         &.ch5-slider--handle-size--small {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-small-vertical-width,
-                $ch5-slider-size-small-vertical-height,
-                $ch5-slider-size-small-vertical-left,
-                $ch5-slider-size-small-vertical-top
-                )
+                    $ch5-slider-size-small-vertical-width,
+                    $ch5-slider-size-small-vertical-height,
+                    $ch5-slider-size-small-vertical-left,
+                    $ch5-slider-size-small-vertical-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-small-vertical-width;
+                width: $ch5-slider-size-small-vertical-height;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-small-vertical-height/2;
             }
             min-width: $ch5-slider-size-small-vertical-width;
+            max-width: $ch5-slider-size-small-vertical-width * 2;
             padding: calc($ch5-slider-size-small-vertical-height / 2) abs($ch5-slider-size-small-vertical-left);
         }
         /* ch5-slider handlesize - small */
         &.ch5-slider--handle-size--regular {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-regular-vertical-width,
-                $ch5-slider-size-regular-vertical-height,
-                $ch5-slider-size-regular-vertical-left,
-                $ch5-slider-size-regular-vertical-top
-                )
+                    $ch5-slider-size-regular-vertical-width,
+                    $ch5-slider-size-regular-vertical-height,
+                    $ch5-slider-size-regular-vertical-left,
+                    $ch5-slider-size-regular-vertical-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-regular-vertical-width;
+                width: $ch5-slider-size-regular-vertical-height;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-regular-vertical-height/2;
             }
             min-width: $ch5-slider-size-regular-vertical-width;
+            max-width: $ch5-slider-size-regular-vertical-width * 2;
             padding: calc($ch5-slider-size-regular-vertical-height / 2) abs($ch5-slider-size-regular-vertical-left);
         }
         /* ch5-slider handlesize - large */
         &.ch5-slider--handle-size--large {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-large-vertical-width,
-                $ch5-slider-size-large-vertical-height,
-                $ch5-slider-size-large-vertical-left,
-                $ch5-slider-size-large-vertical-top
-                )
+                    $ch5-slider-size-large-vertical-width,
+                    $ch5-slider-size-large-vertical-height,
+                    $ch5-slider-size-large-vertical-left,
+                    $ch5-slider-size-large-vertical-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-large-vertical-width;
+                width: $ch5-slider-size-large-vertical-height;
+            }
+            .slider-off-button {
+                margin-right: $ch5-slider-size-large-vertical-height/2;
             }
             min-width: $ch5-slider-size-large-vertical-width;
+            max-width: $ch5-slider-size-large-vertical-width * 2;
             padding: calc($ch5-slider-size-large-vertical-height / 2) abs($ch5-slider-size-large-vertical-left);
         }
         /* ch5-slider handlesize - x-large */
         &.ch5-slider--handle-size--x-large {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-x-large-vertical-width,
-                $ch5-slider-size-x-large-vertical-height,
-                $ch5-slider-size-x-large-vertical-left,
-                $ch5-slider-size-x-large-vertical-top
-                )
+                    $ch5-slider-size-x-large-vertical-width,
+                    $ch5-slider-size-x-large-vertical-height,
+                    $ch5-slider-size-x-large-vertical-left,
+                    $ch5-slider-size-x-large-vertical-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-x-large-vertical-width;
+                width: $ch5-slider-size-x-large-vertical-height;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-x-large-vertical-height/2;
             }
             min-width: $ch5-slider-size-x-large-vertical-width;
+            max-width: $ch5-slider-size-x-large-vertical-width * 2;
             padding: calc($ch5-slider-size-x-large-vertical-height / 2) abs($ch5-slider-size-x-large-vertical-left);
         }
     }
 
     &.ch5-slider--orientation--vertical.ch5-slider--shape--circle {
-            /* ch5-slider handleSize - x-small */
-         &.ch5-slider--handle-size--x-small {
+        /* ch5-slider handleSize - x-small */
+        &.ch5-slider--handle-size--x-small {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-x-small-horizontal-circle-size,
-                $ch5-slider-size-x-small-horizontal-circle-size,
-                $ch5-slider-size-x-small-vertical-circle-left,
-                $ch5-slider-size-x-small-vertical-circle-top
-                )
+                    $ch5-slider-size-x-small-horizontal-circle-size,
+                    $ch5-slider-size-x-small-horizontal-circle-size,
+                    $ch5-slider-size-x-small-vertical-circle-left,
+                    $ch5-slider-size-x-small-vertical-circle-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-x-small-horizontal-circle-size;
+                width: $ch5-slider-size-x-small-horizontal-circle-size;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-x-small-horizontal-circle-size/2;
             }
             min-width: $ch5-slider-size-x-small-horizontal-circle-size;
+            max-width: $ch5-slider-size-x-small-horizontal-circle-size * 2;
             padding: 0 calc($ch5-slider-size-x-small-horizontal-circle-size / 2);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--small {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-small-horizontal-circle-size,
-                $ch5-slider-size-small-horizontal-circle-size,
-                $ch5-slider-size-small-vertical-circle-left,
-                $ch5-slider-size-small-vertical-circle-top
-                )
+                    $ch5-slider-size-small-horizontal-circle-size,
+                    $ch5-slider-size-small-horizontal-circle-size,
+                    $ch5-slider-size-small-vertical-circle-left,
+                    $ch5-slider-size-small-vertical-circle-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-small-horizontal-circle-size;
+                width: $ch5-slider-size-small-horizontal-circle-size;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-small-horizontal-circle-size/2;
             }
             min-width: $ch5-slider-size-small-horizontal-circle-size;
+            max-width: $ch5-slider-size-small-horizontal-circle-size * 2;
             padding: 0 calc($ch5-slider-size-small-horizontal-circle-size / 2);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--regular {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-regular-horizontal-circle-size,
-                $ch5-slider-size-regular-horizontal-circle-size,
-                $ch5-slider-size-regular-vertical-circle-left,
-                $ch5-slider-size-regular-vertical-circle-top
-                )
+                    $ch5-slider-size-regular-horizontal-circle-size,
+                    $ch5-slider-size-regular-horizontal-circle-size,
+                    $ch5-slider-size-regular-vertical-circle-left,
+                    $ch5-slider-size-regular-vertical-circle-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-small-horizontal-circle-size;
+                width: $ch5-slider-size-small-horizontal-circle-size;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-small-horizontal-circle-size/2;
             }
             min-width: $ch5-slider-size-regular-horizontal-circle-size;
-            padding:0 calc($ch5-slider-size-regular-horizontal-circle-size / 2);
+            max-width: $ch5-slider-size-regular-horizontal-circle-size * 2;
+            padding: 0 calc($ch5-slider-size-regular-horizontal-circle-size / 2);
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-large-horizontal-circle-size,
-                $ch5-slider-size-large-horizontal-circle-size,
-                $ch5-slider-size-large-vertical-circle-left,
-                $ch5-slider-size-large-vertical-circle-top
-                )
+                    $ch5-slider-size-large-horizontal-circle-size,
+                    $ch5-slider-size-large-horizontal-circle-size,
+                    $ch5-slider-size-large-vertical-circle-left,
+                    $ch5-slider-size-large-vertical-circle-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-large-horizontal-circle-size;
+                width: $ch5-slider-size-large-horizontal-circle-size;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-large-horizontal-circle-size/2;
             }
             min-width: $ch5-slider-size-large-horizontal-circle-size;
+            max-width: $ch5-slider-size-large-horizontal-circle-size * 2;
             padding: 0 calc($ch5-slider-size-large-horizontal-circle-size / 2);
         }
         /* ch5-slider handleSize - x-large */
         &.ch5-slider--handle-size--x-large {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-x-large-horizontal-circle-size,
-                $ch5-slider-size-x-large-horizontal-circle-size,
-                $ch5-slider-size-x-large-vertical-circle-left,
-                $ch5-slider-size-x-large-vertical-circle-top
-                )
+                    $ch5-slider-size-x-large-horizontal-circle-size,
+                    $ch5-slider-size-x-large-horizontal-circle-size,
+                    $ch5-slider-size-x-large-vertical-circle-left,
+                    $ch5-slider-size-x-large-vertical-circle-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-x-large-horizontal-circle-size;
+                width: $ch5-slider-size-x-large-horizontal-circle-size;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-x-large-horizontal-circle-size/2;
             }
             min-width: $ch5-slider-size-x-large-horizontal-circle-size;
+            max-width: $ch5-slider-size-x-large-horizontal-circle-size * 2;
             padding: 0 calc($ch5-slider-size-x-large-horizontal-circle-size / 2);
-        } 
+        }
     }
 
     &.ch5-slider--orientation--vertical.ch5-slider--shape--oval {
@@ -368,66 +553,106 @@
         &.ch5-slider--handle-size--x-small {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-x-small-horizontal-oval-size,
-                $ch5-slider-size-x-small-horizontal-oval-size * 2,
-                $ch5-slider-size-x-small-vertical-oval-left,
-                $ch5-slider-size-x-small-vertical-oval-top
-                )
+                    $ch5-slider-size-x-small-horizontal-oval-size,
+                    $ch5-slider-size-x-small-horizontal-oval-size * 2,
+                    $ch5-slider-size-x-small-vertical-oval-left,
+                    $ch5-slider-size-x-small-vertical-oval-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-x-small-horizontal-oval-size;
+                width: $ch5-slider-size-x-small-horizontal-oval-size * 2;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-x-small-horizontal-oval-size;
             }
             min-width: $ch5-slider-size-x-small-horizontal-oval-size;
+            max-width: $ch5-slider-size-x-small-horizontal-oval-size * 2;
             padding: 0 calc($ch5-slider-size-x-small-horizontal-oval-size / 2);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--small {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-small-horizontal-oval-size,
-                $ch5-slider-size-small-horizontal-oval-size * 2,
-                $ch5-slider-size-small-vertical-oval-left,
-                $ch5-slider-size-small-vertical-oval-top
-                )
+                    $ch5-slider-size-small-horizontal-oval-size,
+                    $ch5-slider-size-small-horizontal-oval-size * 2,
+                    $ch5-slider-size-small-vertical-oval-left,
+                    $ch5-slider-size-small-vertical-oval-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-small-horizontal-oval-size;
+                width: $ch5-slider-size-small-horizontal-oval-size * 2;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-small-horizontal-oval-size;
             }
             min-width: $ch5-slider-size-small-horizontal-oval-size;
+            max-width: $ch5-slider-size-small-horizontal-oval-size * 2;
             padding: 0 calc($ch5-slider-size-small-horizontal-oval-size / 2);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--regular {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-regular-horizontal-oval-size,
-                $ch5-slider-size-regular-horizontal-oval-size * 2,
-                $ch5-slider-size-regular-vertical-oval-left,
-                $ch5-slider-size-regular-vertical-oval-top
-                )
+                    $ch5-slider-size-regular-horizontal-oval-size,
+                    $ch5-slider-size-regular-horizontal-oval-size * 2,
+                    $ch5-slider-size-regular-vertical-oval-left,
+                    $ch5-slider-size-regular-vertical-oval-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-regular-horizontal-oval-size;
+                width: $ch5-slider-size-regular-horizontal-oval-size * 2;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-regular-horizontal-oval-size;
             }
             min-width: $ch5-slider-size-regular-horizontal-oval-size;
-            padding:0 calc($ch5-slider-size-regular-horizontal-oval-size / 2);
+            max-width: $ch5-slider-size-regular-horizontal-oval-size * 2;
+            padding: 0 calc($ch5-slider-size-regular-horizontal-oval-size / 2);
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-large-horizontal-oval-size,
-                $ch5-slider-size-large-horizontal-oval-size * 2,
-                $ch5-slider-size-large-vertical-oval-left,
-                $ch5-slider-size-large-vertical-oval-top
-                )
+                    $ch5-slider-size-large-horizontal-oval-size,
+                    $ch5-slider-size-large-horizontal-oval-size * 2,
+                    $ch5-slider-size-large-vertical-oval-left,
+                    $ch5-slider-size-large-vertical-oval-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-large-horizontal-oval-size;
+                width: $ch5-slider-size-large-horizontal-oval-size * 2;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-large-horizontal-oval-size;
             }
             min-width: $ch5-slider-size-large-horizontal-oval-size;
+            max-width: $ch5-slider-size-large-horizontal-oval-size * 2;
             padding: 0 calc($ch5-slider-size-large-horizontal-oval-size / 2);
         }
         /* ch5-slider handleSize - x-large */
         &.ch5-slider--handle-size--x-large {
             .noUi-handle {
                 @include handleSizeVertical(
-                $ch5-slider-size-x-large-horizontal-oval-size,
-                $ch5-slider-size-x-large-horizontal-oval-size * 2,
-                $ch5-slider-size-x-large-vertical-oval-left,
-                $ch5-slider-size-x-large-vertical-oval-top
-                )
+                    $ch5-slider-size-x-large-horizontal-oval-size,
+                    $ch5-slider-size-x-large-horizontal-oval-size * 2,
+                    $ch5-slider-size-x-large-vertical-oval-left,
+                    $ch5-slider-size-x-large-vertical-oval-top
+                );
+            }
+            .cb-btn {
+                height: $ch5-slider-size-x-large-horizontal-oval-size;
+                width: $ch5-slider-size-x-large-horizontal-oval-size * 2;
+            }
+            .slider-off-button {
+                margin-top: $ch5-slider-size-x-large-horizontal-oval-size;
             }
             min-width: $ch5-slider-size-x-large-horizontal-oval-size;
+            max-width: $ch5-slider-size-x-large-horizontal-oval-size * 2;
             padding: 0 calc($ch5-slider-size-x-large-horizontal-oval-size / 2);
-        } 
+        }
     }
 }
