@@ -24,7 +24,7 @@
     "bundle-and-watch": "npm run clean && webpack --config webpack.run.js --watch",
     "bundle-theme-all-app-compile": "webpack --config webpack.compile.js && npm run cleanjs",
     "bundle-theme-all-dev": "webpack --config webpack.build.js --mode development && npm run cleanjs",
-    "build:prod": "npm run cleanjs && webpack --config webpack.build.js --outputpath='./output/themes' && webpack --config webpack.run.js --outputpath='./output/themes'  && npm run cleanjs",
+    "build:prod": "npm run clean && webpack --config webpack.build.js --outputpath='./output/themes' && webpack --config webpack.run.js --outputpath='./output/themes'  && npm run cleanjs",
     "clean": "rimraf output",
     "cleanjs": "rimraf output/**/*.js",
     "create-theme": "node ./create-theme.js",

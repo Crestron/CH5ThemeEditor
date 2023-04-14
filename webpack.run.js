@@ -78,24 +78,14 @@ module.exports = merge(common, {
         flatten: true,
         force: true
       },
-      {
-        from: path.resolve(basePath, fontAwesomeFilePath + "/webfonts/*"),
-        to: path.resolve(basePath, fontAwesomeDestinationFilePath + "/webfonts"),
-        flatten: true,
-        force: true
-      },
+   
       {
         from: path.resolve(basePath, materialIconsFilePath + "/css/all.css"),
         to: path.resolve(basePath, materialIconsDestinationFilePath + "/css/all.css"),
         flatten: true,
         force: true
       },
-      {
-        from: path.resolve(basePath, materialIconsFilePath + "/font/*"),
-        to: path.resolve(basePath, materialIconsDestinationFilePath + "/font"),
-        flatten: true,
-        force: true
-      },
+     
       {
         from: path.resolve(basePath, sgIconsPath + "/css/all.css"),
         to: path.resolve(basePath, sgIconsDestinationFilePath + "/css/all.css"),
