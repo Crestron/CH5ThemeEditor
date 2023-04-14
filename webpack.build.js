@@ -6,6 +6,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const distDir = 'output';
 const basePath = path.resolve(__dirname);
 const fileList = glob.sync('themes/**/*.scss');
+// const sgThemes = glob.sync('sg-icons/scss/*.scss');
 const nodeModules = `./node_modules/`;
 const fontAwesomeCssBasePath = `${nodeModules}@fortawesome/fontawesome-free/css`;
 const materialIconsFilePath = `${nodeModules}@material-icons/font/css`;
@@ -56,7 +57,7 @@ module.exports = {
 				test: /\.(png|jpg|svg|woff|woff2|eot|ttf)$/,
 				loader: 'url-loader',
 				options: {
-					limit: 30000,
+					limit: 3000000,
 					name: 'images/[name].[ext]'
 				}
 			},
