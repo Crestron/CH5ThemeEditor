@@ -24,18 +24,18 @@ const fse = require('fs-extra');
 .sg {
 }
 
-.sg-icons-lg,.sg-media-transports-light,.sg-media-transports-dark,.sg-media-transports-accents {
+.sg.sg-icons-lg,.sg.sg-media-transports-light,.sg.sg-media-transports-dark,.sg.sg-media-transports-accents {
   height: 100px;
   width: 100px;
 }
 
-.sg-icons-sm {
+.sg.sg-icons-sm {
   height: 20px;
   width: 20px;
 }`);
       for (const prop of data.icons) {
         for (let i = 0; i < prop.themes.length; i++) {
-          let stringValue = ".sg-" + prop.themes[i];
+          let stringValue = ".sg.sg-" + prop.themes[i];
           let finalStringValue = "";
           for (let j = 0; j < prop.alias.length; j++) {
             finalStringValue += stringValue + ".sg-" + prop.alias[j] + ",";
@@ -52,9 +52,6 @@ const fse = require('fs-extra');
           outputArray.push(`
 ${finalStringValue} {
   background: url('${filePathForIcon}${prop.fileName}');
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
 }`);
         }
       }
