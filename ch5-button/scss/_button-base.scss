@@ -90,7 +90,7 @@ ch5-button {
 	}
 
 	/// Applied when backgroundImageFillType="tile"
-	.ch5-button--background-fill-type-tile {
+	.ch5-button--background-image-fill-type-tile {
 		button {
 			background-size: auto;
 		}
@@ -114,13 +114,26 @@ ch5-button {
 		}
 	}
 
+	.ch5-button--icon-url-fill-type-stretch,
+	.ch5-button--icon-url-fill-type-stretch-aspect,
+	.ch5-button--icon-url-fill-type-center,
+	.ch5-button--icon-url-fill-type-tile {
+		span {
+			z-index: 2;
+		}
+
+		.ch5-button--img {
+			z-index: 1;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
 	/// Applied when iconUrlFillType="stretch"
 	.ch5-button--icon-url-fill-type-stretch {
 		.ch5-button--img {
-			position: absolute;
 			background-size: 100% 100%;
-			width: 100%;
-			height: 100%;
 			background-position: center;
 			background-repeat: no-repeat;
 		}
@@ -129,10 +142,7 @@ ch5-button {
 	/// Applied when iconUrlFillType="stretch-aspect"
 	.ch5-button--icon-url-fill-type-stretch-aspect {
 		.ch5-button--img {
-			position: absolute;
 			background-size: contain;
-			height: 100%;
-			width: 100%;
 			background-position: center;
 			background-repeat: no-repeat;
 		}
@@ -141,11 +151,8 @@ ch5-button {
 	/// Applied when iconUrlFillType="center"
 	.ch5-button--icon-url-fill-type-center {
 		.ch5-button--img {
-			position: absolute;
 			background-size: contain;
 			background-position: center;
-			height: 100%;
-			width: 100%;
 			background-repeat: no-repeat;
 		}
 	}
@@ -153,10 +160,7 @@ ch5-button {
 	/// Applied when iconUrlFillType="tile"
 	.ch5-button--icon-url-fill-type-tile {
 		.ch5-button--img {
-			position: absolute;
 			background-size: auto;
-			width: 100%;
-			height: 100%;
 			background-position: 0;
 			background-repeat: repeat;
 		}
