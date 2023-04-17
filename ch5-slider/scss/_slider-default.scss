@@ -13,7 +13,7 @@
 ch5-slider:focus {
   outline: none;
 }
-ch5-slider:not(.ch5-slider--disabled) .noUi-handle {
+.ch5-slider:not(.ch5-slider--disabled) .noUi-handle {
   cursor: pointer;
 }
 ch5-slider {
