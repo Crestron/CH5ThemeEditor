@@ -46,12 +46,14 @@ const fse = require('fs-extra');
           if (prop.themes[i] === "icons-lg" || prop.themes[i] === "icons-sm") {
             filePathForIcon = "./../svgs/icons/";
           } else {
-            const propVal =  prop.themes[i].split("-") ;
+            const propVal = prop.themes[i].split("-");
             filePathForIcon = "./../svgs/media-transports/" + propVal[propVal.length - 1] + "/";
           }
           outputArray.push(`
 ${finalStringValue} {
   background-image: url('${filePathForIcon}${prop.fileName}');
+  height: ${prop.themes[i] === 'icons-sm' ? 20 : 100}px;
+  width: ${prop.themes[i] === 'icons-sm' ? 20 : 100}px;
 }`);
         }
       }
