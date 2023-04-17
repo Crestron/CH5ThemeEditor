@@ -129,6 +129,7 @@
         vertical-align: top;
     }
 
+    /// Applied when button in the disabled state
     &.ch5-disabled {
         pointer-events: none;
         opacity: 0.5;
@@ -308,13 +309,14 @@
             );
         }
 
+        /// Applied when up button is in the pressed state
         &.ch5-dpad-button-up--pressed {
             @include ch5-dpad-content--pressed(
                 $ch5-dpad-danger-pressed-background-color,
                 $ch5-dpad-danger-pressed-font-color
             );
         }
-
+        /// Applied when left button is in the pressed state
         &.ch5-dpad-button-left--pressed {
             @include ch5-dpad-content--pressed(
                 $ch5-dpad-danger-pressed-background-color,
@@ -322,6 +324,7 @@
             );
         }
 
+        /// Applied when right button is in the pressed state
         &.ch5-dpad-button-right--pressed {
             @include ch5-dpad-content--pressed(
                 $ch5-dpad-danger-pressed-background-color,
@@ -329,6 +332,7 @@
             );
         }
 
+        /// Applied when down button is in the pressed state
         &.ch5-dpad-button-down--pressed {
             @include ch5-dpad-content--pressed(
                 $ch5-dpad-danger-pressed-background-color,
@@ -338,6 +342,7 @@
     }
 
     &.ch5-dpad--type-danger .center {
+        /// Applied when center button is in the pressed state
         &.ch5-dpad-button-center--pressed {
             @include ch5-dpad-content--pressed(
                 $ch5-dpad-danger-pressed-background-color,
@@ -1186,6 +1191,7 @@
             width: $ch5-dpad-xsmall-dimension;
             height: $ch5-dpad-xsmall-dimension;
 
+            /// Apply to icons
             .dpad-btn-icon {
                 font-size: $ch5-dpad-icon-font-size-x-small;
             }
@@ -1358,20 +1364,5 @@
 
 /// Primary Class
 .ch5-dpad-button {
-    // DO NOT DELETE - used for Component Reference
-}
-
-/// Applied when button in the selected state
-.ch5-dpad--selected {
-    // DO NOT DELETE - used for Component Reference
-}
-
-/// Applied when button in the pressed state
-.ch5-dpad--pressed {
-    // DO NOT DELETE - used for Component Reference
-}
-
-/// Applied when button in the disabled state
-.ch5-dpad--disabled {
     // DO NOT DELETE - used for Component Reference
 }
