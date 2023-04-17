@@ -51,7 +51,7 @@ const fse = require('fs-extra');
           }
           outputArray.push(`
 ${finalStringValue} {
-  background: url('${filePathForIcon}${prop.fileName}');
+  background-image: url('${filePathForIcon}${prop.fileName}');
 }`);
         }
       }
