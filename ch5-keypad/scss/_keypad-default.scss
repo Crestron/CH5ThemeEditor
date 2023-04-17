@@ -20,6 +20,7 @@
 	height: $ch5-keypad-regular-container-height;
 	vertical-align: top;
 
+	/// Applied when button in the disabled state
 	&.ch5-disabled {
 		opacity: 0.5;
 		pointer-events: none;
@@ -64,6 +65,7 @@
 			$ch5-keypad-default-default-border-color,
 			$ch5-keypad-default-default-font-color
 		);
+		/// Applied when button in the pressed state
 		.keypad-btn-pressed {
 			@include ch5-keypad-content--pressed(
 				$ch5-keypad-default-pressed-background-color,
@@ -229,6 +231,7 @@
 	gap: 6px;
 	justify-content: center;
 
+	/// Add styles for all buttons inside the keypad
 	.keypad-btn {
 		cursor: pointer;
 		display: flex;
@@ -306,6 +309,7 @@
 
 // sizes
 .ch5-keypad {
+	/// Applied when size="x-small"
 	&.ch5-keypad--size-x-small {
 		@include ch5-keypad-fonts-sizes(
 			$ch5-keypad-x-small-container-width,
@@ -315,7 +319,7 @@
 			$ch5-keypad-x-small-font-size-minor
 		);
 	}
-
+	/// Applied when size="small"
 	&.ch5-keypad--size-small {
 		@include ch5-keypad-fonts-sizes(
 			$ch5-keypad-small-container-width,
@@ -325,7 +329,7 @@
 			$ch5-keypad-small-font-size-minor
 		);
 	}
-
+	/// Applied when size="regular"
 	&.ch5-keypad--size-regular {
 		@include ch5-keypad-fonts-sizes(
 			$ch5-keypad-regular-container-width,
@@ -335,7 +339,7 @@
 			$ch5-keypad-regular-font-size-minor
 		);
 	}
-
+	/// Applied when size="large"
 	&.ch5-keypad--size-large {
 		@include ch5-keypad-fonts-sizes(
 			$ch5-keypad-large-container-width,
@@ -345,7 +349,7 @@
 			$ch5-keypad-large-font-size-minor
 		);
 	}
-
+	/// Applied when size="x-large"
 	&.ch5-keypad--size-x-large {
 		@include ch5-keypad-fonts-sizes(
 			$ch5-keypad-x-large-container-width,
@@ -370,4 +374,19 @@
 /// Applied when shape="circle"
 .ch5-keypad--shape-circle {
 	// DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when stretch="height"
+.ch5-keypad--stretch-height {
+	// DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when stretch="width"
+.ch5-keypad--stretch-width {
+	// DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when stretch="both"
+.ch5-keypad--stretch-both {
+	// DO NOT DELETE - used for Component Reference	
 }
