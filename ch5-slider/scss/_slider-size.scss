@@ -10,12 +10,10 @@
     SIZE HORIZONTAL 
     ============================================= */
     &.ch5-slider--orientation--horizontal {
+        .ch5-title-container {
+            text-align: center;
+        }
         &.adv-slider {
-            .ch5-title-container {
-                // height: inherit;
-                // width: inherit;
-                text-align: center;
-            }
             .ch5-slider-button-container {
                 height: inherit;
                 width: inherit;
@@ -48,12 +46,10 @@
     SIZE VERTICAL 
     ============================================= */
     &.ch5-slider--orientation--vertical {
+        .ch5-title-container {
+            text-align: center;
+        }
         &.adv-slider {
-            .ch5-title-container {
-                // height: inherit;
-                // width: inherit;
-                text-align: center;
-            }
             .ch5-slider-button-container {
                 width: inherit;
                 display: flex;
