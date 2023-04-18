@@ -23,16 +23,7 @@ const fse = require('fs-extra');
       outputArray.push(`
 .sg {
 }
-
-.sg.sg-icons-lg,.sg.sg-media-transports-light,.sg.sg-media-transports-dark,.sg.sg-media-transports-accents {
-  height: 100px;
-  width: 100px;
-}
-
-.sg.sg-icons-sm {
-  height: 20px;
-  width: 20px;
-}`);
+`);
       for (const prop of data.icons) {
         for (let i = 0; i < prop.themes.length; i++) {
           let stringValue = ".sg.sg-" + prop.themes[i];
@@ -52,8 +43,8 @@ const fse = require('fs-extra');
           outputArray.push(`
 ${finalStringValue} {
   background-image: url('${filePathForIcon}${prop.fileName}');
-  height: ${prop.themes[i] === 'icons-sm' ? 20 : 100}px;
-  width: ${prop.themes[i] === 'icons-sm' ? 20 : 100}px;
+  height: ${prop.themes[i] === 'icons-sm' ? 20 : 32}px;
+  width: ${prop.themes[i] === 'icons-sm' ? 20 : 32}px;
 }`);
         }
       }
