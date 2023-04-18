@@ -84,7 +84,11 @@ ch5-slider[orientation="vertical"] {
     left: 0px;
     background-color: transparent;
   }
-
+  //  &[stretch="both"] ,&[stretch="width"] {
+  //     .ch5-slider-key-off .ch5-slider-key--on {
+  //       left: 44%;
+  //     }
+  //   }
   // ch5-slider-title-label[label] ~ ch5-slider-button[key="on"] {
   //   top: 24px;
   // }
@@ -92,6 +96,23 @@ ch5-slider[orientation="vertical"] {
 ch5-slider[orientation="vertical"] {
   .ch5-slider-title ~ .ch5-slider-key--on {
     top: 24px;
+  }
+}
+.ch5-slider-horizontal-stretch {
+  &.ch5-slider-key--off {
+    top: 50% !important;
+  }
+  &.ch5-slider-key--on {
+    top: 50% !important;
+  }
+}
+
+.ch5-slider-vertical-stretch {
+  &.ch5-slider-key--off {
+    left: 47%  !important;
+  }
+  &.ch5-slider-key--on {
+    left: 47% !important;
   }
 }
 ch5-slider {

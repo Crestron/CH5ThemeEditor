@@ -59,7 +59,7 @@ ch5-slider {
     }
     &.adv-slider {
       .noUi-target {
-        margin-top: $ch5-slider-target-size/3.6;
+        align-self: center;
       }
     }
     &.ch5-slider--tooltip--on {
@@ -78,7 +78,7 @@ ch5-slider {
     }
     &.adv-slider {
       .noUi-target {
-        margin-left: $ch5-slider-target-size/2.25;
+        align-self: center;
       }
     }
     &.ch5-slider--tooltip--on {
@@ -129,19 +129,19 @@ ch5-slider {
   /* ===============================================
     STRETCH
    ============================================= */
-  &.ch5-slider--stretch--width.ch5-slider--orientation--horizontal {
+  &.ch5-slider--stretch--width.ch5-slider--orientation--horizontal:not(.adv-slider) {
     .ch5-slider-button-container {
       width: 100% !important;
     }
   }
 
-  &.ch5-slider--stretch--height.ch5-slider--orientation--vertical {
+  &.ch5-slider--stretch--height.ch5-slider--orientation--vertical:not(.adv-slider) {
     .ch5-slider-button-container {
       height: 100% !important;
     }
   }
 
-  &.ch5-slider--stretch--height.ch5-slider--orientation--horizontal {
+  &.ch5-slider--stretch--height.ch5-slider--orientation--horizontal:not(.adv-slider) {
     .ch5-slider-button-container {
       height: 100% !important;
     }
@@ -151,7 +151,7 @@ ch5-slider {
     }
   }
 
-  &.ch5-slider--stretch--width.ch5-slider--orientation--vertical {
+  &.ch5-slider--stretch--width.ch5-slider--orientation--vertical:not(.adv-slider) {
     .ch5-slider-button-container {
       width: 100% !important;
     }
@@ -161,7 +161,7 @@ ch5-slider {
     }
   }
 
-  &.ch5-slider--stretch--both.ch5-slider--orientation--horizontal {
+  &.ch5-slider--stretch--both.ch5-slider--orientation--horizontal:not(.adv-slider) {
     .ch5-slider-button-container {
       width: 100% !important;
       height: 100% !important;
@@ -173,15 +173,31 @@ ch5-slider {
     }
   }
 
-  &.ch5-slider--stretch--both.ch5-slider--orientation--vertical {
+  &.ch5-slider--stretch--both.ch5-slider--orientation--vertical:not(.adv-slider) {
     .ch5-slider-button-container {
-    height: 100% !important;
-     width: 100% !important;
-  }
+      height: 100% !important;
+      width: 100% !important;
+    }
     .noUi-target {
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+}
+
+.adv-slider.ch5-slider--stretch--both,
+.adv-slider.ch5-slider--stretch--height,
+.adv-slider.ch5-slider--stretch--width {
+  .slider-off-button,
+  .slider-on-button {
+    align-self: center;
+  }
+}
+
+.ch5-slider--orientation--vertical {
+  &.adv-slider.ch5-slider--stretch--both,
+  &.adv-slider.ch5-slider--stretch--width {
+    max-width: inherit !important;
   }
 }
 
