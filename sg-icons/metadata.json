@@ -1,0 +1,4165 @@
+{
+	"themeDef": [
+		{
+			"name": "Icons Lg",
+			"value": "icons-lg"
+		},
+		{
+			"name": "Icons Sm",
+			"value": "icons-sm"
+		},
+		{
+			"name": "Media Transports Light",
+			"value": "media-transports-light"
+		},
+		{
+			"name": "Media Transports Dark",
+			"value": "media-transports-dark"
+		},
+		{
+			"name": "Media Transports Accents",
+			"value": "media-transports-accents"
+		}
+	],
+	"icons": [
+		{
+			"label": "AM-FM",
+			"alias": [
+				"0",
+				"am-fm"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "am-fm.svg"
+		},
+		{
+			"label": "CD",
+			"alias": [
+				"1",
+				"cd"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "cd.svg"
+		},
+		{
+			"label": "Climate",
+			"alias": [
+				"2",
+				"climate"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "climate.svg"
+		},
+		{
+			"label": "Display Alt",
+			"alias": [
+				"3",
+				"display-alt"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "display-alt.svg"
+		},
+		{
+			"label": "Display",
+			"alias": [
+				"4",
+				"display"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "display.svg"
+		},
+		{
+			"label": "DVR",
+			"alias": [
+				"5",
+				"dvr"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "dvr.svg"
+		},
+		{
+			"label": "Energy Management",
+			"alias": [
+				"6",
+				"energy-management"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "energy-management.svg"
+		},
+		{
+			"label": "Favorites",
+			"alias": [
+				"7",
+				"favorites"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "favorites.svg"
+		},
+		{
+			"label": "Film Reel",
+			"alias": [
+				"8",
+				"film-reel"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "film-reel.svg"
+		},
+		{
+			"label": "Home",
+			"alias": [
+				"9",
+				"home"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "home.svg"
+		},
+		{
+			"label": "Internet Radio",
+			"alias": [
+				"10",
+				"internet-radio"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "internet-radio.svg"
+		},
+		{
+			"label": "iPod",
+			"alias": [
+				"11",
+				"ipod"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "ipod.svg"
+		},
+		{
+			"label": "iServer",
+			"alias": [
+				"12",
+				"iserver"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "iserver.svg"
+		},
+		{
+			"label": "Lights",
+			"alias": [
+				"13",
+				"lights"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "lights.svg"
+		},
+		{
+			"label": "Music Note",
+			"alias": [
+				"14",
+				"music-note"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "music-note.svg"
+		},
+		{
+			"label": "News",
+			"alias": [
+				"15",
+				"news"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "news.svg"
+		},
+		{
+			"label": "Pandora",
+			"alias": [
+				"16",
+				"pandora"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "pandora.svg"
+		},
+		{
+			"label": "Power",
+			"alias": [
+				"17",
+				"power"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "power.svg"
+		},
+		{
+			"label": "Satellite Alt",
+			"alias": [
+				"18",
+				"satellite-alt"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "satellite-alt.svg"
+		},
+		{
+			"label": "Satellite",
+			"alias": [
+				"19",
+				"satellite"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "satellite.svg"
+		},
+		{
+			"label": "Sec-Cam",
+			"alias": [
+				"20",
+				"sec-cam"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "sec-cam.svg"
+		},
+		{
+			"label": "Security",
+			"alias": [
+				"21",
+				"security"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "security.svg"
+		},
+		{
+			"label": "Shades",
+			"alias": [
+				"22",
+				"shades"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "shades.svg"
+		},
+		{
+			"label": "User Group",
+			"alias": [
+				"23",
+				"user-group"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "user-group.svg"
+		},
+		{
+			"label": "Video Conferencing",
+			"alias": [
+				"24",
+				"video-conferencing"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "video-conferencing.svg"
+		},
+		{
+			"label": "Video Switcher",
+			"alias": [
+				"25",
+				"video-switcher"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "video-switcher.svg"
+		},
+		{
+			"label": "Wand",
+			"alias": [
+				"26",
+				"wand"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "wand.svg"
+		},
+		{
+			"label": "Weather",
+			"alias": [
+				"27",
+				"weather"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "weather.svg"
+		},
+		{
+			"label": "Environment",
+			"alias": [
+				"28",
+				"environment"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "environment.svg"
+		},
+		{
+			"label": "Speaker",
+			"alias": [
+				"29",
+				"speaker"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "speaker.svg"
+		},
+		{
+			"label": "Mic",
+			"alias": [
+				"30",
+				"mic"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "mic.svg"
+		},
+		{
+			"label": "Projector",
+			"alias": [
+				"31",
+				"projector"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "projector.svg"
+		},
+		{
+			"label": "Screen",
+			"alias": [
+				"32",
+				"screen"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "screen.svg"
+		},
+		{
+			"label": "Gear",
+			"alias": [
+				"33",
+				"gear"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "gear.svg"
+		},
+		{
+			"label": "Sec-Cam Alt",
+			"alias": [
+				"34",
+				"sec-cam-alt"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "sec-cam-alt.svg"
+		},
+		{
+			"label": "Document Camera",
+			"alias": [
+				"35",
+				"document-camera"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "document-camera.svg"
+		},
+		{
+			"label": "Backgrounds",
+			"alias": [
+				"36",
+				"backgrounds"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "backgrounds.svg"
+		},
+		{
+			"label": "Gamepad",
+			"alias": [
+				"37",
+				"gamepad"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "gamepad.svg"
+		},
+		{
+			"label": "iMac",
+			"alias": [
+				"38",
+				"imac"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "imac.svg"
+		},
+		{
+			"label": "Laptop Alt",
+			"alias": [
+				"39",
+				"laptop-alt"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "laptop-alt.svg"
+		},
+		{
+			"label": "Laptop",
+			"alias": [
+				"40",
+				"laptop"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "laptop.svg"
+		},
+		{
+			"label": "MacBook Pro",
+			"alias": [
+				"41",
+				"macbook-pro"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "macbook-pro.svg"
+		},
+		{
+			"label": "Music Note Alt",
+			"alias": [
+				"42",
+				"music-note-alt"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "music-note-alt.svg"
+		},
+		{
+			"label": "Phone Alt",
+			"alias": [
+				"43",
+				"phone-alt"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "phone-alt.svg"
+		},
+		{
+			"label": "Phone",
+			"alias": [
+				"44",
+				"phone"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "phone.svg"
+		},
+		{
+			"label": "Pool",
+			"alias": [
+				"45",
+				"pool"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "pool.svg"
+		},
+		{
+			"label": "Airplay",
+			"alias": [
+				"46",
+				"airplay"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "airplay.svg"
+		},
+		{
+			"label": "Alarm Clock",
+			"alias": [
+				"47",
+				"alarm-clock"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "alarm-clock.svg"
+		},
+		{
+			"label": "AppleTV",
+			"alias": [
+				"48",
+				"appletv"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "appletv.svg"
+		},
+		{
+			"label": "AUX Plate",
+			"alias": [
+				"49",
+				"aux-plate"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "aux-plate.svg"
+		},
+		{
+			"label": "Document Camera Alt",
+			"alias": [
+				"50",
+				"document-camera-alt"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "document-camera-alt.svg"
+		},
+		{
+			"label": "Door Station",
+			"alias": [
+				"51",
+				"door-station"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "door-station.svg"
+		},
+		{
+			"label": "DVR Alt",
+			"alias": [
+				"52",
+				"dvr-alt"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "dvr-alt.svg"
+		},
+		{
+			"label": "Front Door Alt",
+			"alias": [
+				"53",
+				"front-door-alt"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "front-door-alt.svg"
+		},
+		{
+			"label": "Front Door",
+			"alias": [
+				"54",
+				"front-door"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "front-door.svg"
+		},
+		{
+			"label": "Jukebox",
+			"alias": [
+				"55",
+				"jukebox"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "jukebox.svg"
+		},
+		{
+			"label": "Piano",
+			"alias": [
+				"56",
+				"piano"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "piano.svg"
+		},
+		{
+			"label": "Playstation 3",
+			"alias": [
+				"57",
+				"playstation-3"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "playstation-3.svg"
+		},
+		{
+			"label": "Playstation Logo",
+			"alias": [
+				"58",
+				"playstation-logo"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "playstation-logo.svg"
+		},
+		{
+			"label": "Room Door",
+			"alias": [
+				"59",
+				"room-door"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "room-door.svg"
+		},
+		{
+			"label": "SmarTV",
+			"alias": [
+				"60",
+				"smartv"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "smartv.svg"
+		},
+		{
+			"label": "Sprinkler",
+			"alias": [
+				"61",
+				"sprinkler"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "sprinkler.svg"
+		},
+		{
+			"label": "Tablet",
+			"alias": [
+				"62",
+				"tablet"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "tablet.svg"
+		},
+		{
+			"label": "TV",
+			"alias": [
+				"63",
+				"tv"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "tv.svg"
+		},
+		{
+			"label": "VCR",
+			"alias": [
+				"64",
+				"vcr"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "vcr.svg"
+		},
+		{
+			"label": "Video Conferencing Alt",
+			"alias": [
+				"65",
+				"video-conferencing-alt"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "video-conferencing-alt.svg"
+		},
+		{
+			"label": "Wii Logo",
+			"alias": [
+				"66",
+				"wii-logo"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "wii-logo.svg"
+		},
+		{
+			"label": "Wii-U Logo",
+			"alias": [
+				"67",
+				"wii-u-logo"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "wii-u-logo.svg"
+		},
+		{
+			"label": "Wii-U",
+			"alias": [
+				"68",
+				"wii-u"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "wii-u.svg"
+		},
+		{
+			"label": "Wii",
+			"alias": [
+				"69",
+				"wii"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "wii.svg"
+		},
+		{
+			"label": "Xbox 360",
+			"alias": [
+				"70",
+				"xbox-360"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "xbox-360.svg"
+		},
+		{
+			"label": "Xbox Logo",
+			"alias": [
+				"71",
+				"xbox-logo"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "xbox-logo.svg"
+		},
+		{
+			"label": "Amenities",
+			"alias": [
+				"72",
+				"amenities"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "amenities.svg"
+		},
+		{
+			"label": "DirecTV",
+			"alias": [
+				"73",
+				"directv"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "directv.svg"
+		},
+		{
+			"label": "Dish Network",
+			"alias": [
+				"74",
+				"dish-network"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "dish-network.svg"
+		},
+		{
+			"label": "Drapes",
+			"alias": [
+				"75",
+				"drapes"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "drapes.svg"
+		},
+		{
+			"label": "Garage",
+			"alias": [
+				"76",
+				"garage"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "garage.svg"
+		},
+		{
+			"label": "Macros",
+			"alias": [
+				"77",
+				"macros"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "macros.svg"
+		},
+		{
+			"label": "Scheduler",
+			"alias": [
+				"78",
+				"scheduler"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "scheduler.svg"
+		},
+		{
+			"label": "Sirius-XM Satellite Radio",
+			"alias": [
+				"79",
+				"sirius-xm-satellite-radio"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "sirius-xm-satellite-radio.svg"
+		},
+		{
+			"label": "TiVo",
+			"alias": [
+				"80",
+				"tivo"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "tivo.svg"
+		},
+		{
+			"label": "Blu-ray",
+			"alias": [
+				"81",
+				"blu-ray"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "blu-ray.svg"
+		},
+		{
+			"label": "DVD",
+			"alias": [
+				"82",
+				"dvd"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "dvd.svg"
+		},
+		{
+			"label": "Record Player",
+			"alias": [
+				"83",
+				"record-player"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "record-player.svg"
+		},
+		{
+			"label": "Vudu",
+			"alias": [
+				"84",
+				"vudu"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "vudu.svg"
+		},
+		{
+			"label": "Home Alt",
+			"alias": [
+				"85",
+				"home-alt"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "home-alt.svg"
+		},
+		{
+			"label": "Sirius Satellite Radio",
+			"alias": [
+				"86",
+				"sirius-satellite-radio"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "sirius-satellite-radio.svg"
+		},
+		{
+			"label": "Rhapsody",
+			"alias": [
+				"87",
+				"rhapsody"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "rhapsody.svg"
+		},
+		{
+			"label": "Spotify",
+			"alias": [
+				"88",
+				"spotify"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "spotify.svg"
+		},
+		{
+			"label": "Tunein",
+			"alias": [
+				"89",
+				"tunein"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "tunein.svg"
+		},
+		{
+			"label": "XM Satellite Radio",
+			"alias": [
+				"90",
+				"xm-satellite-radio"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "xm-satellite-radio.svg"
+		},
+		{
+			"label": "LastFM",
+			"alias": [
+				"91",
+				"lastfm"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "lastfm.svg"
+		},
+		{
+			"label": "You Tube",
+			"alias": [
+				"92",
+				"you-tube"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "you-tube.svg"
+		},
+		{
+			"label": "Kaleidescape",
+			"alias": [
+				"93",
+				"kaleidescape"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "kaleidescape.svg"
+		},
+		{
+			"label": "Hulu",
+			"alias": [
+				"94",
+				"hulu"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "hulu.svg"
+		},
+		{
+			"label": "Netflix",
+			"alias": [
+				"95",
+				"netflix"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "netflix.svg"
+		},
+		{
+			"label": "Clapper",
+			"alias": [
+				"96",
+				"clapper"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "clapper.svg"
+		},
+		{
+			"label": "Shield",
+			"alias": [
+				"97",
+				"shield"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "shield.svg"
+		},
+		{
+			"label": "Web",
+			"alias": [
+				"98",
+				"web"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "web.svg"
+		},
+		{
+			"label": "PC",
+			"alias": [
+				"99",
+				"pc"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "pc.svg"
+		},
+		{
+			"label": "Amazon",
+			"alias": [
+				"100",
+				"amazon"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "amazon.svg"
+		},
+		{
+			"label": "Chrome",
+			"alias": [
+				"101",
+				"chrome"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "chrome.svg"
+		},
+		{
+			"label": "Blank",
+			"alias": [
+				"102",
+				"blank"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "blank.svg"
+		},
+		{
+			"label": "Fireplace",
+			"alias": [
+				"103",
+				"fireplace"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "fireplace.svg"
+		},
+		{
+			"label": "Sonos",
+			"alias": [
+				"104",
+				"sonos"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "sonos.svg"
+		},
+		{
+			"label": "Roku",
+			"alias": [
+				"105",
+				"roku"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "roku.svg"
+		},
+		{
+			"label": "AirMedia",
+			"alias": [
+				"106",
+				"airmedia"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "airmedia.svg"
+		},
+		{
+			"label": "Napster",
+			"alias": [
+				"107",
+				"napster"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "napster.svg"
+		},
+		{
+			"label": "Murfie",
+			"alias": [
+				"108",
+				"murfie"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "murfie.svg"
+		},
+		{
+			"label": "iHeart Radio",
+			"alias": [
+				"109",
+				"iheart-radio"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "iheart-radio.svg"
+		},
+		{
+			"label": "Tidal",
+			"alias": [
+				"110",
+				"tidal"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "tidal.svg"
+		},
+		{
+			"label": "Slacker Radio",
+			"alias": [
+				"111",
+				"slacker-radio"
+			],
+			"themes": [
+				"icons-sm",
+				"icons-lg"
+			],
+			"fileName": "slacker-radio.svg"
+		},
+		{
+			"label": "Address Book",
+			"alias": [
+				"49",
+				"address-book"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "address-book.svg"
+		},
+		{
+			"label": "AirMedia",
+			"alias": [
+				"205",
+				"airmedia"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "airmedia.svg"
+		},
+		{
+			"label": "Alarm",
+			"alias": [
+				"50",
+				"alarm"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "alarm.svg"
+		},
+		{
+			"label": "Alert",
+			"alias": [
+				"0",
+				"alert"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "alert.svg"
+		},
+		{
+			"label": "Android",
+			"alias": [
+				"110",
+				"android"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "android.svg"
+		},
+		{
+			"label": "Apple",
+			"alias": [
+				"111",
+				"apple"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "apple.svg"
+		},
+		{
+			"label": "Asterisk",
+			"alias": [
+				"206",
+				"asterisk"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "asterisk.svg"
+		},
+		{
+			"label": "Audio Note",
+			"alias": [
+				"1",
+				"audio-note"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "audio-note.svg"
+		},
+		{
+			"label": "Ban",
+			"alias": [
+				"165",
+				"ban"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "ban.svg"
+		},
+		{
+			"label": "Battery Charging",
+			"alias": [
+				"113",
+				"battery-charging"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "battery-charging.svg"
+		},
+		{
+			"label": "Battery Empty",
+			"alias": [
+				"114",
+				"battery-empty"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "battery-empty.svg"
+		},
+		{
+			"label": "Battery Full",
+			"alias": [
+				"115",
+				"battery-full"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "battery-full.svg"
+		},
+		{
+			"label": "Battery Low",
+			"alias": [
+				"112",
+				"battery-low"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "battery-low.svg"
+		},
+		{
+			"label": "Blinds Closed",
+			"alias": [
+				"188",
+				"blinds-closed"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "blinds-closed.svg"
+		},
+		{
+			"label": "Blinds",
+			"alias": [
+				"189",
+				"blinds"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "blinds.svg"
+		},
+		{
+			"label": "Blu-ray",
+			"alias": [
+				"2",
+				"blu-ray"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "blu-ray.svg"
+		},
+		{
+			"label": "Bluetooth",
+			"alias": [
+				"116",
+				"bluetooth"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "bluetooth.svg"
+		},
+		{
+			"label": "Bolt",
+			"alias": [
+				"3",
+				"bolt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "bolt.svg"
+		},
+		{
+			"label": "Brightness Max",
+			"alias": [
+				"174",
+				"brightness-max"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "brightness-max.svg"
+		},
+		{
+			"label": "Brightness Medium",
+			"alias": [
+				"173",
+				"brightness-medium"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "brightness-medium.svg"
+		},
+		{
+			"label": "Brightness",
+			"alias": [
+				"117",
+				"brightness"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "brightness.svg"
+		},
+		{
+			"label": "Broken Route",
+			"alias": [
+				"199",
+				"broken-route"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "broken-route.svg"
+		},
+		{
+			"label": "Brush",
+			"alias": [
+				"106",
+				"brush"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "brush.svg"
+		},
+		{
+			"label": "Calendar",
+			"alias": [
+				"51",
+				"calendar"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "calendar.svg"
+		},
+		{
+			"label": "Camera",
+			"alias": [
+				"99",
+				"camera"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "camera.svg"
+		},
+		{
+			"label": "Cart",
+			"alias": [
+				"118",
+				"cart"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "cart.svg"
+		},
+		{
+			"label": "CD",
+			"alias": [
+				"4",
+				"cd"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "cd.svg"
+		},
+		{
+			"label": "Check",
+			"alias": [
+				"5",
+				"check"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "check.svg"
+		},
+		{
+			"label": "Checkbox Checked",
+			"alias": [
+				"107",
+				"checkbox-checked"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "checkbox-checked.svg"
+		},
+		{
+			"label": "Checkbox Off",
+			"alias": [
+				"108",
+				"checkbox-off"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "checkbox-off.svg"
+		},
+		{
+			"label": "Chrome",
+			"alias": [
+				"203",
+				"chrome"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "chrome.svg"
+		},
+		{
+			"label": "Climate Scheduler",
+			"alias": [
+				"185",
+				"climate-scheduler"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "climate-scheduler.svg"
+		},
+		{
+			"label": "Climate",
+			"alias": [
+				"6",
+				"climate"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "climate.svg"
+		},
+		{
+			"label": "Clock",
+			"alias": [
+				"52",
+				"clock"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "clock.svg"
+		},
+		{
+			"label": "Comment Check",
+			"alias": [
+				"149",
+				"comment-check"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "comment-check.svg"
+		},
+		{
+			"label": "Comment",
+			"alias": [
+				"150",
+				"comment"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "comment.svg"
+		},
+		{
+			"label": "Connector Plate",
+			"alias": [
+				"119",
+				"connector-plate"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "connector-plate.svg"
+		},
+		{
+			"label": "Connector",
+			"alias": [
+				"120",
+				"connector"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "connector.svg"
+		},
+		{
+			"label": "Contrast",
+			"alias": [
+				"121",
+				"contrast"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "contrast.svg"
+		},
+		{
+			"label": "Dashboard",
+			"alias": [
+				"122",
+				"dashboard"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "dashboard.svg"
+		},
+		{
+			"label": "Delete Alt",
+			"alias": [
+				"123",
+				"delete-alt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "delete-alt.svg"
+		},
+		{
+			"label": "Delete",
+			"alias": [
+				"7",
+				"delete"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "delete.svg"
+		},
+		{
+			"label": "Disk",
+			"alias": [
+				"164",
+				"disk"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "disk.svg"
+		},
+		{
+			"label": "DND On",
+			"alias": [
+				"176",
+				"dnd-on"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "dnd-on.svg"
+		},
+		{
+			"label": "DND",
+			"alias": [
+				"167",
+				"dnd"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "dnd.svg"
+		},
+		{
+			"label": "Door",
+			"alias": [
+				"68",
+				"door"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "door.svg"
+		},
+		{
+			"label": "Down Alt",
+			"alias": [
+				"8",
+				"down-alt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "down-alt.svg"
+		},
+		{
+			"label": "Down Right",
+			"alias": [
+				"197",
+				"down-right"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "down-right.svg"
+		},
+		{
+			"label": "Down",
+			"alias": [
+				"9",
+				"down"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "down.svg"
+		},
+		{
+			"label": "Download Cloud",
+			"alias": [
+				"100",
+				"download-cloud"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "download-cloud.svg"
+		},
+		{
+			"label": "Download",
+			"alias": [
+				"124",
+				"download"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "download.svg"
+		},
+		{
+			"label": "Drapes Closed",
+			"alias": [
+				"190",
+				"drapes-closed"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "drapes-closed.svg"
+		},
+		{
+			"label": "Drapes Open",
+			"alias": [
+				"191",
+				"drapes-open"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "drapes-open.svg"
+		},
+		{
+			"label": "Drapes",
+			"alias": [
+				"69",
+				"drapes"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "drapes.svg"
+		},
+		{
+			"label": "DVD",
+			"alias": [
+				"104",
+				"dvd"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "dvd.svg"
+		},
+		{
+			"label": "Eject",
+			"alias": [
+				"10",
+				"eject"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "eject.svg"
+		},
+		{
+			"label": "Enter",
+			"alias": [
+				"11",
+				"enter"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "enter.svg"
+		},
+		{
+			"label": "Eraser",
+			"alias": [
+				"168",
+				"eraser"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "eraser.svg"
+		},
+		{
+			"label": "Eye",
+			"alias": [
+				"53",
+				"eye"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "eye.svg"
+		},
+		{
+			"label": "Film",
+			"alias": [
+				"12",
+				"film"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "film.svg"
+		},
+		{
+			"label": "Fire",
+			"alias": [
+				"70",
+				"fire"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "fire.svg"
+		},
+		{
+			"label": "Fireplace",
+			"alias": [
+				"182",
+				"fireplace"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "fireplace.svg"
+		},
+		{
+			"label": "Folder",
+			"alias": [
+				"175",
+				"folder"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "folder.svg"
+		},
+		{
+			"label": "Fwd",
+			"alias": [
+				"13",
+				"fwd"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "fwd.svg"
+		},
+		{
+			"label": "Game",
+			"alias": [
+				"54",
+				"game"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "game.svg"
+		},
+		{
+			"label": "Garage",
+			"alias": [
+				"125",
+				"garage"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "garage.svg"
+		},
+		{
+			"label": "Gear",
+			"alias": [
+				"55",
+				"gear"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "gear.svg"
+		},
+		{
+			"label": "Globe",
+			"alias": [
+				"56",
+				"globe"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "globe.svg"
+		},
+		{
+			"label": "Graph Alt",
+			"alias": [
+				"126",
+				"graph-alt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "graph-alt.svg"
+		},
+		{
+			"label": "Graph",
+			"alias": [
+				"127",
+				"graph"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "graph.svg"
+		},
+		{
+			"label": "Grid",
+			"alias": [
+				"128",
+				"grid"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "grid.svg"
+		},
+		{
+			"label": "Group",
+			"alias": [
+				"192",
+				"group"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "group.svg"
+		},
+		{
+			"label": "Guide List Alt",
+			"alias": [
+				"200",
+				"guide-list-alt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "guide-list-alt.svg"
+		},
+		{
+			"label": "Guide",
+			"alias": [
+				"129",
+				"guide"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "guide.svg"
+		},
+		{
+			"label": "HD",
+			"alias": [
+				"130",
+				"hd"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "hd.svg"
+		},
+		{
+			"label": "Heart",
+			"alias": [
+				"166",
+				"heart"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "heart.svg"
+		},
+		{
+			"label": "Help",
+			"alias": [
+				"57",
+				"help"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "help.svg"
+		},
+		{
+			"label": "Home",
+			"alias": [
+				"14",
+				"home"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "home.svg"
+		},
+		{
+			"label": "Hot Tub",
+			"alias": [
+				"131",
+				"hot-tub"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "hot-tub.svg"
+		},
+		{
+			"label": "Image",
+			"alias": [
+				"58",
+				"image"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "image.svg"
+		},
+		{
+			"label": "Info",
+			"alias": [
+				"59",
+				"info"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "info.svg"
+		},
+		{
+			"label": "iPad",
+			"alias": [
+				"71",
+				"ipad"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "ipad.svg"
+		},
+		{
+			"label": "iPhone-iPod Touch",
+			"alias": [
+				"72",
+				"iphone-ipod-touch"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "iphone-ipod-touch.svg"
+		},
+		{
+			"label": "iPod",
+			"alias": [
+				"73",
+				"ipod"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "ipod.svg"
+		},
+		{
+			"label": "Keyboard",
+			"alias": [
+				"132",
+				"keyboard"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "keyboard.svg"
+		},
+		{
+			"label": "Keypad",
+			"alias": [
+				"60",
+				"keypad"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "keypad.svg"
+		},
+		{
+			"label": "Laptop",
+			"alias": [
+				"103",
+				"laptop"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "laptop.svg"
+		},
+		{
+			"label": "LastFM",
+			"alias": [
+				"152",
+				"lastfm"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "lastfm.svg"
+		},
+		{
+			"label": "Left Alt",
+			"alias": [
+				"15",
+				"left-alt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "left-alt.svg"
+		},
+		{
+			"label": "Left",
+			"alias": [
+				"16",
+				"left"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "left.svg"
+		},
+		{
+			"label": "Lights Off",
+			"alias": [
+				"133",
+				"lights-off"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "lights-off.svg"
+		},
+		{
+			"label": "Lights",
+			"alias": [
+				"17",
+				"lights"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "lights.svg"
+		},
+		{
+			"label": "List",
+			"alias": [
+				"109",
+				"list"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "list.svg"
+		},
+		{
+			"label": "Live",
+			"alias": [
+				"18",
+				"live"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "live.svg"
+		},
+		{
+			"label": "Location Minus",
+			"alias": [
+				"153",
+				"location-minus"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "location-minus.svg"
+		},
+		{
+			"label": "Location Plus",
+			"alias": [
+				"154",
+				"location-plus"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "location-plus.svg"
+		},
+		{
+			"label": "Location",
+			"alias": [
+				"155",
+				"location"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "location.svg"
+		},
+		{
+			"label": "Lync",
+			"alias": [
+				"134",
+				"lync"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "lync.svg"
+		},
+		{
+			"label": "Magnifying Glass",
+			"alias": [
+				"61",
+				"magnifying-glass"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "magnifying-glass.svg"
+		},
+		{
+			"label": "Media Server",
+			"alias": [
+				"135",
+				"media-server"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "media-server.svg"
+		},
+		{
+			"label": "Mic Mute",
+			"alias": [
+				"74",
+				"mic-mute"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "mic-mute.svg"
+		},
+		{
+			"label": "Mic Muted",
+			"alias": [
+				"170",
+				"mic-muted"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "mic-muted.svg"
+		},
+		{
+			"label": "Mic",
+			"alias": [
+				"62",
+				"mic"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "mic.svg"
+		},
+		{
+			"label": "Minus",
+			"alias": [
+				"19",
+				"minus"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "minus.svg"
+		},
+		{
+			"label": "More",
+			"alias": [
+				"183",
+				"more"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "more.svg"
+		},
+		{
+			"label": "Mouse",
+			"alias": [
+				"136",
+				"mouse"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "mouse.svg"
+		},
+		{
+			"label": "Network Wi-Fi Low",
+			"alias": [
+				"179",
+				"network-wi-fi-low"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "network-wi-fi-low.svg"
+		},
+		{
+			"label": "Network Wi-Fi Max",
+			"alias": [
+				"181",
+				"network-wi-fi-max"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "network-wi-fi-max.svg"
+		},
+		{
+			"label": "Network Wi-Fi Med",
+			"alias": [
+				"180",
+				"network-wi-fi-med"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "network-wi-fi-med.svg"
+		},
+		{
+			"label": "Network Wi-Fi Off",
+			"alias": [
+				"178",
+				"network-wi-fi-off"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "network-wi-fi-off.svg"
+		},
+		{
+			"label": "Next Page",
+			"alias": [
+				"20",
+				"next-page"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "next-page.svg"
+		},
+		{
+			"label": "Next",
+			"alias": [
+				"21",
+				"next"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "next.svg"
+		},
+		{
+			"label": "Options Off",
+			"alias": [
+				"172",
+				"options-off"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "options-off.svg"
+		},
+		{
+			"label": "Options On",
+			"alias": [
+				"177",
+				"options-on"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "options-on.svg"
+		},
+		{
+			"label": "Outlet",
+			"alias": [
+				"137",
+				"outlet"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "outlet.svg"
+		},
+		{
+			"label": "Padlock Closed",
+			"alias": [
+				"75",
+				"padlock-closed"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "padlock-closed.svg"
+		},
+		{
+			"label": "Padlock Open",
+			"alias": [
+				"76",
+				"padlock-open"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "padlock-open.svg"
+		},
+		{
+			"label": "Pandora",
+			"alias": [
+				"156",
+				"pandora"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "pandora.svg"
+		},
+		{
+			"label": "Pause",
+			"alias": [
+				"22",
+				"pause"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "pause.svg"
+		},
+		{
+			"label": "Pen",
+			"alias": [
+				"105",
+				"pen"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "pen.svg"
+		},
+		{
+			"label": "Phone Down",
+			"alias": [
+				"63",
+				"phone-down"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "phone-down.svg"
+		},
+		{
+			"label": "Phone",
+			"alias": [
+				"23",
+				"phone"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "phone.svg"
+		},
+		{
+			"label": "Play All",
+			"alias": [
+				"93",
+				"play-all"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "play-all.svg"
+		},
+		{
+			"label": "Play Alt",
+			"alias": [
+				"94",
+				"play-alt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "play-alt.svg"
+		},
+		{
+			"label": "Play Library",
+			"alias": [
+				"95",
+				"play-library"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "play-library.svg"
+		},
+		{
+			"label": "Play List",
+			"alias": [
+				"96",
+				"play-list"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "play-list.svg"
+		},
+		{
+			"label": "Play-Pause",
+			"alias": [
+				"25",
+				"play-pause"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "play-pause.svg"
+		},
+		{
+			"label": "Play",
+			"alias": [
+				"24",
+				"play"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "play.svg"
+		},
+		{
+			"label": "Playlist",
+			"alias": [
+				"64",
+				"playlist"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "playlist.svg"
+		},
+		{
+			"label": "Plus",
+			"alias": [
+				"26",
+				"plus"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "plus.svg"
+		},
+		{
+			"label": "Pool",
+			"alias": [
+				"77",
+				"pool"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "pool.svg"
+		},
+		{
+			"label": "Power",
+			"alias": [
+				"27",
+				"power"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "power.svg"
+		},
+		{
+			"label": "Prev Page",
+			"alias": [
+				"28",
+				"prev-page"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "prev-page.svg"
+		},
+		{
+			"label": "Previous Alt",
+			"alias": [
+				"207",
+				"previous-alt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "previous-alt.svg"
+		},
+		{
+			"label": "Previous",
+			"alias": [
+				"29",
+				"previous"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "previous.svg"
+		},
+		{
+			"label": "Projector",
+			"alias": [
+				"98",
+				"projector"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "projector.svg"
+		},
+		{
+			"label": "Radio Signal",
+			"alias": [
+				"101",
+				"radio-signal"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "radio-signal.svg"
+		},
+		{
+			"label": "Rec",
+			"alias": [
+				"30",
+				"rec"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "rec.svg"
+		},
+		{
+			"label": "Repeat Item",
+			"alias": [
+				"86",
+				"repeat-item"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "repeat-item.svg"
+		},
+		{
+			"label": "Repeat Off",
+			"alias": [
+				"87",
+				"repeat-off"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "repeat-off.svg"
+		},
+		{
+			"label": "Repeat",
+			"alias": [
+				"31",
+				"repeat"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "repeat.svg"
+		},
+		{
+			"label": "Replay",
+			"alias": [
+				"32",
+				"replay"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "replay.svg"
+		},
+		{
+			"label": "Rew",
+			"alias": [
+				"33",
+				"rew"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "rew.svg"
+		},
+		{
+			"label": "Rhapsody",
+			"alias": [
+				"157",
+				"rhapsody"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "rhapsody.svg"
+		},
+		{
+			"label": "Right Alt",
+			"alias": [
+				"34",
+				"right-alt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "right-alt.svg"
+		},
+		{
+			"label": "Right",
+			"alias": [
+				"35",
+				"right"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "right.svg"
+		},
+		{
+			"label": "Roku",
+			"alias": [
+				"202",
+				"roku"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "roku.svg"
+		},
+		{
+			"label": "RSS",
+			"alias": [
+				"36",
+				"rss"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "rss.svg"
+		},
+		{
+			"label": "Satellite",
+			"alias": [
+				"102",
+				"satellite"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "satellite.svg"
+		},
+		{
+			"label": "Scene",
+			"alias": [
+				"186",
+				"scene"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "scene.svg"
+		},
+		{
+			"label": "Settings Alt",
+			"alias": [
+				"196",
+				"settings-alt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "settings-alt.svg"
+		},
+		{
+			"label": "Settings",
+			"alias": [
+				"78",
+				"settings"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "settings.svg"
+		},
+		{
+			"label": "Shades Closed",
+			"alias": [
+				"193",
+				"shades-closed"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "shades-closed.svg"
+		},
+		{
+			"label": "Shades",
+			"alias": [
+				"79",
+				"shades"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "shades.svg"
+		},
+		{
+			"label": "Share",
+			"alias": [
+				"80",
+				"share"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "share.svg"
+		},
+		{
+			"label": "Shield",
+			"alias": [
+				"81",
+				"shield"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "shield.svg"
+		},
+		{
+			"label": "Shuffle Item",
+			"alias": [
+				"88",
+				"shuffle-item"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "shuffle-item.svg"
+		},
+		{
+			"label": "Shuffle Off",
+			"alias": [
+				"89",
+				"shuffle-off"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "shuffle-off.svg"
+		},
+		{
+			"label": "Shuffle",
+			"alias": [
+				"37",
+				"shuffle"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "shuffle.svg"
+		},
+		{
+			"label": "Sirius",
+			"alias": [
+				"158",
+				"sirius"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "sirius.svg"
+		},
+		{
+			"label": "SiriusXM",
+			"alias": [
+				"159",
+				"siriusxm"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "siriusxm.svg"
+		},
+		{
+			"label": "Skip Ahead",
+			"alias": [
+				"195",
+				"skip-ahead"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "skip-ahead.svg"
+		},
+		{
+			"label": "Skip Back",
+			"alias": [
+				"194",
+				"skip-back"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "skip-back.svg"
+		},
+		{
+			"label": "Sleep",
+			"alias": [
+				"204",
+				"sleep"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "sleep.svg"
+		},
+		{
+			"label": "Slow",
+			"alias": [
+				"82",
+				"slow"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "slow.svg"
+		},
+		{
+			"label": "Snow Flake",
+			"alias": [
+				"65",
+				"snow-flake"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "snow-flake.svg"
+		},
+		{
+			"label": "Song Add",
+			"alias": [
+				"90",
+				"song-add"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "song-add.svg"
+		},
+		{
+			"label": "Sonos",
+			"alias": [
+				"184",
+				"sonos"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "sonos.svg"
+		},
+		{
+			"label": "Spotify",
+			"alias": [
+				"160",
+				"spotify"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "spotify.svg"
+		},
+		{
+			"label": "Star",
+			"alias": [
+				"91",
+				"star"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "star.svg"
+		},
+		{
+			"label": "Stop Source",
+			"alias": [
+				"187",
+				"stop-source"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "stop-source.svg"
+		},
+		{
+			"label": "Stop",
+			"alias": [
+				"38",
+				"stop"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "stop.svg"
+		},
+		{
+			"label": "Stopwatch",
+			"alias": [
+				"148",
+				"stopwatch"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "stopwatch.svg"
+		},
+		{
+			"label": "Sun",
+			"alias": [
+				"66",
+				"sun"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "sun.svg"
+		},
+		{
+			"label": "System",
+			"alias": [
+				"138",
+				"system"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "system.svg"
+		},
+		{
+			"label": "Theater",
+			"alias": [
+				"39",
+				"theater"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "theater.svg"
+		},
+		{
+			"label": "Thumb Down",
+			"alias": [
+				"40",
+				"thumb-down"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "thumb-down.svg"
+		},
+		{
+			"label": "Thumb Up",
+			"alias": [
+				"41",
+				"thumb-up"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "thumb-up.svg"
+		},
+		{
+			"label": "Trashcan",
+			"alias": [
+				"139",
+				"trashcan"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "trashcan.svg"
+		},
+		{
+			"label": "Triangle",
+			"alias": [
+				"42",
+				"triangle"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "triangle.svg"
+		},
+		{
+			"label": "TV",
+			"alias": [
+				"83",
+				"tv"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "tv.svg"
+		},
+		{
+			"label": "Ungroup",
+			"alias": [
+				"198",
+				"ungroup"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "ungroup.svg"
+		},
+		{
+			"label": "Up Alt",
+			"alias": [
+				"43",
+				"up-alt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "up-alt.svg"
+		},
+		{
+			"label": "Up",
+			"alias": [
+				"44",
+				"up"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "up.svg"
+		},
+		{
+			"label": "Upload",
+			"alias": [
+				"140",
+				"upload"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "upload.svg"
+		},
+		{
+			"label": "USB Alt",
+			"alias": [
+				"141",
+				"usb-alt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "usb-alt.svg"
+		},
+		{
+			"label": "USB",
+			"alias": [
+				"142",
+				"usb"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "usb.svg"
+		},
+		{
+			"label": "User Bookmark",
+			"alias": [
+				"92",
+				"user-bookmark"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "user-bookmark.svg"
+		},
+		{
+			"label": "User Check",
+			"alias": [
+				"163",
+				"user-check"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "user-check.svg"
+		},
+		{
+			"label": "User Minus",
+			"alias": [
+				"161",
+				"user-minus"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "user-minus.svg"
+		},
+		{
+			"label": "User",
+			"alias": [
+				"84",
+				"user"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "user.svg"
+		},
+		{
+			"label": "Users",
+			"alias": [
+				"67",
+				"users"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "users.svg"
+		},
+		{
+			"label": "Video Input",
+			"alias": [
+				"143",
+				"video-input"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "video-input.svg"
+		},
+		{
+			"label": "Video Output",
+			"alias": [
+				"144",
+				"video-output"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "video-output.svg"
+		},
+		{
+			"label": "Video Screen Alt",
+			"alias": [
+				"201",
+				"video-screen-alt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "video-screen-alt.svg"
+		},
+		{
+			"label": "Video Screen",
+			"alias": [
+				"45",
+				"video-screen"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "video-screen.svg"
+		},
+		{
+			"label": "Volume Hi",
+			"alias": [
+				"46",
+				"volume-hi"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "volume-hi.svg"
+		},
+		{
+			"label": "Volume Lo",
+			"alias": [
+				"47",
+				"volume-lo"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "volume-lo.svg"
+		},
+		{
+			"label": "Volume Mute",
+			"alias": [
+				"48",
+				"volume-mute"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "volume-mute.svg"
+		},
+		{
+			"label": "Volume Muted",
+			"alias": [
+				"171",
+				"volume-muted"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "volume-muted.svg"
+		},
+		{
+			"label": "Weather",
+			"alias": [
+				"97",
+				"weather"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "weather.svg"
+		},
+		{
+			"label": "Wi-Fi",
+			"alias": [
+				"85",
+				"wi-fi"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "wi-fi.svg"
+		},
+		{
+			"label": "Windows",
+			"alias": [
+				"145",
+				"windows"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "windows.svg"
+		},
+		{
+			"label": "Wireless Device",
+			"alias": [
+				"146",
+				"wireless-device"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "wireless-device.svg"
+		},
+		{
+			"label": "Wrench",
+			"alias": [
+				"147",
+				"wrench"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "wrench.svg"
+		},
+		{
+			"label": "XM",
+			"alias": [
+				"162",
+				"xm"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "xm.svg"
+		},
+		{
+			"label": "ABC",
+			"alias": [
+				"151",
+				"abc"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "abc.svg"
+		},
+		{
+			"label": "Blank",
+			"alias": [
+				"169",
+				"blank"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "blank.svg"
+		},
+		{
+			"label": "iHeart Radio",
+			"alias": [
+				"212",
+				"iheart-radio"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "iheart-radio.svg"
+		},
+		{
+			"label": "Murfie",
+			"alias": [
+				"211",
+				"murfie"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "murfie.svg"
+		},
+		{
+			"label": "Napster",
+			"alias": [
+				"210",
+				"napster"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "napster.svg"
+		},
+		{
+			"label": "Next Alt",
+			"alias": [
+				"208",
+				"next-alt"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "next-alt.svg"
+		},
+		{
+			"label": "Slacker Radio",
+			"alias": [
+				"214",
+				"slacker-radio"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "slacker-radio.svg"
+		},
+		{
+			"label": "Tidal",
+			"alias": [
+				"213",
+				"tidal"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "tidal.svg"
+		},
+		{
+			"label": "Volume",
+			"alias": [
+				"209",
+				"volume"
+			],
+			"themes": [
+				"media-transports-accents",
+				"media-transports-light",
+				"media-transports-dark"
+			],
+			"fileName": "volume.svg"
+		}
+	]
+}

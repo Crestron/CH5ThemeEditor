@@ -1,0 +1,6096 @@
+
+.sg {
+}
+
+.sg-icons-lg,.sg-media-transports-light,.sg-media-transports-dark,.sg-media-transports-accents {
+  height: 100px;
+  width: 100px;
+}
+
+.sg-icons-sm {
+  height: 20px;
+  width: 20px;
+}
+
+.sg-icons-sm.sg-0,.sg-icons-sm.sg-am-fm {
+  background: url('./../svgs/icons/am-fm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-0,.sg-icons-lg.sg-am-fm {
+  background: url('./../svgs/icons/am-fm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-1,.sg-icons-sm.sg-cd {
+  background: url('./../svgs/icons/cd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-1,.sg-icons-lg.sg-cd {
+  background: url('./../svgs/icons/cd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-2,.sg-icons-sm.sg-climate {
+  background: url('./../svgs/icons/climate.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-2,.sg-icons-lg.sg-climate {
+  background: url('./../svgs/icons/climate.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-3,.sg-icons-sm.sg-display-alt {
+  background: url('./../svgs/icons/display-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-3,.sg-icons-lg.sg-display-alt {
+  background: url('./../svgs/icons/display-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-4,.sg-icons-sm.sg-display {
+  background: url('./../svgs/icons/display.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-4,.sg-icons-lg.sg-display {
+  background: url('./../svgs/icons/display.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-5,.sg-icons-sm.sg-dvr {
+  background: url('./../svgs/icons/dvr.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-5,.sg-icons-lg.sg-dvr {
+  background: url('./../svgs/icons/dvr.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-6,.sg-icons-sm.sg-energy-management {
+  background: url('./../svgs/icons/energy-management.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-6,.sg-icons-lg.sg-energy-management {
+  background: url('./../svgs/icons/energy-management.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-7,.sg-icons-sm.sg-favorites {
+  background: url('./../svgs/icons/favorites.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-7,.sg-icons-lg.sg-favorites {
+  background: url('./../svgs/icons/favorites.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-8,.sg-icons-sm.sg-film-reel {
+  background: url('./../svgs/icons/film-reel.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-8,.sg-icons-lg.sg-film-reel {
+  background: url('./../svgs/icons/film-reel.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-9,.sg-icons-sm.sg-home {
+  background: url('./../svgs/icons/home.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-9,.sg-icons-lg.sg-home {
+  background: url('./../svgs/icons/home.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-10,.sg-icons-sm.sg-internet-radio {
+  background: url('./../svgs/icons/internet-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-10,.sg-icons-lg.sg-internet-radio {
+  background: url('./../svgs/icons/internet-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-11,.sg-icons-sm.sg-ipod {
+  background: url('./../svgs/icons/ipod.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-11,.sg-icons-lg.sg-ipod {
+  background: url('./../svgs/icons/ipod.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-12,.sg-icons-sm.sg-iserver {
+  background: url('./../svgs/icons/iserver.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-12,.sg-icons-lg.sg-iserver {
+  background: url('./../svgs/icons/iserver.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-13,.sg-icons-sm.sg-lights {
+  background: url('./../svgs/icons/lights.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-13,.sg-icons-lg.sg-lights {
+  background: url('./../svgs/icons/lights.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-14,.sg-icons-sm.sg-music-note {
+  background: url('./../svgs/icons/music-note.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-14,.sg-icons-lg.sg-music-note {
+  background: url('./../svgs/icons/music-note.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-15,.sg-icons-sm.sg-news {
+  background: url('./../svgs/icons/news.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-15,.sg-icons-lg.sg-news {
+  background: url('./../svgs/icons/news.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-16,.sg-icons-sm.sg-pandora {
+  background: url('./../svgs/icons/pandora.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-16,.sg-icons-lg.sg-pandora {
+  background: url('./../svgs/icons/pandora.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-17,.sg-icons-sm.sg-power {
+  background: url('./../svgs/icons/power.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-17,.sg-icons-lg.sg-power {
+  background: url('./../svgs/icons/power.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-18,.sg-icons-sm.sg-satellite-alt {
+  background: url('./../svgs/icons/satellite-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-18,.sg-icons-lg.sg-satellite-alt {
+  background: url('./../svgs/icons/satellite-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-19,.sg-icons-sm.sg-satellite {
+  background: url('./../svgs/icons/satellite.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-19,.sg-icons-lg.sg-satellite {
+  background: url('./../svgs/icons/satellite.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-20,.sg-icons-sm.sg-sec-cam {
+  background: url('./../svgs/icons/sec-cam.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-20,.sg-icons-lg.sg-sec-cam {
+  background: url('./../svgs/icons/sec-cam.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-21,.sg-icons-sm.sg-security {
+  background: url('./../svgs/icons/security.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-21,.sg-icons-lg.sg-security {
+  background: url('./../svgs/icons/security.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-22,.sg-icons-sm.sg-shades {
+  background: url('./../svgs/icons/shades.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-22,.sg-icons-lg.sg-shades {
+  background: url('./../svgs/icons/shades.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-23,.sg-icons-sm.sg-user-group {
+  background: url('./../svgs/icons/user-group.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-23,.sg-icons-lg.sg-user-group {
+  background: url('./../svgs/icons/user-group.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-24,.sg-icons-sm.sg-video-conferencing {
+  background: url('./../svgs/icons/video-conferencing.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-24,.sg-icons-lg.sg-video-conferencing {
+  background: url('./../svgs/icons/video-conferencing.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-25,.sg-icons-sm.sg-video-switcher {
+  background: url('./../svgs/icons/video-switcher.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-25,.sg-icons-lg.sg-video-switcher {
+  background: url('./../svgs/icons/video-switcher.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-26,.sg-icons-sm.sg-wand {
+  background: url('./../svgs/icons/wand.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-26,.sg-icons-lg.sg-wand {
+  background: url('./../svgs/icons/wand.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-27,.sg-icons-sm.sg-weather {
+  background: url('./../svgs/icons/weather.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-27,.sg-icons-lg.sg-weather {
+  background: url('./../svgs/icons/weather.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-28,.sg-icons-sm.sg-environment {
+  background: url('./../svgs/icons/environment.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-28,.sg-icons-lg.sg-environment {
+  background: url('./../svgs/icons/environment.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-29,.sg-icons-sm.sg-speaker {
+  background: url('./../svgs/icons/speaker.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-29,.sg-icons-lg.sg-speaker {
+  background: url('./../svgs/icons/speaker.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-30,.sg-icons-sm.sg-mic {
+  background: url('./../svgs/icons/mic.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-30,.sg-icons-lg.sg-mic {
+  background: url('./../svgs/icons/mic.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-31,.sg-icons-sm.sg-projector {
+  background: url('./../svgs/icons/projector.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-31,.sg-icons-lg.sg-projector {
+  background: url('./../svgs/icons/projector.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-32,.sg-icons-sm.sg-screen {
+  background: url('./../svgs/icons/screen.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-32,.sg-icons-lg.sg-screen {
+  background: url('./../svgs/icons/screen.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-33,.sg-icons-sm.sg-gear {
+  background: url('./../svgs/icons/gear.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-33,.sg-icons-lg.sg-gear {
+  background: url('./../svgs/icons/gear.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-34,.sg-icons-sm.sg-sec-cam-alt {
+  background: url('./../svgs/icons/sec-cam-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-34,.sg-icons-lg.sg-sec-cam-alt {
+  background: url('./../svgs/icons/sec-cam-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-35,.sg-icons-sm.sg-document-camera {
+  background: url('./../svgs/icons/document-camera.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-35,.sg-icons-lg.sg-document-camera {
+  background: url('./../svgs/icons/document-camera.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-36,.sg-icons-sm.sg-backgrounds {
+  background: url('./../svgs/icons/backgrounds.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-36,.sg-icons-lg.sg-backgrounds {
+  background: url('./../svgs/icons/backgrounds.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-37,.sg-icons-sm.sg-gamepad {
+  background: url('./../svgs/icons/gamepad.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-37,.sg-icons-lg.sg-gamepad {
+  background: url('./../svgs/icons/gamepad.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-38,.sg-icons-sm.sg-imac {
+  background: url('./../svgs/icons/imac.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-38,.sg-icons-lg.sg-imac {
+  background: url('./../svgs/icons/imac.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-39,.sg-icons-sm.sg-laptop-alt {
+  background: url('./../svgs/icons/laptop-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-39,.sg-icons-lg.sg-laptop-alt {
+  background: url('./../svgs/icons/laptop-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-40,.sg-icons-sm.sg-laptop {
+  background: url('./../svgs/icons/laptop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-40,.sg-icons-lg.sg-laptop {
+  background: url('./../svgs/icons/laptop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-41,.sg-icons-sm.sg-macbook-pro {
+  background: url('./../svgs/icons/macbook-pro.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-41,.sg-icons-lg.sg-macbook-pro {
+  background: url('./../svgs/icons/macbook-pro.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-42,.sg-icons-sm.sg-music-note-alt {
+  background: url('./../svgs/icons/music-note-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-42,.sg-icons-lg.sg-music-note-alt {
+  background: url('./../svgs/icons/music-note-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-43,.sg-icons-sm.sg-phone-alt {
+  background: url('./../svgs/icons/phone-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-43,.sg-icons-lg.sg-phone-alt {
+  background: url('./../svgs/icons/phone-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-44,.sg-icons-sm.sg-phone {
+  background: url('./../svgs/icons/phone.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-44,.sg-icons-lg.sg-phone {
+  background: url('./../svgs/icons/phone.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-45,.sg-icons-sm.sg-pool {
+  background: url('./../svgs/icons/pool.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-45,.sg-icons-lg.sg-pool {
+  background: url('./../svgs/icons/pool.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-46,.sg-icons-sm.sg-airplay {
+  background: url('./../svgs/icons/airplay.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-46,.sg-icons-lg.sg-airplay {
+  background: url('./../svgs/icons/airplay.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-47,.sg-icons-sm.sg-alarm-clock {
+  background: url('./../svgs/icons/alarm-clock.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-47,.sg-icons-lg.sg-alarm-clock {
+  background: url('./../svgs/icons/alarm-clock.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-48,.sg-icons-sm.sg-appletv {
+  background: url('./../svgs/icons/appletv.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-48,.sg-icons-lg.sg-appletv {
+  background: url('./../svgs/icons/appletv.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-49,.sg-icons-sm.sg-aux-plate {
+  background: url('./../svgs/icons/aux-plate.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-49,.sg-icons-lg.sg-aux-plate {
+  background: url('./../svgs/icons/aux-plate.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-50,.sg-icons-sm.sg-document-camera-alt {
+  background: url('./../svgs/icons/document-camera-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-50,.sg-icons-lg.sg-document-camera-alt {
+  background: url('./../svgs/icons/document-camera-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-51,.sg-icons-sm.sg-door-station {
+  background: url('./../svgs/icons/door-station.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-51,.sg-icons-lg.sg-door-station {
+  background: url('./../svgs/icons/door-station.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-52,.sg-icons-sm.sg-dvr-alt {
+  background: url('./../svgs/icons/dvr-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-52,.sg-icons-lg.sg-dvr-alt {
+  background: url('./../svgs/icons/dvr-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-53,.sg-icons-sm.sg-front-door-alt {
+  background: url('./../svgs/icons/front-door-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-53,.sg-icons-lg.sg-front-door-alt {
+  background: url('./../svgs/icons/front-door-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-54,.sg-icons-sm.sg-front-door {
+  background: url('./../svgs/icons/front-door.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-54,.sg-icons-lg.sg-front-door {
+  background: url('./../svgs/icons/front-door.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-55,.sg-icons-sm.sg-jukebox {
+  background: url('./../svgs/icons/jukebox.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-55,.sg-icons-lg.sg-jukebox {
+  background: url('./../svgs/icons/jukebox.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-56,.sg-icons-sm.sg-piano {
+  background: url('./../svgs/icons/piano.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-56,.sg-icons-lg.sg-piano {
+  background: url('./../svgs/icons/piano.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-57,.sg-icons-sm.sg-playstation-3 {
+  background: url('./../svgs/icons/playstation-3.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-57,.sg-icons-lg.sg-playstation-3 {
+  background: url('./../svgs/icons/playstation-3.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-58,.sg-icons-sm.sg-playstation-logo {
+  background: url('./../svgs/icons/playstation-logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-58,.sg-icons-lg.sg-playstation-logo {
+  background: url('./../svgs/icons/playstation-logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-59,.sg-icons-sm.sg-room-door {
+  background: url('./../svgs/icons/room-door.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-59,.sg-icons-lg.sg-room-door {
+  background: url('./../svgs/icons/room-door.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-60,.sg-icons-sm.sg-smartv {
+  background: url('./../svgs/icons/smartv.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-60,.sg-icons-lg.sg-smartv {
+  background: url('./../svgs/icons/smartv.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-61,.sg-icons-sm.sg-sprinkler {
+  background: url('./../svgs/icons/sprinkler.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-61,.sg-icons-lg.sg-sprinkler {
+  background: url('./../svgs/icons/sprinkler.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-62,.sg-icons-sm.sg-tablet {
+  background: url('./../svgs/icons/tablet.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-62,.sg-icons-lg.sg-tablet {
+  background: url('./../svgs/icons/tablet.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-63,.sg-icons-sm.sg-tv {
+  background: url('./../svgs/icons/tv.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-63,.sg-icons-lg.sg-tv {
+  background: url('./../svgs/icons/tv.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-64,.sg-icons-sm.sg-vcr {
+  background: url('./../svgs/icons/vcr.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-64,.sg-icons-lg.sg-vcr {
+  background: url('./../svgs/icons/vcr.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-65,.sg-icons-sm.sg-video-conferencing-alt {
+  background: url('./../svgs/icons/video-conferencing-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-65,.sg-icons-lg.sg-video-conferencing-alt {
+  background: url('./../svgs/icons/video-conferencing-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-66,.sg-icons-sm.sg-wii-logo {
+  background: url('./../svgs/icons/wii-logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-66,.sg-icons-lg.sg-wii-logo {
+  background: url('./../svgs/icons/wii-logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-67,.sg-icons-sm.sg-wii-u-logo {
+  background: url('./../svgs/icons/wii-u-logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-67,.sg-icons-lg.sg-wii-u-logo {
+  background: url('./../svgs/icons/wii-u-logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-68,.sg-icons-sm.sg-wii-u {
+  background: url('./../svgs/icons/wii-u.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-68,.sg-icons-lg.sg-wii-u {
+  background: url('./../svgs/icons/wii-u.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-69,.sg-icons-sm.sg-wii {
+  background: url('./../svgs/icons/wii.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-69,.sg-icons-lg.sg-wii {
+  background: url('./../svgs/icons/wii.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-70,.sg-icons-sm.sg-xbox-360 {
+  background: url('./../svgs/icons/xbox-360.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-70,.sg-icons-lg.sg-xbox-360 {
+  background: url('./../svgs/icons/xbox-360.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-71,.sg-icons-sm.sg-xbox-logo {
+  background: url('./../svgs/icons/xbox-logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-71,.sg-icons-lg.sg-xbox-logo {
+  background: url('./../svgs/icons/xbox-logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-72,.sg-icons-sm.sg-amenities {
+  background: url('./../svgs/icons/amenities.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-72,.sg-icons-lg.sg-amenities {
+  background: url('./../svgs/icons/amenities.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-73,.sg-icons-sm.sg-directv {
+  background: url('./../svgs/icons/directv.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-73,.sg-icons-lg.sg-directv {
+  background: url('./../svgs/icons/directv.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-74,.sg-icons-sm.sg-dish-network {
+  background: url('./../svgs/icons/dish-network.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-74,.sg-icons-lg.sg-dish-network {
+  background: url('./../svgs/icons/dish-network.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-75,.sg-icons-sm.sg-drapes {
+  background: url('./../svgs/icons/drapes.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-75,.sg-icons-lg.sg-drapes {
+  background: url('./../svgs/icons/drapes.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-76,.sg-icons-sm.sg-garage {
+  background: url('./../svgs/icons/garage.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-76,.sg-icons-lg.sg-garage {
+  background: url('./../svgs/icons/garage.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-77,.sg-icons-sm.sg-macros {
+  background: url('./../svgs/icons/macros.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-77,.sg-icons-lg.sg-macros {
+  background: url('./../svgs/icons/macros.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-78,.sg-icons-sm.sg-scheduler {
+  background: url('./../svgs/icons/scheduler.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-78,.sg-icons-lg.sg-scheduler {
+  background: url('./../svgs/icons/scheduler.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-79,.sg-icons-sm.sg-sirius-xm-satellite-radio {
+  background: url('./../svgs/icons/sirius-xm-satellite-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-79,.sg-icons-lg.sg-sirius-xm-satellite-radio {
+  background: url('./../svgs/icons/sirius-xm-satellite-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-80,.sg-icons-sm.sg-tivo {
+  background: url('./../svgs/icons/tivo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-80,.sg-icons-lg.sg-tivo {
+  background: url('./../svgs/icons/tivo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-81,.sg-icons-sm.sg-blu-ray {
+  background: url('./../svgs/icons/blu-ray.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-81,.sg-icons-lg.sg-blu-ray {
+  background: url('./../svgs/icons/blu-ray.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-82,.sg-icons-sm.sg-dvd {
+  background: url('./../svgs/icons/dvd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-82,.sg-icons-lg.sg-dvd {
+  background: url('./../svgs/icons/dvd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-83,.sg-icons-sm.sg-record-player {
+  background: url('./../svgs/icons/record-player.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-83,.sg-icons-lg.sg-record-player {
+  background: url('./../svgs/icons/record-player.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-84,.sg-icons-sm.sg-vudu {
+  background: url('./../svgs/icons/vudu.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-84,.sg-icons-lg.sg-vudu {
+  background: url('./../svgs/icons/vudu.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-85,.sg-icons-sm.sg-home-alt {
+  background: url('./../svgs/icons/home-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-85,.sg-icons-lg.sg-home-alt {
+  background: url('./../svgs/icons/home-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-86,.sg-icons-sm.sg-sirius-satellite-radio {
+  background: url('./../svgs/icons/sirius-satellite-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-86,.sg-icons-lg.sg-sirius-satellite-radio {
+  background: url('./../svgs/icons/sirius-satellite-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-87,.sg-icons-sm.sg-rhapsody {
+  background: url('./../svgs/icons/rhapsody.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-87,.sg-icons-lg.sg-rhapsody {
+  background: url('./../svgs/icons/rhapsody.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-88,.sg-icons-sm.sg-spotify {
+  background: url('./../svgs/icons/spotify.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-88,.sg-icons-lg.sg-spotify {
+  background: url('./../svgs/icons/spotify.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-89,.sg-icons-sm.sg-tunein {
+  background: url('./../svgs/icons/tunein.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-89,.sg-icons-lg.sg-tunein {
+  background: url('./../svgs/icons/tunein.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-90,.sg-icons-sm.sg-xm-satellite-radio {
+  background: url('./../svgs/icons/xm-satellite-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-90,.sg-icons-lg.sg-xm-satellite-radio {
+  background: url('./../svgs/icons/xm-satellite-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-91,.sg-icons-sm.sg-lastfm {
+  background: url('./../svgs/icons/lastfm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-91,.sg-icons-lg.sg-lastfm {
+  background: url('./../svgs/icons/lastfm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-92,.sg-icons-sm.sg-you-tube {
+  background: url('./../svgs/icons/you-tube.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-92,.sg-icons-lg.sg-you-tube {
+  background: url('./../svgs/icons/you-tube.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-93,.sg-icons-sm.sg-kaleidescape {
+  background: url('./../svgs/icons/kaleidescape.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-93,.sg-icons-lg.sg-kaleidescape {
+  background: url('./../svgs/icons/kaleidescape.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-94,.sg-icons-sm.sg-hulu {
+  background: url('./../svgs/icons/hulu.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-94,.sg-icons-lg.sg-hulu {
+  background: url('./../svgs/icons/hulu.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-95,.sg-icons-sm.sg-netflix {
+  background: url('./../svgs/icons/netflix.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-95,.sg-icons-lg.sg-netflix {
+  background: url('./../svgs/icons/netflix.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-96,.sg-icons-sm.sg-clapper {
+  background: url('./../svgs/icons/clapper.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-96,.sg-icons-lg.sg-clapper {
+  background: url('./../svgs/icons/clapper.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-97,.sg-icons-sm.sg-shield {
+  background: url('./../svgs/icons/shield.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-97,.sg-icons-lg.sg-shield {
+  background: url('./../svgs/icons/shield.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-98,.sg-icons-sm.sg-web {
+  background: url('./../svgs/icons/web.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-98,.sg-icons-lg.sg-web {
+  background: url('./../svgs/icons/web.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-99,.sg-icons-sm.sg-pc {
+  background: url('./../svgs/icons/pc.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-99,.sg-icons-lg.sg-pc {
+  background: url('./../svgs/icons/pc.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-100,.sg-icons-sm.sg-amazon {
+  background: url('./../svgs/icons/amazon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-100,.sg-icons-lg.sg-amazon {
+  background: url('./../svgs/icons/amazon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-101,.sg-icons-sm.sg-chrome {
+  background: url('./../svgs/icons/chrome.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-101,.sg-icons-lg.sg-chrome {
+  background: url('./../svgs/icons/chrome.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-102,.sg-icons-sm.sg-blank {
+  background: url('./../svgs/icons/blank.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-102,.sg-icons-lg.sg-blank {
+  background: url('./../svgs/icons/blank.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-103,.sg-icons-sm.sg-fireplace {
+  background: url('./../svgs/icons/fireplace.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-103,.sg-icons-lg.sg-fireplace {
+  background: url('./../svgs/icons/fireplace.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-104,.sg-icons-sm.sg-sonos {
+  background: url('./../svgs/icons/sonos.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-104,.sg-icons-lg.sg-sonos {
+  background: url('./../svgs/icons/sonos.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-105,.sg-icons-sm.sg-roku {
+  background: url('./../svgs/icons/roku.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-105,.sg-icons-lg.sg-roku {
+  background: url('./../svgs/icons/roku.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-106,.sg-icons-sm.sg-airmedia {
+  background: url('./../svgs/icons/airmedia.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-106,.sg-icons-lg.sg-airmedia {
+  background: url('./../svgs/icons/airmedia.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-107,.sg-icons-sm.sg-napster {
+  background: url('./../svgs/icons/napster.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-107,.sg-icons-lg.sg-napster {
+  background: url('./../svgs/icons/napster.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-108,.sg-icons-sm.sg-murfie {
+  background: url('./../svgs/icons/murfie.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-108,.sg-icons-lg.sg-murfie {
+  background: url('./../svgs/icons/murfie.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-109,.sg-icons-sm.sg-iheart-radio {
+  background: url('./../svgs/icons/iheart-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-109,.sg-icons-lg.sg-iheart-radio {
+  background: url('./../svgs/icons/iheart-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-110,.sg-icons-sm.sg-tidal {
+  background: url('./../svgs/icons/tidal.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-110,.sg-icons-lg.sg-tidal {
+  background: url('./../svgs/icons/tidal.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-sm.sg-111,.sg-icons-sm.sg-slacker-radio {
+  background: url('./../svgs/icons/slacker-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-icons-lg.sg-111,.sg-icons-lg.sg-slacker-radio {
+  background: url('./../svgs/icons/slacker-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-49,.sg-media-transports-accents.sg-address-book {
+  background: url('./../svgs/media-transports/accents/address-book.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-49,.sg-media-transports-light.sg-address-book {
+  background: url('./../svgs/media-transports/light/address-book.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-49,.sg-media-transports-dark.sg-address-book {
+  background: url('./../svgs/media-transports/dark/address-book.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-205,.sg-media-transports-accents.sg-airmedia {
+  background: url('./../svgs/media-transports/accents/airmedia.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-205,.sg-media-transports-light.sg-airmedia {
+  background: url('./../svgs/media-transports/light/airmedia.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-205,.sg-media-transports-dark.sg-airmedia {
+  background: url('./../svgs/media-transports/dark/airmedia.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-50,.sg-media-transports-accents.sg-alarm {
+  background: url('./../svgs/media-transports/accents/alarm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-50,.sg-media-transports-light.sg-alarm {
+  background: url('./../svgs/media-transports/light/alarm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-50,.sg-media-transports-dark.sg-alarm {
+  background: url('./../svgs/media-transports/dark/alarm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-0,.sg-media-transports-accents.sg-alert {
+  background: url('./../svgs/media-transports/accents/alert.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-0,.sg-media-transports-light.sg-alert {
+  background: url('./../svgs/media-transports/light/alert.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-0,.sg-media-transports-dark.sg-alert {
+  background: url('./../svgs/media-transports/dark/alert.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-110,.sg-media-transports-accents.sg-android {
+  background: url('./../svgs/media-transports/accents/android.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-110,.sg-media-transports-light.sg-android {
+  background: url('./../svgs/media-transports/light/android.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-110,.sg-media-transports-dark.sg-android {
+  background: url('./../svgs/media-transports/dark/android.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-111,.sg-media-transports-accents.sg-apple {
+  background: url('./../svgs/media-transports/accents/apple.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-111,.sg-media-transports-light.sg-apple {
+  background: url('./../svgs/media-transports/light/apple.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-111,.sg-media-transports-dark.sg-apple {
+  background: url('./../svgs/media-transports/dark/apple.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-206,.sg-media-transports-accents.sg-asterisk {
+  background: url('./../svgs/media-transports/accents/asterisk.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-206,.sg-media-transports-light.sg-asterisk {
+  background: url('./../svgs/media-transports/light/asterisk.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-206,.sg-media-transports-dark.sg-asterisk {
+  background: url('./../svgs/media-transports/dark/asterisk.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-1,.sg-media-transports-accents.sg-audio-note {
+  background: url('./../svgs/media-transports/accents/audio-note.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-1,.sg-media-transports-light.sg-audio-note {
+  background: url('./../svgs/media-transports/light/audio-note.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-1,.sg-media-transports-dark.sg-audio-note {
+  background: url('./../svgs/media-transports/dark/audio-note.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-165,.sg-media-transports-accents.sg-ban {
+  background: url('./../svgs/media-transports/accents/ban.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-165,.sg-media-transports-light.sg-ban {
+  background: url('./../svgs/media-transports/light/ban.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-165,.sg-media-transports-dark.sg-ban {
+  background: url('./../svgs/media-transports/dark/ban.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-113,.sg-media-transports-accents.sg-battery-charging {
+  background: url('./../svgs/media-transports/accents/battery-charging.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-113,.sg-media-transports-light.sg-battery-charging {
+  background: url('./../svgs/media-transports/light/battery-charging.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-113,.sg-media-transports-dark.sg-battery-charging {
+  background: url('./../svgs/media-transports/dark/battery-charging.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-114,.sg-media-transports-accents.sg-battery-empty {
+  background: url('./../svgs/media-transports/accents/battery-empty.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-114,.sg-media-transports-light.sg-battery-empty {
+  background: url('./../svgs/media-transports/light/battery-empty.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-114,.sg-media-transports-dark.sg-battery-empty {
+  background: url('./../svgs/media-transports/dark/battery-empty.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-115,.sg-media-transports-accents.sg-battery-full {
+  background: url('./../svgs/media-transports/accents/battery-full.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-115,.sg-media-transports-light.sg-battery-full {
+  background: url('./../svgs/media-transports/light/battery-full.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-115,.sg-media-transports-dark.sg-battery-full {
+  background: url('./../svgs/media-transports/dark/battery-full.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-112,.sg-media-transports-accents.sg-battery-low {
+  background: url('./../svgs/media-transports/accents/battery-low.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-112,.sg-media-transports-light.sg-battery-low {
+  background: url('./../svgs/media-transports/light/battery-low.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-112,.sg-media-transports-dark.sg-battery-low {
+  background: url('./../svgs/media-transports/dark/battery-low.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-188,.sg-media-transports-accents.sg-blinds-closed {
+  background: url('./../svgs/media-transports/accents/blinds-closed.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-188,.sg-media-transports-light.sg-blinds-closed {
+  background: url('./../svgs/media-transports/light/blinds-closed.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-188,.sg-media-transports-dark.sg-blinds-closed {
+  background: url('./../svgs/media-transports/dark/blinds-closed.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-189,.sg-media-transports-accents.sg-blinds {
+  background: url('./../svgs/media-transports/accents/blinds.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-189,.sg-media-transports-light.sg-blinds {
+  background: url('./../svgs/media-transports/light/blinds.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-189,.sg-media-transports-dark.sg-blinds {
+  background: url('./../svgs/media-transports/dark/blinds.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-2,.sg-media-transports-accents.sg-blu-ray {
+  background: url('./../svgs/media-transports/accents/blu-ray.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-2,.sg-media-transports-light.sg-blu-ray {
+  background: url('./../svgs/media-transports/light/blu-ray.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-2,.sg-media-transports-dark.sg-blu-ray {
+  background: url('./../svgs/media-transports/dark/blu-ray.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-116,.sg-media-transports-accents.sg-bluetooth {
+  background: url('./../svgs/media-transports/accents/bluetooth.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-116,.sg-media-transports-light.sg-bluetooth {
+  background: url('./../svgs/media-transports/light/bluetooth.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-116,.sg-media-transports-dark.sg-bluetooth {
+  background: url('./../svgs/media-transports/dark/bluetooth.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-3,.sg-media-transports-accents.sg-bolt {
+  background: url('./../svgs/media-transports/accents/bolt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-3,.sg-media-transports-light.sg-bolt {
+  background: url('./../svgs/media-transports/light/bolt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-3,.sg-media-transports-dark.sg-bolt {
+  background: url('./../svgs/media-transports/dark/bolt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-174,.sg-media-transports-accents.sg-brightness-max {
+  background: url('./../svgs/media-transports/accents/brightness-max.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-174,.sg-media-transports-light.sg-brightness-max {
+  background: url('./../svgs/media-transports/light/brightness-max.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-174,.sg-media-transports-dark.sg-brightness-max {
+  background: url('./../svgs/media-transports/dark/brightness-max.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-173,.sg-media-transports-accents.sg-brightness-medium {
+  background: url('./../svgs/media-transports/accents/brightness-medium.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-173,.sg-media-transports-light.sg-brightness-medium {
+  background: url('./../svgs/media-transports/light/brightness-medium.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-173,.sg-media-transports-dark.sg-brightness-medium {
+  background: url('./../svgs/media-transports/dark/brightness-medium.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-117,.sg-media-transports-accents.sg-brightness {
+  background: url('./../svgs/media-transports/accents/brightness.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-117,.sg-media-transports-light.sg-brightness {
+  background: url('./../svgs/media-transports/light/brightness.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-117,.sg-media-transports-dark.sg-brightness {
+  background: url('./../svgs/media-transports/dark/brightness.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-199,.sg-media-transports-accents.sg-broken-route {
+  background: url('./../svgs/media-transports/accents/broken-route.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-199,.sg-media-transports-light.sg-broken-route {
+  background: url('./../svgs/media-transports/light/broken-route.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-199,.sg-media-transports-dark.sg-broken-route {
+  background: url('./../svgs/media-transports/dark/broken-route.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-106,.sg-media-transports-accents.sg-brush {
+  background: url('./../svgs/media-transports/accents/brush.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-106,.sg-media-transports-light.sg-brush {
+  background: url('./../svgs/media-transports/light/brush.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-106,.sg-media-transports-dark.sg-brush {
+  background: url('./../svgs/media-transports/dark/brush.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-51,.sg-media-transports-accents.sg-calendar {
+  background: url('./../svgs/media-transports/accents/calendar.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-51,.sg-media-transports-light.sg-calendar {
+  background: url('./../svgs/media-transports/light/calendar.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-51,.sg-media-transports-dark.sg-calendar {
+  background: url('./../svgs/media-transports/dark/calendar.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-99,.sg-media-transports-accents.sg-camera {
+  background: url('./../svgs/media-transports/accents/camera.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-99,.sg-media-transports-light.sg-camera {
+  background: url('./../svgs/media-transports/light/camera.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-99,.sg-media-transports-dark.sg-camera {
+  background: url('./../svgs/media-transports/dark/camera.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-118,.sg-media-transports-accents.sg-cart {
+  background: url('./../svgs/media-transports/accents/cart.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-118,.sg-media-transports-light.sg-cart {
+  background: url('./../svgs/media-transports/light/cart.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-118,.sg-media-transports-dark.sg-cart {
+  background: url('./../svgs/media-transports/dark/cart.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-4,.sg-media-transports-accents.sg-cd {
+  background: url('./../svgs/media-transports/accents/cd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-4,.sg-media-transports-light.sg-cd {
+  background: url('./../svgs/media-transports/light/cd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-4,.sg-media-transports-dark.sg-cd {
+  background: url('./../svgs/media-transports/dark/cd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-5,.sg-media-transports-accents.sg-check {
+  background: url('./../svgs/media-transports/accents/check.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-5,.sg-media-transports-light.sg-check {
+  background: url('./../svgs/media-transports/light/check.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-5,.sg-media-transports-dark.sg-check {
+  background: url('./../svgs/media-transports/dark/check.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-107,.sg-media-transports-accents.sg-checkbox-checked {
+  background: url('./../svgs/media-transports/accents/checkbox-checked.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-107,.sg-media-transports-light.sg-checkbox-checked {
+  background: url('./../svgs/media-transports/light/checkbox-checked.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-107,.sg-media-transports-dark.sg-checkbox-checked {
+  background: url('./../svgs/media-transports/dark/checkbox-checked.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-108,.sg-media-transports-accents.sg-checkbox-off {
+  background: url('./../svgs/media-transports/accents/checkbox-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-108,.sg-media-transports-light.sg-checkbox-off {
+  background: url('./../svgs/media-transports/light/checkbox-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-108,.sg-media-transports-dark.sg-checkbox-off {
+  background: url('./../svgs/media-transports/dark/checkbox-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-203,.sg-media-transports-accents.sg-chrome {
+  background: url('./../svgs/media-transports/accents/chrome.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-203,.sg-media-transports-light.sg-chrome {
+  background: url('./../svgs/media-transports/light/chrome.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-203,.sg-media-transports-dark.sg-chrome {
+  background: url('./../svgs/media-transports/dark/chrome.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-185,.sg-media-transports-accents.sg-climate-scheduler {
+  background: url('./../svgs/media-transports/accents/climate-scheduler.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-185,.sg-media-transports-light.sg-climate-scheduler {
+  background: url('./../svgs/media-transports/light/climate-scheduler.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-185,.sg-media-transports-dark.sg-climate-scheduler {
+  background: url('./../svgs/media-transports/dark/climate-scheduler.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-6,.sg-media-transports-accents.sg-climate {
+  background: url('./../svgs/media-transports/accents/climate.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-6,.sg-media-transports-light.sg-climate {
+  background: url('./../svgs/media-transports/light/climate.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-6,.sg-media-transports-dark.sg-climate {
+  background: url('./../svgs/media-transports/dark/climate.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-52,.sg-media-transports-accents.sg-clock {
+  background: url('./../svgs/media-transports/accents/clock.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-52,.sg-media-transports-light.sg-clock {
+  background: url('./../svgs/media-transports/light/clock.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-52,.sg-media-transports-dark.sg-clock {
+  background: url('./../svgs/media-transports/dark/clock.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-149,.sg-media-transports-accents.sg-comment-check {
+  background: url('./../svgs/media-transports/accents/comment-check.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-149,.sg-media-transports-light.sg-comment-check {
+  background: url('./../svgs/media-transports/light/comment-check.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-149,.sg-media-transports-dark.sg-comment-check {
+  background: url('./../svgs/media-transports/dark/comment-check.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-150,.sg-media-transports-accents.sg-comment {
+  background: url('./../svgs/media-transports/accents/comment.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-150,.sg-media-transports-light.sg-comment {
+  background: url('./../svgs/media-transports/light/comment.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-150,.sg-media-transports-dark.sg-comment {
+  background: url('./../svgs/media-transports/dark/comment.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-119,.sg-media-transports-accents.sg-connector-plate {
+  background: url('./../svgs/media-transports/accents/connector-plate.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-119,.sg-media-transports-light.sg-connector-plate {
+  background: url('./../svgs/media-transports/light/connector-plate.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-119,.sg-media-transports-dark.sg-connector-plate {
+  background: url('./../svgs/media-transports/dark/connector-plate.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-120,.sg-media-transports-accents.sg-connector {
+  background: url('./../svgs/media-transports/accents/connector.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-120,.sg-media-transports-light.sg-connector {
+  background: url('./../svgs/media-transports/light/connector.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-120,.sg-media-transports-dark.sg-connector {
+  background: url('./../svgs/media-transports/dark/connector.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-121,.sg-media-transports-accents.sg-contrast {
+  background: url('./../svgs/media-transports/accents/contrast.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-121,.sg-media-transports-light.sg-contrast {
+  background: url('./../svgs/media-transports/light/contrast.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-121,.sg-media-transports-dark.sg-contrast {
+  background: url('./../svgs/media-transports/dark/contrast.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-122,.sg-media-transports-accents.sg-dashboard {
+  background: url('./../svgs/media-transports/accents/dashboard.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-122,.sg-media-transports-light.sg-dashboard {
+  background: url('./../svgs/media-transports/light/dashboard.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-122,.sg-media-transports-dark.sg-dashboard {
+  background: url('./../svgs/media-transports/dark/dashboard.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-123,.sg-media-transports-accents.sg-delete-alt {
+  background: url('./../svgs/media-transports/accents/delete-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-123,.sg-media-transports-light.sg-delete-alt {
+  background: url('./../svgs/media-transports/light/delete-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-123,.sg-media-transports-dark.sg-delete-alt {
+  background: url('./../svgs/media-transports/dark/delete-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-7,.sg-media-transports-accents.sg-delete {
+  background: url('./../svgs/media-transports/accents/delete.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-7,.sg-media-transports-light.sg-delete {
+  background: url('./../svgs/media-transports/light/delete.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-7,.sg-media-transports-dark.sg-delete {
+  background: url('./../svgs/media-transports/dark/delete.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-164,.sg-media-transports-accents.sg-disk {
+  background: url('./../svgs/media-transports/accents/disk.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-164,.sg-media-transports-light.sg-disk {
+  background: url('./../svgs/media-transports/light/disk.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-164,.sg-media-transports-dark.sg-disk {
+  background: url('./../svgs/media-transports/dark/disk.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-176,.sg-media-transports-accents.sg-dnd-on {
+  background: url('./../svgs/media-transports/accents/dnd-on.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-176,.sg-media-transports-light.sg-dnd-on {
+  background: url('./../svgs/media-transports/light/dnd-on.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-176,.sg-media-transports-dark.sg-dnd-on {
+  background: url('./../svgs/media-transports/dark/dnd-on.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-167,.sg-media-transports-accents.sg-dnd {
+  background: url('./../svgs/media-transports/accents/dnd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-167,.sg-media-transports-light.sg-dnd {
+  background: url('./../svgs/media-transports/light/dnd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-167,.sg-media-transports-dark.sg-dnd {
+  background: url('./../svgs/media-transports/dark/dnd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-68,.sg-media-transports-accents.sg-door {
+  background: url('./../svgs/media-transports/accents/door.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-68,.sg-media-transports-light.sg-door {
+  background: url('./../svgs/media-transports/light/door.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-68,.sg-media-transports-dark.sg-door {
+  background: url('./../svgs/media-transports/dark/door.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-8,.sg-media-transports-accents.sg-down-alt {
+  background: url('./../svgs/media-transports/accents/down-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-8,.sg-media-transports-light.sg-down-alt {
+  background: url('./../svgs/media-transports/light/down-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-8,.sg-media-transports-dark.sg-down-alt {
+  background: url('./../svgs/media-transports/dark/down-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-197,.sg-media-transports-accents.sg-down-right {
+  background: url('./../svgs/media-transports/accents/down-right.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-197,.sg-media-transports-light.sg-down-right {
+  background: url('./../svgs/media-transports/light/down-right.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-197,.sg-media-transports-dark.sg-down-right {
+  background: url('./../svgs/media-transports/dark/down-right.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-9,.sg-media-transports-accents.sg-down {
+  background: url('./../svgs/media-transports/accents/down.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-9,.sg-media-transports-light.sg-down {
+  background: url('./../svgs/media-transports/light/down.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-9,.sg-media-transports-dark.sg-down {
+  background: url('./../svgs/media-transports/dark/down.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-100,.sg-media-transports-accents.sg-download-cloud {
+  background: url('./../svgs/media-transports/accents/download-cloud.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-100,.sg-media-transports-light.sg-download-cloud {
+  background: url('./../svgs/media-transports/light/download-cloud.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-100,.sg-media-transports-dark.sg-download-cloud {
+  background: url('./../svgs/media-transports/dark/download-cloud.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-124,.sg-media-transports-accents.sg-download {
+  background: url('./../svgs/media-transports/accents/download.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-124,.sg-media-transports-light.sg-download {
+  background: url('./../svgs/media-transports/light/download.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-124,.sg-media-transports-dark.sg-download {
+  background: url('./../svgs/media-transports/dark/download.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-190,.sg-media-transports-accents.sg-drapes-closed {
+  background: url('./../svgs/media-transports/accents/drapes-closed.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-190,.sg-media-transports-light.sg-drapes-closed {
+  background: url('./../svgs/media-transports/light/drapes-closed.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-190,.sg-media-transports-dark.sg-drapes-closed {
+  background: url('./../svgs/media-transports/dark/drapes-closed.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-191,.sg-media-transports-accents.sg-drapes-open {
+  background: url('./../svgs/media-transports/accents/drapes-open.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-191,.sg-media-transports-light.sg-drapes-open {
+  background: url('./../svgs/media-transports/light/drapes-open.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-191,.sg-media-transports-dark.sg-drapes-open {
+  background: url('./../svgs/media-transports/dark/drapes-open.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-69,.sg-media-transports-accents.sg-drapes {
+  background: url('./../svgs/media-transports/accents/drapes.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-69,.sg-media-transports-light.sg-drapes {
+  background: url('./../svgs/media-transports/light/drapes.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-69,.sg-media-transports-dark.sg-drapes {
+  background: url('./../svgs/media-transports/dark/drapes.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-104,.sg-media-transports-accents.sg-dvd {
+  background: url('./../svgs/media-transports/accents/dvd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-104,.sg-media-transports-light.sg-dvd {
+  background: url('./../svgs/media-transports/light/dvd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-104,.sg-media-transports-dark.sg-dvd {
+  background: url('./../svgs/media-transports/dark/dvd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-10,.sg-media-transports-accents.sg-eject {
+  background: url('./../svgs/media-transports/accents/eject.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-10,.sg-media-transports-light.sg-eject {
+  background: url('./../svgs/media-transports/light/eject.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-10,.sg-media-transports-dark.sg-eject {
+  background: url('./../svgs/media-transports/dark/eject.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-11,.sg-media-transports-accents.sg-enter {
+  background: url('./../svgs/media-transports/accents/enter.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-11,.sg-media-transports-light.sg-enter {
+  background: url('./../svgs/media-transports/light/enter.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-11,.sg-media-transports-dark.sg-enter {
+  background: url('./../svgs/media-transports/dark/enter.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-168,.sg-media-transports-accents.sg-eraser {
+  background: url('./../svgs/media-transports/accents/eraser.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-168,.sg-media-transports-light.sg-eraser {
+  background: url('./../svgs/media-transports/light/eraser.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-168,.sg-media-transports-dark.sg-eraser {
+  background: url('./../svgs/media-transports/dark/eraser.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-53,.sg-media-transports-accents.sg-eye {
+  background: url('./../svgs/media-transports/accents/eye.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-53,.sg-media-transports-light.sg-eye {
+  background: url('./../svgs/media-transports/light/eye.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-53,.sg-media-transports-dark.sg-eye {
+  background: url('./../svgs/media-transports/dark/eye.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-12,.sg-media-transports-accents.sg-film {
+  background: url('./../svgs/media-transports/accents/film.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-12,.sg-media-transports-light.sg-film {
+  background: url('./../svgs/media-transports/light/film.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-12,.sg-media-transports-dark.sg-film {
+  background: url('./../svgs/media-transports/dark/film.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-70,.sg-media-transports-accents.sg-fire {
+  background: url('./../svgs/media-transports/accents/fire.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-70,.sg-media-transports-light.sg-fire {
+  background: url('./../svgs/media-transports/light/fire.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-70,.sg-media-transports-dark.sg-fire {
+  background: url('./../svgs/media-transports/dark/fire.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-182,.sg-media-transports-accents.sg-fireplace {
+  background: url('./../svgs/media-transports/accents/fireplace.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-182,.sg-media-transports-light.sg-fireplace {
+  background: url('./../svgs/media-transports/light/fireplace.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-182,.sg-media-transports-dark.sg-fireplace {
+  background: url('./../svgs/media-transports/dark/fireplace.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-175,.sg-media-transports-accents.sg-folder {
+  background: url('./../svgs/media-transports/accents/folder.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-175,.sg-media-transports-light.sg-folder {
+  background: url('./../svgs/media-transports/light/folder.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-175,.sg-media-transports-dark.sg-folder {
+  background: url('./../svgs/media-transports/dark/folder.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-13,.sg-media-transports-accents.sg-fwd {
+  background: url('./../svgs/media-transports/accents/fwd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-13,.sg-media-transports-light.sg-fwd {
+  background: url('./../svgs/media-transports/light/fwd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-13,.sg-media-transports-dark.sg-fwd {
+  background: url('./../svgs/media-transports/dark/fwd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-54,.sg-media-transports-accents.sg-game {
+  background: url('./../svgs/media-transports/accents/game.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-54,.sg-media-transports-light.sg-game {
+  background: url('./../svgs/media-transports/light/game.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-54,.sg-media-transports-dark.sg-game {
+  background: url('./../svgs/media-transports/dark/game.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-125,.sg-media-transports-accents.sg-garage {
+  background: url('./../svgs/media-transports/accents/garage.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-125,.sg-media-transports-light.sg-garage {
+  background: url('./../svgs/media-transports/light/garage.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-125,.sg-media-transports-dark.sg-garage {
+  background: url('./../svgs/media-transports/dark/garage.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-55,.sg-media-transports-accents.sg-gear {
+  background: url('./../svgs/media-transports/accents/gear.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-55,.sg-media-transports-light.sg-gear {
+  background: url('./../svgs/media-transports/light/gear.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-55,.sg-media-transports-dark.sg-gear {
+  background: url('./../svgs/media-transports/dark/gear.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-56,.sg-media-transports-accents.sg-globe {
+  background: url('./../svgs/media-transports/accents/globe.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-56,.sg-media-transports-light.sg-globe {
+  background: url('./../svgs/media-transports/light/globe.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-56,.sg-media-transports-dark.sg-globe {
+  background: url('./../svgs/media-transports/dark/globe.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-126,.sg-media-transports-accents.sg-graph-alt {
+  background: url('./../svgs/media-transports/accents/graph-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-126,.sg-media-transports-light.sg-graph-alt {
+  background: url('./../svgs/media-transports/light/graph-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-126,.sg-media-transports-dark.sg-graph-alt {
+  background: url('./../svgs/media-transports/dark/graph-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-127,.sg-media-transports-accents.sg-graph {
+  background: url('./../svgs/media-transports/accents/graph.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-127,.sg-media-transports-light.sg-graph {
+  background: url('./../svgs/media-transports/light/graph.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-127,.sg-media-transports-dark.sg-graph {
+  background: url('./../svgs/media-transports/dark/graph.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-128,.sg-media-transports-accents.sg-grid {
+  background: url('./../svgs/media-transports/accents/grid.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-128,.sg-media-transports-light.sg-grid {
+  background: url('./../svgs/media-transports/light/grid.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-128,.sg-media-transports-dark.sg-grid {
+  background: url('./../svgs/media-transports/dark/grid.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-192,.sg-media-transports-accents.sg-group {
+  background: url('./../svgs/media-transports/accents/group.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-192,.sg-media-transports-light.sg-group {
+  background: url('./../svgs/media-transports/light/group.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-192,.sg-media-transports-dark.sg-group {
+  background: url('./../svgs/media-transports/dark/group.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-200,.sg-media-transports-accents.sg-guide-list-alt {
+  background: url('./../svgs/media-transports/accents/guide-list-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-200,.sg-media-transports-light.sg-guide-list-alt {
+  background: url('./../svgs/media-transports/light/guide-list-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-200,.sg-media-transports-dark.sg-guide-list-alt {
+  background: url('./../svgs/media-transports/dark/guide-list-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-129,.sg-media-transports-accents.sg-guide {
+  background: url('./../svgs/media-transports/accents/guide.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-129,.sg-media-transports-light.sg-guide {
+  background: url('./../svgs/media-transports/light/guide.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-129,.sg-media-transports-dark.sg-guide {
+  background: url('./../svgs/media-transports/dark/guide.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-130,.sg-media-transports-accents.sg-hd {
+  background: url('./../svgs/media-transports/accents/hd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-130,.sg-media-transports-light.sg-hd {
+  background: url('./../svgs/media-transports/light/hd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-130,.sg-media-transports-dark.sg-hd {
+  background: url('./../svgs/media-transports/dark/hd.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-166,.sg-media-transports-accents.sg-heart {
+  background: url('./../svgs/media-transports/accents/heart.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-166,.sg-media-transports-light.sg-heart {
+  background: url('./../svgs/media-transports/light/heart.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-166,.sg-media-transports-dark.sg-heart {
+  background: url('./../svgs/media-transports/dark/heart.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-57,.sg-media-transports-accents.sg-help {
+  background: url('./../svgs/media-transports/accents/help.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-57,.sg-media-transports-light.sg-help {
+  background: url('./../svgs/media-transports/light/help.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-57,.sg-media-transports-dark.sg-help {
+  background: url('./../svgs/media-transports/dark/help.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-14,.sg-media-transports-accents.sg-home {
+  background: url('./../svgs/media-transports/accents/home.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-14,.sg-media-transports-light.sg-home {
+  background: url('./../svgs/media-transports/light/home.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-14,.sg-media-transports-dark.sg-home {
+  background: url('./../svgs/media-transports/dark/home.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-131,.sg-media-transports-accents.sg-hot-tub {
+  background: url('./../svgs/media-transports/accents/hot-tub.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-131,.sg-media-transports-light.sg-hot-tub {
+  background: url('./../svgs/media-transports/light/hot-tub.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-131,.sg-media-transports-dark.sg-hot-tub {
+  background: url('./../svgs/media-transports/dark/hot-tub.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-58,.sg-media-transports-accents.sg-image {
+  background: url('./../svgs/media-transports/accents/image.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-58,.sg-media-transports-light.sg-image {
+  background: url('./../svgs/media-transports/light/image.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-58,.sg-media-transports-dark.sg-image {
+  background: url('./../svgs/media-transports/dark/image.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-59,.sg-media-transports-accents.sg-info {
+  background: url('./../svgs/media-transports/accents/info.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-59,.sg-media-transports-light.sg-info {
+  background: url('./../svgs/media-transports/light/info.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-59,.sg-media-transports-dark.sg-info {
+  background: url('./../svgs/media-transports/dark/info.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-71,.sg-media-transports-accents.sg-ipad {
+  background: url('./../svgs/media-transports/accents/ipad.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-71,.sg-media-transports-light.sg-ipad {
+  background: url('./../svgs/media-transports/light/ipad.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-71,.sg-media-transports-dark.sg-ipad {
+  background: url('./../svgs/media-transports/dark/ipad.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-72,.sg-media-transports-accents.sg-iphone-ipod-touch {
+  background: url('./../svgs/media-transports/accents/iphone-ipod-touch.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-72,.sg-media-transports-light.sg-iphone-ipod-touch {
+  background: url('./../svgs/media-transports/light/iphone-ipod-touch.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-72,.sg-media-transports-dark.sg-iphone-ipod-touch {
+  background: url('./../svgs/media-transports/dark/iphone-ipod-touch.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-73,.sg-media-transports-accents.sg-ipod {
+  background: url('./../svgs/media-transports/accents/ipod.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-73,.sg-media-transports-light.sg-ipod {
+  background: url('./../svgs/media-transports/light/ipod.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-73,.sg-media-transports-dark.sg-ipod {
+  background: url('./../svgs/media-transports/dark/ipod.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-132,.sg-media-transports-accents.sg-keyboard {
+  background: url('./../svgs/media-transports/accents/keyboard.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-132,.sg-media-transports-light.sg-keyboard {
+  background: url('./../svgs/media-transports/light/keyboard.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-132,.sg-media-transports-dark.sg-keyboard {
+  background: url('./../svgs/media-transports/dark/keyboard.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-60,.sg-media-transports-accents.sg-keypad {
+  background: url('./../svgs/media-transports/accents/keypad.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-60,.sg-media-transports-light.sg-keypad {
+  background: url('./../svgs/media-transports/light/keypad.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-60,.sg-media-transports-dark.sg-keypad {
+  background: url('./../svgs/media-transports/dark/keypad.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-103,.sg-media-transports-accents.sg-laptop {
+  background: url('./../svgs/media-transports/accents/laptop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-103,.sg-media-transports-light.sg-laptop {
+  background: url('./../svgs/media-transports/light/laptop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-103,.sg-media-transports-dark.sg-laptop {
+  background: url('./../svgs/media-transports/dark/laptop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-152,.sg-media-transports-accents.sg-lastfm {
+  background: url('./../svgs/media-transports/accents/lastfm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-152,.sg-media-transports-light.sg-lastfm {
+  background: url('./../svgs/media-transports/light/lastfm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-152,.sg-media-transports-dark.sg-lastfm {
+  background: url('./../svgs/media-transports/dark/lastfm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-15,.sg-media-transports-accents.sg-left-alt {
+  background: url('./../svgs/media-transports/accents/left-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-15,.sg-media-transports-light.sg-left-alt {
+  background: url('./../svgs/media-transports/light/left-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-15,.sg-media-transports-dark.sg-left-alt {
+  background: url('./../svgs/media-transports/dark/left-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-16,.sg-media-transports-accents.sg-left {
+  background: url('./../svgs/media-transports/accents/left.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-16,.sg-media-transports-light.sg-left {
+  background: url('./../svgs/media-transports/light/left.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-16,.sg-media-transports-dark.sg-left {
+  background: url('./../svgs/media-transports/dark/left.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-133,.sg-media-transports-accents.sg-lights-off {
+  background: url('./../svgs/media-transports/accents/lights-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-133,.sg-media-transports-light.sg-lights-off {
+  background: url('./../svgs/media-transports/light/lights-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-133,.sg-media-transports-dark.sg-lights-off {
+  background: url('./../svgs/media-transports/dark/lights-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-17,.sg-media-transports-accents.sg-lights {
+  background: url('./../svgs/media-transports/accents/lights.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-17,.sg-media-transports-light.sg-lights {
+  background: url('./../svgs/media-transports/light/lights.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-17,.sg-media-transports-dark.sg-lights {
+  background: url('./../svgs/media-transports/dark/lights.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-109,.sg-media-transports-accents.sg-list {
+  background: url('./../svgs/media-transports/accents/list.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-109,.sg-media-transports-light.sg-list {
+  background: url('./../svgs/media-transports/light/list.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-109,.sg-media-transports-dark.sg-list {
+  background: url('./../svgs/media-transports/dark/list.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-18,.sg-media-transports-accents.sg-live {
+  background: url('./../svgs/media-transports/accents/live.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-18,.sg-media-transports-light.sg-live {
+  background: url('./../svgs/media-transports/light/live.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-18,.sg-media-transports-dark.sg-live {
+  background: url('./../svgs/media-transports/dark/live.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-153,.sg-media-transports-accents.sg-location-minus {
+  background: url('./../svgs/media-transports/accents/location-minus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-153,.sg-media-transports-light.sg-location-minus {
+  background: url('./../svgs/media-transports/light/location-minus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-153,.sg-media-transports-dark.sg-location-minus {
+  background: url('./../svgs/media-transports/dark/location-minus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-154,.sg-media-transports-accents.sg-location-plus {
+  background: url('./../svgs/media-transports/accents/location-plus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-154,.sg-media-transports-light.sg-location-plus {
+  background: url('./../svgs/media-transports/light/location-plus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-154,.sg-media-transports-dark.sg-location-plus {
+  background: url('./../svgs/media-transports/dark/location-plus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-155,.sg-media-transports-accents.sg-location {
+  background: url('./../svgs/media-transports/accents/location.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-155,.sg-media-transports-light.sg-location {
+  background: url('./../svgs/media-transports/light/location.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-155,.sg-media-transports-dark.sg-location {
+  background: url('./../svgs/media-transports/dark/location.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-134,.sg-media-transports-accents.sg-lync {
+  background: url('./../svgs/media-transports/accents/lync.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-134,.sg-media-transports-light.sg-lync {
+  background: url('./../svgs/media-transports/light/lync.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-134,.sg-media-transports-dark.sg-lync {
+  background: url('./../svgs/media-transports/dark/lync.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-61,.sg-media-transports-accents.sg-magnifying-glass {
+  background: url('./../svgs/media-transports/accents/magnifying-glass.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-61,.sg-media-transports-light.sg-magnifying-glass {
+  background: url('./../svgs/media-transports/light/magnifying-glass.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-61,.sg-media-transports-dark.sg-magnifying-glass {
+  background: url('./../svgs/media-transports/dark/magnifying-glass.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-135,.sg-media-transports-accents.sg-media-server {
+  background: url('./../svgs/media-transports/accents/media-server.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-135,.sg-media-transports-light.sg-media-server {
+  background: url('./../svgs/media-transports/light/media-server.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-135,.sg-media-transports-dark.sg-media-server {
+  background: url('./../svgs/media-transports/dark/media-server.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-74,.sg-media-transports-accents.sg-mic-mute {
+  background: url('./../svgs/media-transports/accents/mic-mute.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-74,.sg-media-transports-light.sg-mic-mute {
+  background: url('./../svgs/media-transports/light/mic-mute.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-74,.sg-media-transports-dark.sg-mic-mute {
+  background: url('./../svgs/media-transports/dark/mic-mute.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-170,.sg-media-transports-accents.sg-mic-muted {
+  background: url('./../svgs/media-transports/accents/mic-muted.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-170,.sg-media-transports-light.sg-mic-muted {
+  background: url('./../svgs/media-transports/light/mic-muted.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-170,.sg-media-transports-dark.sg-mic-muted {
+  background: url('./../svgs/media-transports/dark/mic-muted.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-62,.sg-media-transports-accents.sg-mic {
+  background: url('./../svgs/media-transports/accents/mic.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-62,.sg-media-transports-light.sg-mic {
+  background: url('./../svgs/media-transports/light/mic.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-62,.sg-media-transports-dark.sg-mic {
+  background: url('./../svgs/media-transports/dark/mic.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-19,.sg-media-transports-accents.sg-minus {
+  background: url('./../svgs/media-transports/accents/minus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-19,.sg-media-transports-light.sg-minus {
+  background: url('./../svgs/media-transports/light/minus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-19,.sg-media-transports-dark.sg-minus {
+  background: url('./../svgs/media-transports/dark/minus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-183,.sg-media-transports-accents.sg-more {
+  background: url('./../svgs/media-transports/accents/more.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-183,.sg-media-transports-light.sg-more {
+  background: url('./../svgs/media-transports/light/more.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-183,.sg-media-transports-dark.sg-more {
+  background: url('./../svgs/media-transports/dark/more.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-136,.sg-media-transports-accents.sg-mouse {
+  background: url('./../svgs/media-transports/accents/mouse.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-136,.sg-media-transports-light.sg-mouse {
+  background: url('./../svgs/media-transports/light/mouse.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-136,.sg-media-transports-dark.sg-mouse {
+  background: url('./../svgs/media-transports/dark/mouse.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-179,.sg-media-transports-accents.sg-network-wi-fi-low {
+  background: url('./../svgs/media-transports/accents/network-wi-fi-low.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-179,.sg-media-transports-light.sg-network-wi-fi-low {
+  background: url('./../svgs/media-transports/light/network-wi-fi-low.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-179,.sg-media-transports-dark.sg-network-wi-fi-low {
+  background: url('./../svgs/media-transports/dark/network-wi-fi-low.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-181,.sg-media-transports-accents.sg-network-wi-fi-max {
+  background: url('./../svgs/media-transports/accents/network-wi-fi-max.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-181,.sg-media-transports-light.sg-network-wi-fi-max {
+  background: url('./../svgs/media-transports/light/network-wi-fi-max.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-181,.sg-media-transports-dark.sg-network-wi-fi-max {
+  background: url('./../svgs/media-transports/dark/network-wi-fi-max.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-180,.sg-media-transports-accents.sg-network-wi-fi-med {
+  background: url('./../svgs/media-transports/accents/network-wi-fi-med.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-180,.sg-media-transports-light.sg-network-wi-fi-med {
+  background: url('./../svgs/media-transports/light/network-wi-fi-med.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-180,.sg-media-transports-dark.sg-network-wi-fi-med {
+  background: url('./../svgs/media-transports/dark/network-wi-fi-med.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-178,.sg-media-transports-accents.sg-network-wi-fi-off {
+  background: url('./../svgs/media-transports/accents/network-wi-fi-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-178,.sg-media-transports-light.sg-network-wi-fi-off {
+  background: url('./../svgs/media-transports/light/network-wi-fi-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-178,.sg-media-transports-dark.sg-network-wi-fi-off {
+  background: url('./../svgs/media-transports/dark/network-wi-fi-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-20,.sg-media-transports-accents.sg-next-page {
+  background: url('./../svgs/media-transports/accents/next-page.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-20,.sg-media-transports-light.sg-next-page {
+  background: url('./../svgs/media-transports/light/next-page.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-20,.sg-media-transports-dark.sg-next-page {
+  background: url('./../svgs/media-transports/dark/next-page.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-21,.sg-media-transports-accents.sg-next {
+  background: url('./../svgs/media-transports/accents/next.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-21,.sg-media-transports-light.sg-next {
+  background: url('./../svgs/media-transports/light/next.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-21,.sg-media-transports-dark.sg-next {
+  background: url('./../svgs/media-transports/dark/next.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-172,.sg-media-transports-accents.sg-options-off {
+  background: url('./../svgs/media-transports/accents/options-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-172,.sg-media-transports-light.sg-options-off {
+  background: url('./../svgs/media-transports/light/options-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-172,.sg-media-transports-dark.sg-options-off {
+  background: url('./../svgs/media-transports/dark/options-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-177,.sg-media-transports-accents.sg-options-on {
+  background: url('./../svgs/media-transports/accents/options-on.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-177,.sg-media-transports-light.sg-options-on {
+  background: url('./../svgs/media-transports/light/options-on.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-177,.sg-media-transports-dark.sg-options-on {
+  background: url('./../svgs/media-transports/dark/options-on.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-137,.sg-media-transports-accents.sg-outlet {
+  background: url('./../svgs/media-transports/accents/outlet.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-137,.sg-media-transports-light.sg-outlet {
+  background: url('./../svgs/media-transports/light/outlet.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-137,.sg-media-transports-dark.sg-outlet {
+  background: url('./../svgs/media-transports/dark/outlet.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-75,.sg-media-transports-accents.sg-padlock-closed {
+  background: url('./../svgs/media-transports/accents/padlock-closed.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-75,.sg-media-transports-light.sg-padlock-closed {
+  background: url('./../svgs/media-transports/light/padlock-closed.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-75,.sg-media-transports-dark.sg-padlock-closed {
+  background: url('./../svgs/media-transports/dark/padlock-closed.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-76,.sg-media-transports-accents.sg-padlock-open {
+  background: url('./../svgs/media-transports/accents/padlock-open.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-76,.sg-media-transports-light.sg-padlock-open {
+  background: url('./../svgs/media-transports/light/padlock-open.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-76,.sg-media-transports-dark.sg-padlock-open {
+  background: url('./../svgs/media-transports/dark/padlock-open.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-156,.sg-media-transports-accents.sg-pandora {
+  background: url('./../svgs/media-transports/accents/pandora.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-156,.sg-media-transports-light.sg-pandora {
+  background: url('./../svgs/media-transports/light/pandora.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-156,.sg-media-transports-dark.sg-pandora {
+  background: url('./../svgs/media-transports/dark/pandora.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-22,.sg-media-transports-accents.sg-pause {
+  background: url('./../svgs/media-transports/accents/pause.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-22,.sg-media-transports-light.sg-pause {
+  background: url('./../svgs/media-transports/light/pause.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-22,.sg-media-transports-dark.sg-pause {
+  background: url('./../svgs/media-transports/dark/pause.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-105,.sg-media-transports-accents.sg-pen {
+  background: url('./../svgs/media-transports/accents/pen.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-105,.sg-media-transports-light.sg-pen {
+  background: url('./../svgs/media-transports/light/pen.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-105,.sg-media-transports-dark.sg-pen {
+  background: url('./../svgs/media-transports/dark/pen.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-63,.sg-media-transports-accents.sg-phone-down {
+  background: url('./../svgs/media-transports/accents/phone-down.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-63,.sg-media-transports-light.sg-phone-down {
+  background: url('./../svgs/media-transports/light/phone-down.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-63,.sg-media-transports-dark.sg-phone-down {
+  background: url('./../svgs/media-transports/dark/phone-down.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-23,.sg-media-transports-accents.sg-phone {
+  background: url('./../svgs/media-transports/accents/phone.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-23,.sg-media-transports-light.sg-phone {
+  background: url('./../svgs/media-transports/light/phone.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-23,.sg-media-transports-dark.sg-phone {
+  background: url('./../svgs/media-transports/dark/phone.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-93,.sg-media-transports-accents.sg-play-all {
+  background: url('./../svgs/media-transports/accents/play-all.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-93,.sg-media-transports-light.sg-play-all {
+  background: url('./../svgs/media-transports/light/play-all.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-93,.sg-media-transports-dark.sg-play-all {
+  background: url('./../svgs/media-transports/dark/play-all.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-94,.sg-media-transports-accents.sg-play-alt {
+  background: url('./../svgs/media-transports/accents/play-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-94,.sg-media-transports-light.sg-play-alt {
+  background: url('./../svgs/media-transports/light/play-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-94,.sg-media-transports-dark.sg-play-alt {
+  background: url('./../svgs/media-transports/dark/play-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-95,.sg-media-transports-accents.sg-play-library {
+  background: url('./../svgs/media-transports/accents/play-library.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-95,.sg-media-transports-light.sg-play-library {
+  background: url('./../svgs/media-transports/light/play-library.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-95,.sg-media-transports-dark.sg-play-library {
+  background: url('./../svgs/media-transports/dark/play-library.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-96,.sg-media-transports-accents.sg-play-list {
+  background: url('./../svgs/media-transports/accents/play-list.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-96,.sg-media-transports-light.sg-play-list {
+  background: url('./../svgs/media-transports/light/play-list.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-96,.sg-media-transports-dark.sg-play-list {
+  background: url('./../svgs/media-transports/dark/play-list.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-25,.sg-media-transports-accents.sg-play-pause {
+  background: url('./../svgs/media-transports/accents/play-pause.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-25,.sg-media-transports-light.sg-play-pause {
+  background: url('./../svgs/media-transports/light/play-pause.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-25,.sg-media-transports-dark.sg-play-pause {
+  background: url('./../svgs/media-transports/dark/play-pause.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-24,.sg-media-transports-accents.sg-play {
+  background: url('./../svgs/media-transports/accents/play.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-24,.sg-media-transports-light.sg-play {
+  background: url('./../svgs/media-transports/light/play.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-24,.sg-media-transports-dark.sg-play {
+  background: url('./../svgs/media-transports/dark/play.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-64,.sg-media-transports-accents.sg-playlist {
+  background: url('./../svgs/media-transports/accents/playlist.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-64,.sg-media-transports-light.sg-playlist {
+  background: url('./../svgs/media-transports/light/playlist.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-64,.sg-media-transports-dark.sg-playlist {
+  background: url('./../svgs/media-transports/dark/playlist.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-26,.sg-media-transports-accents.sg-plus {
+  background: url('./../svgs/media-transports/accents/plus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-26,.sg-media-transports-light.sg-plus {
+  background: url('./../svgs/media-transports/light/plus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-26,.sg-media-transports-dark.sg-plus {
+  background: url('./../svgs/media-transports/dark/plus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-77,.sg-media-transports-accents.sg-pool {
+  background: url('./../svgs/media-transports/accents/pool.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-77,.sg-media-transports-light.sg-pool {
+  background: url('./../svgs/media-transports/light/pool.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-77,.sg-media-transports-dark.sg-pool {
+  background: url('./../svgs/media-transports/dark/pool.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-27,.sg-media-transports-accents.sg-power {
+  background: url('./../svgs/media-transports/accents/power.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-27,.sg-media-transports-light.sg-power {
+  background: url('./../svgs/media-transports/light/power.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-27,.sg-media-transports-dark.sg-power {
+  background: url('./../svgs/media-transports/dark/power.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-28,.sg-media-transports-accents.sg-prev-page {
+  background: url('./../svgs/media-transports/accents/prev-page.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-28,.sg-media-transports-light.sg-prev-page {
+  background: url('./../svgs/media-transports/light/prev-page.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-28,.sg-media-transports-dark.sg-prev-page {
+  background: url('./../svgs/media-transports/dark/prev-page.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-207,.sg-media-transports-accents.sg-previous-alt {
+  background: url('./../svgs/media-transports/accents/previous-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-207,.sg-media-transports-light.sg-previous-alt {
+  background: url('./../svgs/media-transports/light/previous-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-207,.sg-media-transports-dark.sg-previous-alt {
+  background: url('./../svgs/media-transports/dark/previous-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-29,.sg-media-transports-accents.sg-previous {
+  background: url('./../svgs/media-transports/accents/previous.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-29,.sg-media-transports-light.sg-previous {
+  background: url('./../svgs/media-transports/light/previous.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-29,.sg-media-transports-dark.sg-previous {
+  background: url('./../svgs/media-transports/dark/previous.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-98,.sg-media-transports-accents.sg-projector {
+  background: url('./../svgs/media-transports/accents/projector.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-98,.sg-media-transports-light.sg-projector {
+  background: url('./../svgs/media-transports/light/projector.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-98,.sg-media-transports-dark.sg-projector {
+  background: url('./../svgs/media-transports/dark/projector.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-101,.sg-media-transports-accents.sg-radio-signal {
+  background: url('./../svgs/media-transports/accents/radio-signal.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-101,.sg-media-transports-light.sg-radio-signal {
+  background: url('./../svgs/media-transports/light/radio-signal.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-101,.sg-media-transports-dark.sg-radio-signal {
+  background: url('./../svgs/media-transports/dark/radio-signal.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-30,.sg-media-transports-accents.sg-rec {
+  background: url('./../svgs/media-transports/accents/rec.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-30,.sg-media-transports-light.sg-rec {
+  background: url('./../svgs/media-transports/light/rec.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-30,.sg-media-transports-dark.sg-rec {
+  background: url('./../svgs/media-transports/dark/rec.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-86,.sg-media-transports-accents.sg-repeat-item {
+  background: url('./../svgs/media-transports/accents/repeat-item.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-86,.sg-media-transports-light.sg-repeat-item {
+  background: url('./../svgs/media-transports/light/repeat-item.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-86,.sg-media-transports-dark.sg-repeat-item {
+  background: url('./../svgs/media-transports/dark/repeat-item.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-87,.sg-media-transports-accents.sg-repeat-off {
+  background: url('./../svgs/media-transports/accents/repeat-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-87,.sg-media-transports-light.sg-repeat-off {
+  background: url('./../svgs/media-transports/light/repeat-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-87,.sg-media-transports-dark.sg-repeat-off {
+  background: url('./../svgs/media-transports/dark/repeat-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-31,.sg-media-transports-accents.sg-repeat {
+  background: url('./../svgs/media-transports/accents/repeat.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-31,.sg-media-transports-light.sg-repeat {
+  background: url('./../svgs/media-transports/light/repeat.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-31,.sg-media-transports-dark.sg-repeat {
+  background: url('./../svgs/media-transports/dark/repeat.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-32,.sg-media-transports-accents.sg-replay {
+  background: url('./../svgs/media-transports/accents/replay.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-32,.sg-media-transports-light.sg-replay {
+  background: url('./../svgs/media-transports/light/replay.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-32,.sg-media-transports-dark.sg-replay {
+  background: url('./../svgs/media-transports/dark/replay.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-33,.sg-media-transports-accents.sg-rew {
+  background: url('./../svgs/media-transports/accents/rew.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-33,.sg-media-transports-light.sg-rew {
+  background: url('./../svgs/media-transports/light/rew.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-33,.sg-media-transports-dark.sg-rew {
+  background: url('./../svgs/media-transports/dark/rew.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-157,.sg-media-transports-accents.sg-rhapsody {
+  background: url('./../svgs/media-transports/accents/rhapsody.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-157,.sg-media-transports-light.sg-rhapsody {
+  background: url('./../svgs/media-transports/light/rhapsody.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-157,.sg-media-transports-dark.sg-rhapsody {
+  background: url('./../svgs/media-transports/dark/rhapsody.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-34,.sg-media-transports-accents.sg-right-alt {
+  background: url('./../svgs/media-transports/accents/right-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-34,.sg-media-transports-light.sg-right-alt {
+  background: url('./../svgs/media-transports/light/right-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-34,.sg-media-transports-dark.sg-right-alt {
+  background: url('./../svgs/media-transports/dark/right-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-35,.sg-media-transports-accents.sg-right {
+  background: url('./../svgs/media-transports/accents/right.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-35,.sg-media-transports-light.sg-right {
+  background: url('./../svgs/media-transports/light/right.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-35,.sg-media-transports-dark.sg-right {
+  background: url('./../svgs/media-transports/dark/right.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-202,.sg-media-transports-accents.sg-roku {
+  background: url('./../svgs/media-transports/accents/roku.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-202,.sg-media-transports-light.sg-roku {
+  background: url('./../svgs/media-transports/light/roku.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-202,.sg-media-transports-dark.sg-roku {
+  background: url('./../svgs/media-transports/dark/roku.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-36,.sg-media-transports-accents.sg-rss {
+  background: url('./../svgs/media-transports/accents/rss.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-36,.sg-media-transports-light.sg-rss {
+  background: url('./../svgs/media-transports/light/rss.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-36,.sg-media-transports-dark.sg-rss {
+  background: url('./../svgs/media-transports/dark/rss.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-102,.sg-media-transports-accents.sg-satellite {
+  background: url('./../svgs/media-transports/accents/satellite.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-102,.sg-media-transports-light.sg-satellite {
+  background: url('./../svgs/media-transports/light/satellite.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-102,.sg-media-transports-dark.sg-satellite {
+  background: url('./../svgs/media-transports/dark/satellite.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-186,.sg-media-transports-accents.sg-scene {
+  background: url('./../svgs/media-transports/accents/scene.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-186,.sg-media-transports-light.sg-scene {
+  background: url('./../svgs/media-transports/light/scene.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-186,.sg-media-transports-dark.sg-scene {
+  background: url('./../svgs/media-transports/dark/scene.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-196,.sg-media-transports-accents.sg-settings-alt {
+  background: url('./../svgs/media-transports/accents/settings-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-196,.sg-media-transports-light.sg-settings-alt {
+  background: url('./../svgs/media-transports/light/settings-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-196,.sg-media-transports-dark.sg-settings-alt {
+  background: url('./../svgs/media-transports/dark/settings-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-78,.sg-media-transports-accents.sg-settings {
+  background: url('./../svgs/media-transports/accents/settings.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-78,.sg-media-transports-light.sg-settings {
+  background: url('./../svgs/media-transports/light/settings.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-78,.sg-media-transports-dark.sg-settings {
+  background: url('./../svgs/media-transports/dark/settings.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-193,.sg-media-transports-accents.sg-shades-closed {
+  background: url('./../svgs/media-transports/accents/shades-closed.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-193,.sg-media-transports-light.sg-shades-closed {
+  background: url('./../svgs/media-transports/light/shades-closed.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-193,.sg-media-transports-dark.sg-shades-closed {
+  background: url('./../svgs/media-transports/dark/shades-closed.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-79,.sg-media-transports-accents.sg-shades {
+  background: url('./../svgs/media-transports/accents/shades.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-79,.sg-media-transports-light.sg-shades {
+  background: url('./../svgs/media-transports/light/shades.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-79,.sg-media-transports-dark.sg-shades {
+  background: url('./../svgs/media-transports/dark/shades.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-80,.sg-media-transports-accents.sg-share {
+  background: url('./../svgs/media-transports/accents/share.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-80,.sg-media-transports-light.sg-share {
+  background: url('./../svgs/media-transports/light/share.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-80,.sg-media-transports-dark.sg-share {
+  background: url('./../svgs/media-transports/dark/share.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-81,.sg-media-transports-accents.sg-shield {
+  background: url('./../svgs/media-transports/accents/shield.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-81,.sg-media-transports-light.sg-shield {
+  background: url('./../svgs/media-transports/light/shield.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-81,.sg-media-transports-dark.sg-shield {
+  background: url('./../svgs/media-transports/dark/shield.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-88,.sg-media-transports-accents.sg-shuffle-item {
+  background: url('./../svgs/media-transports/accents/shuffle-item.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-88,.sg-media-transports-light.sg-shuffle-item {
+  background: url('./../svgs/media-transports/light/shuffle-item.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-88,.sg-media-transports-dark.sg-shuffle-item {
+  background: url('./../svgs/media-transports/dark/shuffle-item.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-89,.sg-media-transports-accents.sg-shuffle-off {
+  background: url('./../svgs/media-transports/accents/shuffle-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-89,.sg-media-transports-light.sg-shuffle-off {
+  background: url('./../svgs/media-transports/light/shuffle-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-89,.sg-media-transports-dark.sg-shuffle-off {
+  background: url('./../svgs/media-transports/dark/shuffle-off.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-37,.sg-media-transports-accents.sg-shuffle {
+  background: url('./../svgs/media-transports/accents/shuffle.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-37,.sg-media-transports-light.sg-shuffle {
+  background: url('./../svgs/media-transports/light/shuffle.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-37,.sg-media-transports-dark.sg-shuffle {
+  background: url('./../svgs/media-transports/dark/shuffle.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-158,.sg-media-transports-accents.sg-sirius {
+  background: url('./../svgs/media-transports/accents/sirius.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-158,.sg-media-transports-light.sg-sirius {
+  background: url('./../svgs/media-transports/light/sirius.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-158,.sg-media-transports-dark.sg-sirius {
+  background: url('./../svgs/media-transports/dark/sirius.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-159,.sg-media-transports-accents.sg-siriusxm {
+  background: url('./../svgs/media-transports/accents/siriusxm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-159,.sg-media-transports-light.sg-siriusxm {
+  background: url('./../svgs/media-transports/light/siriusxm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-159,.sg-media-transports-dark.sg-siriusxm {
+  background: url('./../svgs/media-transports/dark/siriusxm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-195,.sg-media-transports-accents.sg-skip-ahead {
+  background: url('./../svgs/media-transports/accents/skip-ahead.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-195,.sg-media-transports-light.sg-skip-ahead {
+  background: url('./../svgs/media-transports/light/skip-ahead.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-195,.sg-media-transports-dark.sg-skip-ahead {
+  background: url('./../svgs/media-transports/dark/skip-ahead.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-194,.sg-media-transports-accents.sg-skip-back {
+  background: url('./../svgs/media-transports/accents/skip-back.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-194,.sg-media-transports-light.sg-skip-back {
+  background: url('./../svgs/media-transports/light/skip-back.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-194,.sg-media-transports-dark.sg-skip-back {
+  background: url('./../svgs/media-transports/dark/skip-back.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-204,.sg-media-transports-accents.sg-sleep {
+  background: url('./../svgs/media-transports/accents/sleep.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-204,.sg-media-transports-light.sg-sleep {
+  background: url('./../svgs/media-transports/light/sleep.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-204,.sg-media-transports-dark.sg-sleep {
+  background: url('./../svgs/media-transports/dark/sleep.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-82,.sg-media-transports-accents.sg-slow {
+  background: url('./../svgs/media-transports/accents/slow.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-82,.sg-media-transports-light.sg-slow {
+  background: url('./../svgs/media-transports/light/slow.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-82,.sg-media-transports-dark.sg-slow {
+  background: url('./../svgs/media-transports/dark/slow.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-65,.sg-media-transports-accents.sg-snow-flake {
+  background: url('./../svgs/media-transports/accents/snow-flake.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-65,.sg-media-transports-light.sg-snow-flake {
+  background: url('./../svgs/media-transports/light/snow-flake.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-65,.sg-media-transports-dark.sg-snow-flake {
+  background: url('./../svgs/media-transports/dark/snow-flake.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-90,.sg-media-transports-accents.sg-song-add {
+  background: url('./../svgs/media-transports/accents/song-add.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-90,.sg-media-transports-light.sg-song-add {
+  background: url('./../svgs/media-transports/light/song-add.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-90,.sg-media-transports-dark.sg-song-add {
+  background: url('./../svgs/media-transports/dark/song-add.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-184,.sg-media-transports-accents.sg-sonos {
+  background: url('./../svgs/media-transports/accents/sonos.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-184,.sg-media-transports-light.sg-sonos {
+  background: url('./../svgs/media-transports/light/sonos.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-184,.sg-media-transports-dark.sg-sonos {
+  background: url('./../svgs/media-transports/dark/sonos.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-160,.sg-media-transports-accents.sg-spotify {
+  background: url('./../svgs/media-transports/accents/spotify.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-160,.sg-media-transports-light.sg-spotify {
+  background: url('./../svgs/media-transports/light/spotify.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-160,.sg-media-transports-dark.sg-spotify {
+  background: url('./../svgs/media-transports/dark/spotify.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-91,.sg-media-transports-accents.sg-star {
+  background: url('./../svgs/media-transports/accents/star.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-91,.sg-media-transports-light.sg-star {
+  background: url('./../svgs/media-transports/light/star.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-91,.sg-media-transports-dark.sg-star {
+  background: url('./../svgs/media-transports/dark/star.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-187,.sg-media-transports-accents.sg-stop-source {
+  background: url('./../svgs/media-transports/accents/stop-source.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-187,.sg-media-transports-light.sg-stop-source {
+  background: url('./../svgs/media-transports/light/stop-source.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-187,.sg-media-transports-dark.sg-stop-source {
+  background: url('./../svgs/media-transports/dark/stop-source.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-38,.sg-media-transports-accents.sg-stop {
+  background: url('./../svgs/media-transports/accents/stop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-38,.sg-media-transports-light.sg-stop {
+  background: url('./../svgs/media-transports/light/stop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-38,.sg-media-transports-dark.sg-stop {
+  background: url('./../svgs/media-transports/dark/stop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-148,.sg-media-transports-accents.sg-stopwatch {
+  background: url('./../svgs/media-transports/accents/stopwatch.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-148,.sg-media-transports-light.sg-stopwatch {
+  background: url('./../svgs/media-transports/light/stopwatch.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-148,.sg-media-transports-dark.sg-stopwatch {
+  background: url('./../svgs/media-transports/dark/stopwatch.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-66,.sg-media-transports-accents.sg-sun {
+  background: url('./../svgs/media-transports/accents/sun.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-66,.sg-media-transports-light.sg-sun {
+  background: url('./../svgs/media-transports/light/sun.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-66,.sg-media-transports-dark.sg-sun {
+  background: url('./../svgs/media-transports/dark/sun.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-138,.sg-media-transports-accents.sg-system {
+  background: url('./../svgs/media-transports/accents/system.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-138,.sg-media-transports-light.sg-system {
+  background: url('./../svgs/media-transports/light/system.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-138,.sg-media-transports-dark.sg-system {
+  background: url('./../svgs/media-transports/dark/system.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-39,.sg-media-transports-accents.sg-theater {
+  background: url('./../svgs/media-transports/accents/theater.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-39,.sg-media-transports-light.sg-theater {
+  background: url('./../svgs/media-transports/light/theater.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-39,.sg-media-transports-dark.sg-theater {
+  background: url('./../svgs/media-transports/dark/theater.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-40,.sg-media-transports-accents.sg-thumb-down {
+  background: url('./../svgs/media-transports/accents/thumb-down.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-40,.sg-media-transports-light.sg-thumb-down {
+  background: url('./../svgs/media-transports/light/thumb-down.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-40,.sg-media-transports-dark.sg-thumb-down {
+  background: url('./../svgs/media-transports/dark/thumb-down.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-41,.sg-media-transports-accents.sg-thumb-up {
+  background: url('./../svgs/media-transports/accents/thumb-up.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-41,.sg-media-transports-light.sg-thumb-up {
+  background: url('./../svgs/media-transports/light/thumb-up.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-41,.sg-media-transports-dark.sg-thumb-up {
+  background: url('./../svgs/media-transports/dark/thumb-up.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-139,.sg-media-transports-accents.sg-trashcan {
+  background: url('./../svgs/media-transports/accents/trashcan.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-139,.sg-media-transports-light.sg-trashcan {
+  background: url('./../svgs/media-transports/light/trashcan.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-139,.sg-media-transports-dark.sg-trashcan {
+  background: url('./../svgs/media-transports/dark/trashcan.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-42,.sg-media-transports-accents.sg-triangle {
+  background: url('./../svgs/media-transports/accents/triangle.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-42,.sg-media-transports-light.sg-triangle {
+  background: url('./../svgs/media-transports/light/triangle.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-42,.sg-media-transports-dark.sg-triangle {
+  background: url('./../svgs/media-transports/dark/triangle.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-83,.sg-media-transports-accents.sg-tv {
+  background: url('./../svgs/media-transports/accents/tv.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-83,.sg-media-transports-light.sg-tv {
+  background: url('./../svgs/media-transports/light/tv.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-83,.sg-media-transports-dark.sg-tv {
+  background: url('./../svgs/media-transports/dark/tv.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-198,.sg-media-transports-accents.sg-ungroup {
+  background: url('./../svgs/media-transports/accents/ungroup.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-198,.sg-media-transports-light.sg-ungroup {
+  background: url('./../svgs/media-transports/light/ungroup.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-198,.sg-media-transports-dark.sg-ungroup {
+  background: url('./../svgs/media-transports/dark/ungroup.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-43,.sg-media-transports-accents.sg-up-alt {
+  background: url('./../svgs/media-transports/accents/up-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-43,.sg-media-transports-light.sg-up-alt {
+  background: url('./../svgs/media-transports/light/up-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-43,.sg-media-transports-dark.sg-up-alt {
+  background: url('./../svgs/media-transports/dark/up-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-44,.sg-media-transports-accents.sg-up {
+  background: url('./../svgs/media-transports/accents/up.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-44,.sg-media-transports-light.sg-up {
+  background: url('./../svgs/media-transports/light/up.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-44,.sg-media-transports-dark.sg-up {
+  background: url('./../svgs/media-transports/dark/up.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-140,.sg-media-transports-accents.sg-upload {
+  background: url('./../svgs/media-transports/accents/upload.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-140,.sg-media-transports-light.sg-upload {
+  background: url('./../svgs/media-transports/light/upload.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-140,.sg-media-transports-dark.sg-upload {
+  background: url('./../svgs/media-transports/dark/upload.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-141,.sg-media-transports-accents.sg-usb-alt {
+  background: url('./../svgs/media-transports/accents/usb-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-141,.sg-media-transports-light.sg-usb-alt {
+  background: url('./../svgs/media-transports/light/usb-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-141,.sg-media-transports-dark.sg-usb-alt {
+  background: url('./../svgs/media-transports/dark/usb-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-142,.sg-media-transports-accents.sg-usb {
+  background: url('./../svgs/media-transports/accents/usb.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-142,.sg-media-transports-light.sg-usb {
+  background: url('./../svgs/media-transports/light/usb.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-142,.sg-media-transports-dark.sg-usb {
+  background: url('./../svgs/media-transports/dark/usb.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-92,.sg-media-transports-accents.sg-user-bookmark {
+  background: url('./../svgs/media-transports/accents/user-bookmark.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-92,.sg-media-transports-light.sg-user-bookmark {
+  background: url('./../svgs/media-transports/light/user-bookmark.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-92,.sg-media-transports-dark.sg-user-bookmark {
+  background: url('./../svgs/media-transports/dark/user-bookmark.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-163,.sg-media-transports-accents.sg-user-check {
+  background: url('./../svgs/media-transports/accents/user-check.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-163,.sg-media-transports-light.sg-user-check {
+  background: url('./../svgs/media-transports/light/user-check.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-163,.sg-media-transports-dark.sg-user-check {
+  background: url('./../svgs/media-transports/dark/user-check.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-161,.sg-media-transports-accents.sg-user-minus {
+  background: url('./../svgs/media-transports/accents/user-minus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-161,.sg-media-transports-light.sg-user-minus {
+  background: url('./../svgs/media-transports/light/user-minus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-161,.sg-media-transports-dark.sg-user-minus {
+  background: url('./../svgs/media-transports/dark/user-minus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-84,.sg-media-transports-accents.sg-user {
+  background: url('./../svgs/media-transports/accents/user.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-84,.sg-media-transports-light.sg-user {
+  background: url('./../svgs/media-transports/light/user.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-84,.sg-media-transports-dark.sg-user {
+  background: url('./../svgs/media-transports/dark/user.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-67,.sg-media-transports-accents.sg-users {
+  background: url('./../svgs/media-transports/accents/users.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-67,.sg-media-transports-light.sg-users {
+  background: url('./../svgs/media-transports/light/users.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-67,.sg-media-transports-dark.sg-users {
+  background: url('./../svgs/media-transports/dark/users.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-143,.sg-media-transports-accents.sg-video-input {
+  background: url('./../svgs/media-transports/accents/video-input.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-143,.sg-media-transports-light.sg-video-input {
+  background: url('./../svgs/media-transports/light/video-input.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-143,.sg-media-transports-dark.sg-video-input {
+  background: url('./../svgs/media-transports/dark/video-input.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-144,.sg-media-transports-accents.sg-video-output {
+  background: url('./../svgs/media-transports/accents/video-output.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-144,.sg-media-transports-light.sg-video-output {
+  background: url('./../svgs/media-transports/light/video-output.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-144,.sg-media-transports-dark.sg-video-output {
+  background: url('./../svgs/media-transports/dark/video-output.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-201,.sg-media-transports-accents.sg-video-screen-alt {
+  background: url('./../svgs/media-transports/accents/video-screen-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-201,.sg-media-transports-light.sg-video-screen-alt {
+  background: url('./../svgs/media-transports/light/video-screen-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-201,.sg-media-transports-dark.sg-video-screen-alt {
+  background: url('./../svgs/media-transports/dark/video-screen-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-45,.sg-media-transports-accents.sg-video-screen {
+  background: url('./../svgs/media-transports/accents/video-screen.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-45,.sg-media-transports-light.sg-video-screen {
+  background: url('./../svgs/media-transports/light/video-screen.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-45,.sg-media-transports-dark.sg-video-screen {
+  background: url('./../svgs/media-transports/dark/video-screen.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-46,.sg-media-transports-accents.sg-volume-hi {
+  background: url('./../svgs/media-transports/accents/volume-hi.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-46,.sg-media-transports-light.sg-volume-hi {
+  background: url('./../svgs/media-transports/light/volume-hi.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-46,.sg-media-transports-dark.sg-volume-hi {
+  background: url('./../svgs/media-transports/dark/volume-hi.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-47,.sg-media-transports-accents.sg-volume-lo {
+  background: url('./../svgs/media-transports/accents/volume-lo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-47,.sg-media-transports-light.sg-volume-lo {
+  background: url('./../svgs/media-transports/light/volume-lo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-47,.sg-media-transports-dark.sg-volume-lo {
+  background: url('./../svgs/media-transports/dark/volume-lo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-48,.sg-media-transports-accents.sg-volume-mute {
+  background: url('./../svgs/media-transports/accents/volume-mute.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-48,.sg-media-transports-light.sg-volume-mute {
+  background: url('./../svgs/media-transports/light/volume-mute.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-48,.sg-media-transports-dark.sg-volume-mute {
+  background: url('./../svgs/media-transports/dark/volume-mute.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-171,.sg-media-transports-accents.sg-volume-muted {
+  background: url('./../svgs/media-transports/accents/volume-muted.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-171,.sg-media-transports-light.sg-volume-muted {
+  background: url('./../svgs/media-transports/light/volume-muted.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-171,.sg-media-transports-dark.sg-volume-muted {
+  background: url('./../svgs/media-transports/dark/volume-muted.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-97,.sg-media-transports-accents.sg-weather {
+  background: url('./../svgs/media-transports/accents/weather.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-97,.sg-media-transports-light.sg-weather {
+  background: url('./../svgs/media-transports/light/weather.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-97,.sg-media-transports-dark.sg-weather {
+  background: url('./../svgs/media-transports/dark/weather.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-85,.sg-media-transports-accents.sg-wi-fi {
+  background: url('./../svgs/media-transports/accents/wi-fi.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-85,.sg-media-transports-light.sg-wi-fi {
+  background: url('./../svgs/media-transports/light/wi-fi.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-85,.sg-media-transports-dark.sg-wi-fi {
+  background: url('./../svgs/media-transports/dark/wi-fi.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-145,.sg-media-transports-accents.sg-windows {
+  background: url('./../svgs/media-transports/accents/windows.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-145,.sg-media-transports-light.sg-windows {
+  background: url('./../svgs/media-transports/light/windows.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-145,.sg-media-transports-dark.sg-windows {
+  background: url('./../svgs/media-transports/dark/windows.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-146,.sg-media-transports-accents.sg-wireless-device {
+  background: url('./../svgs/media-transports/accents/wireless-device.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-146,.sg-media-transports-light.sg-wireless-device {
+  background: url('./../svgs/media-transports/light/wireless-device.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-146,.sg-media-transports-dark.sg-wireless-device {
+  background: url('./../svgs/media-transports/dark/wireless-device.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-147,.sg-media-transports-accents.sg-wrench {
+  background: url('./../svgs/media-transports/accents/wrench.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-147,.sg-media-transports-light.sg-wrench {
+  background: url('./../svgs/media-transports/light/wrench.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-147,.sg-media-transports-dark.sg-wrench {
+  background: url('./../svgs/media-transports/dark/wrench.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-162,.sg-media-transports-accents.sg-xm {
+  background: url('./../svgs/media-transports/accents/xm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-162,.sg-media-transports-light.sg-xm {
+  background: url('./../svgs/media-transports/light/xm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-162,.sg-media-transports-dark.sg-xm {
+  background: url('./../svgs/media-transports/dark/xm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-151,.sg-media-transports-accents.sg-abc {
+  background: url('./../svgs/media-transports/accents/abc.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-151,.sg-media-transports-light.sg-abc {
+  background: url('./../svgs/media-transports/light/abc.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-151,.sg-media-transports-dark.sg-abc {
+  background: url('./../svgs/media-transports/dark/abc.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-169,.sg-media-transports-accents.sg-blank {
+  background: url('./../svgs/media-transports/accents/blank.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-169,.sg-media-transports-light.sg-blank {
+  background: url('./../svgs/media-transports/light/blank.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-169,.sg-media-transports-dark.sg-blank {
+  background: url('./../svgs/media-transports/dark/blank.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-212,.sg-media-transports-accents.sg-iheart-radio {
+  background: url('./../svgs/media-transports/accents/iheart-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-212,.sg-media-transports-light.sg-iheart-radio {
+  background: url('./../svgs/media-transports/light/iheart-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-212,.sg-media-transports-dark.sg-iheart-radio {
+  background: url('./../svgs/media-transports/dark/iheart-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-211,.sg-media-transports-accents.sg-murfie {
+  background: url('./../svgs/media-transports/accents/murfie.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-211,.sg-media-transports-light.sg-murfie {
+  background: url('./../svgs/media-transports/light/murfie.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-211,.sg-media-transports-dark.sg-murfie {
+  background: url('./../svgs/media-transports/dark/murfie.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-210,.sg-media-transports-accents.sg-napster {
+  background: url('./../svgs/media-transports/accents/napster.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-210,.sg-media-transports-light.sg-napster {
+  background: url('./../svgs/media-transports/light/napster.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-210,.sg-media-transports-dark.sg-napster {
+  background: url('./../svgs/media-transports/dark/napster.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-208,.sg-media-transports-accents.sg-next-alt {
+  background: url('./../svgs/media-transports/accents/next-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-208,.sg-media-transports-light.sg-next-alt {
+  background: url('./../svgs/media-transports/light/next-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-208,.sg-media-transports-dark.sg-next-alt {
+  background: url('./../svgs/media-transports/dark/next-alt.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-214,.sg-media-transports-accents.sg-slacker-radio {
+  background: url('./../svgs/media-transports/accents/slacker-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-214,.sg-media-transports-light.sg-slacker-radio {
+  background: url('./../svgs/media-transports/light/slacker-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-214,.sg-media-transports-dark.sg-slacker-radio {
+  background: url('./../svgs/media-transports/dark/slacker-radio.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-213,.sg-media-transports-accents.sg-tidal {
+  background: url('./../svgs/media-transports/accents/tidal.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-213,.sg-media-transports-light.sg-tidal {
+  background: url('./../svgs/media-transports/light/tidal.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-213,.sg-media-transports-dark.sg-tidal {
+  background: url('./../svgs/media-transports/dark/tidal.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-accents.sg-209,.sg-media-transports-accents.sg-volume {
+  background: url('./../svgs/media-transports/accents/volume.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-light.sg-209,.sg-media-transports-light.sg-volume {
+  background: url('./../svgs/media-transports/light/volume.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.sg-media-transports-dark.sg-209,.sg-media-transports-dark.sg-volume {
+  background: url('./../svgs/media-transports/dark/volume.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}

@@ -13,12 +13,14 @@
 @import "./variables";
 @import "./mixins";
 
+/// Primary Class
 .ch5-keypad {
 	display: inline-block;
 	width: $ch5-keypad-regular-container-width;
 	height: $ch5-keypad-regular-container-height;
 	vertical-align: top;
 
+	/// Applied when button in the disabled state
 	&.ch5-disabled {
 		opacity: 0.5;
 		pointer-events: none;
@@ -56,13 +58,14 @@
 			}
 		}
 	}
-
+	/// Applied when type="default"
 	&.ch5-keypad--type-default {
 		@include ch5-keypad-content(
 			$ch5-keypad-default-default-background-color,
 			$ch5-keypad-default-default-border-color,
 			$ch5-keypad-default-default-font-color
 		);
+		/// Applied when button in the pressed state
 		.keypad-btn-pressed {
 			@include ch5-keypad-content--pressed(
 				$ch5-keypad-default-pressed-background-color,
@@ -71,6 +74,7 @@
 			);
 		}
 	}
+	/// Applied when type="default"
 	&.ch5-keypad--type-primary {
 		@include ch5-keypad-content(
 			$ch5-keypad-primary-default-background-color,
@@ -85,6 +89,7 @@
 			);
 		}
 	}
+	/// Applied when type="info"
 	&.ch5-keypad--type-info {
 		@include ch5-keypad-content(
 			$ch5-keypad-info-default-background-color,
@@ -99,6 +104,7 @@
 			);
 		}
 	}
+	/// Applied when type="text"
 	&.ch5-keypad--type-text {
 		@include ch5-keypad-content(
 			$ch5-keypad-text-default-background-color,
@@ -113,6 +119,7 @@
 			);
 		}
 	}
+	/// Applied when type="danger"
 	&.ch5-keypad--type-danger {
 		@include ch5-keypad-content(
 			$ch5-keypad-danger-default-background-color,
@@ -127,6 +134,7 @@
 			);
 		}
 	}
+	/// Applied when type="warning"
 	&.ch5-keypad--type-warning {
 		@include ch5-keypad-content(
 			$ch5-keypad-warning-default-background-color,
@@ -141,6 +149,7 @@
 			);
 		}
 	}
+	/// Applied when type="success"
 	&.ch5-keypad--type-success {
 		@include ch5-keypad-content(
 			$ch5-keypad-success-default-background-color,
@@ -155,6 +164,7 @@
 			);
 		}
 	}
+	/// Applied when type="secondary"
 	&.ch5-keypad--type-secondary {
 		@include ch5-keypad-content(
 			$ch5-keypad-secondary-default-background-color,
@@ -170,12 +180,14 @@
 		}
 	}
 
+	/// Applied when button in the textOrientation="top"
 	&.ch5-keypad--orientation-top {
 		button {
 			flex-direction: column;
 		}
 	}
 
+	/// Applied when button in the textOrientation="right"
 	&.ch5-keypad--orientation-right {
 		button {
 			flex-direction: row-reverse;
@@ -185,12 +197,14 @@
 		}
 	}
 
+	/// Applied when button in the textOrientation="bottom"
 	&.ch5-keypad--orientation-bottom {
 		button {
 			flex-direction: column-reverse;
 		}
 	}
 
+	/// Applied when button in the textOrientation="left"
 	&.ch5-keypad--orientation-left {
 		button {
 			flex-direction: row;
@@ -218,6 +232,7 @@
 	gap: 6px;
 	justify-content: center;
 
+	/// Add styles for all buttons inside the keypad
 	.keypad-btn {
 		cursor: pointer;
 		display: flex;
@@ -295,6 +310,7 @@
 
 // sizes
 .ch5-keypad {
+	/// Applied when size="x-small"
 	&.ch5-keypad--size-x-small {
 		@include ch5-keypad-fonts-sizes(
 			$ch5-keypad-x-small-container-width,
@@ -304,7 +320,7 @@
 			$ch5-keypad-x-small-font-size-minor
 		);
 	}
-
+	/// Applied when size="small"
 	&.ch5-keypad--size-small {
 		@include ch5-keypad-fonts-sizes(
 			$ch5-keypad-small-container-width,
@@ -314,7 +330,7 @@
 			$ch5-keypad-small-font-size-minor
 		);
 	}
-
+	/// Applied when size="regular"
 	&.ch5-keypad--size-regular {
 		@include ch5-keypad-fonts-sizes(
 			$ch5-keypad-regular-container-width,
@@ -324,7 +340,7 @@
 			$ch5-keypad-regular-font-size-minor
 		);
 	}
-
+	/// Applied when size="large"
 	&.ch5-keypad--size-large {
 		@include ch5-keypad-fonts-sizes(
 			$ch5-keypad-large-container-width,
@@ -334,7 +350,7 @@
 			$ch5-keypad-large-font-size-minor
 		);
 	}
-
+	/// Applied when size="x-large"
 	&.ch5-keypad--size-x-large {
 		@include ch5-keypad-fonts-sizes(
 			$ch5-keypad-x-large-container-width,
@@ -344,4 +360,34 @@
 			$ch5-keypad-x-large-font-size-minor
 		);
 	}
+}
+
+/// Applied when shape="rounded-rectangle"
+.ch5-keypad--shape-rounded-rectangle {
+	// DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when shape="square"
+.ch5-keypad--shape-square {
+	// DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when shape="circle"
+.ch5-keypad--shape-circle {
+	// DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when stretch="height"
+.ch5-keypad--stretch-height {
+	// DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when stretch="width"
+.ch5-keypad--stretch-width {
+	// DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when stretch="both"
+.ch5-keypad--stretch-both {
+	// DO NOT DELETE - used for Component Reference	
 }

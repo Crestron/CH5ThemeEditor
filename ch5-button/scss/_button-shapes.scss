@@ -9,38 +9,56 @@
 /// @author Crestron
 /// @group ch5-button
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-@import "./variables";
 
 // *** Button 'shape' attribute ***
+/// Applied when shape='rectangle'
 .ch5-button--rectangle {
-  @include border-radius(0);
+	@include border-radius(0);
+	overflow: hidden;
 }
+
+/// Applied when shape='rounded-rectangle'
 .ch5-button--rounded-rectangle {
-  @include border-radius($ch5-button-border-radius);
+	@include border-radius($ch5-button-border-radius);
+	overflow: hidden;
 }
+
+/// Applied when shape='circle'
 .ch5-button--circle {
-  display: inline-block;
-  text-decoration: none;
-  outline: none;
-  border-style: none;
-  text-align: center;
-  @include border-radius($ch5-button-circle-border-radius);
-  &:before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    padding-top: 100%;
-  }
-  .cb-btn {
-    display: inline-flex;
-    vertical-align: middle;
-    height: 100%;
-  }
+	// button {
+	//   @include border-radius($ch5-button-circle-border-radius);
+	// }
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	border-style: none;
+	text-align: center;
+	overflow: hidden;
+	@include border-radius($ch5-button-circle-border-radius);
+
+	// &:before {
+	//   content: "";
+	//   display: inline-block;
+	//   vertical-align: middle;
+	//   padding-top: 100%;
+	// }
+	.cb-btn {
+		display: inline-flex;
+		vertical-align: middle;
+		width: 100%;
+		height: 100%;
+	}
 }
+
+/// Applied when shape='oval'
 .ch5-button--oval {
-  @include border-radius($ch5-button-oval-border-radius);
-  overflow: auto;
+	@include border-radius($ch5-button-oval-border-radius);
+	// overflow: auto;
+	overflow: hidden;
 }
+
+/// Applied when shape='tab'
 .ch5-button--tab {
-  @include border-radius($ch5-button-tab-border-radius);
+	@include border-radius($ch5-button-tab-border-radius);
+	overflow: hidden;
 }
