@@ -113,7 +113,7 @@
     min-width: $ch5-dpad-default-dimension;
     min-height: $ch5-dpad-default-dimension;
     vertical-align: top;
-
+    /// Applied when size="regular"
     &.ch5-dpad--size-regular {
         .dpad-btn-icon {
             font-size: $ch5-dpad-icon-font-size-regular;
@@ -1359,10 +1359,5 @@
 
 /// Defines the dpad shape
 .ch5-dpad--shape-circle {
-    // DO NOT DELETE - used for Component Reference
-}
-
-/// Primary Class
-.ch5-dpad-button {
     // DO NOT DELETE - used for Component Reference
 }

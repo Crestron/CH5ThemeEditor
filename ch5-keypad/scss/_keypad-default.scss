@@ -58,7 +58,7 @@
 			}
 		}
 	}
-
+	/// Applied when type="default"
 	&.ch5-keypad--type-default {
 		@include ch5-keypad-content(
 			$ch5-keypad-default-default-background-color,
@@ -74,6 +74,7 @@
 			);
 		}
 	}
+	/// Applied when type="default"
 	&.ch5-keypad--type-primary {
 		@include ch5-keypad-content(
 			$ch5-keypad-primary-default-background-color,
