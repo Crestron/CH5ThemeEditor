@@ -73,6 +73,7 @@ ch5-list {
         display: none;
     }
 
+    /// Applied when the list is displayed vertically and scrollbar="true" is added
     .ch5-list-vertical-scrollbar {
         padding-right: $ch5-scrollbar-width;
 
@@ -84,6 +85,7 @@ ch5-list {
         }
     }
 
+    /// Applied when scrollbar="true" is added
     .ch5-list-horizontal-scrollbar {
         padding-bottom: $ch5-scrollbar-width;
 
