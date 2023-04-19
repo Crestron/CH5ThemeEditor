@@ -67,7 +67,11 @@ ch5-slider {
     background-color: transparent;
   }
 }
-
+ch5-slider[ticks]{
+  .ch5-slider-key--on,.ch5-slider-key--off{
+    top: 28px;
+  }
+}
 ch5-slider[orientation="vertical"] {
   .ch5-slider-key--on {
     z-index: 1;

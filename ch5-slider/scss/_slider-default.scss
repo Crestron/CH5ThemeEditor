@@ -57,6 +57,20 @@ ch5-slider {
     .noUi-target {
       height: $ch5-slider-target-size;
     }
+    &.ch5-slider-ticks {
+      .noUi-base {
+        height: $ch5-slider-target-size;
+        border-style: $ch5-slider-target-border-style;
+        border-color: $ch5-slider-target-border-color;
+        border-width: $ch5-slider-target-border-width;
+      }
+      .noUi-pips-horizontal {
+        top: 0;
+      }
+      .noUi-pips {
+        position: relative;
+      }
+    }
     &.adv-slider {
       .noUi-target {
         align-self: center;
@@ -79,6 +93,20 @@ ch5-slider {
     &.adv-slider {
       .noUi-target {
         align-self: center;
+      }
+    }
+    &.ch5-slider-ticks {
+      .noUi-base {
+        width: $ch5-slider-target-size;
+        border-style: $ch5-slider-target-border-style;
+        border-color: $ch5-slider-target-border-color;
+        border-width: $ch5-slider-target-border-width;
+      }
+      width: 90px;
+      max-width: fit-content !important;
+      .noUi-target {
+        align-self: auto;
+        margin-left: $ch5-slider-target-size/2.57;
       }
     }
     &.ch5-slider--tooltip--on {
@@ -224,4 +252,19 @@ html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle .noUi-horizontal .no
   }
 
   color: $ch5-slider-pips-color;
+}
+
+.ch5-slider-ticks {
+  .slider-off-button,
+  .slider-on-button {
+    height: fit-content;
+    width: fit-content;
+  }
+  .noUi-target {
+    height: 100% !important;
+    border: 0;
+  }
+  .noUi-base {
+    border-radius: 4px;
+  }
 }
