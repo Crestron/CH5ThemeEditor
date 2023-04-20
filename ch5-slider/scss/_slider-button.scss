@@ -28,7 +28,7 @@
     .cb-btn {
       display: inline-flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
     }
   }
 
@@ -67,8 +67,9 @@ ch5-slider {
     background-color: transparent;
   }
 }
-ch5-slider[ticks]{
-  .ch5-slider-key--on,.ch5-slider-key--off{
+ch5-slider[ticks] {
+  .ch5-slider-key--on,
+  .ch5-slider-key--off {
     top: 28px;
   }
 }
@@ -113,7 +114,7 @@ ch5-slider[orientation="vertical"] {
 
 .ch5-slider-vertical-stretch {
   &.ch5-slider-key--off {
-    left: 47%  !important;
+    left: 47% !important;
   }
   &.ch5-slider-key--on {
     left: 47% !important;
