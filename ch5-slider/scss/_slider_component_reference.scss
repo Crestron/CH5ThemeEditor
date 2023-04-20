@@ -10,12 +10,23 @@
 /// @group ch5-slider
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "./scss/mixins-size";
-@import "./scss/variables";
-
-@import "./scss/slider-size";
-@import "./scss/handle-size";
-@import "./scss/handle-shape";
-@import "./scss/slider-button";
-@import "./scss/slider-default";
-@import "./scss/slider_component_reference";
+/// Applied when slider toolTipShowType="off"
+.ch5-slider--tooltip--off {
+  // DO NOT DELETE - used for Component Reference
+}
+/// Applied when slider toolTipShowType="on"
+.ch5-slider--tooltip--on {
+  // DO NOT DELETE - used for Component Reference
+}
+/// Applied when slider stretch="both"
+.ch5-slider--stretch--both {
+  // DO NOT DELETE - used for Component Reference
+}
+/// Applied when slider stretch="width"
+.ch5-slider--stretch--width {
+  // DO NOT DELETE - used for Component Reference
+}
+/// Applied when slider stretch="height"
+.ch5-slider--stretch--height {
+  // DO NOT DELETE - used for Component Reference
+}
