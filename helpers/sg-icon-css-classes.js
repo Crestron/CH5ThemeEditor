@@ -23,19 +23,10 @@ const fse = require('fs-extra');
       outputArray.push(`
 .sg {
 }
-
-.sg-icons-lg,.sg-media-transports-light,.sg-media-transports-dark,.sg-media-transports-accents {
-  height: 100px;
-  width: 100px;
-}
-
-.sg-icons-sm {
-  height: 20px;
-  width: 20px;
-}`);
+`);
       for (const prop of data.icons) {
         for (let i = 0; i < prop.themes.length; i++) {
-          let stringValue = ".sg-" + prop.themes[i];
+          let stringValue = ".sg.sg-" + prop.themes[i];
           let finalStringValue = "";
           for (let j = 0; j < prop.alias.length; j++) {
             finalStringValue += stringValue + ".sg-" + prop.alias[j] + ",";
@@ -46,15 +37,14 @@ const fse = require('fs-extra');
           if (prop.themes[i] === "icons-lg" || prop.themes[i] === "icons-sm") {
             filePathForIcon = "./../svgs/icons/";
           } else {
-            const propVal =  prop.themes[i].split("-") ;
+            const propVal = prop.themes[i].split("-");
             filePathForIcon = "./../svgs/media-transports/" + propVal[propVal.length - 1] + "/";
           }
           outputArray.push(`
 ${finalStringValue} {
-  background: url('${filePathForIcon}${prop.fileName}');
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
+  background-image: url('${filePathForIcon}${prop.fileName}');
+  height: ${prop.themes[i] === 'icons-sm' ? 20 : 32}px;
+  width: ${prop.themes[i] === 'icons-sm' ? 20 : 32}px;
 }`);
         }
       }
