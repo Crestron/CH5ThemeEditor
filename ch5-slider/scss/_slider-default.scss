@@ -21,6 +21,17 @@ ch5-slider {
   display: inline-block;
 }
 
+.ch5-slider--disabled {
+  .slider-off-button,
+  .slider-on-button {
+    opacity: 0.5 !important;
+    z-index: 2;
+  }
+  .cb-btn {
+    cursor: not-allowed !important;
+  }
+}
+
 /* ch5-slider - the container */
 
 /// the class added on the component and wraps all its contents
@@ -50,6 +61,12 @@ ch5-slider {
 
   &.nohandle .noUi-handle {
     visibility: hidden;
+  }
+
+  .noUi-handle:after {
+    content: none !important;
+    height: 0% !important;
+    width: 0% !important;
   }
 
   /// Applied when slider orientation="horizontal"

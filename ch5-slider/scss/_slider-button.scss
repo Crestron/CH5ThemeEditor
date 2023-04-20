@@ -26,9 +26,9 @@
       @include text-truncate;
     }
     .cb-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 
@@ -42,7 +42,9 @@
     height: 100%;
   }
 }
-
+.slider-on-button{
+  margin-right: 3px;
+}
 .slider-off-button[hidden],
 .slider-on-button[hidden] {
   display: none;
