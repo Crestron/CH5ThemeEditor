@@ -3,7 +3,7 @@
   display: inline-flex;
   pointer-events: none;
   vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
-
+  z-index: 1;
   .ch5-button {
     display: flex;
     max-width: 100%;
@@ -105,92 +105,36 @@
     }
   }
 }
+
 .ch5-slider-iconfill {
   .cb-btn {
     display: inline !important;
   }
 }
+
 .slider-on-button {
   margin-right: 3px;
 }
+
 .slider-off-button[hidden],
 .slider-on-button[hidden] {
   display: none;
 }
+
 .adv-slider-btn {
   display: none;
-}
-ch5-slider {
-  .ch5-slider-key--on {
-    z-index: 1;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    background-color: transparent;
-  }
-
-  .ch5-slider-key--off {
-    z-index: 1;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    background-color: transparent;
-  }
-}
-ch5-slider[ticks] {
-  .ch5-slider-key--on,
-  .ch5-slider-key--off {
-    top: 28px;
-  }
-}
-ch5-slider[orientation="vertical"] {
-  .ch5-slider-key--on {
-    z-index: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: transparent;
-  }
-
-  .ch5-slider-key--off {
-    z-index: 1;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    background-color: transparent;
-  }
-}
-ch5-slider[orientation="vertical"] {
-  .ch5-slider-title ~ .ch5-slider-key--on {
-    top: 24px;
-  }
-}
-.ch5-slider-horizontal-stretch {
-  &.ch5-slider-key--off {
-    top: 50% !important;
-  }
-  &.ch5-slider-key--on {
-    top: 50% !important;
-  }
-}
-
-.ch5-slider-vertical-stretch {
-  &.ch5-slider-key--off {
-    left: 47% !important;
-  }
-  &.ch5-slider-key--on {
-    left: 47% !important;
-  }
-}
-ch5-slider {
-  .ch5-slider-button {
-    width: $ch5-slider-size-regular-horizontal-width;
-    height: $ch5-slider-size-regular-horizontal-height;
-  }
 }
 
 .ch5-label-prop {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.ch5-slider-button--pressed {
+  .ch5-button {
+    border-color: $default-pressed-border-color;
+    background-color: $default-pressed-background-color;
+    color: $default-pressed-font-color;
+  }
 }

@@ -65,10 +65,7 @@
                 flex-direction: column-reverse;
             }
         }
-        /* ch5-slider - x-small */
-        .ch5-slider-button-container {
-            //    height: 100%;
-        }
+
         &.ch5-slider--size--x-small {
             .ch5-slider-button-container {
                 height: $ch5-slider-size-x-small-vertical;
