@@ -25,10 +25,21 @@
       display: block;
       @include text-truncate;
     }
+
     .cb-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      line-height: $ch5-button-content-line-height;
+      padding: $ch5-button-padding;
+      vertical-align: middle;
+      padding-top: calc($ch5-button-padding / 2);
+      padding-bottom: calc($ch5-button-padding / 2);
+    }
+
+    .ch5-button--label {
+      padding-left: calc($ch5-button-padding / 2);
+      padding-right: calc($ch5-button-padding / 2);
     }
   }
 
@@ -92,6 +103,11 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+  }
+}
+.ch5-slider-iconfill {
+  .cb-btn {
+    display: inline !important;
   }
 }
 .slider-on-button {
