@@ -26,9 +26,9 @@
       @include text-truncate;
     }
     .cb-btn {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -41,8 +41,60 @@
     flex: none;
     height: 100%;
   }
+  .ch5-button--icon-url-fill-type-stretch,
+  .ch5-button--icon-url-fill-type-stretch-aspect,
+  .ch5-button--icon-url-fill-type-center,
+  .ch5-button--icon-url-fill-type-tile {
+    span {
+      z-index: 2;
+    }
+
+    .ch5-button--img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .ch5-button--icon-url-fill-type-stretch {
+    .ch5-button--img {
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .ch5-button--icon-url-fill-type-stretch-aspect {
+    .ch5-button--img {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .ch5-button--icon-url-fill-type-center {
+    .ch5-button--img {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .ch5-button--icon-url-fill-type-tile {
+    .ch5-button--img {
+      background-size: auto;
+      background-position: 0;
+      background-repeat: repeat;
+    }
+  }
+
+  .ch5-button--icon-url-fill-type-initial {
+    .ch5-button--img {
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
 }
-.slider-on-button{
+.slider-on-button {
   margin-right: 3px;
 }
 .slider-off-button[hidden],
@@ -91,14 +143,6 @@ ch5-slider[orientation="vertical"] {
     left: 0px;
     background-color: transparent;
   }
-  //  &[stretch="both"] ,&[stretch="width"] {
-  //     .ch5-slider-key-off .ch5-slider-key--on {
-  //       left: 44%;
-  //     }
-  //   }
-  // ch5-slider-title-label[label] ~ ch5-slider-button[key="on"] {
-  //   top: 24px;
-  // }
 }
 ch5-slider[orientation="vertical"] {
   .ch5-slider-title ~ .ch5-slider-key--on {
