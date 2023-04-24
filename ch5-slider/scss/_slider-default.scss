@@ -26,8 +26,13 @@ ch5-slider {
   .slider-on-button {
     opacity: 0.5 !important;
     z-index: 2;
+    div {
+      cursor: not-allowed !important;
+      pointer-events: none;
+    }
   }
-  .cb-btn {
+  .cb-btn,
+  .ch5-slider-button-container {
     cursor: not-allowed !important;
   }
 }
@@ -123,7 +128,7 @@ ch5-slider {
       max-width: fit-content !important;
       .noUi-target {
         align-self: auto;
-        margin-left: $ch5-slider-target-size/2.57;
+        margin-left: calc($ch5-slider-target-size/2.57);
       }
     }
     &.ch5-slider--tooltip--on {

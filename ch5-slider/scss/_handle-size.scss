@@ -31,7 +31,7 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-right: $ch5-slider-size-x-small-horizontal-width/2;
+                margin-right: calc($ch5-slider-size-x-small-horizontal-width/2);
             }
             line-height: $ch5-slider-size-x-small-horizontal-height;
             padding: 0 calc($ch5-slider-size-x-small-horizontal-width / 2);
@@ -48,7 +48,7 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-right: $ch5-slider-size-small-horizontal-width/2;
+                margin-right: calc($ch5-slider-size-small-horizontal-width/2);
             }
             .cb-btn {
                 width: $ch5-slider-size-small-horizontal-width;
@@ -73,7 +73,7 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-right: $ch5-slider-size-regular-horizontal-width/2;
+                margin-right: calc($ch5-slider-size-regular-horizontal-width/2);
             }
             line-height: $ch5-slider-size-regular-horizontal-height;
             padding: 0 calc($ch5-slider-size-regular-horizontal-width / 2);
@@ -94,7 +94,7 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-right: $ch5-slider-size-large-horizontal-width/2;
+                margin-right: calc($ch5-slider-size-large-horizontal-width/2);
             }
             line-height: $ch5-slider-size-large-horizontal-height;
             padding: 0 calc($ch5-slider-size-large-horizontal-width / 2);
@@ -115,7 +115,7 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-right: $ch5-slider-size-x-large-horizontal-width/2;
+                margin-right: calc($ch5-slider-size-x-large-horizontal-width/2);
             }
             line-height: $ch5-slider-size-x-large-horizontal-height;
             padding: 0 calc($ch5-slider-size-x-large-horizontal-width / 2);
@@ -135,7 +135,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-x-small-horizontal-oval-size * 1.2;
+                width: calc($ch5-slider-size-x-small-horizontal-oval-size * 1.2);
                 height: $ch5-slider-size-x-small-horizontal-oval-size;
             }
             .slider-off-button,
@@ -156,7 +156,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-small-horizontal-oval-size * 1.2;
+                width: calc($ch5-slider-size-small-horizontal-oval-size * 1.2);
                 height: $ch5-slider-size-small-horizontal-oval-size;
             }
             .slider-off-button,
@@ -177,7 +177,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-regular-horizontal-oval-size * 1.2;
+                width: calc($ch5-slider-size-regular-horizontal-oval-size * 1.2);
                 height: $ch5-slider-size-regular-horizontal-oval-size;
             }
             .slider-off-button,
@@ -198,7 +198,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-large-horizontal-oval-size * 1.2;
+                width: calc($ch5-slider-size-large-horizontal-oval-size * 1.2);
                 height: $ch5-slider-size-large-horizontal-oval-size;
             }
             .slider-off-button,
@@ -219,7 +219,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-x-large-horizontal-oval-size * 1.2;
+                width: calc($ch5-slider-size-x-large-horizontal-oval-size * 1.2);
                 height: $ch5-slider-size-x-large-horizontal-oval-size;
             }
             .slider-off-button,
@@ -249,7 +249,7 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-right: $ch5-slider-size-x-small-horizontal-circle-size/2;
+                margin-right: calc($ch5-slider-size-x-small-horizontal-circle-size/2);
             }
             line-height: $ch5-slider-size-x-small-horizontal-circle-size;
             padding: 0 calc($ch5-slider-size-x-small-horizontal-circle-size / 2);
@@ -270,7 +270,7 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-right: $ch5-slider-size-small-horizontal-circle-size/2;
+                margin-right: calc($ch5-slider-size-small-horizontal-circle-size/2);
             }
             line-height: $ch5-slider-size-small-horizontal-circle-size;
             padding: 0 calc($ch5-slider-size-small-horizontal-circle-size / 2);
@@ -291,7 +291,7 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-right: $ch5-slider-size-regular-horizontal-circle-size/2;
+                margin-right: calc($ch5-slider-size-regular-horizontal-circle-size/2);
             }
             line-height: $ch5-slider-size-regular-horizontal-circle-size;
             padding: 0 calc($ch5-slider-size-regular-horizontal-circle-size / 2);
@@ -312,7 +312,7 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-right: $ch5-slider-size-large-horizontal-circle-size/2;
+                margin-right: calc($ch5-slider-size-large-horizontal-circle-size/2);
             }
             line-height: $ch5-slider-size-large-horizontal-circle-size;
             padding: 0 calc($ch5-slider-size-large-horizontal-circle-size / 2);
@@ -333,7 +333,7 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-right: $ch5-slider-size-x-large-horizontal-circle-size/2;
+                margin-right: calc($ch5-slider-size-x-large-horizontal-circle-size/2);
             }
             line-height: $ch5-slider-size-x-large-horizontal-circle-size;
             padding: 0 calc($ch5-slider-size-x-large-horizontal-circle-size / 2);
@@ -364,12 +364,12 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-top: $ch5-slider-size-x-small-vertical-height/2;
+                margin-top: calc($ch5-slider-size-x-small-vertical-height/2);
             }
             min-width: $ch5-slider-size-x-small-vertical-width;
 
             &.adv-slider {
-                max-width: $ch5-slider-size-x-small-vertical-width * 1.2;
+                max-width: calc($ch5-slider-size-x-small-vertical-width * 1.2);
             }
 
             padding: calc($ch5-slider-size-x-small-vertical-height / 2) abs($ch5-slider-size-x-small-vertical-left);
@@ -390,12 +390,12 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-top: $ch5-slider-size-small-vertical-height/2;
+                margin-top: calc($ch5-slider-size-small-vertical-height/2);
             }
             min-width: $ch5-slider-size-small-vertical-width;
 
             &.adv-slider {
-                max-width: $ch5-slider-size-small-vertical-width * 1.2;
+                max-width: calc($ch5-slider-size-small-vertical-width * 1.2);
             }
 
             padding: calc($ch5-slider-size-small-vertical-height / 2) abs($ch5-slider-size-small-vertical-left);
@@ -416,12 +416,12 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-top: $ch5-slider-size-regular-vertical-height/2;
+                margin-top: calc($ch5-slider-size-regular-vertical-height/2);
             }
             min-width: $ch5-slider-size-regular-vertical-width;
 
             &.adv-slider {
-                max-width: $ch5-slider-size-regular-vertical-width * 1.2;
+                max-width: calc($ch5-slider-size-regular-vertical-width * 1.2);
             }
             padding: calc($ch5-slider-size-regular-vertical-height / 2) abs($ch5-slider-size-regular-vertical-left);
         }
@@ -441,11 +441,11 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-top: $ch5-slider-size-large-vertical-height/2;
+                margin-top: calc($ch5-slider-size-large-vertical-height/2);
             }
             min-width: $ch5-slider-size-large-vertical-width;
             &.adv-slider {
-                max-width: $ch5-slider-size-large-vertical-width * 1.2;
+                max-width: calc($ch5-slider-size-large-vertical-width * 1.2);
             }
             padding: calc($ch5-slider-size-large-vertical-height / 2) abs($ch5-slider-size-large-vertical-left);
         }
@@ -465,11 +465,11 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-top: $ch5-slider-size-x-large-vertical-height/2;
+                margin-top: calc($ch5-slider-size-x-large-vertical-height/2);
             }
             min-width: $ch5-slider-size-x-large-vertical-width;
             &.adv-slider {
-                max-width: $ch5-slider-size-x-large-vertical-width * 1.2;
+                max-width: calc($ch5-slider-size-x-large-vertical-width * 1.2);
             }
             padding: calc($ch5-slider-size-x-large-vertical-height / 2) abs($ch5-slider-size-x-large-vertical-left);
         }
@@ -492,11 +492,11 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-top: $ch5-slider-size-x-small-horizontal-circle-size/2;
+                margin-top: calc($ch5-slider-size-x-small-horizontal-circle-size/2);
             }
             min-width: $ch5-slider-size-x-small-horizontal-circle-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-x-small-horizontal-circle-size * 1.2;
+                max-width: calc($ch5-slider-size-x-small-horizontal-circle-size * 1.2);
             }
             padding: 0 calc($ch5-slider-size-x-small-horizontal-circle-size / 2);
         }
@@ -516,11 +516,11 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-top: $ch5-slider-size-small-horizontal-circle-size/2;
+                margin-top: calc($ch5-slider-size-small-horizontal-circle-size/2);
             }
             min-width: $ch5-slider-size-small-horizontal-circle-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-small-horizontal-circle-size * 1.2;
+                max-width: calc($ch5-slider-size-small-horizontal-circle-size * 1.2);
             }
             padding: 0 calc($ch5-slider-size-small-horizontal-circle-size / 2);
         }
@@ -540,11 +540,11 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-top: $ch5-slider-size-small-horizontal-circle-size/2;
+                margin-top: calc($ch5-slider-size-small-horizontal-circle-size/2);
             }
             min-width: $ch5-slider-size-regular-horizontal-circle-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-regular-horizontal-circle-size * 1.2;
+                max-width: calc($ch5-slider-size-regular-horizontal-circle-size * 1.2);
             }
             padding: 0 calc($ch5-slider-size-regular-horizontal-circle-size / 2);
         }
@@ -564,11 +564,11 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-top: $ch5-slider-size-large-horizontal-circle-size/2;
+                margin-top: calc($ch5-slider-size-large-horizontal-circle-size/2);
             }
             min-width: $ch5-slider-size-large-horizontal-circle-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-large-horizontal-circle-size * 1.2;
+                max-width: calc($ch5-slider-size-large-horizontal-circle-size * 1.2);
             }
             padding: 0 calc($ch5-slider-size-large-horizontal-circle-size / 2);
         }
@@ -588,11 +588,11 @@
             }
             .slider-off-button,
             .noUi-target {
-                margin-top: $ch5-slider-size-x-large-horizontal-circle-size/2;
+                margin-top: calc($ch5-slider-size-x-large-horizontal-circle-size/2);
             }
             min-width: $ch5-slider-size-x-large-horizontal-circle-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-x-large-horizontal-circle-size * 1.2;
+                max-width: calc($ch5-slider-size-x-large-horizontal-circle-size * 1.2);
             }
             padding: 0 calc($ch5-slider-size-x-large-horizontal-circle-size / 2);
         }
@@ -611,7 +611,7 @@
             }
             .cb-btn {
                 height: $ch5-slider-size-x-small-horizontal-oval-size;
-                width: $ch5-slider-size-x-small-horizontal-oval-size * 2;
+                width: calc($ch5-slider-size-x-small-horizontal-oval-size * 2);
             }
             .slider-off-button,
             .noUi-target {
@@ -619,7 +619,7 @@
             }
             min-width: $ch5-slider-size-x-small-horizontal-oval-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-x-small-horizontal-oval-size * 1.2;
+                max-width: calc($ch5-slider-size-x-small-horizontal-oval-size * 1.2);
             }
             padding: 0 calc($ch5-slider-size-x-small-horizontal-oval-size / 2);
         }
@@ -635,7 +635,7 @@
             }
             .cb-btn {
                 height: $ch5-slider-size-small-horizontal-oval-size;
-                width: $ch5-slider-size-small-horizontal-oval-size * 2;
+                width: calc($ch5-slider-size-small-horizontal-oval-size * 2);
             }
             .slider-off-button,
             .noUi-target {
@@ -643,7 +643,7 @@
             }
             min-width: $ch5-slider-size-small-horizontal-oval-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-small-horizontal-oval-size * 1.2;
+                max-width: calc($ch5-slider-size-small-horizontal-oval-size * 1.2);
             }
             padding: 0 calc($ch5-slider-size-small-horizontal-oval-size / 2);
         }
@@ -659,7 +659,7 @@
             }
             .cb-btn {
                 height: $ch5-slider-size-regular-horizontal-oval-size;
-                width: $ch5-slider-size-regular-horizontal-oval-size * 2;
+                width: calc($ch5-slider-size-regular-horizontal-oval-size * 2);
             }
             .slider-off-button,
             .noUi-target {
@@ -667,7 +667,7 @@
             }
             min-width: $ch5-slider-size-regular-horizontal-oval-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-regular-horizontal-oval-size * 1.2;
+                max-width: calc($ch5-slider-size-regular-horizontal-oval-size * 1.2);
             }
             padding: 0 calc($ch5-slider-size-regular-horizontal-oval-size / 2);
         }
@@ -683,7 +683,7 @@
             }
             .cb-btn {
                 height: $ch5-slider-size-large-horizontal-oval-size;
-                width: $ch5-slider-size-large-horizontal-oval-size * 2;
+                width: calc($ch5-slider-size-large-horizontal-oval-size * 2);
             }
             .slider-off-button,
             .noUi-target {
@@ -691,7 +691,7 @@
             }
             min-width: $ch5-slider-size-large-horizontal-oval-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-large-horizontal-oval-size * 1.2;
+                max-width: calc($ch5-slider-size-large-horizontal-oval-size * 1.2);
             }
             padding: 0 calc($ch5-slider-size-large-horizontal-oval-size / 2);
         }
@@ -707,7 +707,7 @@
             }
             .cb-btn {
                 height: $ch5-slider-size-x-large-horizontal-oval-size;
-                width: $ch5-slider-size-x-large-horizontal-oval-size * 2;
+                width: calc($ch5-slider-size-x-large-horizontal-oval-size * 2);
             }
             .slider-off-button,
             .noUi-target {
@@ -715,7 +715,7 @@
             }
             min-width: $ch5-slider-size-x-large-horizontal-oval-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-x-large-horizontal-oval-size * 1.2;
+                max-width: calc($ch5-slider-size-x-large-horizontal-oval-size * 1.2);
             }
             padding: 0 calc($ch5-slider-size-x-large-horizontal-oval-size / 2);
         }
