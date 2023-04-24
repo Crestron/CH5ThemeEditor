@@ -29,7 +29,7 @@
     .cb-btn {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       line-height: $ch5-button-content-line-height;
       padding: $ch5-button-padding;
       vertical-align: middle;
@@ -61,6 +61,8 @@
     }
 
     .ch5-button--img {
+      z-index: 1;
+      position: absolute;
       width: 100%;
       height: 100%;
     }
@@ -106,6 +108,92 @@
   }
 }
 
+.ch5-button,
+.ch5-button--label,
+.ch5-button--icon,
+.ch5-button--img {
+  position: relative;
+  width: auto;
+  cursor: pointer;
+  user-select: none;
+}
+.ch5-button--icon,
+.ch5-button--img {
+  line-height: $ch5-button-content-line-height;
+}
+
+// icon positions
+i.cb-icon.cx-button-icon-pos-first,
+i.cb-icon.cx-button-icon-pos-last {
+  display: inline-block;
+}
+
+i.cb-icon.cx-button-icon-pos-top,
+i.cb-icon.cx-button-icon-pos-bottom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ch5-button--span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.ch5-button--horizontal-center {
+  justify-content: center;
+}
+
+
+.ch5-button--vertical-middle {
+  align-items: center;
+}
+
+// when iconUrlFillType="initial"
+.ch5-button--icon-url-fill-type-stretch,
+.ch5-button--icon-url-fill-type-stretch-aspect,
+.ch5-button--icon-url-fill-type-center,
+.ch5-button--icon-url-fill-type-tile {
+  &.ch5-button--horizontal-center {
+    justify-content: center !important;
+  }
+
+  &.ch5-button--vertical-middle {
+    align-items: center !important;
+  }
+}
+
+.ch5-button--iconposition-bottom,
+.ch5-button--iconposition-top {
+  .ch5-button--span {
+    display: flex;
+    flex-direction: column;
+  }
+  .ch5-button--horizontal-center {
+    align-items: center;
+  }
+
+  .ch5-button--vertical-middle {
+    justify-content: center;
+  }
+}
+
+i.cb-icon.material-icons,
+i.cb-icon.material-icons-outline,
+i.cb-icon.material-icons-round,
+i.cb-icon.material-icons-sharp,
+i.cb-icon.material-icons-twotone {
+  font-size: inherit;
+}
+
+i.cb-icon.cx-button-icon-pos-bottom,
+i.cb-icon.cx-button-icon-pos-top {
+  display: flex;
+  margin-left: unset;
+  margin-right: unset;
+}
 .ch5-slider-iconfill {
   .cb-btn {
     display: inline !important;
