@@ -417,6 +417,8 @@ ch5-button {
 		font-variant: normal;
 		text-rendering: auto;
 		line-height: 1;
+		position: absolute;
+		z-index: 2;
 	}
 
 	.ch5-button__checkbox--checked:before {
@@ -433,10 +435,12 @@ ch5-button {
 
 	.cx-button-checkbox-pos-left {
 		padding-right: $ch5-button-checkbox-padding;
+		left: $ch5-button-checkbox-padding;
 	}
 
 	.cx-button-checkbox-pos-right {
 		padding-left: $ch5-button-checkbox-padding;
+		right: $ch5-button-checkbox-padding;
 	}
 
 	i.cb-icon.material-icons,
