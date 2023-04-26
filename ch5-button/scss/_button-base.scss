@@ -236,30 +236,27 @@ ch5-button {
 	// }
 
 	.ch5-button--circle {
-		width: 100%;
-		height: 100%;
-
-		&.ch5-button--size-x-small .cb-btn {
+		&.ch5-button--size-x-small {
 			width: $ch5-button-x-small-size * 2;
 			height: $ch5-button-x-small-size * 2;
 		}
 
-		&.ch5-button--size-small .cb-btn {
+		&.ch5-button--size-small {
 			width: $ch5-button-small-size * 2;
 			height: $ch5-button-small-size * 2;
 		}
 
-		&.ch5-button--size-large .cb-btn {
+		&.ch5-button--size-large {
 			width: $ch5-button-large-size * 2;
 			height: $ch5-button-large-size * 2;
 		}
 
-		&.ch5-button--size-x-large .cb-btn {
+		&.ch5-button--size-x-large {
 			width: $ch5-button-x-large-size * 2;
 			height: $ch5-button-x-large-size * 2;
 		}
 
-		&.ch5-button--size-regular .cb-btn {
+		&.ch5-button--size-regular {
 			width: $ch5-button-size * 2;
 			height: $ch5-button-size * 2;
 		}
