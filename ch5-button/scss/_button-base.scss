@@ -101,7 +101,7 @@ ch5-button {
 		button {
 			background-repeat: no-repeat;
 			background-size: contain;
-			background-position: center; // Center the image 
+			background-position: center; // Center the image
 		}
 	}
 
@@ -236,27 +236,30 @@ ch5-button {
 	// }
 
 	.ch5-button--circle {
-		&.ch5-button--size-x-small {
+		width: 100%;
+		height: 100%;
+
+		&.ch5-button--size-x-small .cb-btn {
 			width: $ch5-button-x-small-size * 2;
 			height: $ch5-button-x-small-size * 2;
 		}
 
-		&.ch5-button--size-small {
+		&.ch5-button--size-small .cb-btn {
 			width: $ch5-button-small-size * 2;
 			height: $ch5-button-small-size * 2;
 		}
 
-		&.ch5-button--size-large {
+		&.ch5-button--size-large .cb-btn {
 			width: $ch5-button-large-size * 2;
 			height: $ch5-button-large-size * 2;
 		}
 
-		&.ch5-button--size-x-large {
+		&.ch5-button--size-x-large .cb-btn {
 			width: $ch5-button-x-large-size * 2;
 			height: $ch5-button-x-large-size * 2;
 		}
 
-		&.ch5-button--size-regular {
+		&.ch5-button--size-regular .cb-btn {
 			width: $ch5-button-size * 2;
 			height: $ch5-button-size * 2;
 		}
@@ -382,7 +385,6 @@ ch5-button {
 
 	.ch5-button--circle:not(.ch5-button--iconposition-top):not(.ch5-button--iconposition-bottom),
 	.ch5-button--oval:not(.ch5-button--iconposition-top):not(.ch5-button--iconposition-bottom) {
-
 		.ch5-button--vertical-middle,
 		.ch5-button--vertical-top,
 		.ch5-button--vertical-bottom {
@@ -394,7 +396,6 @@ ch5-button {
 	.ch5-button--iconposition-bottom.ch5-button--circle,
 	.ch5-button--iconposition-top.ch5-button--oval,
 	.ch5-button--iconposition-bottom.ch5-button--oval {
-
 		.ch5-button--vertical-middle,
 		.ch5-button--vertical-top,
 		.ch5-button--vertical-bottom {
@@ -456,48 +457,58 @@ ch5-button {
 }
 
 .ch5-button--size-regular {
-	@include ch5-button-size-set($ch5-button-size,
+	@include ch5-button-size-set(
+		$ch5-button-size,
 		$ch5-button-font-size,
 		$ch5-button-font-style,
 		$ch5-button-font-weight,
 		$ch5-button-icon-color,
-		$ch5-button-icon-font-size );
+		$ch5-button-icon-font-size
+	);
 }
 
 .ch5-button--size-x-small {
-	@include ch5-button-size-set($ch5-button-x-small-size,
+	@include ch5-button-size-set(
+		$ch5-button-x-small-size,
 		$ch5-button-x-small-font-size,
 		$ch5-button-x-small-font-style,
 		$ch5-button-x-small-font-weight,
 		$ch5-button-icon-color,
-		$ch5-button-icon-font-size );
+		$ch5-button-icon-font-size
+	);
 }
 
 .ch5-button--size-small {
-	@include ch5-button-size-set($ch5-button-small-size,
+	@include ch5-button-size-set(
+		$ch5-button-small-size,
 		$ch5-button-small-font-size,
 		$ch5-button-small-font-style,
 		$ch5-button-small-font-weight,
 		$ch5-button-icon-color,
-		$ch5-button-icon-font-size );
+		$ch5-button-icon-font-size
+	);
 }
 
 .ch5-button--size-large {
-	@include ch5-button-size-set($ch5-button-large-size,
+	@include ch5-button-size-set(
+		$ch5-button-large-size,
 		$ch5-button-large-font-size,
 		$ch5-button-large-font-style,
 		$ch5-button-large-font-weight,
 		$ch5-button-icon-color,
-		$ch5-button-icon-font-size );
+		$ch5-button-icon-font-size
+	);
 }
 
 .ch5-button--size-x-large {
-	@include ch5-button-size-set($ch5-button-x-large-size,
+	@include ch5-button-size-set(
+		$ch5-button-x-large-size,
 		$ch5-button-x-large-font-size,
 		$ch5-button-x-large-font-style,
 		$ch5-button-x-large-font-weight,
 		$ch5-button-icon-color,
-		$ch5-button-icon-font-size );
+		$ch5-button-icon-font-size
+	);
 }
 
 .ch5-button--vertical {
@@ -556,102 +567,122 @@ ch5-button[stretch="both"] {
 
 ch5-button[mode="?"] {
 	&.ch5-button--size-regular {
-		@include ch5-button-size-set($ch5-button-size,
+		@include ch5-button-size-set(
+			$ch5-button-size,
 			$ch5-button-font-size,
 			$ch5-button-font-style,
 			$ch5-button-font-weight,
 			$ch5-button-icon-color,
-			$ch5-button-icon-font-size );
+			$ch5-button-icon-font-size
+		);
 
 		ch5-button-mode-state[state="normal"],
 		ch5-button-mode-state[state="pressed"],
 		ch5-button-mode-state[state="selected"] {
-			@include ch5-button-size-set($ch5-button-size,
+			@include ch5-button-size-set(
+				$ch5-button-size,
 				$ch5-button-font-size,
 				$ch5-button-font-style,
 				$ch5-button-font-weight,
 				$ch5-button-icon-color,
-				$ch5-button-icon-font-size );
+				$ch5-button-icon-font-size
+			);
 		}
 	}
 
 	&.ch5-button--size-x-small {
-		@include ch5-button-size-set($ch5-button-x-small-size,
+		@include ch5-button-size-set(
+			$ch5-button-x-small-size,
 			$ch5-button-x-small-font-size,
 			$ch5-button-x-small-font-style,
 			$ch5-button-x-small-font-weight,
 			$ch5-button-icon-color,
-			$ch5-button-icon-font-size );
+			$ch5-button-icon-font-size
+		);
 
 		ch5-button-mode-state[state="normal"],
 		ch5-button-mode-state[state="pressed"],
 		ch5-button-mode-state[state="selected"] {
-			@include ch5-button-size-set($ch5-button-x-small-size,
+			@include ch5-button-size-set(
+				$ch5-button-x-small-size,
 				$ch5-button-x-small-font-size,
 				$ch5-button-x-small-font-style,
 				$ch5-button-x-small-font-weight,
 				$ch5-button-icon-color,
-				$ch5-button-icon-font-size );
+				$ch5-button-icon-font-size
+			);
 		}
 	}
 
 	&.ch5-button--size-small {
-		@include ch5-button-size-set($ch5-button-small-size,
+		@include ch5-button-size-set(
+			$ch5-button-small-size,
 			$ch5-button-small-font-size,
 			$ch5-button-small-font-style,
 			$ch5-button-small-font-weight,
 			$ch5-button-icon-color,
-			$ch5-button-icon-font-size );
+			$ch5-button-icon-font-size
+		);
 
 		ch5-button-mode-state[state="normal"],
 		ch5-button-mode-state[state="pressed"],
 		ch5-button-mode-state[state="selected"] {
-			@include ch5-button-size-set($ch5-button-small-size,
+			@include ch5-button-size-set(
+				$ch5-button-small-size,
 				$ch5-button-small-font-size,
 				$ch5-button-small-font-style,
 				$ch5-button-small-font-weight,
 				$ch5-button-icon-color,
-				$ch5-button-icon-font-size );
+				$ch5-button-icon-font-size
+			);
 		}
 	}
 
 	&.ch5-button--size-large {
-		@include ch5-button-size-set($ch5-button-large-size,
+		@include ch5-button-size-set(
+			$ch5-button-large-size,
 			$ch5-button-large-font-size,
 			$ch5-button-large-font-style,
 			$ch5-button-large-font-weight,
 			$ch5-button-icon-color,
-			$ch5-button-icon-font-size );
+			$ch5-button-icon-font-size
+		);
 
 		ch5-button-mode-state[state="normal"],
 		ch5-button-mode-state[state="pressed"],
 		ch5-button-mode-state[state="selected"] {
-			@include ch5-button-size-set($ch5-button-large-size,
+			@include ch5-button-size-set(
+				$ch5-button-large-size,
 				$ch5-button-large-font-size,
 				$ch5-button-large-font-style,
 				$ch5-button-large-font-weight,
 				$ch5-button-icon-color,
-				$ch5-button-icon-font-size );
+				$ch5-button-icon-font-size
+			);
 		}
 	}
 
 	&.ch5-button--size-x-large {
-		@include ch5-button-size-set($ch5-button-x-large-size,
+		@include ch5-button-size-set(
+			$ch5-button-x-large-size,
 			$ch5-button-x-large-font-size,
 			$ch5-button-x-large-font-style,
 			$ch5-button-x-large-font-weight,
 			$ch5-button-icon-color,
-			$ch5-button-icon-font-size );
+			$ch5-button-icon-font-size
+		);
 
 		ch5-button-mode-state[state="normal"],
 		ch5-button-mode-state[state="pressed"],
 		ch5-button-mode-state[state="selected"] {
-			@include ch5-button-size-set($ch5-button-x-large-size,
+			@include ch5-button-size-set(
+				$ch5-button-x-large-size,
 				$ch5-button-x-large-font-size,
 				$ch5-button-x-large-font-style,
 				$ch5-button-x-large-font-weight,
 				$ch5-button-icon-color,
-				$ch5-button-icon-font-size );
+				$ch5-button-icon-font-size
+			);
 		}
 	}
 }
