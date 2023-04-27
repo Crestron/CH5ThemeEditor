@@ -194,6 +194,11 @@ ch5-button {
 		user-select: none;
 	}
 
+	.ch5-button--img {
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+
 	.ch5-button--icon,
 	.ch5-button--img {
 		line-height: $ch5-button-content-line-height;
