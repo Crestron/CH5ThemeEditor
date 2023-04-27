@@ -204,37 +204,44 @@ ch5-button {
 		line-height: $ch5-button-content-line-height;
 	}
 
-	/// Applied to make the width as much as its parent allows.
-	.ch5-button--stretch-width {
-		width: 100%;
+	.ch5-button--horizontal {
+		/// Applied to make the width as much as its parent allows.
+		&.ch5-button--stretch-width {
+			width: 100%;
 
-		.cb-btn {
-			width: 100% !important;
+			.cb-btn {
+				width: 100% !important;
+			}
 		}
 	}
 
-	/// Applied to make the height as much as its parent allows.
-	.ch5-button--stretch-height {
-		height: 100%;
+	.ch5-button--horizontal {
+		/// Applied to make the height as much as its parent allows.
+		&.ch5-button--stretch-height {
+			height: 100%;
 
-		.cb-btn {
-			height: 100% !important;
-			min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
+			.cb-btn {
+				height: 100% !important;
+				min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
+			}
 		}
 	}
 
-	/// Applied to make both width and height as much as its parent allows.
-	.ch5-button--stretch-both {
-		width: 100%;
-		height: 100%;
 
-		.cb-btn {
-			width: 100% !important;
-			height: 100% !important;
-			min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
+	.ch5-button--horizontal {
+		/// Applied to make both width and height as much as its parent allows.
+		&.ch5-button--stretch-both {
+			width: 100%;
+			height: 100%;
+
+			.cb-btn {
+				width: 100% !important;
+				height: 100% !important;
+				min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
 		}
 	}
 
@@ -509,10 +516,6 @@ ch5-button {
 	/// Applied to make the width as much as its parent allows.
 	&.ch5-button--stretch-width {
 		width: 100%;
-
-		.cb-btn {
-			width: 100% !important;
-		}
 	}
 
 	/// Applied to make the height as much as its parent allows.
@@ -520,7 +523,6 @@ ch5-button {
 		height: 100%;
 
 		.cb-btn {
-			height: 100% !important;
 			min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
 		}
 	}
@@ -531,8 +533,6 @@ ch5-button {
 		height: 100%;
 
 		.cb-btn {
-			width: 100% !important;
-			height: 100% !important;
 			min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
 			overflow: hidden;
 			text-overflow: ellipsis;
