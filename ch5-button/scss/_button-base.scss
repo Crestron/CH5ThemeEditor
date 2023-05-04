@@ -101,7 +101,7 @@ ch5-button {
 		button {
 			background-repeat: no-repeat;
 			background-size: contain;
-			background-position: center; // Center the image 
+			background-position: center; // Center the image
 		}
 	}
 
@@ -127,6 +127,10 @@ ch5-button {
 			position: absolute;
 			width: 100%;
 			height: 100%;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
 		}
 	}
 
@@ -190,73 +194,84 @@ ch5-button {
 		user-select: none;
 	}
 
+	.ch5-button--img {
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+
 	.ch5-button--icon,
 	.ch5-button--img {
 		line-height: $ch5-button-content-line-height;
 	}
 
-	/// Applied to make the width as much as its parent allows.
-	.ch5-button--stretch-width {
-		width: 100%;
+	.ch5-button--horizontal {
+		/// Applied to make the width as much as its parent allows.
+		&.ch5-button--stretch-width {
+			width: 100%;
 
-		.cb-btn {
-			width: 100% !important;
+			.cb-btn {
+				width: 100% !important;
+			}
 		}
 	}
 
-	/// Applied to make the height as much as its parent allows.
-	.ch5-button--stretch-height {
-		height: 100%;
+	.ch5-button--horizontal {
+		/// Applied to make the height as much as its parent allows.
+		&.ch5-button--stretch-height {
+			height: 100%;
 
-		.cb-btn {
-			height: 100% !important;
-			min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
+			.cb-btn {
+				height: 100% !important;
+				min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
+			}
 		}
 	}
 
-	/// Applied to make both width and height as much as its parent allows.
-	.ch5-button--stretch-both {
-		width: 100%;
-		height: 100%;
 
-		.cb-btn {
-			width: 100% !important;
-			height: 100% !important;
-			min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
+	.ch5-button--horizontal {
+		/// Applied to make both width and height as much as its parent allows.
+		&.ch5-button--stretch-both {
+			width: 100%;
+			height: 100%;
+
+			.cb-btn {
+				width: 100% !important;
+				height: 100% !important;
+				min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
 		}
 	}
 
 	// Sizes
 
-	// :not(.ch5-button--circle) {
-
-	// }
-
 	.ch5-button--circle {
-		&.ch5-button--size-x-small {
+		width: 100%;
+		height: 100%;
+
+		&.ch5-button--size-x-small .cb-btn {
 			width: $ch5-button-x-small-size * 2;
 			height: $ch5-button-x-small-size * 2;
 		}
 
-		&.ch5-button--size-small {
+		&.ch5-button--size-small .cb-btn {
 			width: $ch5-button-small-size * 2;
 			height: $ch5-button-small-size * 2;
 		}
 
-		&.ch5-button--size-large {
+		&.ch5-button--size-large .cb-btn {
 			width: $ch5-button-large-size * 2;
 			height: $ch5-button-large-size * 2;
 		}
 
-		&.ch5-button--size-x-large {
+		&.ch5-button--size-x-large .cb-btn {
 			width: $ch5-button-x-large-size * 2;
 			height: $ch5-button-x-large-size * 2;
 		}
 
-		&.ch5-button--size-regular {
+		&.ch5-button--size-regular .cb-btn {
 			width: $ch5-button-size * 2;
 			height: $ch5-button-size * 2;
 		}
@@ -316,36 +331,6 @@ ch5-button {
 
 	.ch5-button--vertical-bottom {
 		align-items: flex-end;
-	}
-
-	// apply hAlignLabel and vAlignLabel only when iconUrlFillType="initial"
-	.ch5-button--icon-url-fill-type-stretch,
-	.ch5-button--icon-url-fill-type-stretch-aspect,
-	.ch5-button--icon-url-fill-type-center,
-	.ch5-button--icon-url-fill-type-tile {
-		&.ch5-button--horizontal-left {
-			justify-content: center !important;
-		}
-
-		&.ch5-button--horizontal-center {
-			justify-content: center !important;
-		}
-
-		&.ch5-button--horizontal-right {
-			justify-content: center !important;
-		}
-
-		&.ch5-button--vertical-middle {
-			align-items: center !important;
-		}
-
-		&.ch5-button--vertical-top {
-			align-items: center !important;
-		}
-
-		&.ch5-button--vertical-bottom {
-			align-items: center !important;
-		}
 	}
 
 	.ch5-button--iconposition-bottom,
@@ -417,6 +402,7 @@ ch5-button {
 		font-variant: normal;
 		text-rendering: auto;
 		line-height: 1;
+		z-index: 2;
 	}
 
 	.ch5-button__checkbox--checked:before {
@@ -500,7 +486,7 @@ ch5-button {
 		$ch5-button-icon-font-size );
 }
 
-.ch5-button--vertical {
+.ch5-button--vertical:not(.ch5-button--circle) {
 	&.ch5-button--size-regular {
 		width: $ch5-button-size;
 		height: $ch5-button-size * 2;
@@ -526,14 +512,34 @@ ch5-button {
 		height: $ch5-button-x-large-size * 2;
 	}
 
+
+	/// Applied to make the width as much as its parent allows.
+	&.ch5-button--stretch-width {
+		width: 100%;
+	}
+
+	/// Applied to make the height as much as its parent allows.
 	&.ch5-button--stretch-height {
 		height: 100%;
 
 		.cb-btn {
-			height: 100% !important;
 			min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
 		}
 	}
+
+	/// Applied to make both width and height as much as its parent allows.
+	&.ch5-button--stretch-both {
+		width: 100%;
+		height: 100%;
+
+		.cb-btn {
+			min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+
 }
 
 ch5-button[hidden] {
