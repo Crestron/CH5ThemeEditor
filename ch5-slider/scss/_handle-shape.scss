@@ -16,9 +16,16 @@
     ============================================= */
 
     /// Applied when slider shape="rectangle"
-    &.ch5-slider--shape--rectangle{
-        .noUi-handle, .noUi-target, .noUi-connects {
+    &.ch5-slider--shape--rectangle {
+        .noUi-handle,
+        .noUi-target,
+        .noUi-connects {
             border-radius: 0;
+        }
+        &.ch5-slider-ticks {
+            .noUi-base {
+                border-radius: 0;
+            }
         }
     }
 
@@ -26,12 +33,18 @@
     SHAPE CIRCLE 
     ============================================= */
     /// Applied when slider shape="circle"
-    &.ch5-slider--shape--circle{
-        .noUi-target, .noUi-connects {
+    &.ch5-slider--shape--circle {
+        .noUi-target,
+        .noUi-connects {
             border-radius: 8px;
         }
         .noUi-handle {
             border-radius: 50%;
+        }
+        &.ch5-slider-ticks {
+            .noUi-base {
+                border-radius: 8px;
+            }
         }
     }
 
@@ -39,14 +52,20 @@
     SHAPE OVAL 
     ============================================= */
     /// Applied when slider shape="oval"
-    &.ch5-slider--shape--oval{
+    &.ch5-slider--shape--oval {
         padding: 0px 22px 30px 22px;
-        
-        .noUi-target, .noUi-connects {
+
+        .noUi-target,
+        .noUi-connects {
             border-radius: 10px;
         }
         .noUi-handle {
             border-radius: 50%;
+        }
+        &.ch5-slider-ticks {
+            .noUi-base {
+                border-radius: 10px;
+            }
         }
     }
 }
