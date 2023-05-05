@@ -5,12 +5,12 @@
 // Use of this source code is subject to the terms of the Crestron Software License Agreement
 // under which you licensed this source code.
 
-@import 'scss/_variables';
+@import 'scss/variables';
 
 .ch5-video {
     display: inline-block;
     position: relative;
-    font-size: 0;
+    font-size: 0;   
     vertical-align: top;
 
     .ch5-video--display--color {

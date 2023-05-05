@@ -10,6 +10,7 @@
 /// @group ch5-color-picker
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/// Added automatically on the ch5-color-picker element
 .ch5-color-picker {
   position: relative;
   display: inline-flex;
@@ -17,6 +18,7 @@
   height: $ch5-color-picker-height;
 }
 
+/// Added automatically based on the disabled attribute or by receiveStateEnable
 .ch5-color-picker--disabled {
   pointer-events: none;
   opacity: $ch5-color-picker-disabled-opacity;

@@ -16,10 +16,8 @@
   height: fit-content;
   user-select: none;
   will-change: transform;
-  display: grid;
+  display: flex;
   height: auto;
-  align-content: stretch;
-  justify-content: stretch;
 
   &.active {
     cursor: -webkit-grabbing;

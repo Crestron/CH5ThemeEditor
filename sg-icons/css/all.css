@@ -1,0 +1,5218 @@
+
+.sg {
+}
+
+
+.sg.sg-icons-sm.sg-0,.sg.sg-icons-sm.sg-am-fm {
+  background-image: url('./../svgs/icons/am-fm.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-0,.sg.sg-icons-lg.sg-am-fm {
+  background-image: url('./../svgs/icons/am-fm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-1,.sg.sg-icons-sm.sg-cd {
+  background-image: url('./../svgs/icons/cd.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-1,.sg.sg-icons-lg.sg-cd {
+  background-image: url('./../svgs/icons/cd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-2,.sg.sg-icons-sm.sg-climate {
+  background-image: url('./../svgs/icons/climate.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-2,.sg.sg-icons-lg.sg-climate {
+  background-image: url('./../svgs/icons/climate.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-3,.sg.sg-icons-sm.sg-display-alt {
+  background-image: url('./../svgs/icons/display-alt.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-3,.sg.sg-icons-lg.sg-display-alt {
+  background-image: url('./../svgs/icons/display-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-4,.sg.sg-icons-sm.sg-display {
+  background-image: url('./../svgs/icons/display.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-4,.sg.sg-icons-lg.sg-display {
+  background-image: url('./../svgs/icons/display.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-5,.sg.sg-icons-sm.sg-dvr {
+  background-image: url('./../svgs/icons/dvr.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-5,.sg.sg-icons-lg.sg-dvr {
+  background-image: url('./../svgs/icons/dvr.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-6,.sg.sg-icons-sm.sg-energy-management {
+  background-image: url('./../svgs/icons/energy-management.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-6,.sg.sg-icons-lg.sg-energy-management {
+  background-image: url('./../svgs/icons/energy-management.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-7,.sg.sg-icons-sm.sg-favorites {
+  background-image: url('./../svgs/icons/favorites.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-7,.sg.sg-icons-lg.sg-favorites {
+  background-image: url('./../svgs/icons/favorites.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-8,.sg.sg-icons-sm.sg-film-reel {
+  background-image: url('./../svgs/icons/film-reel.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-8,.sg.sg-icons-lg.sg-film-reel {
+  background-image: url('./../svgs/icons/film-reel.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-9,.sg.sg-icons-sm.sg-home {
+  background-image: url('./../svgs/icons/home.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-9,.sg.sg-icons-lg.sg-home {
+  background-image: url('./../svgs/icons/home.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-10,.sg.sg-icons-sm.sg-internet-radio {
+  background-image: url('./../svgs/icons/internet-radio.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-10,.sg.sg-icons-lg.sg-internet-radio {
+  background-image: url('./../svgs/icons/internet-radio.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-11,.sg.sg-icons-sm.sg-ipod {
+  background-image: url('./../svgs/icons/ipod.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-11,.sg.sg-icons-lg.sg-ipod {
+  background-image: url('./../svgs/icons/ipod.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-12,.sg.sg-icons-sm.sg-iserver {
+  background-image: url('./../svgs/icons/iserver.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-12,.sg.sg-icons-lg.sg-iserver {
+  background-image: url('./../svgs/icons/iserver.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-13,.sg.sg-icons-sm.sg-lights {
+  background-image: url('./../svgs/icons/lights.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-13,.sg.sg-icons-lg.sg-lights {
+  background-image: url('./../svgs/icons/lights.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-14,.sg.sg-icons-sm.sg-music-note {
+  background-image: url('./../svgs/icons/music-note.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-14,.sg.sg-icons-lg.sg-music-note {
+  background-image: url('./../svgs/icons/music-note.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-15,.sg.sg-icons-sm.sg-news {
+  background-image: url('./../svgs/icons/news.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-15,.sg.sg-icons-lg.sg-news {
+  background-image: url('./../svgs/icons/news.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-16,.sg.sg-icons-sm.sg-pandora {
+  background-image: url('./../svgs/icons/pandora.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-16,.sg.sg-icons-lg.sg-pandora {
+  background-image: url('./../svgs/icons/pandora.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-17,.sg.sg-icons-sm.sg-power {
+  background-image: url('./../svgs/icons/power.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-17,.sg.sg-icons-lg.sg-power {
+  background-image: url('./../svgs/icons/power.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-18,.sg.sg-icons-sm.sg-satellite-alt {
+  background-image: url('./../svgs/icons/satellite-alt.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-18,.sg.sg-icons-lg.sg-satellite-alt {
+  background-image: url('./../svgs/icons/satellite-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-19,.sg.sg-icons-sm.sg-satellite {
+  background-image: url('./../svgs/icons/satellite.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-19,.sg.sg-icons-lg.sg-satellite {
+  background-image: url('./../svgs/icons/satellite.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-20,.sg.sg-icons-sm.sg-sec-cam {
+  background-image: url('./../svgs/icons/sec-cam.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-20,.sg.sg-icons-lg.sg-sec-cam {
+  background-image: url('./../svgs/icons/sec-cam.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-21,.sg.sg-icons-sm.sg-security {
+  background-image: url('./../svgs/icons/security.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-21,.sg.sg-icons-lg.sg-security {
+  background-image: url('./../svgs/icons/security.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-22,.sg.sg-icons-sm.sg-shades {
+  background-image: url('./../svgs/icons/shades.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-22,.sg.sg-icons-lg.sg-shades {
+  background-image: url('./../svgs/icons/shades.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-23,.sg.sg-icons-sm.sg-user-group {
+  background-image: url('./../svgs/icons/user-group.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-23,.sg.sg-icons-lg.sg-user-group {
+  background-image: url('./../svgs/icons/user-group.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-24,.sg.sg-icons-sm.sg-video-conferencing {
+  background-image: url('./../svgs/icons/video-conferencing.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-24,.sg.sg-icons-lg.sg-video-conferencing {
+  background-image: url('./../svgs/icons/video-conferencing.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-25,.sg.sg-icons-sm.sg-video-switcher {
+  background-image: url('./../svgs/icons/video-switcher.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-25,.sg.sg-icons-lg.sg-video-switcher {
+  background-image: url('./../svgs/icons/video-switcher.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-26,.sg.sg-icons-sm.sg-wand {
+  background-image: url('./../svgs/icons/wand.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-26,.sg.sg-icons-lg.sg-wand {
+  background-image: url('./../svgs/icons/wand.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-27,.sg.sg-icons-sm.sg-weather {
+  background-image: url('./../svgs/icons/weather.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-27,.sg.sg-icons-lg.sg-weather {
+  background-image: url('./../svgs/icons/weather.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-28,.sg.sg-icons-sm.sg-environment {
+  background-image: url('./../svgs/icons/environment.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-28,.sg.sg-icons-lg.sg-environment {
+  background-image: url('./../svgs/icons/environment.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-29,.sg.sg-icons-sm.sg-speaker {
+  background-image: url('./../svgs/icons/speaker.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-29,.sg.sg-icons-lg.sg-speaker {
+  background-image: url('./../svgs/icons/speaker.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-30,.sg.sg-icons-sm.sg-mic {
+  background-image: url('./../svgs/icons/mic.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-30,.sg.sg-icons-lg.sg-mic {
+  background-image: url('./../svgs/icons/mic.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-31,.sg.sg-icons-sm.sg-projector {
+  background-image: url('./../svgs/icons/projector.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-31,.sg.sg-icons-lg.sg-projector {
+  background-image: url('./../svgs/icons/projector.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-32,.sg.sg-icons-sm.sg-screen {
+  background-image: url('./../svgs/icons/screen.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-32,.sg.sg-icons-lg.sg-screen {
+  background-image: url('./../svgs/icons/screen.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-33,.sg.sg-icons-sm.sg-gear {
+  background-image: url('./../svgs/icons/gear.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-33,.sg.sg-icons-lg.sg-gear {
+  background-image: url('./../svgs/icons/gear.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-34,.sg.sg-icons-sm.sg-sec-cam-alt {
+  background-image: url('./../svgs/icons/sec-cam-alt.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-34,.sg.sg-icons-lg.sg-sec-cam-alt {
+  background-image: url('./../svgs/icons/sec-cam-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-35,.sg.sg-icons-sm.sg-document-camera {
+  background-image: url('./../svgs/icons/document-camera.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-35,.sg.sg-icons-lg.sg-document-camera {
+  background-image: url('./../svgs/icons/document-camera.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-36,.sg.sg-icons-sm.sg-backgrounds {
+  background-image: url('./../svgs/icons/backgrounds.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-36,.sg.sg-icons-lg.sg-backgrounds {
+  background-image: url('./../svgs/icons/backgrounds.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-37,.sg.sg-icons-sm.sg-gamepad {
+  background-image: url('./../svgs/icons/gamepad.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-37,.sg.sg-icons-lg.sg-gamepad {
+  background-image: url('./../svgs/icons/gamepad.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-38,.sg.sg-icons-sm.sg-imac {
+  background-image: url('./../svgs/icons/imac.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-38,.sg.sg-icons-lg.sg-imac {
+  background-image: url('./../svgs/icons/imac.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-39,.sg.sg-icons-sm.sg-laptop-alt {
+  background-image: url('./../svgs/icons/laptop-alt.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-39,.sg.sg-icons-lg.sg-laptop-alt {
+  background-image: url('./../svgs/icons/laptop-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-40,.sg.sg-icons-sm.sg-laptop {
+  background-image: url('./../svgs/icons/laptop.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-40,.sg.sg-icons-lg.sg-laptop {
+  background-image: url('./../svgs/icons/laptop.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-41,.sg.sg-icons-sm.sg-macbook-pro {
+  background-image: url('./../svgs/icons/macbook-pro.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-41,.sg.sg-icons-lg.sg-macbook-pro {
+  background-image: url('./../svgs/icons/macbook-pro.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-42,.sg.sg-icons-sm.sg-music-note-alt {
+  background-image: url('./../svgs/icons/music-note-alt.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-42,.sg.sg-icons-lg.sg-music-note-alt {
+  background-image: url('./../svgs/icons/music-note-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-43,.sg.sg-icons-sm.sg-phone-alt {
+  background-image: url('./../svgs/icons/phone-alt.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-43,.sg.sg-icons-lg.sg-phone-alt {
+  background-image: url('./../svgs/icons/phone-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-44,.sg.sg-icons-sm.sg-phone {
+  background-image: url('./../svgs/icons/phone.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-44,.sg.sg-icons-lg.sg-phone {
+  background-image: url('./../svgs/icons/phone.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-45,.sg.sg-icons-sm.sg-pool {
+  background-image: url('./../svgs/icons/pool.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-45,.sg.sg-icons-lg.sg-pool {
+  background-image: url('./../svgs/icons/pool.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-46,.sg.sg-icons-sm.sg-airplay {
+  background-image: url('./../svgs/icons/airplay.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-46,.sg.sg-icons-lg.sg-airplay {
+  background-image: url('./../svgs/icons/airplay.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-47,.sg.sg-icons-sm.sg-alarm-clock {
+  background-image: url('./../svgs/icons/alarm-clock.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-47,.sg.sg-icons-lg.sg-alarm-clock {
+  background-image: url('./../svgs/icons/alarm-clock.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-48,.sg.sg-icons-sm.sg-appletv {
+  background-image: url('./../svgs/icons/appletv.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-48,.sg.sg-icons-lg.sg-appletv {
+  background-image: url('./../svgs/icons/appletv.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-49,.sg.sg-icons-sm.sg-aux-plate {
+  background-image: url('./../svgs/icons/aux-plate.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-49,.sg.sg-icons-lg.sg-aux-plate {
+  background-image: url('./../svgs/icons/aux-plate.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-50,.sg.sg-icons-sm.sg-document-camera-alt {
+  background-image: url('./../svgs/icons/document-camera-alt.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-50,.sg.sg-icons-lg.sg-document-camera-alt {
+  background-image: url('./../svgs/icons/document-camera-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-51,.sg.sg-icons-sm.sg-door-station {
+  background-image: url('./../svgs/icons/door-station.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-51,.sg.sg-icons-lg.sg-door-station {
+  background-image: url('./../svgs/icons/door-station.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-52,.sg.sg-icons-sm.sg-dvr-alt {
+  background-image: url('./../svgs/icons/dvr-alt.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-52,.sg.sg-icons-lg.sg-dvr-alt {
+  background-image: url('./../svgs/icons/dvr-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-53,.sg.sg-icons-sm.sg-front-door-alt {
+  background-image: url('./../svgs/icons/front-door-alt.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-53,.sg.sg-icons-lg.sg-front-door-alt {
+  background-image: url('./../svgs/icons/front-door-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-54,.sg.sg-icons-sm.sg-front-door {
+  background-image: url('./../svgs/icons/front-door.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-54,.sg.sg-icons-lg.sg-front-door {
+  background-image: url('./../svgs/icons/front-door.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-55,.sg.sg-icons-sm.sg-jukebox {
+  background-image: url('./../svgs/icons/jukebox.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-55,.sg.sg-icons-lg.sg-jukebox {
+  background-image: url('./../svgs/icons/jukebox.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-56,.sg.sg-icons-sm.sg-piano {
+  background-image: url('./../svgs/icons/piano.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-56,.sg.sg-icons-lg.sg-piano {
+  background-image: url('./../svgs/icons/piano.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-57,.sg.sg-icons-sm.sg-playstation-3 {
+  background-image: url('./../svgs/icons/playstation-3.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-57,.sg.sg-icons-lg.sg-playstation-3 {
+  background-image: url('./../svgs/icons/playstation-3.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-58,.sg.sg-icons-sm.sg-playstation-logo {
+  background-image: url('./../svgs/icons/playstation-logo.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-58,.sg.sg-icons-lg.sg-playstation-logo {
+  background-image: url('./../svgs/icons/playstation-logo.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-59,.sg.sg-icons-sm.sg-room-door {
+  background-image: url('./../svgs/icons/room-door.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-59,.sg.sg-icons-lg.sg-room-door {
+  background-image: url('./../svgs/icons/room-door.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-60,.sg.sg-icons-sm.sg-smartv {
+  background-image: url('./../svgs/icons/smartv.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-60,.sg.sg-icons-lg.sg-smartv {
+  background-image: url('./../svgs/icons/smartv.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-61,.sg.sg-icons-sm.sg-sprinkler {
+  background-image: url('./../svgs/icons/sprinkler.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-61,.sg.sg-icons-lg.sg-sprinkler {
+  background-image: url('./../svgs/icons/sprinkler.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-62,.sg.sg-icons-sm.sg-tablet {
+  background-image: url('./../svgs/icons/tablet.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-62,.sg.sg-icons-lg.sg-tablet {
+  background-image: url('./../svgs/icons/tablet.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-63,.sg.sg-icons-sm.sg-tv {
+  background-image: url('./../svgs/icons/tv.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-63,.sg.sg-icons-lg.sg-tv {
+  background-image: url('./../svgs/icons/tv.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-64,.sg.sg-icons-sm.sg-vcr {
+  background-image: url('./../svgs/icons/vcr.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-64,.sg.sg-icons-lg.sg-vcr {
+  background-image: url('./../svgs/icons/vcr.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-65,.sg.sg-icons-sm.sg-video-conferencing-alt {
+  background-image: url('./../svgs/icons/video-conferencing-alt.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-65,.sg.sg-icons-lg.sg-video-conferencing-alt {
+  background-image: url('./../svgs/icons/video-conferencing-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-66,.sg.sg-icons-sm.sg-wii-logo {
+  background-image: url('./../svgs/icons/wii-logo.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-66,.sg.sg-icons-lg.sg-wii-logo {
+  background-image: url('./../svgs/icons/wii-logo.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-67,.sg.sg-icons-sm.sg-wii-u-logo {
+  background-image: url('./../svgs/icons/wii-u-logo.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-67,.sg.sg-icons-lg.sg-wii-u-logo {
+  background-image: url('./../svgs/icons/wii-u-logo.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-68,.sg.sg-icons-sm.sg-wii-u {
+  background-image: url('./../svgs/icons/wii-u.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-68,.sg.sg-icons-lg.sg-wii-u {
+  background-image: url('./../svgs/icons/wii-u.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-69,.sg.sg-icons-sm.sg-wii {
+  background-image: url('./../svgs/icons/wii.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-69,.sg.sg-icons-lg.sg-wii {
+  background-image: url('./../svgs/icons/wii.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-70,.sg.sg-icons-sm.sg-xbox-360 {
+  background-image: url('./../svgs/icons/xbox-360.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-70,.sg.sg-icons-lg.sg-xbox-360 {
+  background-image: url('./../svgs/icons/xbox-360.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-71,.sg.sg-icons-sm.sg-xbox-logo {
+  background-image: url('./../svgs/icons/xbox-logo.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-71,.sg.sg-icons-lg.sg-xbox-logo {
+  background-image: url('./../svgs/icons/xbox-logo.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-72,.sg.sg-icons-sm.sg-amenities {
+  background-image: url('./../svgs/icons/amenities.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-72,.sg.sg-icons-lg.sg-amenities {
+  background-image: url('./../svgs/icons/amenities.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-73,.sg.sg-icons-sm.sg-directv {
+  background-image: url('./../svgs/icons/directv.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-73,.sg.sg-icons-lg.sg-directv {
+  background-image: url('./../svgs/icons/directv.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-74,.sg.sg-icons-sm.sg-dish-network {
+  background-image: url('./../svgs/icons/dish-network.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-74,.sg.sg-icons-lg.sg-dish-network {
+  background-image: url('./../svgs/icons/dish-network.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-75,.sg.sg-icons-sm.sg-drapes {
+  background-image: url('./../svgs/icons/drapes.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-75,.sg.sg-icons-lg.sg-drapes {
+  background-image: url('./../svgs/icons/drapes.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-76,.sg.sg-icons-sm.sg-garage {
+  background-image: url('./../svgs/icons/garage.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-76,.sg.sg-icons-lg.sg-garage {
+  background-image: url('./../svgs/icons/garage.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-77,.sg.sg-icons-sm.sg-macros {
+  background-image: url('./../svgs/icons/macros.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-77,.sg.sg-icons-lg.sg-macros {
+  background-image: url('./../svgs/icons/macros.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-78,.sg.sg-icons-sm.sg-scheduler {
+  background-image: url('./../svgs/icons/scheduler.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-78,.sg.sg-icons-lg.sg-scheduler {
+  background-image: url('./../svgs/icons/scheduler.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-79,.sg.sg-icons-sm.sg-sirius-xm-satellite-radio {
+  background-image: url('./../svgs/icons/sirius-xm-satellite-radio.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-79,.sg.sg-icons-lg.sg-sirius-xm-satellite-radio {
+  background-image: url('./../svgs/icons/sirius-xm-satellite-radio.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-80,.sg.sg-icons-sm.sg-tivo {
+  background-image: url('./../svgs/icons/tivo.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-80,.sg.sg-icons-lg.sg-tivo {
+  background-image: url('./../svgs/icons/tivo.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-81,.sg.sg-icons-sm.sg-blu-ray {
+  background-image: url('./../svgs/icons/blu-ray.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-81,.sg.sg-icons-lg.sg-blu-ray {
+  background-image: url('./../svgs/icons/blu-ray.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-82,.sg.sg-icons-sm.sg-dvd {
+  background-image: url('./../svgs/icons/dvd.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-82,.sg.sg-icons-lg.sg-dvd {
+  background-image: url('./../svgs/icons/dvd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-83,.sg.sg-icons-sm.sg-record-player {
+  background-image: url('./../svgs/icons/record-player.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-83,.sg.sg-icons-lg.sg-record-player {
+  background-image: url('./../svgs/icons/record-player.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-84,.sg.sg-icons-sm.sg-vudu {
+  background-image: url('./../svgs/icons/vudu.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-84,.sg.sg-icons-lg.sg-vudu {
+  background-image: url('./../svgs/icons/vudu.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-85,.sg.sg-icons-sm.sg-home-alt {
+  background-image: url('./../svgs/icons/home-alt.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-85,.sg.sg-icons-lg.sg-home-alt {
+  background-image: url('./../svgs/icons/home-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-86,.sg.sg-icons-sm.sg-sirius-satellite-radio {
+  background-image: url('./../svgs/icons/sirius-satellite-radio.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-86,.sg.sg-icons-lg.sg-sirius-satellite-radio {
+  background-image: url('./../svgs/icons/sirius-satellite-radio.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-87,.sg.sg-icons-sm.sg-rhapsody {
+  background-image: url('./../svgs/icons/rhapsody.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-87,.sg.sg-icons-lg.sg-rhapsody {
+  background-image: url('./../svgs/icons/rhapsody.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-88,.sg.sg-icons-sm.sg-spotify {
+  background-image: url('./../svgs/icons/spotify.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-88,.sg.sg-icons-lg.sg-spotify {
+  background-image: url('./../svgs/icons/spotify.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-89,.sg.sg-icons-sm.sg-tunein {
+  background-image: url('./../svgs/icons/tunein.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-89,.sg.sg-icons-lg.sg-tunein {
+  background-image: url('./../svgs/icons/tunein.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-90,.sg.sg-icons-sm.sg-xm-satellite-radio {
+  background-image: url('./../svgs/icons/xm-satellite-radio.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-90,.sg.sg-icons-lg.sg-xm-satellite-radio {
+  background-image: url('./../svgs/icons/xm-satellite-radio.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-91,.sg.sg-icons-sm.sg-lastfm {
+  background-image: url('./../svgs/icons/lastfm.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-91,.sg.sg-icons-lg.sg-lastfm {
+  background-image: url('./../svgs/icons/lastfm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-92,.sg.sg-icons-sm.sg-you-tube {
+  background-image: url('./../svgs/icons/you-tube.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-92,.sg.sg-icons-lg.sg-you-tube {
+  background-image: url('./../svgs/icons/you-tube.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-93,.sg.sg-icons-sm.sg-kaleidescape {
+  background-image: url('./../svgs/icons/kaleidescape.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-93,.sg.sg-icons-lg.sg-kaleidescape {
+  background-image: url('./../svgs/icons/kaleidescape.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-94,.sg.sg-icons-sm.sg-hulu {
+  background-image: url('./../svgs/icons/hulu.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-94,.sg.sg-icons-lg.sg-hulu {
+  background-image: url('./../svgs/icons/hulu.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-95,.sg.sg-icons-sm.sg-netflix {
+  background-image: url('./../svgs/icons/netflix.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-95,.sg.sg-icons-lg.sg-netflix {
+  background-image: url('./../svgs/icons/netflix.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-96,.sg.sg-icons-sm.sg-clapper {
+  background-image: url('./../svgs/icons/clapper.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-96,.sg.sg-icons-lg.sg-clapper {
+  background-image: url('./../svgs/icons/clapper.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-97,.sg.sg-icons-sm.sg-shield {
+  background-image: url('./../svgs/icons/shield.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-97,.sg.sg-icons-lg.sg-shield {
+  background-image: url('./../svgs/icons/shield.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-98,.sg.sg-icons-sm.sg-web {
+  background-image: url('./../svgs/icons/web.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-98,.sg.sg-icons-lg.sg-web {
+  background-image: url('./../svgs/icons/web.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-99,.sg.sg-icons-sm.sg-pc {
+  background-image: url('./../svgs/icons/pc.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-99,.sg.sg-icons-lg.sg-pc {
+  background-image: url('./../svgs/icons/pc.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-100,.sg.sg-icons-sm.sg-amazon {
+  background-image: url('./../svgs/icons/amazon.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-100,.sg.sg-icons-lg.sg-amazon {
+  background-image: url('./../svgs/icons/amazon.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-101,.sg.sg-icons-sm.sg-chrome {
+  background-image: url('./../svgs/icons/chrome.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-101,.sg.sg-icons-lg.sg-chrome {
+  background-image: url('./../svgs/icons/chrome.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-102,.sg.sg-icons-sm.sg-blank {
+  background-image: url('./../svgs/icons/blank.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-102,.sg.sg-icons-lg.sg-blank {
+  background-image: url('./../svgs/icons/blank.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-103,.sg.sg-icons-sm.sg-fireplace {
+  background-image: url('./../svgs/icons/fireplace.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-103,.sg.sg-icons-lg.sg-fireplace {
+  background-image: url('./../svgs/icons/fireplace.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-104,.sg.sg-icons-sm.sg-sonos {
+  background-image: url('./../svgs/icons/sonos.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-104,.sg.sg-icons-lg.sg-sonos {
+  background-image: url('./../svgs/icons/sonos.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-105,.sg.sg-icons-sm.sg-roku {
+  background-image: url('./../svgs/icons/roku.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-105,.sg.sg-icons-lg.sg-roku {
+  background-image: url('./../svgs/icons/roku.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-106,.sg.sg-icons-sm.sg-airmedia {
+  background-image: url('./../svgs/icons/airmedia.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-106,.sg.sg-icons-lg.sg-airmedia {
+  background-image: url('./../svgs/icons/airmedia.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-107,.sg.sg-icons-sm.sg-napster {
+  background-image: url('./../svgs/icons/napster.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-107,.sg.sg-icons-lg.sg-napster {
+  background-image: url('./../svgs/icons/napster.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-108,.sg.sg-icons-sm.sg-murfie {
+  background-image: url('./../svgs/icons/murfie.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-108,.sg.sg-icons-lg.sg-murfie {
+  background-image: url('./../svgs/icons/murfie.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-109,.sg.sg-icons-sm.sg-iheart-radio {
+  background-image: url('./../svgs/icons/iheart-radio.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-109,.sg.sg-icons-lg.sg-iheart-radio {
+  background-image: url('./../svgs/icons/iheart-radio.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-110,.sg.sg-icons-sm.sg-tidal {
+  background-image: url('./../svgs/icons/tidal.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-110,.sg.sg-icons-lg.sg-tidal {
+  background-image: url('./../svgs/icons/tidal.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-icons-sm.sg-111,.sg.sg-icons-sm.sg-slacker-radio {
+  background-image: url('./../svgs/icons/slacker-radio.svg');
+  height: 20px;
+  width: 20px;
+}
+
+.sg.sg-icons-lg.sg-111,.sg.sg-icons-lg.sg-slacker-radio {
+  background-image: url('./../svgs/icons/slacker-radio.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-49,.sg.sg-media-transports-accents.sg-address-book {
+  background-image: url('./../svgs/media-transports/accents/address-book.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-49,.sg.sg-media-transports-light.sg-address-book {
+  background-image: url('./../svgs/media-transports/light/address-book.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-49,.sg.sg-media-transports-dark.sg-address-book {
+  background-image: url('./../svgs/media-transports/dark/address-book.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-205,.sg.sg-media-transports-accents.sg-airmedia {
+  background-image: url('./../svgs/media-transports/accents/airmedia.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-205,.sg.sg-media-transports-light.sg-airmedia {
+  background-image: url('./../svgs/media-transports/light/airmedia.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-205,.sg.sg-media-transports-dark.sg-airmedia {
+  background-image: url('./../svgs/media-transports/dark/airmedia.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-50,.sg.sg-media-transports-accents.sg-alarm {
+  background-image: url('./../svgs/media-transports/accents/alarm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-50,.sg.sg-media-transports-light.sg-alarm {
+  background-image: url('./../svgs/media-transports/light/alarm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-50,.sg.sg-media-transports-dark.sg-alarm {
+  background-image: url('./../svgs/media-transports/dark/alarm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-0,.sg.sg-media-transports-accents.sg-alert {
+  background-image: url('./../svgs/media-transports/accents/alert.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-0,.sg.sg-media-transports-light.sg-alert {
+  background-image: url('./../svgs/media-transports/light/alert.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-0,.sg.sg-media-transports-dark.sg-alert {
+  background-image: url('./../svgs/media-transports/dark/alert.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-110,.sg.sg-media-transports-accents.sg-android {
+  background-image: url('./../svgs/media-transports/accents/android.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-110,.sg.sg-media-transports-light.sg-android {
+  background-image: url('./../svgs/media-transports/light/android.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-110,.sg.sg-media-transports-dark.sg-android {
+  background-image: url('./../svgs/media-transports/dark/android.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-111,.sg.sg-media-transports-accents.sg-apple {
+  background-image: url('./../svgs/media-transports/accents/apple.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-111,.sg.sg-media-transports-light.sg-apple {
+  background-image: url('./../svgs/media-transports/light/apple.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-111,.sg.sg-media-transports-dark.sg-apple {
+  background-image: url('./../svgs/media-transports/dark/apple.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-206,.sg.sg-media-transports-accents.sg-asterisk {
+  background-image: url('./../svgs/media-transports/accents/asterisk.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-206,.sg.sg-media-transports-light.sg-asterisk {
+  background-image: url('./../svgs/media-transports/light/asterisk.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-206,.sg.sg-media-transports-dark.sg-asterisk {
+  background-image: url('./../svgs/media-transports/dark/asterisk.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-1,.sg.sg-media-transports-accents.sg-audio-note {
+  background-image: url('./../svgs/media-transports/accents/audio-note.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-1,.sg.sg-media-transports-light.sg-audio-note {
+  background-image: url('./../svgs/media-transports/light/audio-note.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-1,.sg.sg-media-transports-dark.sg-audio-note {
+  background-image: url('./../svgs/media-transports/dark/audio-note.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-165,.sg.sg-media-transports-accents.sg-ban {
+  background-image: url('./../svgs/media-transports/accents/ban.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-165,.sg.sg-media-transports-light.sg-ban {
+  background-image: url('./../svgs/media-transports/light/ban.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-165,.sg.sg-media-transports-dark.sg-ban {
+  background-image: url('./../svgs/media-transports/dark/ban.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-113,.sg.sg-media-transports-accents.sg-battery-charging {
+  background-image: url('./../svgs/media-transports/accents/battery-charging.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-113,.sg.sg-media-transports-light.sg-battery-charging {
+  background-image: url('./../svgs/media-transports/light/battery-charging.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-113,.sg.sg-media-transports-dark.sg-battery-charging {
+  background-image: url('./../svgs/media-transports/dark/battery-charging.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-114,.sg.sg-media-transports-accents.sg-battery-empty {
+  background-image: url('./../svgs/media-transports/accents/battery-empty.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-114,.sg.sg-media-transports-light.sg-battery-empty {
+  background-image: url('./../svgs/media-transports/light/battery-empty.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-114,.sg.sg-media-transports-dark.sg-battery-empty {
+  background-image: url('./../svgs/media-transports/dark/battery-empty.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-115,.sg.sg-media-transports-accents.sg-battery-full {
+  background-image: url('./../svgs/media-transports/accents/battery-full.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-115,.sg.sg-media-transports-light.sg-battery-full {
+  background-image: url('./../svgs/media-transports/light/battery-full.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-115,.sg.sg-media-transports-dark.sg-battery-full {
+  background-image: url('./../svgs/media-transports/dark/battery-full.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-112,.sg.sg-media-transports-accents.sg-battery-low {
+  background-image: url('./../svgs/media-transports/accents/battery-low.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-112,.sg.sg-media-transports-light.sg-battery-low {
+  background-image: url('./../svgs/media-transports/light/battery-low.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-112,.sg.sg-media-transports-dark.sg-battery-low {
+  background-image: url('./../svgs/media-transports/dark/battery-low.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-188,.sg.sg-media-transports-accents.sg-blinds-closed {
+  background-image: url('./../svgs/media-transports/accents/blinds-closed.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-188,.sg.sg-media-transports-light.sg-blinds-closed {
+  background-image: url('./../svgs/media-transports/light/blinds-closed.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-188,.sg.sg-media-transports-dark.sg-blinds-closed {
+  background-image: url('./../svgs/media-transports/dark/blinds-closed.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-189,.sg.sg-media-transports-accents.sg-blinds {
+  background-image: url('./../svgs/media-transports/accents/blinds.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-189,.sg.sg-media-transports-light.sg-blinds {
+  background-image: url('./../svgs/media-transports/light/blinds.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-189,.sg.sg-media-transports-dark.sg-blinds {
+  background-image: url('./../svgs/media-transports/dark/blinds.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-2,.sg.sg-media-transports-accents.sg-blu-ray {
+  background-image: url('./../svgs/media-transports/accents/blu-ray.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-2,.sg.sg-media-transports-light.sg-blu-ray {
+  background-image: url('./../svgs/media-transports/light/blu-ray.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-2,.sg.sg-media-transports-dark.sg-blu-ray {
+  background-image: url('./../svgs/media-transports/dark/blu-ray.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-116,.sg.sg-media-transports-accents.sg-bluetooth {
+  background-image: url('./../svgs/media-transports/accents/bluetooth.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-116,.sg.sg-media-transports-light.sg-bluetooth {
+  background-image: url('./../svgs/media-transports/light/bluetooth.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-116,.sg.sg-media-transports-dark.sg-bluetooth {
+  background-image: url('./../svgs/media-transports/dark/bluetooth.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-3,.sg.sg-media-transports-accents.sg-bolt {
+  background-image: url('./../svgs/media-transports/accents/bolt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-3,.sg.sg-media-transports-light.sg-bolt {
+  background-image: url('./../svgs/media-transports/light/bolt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-3,.sg.sg-media-transports-dark.sg-bolt {
+  background-image: url('./../svgs/media-transports/dark/bolt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-174,.sg.sg-media-transports-accents.sg-brightness-max {
+  background-image: url('./../svgs/media-transports/accents/brightness-max.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-174,.sg.sg-media-transports-light.sg-brightness-max {
+  background-image: url('./../svgs/media-transports/light/brightness-max.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-174,.sg.sg-media-transports-dark.sg-brightness-max {
+  background-image: url('./../svgs/media-transports/dark/brightness-max.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-173,.sg.sg-media-transports-accents.sg-brightness-medium {
+  background-image: url('./../svgs/media-transports/accents/brightness-medium.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-173,.sg.sg-media-transports-light.sg-brightness-medium {
+  background-image: url('./../svgs/media-transports/light/brightness-medium.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-173,.sg.sg-media-transports-dark.sg-brightness-medium {
+  background-image: url('./../svgs/media-transports/dark/brightness-medium.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-117,.sg.sg-media-transports-accents.sg-brightness {
+  background-image: url('./../svgs/media-transports/accents/brightness.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-117,.sg.sg-media-transports-light.sg-brightness {
+  background-image: url('./../svgs/media-transports/light/brightness.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-117,.sg.sg-media-transports-dark.sg-brightness {
+  background-image: url('./../svgs/media-transports/dark/brightness.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-199,.sg.sg-media-transports-accents.sg-broken-route {
+  background-image: url('./../svgs/media-transports/accents/broken-route.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-199,.sg.sg-media-transports-light.sg-broken-route {
+  background-image: url('./../svgs/media-transports/light/broken-route.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-199,.sg.sg-media-transports-dark.sg-broken-route {
+  background-image: url('./../svgs/media-transports/dark/broken-route.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-106,.sg.sg-media-transports-accents.sg-brush {
+  background-image: url('./../svgs/media-transports/accents/brush.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-106,.sg.sg-media-transports-light.sg-brush {
+  background-image: url('./../svgs/media-transports/light/brush.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-106,.sg.sg-media-transports-dark.sg-brush {
+  background-image: url('./../svgs/media-transports/dark/brush.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-51,.sg.sg-media-transports-accents.sg-calendar {
+  background-image: url('./../svgs/media-transports/accents/calendar.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-51,.sg.sg-media-transports-light.sg-calendar {
+  background-image: url('./../svgs/media-transports/light/calendar.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-51,.sg.sg-media-transports-dark.sg-calendar {
+  background-image: url('./../svgs/media-transports/dark/calendar.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-99,.sg.sg-media-transports-accents.sg-camera {
+  background-image: url('./../svgs/media-transports/accents/camera.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-99,.sg.sg-media-transports-light.sg-camera {
+  background-image: url('./../svgs/media-transports/light/camera.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-99,.sg.sg-media-transports-dark.sg-camera {
+  background-image: url('./../svgs/media-transports/dark/camera.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-118,.sg.sg-media-transports-accents.sg-cart {
+  background-image: url('./../svgs/media-transports/accents/cart.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-118,.sg.sg-media-transports-light.sg-cart {
+  background-image: url('./../svgs/media-transports/light/cart.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-118,.sg.sg-media-transports-dark.sg-cart {
+  background-image: url('./../svgs/media-transports/dark/cart.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-4,.sg.sg-media-transports-accents.sg-cd {
+  background-image: url('./../svgs/media-transports/accents/cd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-4,.sg.sg-media-transports-light.sg-cd {
+  background-image: url('./../svgs/media-transports/light/cd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-4,.sg.sg-media-transports-dark.sg-cd {
+  background-image: url('./../svgs/media-transports/dark/cd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-5,.sg.sg-media-transports-accents.sg-check {
+  background-image: url('./../svgs/media-transports/accents/check.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-5,.sg.sg-media-transports-light.sg-check {
+  background-image: url('./../svgs/media-transports/light/check.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-5,.sg.sg-media-transports-dark.sg-check {
+  background-image: url('./../svgs/media-transports/dark/check.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-107,.sg.sg-media-transports-accents.sg-checkbox-checked {
+  background-image: url('./../svgs/media-transports/accents/checkbox-checked.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-107,.sg.sg-media-transports-light.sg-checkbox-checked {
+  background-image: url('./../svgs/media-transports/light/checkbox-checked.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-107,.sg.sg-media-transports-dark.sg-checkbox-checked {
+  background-image: url('./../svgs/media-transports/dark/checkbox-checked.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-108,.sg.sg-media-transports-accents.sg-checkbox-off {
+  background-image: url('./../svgs/media-transports/accents/checkbox-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-108,.sg.sg-media-transports-light.sg-checkbox-off {
+  background-image: url('./../svgs/media-transports/light/checkbox-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-108,.sg.sg-media-transports-dark.sg-checkbox-off {
+  background-image: url('./../svgs/media-transports/dark/checkbox-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-203,.sg.sg-media-transports-accents.sg-chrome {
+  background-image: url('./../svgs/media-transports/accents/chrome.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-203,.sg.sg-media-transports-light.sg-chrome {
+  background-image: url('./../svgs/media-transports/light/chrome.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-203,.sg.sg-media-transports-dark.sg-chrome {
+  background-image: url('./../svgs/media-transports/dark/chrome.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-185,.sg.sg-media-transports-accents.sg-climate-scheduler {
+  background-image: url('./../svgs/media-transports/accents/climate-scheduler.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-185,.sg.sg-media-transports-light.sg-climate-scheduler {
+  background-image: url('./../svgs/media-transports/light/climate-scheduler.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-185,.sg.sg-media-transports-dark.sg-climate-scheduler {
+  background-image: url('./../svgs/media-transports/dark/climate-scheduler.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-6,.sg.sg-media-transports-accents.sg-climate {
+  background-image: url('./../svgs/media-transports/accents/climate.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-6,.sg.sg-media-transports-light.sg-climate {
+  background-image: url('./../svgs/media-transports/light/climate.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-6,.sg.sg-media-transports-dark.sg-climate {
+  background-image: url('./../svgs/media-transports/dark/climate.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-52,.sg.sg-media-transports-accents.sg-clock {
+  background-image: url('./../svgs/media-transports/accents/clock.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-52,.sg.sg-media-transports-light.sg-clock {
+  background-image: url('./../svgs/media-transports/light/clock.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-52,.sg.sg-media-transports-dark.sg-clock {
+  background-image: url('./../svgs/media-transports/dark/clock.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-149,.sg.sg-media-transports-accents.sg-comment-check {
+  background-image: url('./../svgs/media-transports/accents/comment-check.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-149,.sg.sg-media-transports-light.sg-comment-check {
+  background-image: url('./../svgs/media-transports/light/comment-check.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-149,.sg.sg-media-transports-dark.sg-comment-check {
+  background-image: url('./../svgs/media-transports/dark/comment-check.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-150,.sg.sg-media-transports-accents.sg-comment {
+  background-image: url('./../svgs/media-transports/accents/comment.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-150,.sg.sg-media-transports-light.sg-comment {
+  background-image: url('./../svgs/media-transports/light/comment.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-150,.sg.sg-media-transports-dark.sg-comment {
+  background-image: url('./../svgs/media-transports/dark/comment.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-119,.sg.sg-media-transports-accents.sg-connector-plate {
+  background-image: url('./../svgs/media-transports/accents/connector-plate.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-119,.sg.sg-media-transports-light.sg-connector-plate {
+  background-image: url('./../svgs/media-transports/light/connector-plate.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-119,.sg.sg-media-transports-dark.sg-connector-plate {
+  background-image: url('./../svgs/media-transports/dark/connector-plate.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-120,.sg.sg-media-transports-accents.sg-connector {
+  background-image: url('./../svgs/media-transports/accents/connector.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-120,.sg.sg-media-transports-light.sg-connector {
+  background-image: url('./../svgs/media-transports/light/connector.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-120,.sg.sg-media-transports-dark.sg-connector {
+  background-image: url('./../svgs/media-transports/dark/connector.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-121,.sg.sg-media-transports-accents.sg-contrast {
+  background-image: url('./../svgs/media-transports/accents/contrast.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-121,.sg.sg-media-transports-light.sg-contrast {
+  background-image: url('./../svgs/media-transports/light/contrast.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-121,.sg.sg-media-transports-dark.sg-contrast {
+  background-image: url('./../svgs/media-transports/dark/contrast.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-122,.sg.sg-media-transports-accents.sg-dashboard {
+  background-image: url('./../svgs/media-transports/accents/dashboard.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-122,.sg.sg-media-transports-light.sg-dashboard {
+  background-image: url('./../svgs/media-transports/light/dashboard.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-122,.sg.sg-media-transports-dark.sg-dashboard {
+  background-image: url('./../svgs/media-transports/dark/dashboard.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-123,.sg.sg-media-transports-accents.sg-delete-alt {
+  background-image: url('./../svgs/media-transports/accents/delete-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-123,.sg.sg-media-transports-light.sg-delete-alt {
+  background-image: url('./../svgs/media-transports/light/delete-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-123,.sg.sg-media-transports-dark.sg-delete-alt {
+  background-image: url('./../svgs/media-transports/dark/delete-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-7,.sg.sg-media-transports-accents.sg-delete {
+  background-image: url('./../svgs/media-transports/accents/delete.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-7,.sg.sg-media-transports-light.sg-delete {
+  background-image: url('./../svgs/media-transports/light/delete.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-7,.sg.sg-media-transports-dark.sg-delete {
+  background-image: url('./../svgs/media-transports/dark/delete.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-164,.sg.sg-media-transports-accents.sg-disk {
+  background-image: url('./../svgs/media-transports/accents/disk.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-164,.sg.sg-media-transports-light.sg-disk {
+  background-image: url('./../svgs/media-transports/light/disk.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-164,.sg.sg-media-transports-dark.sg-disk {
+  background-image: url('./../svgs/media-transports/dark/disk.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-176,.sg.sg-media-transports-accents.sg-dnd-on {
+  background-image: url('./../svgs/media-transports/accents/dnd-on.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-176,.sg.sg-media-transports-light.sg-dnd-on {
+  background-image: url('./../svgs/media-transports/light/dnd-on.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-176,.sg.sg-media-transports-dark.sg-dnd-on {
+  background-image: url('./../svgs/media-transports/dark/dnd-on.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-167,.sg.sg-media-transports-accents.sg-dnd {
+  background-image: url('./../svgs/media-transports/accents/dnd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-167,.sg.sg-media-transports-light.sg-dnd {
+  background-image: url('./../svgs/media-transports/light/dnd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-167,.sg.sg-media-transports-dark.sg-dnd {
+  background-image: url('./../svgs/media-transports/dark/dnd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-68,.sg.sg-media-transports-accents.sg-door {
+  background-image: url('./../svgs/media-transports/accents/door.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-68,.sg.sg-media-transports-light.sg-door {
+  background-image: url('./../svgs/media-transports/light/door.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-68,.sg.sg-media-transports-dark.sg-door {
+  background-image: url('./../svgs/media-transports/dark/door.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-8,.sg.sg-media-transports-accents.sg-down-alt {
+  background-image: url('./../svgs/media-transports/accents/down-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-8,.sg.sg-media-transports-light.sg-down-alt {
+  background-image: url('./../svgs/media-transports/light/down-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-8,.sg.sg-media-transports-dark.sg-down-alt {
+  background-image: url('./../svgs/media-transports/dark/down-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-197,.sg.sg-media-transports-accents.sg-down-right {
+  background-image: url('./../svgs/media-transports/accents/down-right.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-197,.sg.sg-media-transports-light.sg-down-right {
+  background-image: url('./../svgs/media-transports/light/down-right.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-197,.sg.sg-media-transports-dark.sg-down-right {
+  background-image: url('./../svgs/media-transports/dark/down-right.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-9,.sg.sg-media-transports-accents.sg-down {
+  background-image: url('./../svgs/media-transports/accents/down.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-9,.sg.sg-media-transports-light.sg-down {
+  background-image: url('./../svgs/media-transports/light/down.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-9,.sg.sg-media-transports-dark.sg-down {
+  background-image: url('./../svgs/media-transports/dark/down.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-100,.sg.sg-media-transports-accents.sg-download-cloud {
+  background-image: url('./../svgs/media-transports/accents/download-cloud.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-100,.sg.sg-media-transports-light.sg-download-cloud {
+  background-image: url('./../svgs/media-transports/light/download-cloud.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-100,.sg.sg-media-transports-dark.sg-download-cloud {
+  background-image: url('./../svgs/media-transports/dark/download-cloud.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-124,.sg.sg-media-transports-accents.sg-download {
+  background-image: url('./../svgs/media-transports/accents/download.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-124,.sg.sg-media-transports-light.sg-download {
+  background-image: url('./../svgs/media-transports/light/download.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-124,.sg.sg-media-transports-dark.sg-download {
+  background-image: url('./../svgs/media-transports/dark/download.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-190,.sg.sg-media-transports-accents.sg-drapes-closed {
+  background-image: url('./../svgs/media-transports/accents/drapes-closed.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-190,.sg.sg-media-transports-light.sg-drapes-closed {
+  background-image: url('./../svgs/media-transports/light/drapes-closed.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-190,.sg.sg-media-transports-dark.sg-drapes-closed {
+  background-image: url('./../svgs/media-transports/dark/drapes-closed.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-191,.sg.sg-media-transports-accents.sg-drapes-open {
+  background-image: url('./../svgs/media-transports/accents/drapes-open.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-191,.sg.sg-media-transports-light.sg-drapes-open {
+  background-image: url('./../svgs/media-transports/light/drapes-open.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-191,.sg.sg-media-transports-dark.sg-drapes-open {
+  background-image: url('./../svgs/media-transports/dark/drapes-open.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-69,.sg.sg-media-transports-accents.sg-drapes {
+  background-image: url('./../svgs/media-transports/accents/drapes.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-69,.sg.sg-media-transports-light.sg-drapes {
+  background-image: url('./../svgs/media-transports/light/drapes.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-69,.sg.sg-media-transports-dark.sg-drapes {
+  background-image: url('./../svgs/media-transports/dark/drapes.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-104,.sg.sg-media-transports-accents.sg-dvd {
+  background-image: url('./../svgs/media-transports/accents/dvd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-104,.sg.sg-media-transports-light.sg-dvd {
+  background-image: url('./../svgs/media-transports/light/dvd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-104,.sg.sg-media-transports-dark.sg-dvd {
+  background-image: url('./../svgs/media-transports/dark/dvd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-10,.sg.sg-media-transports-accents.sg-eject {
+  background-image: url('./../svgs/media-transports/accents/eject.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-10,.sg.sg-media-transports-light.sg-eject {
+  background-image: url('./../svgs/media-transports/light/eject.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-10,.sg.sg-media-transports-dark.sg-eject {
+  background-image: url('./../svgs/media-transports/dark/eject.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-11,.sg.sg-media-transports-accents.sg-enter {
+  background-image: url('./../svgs/media-transports/accents/enter.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-11,.sg.sg-media-transports-light.sg-enter {
+  background-image: url('./../svgs/media-transports/light/enter.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-11,.sg.sg-media-transports-dark.sg-enter {
+  background-image: url('./../svgs/media-transports/dark/enter.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-168,.sg.sg-media-transports-accents.sg-eraser {
+  background-image: url('./../svgs/media-transports/accents/eraser.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-168,.sg.sg-media-transports-light.sg-eraser {
+  background-image: url('./../svgs/media-transports/light/eraser.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-168,.sg.sg-media-transports-dark.sg-eraser {
+  background-image: url('./../svgs/media-transports/dark/eraser.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-53,.sg.sg-media-transports-accents.sg-eye {
+  background-image: url('./../svgs/media-transports/accents/eye.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-53,.sg.sg-media-transports-light.sg-eye {
+  background-image: url('./../svgs/media-transports/light/eye.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-53,.sg.sg-media-transports-dark.sg-eye {
+  background-image: url('./../svgs/media-transports/dark/eye.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-12,.sg.sg-media-transports-accents.sg-film {
+  background-image: url('./../svgs/media-transports/accents/film.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-12,.sg.sg-media-transports-light.sg-film {
+  background-image: url('./../svgs/media-transports/light/film.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-12,.sg.sg-media-transports-dark.sg-film {
+  background-image: url('./../svgs/media-transports/dark/film.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-70,.sg.sg-media-transports-accents.sg-fire {
+  background-image: url('./../svgs/media-transports/accents/fire.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-70,.sg.sg-media-transports-light.sg-fire {
+  background-image: url('./../svgs/media-transports/light/fire.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-70,.sg.sg-media-transports-dark.sg-fire {
+  background-image: url('./../svgs/media-transports/dark/fire.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-182,.sg.sg-media-transports-accents.sg-fireplace {
+  background-image: url('./../svgs/media-transports/accents/fireplace.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-182,.sg.sg-media-transports-light.sg-fireplace {
+  background-image: url('./../svgs/media-transports/light/fireplace.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-182,.sg.sg-media-transports-dark.sg-fireplace {
+  background-image: url('./../svgs/media-transports/dark/fireplace.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-175,.sg.sg-media-transports-accents.sg-folder {
+  background-image: url('./../svgs/media-transports/accents/folder.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-175,.sg.sg-media-transports-light.sg-folder {
+  background-image: url('./../svgs/media-transports/light/folder.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-175,.sg.sg-media-transports-dark.sg-folder {
+  background-image: url('./../svgs/media-transports/dark/folder.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-13,.sg.sg-media-transports-accents.sg-fwd {
+  background-image: url('./../svgs/media-transports/accents/fwd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-13,.sg.sg-media-transports-light.sg-fwd {
+  background-image: url('./../svgs/media-transports/light/fwd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-13,.sg.sg-media-transports-dark.sg-fwd {
+  background-image: url('./../svgs/media-transports/dark/fwd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-54,.sg.sg-media-transports-accents.sg-game {
+  background-image: url('./../svgs/media-transports/accents/game.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-54,.sg.sg-media-transports-light.sg-game {
+  background-image: url('./../svgs/media-transports/light/game.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-54,.sg.sg-media-transports-dark.sg-game {
+  background-image: url('./../svgs/media-transports/dark/game.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-125,.sg.sg-media-transports-accents.sg-garage {
+  background-image: url('./../svgs/media-transports/accents/garage.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-125,.sg.sg-media-transports-light.sg-garage {
+  background-image: url('./../svgs/media-transports/light/garage.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-125,.sg.sg-media-transports-dark.sg-garage {
+  background-image: url('./../svgs/media-transports/dark/garage.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-55,.sg.sg-media-transports-accents.sg-gear {
+  background-image: url('./../svgs/media-transports/accents/gear.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-55,.sg.sg-media-transports-light.sg-gear {
+  background-image: url('./../svgs/media-transports/light/gear.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-55,.sg.sg-media-transports-dark.sg-gear {
+  background-image: url('./../svgs/media-transports/dark/gear.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-56,.sg.sg-media-transports-accents.sg-globe {
+  background-image: url('./../svgs/media-transports/accents/globe.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-56,.sg.sg-media-transports-light.sg-globe {
+  background-image: url('./../svgs/media-transports/light/globe.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-56,.sg.sg-media-transports-dark.sg-globe {
+  background-image: url('./../svgs/media-transports/dark/globe.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-126,.sg.sg-media-transports-accents.sg-graph-alt {
+  background-image: url('./../svgs/media-transports/accents/graph-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-126,.sg.sg-media-transports-light.sg-graph-alt {
+  background-image: url('./../svgs/media-transports/light/graph-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-126,.sg.sg-media-transports-dark.sg-graph-alt {
+  background-image: url('./../svgs/media-transports/dark/graph-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-127,.sg.sg-media-transports-accents.sg-graph {
+  background-image: url('./../svgs/media-transports/accents/graph.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-127,.sg.sg-media-transports-light.sg-graph {
+  background-image: url('./../svgs/media-transports/light/graph.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-127,.sg.sg-media-transports-dark.sg-graph {
+  background-image: url('./../svgs/media-transports/dark/graph.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-128,.sg.sg-media-transports-accents.sg-grid {
+  background-image: url('./../svgs/media-transports/accents/grid.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-128,.sg.sg-media-transports-light.sg-grid {
+  background-image: url('./../svgs/media-transports/light/grid.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-128,.sg.sg-media-transports-dark.sg-grid {
+  background-image: url('./../svgs/media-transports/dark/grid.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-192,.sg.sg-media-transports-accents.sg-group {
+  background-image: url('./../svgs/media-transports/accents/group.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-192,.sg.sg-media-transports-light.sg-group {
+  background-image: url('./../svgs/media-transports/light/group.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-192,.sg.sg-media-transports-dark.sg-group {
+  background-image: url('./../svgs/media-transports/dark/group.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-200,.sg.sg-media-transports-accents.sg-guide-list-alt {
+  background-image: url('./../svgs/media-transports/accents/guide-list-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-200,.sg.sg-media-transports-light.sg-guide-list-alt {
+  background-image: url('./../svgs/media-transports/light/guide-list-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-200,.sg.sg-media-transports-dark.sg-guide-list-alt {
+  background-image: url('./../svgs/media-transports/dark/guide-list-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-129,.sg.sg-media-transports-accents.sg-guide {
+  background-image: url('./../svgs/media-transports/accents/guide.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-129,.sg.sg-media-transports-light.sg-guide {
+  background-image: url('./../svgs/media-transports/light/guide.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-129,.sg.sg-media-transports-dark.sg-guide {
+  background-image: url('./../svgs/media-transports/dark/guide.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-130,.sg.sg-media-transports-accents.sg-hd {
+  background-image: url('./../svgs/media-transports/accents/hd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-130,.sg.sg-media-transports-light.sg-hd {
+  background-image: url('./../svgs/media-transports/light/hd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-130,.sg.sg-media-transports-dark.sg-hd {
+  background-image: url('./../svgs/media-transports/dark/hd.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-166,.sg.sg-media-transports-accents.sg-heart {
+  background-image: url('./../svgs/media-transports/accents/heart.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-166,.sg.sg-media-transports-light.sg-heart {
+  background-image: url('./../svgs/media-transports/light/heart.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-166,.sg.sg-media-transports-dark.sg-heart {
+  background-image: url('./../svgs/media-transports/dark/heart.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-57,.sg.sg-media-transports-accents.sg-help {
+  background-image: url('./../svgs/media-transports/accents/help.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-57,.sg.sg-media-transports-light.sg-help {
+  background-image: url('./../svgs/media-transports/light/help.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-57,.sg.sg-media-transports-dark.sg-help {
+  background-image: url('./../svgs/media-transports/dark/help.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-14,.sg.sg-media-transports-accents.sg-home {
+  background-image: url('./../svgs/media-transports/accents/home.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-14,.sg.sg-media-transports-light.sg-home {
+  background-image: url('./../svgs/media-transports/light/home.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-14,.sg.sg-media-transports-dark.sg-home {
+  background-image: url('./../svgs/media-transports/dark/home.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-131,.sg.sg-media-transports-accents.sg-hot-tub {
+  background-image: url('./../svgs/media-transports/accents/hot-tub.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-131,.sg.sg-media-transports-light.sg-hot-tub {
+  background-image: url('./../svgs/media-transports/light/hot-tub.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-131,.sg.sg-media-transports-dark.sg-hot-tub {
+  background-image: url('./../svgs/media-transports/dark/hot-tub.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-58,.sg.sg-media-transports-accents.sg-image {
+  background-image: url('./../svgs/media-transports/accents/image.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-58,.sg.sg-media-transports-light.sg-image {
+  background-image: url('./../svgs/media-transports/light/image.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-58,.sg.sg-media-transports-dark.sg-image {
+  background-image: url('./../svgs/media-transports/dark/image.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-59,.sg.sg-media-transports-accents.sg-info {
+  background-image: url('./../svgs/media-transports/accents/info.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-59,.sg.sg-media-transports-light.sg-info {
+  background-image: url('./../svgs/media-transports/light/info.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-59,.sg.sg-media-transports-dark.sg-info {
+  background-image: url('./../svgs/media-transports/dark/info.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-71,.sg.sg-media-transports-accents.sg-ipad {
+  background-image: url('./../svgs/media-transports/accents/ipad.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-71,.sg.sg-media-transports-light.sg-ipad {
+  background-image: url('./../svgs/media-transports/light/ipad.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-71,.sg.sg-media-transports-dark.sg-ipad {
+  background-image: url('./../svgs/media-transports/dark/ipad.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-72,.sg.sg-media-transports-accents.sg-iphone-ipod-touch {
+  background-image: url('./../svgs/media-transports/accents/iphone-ipod-touch.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-72,.sg.sg-media-transports-light.sg-iphone-ipod-touch {
+  background-image: url('./../svgs/media-transports/light/iphone-ipod-touch.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-72,.sg.sg-media-transports-dark.sg-iphone-ipod-touch {
+  background-image: url('./../svgs/media-transports/dark/iphone-ipod-touch.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-73,.sg.sg-media-transports-accents.sg-ipod {
+  background-image: url('./../svgs/media-transports/accents/ipod.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-73,.sg.sg-media-transports-light.sg-ipod {
+  background-image: url('./../svgs/media-transports/light/ipod.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-73,.sg.sg-media-transports-dark.sg-ipod {
+  background-image: url('./../svgs/media-transports/dark/ipod.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-132,.sg.sg-media-transports-accents.sg-keyboard {
+  background-image: url('./../svgs/media-transports/accents/keyboard.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-132,.sg.sg-media-transports-light.sg-keyboard {
+  background-image: url('./../svgs/media-transports/light/keyboard.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-132,.sg.sg-media-transports-dark.sg-keyboard {
+  background-image: url('./../svgs/media-transports/dark/keyboard.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-60,.sg.sg-media-transports-accents.sg-keypad {
+  background-image: url('./../svgs/media-transports/accents/keypad.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-60,.sg.sg-media-transports-light.sg-keypad {
+  background-image: url('./../svgs/media-transports/light/keypad.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-60,.sg.sg-media-transports-dark.sg-keypad {
+  background-image: url('./../svgs/media-transports/dark/keypad.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-103,.sg.sg-media-transports-accents.sg-laptop {
+  background-image: url('./../svgs/media-transports/accents/laptop.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-103,.sg.sg-media-transports-light.sg-laptop {
+  background-image: url('./../svgs/media-transports/light/laptop.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-103,.sg.sg-media-transports-dark.sg-laptop {
+  background-image: url('./../svgs/media-transports/dark/laptop.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-152,.sg.sg-media-transports-accents.sg-lastfm {
+  background-image: url('./../svgs/media-transports/accents/lastfm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-152,.sg.sg-media-transports-light.sg-lastfm {
+  background-image: url('./../svgs/media-transports/light/lastfm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-152,.sg.sg-media-transports-dark.sg-lastfm {
+  background-image: url('./../svgs/media-transports/dark/lastfm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-15,.sg.sg-media-transports-accents.sg-left-alt {
+  background-image: url('./../svgs/media-transports/accents/left-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-15,.sg.sg-media-transports-light.sg-left-alt {
+  background-image: url('./../svgs/media-transports/light/left-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-15,.sg.sg-media-transports-dark.sg-left-alt {
+  background-image: url('./../svgs/media-transports/dark/left-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-16,.sg.sg-media-transports-accents.sg-left {
+  background-image: url('./../svgs/media-transports/accents/left.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-16,.sg.sg-media-transports-light.sg-left {
+  background-image: url('./../svgs/media-transports/light/left.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-16,.sg.sg-media-transports-dark.sg-left {
+  background-image: url('./../svgs/media-transports/dark/left.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-133,.sg.sg-media-transports-accents.sg-lights-off {
+  background-image: url('./../svgs/media-transports/accents/lights-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-133,.sg.sg-media-transports-light.sg-lights-off {
+  background-image: url('./../svgs/media-transports/light/lights-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-133,.sg.sg-media-transports-dark.sg-lights-off {
+  background-image: url('./../svgs/media-transports/dark/lights-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-17,.sg.sg-media-transports-accents.sg-lights {
+  background-image: url('./../svgs/media-transports/accents/lights.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-17,.sg.sg-media-transports-light.sg-lights {
+  background-image: url('./../svgs/media-transports/light/lights.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-17,.sg.sg-media-transports-dark.sg-lights {
+  background-image: url('./../svgs/media-transports/dark/lights.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-109,.sg.sg-media-transports-accents.sg-list {
+  background-image: url('./../svgs/media-transports/accents/list.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-109,.sg.sg-media-transports-light.sg-list {
+  background-image: url('./../svgs/media-transports/light/list.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-109,.sg.sg-media-transports-dark.sg-list {
+  background-image: url('./../svgs/media-transports/dark/list.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-18,.sg.sg-media-transports-accents.sg-live {
+  background-image: url('./../svgs/media-transports/accents/live.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-18,.sg.sg-media-transports-light.sg-live {
+  background-image: url('./../svgs/media-transports/light/live.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-18,.sg.sg-media-transports-dark.sg-live {
+  background-image: url('./../svgs/media-transports/dark/live.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-153,.sg.sg-media-transports-accents.sg-location-minus {
+  background-image: url('./../svgs/media-transports/accents/location-minus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-153,.sg.sg-media-transports-light.sg-location-minus {
+  background-image: url('./../svgs/media-transports/light/location-minus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-153,.sg.sg-media-transports-dark.sg-location-minus {
+  background-image: url('./../svgs/media-transports/dark/location-minus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-154,.sg.sg-media-transports-accents.sg-location-plus {
+  background-image: url('./../svgs/media-transports/accents/location-plus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-154,.sg.sg-media-transports-light.sg-location-plus {
+  background-image: url('./../svgs/media-transports/light/location-plus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-154,.sg.sg-media-transports-dark.sg-location-plus {
+  background-image: url('./../svgs/media-transports/dark/location-plus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-155,.sg.sg-media-transports-accents.sg-location {
+  background-image: url('./../svgs/media-transports/accents/location.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-155,.sg.sg-media-transports-light.sg-location {
+  background-image: url('./../svgs/media-transports/light/location.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-155,.sg.sg-media-transports-dark.sg-location {
+  background-image: url('./../svgs/media-transports/dark/location.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-134,.sg.sg-media-transports-accents.sg-lync {
+  background-image: url('./../svgs/media-transports/accents/lync.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-134,.sg.sg-media-transports-light.sg-lync {
+  background-image: url('./../svgs/media-transports/light/lync.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-134,.sg.sg-media-transports-dark.sg-lync {
+  background-image: url('./../svgs/media-transports/dark/lync.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-61,.sg.sg-media-transports-accents.sg-magnifying-glass {
+  background-image: url('./../svgs/media-transports/accents/magnifying-glass.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-61,.sg.sg-media-transports-light.sg-magnifying-glass {
+  background-image: url('./../svgs/media-transports/light/magnifying-glass.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-61,.sg.sg-media-transports-dark.sg-magnifying-glass {
+  background-image: url('./../svgs/media-transports/dark/magnifying-glass.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-135,.sg.sg-media-transports-accents.sg-media-server {
+  background-image: url('./../svgs/media-transports/accents/media-server.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-135,.sg.sg-media-transports-light.sg-media-server {
+  background-image: url('./../svgs/media-transports/light/media-server.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-135,.sg.sg-media-transports-dark.sg-media-server {
+  background-image: url('./../svgs/media-transports/dark/media-server.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-74,.sg.sg-media-transports-accents.sg-mic-mute {
+  background-image: url('./../svgs/media-transports/accents/mic-mute.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-74,.sg.sg-media-transports-light.sg-mic-mute {
+  background-image: url('./../svgs/media-transports/light/mic-mute.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-74,.sg.sg-media-transports-dark.sg-mic-mute {
+  background-image: url('./../svgs/media-transports/dark/mic-mute.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-170,.sg.sg-media-transports-accents.sg-mic-muted {
+  background-image: url('./../svgs/media-transports/accents/mic-muted.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-170,.sg.sg-media-transports-light.sg-mic-muted {
+  background-image: url('./../svgs/media-transports/light/mic-muted.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-170,.sg.sg-media-transports-dark.sg-mic-muted {
+  background-image: url('./../svgs/media-transports/dark/mic-muted.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-62,.sg.sg-media-transports-accents.sg-mic {
+  background-image: url('./../svgs/media-transports/accents/mic.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-62,.sg.sg-media-transports-light.sg-mic {
+  background-image: url('./../svgs/media-transports/light/mic.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-62,.sg.sg-media-transports-dark.sg-mic {
+  background-image: url('./../svgs/media-transports/dark/mic.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-19,.sg.sg-media-transports-accents.sg-minus {
+  background-image: url('./../svgs/media-transports/accents/minus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-19,.sg.sg-media-transports-light.sg-minus {
+  background-image: url('./../svgs/media-transports/light/minus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-19,.sg.sg-media-transports-dark.sg-minus {
+  background-image: url('./../svgs/media-transports/dark/minus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-183,.sg.sg-media-transports-accents.sg-more {
+  background-image: url('./../svgs/media-transports/accents/more.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-183,.sg.sg-media-transports-light.sg-more {
+  background-image: url('./../svgs/media-transports/light/more.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-183,.sg.sg-media-transports-dark.sg-more {
+  background-image: url('./../svgs/media-transports/dark/more.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-136,.sg.sg-media-transports-accents.sg-mouse {
+  background-image: url('./../svgs/media-transports/accents/mouse.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-136,.sg.sg-media-transports-light.sg-mouse {
+  background-image: url('./../svgs/media-transports/light/mouse.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-136,.sg.sg-media-transports-dark.sg-mouse {
+  background-image: url('./../svgs/media-transports/dark/mouse.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-179,.sg.sg-media-transports-accents.sg-network-wi-fi-low {
+  background-image: url('./../svgs/media-transports/accents/network-wi-fi-low.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-179,.sg.sg-media-transports-light.sg-network-wi-fi-low {
+  background-image: url('./../svgs/media-transports/light/network-wi-fi-low.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-179,.sg.sg-media-transports-dark.sg-network-wi-fi-low {
+  background-image: url('./../svgs/media-transports/dark/network-wi-fi-low.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-181,.sg.sg-media-transports-accents.sg-network-wi-fi-max {
+  background-image: url('./../svgs/media-transports/accents/network-wi-fi-max.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-181,.sg.sg-media-transports-light.sg-network-wi-fi-max {
+  background-image: url('./../svgs/media-transports/light/network-wi-fi-max.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-181,.sg.sg-media-transports-dark.sg-network-wi-fi-max {
+  background-image: url('./../svgs/media-transports/dark/network-wi-fi-max.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-180,.sg.sg-media-transports-accents.sg-network-wi-fi-med {
+  background-image: url('./../svgs/media-transports/accents/network-wi-fi-med.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-180,.sg.sg-media-transports-light.sg-network-wi-fi-med {
+  background-image: url('./../svgs/media-transports/light/network-wi-fi-med.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-180,.sg.sg-media-transports-dark.sg-network-wi-fi-med {
+  background-image: url('./../svgs/media-transports/dark/network-wi-fi-med.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-178,.sg.sg-media-transports-accents.sg-network-wi-fi-off {
+  background-image: url('./../svgs/media-transports/accents/network-wi-fi-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-178,.sg.sg-media-transports-light.sg-network-wi-fi-off {
+  background-image: url('./../svgs/media-transports/light/network-wi-fi-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-178,.sg.sg-media-transports-dark.sg-network-wi-fi-off {
+  background-image: url('./../svgs/media-transports/dark/network-wi-fi-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-20,.sg.sg-media-transports-accents.sg-next-page {
+  background-image: url('./../svgs/media-transports/accents/next-page.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-20,.sg.sg-media-transports-light.sg-next-page {
+  background-image: url('./../svgs/media-transports/light/next-page.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-20,.sg.sg-media-transports-dark.sg-next-page {
+  background-image: url('./../svgs/media-transports/dark/next-page.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-21,.sg.sg-media-transports-accents.sg-next {
+  background-image: url('./../svgs/media-transports/accents/next.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-21,.sg.sg-media-transports-light.sg-next {
+  background-image: url('./../svgs/media-transports/light/next.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-21,.sg.sg-media-transports-dark.sg-next {
+  background-image: url('./../svgs/media-transports/dark/next.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-172,.sg.sg-media-transports-accents.sg-options-off {
+  background-image: url('./../svgs/media-transports/accents/options-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-172,.sg.sg-media-transports-light.sg-options-off {
+  background-image: url('./../svgs/media-transports/light/options-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-172,.sg.sg-media-transports-dark.sg-options-off {
+  background-image: url('./../svgs/media-transports/dark/options-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-177,.sg.sg-media-transports-accents.sg-options-on {
+  background-image: url('./../svgs/media-transports/accents/options-on.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-177,.sg.sg-media-transports-light.sg-options-on {
+  background-image: url('./../svgs/media-transports/light/options-on.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-177,.sg.sg-media-transports-dark.sg-options-on {
+  background-image: url('./../svgs/media-transports/dark/options-on.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-137,.sg.sg-media-transports-accents.sg-outlet {
+  background-image: url('./../svgs/media-transports/accents/outlet.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-137,.sg.sg-media-transports-light.sg-outlet {
+  background-image: url('./../svgs/media-transports/light/outlet.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-137,.sg.sg-media-transports-dark.sg-outlet {
+  background-image: url('./../svgs/media-transports/dark/outlet.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-75,.sg.sg-media-transports-accents.sg-padlock-closed {
+  background-image: url('./../svgs/media-transports/accents/padlock-closed.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-75,.sg.sg-media-transports-light.sg-padlock-closed {
+  background-image: url('./../svgs/media-transports/light/padlock-closed.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-75,.sg.sg-media-transports-dark.sg-padlock-closed {
+  background-image: url('./../svgs/media-transports/dark/padlock-closed.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-76,.sg.sg-media-transports-accents.sg-padlock-open {
+  background-image: url('./../svgs/media-transports/accents/padlock-open.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-76,.sg.sg-media-transports-light.sg-padlock-open {
+  background-image: url('./../svgs/media-transports/light/padlock-open.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-76,.sg.sg-media-transports-dark.sg-padlock-open {
+  background-image: url('./../svgs/media-transports/dark/padlock-open.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-156,.sg.sg-media-transports-accents.sg-pandora {
+  background-image: url('./../svgs/media-transports/accents/pandora.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-156,.sg.sg-media-transports-light.sg-pandora {
+  background-image: url('./../svgs/media-transports/light/pandora.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-156,.sg.sg-media-transports-dark.sg-pandora {
+  background-image: url('./../svgs/media-transports/dark/pandora.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-22,.sg.sg-media-transports-accents.sg-pause {
+  background-image: url('./../svgs/media-transports/accents/pause.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-22,.sg.sg-media-transports-light.sg-pause {
+  background-image: url('./../svgs/media-transports/light/pause.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-22,.sg.sg-media-transports-dark.sg-pause {
+  background-image: url('./../svgs/media-transports/dark/pause.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-105,.sg.sg-media-transports-accents.sg-pen {
+  background-image: url('./../svgs/media-transports/accents/pen.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-105,.sg.sg-media-transports-light.sg-pen {
+  background-image: url('./../svgs/media-transports/light/pen.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-105,.sg.sg-media-transports-dark.sg-pen {
+  background-image: url('./../svgs/media-transports/dark/pen.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-63,.sg.sg-media-transports-accents.sg-phone-down {
+  background-image: url('./../svgs/media-transports/accents/phone-down.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-63,.sg.sg-media-transports-light.sg-phone-down {
+  background-image: url('./../svgs/media-transports/light/phone-down.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-63,.sg.sg-media-transports-dark.sg-phone-down {
+  background-image: url('./../svgs/media-transports/dark/phone-down.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-23,.sg.sg-media-transports-accents.sg-phone {
+  background-image: url('./../svgs/media-transports/accents/phone.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-23,.sg.sg-media-transports-light.sg-phone {
+  background-image: url('./../svgs/media-transports/light/phone.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-23,.sg.sg-media-transports-dark.sg-phone {
+  background-image: url('./../svgs/media-transports/dark/phone.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-93,.sg.sg-media-transports-accents.sg-play-all {
+  background-image: url('./../svgs/media-transports/accents/play-all.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-93,.sg.sg-media-transports-light.sg-play-all {
+  background-image: url('./../svgs/media-transports/light/play-all.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-93,.sg.sg-media-transports-dark.sg-play-all {
+  background-image: url('./../svgs/media-transports/dark/play-all.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-94,.sg.sg-media-transports-accents.sg-play-alt {
+  background-image: url('./../svgs/media-transports/accents/play-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-94,.sg.sg-media-transports-light.sg-play-alt {
+  background-image: url('./../svgs/media-transports/light/play-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-94,.sg.sg-media-transports-dark.sg-play-alt {
+  background-image: url('./../svgs/media-transports/dark/play-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-95,.sg.sg-media-transports-accents.sg-play-library {
+  background-image: url('./../svgs/media-transports/accents/play-library.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-95,.sg.sg-media-transports-light.sg-play-library {
+  background-image: url('./../svgs/media-transports/light/play-library.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-95,.sg.sg-media-transports-dark.sg-play-library {
+  background-image: url('./../svgs/media-transports/dark/play-library.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-96,.sg.sg-media-transports-accents.sg-play-list {
+  background-image: url('./../svgs/media-transports/accents/play-list.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-96,.sg.sg-media-transports-light.sg-play-list {
+  background-image: url('./../svgs/media-transports/light/play-list.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-96,.sg.sg-media-transports-dark.sg-play-list {
+  background-image: url('./../svgs/media-transports/dark/play-list.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-25,.sg.sg-media-transports-accents.sg-play-pause {
+  background-image: url('./../svgs/media-transports/accents/play-pause.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-25,.sg.sg-media-transports-light.sg-play-pause {
+  background-image: url('./../svgs/media-transports/light/play-pause.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-25,.sg.sg-media-transports-dark.sg-play-pause {
+  background-image: url('./../svgs/media-transports/dark/play-pause.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-24,.sg.sg-media-transports-accents.sg-play {
+  background-image: url('./../svgs/media-transports/accents/play.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-24,.sg.sg-media-transports-light.sg-play {
+  background-image: url('./../svgs/media-transports/light/play.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-24,.sg.sg-media-transports-dark.sg-play {
+  background-image: url('./../svgs/media-transports/dark/play.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-64,.sg.sg-media-transports-accents.sg-playlist {
+  background-image: url('./../svgs/media-transports/accents/playlist.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-64,.sg.sg-media-transports-light.sg-playlist {
+  background-image: url('./../svgs/media-transports/light/playlist.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-64,.sg.sg-media-transports-dark.sg-playlist {
+  background-image: url('./../svgs/media-transports/dark/playlist.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-26,.sg.sg-media-transports-accents.sg-plus {
+  background-image: url('./../svgs/media-transports/accents/plus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-26,.sg.sg-media-transports-light.sg-plus {
+  background-image: url('./../svgs/media-transports/light/plus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-26,.sg.sg-media-transports-dark.sg-plus {
+  background-image: url('./../svgs/media-transports/dark/plus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-77,.sg.sg-media-transports-accents.sg-pool {
+  background-image: url('./../svgs/media-transports/accents/pool.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-77,.sg.sg-media-transports-light.sg-pool {
+  background-image: url('./../svgs/media-transports/light/pool.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-77,.sg.sg-media-transports-dark.sg-pool {
+  background-image: url('./../svgs/media-transports/dark/pool.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-27,.sg.sg-media-transports-accents.sg-power {
+  background-image: url('./../svgs/media-transports/accents/power.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-27,.sg.sg-media-transports-light.sg-power {
+  background-image: url('./../svgs/media-transports/light/power.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-27,.sg.sg-media-transports-dark.sg-power {
+  background-image: url('./../svgs/media-transports/dark/power.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-28,.sg.sg-media-transports-accents.sg-prev-page {
+  background-image: url('./../svgs/media-transports/accents/prev-page.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-28,.sg.sg-media-transports-light.sg-prev-page {
+  background-image: url('./../svgs/media-transports/light/prev-page.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-28,.sg.sg-media-transports-dark.sg-prev-page {
+  background-image: url('./../svgs/media-transports/dark/prev-page.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-207,.sg.sg-media-transports-accents.sg-previous-alt {
+  background-image: url('./../svgs/media-transports/accents/previous-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-207,.sg.sg-media-transports-light.sg-previous-alt {
+  background-image: url('./../svgs/media-transports/light/previous-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-207,.sg.sg-media-transports-dark.sg-previous-alt {
+  background-image: url('./../svgs/media-transports/dark/previous-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-29,.sg.sg-media-transports-accents.sg-previous {
+  background-image: url('./../svgs/media-transports/accents/previous.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-29,.sg.sg-media-transports-light.sg-previous {
+  background-image: url('./../svgs/media-transports/light/previous.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-29,.sg.sg-media-transports-dark.sg-previous {
+  background-image: url('./../svgs/media-transports/dark/previous.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-98,.sg.sg-media-transports-accents.sg-projector {
+  background-image: url('./../svgs/media-transports/accents/projector.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-98,.sg.sg-media-transports-light.sg-projector {
+  background-image: url('./../svgs/media-transports/light/projector.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-98,.sg.sg-media-transports-dark.sg-projector {
+  background-image: url('./../svgs/media-transports/dark/projector.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-101,.sg.sg-media-transports-accents.sg-radio-signal {
+  background-image: url('./../svgs/media-transports/accents/radio-signal.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-101,.sg.sg-media-transports-light.sg-radio-signal {
+  background-image: url('./../svgs/media-transports/light/radio-signal.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-101,.sg.sg-media-transports-dark.sg-radio-signal {
+  background-image: url('./../svgs/media-transports/dark/radio-signal.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-30,.sg.sg-media-transports-accents.sg-rec {
+  background-image: url('./../svgs/media-transports/accents/rec.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-30,.sg.sg-media-transports-light.sg-rec {
+  background-image: url('./../svgs/media-transports/light/rec.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-30,.sg.sg-media-transports-dark.sg-rec {
+  background-image: url('./../svgs/media-transports/dark/rec.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-86,.sg.sg-media-transports-accents.sg-repeat-item {
+  background-image: url('./../svgs/media-transports/accents/repeat-item.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-86,.sg.sg-media-transports-light.sg-repeat-item {
+  background-image: url('./../svgs/media-transports/light/repeat-item.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-86,.sg.sg-media-transports-dark.sg-repeat-item {
+  background-image: url('./../svgs/media-transports/dark/repeat-item.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-87,.sg.sg-media-transports-accents.sg-repeat-off {
+  background-image: url('./../svgs/media-transports/accents/repeat-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-87,.sg.sg-media-transports-light.sg-repeat-off {
+  background-image: url('./../svgs/media-transports/light/repeat-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-87,.sg.sg-media-transports-dark.sg-repeat-off {
+  background-image: url('./../svgs/media-transports/dark/repeat-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-31,.sg.sg-media-transports-accents.sg-repeat {
+  background-image: url('./../svgs/media-transports/accents/repeat.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-31,.sg.sg-media-transports-light.sg-repeat {
+  background-image: url('./../svgs/media-transports/light/repeat.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-31,.sg.sg-media-transports-dark.sg-repeat {
+  background-image: url('./../svgs/media-transports/dark/repeat.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-32,.sg.sg-media-transports-accents.sg-replay {
+  background-image: url('./../svgs/media-transports/accents/replay.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-32,.sg.sg-media-transports-light.sg-replay {
+  background-image: url('./../svgs/media-transports/light/replay.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-32,.sg.sg-media-transports-dark.sg-replay {
+  background-image: url('./../svgs/media-transports/dark/replay.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-33,.sg.sg-media-transports-accents.sg-rew {
+  background-image: url('./../svgs/media-transports/accents/rew.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-33,.sg.sg-media-transports-light.sg-rew {
+  background-image: url('./../svgs/media-transports/light/rew.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-33,.sg.sg-media-transports-dark.sg-rew {
+  background-image: url('./../svgs/media-transports/dark/rew.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-157,.sg.sg-media-transports-accents.sg-rhapsody {
+  background-image: url('./../svgs/media-transports/accents/rhapsody.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-157,.sg.sg-media-transports-light.sg-rhapsody {
+  background-image: url('./../svgs/media-transports/light/rhapsody.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-157,.sg.sg-media-transports-dark.sg-rhapsody {
+  background-image: url('./../svgs/media-transports/dark/rhapsody.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-34,.sg.sg-media-transports-accents.sg-right-alt {
+  background-image: url('./../svgs/media-transports/accents/right-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-34,.sg.sg-media-transports-light.sg-right-alt {
+  background-image: url('./../svgs/media-transports/light/right-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-34,.sg.sg-media-transports-dark.sg-right-alt {
+  background-image: url('./../svgs/media-transports/dark/right-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-35,.sg.sg-media-transports-accents.sg-right {
+  background-image: url('./../svgs/media-transports/accents/right.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-35,.sg.sg-media-transports-light.sg-right {
+  background-image: url('./../svgs/media-transports/light/right.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-35,.sg.sg-media-transports-dark.sg-right {
+  background-image: url('./../svgs/media-transports/dark/right.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-202,.sg.sg-media-transports-accents.sg-roku {
+  background-image: url('./../svgs/media-transports/accents/roku.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-202,.sg.sg-media-transports-light.sg-roku {
+  background-image: url('./../svgs/media-transports/light/roku.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-202,.sg.sg-media-transports-dark.sg-roku {
+  background-image: url('./../svgs/media-transports/dark/roku.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-36,.sg.sg-media-transports-accents.sg-rss {
+  background-image: url('./../svgs/media-transports/accents/rss.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-36,.sg.sg-media-transports-light.sg-rss {
+  background-image: url('./../svgs/media-transports/light/rss.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-36,.sg.sg-media-transports-dark.sg-rss {
+  background-image: url('./../svgs/media-transports/dark/rss.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-102,.sg.sg-media-transports-accents.sg-satellite {
+  background-image: url('./../svgs/media-transports/accents/satellite.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-102,.sg.sg-media-transports-light.sg-satellite {
+  background-image: url('./../svgs/media-transports/light/satellite.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-102,.sg.sg-media-transports-dark.sg-satellite {
+  background-image: url('./../svgs/media-transports/dark/satellite.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-186,.sg.sg-media-transports-accents.sg-scene {
+  background-image: url('./../svgs/media-transports/accents/scene.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-186,.sg.sg-media-transports-light.sg-scene {
+  background-image: url('./../svgs/media-transports/light/scene.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-186,.sg.sg-media-transports-dark.sg-scene {
+  background-image: url('./../svgs/media-transports/dark/scene.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-196,.sg.sg-media-transports-accents.sg-settings-alt {
+  background-image: url('./../svgs/media-transports/accents/settings-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-196,.sg.sg-media-transports-light.sg-settings-alt {
+  background-image: url('./../svgs/media-transports/light/settings-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-196,.sg.sg-media-transports-dark.sg-settings-alt {
+  background-image: url('./../svgs/media-transports/dark/settings-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-78,.sg.sg-media-transports-accents.sg-settings {
+  background-image: url('./../svgs/media-transports/accents/settings.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-78,.sg.sg-media-transports-light.sg-settings {
+  background-image: url('./../svgs/media-transports/light/settings.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-78,.sg.sg-media-transports-dark.sg-settings {
+  background-image: url('./../svgs/media-transports/dark/settings.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-193,.sg.sg-media-transports-accents.sg-shades-closed {
+  background-image: url('./../svgs/media-transports/accents/shades-closed.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-193,.sg.sg-media-transports-light.sg-shades-closed {
+  background-image: url('./../svgs/media-transports/light/shades-closed.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-193,.sg.sg-media-transports-dark.sg-shades-closed {
+  background-image: url('./../svgs/media-transports/dark/shades-closed.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-79,.sg.sg-media-transports-accents.sg-shades {
+  background-image: url('./../svgs/media-transports/accents/shades.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-79,.sg.sg-media-transports-light.sg-shades {
+  background-image: url('./../svgs/media-transports/light/shades.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-79,.sg.sg-media-transports-dark.sg-shades {
+  background-image: url('./../svgs/media-transports/dark/shades.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-80,.sg.sg-media-transports-accents.sg-share {
+  background-image: url('./../svgs/media-transports/accents/share.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-80,.sg.sg-media-transports-light.sg-share {
+  background-image: url('./../svgs/media-transports/light/share.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-80,.sg.sg-media-transports-dark.sg-share {
+  background-image: url('./../svgs/media-transports/dark/share.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-81,.sg.sg-media-transports-accents.sg-shield {
+  background-image: url('./../svgs/media-transports/accents/shield.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-81,.sg.sg-media-transports-light.sg-shield {
+  background-image: url('./../svgs/media-transports/light/shield.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-81,.sg.sg-media-transports-dark.sg-shield {
+  background-image: url('./../svgs/media-transports/dark/shield.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-88,.sg.sg-media-transports-accents.sg-shuffle-item {
+  background-image: url('./../svgs/media-transports/accents/shuffle-item.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-88,.sg.sg-media-transports-light.sg-shuffle-item {
+  background-image: url('./../svgs/media-transports/light/shuffle-item.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-88,.sg.sg-media-transports-dark.sg-shuffle-item {
+  background-image: url('./../svgs/media-transports/dark/shuffle-item.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-89,.sg.sg-media-transports-accents.sg-shuffle-off {
+  background-image: url('./../svgs/media-transports/accents/shuffle-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-89,.sg.sg-media-transports-light.sg-shuffle-off {
+  background-image: url('./../svgs/media-transports/light/shuffle-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-89,.sg.sg-media-transports-dark.sg-shuffle-off {
+  background-image: url('./../svgs/media-transports/dark/shuffle-off.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-37,.sg.sg-media-transports-accents.sg-shuffle {
+  background-image: url('./../svgs/media-transports/accents/shuffle.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-37,.sg.sg-media-transports-light.sg-shuffle {
+  background-image: url('./../svgs/media-transports/light/shuffle.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-37,.sg.sg-media-transports-dark.sg-shuffle {
+  background-image: url('./../svgs/media-transports/dark/shuffle.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-158,.sg.sg-media-transports-accents.sg-sirius {
+  background-image: url('./../svgs/media-transports/accents/sirius.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-158,.sg.sg-media-transports-light.sg-sirius {
+  background-image: url('./../svgs/media-transports/light/sirius.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-158,.sg.sg-media-transports-dark.sg-sirius {
+  background-image: url('./../svgs/media-transports/dark/sirius.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-159,.sg.sg-media-transports-accents.sg-siriusxm {
+  background-image: url('./../svgs/media-transports/accents/siriusxm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-159,.sg.sg-media-transports-light.sg-siriusxm {
+  background-image: url('./../svgs/media-transports/light/siriusxm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-159,.sg.sg-media-transports-dark.sg-siriusxm {
+  background-image: url('./../svgs/media-transports/dark/siriusxm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-195,.sg.sg-media-transports-accents.sg-skip-ahead {
+  background-image: url('./../svgs/media-transports/accents/skip-ahead.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-195,.sg.sg-media-transports-light.sg-skip-ahead {
+  background-image: url('./../svgs/media-transports/light/skip-ahead.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-195,.sg.sg-media-transports-dark.sg-skip-ahead {
+  background-image: url('./../svgs/media-transports/dark/skip-ahead.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-194,.sg.sg-media-transports-accents.sg-skip-back {
+  background-image: url('./../svgs/media-transports/accents/skip-back.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-194,.sg.sg-media-transports-light.sg-skip-back {
+  background-image: url('./../svgs/media-transports/light/skip-back.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-194,.sg.sg-media-transports-dark.sg-skip-back {
+  background-image: url('./../svgs/media-transports/dark/skip-back.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-204,.sg.sg-media-transports-accents.sg-sleep {
+  background-image: url('./../svgs/media-transports/accents/sleep.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-204,.sg.sg-media-transports-light.sg-sleep {
+  background-image: url('./../svgs/media-transports/light/sleep.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-204,.sg.sg-media-transports-dark.sg-sleep {
+  background-image: url('./../svgs/media-transports/dark/sleep.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-82,.sg.sg-media-transports-accents.sg-slow {
+  background-image: url('./../svgs/media-transports/accents/slow.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-82,.sg.sg-media-transports-light.sg-slow {
+  background-image: url('./../svgs/media-transports/light/slow.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-82,.sg.sg-media-transports-dark.sg-slow {
+  background-image: url('./../svgs/media-transports/dark/slow.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-65,.sg.sg-media-transports-accents.sg-snow-flake {
+  background-image: url('./../svgs/media-transports/accents/snow-flake.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-65,.sg.sg-media-transports-light.sg-snow-flake {
+  background-image: url('./../svgs/media-transports/light/snow-flake.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-65,.sg.sg-media-transports-dark.sg-snow-flake {
+  background-image: url('./../svgs/media-transports/dark/snow-flake.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-90,.sg.sg-media-transports-accents.sg-song-add {
+  background-image: url('./../svgs/media-transports/accents/song-add.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-90,.sg.sg-media-transports-light.sg-song-add {
+  background-image: url('./../svgs/media-transports/light/song-add.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-90,.sg.sg-media-transports-dark.sg-song-add {
+  background-image: url('./../svgs/media-transports/dark/song-add.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-184,.sg.sg-media-transports-accents.sg-sonos {
+  background-image: url('./../svgs/media-transports/accents/sonos.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-184,.sg.sg-media-transports-light.sg-sonos {
+  background-image: url('./../svgs/media-transports/light/sonos.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-184,.sg.sg-media-transports-dark.sg-sonos {
+  background-image: url('./../svgs/media-transports/dark/sonos.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-160,.sg.sg-media-transports-accents.sg-spotify {
+  background-image: url('./../svgs/media-transports/accents/spotify.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-160,.sg.sg-media-transports-light.sg-spotify {
+  background-image: url('./../svgs/media-transports/light/spotify.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-160,.sg.sg-media-transports-dark.sg-spotify {
+  background-image: url('./../svgs/media-transports/dark/spotify.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-91,.sg.sg-media-transports-accents.sg-star {
+  background-image: url('./../svgs/media-transports/accents/star.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-91,.sg.sg-media-transports-light.sg-star {
+  background-image: url('./../svgs/media-transports/light/star.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-91,.sg.sg-media-transports-dark.sg-star {
+  background-image: url('./../svgs/media-transports/dark/star.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-187,.sg.sg-media-transports-accents.sg-stop-source {
+  background-image: url('./../svgs/media-transports/accents/stop-source.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-187,.sg.sg-media-transports-light.sg-stop-source {
+  background-image: url('./../svgs/media-transports/light/stop-source.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-187,.sg.sg-media-transports-dark.sg-stop-source {
+  background-image: url('./../svgs/media-transports/dark/stop-source.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-38,.sg.sg-media-transports-accents.sg-stop {
+  background-image: url('./../svgs/media-transports/accents/stop.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-38,.sg.sg-media-transports-light.sg-stop {
+  background-image: url('./../svgs/media-transports/light/stop.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-38,.sg.sg-media-transports-dark.sg-stop {
+  background-image: url('./../svgs/media-transports/dark/stop.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-148,.sg.sg-media-transports-accents.sg-stopwatch {
+  background-image: url('./../svgs/media-transports/accents/stopwatch.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-148,.sg.sg-media-transports-light.sg-stopwatch {
+  background-image: url('./../svgs/media-transports/light/stopwatch.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-148,.sg.sg-media-transports-dark.sg-stopwatch {
+  background-image: url('./../svgs/media-transports/dark/stopwatch.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-66,.sg.sg-media-transports-accents.sg-sun {
+  background-image: url('./../svgs/media-transports/accents/sun.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-66,.sg.sg-media-transports-light.sg-sun {
+  background-image: url('./../svgs/media-transports/light/sun.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-66,.sg.sg-media-transports-dark.sg-sun {
+  background-image: url('./../svgs/media-transports/dark/sun.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-138,.sg.sg-media-transports-accents.sg-system {
+  background-image: url('./../svgs/media-transports/accents/system.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-138,.sg.sg-media-transports-light.sg-system {
+  background-image: url('./../svgs/media-transports/light/system.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-138,.sg.sg-media-transports-dark.sg-system {
+  background-image: url('./../svgs/media-transports/dark/system.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-39,.sg.sg-media-transports-accents.sg-theater {
+  background-image: url('./../svgs/media-transports/accents/theater.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-39,.sg.sg-media-transports-light.sg-theater {
+  background-image: url('./../svgs/media-transports/light/theater.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-39,.sg.sg-media-transports-dark.sg-theater {
+  background-image: url('./../svgs/media-transports/dark/theater.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-40,.sg.sg-media-transports-accents.sg-thumb-down {
+  background-image: url('./../svgs/media-transports/accents/thumb-down.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-40,.sg.sg-media-transports-light.sg-thumb-down {
+  background-image: url('./../svgs/media-transports/light/thumb-down.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-40,.sg.sg-media-transports-dark.sg-thumb-down {
+  background-image: url('./../svgs/media-transports/dark/thumb-down.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-41,.sg.sg-media-transports-accents.sg-thumb-up {
+  background-image: url('./../svgs/media-transports/accents/thumb-up.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-41,.sg.sg-media-transports-light.sg-thumb-up {
+  background-image: url('./../svgs/media-transports/light/thumb-up.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-41,.sg.sg-media-transports-dark.sg-thumb-up {
+  background-image: url('./../svgs/media-transports/dark/thumb-up.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-139,.sg.sg-media-transports-accents.sg-trashcan {
+  background-image: url('./../svgs/media-transports/accents/trashcan.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-139,.sg.sg-media-transports-light.sg-trashcan {
+  background-image: url('./../svgs/media-transports/light/trashcan.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-139,.sg.sg-media-transports-dark.sg-trashcan {
+  background-image: url('./../svgs/media-transports/dark/trashcan.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-42,.sg.sg-media-transports-accents.sg-triangle {
+  background-image: url('./../svgs/media-transports/accents/triangle.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-42,.sg.sg-media-transports-light.sg-triangle {
+  background-image: url('./../svgs/media-transports/light/triangle.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-42,.sg.sg-media-transports-dark.sg-triangle {
+  background-image: url('./../svgs/media-transports/dark/triangle.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-83,.sg.sg-media-transports-accents.sg-tv {
+  background-image: url('./../svgs/media-transports/accents/tv.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-83,.sg.sg-media-transports-light.sg-tv {
+  background-image: url('./../svgs/media-transports/light/tv.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-83,.sg.sg-media-transports-dark.sg-tv {
+  background-image: url('./../svgs/media-transports/dark/tv.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-198,.sg.sg-media-transports-accents.sg-ungroup {
+  background-image: url('./../svgs/media-transports/accents/ungroup.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-198,.sg.sg-media-transports-light.sg-ungroup {
+  background-image: url('./../svgs/media-transports/light/ungroup.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-198,.sg.sg-media-transports-dark.sg-ungroup {
+  background-image: url('./../svgs/media-transports/dark/ungroup.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-43,.sg.sg-media-transports-accents.sg-up-alt {
+  background-image: url('./../svgs/media-transports/accents/up-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-43,.sg.sg-media-transports-light.sg-up-alt {
+  background-image: url('./../svgs/media-transports/light/up-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-43,.sg.sg-media-transports-dark.sg-up-alt {
+  background-image: url('./../svgs/media-transports/dark/up-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-44,.sg.sg-media-transports-accents.sg-up {
+  background-image: url('./../svgs/media-transports/accents/up.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-44,.sg.sg-media-transports-light.sg-up {
+  background-image: url('./../svgs/media-transports/light/up.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-44,.sg.sg-media-transports-dark.sg-up {
+  background-image: url('./../svgs/media-transports/dark/up.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-140,.sg.sg-media-transports-accents.sg-upload {
+  background-image: url('./../svgs/media-transports/accents/upload.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-140,.sg.sg-media-transports-light.sg-upload {
+  background-image: url('./../svgs/media-transports/light/upload.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-140,.sg.sg-media-transports-dark.sg-upload {
+  background-image: url('./../svgs/media-transports/dark/upload.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-141,.sg.sg-media-transports-accents.sg-usb-alt {
+  background-image: url('./../svgs/media-transports/accents/usb-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-141,.sg.sg-media-transports-light.sg-usb-alt {
+  background-image: url('./../svgs/media-transports/light/usb-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-141,.sg.sg-media-transports-dark.sg-usb-alt {
+  background-image: url('./../svgs/media-transports/dark/usb-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-142,.sg.sg-media-transports-accents.sg-usb {
+  background-image: url('./../svgs/media-transports/accents/usb.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-142,.sg.sg-media-transports-light.sg-usb {
+  background-image: url('./../svgs/media-transports/light/usb.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-142,.sg.sg-media-transports-dark.sg-usb {
+  background-image: url('./../svgs/media-transports/dark/usb.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-92,.sg.sg-media-transports-accents.sg-user-bookmark {
+  background-image: url('./../svgs/media-transports/accents/user-bookmark.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-92,.sg.sg-media-transports-light.sg-user-bookmark {
+  background-image: url('./../svgs/media-transports/light/user-bookmark.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-92,.sg.sg-media-transports-dark.sg-user-bookmark {
+  background-image: url('./../svgs/media-transports/dark/user-bookmark.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-163,.sg.sg-media-transports-accents.sg-user-check {
+  background-image: url('./../svgs/media-transports/accents/user-check.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-163,.sg.sg-media-transports-light.sg-user-check {
+  background-image: url('./../svgs/media-transports/light/user-check.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-163,.sg.sg-media-transports-dark.sg-user-check {
+  background-image: url('./../svgs/media-transports/dark/user-check.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-161,.sg.sg-media-transports-accents.sg-user-minus {
+  background-image: url('./../svgs/media-transports/accents/user-minus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-161,.sg.sg-media-transports-light.sg-user-minus {
+  background-image: url('./../svgs/media-transports/light/user-minus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-161,.sg.sg-media-transports-dark.sg-user-minus {
+  background-image: url('./../svgs/media-transports/dark/user-minus.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-84,.sg.sg-media-transports-accents.sg-user {
+  background-image: url('./../svgs/media-transports/accents/user.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-84,.sg.sg-media-transports-light.sg-user {
+  background-image: url('./../svgs/media-transports/light/user.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-84,.sg.sg-media-transports-dark.sg-user {
+  background-image: url('./../svgs/media-transports/dark/user.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-67,.sg.sg-media-transports-accents.sg-users {
+  background-image: url('./../svgs/media-transports/accents/users.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-67,.sg.sg-media-transports-light.sg-users {
+  background-image: url('./../svgs/media-transports/light/users.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-67,.sg.sg-media-transports-dark.sg-users {
+  background-image: url('./../svgs/media-transports/dark/users.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-143,.sg.sg-media-transports-accents.sg-video-input {
+  background-image: url('./../svgs/media-transports/accents/video-input.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-143,.sg.sg-media-transports-light.sg-video-input {
+  background-image: url('./../svgs/media-transports/light/video-input.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-143,.sg.sg-media-transports-dark.sg-video-input {
+  background-image: url('./../svgs/media-transports/dark/video-input.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-144,.sg.sg-media-transports-accents.sg-video-output {
+  background-image: url('./../svgs/media-transports/accents/video-output.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-144,.sg.sg-media-transports-light.sg-video-output {
+  background-image: url('./../svgs/media-transports/light/video-output.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-144,.sg.sg-media-transports-dark.sg-video-output {
+  background-image: url('./../svgs/media-transports/dark/video-output.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-201,.sg.sg-media-transports-accents.sg-video-screen-alt {
+  background-image: url('./../svgs/media-transports/accents/video-screen-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-201,.sg.sg-media-transports-light.sg-video-screen-alt {
+  background-image: url('./../svgs/media-transports/light/video-screen-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-201,.sg.sg-media-transports-dark.sg-video-screen-alt {
+  background-image: url('./../svgs/media-transports/dark/video-screen-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-45,.sg.sg-media-transports-accents.sg-video-screen {
+  background-image: url('./../svgs/media-transports/accents/video-screen.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-45,.sg.sg-media-transports-light.sg-video-screen {
+  background-image: url('./../svgs/media-transports/light/video-screen.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-45,.sg.sg-media-transports-dark.sg-video-screen {
+  background-image: url('./../svgs/media-transports/dark/video-screen.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-46,.sg.sg-media-transports-accents.sg-volume-hi {
+  background-image: url('./../svgs/media-transports/accents/volume-hi.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-46,.sg.sg-media-transports-light.sg-volume-hi {
+  background-image: url('./../svgs/media-transports/light/volume-hi.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-46,.sg.sg-media-transports-dark.sg-volume-hi {
+  background-image: url('./../svgs/media-transports/dark/volume-hi.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-47,.sg.sg-media-transports-accents.sg-volume-lo {
+  background-image: url('./../svgs/media-transports/accents/volume-lo.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-47,.sg.sg-media-transports-light.sg-volume-lo {
+  background-image: url('./../svgs/media-transports/light/volume-lo.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-47,.sg.sg-media-transports-dark.sg-volume-lo {
+  background-image: url('./../svgs/media-transports/dark/volume-lo.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-48,.sg.sg-media-transports-accents.sg-volume-mute {
+  background-image: url('./../svgs/media-transports/accents/volume-mute.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-48,.sg.sg-media-transports-light.sg-volume-mute {
+  background-image: url('./../svgs/media-transports/light/volume-mute.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-48,.sg.sg-media-transports-dark.sg-volume-mute {
+  background-image: url('./../svgs/media-transports/dark/volume-mute.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-171,.sg.sg-media-transports-accents.sg-volume-muted {
+  background-image: url('./../svgs/media-transports/accents/volume-muted.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-171,.sg.sg-media-transports-light.sg-volume-muted {
+  background-image: url('./../svgs/media-transports/light/volume-muted.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-171,.sg.sg-media-transports-dark.sg-volume-muted {
+  background-image: url('./../svgs/media-transports/dark/volume-muted.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-97,.sg.sg-media-transports-accents.sg-weather {
+  background-image: url('./../svgs/media-transports/accents/weather.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-97,.sg.sg-media-transports-light.sg-weather {
+  background-image: url('./../svgs/media-transports/light/weather.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-97,.sg.sg-media-transports-dark.sg-weather {
+  background-image: url('./../svgs/media-transports/dark/weather.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-85,.sg.sg-media-transports-accents.sg-wi-fi {
+  background-image: url('./../svgs/media-transports/accents/wi-fi.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-85,.sg.sg-media-transports-light.sg-wi-fi {
+  background-image: url('./../svgs/media-transports/light/wi-fi.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-85,.sg.sg-media-transports-dark.sg-wi-fi {
+  background-image: url('./../svgs/media-transports/dark/wi-fi.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-145,.sg.sg-media-transports-accents.sg-windows {
+  background-image: url('./../svgs/media-transports/accents/windows.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-145,.sg.sg-media-transports-light.sg-windows {
+  background-image: url('./../svgs/media-transports/light/windows.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-145,.sg.sg-media-transports-dark.sg-windows {
+  background-image: url('./../svgs/media-transports/dark/windows.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-146,.sg.sg-media-transports-accents.sg-wireless-device {
+  background-image: url('./../svgs/media-transports/accents/wireless-device.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-146,.sg.sg-media-transports-light.sg-wireless-device {
+  background-image: url('./../svgs/media-transports/light/wireless-device.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-146,.sg.sg-media-transports-dark.sg-wireless-device {
+  background-image: url('./../svgs/media-transports/dark/wireless-device.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-147,.sg.sg-media-transports-accents.sg-wrench {
+  background-image: url('./../svgs/media-transports/accents/wrench.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-147,.sg.sg-media-transports-light.sg-wrench {
+  background-image: url('./../svgs/media-transports/light/wrench.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-147,.sg.sg-media-transports-dark.sg-wrench {
+  background-image: url('./../svgs/media-transports/dark/wrench.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-162,.sg.sg-media-transports-accents.sg-xm {
+  background-image: url('./../svgs/media-transports/accents/xm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-162,.sg.sg-media-transports-light.sg-xm {
+  background-image: url('./../svgs/media-transports/light/xm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-162,.sg.sg-media-transports-dark.sg-xm {
+  background-image: url('./../svgs/media-transports/dark/xm.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-151,.sg.sg-media-transports-accents.sg-abc {
+  background-image: url('./../svgs/media-transports/accents/abc.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-151,.sg.sg-media-transports-light.sg-abc {
+  background-image: url('./../svgs/media-transports/light/abc.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-151,.sg.sg-media-transports-dark.sg-abc {
+  background-image: url('./../svgs/media-transports/dark/abc.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-169,.sg.sg-media-transports-accents.sg-blank {
+  background-image: url('./../svgs/media-transports/accents/blank.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-169,.sg.sg-media-transports-light.sg-blank {
+  background-image: url('./../svgs/media-transports/light/blank.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-169,.sg.sg-media-transports-dark.sg-blank {
+  background-image: url('./../svgs/media-transports/dark/blank.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-212,.sg.sg-media-transports-accents.sg-iheart-radio {
+  background-image: url('./../svgs/media-transports/accents/iheart-radio.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-212,.sg.sg-media-transports-light.sg-iheart-radio {
+  background-image: url('./../svgs/media-transports/light/iheart-radio.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-212,.sg.sg-media-transports-dark.sg-iheart-radio {
+  background-image: url('./../svgs/media-transports/dark/iheart-radio.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-211,.sg.sg-media-transports-accents.sg-murfie {
+  background-image: url('./../svgs/media-transports/accents/murfie.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-211,.sg.sg-media-transports-light.sg-murfie {
+  background-image: url('./../svgs/media-transports/light/murfie.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-211,.sg.sg-media-transports-dark.sg-murfie {
+  background-image: url('./../svgs/media-transports/dark/murfie.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-210,.sg.sg-media-transports-accents.sg-napster {
+  background-image: url('./../svgs/media-transports/accents/napster.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-210,.sg.sg-media-transports-light.sg-napster {
+  background-image: url('./../svgs/media-transports/light/napster.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-210,.sg.sg-media-transports-dark.sg-napster {
+  background-image: url('./../svgs/media-transports/dark/napster.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-208,.sg.sg-media-transports-accents.sg-next-alt {
+  background-image: url('./../svgs/media-transports/accents/next-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-208,.sg.sg-media-transports-light.sg-next-alt {
+  background-image: url('./../svgs/media-transports/light/next-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-208,.sg.sg-media-transports-dark.sg-next-alt {
+  background-image: url('./../svgs/media-transports/dark/next-alt.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-214,.sg.sg-media-transports-accents.sg-slacker-radio {
+  background-image: url('./../svgs/media-transports/accents/slacker-radio.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-214,.sg.sg-media-transports-light.sg-slacker-radio {
+  background-image: url('./../svgs/media-transports/light/slacker-radio.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-214,.sg.sg-media-transports-dark.sg-slacker-radio {
+  background-image: url('./../svgs/media-transports/dark/slacker-radio.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-213,.sg.sg-media-transports-accents.sg-tidal {
+  background-image: url('./../svgs/media-transports/accents/tidal.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-213,.sg.sg-media-transports-light.sg-tidal {
+  background-image: url('./../svgs/media-transports/light/tidal.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-213,.sg.sg-media-transports-dark.sg-tidal {
+  background-image: url('./../svgs/media-transports/dark/tidal.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-accents.sg-209,.sg.sg-media-transports-accents.sg-volume {
+  background-image: url('./../svgs/media-transports/accents/volume.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-light.sg-209,.sg.sg-media-transports-light.sg-volume {
+  background-image: url('./../svgs/media-transports/light/volume.svg');
+  height: 32px;
+  width: 32px;
+}
+
+.sg.sg-media-transports-dark.sg-209,.sg.sg-media-transports-dark.sg-volume {
+  background-image: url('./../svgs/media-transports/dark/volume.svg');
+  height: 32px;
+  width: 32px;
+}

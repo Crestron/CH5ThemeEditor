@@ -10,20 +10,24 @@
 /// @group ch5-animation
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/// Main Class
 .ch5-animation {
   position: relative;
   display: inline-block;
   color: $ch5-animation-color;
 
+  /// Applied when startAnimating='true'
   .ch5-animation--start-animating-true {
     animation-play-state: running;
   }
 
+  /// Applied when startAnimating='false'
   .ch5-animation--start-animating-false {
     animation-play-state: paused;
   }
 }
 
+/// Applied when disabled='true'
 .ch5-animation--disabled {
   pointer-events: none;
   opacity: $ch5-animation-disabled-opacity;
