@@ -7,10 +7,10 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-sample
+/// @group ch5-video
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-ch5-sample {
+ch5-video {
   display: inline-block;
   position: relative;
   font-size: 0;
@@ -27,7 +27,7 @@ ch5-sample {
 }
 
 /// Main class
-.ch5-sample {
+.ch5-video {
   display: inline-block;
   position: relative;
   overflow: hidden;
@@ -73,7 +73,7 @@ ch5-sample {
   }
 }
 
-body.ch5-sample-fullscreen {
+body.ch5-video-fullscreen {
   visibility: hidden;
 
   * {
@@ -86,14 +86,14 @@ body.ch5-sample-fullscreen {
     opacity: 0 !important;
   }
 
-  .ch5-sample {
+  .ch5-video {
     .full-screen-icon {
       opacity: 0 !important;
     }
   }
 }
 
-.ch5-sample--disabled {
+.ch5-video--disabled {
   pointer-events: none;
-  opacity: $ch5-sample-disabled-opacity;
+  opacity: $ch5-video-disabled-opacity;
 }

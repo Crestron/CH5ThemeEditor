@@ -1,63 +1,15 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2023 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-video-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
-$ch5-display-color: rgb(142, 142, 142) !default;
-$ch5-margin: 0px !default;
-$ch5-padding: 0px !default;
-$ch5-border: none !default;
-$ch5-margin-bottom: 0px !default;
-$ch5-background-color: #3c3c3c !default;
-$ch5-fullscreen-background-color: #000 !default;
-$ch5-fullscreen-click-background-color: #000 !default;
-$ch5-color: rgb(0, 0, 0) !default;
-$ch5-position: absolute !default;
-$ch5-width: inherit !default;
-$ch5-height: inherit !default;
-$ch5-font-family: calibri !default;
-$ch5-font-size: 18px !default;
-$ch5-font-weight: bold !default;
-$ch5-float: left !default;
-$ch5-text-align: left !default;
-$ch5-z-index: 99 !default;
+/// Variables below
 
-// Resolution for 16:9
-$ch5-video-aratio16x9-width-xx-large: 1920px !default;
-$ch5-video-aratio16x9-height-xx-large: 1080px !default;
-
-$ch5-video-aratio16x9-width-x-large: 1280px !default;
-$ch5-video-aratio16x9-height-x-large: 720px !default;
-
-$ch5-video-aratio16x9-width-large: 1024px !default;
-$ch5-video-aratio16x9-height-large: 576px !default;
-
-$ch5-video-aratio16x9-width-regular: 768px !default;
-$ch5-video-aratio16x9-height-regular: 432px !default;
-
-$ch5-video-aratio16x9-width-small: 512px !default;
-$ch5-video-aratio16x9-height-small: 288px !default;
-
-$ch5-video-aratio16x9-width-x-small: 256px !default;
-$ch5-video-aratio16x9-height-x-small: 144px !default;
-
-// Resolution for 4:3
-$ch5-video-aratio4x3-width-xx-large: 1440px !default;
-$ch5-video-aratio4x3-height-xx-large: 1080px !default;
-
-$ch5-video-aratio4x3-width-x-large: 960px !default;
-$ch5-video-aratio4x3-height-x-large: 720px !default;
-
-$ch5-video-aratio4x3-width-large: 768px !default;
-$ch5-video-aratio4x3-height-large: 576px !default;
-
-$ch5-video-aratio4x3-width-regular: 576px !default;
-$ch5-video-aratio4x3-height-regular: 432px !default;
-
-$ch5-video-aratio4x3-width-small: 384px !default;
-$ch5-video-aratio4x3-height-small: 288px !default;
-
-$ch5-video-aratio4x3-width-x-small: 192px !default;
-$ch5-video-aratio4x3-height-x-small: 144px !default;
+$ch5-video-disabled-opacity: 0.5 !default;
