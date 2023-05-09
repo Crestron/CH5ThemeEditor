@@ -8,7 +8,7 @@
 @mixin handleSizeHorizontal($width, $height, $right, $top) {
     width: $width;
     height: $height;
-    right: $right - 1;
+    right: $right;
     top: $top - 0.5;
 }
 
@@ -16,5 +16,5 @@
     width: $width;
     height: $height;
     left: $left - 1;
-    top: $top - 1;
+    top: $top;
 }
