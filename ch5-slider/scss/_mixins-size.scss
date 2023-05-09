@@ -8,13 +8,13 @@
 @mixin handleSizeHorizontal($width, $height, $right, $top) {
     width: $width;
     height: $height;
-    right: $right;
-    top: $top;
+    right: $right - 1;
+    top: $top - 0.5;
 }
 
 @mixin handleSizeVertical($width, $height, $left, $top) {
     width: $width;
     height: $height;
     left: $left - 1;
-    top: $top;
+    top: $top - 1;
 }
