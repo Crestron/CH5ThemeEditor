@@ -517,7 +517,7 @@
             }
             min-width: $ch5-slider-size-x-small-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-x-small-horizontal-circle-size * 1.2);
+                max-width: calc($ch5-slider-size-x-small-horizontal-circle-size);
             }
             padding: 0 calc($ch5-slider-size-x-small-horizontal-circle-size / 2);
         }
@@ -542,7 +542,7 @@
             }
             min-width: $ch5-slider-size-small-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-small-horizontal-circle-size * 1.2);
+                max-width: calc($ch5-slider-size-small-horizontal-circle-size);
             }
             padding: 0 calc($ch5-slider-size-small-horizontal-circle-size / 2);
         }
@@ -557,17 +557,17 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-small-horizontal-circle-size;
+                width: $ch5-slider-size-regular-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-top: calc($ch5-slider-size-small-horizontal-circle-size/2);
+                    margin-top: calc($ch5-slider-size-regular-horizontal-circle-size/2);
                 }
             }
             min-width: $ch5-slider-size-regular-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-regular-horizontal-circle-size * 1.2);
+                max-width: calc($ch5-slider-size-regular-horizontal-circle-size);
             }
             padding: 0 calc($ch5-slider-size-regular-horizontal-circle-size / 2);
         }
@@ -592,7 +592,7 @@
             }
             min-width: $ch5-slider-size-large-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-large-horizontal-circle-size * 1.2);
+                max-width: calc($ch5-slider-size-large-horizontal-circle-size);
             }
             padding: 0 calc($ch5-slider-size-large-horizontal-circle-size / 2);
         }
@@ -617,7 +617,7 @@
             }
             min-width: $ch5-slider-size-x-large-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-x-large-horizontal-circle-size * 1.2);
+                max-width: calc($ch5-slider-size-x-large-horizontal-circle-size);
             }
             padding: 0 calc($ch5-slider-size-x-large-horizontal-circle-size / 2);
         }
