@@ -1,61 +1,102 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-// All rights reserved.
-// No part of this software may be reproduced in any form, machine
-// or natural, without the express written consent of Crestron Electronics.
-// Use of this source code is subject to the terms of the Crestron Software License Agreement
-// under which you licensed this source code.
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-slider
+////////////////////////////////////////////////////////////////////////////////////////////////////
 .ch5-slider {
     /* ===============================================
     SIZE HORIZONTAL 
     ============================================= */
     &.ch5-slider--orientation--horizontal {
+        .ch5-title-container {
+            text-align: center;
+        }
+        .slider-on-button {
+            margin-right: 3px;
+          }
+        &.adv-slider {
+            .ch5-slider-button-container {
+                height: inherit;
+                width: inherit;
+                display: flex;
+            }
+        }
         /* ch5-slider - x-small */
+        /// Applied when slider size="x-small"
         &.ch5-slider--size--x-small {
             width: $ch5-slider-size-x-small-horizontal;
         }
         /* ch5-slider - small */
+        /// Applied when slider size="small"
         &.ch5-slider--size--small {
             width: $ch5-slider-size-small-horizontal;
         }
         /* ch5-slider - regular */
+        /// Applied when slider size="regular"
         &.ch5-slider--size--regular {
             width: $ch5-slider-size-regular-horizontal;
         }
         /* ch5-slider - large */
+        /// Applied when slider size="large"
         &.ch5-slider--size--large {
             width: $ch5-slider-size-large-horizontal;
         }
         /* ch5-slider - x-large */
+        /// Applied when slider size="x-large"
         &.ch5-slider--size--x-large {
             width: $ch5-slider-size-x-large-horizontal;
         }
     }
 
-  
     /* ===============================================
     SIZE VERTICAL 
     ============================================= */
-    &.ch5-slider--orientation--vertical{
-        /* ch5-slider - x-small */
+    &.ch5-slider--orientation--vertical {
+        .ch5-title-container {
+            text-align: center;
+        }
+        &.adv-slider {
+            .ch5-slider-button-container {
+                width: inherit;
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+
         &.ch5-slider--size--x-small {
-            height: $ch5-slider-size-x-small-vertical;
+            .ch5-slider-button-container {
+                height: $ch5-slider-size-x-small-vertical;
+            }
         }
         /* ch5-slider - small */
         &.ch5-slider--size--small {
-            height: $ch5-slider-size-small-vertical;
+            .ch5-slider-button-container {
+                height: $ch5-slider-size-small-vertical;
+            }
         }
         /* ch5-slider - regular */
         &.ch5-slider--size--regular {
-            height: $ch5-slider-size-regular-vertical;
+            .ch5-slider-button-container {
+                height: $ch5-slider-size-regular-vertical;
+            }
         }
         /* ch5-slider - large */
         &.ch5-slider--size--large {
-            height: $ch5-slider-size-large-vertical;
+            .ch5-slider-button-container {
+                height: $ch5-slider-size-large-vertical;
+            }
         }
         /* ch5-slider - x-large */
         &.ch5-slider--size--x-large {
-            height: $ch5-slider-size-x-large-vertical;
+            .ch5-slider-button-container {
+                height: $ch5-slider-size-x-large-vertical;
+            }
         }
     }
 }

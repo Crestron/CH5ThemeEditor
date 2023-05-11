@@ -13,8 +13,28 @@
 ch5-slider:focus {
   outline: none;
 }
-ch5-slider:not(.ch5-slider--disabled) .noUi-handle{
+.ch5-slider:not(.ch5-slider--disabled) .noUi-handle {
   cursor: pointer;
+}
+ch5-slider {
+  position: relative;
+  display: inline-block;
+}
+
+.ch5-slider--disabled {
+  .slider-off-button,
+  .slider-on-button {
+    opacity: 0.5 !important;
+    z-index: 2;
+    div {
+      cursor: not-allowed !important;
+      pointer-events: none;
+    }
+  }
+  .cb-btn,
+  .ch5-slider-button-container {
+    cursor: not-allowed !important;
+  }
 }
 
 /* ch5-slider - the container */
@@ -24,7 +44,6 @@ ch5-slider:not(.ch5-slider--disabled) .noUi-handle{
   position: relative;
   display: inline-block;
   vertical-align: top;
-  // padding: 0px 15px 30px 15px;
   font-size: $ch5-slider-font-size;
   font-style: $ch5-slider-font-style;
   font-weight: $ch5-slider-font-weight;
@@ -44,8 +63,14 @@ ch5-slider:not(.ch5-slider--disabled) .noUi-handle{
     display: inline-block;
   }
 
-  &[nohandle] .noUi-handle {
+  &.nohandle .noUi-handle {
     visibility: hidden;
+  }
+
+  .noUi-handle:after {
+    content: none !important;
+    height: 0% !important;
+    width: 0% !important;
   }
 
   /// Applied when slider orientation="horizontal"
@@ -53,7 +78,25 @@ ch5-slider:not(.ch5-slider--disabled) .noUi-handle{
     .noUi-target {
       height: $ch5-slider-target-size;
     }
-
+    &.ch5-slider-ticks {
+      .noUi-base {
+        height: $ch5-slider-target-size;
+        border-style: $ch5-slider-target-border-style;
+        border-color: $ch5-slider-target-border-color;
+        border-width: $ch5-slider-target-border-width;
+      }
+      .noUi-pips-horizontal {
+        top: 0;
+      }
+      .noUi-pips {
+        position: relative;
+      }
+    }
+    &.adv-slider {
+      .noUi-target {
+        align-self: center;
+      }
+    }
     &.ch5-slider--tooltip--on {
       margin-top: 2.5em;
     }
@@ -68,13 +111,31 @@ ch5-slider:not(.ch5-slider--disabled) .noUi-handle{
     .noUi-target {
       width: $ch5-slider-target-size;
     }
-
+    &.adv-slider {
+      .noUi-target {
+        align-self: center;
+      }
+    }
+    &.ch5-slider-ticks {
+      .noUi-base {
+        width: $ch5-slider-target-size;
+        border-style: $ch5-slider-target-border-style;
+        border-color: $ch5-slider-target-border-color;
+        border-width: $ch5-slider-target-border-width;
+      }
+      width: 90px;
+      max-width: fit-content !important;
+      .noUi-target {
+        align-self: auto;
+        margin-left: calc($ch5-slider-target-size/2.57);
+      }
+    }
     &.ch5-slider--tooltip--on {
       margin-left: 2.5em;
     }
 
     &.ch5-slider--tooltip--auto {
-      // margin-left: 2.5em;   CH5C -3150     
+      // margin-left: 2.5em;   CH5C -3150
     }
   }
 
@@ -85,7 +146,6 @@ ch5-slider:not(.ch5-slider--disabled) .noUi-handle{
   }
 
   .noUi-handle {
-
     &:before,
     &:after {
       content: none;
@@ -118,16 +178,43 @@ ch5-slider:not(.ch5-slider--disabled) .noUi-handle{
   /* ===============================================
     STRETCH
    ============================================= */
-  &.ch5-slider--stretch--width.ch5-slider--orientation--horizontal {
-    width: 100% !important;
+  &.ch5-slider--stretch--width.ch5-slider--orientation--horizontal:not(.adv-slider) {
+    .ch5-slider-button-container {
+      width: 100% !important;
+    }
   }
 
-  &.ch5-slider--stretch--height.ch5-slider--orientation--vertical {
-    height: 100% !important;
+  &.ch5-slider--stretch--height.ch5-slider--orientation--vertical:not(.adv-slider) {
+    .ch5-slider-button-container {
+      height: 100% !important;
+    }
   }
 
-  &.ch5-slider--stretch--height.ch5-slider--orientation--horizontal {
-    height: 100% !important;
+  &.ch5-slider--stretch--height.ch5-slider--orientation--horizontal:not(.adv-slider) {
+    .ch5-slider-button-container {
+      height: 100% !important;
+    }
+    .noUi-target {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &.ch5-slider--stretch--width.ch5-slider--orientation--vertical:not(.adv-slider) {
+    .ch5-slider-button-container {
+      width: 100% !important;
+    }
+    .noUi-target {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &.ch5-slider--stretch--both.ch5-slider--orientation--horizontal:not(.adv-slider) {
+    .ch5-slider-button-container {
+      width: 100% !important;
+      height: 100% !important;
+    }
 
     .noUi-target {
       top: 50%;
@@ -135,33 +222,31 @@ ch5-slider:not(.ch5-slider--disabled) .noUi-handle{
     }
   }
 
-  &.ch5-slider--stretch--width.ch5-slider--orientation--vertical {
-    width: 100% !important;
-
+  &.ch5-slider--stretch--both.ch5-slider--orientation--vertical:not(.adv-slider) {
+    .ch5-slider-button-container {
+      height: 100% !important;
+      width: 100% !important;
+    }
     .noUi-target {
       left: 50%;
       transform: translateX(-50%);
     }
   }
+}
 
-  &.ch5-slider--stretch--both.ch5-slider--orientation--horizontal {
-    width: 100% !important;
-    height: 100% !important;
-
-    .noUi-target {
-      top: 50%;
-      transform: translateY(-50%);
-    }
+.adv-slider.ch5-slider--stretch--both,
+.adv-slider.ch5-slider--stretch--height,
+.adv-slider.ch5-slider--stretch--width {
+  .slider-off-button,
+  .slider-on-button {
+    align-self: center;
   }
+}
 
-  &.ch5-slider--stretch--both.ch5-slider--orientation--vertical {
-    height: 100% !important;
-    width: 100% !important;
-
-    .noUi-target {
-      left: 50%;
-      transform: translateX(-50%);
-    }
+.ch5-slider--orientation--vertical {
+  &.adv-slider.ch5-slider--stretch--both,
+  &.adv-slider.ch5-slider--stretch--width {
+    max-width: inherit !important;
   }
 }
 
@@ -172,7 +257,6 @@ html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle .noUi-horizontal .no
 /* Tooltip */
 
 .ch5-slider--tooltip--auto {
-
   .noUi-tooltip {
     display: none;
   }
@@ -182,7 +266,6 @@ html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle .noUi-horizontal .no
   }
 }
 
-
 /* Ticks */
 .noUi-pips {
   .noUi-marker-normal {
@@ -190,4 +273,19 @@ html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle .noUi-horizontal .no
   }
 
   color: $ch5-slider-pips-color;
+}
+
+.ch5-slider-ticks {
+  .slider-off-button,
+  .slider-on-button {
+    height: fit-content;
+    width: fit-content;
+  }
+  .noUi-target {
+    height: 100% !important;
+    border: 0;
+  }
+  .noUi-base {
+    border-radius: 4px;
+  }
 }
