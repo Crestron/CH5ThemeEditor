@@ -5,16 +5,16 @@
 // Use of this source code is subject to the terms of the Crestron Software License Agreement
 // under which you licensed this source code.
 
-@mixin  handleSizeHorizontal($width, $height, $right, $top) {
+@mixin handleSizeHorizontal($width, $height, $right, $top) {
     width: $width;
     height: $height;
     right: $right;
-    top: $top; 
+    top: $top - 0.5;
 }
 
-@mixin  handleSizeVertical($width, $height, $left, $top) {
+@mixin handleSizeVertical($width, $height, $left, $top) {
     width: $width;
     height: $height;
-    left: $left;
-    top: $top; 
+    left: $left - 1;
+    top: $top;
 }
