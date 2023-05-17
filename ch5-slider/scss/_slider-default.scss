@@ -156,7 +156,7 @@ ch5-slider {
     COLORS
    ============================================= */
   .noUi-target {
-    background: $ch5-slider-target-bg;
+    background: transparent;
     border-style: $ch5-slider-target-border-style;
     border-color: $ch5-slider-target-border-color;
     border-width: $ch5-slider-target-border-width;
@@ -165,6 +165,9 @@ ch5-slider {
 
   .noUi-connect {
     background: $ch5-slider-connect-bg;
+  }
+  .noUi-connects {
+    background: $ch5-slider-target-bg;
   }
 
   .noUi-handle {
