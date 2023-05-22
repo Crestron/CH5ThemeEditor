@@ -117,6 +117,10 @@ $ch5-slider-size-large-horizontal-oval-size:    36px !default;
 /// x-large size in px of the handle when handleShape="oval"
 $ch5-slider-size-x-large-horizontal-oval-size:  42px !default;
 
+$ch5-slider-horizontal-pips: 45px !default;
+
+$ch5-slider-vertical-pips: 115px !default;
+
 /* ===============================================
 HANDLESIZE HORIZONTAL SIDE EFECTS
 ============================================= */
@@ -150,11 +154,11 @@ $ch5-slider-size-x-large-horizontal-circle-top:    calc(-1 * ($ch5-slider-size-x
 
 
 // oval right
-$ch5-slider-size-x-small-horizontal-oval-right:  calc(-1 * $ch5-slider-size-x-small-horizontal-oval-size) !default;
-$ch5-slider-size-small-horizontal-oval-right:    calc(-1 * $ch5-slider-size-small-horizontal-oval-size) !default;
-$ch5-slider-size-regular-horizontal-oval-right:  calc(-1 * $ch5-slider-size-regular-horizontal-oval-size) !default;
-$ch5-slider-size-large-horizontal-oval-right:    calc(-1 * $ch5-slider-size-large-horizontal-oval-size) !default;
-$ch5-slider-size-x-large-horizontal-oval-right:  calc(-1 * $ch5-slider-size-x-large-horizontal-oval-size) !default;
+$ch5-slider-size-x-small-horizontal-oval-right:  calc(-0.77 * $ch5-slider-size-x-small-horizontal-oval-size) !default;
+$ch5-slider-size-small-horizontal-oval-right:    calc(-0.77 * $ch5-slider-size-small-horizontal-oval-size) !default;
+$ch5-slider-size-regular-horizontal-oval-right:  calc(-0.77* $ch5-slider-size-regular-horizontal-oval-size) !default;
+$ch5-slider-size-large-horizontal-oval-right:    calc(-0.77 * $ch5-slider-size-large-horizontal-oval-size) !default;
+$ch5-slider-size-x-large-horizontal-oval-right:  calc(-0.77 * $ch5-slider-size-x-large-horizontal-oval-size) !default;
 
 // oval height top
 $ch5-slider-size-x-small-horizontal-oval-top:     calc(-1 * ($ch5-slider-size-x-small-horizontal-oval-size - $ch5-slider-target-size) / 2) !default;
@@ -216,11 +220,11 @@ $ch5-slider-size-large-vertical-oval-left:      $ch5-slider-size-large-horizonta
 $ch5-slider-size-x-large-vertical-oval-left:    $ch5-slider-size-x-large-horizontal-oval-top;
 
 // oval top
-$ch5-slider-size-x-small-vertical-oval-top:      calc(-1 * $ch5-slider-size-x-small-horizontal-oval-size) !default;
-$ch5-slider-size-small-vertical-oval-top:        calc(-1 * $ch5-slider-size-small-horizontal-oval-size) !default;
-$ch5-slider-size-regular-vertical-oval-top:      calc(-1 * $ch5-slider-size-regular-horizontal-oval-size) !default;
-$ch5-slider-size-large-vertical-oval-top:        calc(-1 * $ch5-slider-size-large-horizontal-oval-size) !default;
-$ch5-slider-size-x-large-vertical-oval-top:      calc(-1 * $ch5-slider-size-x-large-horizontal-oval-size) !default;
+$ch5-slider-size-x-small-vertical-oval-top:      calc(-0.77 * $ch5-slider-size-x-small-horizontal-oval-size) !default;
+$ch5-slider-size-small-vertical-oval-top:        calc(-0.77 * $ch5-slider-size-small-horizontal-oval-size) !default;
+$ch5-slider-size-regular-vertical-oval-top:      calc(-0.77 * $ch5-slider-size-regular-horizontal-oval-size) !default;
+$ch5-slider-size-large-vertical-oval-top:        calc(-0.77 * $ch5-slider-size-large-horizontal-oval-size) !default;
+$ch5-slider-size-x-large-vertical-oval-top:      calc(-0.77 * $ch5-slider-size-x-large-horizontal-oval-size) !default;
 
 /// default font size unit for the slider
 $ch5-slider-font-size-unit: $ch5-font-size-unit !default;

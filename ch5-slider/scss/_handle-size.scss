@@ -6,6 +6,9 @@
 // under which you licensed this source code.
 
 .ch5-slider {
+    &.adv-slider {
+        padding: 0px !important;
+    }
     /* ===============================================
     HANDLESIZE HORIZONTAL 
     ============================================= */
@@ -133,7 +136,7 @@
         &.ch5-slider--handle-size--x-small {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                    $ch5-slider-size-x-small-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-x-small-horizontal-oval-size * 1.54,
                     $ch5-slider-size-x-small-horizontal-oval-size,
                     $ch5-slider-size-x-small-horizontal-oval-right,
                     $ch5-slider-size-x-small-horizontal-oval-top
@@ -143,11 +146,9 @@
                 width: calc($ch5-slider-size-x-small-horizontal-oval-size * 1.2);
             }
             &.adv-slider {
-                .slider-off-button {
-                    margin-right: calc($ch5-slider-size-x-small-horizontal-oval-size/1.87) + 1;
-                }
+                .slider-off-button,
                 .noUi-target {
-                    margin-right: $ch5-slider-size-x-small-horizontal-oval-size + 1;
+                    margin-right: calc($ch5-slider-size-x-small-horizontal-oval-size * 0.77) + 1;
                 }
             }
             line-height: $ch5-slider-size-x-small-horizontal-oval-size;
@@ -157,7 +158,7 @@
         &.ch5-slider--handle-size--small {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                    $ch5-slider-size-small-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-small-horizontal-oval-size * 1.54,
                     $ch5-slider-size-small-horizontal-oval-size,
                     $ch5-slider-size-small-horizontal-oval-right,
                     $ch5-slider-size-small-horizontal-oval-top
@@ -167,11 +168,9 @@
                 width: calc($ch5-slider-size-small-horizontal-oval-size * 1.2);
             }
             &.adv-slider {
-                .slider-off-button {
-                    margin-right: calc($ch5-slider-size-small-horizontal-oval-size/1.87) + 1;
-                }
+                .slider-off-button,
                 .noUi-target {
-                    margin-right: $ch5-slider-size-small-horizontal-oval-size + 1;
+                    margin-right: calc($ch5-slider-size-small-horizontal-oval-size * 0.77) + 1;
                 }
             }
             line-height: $ch5-slider-size-small-horizontal-oval-size;
@@ -181,7 +180,7 @@
         &.ch5-slider--handle-size--regular {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                    $ch5-slider-size-regular-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-regular-horizontal-oval-size * 1.54,
                     $ch5-slider-size-regular-horizontal-oval-size,
                     $ch5-slider-size-regular-horizontal-oval-right,
                     $ch5-slider-size-regular-horizontal-oval-top
@@ -191,11 +190,9 @@
                 width: calc($ch5-slider-size-regular-horizontal-oval-size * 1.2);
             }
             &.adv-slider {
-                .slider-off-button {
-                    margin-right: calc($ch5-slider-size-regular-horizontal-oval-size/1.87) + 1;
-                }
+                .slider-off-button,
                 .noUi-target {
-                    margin-right: $ch5-slider-size-regular-horizontal-oval-size + 1;
+                    margin-right: calc($ch5-slider-size-regular-horizontal-oval-size * 0.77) + 1;
                 }
             }
             line-height: $ch5-slider-size-regular-horizontal-oval-size;
@@ -205,7 +202,7 @@
         &.ch5-slider--handle-size--large {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                    $ch5-slider-size-large-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-large-horizontal-oval-size * 1.54,
                     $ch5-slider-size-large-horizontal-oval-size,
                     $ch5-slider-size-large-horizontal-oval-right,
                     $ch5-slider-size-large-horizontal-oval-top
@@ -215,11 +212,9 @@
                 width: calc($ch5-slider-size-large-horizontal-oval-size * 1.2);
             }
             &.adv-slider {
-                .slider-off-button {
-                    margin-right: calc($ch5-slider-size-large-horizontal-oval-size/1.87) + 1;
-                }
+                .slider-off-button,
                 .noUi-target {
-                    margin-right: $ch5-slider-size-large-horizontal-oval-size + 1;
+                    margin-right: calc($ch5-slider-size-large-horizontal-oval-size * 0.77) + 1;
                 }
             }
             line-height: $ch5-slider-size-large-horizontal-oval-size;
@@ -229,7 +224,7 @@
         &.ch5-slider--handle-size--x-large {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                    $ch5-slider-size-x-large-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-x-large-horizontal-oval-size * 1.54,
                     $ch5-slider-size-x-large-horizontal-oval-size,
                     $ch5-slider-size-x-large-horizontal-oval-right,
                     $ch5-slider-size-x-large-horizontal-oval-top
@@ -239,11 +234,9 @@
                 width: calc($ch5-slider-size-x-large-horizontal-oval-size * 1.2);
             }
             &.adv-slider {
-                .slider-off-button {
-                    margin-right: calc($ch5-slider-size-x-large-horizontal-oval-size/1.87) + 1;
-                }
+                .slider-off-button,
                 .noUi-target {
-                    margin-right: $ch5-slider-size-x-large-horizontal-oval-size + 1;
+                    margin-right: calc($ch5-slider-size-x-large-horizontal-oval-size * 0.77) + 1;
                 }
             }
             line-height: $ch5-slider-size-x-large-horizontal-oval-size;
@@ -640,7 +633,7 @@
             .noUi-handle {
                 @include handleSizeVertical(
                     $ch5-slider-size-x-small-horizontal-oval-size,
-                    $ch5-slider-size-x-small-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-x-small-horizontal-oval-size * 1.54,
                     $ch5-slider-size-x-small-vertical-oval-left,
                     $ch5-slider-size-x-small-vertical-oval-top
                 );
@@ -651,7 +644,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-top: $ch5-slider-size-x-small-horizontal-oval-size + 1;
+                    margin-top: calc($ch5-slider-size-x-small-horizontal-oval-size * 0.77) + 1;
                 }
             }
             min-width: $ch5-slider-size-x-small-horizontal-oval-size;
@@ -665,7 +658,7 @@
             .noUi-handle {
                 @include handleSizeVertical(
                     $ch5-slider-size-small-horizontal-oval-size,
-                    $ch5-slider-size-small-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-small-horizontal-oval-size * 1.54,
                     $ch5-slider-size-small-vertical-oval-left,
                     $ch5-slider-size-small-vertical-oval-top
                 );
@@ -676,7 +669,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-top: $ch5-slider-size-small-horizontal-oval-size + 1;
+                    margin-top: calc($ch5-slider-size-small-horizontal-oval-size * 0.77) + 1;
                 }
             }
             min-width: $ch5-slider-size-small-horizontal-oval-size;
@@ -690,7 +683,7 @@
             .noUi-handle {
                 @include handleSizeVertical(
                     $ch5-slider-size-regular-horizontal-oval-size,
-                    $ch5-slider-size-regular-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-regular-horizontal-oval-size * 1.54,
                     $ch5-slider-size-regular-vertical-oval-left,
                     $ch5-slider-size-regular-vertical-oval-top
                 );
@@ -701,7 +694,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-top: $ch5-slider-size-regular-horizontal-oval-size + 1;
+                    margin-top: calc($ch5-slider-size-regular-horizontal-oval-size * 0.77) + 1;
                 }
             }
             min-width: $ch5-slider-size-regular-horizontal-oval-size;
@@ -715,7 +708,7 @@
             .noUi-handle {
                 @include handleSizeVertical(
                     $ch5-slider-size-large-horizontal-oval-size,
-                    $ch5-slider-size-large-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-large-horizontal-oval-size * 1.54,
                     $ch5-slider-size-large-vertical-oval-left,
                     $ch5-slider-size-large-vertical-oval-top
                 );
@@ -726,7 +719,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-top: $ch5-slider-size-large-horizontal-oval-size + 1;
+                    margin-top: calc($ch5-slider-size-large-horizontal-oval-size * 0.77) + 1;
                 }
             }
             min-width: $ch5-slider-size-large-horizontal-oval-size;
@@ -740,7 +733,7 @@
             .noUi-handle {
                 @include handleSizeVertical(
                     $ch5-slider-size-x-large-horizontal-oval-size,
-                    $ch5-slider-size-x-large-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-x-large-horizontal-oval-size * 1.54,
                     $ch5-slider-size-x-large-vertical-oval-left,
                     $ch5-slider-size-x-large-vertical-oval-top
                 );
@@ -751,7 +744,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-top: $ch5-slider-size-x-large-horizontal-oval-size + 1;
+                    margin-top: calc($ch5-slider-size-x-large-horizontal-oval-size * 0.77) + 1;
                 }
             }
             min-width: $ch5-slider-size-x-large-horizontal-oval-size;
