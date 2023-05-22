@@ -48,7 +48,7 @@ ch5-slider:not(.ch5-slider--disabled) .noUi-handle{
     visibility: hidden;
   }
 
-  /// class apply when slider orientation="horizontal"
+  /// Applied when slider orientation="horizontal"
   &.ch5-slider--orientation--horizontal {
     .noUi-target {
       height: $ch5-slider-target-size;
@@ -63,7 +63,7 @@ ch5-slider:not(.ch5-slider--disabled) .noUi-handle{
     }
   }
 
-  /// class apply when slider orientation="vertical"
+  /// Applied when slider orientation="vertical"
   &.ch5-slider--orientation--vertical {
     .noUi-target {
       width: $ch5-slider-target-size;

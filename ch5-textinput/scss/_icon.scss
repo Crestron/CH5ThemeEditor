@@ -14,7 +14,7 @@
 
 .ch5-textinput {
   /// @require .ch5-textinput
-  /// Class apply on the icon
+  /// Applied on the icon
   &__icon {
     color: $ch5-textinput-icon-text-color;
     &--x-large {
@@ -43,12 +43,12 @@
 
     }
     /// @require .ch5-textinput__icon
-    /// Class apply on the icon when iconPosition attribute is set to 'last'
+    /// Applied on the icon when iconPosition attribute is set to 'last'
     &--last {
       margin-left: 0;
     }
     /// @require .ch5-textinput__icon
-    /// Class apply on the icon when iconPosition attribute is set to 'first'
+    /// Applied on the icon when iconPosition attribute is set to 'first'
     &--first {
       margin-right: 0;
     }

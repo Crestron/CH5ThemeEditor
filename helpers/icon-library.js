@@ -13,20 +13,88 @@ const fse = require('fs-extra');
 (function (path, fs, logging) {
 
   const fontAwesomeIconFamiliesJSONPath = `./node_modules/@fortawesome/fontawesome-free/metadata/icon-families.json`;
+  const materialIconFamiliesJSONPath = `./node_modules/@material-icons/font/data.json`;
+  const sgIconFamiliesJSONPath = `./sg-icons/metadata.json`;
+
+  const filterArray = (completeArray, toRemoveElementsArray) => {
+    // make a Set to hold values from toRemoveElementsArray
+    const namesToDeleteSet = new Set(toRemoveElementsArray);
+    // use filter() method to filter only those elements that need not to be deleted from the array
+    const newArr = completeArray.filter((name) => {
+      // return those elements not in the namesToDeleteSet
+      return !namesToDeleteSet.has(name);
+    });
+    return newArr;
+  }
 
   try {
-    const data = JSON.parse(fs.readFileSync(fontAwesomeIconFamiliesJSONPath));
-    const outputArray = [];
-    for (const prop in data) {
-      if (Object.prototype.hasOwnProperty.call(data, prop)) {
-        if (data[prop] && data[prop].familyStylesByLicense && data[prop].familyStylesByLicense.free && data[prop].familyStylesByLicense.free.length > 0) {
-          for (let i = 0; i < data[prop].familyStylesByLicense.free.length; i++) {
-            outputArray.push("fa" + data[prop].familyStylesByLicense.free[i].style.charAt(0) + " fa-" + prop);
+    const outputArray = {};
+
+    {
+      // font awesome
+      const data = JSON.parse(fs.readFileSync(fontAwesomeIconFamiliesJSONPath));
+      const itemArray = [];
+      for (const prop in data) {
+        if (Object.prototype.hasOwnProperty.call(data, prop)) {
+          if (data[prop] && data[prop].familyStylesByLicense && data[prop].familyStylesByLicense.free && data[prop].familyStylesByLicense.free.length > 0) {
+            for (let i = 0; i < data[prop].familyStylesByLicense.free.length; i++) {
+              itemArray.push({
+                "name": data[prop].label,
+                "value": "fa" + data[prop].familyStylesByLicense.free[i].style.charAt(0) + " fa-" + prop
+              });
+            }
           }
         }
       }
+      outputArray.fontAwesome = itemArray;
     }
-    console.log(outputArray);
+
+    {
+      // material icons
+      const data = JSON.parse(fs.readFileSync(materialIconFamiliesJSONPath));
+      const itemArray = [];
+      const families = [
+        "baseline",
+        "outline",
+        "round",
+        "sharp",
+        "twotone"
+      ];
+      for (const prop of data.icons) {
+        const supportedFamilies = (prop.unsupported_families && prop.unsupported_families.length > 0) ? filterArray(families, prop.unsupported_families) : [];
+        for (let i = 0; i < supportedFamilies.length; i++) {
+          let value = "";
+          if (supportedFamilies[i] !== "baseline") {
+            value = "-" + supportedFamilies[i];
+          }
+          itemArray.push({
+            "name": prop.name,
+            "value": "material-icons" + value + " md-" + prop.name
+          });
+        }
+      }
+      outputArray.materialIcons = itemArray;
+    }
+
+    {
+      // sg icons
+      const data = JSON.parse(fs.readFileSync(sgIconFamiliesJSONPath));
+      const itemArray = [];
+      for (const prop of data.icons) {
+        for (let i = 0; i < prop.themes.length; i++) {
+          let stringValue = ".sg-" + prop.themes[i];
+          for (let j = 0; j < prop.alias.length; j++) {
+            itemArray.push({
+              "name": prop.label,
+              "value": ".sg " + stringValue + " .sg-" + prop.alias[j]
+            });
+            }
+        }
+      }
+
+      outputArray.sgIcons = itemArray;
+    }
+
     const outputPath = process.argv[3] !== undefined ? process.argv[3] : './generated-metadata/icon-library.json';
     fse.outputFileSync(outputPath, JSON.stringify(outputArray, null, 4));
 

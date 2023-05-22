@@ -16,9 +16,10 @@ const fontsDestinationFilepath = !!dotenv && !!dotenv.DESTINATION_FONTS_FILE_PAT
 const webFontsSourceFilepath = !!dotenv && !!dotenv.SOURCE_WEBFONTS_FILE_PATH ? dotenv.SOURCE_WEBFONTS_FILE_PATH : 'output/webfonts/*';
 const webFontsDestinationFilepath = !!dotenv && !!dotenv.DESTINATION_WEBFONTS_FILE_PATH ? dotenv.DESTINATION_WEBFONTS_FILE_PATH : './app/dist/webfonts/';
 const basePath = path.resolve(__dirname);
-const sourceFilePath = !!dotenv && !!dotenv.SOURCE_THEMES_FILE_PATH ? dotenv.SOURCE_THEMES_FILE_PATH : 'output/themes/*.css';
+const sourceFilePath = !!dotenv && !!dotenv.SOURCE_THEMES_FILE_PATH ? dotenv.SOURCE_THEMES_FILE_PATH : 'output/themes/**/*';
 const fontAwesomeFilePath = "./node_modules/@fortawesome/fontawesome-free";
 const materialIconsFilePath = "./node_modules/@material-icons/font";
+const sgIconsPath = "./sg-icons";
 
 // get the all theme list
 const manifestSourceFilePath = "./app.manifest.json";
@@ -32,6 +33,7 @@ fs.writeFileSync(manifestSourceFilePath, jsonData);
 let destinationFilePath = !!dotenv && !!dotenv.DESTINATION_THEMES_FILE_PATH ? dotenv.DESTINATION_THEMES_FILE_PATH : './app/dist/css/';
 let fontAwesomeDestinationFilePath = !!dotenv && !!dotenv.DESTINATION_THEMES_FILE_PATH ? dotenv.DESTINATION_THEMES_FILE_PATH : './app/dist/css/font-awesome/';
 let materialIconsDestinationFilePath = !!dotenv && !!dotenv.DESTINATION_THEMES_FILE_PATH ? dotenv.DESTINATION_THEMES_FILE_PATH : './app/dist/css/material-icons/';
+let sgIconsDestinationFilePath = !!dotenv && !!dotenv.DESTINATION_THEMES_FILE_PATH ? dotenv.DESTINATION_THEMES_FILE_PATH : './app/dist/css/sg-icons/';
 
 const searches = ['--outputpath'];
 const transformURL = function (cliUrl) {
@@ -51,6 +53,7 @@ if (pathMatches.length) {
   destinationFilePath = !processArgv['outputpath'] ? destinationFilePath : processArgv.outputpath;
   fontAwesomeDestinationFilePath = !processArgv['outputpath'] ? fontAwesomeDestinationFilePath : processArgv.outputpath + '/font-awesome/';
   materialIconsDestinationFilePath = !processArgv['outputpath'] ? materialIconsDestinationFilePath : processArgv.outputpath + '/material-icons/';
+  sgIconsDestinationFilePath = !processArgv['outputpath'] ? sgIconsDestinationFilePath : processArgv.outputpath + '/sg-icons/';
 }
 
 module.exports = merge(common, {
@@ -75,21 +78,41 @@ module.exports = merge(common, {
         flatten: true,
         force: true
       },
-      {
-        from: path.resolve(basePath, fontAwesomeFilePath + "/webfonts/*"),
-        to: path.resolve(basePath, fontAwesomeDestinationFilePath + "/webfonts"),
-        flatten: true,
-        force: true
-      },
+   
       {
         from: path.resolve(basePath, materialIconsFilePath + "/css/all.css"),
         to: path.resolve(basePath, materialIconsDestinationFilePath + "/css/all.css"),
         flatten: true,
         force: true
       },
+     
       {
-        from: path.resolve(basePath, materialIconsFilePath + "/font/*"),
-        to: path.resolve(basePath, materialIconsDestinationFilePath + "/font"),
+        from: path.resolve(basePath, sgIconsPath + "/css/all.css"),
+        to: path.resolve(basePath, sgIconsDestinationFilePath + "/css/all.css"),
+        flatten: true,
+        force: true
+      },
+      {
+        from: path.resolve(basePath, sgIconsPath + "/svgs/icons/*"),
+        to: path.resolve(basePath, sgIconsDestinationFilePath + "/svgs/icons"),
+        flatten: true,
+        force: true
+      },
+      {
+        from: path.resolve(basePath, sgIconsPath + "/svgs/media-transports/accents/*"),
+        to: path.resolve(basePath, sgIconsDestinationFilePath + "/svgs/media-transports/accents"),
+        flatten: true,
+        force: true
+      },
+      {
+        from: path.resolve(basePath, sgIconsPath + "/svgs/media-transports/light/*"),
+        to: path.resolve(basePath, sgIconsDestinationFilePath + "/svgs/media-transports/light"),
+        flatten: true,
+        force: true
+      },
+      {
+        from: path.resolve(basePath, sgIconsPath + "/svgs/media-transports/dark/*"),
+        to: path.resolve(basePath, sgIconsDestinationFilePath + "/svgs/media-transports/dark"),
         flatten: true,
         force: true
       },
