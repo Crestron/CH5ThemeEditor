@@ -97,8 +97,11 @@ ch5-slider {
         align-self: center;
       }
     }
-    &.ch5-slider--tooltip--on {
+    &.ch5-slider--tooltip--on:not(.adv-slider) {
       margin-top: 2.5em;
+    }
+    &.ch5-slider--tooltip--on.adv-slider {
+      margin-top: 1.5em;
     }
 
     &.ch5-slider--tooltip--auto {
