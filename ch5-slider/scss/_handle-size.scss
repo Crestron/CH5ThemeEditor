@@ -143,7 +143,7 @@
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-x-small-horizontal-oval-size * 2);
+                width: $ch5-slider-size-x-small-horizontal-oval-size * 2;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -152,7 +152,7 @@
                 }
             }
             line-height: $ch5-slider-size-x-small-horizontal-oval-size;
-            padding: calc($ch5-slider-size-x-small-horizontal-oval-size);
+            padding: $ch5-slider-size-x-small-horizontal-oval-size;
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--small {
@@ -165,7 +165,7 @@
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-small-horizontal-oval-size * 2);
+                width: $ch5-slider-size-small-horizontal-oval-size * 2;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -174,7 +174,7 @@
                 }
             }
             line-height: $ch5-slider-size-small-horizontal-oval-size;
-            padding: calc($ch5-slider-size-small-horizontal-oval-size);
+            padding: $ch5-slider-size-small-horizontal-oval-size;
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--regular {
@@ -187,7 +187,7 @@
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-regular-horizontal-oval-size * 2);
+                width: $ch5-slider-size-regular-horizontal-oval-size * 2;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -196,7 +196,7 @@
                 }
             }
             line-height: $ch5-slider-size-regular-horizontal-oval-size;
-            padding: calc($ch5-slider-size-regular-horizontal-oval-size);
+            padding: $ch5-slider-size-regular-horizontal-oval-size;
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
@@ -209,7 +209,7 @@
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-large-horizontal-oval-size * 2);
+                width: $ch5-slider-size-large-horizontal-oval-size * 2;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -231,7 +231,7 @@
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-x-large-horizontal-oval-size * 2);
+                width: $ch5-slider-size-x-large-horizontal-oval-size * 2;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -240,7 +240,7 @@
                 }
             }
             line-height: $ch5-slider-size-x-large-horizontal-oval-size;
-            padding: calc($ch5-slider-size-x-large-horizontal-oval-size);
+            padding: $ch5-slider-size-x-large-horizontal-oval-size;
         }
     }
 
@@ -639,7 +639,7 @@
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-x-small-horizontal-oval-size * 1.5);
+                width: $ch5-slider-size-x-small-horizontal-oval-size * 1.5;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -649,9 +649,9 @@
             }
             min-width: $ch5-slider-size-x-small-horizontal-oval-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-x-small-horizontal-oval-size * 1.2);
+                max-width: $ch5-slider-size-x-small-horizontal-oval-size * 1.2;
             }
-            padding: calc($ch5-slider-size-x-small-horizontal-oval-size);
+            padding: $ch5-slider-size-x-small-horizontal-oval-size;
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--small {
@@ -664,7 +664,7 @@
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-small-horizontal-oval-size * 1.5);
+                width: $ch5-slider-size-small-horizontal-oval-size * 1.5;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -674,9 +674,9 @@
             }
             min-width: $ch5-slider-size-small-horizontal-oval-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-small-horizontal-oval-size * 1.2);
+                max-width: $ch5-slider-size-small-horizontal-oval-size * 1.2;
             }
-            padding: calc($ch5-slider-size-small-horizontal-oval-size);
+            padding: $ch5-slider-size-small-horizontal-oval-size;
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--regular {
@@ -689,7 +689,7 @@
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-regular-horizontal-oval-size * 1.5);
+                width: $ch5-slider-size-regular-horizontal-oval-size * 1.5;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -699,7 +699,7 @@
             }
             min-width: $ch5-slider-size-regular-horizontal-oval-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-regular-horizontal-oval-size * 1.2);
+                max-width: $ch5-slider-size-regular-horizontal-oval-size * 1.2;
             }
             padding: calc($ch5-slider-size-regular-horizontal-oval-size);
         }
@@ -714,7 +714,7 @@
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-large-horizontal-oval-size * 1.5);
+                width: $ch5-slider-size-large-horizontal-oval-size * 1.5;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -724,9 +724,9 @@
             }
             min-width: $ch5-slider-size-large-horizontal-oval-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-large-horizontal-oval-size * 1.2);
+                max-width: $ch5-slider-size-large-horizontal-oval-size * 1.2;
             }
-            padding: calc($ch5-slider-size-large-horizontal-oval-size);
+            padding: $ch5-slider-size-large-horizontal-oval-size;
         }
         /* ch5-slider handleSize - x-large */
         &.ch5-slider--handle-size--x-large {
@@ -739,7 +739,7 @@
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-x-large-horizontal-oval-size * 1.5);
+                width: $ch5-slider-size-x-large-horizontal-oval-size * 1.5;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -749,9 +749,9 @@
             }
             min-width: $ch5-slider-size-x-large-horizontal-oval-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-x-large-horizontal-oval-size * 1.2);
+                max-width: $ch5-slider-size-x-large-horizontal-oval-size * 1.2;
             }
-            padding: calc($ch5-slider-size-x-large-horizontal-oval-size);
+            padding: $ch5-slider-size-x-large-horizontal-oval-size;
         }
     }
 }
