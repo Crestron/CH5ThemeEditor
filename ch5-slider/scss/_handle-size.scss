@@ -6,6 +6,9 @@
 // under which you licensed this source code.
 
 .ch5-slider {
+    &.adv-slider {
+        padding: 0 !important;
+    }
     /* ===============================================
     HANDLESIZE HORIZONTAL 
     ============================================= */
@@ -133,121 +136,111 @@
         &.ch5-slider--handle-size--x-small {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                    $ch5-slider-size-x-small-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-x-small-horizontal-oval-size * 2,
                     $ch5-slider-size-x-small-horizontal-oval-size,
                     $ch5-slider-size-x-small-horizontal-oval-right,
                     $ch5-slider-size-x-small-horizontal-oval-top
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-x-small-horizontal-oval-size * 1.2);
+                width: $ch5-slider-size-x-small-horizontal-oval-size * 2;
             }
             &.adv-slider {
-                .slider-off-button {
-                    margin-right: calc($ch5-slider-size-x-small-horizontal-oval-size/1.87) + 1;
-                }
+                .slider-off-button,
                 .noUi-target {
                     margin-right: $ch5-slider-size-x-small-horizontal-oval-size + 1;
                 }
             }
             line-height: $ch5-slider-size-x-small-horizontal-oval-size;
-            padding: calc($ch5-slider-size-x-small-horizontal-oval-size/2);
+            padding: $ch5-slider-size-x-small-horizontal-oval-size;
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--small {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                    $ch5-slider-size-small-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-small-horizontal-oval-size * 2,
                     $ch5-slider-size-small-horizontal-oval-size,
                     $ch5-slider-size-small-horizontal-oval-right,
                     $ch5-slider-size-small-horizontal-oval-top
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-small-horizontal-oval-size * 1.2);
+                width: $ch5-slider-size-small-horizontal-oval-size * 2;
             }
             &.adv-slider {
-                .slider-off-button {
-                    margin-right: calc($ch5-slider-size-small-horizontal-oval-size/1.87) + 1;
-                }
+                .slider-off-button,
                 .noUi-target {
                     margin-right: $ch5-slider-size-small-horizontal-oval-size + 1;
                 }
             }
             line-height: $ch5-slider-size-small-horizontal-oval-size;
-            padding: calc($ch5-slider-size-small-horizontal-oval-size/2);
+            padding: $ch5-slider-size-small-horizontal-oval-size;
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--regular {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                    $ch5-slider-size-regular-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-regular-horizontal-oval-size * 2,
                     $ch5-slider-size-regular-horizontal-oval-size,
                     $ch5-slider-size-regular-horizontal-oval-right,
                     $ch5-slider-size-regular-horizontal-oval-top
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-regular-horizontal-oval-size * 1.2);
+                width: $ch5-slider-size-regular-horizontal-oval-size * 2;
             }
             &.adv-slider {
-                .slider-off-button {
-                    margin-right: calc($ch5-slider-size-regular-horizontal-oval-size/1.87) + 1;
-                }
+                .slider-off-button,
                 .noUi-target {
                     margin-right: $ch5-slider-size-regular-horizontal-oval-size + 1;
                 }
             }
             line-height: $ch5-slider-size-regular-horizontal-oval-size;
-            padding: calc($ch5-slider-size-regular-horizontal-oval-size/2);
+            padding: $ch5-slider-size-regular-horizontal-oval-size;
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                    $ch5-slider-size-large-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-large-horizontal-oval-size * 2,
                     $ch5-slider-size-large-horizontal-oval-size,
                     $ch5-slider-size-large-horizontal-oval-right,
                     $ch5-slider-size-large-horizontal-oval-top
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-large-horizontal-oval-size * 1.2);
+                width: $ch5-slider-size-large-horizontal-oval-size * 2;
             }
             &.adv-slider {
-                .slider-off-button {
-                    margin-right: calc($ch5-slider-size-large-horizontal-oval-size/1.87) + 1;
-                }
+                .slider-off-button,
                 .noUi-target {
                     margin-right: $ch5-slider-size-large-horizontal-oval-size + 1;
                 }
             }
             line-height: $ch5-slider-size-large-horizontal-oval-size;
-            padding: calc($ch5-slider-size-large-horizontal-oval-size/2);
+            padding: calc($ch5-slider-size-large-horizontal-oval-size);
         }
         /* ch5-slider handleSize - x-large */
         &.ch5-slider--handle-size--x-large {
             .noUi-handle {
                 @include handleSizeHorizontal(
-                    $ch5-slider-size-x-large-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-x-large-horizontal-oval-size * 2,
                     $ch5-slider-size-x-large-horizontal-oval-size,
                     $ch5-slider-size-x-large-horizontal-oval-right,
                     $ch5-slider-size-x-large-horizontal-oval-top
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-x-large-horizontal-oval-size * 1.2);
+                width: $ch5-slider-size-x-large-horizontal-oval-size * 2;
             }
             &.adv-slider {
-                .slider-off-button {
-                    margin-right: calc($ch5-slider-size-x-large-horizontal-oval-size/1.87) + 1;
-                }
+                .slider-off-button,
                 .noUi-target {
                     margin-right: $ch5-slider-size-x-large-horizontal-oval-size + 1;
                 }
             }
             line-height: $ch5-slider-size-x-large-horizontal-oval-size;
-            padding: calc($ch5-slider-size-x-large-horizontal-oval-size/2);
+            padding: $ch5-slider-size-x-large-horizontal-oval-size;
         }
     }
 
@@ -528,7 +521,7 @@
             }
             min-width: $ch5-slider-size-x-small-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-x-small-horizontal-circle-size);
+                max-width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-x-small-horizontal-circle-size / 2);
         }
@@ -553,7 +546,7 @@
             }
             min-width: $ch5-slider-size-small-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-small-horizontal-circle-size);
+                max-width: $ch5-slider-size-small-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-small-horizontal-circle-size / 2);
         }
@@ -578,7 +571,7 @@
             }
             min-width: $ch5-slider-size-regular-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-regular-horizontal-circle-size);
+                max-width: $ch5-slider-size-regular-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-regular-horizontal-circle-size / 2);
         }
@@ -603,7 +596,7 @@
             }
             min-width: $ch5-slider-size-large-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-large-horizontal-circle-size);
+                max-width: $ch5-slider-size-large-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-large-horizontal-circle-size / 2);
         }
@@ -628,7 +621,7 @@
             }
             min-width: $ch5-slider-size-x-large-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-x-large-horizontal-circle-size);
+                max-width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-x-large-horizontal-circle-size / 2);
         }
@@ -640,13 +633,13 @@
             .noUi-handle {
                 @include handleSizeVertical(
                     $ch5-slider-size-x-small-horizontal-oval-size,
-                    $ch5-slider-size-x-small-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-x-small-horizontal-oval-size * 2,
                     $ch5-slider-size-x-small-vertical-oval-left,
                     $ch5-slider-size-x-small-vertical-oval-top
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-x-small-horizontal-oval-size * 2);
+                width: $ch5-slider-size-x-small-horizontal-oval-size * 1.5;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -656,22 +649,22 @@
             }
             min-width: $ch5-slider-size-x-small-horizontal-oval-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-x-small-horizontal-oval-size * 1.2);
+                max-width: $ch5-slider-size-x-small-horizontal-oval-size * 1.2;
             }
-            padding: calc($ch5-slider-size-x-small-horizontal-oval-size / 2);
+            padding: $ch5-slider-size-x-small-horizontal-oval-size;
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--small {
             .noUi-handle {
                 @include handleSizeVertical(
                     $ch5-slider-size-small-horizontal-oval-size,
-                    $ch5-slider-size-small-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-small-horizontal-oval-size * 2,
                     $ch5-slider-size-small-vertical-oval-left,
                     $ch5-slider-size-small-vertical-oval-top
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-small-horizontal-oval-size * 2);
+                width: $ch5-slider-size-small-horizontal-oval-size * 1.5;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -681,22 +674,22 @@
             }
             min-width: $ch5-slider-size-small-horizontal-oval-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-small-horizontal-oval-size * 1.2);
+                max-width: $ch5-slider-size-small-horizontal-oval-size * 1.2;
             }
-            padding: calc($ch5-slider-size-small-horizontal-oval-size / 2);
+            padding: $ch5-slider-size-small-horizontal-oval-size;
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--regular {
             .noUi-handle {
                 @include handleSizeVertical(
                     $ch5-slider-size-regular-horizontal-oval-size,
-                    $ch5-slider-size-regular-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-regular-horizontal-oval-size * 2,
                     $ch5-slider-size-regular-vertical-oval-left,
                     $ch5-slider-size-regular-vertical-oval-top
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-regular-horizontal-oval-size * 2);
+                width: $ch5-slider-size-regular-horizontal-oval-size * 1.5;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -706,22 +699,22 @@
             }
             min-width: $ch5-slider-size-regular-horizontal-oval-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-regular-horizontal-oval-size * 1.2);
+                max-width: $ch5-slider-size-regular-horizontal-oval-size * 1.2;
             }
-            padding: calc($ch5-slider-size-regular-horizontal-oval-size / 2);
+            padding: calc($ch5-slider-size-regular-horizontal-oval-size);
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
             .noUi-handle {
                 @include handleSizeVertical(
                     $ch5-slider-size-large-horizontal-oval-size,
-                    $ch5-slider-size-large-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-large-horizontal-oval-size * 2,
                     $ch5-slider-size-large-vertical-oval-left,
                     $ch5-slider-size-large-vertical-oval-top
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-large-horizontal-oval-size * 2);
+                width: $ch5-slider-size-large-horizontal-oval-size * 1.5;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -731,22 +724,22 @@
             }
             min-width: $ch5-slider-size-large-horizontal-oval-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-large-horizontal-oval-size * 1.2);
+                max-width: $ch5-slider-size-large-horizontal-oval-size * 1.2;
             }
-            padding: calc($ch5-slider-size-large-horizontal-oval-size / 2);
+            padding: $ch5-slider-size-large-horizontal-oval-size;
         }
         /* ch5-slider handleSize - x-large */
         &.ch5-slider--handle-size--x-large {
             .noUi-handle {
                 @include handleSizeVertical(
                     $ch5-slider-size-x-large-horizontal-oval-size,
-                    $ch5-slider-size-x-large-horizontal-oval-size * 1.56,
+                    $ch5-slider-size-x-large-horizontal-oval-size * 2,
                     $ch5-slider-size-x-large-vertical-oval-left,
                     $ch5-slider-size-x-large-vertical-oval-top
                 );
             }
             .cb-btn {
-                width: calc($ch5-slider-size-x-large-horizontal-oval-size * 2);
+                width: $ch5-slider-size-x-large-horizontal-oval-size * 1.5;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -756,9 +749,9 @@
             }
             min-width: $ch5-slider-size-x-large-horizontal-oval-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-x-large-horizontal-oval-size * 1.2);
+                max-width: $ch5-slider-size-x-large-horizontal-oval-size * 1.2;
             }
-            padding: calc($ch5-slider-size-x-large-horizontal-oval-size / 2);
+            padding: $ch5-slider-size-x-large-horizontal-oval-size;
         }
     }
 }
