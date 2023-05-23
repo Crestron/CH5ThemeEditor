@@ -148,7 +148,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-right: calc($ch5-slider-size-x-small-horizontal-oval-size) + 1;
+                    margin-right: $ch5-slider-size-x-small-horizontal-oval-size + 1;
                 }
             }
             line-height: $ch5-slider-size-x-small-horizontal-oval-size;
@@ -170,7 +170,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-right: calc($ch5-slider-size-small-horizontal-oval-size) + 1;
+                    margin-right: $ch5-slider-size-small-horizontal-oval-size + 1;
                 }
             }
             line-height: $ch5-slider-size-small-horizontal-oval-size;
@@ -192,7 +192,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-right: calc($ch5-slider-size-regular-horizontal-oval-size) + 1;
+                    margin-right: $ch5-slider-size-regular-horizontal-oval-size + 1;
                 }
             }
             line-height: $ch5-slider-size-regular-horizontal-oval-size;
@@ -214,7 +214,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-right: calc($ch5-slider-size-large-horizontal-oval-size) + 1;
+                    margin-right: $ch5-slider-size-large-horizontal-oval-size + 1;
                 }
             }
             line-height: $ch5-slider-size-large-horizontal-oval-size;
@@ -236,7 +236,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-right: calc($ch5-slider-size-x-large-horizontal-oval-size) + 1;
+                    margin-right: $ch5-slider-size-x-large-horizontal-oval-size + 1;
                 }
             }
             line-height: $ch5-slider-size-x-large-horizontal-oval-size;
@@ -521,7 +521,7 @@
             }
             min-width: $ch5-slider-size-x-small-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-x-small-horizontal-circle-size);
+                max-width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-x-small-horizontal-circle-size / 2);
         }
@@ -546,7 +546,7 @@
             }
             min-width: $ch5-slider-size-small-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-small-horizontal-circle-size);
+                max-width: $ch5-slider-size-small-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-small-horizontal-circle-size / 2);
         }
@@ -571,7 +571,7 @@
             }
             min-width: $ch5-slider-size-regular-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-regular-horizontal-circle-size);
+                max-width: $ch5-slider-size-regular-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-regular-horizontal-circle-size / 2);
         }
@@ -596,7 +596,7 @@
             }
             min-width: $ch5-slider-size-large-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-large-horizontal-circle-size);
+                max-width: $ch5-slider-size-large-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-large-horizontal-circle-size / 2);
         }
@@ -621,7 +621,7 @@
             }
             min-width: $ch5-slider-size-x-large-horizontal-circle-size;
             &.adv-slider {
-                max-width: calc($ch5-slider-size-x-large-horizontal-circle-size);
+                max-width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-x-large-horizontal-circle-size / 2);
         }
@@ -644,7 +644,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-top: calc($ch5-slider-size-x-small-horizontal-oval-size) + 1;
+                    margin-top: $ch5-slider-size-x-small-horizontal-oval-size + 1;
                 }
             }
             min-width: $ch5-slider-size-x-small-horizontal-oval-size;
@@ -669,7 +669,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-top: calc($ch5-slider-size-small-horizontal-oval-size) + 1;
+                    margin-top: $ch5-slider-size-small-horizontal-oval-size + 1;
                 }
             }
             min-width: $ch5-slider-size-small-horizontal-oval-size;
@@ -694,7 +694,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-top: calc($ch5-slider-size-regular-horizontal-oval-size) + 1;
+                    margin-top: $ch5-slider-size-regular-horizontal-oval-size + 1;
                 }
             }
             min-width: $ch5-slider-size-regular-horizontal-oval-size;
@@ -719,7 +719,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-top: calc($ch5-slider-size-large-horizontal-oval-size) + 1;
+                    margin-top: $ch5-slider-size-large-horizontal-oval-size + 1;
                 }
             }
             min-width: $ch5-slider-size-large-horizontal-oval-size;
@@ -744,7 +744,7 @@
             &.adv-slider {
                 .slider-off-button,
                 .noUi-target {
-                    margin-top: calc($ch5-slider-size-x-large-horizontal-oval-size) + 1;
+                    margin-top: $ch5-slider-size-x-large-horizontal-oval-size + 1;
                 }
             }
             min-width: $ch5-slider-size-x-large-horizontal-oval-size;
