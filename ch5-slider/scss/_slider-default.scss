@@ -127,7 +127,7 @@ ch5-slider {
         border-width: $ch5-slider-target-border-width;
       }
       width: $ch5-slider-vertical-pips;
-      max-width: fit-content !important;
+      max-width: inherit !important;
       .noUi-target {
         align-self: auto;
         margin-left: calc($ch5-slider-target-size/2.57);
