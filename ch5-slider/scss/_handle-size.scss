@@ -29,7 +29,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-x-small-horizontal-width;
+                width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -38,7 +38,7 @@
                 }
             }
             line-height: $ch5-slider-size-x-small-horizontal-height;
-            padding: calc($ch5-slider-size-x-small-horizontal-width / 2);
+            padding: abs($ch5-slider-size-x-small-vertical-left) calc($ch5-slider-size-x-small-horizontal-width / 2);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--small {
@@ -57,10 +57,10 @@
                 }
             }
             .cb-btn {
-                width: $ch5-slider-size-small-horizontal-width;
+                width: $ch5-slider-size-small-horizontal-circle-size;
             }
             line-height: $ch5-slider-size-small-horizontal-height;
-            padding: calc($ch5-slider-size-small-horizontal-width / 2);
+            padding: abs($ch5-slider-size-small-vertical-left) calc($ch5-slider-size-small-horizontal-width / 2);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--regular {
@@ -73,7 +73,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-regular-horizontal-width;
+                width: $ch5-slider-size-regular-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -82,7 +82,7 @@
                 }
             }
             line-height: $ch5-slider-size-regular-horizontal-height;
-            padding: calc($ch5-slider-size-regular-horizontal-width / 2);
+            padding: abs($ch5-slider-size-regular-vertical-left) calc($ch5-slider-size-regular-horizontal-width / 2);
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
@@ -95,7 +95,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-large-horizontal-width;
+                width: $ch5-slider-size-large-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -104,7 +104,7 @@
                 }
             }
             line-height: $ch5-slider-size-large-horizontal-height;
-            padding: calc($ch5-slider-size-large-horizontal-width / 2);
+            padding: abs($ch5-slider-size-large-vertical-left) calc($ch5-slider-size-large-horizontal-width / 2);
         }
         /* ch5-slider handleSize - x-large */
         &.ch5-slider--handle-size--x-large {
@@ -117,7 +117,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-x-large-horizontal-width;
+                width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -126,7 +126,7 @@
                 }
             }
             line-height: $ch5-slider-size-x-large-horizontal-height;
-            padding: calc($ch5-slider-size-x-large-horizontal-width / 2);
+            padding: abs($ch5-slider-size-x-small-vertical-left) calc($ch5-slider-size-x-large-horizontal-width / 2);
         }
     }
 
@@ -143,7 +143,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-x-small-horizontal-oval-size * 2;
+                width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -152,7 +152,7 @@
                 }
             }
             line-height: $ch5-slider-size-x-small-horizontal-oval-size;
-            padding: $ch5-slider-size-x-small-horizontal-oval-size;
+            padding: abs($ch5-slider-size-x-small-vertical-left) ($ch5-slider-size-x-small-horizontal-oval-size);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--small {
@@ -165,7 +165,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-small-horizontal-oval-size * 2;
+                width: $ch5-slider-size-small-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -174,7 +174,7 @@
                 }
             }
             line-height: $ch5-slider-size-small-horizontal-oval-size;
-            padding: $ch5-slider-size-small-horizontal-oval-size;
+            padding: abs($ch5-slider-size-small-vertical-left) ($ch5-slider-size-small-horizontal-oval-size);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--regular {
@@ -187,7 +187,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-regular-horizontal-oval-size * 2;
+                width: $ch5-slider-size-regular-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -196,7 +196,7 @@
                 }
             }
             line-height: $ch5-slider-size-regular-horizontal-oval-size;
-            padding: $ch5-slider-size-regular-horizontal-oval-size;
+            padding: abs($ch5-slider-size-regular-vertical-left) ($ch5-slider-size-regular-horizontal-oval-size);
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
@@ -209,7 +209,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-large-horizontal-oval-size * 2;
+                width: $ch5-slider-size-large-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -218,7 +218,7 @@
                 }
             }
             line-height: $ch5-slider-size-large-horizontal-oval-size;
-            padding: calc($ch5-slider-size-large-horizontal-oval-size);
+            padding: abs($ch5-slider-size-large-vertical-left) ($ch5-slider-size-large-horizontal-oval-size);
         }
         /* ch5-slider handleSize - x-large */
         &.ch5-slider--handle-size--x-large {
@@ -231,7 +231,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-x-large-horizontal-oval-size * 2;
+                width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -240,7 +240,7 @@
                 }
             }
             line-height: $ch5-slider-size-x-large-horizontal-oval-size;
-            padding: $ch5-slider-size-x-large-horizontal-oval-size;
+            padding: abs($ch5-slider-size-x-large-vertical-left) ($ch5-slider-size-x-large-horizontal-oval-size);
         }
     }
 
@@ -266,7 +266,8 @@
                 }
             }
             line-height: $ch5-slider-size-x-small-horizontal-circle-size;
-            padding: calc($ch5-slider-size-x-small-horizontal-circle-size / 2);
+            padding: abs($ch5-slider-size-x-small-vertical-left)
+                calc($ch5-slider-size-x-small-horizontal-circle-size / 2);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--small {
@@ -288,9 +289,9 @@
                 }
             }
             line-height: $ch5-slider-size-small-horizontal-circle-size;
-            padding: calc($ch5-slider-size-small-horizontal-circle-size / 2);
+            padding: abs($ch5-slider-size-small-vertical-left) calc($ch5-slider-size-small-horizontal-circle-size / 2);
         }
-        /* ch5-slider handleSize - small */
+        /* ch5-slider handleSize - regular*/
         &.ch5-slider--handle-size--regular {
             .noUi-handle {
                 @include handleSizeHorizontal(
@@ -310,7 +311,8 @@
                 }
             }
             line-height: $ch5-slider-size-regular-horizontal-circle-size;
-            padding: calc($ch5-slider-size-regular-horizontal-circle-size / 2);
+            padding: abs($ch5-slider-size-regular-vertical-left)
+                calc($ch5-slider-size-regular-horizontal-circle-size / 2);
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
@@ -332,7 +334,7 @@
                 }
             }
             line-height: $ch5-slider-size-large-horizontal-circle-size;
-            padding: calc($ch5-slider-size-large-horizontal-circle-size / 2);
+            padding: abs($ch5-slider-size-large-vertical-left) calc($ch5-slider-size-large-horizontal-circle-size / 2);
         }
         /* ch5-slider handleSize - x-large */
         &.ch5-slider--handle-size--x-large {
@@ -355,7 +357,8 @@
                 }
             }
             line-height: $ch5-slider-size-x-large-horizontal-circle-size;
-            padding: calc($ch5-slider-size-x-large-horizontal-circle-size / 2);
+            padding: abs($ch5-slider-size-x-large-vertical-left)
+                calc($ch5-slider-size-x-large-horizontal-circle-size / 2);
         }
     }
 
@@ -378,7 +381,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-x-small-vertical-height;
+                width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -391,8 +394,7 @@
             &.adv-slider {
                 max-width: calc($ch5-slider-size-x-small-vertical-width * 1.2);
             }
-
-            padding: calc($ch5-slider-size-x-small-vertical-height / 2);
+            padding: calc($ch5-slider-size-x-small-vertical-height / 2) abs($ch5-slider-size-x-small-vertical-left);
         }
         /* ch5-slider handlesize - small */
         &.ch5-slider--handle-size--small {
@@ -405,7 +407,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-small-vertical-height;
+                width: $ch5-slider-size-small-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -418,8 +420,7 @@
             &.adv-slider {
                 max-width: calc($ch5-slider-size-small-vertical-width * 1.2);
             }
-
-            padding: calc($ch5-slider-size-small-vertical-height / 2);
+            padding: calc($ch5-slider-size-small-vertical-height / 2) abs($ch5-slider-size-small-vertical-left);
         }
         /* ch5-slider handlesize - small */
         &.ch5-slider--handle-size--regular {
@@ -432,7 +433,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-regular-vertical-height;
+                width: $ch5-slider-size-regular-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -444,8 +445,9 @@
 
             &.adv-slider {
                 max-width: calc($ch5-slider-size-regular-vertical-width * 1.2);
-            }
-            padding: calc($ch5-slider-size-regular-vertical-height / 2);
+            }           
+            padding: calc($ch5-slider-size-regular-vertical-height / 2) abs($ch5-slider-size-regular-vertical-left);
+      
         }
         /* ch5-slider handlesize - large */
         &.ch5-slider--handle-size--large {
@@ -458,7 +460,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-large-vertical-height;
+                width: $ch5-slider-size-large-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -470,7 +472,7 @@
             &.adv-slider {
                 max-width: calc($ch5-slider-size-large-vertical-width * 1.2);
             }
-            padding: calc($ch5-slider-size-large-vertical-height / 2);
+            padding: calc($ch5-slider-size-large-vertical-height / 2) abs($ch5-slider-size-large-vertical-left);
         }
         /* ch5-slider handlesize - x-large */
         &.ch5-slider--handle-size--x-large {
@@ -483,7 +485,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-x-large-vertical-height;
+                width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -495,7 +497,7 @@
             &.adv-slider {
                 max-width: calc($ch5-slider-size-x-large-vertical-width * 1.2);
             }
-            padding: calc($ch5-slider-size-x-large-vertical-height / 2);
+            padding: calc($ch5-slider-size-x-large-vertical-height / 2) abs($ch5-slider-size-x-large-vertical-left);
         }
     }
 
@@ -523,7 +525,8 @@
             &.adv-slider {
                 max-width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
-            padding: calc($ch5-slider-size-x-small-horizontal-circle-size / 2);
+            padding: calc($ch5-slider-size-x-small-horizontal-circle-size / 2)
+            calc(($ch5-slider-size-x-small-horizontal-circle-size - $ch5-slider-target-size) / 2);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--small {
@@ -548,7 +551,8 @@
             &.adv-slider {
                 max-width: $ch5-slider-size-small-horizontal-circle-size;
             }
-            padding: calc($ch5-slider-size-small-horizontal-circle-size / 2);
+            padding: calc($ch5-slider-size-small-horizontal-circle-size / 2)
+            calc(($ch5-slider-size-small-horizontal-circle-size - $ch5-slider-target-size) / 2);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--regular {
@@ -573,7 +577,8 @@
             &.adv-slider {
                 max-width: $ch5-slider-size-regular-horizontal-circle-size;
             }
-            padding: calc($ch5-slider-size-regular-horizontal-circle-size / 2);
+            padding: calc($ch5-slider-size-regular-horizontal-circle-size / 2)
+            calc(($ch5-slider-size-regular-horizontal-circle-size - $ch5-slider-target-size) / 2);
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
@@ -598,7 +603,8 @@
             &.adv-slider {
                 max-width: $ch5-slider-size-large-horizontal-circle-size;
             }
-            padding: calc($ch5-slider-size-large-horizontal-circle-size / 2);
+            padding: calc($ch5-slider-size-large-horizontal-circle-size / 2)
+            calc(($ch5-slider-size-large-horizontal-circle-size - $ch5-slider-target-size) / 2);
         }
         /* ch5-slider handleSize - x-large */
         &.ch5-slider--handle-size--x-large {
@@ -623,7 +629,8 @@
             &.adv-slider {
                 max-width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
-            padding: calc($ch5-slider-size-x-large-horizontal-circle-size / 2);
+            padding: calc($ch5-slider-size-x-large-horizontal-circle-size / 2)
+            calc(($ch5-slider-size-x-large-horizontal-circle-size - $ch5-slider-target-size) / 2);
         }
     }
 
@@ -639,7 +646,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-x-small-horizontal-oval-size * 1.5;
+                width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -649,9 +656,9 @@
             }
             min-width: $ch5-slider-size-x-small-horizontal-oval-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-x-small-horizontal-oval-size * 1.2;
+                max-width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
-            padding: $ch5-slider-size-x-small-horizontal-oval-size;
+            padding: calc($ch5-slider-size-x-small-horizontal-oval-size) abs($ch5-slider-size-x-small-vertical-left);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--small {
@@ -664,7 +671,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-small-horizontal-oval-size * 1.5;
+                width: $ch5-slider-size-small-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -674,9 +681,9 @@
             }
             min-width: $ch5-slider-size-small-horizontal-oval-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-small-horizontal-oval-size * 1.2;
+                max-width: $ch5-slider-size-small-horizontal-circle-size;
             }
-            padding: $ch5-slider-size-small-horizontal-oval-size;
+            padding: calc($ch5-slider-size-small-horizontal-oval-size) abs($ch5-slider-size-small-vertical-left);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--regular {
@@ -689,7 +696,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-regular-horizontal-oval-size * 1.5;
+                width: $ch5-slider-size-regular-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -699,9 +706,9 @@
             }
             min-width: $ch5-slider-size-regular-horizontal-oval-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-regular-horizontal-oval-size * 1.2;
+                max-width: $ch5-slider-size-regular-horizontal-circle-size;
             }
-            padding: calc($ch5-slider-size-regular-horizontal-oval-size);
+            padding: calc($ch5-slider-size-regular-horizontal-oval-size) abs($ch5-slider-size-regular-vertical-left);
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
@@ -714,7 +721,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-large-horizontal-oval-size * 1.5;
+                width: $ch5-slider-size-large-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -724,9 +731,9 @@
             }
             min-width: $ch5-slider-size-large-horizontal-oval-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-large-horizontal-oval-size * 1.2;
+                max-width: $ch5-slider-size-large-horizontal-circle-size;
             }
-            padding: $ch5-slider-size-large-horizontal-oval-size;
+            padding: calc($ch5-slider-size-large-horizontal-oval-size) abs($ch5-slider-size-large-vertical-left);
         }
         /* ch5-slider handleSize - x-large */
         &.ch5-slider--handle-size--x-large {
@@ -739,7 +746,7 @@
                 );
             }
             .cb-btn {
-                width: $ch5-slider-size-x-large-horizontal-oval-size * 1.5;
+                width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
             &.adv-slider {
                 .slider-off-button,
@@ -749,9 +756,9 @@
             }
             min-width: $ch5-slider-size-x-large-horizontal-oval-size;
             &.adv-slider {
-                max-width: $ch5-slider-size-x-large-horizontal-oval-size * 1.2;
+                max-width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
-            padding: $ch5-slider-size-x-large-horizontal-oval-size;
+            padding: $ch5-slider-size-x-large-horizontal-oval-size abs($ch5-slider-size-x-large-vertical-left);
         }
     }
 }
