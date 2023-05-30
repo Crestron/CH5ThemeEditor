@@ -6,7 +6,7 @@
 // under which you licensed this source code.
 
 .ch5-slider {
-    &.adv-slider {
+    &.ch5-advanced-slider-container {
         padding: 0 !important;
     }
     /* ===============================================
@@ -31,13 +31,13 @@
             .cb-btn {
                 width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
-                    margin-right: calc($ch5-slider-size-x-small-horizontal-width/2) + 1;
+                    margin-right: calc($ch5-slider-size-x-small-horizontal-width / 2) + 1;
                 }
             }
-            line-height: $ch5-slider-size-x-small-horizontal-height;
+            // line-height: $ch5-slider-size-x-small-horizontal-height;
             padding: abs($ch5-slider-size-x-small-vertical-left) calc($ch5-slider-size-x-small-horizontal-width / 2);
         }
         /* ch5-slider handleSize - small */
@@ -50,19 +50,19 @@
                     $ch5-slider-size-small-horizontal-top
                 );
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
-                    margin-right: calc($ch5-slider-size-small-horizontal-width/2) + 1;
+                    margin-right: calc($ch5-slider-size-small-horizontal-width / 2) + 1;
                 }
             }
             .cb-btn {
                 width: $ch5-slider-size-small-horizontal-circle-size;
             }
-            line-height: $ch5-slider-size-small-horizontal-height;
+            // line-height: $ch5-slider-size-small-horizontal-height;
             padding: abs($ch5-slider-size-small-vertical-left) calc($ch5-slider-size-small-horizontal-width / 2);
         }
-        /* ch5-slider handleSize - small */
+        /* ch5-slider handleSize - regular */
         &.ch5-slider--handle-size--regular {
             .noUi-handle {
                 @include handleSizeHorizontal(
@@ -75,13 +75,13 @@
             .cb-btn {
                 width: $ch5-slider-size-regular-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
-                    margin-right: calc($ch5-slider-size-regular-horizontal-width/2) + 1;
+                    margin-right: calc($ch5-slider-size-regular-horizontal-width / 2) + 1;
                 }
             }
-            line-height: $ch5-slider-size-regular-horizontal-height;
+            // line-height: $ch5-slider-size-regular-horizontal-height;
             padding: abs($ch5-slider-size-regular-vertical-left) calc($ch5-slider-size-regular-horizontal-width / 2);
         }
         /* ch5-slider handleSize - large */
@@ -97,13 +97,13 @@
             .cb-btn {
                 width: $ch5-slider-size-large-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
-                    margin-right: calc($ch5-slider-size-large-horizontal-width/2) + 1;
+                    margin-right: calc($ch5-slider-size-large-horizontal-width / 2) + 1;
                 }
             }
-            line-height: $ch5-slider-size-large-horizontal-height;
+            // line-height: $ch5-slider-size-large-horizontal-height;
             padding: abs($ch5-slider-size-large-vertical-left) calc($ch5-slider-size-large-horizontal-width / 2);
         }
         /* ch5-slider handleSize - x-large */
@@ -119,13 +119,13 @@
             .cb-btn {
                 width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
-                    margin-right: calc($ch5-slider-size-x-large-horizontal-width/2) + 1;
+                    margin-right: calc($ch5-slider-size-x-large-horizontal-width / 2) + 1;
                 }
             }
-            line-height: $ch5-slider-size-x-large-horizontal-height;
+            // line-height: $ch5-slider-size-x-large-horizontal-height;
             padding: abs($ch5-slider-size-x-small-vertical-left) calc($ch5-slider-size-x-large-horizontal-width / 2);
         }
     }
@@ -145,13 +145,13 @@
             .cb-btn {
                 width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-right: $ch5-slider-size-x-small-horizontal-oval-size + 1;
                 }
             }
-            line-height: $ch5-slider-size-x-small-horizontal-oval-size;
+            // line-height: $ch5-slider-size-x-small-horizontal-oval-size;
             padding: abs($ch5-slider-size-x-small-vertical-left) ($ch5-slider-size-x-small-horizontal-oval-size);
         }
         /* ch5-slider handleSize - small */
@@ -167,16 +167,16 @@
             .cb-btn {
                 width: $ch5-slider-size-small-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-right: $ch5-slider-size-small-horizontal-oval-size + 1;
                 }
             }
-            line-height: $ch5-slider-size-small-horizontal-oval-size;
+            // line-height: $ch5-slider-size-small-horizontal-oval-size;
             padding: abs($ch5-slider-size-small-vertical-left) ($ch5-slider-size-small-horizontal-oval-size);
         }
-        /* ch5-slider handleSize - small */
+        /* ch5-slider handleSize - regular */
         &.ch5-slider--handle-size--regular {
             .noUi-handle {
                 @include handleSizeHorizontal(
@@ -189,13 +189,13 @@
             .cb-btn {
                 width: $ch5-slider-size-regular-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-right: $ch5-slider-size-regular-horizontal-oval-size + 1;
                 }
             }
-            line-height: $ch5-slider-size-regular-horizontal-oval-size;
+            // line-height: $ch5-slider-size-regular-horizontal-oval-size;
             padding: abs($ch5-slider-size-regular-vertical-left) ($ch5-slider-size-regular-horizontal-oval-size);
         }
         /* ch5-slider handleSize - large */
@@ -211,13 +211,13 @@
             .cb-btn {
                 width: $ch5-slider-size-large-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-right: $ch5-slider-size-large-horizontal-oval-size + 1;
                 }
             }
-            line-height: $ch5-slider-size-large-horizontal-oval-size;
+            // line-height: $ch5-slider-size-large-horizontal-oval-size;
             padding: abs($ch5-slider-size-large-vertical-left) ($ch5-slider-size-large-horizontal-oval-size);
         }
         /* ch5-slider handleSize - x-large */
@@ -233,13 +233,13 @@
             .cb-btn {
                 width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-right: $ch5-slider-size-x-large-horizontal-oval-size + 1;
                 }
             }
-            line-height: $ch5-slider-size-x-large-horizontal-oval-size;
+            // line-height: $ch5-slider-size-x-large-horizontal-oval-size;
             padding: abs($ch5-slider-size-x-large-vertical-left) ($ch5-slider-size-x-large-horizontal-oval-size);
         }
     }
@@ -259,13 +259,13 @@
             .cb-btn {
                 width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-right: calc($ch5-slider-size-x-small-horizontal-circle-size/2) + 1;
                 }
             }
-            line-height: $ch5-slider-size-x-small-horizontal-circle-size;
+            // line-height: $ch5-slider-size-x-small-horizontal-circle-size;
             padding: abs($ch5-slider-size-x-small-vertical-left)
                 calc($ch5-slider-size-x-small-horizontal-circle-size / 2);
         }
@@ -282,16 +282,16 @@
             .cb-btn {
                 width: $ch5-slider-size-small-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-right: calc($ch5-slider-size-small-horizontal-circle-size/2) + 1;
                 }
             }
-            line-height: $ch5-slider-size-small-horizontal-circle-size;
+            // line-height: $ch5-slider-size-small-horizontal-circle-size;
             padding: abs($ch5-slider-size-small-vertical-left) calc($ch5-slider-size-small-horizontal-circle-size / 2);
         }
-        /* ch5-slider handleSize - regular*/
+        // ch5-slider handleSize - regular
         &.ch5-slider--handle-size--regular {
             .noUi-handle {
                 @include handleSizeHorizontal(
@@ -304,13 +304,13 @@
             .cb-btn {
                 width: $ch5-slider-size-regular-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-right: calc($ch5-slider-size-regular-horizontal-circle-size/2) + 1;
-                }
+                }                
             }
-            line-height: $ch5-slider-size-regular-horizontal-circle-size;
+            // line-height: $ch5-slider-size-regular-horizontal-circle-size;
             padding: abs($ch5-slider-size-regular-vertical-left)
                 calc($ch5-slider-size-regular-horizontal-circle-size / 2);
         }
@@ -327,13 +327,13 @@
             .cb-btn {
                 width: $ch5-slider-size-large-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-right: calc($ch5-slider-size-large-horizontal-circle-size/2) + 1;
                 }
             }
-            line-height: $ch5-slider-size-large-horizontal-circle-size;
+            // line-height: $ch5-slider-size-large-horizontal-circle-size;
             padding: abs($ch5-slider-size-large-vertical-left) calc($ch5-slider-size-large-horizontal-circle-size / 2);
         }
         /* ch5-slider handleSize - x-large */
@@ -350,13 +350,13 @@
                 width: $ch5-slider-size-x-large-horizontal-circle-size;
                 height: $ch5-slider-size-x-large-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-right: calc($ch5-slider-size-x-large-horizontal-circle-size/2) + 1;
                 }
             }
-            line-height: $ch5-slider-size-x-large-horizontal-circle-size;
+            // line-height: $ch5-slider-size-x-large-horizontal-circle-size;
             padding: abs($ch5-slider-size-x-large-vertical-left)
                 calc($ch5-slider-size-x-large-horizontal-circle-size / 2);
         }
@@ -383,7 +383,7 @@
             .cb-btn {
                 width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: calc($ch5-slider-size-x-small-vertical-height/2) + 1;
@@ -391,7 +391,7 @@
             }
             min-width: $ch5-slider-size-x-small-vertical-width;
 
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: calc($ch5-slider-size-x-small-vertical-width * 1.2);
             }
             padding: calc($ch5-slider-size-x-small-vertical-height / 2) abs($ch5-slider-size-x-small-vertical-left);
@@ -409,15 +409,15 @@
             .cb-btn {
                 width: $ch5-slider-size-small-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
-                    margin-top: calc($ch5-slider-size-small-vertical-height/2) + 1;
+                    margin-top: calc($ch5-slider-size-small-vertical-height / 2) + 1;
                 }
             }
             min-width: $ch5-slider-size-small-vertical-width;
 
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: calc($ch5-slider-size-small-vertical-width * 1.2);
             }
             padding: calc($ch5-slider-size-small-vertical-height / 2) abs($ch5-slider-size-small-vertical-left);
@@ -435,7 +435,7 @@
             .cb-btn {
                 width: $ch5-slider-size-regular-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: calc($ch5-slider-size-regular-vertical-height/2) + 1;
@@ -443,11 +443,10 @@
             }
             min-width: $ch5-slider-size-regular-vertical-width;
 
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: calc($ch5-slider-size-regular-vertical-width * 1.2);
-            }           
+            }
             padding: calc($ch5-slider-size-regular-vertical-height / 2) abs($ch5-slider-size-regular-vertical-left);
-      
         }
         /* ch5-slider handlesize - large */
         &.ch5-slider--handle-size--large {
@@ -462,14 +461,14 @@
             .cb-btn {
                 width: $ch5-slider-size-large-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: calc($ch5-slider-size-large-vertical-height/2) + 1;
                 }
             }
             min-width: $ch5-slider-size-large-vertical-width;
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: calc($ch5-slider-size-large-vertical-width * 1.2);
             }
             padding: calc($ch5-slider-size-large-vertical-height / 2) abs($ch5-slider-size-large-vertical-left);
@@ -487,14 +486,14 @@
             .cb-btn {
                 width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: calc($ch5-slider-size-x-large-vertical-height/2) + 1;
                 }
             }
             min-width: $ch5-slider-size-x-large-vertical-width;
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: calc($ch5-slider-size-x-large-vertical-width * 1.2);
             }
             padding: calc($ch5-slider-size-x-large-vertical-height / 2) abs($ch5-slider-size-x-large-vertical-left);
@@ -515,18 +514,18 @@
             .cb-btn {
                 width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: calc($ch5-slider-size-x-small-horizontal-circle-size/2) + 1;
                 }
             }
             min-width: $ch5-slider-size-x-small-horizontal-circle-size;
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-x-small-horizontal-circle-size / 2)
-            calc(($ch5-slider-size-x-small-horizontal-circle-size - $ch5-slider-target-size) / 2);
+                calc(($ch5-slider-size-x-small-horizontal-circle-size - $ch5-slider-target-size) / 2);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--small {
@@ -541,18 +540,18 @@
             .cb-btn {
                 width: $ch5-slider-size-small-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: calc($ch5-slider-size-small-horizontal-circle-size/2) + 1;
                 }
             }
             min-width: $ch5-slider-size-small-horizontal-circle-size;
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: $ch5-slider-size-small-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-small-horizontal-circle-size / 2)
-            calc(($ch5-slider-size-small-horizontal-circle-size - $ch5-slider-target-size) / 2);
+                calc(($ch5-slider-size-small-horizontal-circle-size - $ch5-slider-target-size) / 2);
         }
         /* ch5-slider handleSize - small */
         &.ch5-slider--handle-size--regular {
@@ -567,18 +566,18 @@
             .cb-btn {
                 width: $ch5-slider-size-regular-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: calc($ch5-slider-size-regular-horizontal-circle-size/2) + 1;
                 }
             }
             min-width: $ch5-slider-size-regular-horizontal-circle-size;
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: $ch5-slider-size-regular-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-regular-horizontal-circle-size / 2)
-            calc(($ch5-slider-size-regular-horizontal-circle-size - $ch5-slider-target-size) / 2);
+                calc(($ch5-slider-size-regular-horizontal-circle-size - $ch5-slider-target-size) / 2);
         }
         /* ch5-slider handleSize - large */
         &.ch5-slider--handle-size--large {
@@ -593,18 +592,18 @@
             .cb-btn {
                 width: $ch5-slider-size-large-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: calc($ch5-slider-size-large-horizontal-circle-size/2) + 1;
                 }
             }
             min-width: $ch5-slider-size-large-horizontal-circle-size;
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: $ch5-slider-size-large-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-large-horizontal-circle-size / 2)
-            calc(($ch5-slider-size-large-horizontal-circle-size - $ch5-slider-target-size) / 2);
+                calc(($ch5-slider-size-large-horizontal-circle-size - $ch5-slider-target-size) / 2);
         }
         /* ch5-slider handleSize - x-large */
         &.ch5-slider--handle-size--x-large {
@@ -619,18 +618,18 @@
             .cb-btn {
                 width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: calc($ch5-slider-size-x-large-horizontal-circle-size/2) + 1;
                 }
             }
             min-width: $ch5-slider-size-x-large-horizontal-circle-size;
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-x-large-horizontal-circle-size / 2)
-            calc(($ch5-slider-size-x-large-horizontal-circle-size - $ch5-slider-target-size) / 2);
+                calc(($ch5-slider-size-x-large-horizontal-circle-size - $ch5-slider-target-size) / 2);
         }
     }
 
@@ -648,14 +647,14 @@
             .cb-btn {
                 width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: $ch5-slider-size-x-small-horizontal-oval-size + 1;
                 }
             }
             min-width: $ch5-slider-size-x-small-horizontal-oval-size;
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: $ch5-slider-size-x-small-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-x-small-horizontal-oval-size) abs($ch5-slider-size-x-small-vertical-left);
@@ -673,14 +672,14 @@
             .cb-btn {
                 width: $ch5-slider-size-small-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: $ch5-slider-size-small-horizontal-oval-size + 1;
                 }
             }
             min-width: $ch5-slider-size-small-horizontal-oval-size;
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: $ch5-slider-size-small-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-small-horizontal-oval-size) abs($ch5-slider-size-small-vertical-left);
@@ -698,14 +697,14 @@
             .cb-btn {
                 width: $ch5-slider-size-regular-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: $ch5-slider-size-regular-horizontal-oval-size + 1;
                 }
             }
             min-width: $ch5-slider-size-regular-horizontal-oval-size;
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: $ch5-slider-size-regular-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-regular-horizontal-oval-size) abs($ch5-slider-size-regular-vertical-left);
@@ -723,14 +722,14 @@
             .cb-btn {
                 width: $ch5-slider-size-large-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: $ch5-slider-size-large-horizontal-oval-size + 1;
                 }
             }
             min-width: $ch5-slider-size-large-horizontal-oval-size;
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: $ch5-slider-size-large-horizontal-circle-size;
             }
             padding: calc($ch5-slider-size-large-horizontal-oval-size) abs($ch5-slider-size-large-vertical-left);
@@ -748,14 +747,14 @@
             .cb-btn {
                 width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 .slider-off-button,
                 .noUi-target {
                     margin-top: $ch5-slider-size-x-large-horizontal-oval-size + 1;
                 }
             }
             min-width: $ch5-slider-size-x-large-horizontal-oval-size;
-            &.adv-slider {
+            &.ch5-advanced-slider-container {
                 max-width: $ch5-slider-size-x-large-horizontal-circle-size;
             }
             padding: $ch5-slider-size-x-large-horizontal-oval-size abs($ch5-slider-size-x-large-vertical-left);

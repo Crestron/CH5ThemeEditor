@@ -17,7 +17,7 @@
         .ch5-title-container {
             text-align: center;
         }
-        &.adv-slider {
+        &.ch5-advanced-slider-container {
             .ch5-slider-button-container {
                 height: inherit;
                 width: inherit;
@@ -29,6 +29,8 @@
         &.ch5-slider--size--x-small {
             .ch5-slider-button-container {
                 width: $ch5-slider-size-x-small-horizontal;
+                display: flex;
+                vertical-align: middle;
             }
         }
         /* ch5-slider - small */
@@ -36,6 +38,8 @@
         &.ch5-slider--size--small {
             .ch5-slider-button-container {
                 width: $ch5-slider-size-small-horizontal;
+                display: flex;
+                vertical-align: middle;
             }
         }
         /* ch5-slider - regular */
@@ -43,6 +47,8 @@
         &.ch5-slider--size--regular {
             .ch5-slider-button-container {
                 width: $ch5-slider-size-regular-horizontal;
+                display: flex;
+                vertical-align: middle;
             }
         }
         /* ch5-slider - large */
@@ -50,6 +56,8 @@
         &.ch5-slider--size--large {
             .ch5-slider-button-container {
                 width: $ch5-slider-size-large-horizontal;
+                display: flex;
+                vertical-align: middle;
             }
         }
         /* ch5-slider - x-large */
@@ -57,6 +65,66 @@
         &.ch5-slider--size--x-large {
             .ch5-slider-button-container {
                 width: $ch5-slider-size-x-large-horizontal;
+                display: flex;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &.ch5-slider--orientation--horizontal.ch5-advanced-slider-container {
+        .ch5-title-container {
+            text-align: center;
+        }
+        &.ch5-advanced-slider-container {
+            .ch5-slider-button-container {
+                height: inherit;
+                width: inherit;
+                display: flex;
+            }
+        }
+        /* ch5-slider - x-small */
+        /// Applied when slider size="x-small"
+        &.ch5-slider--size--x-small {
+            .ch5-slider-button-container {
+                width: $ch5-slider-size-x-small-horizontal + $ch5-slider-size-x-small-horizontal-width;
+                display: flex;
+                vertical-align: middle;
+            }
+        }
+        /* ch5-slider - small */
+        /// Applied when slider size="small"
+        &.ch5-slider--size--small {
+            .ch5-slider-button-container {
+                width: $ch5-slider-size-small-horizontal + $ch5-slider-size-small-horizontal-width;
+                display: flex;
+                vertical-align: middle;
+            }
+        }
+        /* ch5-slider - regular */
+        /// Applied when slider size="regular"
+        &.ch5-slider--size--regular {
+            .ch5-slider-button-container {
+                width: $ch5-slider-size-regular-horizontal + $ch5-slider-size-regular-horizontal-width;
+                display: flex;
+                vertical-align: middle;
+            }
+        }
+        /* ch5-slider - large */
+        /// Applied when slider size="large"
+        &.ch5-slider--size--large {
+            .ch5-slider-button-container {
+                width: $ch5-slider-size-large-horizontal + $ch5-slider-size-large-horizontal-width;
+                display: flex;
+                vertical-align: middle;
+            }
+        }
+        /* ch5-slider - x-large */
+        /// Applied when slider size="x-large"
+        &.ch5-slider--size--x-large {
+            .ch5-slider-button-container {
+                width: $ch5-slider-size-x-large-horizontal + $ch5-slider-size-x-large-horizontal-width;
+                display: flex;
+                vertical-align: middle;
             }
         }
     }
@@ -68,7 +136,7 @@
         .ch5-title-container {
             text-align: center;
         }
-        &.adv-slider {
+        &.ch5-advanced-slider-container {
             .ch5-slider-button-container {
                 width: inherit;
                 display: flex;

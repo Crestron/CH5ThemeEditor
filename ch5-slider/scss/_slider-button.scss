@@ -30,7 +30,7 @@
       display: inline-flex;
       align-items: center;
       justify-content: space-between;
-      line-height: $ch5-button-content-line-height;
+      // line-height: $ch5-button-content-line-height;
       padding: $ch5-button-padding;
       vertical-align: middle;
       padding-top: calc($ch5-button-padding / 2);
@@ -119,7 +119,7 @@
 }
 .ch5-button--icon,
 .ch5-button--img {
-  line-height: $ch5-button-content-line-height;
+  // line-height: $ch5-button-content-line-height;
 }
 
 // icon positions
@@ -204,7 +204,7 @@ i.cb-icon.cx-button-icon-pos-top {
   display: none;
 }
 
-.adv-slider-btn {
+.ch5-advanced-slider-button {
   display: none;
 }
 

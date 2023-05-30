@@ -9,7 +9,7 @@
     width: $width;
     height: $height;
     right: $right;
-    top: $top - 0.5;
+    top: $top;
 }
 
 @mixin handleSizeVertical($width, $height, $left, $top) {

@@ -43,10 +43,10 @@ ch5-slider {
 .ch5-slider {
   position: relative;
   display: inline-block;
-  vertical-align: top;
-  font-size: $ch5-slider-font-size;
-  font-style: $ch5-slider-font-style;
-  font-weight: $ch5-slider-font-weight;
+  // vertical-align: top;
+  // font-size: $ch5-slider-font-size;
+  // font-style: $ch5-slider-font-style;
+  // font-weight: $ch5-slider-font-weight;
   &.ch5-hide-dis {
     display: none;
   }
@@ -92,20 +92,16 @@ ch5-slider {
         position: relative;
       }
     }
-    &.adv-slider {
+    &.ch5-advanced-slider-container {
       .noUi-target {
         align-self: center;
       }
     }
-    &.ch5-slider--tooltip--on:not(.adv-slider) {
-      margin-top: 2.5em;
+    &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
+      margin-top: 33px;
     }
-    &.ch5-slider--tooltip--on.adv-slider {
-      margin-top: 1.5em;
-    }
-
-    &.ch5-slider--tooltip--auto {
-      // margin-top: 2.5em;  CH5C -3150
+    &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
+      margin-top: 8px;
     }
   }
 
@@ -114,7 +110,7 @@ ch5-slider {
     .noUi-target {
       width: $ch5-slider-target-size;
     }
-    &.adv-slider {
+    &.ch5-advanced-slider-container {
       .noUi-target {
         align-self: center;
       }
@@ -184,19 +180,19 @@ ch5-slider {
   /* ===============================================
     STRETCH
    ============================================= */
-  &.ch5-slider--stretch--width.ch5-slider--orientation--horizontal:not(.adv-slider) {
+  &.ch5-slider--stretch--width.ch5-slider--orientation--horizontal:not(.ch5-advanced-slider-container) {
     .ch5-slider-button-container {
       width: 100% !important;
     }
   }
 
-  &.ch5-slider--stretch--height.ch5-slider--orientation--vertical:not(.adv-slider) {
+  &.ch5-slider--stretch--height.ch5-slider--orientation--vertical:not(.ch5-advanced-slider-container) {
     .ch5-slider-button-container {
       height: 100% !important;
     }
   }
 
-  &.ch5-slider--stretch--height.ch5-slider--orientation--horizontal:not(.adv-slider) {
+  &.ch5-slider--stretch--height.ch5-slider--orientation--horizontal:not(.ch5-advanced-slider-container) {
     .ch5-slider-button-container {
       height: 100% !important;
     }
@@ -206,7 +202,7 @@ ch5-slider {
     }
   }
 
-  &.ch5-slider--stretch--width.ch5-slider--orientation--vertical:not(.adv-slider) {
+  &.ch5-slider--stretch--width.ch5-slider--orientation--vertical:not(.ch5-advanced-slider-container) {
     .ch5-slider-button-container {
       width: 100% !important;
     }
@@ -216,7 +212,7 @@ ch5-slider {
     }
   }
 
-  &.ch5-slider--stretch--both.ch5-slider--orientation--horizontal:not(.adv-slider) {
+  &.ch5-slider--stretch--both.ch5-slider--orientation--horizontal:not(.ch5-advanced-slider-container) {
     .ch5-slider-button-container {
       width: 100% !important;
       height: 100% !important;
@@ -228,7 +224,7 @@ ch5-slider {
     }
   }
 
-  &.ch5-slider--stretch--both.ch5-slider--orientation--vertical:not(.adv-slider) {
+  &.ch5-slider--stretch--both.ch5-slider--orientation--vertical:not(.ch5-advanced-slider-container) {
     .ch5-slider-button-container {
       height: 100% !important;
       width: 100% !important;
@@ -240,9 +236,9 @@ ch5-slider {
   }
 }
 
-.adv-slider.ch5-slider--stretch--both,
-.adv-slider.ch5-slider--stretch--height,
-.adv-slider.ch5-slider--stretch--width {
+.ch5-advanced-slider-container.ch5-slider--stretch--both,
+.ch5-advanced-slider-container.ch5-slider--stretch--height,
+.ch5-advanced-slider-container.ch5-slider--stretch--width {
   .slider-off-button,
   .slider-on-button {
     align-self: center;
@@ -250,8 +246,8 @@ ch5-slider {
 }
 
 .ch5-slider--orientation--vertical {
-  &.adv-slider.ch5-slider--stretch--both,
-  &.adv-slider.ch5-slider--stretch--width {
+  &.ch5-advanced-slider-container.ch5-slider--stretch--both,
+  &.ch5-advanced-slider-container.ch5-slider--stretch--width {
     max-width: inherit !important;
   }
 }
@@ -262,13 +258,18 @@ html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle .noUi-horizontal .no
 
 /* Tooltip */
 
+.noUi-tooltip {
+  font-size: 14px;
+  align-items: center;
+}
+
 .ch5-slider--tooltip--auto {
   .noUi-tooltip {
     display: none;
   }
 
   .noUi-active .noUi-tooltip {
-    display: block;
+    display: flex;
   }
 }
 
