@@ -10,7 +10,26 @@
 /// @group ch5-slider
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
 .ch5-slider {
+
+	.ch5-title-container {
+		text-align: center;
+		.ch5-label {
+			padding: 3px;
+		}
+	}
+
+	&.ch5-slider--orientation--vertical {
+		&.ch5-advanced-slider-container {
+			.ch5-slider-button-container {
+				width: inherit;
+				display: flex;
+				flex-direction: column-reverse;
+			}
+		}
+	}
+
 	/// Applied when slider shape="rectangle"
 	&.ch5-slider--shape--rectangle {
 		.noUi-handle,
@@ -43,7 +62,6 @@
 
 	/// Applied when slider shape="oval"
 	&.ch5-slider--shape--oval {
-
 		.noUi-target,
 		.noUi-connects {
 			border-radius: 10px;
