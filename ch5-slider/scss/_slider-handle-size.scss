@@ -1,0 +1,914 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-slider
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ch5-slider {
+	/* ===============================================
+    ORIENTATION HORIZONTAL 
+    ============================================= */
+	&.ch5-slider--orientation--horizontal .noUi-target {
+		width: 100% !important;
+	}
+	// rectangle/rounded-rectangle
+	&.ch5-slider--orientation--horizontal.ch5-slider--shape--rectangle,
+	&.ch5-slider--orientation--horizontal.ch5-slider--shape--rounded-rectangle {
+		&.ch5-slider--handle-size--x-small {
+			/// Applied when slider size="x-small"
+			&.ch5-slider--size--x-small {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-x-small-horizontal-handle-width,
+					$ch5-slider-size-x-small-horizontal-handle-height,
+					$ch5-slider-size-x-small-horizontal-button-width,
+					$ch5-slider-size-x-small-horizontal-button-height,
+					$ch5-slider-size-x-small,
+					horizontal
+				);
+			}
+			/// Applied when slider size="small"
+			&.ch5-slider--size--small {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-x-small-horizontal-handle-width,
+					$ch5-slider-size-x-small-horizontal-handle-height,
+					$ch5-slider-size-x-small-horizontal-button-width,
+					$ch5-slider-size-x-small-horizontal-button-height,
+					$ch5-slider-size-small,
+					horizontal
+				);
+			}
+			/// Applied when slider size="regular"
+			&.ch5-slider--size--regular {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-x-small-horizontal-handle-width,
+					$ch5-slider-size-x-small-horizontal-handle-height,
+					$ch5-slider-size-x-small-horizontal-button-width,
+					$ch5-slider-size-x-small-horizontal-button-height,
+					$ch5-slider-size-regular,
+					horizontal
+				);
+			}
+			/// Applied when slider size="large"
+			&.ch5-slider--size--large {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-x-small-horizontal-handle-width,
+					$ch5-slider-size-x-small-horizontal-handle-height,
+					$ch5-slider-size-x-small-horizontal-button-width,
+					$ch5-slider-size-x-small-horizontal-button-height,
+					$ch5-slider-size-large,
+					horizontal
+				);
+			}
+
+			/// Applied when slider size="x-large"
+			&.ch5-slider--size--x-large {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-x-small-horizontal-handle-width,
+					$ch5-slider-size-x-small-horizontal-handle-height,
+					$ch5-slider-size-x-small-horizontal-button-width,
+					$ch5-slider-size-x-small-horizontal-button-height,
+					$ch5-slider-size-x-large,
+					horizontal
+				);
+			}
+		}
+		/* ch5-slider handleSize - small */
+		&.ch5-slider--handle-size--small {
+			/// Applied when slider size="x-small"
+			&.ch5-slider--size--x-small {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-small-horizontal-handle-width,
+					$ch5-slider-size-small-horizontal-handle-height,
+					$ch5-slider-size-small-horizontal-button-width,
+					$ch5-slider-size-small-horizontal-button-height,
+					$ch5-slider-size-x-small,
+					horizontal
+				);
+			}
+			/// Applied when slider size="small"
+			&.ch5-slider--size--small {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-small-horizontal-handle-width,
+					$ch5-slider-size-small-horizontal-handle-height,
+					$ch5-slider-size-small-horizontal-button-width,
+					$ch5-slider-size-small-horizontal-button-height,
+					$ch5-slider-size-small,
+					horizontal
+				);
+			}
+			/// Applied when slider size="regular"
+			&.ch5-slider--size--regular {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-small-horizontal-handle-width,
+					$ch5-slider-size-small-horizontal-handle-height,
+					$ch5-slider-size-small-horizontal-button-width,
+					$ch5-slider-size-small-horizontal-button-height,
+					$ch5-slider-size-regular,
+					horizontal
+				);
+			}
+			/// Applied when slider size="large"
+			&.ch5-slider--size--large {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-small-horizontal-handle-width,
+					$ch5-slider-size-small-horizontal-handle-height,
+					$ch5-slider-size-small-horizontal-button-width,
+					$ch5-slider-size-small-horizontal-button-height,
+					$ch5-slider-size-large,
+					horizontal
+				);
+			}
+
+			/// Applied when slider size="x-large"
+			&.ch5-slider--size--x-large {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-small-horizontal-handle-width,
+					$ch5-slider-size-small-horizontal-handle-height,
+					$ch5-slider-size-small-horizontal-button-width,
+					$ch5-slider-size-small-horizontal-button-height,
+					$ch5-slider-size-x-large,
+					horizontal
+				);
+			}
+		}
+		/* ch5-slider handleSize - regular */
+		&.ch5-slider--handle-size--regular {
+			/// Applied when slider size="x-small"
+			&.ch5-slider--size--x-small {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-regular-horizontal-handle-width,
+					$ch5-slider-size-regular-horizontal-handle-height,
+					$ch5-slider-size-regular-horizontal-button-width,
+					$ch5-slider-size-regular-horizontal-button-height,
+					$ch5-slider-size-x-small,
+					horizontal
+				);
+			}
+			/// Applied when slider size="small"
+			&.ch5-slider--size--small {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-regular-horizontal-handle-width,
+					$ch5-slider-size-regular-horizontal-handle-height,
+					$ch5-slider-size-regular-horizontal-button-width,
+					$ch5-slider-size-regular-horizontal-button-height,
+					$ch5-slider-size-small,
+					horizontal
+				);
+			}
+			/// Applied when slider size="regular"
+			&.ch5-slider--size--regular {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-regular-horizontal-handle-width,
+					$ch5-slider-size-regular-horizontal-handle-height,
+					$ch5-slider-size-regular-horizontal-button-width,
+					$ch5-slider-size-regular-horizontal-button-height,
+					$ch5-slider-size-regular,
+					horizontal
+				);
+			}
+			/// Applied when slider size="large"
+			&.ch5-slider--size--large {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-regular-horizontal-handle-width,
+					$ch5-slider-size-regular-horizontal-handle-height,
+					$ch5-slider-size-regular-horizontal-button-width,
+					$ch5-slider-size-regular-horizontal-button-height,
+					$ch5-slider-size-large,
+					horizontal
+				);
+			}
+
+			/// Applied when slider size="x-large"
+			&.ch5-slider--size--x-large {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-regular-horizontal-handle-width,
+					$ch5-slider-size-regular-horizontal-handle-height,
+					$ch5-slider-size-regular-horizontal-button-width,
+					$ch5-slider-size-regular-horizontal-button-height,
+					$ch5-slider-size-x-large,
+					horizontal
+				);
+			}
+		}
+		/* ch5-slider handleSize - large */
+		&.ch5-slider--handle-size--large {
+			/// Applied when slider size="x-small"
+			&.ch5-slider--size--x-small {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-large-horizontal-handle-width,
+					$ch5-slider-size-large-horizontal-handle-height,
+					$ch5-slider-size-large-horizontal-button-width,
+					$ch5-slider-size-large-horizontal-button-height,
+					$ch5-slider-size-x-small,
+					horizontal
+				);
+			}
+			/// Applied when slider size="small"
+			&.ch5-slider--size--small {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-large-horizontal-handle-width,
+					$ch5-slider-size-large-horizontal-handle-height,
+					$ch5-slider-size-large-horizontal-button-width,
+					$ch5-slider-size-large-horizontal-button-height,
+					$ch5-slider-size-small,
+					horizontal
+				);
+			}
+			/// Applied when slider size="regular"
+			&.ch5-slider--size--regular {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-large-horizontal-handle-width,
+					$ch5-slider-size-large-horizontal-handle-height,
+					$ch5-slider-size-large-horizontal-button-width,
+					$ch5-slider-size-large-horizontal-button-height,
+					$ch5-slider-size-regular,
+					horizontal
+				);
+			}
+			/// Applied when slider size="large"
+			&.ch5-slider--size--large {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-large-horizontal-handle-width,
+					$ch5-slider-size-large-horizontal-handle-height,
+					$ch5-slider-size-large-horizontal-button-width,
+					$ch5-slider-size-large-horizontal-button-height,
+					$ch5-slider-size-large,
+					horizontal
+				);
+			}
+
+			/// Applied when slider size="x-large"
+			&.ch5-slider--size--x-large {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-large-horizontal-handle-width,
+					$ch5-slider-size-large-horizontal-handle-height,
+					$ch5-slider-size-large-horizontal-button-width,
+					$ch5-slider-size-large-horizontal-button-height,
+					$ch5-slider-size-x-large,
+					horizontal
+				);
+			}
+		}
+		/* ch5-slider handleSize - x-large */
+		&.ch5-slider--handle-size--x-large {
+			/// Applied when slider size="x-small"
+			&.ch5-slider--size--x-small {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-x-large-horizontal-handle-width,
+					$ch5-slider-size-x-large-horizontal-handle-height,
+					$ch5-slider-size-x-large-horizontal-button-width,
+					$ch5-slider-size-x-large-horizontal-button-height,
+					$ch5-slider-size-x-small,
+					horizontal
+				);
+			}
+			/// Applied when slider size="small"
+			&.ch5-slider--size--small {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-x-large-horizontal-handle-width,
+					$ch5-slider-size-x-large-horizontal-handle-height,
+					$ch5-slider-size-x-large-horizontal-button-width,
+					$ch5-slider-size-x-large-horizontal-button-height,
+					$ch5-slider-size-small,
+					horizontal
+				);
+			}
+			/// Applied when slider size="regular"
+			&.ch5-slider--size--regular {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-x-large-horizontal-handle-width,
+					$ch5-slider-size-x-large-horizontal-handle-height,
+					$ch5-slider-size-x-large-horizontal-button-width,
+					$ch5-slider-size-x-large-horizontal-button-height,
+					$ch5-slider-size-regular,
+					horizontal
+				);
+			}
+			/// Applied when slider size="large"
+			&.ch5-slider--size--large {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-x-large-horizontal-handle-width,
+					$ch5-slider-size-x-large-horizontal-handle-height,
+					$ch5-slider-size-x-large-horizontal-button-width,
+					$ch5-slider-size-x-large-horizontal-button-height,
+					$ch5-slider-size-large,
+					horizontal
+				);
+			}
+
+			/// Applied when slider size="x-large"
+			&.ch5-slider--size--x-large {
+				@include sliderHandleSizeHorizontal(
+					$ch5-slider-size-x-large-horizontal-handle-width,
+					$ch5-slider-size-x-large-horizontal-handle-height,
+					$ch5-slider-size-x-large-horizontal-button-width,
+					$ch5-slider-size-x-large-horizontal-button-height,
+					$ch5-slider-size-x-large,
+					horizontal
+				);
+			}
+		}
+	}
+
+	$shapes: (
+		oval: (
+			x-small: (
+				width: $ch5-slider-size-x-small-horizontal-handle-width-oval,
+				height: $ch5-slider-size-x-small-horizontal-handle-height-oval,
+			),
+			small: (
+				width: $ch5-slider-size-small-horizontal-handle-width-oval,
+				height: $ch5-slider-size-small-horizontal-handle-height-oval,
+			),
+			regular: (
+				width: $ch5-slider-size-regular-horizontal-handle-width-oval,
+				height: $ch5-slider-size-regular-horizontal-handle-height-oval,
+			),
+			large: (
+				width: $ch5-slider-size-large-horizontal-handle-width-oval,
+				height: $ch5-slider-size-large-horizontal-handle-height-oval,
+			),
+			x-large: (
+				width: $ch5-slider-size-x-large-horizontal-handle-width-oval,
+				height: $ch5-slider-size-x-large-horizontal-handle-height-oval,
+			),
+		),
+		circle: (
+			x-small: (
+				width: $ch5-slider-size-x-small-horizontal-handle-width-circle,
+				height: $ch5-slider-size-x-small-horizontal-handle-height-circle,
+			),
+			small: (
+				width: $ch5-slider-size-small-horizontal-handle-width-circle,
+				height: $ch5-slider-size-small-horizontal-handle-height-circle,
+			),
+			regular: (
+				width: $ch5-slider-size-regular-horizontal-handle-width-circle,
+				height: $ch5-slider-size-regular-horizontal-handle-height-circle,
+			),
+			large: (
+				width: $ch5-slider-size-large-horizontal-handle-width-circle,
+				height: $ch5-slider-size-large-horizontal-handle-height-circle,
+			),
+			x-large: (
+				width: $ch5-slider-size-x-large-horizontal-handle-width-circle,
+				height: $ch5-slider-size-x-large-horizontal-handle-height-circle,
+			)
+		)
+	);
+
+	$handle-sizes: (
+		x-small: (
+			width: $ch5-slider-size-x-small-horizontal-button-width,
+			height: $ch5-slider-size-x-small-horizontal-button-height,
+		),
+		small: (
+			width: $ch5-slider-size-small-horizontal-button-width,
+			height: $ch5-slider-size-small-horizontal-button-height,
+		),
+		regular: (
+			width: $ch5-slider-size-regular-horizontal-button-width,
+			height: $ch5-slider-size-regular-horizontal-button-height,
+		),
+		large: (
+			width: $ch5-slider-size-large-horizontal-button-width,
+			height: $ch5-slider-size-large-horizontal-button-height,
+		),
+		x-large: (
+			width: $ch5-slider-size-x-large-horizontal-button-width,
+			height: $ch5-slider-size-x-large-horizontal-button-height,
+		),
+	);
+
+	$slider-sizes: (
+		x-small: $ch5-slider-size-x-small,
+		small: $ch5-slider-size-small,
+		regular: $ch5-slider-size-regular,
+		large: $ch5-slider-size-large,
+		x-large: $ch5-slider-size-x-large,
+	);
+
+	@each $shape in map-keys($shapes) {
+		&.ch5-slider--orientation--horizontal.ch5-slider--shape--#{$shape} {
+			@each $handle-size in map-keys($handle-sizes) {
+				&.ch5-slider--handle-size--#{$handle-size} {
+					@each $slider-size in map-keys($slider-sizes) {
+						&.ch5-slider--size--#{$slider-size} {
+							@include sliderHandleSizeHorizontal(
+								map-deep-get($shapes, $shape, $handle-size, "width"),
+								map-deep-get($shapes, $shape, $handle-size, "height"),
+								map-deep-get($handle-sizes, $handle-size, "width"),
+								map-deep-get($handle-sizes, $handle-size, "height"),
+								map-deep-get($slider-sizes, $slider-size),
+								horizontal
+							);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// // oval
+	// &.ch5-slider--orientation--horizontal.ch5-slider--shape--oval {
+	// 	/* ch5-slider handleSize - x-small */
+	// 	&.ch5-slider--handle-size--x-small {
+	// 		@include sliderHandleSizeHorizontal(
+	// 			$ch5-slider-size-x-small-horizontal-handle-width-oval,
+	// 			$ch5-slider-size-x-small-horizontal-handle-height-oval,
+	// 			$ch5-slider-size-x-small-horizontal-button-width,
+	// 			$ch5-slider-size-x-small-horizontal-button-height
+	// 		);
+	// 	}
+	// 	/* ch5-slider handleSize - small */
+	// 	&.ch5-slider--handle-size--small {
+	// 		@include sliderHandleSizeHorizontal(
+	// 			$ch5-slider-size-small-horizontal-handle-width-oval,
+	// 			$ch5-slider-size-small-horizontal-handle-height-oval,
+	// 			$ch5-slider-size-small-horizontal-button-width,
+	// 			$ch5-slider-size-small-horizontal-button-height
+	// 		);
+	// 	}
+	// 	/* ch5-slider handleSize - regular */
+	// 	&.ch5-slider--handle-size--regular {
+	// 		@include sliderHandleSizeHorizontal(
+	// 			$ch5-slider-size-regular-horizontal-handle-width-oval,
+	// 			$ch5-slider-size-regular-horizontal-handle-height-oval,
+	// 			$ch5-slider-size-regular-horizontal-button-width,
+	// 			$ch5-slider-size-regular-horizontal-button-height
+	// 		);
+	// 	}
+	// 	/* ch5-slider handleSize - large */
+	// 	&.ch5-slider--handle-size--large {
+	// 		@include sliderHandleSizeHorizontal(
+	// 			$ch5-slider-size-large-horizontal-handle-width-oval,
+	// 			$ch5-slider-size-large-horizontal-handle-height-oval,
+	// 			$ch5-slider-size-large-horizontal-button-width,
+	// 			$ch5-slider-size-large-horizontal-button-height
+	// 		);
+	// 	}
+	// 	/* ch5-slider handleSize - x-large */
+	// 	&.ch5-slider--handle-size--x-large {
+	// 		@include sliderHandleSizeHorizontal(
+	// 			$ch5-slider-size-x-large-horizontal-handle-width-oval,
+	// 			$ch5-slider-size-x-large-horizontal-handle-height-oval,
+	// 			$ch5-slider-size-x-large-horizontal-button-width,
+	// 			$ch5-slider-size-x-large-horizontal-button-height
+	// 		);
+	// 	}
+	// }
+
+	// // circle
+	// &.ch5-slider--orientation--horizontal.ch5-slider--shape--circle {
+	// 	/* ch5-slider handleSize - x-small */
+	// 	&.ch5-slider--handle-size--x-small {
+	// 		@include sliderHandleSizeHorizontal(
+	// 			$ch5-slider-size-x-small-horizontal-handle-width-circle,
+	// 			$ch5-slider-size-x-small-horizontal-handle-height-circle,
+	// 			$ch5-slider-size-x-small-horizontal-button-width,
+	// 			$ch5-slider-size-x-small-horizontal-button-height
+	// 		);
+	// 	}
+	// 	/* ch5-slider handleSize - small */
+	// 	&.ch5-slider--handle-size--small {
+	// 		@include sliderHandleSizeHorizontal(
+	// 			$ch5-slider-size-small-horizontal-handle-width-circle,
+	// 			$ch5-slider-size-small-horizontal-handle-height-circle,
+	// 			$ch5-slider-size-small-horizontal-button-width,
+	// 			$ch5-slider-size-small-horizontal-button-height
+	// 		);
+	// 	}
+	// 	/* ch5-slider handleSize - regular */
+	// 	&.ch5-slider--handle-size--regular {
+	// 		@include sliderHandleSizeHorizontal(
+	// 			$ch5-slider-size-regular-horizontal-handle-width-circle,
+	// 			$ch5-slider-size-regular-horizontal-handle-height-circle,
+	// 			$ch5-slider-size-regular-horizontal-button-width,
+	// 			$ch5-slider-size-regular-horizontal-button-height
+	// 		);
+	// 	}
+	// 	/* ch5-slider handleSize - large */
+	// 	&.ch5-slider--handle-size--large {
+	// 		@include sliderHandleSizeHorizontal(
+	// 			$ch5-slider-size-large-horizontal-handle-width-circle,
+	// 			$ch5-slider-size-large-horizontal-handle-height-circle,
+	// 			$ch5-slider-size-large-horizontal-button-width,
+	// 			$ch5-slider-size-large-horizontal-button-height
+	// 		);
+	// 	}
+	// 	/* ch5-slider handleSize - x-large */
+	// 	&.ch5-slider--handle-size--x-large {
+	// 		@include sliderHandleSizeHorizontal(
+	// 			$ch5-slider-size-x-large-horizontal-handle-width-circle,
+	// 			$ch5-slider-size-x-large-horizontal-handle-height-circle,
+	// 			$ch5-slider-size-x-large-horizontal-button-width,
+	// 			$ch5-slider-size-x-large-horizontal-button-height
+	// 		);
+	// 	}
+	// }
+
+	/* ===============================================
+    ORIENTATION VERTICAL 
+    ============================================= */
+	&.ch5-slider--orientation--vertical .noUi-target {
+		height: 100% !important;
+	}
+	&.ch5-slider--orientation--vertical.ch5-slider--shape--rectangle,
+	&.ch5-slider--orientation--vertical.ch5-slider--shape--rounded-rectangle {
+		/* ch5-slider handlesize - x-small */
+		&.ch5-slider--handle-size--x-small {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-x-small-vertical-width,
+					$ch5-slider-size-x-small-vertical-height,
+					$ch5-slider-size-x-small-vertical-left,
+					$ch5-slider-size-x-small-vertical-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-x-small-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: calc($ch5-slider-size-x-small-vertical-height/2) + 1;
+				}
+			}
+			min-width: $ch5-slider-size-x-small-vertical-width;
+
+			&.ch5-advanced-slider-container {
+				max-width: calc($ch5-slider-size-x-small-vertical-width * 1.2);
+			}
+			padding: calc($ch5-slider-size-x-small-vertical-height / 2) abs($ch5-slider-size-x-small-vertical-left);
+		}
+		/* ch5-slider handlesize - small */
+		&.ch5-slider--handle-size--small {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-small-vertical-width,
+					$ch5-slider-size-small-vertical-height,
+					$ch5-slider-size-small-vertical-left,
+					$ch5-slider-size-small-vertical-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-small-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: calc($ch5-slider-size-small-vertical-height / 2) + 1;
+				}
+			}
+			min-width: $ch5-slider-size-small-vertical-width;
+
+			&.ch5-advanced-slider-container {
+				max-width: calc($ch5-slider-size-small-vertical-width * 1.2);
+			}
+			padding: calc($ch5-slider-size-small-vertical-height / 2) abs($ch5-slider-size-small-vertical-left);
+		}
+		/* ch5-slider handlesize - small */
+		&.ch5-slider--handle-size--regular {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-regular-vertical-width,
+					$ch5-slider-size-regular-vertical-height,
+					$ch5-slider-size-regular-vertical-left,
+					$ch5-slider-size-regular-vertical-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-regular-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: calc($ch5-slider-size-regular-vertical-height/2) + 1;
+				}
+			}
+			min-width: $ch5-slider-size-regular-vertical-width;
+
+			&.ch5-advanced-slider-container {
+				max-width: calc($ch5-slider-size-regular-vertical-width * 1.2);
+			}
+			padding: calc($ch5-slider-size-regular-vertical-height / 2) abs($ch5-slider-size-regular-vertical-left);
+		}
+		/* ch5-slider handlesize - large */
+		&.ch5-slider--handle-size--large {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-large-vertical-width,
+					$ch5-slider-size-large-vertical-height,
+					$ch5-slider-size-large-vertical-left,
+					$ch5-slider-size-large-vertical-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-large-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: calc($ch5-slider-size-large-vertical-height/2) + 1;
+				}
+			}
+			min-width: $ch5-slider-size-large-vertical-width;
+			&.ch5-advanced-slider-container {
+				max-width: calc($ch5-slider-size-large-vertical-width * 1.2);
+			}
+			padding: calc($ch5-slider-size-large-vertical-height / 2) abs($ch5-slider-size-large-vertical-left);
+		}
+		/* ch5-slider handlesize - x-large */
+		&.ch5-slider--handle-size--x-large {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-x-large-vertical-width,
+					$ch5-slider-size-x-large-vertical-height,
+					$ch5-slider-size-x-large-vertical-left,
+					$ch5-slider-size-x-large-vertical-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-x-large-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: calc($ch5-slider-size-x-large-vertical-height/2) + 1;
+				}
+			}
+			min-width: $ch5-slider-size-x-large-vertical-width;
+			&.ch5-advanced-slider-container {
+				max-width: calc($ch5-slider-size-x-large-vertical-width * 1.2);
+			}
+			padding: calc($ch5-slider-size-x-large-vertical-height / 2) abs($ch5-slider-size-x-large-vertical-left);
+		}
+	}
+
+	&.ch5-slider--orientation--vertical.ch5-slider--shape--circle {
+		/* ch5-slider handleSize - x-small */
+		&.ch5-slider--handle-size--x-small {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-x-small-horizontal-handle-width-circle,
+					$ch5-slider-size-x-small-horizontal-handle-width-circle,
+					$ch5-slider-size-x-small-vertical-circle-left,
+					$ch5-slider-size-x-small-vertical-circle-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-x-small-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: calc($ch5-slider-size-x-small-horizontal-handle-width-circle/2) + 1;
+				}
+			}
+			min-width: $ch5-slider-size-x-small-horizontal-handle-width-circle;
+			&.ch5-advanced-slider-container {
+				max-width: $ch5-slider-size-x-small-horizontal-handle-width-circle;
+			}
+			padding: calc($ch5-slider-size-x-small-horizontal-handle-width-circle / 2)
+				calc(($ch5-slider-size-x-small-horizontal-handle-width-circle - $ch5-slider-target-size) / 2);
+		}
+		/* ch5-slider handleSize - small */
+		&.ch5-slider--handle-size--small {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-small-horizontal-handle-width-circle,
+					$ch5-slider-size-small-horizontal-handle-width-circle,
+					$ch5-slider-size-small-vertical-circle-left,
+					$ch5-slider-size-small-vertical-circle-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-small-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: calc($ch5-slider-size-small-horizontal-handle-width-circle/2) + 1;
+				}
+			}
+			min-width: $ch5-slider-size-small-horizontal-handle-width-circle;
+			&.ch5-advanced-slider-container {
+				max-width: $ch5-slider-size-small-horizontal-handle-width-circle;
+			}
+			padding: calc($ch5-slider-size-small-horizontal-handle-width-circle / 2)
+				calc(($ch5-slider-size-small-horizontal-handle-width-circle - $ch5-slider-target-size) / 2);
+		}
+		/* ch5-slider handleSize - small */
+		&.ch5-slider--handle-size--regular {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-regular-horizontal-handle-width-circle,
+					$ch5-slider-size-regular-horizontal-handle-width-circle,
+					$ch5-slider-size-regular-vertical-circle-left,
+					$ch5-slider-size-regular-vertical-circle-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-regular-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: calc($ch5-slider-size-regular-horizontal-handle-width-circle/2) + 1;
+				}
+			}
+			min-width: $ch5-slider-size-regular-horizontal-handle-width-circle;
+			&.ch5-advanced-slider-container {
+				max-width: $ch5-slider-size-regular-horizontal-handle-width-circle;
+			}
+			padding: calc($ch5-slider-size-regular-horizontal-handle-width-circle / 2)
+				calc(($ch5-slider-size-regular-horizontal-handle-width-circle - $ch5-slider-target-size) / 2);
+		}
+		/* ch5-slider handleSize - large */
+		&.ch5-slider--handle-size--large {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-large-horizontal-handle-width-circle,
+					$ch5-slider-size-large-horizontal-handle-width-circle,
+					$ch5-slider-size-large-vertical-circle-left,
+					$ch5-slider-size-large-vertical-circle-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-large-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: calc($ch5-slider-size-large-horizontal-handle-width-circle/2) + 1;
+				}
+			}
+			min-width: $ch5-slider-size-large-horizontal-handle-width-circle;
+			&.ch5-advanced-slider-container {
+				max-width: $ch5-slider-size-large-horizontal-handle-width-circle;
+			}
+			padding: calc($ch5-slider-size-large-horizontal-handle-width-circle / 2)
+				calc(($ch5-slider-size-large-horizontal-handle-width-circle - $ch5-slider-target-size) / 2);
+		}
+		/* ch5-slider handleSize - x-large */
+		&.ch5-slider--handle-size--x-large {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-x-large-horizontal-handle-width-circle,
+					$ch5-slider-size-x-large-horizontal-handle-width-circle,
+					$ch5-slider-size-x-large-vertical-circle-left,
+					$ch5-slider-size-x-large-vertical-circle-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-x-large-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: calc($ch5-slider-size-x-large-horizontal-handle-width-circle/2) + 1;
+				}
+			}
+			min-width: $ch5-slider-size-x-large-horizontal-handle-width-circle;
+			&.ch5-advanced-slider-container {
+				max-width: $ch5-slider-size-x-large-horizontal-handle-width-circle;
+			}
+			padding: calc($ch5-slider-size-x-large-horizontal-handle-width-circle / 2)
+				calc(($ch5-slider-size-x-large-horizontal-handle-width-circle - $ch5-slider-target-size) / 2);
+		}
+	}
+
+	&.ch5-slider--orientation--vertical.ch5-slider--shape--oval {
+		/* ch5-slider handleSize - x-small */
+		&.ch5-slider--handle-size--x-small {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-x-small-horizontal-handle-width-oval,
+					$ch5-slider-size-x-small-horizontal-handle-width-oval * 2,
+					$ch5-slider-size-x-small-vertical-oval-left,
+					$ch5-slider-size-x-small-vertical-oval-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-x-small-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: $ch5-slider-size-x-small-horizontal-handle-width-oval + 1;
+				}
+			}
+			min-width: $ch5-slider-size-x-small-horizontal-handle-width-oval;
+			&.ch5-advanced-slider-container {
+				max-width: $ch5-slider-size-x-small-horizontal-handle-width-circle;
+			}
+			padding: calc($ch5-slider-size-x-small-horizontal-handle-width-oval) abs($ch5-slider-size-x-small-vertical-left);
+		}
+		/* ch5-slider handleSize - small */
+		&.ch5-slider--handle-size--small {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-small-horizontal-handle-width-oval,
+					$ch5-slider-size-small-horizontal-handle-width-oval * 2,
+					$ch5-slider-size-small-vertical-oval-left,
+					$ch5-slider-size-small-vertical-oval-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-small-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: $ch5-slider-size-small-horizontal-handle-width-oval + 1;
+				}
+			}
+			min-width: $ch5-slider-size-small-horizontal-handle-width-oval;
+			&.ch5-advanced-slider-container {
+				max-width: $ch5-slider-size-small-horizontal-handle-width-circle;
+			}
+			padding: calc($ch5-slider-size-small-horizontal-handle-width-oval) abs($ch5-slider-size-small-vertical-left);
+		}
+		/* ch5-slider handleSize - small */
+		&.ch5-slider--handle-size--regular {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-regular-horizontal-handle-width-oval,
+					$ch5-slider-size-regular-horizontal-handle-width-oval * 2,
+					$ch5-slider-size-regular-vertical-oval-left,
+					$ch5-slider-size-regular-vertical-oval-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-regular-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: $ch5-slider-size-regular-horizontal-handle-width-oval + 1;
+				}
+			}
+			min-width: $ch5-slider-size-regular-horizontal-handle-width-oval;
+			&.ch5-advanced-slider-container {
+				max-width: $ch5-slider-size-regular-horizontal-handle-width-circle;
+			}
+			padding: calc($ch5-slider-size-regular-horizontal-handle-width-oval) abs($ch5-slider-size-regular-vertical-left);
+		}
+		/* ch5-slider handleSize - large */
+		&.ch5-slider--handle-size--large {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-large-horizontal-handle-width-oval,
+					$ch5-slider-size-large-horizontal-handle-width-oval * 2,
+					$ch5-slider-size-large-vertical-oval-left,
+					$ch5-slider-size-large-vertical-oval-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-large-horizontal-handle-width-circle;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: $ch5-slider-size-large-horizontal-handle-width-oval + 1;
+				}
+			}
+			min-width: $ch5-slider-size-large-horizontal-handle-width-oval;
+			&.ch5-advanced-slider-container {
+				max-width: $ch5-slider-size-large-horizontal-handle-width-circle;
+			}
+			padding: calc($ch5-slider-size-large-horizontal-handle-width-oval) abs($ch5-slider-size-large-vertical-left);
+		}
+		/* ch5-slider handleSize - x-large */
+		&.ch5-slider--handle-size--x-large {
+			.noUi-handle {
+				@include handleSizeVertical(
+					$ch5-slider-size-x-large-horizontal-handle-width-oval,
+					$ch5-slider-size-x-large-horizontal-handle-width-oval * 2,
+					$ch5-slider-size-x-large-vertical-oval-left,
+					$ch5-slider-size-x-large-vertical-oval-top
+				);
+			}
+			.cb-btn {
+				width: $ch5-slider-size-x-large-horizontal-handle-height-oval;
+			}
+			&.ch5-advanced-slider-container {
+				.slider-off-button,
+				.noUi-target {
+					margin-top: $ch5-slider-size-x-large-horizontal-handle-height-oval + 1;
+				}
+			}
+			min-width: $ch5-slider-size-x-large-horizontal-handle-height-oval;
+			&.ch5-advanced-slider-container {
+				max-width: $ch5-slider-size-x-large-horizontal-handle-height-oval;
+			}
+			padding: $ch5-slider-size-x-large-horizontal-handle-height-oval abs($ch5-slider-size-x-large-vertical-left);
+		}
+	}
+}

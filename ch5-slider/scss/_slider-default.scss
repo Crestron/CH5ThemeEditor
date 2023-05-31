@@ -13,12 +13,13 @@
 ch5-slider:focus {
   outline: none;
 }
-.ch5-slider:not(.ch5-slider--disabled) .noUi-handle {
-  cursor: pointer;
-}
 ch5-slider {
   position: relative;
   display: inline-block;
+	border: solid 1px;
+}
+.ch5-slider:not(.ch5-slider--disabled) .noUi-handle {
+  cursor: pointer;
 }
 
 .ch5-slider--disabled {
@@ -37,16 +38,14 @@ ch5-slider {
   }
 }
 
-/* ch5-slider - the container */
+/* ch5-slider - container */
 
 /// the class added on the component and wraps all its contents
 .ch5-slider {
   position: relative;
   display: inline-block;
-  // vertical-align: top;
-  // font-size: $ch5-slider-font-size;
-  // font-style: $ch5-slider-font-style;
-  // font-weight: $ch5-slider-font-weight;
+  // display: flex;
+
   &.ch5-hide-dis {
     display: none;
   }
@@ -98,7 +97,7 @@ ch5-slider {
       }
     }
     &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
-      margin-top: 33px;
+      margin-top: 37px;
     }
     &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
       margin-top: 8px;
@@ -131,10 +130,6 @@ ch5-slider {
     }
     &.ch5-slider--tooltip--on {
       margin-left: 2.5em;
-    }
-
-    &.ch5-slider--tooltip--auto {
-      // margin-left: 2.5em;   CH5C -3150
     }
   }
 
