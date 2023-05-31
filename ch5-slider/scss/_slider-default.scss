@@ -90,6 +90,10 @@ ch5-slider {
       .noUi-pips {
         position: relative;
       }
+      .noUi-target {
+        align-self: auto;
+        margin-top: calc($ch5-slider-target-size/2.57);
+      }
     }
     &.ch5-advanced-slider-container {
       .noUi-target {
