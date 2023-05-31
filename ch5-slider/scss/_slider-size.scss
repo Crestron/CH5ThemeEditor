@@ -11,67 +11,36 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-slider {
+
+	.ch5-title-container {
+		text-align: center;
+		.ch5-label {
+			padding: 3px;
+		}
+	}
+
 	/* ===============================================
     ORIENTATION HORIZONTAL 
     ============================================= */
-	&.ch5-slider--orientation--horizontal {
-		.ch5-title-container {
-			text-align: center;
-			.ch5-label {
-				padding: 3px;
-			}
-		}
-	
-		// /// Applied when slider size="x-small"
-		// &.ch5-slider--size--x-small {
-		// 	@include sliderContainerForSliderHandleSize(
-		// 		$ch5-slider-size-x-small,
-		// 		$ch5-slider-size-x-small-horizontal-handle-width,
-		// 		horizontal
-		// 	);
-		// }
-		// /// Applied when slider size="small"
-		// &.ch5-slider--size--small {
-		// 	@include sliderContainerForSliderHandleSize(
-		// 		$ch5-slider-size-small,
-		// 		$ch5-slider-size-small-horizontal-handle-width,
-		// 		horizontal
-		// 	);
-		// }
-		// /// Applied when slider size="regular"
-		// &.ch5-slider--size--regular {
-		// 	@include sliderContainerForSliderHandleSize(
-		// 		$ch5-slider-size-regular,
-		// 		$ch5-slider-size-regular-horizontal-handle-width,
-		// 		horizontal
-		// 	);
-		// }
-		// /// Applied when slider size="large"
-		// &.ch5-slider--size--large {
-		// 	@include sliderContainerForSliderHandleSize(
-		// 		$ch5-slider-size-large,
-		// 		$ch5-slider-size-large-horizontal-handle-width,
-		// 		horizontal
-		// 	);
-		// }
-
-		// /// Applied when slider size="x-large"
-		// &.ch5-slider--size--x-large {
-		// 	@include sliderContainerForSliderHandleSize(
-		// 		$ch5-slider-size-x-large,
-		// 		$ch5-slider-size-x-large-horizontal-handle-width,
-		// 		horizontal
-		// 	);
-		// }
-	}
+	// &.ch5-slider--orientation--horizontal {
+	// 	.ch5-title-container {
+	// 		text-align: center;
+	// 		.ch5-label {
+	// 			padding: 3px;
+	// 		}
+	// 	}
+	// }
 
 	/* ===============================================
     SIZE VERTICAL 
     ============================================= */
 	&.ch5-slider--orientation--vertical {
-		.ch5-title-container {
-			text-align: center;
-		}
+		// .ch5-title-container {
+		// 	text-align: center;
+		// 	.ch5-label {
+		// 		padding: 3px;
+		// 	}
+		// }
 		&.ch5-advanced-slider-container {
 			.ch5-slider-button-container {
 				width: inherit;

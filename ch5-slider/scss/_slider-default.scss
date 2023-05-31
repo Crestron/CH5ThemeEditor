@@ -129,7 +129,7 @@ ch5-slider {
       }
     }
     &.ch5-slider--tooltip--on {
-      margin-left: 2.5em;
+      margin-left: 37px;
     }
   }
 
@@ -192,8 +192,8 @@ ch5-slider {
       height: 100% !important;
     }
     .noUi-target {
-      top: 50%;
-      transform: translateY(-50%);
+      // top: 50%;
+      // transform: translateY(-50%);
     }
   }
 
@@ -214,8 +214,8 @@ ch5-slider {
     }
 
     .noUi-target {
-      top: 50%;
-      transform: translateY(-50%);
+      // top: 50%;
+      // transform: translateY(-50%);
     }
   }
 

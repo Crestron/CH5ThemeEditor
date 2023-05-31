@@ -10,13 +10,6 @@
 /// @group ch5-slider
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// @mixin handleSizeHorizontal($width, $height, $right, $top) {
-// 	width: $width;
-// 	height: $height;
-// 	right: $right;
-// 	top: $top;
-// }
-
 @mixin handleSizeVertical($width, $height, $left, $top) {
 	width: $width;
 	height: $height;
@@ -30,44 +23,6 @@
 	}
 	@return $map;
 }
-// @mixin sliderContainerForSliderSize($slider-size, $handle-size, $orientation) {
-// 	.ch5-slider-button-container {
-// 		@if $orientation == horizontal {
-// 			width: $slider-size + $handle-size;
-// 		}
-// 		@else {
-// 			height: $slider-size + $handle-size;
-// 		}
-// 		display: flex;
-// 		align-items: center;
-// 		// vertical-align: middle;
-// 	}
-// }
-
-// @mixin sliderContainerForSliderHandleSize($slider-size, $handle-size, $orientation) {
-// 	.ch5-slider-button-container {
-// 		@if $orientation == horizontal {
-// 			width: $slider-size + calc($handle-size / 2);
-// 		} @else {
-// 			height: $slider-size + calc($handle-size / 2);
-// 		}
-// 		display: flex;
-// 		align-items: center;
-// 		// vertical-align: middle;
-// 	}
-// 	&.ch5-advanced-slider-container {
-// 		.ch5-slider-button-container {
-// 			@if $orientation == horizontal {
-// 				width: $slider-size + $handle-size;
-// 			} @else {
-// 				height: $slider-size + $handle-size;
-// 			}
-// 			display: flex;
-// 			align-items: center;
-// 			// vertical-align: middle;
-// 		}
-// 	}
-// }
 
 @mixin sliderHandleSizeHorizontal(
 	$handle-width,
