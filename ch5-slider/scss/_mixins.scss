@@ -24,23 +24,76 @@
 	@return $map;
 }
 
-@mixin sliderHandleSizeHorizontal(
-	$handle-width,
-	$handle-height,
-	$button-width,
-	$button-height,
-	$slider-size,
-	$orientation
-) {
+@mixin ch5SliderSetButtonSize($button-width, $button-height) {
+	.cb-btn {
+		width: $button-width;
+		height: $button-height;
+	}
+}
+
+@mixin ch5SliderSetHandleAndSize($handle-width, $handle-height, $slider-size, $orientation) {
+	.noUi-handle {
+		width: $handle-width;
+		height: $handle-height;
+		@if $orientation == horizontal {
+			right: calc(-1 * ($handle-width) / 2);
+			top: calc(-1 * ($handle-height + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2);
+		} @else {
+			left: calc(-1 * ($handle-width + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) - 1;
+			top: calc(-1 * $handle-height / 2);
+		}
+	}
+	&.ch5-advanced-slider-container {
+		.slider-off-button,
+		.noUi-target {
+			@if $orientation == horizontal {
+				margin-right: calc($handle-width / 2) + 1;
+			} @else {
+				margin-top: calc($handle-height / 2) + 1;
+			}
+		}
+		.ch5-slider-button-container {
+			@if $orientation == horizontal {
+				width: $slider-size + $handle-width;
+				min-height: $handle-height;
+			} @else {
+				min-width: $handle-width;
+				height: $slider-size + $handle-height;
+			}
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// vertical-align: middle;
+		}
+		@if $orientation == vertical {
+			max-width: calc($handle-width * 1.2);
+		}
+	}
+	&:not(.ch5-advanced-slider-container) {
+		.ch5-slider-button-container {
+			padding: abs(calc($ch5-slider-target-size - ($handle-height + calc(2 * $ch5-slider-target-border-width)) / 2))
+				calc($handle-width / 2);
+			@if $orientation == horizontal {
+				width: $slider-size + calc($handle-width / 2);
+				min-height: $handle-height;
+			} @else {
+				min-width: $handle-width;
+				height: $slider-size + calc($handle-height / 2);
+			}
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// vertical-align: middle;
+		}
+	}
+}
+
+@mixin ch5SliderSetHandleAndSize1($handle-width, $handle-height, $slider-size, $orientation) {
 	.noUi-handle {
 		width: $handle-width;
 		height: $handle-height;
 		right: calc(-1 * ($handle-width) / 2);
 		top: calc(-1 * ($handle-height + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2);
-	}
-	.cb-btn {
-		width: $button-width;
-		height: $button-height;
 	}
 	&.ch5-advanced-slider-container {
 		.slider-off-button,

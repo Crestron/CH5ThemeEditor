@@ -44,7 +44,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: space-between;
-        // line-height: $ch5-button-content-line-height;
+        line-height: $ch5-button-content-line-height;
         padding: $ch5-button-padding;
         vertical-align: middle;
         padding-top: calc($ch5-button-padding / 2);
@@ -127,13 +127,12 @@
   .ch5-button--icon,
   .ch5-button--img {
     position: relative;
-    width: auto;
     cursor: pointer;
     user-select: none;
   }
   .ch5-button--icon,
   .ch5-button--img {
-    // line-height: $ch5-button-content-line-height;
+    line-height: $ch5-button-content-line-height;
   }
 
   // icon positions

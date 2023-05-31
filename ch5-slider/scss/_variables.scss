@@ -76,42 +76,81 @@ $ch5-slider-size-x-large-horizontal-button-height:  42px !default;
 
 /* == HORIZONTAL: Handle sizes == */
 
-// rounded-rectangle|rectangle
+// rounded-rectangle
 
 // x-small
-/// x-small width in px of the handle when handleShape="rounded-rectangle|rectangle"
-$ch5-slider-size-x-small-horizontal-handle-width:  26px !default;
+/// x-small width in px of the handle when handleShape="rounded-rectangle"
+$ch5-slider-size-x-small-horizontal-handle-width-rounded-rectangle:  26px !default;
 
-/// x-small height in px of the handle when handleShape="rounded-rectangle|rectangle"
-$ch5-slider-size-x-small-horizontal-handle-height:  24px !default;
+/// x-small height in px of the handle when handleShape="rounded-rectangle"
+$ch5-slider-size-x-small-horizontal-handle-height-rounded-rectangle:  24px !default;
 
 // small
-/// small width in px of the handle when handleShape="rounded-rectangle|rectangle"
-$ch5-slider-size-small-horizontal-handle-width:  30px !default;
+/// small width in px of the handle when handleShape="rounded-rectangle"
+$ch5-slider-size-small-horizontal-handle-width-rounded-rectangle:  30px !default;
 
-/// small height in px of the handle when handleShape="rounded-rectangle|rectangle"
-$ch5-slider-size-small-horizontal-handle-height:  26px !default;
+/// small height in px of the handle when handleShape="rounded-rectangle"
+$ch5-slider-size-small-horizontal-handle-height-rounded-rectangle:  26px !default;
 
 // regular
-/// regular width in px of the handle when handleShape="rounded-rectangle|rectangle"
-$ch5-slider-size-regular-horizontal-handle-width:  36px !default;
+/// regular width in px of the handle when handleShape="rounded-rectangle"
+$ch5-slider-size-regular-horizontal-handle-width-rounded-rectangle:  36px !default;
 
-/// regular height in px of the handle when handleShape="rounded-rectangle|rectangle"
-$ch5-slider-size-regular-horizontal-handle-height:  30px !default;
+/// regular height in px of the handle when handleShape="rounded-rectangle"
+$ch5-slider-size-regular-horizontal-handle-height-rounded-rectangle:  30px !default;
 
 // large
-/// large width in px of the handle when handleShape="rounded-rectangle|rectangle"
-$ch5-slider-size-large-horizontal-handle-width:  42px !default;
+/// large width in px of the handle when handleShape="rounded-rectangle"
+$ch5-slider-size-large-horizontal-handle-width-rounded-rectangle:  42px !default;
 
-/// large height in px of the handle when handleShape="rounded-rectangle|rectangle"
-$ch5-slider-size-large-horizontal-handle-height:  34px !default;
+/// large height in px of the handle when handleShape="rounded-rectangle"
+$ch5-slider-size-large-horizontal-handle-height-rounded-rectangle:  34px !default;
 
 // x-large
-/// x-large width in px of the handle when handleShape="rounded-rectangle|rectangle"
-$ch5-slider-size-x-large-horizontal-handle-width:  54px !default;
+/// x-large width in px of the handle when handleShape="rounded-rectangle"
+$ch5-slider-size-x-large-horizontal-handle-width-rounded-rectangle:  54px !default;
 
-/// x-large height in px of the handle when handleShape="rounded-rectangle|rectangle"
-$ch5-slider-size-x-large-horizontal-handle-height:  40px !default;
+/// x-large height in px of the handle when handleShape="rounded-rectangle"
+$ch5-slider-size-x-large-horizontal-handle-height-rounded-rectangle:  40px !default;
+
+
+// rectangle
+
+// x-small
+/// x-small width in px of the handle when handleShape="rectangle"
+$ch5-slider-size-x-small-horizontal-handle-width-rectangle:  26px !default;
+
+/// x-small height in px of the handle when handleShape="rectangle"
+$ch5-slider-size-x-small-horizontal-handle-height-rectangle:  24px !default;
+
+// small
+/// small width in px of the handle when handleShape="rectangle"
+$ch5-slider-size-small-horizontal-handle-width-rectangle:  30px !default;
+
+/// small height in px of the handle when handleShape="rectangle"
+$ch5-slider-size-small-horizontal-handle-height-rectangle:  26px !default;
+
+// regular
+/// regular width in px of the handle when handleShape="rectangle"
+$ch5-slider-size-regular-horizontal-handle-width-rectangle:  36px !default;
+
+/// regular height in px of the handle when handleShape="rectangle"
+$ch5-slider-size-regular-horizontal-handle-height-rectangle:  30px !default;
+
+// large
+/// large width in px of the handle when handleShape="rectangle"
+$ch5-slider-size-large-horizontal-handle-width-rectangle:  42px !default;
+
+/// large height in px of the handle when handleShape="rectangle"
+$ch5-slider-size-large-horizontal-handle-height-rectangle:  34px !default;
+
+// x-large
+/// x-large width in px of the handle when handleShape="rectangle"
+$ch5-slider-size-x-large-horizontal-handle-width-rectangle:  54px !default;
+
+/// x-large height in px of the handle when handleShape="rectangle"
+$ch5-slider-size-x-large-horizontal-handle-height-rectangle:  40px !default;
+
 
 
 // circle
@@ -199,108 +238,108 @@ $ch5-slider-vertical-pips: 115px !default;
 
 /* == HORIZONTAL: Calculations == */
 
-// // rectangle/rounded-rectangle right
-// $ch5-slider-size-x-small-horizontal-right:  calc(-1 * $ch5-slider-size-x-small-horizontal-handle-width / 2) !default;
-// $ch5-slider-size-small-horizontal-right:    calc(-1 * $ch5-slider-size-small-horizontal-handle-width / 2) !default;
-// $ch5-slider-size-regular-horizontal-right:  calc(-1 * $ch5-slider-size-regular-horizontal-handle-width / 2) !default;
-// $ch5-slider-size-large-horizontal-right:    calc(-1 * $ch5-slider-size-large-horizontal-handle-width / 2) !default;
-// $ch5-slider-size-x-large-horizontal-right:  calc(-1 * $ch5-slider-size-x-large-horizontal-handle-width / 2) !default;
+// // // rectangle/rounded-rectangle right
+// // $ch5-slider-size-x-small-horizontal-right:  calc(-1 * $ch5-slider-size-x-small-horizontal-handle-width / 2) !default;
+// // $ch5-slider-size-small-horizontal-right:    calc(-1 * $ch5-slider-size-small-horizontal-handle-width / 2) !default;
+// // $ch5-slider-size-regular-horizontal-right:  calc(-1 * $ch5-slider-size-regular-horizontal-handle-width / 2) !default;
+// // $ch5-slider-size-large-horizontal-right:    calc(-1 * $ch5-slider-size-large-horizontal-handle-width / 2) !default;
+// // $ch5-slider-size-x-large-horizontal-right:  calc(-1 * $ch5-slider-size-x-large-horizontal-handle-width / 2) !default;
 
-// rectangle/rounded-rectangle top
-$ch5-slider-size-x-small-horizontal-top:    calc(-1 * ($ch5-slider-size-x-small-horizontal-handle-height + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
-$ch5-slider-size-small-horizontal-top:      calc(-1 * ($ch5-slider-size-small-horizontal-handle-height + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
-$ch5-slider-size-regular-horizontal-top:    calc(-1 * ($ch5-slider-size-regular-horizontal-handle-height + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
-$ch5-slider-size-large-horizontal-top:      calc(-1 * ($ch5-slider-size-large-horizontal-handle-height + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
-$ch5-slider-size-x-large-horizontal-top:    calc(-1 * ($ch5-slider-size-x-large-horizontal-handle-height + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// // rectangle/rounded-rectangle top
+// // $ch5-slider-size-x-small-horizontal-top:    calc(-1 * ($ch5-slider-size-x-small-horizontal-handle-height-rectangle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// // $ch5-slider-size-small-horizontal-top:      calc(-1 * ($ch5-slider-size-small-horizontal-handle-height-rectangle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// // $ch5-slider-size-regular-horizontal-top:    calc(-1 * ($ch5-slider-size-regular-horizontal-handle-height-rectangle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// // $ch5-slider-size-large-horizontal-top:      calc(-1 * ($ch5-slider-size-large-horizontal-handle-height-rectangle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// // $ch5-slider-size-x-large-horizontal-top:    calc(-1 * ($ch5-slider-size-x-large-horizontal-handle-height-rectangle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
 
-// // circle right
-// $ch5-slider-size-x-small-horizontal-circle-right:  calc(-1 * $ch5-slider-size-x-small-horizontal-handle-height-circle / 2) !default;
-// $ch5-slider-size-small-horizontal-circle-right:    calc(-1 * $ch5-slider-size-small-horizontal-handle-height-circle / 2) !default;
-// $ch5-slider-size-regular-horizontal-circle-right:  calc(-1 * $ch5-slider-size-regular-horizontal-handle-height-circle / 2) !default;
-// $ch5-slider-size-large-horizontal-circle-right:    calc(-1 * $ch5-slider-size-large-horizontal-handle-height-circle / 2) !default;
-// $ch5-slider-size-x-large-horizontal-circle-right:  calc(-1 * $ch5-slider-size-x-large-horizontal-handle-height-circle / 2) !default;
+// // // circle right
+// // $ch5-slider-size-x-small-horizontal-circle-right:  calc(-1 * $ch5-slider-size-x-small-horizontal-handle-height-circle / 2) !default;
+// // $ch5-slider-size-small-horizontal-circle-right:    calc(-1 * $ch5-slider-size-small-horizontal-handle-height-circle / 2) !default;
+// // $ch5-slider-size-regular-horizontal-circle-right:  calc(-1 * $ch5-slider-size-regular-horizontal-handle-height-circle / 2) !default;
+// // $ch5-slider-size-large-horizontal-circle-right:    calc(-1 * $ch5-slider-size-large-horizontal-handle-height-circle / 2) !default;
+// // $ch5-slider-size-x-large-horizontal-circle-right:  calc(-1 * $ch5-slider-size-x-large-horizontal-handle-height-circle / 2) !default;
 
-// circle height top
-$ch5-slider-size-x-small-horizontal-circle-top:    calc(-1 * ($ch5-slider-size-x-small-horizontal-handle-height-circle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
-$ch5-slider-size-small-horizontal-circle-top:      calc(-1 * ($ch5-slider-size-small-horizontal-handle-height-circle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
-$ch5-slider-size-regular-horizontal-circle-top:    calc(-1 * ($ch5-slider-size-regular-horizontal-handle-height-circle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
-$ch5-slider-size-large-horizontal-circle-top:      calc(-1 * ($ch5-slider-size-large-horizontal-handle-height-circle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
-$ch5-slider-size-x-large-horizontal-circle-top:    calc(-1 * ($ch5-slider-size-x-large-horizontal-handle-height-circle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// // circle height top
+// $ch5-slider-size-x-small-horizontal-circle-top:    calc(-1 * ($ch5-slider-size-x-small-horizontal-handle-height-circle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// $ch5-slider-size-small-horizontal-circle-top:      calc(-1 * ($ch5-slider-size-small-horizontal-handle-height-circle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// $ch5-slider-size-regular-horizontal-circle-top:    calc(-1 * ($ch5-slider-size-regular-horizontal-handle-height-circle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// $ch5-slider-size-large-horizontal-circle-top:      calc(-1 * ($ch5-slider-size-large-horizontal-handle-height-circle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// $ch5-slider-size-x-large-horizontal-circle-top:    calc(-1 * ($ch5-slider-size-x-large-horizontal-handle-height-circle + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
 
-// // oval right
-// $ch5-slider-size-x-small-horizontal-oval-right:  calc(-1 * $ch5-slider-size-x-small-horizontal-handle-height-oval) !default;
-// $ch5-slider-size-small-horizontal-oval-right:    calc(-1 * $ch5-slider-size-small-horizontal-handle-height-oval) !default;
-// $ch5-slider-size-regular-horizontal-oval-right:  calc(-1* $ch5-slider-size-regular-horizontal-handle-height-oval) !default;
-// $ch5-slider-size-large-horizontal-oval-right:    calc(-1 * $ch5-slider-size-large-horizontal-handle-height-oval) !default;
-// $ch5-slider-size-x-large-horizontal-oval-right:  calc(-1 * $ch5-slider-size-x-large-horizontal-handle-height-oval) !default;
+// // // oval right
+// // $ch5-slider-size-x-small-horizontal-oval-right:  calc(-1 * $ch5-slider-size-x-small-horizontal-handle-height-oval) !default;
+// // $ch5-slider-size-small-horizontal-oval-right:    calc(-1 * $ch5-slider-size-small-horizontal-handle-height-oval) !default;
+// // $ch5-slider-size-regular-horizontal-oval-right:  calc(-1* $ch5-slider-size-regular-horizontal-handle-height-oval) !default;
+// // $ch5-slider-size-large-horizontal-oval-right:    calc(-1 * $ch5-slider-size-large-horizontal-handle-height-oval) !default;
+// // $ch5-slider-size-x-large-horizontal-oval-right:  calc(-1 * $ch5-slider-size-x-large-horizontal-handle-height-oval) !default;
 
-// oval height top
-$ch5-slider-size-x-small-horizontal-oval-top:     calc(-1 * ($ch5-slider-size-x-small-horizontal-handle-height-oval + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
-$ch5-slider-size-small-horizontal-oval-top:       calc(-1 * ($ch5-slider-size-small-horizontal-handle-height-oval + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
-$ch5-slider-size-regular-horizontal-oval-top:     calc(-1 * ($ch5-slider-size-regular-horizontal-handle-height-oval + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
-$ch5-slider-size-large-horizontal-oval-top:       calc(-1 * ($ch5-slider-size-large-horizontal-handle-height-oval + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
-$ch5-slider-size-x-large-horizontal-oval-top:     calc(-1 * ($ch5-slider-size-x-large-horizontal-handle-height-oval + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// // oval height top
+// $ch5-slider-size-x-small-horizontal-oval-top:     calc(-1 * ($ch5-slider-size-x-small-horizontal-handle-height-oval + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// $ch5-slider-size-small-horizontal-oval-top:       calc(-1 * ($ch5-slider-size-small-horizontal-handle-height-oval + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// $ch5-slider-size-regular-horizontal-oval-top:     calc(-1 * ($ch5-slider-size-regular-horizontal-handle-height-oval + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// $ch5-slider-size-large-horizontal-oval-top:       calc(-1 * ($ch5-slider-size-large-horizontal-handle-height-oval + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
+// $ch5-slider-size-x-large-horizontal-oval-top:     calc(-1 * ($ch5-slider-size-x-large-horizontal-handle-height-oval + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) !default;
 
 
-/* ===============================================
-ORIENTATION VERTICAL
-============================================= */
+// /* ===============================================
+// ORIENTATION VERTICAL
+// ============================================= */
 
-/* ===============================================
-HANDLESIZE VERTICAL
-============================================= */
-// rectangle/rounded-rectangle width
-$ch5-slider-size-x-small-vertical-width:    $ch5-slider-size-x-small-horizontal-handle-height !default;
-$ch5-slider-size-small-vertical-width:      $ch5-slider-size-small-horizontal-handle-height !default;
-$ch5-slider-size-regular-vertical-width:    $ch5-slider-size-regular-horizontal-handle-height !default;
-$ch5-slider-size-large-vertical-width:      $ch5-slider-size-large-horizontal-handle-height !default;
-$ch5-slider-size-x-large-vertical-width:    $ch5-slider-size-x-large-horizontal-handle-height !default;
+// /* ===============================================
+// HANDLESIZE VERTICAL
+// ============================================= */
+// // rectangle/rounded-rectangle width
+// $ch5-slider-size-x-small-vertical-width:    $ch5-slider-size-x-small-horizontal-handle-height-rectangle !default;
+// $ch5-slider-size-small-vertical-width:      $ch5-slider-size-small-horizontal-handle-height-rectangle !default;
+// $ch5-slider-size-regular-vertical-width:    $ch5-slider-size-regular-horizontal-handle-height-rectangle !default;
+// $ch5-slider-size-large-vertical-width:      $ch5-slider-size-large-horizontal-handle-height-rectangle !default;
+// $ch5-slider-size-x-large-vertical-width:    $ch5-slider-size-x-large-horizontal-handle-height-rectangle !default;
 
-// rectangle/rounded-rectangle height
-$ch5-slider-size-x-small-vertical-height:   $ch5-slider-size-x-small-horizontal-handle-width !default;
-$ch5-slider-size-small-vertical-height:     $ch5-slider-size-small-horizontal-handle-width !default;
-$ch5-slider-size-regular-vertical-height:   $ch5-slider-size-regular-horizontal-handle-width !default;
-$ch5-slider-size-large-vertical-height:     $ch5-slider-size-large-horizontal-handle-width !default;
-$ch5-slider-size-x-large-vertical-height:   $ch5-slider-size-x-large-horizontal-handle-width !default;
+// // rectangle/rounded-rectangle height
+// $ch5-slider-size-x-small-vertical-height:   $ch5-slider-size-x-small-horizontal-handle-width-rectangle !default;
+// $ch5-slider-size-small-vertical-height:     $ch5-slider-size-small-horizontal-handle-width-rectangle !default;
+// $ch5-slider-size-regular-vertical-height:   $ch5-slider-size-regular-horizontal-handle-width-rectangle !default;
+// $ch5-slider-size-large-vertical-height:     $ch5-slider-size-large-horizontal-handle-width-rectangle !default;
+// $ch5-slider-size-x-large-vertical-height:   $ch5-slider-size-x-large-horizontal-handle-width-rectangle !default;
 
-// rectangle/rounded-rectangle left
-$ch5-slider-size-x-small-vertical-left:     $ch5-slider-size-x-small-horizontal-top !default;
-$ch5-slider-size-small-vertical-left:       $ch5-slider-size-small-horizontal-top !default;
-$ch5-slider-size-regular-vertical-left:     $ch5-slider-size-regular-horizontal-top !default;
-$ch5-slider-size-large-vertical-left:       $ch5-slider-size-large-horizontal-top !default;
-$ch5-slider-size-x-large-vertical-left:     $ch5-slider-size-x-large-horizontal-top !default;
+// // rectangle/rounded-rectangle left
+// $ch5-slider-size-x-small-vertical-left:     $ch5-slider-size-x-small-horizontal-top !default;
+// $ch5-slider-size-small-vertical-left:       $ch5-slider-size-small-horizontal-top !default;
+// $ch5-slider-size-regular-vertical-left:     $ch5-slider-size-regular-horizontal-top !default;
+// $ch5-slider-size-large-vertical-left:       $ch5-slider-size-large-horizontal-top !default;
+// $ch5-slider-size-x-large-vertical-left:     $ch5-slider-size-x-large-horizontal-top !default;
 
-// rectangle/rounded-rectangle top
-$ch5-slider-size-x-small-vertical-top:      calc(-1 * $ch5-slider-size-x-small-vertical-height / 2) !default;
-$ch5-slider-size-small-vertical-top:        calc(-1 * $ch5-slider-size-small-vertical-height / 2) !default;
-$ch5-slider-size-regular-vertical-top:      calc(-1 * $ch5-slider-size-regular-vertical-height / 2) !default;
-$ch5-slider-size-large-vertical-top:        calc(-1 * $ch5-slider-size-large-vertical-height / 2) !default;
-$ch5-slider-size-x-large-vertical-top:      calc(-1 * $ch5-slider-size-x-large-vertical-height / 2) !default;
+// // rectangle/rounded-rectangle top
+// $ch5-slider-size-x-small-vertical-top:      calc(-1 * $ch5-slider-size-x-small-vertical-height / 2) !default;
+// $ch5-slider-size-small-vertical-top:        calc(-1 * $ch5-slider-size-small-vertical-height / 2) !default;
+// $ch5-slider-size-regular-vertical-top:      calc(-1 * $ch5-slider-size-regular-vertical-height / 2) !default;
+// $ch5-slider-size-large-vertical-top:        calc(-1 * $ch5-slider-size-large-vertical-height / 2) !default;
+// $ch5-slider-size-x-large-vertical-top:      calc(-1 * $ch5-slider-size-x-large-vertical-height / 2) !default;
 
-// circle left
-$ch5-slider-size-x-small-vertical-circle-left:    $ch5-slider-size-x-small-horizontal-circle-top !default;
-$ch5-slider-size-small-vertical-circle-left:      $ch5-slider-size-small-horizontal-circle-top !default;
-$ch5-slider-size-regular-vertical-circle-left:    $ch5-slider-size-regular-horizontal-circle-top !default;
-$ch5-slider-size-large-vertical-circle-left:      $ch5-slider-size-large-horizontal-circle-top !default;
-$ch5-slider-size-x-large-vertical-circle-left:    $ch5-slider-size-x-large-horizontal-circle-top !default;
+// // circle left
+// $ch5-slider-size-x-small-vertical-circle-left:    $ch5-slider-size-x-small-horizontal-circle-top !default;
+// $ch5-slider-size-small-vertical-circle-left:      $ch5-slider-size-small-horizontal-circle-top !default;
+// $ch5-slider-size-regular-vertical-circle-left:    $ch5-slider-size-regular-horizontal-circle-top !default;
+// $ch5-slider-size-large-vertical-circle-left:      $ch5-slider-size-large-horizontal-circle-top !default;
+// $ch5-slider-size-x-large-vertical-circle-left:    $ch5-slider-size-x-large-horizontal-circle-top !default;
 
-// circle top
-$ch5-slider-size-x-small-vertical-circle-top:      calc(-1 * $ch5-slider-size-x-small-horizontal-handle-height-circle / 2) !default;
-$ch5-slider-size-small-vertical-circle-top:        calc(-1 * $ch5-slider-size-small-horizontal-handle-height-circle / 2) !default;
-$ch5-slider-size-regular-vertical-circle-top:      calc(-1 * $ch5-slider-size-regular-horizontal-handle-height-circle / 2) !default;
-$ch5-slider-size-large-vertical-circle-top:        calc(-1 * $ch5-slider-size-large-horizontal-handle-height-circle / 2) !default;
-$ch5-slider-size-x-large-vertical-circle-top:      calc(-1 * $ch5-slider-size-x-large-horizontal-handle-height-circle / 2) !default;
+// // circle top
+// $ch5-slider-size-x-small-vertical-circle-top:      calc(-1 * $ch5-slider-size-x-small-horizontal-handle-height-circle / 2) !default;
+// $ch5-slider-size-small-vertical-circle-top:        calc(-1 * $ch5-slider-size-small-horizontal-handle-height-circle / 2) !default;
+// $ch5-slider-size-regular-vertical-circle-top:      calc(-1 * $ch5-slider-size-regular-horizontal-handle-height-circle / 2) !default;
+// $ch5-slider-size-large-vertical-circle-top:        calc(-1 * $ch5-slider-size-large-horizontal-handle-height-circle / 2) !default;
+// $ch5-slider-size-x-large-vertical-circle-top:      calc(-1 * $ch5-slider-size-x-large-horizontal-handle-height-circle / 2) !default;
 
-// oval left
-$ch5-slider-size-x-small-vertical-oval-left:    $ch5-slider-size-x-small-horizontal-oval-top !default;
-$ch5-slider-size-small-vertical-oval-left:      $ch5-slider-size-small-horizontal-oval-top !default;
-$ch5-slider-size-regular-vertical-oval-left:    $ch5-slider-size-regular-horizontal-oval-top !default;
-$ch5-slider-size-large-vertical-oval-left:      $ch5-slider-size-large-horizontal-oval-top !default;
-$ch5-slider-size-x-large-vertical-oval-left:    $ch5-slider-size-x-large-horizontal-oval-top !default;
+// // oval left
+// $ch5-slider-size-x-small-vertical-oval-left:    $ch5-slider-size-x-small-horizontal-oval-top !default;
+// $ch5-slider-size-small-vertical-oval-left:      $ch5-slider-size-small-horizontal-oval-top !default;
+// $ch5-slider-size-regular-vertical-oval-left:    $ch5-slider-size-regular-horizontal-oval-top !default;
+// $ch5-slider-size-large-vertical-oval-left:      $ch5-slider-size-large-horizontal-oval-top !default;
+// $ch5-slider-size-x-large-vertical-oval-left:    $ch5-slider-size-x-large-horizontal-oval-top !default;
 
-// oval top
-$ch5-slider-size-x-small-vertical-oval-top:      calc(-1 * $ch5-slider-size-x-small-horizontal-handle-height-oval) !default;
-$ch5-slider-size-small-vertical-oval-top:        calc(-1 * $ch5-slider-size-small-horizontal-handle-height-oval) !default;
-$ch5-slider-size-regular-vertical-oval-top:      calc(-1 * $ch5-slider-size-regular-horizontal-handle-height-oval) !default;
-$ch5-slider-size-large-vertical-oval-top:        calc(-1 * $ch5-slider-size-large-horizontal-handle-height-oval) !default;
-$ch5-slider-size-x-large-vertical-oval-top:      calc(-1 * $ch5-slider-size-x-large-horizontal-handle-height-oval) !default;
+// // oval top
+// $ch5-slider-size-x-small-vertical-oval-top:      calc(-1 * $ch5-slider-size-x-small-horizontal-handle-height-oval) !default;
+// $ch5-slider-size-small-vertical-oval-top:        calc(-1 * $ch5-slider-size-small-horizontal-handle-height-oval) !default;
+// $ch5-slider-size-regular-vertical-oval-top:      calc(-1 * $ch5-slider-size-regular-horizontal-handle-height-oval) !default;
+// $ch5-slider-size-large-vertical-oval-top:        calc(-1 * $ch5-slider-size-large-horizontal-handle-height-oval) !default;
+// $ch5-slider-size-x-large-vertical-oval-top:      calc(-1 * $ch5-slider-size-x-large-horizontal-handle-height-oval) !default;
