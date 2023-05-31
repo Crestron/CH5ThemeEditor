@@ -39,7 +39,7 @@
 			right: calc(-1 * ($handle-width) / 2);
 			top: calc(-1 * ($handle-height + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2);
 		} @else {
-			left: calc(-1 * ($handle-width + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2) - 1;
+			left: calc(-1 * ($handle-width + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2);
 			top: calc(-1 * $handle-height / 2);
 		}
 	}
@@ -71,12 +71,14 @@
 	}
 	&:not(.ch5-advanced-slider-container) {
 		.ch5-slider-button-container {
-			padding: abs(calc($ch5-slider-target-size - ($handle-height + calc(2 * $ch5-slider-target-border-width)) / 2))
-				calc($handle-width / 2);
 			@if $orientation == horizontal {
+				padding: abs(calc($ch5-slider-target-size - ($handle-height + calc(2 * $ch5-slider-target-border-width)) / 2))
+					calc($handle-width / 2);
 				width: $slider-size + calc($handle-width / 2);
 				min-height: $handle-height;
 			} @else {
+				padding: calc($handle-height / 2)
+					abs(calc($ch5-slider-target-size - ($handle-width + calc(2 * $ch5-slider-target-border-width)) / 2));
 				min-width: $handle-width;
 				height: $slider-size + calc($handle-height / 2);
 			}
