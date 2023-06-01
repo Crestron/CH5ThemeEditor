@@ -16,7 +16,7 @@ ch5-slider:focus {
 ch5-slider {
   position: relative;
   display: inline-block;
-	border: solid 1px;
+  border: solid 1px;
 }
 .ch5-slider:not(.ch5-slider--disabled) .noUi-handle {
   cursor: pointer;
@@ -43,8 +43,7 @@ ch5-slider {
 /// the class added on the component and wraps all its contents
 .ch5-slider {
   position: relative;
-  display: inline-block;
-  // display: flex;
+  display: block;
 
   &.ch5-hide-dis {
     display: none;
@@ -129,7 +128,7 @@ ch5-slider {
       max-width: inherit !important;
       .noUi-target {
         align-self: auto;
-        margin-left: calc($ch5-slider-target-size/2.57);
+        margin-left: abs(calc($ch5-slider-target-size/2.57));
       }
     }
     &.ch5-slider--tooltip--on {
