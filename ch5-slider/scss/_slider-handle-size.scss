@@ -1,0 +1,190 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-slider
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$shapes: (
+	rectangle: (
+		x-small: (
+			width: $ch5-slider-size-x-small-horizontal-handle-width-rectangle,
+			height: $ch5-slider-size-x-small-horizontal-handle-height-rectangle,
+		),
+		small: (
+			width: $ch5-slider-size-small-horizontal-handle-width-rectangle,
+			height: $ch5-slider-size-small-horizontal-handle-height-rectangle,
+		),
+		regular: (
+			width: $ch5-slider-size-regular-horizontal-handle-width-rectangle,
+			height: $ch5-slider-size-regular-horizontal-handle-height-rectangle,
+		),
+		large: (
+			width: $ch5-slider-size-large-horizontal-handle-width-rectangle,
+			height: $ch5-slider-size-large-horizontal-handle-height-rectangle,
+		),
+		x-large: (
+			width: $ch5-slider-size-x-large-horizontal-handle-width-rectangle,
+			height: $ch5-slider-size-x-large-horizontal-handle-height-rectangle,
+		),
+	),
+	rounded-rectangle: (
+		x-small: (
+			width: $ch5-slider-size-x-small-horizontal-handle-width-rounded-rectangle,
+			height: $ch5-slider-size-x-small-horizontal-handle-height-rounded-rectangle,
+		),
+		small: (
+			width: $ch5-slider-size-small-horizontal-handle-width-rounded-rectangle,
+			height: $ch5-slider-size-small-horizontal-handle-height-rounded-rectangle,
+		),
+		regular: (
+			width: $ch5-slider-size-regular-horizontal-handle-width-rounded-rectangle,
+			height: $ch5-slider-size-regular-horizontal-handle-height-rounded-rectangle,
+		),
+		large: (
+			width: $ch5-slider-size-large-horizontal-handle-width-rounded-rectangle,
+			height: $ch5-slider-size-large-horizontal-handle-height-rounded-rectangle,
+		),
+		x-large: (
+			width: $ch5-slider-size-x-large-horizontal-handle-width-rounded-rectangle,
+			height: $ch5-slider-size-x-large-horizontal-handle-height-rounded-rectangle,
+		),
+	),
+	oval: (
+		x-small: (
+			width: $ch5-slider-size-x-small-horizontal-handle-width-oval,
+			height: $ch5-slider-size-x-small-horizontal-handle-height-oval,
+		),
+		small: (
+			width: $ch5-slider-size-small-horizontal-handle-width-oval,
+			height: $ch5-slider-size-small-horizontal-handle-height-oval,
+		),
+		regular: (
+			width: $ch5-slider-size-regular-horizontal-handle-width-oval,
+			height: $ch5-slider-size-regular-horizontal-handle-height-oval,
+		),
+		large: (
+			width: $ch5-slider-size-large-horizontal-handle-width-oval,
+			height: $ch5-slider-size-large-horizontal-handle-height-oval,
+		),
+		x-large: (
+			width: $ch5-slider-size-x-large-horizontal-handle-width-oval,
+			height: $ch5-slider-size-x-large-horizontal-handle-height-oval,
+		),
+	),
+	circle: (
+		x-small: (
+			width: $ch5-slider-size-x-small-horizontal-handle-width-circle,
+			height: $ch5-slider-size-x-small-horizontal-handle-height-circle,
+		),
+		small: (
+			width: $ch5-slider-size-small-horizontal-handle-width-circle,
+			height: $ch5-slider-size-small-horizontal-handle-height-circle,
+		),
+		regular: (
+			width: $ch5-slider-size-regular-horizontal-handle-width-circle,
+			height: $ch5-slider-size-regular-horizontal-handle-height-circle,
+		),
+		large: (
+			width: $ch5-slider-size-large-horizontal-handle-width-circle,
+			height: $ch5-slider-size-large-horizontal-handle-height-circle,
+		),
+		x-large: (
+			width: $ch5-slider-size-x-large-horizontal-handle-width-circle,
+			height: $ch5-slider-size-x-large-horizontal-handle-height-circle,
+		),
+	),
+);
+
+$handle-sizes: (
+	x-small: (
+		width: $ch5-slider-size-x-small-horizontal-button-width,
+		height: $ch5-slider-size-x-small-horizontal-button-height,
+	),
+	small: (
+		width: $ch5-slider-size-small-horizontal-button-width,
+		height: $ch5-slider-size-small-horizontal-button-height,
+	),
+	regular: (
+		width: $ch5-slider-size-regular-horizontal-button-width,
+		height: $ch5-slider-size-regular-horizontal-button-height,
+	),
+	large: (
+		width: $ch5-slider-size-large-horizontal-button-width,
+		height: $ch5-slider-size-large-horizontal-button-height,
+	),
+	x-large: (
+		width: $ch5-slider-size-x-large-horizontal-button-width,
+		height: $ch5-slider-size-x-large-horizontal-button-height,
+	),
+);
+
+$slider-sizes: (
+	x-small: $ch5-slider-size-x-small,
+	small: $ch5-slider-size-small,
+	regular: $ch5-slider-size-regular,
+	large: $ch5-slider-size-large,
+	x-large: $ch5-slider-size-x-large,
+);
+
+.ch5-slider {
+
+	&.ch5-slider--orientation--horizontal .noUi-target {
+		width: 100% !important;
+	}
+
+	&.ch5-slider--orientation--vertical .noUi-target {
+		height: 100% !important;
+	}
+
+	@each $shape in map-keys($shapes) {
+		&.ch5-slider--orientation--horizontal.ch5-slider--shape--#{$shape} {
+			@each $handle-size in map-keys($handle-sizes) {
+				&.ch5-slider--handle-size--#{$handle-size} {
+					@include ch5SliderSetButtonSize(
+						map-deep-get($handle-sizes, $handle-size, "width"),
+						map-deep-get($handle-sizes, $handle-size, "height")
+					);
+					@each $slider-size in map-keys($slider-sizes) {
+						&.ch5-slider--size--#{$slider-size} {
+							@include ch5SliderSetHandleAndSize(
+								map-deep-get($shapes, $shape, $handle-size, "width"),
+								map-deep-get($shapes, $shape, $handle-size, "height"),
+								map-deep-get($slider-sizes, $slider-size),
+								horizontal
+							);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@each $shape in map-keys($shapes) {
+		&.ch5-slider--orientation--vertical.ch5-slider--shape--#{$shape} {
+			@each $handle-size in map-keys($handle-sizes) {
+				&.ch5-slider--handle-size--#{$handle-size} {
+					@include ch5SliderSetButtonSize(
+						map-deep-get($handle-sizes, $handle-size, "width"),
+						map-deep-get($handle-sizes, $handle-size, "height")
+					);
+					@each $slider-size in map-keys($slider-sizes) {
+						&.ch5-slider--size--#{$slider-size} {
+							@include ch5SliderSetHandleAndSize(
+								map-deep-get($shapes, $shape, $handle-size, "height"),
+								map-deep-get($shapes, $shape, $handle-size, "width"),
+								map-deep-get($slider-sizes, $slider-size),
+								vertical
+							);
+						}
+					}
+				}
+			}
+		}
+	}
+}

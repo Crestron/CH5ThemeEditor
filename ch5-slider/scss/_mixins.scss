@@ -1,0 +1,92 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-slider
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@function map-deep-get($map, $keys...) {
+	@each $key in $keys {
+		$map: map-get($map, $key);
+	}
+	@return $map;
+}
+
+@mixin ch5SliderSetButtonSize($button-width, $button-height) {
+	.cb-btn {
+		width: $button-width;
+		height: $button-height;
+	}
+}
+
+@mixin ch5SliderSetHandleAndSize($handle-width, $handle-height, $slider-size, $orientation) {
+	.noUi-handle {
+		width: $handle-width;
+		height: $handle-height;
+		@if $orientation == horizontal {
+			right: calc(-1 * ($handle-width) / 2);
+			top: calc(-1 * ($handle-height + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2);
+		} @else {
+			left: calc(-1 * ($handle-width + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-target-size) / 2);
+			top: calc(-1 * $handle-height / 2);
+		}
+	}
+	&.ch5-advanced-slider-container {
+		.slider-off-button,
+		.noUi-target {
+			@if $orientation == horizontal {
+				margin-right: calc($handle-width / 2) + 1;
+			} @else {
+				margin-top: calc($handle-height / 2) + 1;
+			}
+		}
+		.ch5-slider-button-container {
+			@if $orientation == horizontal {
+				width: $slider-size + $handle-width;
+				min-height: $handle-height;
+			} @else {
+				min-width: $handle-width;
+				height: $slider-size + $handle-height;
+			}
+			display: flex;
+			align-items: center;
+		}
+		&.ch5-slider--on-off-only-true {
+			.ch5-slider-button-container {
+				@if $orientation == horizontal {
+					width: inherit;
+					min-height: $handle-height;
+				} @else {
+					min-width: $handle-width;
+					height: inherit;
+				}
+			}
+		}
+		@if $orientation == vertical {
+			max-width: calc($handle-height * 1.2);
+		}
+	}
+	&:not(.ch5-advanced-slider-container) {
+		.ch5-slider-button-container {
+			@if $orientation == horizontal {
+				// padding: abs(calc($ch5-slider-target-size - ($handle-height + calc(2 * $ch5-slider-target-border-width)) / 2))
+				// 	calc($handle-width / 2);
+				padding: 4px calc($handle-width / 2);
+				width: $slider-size + calc($handle-width / 2);
+				min-height: $handle-height;
+			} @else {
+				padding: calc($handle-height / 2)
+					abs(calc(($ch5-slider-target-size - ($handle-width + (2 * $ch5-slider-target-border-width))) / 2));
+				min-width: $handle-width;
+				height: $slider-size + calc($handle-height / 2);
+			}
+			display: flex;
+			align-items: center;
+		}
+	}
+}

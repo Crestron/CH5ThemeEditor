@@ -1,21 +1,15 @@
-///////////////////////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
-/// All rights reserved.
-/// No part of this software may be reproduced in any form, machine
-/// or natural, without the express written consent of Crestron Electronics.
-/// Use of this source code is subject to the terms of the Crestron Software License Agreement
-/// under which you licensed this source code.
-///
-/// @author Crestron
-/// @group ch5-slider
-////////////////////////////////////////////////////////////////////////////////////////////////////
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
 
-@import "./scss/mixins-size";
+@import "./scss/mixins";
 @import "./scss/variables";
 
-@import "./scss/slider-size";
-@import "./scss/handle-size";
-@import "./scss/handle-shape";
+@import "./scss/slider-handle-size";
+@import "./scss/slider-handle-shape";
 @import "./scss/slider-button";
 @import "./scss/slider-default";
-@import "./scss/slider_component_reference";
+@import "./scss/slider-component-reference";
