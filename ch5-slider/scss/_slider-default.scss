@@ -127,10 +127,14 @@ ch5-slider {
       max-width: inherit !important;
       .noUi-target {
         align-self: auto;
-        margin-left: abs(calc($ch5-slider-target-size/2.57));
+      }
+      &:not(.ch5-advanced-slider-container) {
+        .noUi-target {
+          margin-left: abs(calc($ch5-slider-target-size/2.57));
+        }  
       }
     }
-    &.ch5-slider--tooltip--on {
+    &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
       margin-left: 37px;
     }
   }
