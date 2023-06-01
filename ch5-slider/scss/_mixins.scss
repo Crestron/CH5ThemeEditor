@@ -37,12 +37,14 @@
 		}
 	}
 	&.ch5-advanced-slider-container {
-		.slider-off-button,
+		// .slider-off-button,
 		.noUi-target {
 			@if $orientation == horizontal {
+				margin-left: calc($handle-width / 2) + 1;
 				margin-right: calc($handle-width / 2) + 1;
 			} @else {
 				margin-top: calc($handle-height / 2) + 1;
+				margin-bottom: calc($handle-height / 2) + 1;
 			}
 		}
 		.ch5-slider-button-container {

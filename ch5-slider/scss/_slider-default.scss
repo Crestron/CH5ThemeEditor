@@ -16,6 +16,7 @@ ch5-slider:focus {
 ch5-slider {
   position: relative;
   display: inline-block;
+  border: solid 1px;
 }
 .ch5-slider:not(.ch5-slider--disabled) .noUi-handle {
   cursor: pointer;
@@ -74,6 +75,12 @@ ch5-slider {
     .noUi-target {
       height: $ch5-slider-target-size;
     }
+    &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
+      padding-top: 40px;
+    }
+    &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
+      padding-top: 8px;
+    }
     &.ch5-slider-ticks {
       .noUi-base {
         height: $ch5-slider-target-size;
@@ -98,12 +105,6 @@ ch5-slider {
         align-self: center;
       }
     }
-    &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
-      padding-top: 37px;
-    }
-    &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
-      padding-top: 8px;
-    }
   }
 
   /// Applied when slider orientation="vertical"
@@ -123,7 +124,9 @@ ch5-slider {
         border-color: $ch5-slider-target-border-color;
         border-width: $ch5-slider-target-border-width;
       }
-      width: $ch5-slider-vertical-pips;
+      .noUi-pips-vertical {
+        width: $ch5-slider-vertical-pips;
+      }
       max-width: inherit !important;
       .noUi-target {
         align-self: auto;
@@ -131,11 +134,14 @@ ch5-slider {
       &:not(.ch5-advanced-slider-container) {
         .noUi-target {
           margin-left: abs(calc($ch5-slider-target-size/2.57));
-        }  
+        }
       }
     }
     &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
-      margin-left: 37px;
+      margin-left: 58px;
+    }
+    &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
+      margin-left: 48px;
     }
   }
 
