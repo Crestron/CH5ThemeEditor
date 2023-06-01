@@ -76,12 +76,16 @@ ch5-slider {
       height: $ch5-slider-target-size;
     }
     &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
-      padding-top: 40px;
+      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) {
+        padding-top: 40px;
+      }
     }
     &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
       padding-top: 8px;
-      .ch5-title-container {
-        min-height: 30px;
+      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) {
+        .ch5-title-container {
+          min-height: 30px;
+        }
       }
     }
     &.ch5-slider-ticks {
