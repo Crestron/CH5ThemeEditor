@@ -80,6 +80,9 @@ ch5-slider {
     }
     &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
       padding-top: 8px;
+      .ch5-title-container {
+        min-height: 30px;
+      }
     }
     &.ch5-slider-ticks {
       .noUi-base {
