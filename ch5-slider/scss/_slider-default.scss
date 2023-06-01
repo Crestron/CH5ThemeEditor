@@ -100,10 +100,10 @@ ch5-slider {
       }
     }
     &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
-      margin-top: 37px;
+      padding-top: 37px;
     }
     &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
-      margin-top: 8px;
+      padding-top: 8px;
     }
   }
 
