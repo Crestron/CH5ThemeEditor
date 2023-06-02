@@ -134,13 +134,33 @@ ch5-slider {
       .noUi-pips-vertical {
         width: $ch5-slider-vertical-pips;
       }
-      max-width: inherit !important;
+      .noUi-pips {
+        position: relative;
+        left: 0;
+      }
+      // max-width: inherit !important;
       .noUi-target {
+        display: flex;
         align-self: auto;
+        width: inherit;
+        // margin-left: calc($ch5-slider-target-size/2.57);
+      }
+      .noUi-connects {
+        width: 18px;
       }
       &:not(.ch5-advanced-slider-container) {
         .noUi-target {
-          margin-left: abs(calc($ch5-slider-target-size/2.57));
+          display: flex;
+          align-self: auto;
+          // width: inherit;
+          // margin-left: abs(calc($ch5-slider-target-size/2.57));
+        }
+      }
+      &.ch5-advanced-slider-container {
+        .noUi-target {
+          display: flex;
+          align-self: auto;
+          width: fit-content;
         }
       }
     }

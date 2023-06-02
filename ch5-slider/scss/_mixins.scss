@@ -36,7 +36,45 @@
 			top: calc(-1 * $handle-height / 2);
 		}
 	}
-	&.ch5-advanced-slider-container {
+	&.ch5-advanced-slider-container.ch5-slider-ticks {
+		// .slider-off-button,
+		.noUi-target {
+			@if $orientation == horizontal {
+				margin-left: calc($handle-width / 2) + 1;
+				margin-right: calc($handle-width / 2) + 1;
+			} @else {
+				margin-top: calc($handle-height / 2) + 1;
+				margin-bottom: calc($handle-height / 2) + 1;
+			}
+		}
+		.ch5-slider-button-container {
+			@if $orientation == horizontal {
+				width: $slider-size + $handle-width;
+				min-height: $handle-height;
+			} @else {
+				min-width: $handle-width;
+				height: $slider-size + $handle-height;
+			}
+			display: flex;
+			align-items: center;
+		}
+		&.ch5-slider--on-off-only-true {
+			.ch5-slider-button-container {
+				@if $orientation == horizontal {
+					width: inherit;
+					min-height: $handle-height;
+				} @else {
+					min-width: $handle-width;
+					height: inherit;
+				}
+			}
+		}
+		@if $orientation == vertical {
+			max-width: calc($handle-height * 1.2) + $ch5-slider-vertical-pips;
+			width: calc($handle-height * 1.2) + $ch5-slider-vertical-pips;
+		}
+	}
+	&.ch5-advanced-slider-container:not(.ch5-slider-ticks) {
 		// .slider-off-button,
 		.noUi-target {
 			@if $orientation == horizontal {
