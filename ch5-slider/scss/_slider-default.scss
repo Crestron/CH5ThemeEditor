@@ -144,9 +144,7 @@ ch5-slider {
         width: inherit;
         // margin-left: calc($ch5-slider-target-size/2.57);
       }
-      .noUi-connects {
-        width: 18px;
-      }
+
       &:not(.ch5-advanced-slider-container) {
         .noUi-target {
           display: flex;
