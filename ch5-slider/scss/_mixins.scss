@@ -116,7 +116,7 @@
 				// padding: abs(calc($ch5-slider-height - ($handle-height + calc(2 * $ch5-slider-target-border-width)) / 2)) calc($handle-width / 2);
 				// padding: 4px calc($handle-width / 2);
 				padding: abs(calc(($ch5-slider-height - $handle-height) / 2)) (calc(($handle-width / 2)) - 1);
-				width: $slider-size; // !important;
+				// -- width: $slider-size; // !important;
 				min-height: $handle-height;
 				// .noUi-target {
 				// 	width: $slider-size !important; // + calc($handle-width / 2);

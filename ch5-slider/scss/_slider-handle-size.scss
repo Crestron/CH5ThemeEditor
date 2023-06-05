@@ -133,27 +133,35 @@ $slider-sizes: (
 );
 
 .ch5-slider {
-
 	&.ch5-slider--orientation--horizontal .noUi-target {
 		width: 100% !important;
 	}
 
 	@each $shape in map-keys($shapes) {
-		&.ch5-slider--orientation--horizontal.ch5-slider--shape--#{$shape} {
-			@each $handle-size in map-keys($handle-sizes) {
-				&.ch5-slider--handle-size--#{$handle-size} {
-					@include ch5SliderSetButtonSize(
-						map-deep-get($handle-sizes, $handle-size, "width"),
-						map-deep-get($handle-sizes, $handle-size, "height")
-					);
-					@each $slider-size in map-keys($slider-sizes) {
-						&.ch5-slider--size--#{$slider-size} {
-							@include ch5SliderSetHandleAndSize(
-								map-deep-get($shapes, $shape, $handle-size, "width"),
-								map-deep-get($shapes, $shape, $handle-size, "height"),
-								map-deep-get($slider-sizes, $slider-size),
-								horizontal
-							);
+		&.ch5-slider--orientation--horizontal {
+			@each $slider-size in map-keys($slider-sizes) {
+				&.ch5-slider--size--#{$slider-size} {
+					.ch5-slider-button-container {
+						width: map-deep-get($slider-sizes, $slider-size); // !important;
+					}
+				}
+			}
+			&.ch5-slider--shape--#{$shape} {
+				@each $handle-size in map-keys($handle-sizes) {
+					&.ch5-slider--handle-size--#{$handle-size} {
+						@include ch5SliderSetButtonSize(
+							map-deep-get($handle-sizes, $handle-size, "width"),
+							map-deep-get($handle-sizes, $handle-size, "height")
+						);
+						@each $slider-size in map-keys($slider-sizes) {
+							&.ch5-slider--size--#{$slider-size} {
+								@include ch5SliderSetHandleAndSize(
+									map-deep-get($shapes, $shape, $handle-size, "width"),
+									map-deep-get($shapes, $shape, $handle-size, "height"),
+									map-deep-get($slider-sizes, $slider-size),
+									horizontal
+								);
+							}
 						}
 					}
 				}
@@ -164,7 +172,7 @@ $slider-sizes: (
 	&.ch5-slider--orientation--vertical .noUi-target {
 		height: 100% !important;
 	}
-	
+
 	@each $shape in map-keys($shapes) {
 		&.ch5-slider--orientation--vertical.ch5-slider--shape--#{$shape} {
 			@each $handle-size in map-keys($handle-sizes) {
