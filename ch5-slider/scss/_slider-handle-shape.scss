@@ -11,12 +11,19 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-slider {
+	&:not(.ch5-advanced-slider-container) {
+		.ch5-title-container {
+			display: none;
+		}
+	}
 
-	.ch5-title-container {
-		text-align: center;
-		// .ch5-label {
-		// 	padding: 3px;
-		// }
+	&.ch5-advanced-slider-container {
+		.ch5-title-container {
+			text-align: center;
+			// .ch5-label {
+			// 	padding: 3px;
+			// }
+		}
 	}
 
 	&.ch5-slider--orientation--vertical {
