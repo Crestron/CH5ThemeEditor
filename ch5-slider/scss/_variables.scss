@@ -40,27 +40,32 @@ $ch5-slider-width-large: 400px !default;
 /// x-large width in px of the slider 
 $ch5-slider-width-x-large: 500px !default;
 
+$ch5-slider-tooltip-on-spacing-vertical-advanced: 60px !default;
+$ch5-slider-tooltip-on-spacing-vertical-normal: 58px !default;
+$ch5-slider-tooltip-on-spacing-horizontal-advanced: 38px !default;
+$ch5-slider-tooltip-on-spacing-horizontal-normal: 38px !default;
+
 /* == HORIZONTAL == */
 
 /* == HORIZONTAL: Button sizes == */
 
 /// x-small width in px of the button for advanced slider
-$ch5-slider-size-x-small-horizontal-button-width:  34px !default;
+$ch5-slider-size-x-small-horizontal-button-width:  24px !default;
 
 /// x-small height in px of the button for advanced slider
-$ch5-slider-size-x-small-horizontal-button-height:  42px !default;
+$ch5-slider-size-x-small-horizontal-button-height:  26px !default;
 
 /// small width in px of the button for advanced slider
-$ch5-slider-size-small-horizontal-button-width:  34px !default;
+$ch5-slider-size-small-horizontal-button-width:  26px !default;
 
 /// small height in px of the button for advanced slider
-$ch5-slider-size-small-horizontal-button-height:  42px !default;
+$ch5-slider-size-small-horizontal-button-height:  30px !default;
 
 /// regular width in px of the button for advanced slider
-$ch5-slider-size-regular-horizontal-button-width:  34px !default;
+$ch5-slider-size-regular-horizontal-button-width:  30px !default;
 
 /// regular height in px of the button for advanced slider
-$ch5-slider-size-regular-horizontal-button-height:  42px !default;
+$ch5-slider-size-regular-horizontal-button-height:  36px !default;
 
 /// large width in px of the button for advanced slider
 $ch5-slider-size-large-horizontal-button-width:  34px !default;
@@ -69,10 +74,10 @@ $ch5-slider-size-large-horizontal-button-width:  34px !default;
 $ch5-slider-size-large-horizontal-button-height:  42px !default;
 
 /// x-large width in px of the button for advanced slider
-$ch5-slider-size-x-large-horizontal-button-width:  34px !default;
+$ch5-slider-size-x-large-horizontal-button-width:  40px !default;
 
 /// x-large height in px of the button for advanced slider
-$ch5-slider-size-x-large-horizontal-button-height:  42px !default;
+$ch5-slider-size-x-large-horizontal-button-height:  54px !default;
 
 /* == HORIZONTAL: Handle sizes == */
 

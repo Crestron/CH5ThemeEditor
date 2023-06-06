@@ -107,7 +107,19 @@
 			}
 		}
 		@if $orientation == vertical {
-			max-width: calc($handle-height * 1.2);
+			.ch5-title-container {
+				max-width: $handle-width; // calc($handle-height * 1.2);
+			}
+			&.ch5-slider--tooltip--on {
+				.ch5-title-container {
+					max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + $handle-width; // calc($handle-height * 1.2);
+				}
+			}
+			&.ch5-slider--stretch--both, &.ch5-slider--stretch--height, &.ch5-slider--stretch--width {
+				.ch5-title-container {
+					max-width: 100%;
+				}	
+			}
 		}
 	}
 	&:not(.ch5-advanced-slider-container) {
@@ -121,13 +133,13 @@
 				// .noUi-target {
 				// 	width: $slider-size !important; // + calc($handle-width / 2);
 				// }
-				// min-height: $handle-height;				
+				// min-height: $handle-height;
 			} @else {
 				// padding: calc($handle-height / 2)
 				// 	abs(calc(($ch5-slider-height - ($handle-width + (2 * $ch5-slider-target-border-width))) / 2));
 				min-width: $handle-width;
-				height: $slider-size; // !important + calc($handle-height / 2);
-				padding: (calc(($handle-height / 2)) - 1) abs(calc(($ch5-slider-height - $handle-width) / 2)) ;
+				// -- height: $slider-size; // !important + calc($handle-height / 2);
+				padding: (calc(($handle-height / 2)) - 1) abs(calc(($ch5-slider-height - $handle-width) / 2));
 				// .noUi-target {
 				// 	height: $slider-size !important; // + calc($handle-width / 2);
 				// }

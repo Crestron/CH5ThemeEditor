@@ -174,21 +174,30 @@ $slider-sizes: (
 	}
 
 	@each $shape in map-keys($shapes) {
-		&.ch5-slider--orientation--vertical.ch5-slider--shape--#{$shape} {
-			@each $handle-size in map-keys($handle-sizes) {
-				&.ch5-slider--handle-size--#{$handle-size} {
-					@include ch5SliderSetButtonSize(
-						map-deep-get($handle-sizes, $handle-size, "width"),
-						map-deep-get($handle-sizes, $handle-size, "height")
-					);
-					@each $slider-size in map-keys($slider-sizes) {
-						&.ch5-slider--size--#{$slider-size} {
-							@include ch5SliderSetHandleAndSize(
-								map-deep-get($shapes, $shape, $handle-size, "height"),
-								map-deep-get($shapes, $shape, $handle-size, "width"),
-								map-deep-get($slider-sizes, $slider-size),
-								vertical
-							);
+		&.ch5-slider--orientation--vertical {
+			@each $slider-size in map-keys($slider-sizes) {
+				&.ch5-slider--size--#{$slider-size} {
+					.ch5-slider-button-container {
+						height: map-deep-get($slider-sizes, $slider-size); // !important;
+					}
+				}
+			}
+			&.ch5-slider--shape--#{$shape} {
+				@each $handle-size in map-keys($handle-sizes) {
+					&.ch5-slider--handle-size--#{$handle-size} {
+						@include ch5SliderSetButtonSize(
+							map-deep-get($handle-sizes, $handle-size, "width"),
+							map-deep-get($handle-sizes, $handle-size, "height")
+						);
+						@each $slider-size in map-keys($slider-sizes) {
+							&.ch5-slider--size--#{$slider-size} {
+								@include ch5SliderSetHandleAndSize(
+									map-deep-get($shapes, $shape, $handle-size, "height"),
+									map-deep-get($shapes, $shape, $handle-size, "width"),
+									map-deep-get($slider-sizes, $slider-size),
+									vertical
+								);
+							}
 						}
 					}
 				}
