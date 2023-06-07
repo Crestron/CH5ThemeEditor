@@ -37,27 +37,22 @@
 		}
 	}
 
+	&.ch5-advanced-slider-container {
+		.ch5-slider-button-container {
+			@if $orientation == vertical {
+				display: flex;
+				flex-direction: column-reverse;
+			}
+		}
+	}
 	&:not(.ch5-advanced-slider-container) {
 		.ch5-slider-button-container {
 			@if $orientation == horizontal {
-				// padding: abs(calc($ch5-slider-height - ($handle-height + calc(2 * $ch5-slider-target-border-width)) / 2)) calc($handle-width / 2);
-				// padding: 4px calc($handle-width / 2);
 				padding: abs(calc(($ch5-slider-height - $handle-height) / 2)) (calc(($handle-width / 2)) - 1);
-				// -- width: $slider-size; // !important;
 				min-height: $handle-height;
-				// .noUi-target {
-				// 	width: $slider-size !important; // + calc($handle-width / 2);
-				// }
-				// min-height: $handle-height;
 			} @else {
-				// padding: calc($handle-height / 2)
-				// 	abs(calc(($ch5-slider-height - ($handle-width + (2 * $ch5-slider-target-border-width))) / 2));
 				min-width: $handle-width;
-				// -- height: $slider-size; // !important + calc($handle-height / 2);
 				padding: (calc(($handle-height / 2)) - 1) abs(calc(($ch5-slider-height - $handle-width) / 2));
-				// .noUi-target {
-				// 	height: $slider-size !important; // + calc($handle-width / 2);
-				// }
 			}
 			display: flex;
 			align-items: center;
@@ -97,11 +92,11 @@
 		}
 		@if $orientation == vertical {
 			.ch5-title-container {
-				max-width: $handle-width; // calc($handle-height * 1.2);
+				max-width: $handle-width;
 			}
 			&.ch5-slider--tooltip--on {
 				.ch5-title-container {
-					max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + $handle-width; // calc($handle-height * 1.2);
+					max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + $handle-width;
 				}
 			}
 			&.ch5-slider--stretch--both,
@@ -123,13 +118,24 @@
 				margin-bottom: calc($handle-height / 2) + 1;
 			}
 		}
+		@if $orientation == horizontal {
+			.noUi-pips-horizontal {
+				top: calc(($handle-height - $ch5-slider-height)) + 4;
+				height: $ch5-slider-horizontal-pips;
+			}
+		} @else {
+			.noUi-pips-vertical {
+				left: calc(($handle-width - $ch5-slider-height)) + 4;
+				width: $ch5-slider-vertical-pips;
+			}
+		}
 		.ch5-slider-button-container {
 			@if $orientation == horizontal {
 				width: $slider-size + $handle-width;
 				min-height: $handle-height;
 				margin-bottom: 40px;
 				.noUi-pips-horizontal {
-					padding: calc(($handle-height - $ch5-slider-height) / 2)+4 0;
+					padding: calc(($handle-height - $ch5-slider-height) / 2) + 4 0;
 				}
 			} @else {
 				min-width: $handle-width;
@@ -137,6 +143,11 @@
 			}
 			display: flex;
 			align-items: center;
+			@if $orientation == horizontal {
+				// align-items: center;
+			} @else {
+				margin-right: 60px;
+			}
 		}
 		&.ch5-slider--on-off-only-true {
 			.ch5-slider-button-container {
@@ -151,11 +162,11 @@
 		}
 		@if $orientation == vertical {
 			.ch5-title-container {
-				max-width: $handle-width; // calc($handle-height * 1.2);
+				max-width: $handle-width;
 			}
 			&.ch5-slider--tooltip--on {
 				.ch5-title-container {
-					max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + $handle-width; // calc($handle-height * 1.2);
+					max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + $handle-width;
 				}
 			}
 			&.ch5-slider--stretch--both,
@@ -172,11 +183,22 @@
 			@if $orientation == horizontal {
 				margin-left: calc($handle-width / 2) + 1;
 				margin-right: calc($handle-width / 2) + 1;
-				// margin-top: calc(($ch5-slider-size-small-horizontal-button-height - $ch5-slider-height) / 2) + 1;
+				// margin-top: calc(($ch5-slider-size-small-button-height - $ch5-slider-height) / 2) + 1;
 			} @else {
 				margin-top: calc($handle-height / 2) + 1;
 				margin-bottom: calc($handle-height / 2) + 1;
-				margin-left: calc(($ch5-slider-size-small-horizontal-button-width - $ch5-slider-height) / 2) + 1;
+				// margin-left: calc(($ch5-slider-size-small-button-width - $ch5-slider-height) / 2) + 1;
+			}
+		}
+		@if $orientation == horizontal {
+			.noUi-pips-horizontal {
+				top: calc(($handle-height - $ch5-slider-height)) + 4;
+				height: $ch5-slider-horizontal-pips;
+			}
+		} @else {
+			.noUi-pips-vertical {
+				left: calc(($handle-width - $ch5-slider-height)) + 4;
+				width: $ch5-slider-vertical-pips;
 			}
 		}
 		.ch5-slider-button-container {
@@ -184,15 +206,19 @@
 				width: $slider-size + $handle-width;
 				min-height: $handle-height;
 				margin-bottom: 40px;
-				.noUi-pips-horizontal {
-					padding: calc(($handle-height - $ch5-slider-height) / 2)+4 0;
-				}
+				// .noUi-pips-horizontal {
+				// 	// padding: calc(($handle-height - $ch5-slider-height) / 2) + 4 0;
+				// }
 			} @else {
 				min-width: $handle-width;
 				height: $slider-size + $handle-height;
 			}
 			display: flex;
 			align-items: center;
+			@if $orientation == horizontal {
+			} @else {
+				margin-right: 60px;
+			}
 		}
 		&.ch5-slider--on-off-only-true {
 			.ch5-slider-button-container {
@@ -207,7 +233,12 @@
 		}
 		@if $orientation == vertical {
 			max-width: calc($handle-height * 1.2) + $ch5-slider-vertical-pips;
-			width: calc($handle-height * 1.2) + $ch5-slider-vertical-pips;
+			// width: calc($handle-height * 1.2) + $ch5-slider-vertical-pips;
+			&.ch5-slider--tooltip--on {
+				max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + +
+					calc($handle-height * 1.2) +
+					$ch5-slider-vertical-pips;
+			}
 		}
 	}
 }
