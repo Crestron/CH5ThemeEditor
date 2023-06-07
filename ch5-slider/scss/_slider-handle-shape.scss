@@ -11,24 +11,18 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-slider {
-	&:not(.ch5-advanced-slider-container) {
-		.ch5-title-container {
-			display: none;
-		}
-	}
 
-	&.ch5-advanced-slider-container {
-		.ch5-title-container {
-			text-align: center;
+	.ch5-slider-ticks {
+		.slider-off-button,
+		.slider-on-button {
+			// height: fit-content;
+			// width: fit-content;
 		}
-	}
-
-	&.ch5-slider--orientation--vertical {
-		&.ch5-advanced-slider-container {
-			.ch5-slider-button-container {
-				// display: flex;
-				// flex-direction: column-reverse;
-			}
+		.noUi-target {
+			border: 0;
+		}
+		.noUi-base {
+			border-radius: 4px;
 		}
 	}
 

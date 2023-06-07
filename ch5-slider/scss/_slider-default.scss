@@ -23,6 +23,7 @@ ch5-slider {
     border: solid 1px red;
   }
 }
+
 .ch5-slider:not(.ch5-slider--disabled) .noUi-handle {
   cursor: pointer;
 }
@@ -271,16 +272,3 @@ html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle .noUi-horizontal .no
   color: $ch5-slider-pips-color;
 }
 
-.ch5-slider-ticks {
-  .slider-off-button,
-  .slider-on-button {
-    height: fit-content;
-    width: fit-content;
-  }
-  .noUi-target {
-    border: 0;
-  }
-  .noUi-base {
-    border-radius: 4px;
-  }
-}

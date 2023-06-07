@@ -37,27 +37,47 @@
 		}
 	}
 
-	&.ch5-advanced-slider-container {
-		.ch5-slider-button-container {
-			@if $orientation == vertical {
-				display: flex;
-				flex-direction: column-reverse;
-			}
+	.ch5-slider-button-container {
+		@if $orientation == horizontal {
+			min-height: $handle-height;
+		} @else {
+			min-width: $handle-width;
+			flex-direction: column-reverse;
 		}
+		display: flex;
+		align-items: center;
 	}
+
 	&:not(.ch5-advanced-slider-container) {
-		.ch5-slider-button-container {
-			@if $orientation == horizontal {
-				padding: abs(calc(($ch5-slider-height - $handle-height) / 2)) (calc(($handle-width / 2)) - 1);
-				min-height: $handle-height;
-			} @else {
-				min-width: $handle-width;
-				padding: (calc(($handle-height / 2)) - 1) abs(calc(($ch5-slider-height - $handle-width) / 2));
-			}
-			display: flex;
-			align-items: center;
+		@if $orientation == horizontal {
+			// padding: abs(calc(($ch5-slider-height - $handle-height) / 2)) (calc(($handle-width / 2)) - 1);
+			padding: 0 (calc(($handle-width / 2)) - 1);
+		} @else {
+			// padding: (calc(($handle-height / 2)) - 1) abs(calc(($ch5-slider-height - $handle-width) / 2));
+			padding: (calc(($handle-height / 2)) - 1) 0;
 		}
 	}
+	// &:not(.ch5-advanced-slider-container) {
+	// 	// .ch5-slider-button-container {
+	// 	// 	@if $orientation == horizontal {
+	// 	// 		padding: abs(calc(($ch5-slider-height - $handle-height) / 2)) (calc(($handle-width / 2)) - 1);
+	// 	// 		min-height: $handle-height;
+	// 	// 	} @else {
+	// 	// 		min-width: $handle-width;
+	// 	// 		padding: (calc(($handle-height / 2)) - 1) abs(calc(($ch5-slider-height - $handle-width) / 2));
+	// 	// 	}
+	// 	// 	display: flex;
+	// 	// 	align-items: center;
+	// 	// }
+	// }
+	// &.ch5-advanced-slider-container {
+	// 	.ch5-slider-button-container {
+	// 		@if $orientation == vertical {
+	// 			display: flex;
+	// 			flex-direction: column-reverse;
+	// 		}
+	// 	}
+	// }
 	&.ch5-advanced-slider-container:not(.ch5-slider-ticks) {
 		.noUi-target {
 			@if $orientation == horizontal {
@@ -71,9 +91,9 @@
 		.ch5-slider-button-container {
 			@if $orientation == horizontal {
 				width: $slider-size + $handle-width;
-				min-height: $handle-height;
+				// min-height: $handle-height;
 			} @else {
-				min-width: $handle-width;
+				// min-width: $handle-width;
 				height: $slider-size + $handle-height;
 			}
 			display: flex;
@@ -82,11 +102,11 @@
 		&.ch5-slider--on-off-only-true {
 			.ch5-slider-button-container {
 				@if $orientation == horizontal {
-					width: inherit;
-					min-height: $handle-height;
+					// width: inherit;
+					min-height: 0; //$handle-height;
 				} @else {
-					min-width: $handle-width;
-					height: inherit;
+					min-width: 0; //$handle-width;
+					// height: inherit;
 				}
 			}
 		}
@@ -131,34 +151,30 @@
 		}
 		.ch5-slider-button-container {
 			@if $orientation == horizontal {
-				width: $slider-size + $handle-width;
-				min-height: $handle-height;
+				// width: $slider-size + $handle-width;
+				// min-height: $handle-height;
 				margin-bottom: 40px;
 				.noUi-pips-horizontal {
 					padding: calc(($handle-height - $ch5-slider-height) / 2) + 4 0;
 				}
 			} @else {
-				min-width: $handle-width;
-				height: $slider-size + $handle-height;
-			}
-			display: flex;
-			align-items: center;
-			@if $orientation == horizontal {
-				// align-items: center;
-			} @else {
+				// min-width: $handle-width;
+				// height: $slider-size + $handle-height;
 				margin-right: 60px;
 			}
+			// display: flex;
+			// align-items: center;
 		}
 		&.ch5-slider--on-off-only-true {
-			.ch5-slider-button-container {
-				@if $orientation == horizontal {
-					width: inherit;
-					min-height: $handle-height;
-				} @else {
-					min-width: $handle-width;
-					height: inherit;
-				}
-			}
+			// .ch5-slider-button-container {
+			// 	@if $orientation == horizontal {
+			// 		width: inherit;
+			// 		min-height: $handle-height;
+			// 	} @else {
+			// 		min-width: $handle-width;
+			// 		height: inherit;
+			// 	}
+			// }
 		}
 		@if $orientation == vertical {
 			.ch5-title-container {
@@ -203,33 +219,27 @@
 		}
 		.ch5-slider-button-container {
 			@if $orientation == horizontal {
-				width: $slider-size + $handle-width;
-				min-height: $handle-height;
+				// width: $slider-size + $handle-width;
+				// min-height: $handle-height;
 				margin-bottom: 40px;
-				// .noUi-pips-horizontal {
-				// 	// padding: calc(($handle-height - $ch5-slider-height) / 2) + 4 0;
-				// }
 			} @else {
-				min-width: $handle-width;
-				height: $slider-size + $handle-height;
-			}
-			display: flex;
-			align-items: center;
-			@if $orientation == horizontal {
-			} @else {
+				// min-width: $handle-width;
+				// height: $slider-size + $handle-height;
 				margin-right: 60px;
 			}
+			// display: flex;
+			// align-items: center;
 		}
 		&.ch5-slider--on-off-only-true {
-			.ch5-slider-button-container {
-				@if $orientation == horizontal {
-					width: inherit;
-					min-height: $handle-height;
-				} @else {
-					min-width: $handle-width;
-					height: inherit;
-				}
-			}
+			// .ch5-slider-button-container {
+			// 	@if $orientation == horizontal {
+			// 		width: inherit;
+			// 		min-height: $handle-height;
+			// 	} @else {
+			// 		min-width: $handle-width;
+			// 		height: inherit;
+			// 	}
+			// }
 		}
 		@if $orientation == vertical {
 			max-width: calc($handle-height * 1.2) + $ch5-slider-vertical-pips;
