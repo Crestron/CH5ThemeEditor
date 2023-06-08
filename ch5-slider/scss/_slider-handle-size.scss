@@ -13,151 +13,177 @@
 $shapes: (
 	rectangle: (
 		x-small: (
-			width: $ch5-slider-size-x-small-horizontal-handle-width-rectangle,
-			height: $ch5-slider-size-x-small-horizontal-handle-height-rectangle,
+			width: $ch5-slider-size-x-small-handle-width-rectangle,
+			height: $ch5-slider-size-x-small-handle-height-rectangle,
 		),
 		small: (
-			width: $ch5-slider-size-small-horizontal-handle-width-rectangle,
-			height: $ch5-slider-size-small-horizontal-handle-height-rectangle,
+			width: $ch5-slider-size-small-handle-width-rectangle,
+			height: $ch5-slider-size-small-handle-height-rectangle,
 		),
 		regular: (
-			width: $ch5-slider-size-regular-horizontal-handle-width-rectangle,
-			height: $ch5-slider-size-regular-horizontal-handle-height-rectangle,
+			width: $ch5-slider-size-regular-handle-width-rectangle,
+			height: $ch5-slider-size-regular-handle-height-rectangle,
 		),
 		large: (
-			width: $ch5-slider-size-large-horizontal-handle-width-rectangle,
-			height: $ch5-slider-size-large-horizontal-handle-height-rectangle,
+			width: $ch5-slider-size-large-handle-width-rectangle,
+			height: $ch5-slider-size-large-handle-height-rectangle,
 		),
 		x-large: (
-			width: $ch5-slider-size-x-large-horizontal-handle-width-rectangle,
-			height: $ch5-slider-size-x-large-horizontal-handle-height-rectangle,
+			width: $ch5-slider-size-x-large-handle-width-rectangle,
+			height: $ch5-slider-size-x-large-handle-height-rectangle,
 		),
 	),
 	rounded-rectangle: (
 		x-small: (
-			width: $ch5-slider-size-x-small-horizontal-handle-width-rounded-rectangle,
-			height: $ch5-slider-size-x-small-horizontal-handle-height-rounded-rectangle,
+			width: $ch5-slider-size-x-small-handle-width-rounded-rectangle,
+			height: $ch5-slider-size-x-small-handle-height-rounded-rectangle,
 		),
 		small: (
-			width: $ch5-slider-size-small-horizontal-handle-width-rounded-rectangle,
-			height: $ch5-slider-size-small-horizontal-handle-height-rounded-rectangle,
+			width: $ch5-slider-size-small-handle-width-rounded-rectangle,
+			height: $ch5-slider-size-small-handle-height-rounded-rectangle,
 		),
 		regular: (
-			width: $ch5-slider-size-regular-horizontal-handle-width-rounded-rectangle,
-			height: $ch5-slider-size-regular-horizontal-handle-height-rounded-rectangle,
+			width: $ch5-slider-size-regular-handle-width-rounded-rectangle,
+			height: $ch5-slider-size-regular-handle-height-rounded-rectangle,
 		),
 		large: (
-			width: $ch5-slider-size-large-horizontal-handle-width-rounded-rectangle,
-			height: $ch5-slider-size-large-horizontal-handle-height-rounded-rectangle,
+			width: $ch5-slider-size-large-handle-width-rounded-rectangle,
+			height: $ch5-slider-size-large-handle-height-rounded-rectangle,
 		),
 		x-large: (
-			width: $ch5-slider-size-x-large-horizontal-handle-width-rounded-rectangle,
-			height: $ch5-slider-size-x-large-horizontal-handle-height-rounded-rectangle,
+			width: $ch5-slider-size-x-large-handle-width-rounded-rectangle,
+			height: $ch5-slider-size-x-large-handle-height-rounded-rectangle,
 		),
 	),
 	oval: (
 		x-small: (
-			width: $ch5-slider-size-x-small-horizontal-handle-width-oval,
-			height: $ch5-slider-size-x-small-horizontal-handle-height-oval,
+			width: $ch5-slider-size-x-small-handle-width-oval,
+			height: $ch5-slider-size-x-small-handle-height-oval,
 		),
 		small: (
-			width: $ch5-slider-size-small-horizontal-handle-width-oval,
-			height: $ch5-slider-size-small-horizontal-handle-height-oval,
+			width: $ch5-slider-size-small-handle-width-oval,
+			height: $ch5-slider-size-small-handle-height-oval,
 		),
 		regular: (
-			width: $ch5-slider-size-regular-horizontal-handle-width-oval,
-			height: $ch5-slider-size-regular-horizontal-handle-height-oval,
+			width: $ch5-slider-size-regular-handle-width-oval,
+			height: $ch5-slider-size-regular-handle-height-oval,
 		),
 		large: (
-			width: $ch5-slider-size-large-horizontal-handle-width-oval,
-			height: $ch5-slider-size-large-horizontal-handle-height-oval,
+			width: $ch5-slider-size-large-handle-width-oval,
+			height: $ch5-slider-size-large-handle-height-oval,
 		),
 		x-large: (
-			width: $ch5-slider-size-x-large-horizontal-handle-width-oval,
-			height: $ch5-slider-size-x-large-horizontal-handle-height-oval,
+			width: $ch5-slider-size-x-large-handle-width-oval,
+			height: $ch5-slider-size-x-large-handle-height-oval,
 		),
 	),
 	circle: (
 		x-small: (
-			width: $ch5-slider-size-x-small-horizontal-handle-width-circle,
-			height: $ch5-slider-size-x-small-horizontal-handle-height-circle,
+			width: $ch5-slider-size-x-small-handle-width-circle,
+			height: $ch5-slider-size-x-small-handle-height-circle,
 		),
 		small: (
-			width: $ch5-slider-size-small-horizontal-handle-width-circle,
-			height: $ch5-slider-size-small-horizontal-handle-height-circle,
+			width: $ch5-slider-size-small-handle-width-circle,
+			height: $ch5-slider-size-small-handle-height-circle,
 		),
 		regular: (
-			width: $ch5-slider-size-regular-horizontal-handle-width-circle,
-			height: $ch5-slider-size-regular-horizontal-handle-height-circle,
+			width: $ch5-slider-size-regular-handle-width-circle,
+			height: $ch5-slider-size-regular-handle-height-circle,
 		),
 		large: (
-			width: $ch5-slider-size-large-horizontal-handle-width-circle,
-			height: $ch5-slider-size-large-horizontal-handle-height-circle,
+			width: $ch5-slider-size-large-handle-width-circle,
+			height: $ch5-slider-size-large-handle-height-circle,
 		),
 		x-large: (
-			width: $ch5-slider-size-x-large-horizontal-handle-width-circle,
-			height: $ch5-slider-size-x-large-horizontal-handle-height-circle,
+			width: $ch5-slider-size-x-large-handle-width-circle,
+			height: $ch5-slider-size-x-large-handle-height-circle,
 		),
 	),
 );
 
 $handle-sizes: (
 	x-small: (
-		width: $ch5-slider-size-x-small-horizontal-button-width,
-		height: $ch5-slider-size-x-small-horizontal-button-height,
+		width: $ch5-slider-size-x-small-button-width,
+		height: $ch5-slider-size-x-small-button-height,
 	),
 	small: (
-		width: $ch5-slider-size-small-horizontal-button-width,
-		height: $ch5-slider-size-small-horizontal-button-height,
+		width: $ch5-slider-size-small-button-width,
+		height: $ch5-slider-size-small-button-height,
 	),
 	regular: (
-		width: $ch5-slider-size-regular-horizontal-button-width,
-		height: $ch5-slider-size-regular-horizontal-button-height,
+		width: $ch5-slider-size-regular-button-width,
+		height: $ch5-slider-size-regular-button-height,
 	),
 	large: (
-		width: $ch5-slider-size-large-horizontal-button-width,
-		height: $ch5-slider-size-large-horizontal-button-height,
+		width: $ch5-slider-size-large-button-width,
+		height: $ch5-slider-size-large-button-height,
 	),
 	x-large: (
-		width: $ch5-slider-size-x-large-horizontal-button-width,
-		height: $ch5-slider-size-x-large-horizontal-button-height,
+		width: $ch5-slider-size-x-large-button-width,
+		height: $ch5-slider-size-x-large-button-height,
 	),
 );
 
 $slider-sizes: (
-	x-small: $ch5-slider-size-x-small,
-	small: $ch5-slider-size-small,
-	regular: $ch5-slider-size-regular,
-	large: $ch5-slider-size-large,
-	x-large: $ch5-slider-size-x-large,
+	x-small: $ch5-slider-width-x-small,
+	small: $ch5-slider-width-small,
+	regular: $ch5-slider-width-regular,
+	large: $ch5-slider-width-large,
+	x-large: $ch5-slider-width-x-large,
 );
 
 .ch5-slider {
+
+	&:not(.ch5-advanced-slider-container) {
+		.ch5-title-container {
+			display: none;
+		}
+	}
+
+	&.ch5-advanced-slider-container {
+		.ch5-title-container {
+			text-align: center;
+		}
+	}
+
+	// &.ch5-slider--orientation--vertical {
+	// 	&.ch5-advanced-slider-container {
+	// 		.ch5-slider-button-container {
+	// 			// display: flex;
+	// 			// flex-direction: column-reverse;
+	// 		}
+	// 	}
+	// }
 
 	&.ch5-slider--orientation--horizontal .noUi-target {
 		width: 100% !important;
 	}
 
-	&.ch5-slider--orientation--vertical .noUi-target {
-		height: 100% !important;
-	}
-
 	@each $shape in map-keys($shapes) {
-		&.ch5-slider--orientation--horizontal.ch5-slider--shape--#{$shape} {
-			@each $handle-size in map-keys($handle-sizes) {
-				&.ch5-slider--handle-size--#{$handle-size} {
-					@include ch5SliderSetButtonSize(
-						map-deep-get($handle-sizes, $handle-size, "width"),
-						map-deep-get($handle-sizes, $handle-size, "height")
-					);
-					@each $slider-size in map-keys($slider-sizes) {
-						&.ch5-slider--size--#{$slider-size} {
-							@include ch5SliderSetHandleAndSize(
-								map-deep-get($shapes, $shape, $handle-size, "width"),
-								map-deep-get($shapes, $shape, $handle-size, "height"),
-								map-deep-get($slider-sizes, $slider-size),
-								horizontal
-							);
+		&.ch5-slider--orientation--horizontal {
+			@each $slider-size in map-keys($slider-sizes) {
+				&.ch5-slider--size--#{$slider-size} {
+					.ch5-slider-button-container {
+						width: map-deep-get($slider-sizes, $slider-size);
+					}
+				}
+			}
+			&.ch5-slider--shape--#{$shape} {
+				@each $handle-size in map-keys($handle-sizes) {
+					&.ch5-slider--handle-size--#{$handle-size} {
+						@include ch5SliderSetButtonSize(
+							map-deep-get($handle-sizes, $handle-size, "width"),
+							map-deep-get($handle-sizes, $handle-size, "height")
+						);
+						@each $slider-size in map-keys($slider-sizes) {
+							&.ch5-slider--size--#{$slider-size} {
+								@include ch5SliderSetHandleAndSize(
+									map-deep-get($shapes, $shape, $handle-size, "width"),
+									map-deep-get($shapes, $shape, $handle-size, "height"),
+									map-deep-get($slider-sizes, $slider-size),
+									horizontal
+								);
+							}
 						}
 					}
 				}
@@ -165,22 +191,35 @@ $slider-sizes: (
 		}
 	}
 
+	&.ch5-slider--orientation--vertical .noUi-target {
+		height: 100% !important;
+	}
+
 	@each $shape in map-keys($shapes) {
-		&.ch5-slider--orientation--vertical.ch5-slider--shape--#{$shape} {
-			@each $handle-size in map-keys($handle-sizes) {
-				&.ch5-slider--handle-size--#{$handle-size} {
-					@include ch5SliderSetButtonSize(
-						map-deep-get($handle-sizes, $handle-size, "width"),
-						map-deep-get($handle-sizes, $handle-size, "height")
-					);
-					@each $slider-size in map-keys($slider-sizes) {
-						&.ch5-slider--size--#{$slider-size} {
-							@include ch5SliderSetHandleAndSize(
-								map-deep-get($shapes, $shape, $handle-size, "height"),
-								map-deep-get($shapes, $shape, $handle-size, "width"),
-								map-deep-get($slider-sizes, $slider-size),
-								vertical
-							);
+		&.ch5-slider--orientation--vertical {
+			@each $slider-size in map-keys($slider-sizes) {
+				&.ch5-slider--size--#{$slider-size} {
+					.ch5-slider-button-container {
+						height: map-deep-get($slider-sizes, $slider-size); 
+					}
+				}
+			}
+			&.ch5-slider--shape--#{$shape} {
+				@each $handle-size in map-keys($handle-sizes) {
+					&.ch5-slider--handle-size--#{$handle-size} {
+						@include ch5SliderSetButtonSize(
+							map-deep-get($handle-sizes, $handle-size, "width"),
+							map-deep-get($handle-sizes, $handle-size, "height")
+						);
+						@each $slider-size in map-keys($slider-sizes) {
+							&.ch5-slider--size--#{$slider-size} {
+								@include ch5SliderSetHandleAndSize(
+									map-deep-get($shapes, $shape, $handle-size, "height"),
+									map-deep-get($shapes, $shape, $handle-size, "width"),
+									map-deep-get($slider-sizes, $slider-size),
+									vertical
+								);
+							}
 						}
 					}
 				}

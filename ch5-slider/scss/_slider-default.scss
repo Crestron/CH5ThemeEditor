@@ -10,13 +10,20 @@
 /// @group ch5-slider
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// Assumption: Slider highlighted area height is fixed and cannot be changed. If changed, the issue will be with the handle height
+
 ch5-slider:focus {
   outline: none;
 }
 ch5-slider {
   position: relative;
   display: inline-block;
+  border: solid 1px blue;
+  > div {
+    border: solid 1px red;
+  }
 }
+
 .ch5-slider:not(.ch5-slider--disabled) .noUi-handle {
   cursor: pointer;
 }
@@ -72,43 +79,32 @@ ch5-slider {
   /// Applied when slider orientation="horizontal"
   &.ch5-slider--orientation--horizontal {
     .noUi-target {
-      height: $ch5-slider-target-size;
+      height: $ch5-slider-height;
     }
     &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
-      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) {
-        padding-top: 40px;
+      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
+        margin-top: $ch5-slider-tooltip-on-spacing-horizontal-normal;
       }
     }
     &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
-      padding-top: 8px;
-      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) {
-        .ch5-title-container {
-          min-height: 30px;
-        }
+      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
+        margin-top: $ch5-slider-tooltip-on-spacing-horizontal-advanced;
+        min-height: 30px;
       }
     }
     &.ch5-slider-ticks {
       .noUi-base {
-        height: $ch5-slider-target-size;
+        height: $ch5-slider-height;
         border-style: $ch5-slider-target-border-style;
         border-color: $ch5-slider-target-border-color;
         border-width: $ch5-slider-target-border-width;
       }
       .noUi-pips-horizontal {
-        top: 0;
-        height: $ch5-slider-horizontal-pips;
+        // top: calc(($handle-height - $ch5-slider-height) / 2) + 4;
+        // height: $ch5-slider-horizontal-pips;
       }
       .noUi-pips {
-        position: relative;
-      }
-      .noUi-target {
-        align-self: auto;
-        // margin-top: calc($ch5-slider-target-size/2.57);
-      }
-    }
-    &.ch5-advanced-slider-container {
-      .noUi-target {
-        align-self: center;
+        // position: relative;
       }
     }
   }
@@ -116,56 +112,52 @@ ch5-slider {
   /// Applied when slider orientation="vertical"
   &.ch5-slider--orientation--vertical {
     .noUi-target {
-      width: $ch5-slider-target-size;
-    }
-    &.ch5-advanced-slider-container {
-      .noUi-target {
-        align-self: center;
-      }
+      width: $ch5-slider-height;
     }
     &.ch5-slider-ticks {
       .noUi-base {
-        width: $ch5-slider-target-size;
+        width: $ch5-slider-height;
         border-style: $ch5-slider-target-border-style;
         border-color: $ch5-slider-target-border-color;
         border-width: $ch5-slider-target-border-width;
       }
       .noUi-pips-vertical {
-        width: $ch5-slider-vertical-pips;
+        // width: $ch5-slider-vertical-pips;
       }
       .noUi-pips {
-        position: relative;
-        left: 0;
+        // position: relative;
+        // left: 0;
       }
-      // max-width: inherit !important;
       .noUi-target {
         display: flex;
-        align-self: auto;
-        width: inherit;
-        // margin-left: calc($ch5-slider-target-size/2.57);
+        // align-self: auto;
+        // width: inherit;
       }
-
       &:not(.ch5-advanced-slider-container) {
         .noUi-target {
           display: flex;
-          align-self: auto;
-          // width: inherit;
-          // margin-left: abs(calc($ch5-slider-target-size/2.57));
+          // align-self: auto;
         }
       }
       &.ch5-advanced-slider-container {
         .noUi-target {
           display: flex;
-          align-self: auto;
-          width: fit-content;
+          // align-self: auto;
+          // width: fit-content;
         }
       }
     }
     &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
-      margin-left: 58px;
+      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(.ch5-slider--stretch--height)
+        .ch5-slider-button-container {
+        margin-left: $ch5-slider-tooltip-on-spacing-vertical-normal;
+      }
     }
     &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
-      margin-left: 48px;
+      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(.ch5-slider--stretch--height)
+        .ch5-slider-button-container {
+        margin-left: $ch5-slider-tooltip-on-spacing-vertical-advanced;
+      }
     }
   }
 
@@ -224,59 +216,30 @@ ch5-slider {
     .ch5-slider-button-container {
       height: 100% !important;
     }
-    .noUi-target {
-      // top: 50%;
-      // transform: translateY(-50%);
-    }
   }
 
   &.ch5-slider--stretch--width.ch5-slider--orientation--vertical:not(.ch5-advanced-slider-container) {
-    .ch5-slider-button-container {
+ .ch5-slider-button-container {
       width: 100% !important;
-    }
-    .noUi-target {
-      left: 50%;
-      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
     }
   }
 
   &.ch5-slider--stretch--both.ch5-slider--orientation--horizontal:not(.ch5-advanced-slider-container) {
-    .ch5-slider-button-container {
+ .ch5-slider-button-container {
       width: 100% !important;
       height: 100% !important;
-    }
-
-    .noUi-target {
-      // top: 50%;
-      // transform: translateY(-50%);
     }
   }
 
   &.ch5-slider--stretch--both.ch5-slider--orientation--vertical:not(.ch5-advanced-slider-container) {
-    .ch5-slider-button-container {
+ .ch5-slider-button-container {
       height: 100% !important;
       width: 100% !important;
+      display: flex;
+      justify-content: center;
     }
-    .noUi-target {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-}
-
-.ch5-advanced-slider-container.ch5-slider--stretch--both,
-.ch5-advanced-slider-container.ch5-slider--stretch--height,
-.ch5-advanced-slider-container.ch5-slider--stretch--width {
-  .slider-off-button,
-  .slider-on-button {
-    align-self: center;
-  }
-}
-
-.ch5-slider--orientation--vertical {
-  &.ch5-advanced-slider-container.ch5-slider--stretch--both,
-  &.ch5-advanced-slider-container.ch5-slider--stretch--width {
-    max-width: inherit !important;
   }
 }
 
@@ -309,17 +272,3 @@ html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle .noUi-horizontal .no
   color: $ch5-slider-pips-color;
 }
 
-.ch5-slider-ticks {
-  .slider-off-button,
-  .slider-on-button {
-    height: fit-content;
-    width: fit-content;
-  }
-  .noUi-target {
-    height: 100% !important;
-    border: 0;
-  }
-  .noUi-base {
-    border-radius: 4px;
-  }
-}

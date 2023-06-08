@@ -12,20 +12,17 @@
 
 .ch5-slider {
 
-	.ch5-title-container {
-		text-align: center;
-		// .ch5-label {
-		// 	padding: 3px;
-		// }
-	}
-
-	&.ch5-slider--orientation--vertical {
-		&.ch5-advanced-slider-container {
-			.ch5-slider-button-container {
-				width: inherit;
-				display: flex;
-				flex-direction: column-reverse;
-			}
+	.ch5-slider-ticks {
+		.slider-off-button,
+		.slider-on-button {
+			// height: fit-content;
+			// width: fit-content;
+		}
+		.noUi-target {
+			border: 0;
+		}
+		.noUi-base {
+			border-radius: 4px;
 		}
 	}
 
