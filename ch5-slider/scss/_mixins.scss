@@ -39,45 +39,57 @@
 
 	.ch5-slider-button-container {
 		@if $orientation == horizontal {
-			min-height: $handle-height;
+			// min-height: $handle-height;
 		} @else {
-			min-width: $handle-width;
+			// min-width: $handle-width;
 			flex-direction: column-reverse;
 		}
 		display: flex;
 		align-items: center;
 	}
 
-	&:not(.ch5-advanced-slider-container) {
-		@if $orientation == horizontal {
-			// padding: abs(calc(($ch5-slider-height - $handle-height) / 2)) (calc(($handle-width / 2)) - 1);
-			padding: 0 (calc(($handle-width / 2)) - 1);
-		} @else {
-			// padding: (calc(($handle-height / 2)) - 1) abs(calc(($ch5-slider-height - $handle-width) / 2));
-			padding: (calc(($handle-height / 2)) - 1) 0;
+	@if $orientation == horizontal {
+		&.ch5-slider--stretch--both,
+		&.ch5-slider--stretch--width {
+			.ch5-title-container {
+				max-width: 100% !important;
+			}
+		}
+	} @else {
+		&.ch5-slider--stretch--both,
+		&.ch5-slider--stretch--height {
+			.ch5-title-container {
+				max-width: 100% !important;
+			}
 		}
 	}
-	// &:not(.ch5-advanced-slider-container) {
-	// 	// .ch5-slider-button-container {
-	// 	// 	@if $orientation == horizontal {
-	// 	// 		padding: abs(calc(($ch5-slider-height - $handle-height) / 2)) (calc(($handle-width / 2)) - 1);
-	// 	// 		min-height: $handle-height;
-	// 	// 	} @else {
-	// 	// 		min-width: $handle-width;
-	// 	// 		padding: (calc(($handle-height / 2)) - 1) abs(calc(($ch5-slider-height - $handle-width) / 2));
-	// 	// 	}
-	// 	// 	display: flex;
-	// 	// 	align-items: center;
-	// 	// }
-	// }
-	// &.ch5-advanced-slider-container {
-	// 	.ch5-slider-button-container {
-	// 		@if $orientation == vertical {
-	// 			display: flex;
-	// 			flex-direction: column-reverse;
-	// 		}
-	// 	}
-	// }
+
+	&:not(.ch5-advanced-slider-container) {
+		.ch5-slider-button-container {
+			@if $orientation == horizontal {
+				padding: abs(calc(($ch5-slider-height - $handle-height) / 2)) (calc(($handle-width / 2)) - 1);
+			} @else {
+				padding: (calc(($handle-height / 2)) - 1) abs(calc(($ch5-slider-height - $handle-width) / 2));
+			}
+		}
+	}
+	&.ch5-advanced-slider-container {
+		.ch5-title-container {
+			@if $orientation == horizontal {
+				max-width: $slider-size + $handle-width;
+			} @else {
+				max-width: $handle-width;
+			}
+		}
+		.ch5-slider-button-container {
+			@if $orientation == horizontal {
+				padding: abs(calc(($ch5-slider-height - $handle-height) / 2)) 0;
+			} @else {
+				padding: 0 abs(calc(($ch5-slider-height - $handle-width) / 2));
+			}
+		}
+	}
+
 	&.ch5-advanced-slider-container:not(.ch5-slider-ticks) {
 		.noUi-target {
 			@if $orientation == horizontal {
@@ -103,9 +115,9 @@
 			.ch5-slider-button-container {
 				@if $orientation == horizontal {
 					// width: inherit;
-					min-height: 0; //$handle-height;
+					// min-height: 0; //$handle-height;
 				} @else {
-					min-width: 0; //$handle-width;
+					// min-width: 0; //$handle-width;
 					// height: inherit;
 				}
 			}
@@ -149,6 +161,26 @@
 				width: $ch5-slider-vertical-pips;
 			}
 		}
+		&.ch5-slider--tooltip--on {
+			@if $orientation == vertical {
+				&.ch5-slider--stretch--both,
+				&.ch5-slider--stretch--width,
+				&.ch5-slider--stretch--height {
+					.ch5-slider-button-container {
+						min-width: $ch5-slider-tooltip-on-spacing-vertical-normal + 60px + $handle-width;
+						margin-left: 0;
+						margin-right: 0;
+					}
+				}
+			}
+			.ch5-slider-button-container {
+				@if $orientation == horizontal {
+					// max-width: $slider-size + $handle-width;
+				} @else {
+					// margin-left: 60px;
+				}
+			}
+		}
 		.ch5-slider-button-container {
 			@if $orientation == horizontal {
 				// width: $slider-size + $handle-width;
@@ -185,16 +217,18 @@
 					max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + $handle-width;
 				}
 			}
-			&.ch5-slider--stretch--both,
-			&.ch5-slider--stretch--height,
-			&.ch5-slider--stretch--width {
-				.ch5-title-container {
-					max-width: 100%;
-				}
-			}
 		}
 	}
 	&.ch5-advanced-slider-container.ch5-slider-ticks {
+		&.ch5-slider--tooltip--on {
+			.ch5-title-container {
+				@if $orientation == horizontal {
+					// max-width: $slider-size + $handle-width;
+				} @else {
+					max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + $handle-width + 60px;
+				}
+			}
+		}
 		.noUi-target {
 			@if $orientation == horizontal {
 				margin-left: calc($handle-width / 2) + 1;
@@ -242,12 +276,14 @@
 			// }
 		}
 		@if $orientation == vertical {
-			max-width: calc($handle-height * 1.2) + $ch5-slider-vertical-pips;
-			// width: calc($handle-height * 1.2) + $ch5-slider-vertical-pips;
-			&.ch5-slider--tooltip--on {
-				max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + +
-					calc($handle-height * 1.2) +
-					$ch5-slider-vertical-pips;
+			&:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(.ch5-slider--stretch--height) {
+				max-width: calc($handle-height * 1.2) + $ch5-slider-vertical-pips;
+				// width: calc($handle-height * 1.2) + $ch5-slider-vertical-pips;
+				&.ch5-slider--tooltip--on {
+					max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced +
+						calc($handle-height * 1.2) +
+						$ch5-slider-vertical-pips;
+				}
 			}
 		}
 	}
