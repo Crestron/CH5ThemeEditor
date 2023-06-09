@@ -62,10 +62,6 @@ ch5-slider {
     outline: none;
   }
 
-  .noUi-target {
-    display: inline-block;
-  }
-
   &.nohandle .noUi-handle {
     visibility: hidden;
   }
@@ -74,91 +70,6 @@ ch5-slider {
     content: none !important;
     height: 0% !important;
     width: 0% !important;
-  }
-
-  /// Applied when slider orientation="horizontal"
-  &.ch5-slider--orientation--horizontal {
-    .noUi-target {
-      height: $ch5-slider-height;
-    }
-    &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
-      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
-        margin-top: $ch5-slider-tooltip-on-spacing-horizontal-normal;
-      }
-    }
-    &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
-      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
-        margin-top: $ch5-slider-tooltip-on-spacing-horizontal-advanced;
-        min-height: 30px;
-      }
-    }
-    &.ch5-slider-ticks {
-      .noUi-base {
-        height: $ch5-slider-height;
-        border-style: $ch5-slider-target-border-style;
-        border-color: $ch5-slider-target-border-color;
-        border-width: $ch5-slider-target-border-width;
-      }
-      .noUi-pips-horizontal {
-        // top: calc(($handle-height - $ch5-slider-height) / 2) + 4;
-        // height: $ch5-slider-horizontal-pips;
-      }
-      .noUi-pips {
-        // position: relative;
-      }
-    }
-  }
-
-  /// Applied when slider orientation="vertical"
-  &.ch5-slider--orientation--vertical {
-    .noUi-target {
-      width: $ch5-slider-height;
-    }
-    &.ch5-slider-ticks {
-      .noUi-base {
-        width: $ch5-slider-height;
-        border-style: $ch5-slider-target-border-style;
-        border-color: $ch5-slider-target-border-color;
-        border-width: $ch5-slider-target-border-width;
-      }
-      .noUi-pips-vertical {
-        // width: $ch5-slider-vertical-pips;
-      }
-      .noUi-pips {
-        // position: relative;
-        // left: 0;
-      }
-      .noUi-target {
-        display: flex;
-        // align-self: auto;
-        // width: inherit;
-      }
-      &:not(.ch5-advanced-slider-container) {
-        .noUi-target {
-          display: flex;
-          // align-self: auto;
-        }
-      }
-      &.ch5-advanced-slider-container {
-        .noUi-target {
-          display: flex;
-          // align-self: auto;
-          // width: fit-content;
-        }
-      }
-    }
-    &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
-      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(.ch5-slider--stretch--height)
-        .ch5-slider-button-container {
-        margin-left: $ch5-slider-tooltip-on-spacing-vertical-normal;
-      }
-    }
-    &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
-      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(.ch5-slider--stretch--height)
-        .ch5-slider-button-container {
-        margin-left: $ch5-slider-tooltip-on-spacing-vertical-advanced;
-      }
-    }
   }
 
   &.ch5-slider--disabled {
@@ -175,6 +86,7 @@ ch5-slider {
   }
 
   .noUi-target {
+    display: inline-block;
     background: transparent;
     border-style: $ch5-slider-target-border-style;
     border-color: $ch5-slider-target-border-color;
@@ -195,6 +107,59 @@ ch5-slider {
     border-width: $ch5-slider-handle-border-width;
     background: $ch5-slider-handle-bg;
     box-shadow: none;
+  }
+
+  .ch5-slider-ticks {
+    .noUi-base {
+      border-style: $ch5-slider-target-border-style;
+      border-color: $ch5-slider-target-border-color;
+      border-width: $ch5-slider-target-border-width;
+    }
+  }
+  /// Applied when slider orientation="horizontal"
+  &.ch5-slider--orientation--horizontal {
+    .noUi-target {
+      height: $ch5-slider-height;
+    }
+    
+    &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
+      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
+        margin-top: $ch5-slider-tooltip-on-spacing-horizontal-advanced;
+        min-height: 30px;
+      }
+    }
+    &.ch5-slider-ticks {
+      .noUi-base {
+        height: $ch5-slider-height;
+      }
+    }
+  }
+
+  /// Applied when slider orientation="vertical"
+  &.ch5-slider--orientation--vertical {
+    .noUi-target {
+      width: $ch5-slider-height;
+    }
+    &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
+      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(.ch5-slider--stretch--height)
+        .ch5-slider-button-container {
+        margin-left: $ch5-slider-tooltip-on-spacing-vertical-normal;
+      }
+    }
+    &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
+      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(.ch5-slider--stretch--height)
+        .ch5-slider-button-container {
+        margin-left: $ch5-slider-tooltip-on-spacing-vertical-advanced;
+      }
+    }
+    &.ch5-slider-ticks {
+      .noUi-base {
+        width: $ch5-slider-height;
+      }
+      // .noUi-target {
+      //   display: flex;
+      // }
+    }
   }
 
   /* ===============================================
@@ -219,7 +184,7 @@ ch5-slider {
   }
 
   &.ch5-slider--stretch--width.ch5-slider--orientation--vertical:not(.ch5-advanced-slider-container) {
- .ch5-slider-button-container {
+    .ch5-slider-button-container {
       width: 100% !important;
       display: flex;
       justify-content: center;
@@ -227,14 +192,14 @@ ch5-slider {
   }
 
   &.ch5-slider--stretch--both.ch5-slider--orientation--horizontal:not(.ch5-advanced-slider-container) {
- .ch5-slider-button-container {
+    .ch5-slider-button-container {
       width: 100% !important;
       height: 100% !important;
     }
   }
 
   &.ch5-slider--stretch--both.ch5-slider--orientation--vertical:not(.ch5-advanced-slider-container) {
- .ch5-slider-button-container {
+    .ch5-slider-button-container {
       height: 100% !important;
       width: 100% !important;
       display: flex;
@@ -271,4 +236,3 @@ html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle .noUi-horizontal .no
   }
   color: $ch5-slider-pips-color;
 }
-

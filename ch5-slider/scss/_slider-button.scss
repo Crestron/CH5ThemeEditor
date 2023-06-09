@@ -11,7 +11,12 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-slider {
-  
+  .slider-off-button {
+    padding-right: 1px;
+  }
+  .slider-on-button {
+    padding-left: 1px;
+  }
   .slider-off-button,
   .slider-on-button {
     display: inline-flex;
