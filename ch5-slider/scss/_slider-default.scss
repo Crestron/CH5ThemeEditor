@@ -18,10 +18,10 @@ ch5-slider:focus {
 ch5-slider {
   position: relative;
   display: inline-block;
-  border: solid 1px blue;
-  > div {
-    border: solid 1px red;
-  }
+  // border: solid 1px blue;
+  // > div {
+  //   border: solid 1px red;
+  // }
 }
 
 .ch5-slider:not(.ch5-slider--disabled) .noUi-handle {
