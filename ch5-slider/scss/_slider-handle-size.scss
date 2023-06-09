@@ -133,7 +133,6 @@ $slider-sizes: (
 );
 
 .ch5-slider {
-
 	&:not(.ch5-advanced-slider-container) {
 		.ch5-title-container {
 			display: none;
@@ -146,17 +145,16 @@ $slider-sizes: (
 		}
 	}
 
-	// &.ch5-slider--orientation--vertical {
-	// 	&.ch5-advanced-slider-container {
-	// 		.ch5-slider-button-container {
-	// 			// display: flex;
-	// 			// flex-direction: column-reverse;
-	// 		}
-	// 	}
-	// }
-
-	&.ch5-slider--orientation--horizontal .noUi-target {
-		width: 100% !important;
+	&.ch5-slider--orientation--horizontal {
+		.slider-off-button {
+			padding-right: 1px;
+		}
+		.slider-on-button {
+			padding-left: 1px;
+		}
+		.noUi-target {
+			width: 100% !important;
+		}
 	}
 
 	@each $shape in map-keys($shapes) {
@@ -177,11 +175,10 @@ $slider-sizes: (
 						);
 						@each $slider-size in map-keys($slider-sizes) {
 							&.ch5-slider--size--#{$slider-size} {
-								@include ch5SliderSetHandleAndSize(
+								@include ch5SliderSetHandleAndSizeHorizontal(
 									map-deep-get($shapes, $shape, $handle-size, "width"),
 									map-deep-get($shapes, $shape, $handle-size, "height"),
-									map-deep-get($slider-sizes, $slider-size),
-									horizontal
+									map-deep-get($slider-sizes, $slider-size)
 								);
 							}
 						}
@@ -191,8 +188,16 @@ $slider-sizes: (
 		}
 	}
 
-	&.ch5-slider--orientation--vertical .noUi-target {
-		height: 100% !important;
+	&.ch5-slider--orientation--vertical {
+		.slider-off-button {
+			padding-right: 1px;
+		}
+		.slider-on-button {
+			padding-left: 1px;
+		}
+		.noUi-target {
+			height: 100% !important;
+		}
 	}
 
 	@each $shape in map-keys($shapes) {
@@ -200,7 +205,7 @@ $slider-sizes: (
 			@each $slider-size in map-keys($slider-sizes) {
 				&.ch5-slider--size--#{$slider-size} {
 					.ch5-slider-button-container {
-						height: map-deep-get($slider-sizes, $slider-size); 
+						height: map-deep-get($slider-sizes, $slider-size);
 					}
 				}
 			}
@@ -213,11 +218,10 @@ $slider-sizes: (
 						);
 						@each $slider-size in map-keys($slider-sizes) {
 							&.ch5-slider--size--#{$slider-size} {
-								@include ch5SliderSetHandleAndSize(
+								@include ch5SliderSetHandleAndSizeVertical(
 									map-deep-get($shapes, $shape, $handle-size, "height"),
 									map-deep-get($shapes, $shape, $handle-size, "width"),
-									map-deep-get($slider-sizes, $slider-size),
-									vertical
+									map-deep-get($slider-sizes, $slider-size)
 								);
 							}
 						}
