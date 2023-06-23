@@ -107,6 +107,7 @@ body.ch5-video-fullscreen {
   }
 }
 
+/// Video disabled class
 .ch5-video--disabled {
   pointer-events: none;
   opacity: $ch5-video-disabled-opacity;
