@@ -25,10 +25,14 @@ ch5-video {
     top: 0;
   }
 }
-ch5-video[show="false"], ch5-video[show="false"][noshowtype="display"], ch5-video[show="false"][noshowtype="remove"]{
+
+ch5-video[show="false"],
+ch5-video[show="false"][noshowtype="display"],
+ch5-video[show="false"][noshowtype="remove"] {
   display: none;
 }
-ch5-video[show="false"][noshowtype="visibility"]{
+
+ch5-video[show="false"][noshowtype="visibility"] {
   visibility: hidden;
 }
 
@@ -93,6 +97,9 @@ body.ch5-video-fullscreen {
   }
 
   .ch5-video {
+    height: 100vh;
+    width: 100vw;
+
     .full-screen-icon {
       opacity: 0 !important;
       display: none;
@@ -100,6 +107,7 @@ body.ch5-video-fullscreen {
   }
 }
 
+/// Video disabled class
 .ch5-video--disabled {
   pointer-events: none;
   opacity: $ch5-video-disabled-opacity;
