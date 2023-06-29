@@ -1,0 +1,237 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-slider
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ch5-slider {
+  
+  .slider-off-button,
+  .slider-on-button {
+    display: inline-flex;
+    pointer-events: none;
+    vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
+    z-index: 1;
+    .ch5-button {
+      display: flex;
+      max-width: 100%;
+
+      button {
+        cursor: pointer;
+      }
+
+      button,
+      .ch5-button--label {
+        background-color: transparent;
+        border: none;
+        color: inherit;
+        &:focus {
+          outline: none;
+        }
+      }
+      .ch5-button--label {
+        display: block;
+        @include text-truncate;
+      }
+
+      .cb-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        line-height: $ch5-button-content-line-height;
+        padding: $ch5-button-padding;
+        vertical-align: middle;
+        padding-top: calc($ch5-button-padding / 2);
+        padding-bottom: calc($ch5-button-padding / 2);
+      }
+
+      .ch5-button--label {
+        padding-left: calc($ch5-button-padding / 2);
+        padding-right: calc($ch5-button-padding / 2);
+      }
+    }
+
+    div {
+      cursor: pointer;
+      pointer-events: all;
+    }
+
+    .ch5-button--ios-label {
+      flex: none;
+      height: 100%;
+    }
+    .ch5-button--icon-url-fill-type-stretch,
+    .ch5-button--icon-url-fill-type-stretch-aspect,
+    .ch5-button--icon-url-fill-type-center,
+    .ch5-button--icon-url-fill-type-tile {
+      span {
+        z-index: 2;
+      }
+
+      .ch5-button--img {
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .ch5-button--icon-url-fill-type-stretch {
+      .ch5-button--img {
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .ch5-button--icon-url-fill-type-stretch-aspect {
+      .ch5-button--img {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .ch5-button--icon-url-fill-type-center {
+      .ch5-button--img {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .ch5-button--icon-url-fill-type-tile {
+      .ch5-button--img {
+        background-size: auto;
+        background-position: 0;
+        background-repeat: repeat;
+      }
+    }
+
+    .ch5-button--icon-url-fill-type-initial {
+      .ch5-button--img {
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  .ch5-button,
+  .ch5-button--label,
+  .ch5-button--icon,
+  .ch5-button--img {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  .ch5-button--icon,
+  .ch5-button--img {
+    line-height: $ch5-button-content-line-height;
+  }
+
+  // icon positions
+  i.cb-icon.cx-button-icon-pos-first,
+  i.cb-icon.cx-button-icon-pos-last {
+    display: inline-block;
+  }
+
+  i.cb-icon.cx-button-icon-pos-top,
+  i.cb-icon.cx-button-icon-pos-bottom {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ch5-button--span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .ch5-button--horizontal-center {
+    justify-content: center;
+  }
+
+  .ch5-button--vertical-middle {
+    align-items: center;
+  }
+
+  // when iconUrlFillType="initial"
+  .ch5-button--icon-url-fill-type-stretch,
+  .ch5-button--icon-url-fill-type-stretch-aspect,
+  .ch5-button--icon-url-fill-type-center,
+  .ch5-button--icon-url-fill-type-tile {
+    &.ch5-button--horizontal-center {
+      justify-content: center !important;
+    }
+
+    &.ch5-button--vertical-middle {
+      align-items: center !important;
+    }
+  }
+
+  .ch5-button--iconposition-bottom,
+  .ch5-button--iconposition-top {
+    .ch5-button--span {
+      display: flex;
+      flex-direction: column;
+    }
+    .ch5-button--horizontal-center {
+      align-items: center;
+    }
+
+    .ch5-button--vertical-middle {
+      justify-content: center;
+    }
+  }
+
+  i.cb-icon.material-icons,
+  i.cb-icon.material-icons-outline,
+  i.cb-icon.material-icons-round,
+  i.cb-icon.material-icons-sharp,
+  i.cb-icon.material-icons-twotone {
+    font-size: inherit;
+  }
+
+  i.cb-icon.cx-button-icon-pos-bottom,
+  i.cb-icon.cx-button-icon-pos-top {
+    display: flex;
+    margin-left: unset;
+    margin-right: unset;
+  }
+  .ch5-slider-iconfill {
+    .cb-btn {
+      display: inline !important;
+    }
+  }
+
+  .slider-off-button[hidden],
+  .slider-on-button[hidden] {
+    display: none;
+  }
+
+  .ch5-advanced-slider-button {
+    display: none;
+  }
+
+  .ch5-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .ch5-slider-button--pressed {
+    .ch5-button {
+      border-color: $default-pressed-border-color;
+      background-color: $default-pressed-background-color;
+      color: $default-pressed-font-color;
+    }
+  }
+}

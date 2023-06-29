@@ -1,6 +1,6 @@
 {
     "name": "@crestron/ch5-theme", 
-    "version": "2.3.1", 
+    "version": "2.4.0", 
     "description": "Crestron HTML5 (CH5) Themes CSS", 
     "author": "Crestron", 
     "license": "SEE LICENSE IN LICENSE.txt", 
@@ -37,11 +37,11 @@
     }, 
     "dependencies": {
         "@fortawesome/fontawesome-free": "^6.3.0", 
-        "@material-icons/font": "^1.0.20", 
+        "@material-icons/font": "^1.0.25", 
         "sassdoc": "^2.7.1"
     }, 
     "devDependencies": {
-        "@crestron/ch5-crcomlib": "^2.3.1", 
+        "@crestron/ch5-crcomlib": "^2.4.0", 
         "@types/node": "^16.4.0", 
         "@types/puppeteer": "^5.4.4", 
         "browser-sync": "^2.26.7", 

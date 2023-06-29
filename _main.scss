@@ -8,7 +8,7 @@
 @import "./node_modules/nouislider/distribute/nouislider";
 
 ch5-animation,
-ch5-button,
+ch5-button,ch5-label,
 ch5-button-list,
 ch5-color-chip,
 ch5-color-picker,
@@ -63,6 +63,8 @@ ch5-triggerview {
 @import "ch5-image/ch5-image";
 
 @import "ch5-keypad/ch5-keypad";
+
+@import "ch5-label/ch5-label";
 
 @import "ch5-list/ch5-list";
 

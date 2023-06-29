@@ -1,0 +1,76 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2023 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-video
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ch5-video {
+  &.ch5-video--aspect-ratio-16-9 {
+    aspect-ratio: 16/9;
+  }
+
+  &.ch5-video--aspect-ratio-4-3 {
+    aspect-ratio: 4/3;
+  }
+  @media only screen and (min-width: 651px) {
+    &.ch5-video--size-xx-large {
+      width: 600px;
+    }
+  
+    &.ch5-video--size-x-large {
+      width: 560px;
+    }
+  
+    &.ch5-video--size-large {
+      width: 520px;
+    }
+  
+    &.ch5-video--size-regular {
+      width: 480px;
+    }
+  
+    &.ch5-video--size-small {
+      width: 440px;
+    }
+  
+    &.ch5-video--size-x-small {
+      width: 400px;
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    &.ch5-video--size-xx-large {
+      width: 300px;
+    }
+
+    &.ch5-video--size-x-large {
+      width: 280px;
+    }
+
+    &.ch5-video--size-large {
+      width: 260px;
+    }
+
+    &.ch5-video--size-regular {
+      width: 240px;
+    }
+
+    &.ch5-video--size-small {
+      width: 220px;
+    }
+
+    &.ch5-video--size-x-small {
+      width: 200px;
+    }
+  }
+
+  &.ch5-video--stretch-true {
+    width: 100%;
+    height: 100%;
+  }
+}

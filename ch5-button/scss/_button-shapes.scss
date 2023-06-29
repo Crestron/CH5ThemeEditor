@@ -25,9 +25,6 @@
 
 /// Applied when shape='circle'
 .ch5-button--circle {
-	// button {
-	//   @include border-radius($ch5-button-circle-border-radius);
-	// }
 	display: inline-block;
 	text-decoration: none;
 	outline: none;
@@ -35,13 +32,6 @@
 	text-align: center;
 	overflow: hidden;
 	@include border-radius($ch5-button-circle-border-radius);
-
-	// &:before {
-	//   content: "";
-	//   display: inline-block;
-	//   vertical-align: middle;
-	//   padding-top: 100%;
-	// }
 	.cb-btn {
 		display: inline-flex;
 		vertical-align: middle;

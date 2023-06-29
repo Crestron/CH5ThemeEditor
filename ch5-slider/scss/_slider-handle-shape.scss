@@ -1,0 +1,69 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-slider
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ch5-slider {
+
+	.ch5-slider-ticks {
+		.noUi-target {
+			border: 0;
+		}
+		.noUi-base {
+			border-radius: 4px;
+		}
+	}
+
+	/// Applied when slider shape="rectangle"
+	&.ch5-slider--shape--rectangle {
+		.noUi-handle,
+		.noUi-target,
+		.noUi-connects {
+			border-radius: 0;
+		}
+		&.ch5-slider-ticks {
+			.noUi-base {
+				border-radius: 0;
+			}
+		}
+	}
+
+	/// Applied when slider shape="circle"
+	&.ch5-slider--shape--circle {
+		.noUi-target,
+		.noUi-connects {
+			border-radius: 8px;
+		}
+		.noUi-handle {
+			border-radius: 50%;
+		}
+		&.ch5-slider-ticks {
+			.noUi-base {
+				border-radius: 8px;
+			}
+		}
+	}
+
+	/// Applied when slider shape="oval"
+	&.ch5-slider--shape--oval {
+		.noUi-target,
+		.noUi-connects {
+			border-radius: 10px;
+		}
+		.noUi-handle {
+			border-radius: 50%;
+		}
+		&.ch5-slider-ticks {
+			.noUi-base {
+				border-radius: 10px;
+			}
+		}
+	}
+}

@@ -1,0 +1,200 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-slider
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@function map-deep-get($map, $keys...) {
+	@each $key in $keys {
+		$map: map-get($map, $key);
+	}
+	@return $map;
+}
+
+@mixin ch5SliderSetButtonSize($button-width, $button-height) {
+	.cb-btn {
+		width: $button-width;
+		height: $button-height;
+	}
+}
+
+@mixin ch5SliderSetHandleAndSizeHorizontal($handle-width, $handle-height, $slider-size) {
+	.noUi-handle {
+		width: $handle-width;
+		height: $handle-height;
+		right: calc(-1 * ($handle-width) / 2);
+		top: calc(-1 * ($handle-height + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-height) / 2);
+	}
+	.ch5-slider-button-container {
+		display: flex;
+		align-items: center;
+	}
+
+	&.ch5-slider--stretch--both,
+	&.ch5-slider--stretch--width {
+		.ch5-title-container {
+			max-width: 100% !important;
+		}
+	}
+
+	&:not(.ch5-advanced-slider-container) {
+		.ch5-slider-button-container {
+			padding: abs(calc(($ch5-slider-height - $handle-height) / 2)) (calc(($handle-width / 2)) - 1);
+		}
+
+		&.ch5-slider--tooltip--on {
+			&:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
+				margin-top: $ch5-slider-tooltip-on-spacing-horizontal-normal;
+			}
+		}
+
+		&.ch5-slider-ticks {
+			.noUi-target {
+				margin-left: calc($handle-width / 2) + 1;
+				margin-right: calc($handle-width / 2) + 1;
+			}
+			.noUi-pips-horizontal {
+				top: calc(($handle-height - $ch5-slider-height)) + 4;
+				height: $ch5-slider-horizontal-pips;
+			}
+			.ch5-slider-button-container {
+				margin-bottom: 30px + abs(calc(($ch5-slider-height - $handle-height) / 2));
+				.noUi-pips-horizontal {
+					padding: 10px 0 0 0;
+				}
+			}
+		}
+	}
+
+	&.ch5-advanced-slider-container {
+		.noUi-target {
+			margin: abs(calc(($ch5-slider-height - $handle-height) / 2)) (calc(($handle-width / 2)) - 1);
+		}
+
+		&.ch5-slider--tooltip--on {
+			&:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
+				margin-top: $ch5-slider-tooltip-on-spacing-horizontal-normal;
+			}
+		}
+
+		.ch5-title-container {
+			max-width: $slider-size + $handle-width;
+		}
+		.ch5-slider-button-container {
+			width: $slider-size + $handle-width;
+		}
+
+		&.ch5-slider-ticks {
+			.noUi-pips-horizontal {
+				top: calc(($handle-height - $ch5-slider-height)) + 4;
+				height: $ch5-slider-horizontal-pips;
+			}
+			.ch5-slider-button-container {
+				margin-bottom: 30px + abs(calc(($ch5-slider-height - $handle-height) / 2));
+			}
+		}
+	}
+}
+
+@mixin ch5SliderSetHandleAndSizeVertical($handle-width, $handle-height, $slider-size) {
+	.noUi-handle {
+		width: $handle-width;
+		height: $handle-height;
+		left: calc(-1 * ($handle-width + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-height) / 2);
+		top: calc(-1 * $handle-height / 2);
+	}
+	.ch5-slider-button-container {
+		flex-direction: column-reverse;
+		display: flex;
+		align-items: center;
+	}
+
+	&.ch5-slider--stretch--both,
+	&.ch5-slider--stretch--height,
+	&.ch5-slider--stretch--width {
+		.ch5-title-container {
+			max-width: 100% !important;
+		}
+	}
+
+	&:not(.ch5-advanced-slider-container) {
+		.ch5-slider-button-container {
+			padding: (calc(($handle-height / 2)) - 1) abs(calc(($ch5-slider-height - $handle-width) / 2));
+		}
+
+		&.ch5-slider--tooltip--on {
+			&:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width) .ch5-slider-button-container {
+				margin-left: $ch5-slider-tooltip-on-spacing-vertical-normal;
+			}
+		}
+
+		&.ch5-slider-ticks {
+			.noUi-target {
+				margin-top: calc($handle-height / 2) + 1;
+				margin-bottom: calc($handle-height / 2) + 1;
+			}
+			.noUi-pips-vertical {
+				left: calc(($handle-width - $ch5-slider-height)) + 4;
+				width: $ch5-slider-vertical-pips;
+			}
+			.ch5-slider-button-container {
+				margin-right: 60px;
+				.noUi-pips-vertical {
+					padding: 0 0 0 10px;
+				}
+			}
+		}
+	}
+
+	&.ch5-advanced-slider-container {
+		.noUi-target {
+			margin-top: calc($handle-height / 2) + 1;
+			margin-bottom: calc($handle-height / 2) + 1;
+		}
+
+		&.ch5-slider--tooltip--on {
+			&:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width) .ch5-slider-button-container {
+				margin-left: $ch5-slider-tooltip-on-spacing-vertical-advanced;
+			}
+			.ch5-title-container {
+				max-width: $handle-width + $ch5-slider-tooltip-on-spacing-vertical-advanced;
+			}
+		}
+		.ch5-title-container {
+			max-width: $handle-width;
+		}
+		.ch5-slider-button-container {
+			height: $slider-size + $handle-height;
+		}
+		&.ch5-slider-ticks {
+			.ch5-title-container {
+				max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + $handle-width;
+			}
+			&.ch5-slider--tooltip--on {
+				.ch5-title-container {
+					max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + $handle-width + 60px;
+				}
+			}
+			.noUi-pips-vertical {
+				left: calc(($handle-width - $ch5-slider-height)) + 4;
+				width: $ch5-slider-vertical-pips;
+			}
+			.ch5-slider-button-container {
+				margin-right: 50px + abs(calc(($ch5-slider-height - $handle-height) / 2));
+			}
+			&:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(.ch5-slider--stretch--height) {
+				max-width: calc($handle-height * 1.2) + $ch5-slider-vertical-pips;
+				&.ch5-slider--tooltip--on {
+					max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + calc($handle-height * 1.2) +
+						$ch5-slider-vertical-pips;
+				}
+			}
+		}
+	}
+}
