@@ -1,0 +1,23 @@
+
+
+ch5-datetime {
+
+}
+
+.ch5-datetime {
+    display: flex;
+    align-items: center;
+    &.ch5-datetime {
+        &--horizontal-alignment {
+            &-center {
+                justify-content: center;
+            }
+            &-left {
+                justify-content: flex-start;
+            }
+            &-right {
+                justify-content: flex-end;
+            }
+        }
+    }
+}
