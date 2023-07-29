@@ -106,7 +106,7 @@ async function flattenScssComponents(paths: string[]) {
       // Read the content of the entry SCSS File so it can be passed on to the flatten function
       const entrySCSSContent = fs.readFileSync(THEME_EDITOR_PATH + componentPath + fileName, 'utf8');
       // Provide the content of the entry SCSS File and its location to the flatten function. Its location is required so the imports can be resolved
-      const output = flatten(entrySCSSContent, path.resolve(path.join(THEME_EDITOR_PATH , componentPath)));
+      const output = flatten(entrySCSSContent, path.resolve(path.join(THEME_EDITOR_PATH, componentPath)));
 
       writeToFile(output, OUTPUT_SCSS + fileName);
 
@@ -149,6 +149,7 @@ async function initialize() {
 
   // All the components that are interested in are hardcoded. We will compute the path based on THEME_EDITOR_PATH constant + values belo
   const componentsPath: any = {
+    'ch5-datetime': 'Ch5Datetime',
     'ch5-animation': 'Ch5Animation',
     'ch5-background': 'Ch5Background',
     'ch5-button': 'Ch5Button',
