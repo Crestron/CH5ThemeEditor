@@ -1,6 +1,6 @@
 {
   "name": "@crestron/ch5-theme",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "Crestron HTML5 (CH5) Themes CSS",
   "author": "Crestron",
   "license": "SEE LICENSE IN LICENSE.txt",
@@ -18,7 +18,7 @@
     "Theme"
   ],
   "scripts": {
-    "bundle-theme": "node ./bundle-theme.js",
+    "bundle-theme": "node ./helpers/bundle-theme.js",
     "bundle-theme-for-showcase": "webpack --config webpack.run.js --outputpath='../CH5ShowcaseApp/static/crestron-components-assets' && npm run cleanjs",
     "bundle-theme-all": "webpack --config webpack.build.js --outputpath='./output/themes' && npm run cleanjs",
     "bundle-and-watch": "npm run clean && webpack --config webpack.run.js --watch",
@@ -27,11 +27,11 @@
     "build:prod": "npm run clean && webpack --config webpack.build.js --outputpath='./output/themes' && webpack --config webpack.run.js --outputpath='./output/themes'  && npm run cleanjs",
     "clean": "rimraf output",
     "cleanjs": "rimraf output/**/*.js",
-    "create-theme": "node ./create-theme.js",
+    "create-theme": "node ./helpers/create-theme.js",
     "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json",
     "gen:sass-json-output": "ts-node ./sass-schema/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
     "gen:sass-json": "ts-node ./sass-schema/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
-    "gen:sass-metadata": "node ./metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json",
+    "gen:sass-metadata": "node ./helpers/metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json",
     "start": "webpack --config webpack.run.js --watchmode && npm run cleanjs && webpack --config app.config.dev.js",
     "sass-converter": "ts-node index.ts"
   },
@@ -41,7 +41,7 @@
     "sassdoc": "^2.7.1"
   },
   "devDependencies": {
-    "@crestron/ch5-crcomlib": "^2.4.0",
+    "@crestron/ch5-crcomlib": "^2.4.1",
     "@raghavendradabbir/sass-flatten": "^0.2.9",
     "@types/node": "^16.4.0",
     "@types/puppeteer": "^5.4.4",
@@ -51,6 +51,7 @@
     "css-loader": "^3.0.0",
     "css-simple-parser": "^2.0.1",
     "dotenv": "^8.0.0",
+    "find-unused-sass-variables": "^5.0.0",
     "glob": "^7.1.4",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
