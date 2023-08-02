@@ -5,5 +5,10 @@
 // Use of this source code is subject to the terms of the Crestron Software License Agreement
 // under which you licensed this source code.
 
-@import './src/ch5-core/themes/high-contrast';
-@import './src/main';
+@import "./scss/mixins";
+@import "./scss/variables";
+@import "./scss/slider-handle-size";
+@import "./scss/slider-handle-shape";
+@import "./scss/slider-button";
+@import "./scss/slider-default";
+@import "./scss/slider-component-reference";

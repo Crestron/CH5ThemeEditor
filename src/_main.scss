@@ -1,0 +1,110 @@
+// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// All rights reserved.
+// No part of this software may be reproduced in any form, machine
+// or natural, without the express written consent of Crestron Electronics.
+// Use of this source code is subject to the terms of the Crestron Software License Agreement
+// under which you licensed this source code.
+
+@import "ch5-core/variables";
+
+@import "style/global";
+@import "style/mixins";
+
+ch5-animation,
+ch5-button,
+ch5-button-list,
+ch5-color-chip,
+ch5-color-picker,
+ch5-dpad,
+ch5-form,
+ch5-image,
+ch5-keypad,
+ch5-label,
+ch5-list,
+ch5-modal-dialog,
+ch5-overlay-panel,
+ch5-segmented-gauge,
+ch5-select,
+ch5-select-option,
+ch5-signal-level-gauge,
+ch5-slider,
+ch5-spinner,
+ch5-subpage-reference-list,
+ch5-tab-button,
+ch5-textinput,
+ch5-toggle,
+ch5-triggerview,
+ch5-triggerviewchild,
+ch5-wifi-signal-level-gauge {
+  outline: 0 !important;
+
+  * {
+    outline: 0 !important;
+  }
+
+  &:not(:defined) {
+    display:inline-block;
+    opacity:0;
+    // visibility:hidden;
+    // display:none;
+  }
+}
+
+@import "style/ch5-custom-attrs";
+
+@import "ch5-animation/ch5-animation";
+
+@import "ch5-background/ch5-background";
+
+@import "ch5-button/ch5-button";
+
+@import "ch5-button-list/ch5-button-list";
+
+@import "ch5-color-chip/ch5-color-chip";
+
+@import "ch5-color-picker/ch5-color-picker";
+
+@import "ch5-dpad/ch5-dpad";
+
+@import "ch5-form/ch5-form";
+
+@import "ch5-image/ch5-image";
+
+@import "ch5-keypad/ch5-keypad";
+
+@import "ch5-label/ch5-label";
+
+@import "ch5-list/ch5-list";
+
+@import "ch5-modal-dialog/ch5-modal-dialog";
+
+@import "ch5-overlay-panel/ch5-overlay-panel";
+
+@import "ch5-segmented-gauge/ch5-segmented-gauge";
+
+@import "ch5-select/ch5-select";
+
+@import "./node_modules/nouislider/distribute/nouislider";
+@import "ch5-slider/ch5-slider";
+
+@import "ch5-signal-level-gauge/ch5-signal-level-gauge";
+
+@import "ch5-spinner/ch5-spinner";
+
+@import "ch5-subpage-reference-list/ch5-subpage-reference-list";
+
+@import "ch5-tab-button/ch5-tab-button";
+
+@import "ch5-template/ch5-template";
+
+@import 'ch5-textinput/ch5-textinput';
+
+@import "ch5-toggle/ch5-toggle";
+
+@import "ch5-triggerview/triggerview";
+
+@import "ch5-video/ch5-video";
+
+@import "ch5-wifi-signal-level-gauge/ch5-wifi-signal-level-gauge";
+
+@import "ch5-datetime/ch5-datetime";

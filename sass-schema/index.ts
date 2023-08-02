@@ -47,7 +47,7 @@ function generatePropertiesJson(properties: PROPERTIES_INTERFACE, path: string) 
  * Utils function used to extract the global mixins used throughout all the components
  */
 function extractGlobalMixins() {
-  const mainScss = '@import "./style/mixins";';
+  const mainScss = '@import "./src/style/mixins";';
   const flattenedScss = flatten(mainScss, THEME_EDITOR_PATH);
   return extractMixins(flattenedScss);
 }
