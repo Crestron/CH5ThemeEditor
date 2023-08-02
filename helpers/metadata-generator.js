@@ -15,7 +15,7 @@ const sassdoc = require('sassdoc'),
 (function (sassdoc, fse, logging) {
   // sourceFilePath  SOURCE_FILE_PATH
   // destinationMetadata WRITE_TO_FILE_PATH
-  const SOURCE_FILE_PATH = glob.sync('ch5-*/**');
+  const SOURCE_FILE_PATH = glob.sync('src/ch5-*/**');
   const WRITE_TO_FILE_PATH = process.argv[3].toString();
   if (!WRITE_TO_FILE_PATH) {
     logging.error('Please provide valid sourcefilepath and writetofilepath path.');
