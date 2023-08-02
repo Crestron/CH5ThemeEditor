@@ -15,6 +15,7 @@ ch5-button,
 ch5-button-list,
 ch5-color-chip,
 ch5-color-picker,
+ch5-datetime,
 ch5-dpad,
 ch5-form,
 ch5-image,
@@ -64,6 +65,8 @@ ch5-wifi-signal-level-gauge {
 
 @import "ch5-color-picker/ch5-color-picker";
 
+@import "ch5-datetime/ch5-datetime";
+
 @import "ch5-dpad/ch5-dpad";
 
 @import "ch5-form/ch5-form";
@@ -106,5 +109,3 @@ ch5-wifi-signal-level-gauge {
 @import "ch5-video/ch5-video";
 
 @import "ch5-wifi-signal-level-gauge/ch5-wifi-signal-level-gauge";
-
-@import "ch5-datetime/ch5-datetime";
