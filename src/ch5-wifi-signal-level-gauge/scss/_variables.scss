@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-wifi-signal-level-gauge-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Size Height small
+$ch5-wifi-signal-level-gauge-small-height: 24px !default;
+
+/// Size Width small
+$ch5-wifi-signal-level-gauge-small-width: 36px !default;
+
+/// Size Height regular
+$ch5-wifi-signal-level-gauge-regular-height: 36px !default;
+
+/// Size Width regular
+$ch5-wifi-signal-level-gauge-regular-width: 54px !default;
+
+/// Size Height large
+$ch5-wifi-signal-level-gauge-large-height: 60px !default;
+
+/// Size Width large
+$ch5-wifi-signal-level-gauge-large-width: 90px !default;
+
+/// Size Height x-large
+$ch5-wifi-signal-level-gauge-x-large-height: 96px !default;
+
+/// Size Width x-large
+$ch5-wifi-signal-level-gauge-x-large-width: 144px !default;
+
+/// gaugeStyle accents
+$ch5-wifi-signal-level-gauge-style-accents: #87ceeb !default;
+
+/// gaugeStyle light
+$ch5-wifi-signal-level-gauge-style-light: #ffffff !default;
+
+/// gaugeStyle dark
+$ch5-wifi-signal-level-gauge-style-dark: #000000 !default;
+
+/// border color
+$ch5-wifi-signal-level-gauge-border-color: #939393 !default;

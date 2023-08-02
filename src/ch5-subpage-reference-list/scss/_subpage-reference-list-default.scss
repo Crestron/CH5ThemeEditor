@@ -1,0 +1,84 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2023 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-subpage-reference-list
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Main class
+.ch5-subpage-reference-list {
+  position: relative;
+  overflow: scroll;
+  white-space: nowrap;
+  will-change: transform;
+  user-select: none;
+  display: grid;
+  height: 100%;
+  scrollbar-width: none; // needed to hide the firefox scrollbar
+
+  &.active {
+    cursor: -webkit-grabbing;
+  }
+
+  &.ch5-subpage-reference-list::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+  }
+
+  & ~ .scrollbar-container {
+    position: absolute;
+    background-color: $ch5-scrollbar-track-color;
+    border-radius: $ch5-scrollbar-border-radius;
+
+    .scrollbar {
+      position: absolute;
+      will-change: width, transform;
+      position: absolute;
+      border-radius: $ch5-scrollbar-border-radius;
+      background: $ch5-scrollbar-thumb-color;
+    }
+  }
+
+  &.ch5-subpage-reference-list--scrollbar-true {
+    & ~ .scrollbar-container {
+      display: block;
+    }
+  }
+
+  &.ch5-subpage-reference-list--scrollbar-false {
+    & ~ .scrollbar-container {
+      display: none;
+    }
+  }
+}
+
+ch5-subpage-reference-list {
+  position: relative;
+  display: block;
+  height: 100%;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.ch5-subpage-reference-list--disabled,
+.ch5-subpage-reference-list--disabled div {
+  pointer-events: none !important;
+}
+/// Applied when the subpage reference list is disabled
+.ch5-subpage-reference-list--disabled {
+  opacity: 0.5 !important;
+}
+
+.ch5-subpage-reference-list.ch5-subpage-reference-list--disabled {
+  & ~ .scrollbar-container {
+    pointer-events: none;
+    opacity: $ch5-disabled-opacity;
+  }
+}

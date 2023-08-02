@@ -1,0 +1,41 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-triggerview-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// default font size unit for the triggerview
+$ch5-triggerview-font-size-unit: $ch5-font-size-unit !default;
+
+/// default font size value for the triggerview
+$ch5-triggerview-font-size-value: $ch5-font-size-value !default;
+
+/// default font size for the triggerview
+$ch5-triggerview-font-size: $ch5-triggerview-font-size-value + $ch5-triggerview-font-size-unit !default;
+
+/// default font style for the triggerview
+$ch5-triggerview-font-style: $ch5-font-style !default;
+
+/// default font weight for the triggerview
+$ch5-triggerview-font-weight: $ch5-font-weight !default;
+
+/// gap between views in px
+$ch5-triggerview-gap: 16px !default;
+
+/// triggerview minimum height in px
+$ch5-triggerview-slide-min-height: 0px !default;
+
+/// triggerview maximum height in px
+$ch5-triggerview-slide-max-height: none !default;
+
+/// duration of changing from one view to another.
+$ch5-triggerview-transition-duration: 0.6s !default;
+
+/// transition effect(describe animation on content of the child view)
+$ch5-triggerview-transition-timing-function: ease-out !default;
