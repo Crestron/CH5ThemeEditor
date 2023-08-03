@@ -10,20 +10,21 @@
 /// @group ch5-datetime
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Main class
-ch5-datetime {
-  display: inline-block;
-}
-
-/// Class to set the container properties of ch5-datetime
 .ch5-datetime {
-  width: 200px;
-  height: 35px;
-  font-size: 14px;
-  background-color: transparent;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
+	&--horizontal-alignment {
+		/// Set horizontalAlignment as center
+		&-center {
+			justify-content: center;
+		}
 
+		/// Set horizontalAlignment as left
+		&-left {
+			justify-content: flex-start;
+		}
+
+		/// Set horizontalAlignment as right
+		&-right {
+			justify-content: flex-end;
+		}
+	}
+}

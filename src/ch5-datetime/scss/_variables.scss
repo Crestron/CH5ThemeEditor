@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-/// Copyright (C) 2023 to the present, Crestron Electronics, Inc.
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
 /// All rights reserved.
 /// No part of this software may be reproduced in any form, machine
 /// or natural, without the express written consent of Crestron Electronics.
@@ -7,21 +7,20 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-datetime
+/// @group ch5-datetime-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-.ch5-datetime {
-    &--horizontal-alignment {
-        &-center {
-            justify-content: center;
-        }
+/// Font size regular
+$ch5-animation-font-size-regular: 72px !default;
 
-        &-left {
-            justify-content: flex-start;
-        }
+/// Font size small
+$ch5-animation-font-size-small: 40px !default;
 
-        &-right {
-            justify-content: flex-end;
-        }
-    }
-}
+/// Font size large
+$ch5-animation-font-size-large: 104px !default;
+
+/// Font size x-large
+$ch5-animation-font-size-x-large: 136px !default;
+
+/// Animation color
+$ch5-animation-color: $theme-foreground-color !default;
