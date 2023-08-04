@@ -10,18 +10,17 @@
 /// @group ch5-datetime
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-.ch5-datetime {
-	&--horizontal-alignment {
-		&-center {
-			justify-content: center;
-		}
+/// Set horizontalAlignment as center
+.ch5-datetime--horizontal-alignment-center {
+	// Placeholder
+}
 
-		&-left {
-			justify-content: flex-start;
-		}
+/// Set horizontalAlignment as left
+.ch5-datetime--horizontal-alignment-left {
+	// Placeholder
+}
 
-		&-right {
-			justify-content: flex-end;
-		}
-	}
+/// Set horizontalAlignment as right
+.ch5-datetime--horizontal-alignment-right {
+	// Placeholder
 }

@@ -29,11 +29,9 @@
     "cleanjs": "rimraf output/**/*.js",
     "create-theme": "node ./helpers/create-theme.js",
     "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json",
-    "gen:sass-json-output": "ts-node ./sass-schema/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
     "gen:sass-json": "ts-node ./sass-schema/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
     "gen:sass-metadata": "node ./helpers/metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json",
-    "start": "webpack --config webpack.run.js --watchmode && npm run cleanjs && webpack --config app.config.dev.js",
-    "sass-converter": "ts-node index.ts"
+    "start": "webpack --config webpack.run.js --watchmode && npm run cleanjs && webpack --config app.config.dev.js" 
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
