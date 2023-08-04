@@ -155,7 +155,7 @@ async function initialize() {
     'ch5-button-list': 'Ch5ButtonList',
     'ch5-color-chip': 'Ch5ColorChip',
     'ch5-color-picker': 'Ch5ColorPicker',
-    'ch5-datetime': 'Ch5Datetime',
+    'ch5-datetime': 'Ch5DateTime',
     'ch5-dpad': 'Ch5Dpad',
     'ch5-image': 'Ch5Image',
     'ch5-keypad': 'Ch5Keypad',
