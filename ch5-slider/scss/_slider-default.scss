@@ -18,6 +18,7 @@ ch5-slider:focus {
 ch5-slider {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   // border: solid 1px blue;
   // > div {
   //   border: solid 1px red;
@@ -46,7 +47,7 @@ ch5-slider {
 
 /* ch5-slider - container */
 
-/// the class added on the component and wraps all its contents
+/// Main class
 .ch5-slider {
   position: relative;
   display: block;

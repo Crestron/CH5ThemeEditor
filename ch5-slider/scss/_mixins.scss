@@ -17,10 +17,15 @@
 	@return $map;
 }
 
-@mixin ch5SliderSetButtonSize($button-width, $button-height) {
-	.cb-btn {
-		width: $button-width;
-		height: $button-height;
+@mixin ch5SliderSetButtonSize($button-width, $button-height, $shape) {
+	.slider-on-button,
+	.slider-off-button {
+		.ch5-button--#{$shape} {
+			.cb-btn {
+				width: $button-width;
+				height: $button-height;
+			}
+		}
 	}
 }
 

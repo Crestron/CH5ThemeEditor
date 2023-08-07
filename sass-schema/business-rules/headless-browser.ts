@@ -10,7 +10,7 @@ export async function getCrComLibComponentData(name: string) {
 
   const data = await page.evaluate((name: string) => {
     // @ts-ignore
-    return CrComLib[name].COMPONENT_DATA;
+    return CrComLib[name]?.COMPONENT_DATA;
   }, name);
   await browser.close();
   return data;

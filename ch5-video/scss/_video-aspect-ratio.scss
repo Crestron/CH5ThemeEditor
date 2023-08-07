@@ -11,38 +11,50 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-video {
+
+  /// Aspect Ratio 16:9
   &.ch5-video--aspect-ratio-16-9 {
     aspect-ratio: 16/9;
   }
 
+  /// Aspect Ratio 4:3
   &.ch5-video--aspect-ratio-4-3 {
     aspect-ratio: 4/3;
   }
+
   @media only screen and (min-width: 651px) {
+
+    /// size xx-large
     &.ch5-video--size-xx-large {
       width: 600px;
     }
-  
+
+    /// size x-large
     &.ch5-video--size-x-large {
       width: 560px;
     }
-  
+
+    /// size large
     &.ch5-video--size-large {
       width: 520px;
     }
-  
+
+    /// size regular
     &.ch5-video--size-regular {
       width: 480px;
     }
-  
+
+    /// size small
     &.ch5-video--size-small {
       width: 440px;
     }
-  
+
+    /// size x-small
     &.ch5-video--size-x-small {
       width: 400px;
     }
   }
+
   @media only screen and (max-width: 650px) {
     &.ch5-video--size-xx-large {
       width: 300px;
@@ -69,6 +81,7 @@
     }
   }
 
+  /// stretch true
   &.ch5-video--stretch-true {
     width: 100%;
     height: 100%;

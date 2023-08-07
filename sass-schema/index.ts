@@ -5,7 +5,8 @@ import * as packageJson from "./../package.json";
 
 const _ = require('lodash');
 const fs = require('fs');
-const flatten = require('sass-flatten');
+const path = require('path');
+const flatten = require('@raghavendradabbir/sass-flatten');
 const jsonfile = require('jsonfile');
 
 // TODO: Hardcoded for now, to be later updated (CH5C-2041)
@@ -71,9 +72,10 @@ async function buildJsonStructure(flattenedComponents: { flattenedScss: string, 
       const componentThemeVersion = '1.0.0';
       const businessRules = jsonfile.readFileSync("./sass-schema/business-rules/" + component.name + ".rules.json").businessRules;
       // Save the properties to a json for future reference
+      // console.warn("Evaluating component: " + component.name);
       if (_.isNil(properties)) {
         properties = {};
-        console.warn("No properties defined for " + component.name);
+        // console.warn("No properties defined for " + component.name);
       }
       generatePropertiesJson(properties, component.name);
       // Process the flattened scss
@@ -104,7 +106,7 @@ async function flattenScssComponents(paths: string[]) {
       // Read the content of the entry SCSS File so it can be passed on to the flatten function
       const entrySCSSContent = fs.readFileSync(THEME_EDITOR_PATH + componentPath + fileName, 'utf8');
       // Provide the content of the entry SCSS File and its location to the flatten function. Its location is required so the imports can be resolved
-      const output = flatten(entrySCSSContent, THEME_EDITOR_PATH + componentPath);
+      const output = flatten(entrySCSSContent, path.resolve(path.join(THEME_EDITOR_PATH , componentPath)));
 
       writeToFile(output, OUTPUT_SCSS + fileName);
 
@@ -145,7 +147,7 @@ async function initialize() {
   // Dynamically traversing items is temporarily removed
   // const componentsPath = await traverseThemeEditorsObjects();
 
-  // All the components that are interested in are hardcoded. We will compute the path based on THEME_EDITOR_PATH constant + values below
+  // All the components that are interested in are hardcoded. We will compute the path based on THEME_EDITOR_PATH constant + values belo
   const componentsPath: any = {
     'ch5-animation': 'Ch5Animation',
     'ch5-background': 'Ch5Background',
@@ -165,7 +167,6 @@ async function initialize() {
     'ch5-signal-level-gauge': 'Ch5SignalLevelGauge',
     'ch5-subpage-reference-list': 'Ch5SubpageReferenceList',
     'ch5-slider': 'Ch5Slider',
-    'ch5-slider-button': 'Ch5SliderButton',
     'ch5-spinner': 'Ch5Spinner',
     'ch5-tab-button': 'Ch5TabButton',
     'ch5-textinput': 'Ch5TextInput',
