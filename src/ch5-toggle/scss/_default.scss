@@ -237,7 +237,10 @@ ch5-toggle:focus {
         }
     }
 
-    /* ch5-toggle - vertical orientation */
+    /// Class to apply when orientation='horizontal'
+    &.ch5-toggle--horizontal {
+        // Placeholder
+    }
     /// Class to apply when orientation='vertical'
     &.ch5-toggle--vertical {
         > div {
@@ -279,4 +282,10 @@ ch5-toggle:focus {
             }
         }
     }
+}
+
+/// class apply when toggle is disabled
+.ch5-toggle--disabled {
+    pointer-events: none;
+    opacity: $ch5-disabled-opacity;
 }

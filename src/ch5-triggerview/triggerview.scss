@@ -12,6 +12,7 @@
 
 @import "./scss/variables";
 
+/// The class added on the component
 ch5-triggerview {
     --ch5-triggerview-gap: #{$ch5-triggerview-gap};
     --ch5-triggerview-background-color: #{$ch5-triggerview-background-color};
@@ -47,6 +48,7 @@ ch5-triggerview {
     }
 }
 
+/// The class added on the triggeview child component
 .ch5-viewchild {
     box-sizing: border-box;
 }
