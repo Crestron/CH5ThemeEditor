@@ -1,0 +1,72 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2023 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-text
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Main class
+ch5-text {
+  // display: inline-block;
+}
+
+/// Class to set the container properties of ch5-text
+.ch5-text {
+  position: relative;
+  min-width: 64px;
+  min-height: 44px;
+  width: 150px;
+  height: 48px;
+  overflow: hidden;
+  border: 1px solid black;
+  background: whitesmoke;
+  padding: 10px;
+
+  &-span {
+    background: dimgray;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+
+    /// Applied when truncateText='true'
+    &--truncate-text-true {
+      text-overflow: ellipsis; // enables ellipsis
+      white-space: nowrap; // keeps the text in a single line
+      overflow: hidden; // keeps the element from overflowing its parent */
+    }
+
+    /// Applied when truncateText='false'
+    &--truncate-text-false {
+      white-space: nowrap; // keeps the text in a single line
+      overflow: hidden; // keeps the element from overflowing its parent
+    }
+
+    /// Applied when multiline-support='true'
+    &--multiline-support-true {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      //-webkit-line-clamp: 3; // start showing ellipsis when 3rd line is reached
+      white-space: pre-wrap !important; // let the text wrap preserving spaces
+    }
+
+    /// Applied when multiline-support='false'
+    &--multiline-support-false {
+      white-space: nowrap; // keeps the text in a single line
+      overflow: hidden; // keeps the element from overflowing its parent
+    }
+  }
+}
+
+
+
+.ch5-text--disabled {
+  pointer-events: none;
+  opacity: $ch5-text-disabled-opacity;
+}
