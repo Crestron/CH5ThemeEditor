@@ -10,12 +10,6 @@
 /// @group ch5-text
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Main class
-ch5-text {
-  // display: inline-block;
-}
-
-/// Class to set the container properties of ch5-text
 .ch5-text {
   position: relative;
   min-width: 64px;
@@ -34,20 +28,17 @@ ch5-text {
     display: inline-block;
     width: 100%;
 
-    /// Applied when truncateText='true'
     &--truncate-text-true {
       text-overflow: ellipsis; // enables ellipsis
       white-space: nowrap; // keeps the text in a single line
       overflow: hidden; // keeps the element from overflowing its parent */
     }
 
-    /// Applied when truncateText='false'
     &--truncate-text-false {
       white-space: nowrap; // keeps the text in a single line
       overflow: hidden; // keeps the element from overflowing its parent
     }
 
-    /// Applied when multiline-support='true'
     &--multiline-support-true {
       overflow: hidden;
       display: -webkit-box;
@@ -56,14 +47,12 @@ ch5-text {
       white-space: pre-wrap !important; // let the text wrap preserving spaces 
     }
 
-    /// Applied when multiline-support='false'
     &--multiline-support-false {
       white-space: nowrap; // keeps the text in a single line
       overflow: hidden; // keeps the element from overflowing its parent
     }
   }
 }
-
 
 .ch5-text--disabled {
   pointer-events: none;
