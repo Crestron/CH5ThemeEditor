@@ -17,8 +17,7 @@ ch5-button {
 
 	/// Main Class
 	.ch5-button {
-		// display: flex; // ***
-		display: block; // ***
+		display: block; 
 		max-width: 100%;
 		cursor: pointer;
 		pointer-events: all;
@@ -68,7 +67,7 @@ ch5-button {
 			position: relative;
 
 			.cb-btn {
-				transform: rotate(270deg) translateX(-100%); // ****
+				transform: rotate(270deg) translateX(-100%);
 				transform-origin: top left;
 			}
 		}
@@ -212,9 +211,7 @@ ch5-button {
 				width: 100% !important;
 			}
 		}
-	}
-
-	.ch5-button--horizontal {
+	
 		/// Applied to make the height as much as its parent allows.
 		&.ch5-button--stretch-height {
 			height: 100%;
@@ -224,10 +221,7 @@ ch5-button {
 				min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
 			}
 		}
-	}
 
-
-	.ch5-button--horizontal {
 		/// Applied to make both width and height as much as its parent allows.
 		&.ch5-button--stretch-both {
 			width: 100%;

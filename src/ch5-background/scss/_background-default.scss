@@ -18,10 +18,16 @@
     width: 100%;
     height: 100%;
     z-index: $ch5-background-z-index;
+
+    /// @require .ch5-background
+    /// Added automatically on the first parent of the ch5-background element
     &--parent {
         position: relative;
         z-index: $ch5-background-parent-z-index;
     }
+
+    /// @require .ch5-background
+    /// Added automatically on the all canvas child of ch5-background element
     &--canvas {
         position: absolute;
         left: 0;
