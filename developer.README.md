@@ -4,20 +4,6 @@
  
 # CH5 Theme Editor - Getting Started
 
-#### Continuous Integration and Deployment Status
-
-| DEV NIGHTLY - latest-dev | Status |
-| ------ | ----------- |
-| Build Pipeline | ![Build status](https://dev.azure.com/crestron-mobile-devops/MobileApps/_apis/build/status/Blackbird/CoreBuild/CH5ThemeEditor?branchName=dev) |
-| Release Pipeline | ![Deployment status](https://vsrm.dev.azure.com/crestron-mobile-devops/_apis/public/Release/badge/0403b700-ab40-43cd-9990-961924c561bc/38/108) |
-| NPM | ![npm (tag)](https://img.shields.io/npm/v/@crestron/ch5-theme/latest-dev) |
-
-| MASTER-QE - latest-qe | Status |
-| ------ | ----------- |
-| Build Pipeline | ![Build status](https://dev.azure.com/crestron-mobile-devops/MobileApps/_apis/build/status/Blackbird/CoreBuild/CH5ThemeEditor?branchName=master) |
-| Release Pipeline | ![Deployment status](https://vsrm.dev.azure.com/crestron-mobile-devops/_apis/public/Release/badge/0403b700-ab40-43cd-9990-961924c561bc/38/94) |
-| NPM | ![npm (tag)](https://img.shields.io/npm/v/@crestron/ch5-theme/latest-qe) |
-
 ## Themes directory
  - Themes are located in **./themes** directory
  - Color variables are defined in **./ch5-core/themes/**
@@ -126,8 +112,6 @@ npm run bundle-theme-all
 ```
 ## Creating custom themes
 
-__Note: as of writing of this document, this feature is not completed.  How it will work is documented below__ 
-
 Custom themes can be thought of as overwrite of certain portions of an established theme.  The most prevalent use case will be a Crestron standard theme to be the established theme, but you can also create a new custom theme from a prior established theme. 
 
 A script to create a custom theme is provided.  The general syntax is below
@@ -140,7 +124,7 @@ and ExistingThemeName is the name of the theme to be extended
 
 example would be 
 ```sh
-v run create-theme big-bucks-customer light 
+npm run create-theme big-bucks-customer light 
 ```
 will create the sources that when compiled will create a big-bucks-customer-theme.css file
 
@@ -167,6 +151,6 @@ ensure that the sass-schema.json file is created correctly.
 
 Also, please ensure to add a comment with three slashes in each file. If not, the generate sass wil fail with error.
 
-## Testing your updates
+## How to create component level scss
 
-__This Section will be written when a procedure is better documented__ 
+1. Use variables when the expectation is that CCIDE should have the opportunity to override it. This will be reflected in sass based json files.

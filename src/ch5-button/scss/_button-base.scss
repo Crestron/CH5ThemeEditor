@@ -17,8 +17,7 @@ ch5-button {
 
 	/// Main Class
 	.ch5-button {
-		// display: flex; // ***
-		display: block; // ***
+		display: block; 
 		max-width: 100%;
 		cursor: pointer;
 		pointer-events: all;
@@ -63,11 +62,12 @@ ch5-button {
 			padding-right: calc($ch5-button-padding / 2);
 		}
 
+		/// Applied when button orientation='vertical'
 		&.ch5-button--vertical {
 			position: relative;
 
 			.cb-btn {
-				transform: rotate(270deg) translateX(-100%); // ****
+				transform: rotate(270deg) translateX(-100%);
 				transform-origin: top left;
 			}
 		}
@@ -200,7 +200,8 @@ ch5-button {
 	.ch5-button--img {
 		line-height: $ch5-button-content-line-height;
 	}
-
+		
+	/// Applied when button orientation='horizontal'
 	.ch5-button--horizontal {
 		/// Applied to make the width as much as its parent allows.
 		&.ch5-button--stretch-width {
@@ -210,9 +211,7 @@ ch5-button {
 				width: 100% !important;
 			}
 		}
-	}
-
-	.ch5-button--horizontal {
+	
 		/// Applied to make the height as much as its parent allows.
 		&.ch5-button--stretch-height {
 			height: 100%;
@@ -222,10 +221,7 @@ ch5-button {
 				min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
 			}
 		}
-	}
 
-
-	.ch5-button--horizontal {
 		/// Applied to make both width and height as much as its parent allows.
 		&.ch5-button--stretch-both {
 			width: 100%;
@@ -438,6 +434,7 @@ ch5-button {
 	}
 }
 
+/// Applied when size="regular"
 .ch5-button--size-regular {
 	@include ch5-button-size-set($ch5-button-size,
 		$ch5-button-font-size,
@@ -447,6 +444,7 @@ ch5-button {
 		$ch5-button-icon-font-size );
 }
 
+/// Applied when size="x-small"
 .ch5-button--size-x-small {
 	@include ch5-button-size-set($ch5-button-x-small-size,
 		$ch5-button-x-small-font-size,
@@ -456,6 +454,7 @@ ch5-button {
 		$ch5-button-icon-font-size );
 }
 
+/// Applied when size="small"
 .ch5-button--size-small {
 	@include ch5-button-size-set($ch5-button-small-size,
 		$ch5-button-small-font-size,
@@ -465,6 +464,7 @@ ch5-button {
 		$ch5-button-icon-font-size );
 }
 
+/// Applied when size="large"
 .ch5-button--size-large {
 	@include ch5-button-size-set($ch5-button-large-size,
 		$ch5-button-large-font-size,
@@ -474,6 +474,7 @@ ch5-button {
 		$ch5-button-icon-font-size );
 }
 
+/// Applied when size="x-large"
 .ch5-button--size-x-large {
 	@include ch5-button-size-set($ch5-button-x-large-size,
 		$ch5-button-x-large-font-size,

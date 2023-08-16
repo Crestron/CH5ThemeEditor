@@ -11,15 +11,22 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-datetime {
+
 	&--horizontal-alignment {
+		/// @require .ch5-datetime--horizontal-alignment
+		/// Set horizontalAlignment as center
 		&-center {
 			justify-content: center;
 		}
 
+		/// @require .ch5-datetime--horizontal-alignment
+		/// Set horizontalAlignment as left
 		&-left {
 			justify-content: flex-start;
 		}
 
+		/// @require .ch5-datetime--horizontal-alignment
+		/// Set horizontalAlignment as right
 		&-right {
 			justify-content: flex-end;
 		}
