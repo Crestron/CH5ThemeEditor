@@ -32,6 +32,7 @@ ch5-slider,
 ch5-spinner,
 ch5-subpage-reference-list,
 ch5-tab-button,
+ch5-text,
 ch5-textinput,
 ch5-toggle,
 ch5-triggerview,
@@ -44,8 +45,8 @@ ch5-wifi-signal-level-gauge {
   }
 
   &:not(:defined) {
-    display:inline-block;
-    opacity:0;
+    display: inline-block;
+    opacity: 0;
     // visibility:hidden;
     // display:none;
   }
@@ -99,6 +100,8 @@ ch5-wifi-signal-level-gauge {
 @import "ch5-tab-button/ch5-tab-button";
 
 @import "ch5-template/ch5-template";
+
+@import 'ch5-text/ch5-text';
 
 @import 'ch5-textinput/ch5-textinput';
 

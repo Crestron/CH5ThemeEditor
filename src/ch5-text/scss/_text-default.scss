@@ -1,0 +1,63 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2023 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-text
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/// Main Class
+.ch5-text {
+  position: relative;
+  min-width: 64px;
+  min-height: 44px;
+  width: 150px;
+  height: 48px;
+  overflow: hidden;
+  padding: 10px;
+
+  span {
+    display: inline-block;
+    width: 100%;
+
+    /// Applied when truncateText='true'
+    &.ch5-text--truncate-text-true {
+      text-overflow: ellipsis; // enables ellipsis
+      white-space: nowrap; // keeps the text in a single line
+      overflow: hidden; // keeps the element from overflowing its parent */
+    }
+
+    /// Applied when truncateText='false'
+    &.ch5-text--truncate-text-false {
+      white-space: nowrap; // keeps the text in a single line
+      overflow: hidden; // keeps the element from overflowing its parent
+    }
+
+    /// Applied when multiline-support='true'
+    &.ch5-text--multiline-support-true {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3; // start showing ellipsis when 3rd line is reached
+      white-space: pre-wrap !important; // let the text wrap preserving spaces 
+    }
+
+    /// Applied when multiline-support='false'
+    &.ch5-text--multiline-support-false {
+      white-space: nowrap; // keeps the text in a single line
+      overflow: hidden; // keeps the element from overflowing its parent
+    }
+  }
+}
+
+
+/// Applied when disabled='true'
+.ch5-text--disabled {
+  pointer-events: none;
+  opacity: $ch5-text-disabled-opacity;
+}
