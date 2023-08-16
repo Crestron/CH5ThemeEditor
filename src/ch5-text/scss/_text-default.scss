@@ -10,6 +10,8 @@
 /// @group ch5-text
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+/// Main Class
 .ch5-text {
   position: relative;
   min-width: 64px;
@@ -19,22 +21,25 @@
   overflow: hidden;
   padding: 10px;
 
-  &-span {
+  span {
     display: inline-block;
     width: 100%;
 
-    &--truncate-text-true {
+    /// Applied when truncateText='true'
+    &.ch5-text--truncate-text-true {
       text-overflow: ellipsis; // enables ellipsis
       white-space: nowrap; // keeps the text in a single line
       overflow: hidden; // keeps the element from overflowing its parent */
     }
 
-    &--truncate-text-false {
+    /// Applied when truncateText='false'
+    &.ch5-text--truncate-text-false {
       white-space: nowrap; // keeps the text in a single line
       overflow: hidden; // keeps the element from overflowing its parent
     }
 
-    &--multiline-support-true {
+    /// Applied when multiline-support='true'
+    &.ch5-text--multiline-support-true {
       overflow: hidden;
       display: -webkit-box;
       -webkit-box-orient: vertical;
@@ -42,13 +47,16 @@
       white-space: pre-wrap !important; // let the text wrap preserving spaces 
     }
 
-    &--multiline-support-false {
+    /// Applied when multiline-support='false'
+    &.ch5-text--multiline-support-false {
       white-space: nowrap; // keeps the text in a single line
       overflow: hidden; // keeps the element from overflowing its parent
     }
   }
 }
 
+
+/// Applied when disabled='true'
 .ch5-text--disabled {
   pointer-events: none;
   opacity: $ch5-text-disabled-opacity;

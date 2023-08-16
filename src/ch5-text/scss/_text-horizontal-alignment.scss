@@ -11,22 +11,27 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-text {
-	&-span {
-		&--horizontal-alignment {
-			&-center {
-				text-align: center;
-				padding: 0px 10px;
-			}
+	&--horizontal-alignment {
 
-			&-left {
-				text-align: left;
-				padding-right: 10px;
-			}
+		/// @require .ch5-text--horizontal-alignment
+		/// Set horizontalAlignment as center
+		&-center {
+			text-align: center;
+			padding: 0px 10px;
+		}
 
-			&-right {
-				text-align: right;
-				padding-left: 10px;
-			}
+		/// @require .ch5-text--horizontal-alignment
+		/// Set horizontalAlignment as left
+		&-left {
+			text-align: left;
+			padding-right: 10px;
+		}
+
+		/// @require .ch5-text--horizontal-alignment
+		/// Set horizontalAlignment as right
+		&-right {
+			text-align: right;
+			padding-left: 10px;
 		}
 	}
 }
