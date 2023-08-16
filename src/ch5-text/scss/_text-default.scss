@@ -38,7 +38,7 @@
       overflow: hidden; // keeps the element from overflowing its parent
     }
 
-    /// Applied when multiline-support='true'
+    /// Applied when multilineSupport='true'
     &.ch5-text--multiline-support-true {
       overflow: hidden;
       display: -webkit-box;
@@ -47,7 +47,7 @@
       white-space: pre-wrap !important; // let the text wrap preserving spaces 
     }
 
-    /// Applied when multiline-support='false'
+    /// Applied when multilineSupport='false'
     &.ch5-text--multiline-support-false {
       white-space: nowrap; // keeps the text in a single line
       overflow: hidden; // keeps the element from overflowing its parent
