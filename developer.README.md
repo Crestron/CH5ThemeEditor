@@ -124,7 +124,7 @@ and ExistingThemeName is the name of the theme to be extended
 
 example would be 
 ```sh
-v run create-theme big-bucks-customer light 
+npm run create-theme big-bucks-customer light 
 ```
 will create the sources that when compiled will create a big-bucks-customer-theme.css file
 
