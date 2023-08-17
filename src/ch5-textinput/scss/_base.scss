@@ -13,6 +13,44 @@
 ch5-textinput {
   display: inline-block;
   vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
+
+  &[dir="rtl"] {
+    .ch5-textinput {
+      &__icon {
+
+        /// @require .ch5-textinput__icon
+        /// Applied on the icon when iconPosition attribute is set to 'last'
+        &--last {
+          margin-right: 0;
+        }
+
+        /// @require .ch5-textinput__icon
+        /// Applied on the icon when iconPosition attribute is set to 'first'
+        &--first {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  &[dir="ltr"] {
+    .ch5-textinput {
+      &__icon {
+
+        /// @require .ch5-textinput__icon
+        /// Applied on the icon when iconPosition attribute is set to 'last'
+        &--last {
+          margin-left: 0;
+        }
+
+        /// @require .ch5-textinput__icon
+        /// Applied on the icon when iconPosition attribute is set to 'first'
+        &--first {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }
 
 /// Main class
