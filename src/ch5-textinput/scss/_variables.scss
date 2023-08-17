@@ -238,3 +238,17 @@ $ch5-textinput-size-large-height: 56px !default;
 
 /// set minimum height for size - x-large of the textinput
 $ch5-textinput-size-x-large-height: 60px !default;
+
+/// The color of the icon within the textinput
+$ch5-textinput-icon-text-color: $success-background-color !default;
+
+/// Set the color of text for the textinput
+$ch5-textinput-input-text-color: $ch5-input-text-color !default;
+
+/// the color for the label of the textinput
+$ch5-textinput-label-text-color: $ch5-input-text-color !default;
+
+// border color for each element
+/// the color for the border of the textinput
+$ch5-textinput-input-border-color: $ch5-input-border-color !default;
+

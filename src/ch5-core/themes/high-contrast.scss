@@ -118,6 +118,51 @@ $text-disabled-font-color: #ffffff !default;
 
 $theme-foreground-color: #000 !default;
 
+/// The text color of the item.
+$ch5-item-color: #939393 !default;
+
+/// The text color of the active item
+$ch5-active-item-color: $white !default;
+
+/// The background color for the overlay of the component.
+$ch5-overlay-background-color: #000 !default;
+
+/// the border color of the highlighted item
+$ch5-highlight-border-color: #ff0000 !default;
+
+/// background color of item
+$ch5-component-item-background-color: #0000ff !default;
+
+/// The background color of the component.
+$ch5-component-background-color: transparent !default;
+
+/// The background color of fallback message.
+$ch5-component-fallback-message-color-background: $white !default;
+
+/// Set the text color of list items.
+$ch5-component-list-item-color: $white !default;
+
+/// Set the background color of list items, configurable for each theme
+$ch5-component-list-item-background-color: #0000ff !default;
+
+/// Set the border color of list items
+$ch5-component-list-item-border-color: $white !default;
+
+// textinput
+/// The text color of the textinput.
+$ch5-input-text-color: #4a4a4a !default;
+
+/// the color for the border of the textinput
+$ch5-input-border-color: $default-background-color !default;
+
+// slider
+$ch5-slider-connect-bg: $default-background-color !default;
+$ch5-slider-target-bg: transparent !default;
+$ch5-slider-target-border-color: $primary-background-color !default;
+$ch5-slider-handle-bg: $primary-font-color !default;
+$ch5-slider-handle-border-color: $primary-background-color !default;
+$ch5-slider-pips-color: $primary-background-color !default;
+
 /* ===============================================
 CH5-OVERLAY
 ============================================= */
@@ -131,10 +176,10 @@ $ch5-overlay-default-close-icon-color-hover: #000 !default;
 $ch5-overlay-default-mask-bg-color: rgba(150, 150, 150, 0.3) !default;
 
 /// the background color of the icon at the top of the overlay panel
-$ch5-overlay-panel-close-icon-background-color: #fff !default;
+$ch5-overlay-panel-close-icon-background-color: $white !default;
 
 /// the background color of the overlay panel
-$ch5-overlay-panel-background-color: #fff !default;
+$ch5-overlay-panel-background-color: $white !default;
 
 /// the border color of the overlay panel
 $ch5-overlay-panel-border-color: #000000 !default;
@@ -171,52 +216,7 @@ $ch5-select-panel-item-background-color: transparent !default;
 $ch5-select-panel-item-hover-background-color: #f8f9fa !default;
 
 /// select panel background color
-$ch5-select-panel-items-background-color: #ffffff !default;
-
-/* ===============================================
-CH5-SPINNER
-============================================= */
-
-/// The text color of the active item
-$ch5-spinner-active-item-color: #fff !default;
-
-/// The text color of the item.
-$ch5-spinner-item-color: #939393 !default;
-
-/// The background color for the overlay of the spinner.
-$ch5-spinner-overlay-background-color: #000 !default;
-/// the box shadow color of the spinner
-$ch5-spinner-highlight-box-shadow-color: rgba(0, 0, 0, 0.3) !default;
-/// the border color of the spinner
-$ch5-spinner-highlight-border-color: #ff0000 !default;
-
-// background
-$ch5-spinner-background-color: #0000ff !default;
-$ch5-spinner-background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05)) !default;
-$ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%) !default;
-
-/* ===============================================
-CH5-TEXT INPUT
-============================================= */
-
-/// The text color of the textinput.
-$ch5-textinput-text-color: #4a4a4a !default;
-
-/// Set the color of text for the textinput
-$ch5-textinput-input-text-color: $ch5-textinput-text-color !default;
-
-/// The color of the icon within the textinput
-$ch5-textinput-icon-text-color: $success-background-color !default;
-
-/// the color for the label of the textinput
-$ch5-textinput-label-text-color: $ch5-textinput-text-color !default;
-
-// base border color
-$ch5-textinput-border-color: $default-background-color !default;
-
-// border color for each element
-/// the color for the border of the textinput
-$ch5-textinput-input-border-color: $ch5-textinput-border-color !default;
+$ch5-select-panel-items-background-color: $white !default;
 
 /* ===============================================
 CH5-TOGGLE
@@ -230,37 +230,27 @@ $ch5-toggle-label-font-color: #000 !default;
 /// the text color of the on|off label
 $ch5-toggle-text-font-color: #000 !default;
 /// the color of the on|off icon
-$ch5-toggle-icon-font-color: #fff !default;
+$ch5-toggle-icon-font-color: $white !default;
 
 // circle
 /// the background color of the handle when shape="circle"
 $ch5-toggle-handle-circle-background: #939393 !default;
 /// the text color of the on label when shape="circle"
-$ch5-toggle-circle-label-on-color: #fff !default;
+$ch5-toggle-circle-label-on-color: $white !default;
 /// the text color of the off label when shape="circle"
 $ch5-toggle-circle-label-off-color: #000 !default;
 /// the background color of the knob when shape="circle"
-$ch5-toggle-circle-knob-color: #fff !default;
+$ch5-toggle-circle-knob-color: $white !default;
 
 // rectangle
 /// the background color of the handle when shape="rectangle"
 $ch5-toggle-handle-rectangle-background: #464747 !default;
 /// the text color of the on label when shape="rectangle"
-$ch5-toggle-rectangle-label-on-color: #fff !default;
+$ch5-toggle-rectangle-label-on-color: $white !default;
 /// the text color of the off label when shape="rectangle"
-$ch5-toggle-rectangle-label-off-color: #fff !default;
+$ch5-toggle-rectangle-label-off-color: $white !default;
 /// the background color of the knob when shape="rectangle"
 $ch5-toggle-rectangle-knob-color: #888 !default;
-
-/* ===============================================
-CH5-TRIGGERVIEW
-============================================= */
-
-/// The background color of the triggerview.
-$ch5-triggerview-background-color: transparent !default;
-
-/// The background color of fallback message.
-$ch5-triggerview-fallback-message-color-background: #fff !default;
 
 /* ===============================================
 CH5-MODAL
@@ -276,10 +266,10 @@ $ch5-modal-close-icon-color-hover: #0000ff !default;
 $ch5-modal-mask-bg-color: rgba(150, 150, 150, 0.3) !default;
 
 /// the background color of the icon at the top of the modal
-$ch5-modal-close-icon-background-color: #fff !default;
+$ch5-modal-close-icon-background-color: $white !default;
 
 /// the background color of the modal
-$ch5-modal-background-color: #fff !default;
+$ch5-modal-background-color: $white !default;
 
 /// the text color of the modal
 $ch5-modal-text-color: #000 !default;
@@ -293,26 +283,4 @@ $ch5-modal-border-color: #939393 !default;
 /// the text color for the prompt text of the modal
 $ch5-modal-prompt-text-font-color: #4a4a4a !default;
 
-/* ===============================================
-CH5-SLIDER
-============================================= */
-$ch5-slider-connect-bg: #0000ff;
-$ch5-slider-background-lighten-percent: 30%;
-$ch5-slider-target-bg: transparent;
-$ch5-slider-target-border-color: #000;
-$ch5-slider-handle-bg: #fff;
-$ch5-slider-handle-border-color: #000;
-$ch5-slider-pips-color: #000;
 
-/* ===============================================
-CH5-LIST
-============================================= */
-
-/// Set the text color of list items.
-$ch5-list-item-color: #fff !default;
-
-/// Set the background color of list items, configurable for each theme
-$ch5-list-item-background-color: #0000ff !default;
-
-/// Set the border color of list items
-$ch5-list-item-border-color: #fff !default;

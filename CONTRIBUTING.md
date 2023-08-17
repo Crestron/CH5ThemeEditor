@@ -32,5 +32,3 @@ They are located inside the crestron-components-lib/wct_tests folder, while unit
 - Additionally, if new attributes are added for ch5-components, make sure to document them in the showcase application and add them to the vs code extension schema, by updating the interfaces in
 crestron-components-lib/_interfaces and running the metadata generator (check the corresponding [readme](crestron-metadata-generator/README.md)).
 
-## Resources
-- Work In Progress
