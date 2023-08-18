@@ -10,6 +10,8 @@
 /// @group ch5-light-theme-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+@import "../../ch5-core/variables";
+
 // Color system
 
 $default-background-color: #0099ff !default;
@@ -203,28 +205,36 @@ $ch5-toggle-handle-checked-color: #4bd865 !default;
 
 /// The text color of the label
 $ch5-toggle-label-font-color: #4a4a4a !default;
+
 /// the text color of the on|off label
 $ch5-toggle-text-font-color: #4a4a4a !default;
+
 /// the color of the on|off icon
 $ch5-toggle-icon-font-color: $white !default;
 
 // circle
 /// the background color of the handle when shape="circle"
 $ch5-toggle-handle-circle-background: #d8d9db !default;
+
 /// the text color of the on label when shape="circle"
 $ch5-toggle-circle-label-on-color: $white !default;
+
 /// the text color of the off label when shape="circle"
 $ch5-toggle-circle-label-off-color: #666 !default;
+
 /// the background color of the knob when shape="circle"
 $ch5-toggle-circle-knob-color: $white !default;
 
 // rectangle
 /// the background color of the handle when shape="rectangle"
 $ch5-toggle-handle-rectangle-background: #464747 !default;
+
 /// the text color of the on label when shape="rectangle"
 $ch5-toggle-rectangle-label-on-color: $white !default;
+
 /// the text color of the off label when shape="rectangle"
 $ch5-toggle-rectangle-label-off-color: $white !default;
+
 /// the background color of the knob when shape="rectangle"
 $ch5-toggle-rectangle-knob-color: #888 !default;
 
