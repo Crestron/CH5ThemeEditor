@@ -169,6 +169,33 @@ $ch5-slider-handle-border-color: #8f8f8f !default;
 $ch5-slider-pips-color: #8f8f8f !default;
 
 /* ===============================================
+CH5-OVERLAY
+============================================= */
+/// the color of the icon at the top of the overlay panel
+$ch5-overlay-default-close-icon-color: #555 !default;
+
+/// the color of the icon at the top of the overlay panel when it is hovered
+$ch5-overlay-default-close-icon-color-hover: #333 !default;
+
+/// the background color of the mask element
+$ch5-overlay-default-mask-bg-color: rgba(150, 150, 150, 0.3) !default;
+
+/// the background color of the icon at the top of the overlay panel
+$ch5-overlay-panel-close-icon-background-color: #fff !default;
+
+/// the background color of the overlay panel
+$ch5-overlay-panel-background-color: #fff !default;
+
+/// the border color of the overlay panel
+$ch5-overlay-panel-border-color: #aeaeae !default;
+
+/// the text color of the overlay panel
+$ch5-overlay-panel-text-color: #4a4a4a !default;
+
+/// the font color for the content of the overlay panel
+$ch5-overlay-panel-contents-font-color: #333 !default;
+
+/* ===============================================
 CH5-SELECT PANEL
 ============================================= */
 
