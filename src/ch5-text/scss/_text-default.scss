@@ -12,6 +12,8 @@
 
 ch5-text {
   display: inline-block;
+  width: -moz-available;          // WebKit-based browsers will ignore this. 
+  width: -webkit-fill-available;  // Mozilla-based browsers will ignore this.
 }
 
 /// Main Class
