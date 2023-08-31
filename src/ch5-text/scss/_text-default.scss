@@ -12,6 +12,8 @@
 
 ch5-text {
   display: inline-block;
+  width: -moz-available;          // WebKit-based browsers will ignore this. 
+  width: -webkit-fill-available;  // Mozilla-based browsers will ignore this.
 }
 
 /// Main Class
@@ -48,6 +50,7 @@ ch5-text {
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3; // start showing ellipsis when 3rd line is reached
       white-space: pre-wrap !important; // let the text wrap preserving spaces 
+      word-break: break-all;
     }
 
     /// Applied when multilineSupport='false'
