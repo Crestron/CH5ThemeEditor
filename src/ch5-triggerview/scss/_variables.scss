@@ -39,9 +39,3 @@ $ch5-triggerview-transition-duration: 0.6s !default;
 
 /// transition effect(describe animation on content of the child view)
 $ch5-triggerview-transition-timing-function: ease-out !default;
-
-/// The background color of the triggerview.
-$ch5-triggerview-background-color: $ch5-component-background-color !default;
-
-/// The background color of fallback message.
-$ch5-triggerview-fallback-message-color-background: $ch5-component-fallback-message-color-background !default;

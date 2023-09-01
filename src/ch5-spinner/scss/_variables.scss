@@ -67,25 +67,3 @@ $ch5-spinner-overlay-opacity: 0.0 !default;
 
 $ch5-spinner-wrapper-z-index: 9999 !default;
 $ch5-spinner-overlay-z-index: 999 !default;
-
-/// The text color of the active item
-$ch5-spinner-active-item-color: $ch5-active-item-color !default;
-
-/// The text color of the item.
-$ch5-spinner-item-color: $ch5-item-color !default;
-
-/// The background color for the overlay of the spinner.
-$ch5-spinner-overlay-background-color: $ch5-overlay-background-color !default;
-
-/// the box shadow color of the spinner
-$ch5-spinner-highlight-box-shadow-color: rgba(0, 0, 0, 0.3) !default; // this color is used for all themes
-
-/// the border color of the spinner
-$ch5-spinner-highlight-border-color: $ch5-highlight-border-color !default;
-
-// background
-$ch5-spinner-background-color: $ch5-component-item-background-color !default;
-
-$ch5-spinner-background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05)) !default; // this color is used for all themes
-$ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%) !default; // this color is used for all themes
-
