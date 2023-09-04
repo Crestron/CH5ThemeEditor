@@ -1,0 +1,70 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-overlay-panel-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// the default font size unit for the overlay panel
+$ch5-overlay-panel-font-size-unit: $ch5-font-size-unit !default;
+
+/// the default font size value for the overlay panel
+$ch5-overlay-panel-font-size-value: $ch5-font-size-value !default;
+
+/// the default font size for the overlay panel
+$ch5-overlay-panel-font-size: $ch5-overlay-panel-font-size-value + $ch5-overlay-panel-font-size-unit !default;
+
+/// the default font style for the overlay panel
+$ch5-overlay-panel-font-style: $ch5-font-style !default;
+
+/// the default font weight for the overlay panel
+$ch5-overlay-panel-font-weight: $ch5-font-weight !default;
+
+/// the border width of the overlay panel
+$ch5-overlay-panel-border-width:  1px !default;
+
+/// the border style of the overlay panel
+$ch5-overlay-panel-border-style:  solid !default;
+
+/// the border radius of the overlay panel
+$ch5-overlay-panel-border-radius:  6px !default;
+
+/// set padding for the overlay panel
+$ch5-overlay-panel-padding: 1.25em !default;
+
+/// the margin of the icon at the top of the overlay panel
+$ch5-overlay-panel-close-icon-margin: 0 5px;
+
+/// the padding of the icon at the top of the overlay panel
+$ch5-overlay-panel-close-icon-padding: 0 5px 5px;
+
+/// the width of the icon at the top of the overlay panel
+$ch5-overlay-panel-close-icon-width: 20px !default;
+
+/// the font size of the icon at the top of the overlay panel
+$ch5-overlay-default-close-icon-font-size: 24px !default;
+
+/// the font style of the icon at the top of the overlay panel
+$ch5-overlay-default-close-icon-font-style: $ch5-overlay-panel-font-style !default;
+
+/// the font weight of the icon at the top of the overlay panel
+$ch5-overlay-default-close-icon-font-weight: $ch5-overlay-panel-font-weight !default;
+
+/// the padding for the content of the overlay panel
+$ch5-overlay-panel-contents-padding: 20px !default;
+
+/// the font size for the content of the overlay panel
+$ch5-overlay-panel-contents-font-size: 18px !default;
+
+/// the font style for the content of the overlay panel
+$ch5-overlay-panel-contents-font-style: $ch5-overlay-panel-font-style !default;
+
+/// the font weight for the content of the overlay panel
+$ch5-overlay-panel-contents-font-weight: $ch5-overlay-panel-font-style !default;
+
+$ch5-overlay-panel-z-index: 10000 !default;

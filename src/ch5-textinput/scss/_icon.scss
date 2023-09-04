@@ -1,0 +1,54 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-textinput
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ch5-textinput {
+  /// @require .ch5-textinput
+  /// Applied on the icon
+  &__icon {
+    color: $ch5-textinput-icon-text-color;
+    &--x-large {
+      font-size: $ch5-textinput-icon-x-large-font-size;
+      margin: $ch5-textinput-icon-x-large-tb-margin $ch5-textinput-icon-x-large-lr-margin;
+    }
+
+    &--large {
+      font-size: $ch5-textinput-icon-large-font-size;
+      margin: $ch5-textinput-icon-large-tb-margin $ch5-textinput-icon-large-lr-margin;
+    }
+
+    &--regular {
+      font-size: $ch5-textinput-regular-font-size;
+      margin: $ch5-textinput-icon-regular-tb-margin $ch5-textinput-icon-large-lr-margin;
+    }
+
+    &--small {
+      font-size: $ch5-textinput-small-font-size;
+      margin: $ch5-textinput-icon-small-tb-margin $ch5-textinput-icon-small-lr-margin;
+    }
+
+    &--x-small {
+      font-size: $ch5-textinput-x-small-font-size;
+      margin: $ch5-textinput-icon-x-small-tb-margin $ch5-textinput-icon-x-small-lr-margin;
+
+    }
+    /// @require .ch5-textinput__icon
+    /// Applied on the icon when iconPosition attribute is set to 'last'
+    &--last {
+      margin-left: 0;
+    }
+    /// @require .ch5-textinput__icon
+    /// Applied on the icon when iconPosition attribute is set to 'first'
+    &--first {
+      margin-right: 0;
+    }
+  }
+}

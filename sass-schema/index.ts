@@ -1,6 +1,6 @@
 import { getCrComLibComponentData } from './business-rules/headless-browser';
 import { extractMixins, processSassFile } from './sassToJson';
-import { BASE_OBJECT_INTERFACE, OUTPUT_JSON, OUTPUT_PROPERTIES, OUTPUT_SCSS, PROPERTIES_INTERFACE, THEME_EDITOR_PATH } from "./utils";
+import { BASE_OBJECT_INTERFACE, OUTPUT_JSON, OUTPUT_PROPERTIES, OUTPUT_SCSS, PROPERTIES_INTERFACE, THEME_EDITOR_SOURCE_FILES_PATH } from "./utils";
 import * as packageJson from "./../package.json";
 
 const _ = require('lodash');
@@ -47,8 +47,8 @@ function generatePropertiesJson(properties: PROPERTIES_INTERFACE, path: string) 
  * Utils function used to extract the global mixins used throughout all the components
  */
 function extractGlobalMixins() {
-  const mainScss = '@import "./style/mixins";';
-  const flattenedScss = flatten(mainScss, THEME_EDITOR_PATH);
+  const mainScss = '@import "/style/mixins";';
+  const flattenedScss = flatten(mainScss, THEME_EDITOR_SOURCE_FILES_PATH);
   return extractMixins(flattenedScss);
 }
 
@@ -104,9 +104,9 @@ async function flattenScssComponents(paths: string[]) {
     try {
       const fileName = '/' + componentPath + '.scss';
       // Read the content of the entry SCSS File so it can be passed on to the flatten function
-      const entrySCSSContent = fs.readFileSync(THEME_EDITOR_PATH + componentPath + fileName, 'utf8');
+      const entrySCSSContent = fs.readFileSync(THEME_EDITOR_SOURCE_FILES_PATH + componentPath + fileName, 'utf8');
       // Provide the content of the entry SCSS File and its location to the flatten function. Its location is required so the imports can be resolved
-      const output = flatten(entrySCSSContent, path.resolve(path.join(THEME_EDITOR_PATH , componentPath)));
+      const output = flatten(entrySCSSContent, path.resolve(path.join(THEME_EDITOR_SOURCE_FILES_PATH, componentPath)));
 
       writeToFile(output, OUTPUT_SCSS + fileName);
 
@@ -132,7 +132,7 @@ export const GET_PROPERTIES = async (name: string): Promise<PROPERTIES_INTERFACE
  */
 async function traverseThemeEditorsObjects(): Promise<string[]> {
   const ch5ComponentsPath: any[] = [];
-  const dir = await fs.promises.opendir(THEME_EDITOR_PATH);
+  const dir = await fs.promises.opendir(THEME_EDITOR_SOURCE_FILES_PATH);
 
   for await (const dirent of dir) {
     if (dirent.isDirectory() && /^(ch5)[-a-zA-Z]+/.test(dirent.name)) {
@@ -147,7 +147,7 @@ async function initialize() {
   // Dynamically traversing items is temporarily removed
   // const componentsPath = await traverseThemeEditorsObjects();
 
-  // All the components that are interested in are hardcoded. We will compute the path based on THEME_EDITOR_PATH constant + values belo
+  // All the components that are interested in are hardcoded. We will compute the path based on THEME_EDITOR_SOURCE_FILES_PATH constant + values belo
   const componentsPath: any = {
     'ch5-animation': 'Ch5Animation',
     'ch5-background': 'Ch5Background',
@@ -155,6 +155,7 @@ async function initialize() {
     'ch5-button-list': 'Ch5ButtonList',
     'ch5-color-chip': 'Ch5ColorChip',
     'ch5-color-picker': 'Ch5ColorPicker',
+    'ch5-datetime': 'Ch5DateTime',
     'ch5-dpad': 'Ch5Dpad',
     'ch5-image': 'Ch5Image',
     'ch5-keypad': 'Ch5Keypad',
@@ -169,6 +170,7 @@ async function initialize() {
     'ch5-slider': 'Ch5Slider',
     'ch5-spinner': 'Ch5Spinner',
     'ch5-tab-button': 'Ch5TabButton',
+    'ch5-text': 'Ch5Text',
     'ch5-textinput': 'Ch5TextInput',
     'ch5-toggle': 'Ch5Toggle',
     'ch5-video': 'Ch5Video',

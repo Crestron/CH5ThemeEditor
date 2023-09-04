@@ -1,0 +1,107 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-textinput
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ch5-textinput {
+
+    /// @require .ch5-textinput
+    /// Applied on the input
+    &__input {
+        background: transparent;
+        border: 0;
+        color: $ch5-textinput-input-text-color;
+        // max-width: 100%;
+        outline: 0;
+
+        /// @require .ch5-textinput__input
+        /// Applied on the input when text-transform="uppercase"
+        &--uppercase {
+            text-transform: uppercase
+        }
+
+        /// @require .ch5-textinput__input
+        /// Applied on the input when text-transform="lowercase"
+        &--lowercase {
+            text-transform: lowercase;
+        }
+
+        /// @require .ch5-textinput__input
+        /// Applied on the input when text-transform="capitalize"
+        &--capitalize {
+            text-transform: capitalize;
+        }
+
+        /// @require .ch5-textinput__input
+        /// Applied on the input when text-transform="none"
+        &--none {
+            text-transform: none;
+        }
+
+        /// @require .ch5-textinput__input
+        /// Applied on the input when size="x-small"
+        &--x-small {
+            padding: $ch5-textinput-input-x-small-tb-padding $ch5-textinput-input-x-small-lr-padding;
+            font-style: $ch5-textinput-x-small-font-style;
+            font-size: $ch5-textinput-x-small-font-size;
+            font-weight: $ch5-textinput-x-small-font-weight;
+            width: 100%;
+            height: $ch5-textinput-size-x-small-height;
+            // min-width: $ch5-textinput-input-x-small-min-width;
+        }
+
+        /// @require .ch5-textinput__input
+        /// Applied on the input when size="small"
+        &--small {
+            padding: $ch5-textinput-input-small-tb-padding $ch5-textinput-input-small-lr-padding;
+            font-style: $ch5-textinput-small-font-style;
+            font-size: $ch5-textinput-small-font-size;
+            font-weight: $ch5-textinput-small-font-weight;
+            width: 100%;
+            height: $ch5-textinput-size-small-height;
+            // min-width: $ch5-textinput-input-small-min-width;
+        }
+
+        /// @require .ch5-textinput__input
+        /// Applied on the input when size="regular"
+        &--regular {
+            padding: $ch5-textinput-input-regular-tb-padding $ch5-textinput-input-regular-lr-padding;
+            font-style: $ch5-textinput-regular-font-style;
+            font-size: $ch5-textinput-regular-font-size;
+            font-weight: $ch5-textinput-regular-font-weight;
+            width: 100%;
+            height: $ch5-textinput-size-regular-height; 
+            // min-width: $ch5-textinput-input-regular-min-width;
+        }
+        /// @require .ch5-textinput__input
+        /// Applied on the input when size="large"
+        &--large {
+            padding: $ch5-textinput-input-large-tb-padding $ch5-textinput-input-large-lr-padding;
+            font-style: $ch5-textinput-large-font-style;
+            font-size: $ch5-textinput-large-font-size;
+            font-weight: $ch5-textinput-large-font-weight;
+            width: 100%;
+            height: $ch5-textinput-size-large-height; 
+            // min-width: $ch5-textinput-input-large-min-width;
+        }
+
+        /// @require .ch5-textinput__input
+        /// Applied on the input when size="x-large"
+        &--x-large {
+            padding: $ch5-textinput-input-x-large-tb-padding $ch5-textinput-input-x-large-lr-padding;
+            font-style: $ch5-textinput-x-large-font-style;
+            font-size: $ch5-textinput-x-large-font-size;
+            font-weight: $ch5-textinput-x-large-font-weight;
+            width: 100%;
+            height: $ch5-textinput-size-x-large-height;
+            // min-width: $ch5-textinput-input-x-large-min-width;
+        }
+    }
+}
