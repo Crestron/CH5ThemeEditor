@@ -1,0 +1,37 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2023 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-text
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ch5-text {
+    &--vertical-alignment {
+
+        /// @require .ch5-text--vertical-alignment
+        /// Set verticalAlignment as top
+        &-top {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        /// @require .ch5-text--vertical-alignment
+        /// Set verticalAlignment as middle
+        &-middle {
+            display: flex;
+            align-items: center;
+        }
+
+        /// @require .ch5-text--vertical-alignment
+        /// Set verticalAlignment as bottom
+        &-bottom {
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+}

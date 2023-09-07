@@ -1,0 +1,41 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-signal-level-gauge-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Height small
+$ch5-signal-level-gauge-small-height: 24px !default;
+
+/// Width small
+$ch5-signal-level-gauge-small-width: 36px !default;
+
+/// Height regular
+$ch5-signal-level-gauge-regular-height: 35px !default;
+
+/// Width regular
+$ch5-signal-level-gauge-regular-width: 45px !default;
+
+/// Height large
+$ch5-signal-level-gauge-large-height: 60px !default;
+
+/// Width large
+$ch5-signal-level-gauge-large-width: 90px !default;
+
+/// Height x-large
+$ch5-signal-level-gauge-xlarge-height: 96px !default;
+
+/// Width x-large
+$ch5-signal-level-gauge-xlarge-width: 180px !default;
+
+/// Bar color
+$ch5-signal-level-gauge-bar-color: #808080 !default;
+
+/// Selected bar color
+$ch5-signal-level-gauge-selected-bar-color: #67bef0 !default;

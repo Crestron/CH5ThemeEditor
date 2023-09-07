@@ -1,75 +1,76 @@
 {
-  "name": "@crestron/ch5-theme",
-  "version": "2.4.0",
-  "description": "Crestron HTML5 (CH5) Themes CSS",
-  "author": "Crestron",
-  "license": "SEE LICENSE IN LICENSE.txt",
-  "main": "index.js",
-  "files": [
-    "LICENSE.txt",
-    "output/themes"
-  ],
-  "repository": {
-    "url": "https://github.com/Crestron/CH5ThemeEditor.git",
-    "type": "git"
-  },
-  "keywords": [
-    "ch5",
-    "Theme"
-  ],
-  "scripts": {
-    "bundle-theme": "node ./bundle-theme.js",
-    "bundle-theme-for-showcase": "webpack --config webpack.run.js --output-path='../CH5ShowcaseApp/static/crestron-components-assets' && npm run cleanjs",
-    "bundle-theme-all": "webpack --config webpack.build.js --output-path=./output/themes && npm run cleanjs",
-    "bundle-and-watch": "npm run clean && webpack --config webpack.run.js --watch",
-    "bundle-theme-all-app-compile": "webpack --config webpack.compile.js && npm run cleanjs",
-    "bundle-theme-all-dev": "webpack --config webpack.build.js --mode development && npm run cleanjs",
-    "build:prod": "npm run clean && webpack --config webpack.build.js --output-path=./output/themes && webpack --config webpack.run.js --output-path=./output/themes  && npm run cleanjs",
-    "clean": "rimraf output",
-    "cleanjs": "rimraf output/**/*.js",
-    "create-theme": "node ./create-theme.js",
-    "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json",
-    "gen:sass-json-output": "ts-node ./sass-schema/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
-    "gen:sass-json": "ts-node ./sass-schema/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
-    "gen:sass-metadata": "node ./metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.3.0",
-    "@material-icons/font": "^1.0.25",
-    "sassdoc": "^2.7.1"
-  },
-  "devDependencies": {
-    "@crestron/ch5-crcomlib": "^2.4.0",
-    "@raghavendradabbir/sass-flatten": "^0.2.9",
-    "@types/node": "^20.4.0",
-    "@types/puppeteer": "^5.4.4",
-    "copy-webpack-plugin": "^5.0.3",
-    "css-loader": "^3.0.0",
-    "css-simple-parser": "^2.0.1",
-    "dotenv": "^8.0.0",
-    "glob": "^7.1.4",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^4.5.2",
-    "jsonfile": "^6.1.0",
-    "lodash": "^4.17.15",
-    "mini-css-extract-plugin": "^1.2.0",
-    "nouislider": "^13.1.5",
-    "css-minimizer-webpack-plugin": "^5.0.1",
-    "path": "^0.12.7",
-    "puppeteer": "^10.1.0",
-    "rimraf": "^2.6.3",
-    "sass": "^1.63.6",
-    "sass-loader": "^13.3.2",
-    "terser-webpack-plugin": "^2.3.0",
-    "ts-node": "^10.2.1",
-    "webpack": "^5.74.0",
-    "webpack-clean": "^1.2.3",
-    "webpack-cli": "^4.10.0",
-    "webpack-merge": "^4.2.1",
-    "webpack-merge-and-include-globally": "^2.1.16",
-    "fs-extra": "^11.1.1" 
- },
-  "resolutions": {
-    "**/event-stream": "^4.0.1"
-  }
+    "name": "@crestron/ch5-theme", 
+    "version": "2.5.0", 
+    "description": "Crestron HTML5 (CH5) Themes CSS", 
+    "author": "Crestron", 
+    "license": "SEE LICENSE IN LICENSE.txt", 
+    "main": "index.js", 
+    "files": [
+        "LICENSE.txt", 
+        "output/themes"
+    ], 
+    "repository": {
+        "url": "https://github.com/Crestron/CH5ThemeEditor.git", 
+        "type": "git"
+    }, 
+    "keywords": [
+        "ch5", 
+        "Theme"
+    ], 
+    "scripts": {
+        "bundle-theme": "node ./helpers/bundle-theme.js", 
+        "bundle-theme-for-showcase": "webpack --config webpack.run.js --output-path='../CH5ShowcaseApp/static/crestron-components-assets' && npm run cleanjs", 
+        "bundle-theme-all": "webpack --config webpack.build.js --output-path=./output/themes && npm run cleanjs", 
+        "bundle-and-watch": "npm run clean && webpack --config webpack.run.js --watch", 
+        "bundle-theme-all-app-compile": "webpack --config webpack.compile.js && npm run cleanjs", 
+        "bundle-theme-all-dev": "webpack --config webpack.build.js --mode development && npm run cleanjs", 
+        "build:prod": "npm run clean && webpack --config webpack.build.js --output-path=./output/themes && webpack --config webpack.run.js --output-path=./output/themes  && npm run cleanjs", 
+        "clean": "rimraf output", 
+        "cleanjs": "rimraf output/**/*.js", 
+        "create-theme": "node ./helpers/create-theme.js", 
+        "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json", 
+        "gen:sass-json": "ts-node ./sass-schema/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json", 
+        "gen:sass-metadata": "node ./helpers/metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json", 
+        "start": "webpack --config webpack.run.js --watchmode && npm run cleanjs && webpack --config app.config.dev.js"
+    }, 
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.3.0", 
+        "@material-icons/font": "^1.0.25", 
+        "sassdoc": "^2.7.1"
+    }, 
+    "devDependencies": {
+        "@crestron/ch5-crcomlib": "^2.5.0", 
+        "@raghavendradabbir/sass-flatten": "^0.2.9", 
+        "@types/node": "^20.4.0", 
+        "@types/puppeteer": "^5.4.4", 
+        "copy-webpack-plugin": "^5.0.3", 
+        "css-loader": "^3.0.0", 
+        "css-simple-parser": "^2.0.1", 
+        "dotenv": "^8.0.0", 
+        "glob": "^7.1.4", 
+        "html-loader": "^0.5.5", 
+        "html-webpack-plugin": "^4.5.2",
+        "jsonfile": "^6.1.0", 
+        "lodash": "^4.17.15", 
+        "mini-css-extract-plugin": "^1.2.0",
+        "nouislider": "^13.1.5", 
+        "css-minimizer-webpack-plugin": "^5.0.1",
+        "path": "^0.12.7", 
+        "puppeteer": "^10.1.0", 
+        "rimraf": "^2.6.3", 
+        "sass": "^1.63.6", 
+        "sass-loader": "^13.3.2",
+        "terser-webpack-plugin": "^2.3.0", 
+        "ts-node": "^10.2.1", 
+        "webpack": "^5.74.0",
+        "webpack-clean": "^1.2.3", 
+        "webpack-cli": "^4.10.0", 
+        "webpack-merge": "^4.2.1", 
+        "webpack-merge-and-include-globally": "^2.1.16", 
+        "write-json-webpack-plugin": "^1.1.0",
+        "fs-extra": "^11.1.1"
+    }, 
+    "resolutions": {
+        "**/event-stream": "^4.0.1"
+    }
 }

@@ -1,4 +1,4 @@
-export const THEME_EDITOR_PATH = './';
+export const THEME_EDITOR_SOURCE_FILES_PATH = './src/';
 export const OUTPUT_PATH = './output/';
 export const OUTPUT_PROPERTIES = OUTPUT_PATH + 'properties/';
 export const OUTPUT_SCSS = OUTPUT_PATH + 'scss/';

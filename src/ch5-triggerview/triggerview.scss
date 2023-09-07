@@ -1,0 +1,54 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-triggerview
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@import "./scss/variables";
+
+/// The class added on the component
+ch5-triggerview {
+    --ch5-triggerview-gap: #{$ch5-triggerview-gap};
+    --ch5-triggerview-background-color: #{$ch5-triggerview-background-color};
+    --ch5-triggerview-slide-min-height: #{$ch5-triggerview-slide-min-height};
+    --ch5-triggerview-slide-max-height: #{$ch5-triggerview-slide-max-height};
+    --ch5-triggerview-transition-duration: #{$ch5-triggerview-transition-duration};
+    --ch5-triggerview-transition-timing-function: #{$ch5-triggerview-transition-timing-function};
+    --ch5-triggerview-fallback-message-color-background: #{$ch5-triggerview-fallback-message-color-background};
+
+    font-size: $ch5-triggerview-font-size;
+    font-style: $ch5-triggerview-font-style;
+    font-weight: $ch5-triggerview-font-weight;
+
+    .swiper-container, .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-wrapper {
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        -o-transition-property: transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        transition-timing-function: $ch5-triggerview-transition-timing-function;
+    }
+    .slider-full-width-page {
+        width: 100%;
+    }
+}
+
+/// The class added on the triggeview child component
+.ch5-viewchild {
+    box-sizing: border-box;
+}

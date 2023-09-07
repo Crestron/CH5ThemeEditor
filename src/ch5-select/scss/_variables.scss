@@ -1,0 +1,60 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-select-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// component main font size unit
+$ch5-select-font-size-unit: $ch5-font-size-unit !default;
+
+/// component main font size value
+$ch5-select-font-size-value: $ch5-font-size-value !default;
+
+/// component main font size
+$ch5-select-font-size: $ch5-select-font-size-value + $ch5-select-font-size-unit !default;
+
+/// component main font style
+$ch5-select-font-style: $ch5-font-style !default;
+
+/// component main font weight
+$ch5-select-font-weight: $ch5-font-weight !default;
+
+/// top line content padding
+$ch5-select-padding: 4px !default;
+
+/// component border width
+$ch5-select-border-width: 1px !default;
+
+/// component border radius
+$ch5-select-border-radius: 2px !default;
+
+/// combo trigger button margin
+$ch5-select-combo-trigger-margin: 0 !default;
+
+/// combo trigger button width
+$ch5-select-combo-trigger-width: 24px !default;
+
+/// combo trigger button height
+$ch5-select-combo-trigger-height: 24px !default;
+
+/// top line width
+$ch5-select-item-selected-width: calc(100% - 40px) !default;
+
+/// item border width
+$ch5-select-panel-item-border-width: 1px !default;
+
+/// item padding
+$ch5-select-panel-item-padding: 8px !default;
+
+/// select panel shadow
+$ch5-select-panel-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                                      0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                                      0 3px 1px -2px rgba(0, 0, 0, 0.2) !default;
+
+$ch5-select-panel-z-index: 10000 !default;
