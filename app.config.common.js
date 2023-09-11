@@ -16,7 +16,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MergeIntoSingleFilePlugin = require('webpack-merge-and-include-globally');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const dotenv = require('dotenv').config().parsed;
 const CopyPlugin = require('copy-webpack-plugin');
 //config details
@@ -118,14 +117,6 @@ module.exports = {
       inject: false,
       //serve  html content to "index.html"
       template: './app/src/index.html'
-    }),
-    new BrowserSyncPlugin({
-      host: 'localhost',
-      port: 3000,
-      //List of files under watch
-      files: [`./${distDir}/*.html`, `./${distDir}/*.js`, `./${cssBuild}/*.css`],
-
-      server: { baseDir: [distDir] }
     })
   ]
 };
