@@ -7,92 +7,92 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-dark-theme-variables
+/// @group ch5-zoom-dark-theme-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import "../../ch5-core/variables";
 
 // Color system
 
-$default-background-color: #0099ff !default;
+$default-background-color: #4f9af7 !default;
 $default-border-color: #0099ff !default;
 $default-font-color: #ffffff !default;
-$default-pressed-background-color: #008ae6 !default;
+$default-pressed-background-color: #0e72ed !default;
 $default-pressed-border-color: #0099ff !default;
 $default-pressed-font-color: #ffffff !default;
-$default-selected-background-color: #0079c9 !default;
+$default-selected-background-color: #0e72ed !default;
 $default-selected-border-color: #0099ff !default;
 $default-selected-font-color: #ffffff !default;
 $default-disabled-background-color: #004d80 !default;
 $default-disabled-border-color: #0099ff !default;
 $default-disabled-font-color: #ffffff !default;
 
-$primary-background-color: #17171a !default;
+$primary-background-color: #383838 !default;
 $primary-border-color: #f8f7f8 !default;
 $primary-font-color: #ffffff !default;
-$primary-pressed-background-color: #353539 !default;
+$primary-pressed-background-color: #4b4b4b !default;
 $primary-pressed-border-color: #f8f7f8 !default;
 $primary-pressed-font-color: #ffffff !default;
-$primary-selected-background-color: #29292e !default;
+$primary-selected-background-color: #4b4b4b !default;
 $primary-selected-border-color: #f8f7f8 !default;
 $primary-selected-font-color: #ffffff !default;
 $primary-disabled-background-color: #616161 !default;
 $primary-disabled-border-color: #f8f7f8 !default;
 $primary-disabled-font-color: #ffffff !default;
 
-$info-background-color: #00bcd4 !default;
-$info-border-color: #00bcd4 !default;
+$info-background-color: #f26d21 !default;
+$info-border-color: #f26d21 !default;
 $info-font-color: #ffffff !default;
-$info-pressed-background-color: #0097a7 !default;
-$info-pressed-border-color: #00bcd4 !default;
+$info-pressed-background-color: #f26d21 !default;
+$info-pressed-border-color: #f26d21 !default;
 $info-pressed-font-color: #ffffff !default;
-$info-selected-background-color: #0094a7 !default;
-$info-selected-border-color: #00bcd4 !default;
+$info-selected-background-color: #f26d21 !default;
+$info-selected-border-color: #f26d21 !default;
 $info-selected-font-color: #ffffff !default;
-$info-disabled-background-color: #006064 !default;
-$info-disabled-border-color: #00bcd4 !default;
+$info-disabled-background-color: #9e3500 !default;
+$info-disabled-border-color: #f26d21 !default;
 $info-disabled-font-color: #ffffff !default;
 
-$danger-background-color: #f44336 !default;
+$danger-background-color: #de2828 !default;
 $danger-border-color: #f44337 !default;
 $danger-font-color: #ffffff !default;
-$danger-pressed-background-color: #b71c1c !default;
+$danger-pressed-background-color: #de2828 !default;
 $danger-pressed-border-color: #f44337 !default;
 $danger-pressed-font-color: #ffffff !default;
-$danger-selected-background-color: #c62828 !default;
+$danger-selected-background-color: #de2828 !default;
 $danger-selected-border-color: #f44337 !default;
 $danger-selected-font-color: #ffffff !default;
 $danger-disabled-background-color: #c1362b !default;
 $danger-disabled-border-color: #f44337 !default;
 $danger-disabled-font-color: #ffffff !default;
 
-$secondary-background-color: #5e5e66 !default;
-$secondary-border-color: #9e9e9e !default;
+$secondary-background-color: #282f38 !default;
+$secondary-border-color: #434951 !default;
 $secondary-font-color: #ffffff !default;
-$secondary-pressed-background-color: #9e9e9e !default;
-$secondary-pressed-border-color: #9e9e9e !default;
+$secondary-pressed-background-color: #4f9af7 !default;
+$secondary-pressed-border-color: #3590ff !default;
 $secondary-pressed-font-color: #ffffff !default;
-$secondary-selected-background-color: #4a4a50 !default;
-$secondary-selected-border-color: #9e9e9e !default;
+$secondary-selected-background-color: #4f9af7 !default;
+$secondary-selected-border-color: #3590ff !default;
 $secondary-selected-font-color: #ffffff !default;
-$secondary-disabled-background-color: #616161 !default;
-$secondary-disabled-border-color: #9e9e9e !default;
+$secondary-disabled-background-color: #0056bf !default;
+$secondary-disabled-border-color: #016bec !default;
 $secondary-disabled-font-color: #ffffff !default;
 
-$success-background-color: #4caf50 !default;
+$success-background-color: #268543 !default;
 $success-border-color: #4caf50 !default;
 $success-font-color: #f0fff0 !default;
-$success-pressed-background-color: #388e3c !default;
+$success-pressed-background-color: #268543 !default;
 $success-pressed-border-color: #4caf50 !default;
 $success-pressed-font-color: #f0fff0 !default;
-$success-selected-background-color: #3c8a3f !default;
+$success-selected-background-color: #268543 !default;
 $success-selected-border-color: #4caf50 !default;
 $success-selected-font-color: #f0fff0 !default;
 $success-disabled-background-color: #1b5e20 !default;
-$success-disabled-border-color: #4caf50 !default;
+$success-disabled-border-color: #2e6232 !default;
 $success-disabled-font-color: #f0fff0 !default;
 
-$warning-background-color: #ffc009 !default;
+$warning-background-color: #faac2a !default;
 $warning-border-color: #ffc009 !default;
 $warning-font-color: #333 !default;
 $warning-pressed-background-color: #f7cd4f !default;
@@ -202,7 +202,7 @@ CH5-TEXT INPUT
 ============================================= */
 
 /// The text color of the textinput.
-$ch5-textinput-text-color: #EFEFEF !default;
+$ch5-textinput-text-color: #efefef !default;
 
 /// Set the color of text for the textinput
 $ch5-textinput-input-text-color: $ch5-textinput-text-color !default;
@@ -300,11 +300,11 @@ CH5-SLIDER
 ============================================= */
 $ch5-slider-connect-bg: #0099ff;
 $ch5-slider-background-lighten-percent: 30%;
-$ch5-slider-target-bg: #2F2F33;
-$ch5-slider-target-border-color: #EFEFEF;
-$ch5-slider-handle-bg: #EFEFEF;
-$ch5-slider-handle-border-color: #EFEFEF;
-$ch5-slider-pips-color: #EFEFEF;
+$ch5-slider-target-bg: #2f2f33;
+$ch5-slider-target-border-color: #efefef;
+$ch5-slider-handle-bg: #efefef;
+$ch5-slider-handle-border-color: #efefef;
+$ch5-slider-pips-color: #efefef;
 
 /* ===============================================
 CH5-LIST
@@ -318,4 +318,3 @@ $ch5-list-item-background-color: #3b3b40 !default;
 
 /// Set the border color of list items
 $ch5-list-item-border-color: #5e5e66 !default;
-

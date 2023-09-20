@@ -60,13 +60,17 @@ npm run create-theme THEME_NAME
 ```
 **hard link between default theme and the new theme:**
 ```sh
-npm run create-theme THEME_NAME --hard-link 
+npm run create-theme THEME_NAME -- --hard-link 
 ```
 **In order to change the default theme just add the default theme name before --soft-link or --hard-link:**
 ```sh
-npm run create-theme THEME_NAME light --soft-link
+npm run create-theme THEME_NAME light -- --soft-link
 ```
-## Bundling the themes
+
+Change the @group value in the file generated at ./src/ch5-core/themes/THEME_NAME.scss
+
+
+## Bundling the themes 
 **bundling default theme**
 ```sh
 npm run bundle-theme-all
