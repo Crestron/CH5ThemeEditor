@@ -158,3 +158,6 @@ Also, please ensure to add a comment with three slashes in each file. If not, th
 ## How to create component level scss
 
 1. Use variables when the expectation is that CCIDE should have the opportunity to override it. This will be reflected in sass based json files.
+
+### Unused scss variables
+node helpers/unused-scss-variables.mjs > output.txt

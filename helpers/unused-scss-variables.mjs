@@ -1,4 +1,3 @@
-// import { findAsync, find } from 'find-unused-sass-variables';
 import { findAsync, find } from 'find-unused-sass-variables';
 // const find = require('find-unused-sass-variables');
 
