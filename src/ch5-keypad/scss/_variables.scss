@@ -54,14 +54,6 @@ $ch5-keypad-default-default-font-color: $default-font-color !default;
 /// The default border color for default type of keypad.
 $ch5-keypad-default-default-border-color: $default-border-color !default;
 
-/// the selected background color for default type of keypad
-$ch5-keypad-default-selected-background-color: $default-selected-background-color !default;
-
-/// the selected font color for default type of keypad
-$ch5-keypad-default-selected-font-color: $default-selected-font-color !default;
-
-/// the selected border color for default type of keypad
-$ch5-keypad-default-selected-border-color: $default-selected-border-color !default;
 
 /// the pressed background color for default type of keypad
 $ch5-keypad-default-pressed-background-color: $default-pressed-background-color !default;
@@ -71,15 +63,6 @@ $ch5-keypad-default-pressed-font-color: $default-pressed-font-color !default;
 
 /// the pressed border color for default type of keypad
 $ch5-keypad-default-pressed-border-color: $default-pressed-border-color !default;
-
-/// the disabled background color for default type of keypad
-$ch5-keypad-default-disabled-background-color: $default-disabled-background-color !default;
-
-/// the disabled font color for default type of keypad
-$ch5-keypad-default-disabled-font-color: $default-disabled-font-color !default;
-
-/// the disabled border color for default type of keypad
-$ch5-keypad-default-disabled-border-color: $default-disabled-border-color !default;
 
 // ------------------------------------------------------
 
@@ -94,14 +77,6 @@ $ch5-keypad-primary-default-font-color: $primary-font-color !default;
 /// The default border color for primary type of keypad.
 $ch5-keypad-primary-default-border-color: $primary-border-color !default;
 
-/// the selected background color for primary type of keypad
-$ch5-keypad-primary-selected-background-color: $primary-selected-background-color !default;
-
-/// the selected font color for primary type of keypad
-$ch5-keypad-primary-selected-font-color: $primary-selected-font-color !default;
-
-/// the selected border color for primary type of keypad
-$ch5-keypad-primary-selected-border-color: $primary-selected-border-color !default;
 
 /// the pressed background color for primary type of keypad
 $ch5-keypad-primary-pressed-background-color: $primary-pressed-background-color !default;
@@ -112,14 +87,6 @@ $ch5-keypad-primary-pressed-font-color: $primary-pressed-font-color !default;
 /// the pressed border color for primary type of keypad
 $ch5-keypad-primary-pressed-border-color: $primary-pressed-border-color !default;
 
-/// the disabled background color for primary type of keypad
-$ch5-keypad-primary-disabled-background-color: $primary-disabled-background-color !default;
-
-/// the disabled font color for primary type of keypad
-$ch5-keypad-primary-disabled-font-color: $primary-disabled-font-color !default;
-
-/// the disabled border color for primary type of keypad
-$ch5-keypad-primary-disabled-border-color: $primary-disabled-border-color !default;
 
 // ------------------------------------------------------
 
@@ -134,14 +101,6 @@ $ch5-keypad-info-default-font-color: $info-font-color !default;
 /// The default border color for info type of keypad.
 $ch5-keypad-info-default-border-color: $info-border-color !default;
 
-/// the selected background color for info type of keypad
-$ch5-keypad-info-selected-background-color: $info-selected-background-color !default;
-
-/// the selected font color for info type of keypad
-$ch5-keypad-info-selected-font-color: $info-selected-font-color !default;
-
-/// the selected border color for info type of keypad
-$ch5-keypad-info-selected-border-color: $info-selected-border-color !default;
 
 /// the pressed background color for info type of keypad
 $ch5-keypad-info-pressed-background-color: $info-pressed-background-color !default;
@@ -152,14 +111,6 @@ $ch5-keypad-info-pressed-font-color: $info-pressed-font-color !default;
 /// the pressed border color for info type of keypad
 $ch5-keypad-info-pressed-border-color: $info-pressed-border-color !default;
 
-/// the disabled background color for info type of keypad
-$ch5-keypad-info-disabled-background-color: $info-disabled-background-color !default;
-
-/// the disabled font color for info type of keypad
-$ch5-keypad-info-disabled-font-color: $info-disabled-font-color !default;
-
-/// the disabled border color for info type of keypad
-$ch5-keypad-info-disabled-border-color: $info-disabled-border-color !default;
 
 // ------------------------------------------------------
 
@@ -174,14 +125,6 @@ $ch5-keypad-danger-default-font-color: $danger-font-color !default;
 /// The default border color for danger type of keypad.
 $ch5-keypad-danger-default-border-color: $danger-border-color !default;
 
-/// the selected background color for danger type of keypad
-$ch5-keypad-danger-selected-background-color: $danger-selected-background-color !default;
-
-/// the selected font color for danger type of keypad
-$ch5-keypad-danger-selected-font-color: $danger-selected-font-color !default;
-
-/// the selected border color for danger type of keypad
-$ch5-keypad-danger-selected-border-color: $danger-selected-border-color !default;
 
 /// the pressed background color for danger type of keypad
 $ch5-keypad-danger-pressed-background-color: $danger-pressed-background-color !default;
@@ -192,14 +135,6 @@ $ch5-keypad-danger-pressed-font-color: $danger-pressed-font-color !default;
 /// the pressed border color for danger type of keypad
 $ch5-keypad-danger-pressed-border-color: $danger-pressed-border-color !default;
 
-/// the disabled background color for danger type of keypad
-$ch5-keypad-danger-disabled-background-color: $danger-disabled-background-color !default;
-
-/// the disabled font color for danger type of keypad
-$ch5-keypad-danger-disabled-font-color: $danger-disabled-font-color !default;
-
-/// the disabled border color for danger type of keypad
-$ch5-keypad-danger-disabled-border-color: $danger-disabled-border-color !default;
 
 // ------------------------------------------------------
 
@@ -214,14 +149,6 @@ $ch5-keypad-secondary-default-font-color: $secondary-font-color !default;
 /// The default border color for secondary type of keypad.
 $ch5-keypad-secondary-default-border-color: $secondary-border-color !default;
 
-/// the selected background color for secondary type of keypad
-$ch5-keypad-secondary-selected-background-color: $secondary-selected-background-color !default;
-
-/// the selected font color for secondary type of keypad
-$ch5-keypad-secondary-selected-font-color: $secondary-selected-font-color !default;
-
-/// the selected border color for secondary type of keypad
-$ch5-keypad-secondary-selected-border-color: $secondary-selected-border-color !default;
 
 /// the pressed background color for secondary type of keypad
 $ch5-keypad-secondary-pressed-background-color: $secondary-pressed-background-color !default;
@@ -232,14 +159,6 @@ $ch5-keypad-secondary-pressed-font-color: $secondary-pressed-font-color !default
 /// the pressed border color for secondary type of keypad
 $ch5-keypad-secondary-pressed-border-color: $secondary-pressed-border-color !default;
 
-/// the disabled background color for secondary type of keypad
-$ch5-keypad-secondary-disabled-background-color: $secondary-disabled-background-color !default;
-
-/// the disabled font color for secondary type of keypad
-$ch5-keypad-secondary-disabled-font-color: $secondary-disabled-font-color !default;
-
-/// the disabled border color for secondary type of keypad
-$ch5-keypad-secondary-disabled-border-color: $secondary-disabled-border-color !default;
 
 // ------------------------------------------------------
 
@@ -254,14 +173,6 @@ $ch5-keypad-success-default-font-color: $success-font-color !default;
 /// The default border color for success type of keypad.
 $ch5-keypad-success-default-border-color: $success-border-color !default;
 
-/// the selected background color for success type of keypad
-$ch5-keypad-success-selected-background-color: $success-selected-background-color !default;
-
-/// the selected font color for success type of keypad
-$ch5-keypad-success-selected-font-color: $success-selected-font-color !default;
-
-/// the selected border color for success type of keypad
-$ch5-keypad-success-selected-border-color: $success-selected-border-color !default;
 
 /// the pressed background color for success type of keypad
 $ch5-keypad-success-pressed-background-color: $success-pressed-background-color !default;
@@ -272,14 +183,6 @@ $ch5-keypad-success-pressed-font-color: $success-pressed-font-color !default;
 /// the pressed border color for success type of keypad
 $ch5-keypad-success-pressed-border-color: $success-pressed-border-color !default;
 
-/// the disabled background color for success type of keypad
-$ch5-keypad-success-disabled-background-color: $success-disabled-background-color !default;
-
-/// the disabled font color for success type of keypad
-$ch5-keypad-success-disabled-font-color: $success-disabled-font-color !default;
-
-/// the disabled border color for success type of keypad
-$ch5-keypad-success-disabled-border-color: $success-disabled-border-color !default;
 
 // ------------------------------------------------------
 
@@ -294,14 +197,6 @@ $ch5-keypad-warning-default-font-color: $warning-font-color !default;
 /// The default border color for warning type of keypad.
 $ch5-keypad-warning-default-border-color: $warning-border-color !default;
 
-/// the selected background color for warning type of keypad
-$ch5-keypad-warning-selected-background-color: $warning-selected-background-color !default;
-
-/// the selected font color for warning type of keypad
-$ch5-keypad-warning-selected-font-color: $warning-selected-font-color !default;
-
-/// the selected border color for warning type of keypad
-$ch5-keypad-warning-selected-border-color: $warning-selected-border-color !default;
 
 /// the pressed background color for warning type of keypad
 $ch5-keypad-warning-pressed-background-color: $warning-pressed-background-color !default;
@@ -312,14 +207,6 @@ $ch5-keypad-warning-pressed-font-color: $warning-pressed-font-color !default;
 /// the pressed border color for warning type of keypad
 $ch5-keypad-warning-pressed-border-color: $warning-pressed-border-color !default;
 
-/// the disabled background color for warning type of keypad
-$ch5-keypad-warning-disabled-background-color: $warning-disabled-background-color !default;
-
-/// the disabled font color for warning type of keypad
-$ch5-keypad-warning-disabled-font-color: $warning-disabled-font-color !default;
-
-/// the disabled border color for warning type of keypad
-$ch5-keypad-warning-disabled-border-color: $warning-disabled-border-color !default;
 
 // ------------------------------------------------------
 
@@ -334,14 +221,6 @@ $ch5-keypad-text-default-font-color: $text-font-color !default;
 /// The default border color for text type of keypad.
 $ch5-keypad-text-default-border-color: $text-border-color !default;
 
-/// the selected background color for text type of keypad
-$ch5-keypad-text-selected-background-color: $text-selected-background-color !default;
-
-/// the selected font color for text type of keypad
-$ch5-keypad-text-selected-font-color: $text-selected-font-color !default;
-
-/// the selected border color for text type of keypad
-$ch5-keypad-text-selected-border-color: $text-selected-border-color !default;
 
 /// the pressed background color for text type of keypad
 $ch5-keypad-text-pressed-background-color: $text-pressed-background-color !default;
@@ -352,11 +231,3 @@ $ch5-keypad-text-pressed-font-color: $text-pressed-font-color !default;
 /// the pressed border color for text type of keypad
 $ch5-keypad-text-pressed-border-color: $text-pressed-border-color !default;
 
-/// the disabled background color for text type of keypad
-$ch5-keypad-text-disabled-background-color: $text-disabled-background-color !default;
-
-/// the disabled font color for text type of keypad
-$ch5-keypad-text-disabled-font-color: $text-disabled-font-color !default;
-
-/// the disabled border color for text type of keypad
-$ch5-keypad-text-disabled-border-color: $text-disabled-border-color !default;

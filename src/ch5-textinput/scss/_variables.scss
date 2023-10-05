@@ -14,8 +14,6 @@
 /// the border radius for the textinput
 $ch5-textinput-input-border-radius: 5px !default;
 
-/// the color for box shadow of the textinput
-$ch5-textinput-input-box-shadow-color: #eee !default;
 
 /// set the textinput border's width
 $ch5-textinput-input-border-width: 2px !default;
@@ -23,11 +21,6 @@ $ch5-textinput-input-border-width: 2px !default;
 /// set the default font size unit for the textinput
 $ch5-textinput-font-size-unit: $ch5-font-size-unit !default;
 
-/// set the default font size value for the textinput
-$ch5-textinput-font-size-value: $ch5-font-size-value !default;
-
-/// set the default font size for the textinput
-$ch5-textinput-font-size: $ch5-textinput-font-size-value + $ch5-textinput-font-size-unit !default;
 
 /// set the default font style for the textinput
 $ch5-textinput-font-style: $ch5-font-style !default;
@@ -59,14 +52,10 @@ $ch5-textinput-regular-font-style: $ch5-textinput-font-style !default;
 /// set the font weight for regular size of the textinput
 $ch5-textinput-regular-font-weight: $ch5-textinput-font-weight !default;
 
-/// set the font size of icon for regular size of the textinput
-$ch5-textinput-icon-regular-font-size: $ch5-textinput-input-regular-tb-padding !default;
 
 /// set top and bottom margin of icon for regular size of the textinput
 $ch5-textinput-icon-regular-tb-margin: $ch5-textinput-regular-font-size !default;
 
-/// set left and right margin of icon for regular size of the textinput
-$ch5-textinput-icon-regular-lr-margin: $ch5-textinput-regular-font-size !default;
 
 /// set the font size unit for x-small size of the textinput
 $ch5-textinput-x-small-font-size-unit: $ch5-textinput-font-size-unit !default;
@@ -98,8 +87,6 @@ $ch5-textinput-input-x-small-min-width: 200px !default;
 /// set the width for x-small size of the textinput
 $ch5-textinput-size-x-small-width: 200px !default;
 
-/// set the font size of icon for x-small size of the textinput
-$ch5-textinput-icon-x-small-font-size: $ch5-textinput-input-x-small-tb-padding !default;
 
 /// set top and bottom margin of icon for x-small size of the textinput
 $ch5-textinput-icon-x-small-tb-margin: $ch5-textinput-x-small-font-size !default;
@@ -137,8 +124,6 @@ $ch5-textinput-input-small-min-width: 250px !default;
 /// set the width for small size of the textinput
 $ch5-textinput-size-small-width: 250px !default;
 
-/// set the font size of icon for small size of the textinput
-$ch5-textinput-icon-small-font-size: $ch5-textinput-small-font-size !default;
 
 /// set top and bottom margin of icon for small size of the textinput
 $ch5-textinput-icon-small-tb-margin: $ch5-textinput-small-font-size !default;
