@@ -23,6 +23,7 @@ $default-pressed-font-color: #ffffff !default;
 $default-selected-background-color: #0079c9 !default;
 $default-selected-border-color: #0099ff !default;
 $default-selected-font-color: #ffffff !default;
+
 $primary-background-color: #17171a !default;
 $primary-border-color: #f8f7f8 !default;
 $primary-font-color: #ffffff !default;
@@ -32,9 +33,6 @@ $primary-pressed-font-color: #ffffff !default;
 $primary-selected-background-color: #29292e !default;
 $primary-selected-border-color: #f8f7f8 !default;
 $primary-selected-font-color: #ffffff !default;
-$primary-disabled-background-color: #616161 !default;
-$primary-disabled-border-color: #f8f7f8 !default;
-$primary-disabled-font-color: #ffffff !default;
 
 $info-background-color: #00bcd4 !default;
 $info-border-color: #00bcd4 !default;
@@ -45,9 +43,6 @@ $info-pressed-font-color: #ffffff !default;
 $info-selected-background-color: #0094a7 !default;
 $info-selected-border-color: #00bcd4 !default;
 $info-selected-font-color: #ffffff !default;
-$info-disabled-background-color: #006064 !default;
-$info-disabled-border-color: #00bcd4 !default;
-$info-disabled-font-color: #ffffff !default;
 
 $danger-background-color: #f44336 !default;
 $danger-border-color: #f44337 !default;
@@ -58,9 +53,6 @@ $danger-pressed-font-color: #ffffff !default;
 $danger-selected-background-color: #c62828 !default;
 $danger-selected-border-color: #f44337 !default;
 $danger-selected-font-color: #ffffff !default;
-$danger-disabled-background-color: #c1362b !default;
-$danger-disabled-border-color: #f44337 !default;
-$danger-disabled-font-color: #ffffff !default;
 
 $secondary-background-color: #5e5e66 !default;
 $secondary-border-color: #9e9e9e !default;
@@ -71,9 +63,6 @@ $secondary-pressed-font-color: #ffffff !default;
 $secondary-selected-background-color: #4a4a50 !default;
 $secondary-selected-border-color: #9e9e9e !default;
 $secondary-selected-font-color: #ffffff !default;
-$secondary-disabled-background-color: #616161 !default;
-$secondary-disabled-border-color: #9e9e9e !default;
-$secondary-disabled-font-color: #ffffff !default;
 
 $success-background-color: #4caf50 !default;
 $success-border-color: #4caf50 !default;
@@ -84,9 +73,6 @@ $success-pressed-font-color: #f0fff0 !default;
 $success-selected-background-color: #3c8a3f !default;
 $success-selected-border-color: #4caf50 !default;
 $success-selected-font-color: #f0fff0 !default;
-$success-disabled-background-color: #1b5e20 !default;
-$success-disabled-border-color: #4caf50 !default;
-$success-disabled-font-color: #f0fff0 !default;
 
 $warning-background-color: #ffc009 !default;
 $warning-border-color: #ffc009 !default;
@@ -97,9 +83,6 @@ $warning-pressed-font-color: #333 !default;
 $warning-selected-background-color: #c99807 !default;
 $warning-selected-border-color: #ffc009 !default;
 $warning-selected-font-color: #333 !default;
-$warning-disabled-background-color: #fcd251 !default;
-$warning-disabled-border-color: #ffc009 !default;
-$warning-disabled-font-color: #333 !default;
 
 $text-background-color: #efefef !default;
 $text-border-color: #9e9e9e !default;
@@ -110,9 +93,6 @@ $text-pressed-font-color: #6d6d6d !default;
 $text-selected-background-color: #bdbdbd !default;
 $text-selected-border-color: #9e9e9e !default;
 $text-selected-font-color: #6d6d6d !default;
-$text-disabled-background-color: rgb(172, 170, 170) !default;
-$text-disabled-border-color: #9e9e9e !default;
-$text-disabled-font-color: #6d6d6d !default;
 
 $theme-foreground-color: #fff !default;
 

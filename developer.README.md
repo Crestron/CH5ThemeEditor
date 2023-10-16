@@ -91,9 +91,9 @@ npm install webpack -g
 ```
 Then run below command   
 ```sh
-webpack --config webpack.run.js --outputpath=RELATIVE_PATH_FOR_DESTINATION_DIRECTORY
+webpack --config webpack.run.js --output-path=RELATIVE_PATH_FOR_DESTINATION_DIRECTORY
 ex:-
-webpack --config webpack.run.js --outputpath='../showcase-app/dist/crestron-components-assets' && npm run cleanjs
+webpack --config webpack.run.js --output-path='../showcase-app/dist/crestron-components-assets' && npm run cleanjs
 ```
 **bundle and copy themes to another directory via env config**  
 Create '.env' file under 'BlackbirdComponentLibrary/library/crestron-components-sass/' directory  

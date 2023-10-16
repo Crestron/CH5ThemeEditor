@@ -23,6 +23,7 @@ $default-pressed-font-color: #f0fff0 !default;
 $default-selected-background-color: #0073bf !default;
 $default-selected-border-color: #0091ea !default;
 $default-selected-font-color: #f0fff0 !default;
+
 $primary-background-color: #fafafa !default;
 $primary-border-color: #bdbdbd !default;
 $primary-font-color: #333 !default;
@@ -32,9 +33,6 @@ $primary-pressed-font-color: #333 !default;
 $primary-selected-background-color: #e0e0e0 !default;
 $primary-selected-border-color: #bdbdbd !default;
 $primary-selected-font-color: #333 !default;
-$primary-disabled-background-color: #616161 !default;
-$primary-disabled-border-color: #bdbdbd !default;
-$primary-disabled-font-color: #333 !default;
 
 $info-background-color: #00bcd4 !default;
 $info-border-color: #00bcd4 !default;
@@ -45,9 +43,6 @@ $info-pressed-font-color: #f0fff0 !default;
 $info-selected-background-color: #00838f !default;
 $info-selected-border-color: #00bcd4 !default;
 $info-selected-font-color: #f0fff0 !default;
-$info-disabled-background-color: #006064 !default;
-$info-disabled-border-color: #00bcd4 !default;
-$info-disabled-font-color: #f0fff0 !default;
 
 $danger-background-color: #f44336 !default;
 $danger-border-color: #e53935 !default;
@@ -58,9 +53,6 @@ $danger-pressed-font-color: #ffffff !default;
 $danger-selected-background-color: #c62828 !default;
 $danger-selected-border-color: #e53935 !default;
 $danger-selected-font-color: #ffffff !default;
-$danger-disabled-background-color: #b71c1c !default;
-$danger-disabled-border-color: #e53935 !default;
-$danger-disabled-font-color: #ffffff !default;
 
 $secondary-background-color: #bdbdbd !default;
 $secondary-border-color: #9e9e9e !default;
@@ -71,9 +63,6 @@ $secondary-pressed-font-color: #ffffff !default;
 $secondary-selected-background-color: #757575 !default;
 $secondary-selected-border-color: #9e9e9e !default;
 $secondary-selected-font-color: #ffffff !default;
-$secondary-disabled-background-color: #616161 !default;
-$secondary-disabled-border-color: #9e9e9e !default;
-$secondary-disabled-font-color: #ffffff !default;
 
 $success-background-color: #4caf50 !default;
 $success-border-color: #43a047 !default;
@@ -84,9 +73,6 @@ $success-pressed-font-color: #f0fff0 !default;
 $success-selected-background-color: #2e7d32 !default;
 $success-selected-border-color: #43a047 !default;
 $success-selected-font-color: #f0fff0 !default;
-$success-disabled-background-color: #1b5e20 !default;
-$success-disabled-border-color: #43a047 !default;
-$success-disabled-font-color: #f0fff0 !default;
 
 $warning-background-color: #ffc107 !default;
 $warning-border-color: #ffb300 !default;
@@ -97,9 +83,6 @@ $warning-pressed-font-color: #f0fff0 !default;
 $warning-selected-background-color: #ff8f00 !default;
 $warning-selected-border-color: #ffb300 !default;
 $warning-selected-font-color: #333 !default;
-$warning-disabled-background-color: #ff8f00 !default;
-$warning-disabled-border-color: #ffb300 !default;
-$warning-disabled-font-color: #f0fff0 !default;
 
 $text-background-color: #efefef !default;
 $text-border-color: #e0e0e0 !default;
@@ -110,9 +93,6 @@ $text-pressed-font-color: #333 !default;
 $text-selected-background-color: #9e9e9e !default;
 $text-selected-border-color: #e0e0e0 !default;
 $text-selected-font-color: #333 !default;
-$text-disabled-background-color: #efefef !default;
-$text-disabled-border-color: #e0e0e0 !default;
-$text-disabled-font-color: #333 !default;
 
 $theme-foreground-color: #3f3f3f !default;
 
