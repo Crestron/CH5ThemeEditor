@@ -60,13 +60,17 @@ npm run create-theme THEME_NAME
 ```
 **hard link between default theme and the new theme:**
 ```sh
-npm run create-theme THEME_NAME --hard-link 
+npm run create-theme THEME_NAME -- --hard-link 
 ```
 **In order to change the default theme just add the default theme name before --soft-link or --hard-link:**
 ```sh
-npm run create-theme THEME_NAME light --soft-link
+npm run create-theme THEME_NAME light -- --soft-link
 ```
-## Bundling the themes
+
+Change the @group value in the file generated at ./src/ch5-core/themes/THEME_NAME.scss
+
+
+## Bundling the themes 
 **bundling default theme**
 ```sh
 npm run bundle-theme-all
@@ -87,9 +91,9 @@ npm install webpack -g
 ```
 Then run below command   
 ```sh
-webpack --config webpack.run.js --outputpath=RELATIVE_PATH_FOR_DESTINATION_DIRECTORY
+webpack --config webpack.run.js --output-path=RELATIVE_PATH_FOR_DESTINATION_DIRECTORY
 ex:-
-webpack --config webpack.run.js --outputpath='../showcase-app/dist/crestron-components-assets' && npm run cleanjs
+webpack --config webpack.run.js --output-path='../showcase-app/dist/crestron-components-assets' && npm run cleanjs
 ```
 **bundle and copy themes to another directory via env config**  
 Create '.env' file under 'BlackbirdComponentLibrary/library/crestron-components-sass/' directory  
@@ -154,3 +158,6 @@ Also, please ensure to add a comment with three slashes in each file. If not, th
 ## How to create component level scss
 
 1. Use variables when the expectation is that CCIDE should have the opportunity to override it. This will be reflected in sass based json files.
+
+### Unused scss variables
+node helpers/unused-scss-variables.mjs > output.txt

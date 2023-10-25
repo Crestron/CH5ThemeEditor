@@ -7,92 +7,92 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-light-theme-variables
+/// @group ch5-zoom-light-theme-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import "../../ch5-core/variables";
 
 // Color system
 
-$default-background-color: #0099ff !default;
+$default-background-color: #0e72ed !default;
 $default-border-color: #0091ea !default;
-$default-font-color: #ffffff !default;
-$default-pressed-background-color: #008ae6 !default;
+$default-font-color: #fff !default;
+$default-pressed-background-color: #0862d1 !default;
 $default-pressed-border-color: #0091ea !default;
-$default-pressed-font-color: #f0fff0 !default;
-$default-selected-background-color: #0073bf !default;
+$default-pressed-font-color: #fff !default;
+$default-selected-background-color: #0862d1 !default;
 $default-selected-border-color: #0091ea !default;
-$default-selected-font-color: #f0fff0 !default;
+$default-selected-font-color: #fff !default;
 
-$primary-background-color: #fafafa !default;
+$primary-background-color: #efeff4 !default;
 $primary-border-color: #bdbdbd !default;
 $primary-font-color: #333 !default;
-$primary-pressed-background-color: #bdbdbd !default;
+$primary-pressed-background-color: #e0e0e8 !default;
 $primary-pressed-border-color: #bdbdbd !default;
 $primary-pressed-font-color: #333 !default;
-$primary-selected-background-color: #e0e0e0 !default;
+$primary-selected-background-color: #e0e0e8 !default;
 $primary-selected-border-color: #bdbdbd !default;
 $primary-selected-font-color: #333 !default;
 
-$info-background-color: #00bcd4 !default;
-$info-border-color: #00bcd4 !default;
-$info-font-color: #f0fff0 !default;
-$info-pressed-background-color: #0097a7 !default;
-$info-pressed-border-color: #00bcd4 !default;
-$info-pressed-font-color: #f0fff0 !default;
-$info-selected-background-color: #00838f !default;
-$info-selected-border-color: #00bcd4 !default;
-$info-selected-font-color: #f0fff0 !default;
+$info-background-color: #f26d21 !default;
+$info-border-color: #f26d21 !default;
+$info-font-color: #fff !default;
+$info-pressed-background-color: #d56832 !default;
+$info-pressed-border-color: #f26d21 !default;
+$info-pressed-font-color: #fff !default;
+$info-selected-background-color: #d56832 !default;
+$info-selected-border-color: #f26d21 !default;
+$info-selected-font-color: #fff !default;
 
-$danger-background-color: #f44336 !default;
+$danger-background-color: #de2828 !default;
 $danger-border-color: #e53935 !default;
-$danger-font-color: #ffffff !default;
-$danger-pressed-background-color: #b71c1c !default;
+$danger-font-color: #fff !default;
+$danger-pressed-background-color: #ca2424 !default;
 $danger-pressed-border-color: #e53935 !default;
-$danger-pressed-font-color: #ffffff !default;
-$danger-selected-background-color: #c62828 !default;
+$danger-pressed-font-color: #fff !default;
+$danger-selected-background-color: #ca2424 !default;
 $danger-selected-border-color: #e53935 !default;
-$danger-selected-font-color: #ffffff !default;
+$danger-selected-font-color: #fff !default;
 
-$secondary-background-color: #bdbdbd !default;
-$secondary-border-color: #9e9e9e !default;
+$secondary-background-color: #e7f1fd !default;
+$secondary-border-color: #dbe7f5 !default;
 $secondary-font-color: #333 !default;
-$secondary-pressed-background-color: #9e9e9e !default;
-$secondary-pressed-border-color: #9e9e9e !default;
-$secondary-pressed-font-color: #ffffff !default;
-$secondary-selected-background-color: #757575 !default;
-$secondary-selected-border-color: #9e9e9e !default;
-$secondary-selected-font-color: #ffffff !default;
+$secondary-pressed-background-color: #9bc5f8 !default;
+$secondary-pressed-border-color: #dbe7f5 !default;
+$secondary-pressed-font-color: #333 !default;
+$secondary-selected-background-color: #9bc5f8 !default;
+$secondary-selected-border-color: #dbe7f5 !default;
+$secondary-selected-font-color: #333 !default;
 
-$success-background-color: #4caf50 !default;
+$success-background-color: #268543 !default;
 $success-border-color: #43a047 !default;
-$success-font-color: #f0fff0 !default;
-$success-pressed-background-color: #388e3c !default;
+$success-font-color: #fff !default;
+$success-pressed-background-color: #23d959 !default;
 $success-pressed-border-color: #43a047 !default;
-$success-pressed-font-color: #f0fff0 !default;
-$success-selected-background-color: #2e7d32 !default;
+$success-pressed-font-color: #fff !default;
+$success-selected-background-color: #23d959 !default;
 $success-selected-border-color: #43a047 !default;
-$success-selected-font-color: #f0fff0 !default;
+$success-selected-font-color: #fff !default;
 
-$warning-background-color: #ffc107 !default;
+$warning-background-color: #faac2a !default;
 $warning-border-color: #ffb300 !default;
 $warning-font-color: #333 !default;
 $warning-pressed-background-color: #ff6f00 !default;
 $warning-pressed-border-color: #ffb300 !default;
-$warning-pressed-font-color: #f0fff0 !default;
-$warning-selected-background-color: #ff8f00 !default;
+$warning-pressed-font-color: #fff !default;
+$warning-selected-background-color: #ff6f00 !default;
 $warning-selected-border-color: #ffb300 !default;
-$warning-selected-font-color: #333 !default;
+$warning-selected-font-color: #fff !default;
 
 $text-background-color: #efefef !default;
 $text-border-color: #e0e0e0 !default;
 $text-font-color: #333 !default;
 $text-pressed-background-color: #808080 !default;
 $text-pressed-border-color: #e0e0e0 !default;
-$text-pressed-font-color: #333 !default;
-$text-selected-background-color: #9e9e9e !default;
+$text-pressed-font-color: #fff !default;
+$text-selected-background-color: #808080 !default;
 $text-selected-border-color: #e0e0e0 !default;
-$text-selected-font-color: #333 !default;
+$text-selected-font-color: #fff !default;
 
 $theme-foreground-color: #3f3f3f !default;
 
@@ -170,8 +170,14 @@ $ch5-spinner-highlight-border-color: #00ff00 !default;
 
 // background
 $ch5-spinner-background-color: transparent !default;
-$ch5-spinner-background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05)) !default;
-$ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%) !default;
+$ch5-spinner-background-gradient-before: linear-gradient(
+  #fff 5%,
+  rgba(255, 255, 255, 0.05)
+) !default;
+$ch5-spinner-background-gradient-after: linear-gradient(
+  rgba(255, 255, 255, 0.05),
+  #fff 120%
+) !default;
 
 /* ===============================================
 CH5-TEXT INPUT
@@ -302,4 +308,3 @@ $ch5-list-item-background-color: #fafafa !default;
 
 /// Set the border color of list items
 $ch5-list-item-border-color: #bdbdbd !default;
-

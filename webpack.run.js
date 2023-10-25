@@ -35,7 +35,7 @@ let fontAwesomeDestinationFilePath = !!dotenv && !!dotenv.DESTINATION_THEMES_FIL
 let materialIconsDestinationFilePath = !!dotenv && !!dotenv.DESTINATION_THEMES_FILE_PATH ? dotenv.DESTINATION_THEMES_FILE_PATH : './app/dist/css/material-icons/';
 let sgIconsDestinationFilePath = !!dotenv && !!dotenv.DESTINATION_THEMES_FILE_PATH ? dotenv.DESTINATION_THEMES_FILE_PATH : './app/dist/css/sg-icons/';
 
-const searches = ['--outputpath'];
+const searches = ['--output-path'];
 const transformURL = function (cliUrl) {
   let cliDestPath = {};
   cliUrl.map((item) => {
@@ -50,10 +50,10 @@ const transformURL = function (cliUrl) {
 const pathMatches = _.filter(process.argv, (item) => { return item.indexOf(searches[0]) !== -1 });
 if (pathMatches.length) {
   let processArgv = transformURL(pathMatches);
-  destinationFilePath = !processArgv['outputpath'] ? destinationFilePath : processArgv.outputpath;
-  fontAwesomeDestinationFilePath = !processArgv['outputpath'] ? fontAwesomeDestinationFilePath : processArgv.outputpath + '/font-awesome/';
-  materialIconsDestinationFilePath = !processArgv['outputpath'] ? materialIconsDestinationFilePath : processArgv.outputpath + '/material-icons/';
-  sgIconsDestinationFilePath = !processArgv['outputpath'] ? sgIconsDestinationFilePath : processArgv.outputpath + '/sg-icons/';
+  destinationFilePath = !processArgv['output-path'] ? destinationFilePath : processArgv['output-path'];
+  fontAwesomeDestinationFilePath = !processArgv['output-path'] ? fontAwesomeDestinationFilePath : processArgv['output-path'] + '/font-awesome/';
+  materialIconsDestinationFilePath = !processArgv['output-path'] ? materialIconsDestinationFilePath : processArgv['output-path'] + '/material-icons/';
+  sgIconsDestinationFilePath = !processArgv['output-path'] ? sgIconsDestinationFilePath : processArgv['output-path'] + '/sg-icons/';
 }
 
 module.exports = merge(common, {

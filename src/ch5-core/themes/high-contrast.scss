@@ -10,6 +10,8 @@
 /// @group ch5-high-contrast-theme-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+@import "../../ch5-core/variables";
+
 // Color system
 
 $default-background-color: #0000ff !default;
@@ -21,9 +23,6 @@ $default-pressed-font-color: #f0fff0 !default;
 $default-selected-background-color: #ffffff !default;
 $default-selected-border-color: #0000ff !default;
 $default-selected-font-color: #0000ff !default;
-$default-disabled-background-color: #0000ff !default;
-$default-disabled-border-color: #0000ff !default;
-$default-disabled-font-color: #ffffff !default;
 
 $primary-background-color: #000000 !default;
 $primary-border-color: #000000 !default;
@@ -34,9 +33,6 @@ $primary-pressed-font-color: #ffffff !default;
 $primary-selected-background-color: #ffffff !default;
 $primary-selected-border-color: #000000 !default;
 $primary-selected-font-color: #000000 !default;
-$primary-disabled-background-color: #000000 !default;
-$primary-disabled-border-color: #000000 !default;
-$primary-disabled-font-color: #ffffff !default;
 
 $info-background-color: #00ffff !default;
 $info-border-color: #00ffff !default;
@@ -47,9 +43,6 @@ $info-pressed-font-color: #000000 !default;
 $info-selected-background-color: #ffffff !default;
 $info-selected-border-color: #00ffff !default;
 $info-selected-font-color: #000000 !default;
-$info-disabled-background-color: #00ffff !default;
-$info-disabled-border-color: #00ffff !default;
-$info-disabled-font-color: #000000 !default;
 
 $danger-background-color: #ff0000 !default;
 $danger-border-color: #ff0000 !default;
@@ -60,9 +53,6 @@ $danger-pressed-font-color: #ffffff !default;
 $danger-selected-background-color: #ffffff !default;
 $danger-selected-border-color: #ff0000 !default;
 $danger-selected-font-color: #ff0000 !default;
-$danger-disabled-background-color: #ff0000 !default;
-$danger-disabled-border-color: #ff0000 !default;
-$danger-disabled-font-color: #ffffff !default;
 
 $secondary-background-color: #ffffff !default;
 $secondary-border-color: #939393 !default;
@@ -73,9 +63,6 @@ $secondary-pressed-font-color: #000000 !default;
 $secondary-selected-background-color: #7e7e7e !default;
 $secondary-selected-border-color: #939393 !default;
 $secondary-selected-font-color: #ffffff !default;
-$secondary-disabled-background-color: #ffffff !default;
-$secondary-disabled-border-color: #939393 !default;
-$secondary-disabled-font-color: #000000 !default;
 
 $success-background-color: #00ff00 !default;
 $success-border-color: #00ff00 !default;
@@ -86,9 +73,6 @@ $success-pressed-font-color: #000000 !default;
 $success-selected-background-color: #ffffff !default;
 $success-selected-border-color: #00ff00 !default;
 $success-selected-font-color: #000000 !default;
-$success-disabled-background-color: #00ff00 !default;
-$success-disabled-border-color: #00ff00 !default;
-$success-disabled-font-color: #000000 !default;
 
 $warning-background-color: #ff4500 !default;
 $warning-border-color: #ff4500 !default;
@@ -99,9 +83,6 @@ $warning-pressed-font-color: #ffffff !default;
 $warning-selected-background-color: #ffffff !default;
 $warning-selected-border-color: #ff4500 !default;
 $warning-selected-font-color: #ff4500 !default;
-$warning-disabled-background-color: #ff4500 !default;
-$warning-disabled-border-color: #ff4500 !default;
-$warning-disabled-font-color: #ffffff !default;
 
 $text-background-color: #561b8d !default;
 $text-border-color: #561b8d !default;
@@ -112,9 +93,6 @@ $text-pressed-font-color: #ffffff !default;
 $text-selected-background-color: #ffffff !default;
 $text-selected-border-color: #561b8d !default;
 $text-selected-font-color: #561b8d !default;
-$text-disabled-background-color: #561b8d !default;
-$text-disabled-border-color: #561b8d !default;
-$text-disabled-font-color: #ffffff !default;
 
 $theme-foreground-color: #000 !default;
 
@@ -131,10 +109,10 @@ $ch5-overlay-default-close-icon-color-hover: #000 !default;
 $ch5-overlay-default-mask-bg-color: rgba(150, 150, 150, 0.3) !default;
 
 /// the background color of the icon at the top of the overlay panel
-$ch5-overlay-panel-close-icon-background-color: #fff !default;
+$ch5-overlay-panel-close-icon-background-color: $white !default;
 
 /// the background color of the overlay panel
-$ch5-overlay-panel-background-color: #fff !default;
+$ch5-overlay-panel-background-color: $white !default;
 
 /// the border color of the overlay panel
 $ch5-overlay-panel-border-color: #000000 !default;
@@ -171,7 +149,7 @@ $ch5-select-panel-item-background-color: transparent !default;
 $ch5-select-panel-item-hover-background-color: #f8f9fa !default;
 
 /// select panel background color
-$ch5-select-panel-items-background-color: #ffffff !default;
+$ch5-select-panel-items-background-color: $white !default;
 
 /* ===============================================
 CH5-SPINNER
@@ -230,25 +208,25 @@ $ch5-toggle-label-font-color: #000 !default;
 /// the text color of the on|off label
 $ch5-toggle-text-font-color: #000 !default;
 /// the color of the on|off icon
-$ch5-toggle-icon-font-color: #fff !default;
+$ch5-toggle-icon-font-color: $white !default;
 
 // circle
 /// the background color of the handle when shape="circle"
 $ch5-toggle-handle-circle-background: #939393 !default;
 /// the text color of the on label when shape="circle"
-$ch5-toggle-circle-label-on-color: #fff !default;
+$ch5-toggle-circle-label-on-color: $white !default;
 /// the text color of the off label when shape="circle"
 $ch5-toggle-circle-label-off-color: #000 !default;
 /// the background color of the knob when shape="circle"
-$ch5-toggle-circle-knob-color: #fff !default;
+$ch5-toggle-circle-knob-color: $white !default;
 
 // rectangle
 /// the background color of the handle when shape="rectangle"
 $ch5-toggle-handle-rectangle-background: #464747 !default;
 /// the text color of the on label when shape="rectangle"
-$ch5-toggle-rectangle-label-on-color: #fff !default;
+$ch5-toggle-rectangle-label-on-color: $white !default;
 /// the text color of the off label when shape="rectangle"
-$ch5-toggle-rectangle-label-off-color: #fff !default;
+$ch5-toggle-rectangle-label-off-color: $white !default;
 /// the background color of the knob when shape="rectangle"
 $ch5-toggle-rectangle-knob-color: #888 !default;
 
@@ -276,10 +254,10 @@ $ch5-modal-close-icon-color-hover: #0000ff !default;
 $ch5-modal-mask-bg-color: rgba(150, 150, 150, 0.3) !default;
 
 /// the background color of the icon at the top of the modal
-$ch5-modal-close-icon-background-color: #fff !default;
+$ch5-modal-close-icon-background-color: $white !default;
 
 /// the background color of the modal
-$ch5-modal-background-color: #fff !default;
+$ch5-modal-background-color: $white !default;
 
 /// the text color of the modal
 $ch5-modal-text-color: #000 !default;

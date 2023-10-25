@@ -12,7 +12,7 @@ const path = require('path'),
 (function(path, fs, logging) {
 
   let themesPath = path.resolve(__dirname + '/../themes');
-  let themesVariablesDirectory = path.resolve(__dirname + '/../ch5-core/themes');
+  let themesVariablesDirectory = path.resolve(__dirname + '/../src/ch5-core/themes');
   let themeName = process.argv[2];
   let themeIdentifier = '-theme';
   let baseThemes = ['dark', 'light'];
@@ -67,7 +67,7 @@ const path = require('path'),
       }
 
       if(fs.existsSync(path.resolve(__dirname, themesVariablesDirectory, `${this.theme}${ext}`))) {
-        logging.error(`A file related to "${this.theme}" theme was found in ./ch5-core/themes. Resolve the conflict or change the theme name and run the command again`);
+        logging.error(`A file related to "${this.theme}" theme was found in ./src/ch5-core/themes. Resolve the conflict or change the theme name and run the command again`);
         return true;
       }
 

@@ -2,7 +2,7 @@
 const glob = require('glob');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('css-minimizer-webpack-plugin');
 const distDir = 'output';
 const basePath = path.resolve(__dirname);
 const fileList = glob.sync('themes/**/*.scss');
@@ -17,14 +17,14 @@ let createEntryList = function () {
 	fileList.map((item) => {
 		let itemArr = item.split("/");
 		let fileName = itemArr[itemArr.length - 1].split('.')[0];
-		let keyName = `themes/${fileName}`;
+		let keyName = `${fileName}`;
 		filesObj[keyName] = path.resolve(basePath, item);
 	});
 	return filesObj;
 };
 
 let entryList = createEntryList();
-entryList['themes/external'] = [
+entryList['external'] = [
 	path.resolve(basePath, `${fontAwesomeCssBasePath}/all.css`),
 	path.resolve(basePath, `${materialIconsFilePath}/all.css`),
 	path.resolve(basePath, `${sgIconsPath}/all.css`)

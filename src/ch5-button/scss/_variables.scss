@@ -19,26 +19,8 @@ $ch5-button-font-weight: $ch5-font-weight !default;
 /// The padding for icon of the button.
 $ch5-button-icon-color: inherit !default;
 $ch5-button-icon-font-size: inherit !default;
-$ch5-button-icon-padding: 5px !default;
 $ch5-button-padding: 0.25rem !default;
 
-/// The margin for image of the button.
-$ch5-button-img-margin: 5px !default;
-
-/// The height for image of the button.
-$ch5-button-img-height: 20px !default;
-
-/// The width for image of the button.
-$ch5-button-img-width: 20px !default;
-
-/// The height for icon of the button with circle form.
-$ch5-button-circle-icon-height: 30px !default;
-
-/// The width for icon of the button with circle form.
-$ch5-button-circle-icon-width: 30px !default;
-
-/// The line height for icon of the button with circle form.
-$ch5-button-circle-icon-line-height: 20px !default;
 
 $ch5-button-content-line-height: 1.2 !default;
 
@@ -107,7 +89,6 @@ $ch5-button-checkbox-checked-faicon: "\f14a" !default;
 $ch5-button-checkbox-unchecked-faicon: "\f0c8" !default;
 $ch5-button-checkbox-checked-font-weight: 400 !default;
 $ch5-button-checkbox-unchecked-font-weight: 400 !default;
-$ch5-button-checkbox-margin: 5px !default;
 $ch5-button-checkbox-padding: 5px !default;
 
 /* ===============================================
@@ -143,15 +124,6 @@ $ch5-button-default-selected-background-color: $default-selected-background-colo
 /// the font color for default type of the selected button
 $ch5-button-default-selected-font-color: $default-selected-font-color !default;
 
-/// the border color for default type of the disabled button
-$ch5-button-default-disabled-border-color: $default-disabled-border-color !default;
-
-/// the background color for default type of the disabled button
-$ch5-button-default-disabled-background-color: $default-disabled-background-color !default;
-
-/// the font color for default type of the disabled button
-$ch5-button-default-disabled-font-color: $default-disabled-font-color !default;
-
 // ------------------------------------------------------
 
 // primary type
@@ -183,14 +155,6 @@ $ch5-button-primary-selected-background-color: $primary-selected-background-colo
 /// the font color for primary type of the selected button
 $ch5-button-primary-selected-font-color: $primary-selected-font-color !default;
 
-/// the border color for primary type of the disabled button
-$ch5-button-primary-disabled-border-color: $primary-disabled-border-color !default;
-
-/// the background color for primary type of the disabled button
-$ch5-button-primary-disabled-background-color: $primary-disabled-background-color !default;
-
-/// the font color for primary type of the disabled button
-$ch5-button-primary-disabled-font-color: $primary-disabled-font-color !default;
 
 // ------------------------------------------------------
 
@@ -223,14 +187,6 @@ $ch5-button-info-selected-background-color: $info-selected-background-color !def
 /// the font color for info type of the selected button
 $ch5-button-info-selected-font-color: $info-selected-font-color !default;
 
-/// the border color for info type of the disabled button
-$ch5-button-info-disabled-border-color: $info-disabled-border-color !default;
-
-/// the background color for info type of the disabled button
-$ch5-button-info-disabled-background-color: $info-disabled-background-color !default;
-
-/// the font color for info type of the disabled button
-$ch5-button-info-disabled-font-color: $info-disabled-font-color !default;
 
 // ------------------------------------------------------
 
@@ -263,14 +219,6 @@ $ch5-button-danger-selected-background-color: $danger-selected-background-color 
 /// the font color for danger type of the selected button
 $ch5-button-danger-selected-font-color: $danger-selected-font-color !default;
 
-/// the border color for danger type of the disabled button
-$ch5-button-danger-disabled-border-color: $danger-disabled-border-color !default;
-
-/// the background color for danger type of the disabled button
-$ch5-button-danger-disabled-background-color: $danger-disabled-background-color !default;
-
-/// the font color for danger type of the disabled button
-$ch5-button-danger-disabled-font-color: $danger-disabled-font-color !default;
 
 // ------------------------------------------------------
 
@@ -303,15 +251,6 @@ $ch5-button-secondary-selected-background-color: $secondary-selected-background-
 /// the font color for secondary type of the selected button
 $ch5-button-secondary-selected-font-color: $secondary-selected-font-color !default;
 
-/// the border color for secondary type of the disabled button
-$ch5-button-secondary-disabled-border-color: $secondary-disabled-border-color !default;
-
-/// the background color for secondary type of the disabled button
-$ch5-button-secondary-disabled-background-color: $secondary-disabled-background-color !default;
-
-/// the font color for secondary type of the disabled button
-$ch5-button-secondary-disabled-font-color: $secondary-disabled-font-color !default;
-
 // ------------------------------------------------------
 
 // success type
@@ -343,14 +282,6 @@ $ch5-button-success-selected-background-color: $success-selected-background-colo
 /// the font color for success type of the selected button
 $ch5-button-success-selected-font-color: $success-selected-font-color !default;
 
-/// the border color for success type of the disabled button
-$ch5-button-success-disabled-border-color: $success-disabled-border-color !default;
-
-/// the background color for success type of the disabled button
-$ch5-button-success-disabled-background-color: $success-disabled-background-color !default;
-
-/// the font color for success type of the disabled button
-$ch5-button-success-disabled-font-color: $success-disabled-font-color !default;
 
 // ------------------------------------------------------
 
@@ -383,14 +314,6 @@ $ch5-button-warning-selected-background-color: $warning-selected-background-colo
 /// the font color for warning type of the selected button
 $ch5-button-warning-selected-font-color: $warning-selected-font-color !default;
 
-/// the border color for warning type of the disabled button
-$ch5-button-warning-disabled-border-color: $warning-disabled-border-color !default;
-
-/// the background color for warning type of the disabled button
-$ch5-button-warning-disabled-background-color: $warning-disabled-background-color !default;
-
-/// the font color for warning type of the disabled button
-$ch5-button-warning-disabled-font-color: $warning-disabled-font-color !default;
 
 // ------------------------------------------------------
 
@@ -423,13 +346,5 @@ $ch5-button-text-selected-background-color: $text-selected-background-color !def
 /// the font color for text type of the selected button
 $ch5-button-text-selected-font-color: $text-selected-font-color !default;
 
-/// the border color for text type of the disabled button
-$ch5-button-text-disabled-border-color: $text-disabled-border-color !default;
-
-/// the background color for text type of the disabled button
-$ch5-button-text-disabled-background-color: $text-disabled-background-color !default;
-
-/// the font color for text type of the disabled button
-$ch5-button-text-disabled-font-color: $text-disabled-font-color !default;
 
 // ------------------------------------------------------
