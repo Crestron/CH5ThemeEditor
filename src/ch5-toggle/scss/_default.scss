@@ -47,7 +47,6 @@ ch5-toggle:focus {
         font-weight: $ch5-toggle-label-font-weight;
         color: $ch5-toggle-label-font-color;
         margin: $ch5-toggle-label-margin;
-
         &[hidden] {
             display: none;
         }
@@ -85,11 +84,9 @@ ch5-toggle:focus {
         align-items: center;
         justify-content: center;
         min-width: 100px;
-        height: 100%;
-        min-height: 2em;
         padding: 0;
         transition: all 0.4s ease-out;
-
+        aspect-ratio: 3/1;
         /* ch5-toggle - on/off container */
         div {
             position: relative;
@@ -149,8 +146,7 @@ ch5-toggle:focus {
             a {
                 left: 0;
                 top: 0;
-                width: 2em;
-                height: 2em;
+                width: 33%;
                 border-radius: 100%;
                 background-color: $ch5-toggle-circle-knob-color;
                 border: 0.25em solid $ch5-toggle-handle-circle-background;
@@ -167,7 +163,8 @@ ch5-toggle:focus {
             margin: $ch5-toggle-handle-rectangle-margin;
             div {
                 display: inline-flex;
-                padding: 0 15px;
+                // padding: 0 15px;
+                width: 50%;
                 transition: all 0.1s;
 
                 &:first-of-type {
@@ -217,7 +214,7 @@ ch5-toggle:focus {
 
                 a {
                     left: 100%;
-                    margin-left: -2em;
+                    margin-left: -33%;
                     background-color: $ch5-toggle-circle-knob-color;
                     border-color: $ch5-toggle-handle-checked-color;
                 }
@@ -245,16 +242,28 @@ ch5-toggle:focus {
     }
     /// Class to apply when orientation='vertical'
     &.ch5-toggle--vertical {
-        padding: 50% 0;
-        height: 0;
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
+        // padding: 50% 0;
+        // height: 0;
+        // -webkit-transform: rotate(90deg);
+        // transform: rotate(90deg) translateX(20%);
+        // transform-origin: center;
+        flex-direction: column;
+        padding-bottom: 25%;
         // > div {
         //     padding: 50% 0;
         //     height: 0;
         //     -webkit-transform: rotate(90deg);
         //     transform: rotate(90deg);
         // }
+        .ch5-toggle__label {
+            writing-mode: vertical-lr;
+        }
+
+        .ch5-toggle__handle {
+            transform: rotate(90deg) translateX(25%);
+            transform-origin: center;
+        }
+
     }
 
     // 'rtl' support
@@ -274,7 +283,7 @@ ch5-toggle:focus {
         &.ch5-toggle--circle .ch5-toggle__handle a {
             right: auto;
             left: 100%;
-            margin-left: -2em;
+            margin-left: -33%;
         }
         &.ch5-toggle--on {
             .ch5-toggle__handle a {
@@ -284,7 +293,7 @@ ch5-toggle:focus {
         }
         &.ch5-toggle--on.ch5-toggle--circle {
             .ch5-toggle__handle a {
-                left: 2em;
+                left: 33%;
             }
         }
     }
