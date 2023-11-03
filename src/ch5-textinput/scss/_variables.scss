@@ -34,9 +34,6 @@ $ch5-textinput-input-regular-tb-padding: 15px !default;
 /// set left and right padding for regular size of the textinput
 $ch5-textinput-input-regular-lr-padding: 20px !default;
 
-/// set the min width for regular size of the textinput
-$ch5-textinput-input-regular-min-width: 400px !default;
-
 /// set the width for regular size of the textinput
 $ch5-textinput-size-regular-width: 400px !default;
 
@@ -81,9 +78,6 @@ $ch5-textinput-input-x-small-tb-padding: 10px !default;
 /// set left and right padding for x-small size of the textinput
 $ch5-textinput-input-x-small-lr-padding: 10px !default;
 
-/// set the min width for x-small size of the textinput
-$ch5-textinput-input-x-small-min-width: 200px !default;
-
 /// set the width for x-small size of the textinput
 $ch5-textinput-size-x-small-width: 200px !default;
 
@@ -118,9 +112,6 @@ $ch5-textinput-small-font-style: $ch5-textinput-font-style !default;
 /// set the font weight for small size of the textinput
 $ch5-textinput-small-font-weight: $ch5-textinput-font-weight !default;
 
-/// set the min width for small size of the textinput
-$ch5-textinput-input-small-min-width: 250px !default;
-
 /// set the width for small size of the textinput
 $ch5-textinput-size-small-width: 250px !default;
 
@@ -154,9 +145,6 @@ $ch5-textinput-large-font-style: $ch5-textinput-font-style !default;
 
 /// set the font weight for large size of the textinput
 $ch5-textinput-large-font-weight: $ch5-textinput-font-weight !default;
-
-/// set the min width for large size of the textinput
-$ch5-textinput-input-large-min-width: 500px !default;
 
 /// set the width for large size of the textinput
 $ch5-textinput-size-large-width: 500px !default;
@@ -193,9 +181,6 @@ $ch5-textinput-x-large-font-style: $ch5-textinput-font-style !default;
 
 /// set the font weight for x-large size of the textinput
 $ch5-textinput-x-large-font-weight: $ch5-textinput-font-weight !default;
-
-/// set the min width for x-large size of the textinput
-$ch5-textinput-input-x-large-min-width: $ch5-textinput-input-large-min-width !default;
 
 /// set the width for x-large size of the textinput
 $ch5-textinput-size-x-large-width: $ch5-textinput-size-large-width !default;
