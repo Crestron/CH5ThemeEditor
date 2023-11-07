@@ -107,6 +107,7 @@ ch5-textinput {
       background: transparent;
       border: 0;
       color: $ch5-textinput-input-text-color;
+      width: 100%;
 
       /// Applied on the input when text-transform="none"
       &.ch5-textinput--text-transform-none {
@@ -152,7 +153,6 @@ ch5-textinput {
         font-style: $ch5-textinput-regular-font-style;
         font-size: $ch5-textinput-regular-font-size;
         font-weight: $ch5-textinput-regular-font-weight;
-        width: 100%;
         height: $ch5-textinput-size-regular-height;
       }
 
@@ -181,7 +181,6 @@ ch5-textinput {
         font-style: $ch5-textinput-x-small-font-style;
         font-size: $ch5-textinput-x-small-font-size;
         font-weight: $ch5-textinput-x-small-font-weight;
-        width: 100%;
         height: $ch5-textinput-size-x-small-height;
       }
 
@@ -212,7 +211,6 @@ ch5-textinput {
         font-style: $ch5-textinput-small-font-style;
         font-size: $ch5-textinput-small-font-size;
         font-weight: $ch5-textinput-small-font-weight;
-        width: 100%;
         height: $ch5-textinput-size-small-height;
       }
 
@@ -242,7 +240,6 @@ ch5-textinput {
         font-style: $ch5-textinput-large-font-style;
         font-size: $ch5-textinput-large-font-size;
         font-weight: $ch5-textinput-large-font-weight;
-        width: 100%;
         height: $ch5-textinput-size-large-height;
       }
 
