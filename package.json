@@ -35,10 +35,10 @@
     }, 
     "dependencies": {
         "@fortawesome/fontawesome-free": "^6.3.0", 
-        "@material-icons/font": "^1.0.25", 
-        "sassdoc": "^2.7.1"
+        "@material-icons/font": "^1.0.25"
     }, 
     "devDependencies": {
+        "sassdoc": "^2.7.1",
         "@crestron/ch5-crcomlib": "2.6.1", 
         "@raghavendradabbir/sass-flatten": "^0.2.9", 
         "@types/node": "^20.4.0", 
