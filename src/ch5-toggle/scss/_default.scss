@@ -18,7 +18,8 @@ ch5-toggle:focus {
 .ch5-toggle {
     position: relative;
     display: inline-block;
-
+    box-sizing: border-box;
+    
     font-size: $ch5-toggle-font-size;
     font-style: $ch5-toggle-font-style;
     font-weight: $ch5-toggle-font-weight;
@@ -160,7 +161,6 @@ ch5-toggle:focus {
             margin: $ch5-toggle-handle-rectangle-margin;
             div {
                 display: inline-flex;
-                // padding: 0 15px;
                 width: 50%;
                 transition: all 0.1s;
 
