@@ -1,0 +1,109 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2022 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-toggle
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ch5-toggle {
+    /// Applied when size='regular'
+    .ch5-toggle__handle--size-regular {
+        width: 100px;
+
+        .ch5-toggle__off-label,
+        .ch5-toggle__on-label {
+            display: table-cell;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        /* height: 33.3px; */
+    }
+
+    /// Applied when size='x-small'
+    .ch5-toggle__handle--size-x-small {
+        min-width: 80px;
+
+        /* height: 16.66px; */
+        .ch5-toggle__off-label,
+        .ch5-toggle__on-label {
+            font-size: 10px;
+            display: table-cell;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .ch5-toggle__off-icon,
+        .ch5-toggle__on-icon {
+            font-size: 10px;
+        }
+    }
+
+    /// Applied when size='small'
+    .ch5-toggle__handle--size-small {
+        min-width: 90px;
+
+        /*  height: 25px; */
+        .ch5-toggle__off-label,
+        .ch5-toggle__on-label {
+            font-size: 12px;
+            display: table-cell;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .ch5-toggle__off-icon,
+        .ch5-toggle__on-icon {
+            font-size: 12px;
+        }
+    }
+
+    /// Applied when size='large'
+    .ch5-toggle__handle--size-large {
+        width: 125px;
+
+        /*  height: 41.66px; */
+        .ch5-toggle__off-label,
+        .ch5-toggle__on-label {
+            font-size: 18px;
+            display: table-cell;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .ch5-toggle__off-icon,
+        .ch5-toggle__on-icon {
+            font-size: 18px;
+        }
+    }
+
+    /// Applied when size='x-large'
+    .ch5-toggle__handle--size-x-large {
+        width: 150px;
+
+        /*   height: 50px; */
+        .ch5-toggle__off-label,
+        .ch5-toggle__on-label {
+            font-size: 20px;
+            display: table-cell;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .ch5-toggle__off-icon,
+        .ch5-toggle__on-icon {
+            font-size: 20px;
+        }
+    }
+
+}
