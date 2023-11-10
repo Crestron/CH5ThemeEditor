@@ -17,10 +17,7 @@ ch5-toggle:focus {
 /// the class added on the div that is the only direct child of the ch5-toggle element and wraps all its contents
 .ch5-toggle {
     position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+    display: inline-block;
 
     font-size: $ch5-toggle-font-size;
     font-style: $ch5-toggle-font-style;
@@ -31,11 +28,11 @@ ch5-toggle:focus {
         display: none;
     }
 
-    // div {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     /* ch5-toggle - label */
     /// Applied on label
@@ -242,28 +239,12 @@ ch5-toggle:focus {
     }
     /// Class to apply when orientation='vertical'
     &.ch5-toggle--vertical {
-        // padding: 50% 0;
-        // height: 0;
-        // -webkit-transform: rotate(90deg);
-        // transform: rotate(90deg) translateX(20%);
-        // transform-origin: center;
-        flex-direction: column;
-        padding-bottom: 6%;
-        // > div {
-        //     padding: 50% 0;
-        //     height: 0;
-        //     -webkit-transform: rotate(90deg);
-        //     transform: rotate(90deg);
-        // }
-        .ch5-toggle__label {
-            writing-mode: vertical-lr;
+        > div {
+            padding: 50% 0;
+            height: 0;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
         }
-
-        .ch5-toggle__handle {
-            transform: rotate(90deg) translateX(25%);
-            transform-origin: center;
-        }
-
     }
 
     // 'rtl' support
