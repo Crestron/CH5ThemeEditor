@@ -3,6 +3,7 @@ import { findAsync, find } from 'find-unused-sass-variables';
 
 // 'directory' is a folder
 const unused = find('src');
+
 // Array of unused variables
 console.log(unused.unused);
 // Array<{ name: string, line: string, file: string }>
@@ -19,4 +20,4 @@ console.log(unused.unused);
 ]
 */
 // Total number of variables in the files
-console.log(unused.total);
+console.log("Total no. of variables in the files: " + unused.total, unused);
