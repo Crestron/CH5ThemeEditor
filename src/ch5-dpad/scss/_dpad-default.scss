@@ -888,6 +888,7 @@
 .ch5-dpad.ch5-dpad--shape-circle {
   .dpad-container {
     transform: rotate(45deg);
+    /// Applied when hideCenterButton = "true"
     .ch5-hide-child-button {
       visibility: hidden !important;
       cursor: default;
@@ -1449,5 +1450,10 @@
 
 /// Defines the dpad shape
 .ch5-dpad--shape-circle {
+  // DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when disableCenterButton="true"
+.ch5-disable-child-button {
   // DO NOT DELETE - used for Component Reference
 }
