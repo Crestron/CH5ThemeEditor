@@ -99,6 +99,9 @@ ch5-slider {
   .noUi-connect {
     background: $ch5-slider-connect-bg;
   }
+   .noUi-origin{
+    right: auto;
+  }
 
   .noUi-connects {
     background: $ch5-slider-target-bg;
