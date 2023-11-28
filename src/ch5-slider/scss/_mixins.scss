@@ -112,7 +112,7 @@
 		width: $handle-width;
 		height: $handle-height;
 		left: calc(-1 * ($handle-width + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-height) / 2);
-		// top: calc(-1 * $handle-height / 2);
+		top: calc(-1 * $handle-height / 2);
 	}
 	.ch5-slider-button-container {
 		flex-direction: column-reverse;
