@@ -1,0 +1,17 @@
+{
+  "name": "sass-schema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@raghavendradabbir/sass-flatten": "^0.2.9",
+    "puppeteer": "^10.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen:sass-json": "ts-node ./sass-schema/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
+    "gen:sass-metadata": "node ./helpers/metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json"
+  },
+  "author": "",
+  "license": "ISC"
+}

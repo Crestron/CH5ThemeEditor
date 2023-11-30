@@ -1,0 +1,18 @@
+{
+  "name": "helpers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle-theme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-theme": "node ./helpers/create-theme.js",
+    "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sassdoc": "^2.7.4"
+  }
+}
