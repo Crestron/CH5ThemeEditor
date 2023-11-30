@@ -36,14 +36,15 @@
     "my:shell": "npm run bundle-theme-all && webpack --config webpack.run.js --output-path='./../../CH5/CH5SampleProjects/UISampleProjects/Shell/node_modules/@crestron/ch5-theme/output/themes/' && npm run cleanjs",
     "my:documentation": "npm run bundle-theme-all && webpack --config webpack.run.js --output-path='./../../CH5/CH5DocumentationViewers/ComponentsDocumentation/node_modules/@crestron/ch5-theme/output/themes/' && npm run cleanjs",
     "my:showcase": "npm run bundle-theme-all && webpack --config webpack.run.js --output-path='./../../CH5/CH5ShowcaseApp/node_modules/@crestron/ch5-theme/output/themes/' && npm run cleanjs",
-    "my:pack": "reset && npm run bundle-theme-all && npm pack"
+    "my:pack": "reset && npm run bundle-theme-all && npm pack",
+    "postinstall": "cd helpers && npm install && cd .. && cd sass-schema && npm install"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
     "@material-icons/font": "^1.0.25"
   },
   "devDependencies": {
-    "@crestron/ch5-crcomlib": "http://nj6v-cloudrelaybuild/CH5/dev/2.6.1-dev.7/crestron-ch5-crcomlib-2.6.1-dev.7.tgz",
+    "@crestron/ch5-crcomlib": "2.6.1",
     "@types/node": "^20.4.0",
     "@types/puppeteer": "^5.4.4",
     "copy-webpack-plugin": "^5.0.3",
