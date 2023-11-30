@@ -1,17 +1,18 @@
 {
-  "name": "helpers",
-  "version": "1.0.0",
-  "description": "",
-  "main": "bundle-theme.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "create-theme": "node ./helpers/create-theme.js",
-    "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json"
-    
+  "name": "@crestron/ch5-theme",
+  "version": "2.6.1",
+  "description": "Crestron HTML5 (CH5) Themes CSS",
+  "author": "Crestron",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/Crestron/CH5ThemeEditor.git",
+    "type": "git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "ch5",
+    "Theme"
+  ],
   "devDependencies": {
     "sassdoc": "^2.7.4"
   }
