@@ -1,6 +1,6 @@
 {
     "name": "@crestron/ch5-theme", 
-    "version": "2.6.1", 
+    "version": "2.7.0", 
     "description": "Crestron HTML5 (CH5) Themes CSS", 
     "author": "Crestron", 
     "license": "SEE LICENSE IN LICENSE.txt", 
@@ -39,7 +39,7 @@
         "sassdoc": "^2.7.1"
     }, 
     "devDependencies": {
-        "@crestron/ch5-crcomlib": "2.6.1", 
+        "@crestron/ch5-crcomlib": "2.7.0", 
         "@raghavendradabbir/sass-flatten": "^0.2.9", 
         "@types/node": "^20.4.0", 
         "@types/puppeteer": "^5.4.4", 
