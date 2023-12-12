@@ -280,6 +280,7 @@ ch5-keypad {
 	cursor: pointer;
 	display: flex;
 	aspect-ratio: 1/1;
+	overflow: hidden;
 
 	button {
 		display: flex;
