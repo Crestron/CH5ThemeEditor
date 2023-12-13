@@ -31,12 +31,7 @@
     "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json",
     "gen:sass-json": "ts-node ./sass-schema/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
     "gen:sass-metadata": "node ./helpers/metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json",
-    "start": "webpack --config webpack.run.js --watchmode && npm run cleanjs && webpack --config app.config.dev.js",
-    "my:testing": "npm run bundle-theme-all && webpack --config webpack.run.js --output-path='../../JiraDefects/CH5C-3025/shell-template/node_modules/@crestron/ch5-theme/output/themes/' && npm run cleanjs",
-    "my:shell": "npm run bundle-theme-all && webpack --config webpack.run.js --output-path='./../../CH5/CH5SampleProjects/UISampleProjects/Shell/node_modules/@crestron/ch5-theme/output/themes/' && npm run cleanjs",
-    "my:documentation": "npm run bundle-theme-all && webpack --config webpack.run.js --output-path='./../../CH5/CH5DocumentationViewers/ComponentsDocumentation/node_modules/@crestron/ch5-theme/output/themes/' && npm run cleanjs",
-    "my:showcase": "npm run bundle-theme-all && webpack --config webpack.run.js --output-path='./../../CH5/CH5ShowcaseApp/node_modules/@crestron/ch5-theme/output/themes/' && npm run cleanjs",
-    "my:pack": "reset && npm run bundle-theme-all && npm pack"
+    "start": "webpack --config webpack.run.js --watchmode && npm run cleanjs && webpack --config app.config.dev.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
