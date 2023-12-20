@@ -41,7 +41,10 @@ $gaugeStyle: (
       }
       .ch5-wifi-signal-level-gauge--selected-true {
         color: $color;
-        animation: redrawForIOS 1s linear infinite; // This is required for CH5C-4037
+        animation: redrawForIOS
+          1s
+          linear
+          infinite; // This is required for CH5C-4037
       }
     }
 
@@ -140,6 +143,10 @@ $gaugeStyle: (
       width: 25%;
     }
   }
+}
+
+ch5-wifi-signal-level-gauge {
+  @include ch5-component-base;
 }
 
 ch5-wifi-signal-level-gauge {

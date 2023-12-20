@@ -10,6 +10,10 @@
 /// @group ch5-tab-button
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-tab-button {
+  @include ch5-component-base;
+}
+
 /// Main class
 .ch5-tab-button {
   position: relative;
@@ -40,7 +44,7 @@ ch5-tab-button {
 }
 
 .ch5-tab-button.ch5-tab-button--disabled {
-  &~.scrollbar-container {
+  & ~ .scrollbar-container {
     pointer-events: none;
     opacity: $ch5-disabled-opacity;
   }

@@ -11,32 +11,36 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-image {
-    display: inline-block;
+  @include ch5-component-base;
+}
+
+ch5-image {
+  display: inline-block;
 }
 
 /// Added automatically on the first child of the ch5-image element.
 .ch5-image {
-    &.ch5-image__img {
-        height: $ch5-image-height;
-        width: $ch5-image-width;
-        max-height: 100%;
-        max-width: 100%;
-        object-fit: $ch5-image-object-fit;
-        display: inline-block;
-    }
-    // flip image
-    &.ch5-image--dir--rtl {
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
-    }
+  &.ch5-image__img {
+    height: $ch5-image-height;
+    width: $ch5-image-width;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: $ch5-image-object-fit;
+    display: inline-block;
+  }
+  // flip image
+  &.ch5-image--dir--rtl {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
 }
 
 /// Added automatically based on the disabled attribute or by receiveStateEnable.
 .ch5-image--disabled {
-    pointer-events: none;
-    opacity: 0.5;
+  pointer-events: none;
+  opacity: 0.5;
 }

@@ -30,7 +30,7 @@ function writeToFile(data: string, path: string) {
 }
 
 /**
- * Each time the conversion is run generate a json output file of how the properties look like used in decoding showWhen
+ * Each time the conversion is run generate a json file of how the properties look like used in decoding showWhen
  * @param properties
  * @param path
  */
@@ -79,11 +79,11 @@ async function buildJsonStructure(flattenedComponents: { flattenedScss: string, 
       }
       generatePropertiesJson(properties, component.name);
       // Process the flattened scss
-      const outputJson = await processSassFile(component.flattenedScss, component.name, properties, globalMixins, businessRules);
+      const responseJSON = await processSassFile(component.flattenedScss, component.name, properties, globalMixins, businessRules);
       Object.assign(jsonObject.ch5ElementThemeDefs, {
         [component.name]: {
           componentThemeVersion,
-          selectors: outputJson
+          selectors: responseJSON
         }
       });
     } catch (err) {
@@ -106,12 +106,12 @@ async function flattenScssComponents(paths: string[]) {
       // Read the content of the entry SCSS File so it can be passed on to the flatten function
       const entrySCSSContent = fs.readFileSync(THEME_EDITOR_SOURCE_FILES_PATH + componentPath + fileName, 'utf8');
       // Provide the content of the entry SCSS File and its location to the flatten function. Its location is required so the imports can be resolved
-      const output = flatten(entrySCSSContent, path.resolve(path.join(THEME_EDITOR_SOURCE_FILES_PATH, componentPath)));
+      const flattenedSass = flatten(entrySCSSContent, path.resolve(path.join(THEME_EDITOR_SOURCE_FILES_PATH, componentPath)));
 
-      writeToFile(output, OUTPUT_SCSS + fileName);
+      writeToFile(flattenedSass, OUTPUT_SCSS + fileName);
 
       flattenedComponents.push({
-        flattenedScss: output,
+        flattenedScss: flattenedSass,
         name: componentPath
       })
     } catch (err: any) {
@@ -181,18 +181,18 @@ async function initialize() {
   const flattenedComponents = await flattenScssComponents(Object.keys(componentsPath));
 
   // Build the final json structure and compute
-  const outputJSON = await buildJsonStructure(flattenedComponents, componentsPath);
+  const responseJSON = await buildJsonStructure(flattenedComponents, componentsPath);
 
   const writeToIndex: number = process.argv.findIndex(element => element === "--writeTo");
   if (writeToIndex >= 0 && process.argv.length > (writeToIndex + 1)) {
     const writeTo = process.argv[writeToIndex + 1];
     if (writeTo && writeTo !== "") {
-      jsonfile.writeFileSync(writeTo, outputJSON, { spaces: 2, EOL: '\r\n' });
+      jsonfile.writeFileSync(writeTo, responseJSON, { spaces: 2, EOL: '\r\n' });
     } else {
-      jsonfile.writeFileSync(OUTPUT_JSON, outputJSON, { spaces: 2, EOL: '\r\n' });
+      jsonfile.writeFileSync(OUTPUT_JSON, responseJSON, { spaces: 2, EOL: '\r\n' });
     }
   } else {
-    jsonfile.writeFileSync(OUTPUT_JSON, outputJSON, { spaces: 2, EOL: '\r\n' });
+    jsonfile.writeFileSync(OUTPUT_JSON, responseJSON, { spaces: 2, EOL: '\r\n' });
   }
   console.log("Schema generated OK");
 }

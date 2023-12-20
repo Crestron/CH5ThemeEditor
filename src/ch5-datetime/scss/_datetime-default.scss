@@ -10,7 +10,10 @@
 /// @group ch5-datetime
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Main class
+ch5-datetime {
+  @include ch5-component-base;
+}
+
 ch5-datetime {
   display: inline-block;
 }
@@ -26,4 +29,3 @@ ch5-datetime {
   align-items: center;
   overflow: hidden;
 }
-

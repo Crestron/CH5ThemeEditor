@@ -1,5 +1,5 @@
 export const THEME_EDITOR_SOURCE_FILES_PATH = './src/';
-export const OUTPUT_PATH = './output/';
+export const OUTPUT_PATH = './dist/';
 export const OUTPUT_PROPERTIES = OUTPUT_PATH + 'properties/';
 export const OUTPUT_SCSS = OUTPUT_PATH + 'scss/';
 export const OUTPUT_JSON = OUTPUT_PATH + 'sass-output.json';

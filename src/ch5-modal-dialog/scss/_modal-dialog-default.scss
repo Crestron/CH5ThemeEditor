@@ -10,6 +10,10 @@
 /// @group ch5-modal-dialog
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-modal-dialog {
+  @include ch5-component-base;
+}
+
 /// the class added on the div that is the only direct child of the ch5-modal-dialog element and wraps all its contents
 .ch5-modal-dialog {
   position: fixed;
@@ -21,7 +25,8 @@
 
   background-color: $ch5-modal-background-color;
   border-radius: $ch5-modal-border-radius;
-  border: $ch5-modal-border-width $ch5-modal-border-style $ch5-modal-border-color;
+  border: $ch5-modal-border-width $ch5-modal-border-style
+    $ch5-modal-border-color;
   color: $ch5-modal-text-color;
   padding: $ch5-modal-padding;
   min-width: 200px;
@@ -111,7 +116,8 @@
 
 .ch5-modal-dialog-boxed {
   padding: 3px;
-  border: $ch5-modal-border-width $ch5-modal-border-style $ch5-modal-border-color;
+  border: $ch5-modal-border-width $ch5-modal-border-style
+    $ch5-modal-border-color;
 }
 
 .ch5-modal-dialog--overflow-scroll {

@@ -10,6 +10,10 @@
 /// @group ch5-button-list
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-button-list {
+  @include ch5-component-base;
+}
+
 /// Main class
 .ch5-button-list {
   position: relative;
@@ -20,7 +24,7 @@
   display: grid;
   height: 100%;
   padding: $ch5-button-list-padding;
-  scrollbar-width: none; // needed to hide the firefox scrollbar 
+  scrollbar-width: none; // needed to hide the firefox scrollbar
 
   &.active {
     cursor: -webkit-grabbing;
@@ -31,7 +35,7 @@
     width: 0px;
   }
 
-  &~.scrollbar-container {
+  & ~ .scrollbar-container {
     position: absolute;
     background-color: $ch5-scrollbar-track-color;
     border-radius: $ch5-scrollbar-border-radius;
@@ -46,13 +50,13 @@
   }
 
   &.ch5-button-list--scrollbar-true {
-    &~.scrollbar-container {
+    & ~ .scrollbar-container {
       display: block;
     }
   }
 
   &.ch5-button-list--scrollbar-false {
-    &~.scrollbar-container {
+    & ~ .scrollbar-container {
       display: none;
     }
   }
@@ -79,7 +83,7 @@ ch5-button-list {
 }
 
 .ch5-button-list.ch5-button-list--disabled {
-  &~.scrollbar-container {
+  & ~ .scrollbar-container {
     pointer-events: none;
     opacity: $ch5-disabled-opacity;
   }

@@ -11,12 +11,15 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-textinput {
+  @include ch5-component-base;
+}
+
+ch5-textinput {
   display: inline-block;
   vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
 
   &[dir="rtl"] {
     .ch5-textinput-container {
-
       /// Applied on the icon when iconPosition attribute is set to 'last'
       .ch5-textinput--icon.ch5-textinput--icon-position-last {
         margin-right: 0;
@@ -27,12 +30,10 @@ ch5-textinput {
         margin-left: 0;
       }
     }
-
   }
 
   &[dir="ltr"] {
     .ch5-textinput-container {
-
       .ch5-textinput--icon.ch5-textinput--icon-position-first {
         margin-right: 0;
       }
@@ -61,7 +62,8 @@ ch5-textinput {
   .ch5-textinput-container {
     display: flex;
     align-items: center;
-    border: $ch5-textinput-input-border-width solid $ch5-textinput-input-border-color;
+    border: $ch5-textinput-input-border-width solid
+      $ch5-textinput-input-border-color;
     border-radius: $ch5-textinput-input-border-radius;
     height: 100%;
     width: 100%;
@@ -71,7 +73,7 @@ ch5-textinput {
       color: $ch5-textinput-icon-text-color;
     }
 
-    >span {
+    > span {
       display: flex;
       position: relative;
       align-items: center;
@@ -129,11 +131,13 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: $ch5-textinput-regular-font-size;
-        margin: $ch5-textinput-icon-regular-tb-margin $ch5-textinput-icon-large-lr-margin;
+        margin: $ch5-textinput-icon-regular-tb-margin
+          $ch5-textinput-icon-large-lr-margin;
       }
 
       .ch5-textinput--input {
-        padding: $ch5-textinput-input-regular-tb-padding $ch5-textinput-input-regular-lr-padding;
+        padding: $ch5-textinput-input-regular-tb-padding
+          $ch5-textinput-input-regular-lr-padding;
         font-style: $ch5-textinput-regular-font-style;
         font-size: $ch5-textinput-regular-font-size;
         font-weight: $ch5-textinput-regular-font-weight;
@@ -165,11 +169,13 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: $ch5-textinput-x-small-font-size;
-        margin: $ch5-textinput-icon-x-small-tb-margin $ch5-textinput-icon-x-small-lr-margin;
+        margin: $ch5-textinput-icon-x-small-tb-margin
+          $ch5-textinput-icon-x-small-lr-margin;
       }
 
       .ch5-textinput--input {
-        padding: $ch5-textinput-input-x-small-tb-padding $ch5-textinput-input-x-small-lr-padding;
+        padding: $ch5-textinput-input-x-small-tb-padding
+          $ch5-textinput-input-x-small-lr-padding;
         font-style: $ch5-textinput-x-small-font-style;
         font-size: $ch5-textinput-x-small-font-size;
         font-weight: $ch5-textinput-x-small-font-weight;
@@ -201,11 +207,13 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: $ch5-textinput-small-font-size;
-        margin: $ch5-textinput-icon-small-tb-margin $ch5-textinput-icon-small-lr-margin;
+        margin: $ch5-textinput-icon-small-tb-margin
+          $ch5-textinput-icon-small-lr-margin;
       }
 
       .ch5-textinput--input {
-        padding: $ch5-textinput-input-small-tb-padding $ch5-textinput-input-small-lr-padding;
+        padding: $ch5-textinput-input-small-tb-padding
+          $ch5-textinput-input-small-lr-padding;
         font-style: $ch5-textinput-small-font-style;
         font-size: $ch5-textinput-small-font-size;
         font-weight: $ch5-textinput-small-font-weight;
@@ -237,11 +245,13 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: $ch5-textinput-icon-large-font-size;
-        margin: $ch5-textinput-icon-large-tb-margin $ch5-textinput-icon-large-lr-margin;
+        margin: $ch5-textinput-icon-large-tb-margin
+          $ch5-textinput-icon-large-lr-margin;
       }
 
       .ch5-textinput--input {
-        padding: $ch5-textinput-input-large-tb-padding $ch5-textinput-input-large-lr-padding;
+        padding: $ch5-textinput-input-large-tb-padding
+          $ch5-textinput-input-large-lr-padding;
         font-style: $ch5-textinput-large-font-style;
         font-size: $ch5-textinput-large-font-size;
         font-weight: $ch5-textinput-large-font-weight;
@@ -273,11 +283,13 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: $ch5-textinput-icon-x-large-font-size;
-        margin: $ch5-textinput-icon-x-large-tb-margin $ch5-textinput-icon-x-large-lr-margin;
+        margin: $ch5-textinput-icon-x-large-tb-margin
+          $ch5-textinput-icon-x-large-lr-margin;
       }
 
       .ch5-textinput--input {
-        padding: $ch5-textinput-input-x-large-tb-padding $ch5-textinput-input-x-large-lr-padding;
+        padding: $ch5-textinput-input-x-large-tb-padding
+          $ch5-textinput-input-x-large-lr-padding;
         font-style: $ch5-textinput-x-large-font-style;
         font-size: $ch5-textinput-x-large-font-size;
         font-weight: $ch5-textinput-x-large-font-weight;

@@ -10,6 +10,10 @@
 /// @group ch5-subpage-reference-list
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-subpage-reference-list {
+  @include ch5-component-base;
+}
+
 /// Main class
 .ch5-subpage-reference-list {
   position: relative;

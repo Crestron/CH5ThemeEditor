@@ -11,16 +11,19 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-spinner {
+  @include ch5-component-base;
+}
+
+ch5-spinner {
   display: inline-block;
   background-color: $ch5-spinner-background-color;
 }
 
 /// Main class
 .ch5-spinner {
-
   -webkit-user-select: none; /* Chrome all / Safari all */
-  -moz-user-select: none;   /* Firefox all */
-  -ms-user-select: none;  /* IE 10+ */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
   user-select: none;
   font-size: $ch5-spinner-font-size;
   font-style: $ch5-spinner-font-style;
@@ -35,8 +38,9 @@ ch5-spinner {
     z-index: $ch5-spinner-wrapper-z-index;
     text-align: center;
 
-    &:before, &:after {
-      content: '';
+    &:before,
+    &:after {
+      content: "";
       height: 30%;
       left: 0;
       right: 0;
@@ -57,7 +61,7 @@ ch5-spinner {
   /// @require .ch5-spinner
   /// Applied for scroll animation
   &__scrollarea--animate {
-    transition: all .5s ease;
+    transition: all 0.5s ease;
   }
   /// @require .ch5-spinner
   /// Applied for the highlight section
@@ -66,7 +70,8 @@ ch5-spinner {
     width: 100%;
     left: 0;
     right: 0;
-    border-bottom: $ch5-spinner-border-width $ch5-spinner-border-style $ch5-spinner-highlight-border-color;
+    border-bottom: $ch5-spinner-border-width $ch5-spinner-border-style
+      $ch5-spinner-highlight-border-color;
     box-shadow: 0px 0px 3px $ch5-spinner-highlight-box-shadow-color;
   }
 
@@ -87,9 +92,9 @@ ch5-spinner {
   /// @require .ch5-spinner
   /// Applied on the item
   &__item {
-    color:  $ch5-spinner-item-color;
+    color: $ch5-spinner-item-color;
     white-space: nowrap;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
     justify-content: center;
     align-items: center;
   }
@@ -105,6 +110,5 @@ ch5-spinner {
     font-size: $ch5-spinner-icon-font-size;
     padding: $ch5-spinner-icon-padding;
     margin: $ch5-spinner-icon-margin;
-
   }
 }

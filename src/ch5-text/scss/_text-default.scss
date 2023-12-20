@@ -11,9 +11,13 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-text {
+  @include ch5-component-base;
+}
+
+ch5-text {
   display: inline-block;
-  width: -moz-available;          // WebKit-based browsers will ignore this. 
-  width: -webkit-fill-available;  // Mozilla-based browsers will ignore this.
+  width: -moz-available; // WebKit-based browsers will ignore this.
+  width: -webkit-fill-available; // Mozilla-based browsers will ignore this.
 }
 
 /// Main Class
@@ -49,7 +53,7 @@ ch5-text {
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3; // start showing ellipsis when 3rd line is reached
-      white-space: pre-wrap !important; // let the text wrap preserving spaces 
+      white-space: pre-wrap !important; // let the text wrap preserving spaces
       word-break: break-all;
     }
 
@@ -60,7 +64,6 @@ ch5-text {
     }
   }
 }
-
 
 /// Applied when disabled='true'
 .ch5-text--disabled {

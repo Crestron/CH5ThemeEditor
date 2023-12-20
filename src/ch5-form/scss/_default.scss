@@ -11,11 +11,16 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-form {
-    [type="reset"], [type="submit"] {
-        -webkit-appearance: none;
-    }
+  @include ch5-component-base;
+}
 
-    font-style: $ch5-form-font-style;
-    font-size: $ch5-form-font-size;
-    font-weight: $ch5-form-font-weight;
+ch5-form {
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: none;
+  }
+
+  font-style: $ch5-form-font-style;
+  font-size: $ch5-form-font-size;
+  font-weight: $ch5-form-font-weight;
 }

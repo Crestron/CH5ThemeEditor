@@ -11,14 +11,14 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// Set the height and width of dpad
-$ch5-dpad-default-dimension: 150px !default;
-$ch5-dpad-xsmall-dimension: 100px !default;
+$ch5-dpad-regular-dimension: 150px !default;
+$ch5-dpad-x-small-dimension: 100px !default;
 $ch5-dpad-small-dimension: 130px !default;
 $ch5-dpad-large-dimension: 180px !default;
-$ch5-dpad-xlarge-dimension: 200px !default;
+$ch5-dpad-x-large-dimension: 200px !default;
 
 /// Set the border radius for 'plus' shape
-$ch5-dpad-common-edge-radius: 10px !default;
+$ch5-dpad-regular-edge-radius: 10px !default;
 $ch5-dpad-x-small-edge-radius: 6px !default;
 $ch5-dpad-small-edge-radius: 10px !default;
 $ch5-dpad-large-edge-radius: 10px !default;
@@ -39,34 +39,34 @@ $ch5-dpad-icon-font-size-x-large: 2.4rem !default;
 // default type
 
 /// The background color for default type of dpad.
-$ch5-dpad-default-default-background-color: $default-background-color  !default;
+$ch5-dpad-default-default-background-color: $default-background-color !default;
 
 /// The font color for default type of dpad.
-$ch5-dpad-default-default-font-color: $default-font-color  !default;
+$ch5-dpad-default-default-font-color: $default-font-color !default;
 
 
 /// the pressed background color for default type of dpad
-$ch5-dpad-default-pressed-background-color: $default-pressed-background-color  !default;
+$ch5-dpad-default-pressed-background-color: $default-pressed-background-color !default;
 
 /// the pressed font color for default type of dpad
-$ch5-dpad-default-pressed-font-color: $default-pressed-font-color  !default;
+$ch5-dpad-default-pressed-font-color: $default-pressed-font-color !default;
 
 // ------------------------------------------------------
 
 // primary type
 
 /// The background color for primary type of dpad.
-$ch5-dpad-primary-default-background-color: $primary-background-color  !default;
+$ch5-dpad-primary-default-background-color: $primary-background-color !default;
 
 /// The font color for primary type of dpad.
-$ch5-dpad-primary-default-font-color: $primary-font-color  !default;
+$ch5-dpad-primary-default-font-color: $primary-font-color !default;
 
 
 /// the pressed background color for primary type of dpad
-$ch5-dpad-primary-pressed-background-color: $primary-pressed-background-color  !default;
+$ch5-dpad-primary-pressed-background-color: $primary-pressed-background-color !default;
 
 /// the pressed font color for primary type of dpad
-$ch5-dpad-primary-pressed-font-color: $primary-pressed-font-color  !default;
+$ch5-dpad-primary-pressed-font-color: $primary-pressed-font-color !default;
 
 
 // ------------------------------------------------------
@@ -74,17 +74,17 @@ $ch5-dpad-primary-pressed-font-color: $primary-pressed-font-color  !default;
 // info type
 
 /// The background color for info type of dpad.
-$ch5-dpad-info-default-background-color: $info-background-color  !default;
+$ch5-dpad-info-default-background-color: $info-background-color !default;
 
 /// The font color for info type of dpad.
-$ch5-dpad-info-default-font-color: $info-font-color  !default;
+$ch5-dpad-info-default-font-color: $info-font-color !default;
 
 
 /// the pressed background color for info type of dpad
-$ch5-dpad-info-pressed-background-color: $info-pressed-background-color  !default;
+$ch5-dpad-info-pressed-background-color: $info-pressed-background-color !default;
 
 /// the pressed font color for info type of dpad
-$ch5-dpad-info-pressed-font-color: $info-pressed-font-color  !default;
+$ch5-dpad-info-pressed-font-color: $info-pressed-font-color !default;
 
 
 // ------------------------------------------------------
@@ -92,17 +92,17 @@ $ch5-dpad-info-pressed-font-color: $info-pressed-font-color  !default;
 // danger type
 
 /// The background color for danger type of dpad.
-$ch5-dpad-danger-default-background-color: $danger-background-color  !default;
+$ch5-dpad-danger-default-background-color: $danger-background-color !default;
 
 /// The font color for danger type of dpad.
-$ch5-dpad-danger-default-font-color: $danger-font-color  !default;
+$ch5-dpad-danger-default-font-color: $danger-font-color !default;
 
 
 /// the pressed background color for danger type of dpad
-$ch5-dpad-danger-pressed-background-color: $danger-pressed-background-color  !default;
+$ch5-dpad-danger-pressed-background-color: $danger-pressed-background-color !default;
 
 /// the pressed font color for danger type of dpad
-$ch5-dpad-danger-pressed-font-color: $danger-pressed-font-color  !default;
+$ch5-dpad-danger-pressed-font-color: $danger-pressed-font-color !default;
 
 
 // ------------------------------------------------------
@@ -110,17 +110,17 @@ $ch5-dpad-danger-pressed-font-color: $danger-pressed-font-color  !default;
 // secondary type
 
 /// The background color for secondary type of dpad.
-$ch5-dpad-secondary-default-background-color: $secondary-background-color  !default;
+$ch5-dpad-secondary-default-background-color: $secondary-background-color !default;
 
 /// The font color for secondary type of dpad.
-$ch5-dpad-secondary-default-font-color: $secondary-font-color  !default;
+$ch5-dpad-secondary-default-font-color: $secondary-font-color !default;
 
 
 /// the pressed background color for secondary type of dpad
-$ch5-dpad-secondary-pressed-background-color: $secondary-pressed-background-color  !default;
+$ch5-dpad-secondary-pressed-background-color: $secondary-pressed-background-color !default;
 
 /// the pressed font color for secondary type of dpad
-$ch5-dpad-secondary-pressed-font-color: $secondary-pressed-font-color  !default;
+$ch5-dpad-secondary-pressed-font-color: $secondary-pressed-font-color !default;
 
 
 // ------------------------------------------------------
@@ -128,17 +128,17 @@ $ch5-dpad-secondary-pressed-font-color: $secondary-pressed-font-color  !default;
 // success type
 
 /// The background color for success type of dpad.
-$ch5-dpad-success-default-background-color: $success-background-color  !default;
+$ch5-dpad-success-default-background-color: $success-background-color !default;
 
 /// The font color for success type of dpad.
-$ch5-dpad-success-default-font-color: $success-font-color  !default;
+$ch5-dpad-success-default-font-color: $success-font-color !default;
 
 
 /// the pressed background color for success type of dpad
-$ch5-dpad-success-pressed-background-color: $success-pressed-background-color  !default;
+$ch5-dpad-success-pressed-background-color: $success-pressed-background-color !default;
 
 /// the pressed font color for success type of dpad
-$ch5-dpad-success-pressed-font-color: $success-pressed-font-color  !default;
+$ch5-dpad-success-pressed-font-color: $success-pressed-font-color !default;
 
 
 // ------------------------------------------------------
@@ -146,17 +146,17 @@ $ch5-dpad-success-pressed-font-color: $success-pressed-font-color  !default;
 // warning type
 
 /// The background color for warning type of dpad.
-$ch5-dpad-warning-default-background-color: $warning-background-color  !default;
+$ch5-dpad-warning-default-background-color: $warning-background-color !default;
 
 /// The font color for warning type of dpad.
-$ch5-dpad-warning-default-font-color: $warning-font-color  !default;
+$ch5-dpad-warning-default-font-color: $warning-font-color !default;
 
 
 /// the pressed background color for warning type of dpad
-$ch5-dpad-warning-pressed-background-color: $warning-pressed-background-color  !default;
+$ch5-dpad-warning-pressed-background-color: $warning-pressed-background-color !default;
 
 /// the pressed font color for warning type of dpad
-$ch5-dpad-warning-pressed-font-color: $warning-pressed-font-color  !default;
+$ch5-dpad-warning-pressed-font-color: $warning-pressed-font-color !default;
 
 
 // ------------------------------------------------------
@@ -164,14 +164,14 @@ $ch5-dpad-warning-pressed-font-color: $warning-pressed-font-color  !default;
 // text type
 
 /// The background color for text type of dpad.
-$ch5-dpad-text-default-background-color: $text-background-color  !default;
+$ch5-dpad-text-default-background-color: $text-background-color !default;
 
 /// The font color for text type of dpad.
-$ch5-dpad-text-default-font-color: $text-font-color  !default;
+$ch5-dpad-text-default-font-color: $text-font-color !default;
 
 
 /// the pressed background color for text type of dpad
-$ch5-dpad-text-pressed-background-color: $text-pressed-background-color  !default;
+$ch5-dpad-text-pressed-background-color: $text-pressed-background-color !default;
 
 /// the pressed font color for text type of dpad
-$ch5-dpad-text-pressed-font-color: $text-pressed-font-color  !default;
+$ch5-dpad-text-pressed-font-color: $text-pressed-font-color !default;

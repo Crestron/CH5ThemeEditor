@@ -10,6 +10,11 @@
 /// @group ch5-select
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-select,
+ch5-select-option {
+  @include ch5-component-base;
+}
+
 /// Main class
 .ch5-select {
   position: relative;
@@ -112,7 +117,8 @@
   padding: $ch5-select-panel-item-padding;
   cursor: pointer;
   color: $ch5-select-panel-item-color;
-  border: $ch5-select-panel-item-border-width solid $ch5-select-panel-item-border-color;
+  border: $ch5-select-panel-item-border-width solid
+    $ch5-select-panel-item-border-color;
   background-color: $ch5-select-panel-item-background-color;
 
   &[dir="rtl"] {
@@ -158,4 +164,3 @@
 .ch5-select__panel--open {
   // DO NOT DELETE - used for Component Reference
 }
-

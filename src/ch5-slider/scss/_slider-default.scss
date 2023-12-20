@@ -12,6 +12,10 @@
 
 // NOTE: Slider highlighted area height is fixed and cannot be changed. If changed, the issue will be with the handle height
 
+ch5-slider {
+  @include ch5-component-base;
+}
+
 ch5-slider:focus {
   outline: none;
 }
@@ -33,7 +37,6 @@ ch5-slider {
 }
 
 .ch5-slider--disabled {
-
   .slider-off-button,
   .slider-on-button {
     opacity: 0.5 !important;
@@ -75,12 +78,14 @@ ch5-slider {
 
   &.ch5-slider--disabled {
     .noUi-connect {
-      background: lighten($ch5-slider-connect-bg, $ch5-slider-background-lighten-percent);
+      background: lighten(
+        $ch5-slider-connect-bg,
+        $ch5-slider-background-lighten-percent
+      );
     }
   }
 
   .noUi-handle {
-
     &:before,
     &:after {
       content: none;
@@ -127,7 +132,8 @@ ch5-slider {
     }
 
     &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
-      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
+      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height)
+        .ch5-slider-button-container {
         margin-top: $ch5-slider-tooltip-on-spacing-horizontal-advanced;
         min-height: 30px;
       }
@@ -147,7 +153,10 @@ ch5-slider {
     }
 
     &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
-      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
+      &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(
+          .ch5-slider--stretch--height
+        )
+        .ch5-slider-button-container {
         margin-left: $ch5-slider-tooltip-on-spacing-vertical-normal;
         min-width: 30px;
       }
@@ -163,25 +172,33 @@ ch5-slider {
   /* ===============================================
     STRETCH
    ============================================= */
-  &.ch5-slider--stretch--width.ch5-slider--orientation--horizontal:not(.ch5-advanced-slider-container) {
+  &.ch5-slider--stretch--width.ch5-slider--orientation--horizontal:not(
+      .ch5-advanced-slider-container
+    ) {
     .ch5-slider-button-container {
       width: 100% !important;
     }
   }
 
-  &.ch5-slider--stretch--height.ch5-slider--orientation--vertical:not(.ch5-advanced-slider-container) {
+  &.ch5-slider--stretch--height.ch5-slider--orientation--vertical:not(
+      .ch5-advanced-slider-container
+    ) {
     .ch5-slider-button-container {
       height: 100% !important;
     }
   }
 
-  &.ch5-slider--stretch--height.ch5-slider--orientation--horizontal:not(.ch5-advanced-slider-container) {
+  &.ch5-slider--stretch--height.ch5-slider--orientation--horizontal:not(
+      .ch5-advanced-slider-container
+    ) {
     .ch5-slider-button-container {
       height: 100% !important;
     }
   }
 
-  &.ch5-slider--stretch--width.ch5-slider--orientation--vertical:not(.ch5-advanced-slider-container) {
+  &.ch5-slider--stretch--width.ch5-slider--orientation--vertical:not(
+      .ch5-advanced-slider-container
+    ) {
     .ch5-slider-button-container {
       width: 100% !important;
       display: flex;
@@ -189,14 +206,18 @@ ch5-slider {
     }
   }
 
-  &.ch5-slider--stretch--both.ch5-slider--orientation--horizontal:not(.ch5-advanced-slider-container) {
+  &.ch5-slider--stretch--both.ch5-slider--orientation--horizontal:not(
+      .ch5-advanced-slider-container
+    ) {
     .ch5-slider-button-container {
       width: 100% !important;
       height: 100% !important;
     }
   }
 
-  &.ch5-slider--stretch--both.ch5-slider--orientation--vertical:not(.ch5-advanced-slider-container) {
+  &.ch5-slider--stretch--both.ch5-slider--orientation--vertical:not(
+      .ch5-advanced-slider-container
+    ) {
     .ch5-slider-button-container {
       height: 100% !important;
       width: 100% !important;
@@ -206,7 +227,10 @@ ch5-slider {
   }
 }
 
-html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle .noUi-horizontal .noUi-handle {
+html:not([dir="rtl"])
+  .ch5_slider--shape--rounded-rectangle
+  .noUi-horizontal
+  .noUi-handle {
   right: -26px;
 }
 

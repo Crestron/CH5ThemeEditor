@@ -17,7 +17,7 @@ NOTICE_MESSAGE = require('./notice-message');
     
   let theme = process.argv[2],
       copy = process.argv[3];
-      outputPath = basePath + '/output/';
+      outputPath = basePath + '/dist/';
 
   logging.loading('Searching for the theme');
   
