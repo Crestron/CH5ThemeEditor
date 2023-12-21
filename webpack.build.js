@@ -120,7 +120,8 @@ module.exports = {
 					{
 						loader: MiniCssExtractPlugin.loader,
 					},
-					'css-loader?url=false']
+					'css-loader?url=false'
+				]
 			},
 			{
 				test: /\.(png|jpg|svg|woff|woff2|eot|ttf)$/,
@@ -163,12 +164,12 @@ module.exports = {
 					to: path.resolve(sgIconsDestinationFilePath + "/sg-icons/css/all.css")
 				},
 				{
-					from: path.resolve(basePath, sgIconsPath + "/svgs/icons/*"),
-					to: path.resolve(sgIconsDestinationFilePath)
+					from: path.resolve(basePath, sgIconsPath + "/svgs/icons/"),
+					to: path.resolve(sgIconsDestinationFilePath + "/sg-icons/svgs/icons/")
 				},
 				{
-					from: path.resolve(basePath, sgIconsPath + "/svgs/media-transports/**/*"),
-					to: path.resolve(sgIconsDestinationFilePath)
+					from: path.resolve(basePath, sgIconsPath + "/svgs/media-transports/"),
+					to: path.resolve(sgIconsDestinationFilePath + "/sg-icons/svgs/media-transports/")
 				}
 			]
 		})
