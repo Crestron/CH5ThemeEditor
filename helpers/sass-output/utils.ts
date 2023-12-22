@@ -16,7 +16,7 @@ export interface PROPERTIES_INTERFACE {
 export interface RULES_INTERFACE {
   className: string,
   description: string,
-  selectorStyles: {styleName: string, limits: {}[]}[],
+  selectorStyles: { styleName: string, limits: {}[] }[],
   showWhen: {}
 }
 
@@ -29,4 +29,23 @@ export interface BASE_OBJECT_INTERFACE {
       selectors: RULES_INTERFACE[]
     }
   }
+}
+export interface FLATTENED_SCSS {
+  flattenedScss: string,
+  allScss: string,
+  finalCss: string,
+  name: string,
+  variables: { [key: string]: string; }
+}
+
+function removeComments(data: string) {
+  const singleLineComments = new RegExp(/((?<!\/)[/]{2}(?!\/).*)/);
+  const multiLineComments = new RegExp(/(\/\*[^*]*\*+(?:[^/*][^*]*\*+)*\/)/);
+  const allCommentsRegex = new RegExp(singleLineComments.source + '|' + multiLineComments.source, 'g');
+
+  return data.replace(allCommentsRegex, '');
+}
+
+export {
+  removeComments
 }
