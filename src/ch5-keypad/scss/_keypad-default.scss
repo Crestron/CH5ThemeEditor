@@ -12,9 +12,6 @@
 
 ch5-keypad {
   @include ch5-component-base;
-}
-
-ch5-keypad {
   display: inline-block;
   position: relative;
 }

@@ -144,6 +144,10 @@ module.exports = {
 		],
 	},
 	mode: (inputArgs["mode"] && inputArgs["mode"] !== "" && inputArgs["mode"] === "production") ? 'production' : 'development',
+	performance: {
+		maxEntrypointSize: 2048000000,
+		maxAssetSize: 2048000000
+	},
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: "[name].css"

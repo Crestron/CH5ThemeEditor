@@ -10,17 +10,19 @@
 /// @group ch5-animation-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Font size regular
-$ch5-animation-font-size-regular: 72px !default;
+ch5-animation {
+  /// Font size=regular
+  --ch5-animation-font-size-regular: 72px;
 
-/// Font size small
-$ch5-animation-font-size-small: 40px !default;
+  /// Font size=small
+  --ch5-animation-font-size-small: 40px;
 
-/// Font size large
-$ch5-animation-font-size-large: 104px !default;
+  /// Font size=large
+  --ch5-animation-font-size-large: 104px;
 
-/// Font size x-large
-$ch5-animation-font-size-x-large: 136px !default;
+  /// Font size=x-large
+  --ch5-animation-font-size-x-large: 136px;
 
-/// Animation color
-$ch5-animation-color: $theme-foreground-color !default;
+  /// Animation color
+  --ch5-animation-color: $theme-foreground-color;
+}
