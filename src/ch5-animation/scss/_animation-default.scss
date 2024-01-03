@@ -33,6 +33,5 @@ ch5-animation {
 
 /// Applied when disabled='true'
 .ch5-animation--disabled {
-  pointer-events: none;
-  opacity: $ch5-disabled-opacity;
+  @include ch5-component-disabled();
 }

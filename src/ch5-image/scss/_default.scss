@@ -21,11 +21,11 @@ ch5-image {
 /// Added automatically on the first child of the ch5-image element.
 .ch5-image {
   &.ch5-image__img {
-    height: --ch5-image-height;
-    width: --ch5-image-width;
+    height: var(--ch5-image-height);
+    width: var(--ch5-image-width);
     max-height: 100%;
     max-width: 100%;
-    object-fit: --ch5-image-object-fit;
+    object-fit: var(--ch5-image-object-fit);
     display: inline-block;
   }
   // flip image
@@ -41,6 +41,5 @@ ch5-image {
 
 /// Added automatically based on the disabled attribute or by receiveStateEnable.
 .ch5-image--disabled {
-  pointer-events: none;
-  opacity: 0.5;
+  @include ch5-component-disabled();
 }

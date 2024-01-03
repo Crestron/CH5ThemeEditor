@@ -18,21 +18,21 @@ ch5-dpad {
 .ch5-dpad {
   position: relative;
   display: inline-flex;
-  min-width: --ch5-dpad-regular-dimension;
-  min-height: --ch5-dpad-regular-dimension;
+  min-width: var(--ch5-dpad-regular-dimension);
+  min-height: var(--ch5-dpad-regular-dimension);
   vertical-align: top;
 
   &.ch5-dpad--size-regular {
     .dpad-btn-icon {
-      font-size: --ch5-dpad-icon-font-size-regular;
+      font-size: var(--ch5-dpad-icon-font-size-regular);
     }
   }
 
   .dpad-container {
     position: relative;
     display: flex;
-    width: --ch5-dpad-regular-dimension;
-    height: --ch5-dpad-regular-dimension;
+    width: var(--ch5-dpad-regular-dimension);
+    height: var(--ch5-dpad-regular-dimension);
     flex-wrap: wrap;
     vertical-align: top;
 
@@ -226,7 +226,7 @@ ch5-dpad {
         justify-content: center;
         align-items: center;
         z-index: 1;
-        line-height: calc(#{--ch5-dpad-regular-dimension} / 3);
+        line-height: calc(var(--ch5-dpad-regular-dimension) / 3);
         text-align: center;
       }
     }

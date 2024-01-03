@@ -74,3 +74,8 @@
     // display:none;
   }
 }
+
+@mixin ch5-component-disabled() {
+  pointer-events: none;
+  opacity: $ch5-disabled-opacity;
+}

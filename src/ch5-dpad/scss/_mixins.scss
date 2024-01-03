@@ -12,262 +12,203 @@
 
 @mixin ch5-dpad-content($property-background-color, $property-font-color) {
   .ch5-dpad-child {
-    --ch5-dpad-child-button-color: #{$property-background-color};
-    background-color: var(--ch5-dpad-child-button-color);
-    color: $property-font-color;
+    background-color: var(#{$property-background-color});
+    color: var(#{$property-font-color});
   }
 }
 
-@mixin ch5-dpad-content--selected(
-  $property-background-color,
-  $property-font-color
-) {
+@mixin ch5-dpad-content--selected($property-background-color, $property-font-color) {
   .ch5-dpad-child {
-    color: $property-font-color;
-    background-color: $property-background-color;
+    color: var(#{$property-font-color});
+    background-color: var(#{$property-background-color});
   }
 }
 
-@mixin ch5-dpad-content--pressed(
-  $property-background-color,
-  $property-font-color
-) {
+@mixin ch5-dpad-content--pressed($property-background-color, $property-font-color) {
   &.ch5-dpad-child {
-    color: $property-font-color;
-    background-color: $property-background-color;
+    color: var(#{$property-font-color});
+    background-color: var(#{$property-background-color});
   }
 
   &.direction-btn.up:after,
-  &.direction-btn.down:before {
-    box-shadow: (--ch5-dpad-regular-edge-radius) 0 0 0
-      $property-background-color;
-    z-index: 10;
-  }
-
+  &.direction-btn.down:before,
+  &.direction-btn.up:before,
+  &.direction-btn.down:after,
   &.direction-btn.left:before,
-  &.direction-btn.right:after {
-    box-shadow: (--ch5-dpad-regular-edge-radius) 0 0 0
-      $property-background-color;
-    z-index: 10;
-  }
-
+  &.direction-btn.right:after,
   &.direction-btn.left:after,
   &.direction-btn.right:before {
-    box-shadow: (--ch5-dpad-regular-edge-radius) 0 0 0 $property-background-color;
+    box-shadow: var(--ch5-dpad-regular-edge-radius) 0 0 0 var(#{$property-background-color});
     z-index: 10;
   }
 
-  &.direction-btn.up:before,
-  &.direction-btn.down:after {
-    box-shadow: --ch5-dpad-regular-edge-radius 0 0 0 $property-background-color;
-    z-index: 10;
-  }
+  // &.direction-btn.left:before,
+  // &.direction-btn.right:after {
+  //   box-shadow: var(--ch5-dpad-regular-edge-radius) 0 0 0 var(#{$property-background-color});
+  //   z-index: 10;
+  // }
+
+  // &.direction-btn.left:after,
+  // &.direction-btn.right:before {
+  //   box-shadow: var(--ch5-dpad-regular-edge-radius) 0 0 0 var(#{$property-background-color});
+  //   z-index: 10;
+  // }
+
+  // &.direction-btn.up:before,
+  // &.direction-btn.down:after {
+  //   box-shadow: var(--ch5-dpad-regular-edge-radius) 0 0 0 var(#{$property-background-color});
+  //   z-index: 10;
+  // }
 }
 
-@mixin ch5-dpad-content-plus-top(
-  $property-common-edge-radius,
-  $property-background-color
-) {
+@mixin ch5-dpad-content-plus-top($property-common-edge-radius, $property-background-color) {
   margin: 0 33.33%;
 
-  border-top-left-radius: $property-common-edge-radius;
-  border-top-right-radius: $property-common-edge-radius;
+  border-top-left-radius: var(#{$property-common-edge-radius});
+  border-top-right-radius: var(#{$property-common-edge-radius});
 
   &:before {
     top: calc(100% - 20px);
     right: 100%;
-    border-radius: 0 0 $property-common-edge-radius 0;
-    -moz-border-radius: 0 0 $property-common-edge-radius 0;
-    -webkit-border-radius: 0 0 $property-common-edge-radius 0;
-    // -webkit-box-shadow: $property-common-edge-radius 0 0 0
-    //   $property-background-color;
-    // box-shadow: $property-common-edge-radius 0 0 0 $property-background-color;
-    -webkit-box-shadow: $property-common-edge-radius 0 0 0
-      var(--ch5-dpad-child-button-color);
-    box-shadow: $property-common-edge-radius 0 0 0
-      var(--ch5-dpad-child-button-color);
+    border-radius: 0 0 var(#{$property-common-edge-radius}) 0;
+    -moz-border-radius: 0 0 var(#{$property-common-edge-radius}) 0;
+    -webkit-border-radius: 0 0 var(#{$property-common-edge-radius}) 0;
+    -webkit-box-shadow: var(#{$property-common-edge-radius}) 0 0 0 var(#{$property-background-color});
+    box-shadow: var(#{$property-common-edge-radius}) 0 0 0 var(#{$property-background-color});
   }
 
   &:after {
     top: calc(100% - 20px);
     left: 100%;
-    border-radius: 0 0 0 $property-common-edge-radius;
-    -moz-border-radius: 0 0 0 $property-common-edge-radius;
-    -webkit-border-radius: 0 0 0 $property-common-edge-radius;
-    // -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0
-    //   $property-background-color;
-    // box-shadow: (-$property-common-edge-radius) 0 0 0 $property-background-color;
-    -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0
-      var(--ch5-dpad-child-button-color);
-    box-shadow: (-$property-common-edge-radius) 0 0 0
-      var(--ch5-dpad-child-button-color);
+    border-radius: 0 0 0 var(#{$property-common-edge-radius});
+    -moz-border-radius: 0 0 0 var(#{$property-common-edge-radius});
+    -webkit-border-radius: 0 0 0 var(#{$property-common-edge-radius});
+    -webkit-box-shadow: calc(-1 * -var(#{$property-common-edge-radius})) 0 0 0 var(#{$property-background-color});
+    box-shadow: calc(-1 * var(#{$property-common-edge-radius})) 0 0 0 var(#{$property-background-color});
   }
 }
 
-@mixin ch5-dpad-content-plus-bottom(
-  $property-common-edge-radius,
-  $property-background-color
-) {
+@mixin ch5-dpad-content-plus-bottom($property-common-edge-radius, $property-background-color) {
   margin: 0 33.33%;
-  border-bottom-left-radius: $property-common-edge-radius;
-  border-bottom-right-radius: $property-common-edge-radius;
+  border-bottom-left-radius: var(#{$property-common-edge-radius});
+  border-bottom-right-radius: var(#{$property-common-edge-radius});
 
   &:before {
     top: 0;
     left: 100%;
-    border-radius: $property-common-edge-radius 0 0 0;
-    -moz-border-radius: $property-common-edge-radius 0 0 0;
-    -webkit-border-radius: $property-common-edge-radius 0 0 0;
-    // -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0
-    //   $property-background-color;
-    // box-shadow: (-$property-common-edge-radius) 0 0 0 $property-background-color;
-    -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0
-      var(--ch5-dpad-child-button-color);
-    box-shadow: (-$property-common-edge-radius) 0 0 0
-      var(--ch5-dpad-child-button-color);
+    border-radius: var(#{$property-common-edge-radius}) 0 0 0;
+    -moz-border-radius: var(#{$property-common-edge-radius}) 0 0 0;
+    -webkit-border-radius: var(#{$property-common-edge-radius}) 0 0 0;
+    -webkit-box-shadow: calc(-1 * var(#{$property-common-edge-radius})) 0 0 0 var(#{$property-background-color});
+    box-shadow: calc(-1 * var(#{$property-common-edge-radius})) 0 0 0 var(#{$property-background-color});
   }
 
   &:after {
     top: 0;
     right: 100%;
-    border-radius: 0 $property-common-edge-radius 0 0;
-    -moz-border-radius: 0 $property-common-edge-radius 0 0;
-    -webkit-border-radius: 0 $property-common-edge-radius 0 0;
-    // -webkit-box-shadow: $property-common-edge-radius 0 0 0
-    //   $property-background-color;
-    // box-shadow: $property-common-edge-radius 0 0 0 $property-background-color;
-    -webkit-box-shadow: $property-common-edge-radius 0 0 0
-      var(--ch5-dpad-child-button-color);
-    box-shadow: $property-common-edge-radius 0 0 0
-      var(--ch5-dpad-child-button-color);
+    border-radius: 0 var(#{$property-common-edge-radius}) 0 0;
+    -moz-border-radius: 0 var(#{$property-common-edge-radius}) 0 0;
+    -webkit-border-radius: 0 var(#{$property-common-edge-radius}) 0 0;
+    -webkit-box-shadow: var(#{$property-common-edge-radius}) 0 0 0 var(#{$property-background-color});
+    box-shadow: var(#{$property-common-edge-radius}) 0 0 0 var(#{$property-background-color});
   }
 }
 
-@mixin ch5-dpad-content-plus-left(
-  $property-common-edge-radius,
-  $property-background-color
-) {
+@mixin ch5-dpad-content-plus-left($property-common-edge-radius, $property-background-color) {
   margin-right: calc(33% / 2);
-  border-bottom-left-radius: $property-common-edge-radius;
-  border-top-left-radius: $property-common-edge-radius;
+  border-bottom-left-radius: var(#{$property-common-edge-radius});
+  border-top-left-radius: var(#{$property-common-edge-radius});
 
   &:before {
     top: 100%;
     left: calc(100% - 20px);
     rotate: 90deg;
-    border-radius: $property-common-edge-radius 0 0 0;
-    -moz-border-radius: $property-common-edge-radius 0 0 0;
-    -webkit-border-radius: $property-common-edge-radius 0 0 0;
-    // -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0
-    //   $property-background-color;
-    // box-shadow: (-$property-common-edge-radius) 0 0 0 $property-background-color;
-    -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0
-      var(--ch5-dpad-child-button-color);
-    box-shadow: (-$property-common-edge-radius) 0 0 0
-      var(--ch5-dpad-child-button-color);
+    border-radius: var(#{$property-common-edge-radius}) 0 0 0;
+    -moz-border-radius: var(#{$property-common-edge-radius}) 0 0 0;
+    -webkit-border-radius: var(#{$property-common-edge-radius}) 0 0 0;
+    -webkit-box-shadow: calc(-1 * var(#{$property-common-edge-radius})) 0 0 0 var(#{$property-background-color});
+    box-shadow: calc(-1 * var(#{$property-common-edge-radius})) 0 0 0 var(#{$property-background-color});
   }
 
   &:after {
     top: -20px;
     right: 0%;
     rotate: 90deg;
-    border-radius: 0 $property-common-edge-radius 0 0;
-    -moz-border-radius: 0 $property-common-edge-radius 0 0;
-    -webkit-border-radius: 0 $property-common-edge-radius 0 0;
-    // -webkit-box-shadow: $property-common-edge-radius 0 0 0
-    //   $property-background-color;
-    // box-shadow: $property-common-edge-radius 0 0 0 $property-background-color;
-    -webkit-box-shadow: $property-common-edge-radius 0 0 0
-      var(--ch5-dpad-child-button-color);
-    box-shadow: $property-common-edge-radius 0 0 0
-      var(--ch5-dpad-child-button-color);
+    border-radius: 0 var(#{$property-common-edge-radius}) 0 0;
+    -moz-border-radius: 0 var(#{$property-common-edge-radius}) 0 0;
+    -webkit-border-radius: 0 var(#{$property-common-edge-radius}) 0 0;
+    -webkit-box-shadow: var(#{$property-common-edge-radius}) 0 0 0 var(#{$property-background-color});
+    box-shadow: var(#{$property-common-edge-radius}) 0 0 0 var(#{$property-background-color});
   }
 }
 
-@mixin ch5-dpad-content-plus-right(
-  $property-common-edge-radius,
-  $property-background-color
-) {
+@mixin ch5-dpad-content-plus-right($property-common-edge-radius, $property-background-color) {
   margin-left: calc(33% / 2);
-  border-bottom-right-radius: $property-common-edge-radius;
-  border-top-right-radius: $property-common-edge-radius;
+  border-bottom-right-radius: var(#{$property-common-edge-radius});
+  border-top-right-radius: var(#{$property-common-edge-radius});
 
   &:before {
     top: 100%;
     right: calc(100% - 20px);
     rotate: 270deg;
-    border-radius: 0 $property-common-edge-radius 0 0;
-    -moz-border-radius: 0 $property-common-edge-radius 0 0;
-    -webkit-border-radius: 0 $property-common-edge-radius 0 0;
-    // -webkit-box-shadow: $property-common-edge-radius 0 0 0
-    //   $property-background-color;
-    // box-shadow: $property-common-edge-radius 0 0 0 $property-background-color;
-    -webkit-box-shadow: $property-common-edge-radius 0 0 0
-      var(--ch5-dpad-child-button-color);
-    box-shadow: $property-common-edge-radius 0 0 0
-      var(--ch5-dpad-child-button-color);
+    border-radius: 0 var(#{$property-common-edge-radius}) 0 0;
+    -moz-border-radius: 0 var(#{$property-common-edge-radius}) 0 0;
+    -webkit-border-radius: 0 var(#{$property-common-edge-radius}) 0 0;
+    -webkit-box-shadow: var(#{$property-common-edge-radius}) 0 0 0 var(#{$property-background-color});
+    box-shadow: var(#{$property-common-edge-radius}) 0 0 0 var(#{$property-background-color});
   }
 
   &:after {
     top: -20px;
     left: 0%;
     rotate: 270deg;
-    border-radius: $property-common-edge-radius 0 0 0;
-    -moz-border-radius: $property-common-edge-radius 0 0 0;
-    -webkit-border-radius: $property-common-edge-radius 0 0 0;
-    // -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0
-    //   $property-background-color;
-    // box-shadow: (-$property-common-edge-radius) 0 0 0 $property-background-color;
-    -webkit-box-shadow: (-$property-common-edge-radius) 0 0 0
-      var(--ch5-dpad-child-button-color);
-    box-shadow: (-$property-common-edge-radius) 0 0 0
-      var(--ch5-dpad-child-button-color);
+    border-radius: var(#{$property-common-edge-radius}) 0 0 0;
+    -moz-border-radius: var(#{$property-common-edge-radius}) 0 0 0;
+    -webkit-border-radius: var(#{$property-common-edge-radius}) 0 0 0;
+    -webkit-box-shadow: calc(-1 * var(#{$property-common-edge-radius})) 0 0 0 var(#{$property-background-color});
+    box-shadow: calc(-1 * var(#{$property-common-edge-radius})) 0 0 0 var(#{$property-background-color});
   }
 }
 
-@mixin ch5-dpad-content-plus-direction-btn(
-  $property-dimension,
-  $property-icon-font-size,
-  $property-edge-radius
-) {
-  min-width: $property-dimension;
-  min-height: $property-dimension;
+@mixin ch5-dpad-content-plus-direction-btn($property-dimension, $property-icon-font-size, $property-edge-radius) {
+  min-width: var(#{$property-dimension});
+  min-height: var(#{$property-dimension});
 
   .dpad-container {
-    width: $property-dimension;
-    height: $property-dimension;
+    width: var(#{$property-dimension});
+    height: var(#{$property-dimension});
 
     /// Apply to icons
     .dpad-btn-icon {
-      font-size: $property-icon-font-size;
+      font-size: var(#{$property-icon-font-size});
     }
   }
 
   &.ch5-dpad--shape-plus {
     .direction-btn {
       span {
-        line-height: calc(#{$property-dimension} / 3);
+        line-height: calc(var(#{$property-dimension}) / 3);
       }
     }
 
     .direction-btn.up {
-      border-top-left-radius: $property-edge-radius;
-      border-top-right-radius: $property-edge-radius;
+      border-top-left-radius: var(#{$property-edge-radius});
+      border-top-right-radius: var(#{$property-edge-radius});
     }
 
     .direction-btn.left {
-      border-bottom-left-radius: $property-edge-radius;
-      border-top-left-radius: $property-edge-radius;
+      border-bottom-left-radius: var(#{$property-edge-radius});
+      border-top-left-radius: var(#{$property-edge-radius});
     }
 
     .direction-btn.right {
-      border-bottom-right-radius: $property-edge-radius;
-      border-top-right-radius: $property-edge-radius;
+      border-bottom-right-radius: var(#{$property-edge-radius});
+      border-top-right-radius: var(#{$property-edge-radius});
     }
 
     .direction-btn.down {
-      border-bottom-left-radius: $property-edge-radius;
-      border-bottom-right-radius: $property-edge-radius;
+      border-bottom-left-radius: var(#{$property-edge-radius});
+      border-bottom-right-radius: var(#{$property-edge-radius});
     }
   }
 }
