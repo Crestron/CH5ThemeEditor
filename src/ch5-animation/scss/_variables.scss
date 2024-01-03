@@ -11,18 +11,18 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-animation {
-  /// Font size=regular
-  --ch5-animation-font-size-regular: 72px;
+  /// size=regular
+  --ch5-animation-size-regular: 72px;
 
-  /// Font size=small
-  --ch5-animation-font-size-small: 40px;
+  /// size=small
+  --ch5-animation-size-small: 40px;
 
-  /// Font size=large
-  --ch5-animation-font-size-large: 104px;
+  /// size=large
+  --ch5-animation-size-large: 104px;
 
-  /// Font size=x-large
-  --ch5-animation-font-size-x-large: 136px;
+  /// size=x-large
+  --ch5-animation-size-x-large: 136px;
 
   /// Animation color
-  --ch5-animation-color: $theme-foreground-color;
+  --ch5-animation-color: #{$theme-foreground-color};
 }

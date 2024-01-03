@@ -14,7 +14,7 @@
 
 ch5-triggerview,
 ch5-triggerviewchild {
-  @include ch5-component-base;
+  @include ch5-component-base();
 }
 
 /// The class added on the component

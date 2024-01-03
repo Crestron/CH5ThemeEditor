@@ -11,15 +11,15 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-color-picker {
-  @include ch5-component-base;
+  @include ch5-component-base();
 }
 
 /// Added automatically on the ch5-color-picker element
 .ch5-color-picker {
   position: relative;
   display: inline-flex;
-  width: $ch5-color-picker-width;
-  height: $ch5-color-picker-height;
+  width: --ch5-color-picker-width;
+  height: --ch5-color-picker-height;
 }
 
 /// Added automatically based on the disabled attribute or by receiveStateEnable

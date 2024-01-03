@@ -11,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-keypad {
-  @include ch5-component-base;
+  @include ch5-component-base();
   display: inline-block;
   position: relative;
 }

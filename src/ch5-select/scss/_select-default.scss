@@ -12,7 +12,7 @@
 
 ch5-select,
 ch5-select-option {
-  @include ch5-component-base;
+  @include ch5-component-base();
 }
 
 /// Main class

@@ -146,7 +146,7 @@ $gaugeStyle: (
 }
 
 ch5-wifi-signal-level-gauge {
-  @include ch5-component-base;
+  @include ch5-component-base();
 }
 
 ch5-wifi-signal-level-gauge {

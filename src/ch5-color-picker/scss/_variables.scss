@@ -10,8 +10,10 @@
 /// @group ch5-color-picker-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Height for color picker
-$ch5-color-picker-height: 240px !default;
+ch5-color-picker {
+  /// Height for color picker
+  --ch5-color-picker-height: 240px;
 
-/// Width for color picker
-$ch5-color-picker-width: 240px !default;
+  /// Width for color picker
+  --ch5-color-picker-width: 240px;
+}

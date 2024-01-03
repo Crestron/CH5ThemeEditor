@@ -10,10 +10,12 @@
 /// @group ch5-image-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Set height of image
-$ch5-image-height: inherit !default;
+ch5-image {
+  /// Set height of image
+  --ch5-image-height: inherit;
 
-/// Set width of image
-$ch5-image-width: inherit !default;
+  /// Set width of image
+  --ch5-image-width: inherit;
 
-$ch5-image-object-fit: contain !default;
+  --ch5-image-object-fit: contain;
+}

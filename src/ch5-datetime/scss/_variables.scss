@@ -10,17 +10,16 @@
 /// @group ch5-datetime-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Font size regular
-$ch5-animation-font-size-regular: 72px !default;
+ch5-datetime {
+  /// Font size
+  --ch5-datetime-font-size: 14px;
 
-/// Font size small
-$ch5-animation-font-size-small: 40px !default;
+  /// Datetime height
+  --ch5-datetime-height: 35px;
 
-/// Font size large
-$ch5-animation-font-size-large: 104px !default;
+  /// Datetime width
+  --ch5-datetime-width: 200px;
 
-/// Font size x-large
-$ch5-animation-font-size-x-large: 136px !default;
-
-/// Animation color
-$ch5-animation-color: $theme-foreground-color !default;
+  /// Background color
+  --ch5-datetime-background-color: transparent;
+}

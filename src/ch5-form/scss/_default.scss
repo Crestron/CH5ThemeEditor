@@ -11,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-form {
-  @include ch5-component-base;
+  @include ch5-component-base();
 }
 
 ch5-form {
@@ -20,7 +20,7 @@ ch5-form {
     -webkit-appearance: none;
   }
 
-  font-style: $ch5-form-font-style;
-  font-size: $ch5-form-font-size;
-  font-weight: $ch5-form-font-weight;
+  font-style: --ch5-form-font-style;
+  font-size: --ch5-form-font-size;
+  font-weight: --ch5-form-font-weight;
 }

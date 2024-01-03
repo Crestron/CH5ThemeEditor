@@ -14,22 +14,22 @@
 
     /// Applied when size='regular'
     .ch5-animation--size-regular {
-        font-size: var(--ch5-animation-font-size-regular);
+        font-size: var(--ch5-animation-size-regular);
     }
 
     /// Applied when size='small'
     .ch5-animation--size-small {
-        font-size: var(--ch5-animation-font-size-small);
+        font-size: var(--ch5-animation-size-small);
     }
 
     /// Applied when size='large'
     .ch5-animation--size-large {
-        font-size: var(--ch5-animation-font-size-large);
+        font-size: var(--ch5-animation-size-large);
     }
 
     /// Applied when size='x-large'
     .ch5-animation--size-x-large {
-        font-size: var(--ch5-animation-font-size-x-large);
+        font-size: var(--ch5-animation-size-x-large);
     }
 
 }

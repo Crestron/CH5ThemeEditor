@@ -11,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-color-chip {
-  @include ch5-component-base;
+  @include ch5-component-base();
 }
 
 ch5-color-chip {
@@ -23,8 +23,8 @@ ch5-color-chip {
   position: relative;
   display: inline-block;
   background-color: #000;
-  height: $ch5-color-chip-div-height;
-  width: $ch5-color-chip-div-width;
+  height: --ch5-color-chip-div-height;
+  width: --ch5-color-chip-div-width;
 }
 
 /// Color Chip disabled class

@@ -11,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-segmented-gauge {
-  @include ch5-component-base;
+  @include ch5-component-base();
 }
 
 // styles to avoid extra width for segmented gauge

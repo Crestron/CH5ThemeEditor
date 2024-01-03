@@ -13,7 +13,7 @@
 // NOTE: Slider highlighted area height is fixed and cannot be changed. If changed, the issue will be with the handle height
 
 ch5-slider {
-  @include ch5-component-base;
+  @include ch5-component-base();
 }
 
 ch5-slider:focus {

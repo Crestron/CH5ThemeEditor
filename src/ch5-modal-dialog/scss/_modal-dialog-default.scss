@@ -11,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-modal-dialog {
-  @include ch5-component-base;
+  @include ch5-component-base();
 }
 
 /// the class added on the div that is the only direct child of the ch5-modal-dialog element and wraps all its contents

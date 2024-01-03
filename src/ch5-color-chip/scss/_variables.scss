@@ -10,9 +10,10 @@
 /// @group ch5-color-chip-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+ch5-color-chip {
 /// The height for div of the color-chip.
-$ch5-color-chip-div-height: 40px !default;
+--ch5-color-chip-div-height: 40px;
 
 /// The width for div of the color-chip.
-$ch5-color-chip-div-width: 40px !default;
+--ch5-color-chip-div-width: 40px;
+}

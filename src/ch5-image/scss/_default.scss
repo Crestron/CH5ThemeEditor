@@ -11,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-image {
-  @include ch5-component-base;
+  @include ch5-component-base();
 }
 
 ch5-image {
@@ -21,11 +21,11 @@ ch5-image {
 /// Added automatically on the first child of the ch5-image element.
 .ch5-image {
   &.ch5-image__img {
-    height: $ch5-image-height;
-    width: $ch5-image-width;
+    height: --ch5-image-height;
+    width: --ch5-image-width;
     max-height: 100%;
     max-width: 100%;
-    object-fit: $ch5-image-object-fit;
+    object-fit: --ch5-image-object-fit;
     display: inline-block;
   }
   // flip image
