@@ -44,8 +44,7 @@ ch5-dpad {
 
   /// Applied when button in the disabled state
   &.ch5-disabled {
-    pointer-events: none;
-    opacity: 0.5;
+    @include ch5-component-disabled();
 
     .ch5-dpad-child {
       pointer-events: none;
@@ -54,8 +53,7 @@ ch5-dpad {
 
   &:not(.ch5-disabled) {
     .ch5-dpad-child.ch5-disabled {
-      opacity: 0.5;
-      pointer-events: none;
+      @include ch5-component-disabled();
     }
   }
 

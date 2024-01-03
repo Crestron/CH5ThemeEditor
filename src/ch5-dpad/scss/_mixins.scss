@@ -31,34 +31,29 @@
   }
 
   &.direction-btn.up:after,
-  &.direction-btn.down:before,
+  &.direction-btn.down:before {
+    box-shadow:calc(-1 * var(--ch5-dpad-regular-edge-radius)) 0 0 0 var(#{$property-background-color});
+    z-index: 10;
+  }
+
   &.direction-btn.up:before,
-  &.direction-btn.down:after,
+  &.direction-btn.down:after {
+    box-shadow: var(--ch5-dpad-regular-edge-radius) 0 0 0 var(#{$property-background-color});
+    z-index: 10;
+  }
+
   &.direction-btn.left:before,
-  &.direction-btn.right:after,
+  &.direction-btn.right:after {
+    box-shadow: calc(-1 * var(--ch5-dpad-regular-edge-radius)) 0 0 0 var(#{$property-background-color});
+    z-index: 10;
+  }
+
   &.direction-btn.left:after,
   &.direction-btn.right:before {
     box-shadow: var(--ch5-dpad-regular-edge-radius) 0 0 0 var(#{$property-background-color});
     z-index: 10;
   }
 
-  // &.direction-btn.left:before,
-  // &.direction-btn.right:after {
-  //   box-shadow: var(--ch5-dpad-regular-edge-radius) 0 0 0 var(#{$property-background-color});
-  //   z-index: 10;
-  // }
-
-  // &.direction-btn.left:after,
-  // &.direction-btn.right:before {
-  //   box-shadow: var(--ch5-dpad-regular-edge-radius) 0 0 0 var(#{$property-background-color});
-  //   z-index: 10;
-  // }
-
-  // &.direction-btn.up:before,
-  // &.direction-btn.down:after {
-  //   box-shadow: var(--ch5-dpad-regular-edge-radius) 0 0 0 var(#{$property-background-color});
-  //   z-index: 10;
-  // }
 }
 
 @mixin ch5-dpad-content-plus-top($property-common-edge-radius, $property-background-color) {
@@ -83,7 +78,7 @@
     border-radius: 0 0 0 var(#{$property-common-edge-radius});
     -moz-border-radius: 0 0 0 var(#{$property-common-edge-radius});
     -webkit-border-radius: 0 0 0 var(#{$property-common-edge-radius});
-    -webkit-box-shadow: calc(-1 * -var(#{$property-common-edge-radius})) 0 0 0 var(#{$property-background-color});
+    -webkit-box-shadow: calc(-1 * var(#{$property-common-edge-radius})) 0 0 0 var(#{$property-background-color});
     box-shadow: calc(-1 * var(#{$property-common-edge-radius})) 0 0 0 var(#{$property-background-color});
   }
 }

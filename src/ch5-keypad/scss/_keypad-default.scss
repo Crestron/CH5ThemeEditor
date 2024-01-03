@@ -53,8 +53,7 @@ ch5-keypad {
 
   /// Applied when keypad in the disabled state
   &.ch5-keypad--disabled {
-    opacity: 0.5;
-    pointer-events: none;
+    @include ch5-component-disabled();
     cursor: default;
 
     button {

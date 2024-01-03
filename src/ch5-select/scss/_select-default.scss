@@ -136,8 +136,7 @@ ch5-select-option {
 
 /// Added automatically based on the disabled attribute or by receiveStateEnable
 .ch5-select--disabled {
-  pointer-events: none;
-  opacity: 0.5;
+  @include ch5-component-disabled();
 }
 
 /// Applied when item is selected

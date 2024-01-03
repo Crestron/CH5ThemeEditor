@@ -35,8 +35,7 @@ ch5-tab-button {
 
 /// Applied tab button is set to disabled
 .ch5-tab-button--disabled {
-  pointer-events: none;
-  opacity: $ch5-disabled-opacity;
+  @include ch5-component-disabled();
 }
 
 .ch5-tab-button--disabled div {
@@ -45,8 +44,7 @@ ch5-tab-button {
 
 .ch5-tab-button.ch5-tab-button--disabled {
   & ~ .scrollbar-container {
-    pointer-events: none;
-    opacity: $ch5-disabled-opacity;
+    @include ch5-component-disabled();
   }
 }
 

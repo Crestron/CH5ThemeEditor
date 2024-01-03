@@ -20,6 +20,5 @@ ch5-label {
 }
 
 .ch5-label--disabled {
-  pointer-events: none;
-  opacity: $ch5-disabled-opacity;
+  @include ch5-component-disabled();
 }

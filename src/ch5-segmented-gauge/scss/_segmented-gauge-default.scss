@@ -32,6 +32,5 @@ ch5-segmented-gauge {
 
 /// Disabled class
 .ch5-segmented-gauge--disabled {
-  pointer-events: none;
-  opacity: $ch5-disabled-opacity;
+  @include ch5-component-disabled();
 }

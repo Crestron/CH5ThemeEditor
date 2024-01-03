@@ -67,6 +67,5 @@ ch5-text {
 
 /// Applied when disabled='true'
 .ch5-text--disabled {
-  pointer-events: none;
-  opacity: $ch5-text-disabled-opacity;
+  @include ch5-component-disabled();
 }

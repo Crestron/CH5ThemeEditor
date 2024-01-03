@@ -183,8 +183,7 @@ ch5-button {
 
   /// Applied when the button is disabled
   .ch5-button--disabled {
-    pointer-events: none;
-    opacity: $ch5-disabled-opacity;
+    @include ch5-component-disabled();
   }
 
   .ch5-button,

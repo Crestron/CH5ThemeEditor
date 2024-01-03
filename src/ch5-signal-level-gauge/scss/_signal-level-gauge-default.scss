@@ -26,9 +26,9 @@ ch5-signal-level-gauge {
 
 /// Added automatically based on the disabled attribute or by receiveStateEnable
 .ch5-signal-level-gauge--disabled {
-  pointer-events: none;
-  opacity: $ch5-disabled-opacity;
+  @include ch5-component-disabled();
 }
+
 @mixin setSize($size, $height, $width) {
   &.ch5-signal-level-gauge--size-#{$size} {
     height: $height;

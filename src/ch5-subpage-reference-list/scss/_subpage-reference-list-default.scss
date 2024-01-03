@@ -77,12 +77,11 @@ ch5-subpage-reference-list {
 }
 /// Applied when the subpage reference list is disabled
 .ch5-subpage-reference-list--disabled {
-  opacity: 0.5 !important;
+  @include ch5-component-disabled();
 }
 
 .ch5-subpage-reference-list.ch5-subpage-reference-list--disabled {
   & ~ .scrollbar-container {
-    pointer-events: none;
-    opacity: $ch5-disabled-opacity;
+    @include ch5-component-disabled();
   }
 }

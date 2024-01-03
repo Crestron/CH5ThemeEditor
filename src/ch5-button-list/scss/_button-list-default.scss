@@ -74,8 +74,7 @@ ch5-button-list {
 
 /// Applied when the component is disabled
 .ch5-button-list--disabled {
-  pointer-events: none;
-  opacity: $ch5-disabled-opacity;
+  @include ch5-component-disabled();
 }
 
 .ch5-button-list--disabled div {
@@ -84,8 +83,7 @@ ch5-button-list {
 
 .ch5-button-list.ch5-button-list--disabled {
   & ~ .scrollbar-container {
-    pointer-events: none;
-    opacity: $ch5-disabled-opacity;
+    @include ch5-component-disabled();
   }
 }
 

@@ -199,6 +199,5 @@ ch5-wifi-signal-level-gauge {
 
 /// Disabled Class
 .ch5-wifi-signal-level-gauge--disabled {
-  pointer-events: none;
-  opacity: $ch5-disabled-opacity;
+  @include ch5-component-disabled();
 }

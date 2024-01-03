@@ -300,6 +300,5 @@ ch5-toggle:focus {
 
 /// class apply when toggle is disabled
 .ch5-toggle--disabled {
-  pointer-events: none;
-  opacity: $ch5-disabled-opacity;
+  @include ch5-component-disabled();
 }
