@@ -44,7 +44,7 @@ ch5-button {
     /// Applied on label
     .ch5-button--label {
       display: block;
-      @include text-truncate;
+      @include text-truncate();
     }
 
     .cb-btn {
