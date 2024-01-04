@@ -12,13 +12,13 @@
 
 ch5-triggerview {
   /// default font size value for the triggerview
-  --ch5-triggerview-font-size: $ch5-font-size-value + $ch5-font-size-unit;
+  --ch5-triggerview-font-size: #{$ch5-font-size-value}#{$ch5-font-size-unit};
 
   /// default font style for the triggerview
-  --ch5-triggerview-font-style: $ch5-font-style;
+  --ch5-triggerview-font-style: #{$ch5-font-style};
 
   /// default font weight for the triggerview
-  --ch5-triggerview-font-weight: $ch5-font-weight;
+  --ch5-triggerview-font-weight: #{$ch5-font-weight};
 
   /// triggerview minimum height in px
   --ch5-triggerview-slide-min-height: 0px;

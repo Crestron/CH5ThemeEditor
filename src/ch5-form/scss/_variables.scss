@@ -10,15 +10,13 @@
 /// @group ch5-form-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Variables
-
 ch5-form {
   /// set the default font size for the form
-  --ch5-form-font-size: $ch5-font-size-unit + $ch5-font-size-value;
+  --ch5-form-font-size: #{$ch5-font-size-value}#{$ch5-font-size-unit};
 
   /// set the default font style for the form
-  --ch5-form-font-style: $ch5-font-style;
+  --ch5-form-font-style: #{$ch5-font-style};
 
   /// set the default font weight for the form
-  --ch5-form-font-weight: $ch5-font-weight;
+  --ch5-form-font-weight: #{$ch5-font-weight};
 }

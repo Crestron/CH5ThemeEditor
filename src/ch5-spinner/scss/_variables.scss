@@ -19,10 +19,10 @@ ch5-spinner {
   --ch5-spinner-font-size: 22px;
 
   /// the default font style of the spinner
-  --ch5-spinner-font-style: $ch5-font-style;
+  --ch5-spinner-font-style: #{$ch5-font-style};
 
   /// the default font weight of the spinner
-  --ch5-spinner-font-weight: $ch5-font-weight;
+  --ch5-spinner-font-weight: #{$ch5-font-weight};
 
   /// the default font size for icon
   --ch5-spinner-icon-font-size: var(--ch5-spinner-font-size);

@@ -30,8 +30,8 @@ ch5-subpage-reference-list {
   }
 
   &.ch5-subpage-reference-list::-webkit-scrollbar {
-    height: 0px;
-    width: 0px;
+    height: 0;
+    width: 0;
   }
 
   & ~ .scrollbar-container {

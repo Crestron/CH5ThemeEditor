@@ -12,13 +12,13 @@
 
 ch5-select {
   /// component main font size
-  --ch5-select-font-size: $ch5-font-size-value + $ch5-font-size-unit;
+  --ch5-select-font-size:#{$ch5-font-size-value}#{$ch5-font-size-unit};
 
   /// component main font style
-  --ch5-select-font-style: $ch5-font-style;
+  --ch5-select-font-style: #{$ch5-font-style};
 
   /// component main font weight
-  --ch5-select-font-weight: $ch5-font-weight;
+  --ch5-select-font-weight: #{$ch5-font-weight};
 
   /// top line content padding
   --ch5-select-padding: 4px;

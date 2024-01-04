@@ -22,11 +22,14 @@ ch5-textinput {
   /// set the textinput border's width
   --ch5-textinput-input-border-width: 2px;
 
+  /// set the textinput border's style
+  --ch5-textinput-input-border-style: solid;
+
   /// set the default font style for the textinput
-  --ch5-textinput-font-style: $ch5-font-style;
+  --ch5-textinput-font-style: #{$ch5-font-style};
 
   /// set the default font weight for the textinput
-  --ch5-textinput-font-weight: $ch5-font-weight;
+  --ch5-textinput-font-weight: #{$ch5-font-weight};
 
   /// set the font size for regular size of the textinput
   --ch5-textinput-regular-font-size: 16px;

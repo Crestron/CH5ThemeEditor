@@ -29,7 +29,7 @@
   /// Orientation vertical class
   &.ch5-segmented-gauge--orientation-vertical {
     flex-direction: column;
-    transform: var(--ch5-segmented-gauge-orientation-vertical);
+    transform: rotate(180deg);
 
     .ch5-segmented-gauge-segment {
       margin-top: var(--ch5-segmented-gauge-segment-margin);
