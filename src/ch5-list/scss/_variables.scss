@@ -10,18 +10,19 @@
 /// @group ch5-list-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-list {
+  /// Set the font size of the vertical list
+  --ch5-list-font-size: #{$ch5-font-size};
 
-/// Set the font size of the vertical list
-$ch5-list-font-size: $ch5-font-size !default;
+  /// Set the font style of the vertical list
+  --ch5-list-font-style: #{$ch5-font-style};
 
-/// Set the font style of the vertical list
-$ch5-list-font-style: $ch5-font-style !default;
+  /// Set the font weight of the vertical list
+  --ch5-list-font-weight: #{$ch5-font-weight};
 
-/// Set the font weight of the vertical list
-$ch5-list-font-weight: $ch5-font-weight !default;
+  /// Set the border style of list items, configurable for each theme
+  --ch5-list-item-border: 1px solid transparent;
 
-/// Set the border style of list items, configurable for each theme
-$ch5-list-item-border: 1px solid transparent !default;
-
-/// Set the padding of list items
-$ch5-list-item-padding: 10px !default;
+  /// Set the padding of list items
+  --ch5-list-item-padding: 10px;
+}

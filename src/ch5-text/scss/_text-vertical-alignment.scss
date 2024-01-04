@@ -11,27 +11,26 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-text {
-    &--vertical-alignment {
-
-        /// @require .ch5-text--vertical-alignment
-        /// Set verticalAlignment as top
-        &-top {
-            display: flex;
-            align-items: flex-start;
-        }
-
-        /// @require .ch5-text--vertical-alignment
-        /// Set verticalAlignment as middle
-        &-middle {
-            display: flex;
-            align-items: center;
-        }
-
-        /// @require .ch5-text--vertical-alignment
-        /// Set verticalAlignment as bottom
-        &-bottom {
-            display: flex;
-            align-items: flex-end;
-        }
+  &--vertical-alignment {
+    /// @require .ch5-text--vertical-alignment
+    /// Set verticalAlignment as top
+    &-top {
+      display: flex;
+      align-items: flex-start;
     }
+
+    /// @require .ch5-text--vertical-alignment
+    /// Set verticalAlignment as middle
+    &-middle {
+      display: flex;
+      align-items: center;
+    }
+
+    /// @require .ch5-text--vertical-alignment
+    /// Set verticalAlignment as bottom
+    &-bottom {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
 }

@@ -10,10 +10,10 @@
 /// @group ch5-tab-button-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Variables below
+ch5-tab-button {
+  /// button container width
+  --ch5-tab-button-button-container-width: 5px;
 
-/// button container width
-$ch5-tab-button-button-container-width: 5px !default;
-
-/// button container height
-$ch5-tab-button-button-container-height: 5px !default;
+  /// button container height
+  --ch5-tab-button-button-container-height: 5px;
+}

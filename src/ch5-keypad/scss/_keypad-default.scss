@@ -38,15 +38,15 @@ ch5-keypad {
       grid-column-start: 2;
 
       button {
-        color: $ch5-keypad-success-default-font-color;
-        background-color: $ch5-keypad-success-default-background-color;
-        border: 1px solid $ch5-keypad-success-default-border-color;
+        color: --ch5-keypad-success-default-font-color;
+        background-color: --ch5-keypad-success-default-background-color;
+        border: 1px solid --ch5-keypad-success-default-border-color;
       }
 
       &.keypad-btn.keypad-btn-pressed button {
-        color: $ch5-keypad-success-pressed-font-color;
-        background-color: $ch5-keypad-success-pressed-background-color;
-        border: 1px solid $ch5-keypad-success-pressed-border-color;
+        color: --ch5-keypad-success-pressed-font-color;
+        background-color: --ch5-keypad-success-pressed-background-color;
+        border: 1px solid --ch5-keypad-success-pressed-border-color;
       }
     }
   }
@@ -65,17 +65,17 @@ ch5-keypad {
   /// Applied when type="default"
   &.ch5-keypad--type-default {
     @include ch5-keypad-content(
-      $ch5-keypad-default-default-background-color,
-      $ch5-keypad-default-default-border-color,
-      $ch5-keypad-default-default-font-color
+      --ch5-keypad-default-default-background-color,
+      --ch5-keypad-default-default-border-color,
+      --ch5-keypad-default-default-font-color
     );
 
     /// Applied when button in the pressed state
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(
-        $ch5-keypad-default-pressed-background-color,
-        $ch5-keypad-default-pressed-border-color,
-        $ch5-keypad-default-pressed-font-color
+        --ch5-keypad-default-pressed-background-color,
+        --ch5-keypad-default-pressed-border-color,
+        --ch5-keypad-default-pressed-font-color
       );
     }
   }
@@ -83,16 +83,16 @@ ch5-keypad {
   /// Applied when type="default"
   &.ch5-keypad--type-primary {
     @include ch5-keypad-content(
-      $ch5-keypad-primary-default-background-color,
-      $ch5-keypad-primary-default-border-color,
-      $ch5-keypad-primary-default-font-color
+      --ch5-keypad-primary-default-background-color,
+      --ch5-keypad-primary-default-border-color,
+      --ch5-keypad-primary-default-font-color
     );
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(
-        $ch5-keypad-primary-pressed-background-color,
-        $ch5-keypad-primary-pressed-border-color,
-        $ch5-keypad-primary-pressed-font-color
+        --ch5-keypad-primary-pressed-background-color,
+        --ch5-keypad-primary-pressed-border-color,
+        --ch5-keypad-primary-pressed-font-color
       );
     }
   }
@@ -100,16 +100,16 @@ ch5-keypad {
   /// Applied when type="info"
   &.ch5-keypad--type-info {
     @include ch5-keypad-content(
-      $ch5-keypad-info-default-background-color,
-      $ch5-keypad-info-default-border-color,
-      $ch5-keypad-info-default-font-color
+      --ch5-keypad-info-default-background-color,
+      --ch5-keypad-info-default-border-color,
+      --ch5-keypad-info-default-font-color
     );
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(
-        $ch5-keypad-info-pressed-background-color,
-        $ch5-keypad-info-pressed-border-color,
-        $ch5-keypad-info-pressed-font-color
+        --ch5-keypad-info-pressed-background-color,
+        --ch5-keypad-info-pressed-border-color,
+        --ch5-keypad-info-pressed-font-color
       );
     }
   }
@@ -117,16 +117,16 @@ ch5-keypad {
   /// Applied when type="text"
   &.ch5-keypad--type-text {
     @include ch5-keypad-content(
-      $ch5-keypad-text-default-background-color,
-      $ch5-keypad-text-default-border-color,
-      $ch5-keypad-text-default-font-color
+      --ch5-keypad-text-default-background-color,
+      --ch5-keypad-text-default-border-color,
+      --ch5-keypad-text-default-font-color
     );
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(
-        $ch5-keypad-text-pressed-background-color,
-        $ch5-keypad-text-pressed-border-color,
-        $ch5-keypad-text-pressed-font-color
+        --ch5-keypad-text-pressed-background-color,
+        --ch5-keypad-text-pressed-border-color,
+        --ch5-keypad-text-pressed-font-color
       );
     }
   }
@@ -134,16 +134,16 @@ ch5-keypad {
   /// Applied when type="danger"
   &.ch5-keypad--type-danger {
     @include ch5-keypad-content(
-      $ch5-keypad-danger-default-background-color,
-      $ch5-keypad-danger-default-border-color,
-      $ch5-keypad-danger-default-font-color
+      --ch5-keypad-danger-default-background-color,
+      --ch5-keypad-danger-default-border-color,
+      --ch5-keypad-danger-default-font-color
     );
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(
-        $ch5-keypad-danger-pressed-background-color,
-        $ch5-keypad-danger-pressed-border-color,
-        $ch5-keypad-danger-pressed-font-color
+        --ch5-keypad-danger-pressed-background-color,
+        --ch5-keypad-danger-pressed-border-color,
+        --ch5-keypad-danger-pressed-font-color
       );
     }
   }
@@ -151,16 +151,16 @@ ch5-keypad {
   /// Applied when type="warning"
   &.ch5-keypad--type-warning {
     @include ch5-keypad-content(
-      $ch5-keypad-warning-default-background-color,
-      $ch5-keypad-warning-default-border-color,
-      $ch5-keypad-warning-default-font-color
+      --ch5-keypad-warning-default-background-color,
+      --ch5-keypad-warning-default-border-color,
+      --ch5-keypad-warning-default-font-color
     );
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(
-        $ch5-keypad-warning-pressed-background-color,
-        $ch5-keypad-warning-pressed-border-color,
-        $ch5-keypad-warning-pressed-font-color
+        --ch5-keypad-warning-pressed-background-color,
+        --ch5-keypad-warning-pressed-border-color,
+        --ch5-keypad-warning-pressed-font-color
       );
     }
   }
@@ -168,16 +168,16 @@ ch5-keypad {
   /// Applied when type="success"
   &.ch5-keypad--type-success {
     @include ch5-keypad-content(
-      $ch5-keypad-success-default-background-color,
-      $ch5-keypad-success-default-border-color,
-      $ch5-keypad-success-default-font-color
+      --ch5-keypad-success-default-background-color,
+      --ch5-keypad-success-default-border-color,
+      --ch5-keypad-success-default-font-color
     );
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(
-        $ch5-keypad-success-pressed-background-color,
-        $ch5-keypad-success-pressed-border-color,
-        $ch5-keypad-success-pressed-font-color
+        --ch5-keypad-success-pressed-background-color,
+        --ch5-keypad-success-pressed-border-color,
+        --ch5-keypad-success-pressed-font-color
       );
     }
   }
@@ -185,16 +185,16 @@ ch5-keypad {
   /// Applied when type="secondary"
   &.ch5-keypad--type-secondary {
     @include ch5-keypad-content(
-      $ch5-keypad-secondary-default-background-color,
-      $ch5-keypad-secondary-default-border-color,
-      $ch5-keypad-secondary-default-font-color
+      --ch5-keypad-secondary-default-background-color,
+      --ch5-keypad-secondary-default-border-color,
+      --ch5-keypad-secondary-default-font-color
     );
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(
-        $ch5-keypad-secondary-pressed-background-color,
-        $ch5-keypad-secondary-pressed-border-color,
-        $ch5-keypad-secondary-pressed-font-color
+        --ch5-keypad-secondary-pressed-background-color,
+        --ch5-keypad-secondary-pressed-border-color,
+        --ch5-keypad-secondary-pressed-font-color
       );
     }
   }
@@ -262,55 +262,55 @@ ch5-keypad {
   /// Applied when size="x-small"
   &.ch5-keypad--size-x-small {
     @include ch5-keypad-fonts-sizes(
-      $ch5-keypad-x-small-container-width,
-      $ch5-keypad-x-small-container-height,
-      $ch5-keypad-x-small-container-height-extra,
-      $ch5-keypad-x-small-font-size-major,
-      $ch5-keypad-x-small-font-size-minor
+      --ch5-keypad-x-small-container-width,
+      --ch5-keypad-x-small-container-height,
+      --ch5-keypad-x-small-container-height-extra,
+      --ch5-keypad-x-small-font-size-major,
+      --ch5-keypad-x-small-font-size-minor
     );
   }
 
   /// Applied when size="small"
   &.ch5-keypad--size-small {
     @include ch5-keypad-fonts-sizes(
-      $ch5-keypad-small-container-width,
-      $ch5-keypad-small-container-height,
-      $ch5-keypad-small-container-height-extra,
-      $ch5-keypad-small-font-size-major,
-      $ch5-keypad-small-font-size-minor
+      --ch5-keypad-small-container-width,
+      --ch5-keypad-small-container-height,
+      --ch5-keypad-small-container-height-extra,
+      --ch5-keypad-small-font-size-major,
+      --ch5-keypad-small-font-size-minor
     );
   }
 
   /// Applied when size="regular"
   &.ch5-keypad--size-regular {
     @include ch5-keypad-fonts-sizes(
-      $ch5-keypad-regular-container-width,
-      $ch5-keypad-regular-container-height,
-      $ch5-keypad-regular-container-height-extra,
-      $ch5-keypad-regular-font-size-major,
-      $ch5-keypad-regular-font-size-minor
+      --ch5-keypad-regular-container-width,
+      --ch5-keypad-regular-container-height,
+      --ch5-keypad-regular-container-height-extra,
+      --ch5-keypad-regular-font-size-major,
+      --ch5-keypad-regular-font-size-minor
     );
   }
 
   /// Applied when size="large"
   &.ch5-keypad--size-large {
     @include ch5-keypad-fonts-sizes(
-      $ch5-keypad-large-container-width,
-      $ch5-keypad-large-container-height,
-      $ch5-keypad-large-container-height-extra,
-      $ch5-keypad-large-font-size-major,
-      $ch5-keypad-large-font-size-minor
+      --ch5-keypad-large-container-width,
+      --ch5-keypad-large-container-height,
+      --ch5-keypad-large-container-height-extra,
+      --ch5-keypad-large-font-size-major,
+      --ch5-keypad-large-font-size-minor
     );
   }
 
   /// Applied when size="x-large"
   &.ch5-keypad--size-x-large {
     @include ch5-keypad-fonts-sizes(
-      $ch5-keypad-x-large-container-width,
-      $ch5-keypad-x-large-container-height,
-      $ch5-keypad-x-large-container-height-extra,
-      $ch5-keypad-x-large-font-size-major,
-      $ch5-keypad-x-large-font-size-minor
+      --ch5-keypad-x-large-container-width,
+      --ch5-keypad-x-large-container-height,
+      --ch5-keypad-x-large-container-height-extra,
+      --ch5-keypad-x-large-font-size-major,
+      --ch5-keypad-x-large-font-size-minor
     );
   }
 }

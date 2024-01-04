@@ -10,38 +10,32 @@
 /// @group ch5-spinner-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// default
-$ch5-spinner-border-width: 1px !default;
-$ch5-spinner-border-style: solid !default;
+ch5-spinner {
+  // default
+  --ch5-spinner-border-width: 1px;
+  --ch5-spinner-border-style: solid;
 
-/// the default font size unit of the spinner
-$ch5-spinner-font-size-unit: $ch5-font-size-unit !default;
+  /// the default font size of the spinner
+  --ch5-spinner-font-size: 22px;
 
-/// the default font size value of the spinner
-$ch5-spinner-font-size-value: 22 !default;
+  /// the default font style of the spinner
+  --ch5-spinner-font-style: $ch5-font-style;
 
-/// the default font size of the spinner
-$ch5-spinner-font-size: $ch5-spinner-font-size-value + $ch5-spinner-font-size-unit !default;
+  /// the default font weight of the spinner
+  --ch5-spinner-font-weight: $ch5-font-weight;
 
-/// the default font style of the spinner
-$ch5-spinner-font-style: $ch5-font-style !default;
+  /// the default font size for icon
+  --ch5-spinner-icon-font-size: var(--ch5-spinner-font-size);
 
-/// the default font weight of the spinner
-$ch5-spinner-font-weight: $ch5-font-weight !default;
+  /// the padding of the icon within the slider item
+  --ch5-spinner-icon-padding: 0 0;
 
-/// the default font size for icon
-$ch5-spinner-icon-font-size: $ch5-spinner-font-size !default;
+  /// the margin of the icon within the slider item
+  --ch5-spinner-icon-margin: 0 0;
 
+  /// the opacity for the overlay of the spinner
+  --ch5-spinner-overlay-opacity: 0;
 
-/// the padding of the icon within the slider item
-$ch5-spinner-icon-padding: 0px 0 !default;
-
-
-/// the margin of the icon within the slider item
-$ch5-spinner-icon-margin: 0px 0 !default;
-
-/// the opacity for the overlay of the spinner
-$ch5-spinner-overlay-opacity: 0.0 !default;
-
-$ch5-spinner-wrapper-z-index: 9999 !default;
-$ch5-spinner-overlay-z-index: 999 !default;
+  --ch5-spinner-wrapper-z-index: 9999;
+  --ch5-spinner-overlay-z-index: 999;
+}

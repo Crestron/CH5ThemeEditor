@@ -19,7 +19,7 @@
 
 /// Applied when shape='rounded-rectangle'
 .ch5-button--rounded-rectangle {
-	@include border-radius($ch5-button-border-radius);
+	@include border-radius(var(--ch5-button-border-radius));
 	overflow: hidden;
 }
 
@@ -31,7 +31,7 @@
 	border-style: none;
 	text-align: center;
 	overflow: hidden;
-	@include border-radius($ch5-button-circle-border-radius);
+	@include border-radius(var(--ch5-button-circle-border-radius));
 	.cb-btn {
 		display: inline-flex;
 		vertical-align: middle;
@@ -42,13 +42,13 @@
 
 /// Applied when shape='oval'
 .ch5-button--oval {
-	@include border-radius($ch5-button-oval-border-radius);
+	@include border-radius(var(--ch5-button-oval-border-radius));
 	// overflow: auto;
 	overflow: hidden;
 }
 
 /// Applied when shape='tab'
 .ch5-button--tab {
-	@include border-radius($ch5-button-tab-border-radius);
+	@include border-radius(var(--ch5-button-tab-border-radius));
 	overflow: hidden;
 }

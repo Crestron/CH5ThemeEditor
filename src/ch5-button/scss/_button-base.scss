@@ -51,21 +51,21 @@ ch5-button {
       display: inline-flex;
       align-items: center;
       justify-content: space-between;
-      font-style: $ch5-button-font-style;
-      font-weight: $ch5-button-font-weight;
-      line-height: $ch5-button-content-line-height;
-      padding: $ch5-button-padding;
+      font-style: var(--ch5-button-font-style);
+      font-weight: var(--ch5-button-font-weight);
+      line-height: var(--ch5-button-content-line-height);
+      padding: var(--ch5-button-padding);
       vertical-align: middle; //adding this property to prevent button taking extra height for iconUrlFilltype="initial" and vAlignLabel="bottom"
     }
 
     .cb-btn {
-      padding-top: calc($ch5-button-padding / 2);
-      padding-bottom: calc($ch5-button-padding / 2);
+      padding-top: calc(var(--ch5-button-padding) / 2);
+      padding-bottom: calc(var(--ch5-button-padding) / 2);
     }
 
     .ch5-button--label {
-      padding-left: calc($ch5-button-padding / 2);
-      padding-right: calc($ch5-button-padding / 2);
+      padding-left: calc(var(--ch5-button-padding) / 2);
+      padding-right: calc(var(--ch5-button-padding) / 2);
     }
 
     /// Applied when button orientation='vertical'
@@ -203,12 +203,11 @@ ch5-button {
 
   .ch5-button--icon,
   .ch5-button--img {
-    line-height: $ch5-button-content-line-height;
+    line-height: var(--ch5-button-content-line-height);
   }
 
   /// Applied when button orientation='horizontal'
   .ch5-button--horizontal {
-
     /// Applied to make the width as much as its parent allows.
     &.ch5-button--stretch-width {
       width: 100%;
@@ -224,7 +223,7 @@ ch5-button {
 
       .cb-btn {
         height: 100% !important;
-        min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
+        min-height: var(--ch5-button-size); // Added as a fix for the issue of button height varying when moved from width to height in stretch
       }
     }
 
@@ -236,7 +235,7 @@ ch5-button {
       .cb-btn {
         width: 100% !important;
         height: 100% !important;
-        min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
+        min-height: var(--ch5-button-size); // Added as a fix for the issue of button height varying when moved from width to height in stretch
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -251,28 +250,28 @@ ch5-button {
     height: 100%;
 
     &.ch5-button--size-x-small .cb-btn {
-      width: $ch5-button-x-small-size * 2;
-      height: $ch5-button-x-small-size * 2;
+      width: calc(var(--ch5-button-x-small-size) * 2);
+      height: calc(var(--ch5-button-x-small-size) * 2);
     }
 
     &.ch5-button--size-small .cb-btn {
-      width: $ch5-button-small-size * 2;
-      height: $ch5-button-small-size * 2;
+      width: calc(var(--ch5-button-small-size) * 2);
+      height: calc(var(--ch5-button-small-size) * 2);
     }
 
     &.ch5-button--size-large .cb-btn {
-      width: $ch5-button-large-size * 2;
-      height: $ch5-button-large-size * 2;
+      width: calc(var(--ch5-button-large-size) * 2);
+      height: calc(var(--ch5-button-large-size) * 2);
     }
 
     &.ch5-button--size-x-large .cb-btn {
-      width: $ch5-button-x-large-size * 2;
-      height: $ch5-button-x-large-size * 2;
+      width: calc(var(--ch5-button-x-large-size) * 2);
+      height: calc(var(--ch5-button-x-large-size) * 2);
     }
 
     &.ch5-button--size-regular .cb-btn {
-      width: $ch5-button-size * 2;
-      height: $ch5-button-size * 2;
+      width: calc(var(--ch5-button-size) * 2);
+      height: calc(var(--ch5-button-size) * 2);
     }
 
     &.ch5-button--stretch-width,
@@ -366,7 +365,6 @@ ch5-button {
 
   .ch5-button--circle:not(.ch5-button--iconposition-top):not(.ch5-button--iconposition-bottom),
   .ch5-button--oval:not(.ch5-button--iconposition-top):not(.ch5-button--iconposition-bottom) {
-
     .ch5-button--vertical-middle,
     .ch5-button--vertical-top,
     .ch5-button--vertical-bottom {
@@ -378,7 +376,6 @@ ch5-button {
   .ch5-button--iconposition-bottom.ch5-button--circle,
   .ch5-button--iconposition-top.ch5-button--oval,
   .ch5-button--iconposition-bottom.ch5-button--oval {
-
     .ch5-button--vertical-middle,
     .ch5-button--vertical-top,
     .ch5-button--vertical-bottom {
@@ -405,23 +402,23 @@ ch5-button {
   }
 
   .ch5-button__checkbox--checked:before {
-    font-family: $ch5-button-faicon-font-family;
-    content: $ch5-button-checkbox-checked-faicon;
-    font-weight: $ch5-button-checkbox-checked-font-weight;
+    font-family: var(--ch5-button-faicon-font-family);
+    content: var(--ch5-button-checkbox-checked-faicon);
+    font-weight: var(--ch5-button-checkbox-checked-font-weight);
   }
 
   .ch5-button__checkbox--unchecked:before {
-    font-family: $ch5-button-faicon-font-family;
-    content: $ch5-button-checkbox-unchecked-faicon;
-    font-weight: $ch5-button-checkbox-unchecked-font-weight;
+    font-family: var(--ch5-button-faicon-font-family);
+    content: var(--ch5-button-checkbox-unchecked-faicon);
+    font-weight: var(--ch5-button-checkbox-unchecked-font-weight);
   }
 
   .cx-button-checkbox-pos-left {
-    padding-right: $ch5-button-checkbox-padding;
+    padding-right: var(--ch5-button-checkbox-padding);
   }
 
   .cx-button-checkbox-pos-right {
-    padding-left: $ch5-button-checkbox-padding;
+    padding-left: var(--ch5-button-checkbox-padding);
   }
 
   i.cb-icon.material-icons,
@@ -442,68 +439,53 @@ ch5-button {
 
 /// Applied when size="regular"
 .ch5-button--size-regular {
-  @include ch5-button-size-set($ch5-button-size,
-    $ch5-button-font-size,
-    $ch5-button-icon-color,
-    $ch5-button-icon-font-size );
+  @include ch5-button-size-set(var(--ch5-button-size), var(--ch5-button-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
 }
 
 /// Applied when size="x-small"
 .ch5-button--size-x-small {
-  @include ch5-button-size-set($ch5-button-x-small-size,
-    $ch5-button-x-small-font-size,
-    $ch5-button-icon-color,
-    $ch5-button-icon-font-size );
+  @include ch5-button-size-set(var(--ch5-button-x-small-size), var(--ch5-button-x-small-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
 }
 
 /// Applied when size="small"
 .ch5-button--size-small {
-  @include ch5-button-size-set($ch5-button-small-size,
-    $ch5-button-small-font-size,
-    $ch5-button-icon-color,
-    $ch5-button-icon-font-size );
+  @include ch5-button-size-set(var(--ch5-button-small-size), var(--ch5-button-small-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
 }
 
 /// Applied when size="large"
 .ch5-button--size-large {
-  @include ch5-button-size-set($ch5-button-large-size,
-    $ch5-button-large-font-size,
-    $ch5-button-icon-color,
-    $ch5-button-icon-font-size );
+  @include ch5-button-size-set(var(--ch5-button-large-size), var(--ch5-button-large-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
 }
 
 /// Applied when size="x-large"
 .ch5-button--size-x-large {
-  @include ch5-button-size-set($ch5-button-x-large-size,
-    $ch5-button-x-large-font-size,
-    $ch5-button-icon-color,
-    $ch5-button-icon-font-size );
+  @include ch5-button-size-set(var(--ch5-button-x-large-size), var(--ch5-button-x-large-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
 }
 
 .ch5-button--vertical:not(.ch5-button--circle) {
   &.ch5-button--size-regular {
-    width: $ch5-button-size;
-    height: $ch5-button-size * 2;
+    width: var(--ch5-button-size);
+    height: calc(var(--ch5-button-size) * 2);
   }
 
   &.ch5-button--size-x-small {
-    width: $ch5-button-x-small-size;
-    height: $ch5-button-x-small-size * 2;
+    width: var(--ch5-button-x-small-size);
+    height: calc(var(--ch5-button-x-small-size) * 2);
   }
 
   &.ch5-button--size-small {
-    width: $ch5-button-small-size;
-    height: $ch5-button-small-size * 2;
+    width: var(--ch5-button-small-size);
+    height: calc(var(--ch5-button-small-size) * 2);
   }
 
   &.ch5-button--size-large {
-    width: $ch5-button-large-size;
-    height: $ch5-button-large-size * 2;
+    width: var(--ch5-button-large-size);
+    height: calc(var(--ch5-button-large-size) * 2);
   }
 
   &.ch5-button--size-x-large {
-    width: $ch5-button-x-large-size;
-    height: $ch5-button-x-large-size * 2;
+    width: var(--ch5-button-x-large-size);
+    height: calc(var(--ch5-button-x-large-size) * 2);
   }
 
   /// Applied to make the width as much as its parent allows.
@@ -516,7 +498,7 @@ ch5-button {
     height: 100%;
 
     .cb-btn {
-      min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
+      min-height: var(--ch5-button-size); // Added as a fix for the issue of button height varying when moved from width to height in stretch
     }
   }
 
@@ -526,7 +508,7 @@ ch5-button {
     height: 100%;
 
     .cb-btn {
-      min-height: $ch5-button-size; // Added as a fix for the issue of button height varying when moved from width to height in stretch
+      min-height: var(--ch5-button-size); // Added as a fix for the issue of button height varying when moved from width to height in stretch
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -554,82 +536,52 @@ ch5-button[stretch="both"] {
 
 ch5-button[mode="?"] {
   &.ch5-button--size-regular {
-    @include ch5-button-size-set($ch5-button-size,
-      $ch5-button-font-size,
-      $ch5-button-icon-color,
-      $ch5-button-icon-font-size );
+    @include ch5-button-size-set(var(--ch5-button-size), var(--ch5-button-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
 
     ch5-button-mode-state[state="normal"],
     ch5-button-mode-state[state="pressed"],
     ch5-button-mode-state[state="selected"] {
-      @include ch5-button-size-set($ch5-button-size,
-        $ch5-button-font-size,
-        $ch5-button-icon-color,
-        $ch5-button-icon-font-size );
+      @include ch5-button-size-set(var(--ch5-button-size), var(--ch5-button-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
     }
   }
 
   &.ch5-button--size-x-small {
-    @include ch5-button-size-set($ch5-button-x-small-size,
-      $ch5-button-x-small-font-size,
-      $ch5-button-icon-color,
-      $ch5-button-icon-font-size );
+    @include ch5-button-size-set(var(--ch5-button-x-small-size), var(--ch5-button-x-small-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
 
     ch5-button-mode-state[state="normal"],
     ch5-button-mode-state[state="pressed"],
     ch5-button-mode-state[state="selected"] {
-      @include ch5-button-size-set($ch5-button-x-small-size,
-        $ch5-button-x-small-font-size,
-        $ch5-button-icon-color,
-        $ch5-button-icon-font-size );
+      @include ch5-button-size-set(var(--ch5-button-x-small-size), var(--ch5-button-x-small-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
     }
   }
 
   &.ch5-button--size-small {
-    @include ch5-button-size-set($ch5-button-small-size,
-      $ch5-button-small-font-size,
-      $ch5-button-icon-color,
-      $ch5-button-icon-font-size );
+    @include ch5-button-size-set(var(--ch5-button-small-size), var(--ch5-button-small-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
 
     ch5-button-mode-state[state="normal"],
     ch5-button-mode-state[state="pressed"],
     ch5-button-mode-state[state="selected"] {
-      @include ch5-button-size-set($ch5-button-small-size,
-        $ch5-button-small-font-size,
-        $ch5-button-icon-color,
-        $ch5-button-icon-font-size );
+      @include ch5-button-size-set(var(--ch5-button-small-size), var(--ch5-button-small-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
     }
   }
 
   &.ch5-button--size-large {
-    @include ch5-button-size-set($ch5-button-large-size,
-      $ch5-button-large-font-size,
-      $ch5-button-icon-color,
-      $ch5-button-icon-font-size );
+    @include ch5-button-size-set(var(--ch5-button-large-size), var(--ch5-button-large-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
 
     ch5-button-mode-state[state="normal"],
     ch5-button-mode-state[state="pressed"],
     ch5-button-mode-state[state="selected"] {
-      @include ch5-button-size-set($ch5-button-large-size,
-        $ch5-button-large-font-size,
-        $ch5-button-icon-color,
-        $ch5-button-icon-font-size );
+      @include ch5-button-size-set(var(--ch5-button-large-size), var(--ch5-button-large-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
     }
   }
 
   &.ch5-button--size-x-large {
-    @include ch5-button-size-set($ch5-button-x-large-size,
-      $ch5-button-x-large-font-size,
-      $ch5-button-icon-color,
-      $ch5-button-icon-font-size );
+    @include ch5-button-size-set(var(--ch5-button-x-large-size), var(--ch5-button-x-large-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
 
     ch5-button-mode-state[state="normal"],
     ch5-button-mode-state[state="pressed"],
     ch5-button-mode-state[state="selected"] {
-      @include ch5-button-size-set($ch5-button-x-large-size,
-        $ch5-button-x-large-font-size,
-        $ch5-button-icon-color,
-        $ch5-button-icon-font-size );
+      @include ch5-button-size-set(var(--ch5-button-x-large-size), var(--ch5-button-x-large-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
     }
   }
 }

@@ -10,333 +10,328 @@
 /// @group ch5-button-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-$ch5-button-font-size: 14px !default;
-$ch5-button-font-style: $ch5-font-style !default;
+ch5-button {
+  --ch5-button-font-size: 14px;
+  --ch5-button-font-style: $ch5-font-style;
 
-/// The font weight of the button.
-$ch5-button-font-weight: $ch5-font-weight !default;
+  /// The font weight of the button.
+  --ch5-button-font-weight: $ch5-font-weight;
 
-/// The padding for icon of the button.
-$ch5-button-icon-color: inherit !default;
-$ch5-button-icon-font-size: inherit !default;
-$ch5-button-padding: 0.25rem !default;
+  /// The padding for icon of the button.
+  --ch5-button-icon-color: inherit;
+  --ch5-button-icon-font-size: inherit;
+  --ch5-button-padding: 0.25rem;
 
+  --ch5-button-content-line-height: 1.2;
 
-$ch5-button-content-line-height: 1.2 !default;
+  // button solid-border
+  --ch5-button-default-border-width: 1px;
+  --ch5-button-primary-border-width: 1px;
+  --ch5-button-secondary-border-width: 1px;
+  --ch5-button-success-border-width: 1px;
+  --ch5-button-info-border-width: 1px;
+  --ch5-button-warning-border-width: 1px;
+  --ch5-button-danger-border-width: 1px;
+  --ch5-button-text-border-width: 1px;
 
-// button solid-border
-$ch5-button-default-border-width: 1px !default;
-$ch5-button-primary-border-width: 1px !default;
-$ch5-button-secondary-border-width: 1px !default;
-$ch5-button-success-border-width: 1px !default;
-$ch5-button-info-border-width: 1px !default;
-$ch5-button-warning-border-width: 1px !default;
-$ch5-button-danger-border-width: 1px !default;
-$ch5-button-text-border-width: 1px !default;
+  --ch5-button-default-border-style: solid;
+  --ch5-button-primary-border-style: solid;
+  --ch5-button-secondary-border-style: solid;
+  --ch5-button-success-border-style: solid;
+  --ch5-button-info-border-style: solid;
+  --ch5-button-warning-border-style: solid;
+  --ch5-button-danger-border-style: solid;
+  --ch5-button-text-border-style: solid;
 
-$ch5-button-default-border-style: solid !default;
-$ch5-button-primary-border-style: solid !default;
-$ch5-button-secondary-border-style: solid !default;
-$ch5-button-success-border-style: solid !default;
-$ch5-button-info-border-style: solid !default;
-$ch5-button-warning-border-style: solid !default;
-$ch5-button-danger-border-style: solid !default;
-$ch5-button-text-border-style: solid !default;
+  // button rounded-rectangle
+  --ch5-button-border-radius: 5px;
 
-// button rounded-rectangle
-$ch5-button-border-radius: 5px !default;
+  //button circle
+  --ch5-button-circle-border-radius: 50%;
 
-//button circle
-$ch5-button-circle-border-radius: 50% !default;
+  /// button oval
+  --ch5-button-oval-border-radius: 50%;
 
-/// button oval
-$ch5-button-oval-border-radius: 50% !default;
+  /// button tab
+  --ch5-button-tab-border-radius: 10px 10px 0 0;
 
-/// button tab
-$ch5-button-tab-border-radius: 10px 10px 0 0 !default;
+  // sizes
+  --ch5-button-size: 42px;
 
-// sizes
-$ch5-button-size: 42px !default;
+  // size x-small
+  --ch5-button-x-small-font-size: 11px;
+  --ch5-button-x-small-size: 32px;
 
-// size x-small
-$ch5-button-x-small-font-size: 11px !default;
-$ch5-button-x-small-size: 32px !default;
+  // size small
+  --ch5-button-small-font-size: 13px;
+  --ch5-button-small-size: 36px;
 
-// size small
-$ch5-button-small-font-size: 13px !default;
-$ch5-button-small-size: 36px !default;
+  // size large
+  --ch5-button-large-font-size: 16px;
+  --ch5-button-large-size: 52px;
 
-// size large
-$ch5-button-large-font-size: 16px !default;
-$ch5-button-large-size: 52px !default;
+  // size x-large
+  --ch5-button-x-large-font-size: 18px;
+  --ch5-button-x-large-size: 72px;
 
-// size x-large
-$ch5-button-x-large-font-size: 18px !default;
-$ch5-button-x-large-size: 72px !default;
+  --ch5-button-faicon-font-family: "Font Awesome 5 Free";
 
-$ch5-button-faicon-font-family: "Font Awesome 5 Free" !default;
+  /// Checkbox variables for advanced button
+  --ch5-button-checkbox-checked-faicon: "\f14a";
+  --ch5-button-checkbox-unchecked-faicon: "\f0c8";
+  --ch5-button-checkbox-checked-font-weight: 400;
+  --ch5-button-checkbox-unchecked-font-weight: 400;
+  --ch5-button-checkbox-padding: 5px;
 
-/// Checkbox variables for advanced button
-$ch5-button-checkbox-checked-faicon: "\f14a" !default;
-$ch5-button-checkbox-unchecked-faicon: "\f0c8" !default;
-$ch5-button-checkbox-checked-font-weight: 400 !default;
-$ch5-button-checkbox-unchecked-font-weight: 400 !default;
-$ch5-button-checkbox-padding: 5px !default;
+  /* ===============================================
+  CH5-BUTTON
+  ============================================= */
 
-/* ===============================================
-CH5-BUTTON
-============================================= */
+  // danger type
 
-// danger type
+  /// The border color for default type of the button.
+  --ch5-button-default-default-border-color: $default-border-color;
 
-/// The border color for default type of the button.
-$ch5-button-default-default-border-color: $default-border-color !default;
+  /// The background color for default type of the button.
+  --ch5-button-default-default-background-color: $default-background-color;
 
-/// The background color for default type of the button.
-$ch5-button-default-default-background-color: $default-background-color !default;
+  /// The font color for default type of the button.
+  --ch5-button-default-default-font-color: $default-font-color;
 
-/// The font color for default type of the button.
-$ch5-button-default-default-font-color: $default-font-color !default;
+  /// the border color for default type of the pressed button
+  --ch5-button-default-pressed-border-color: $default-pressed-border-color;
 
-/// the border color for default type of the pressed button
-$ch5-button-default-pressed-border-color: $default-pressed-border-color !default;
+  /// the background color for default type of the pressed button
+  --ch5-button-default-pressed-background-color: $default-pressed-background-color;
 
-/// the background color for default type of the pressed button
-$ch5-button-default-pressed-background-color: $default-pressed-background-color !default;
+  /// the font color for default type of the pressed button
+  --ch5-button-default-pressed-font-color: $default-pressed-font-color;
 
-/// the font color for default type of the pressed button
-$ch5-button-default-pressed-font-color: $default-pressed-font-color !default;
+  /// the border color for default type of the selected button
+  --ch5-button-default-selected-border-color: $default-selected-border-color;
 
-/// the border color for default type of the selected button
-$ch5-button-default-selected-border-color: $default-selected-border-color !default;
+  /// the background color for default type of the selected button
+  --ch5-button-default-selected-background-color: $default-selected-background-color;
 
-/// the background color for default type of the selected button
-$ch5-button-default-selected-background-color: $default-selected-background-color !default;
+  /// the font color for default type of the selected button
+  --ch5-button-default-selected-font-color: $default-selected-font-color;
 
-/// the font color for default type of the selected button
-$ch5-button-default-selected-font-color: $default-selected-font-color !default;
+  // ------------------------------------------------------
 
-// ------------------------------------------------------
+  // primary type
 
-// primary type
+  /// The border color for primary type of the button.
+  --ch5-button-primary-default-border-color: $primary-border-color;
 
-/// The border color for primary type of the button.
-$ch5-button-primary-default-border-color: $primary-border-color !default;
+  /// The background color for primary type of the button.
+  --ch5-button-primary-default-background-color: $primary-background-color;
 
-/// The background color for primary type of the button.
-$ch5-button-primary-default-background-color: $primary-background-color !default;
+  /// The font color for primary type of the button.
+  --ch5-button-primary-default-font-color: $primary-font-color;
 
-/// The font color for primary type of the button.
-$ch5-button-primary-default-font-color: $primary-font-color !default;
+  /// the border color for primary type of the pressed button
+  --ch5-button-primary-pressed-border-color: $primary-pressed-border-color;
 
-/// the border color for primary type of the pressed button
-$ch5-button-primary-pressed-border-color: $primary-pressed-border-color !default;
+  /// the background color for primary type of the pressed button
+  --ch5-button-primary-pressed-background-color: $primary-pressed-background-color;
 
-/// the background color for primary type of the pressed button
-$ch5-button-primary-pressed-background-color: $primary-pressed-background-color !default;
+  /// the font color for primary type of the pressed button
+  --ch5-button-primary-pressed-font-color: $primary-pressed-font-color;
 
-/// the font color for primary type of the pressed button
-$ch5-button-primary-pressed-font-color: $primary-pressed-font-color !default;
+  /// the border color for primary type of the selected button
+  --ch5-button-primary-selected-border-color: $primary-selected-border-color;
 
-/// the border color for primary type of the selected button
-$ch5-button-primary-selected-border-color: $primary-selected-border-color !default;
+  /// the background color for primary type of the selected button
+  --ch5-button-primary-selected-background-color: $primary-selected-background-color;
 
-/// the background color for primary type of the selected button
-$ch5-button-primary-selected-background-color: $primary-selected-background-color !default;
+  /// the font color for primary type of the selected button
+  --ch5-button-primary-selected-font-color: $primary-selected-font-color;
 
-/// the font color for primary type of the selected button
-$ch5-button-primary-selected-font-color: $primary-selected-font-color !default;
+  // ------------------------------------------------------
 
+  // info type
 
-// ------------------------------------------------------
+  /// The border color for info type of the button.
+  --ch5-button-info-default-border-color: $info-border-color;
 
-// info type
+  /// The background color for info type of the button.
+  --ch5-button-info-default-background-color: $info-background-color;
 
-/// The border color for info type of the button.
-$ch5-button-info-default-border-color: $info-border-color !default;
+  /// The font color for info type of the button.
+  --ch5-button-info-default-font-color: $info-font-color;
 
-/// The background color for info type of the button.
-$ch5-button-info-default-background-color: $info-background-color !default;
+  /// the border color for info type of the pressed button
+  --ch5-button-info-pressed-border-color: $info-pressed-border-color;
 
-/// The font color for info type of the button.
-$ch5-button-info-default-font-color: $info-font-color !default;
+  /// the background color for info type of the pressed button
+  --ch5-button-info-pressed-background-color: $info-pressed-background-color;
 
-/// the border color for info type of the pressed button
-$ch5-button-info-pressed-border-color: $info-pressed-border-color !default;
+  /// the font color for info type of the pressed button
+  --ch5-button-info-pressed-font-color: $info-pressed-font-color;
 
-/// the background color for info type of the pressed button
-$ch5-button-info-pressed-background-color: $info-pressed-background-color !default;
+  /// the border color for info type of the selected button
+  --ch5-button-info-selected-border-color: $info-selected-border-color;
 
-/// the font color for info type of the pressed button
-$ch5-button-info-pressed-font-color: $info-pressed-font-color !default;
+  /// the background color for info type of the selected button
+  --ch5-button-info-selected-background-color: $info-selected-background-color;
 
-/// the border color for info type of the selected button
-$ch5-button-info-selected-border-color: $info-selected-border-color !default;
+  /// the font color for info type of the selected button
+  --ch5-button-info-selected-font-color: $info-selected-font-color;
 
-/// the background color for info type of the selected button
-$ch5-button-info-selected-background-color: $info-selected-background-color !default;
+  // ------------------------------------------------------
 
-/// the font color for info type of the selected button
-$ch5-button-info-selected-font-color: $info-selected-font-color !default;
+  // danger type
 
+  /// The border color for danger type of the button.
+  --ch5-button-danger-default-border-color: $danger-border-color;
 
-// ------------------------------------------------------
+  /// The background color for danger type of the button.
+  --ch5-button-danger-default-background-color: $danger-background-color;
 
-// danger type
+  /// The font color for danger type of the button.
+  --ch5-button-danger-default-font-color: $danger-font-color;
 
-/// The border color for danger type of the button.
-$ch5-button-danger-default-border-color: $danger-border-color !default;
+  /// the border color for danger type of the pressed button
+  --ch5-button-danger-pressed-border-color: $danger-pressed-border-color;
 
-/// The background color for danger type of the button.
-$ch5-button-danger-default-background-color: $danger-background-color !default;
+  /// the background color for danger type of the pressed button
+  --ch5-button-danger-pressed-background-color: $danger-pressed-background-color;
 
-/// The font color for danger type of the button.
-$ch5-button-danger-default-font-color: $danger-font-color !default;
+  /// the font color for danger type of the pressed button
+  --ch5-button-danger-pressed-font-color: $danger-pressed-font-color;
 
-/// the border color for danger type of the pressed button
-$ch5-button-danger-pressed-border-color: $danger-pressed-border-color !default;
+  /// the border color for danger type of the selected button
+  --ch5-button-danger-selected-border-color: $danger-selected-border-color;
 
-/// the background color for danger type of the pressed button
-$ch5-button-danger-pressed-background-color: $danger-pressed-background-color !default;
+  /// the background color for danger type of the selected button
+  --ch5-button-danger-selected-background-color: $danger-selected-background-color;
 
-/// the font color for danger type of the pressed button
-$ch5-button-danger-pressed-font-color: $danger-pressed-font-color !default;
+  /// the font color for danger type of the selected button
+  --ch5-button-danger-selected-font-color: $danger-selected-font-color;
 
-/// the border color for danger type of the selected button
-$ch5-button-danger-selected-border-color: $danger-selected-border-color !default;
+  // ------------------------------------------------------
 
-/// the background color for danger type of the selected button
-$ch5-button-danger-selected-background-color: $danger-selected-background-color !default;
+  // secondary type
 
-/// the font color for danger type of the selected button
-$ch5-button-danger-selected-font-color: $danger-selected-font-color !default;
+  /// The border color for secondary type of the button.
+  --ch5-button-secondary-default-border-color: $secondary-border-color;
 
+  /// The background color for secondary type of the button.
+  --ch5-button-secondary-default-background-color: $secondary-background-color;
 
-// ------------------------------------------------------
+  /// The font color for secondary type of the button.
+  --ch5-button-secondary-default-font-color: $secondary-font-color;
 
-// secondary type
+  /// the border color for secondary type of the pressed button
+  --ch5-button-secondary-pressed-border-color: $secondary-pressed-border-color;
 
-/// The border color for secondary type of the button.
-$ch5-button-secondary-default-border-color: $secondary-border-color !default;
+  /// the background color for secondary type of the pressed button
+  --ch5-button-secondary-pressed-background-color: $secondary-pressed-background-color;
 
-/// The background color for secondary type of the button.
-$ch5-button-secondary-default-background-color: $secondary-background-color !default;
+  /// the font color for secondary type of the pressed button
+  --ch5-button-secondary-pressed-font-color: $secondary-pressed-font-color;
 
-/// The font color for secondary type of the button.
-$ch5-button-secondary-default-font-color: $secondary-font-color !default;
+  /// the border color for secondary type of the selected button
+  --ch5-button-secondary-selected-border-color: $secondary-selected-border-color;
 
-/// the border color for secondary type of the pressed button
-$ch5-button-secondary-pressed-border-color: $secondary-pressed-border-color !default;
+  /// the background color for secondary type of the selected button
+  --ch5-button-secondary-selected-background-color: $secondary-selected-background-color;
 
-/// the background color for secondary type of the pressed button
-$ch5-button-secondary-pressed-background-color: $secondary-pressed-background-color !default;
+  /// the font color for secondary type of the selected button
+  --ch5-button-secondary-selected-font-color: $secondary-selected-font-color;
 
-/// the font color for secondary type of the pressed button
-$ch5-button-secondary-pressed-font-color: $secondary-pressed-font-color !default;
+  // ------------------------------------------------------
 
-/// the border color for secondary type of the selected button
-$ch5-button-secondary-selected-border-color: $secondary-selected-border-color !default;
+  // success type
 
-/// the background color for secondary type of the selected button
-$ch5-button-secondary-selected-background-color: $secondary-selected-background-color !default;
+  /// The border color for success type of the button.
+  --ch5-button-success-default-border-color: $success-border-color;
 
-/// the font color for secondary type of the selected button
-$ch5-button-secondary-selected-font-color: $secondary-selected-font-color !default;
+  /// The background color for success type of the button.
+  --ch5-button-success-default-background-color: $success-background-color;
 
-// ------------------------------------------------------
+  /// The font color for success type of the button.
+  --ch5-button-success-default-font-color: $success-font-color;
 
-// success type
+  /// the border color for success type of the pressed button
+  --ch5-button-success-pressed-border-color: $success-pressed-border-color;
 
-/// The border color for success type of the button.
-$ch5-button-success-default-border-color: $success-border-color !default;
+  /// the background color for success type of the pressed button
+  --ch5-button-success-pressed-background-color: $success-pressed-background-color;
 
-/// The background color for success type of the button.
-$ch5-button-success-default-background-color: $success-background-color !default;
+  /// the font color for success type of the pressed button
+  --ch5-button-success-pressed-font-color: $success-pressed-font-color;
 
-/// The font color for success type of the button.
-$ch5-button-success-default-font-color: $success-font-color !default;
+  /// the border color for success type of the selected button
+  --ch5-button-success-selected-border-color: $success-selected-border-color;
 
-/// the border color for success type of the pressed button
-$ch5-button-success-pressed-border-color: $success-pressed-border-color !default;
+  /// the background color for success type of the selected button
+  --ch5-button-success-selected-background-color: $success-selected-background-color;
 
-/// the background color for success type of the pressed button
-$ch5-button-success-pressed-background-color: $success-pressed-background-color !default;
+  /// the font color for success type of the selected button
+  --ch5-button-success-selected-font-color: $success-selected-font-color;
 
-/// the font color for success type of the pressed button
-$ch5-button-success-pressed-font-color: $success-pressed-font-color !default;
+  // ------------------------------------------------------
 
-/// the border color for success type of the selected button
-$ch5-button-success-selected-border-color: $success-selected-border-color !default;
+  // warning type
 
-/// the background color for success type of the selected button
-$ch5-button-success-selected-background-color: $success-selected-background-color !default;
+  /// The border color for warning type of the button.
+  --ch5-button-warning-default-border-color: $warning-border-color;
 
-/// the font color for success type of the selected button
-$ch5-button-success-selected-font-color: $success-selected-font-color !default;
+  /// The background color for warning type of the button.
+  --ch5-button-warning-default-background-color: $warning-background-color;
 
+  /// The font color for warning type of the button.
+  --ch5-button-warning-default-font-color: $warning-font-color;
 
-// ------------------------------------------------------
+  /// the border color for warning type of the pressed button
+  --ch5-button-warning-pressed-border-color: $warning-pressed-border-color;
 
-// warning type
+  /// the background color for warning type of the pressed button
+  --ch5-button-warning-pressed-background-color: $warning-pressed-background-color;
 
-/// The border color for warning type of the button.
-$ch5-button-warning-default-border-color: $warning-border-color !default;
+  /// the font color for warning type of the pressed button
+  --ch5-button-warning-pressed-font-color: $warning-pressed-font-color;
 
-/// The background color for warning type of the button.
-$ch5-button-warning-default-background-color: $warning-background-color !default;
+  /// the border color for warning type of the selected button
+  --ch5-button-warning-selected-border-color: $warning-selected-border-color;
 
-/// The font color for warning type of the button.
-$ch5-button-warning-default-font-color: $warning-font-color !default;
+  /// the background color for warning type of the selected button
+  --ch5-button-warning-selected-background-color: $warning-selected-background-color;
 
-/// the border color for warning type of the pressed button
-$ch5-button-warning-pressed-border-color: $warning-pressed-border-color !default;
+  /// the font color for warning type of the selected button
+  --ch5-button-warning-selected-font-color: $warning-selected-font-color;
 
-/// the background color for warning type of the pressed button
-$ch5-button-warning-pressed-background-color: $warning-pressed-background-color !default;
+  // ------------------------------------------------------
 
-/// the font color for warning type of the pressed button
-$ch5-button-warning-pressed-font-color: $warning-pressed-font-color !default;
+  // text type
 
-/// the border color for warning type of the selected button
-$ch5-button-warning-selected-border-color: $warning-selected-border-color !default;
+  /// The border color for text type of the button.
+  --ch5-button-text-default-border-color: $text-border-color;
 
-/// the background color for warning type of the selected button
-$ch5-button-warning-selected-background-color: $warning-selected-background-color !default;
+  /// The background color for text type of the button.
+  --ch5-button-text-default-background-color: $text-background-color;
 
-/// the font color for warning type of the selected button
-$ch5-button-warning-selected-font-color: $warning-selected-font-color !default;
+  /// The font color for text type of the button.
+  --ch5-button-text-default-font-color: $text-font-color;
 
+  /// the border color for text type of the pressed button
+  --ch5-button-text-pressed-border-color: $text-pressed-border-color;
 
-// ------------------------------------------------------
+  /// the background color for text type of the pressed button
+  --ch5-button-text-pressed-background-color: $text-pressed-background-color;
 
-// text type
+  /// the font color for text type of the pressed button
+  --ch5-button-text-pressed-font-color: $text-pressed-font-color;
 
-/// The border color for text type of the button.
-$ch5-button-text-default-border-color: $text-border-color !default;
+  /// the border color for text type of the selected button
+  --ch5-button-text-selected-border-color: $text-selected-border-color;
 
-/// The background color for text type of the button.
-$ch5-button-text-default-background-color: $text-background-color !default;
+  /// the background color for text type of the selected button
+  --ch5-button-text-selected-background-color: $text-selected-background-color;
 
-/// The font color for text type of the button.
-$ch5-button-text-default-font-color: $text-font-color !default;
+  /// the font color for text type of the selected button
+  --ch5-button-text-selected-font-color: $text-selected-font-color;
 
-/// the border color for text type of the pressed button
-$ch5-button-text-pressed-border-color: $text-pressed-border-color !default;
-
-/// the background color for text type of the pressed button
-$ch5-button-text-pressed-background-color: $text-pressed-background-color !default;
-
-/// the font color for text type of the pressed button
-$ch5-button-text-pressed-font-color: $text-pressed-font-color !default;
-
-/// the border color for text type of the selected button
-$ch5-button-text-selected-border-color: $text-selected-border-color !default;
-
-/// the background color for text type of the selected button
-$ch5-button-text-selected-background-color: $text-selected-background-color !default;
-
-/// the font color for text type of the selected button
-$ch5-button-text-selected-font-color: $text-selected-font-color !default;
-
-
-// ------------------------------------------------------
+  // ------------------------------------------------------
+}

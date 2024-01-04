@@ -10,16 +10,16 @@
 /// @group ch5-button-list-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Variables below
+ch5-button-list {
+  /// button container padding
+  --ch5-button-list-padding: 5px;
 
-/// button container padding
-$ch5-button-list-padding: 5px !default;
+  /// button container width
+  --ch5-button-list-button-container-width: 100px;
 
-/// button container width
-$ch5-button-list-button-container-width: 100px !default;
+  /// button container height
+  --ch5-button-list-button-container-height: 58px;
 
-/// button container height
-$ch5-button-list-button-container-height: 58px !default;
-
-/// button container padding
-$ch5-button-list-button-container-padding: 5px !default;
+  /// button container padding
+  --ch5-button-list-button-container-padding: 5px;
+}

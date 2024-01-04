@@ -21,14 +21,13 @@ ch5-modal-dialog {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: $ch5-modal-z-index;
+  z-index: var(--ch5-modal-z-index);
 
-  background-color: $ch5-modal-background-color;
-  border-radius: $ch5-modal-border-radius;
-  border: $ch5-modal-border-width $ch5-modal-border-style
-    $ch5-modal-border-color;
-  color: $ch5-modal-text-color;
-  padding: $ch5-modal-padding;
+  background-color: var(--ch5-modal-background-color);
+  border-radius: var(--ch5-modal-border-radius);
+  border: var(--ch5-modal-border-width) var(--ch5-modal-border-style) var(--ch5-modal-border-color);
+  color: var(--ch5-modal-text-color);
+  padding: var(--ch5-modal-padding);
   min-width: 200px;
 
   .ch5-modal-dialog-close-icon-btn {
@@ -37,13 +36,13 @@ ch5-modal-dialog {
     cursor: pointer;
     float: right;
 
-    background-color: $ch5-modal-close-icon-background-color;
-    margin: $ch5-modal-close-icon-margin;
-    padding: $ch5-modal-close-icon-padding;
-    width: $ch5-modal-close-icon-width;
-    font-size: $ch5-modal-close-icon-font-size;
-    font-style: $ch5-modal-close-icon-font-style;
-    font-weight: $ch5-modal-close-icon-font-weight;
+    background-color: var(--ch5-modal-close-icon-background-color);
+    margin: var(--ch5-modal-close-icon-margin);
+    padding: var(--ch5-modal-close-icon-padding);
+    width: var(--ch5-modal-close-icon-width);
+    font-size: var(--ch5-modal-close-icon-font-size);
+    font-style: var(--ch5-modal-close-icon-font-style);
+    font-weight: var(--ch5-modal-close-icon-font-weight);
 
     &.f-left {
       float: left;
@@ -55,17 +54,17 @@ ch5-modal-dialog {
   }
 
   .ch5-modal-dialog-default-close-icon {
-    color: $ch5-modal-close-icon-color;
-    font-size: $ch5-modal-default-close-icon-font-size;
-    font-style: $ch5-modal-default-close-icon-font-style;
-    font-weight: $ch5-modal-default-close-icon-font-weight;
+    color: var(--ch5-modal-close-icon-color);
+    font-size: var(--ch5-modal-default-close-icon-font-size);
+    font-style: var(--ch5-modal-default-close-icon-font-style);
+    font-weight: var(--ch5-modal-default-close-icon-font-weight);
 
     &:before {
       content: "\00d7";
     }
 
     &:hover {
-      color: $ch5-modal-close-icon-color-hover;
+      color: var(--ch5-modal-close-icon-color-hover);
     }
   }
 
@@ -81,9 +80,9 @@ ch5-modal-dialog {
 }
 
 .ch5-modal-dialog-title {
-  font-size: $ch5-modal-title-font-size;
-  font-style: $ch5-modal-title-font-style;
-  font-weight: $ch5-modal-title-font-weight;
+  font-size: var(--ch5-modal-title-font-size);
+  font-style: var(--ch5-modal-title-font-style);
+  font-weight: var(--ch5-modal-title-font-weight);
 }
 
 /// modal section (a div) that wraps the prompt-icon and the prompt-text
@@ -92,32 +91,31 @@ ch5-modal-dialog {
     clear: both;
   }
 
-  padding: $ch5-modal-prompt-padding;
+  padding: var(--ch5-modal-prompt-padding);
   vertical-align: middle;
 
   /// an image element.
   .ch5-modal-dialog-prompt-icon {
     vertical-align: middle;
-    margin-right: $ch5-modal-prompt-icon-margin-right;
-    font-size: $ch5-modal-prompt-icon-font-size;
-    font-style: $ch5-modal-prompt-icon-font-style;
-    font-weight: $ch5-modal-prompt-icon-font-weight;
+    margin-right: var(--ch5-modal-prompt-icon-margin-right);
+    font-size: var(--ch5-modal-prompt-icon-font-size);
+    font-style: var(--ch5-modal-prompt-icon-font-style);
+    font-weight: var(--ch5-modal-prompt-icon-font-weight);
   }
 
   /// a span element
   .ch5-modal-dialog-prompt-text {
     vertical-align: middle;
-    font-size: $ch5-modal-prompt-text-font-size;
-    font-style: $ch5-modal-prompt-text-font-style;
-    font-weight: $ch5-modal-prompt-text-font-weight;
-    color: $ch5-modal-prompt-text-font-color;
+    font-size: var(--ch5-modal-prompt-text-font-size);
+    font-style: var(--ch5-modal-prompt-text-font-style);
+    font-weight: var(--ch5-modal-prompt-text-font-weight);
+    color: var(--ch5-modal-prompt-text-font-color);
   }
 }
 
 .ch5-modal-dialog-boxed {
   padding: 3px;
-  border: $ch5-modal-border-width $ch5-modal-border-style
-    $ch5-modal-border-color;
+  border: var(--ch5-modal-border-width) var(--ch5-modal-border-style) var(--ch5-modal-border-color);
 }
 
 .ch5-modal-dialog--overflow-scroll {
@@ -149,28 +147,28 @@ ch5-modal-dialog {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: $ch5-modal-mask-z-index;
+  z-index: var(--ch5-modal-mask-z-index);
 }
 
 .ch5-modal-dialog-mask-default-style {
-  background-color: $ch5-modal-mask-bg-color;
+  background-color: var(--ch5-modal-mask-bg-color);
 }
 
 /// wrap the html that is initially between the ch5-modal-dialog tags
 .ch5-modal-dialog-contents {
-  padding: $ch5-modal-contents-padding;
-  font-size: $ch5-modal-contents-font-size;
-  font-style: $ch5-model-contents-font-style;
-  font-weight: $ch5-model-contents-font-weight;
-  color: $ch5-modal-contents-font-color;
+  padding: var(--ch5-modal-contents-padding);
+  font-size: var(--ch5-modal-contents-font-size);
+  font-style: var(--ch5-model-contents-font-style);
+  font-weight: var(--ch5-model-contents-font-weight);
+  color: var(--ch5-modal-contents-font-color);
 }
 
-/// the modal header; the title string is placed here
+/// the modal header: the title string is placed here
 .ch5-modal-dialog-header {
   // DO NOT DELETE - used for Component Reference
 }
 
-/// modal section ( a div ) that contains the two buttons
+/// modal section (div) that contains the two buttons
 .ch5-modal-dialog-footer {
   // DO NOT DELETE - used for Component Reference
 }

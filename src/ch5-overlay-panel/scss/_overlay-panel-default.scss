@@ -19,18 +19,18 @@ ch5-overlay-panel {
   display: inline-block;
   position: absolute;
 
-  background-color: $ch5-overlay-panel-background-color;
-  border-radius: $ch5-overlay-panel-border-radius;
-  border: $ch5-overlay-panel-border-width $ch5-overlay-panel-border-style
-    $ch5-overlay-panel-border-color;
-  color: $ch5-overlay-panel-text-color;
-  padding: $ch5-overlay-panel-padding;
+  background-color: var(--ch5-overlay-panel-background-color);
+  border-radius: var(--ch5-overlay-panel-border-radius);
+  border: var(--ch5-overlay-panel-border-width) var(--ch5-overlay-panel-border-style)
+    var(--ch5-overlay-panel-border-color);
+  color: var(--ch5-overlay-panel-text-color);
+  padding: var(--ch5-overlay-panel-padding);
   min-width: 200px;
-  z-index: $ch5-overlay-panel-z-index;
+  z-index: var(--ch5-overlay-panel-z-index);
 
-  font-size: $ch5-overlay-panel-font-size;
-  font-style: $ch5-overlay-panel-font-style;
-  font-weight: $ch5-overlay-panel-font-weight;
+  font-size: var(--ch5-overlay-panel-font-size);
+  font-style: var(--ch5-overlay-panel-font-style);
+  font-weight: var(--ch5-overlay-panel-font-weight);
 
   /// Class for close icon
   .ch5-overlay-panel-close-icon-btn {
@@ -39,10 +39,10 @@ ch5-overlay-panel {
     cursor: pointer;
     float: right;
 
-    background-color: $ch5-overlay-panel-close-icon-background-color;
-    margin: $ch5-overlay-panel-close-icon-margin;
-    padding: $ch5-overlay-panel-close-icon-padding;
-    width: $ch5-overlay-panel-close-icon-width;
+    background-color: var(--ch5-overlay-panel-close-icon-background-color);
+    margin: var(--ch5-overlay-panel-close-icon-margin);
+    padding: var(--ch5-overlay-panel-close-icon-padding);
+    width: var(--ch5-overlay-panel-close-icon-width);
 
     &.f-left {
       float: left;
@@ -54,15 +54,15 @@ ch5-overlay-panel {
 
   /// Class for default close icon
   .ch5-overlay-panel-default-close-icon {
-    color: $ch5-overlay-default-close-icon-color;
-    font-style: $ch5-overlay-default-close-icon-font-style;
-    font-size: $ch5-overlay-default-close-icon-font-size;
-    font-weight: $ch5-overlay-default-close-icon-font-weight;
+    color: var(--ch5-overlay-default-close-icon-color);
+    font-style: var(--ch5-overlay-default-close-icon-font-style);
+    font-size: var(--ch5-overlay-default-close-icon-font-size);
+    font-weight: var(--ch5-overlay-default-close-icon-font-weight);
     &:before {
       content: "\00d7";
     }
     &:hover {
-      color: $ch5-overlay-default-close-icon-color-hover;
+      color: var(--ch5-overlay-default-close-icon-color-hover);
     }
   }
 }
@@ -105,14 +105,14 @@ ch5-overlay-panel {
 
 /// Applied for default stile of panel mask
 .ch5-overlay-panel-mask-default-style {
-  background-color: $ch5-overlay-default-mask-bg-color;
+  background-color: var(--ch5-overlay-default-mask-bg-color);
 }
 
 /// Applied for content of the panel
 .ch5-overlay-panel-contents {
-  padding: $ch5-overlay-panel-contents-padding;
-  font-style: $ch5-overlay-panel-contents-font-style;
-  font-size: $ch5-overlay-panel-contents-font-size;
-  font-weight: $ch5-overlay-panel-contents-font-weight;
-  color: $ch5-overlay-panel-contents-font-color;
+  padding: var(--ch5-overlay-panel-contents-padding);
+  font-style: var(--ch5-overlay-panel-contents-font-style);
+  font-size: var(--ch5-overlay-panel-contents-font-size);
+  font-weight: var(--ch5-overlay-panel-contents-font-weight);
+  color: var(--ch5-overlay-panel-contents-font-color);
 }

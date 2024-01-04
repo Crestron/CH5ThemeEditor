@@ -19,8 +19,8 @@
 		background-size: contain;
 		background-position: center;
 		color: inherit;
-		height: $property-image-height * 1.5;
-		width: $property-image-height * 1.5;
+		height: calc($property-image-height * 1.5);
+		width: calc($property-image-height * 1.5);
 
 		&::before,
 		&::after {
@@ -41,7 +41,7 @@
 	$property-icon-color,
 	$property-icon-font-size) {
 	.cb-btn {
-		width: $property-size * 2;
+		width: calc($property-size * 2);
 		height: $property-size;
 		font-size: $property-font-size;
 	}

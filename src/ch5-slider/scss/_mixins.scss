@@ -34,7 +34,7 @@
 		width: $handle-width;
 		height: $handle-height;
 		right: calc(-1 * ($handle-width) / 2);
-		top: calc(-1 * ($handle-height + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-height) / 2);
+		top: calc(-1 * ($handle-height + calc(2 * var(--ch5-slider-target-border-width)) - var(--ch5-slider-height)) / 2);
 	}
 	.ch5-slider-button-container {
 		display: flex;
@@ -50,26 +50,26 @@
 
 	&:not(.ch5-advanced-slider-container) {
 		.ch5-slider-button-container {
-			padding: abs(calc(($ch5-slider-height - $handle-height) / 2)) (calc(($handle-width / 2)) - 1);
+			padding: calc(abs(calc((var(--ch5-slider-height) - $handle-height) / 2))) calc(calc(($handle-width / 2)) - 1);
 		}
 
 		&.ch5-slider--tooltip--on {
 			&:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
-				margin-top: $ch5-slider-tooltip-on-spacing-horizontal-normal;
+				margin-top: var(--ch5-slider-tooltip-on-spacing-horizontal-normal);
 			}
 		}
 
 		&.ch5-slider-ticks {
 			.noUi-target {
-				margin-left: calc($handle-width / 2) + 1;
-				margin-right: calc($handle-width / 2) + 1;
+				margin-left: calc(calc($handle-width / 2) + 1);
+				margin-right: calc(calc($handle-width / 2) + 1);
 			}
 			.noUi-pips-horizontal {
-				top: calc(($handle-height - $ch5-slider-height)) + 4;
-				height: $ch5-slider-horizontal-pips;
+				top: calc(calc(($handle-height - var(--ch5-slider-height))) + 4);
+				height: var(--ch5-slider-horizontal-pips);
 			}
 			.ch5-slider-button-container {
-				margin-bottom: 30px + abs(calc(($ch5-slider-height - $handle-height) / 2));
+				margin-bottom: calc(30px + calc(abs(calc((var(--ch5-slider-height) - $handle-height) / 2))));
 				.noUi-pips-horizontal {
 					padding: 10px 0 0 0;
 				}
@@ -79,12 +79,12 @@
 
 	&.ch5-advanced-slider-container {
 		.noUi-target {
-			margin: abs(calc(($ch5-slider-height - $handle-height) / 2)) (calc(($handle-width / 2)) - 1);
+			margin: calc(abs(calc((var(--ch5-slider-height) - $handle-height) / 2))) calc(calc(($handle-width / 2)) - 1);
 		}
 
 		&.ch5-slider--tooltip--on {
 			&:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
-				margin-top: $ch5-slider-tooltip-on-spacing-horizontal-normal;
+				margin-top: var(--ch5-slider-tooltip-on-spacing-horizontal-normal);
 			}
 		}
 
@@ -97,11 +97,11 @@
 
 		&.ch5-slider-ticks {
 			.noUi-pips-horizontal {
-				top: calc(($handle-height - $ch5-slider-height)) + 4;
-				height: $ch5-slider-horizontal-pips;
+				top: calc(calc(($handle-height - var(--ch5-slider-height))) + 4);
+				height: var(--ch5-slider-horizontal-pips);
 			}
 			.ch5-slider-button-container {
-				margin-bottom: 30px + abs(calc(($ch5-slider-height - $handle-height) / 2));
+				margin-bottom: calc(30px + calc(abs(calc((var(--ch5-slider-height) - $handle-height) / 2))));
 			}
 		}
 	}
@@ -111,7 +111,7 @@
 	.noUi-handle {
 		width: $handle-width;
 		height: $handle-height;
-		right: calc(-1 * ($handle-width + calc(2 * $ch5-slider-target-border-width) - $ch5-slider-height) / 2);
+		right: calc(-1 * ($handle-width + calc(2 * var(--ch5-slider-target-border-width)) - var(--ch5-slider-height)) / 2);
 		bottom: calc(-1 * $handle-height / 2);
 	}
 	.ch5-slider-button-container {
@@ -130,23 +130,23 @@
 
 	&:not(.ch5-advanced-slider-container) {
 		.ch5-slider-button-container {
-			padding: (calc(($handle-height / 2)) - 1) abs(calc(($ch5-slider-height - $handle-width) / 2));
+			padding: calc(calc(($handle-height / 2)) - 1) calc(abs(calc((var(--ch5-slider-height) - $handle-width) / 2)));
 		}
 
 		&.ch5-slider--tooltip--on {
 			&:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width) .ch5-slider-button-container {
-				margin-left: $ch5-slider-tooltip-on-spacing-vertical-normal;
+				margin-left: var(--ch5-slider-tooltip-on-spacing-vertical-normal);
 			}
 		}
 
 		&.ch5-slider-ticks {
 			.noUi-target {
-				margin-top: calc($handle-height / 2) + 1;
-				margin-bottom: calc($handle-height / 2) + 1;
+				margin-top: calc(calc($handle-height / 2) + 1);
+				margin-bottom: calc(calc($handle-height / 2) + 1);
 			}
 			.noUi-pips-vertical {
-				left: calc(($handle-width - $ch5-slider-height)) + 4;
-				width: $ch5-slider-vertical-pips;
+				left: calc(calc(($handle-width - var(--ch5-slider-height))) + 4);
+				width: var(--ch5-slider-vertical-pips);
 			}
 			.ch5-slider-button-container {
 				margin-right: 60px;
@@ -159,16 +159,16 @@
 
 	&.ch5-advanced-slider-container {
 		.noUi-target {
-			margin-top: calc($handle-height / 2) + 1;
-			margin-bottom: calc($handle-height / 2) + 1;
+			margin-top: calc(calc($handle-height / 2) + 1);
+			margin-bottom: calc(calc($handle-height / 2) + 1);
 		}
 
 		&.ch5-slider--tooltip--on {
 			&:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width) .ch5-slider-button-container {
-				margin-left: $ch5-slider-tooltip-on-spacing-vertical-advanced;
+				margin-left: var(--ch5-slider-tooltip-on-spacing-vertical-advanced);
 			}
 			.ch5-title-container {
-				max-width: $handle-width + $ch5-slider-tooltip-on-spacing-vertical-advanced;
+				max-width: $handle-width + var(--ch5-slider-tooltip-on-spacing-vertical-advanced);
 			}
 		}
 		.ch5-title-container {
@@ -179,25 +179,25 @@
 		}
 		&.ch5-slider-ticks {
 			.ch5-title-container {
-				max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + $handle-width;
+				max-width: var(--ch5-slider-tooltip-on-spacing-vertical-advanced) + $handle-width;
 			}
 			&.ch5-slider--tooltip--on {
 				.ch5-title-container {
-					max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + $handle-width + 60px;
+					max-width: var(--ch5-slider-tooltip-on-spacing-vertical-advanced) + $handle-width + 60px;
 				}
 			}
 			.noUi-pips-vertical {
-				left: calc(($handle-width - $ch5-slider-height)) + 4;
-				width: $ch5-slider-vertical-pips;
+				left: calc(calc(($handle-width - var(--ch5-slider-height))) + 4);
+				width: var(--ch5-slider-vertical-pips);
 			}
 			.ch5-slider-button-container {
-				margin-right: 50px + abs(calc(($ch5-slider-height - $handle-height) / 2));
+				margin-right: calc(50px + calc(abs(calc((var(--ch5-slider-height) - $handle-height) / 2))));
 			}
 			&:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(.ch5-slider--stretch--height) {
-				max-width: calc($handle-height * 1.2) + $ch5-slider-vertical-pips;
+				max-width: calc($handle-height * 1.2) + var(--ch5-slider-vertical-pips);
 				&.ch5-slider--tooltip--on {
-					max-width: $ch5-slider-tooltip-on-spacing-vertical-advanced + calc($handle-height * 1.2) +
-						$ch5-slider-vertical-pips;
+					max-width: var(--ch5-slider-tooltip-on-spacing-vertical-advanced) + calc($handle-height * 1.2) +
+						var(--ch5-slider-vertical-pips);
 				}
 			}
 		}

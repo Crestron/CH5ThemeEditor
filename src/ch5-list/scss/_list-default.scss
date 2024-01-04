@@ -48,9 +48,9 @@ ch5-list {
   display: inline-block;
   overflow: hidden;
   position: relative;
-  font-size: $ch5-list-font-size;
-  font-style: $ch5-list-font-style;
-  font-weight: $ch5-list-font-weight;
+  font-size: var(--ch5-list-font-size);
+  font-style: var(--ch5-list-font-style);
+  font-weight: var(--ch5-list-font-weight);
   vertical-align: text-top;
 
   .scrollbar-container {
@@ -98,11 +98,11 @@ ch5-list {
   }
 
   .list-item {
-    background-color: $ch5-list-item-background-color;
-    border: $ch5-list-item-border;
-    padding: $ch5-list-item-padding;
-    border-color: $ch5-list-item-border-color;
-    color: $ch5-list-item-color;
+    background-color: var(--ch5-list-item-background-color);
+    border: var(--ch5-list-item-border);
+    padding: var(--ch5-list-item-padding);
+    border-color: var(--ch5-list-item-border-color);
+    color: var(--ch5-list-item-color);
     vertical-align: text-top;
   }
 }

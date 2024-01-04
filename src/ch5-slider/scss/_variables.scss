@@ -10,236 +10,230 @@
 /// @group ch5-slider-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// slider target size
-$ch5-slider-height: 18px;
+ch5-slider {
+  /// slider target size
+  --ch5-slider-height: 18px;
 
-/// slider border width
-$ch5-slider-target-border-width: 1px;
+  /// slider border width
+  --ch5-slider-target-border-width: 1px;
 
-/// slider handle border width
-$ch5-slider-handle-border-width: 1px;
+  /// slider handle border width
+  --ch5-slider-handle-border-width: 1px;
 
-/// slider border style
-$ch5-slider-target-border-style: solid;
+  /// slider border style
+  --ch5-slider-target-border-style: solid;
 
-/// slider handle border style
-$ch5-slider-handle-border-style: solid;
+  /// slider handle border style
+  --ch5-slider-handle-border-style: solid;
 
-/// x-small width in px of the slider
-$ch5-slider-width-x-small: 200px !default;
+  /// x-small width in px of the slider
+  --ch5-slider-width-x-small: 200px;
 
-/// small width in px of the slider
-$ch5-slider-width-small: 250px !default;
+  /// small width in px of the slider
+  --ch5-slider-width-small: 250px;
 
-/// regular width in px of the slider 
-$ch5-slider-width-regular: 300px !default;
+  /// regular width in px of the slider
+  --ch5-slider-width-regular: 300px;
 
-/// large width in px of the slider 
-$ch5-slider-width-large: 400px !default;
+  /// large width in px of the slider
+  --ch5-slider-width-large: 400px;
 
-/// x-large width in px of the slider 
-$ch5-slider-width-x-large: 500px !default;
+  /// x-large width in px of the slider
+  --ch5-slider-width-x-large: 500px;
 
-/* == Button sizes == */
+  /* == Button sizes == */
 
-/// x-small width in px of the button for advanced slider
-$ch5-slider-size-x-small-button-width: 24px !default;
+  /// x-small width in px of the button for advanced slider
+  --ch5-slider-size-x-small-button-width: 24px;
 
-/// x-small height in px of the button for advanced slider
-$ch5-slider-size-x-small-button-height: 26px !default;
+  /// x-small height in px of the button for advanced slider
+  --ch5-slider-size-x-small-button-height: 26px;
 
-/// small width in px of the button for advanced slider
-$ch5-slider-size-small-button-width: 26px !default;
+  /// small width in px of the button for advanced slider
+  --ch5-slider-size-small-button-width: 26px;
 
-/// small height in px of the button for advanced slider
-$ch5-slider-size-small-button-height: 30px !default;
+  /// small height in px of the button for advanced slider
+  --ch5-slider-size-small-button-height: 30px;
 
-/// regular width in px of the button for advanced slider
-$ch5-slider-size-regular-button-width: 30px !default;
+  /// regular width in px of the button for advanced slider
+  --ch5-slider-size-regular-button-width: 30px;
 
-/// regular height in px of the button for advanced slider
-$ch5-slider-size-regular-button-height: 36px !default;
+  /// regular height in px of the button for advanced slider
+  --ch5-slider-size-regular-button-height: 36px;
 
-/// large width in px of the button for advanced slider
-$ch5-slider-size-large-button-width: 34px !default;
+  /// large width in px of the button for advanced slider
+  --ch5-slider-size-large-button-width: 34px;
 
-/// large height in px of the button for advanced slider
-$ch5-slider-size-large-button-height: 42px !default;
+  /// large height in px of the button for advanced slider
+  --ch5-slider-size-large-button-height: 42px;
 
-/// x-large width in px of the button for advanced slider
-$ch5-slider-size-x-large-button-width: 40px !default;
+  /// x-large width in px of the button for advanced slider
+  --ch5-slider-size-x-large-button-width: 40px;
 
-/// x-large height in px of the button for advanced slider
-$ch5-slider-size-x-large-button-height: 54px !default;
+  /// x-large height in px of the button for advanced slider
+  --ch5-slider-size-x-large-button-height: 54px;
 
-/* == Handle sizes == */
+  /* == Handle sizes == */
 
-// rounded-rectangle
+  // rounded-rectangle
 
-// x-small
-/// x-small width in px of the handle when handleShape="rounded-rectangle"
-$ch5-slider-size-x-small-handle-width-rounded-rectangle: 26px !default;
+  // x-small
+  /// x-small width in px of the handle when handleShape="rounded-rectangle"
+  --ch5-slider-size-x-small-handle-width-rounded-rectangle: 26px;
 
-/// x-small height in px of the handle when handleShape="rounded-rectangle"
-$ch5-slider-size-x-small-handle-height-rounded-rectangle: 24px !default;
+  /// x-small height in px of the handle when handleShape="rounded-rectangle"
+  --ch5-slider-size-x-small-handle-height-rounded-rectangle: 24px;
 
-// small
-/// small width in px of the handle when handleShape="rounded-rectangle"
-$ch5-slider-size-small-handle-width-rounded-rectangle: 30px !default;
+  // small
+  /// small width in px of the handle when handleShape="rounded-rectangle"
+  --ch5-slider-size-small-handle-width-rounded-rectangle: 30px;
 
-/// small height in px of the handle when handleShape="rounded-rectangle"
-$ch5-slider-size-small-handle-height-rounded-rectangle: 26px !default;
+  /// small height in px of the handle when handleShape="rounded-rectangle"
+  --ch5-slider-size-small-handle-height-rounded-rectangle: 26px;
 
-// regular
-/// regular width in px of the handle when handleShape="rounded-rectangle"
-$ch5-slider-size-regular-handle-width-rounded-rectangle: 36px !default;
+  // regular
+  /// regular width in px of the handle when handleShape="rounded-rectangle"
+  --ch5-slider-size-regular-handle-width-rounded-rectangle: 36px;
 
-/// regular height in px of the handle when handleShape="rounded-rectangle"
-$ch5-slider-size-regular-handle-height-rounded-rectangle: 30px !default;
+  /// regular height in px of the handle when handleShape="rounded-rectangle"
+  --ch5-slider-size-regular-handle-height-rounded-rectangle: 30px;
 
-// large
-/// large width in px of the handle when handleShape="rounded-rectangle"
-$ch5-slider-size-large-handle-width-rounded-rectangle: 42px !default;
+  // large
+  /// large width in px of the handle when handleShape="rounded-rectangle"
+  --ch5-slider-size-large-handle-width-rounded-rectangle: 42px;
 
-/// large height in px of the handle when handleShape="rounded-rectangle"
-$ch5-slider-size-large-handle-height-rounded-rectangle: 34px !default;
+  /// large height in px of the handle when handleShape="rounded-rectangle"
+  --ch5-slider-size-large-handle-height-rounded-rectangle: 34px;
 
-// x-large
-/// x-large width in px of the handle when handleShape="rounded-rectangle"
-$ch5-slider-size-x-large-handle-width-rounded-rectangle: 54px !default;
+  // x-large
+  /// x-large width in px of the handle when handleShape="rounded-rectangle"
+  --ch5-slider-size-x-large-handle-width-rounded-rectangle: 54px;
 
-/// x-large height in px of the handle when handleShape="rounded-rectangle"
-$ch5-slider-size-x-large-handle-height-rounded-rectangle: 40px !default;
+  /// x-large height in px of the handle when handleShape="rounded-rectangle"
+  --ch5-slider-size-x-large-handle-height-rounded-rectangle: 40px;
 
+  // rectangle
 
-// rectangle
+  // x-small
+  /// x-small width in px of the handle when handleShape="rectangle"
+  --ch5-slider-size-x-small-handle-width-rectangle: 26px;
 
-// x-small
-/// x-small width in px of the handle when handleShape="rectangle"
-$ch5-slider-size-x-small-handle-width-rectangle: 26px !default;
+  /// x-small height in px of the handle when handleShape="rectangle"
+  --ch5-slider-size-x-small-handle-height-rectangle: 24px;
 
-/// x-small height in px of the handle when handleShape="rectangle"
-$ch5-slider-size-x-small-handle-height-rectangle: 24px !default;
+  // small
+  /// small width in px of the handle when handleShape="rectangle"
+  --ch5-slider-size-small-handle-width-rectangle: 30px;
 
-// small
-/// small width in px of the handle when handleShape="rectangle"
-$ch5-slider-size-small-handle-width-rectangle: 30px !default;
+  /// small height in px of the handle when handleShape="rectangle"
+  --ch5-slider-size-small-handle-height-rectangle: 26px;
 
-/// small height in px of the handle when handleShape="rectangle"
-$ch5-slider-size-small-handle-height-rectangle: 26px !default;
+  // regular
+  /// regular width in px of the handle when handleShape="rectangle"
+  --ch5-slider-size-regular-handle-width-rectangle: 36px;
 
-// regular
-/// regular width in px of the handle when handleShape="rectangle"
-$ch5-slider-size-regular-handle-width-rectangle: 36px !default;
+  /// regular height in px of the handle when handleShape="rectangle"
+  --ch5-slider-size-regular-handle-height-rectangle: 30px;
 
-/// regular height in px of the handle when handleShape="rectangle"
-$ch5-slider-size-regular-handle-height-rectangle: 30px !default;
+  // large
+  /// large width in px of the handle when handleShape="rectangle"
+  --ch5-slider-size-large-handle-width-rectangle: 42px;
 
-// large
-/// large width in px of the handle when handleShape="rectangle"
-$ch5-slider-size-large-handle-width-rectangle: 42px !default;
+  /// large height in px of the handle when handleShape="rectangle"
+  --ch5-slider-size-large-handle-height-rectangle: 34px;
 
-/// large height in px of the handle when handleShape="rectangle"
-$ch5-slider-size-large-handle-height-rectangle: 34px !default;
+  // x-large
+  /// x-large width in px of the handle when handleShape="rectangle"
+  --ch5-slider-size-x-large-handle-width-rectangle: 54px;
 
-// x-large
-/// x-large width in px of the handle when handleShape="rectangle"
-$ch5-slider-size-x-large-handle-width-rectangle: 54px !default;
+  /// x-large height in px of the handle when handleShape="rectangle"
+  --ch5-slider-size-x-large-handle-height-rectangle: 40px;
 
-/// x-large height in px of the handle when handleShape="rectangle"
-$ch5-slider-size-x-large-handle-height-rectangle: 40px !default;
+  // circle
 
+  // x-small
+  /// x-small width in px of the handle when handleShape="circle"
+  --ch5-slider-size-x-small-handle-width-circle: 26px;
 
+  /// x-small height in px of the handle when handleShape="circle"
+  --ch5-slider-size-x-small-handle-height-circle: var(--ch5-slider-size-x-small-handle-width-circle);
 
-// circle
+  // small
+  /// small width in px of the handle when handleShape="circle"
+  --ch5-slider-size-small-handle-width-circle: 30px;
 
-// x-small
-/// x-small width in px of the handle when handleShape="circle"
-$ch5-slider-size-x-small-handle-width-circle: 26px !default;
+  /// small height in px of the handle when handleShape="circle"
+  --ch5-slider-size-small-handle-height-circle: var(--ch5-slider-size-small-handle-width-circle);
 
-/// x-small height in px of the handle when handleShape="circle"
-$ch5-slider-size-x-small-handle-height-circle: $ch5-slider-size-x-small-handle-width-circle !default;
+  // regular
+  /// regular width in px of the handle when handleShape="circle"
+  --ch5-slider-size-regular-handle-width-circle: 36px;
 
+  /// regular height in px of the handle when handleShape="circle"
+  --ch5-slider-size-regular-handle-height-circle: var(--ch5-slider-size-regular-handle-width-circle);
 
-// small
-/// small width in px of the handle when handleShape="circle"
-$ch5-slider-size-small-handle-width-circle: 30px !default;
+  // large
+  /// large width in px of the handle when handleShape="circle"
+  --ch5-slider-size-large-handle-width-circle: 42px;
 
-/// small height in px of the handle when handleShape="circle"
-$ch5-slider-size-small-handle-height-circle: $ch5-slider-size-small-handle-width-circle !default;
+  /// large height in px of the handle when handleShape="circle"
+  --ch5-slider-size-large-handle-height-circle: var(--ch5-slider-size-large-handle-width-circle);
 
+  // x-large
+  /// x-large width in px of the handle when handleShape="circle"
+  --ch5-slider-size-x-large-handle-width-circle: 54px;
 
-// regular
-/// regular width in px of the handle when handleShape="circle"
-$ch5-slider-size-regular-handle-width-circle: 36px !default;
+  /// x-large height in px of the handle when handleShape="circle"
+  --ch5-slider-size-x-large-handle-height-circle: var(--ch5-slider-size-x-large-handle-width-circle);
 
-/// regular height in px of the handle when handleShape="circle"
-$ch5-slider-size-regular-handle-height-circle: $ch5-slider-size-regular-handle-width-circle !default;
+  // oval
 
+  // x-small
+  /// x-small width in px of the handle when handleShape="oval"
+  --ch5-slider-size-x-small-handle-width-oval: 26px;
 
-// large
-/// large width in px of the handle when handleShape="circle"
-$ch5-slider-size-large-handle-width-circle: 42px !default;
+  /// x-small height in px of the handle when handleShape="oval"
+  --ch5-slider-size-x-small-handle-height-oval: calc(var(--ch5-slider-size-x-small-handle-width-oval) / 1.5);
 
-/// large height in px of the handle when handleShape="circle"
-$ch5-slider-size-large-handle-height-circle: $ch5-slider-size-large-handle-width-circle !default;
+  // small
+  /// small width in px of the handle when handleShape="oval"
+  --ch5-slider-size-small-handle-width-oval: 30px;
 
+  /// small height in px of the handle when handleShape="oval"
+  --ch5-slider-size-small-handle-height-oval: calc(var(--ch5-slider-size-small-handle-width-oval) / 1.5);
 
-// x-large
-/// x-large width in px of the handle when handleShape="circle"
-$ch5-slider-size-x-large-handle-width-circle: 54px !default;
+  // regular
+  /// regular width in px of the handle when handleShape="oval"
+  --ch5-slider-size-regular-handle-width-oval: 36px;
 
-/// x-large height in px of the handle when handleShape="circle"
-$ch5-slider-size-x-large-handle-height-circle: $ch5-slider-size-x-large-handle-width-circle !default;
+  /// regular height in px of the handle when handleShape="oval"
+  --ch5-slider-size-regular-handle-height-oval: calc(var(--ch5-slider-size-regular-handle-width-oval) / 1.5);
 
+  // large
+  /// large width in px of the handle when handleShape="oval"
+  --ch5-slider-size-large-handle-width-oval: 42px;
 
-// oval
+  /// large height in px of the handle when handleShape="oval"
+  --ch5-slider-size-large-handle-height-oval: calc(var(--ch5-slider-size-large-handle-width-oval) / 1.5);
 
-// x-small
-/// x-small width in px of the handle when handleShape="oval"
-$ch5-slider-size-x-small-handle-width-oval: 26px !default;
+  // x-large
+  /// x-large width in px of the handle when handleShape="oval"
+  --ch5-slider-size-x-large-handle-width-oval: 54px;
 
-/// x-small height in px of the handle when handleShape="oval"
-$ch5-slider-size-x-small-handle-height-oval: calc($ch5-slider-size-x-small-handle-width-oval / 1.5) !default;
+  /// x-large height in px of the handle when handleShape="oval"
+  --ch5-slider-size-x-large-handle-height-oval: calc(var(--ch5-slider-size-x-large-handle-width-oval) / 1.5);
 
-// small
-/// small width in px of the handle when handleShape="oval"
-$ch5-slider-size-small-handle-width-oval: 30px !default;
+  // Horizontal and Vertical
 
-/// small height in px of the handle when handleShape="oval"
-$ch5-slider-size-small-handle-height-oval: calc($ch5-slider-size-small-handle-width-oval / 1.5) !default;
+  --ch5-slider-horizontal-pips: 50px;
 
-// regular
-/// regular width in px of the handle when handleShape="oval"
-$ch5-slider-size-regular-handle-width-oval: 36px !default;
+  --ch5-slider-vertical-pips: 65px;
 
-/// regular height in px of the handle when handleShape="oval"
-$ch5-slider-size-regular-handle-height-oval: calc($ch5-slider-size-regular-handle-width-oval / 1.5) !default;
+  --ch5-slider-tooltip-on-spacing-vertical-advanced: 60px;
+  --ch5-slider-tooltip-on-spacing-vertical-normal: 58px;
+  --ch5-slider-tooltip-on-spacing-horizontal-advanced: 40px;
+  --ch5-slider-tooltip-on-spacing-horizontal-normal: 40px;
 
-// large
-/// large width in px of the handle when handleShape="oval"
-$ch5-slider-size-large-handle-width-oval: 42px !default;
-
-/// large height in px of the handle when handleShape="oval"
-$ch5-slider-size-large-handle-height-oval: calc($ch5-slider-size-large-handle-width-oval / 1.5) !default;
-
-// x-large
-/// x-large width in px of the handle when handleShape="oval"
-$ch5-slider-size-x-large-handle-width-oval: 54px !default;
-
-/// x-large height in px of the handle when handleShape="oval"
-$ch5-slider-size-x-large-handle-height-oval: calc($ch5-slider-size-x-large-handle-width-oval / 1.5) !default;
-
-// Horizontal and Vertical
-
-$ch5-slider-horizontal-pips: 50px !default;
-
-$ch5-slider-vertical-pips: 65px !default; // 115px !default;
-
-$ch5-slider-tooltip-on-spacing-vertical-advanced: 60px !default;
-$ch5-slider-tooltip-on-spacing-vertical-normal: 58px !default;
-$ch5-slider-tooltip-on-spacing-horizontal-advanced: 40px !default;
-$ch5-slider-tooltip-on-spacing-horizontal-normal: 40px !default;
-
-$ch5-button-content-line-height: 1.2 !default;
-$ch5-button-padding: 0.25rem !default;
+  --ch5-button-content-line-height: 1.2;
+  --ch5-button-padding: 0.25rem;
+}

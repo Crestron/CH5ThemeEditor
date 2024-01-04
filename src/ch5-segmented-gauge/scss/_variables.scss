@@ -10,46 +10,46 @@
 /// @group ch5-segmented-gauge-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Led style gauge style height
-$ch5-segmented-gauge-led-style-height: 20px !default;
+ch5-segmented-gauge {
+  /// Led style gauge style height
+  --ch5-segmented-gauge-led-style-height: 20px;
 
-/// Led style gauge style width
-$ch5-segmented-gauge-led-style-width: 20px !default;
+  /// Led style gauge style width
+  --ch5-segmented-gauge-led-style-width: 20px;
 
-/// Margin for segmented gauge children
-$ch5-segmented-gauge-segment-margin: 2px !default;
+  /// Margin for segmented gauge children
+  --ch5-segmented-gauge-segment-margin: 2px;
 
-/// Led style border radius
-$ch5-segmented-gauge-led-style-border-radius: 50% !default;
+  /// Led style border radius
+  --ch5-segmented-gauge-led-style-border-radius: 50%;
 
-/// State graphic green
-$ch5-segmented-gauge-state-graphic-green: #22c55e !default;
+  /// State graphic green
+  --ch5-segmented-gauge-state-graphic-green: #22c55e;
 
-/// State graphic inactive
-$ch5-segmented-gauge-state-graphic-inactive: #909090 !default;
+  /// State graphic inactive
+  --ch5-segmented-gauge-state-graphic-inactive: #909090;
 
-/// State graphic yellow
-$ch5-segmented-gauge-state-graphic-yellow: #eab308 !default;
+  /// State graphic yellow
+  --ch5-segmented-gauge-state-graphic-yellow: #eab308;
 
-/// State graphic green
-$ch5-segmented-gauge-state-graphic-red: #ef4444 !default;
+  /// State graphic green
+  --ch5-segmented-gauge-state-graphic-red: #ef4444;
 
-/// State graphic green
-$ch5-segmented-gauge-state-graphic-blue: #3b82f6 !default;
+  /// State graphic green
+  --ch5-segmented-gauge-state-graphic-blue: #3b82f6;
 
-/// State graphic green
-$ch5-segmented-gauge-state-graphic-orange: #f97316 !default;
+  /// State graphic green
+  --ch5-segmented-gauge-state-graphic-orange: #f97316;
 
-/// State graphic green
-$ch5-segmented-gauge-state-graphic-white: #f8fafc !default;
+  /// State graphic green
+  --ch5-segmented-gauge-state-graphic-white: #f8fafc;
 
+  /// Rotate for vertical segmented gauge
+  --ch5-segmented-gauge-orientation-vertical: rotate(180deg);
 
-/// Rotate for vertical segmented gauge
-$ch5-segmented-gauge-orientation-vertical: rotate(180deg);
+  /// Segmented gauge hidden segment
+  --ch5-segmented-gauge-hidden-segment: 4px;
 
-
-/// Segmented gauge hidden segment
-$ch5-segmented-gauge-hidden-segment: 4px !default;
-
-/// Segmented gauge hidden margin
-$ch5-segmented-gauge-hidden-margin: 0px !default;
+  /// Segmented gauge hidden margin
+  --ch5-segmented-gauge-hidden-margin: 0px;
+}

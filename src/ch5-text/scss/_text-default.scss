@@ -23,12 +23,12 @@ ch5-text {
 /// Main Class
 .ch5-text {
   position: relative;
-  min-width: 64px;
-  min-height: 44px;
-  width: 150px;
-  height: 48px;
+  min-width: var(--ch5-text-min-width);
+  min-height: var(--ch5-text-min-height);
+  width: var(--ch5-text-width);
+  height: var(--ch5-text-height);
   overflow: hidden;
-  padding: 10px;
+  padding: var(--ch5-text-padding-value);
 
   span {
     display: inline-block;
