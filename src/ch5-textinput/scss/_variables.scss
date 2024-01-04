@@ -23,10 +23,10 @@ ch5-textinput {
   --ch5-textinput-input-border-width: 2px;
 
   /// set the default font style for the textinput
-  --ch5-textinput-font-style: $ch5-font-style;
+  --ch5-textinput-font-style: #{$ch5-font-style};
 
   /// set the default font weight for the textinput
-  --ch5-textinput-font-weight: $ch5-font-weight;
+  --ch5-textinput-font-weight: #{$ch5-font-weight};
 
   /// set the font size for regular size of the textinput
   --ch5-textinput-regular-font-size: 16px;
