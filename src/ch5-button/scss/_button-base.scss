@@ -439,27 +439,27 @@ ch5-button {
 
 /// Applied when size="regular"
 .ch5-button--size-regular {
-  @include ch5-button-size-set(var(--ch5-button-size), var(--ch5-button-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+  @include ch5-button-size-set(--ch5-button-size, --ch5-button-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
 }
 
 /// Applied when size="x-small"
 .ch5-button--size-x-small {
-  @include ch5-button-size-set(var(--ch5-button-x-small-size), var(--ch5-button-x-small-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+  @include ch5-button-size-set(--ch5-button-x-small-size, --ch5-button-x-small-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
 }
 
 /// Applied when size="small"
 .ch5-button--size-small {
-  @include ch5-button-size-set(var(--ch5-button-small-size), var(--ch5-button-small-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+  @include ch5-button-size-set(--ch5-button-small-size, --ch5-button-small-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
 }
 
 /// Applied when size="large"
 .ch5-button--size-large {
-  @include ch5-button-size-set(var(--ch5-button-large-size), var(--ch5-button-large-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+  @include ch5-button-size-set(--ch5-button-large-size, --ch5-button-large-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
 }
 
 /// Applied when size="x-large"
 .ch5-button--size-x-large {
-  @include ch5-button-size-set(var(--ch5-button-x-large-size), var(--ch5-button-x-large-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+  @include ch5-button-size-set(--ch5-button-x-large-size, --ch5-button-x-large-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
 }
 
 .ch5-button--vertical:not(.ch5-button--circle) {
@@ -536,52 +536,52 @@ ch5-button[stretch="both"] {
 
 ch5-button[mode="?"] {
   &.ch5-button--size-regular {
-    @include ch5-button-size-set(var(--ch5-button-size), var(--ch5-button-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+    @include ch5-button-size-set(--ch5-button-size, --ch5-button-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
 
     ch5-button-mode-state[state="normal"],
     ch5-button-mode-state[state="pressed"],
     ch5-button-mode-state[state="selected"] {
-      @include ch5-button-size-set(var(--ch5-button-size), var(--ch5-button-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+      @include ch5-button-size-set(--ch5-button-size, --ch5-button-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
     }
   }
 
   &.ch5-button--size-x-small {
-    @include ch5-button-size-set(var(--ch5-button-x-small-size), var(--ch5-button-x-small-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+    @include ch5-button-size-set(--ch5-button-x-small-size, --ch5-button-x-small-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
 
     ch5-button-mode-state[state="normal"],
     ch5-button-mode-state[state="pressed"],
     ch5-button-mode-state[state="selected"] {
-      @include ch5-button-size-set(var(--ch5-button-x-small-size), var(--ch5-button-x-small-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+      @include ch5-button-size-set(--ch5-button-x-small-size, --ch5-button-x-small-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
     }
   }
 
   &.ch5-button--size-small {
-    @include ch5-button-size-set(var(--ch5-button-small-size), var(--ch5-button-small-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+    @include ch5-button-size-set(--ch5-button-small-size, --ch5-button-small-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
 
     ch5-button-mode-state[state="normal"],
     ch5-button-mode-state[state="pressed"],
     ch5-button-mode-state[state="selected"] {
-      @include ch5-button-size-set(var(--ch5-button-small-size), var(--ch5-button-small-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+      @include ch5-button-size-set(--ch5-button-small-size, --ch5-button-small-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
     }
   }
 
   &.ch5-button--size-large {
-    @include ch5-button-size-set(var(--ch5-button-large-size), var(--ch5-button-large-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+    @include ch5-button-size-set(--ch5-button-large-size, --ch5-button-large-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
 
     ch5-button-mode-state[state="normal"],
     ch5-button-mode-state[state="pressed"],
     ch5-button-mode-state[state="selected"] {
-      @include ch5-button-size-set(var(--ch5-button-large-size), var(--ch5-button-large-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+      @include ch5-button-size-set(--ch5-button-large-size, --ch5-button-large-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
     }
   }
 
   &.ch5-button--size-x-large {
-    @include ch5-button-size-set(var(--ch5-button-x-large-size), var(--ch5-button-x-large-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+    @include ch5-button-size-set(--ch5-button-x-large-size, --ch5-button-x-large-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
 
     ch5-button-mode-state[state="normal"],
     ch5-button-mode-state[state="pressed"],
     ch5-button-mode-state[state="selected"] {
-      @include ch5-button-size-set(var(--ch5-button-x-large-size), var(--ch5-button-x-large-font-size), var(--ch5-button-icon-color), var(--ch5-button-icon-font-size));
+      @include ch5-button-size-set(--ch5-button-x-large-size, --ch5-button-x-large-font-size, --ch5-button-icon-color, --ch5-button-icon-font-size);
     }
   }
 }

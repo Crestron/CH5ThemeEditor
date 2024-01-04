@@ -37,7 +37,7 @@ ch5-dpad {
     vertical-align: top;
 
     .ch5-disable-child-button > span {
-      opacity: 0.5;
+      @include ch5-component-disabled();
       cursor: default;
     }
   }
@@ -197,7 +197,7 @@ ch5-dpad {
         cursor: default;
         > span {
           visibility: hidden !important;
-          opacity: 0.5;
+          // opacity: 0.5;
           cursor: default;
         }
       }
