@@ -11,28 +11,58 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-dpad {
-  /// Set the height and width of dpad
+  /// Set the height and width of dpad for regular size
   --ch5-dpad-regular-dimension: 150px;
+
+  /// Set the height and width of dpad for x-small size
   --ch5-dpad-x-small-dimension: 100px;
+
+  /// Set the height and width of dpad for small size
   --ch5-dpad-small-dimension: 130px;
+
+  /// Set the height and width of dpad for large size
   --ch5-dpad-large-dimension: 180px;
+
+  /// Set the height and width of dpad for x-large size
   --ch5-dpad-x-large-dimension: 200px;
 
-  /// Set the border radius for 'plus' shape
+  // ------------------------------------------------------
+
+  /// Set the border radius for 'plus' shape regular size
   --ch5-dpad-regular-edge-radius: 10px;
+
+  /// Set the border radius for 'plus' shape x-small size
   --ch5-dpad-x-small-edge-radius: 6px;
+
+  /// Set the border radius for 'plus' shape small size
   --ch5-dpad-small-edge-radius: 10px;
+
+  /// Set the border radius for 'plus' shape large size
   --ch5-dpad-large-edge-radius: 10px;
+
+  /// Set the border radius for 'plus' shape x-large size
   --ch5-dpad-x-large-edge-radius: 10px;
+
+  // ------------------------------------------------------
 
   /// Set the label font size
   --ch5-dpad-label-font-size: 1.5rem;
 
-  /// Set the icon font size
+  // ------------------------------------------------------
+
+  /// Set the icon font size for x-small size
   --ch5-dpad-icon-font-size-x-small: 1.3rem;
+
+  /// Set the icon font size for small size
   --ch5-dpad-icon-font-size-small: 1.8rem;
+
+  /// Set the icon font size for regular size
   --ch5-dpad-icon-font-size-regular: 2rem;
+
+  /// Set the icon font size for large size
   --ch5-dpad-icon-font-size-large: 2.2rem;
+
+  /// Set the icon font size for x-large size
   --ch5-dpad-icon-font-size-x-large: 2.4rem;
 
   // ---------------------------------------------------------------------------
