@@ -31,12 +31,34 @@ export interface BASE_OBJECT_INTERFACE {
   }
 }
 export interface FLATTENED_SCSS {
-  flattenedScss: string,
-  allScss: string,
-  finalCss: string,
+  flatScss: string,
+  scss: string,
+  css: string,
   name: string,
   variables: { [key: string]: string; }
 }
+
+export interface MIXIN_VARIABLES {
+  [key: string]: {
+    value: string,
+    variables: string[]
+  }
+}
+
+export interface OUTPUT {
+  [key: string]: {
+    description: string,
+    property: string[]
+  }
+}
+
+export interface MIXINS {
+  name: string,
+  content: string,
+  properties: string[]
+}
+
+
 
 function removeComments(data: string) {
   const singleLineComments = new RegExp(/((?<!\/)[/]{2}(?!\/).*)/);
@@ -46,6 +68,28 @@ function removeComments(data: string) {
   return data.replace(allCommentsRegex, '');
 }
 
+function removeMixins(data: string) {
+  const mixinsRegex = new RegExp(/(@mixin)([\s\S]*?)(^})/, 'gm');
+  return data.replace(mixinsRegex, '');
+}
+
+function removeHeaders(data: string) {
+  const lines = data.split('\n');
+  let start = -1;
+  for (let i = 0; i < lines.length; i++) {
+    if (start === -1 && lines[i].includes('////')) {
+      start = i;
+    } else if (start !== -1 && lines[i].includes('////')) {
+      const headers = lines.slice(start, i + 1).join('\n');
+      data = data.replace(headers, '');
+      start = -1;
+    }
+  }
+  return data;
+}
+
 export {
-  removeComments
+  removeComments,
+  removeMixins,
+  removeHeaders
 }

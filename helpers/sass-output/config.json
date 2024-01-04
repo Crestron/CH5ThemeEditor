@@ -1,6 +1,6 @@
 {
     "THEME_VERSION": "1.0.0",
-    "DEBUG": false,
+    "DEBUG": true,
     "THEME_EDITOR_SOURCE_FILES_PATH": "./src/",
     "GLOBAL_VARIABLES_FILE_PATH": "./src/ch5-core/_variables.scss",
     "GLOBAL_MIXINS_FILE_PATH": "./src/style/_mixins.scss",
