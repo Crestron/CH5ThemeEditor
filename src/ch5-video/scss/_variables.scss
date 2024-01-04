@@ -12,4 +12,42 @@
 
 ch5-video {
   --ch5-video-background-color: #000;
+
+  // size xx-large for min width 651px
+  --ch5-video--size-xx-large-min-w-651: 600px;
+
+  // size x-large for min width 651px
+  --ch5-video--size-x-large-min-w-651: 560px;
+
+  //size large for min width 651px
+  --ch5-video--size-large-min-w-651: 520px;
+
+  //size regular for min width 651px
+  --ch5-video--size-regular-min-w-651: 480px;
+
+  // size small for min width 651px
+  --ch5-video--size-small-min-w-651: 440px;
+
+  // size x-small for min width 651px
+  --ch5-video--size-x-small-min-w-651: 400px;
+
+
+  // size xx-large for max width 650px
+  --ch5-video--size-xx-large-max-w-650: 300px;
+
+  // size x-large max width 650px
+  --ch5-video--size-x-large-max-w-650: 280px;
+
+  //size large max width 650px
+  --ch5-video--size-large-max-w-650: 260px;
+
+  //size regular max width 650px
+  --ch5-video--size-regular-max-w-650: 240px;
+
+  // size small max width 650px
+  --ch5-video--size-small-max-w-650: 220px;
+
+  // size x-small max width 650px
+  --ch5-video--size-x-small-max-w-650: 200px;
+
 }
