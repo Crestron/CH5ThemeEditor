@@ -12,11 +12,11 @@
 
 ch5-form {
   /// set the default font size for the form
-  --ch5-form-font-size: #{$ch5-font-size-value}#{$ch5-font-size-unit};
+  --ch5-form-font-size: var(--root-font-size);
 
   /// set the default font style for the form
-  --ch5-form-font-style: #{$ch5-font-style};
+  --ch5-form-font-style: var(--root-font-style);
 
   /// set the default font weight for the form
-  --ch5-form-font-weight: #{$ch5-font-weight};
+  --ch5-form-font-weight: var(--root-font-weight);
 }

@@ -275,7 +275,7 @@ $sizes: (
 			@each $slider-size in map-keys($sizes) {
 				&.ch5-slider--size--#{$slider-size} {
 					.ch5-slider-button-container {
-						width: map-deep-get($sizes, $slider-size);
+						width: var(map-deep-get($sizes, #{$slider-size}));
 					}
 				}
 			}
@@ -322,7 +322,7 @@ $sizes: (
 			@each $slider-size in map-keys($sizes) {
 				&.ch5-slider--size--#{$slider-size} {
 					.ch5-slider-button-container {
-						height: map-deep-get($sizes, $slider-size);
+						height: var(map-deep-get($sizes, #{$slider-size}));
 					}
 				}
 			}

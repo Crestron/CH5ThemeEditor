@@ -42,12 +42,12 @@
     }
 
     &.ch5-button-list--scrollbar-true {
-      padding-bottom: $ch5-scrollbar-width;
+      padding-bottom: var(--scrollbar-width);
 
       &~.scrollbar-container {
         width: 100%;
         bottom: 0;
-        height: $ch5-scrollbar-width;
+        height: var(--scrollbar-width);
 
         .scrollbar {
           height: 100%;
@@ -82,14 +82,14 @@
     }
 
     &.ch5-button-list--scrollbar-true {
-      padding-right: $ch5-scrollbar-width;
+      padding-right: var(--scrollbar-width);
 
       &~.scrollbar-container {
         top: 0;
         height: 100%;
         right: 0;
         left: auto;
-        width: $ch5-scrollbar-width;
+        width: var(--scrollbar-width);
 
         .scrollbar {
           width: 100%;

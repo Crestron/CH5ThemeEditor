@@ -12,285 +12,277 @@
 
 @import "../../ch5-core/variables";
 
-// Color system
+.zoom-dark {
+  // Color system
 
-$default-background-color: #4f9af7 !default;
-$default-border-color: #0099ff !default;
-$default-font-color: #ffffff !default;
-$default-pressed-background-color: #0e72ed !default;
-$default-pressed-border-color: #0099ff !default;
-$default-pressed-font-color: #ffffff !default;
-$default-selected-background-color: #0e72ed !default;
-$default-selected-border-color: #0099ff !default;
-$default-selected-font-color: #ffffff !default;
+  --theme-default-background-color: #4f9af7;
+  --theme-default-border-color: #0099ff;
+  --theme-default-font-color: #ffffff;
+  --theme-default-pressed-background-color: #0e72ed;
+  --theme-default-pressed-border-color: #0099ff;
+  --theme-default-pressed-font-color: #ffffff;
+  --theme-default-selected-background-color: #0e72ed;
+  --theme-default-selected-border-color: #0099ff;
+  --theme-default-selected-font-color: #ffffff;
 
-$primary-background-color: #383838 !default;
-$primary-border-color: #f8f7f8 !default;
-$primary-font-color: #ffffff !default;
-$primary-pressed-background-color: #4c4c4c !default;
-$primary-pressed-border-color: #f8f7f8 !default;
-$primary-pressed-font-color: #ffffff !default;
-$primary-selected-background-color: #9b9b9b !default;
-$primary-selected-border-color: #f8f7f8 !default;
-$primary-selected-font-color: #ffffff !default;
+  --theme-primary-background-color: #383838;
+  --theme-primary-border-color: #f8f7f8;
+  --theme-primary-font-color: #ffffff;
+  --theme-primary-pressed-background-color: #4c4c4c;
+  --theme-primary-pressed-border-color: #f8f7f8;
+  --theme-primary-pressed-font-color: #ffffff;
+  --theme-primary-selected-background-color: #9b9b9b;
+  --theme-primary-selected-border-color: #f8f7f8;
+  --theme-primary-selected-font-color: #ffffff;
 
-$info-background-color: #f26d21 !default;
-$info-border-color: #f26d21 !default;
-$info-font-color: #ffffff !default;
-$info-pressed-background-color: #d56832 !default;
-$info-pressed-border-color: #f26d21 !default;
-$info-pressed-font-color: #ffffff !default;
-$info-selected-background-color: #d56832 !default;
-$info-selected-border-color: #f26d21 !default;
-$info-selected-font-color: #ffffff !default;
+  --theme-info-background-color: #f26d21;
+  --theme-info-border-color: #f26d21;
+  --theme-info-font-color: #ffffff;
+  --theme-info-pressed-background-color: #d56832;
+  --theme-info-pressed-border-color: #f26d21;
+  --theme-info-pressed-font-color: #ffffff;
+  --theme-info-selected-background-color: #d56832;
+  --theme-info-selected-border-color: #f26d21;
+  --theme-info-selected-font-color: #ffffff;
 
-$danger-background-color: #de2828 !default;
-$danger-border-color: #f44337 !default;
-$danger-font-color: #ffffff !default;
-$danger-pressed-background-color: #ca2424 !default;
-$danger-pressed-border-color: #f44337 !default;
-$danger-pressed-font-color: #ffffff !default;
-$danger-selected-background-color: #ca2424 !default;
-$danger-selected-border-color: #f44337 !default;
-$danger-selected-font-color: #ffffff !default;
+  --theme-danger-background-color: #de2828;
+  --theme-danger-border-color: #f44337;
+  --theme-danger-font-color: #ffffff;
+  --theme-danger-pressed-background-color: #ca2424;
+  --theme-danger-pressed-border-color: #f44337;
+  --theme-danger-pressed-font-color: #ffffff;
+  --theme-danger-selected-background-color: #ca2424;
+  --theme-danger-selected-border-color: #f44337;
+  --theme-danger-selected-font-color: #ffffff;
 
-$secondary-background-color: #282f38 !default;
-$secondary-border-color: #434951 !default;
-$secondary-font-color: #ffffff !default;
-$secondary-pressed-background-color: #4f9af7 !default;
-$secondary-pressed-border-color: #3590ff !default;
-$secondary-pressed-font-color: #ffffff !default;
-$secondary-selected-background-color: #4f9af7 !default;
-$secondary-selected-border-color: #3590ff !default;
-$secondary-selected-font-color: #ffffff !default;
+  --theme-secondary-background-color: #282f38;
+  --theme-secondary-border-color: #434951;
+  --theme-secondary-font-color: #ffffff;
+  --theme-secondary-pressed-background-color: #4f9af7;
+  --theme-secondary-pressed-border-color: #3590ff;
+  --theme-secondary-pressed-font-color: #ffffff;
+  --theme-secondary-selected-background-color: #4f9af7;
+  --theme-secondary-selected-border-color: #3590ff;
+  --theme-secondary-selected-font-color: #ffffff;
 
-$success-background-color: #268543 !default;
-$success-border-color: #4caf50 !default;
-$success-font-color: #ffffff !default;
-$success-pressed-background-color: #23d959 !default;
-$success-pressed-border-color: #4caf50 !default;
-$success-pressed-font-color: #ffffff !default;
-$success-selected-background-color: #23d959 !default;
-$success-selected-border-color: #4caf50 !default;
-$success-selected-font-color: #ffffff !default;
+  --theme-success-background-color: #268543;
+  --theme-success-border-color: #4caf50;
+  --theme-success-font-color: #ffffff;
+  --theme-success-pressed-background-color: #23d959;
+  --theme-success-pressed-border-color: #4caf50;
+  --theme-success-pressed-font-color: #ffffff;
+  --theme-success-selected-background-color: #23d959;
+  --theme-success-selected-border-color: #4caf50;
+  --theme-success-selected-font-color: #ffffff;
 
-$warning-background-color: #faac2a !default;
-$warning-border-color: #ffc009 !default;
-$warning-font-color: #333 !default;
-$warning-pressed-background-color: #f7cd4f !default;
-$warning-pressed-border-color: #ffc009 !default;
-$warning-pressed-font-color: #333 !default;
-$warning-selected-background-color: #f7cd4f !default;
-$warning-selected-border-color: #ffc009 !default;
-$warning-selected-font-color: #333 !default;
+  --theme-warning-background-color: #faac2a;
+  --theme-warning-border-color: #ffc009;
+  --theme-warning-font-color: #333;
+  --theme-warning-pressed-background-color: #f7cd4f;
+  --theme-warning-pressed-border-color: #ffc009;
+  --theme-warning-pressed-font-color: #333;
+  --theme-warning-selected-background-color: #f7cd4f;
+  --theme-warning-selected-border-color: #ffc009;
+  --theme-warning-selected-font-color: #333;
 
-$text-background-color: #383838 !default;
-$text-border-color: #9e9e9e !default;
-$text-font-color: #6d6d6d !default;
-$text-pressed-background-color: #4c4c4c !default;
-$text-pressed-border-color: #9e9e9e !default;
-$text-pressed-font-color: #6d6d6d !default;
-$text-selected-background-color: #4c4c4c !default;
-$text-selected-border-color: #9e9e9e !default;
-$text-selected-font-color: #6d6d6d !default;
+  --theme-text-background-color: #383838;
+  --theme-text-border-color: #9e9e9e;
+  --theme-text-font-color: #6d6d6d;
+  --theme-text-pressed-background-color: #4c4c4c;
+  --theme-text-pressed-border-color: #9e9e9e;
+  --theme-text-pressed-font-color: #6d6d6d;
+  --theme-text-selected-background-color: #4c4c4c;
+  --theme-text-selected-border-color: #9e9e9e;
+  --theme-text-selected-font-color: #6d6d6d;
 
-$theme-foreground-color: #fff !default;
+  // ch5-animation
+  --ch5-animation-color: #fff;
 
-/* ===============================================
-CH5-OVERLAY
-============================================= */
-/// the color of the icon at the top of the overlay panel
-$ch5-overlay-default-close-icon-color: #fefefe;
+  // ch5-overlay-panel
+  /// the color of the icon at the top of the overlay panel
+  --ch5-overlay-default-close-icon-color: #fefefe;
 
-/// the color of the icon at the top of the overlay panel when it is hovered
-$ch5-overlay-default-close-icon-color-hover: #9898a6;
+  /// the color of the icon at the top of the overlay panel when it is hovered
+  --ch5-overlay-default-close-icon-color-hover: #9898a6;
 
-/// the background color of the mask element
-$ch5-overlay-default-mask-bg-color: rgba(94, 94, 102, 0.3);
+  /// the background color of the mask element
+  --ch5-overlay-default-mask-bg-color: rgba(94, 94, 102, 0.3);
 
-/// the background color of the icon at the top of the overlay panel
-$ch5-overlay-panel-close-icon-background-color: #17171a;
+  /// the background color of the icon at the top of the overlay panel
+  --ch5-overlay-panel-close-icon-background-color: #17171a;
 
-/// the background color of the overlay panel
-$ch5-overlay-panel-background-color: #17171a;
+  /// the background color of the overlay panel
+  --ch5-overlay-panel-background-color: #17171a;
 
-/// the border color of the overlay panel
-$ch5-overlay-panel-border-color: #000000;
+  /// the border color of the overlay panel
+  --ch5-overlay-panel-border-color: #000000;
 
-/// the text color of the overlay panel
-$ch5-overlay-panel-text-color: #fefefe;
+  /// the text color of the overlay panel
+  --ch5-overlay-panel-text-color: #fefefe;
 
-/// the font color for the content of the overlay panel
-$ch5-overlay-panel-contents-font-color: #fefefe;
+  /// the font color for the content of the overlay panel
+  --ch5-overlay-panel-contents-font-color: #fefefe;
 
-/* ===============================================
-CH5-SELECT PANEL
-============================================= */
+  // ch5-select
 
-/// component border color
-$ch5-select-border-color: #5e5e66 !default;
+  /// component border color
+  --ch5-select-border-color: #5e5e66;
 
-/// Component main font color
-$ch5-select-font-color: #797979 !default;
+  /// Component main font color
+  --ch5-select-font-color: #797979;
 
-/// Selected item background color
-$ch5-select-panel-item-selected-background-color: #004d80 !default;
+  /// Selected item background color
+  --ch5-select-panel-item-selected-background-color: #004d80;
 
-/// item border color
-$ch5-select-panel-item-border-color: transparent !default;
+  /// item border color
+  --ch5-select-panel-item-border-color: transparent;
 
-/// item main text color
-$ch5-select-panel-item-color: #9898a6 !default;
+  /// item main text color
+  --ch5-select-panel-item-color: #9898a6;
 
-/// item background color
-$ch5-select-panel-item-background-color: transparent !default;
+  /// item background color
+  --ch5-select-panel-item-background-color: transparent;
 
-/// item background color on mouse over
-$ch5-select-panel-item-hover-background-color: #fefefe !default;
+  /// item background color on mouse over
+  --ch5-select-panel-item-hover-background-color: #fefefe;
 
-/// select panel background color
-$ch5-select-panel-items-background-color: #3b3b40 !default;
+  /// select panel background color
+  --ch5-select-panel-items-background-color: #3b3b40;
 
-/* ===============================================
-CH5-SPINNER
-============================================= */
+  // ch5-spinner
 
-/// The text color of the active item
-$ch5-spinner-active-item-color: #fff !default;
+  /// The text color of the active item
+  --ch5-spinner-active-item-color: #fff;
 
-/// The text color of the item.
-$ch5-spinner-item-color: #9898a6 !default;
+  /// The text color of the item.
+  --ch5-spinner-item-color: #9898a6;
 
-/// The background color for the overlay of the spinner.
-$ch5-spinner-overlay-background-color: #ff0000 !default;
-/// the box shadow color of the spinner
-$ch5-spinner-highlight-box-shadow-color: rgba(0, 0, 0, 0.3) !default;
-/// the border color of the spinner
-$ch5-spinner-highlight-border-color: #ff0000;
+  /// The background color for the overlay of the spinner.
+  --ch5-spinner-overlay-background-color: #ff0000;
+  /// the box shadow color of the spinner
+  --ch5-spinner-highlight-box-shadow-color: rgba(0, 0, 0, 0.3);
+  /// the border color of the spinner
+  --ch5-spinner-highlight-border-color: #ff0000;
 
-// background
-$ch5-spinner-background-color: #3b3b40 !default;
-$ch5-spinner-background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05)) !default;
-$ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%) !default;
+  // background
+  --ch5-spinner-background-color: #3b3b40;
+  --ch5-spinner-background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05));
+  --ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%);
 
-/* ===============================================
-CH5-TEXT INPUT
-============================================= */
+  // ch5-textinput
 
-/// The text color of the textinput.
-$ch5-textinput-text-color: #efefef !default;
+  /// The text color of the textinput.
+  --ch5-textinput-text-color: #efefef;
 
-/// Set the color of text for the textinput
-$ch5-textinput-input-text-color: $ch5-textinput-text-color !default;
+  /// Set the color of text for the textinput
+  --ch5-textinput-input-text-color: var(--ch5-textinput-text-color);
 
-/// The color of the icon within the textinput
-$ch5-textinput-icon-text-color: $success-background-color !default;
+  /// The color of the icon within the textinput
+  --ch5-textinput-icon-text-color: var(--theme-success-background-color);
 
-/// the color for the label of the textinput
-$ch5-textinput-label-text-color: $ch5-textinput-text-color !default;
+  /// the color for the label of the textinput
+  --ch5-textinput-label-text-color: var(--ch5-textinput-text-color);
 
-// base border color
-$ch5-textinput-border-color: $ch5-textinput-text-color !default;
+  // base border color
+  --ch5-textinput-border-color: var(--ch5-textinput-text-color);
 
-// border color for each element
-/// the color for the border of the textinput
-$ch5-textinput-input-border-color: $ch5-textinput-border-color !default;
+  /// the color for the border of the textinput
+  --ch5-textinput-input-border-color: var(--ch5-textinput-border-color);
 
-/* ===============================================
-CH5-TOGGLE
-============================================= */
+  // ch5-toggle
 
-/// The background color of the handle when value is true(checked).
-$ch5-toggle-handle-checked-color: #3aa64e !default;
+  /// The background color of the handle when value is true(checked).
+  --ch5-toggle-handle-checked-color: #3aa64e;
 
-/// The text color of the label
-$ch5-toggle-label-font-color: #efefef !default;
-/// the text color of the on|off label
-$ch5-toggle-text-font-color: #797979 !default;
-/// the color of the on|off icon
-$ch5-toggle-icon-font-color: #17171a !default;
+  /// The text color of the label
+  --ch5-toggle-label-font-color: #efefef;
 
-// circle
-/// the background color of the handle when shape="circle"
-$ch5-toggle-handle-circle-background: #797979 !default;
-/// the text color of the on label when shape="circle"
-$ch5-toggle-circle-label-on-color: $white !default;
-/// the text color of the off label when shape="circle"
-$ch5-toggle-circle-label-off-color: #666 !default;
-/// the background color of the knob when shape="circle"
-$ch5-toggle-circle-knob-color: #17171a !default;
+  /// the text color of the on|off label
+  --ch5-toggle-text-font-color: #797979;
 
-// rectangle
-/// the background color of the handle when shape="rectangle"
-$ch5-toggle-handle-rectangle-background: #383840 !default;
-/// the text color of the on label when shape="rectangle"
-$ch5-toggle-rectangle-label-on-color: $white !default;
-/// the text color of the off label when shape="rectangle"
-$ch5-toggle-rectangle-label-off-color: $white !default;
-/// the background color of the knob when shape="rectangle"
-$ch5-toggle-rectangle-knob-color: #7b7b8c !default;
+  /// the color of the on|off icon
+  --ch5-toggle-icon-font-color: #17171a;
 
-/* ===============================================
-CH5-TRIGGERVIEW
-============================================= */
+  // circle
+  /// the background color of the handle when shape="circle"
+  --ch5-toggle-handle-circle-background: #797979;
 
-/// The background color of the triggerview.
-$ch5-triggerview-background-color: transparent;
+  /// the text color of the on label when shape="circle"
+  --ch5-toggle-circle-label-on-color: #{$white};
 
-/// The background color of fallback message.
-$ch5-triggerview-fallback-message-color-background: #fff;
+  /// the text color of the off label when shape="circle"
+  --ch5-toggle-circle-label-off-color: #666;
 
-/* ===============================================
-CH5-MODAL
-============================================= */
+  /// the background color of the knob when shape="circle"
+  --ch5-toggle-circle-knob-color: #17171a;
 
-/// The color of the icon at the top of the modal
-$ch5-modal-close-icon-color: #000;
+  // rectangle
+  /// the background color of the handle when shape="rectangle"
+  --ch5-toggle-handle-rectangle-background: #383840;
 
-/// The color of the icon at the top of the modal when it is hovered
-$ch5-modal-close-icon-color-hover: #333;
+  /// the text color of the on label when shape="rectangle"
+  --ch5-toggle-rectangle-label-on-color: #{$white};
 
-/// the background color of the mask element
-$ch5-modal-mask-bg-color: rgba(72, 72, 72, 0.7);
+  /// the text color of the off label when shape="rectangle"
+  --ch5-toggle-rectangle-label-off-color: #{$white};
 
-/// the background color of the icon at the top of the modal
-$ch5-modal-close-icon-background-color: #17171a;
+  /// the background color of the knob when shape="rectangle"
+  --ch5-toggle-rectangle-knob-color: #7b7b8c;
 
-/// the background color of the modal
-$ch5-modal-background-color: #17171a;
+  // ch5-triggerview
 
-/// the text color of the modal
-$ch5-modal-text-color: #4a4a4a;
+  /// The background color of the triggerview.
+  --ch5-triggerview-background-color: transparent;
 
-/// the font color of the modal content
-$ch5-modal-contents-font-color: #333;
+  /// The background color of fallback message.
+  --ch5-triggerview-fallback-message-color-background: #fff;
 
-/// the border color of the modal
-$ch5-modal-border-color: #efefef;
+  // ch5-modal-dialog
 
-/// the text color for the prompt text of the modal
-$ch5-modal-prompt-text-font-color: #4a4a4a;
+  /// The color of the icon at the top of the modal
+  --ch5-modal-close-icon-color: #000;
 
-/* ===============================================
-CH5-SLIDER
-============================================= */
-$ch5-slider-connect-bg: #0099ff;
-$ch5-slider-background-lighten-percent: 30%;
-$ch5-slider-target-bg: #2f2f33;
-$ch5-slider-target-border-color: #efefef;
-$ch5-slider-handle-bg: #efefef;
-$ch5-slider-handle-border-color: #efefef;
-$ch5-slider-pips-color: #efefef;
+  /// The color of the icon at the top of the modal when it is hovered
+  --ch5-modal-close-icon-color-hover: #333;
 
-/* ===============================================
-CH5-LIST
-============================================= */
+  /// the background color of the mask element
+  --ch5-modal-mask-bg-color: rgba(72, 72, 72, 0.7);
 
-/// Set the text color of list items.
-$ch5-list-item-color: #fff !default;
+  /// the background color of the icon at the top of the modal
+  --ch5-modal-close-icon-background-color: #17171a;
 
-/// Set the background color of list items, configurable for each theme
-$ch5-list-item-background-color: #3b3b40 !default;
+  /// the background color of the modal
+  --ch5-modal-background-color: #17171a;
 
-/// Set the border color of list items
-$ch5-list-item-border-color: #5e5e66 !default;
+  /// the text color of the modal
+  --ch5-modal-text-color: #4a4a4a;
+
+  /// the font color of the modal content
+  --ch5-modal-contents-font-color: #333;
+
+  /// the border color of the modal
+  --ch5-modal-border-color: #efefef;
+
+  /// the text color for the prompt text of the modal
+  --ch5-modal-prompt-text-font-color: #4a4a4a;
+
+  // ch5-slider
+  --ch5-slider-connect-bg: #0099ff;
+  --ch5-slider-background-lighten-percent: 30%;
+  --ch5-slider-target-bg: #2f2f33;
+  --ch5-slider-target-border-color: #efefef;
+  --ch5-slider-handle-bg: #efefef;
+  --ch5-slider-handle-border-color: #efefef;
+  --ch5-slider-pips-color: #efefef;
+
+  // ch5-list
+
+  /// Set the text color of list items.
+  --ch5-list-item-color: #fff;
+
+  /// Set the background color of list items, configurable for each theme
+  --ch5-list-item-background-color: #3b3b40;
+
+  /// Set the border color of list items
+  --ch5-list-item-border-color: #5e5e66;
+}

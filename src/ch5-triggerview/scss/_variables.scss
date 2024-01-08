@@ -12,13 +12,13 @@
 
 ch5-triggerview {
   /// default font size value for the triggerview
-  --ch5-triggerview-font-size: #{$ch5-font-size-value}#{$ch5-font-size-unit};
+  --ch5-triggerview-font-size: var(--root-font-size);
 
   /// default font style for the triggerview
-  --ch5-triggerview-font-style: #{$ch5-font-style};
+  --ch5-triggerview-font-style: var(--root-font-style);
 
   /// default font weight for the triggerview
-  --ch5-triggerview-font-weight: #{$ch5-font-weight};
+  --ch5-triggerview-font-weight: var(--root-font-weight);
 
   /// triggerview minimum height in px
   --ch5-triggerview-slide-min-height: 0px;
@@ -36,7 +36,7 @@ ch5-triggerview {
   /// gap between views in px
   --ch5-triggerview-gap: 16px;
 
-  --ch5-triggerview-background-color: #{$ch5-triggerview-background-color};
+  --ch5-triggerview-background-color: var(--ch5-triggerview-background-color);
 
-  --ch5-triggerview-fallback-message-color-background: #{$ch5-triggerview-fallback-message-color-background};
+  --ch5-triggerview-fallback-message-color-background: var(--ch5-triggerview-fallback-message-color-background);
 }

@@ -12,13 +12,13 @@
 
 ch5-list {
   /// Set the font size of the vertical list
-  --ch5-list-font-size: #{$ch5-font-size};
+  --ch5-list-font-size: var(--root-font-size);
 
   /// Set the font style of the vertical list
-  --ch5-list-font-style: #{$ch5-font-style};
+  --ch5-list-font-style: var(--root-font-style);
 
   /// Set the font weight of the vertical list
-  --ch5-list-font-weight: #{$ch5-font-weight};
+  --ch5-list-font-weight: var(--root-font-weight);
 
   /// Set the border style of list items, configurable for each theme
   --ch5-list-item-border: 1px solid transparent;

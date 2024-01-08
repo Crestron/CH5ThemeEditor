@@ -288,9 +288,9 @@
 
   .ch5-slider-button--pressed {
     .ch5-button {
-      border-color: $default-pressed-border-color;
-      background-color: $default-pressed-background-color;
-      color: $default-pressed-font-color;
+      border-color: var(--theme-default-pressed-border-color);
+      background-color: var(--theme-default-pressed-background-color);
+      color: var(--theme-default-pressed-font-color);
     }
   }
 }

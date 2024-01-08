@@ -37,15 +37,15 @@ ch5-button-list {
 
   & ~ .scrollbar-container {
     position: absolute;
-    background-color: $ch5-scrollbar-track-color;
-    border-radius: $ch5-scrollbar-border-radius;
+    background-color: var(--root-scrollbar-track-color);
+    border-radius: var(--scrollbar-border-radius);
 
     .scrollbar {
       position: absolute;
       will-change: width, transform;
       position: absolute;
-      border-radius: $ch5-scrollbar-border-radius;
-      background: $ch5-scrollbar-thumb-color;
+      border-radius: var(--scrollbar-border-radius);
+      background: var(--scrollbar-thumb-color);
     }
   }
 

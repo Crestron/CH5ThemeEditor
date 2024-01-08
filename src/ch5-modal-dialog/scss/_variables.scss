@@ -12,13 +12,13 @@
 
 ch5-modal {
   /// the default font size of the modal
-  --ch5-modal-font-size: #{$ch5-font-size-unit}#{$ch5-font-size-value};
+  --ch5-modal-font-size: var(--root-font-size);
 
   /// the default font style of the modal
-  --ch5-modal-font-style: #{$ch5-font-style};
+  --ch5-modal-font-style: var(--root-font-style);
 
   /// the default font weight of the modal
-  --ch5-modal-font-weight: #{$ch5-font-weight};
+  --ch5-modal-font-weight: var(--root-font-weight);
 
   /// the border width of the modal
   --ch5-modal-border-width: 1px;
@@ -75,10 +75,10 @@ ch5-modal {
   --ch5-modal-contents-font-size: 18px;
 
   /// the font style for the content of the modal.
-  $ch5-model-contents-font-style: var(--ch5-modal-font-style);
+  --ch5-model-contents-font-style: var(--ch5-modal-font-style);
 
   /// the font weight for the content of the modal.
-  $ch5-model-contents-font-weight: var(--ch5-modal-font-weight);
+  --ch5-model-contents-font-weight: var(--ch5-modal-font-weight);
 
   /// the padding for the prompt of the modal
   --ch5-modal-prompt-padding: 30px 0 30px 0;

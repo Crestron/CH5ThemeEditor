@@ -16,9 +16,9 @@ html {
 }
 
 body {
-  font-style: $ch5-font-style;
-  font-size: $ch5-font-size;
-  font-weight: $ch5-font-weight;
+  font-style: var(--root-font-style);
+  font-size: var(--root-font-size);
+  font-weight: var(--root-font-weight);
 }
 
 // custom scrollbar
@@ -26,18 +26,18 @@ body {
 [class*=" ch5-"] {
   &::-webkit-scrollbar,
   ::-webkit-scrollbar {
-    width: $ch5-scrollbar-width;
+    width: var(--root-scrollbar-width);
   }
 
   &::-webkit-scrollbar-track,
   ::-webkit-scrollbar-track {
-    background-color: $ch5-scrollbar-track-color;
+    background-color: var(--root-scrollbar-track-color);
   }
 
   &::-webkit-scrollbar-thumb,
   ::-webkit-scrollbar-thumb {
-    background-color: $ch5-scrollbar-thumb-color;
-    border-radius: $ch5-scrollbar-border-radius;
+    background-color: var(--root-scrollbar-thumb-color);
+    border-radius: var(--root-scrollbar-border-radius);
   }
 }
 

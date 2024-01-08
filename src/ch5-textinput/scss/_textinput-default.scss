@@ -18,7 +18,6 @@ ch5-textinput {
 
   &[dir="rtl"] {
     .ch5-textinput-container {
-
       /// Applied on the icon when iconPosition attribute is set to 'last'
       .ch5-textinput--icon.ch5-textinput--icon-position-last {
         margin-right: 0;
@@ -71,7 +70,7 @@ ch5-textinput {
       color: var(--ch5-textinput-icon-text-color);
     }
 
-    >span {
+    > span {
       display: flex;
       position: relative;
       align-items: center;
@@ -108,7 +107,7 @@ ch5-textinput {
 
     .ch5-textinput-mask {
       width: 100%;
-      font-style: $ch5-font-style;
+      font-style: var(--root-font-style);
       position: absolute;
       top: 0;
       left: 0;
