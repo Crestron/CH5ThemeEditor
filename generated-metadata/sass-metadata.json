@@ -1,0 +1,2253 @@
+{
+  "version": "2.7.0",
+  "ch5ElementThemeDefs": {
+    "ch5-animation": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-animation-size-regular",
+          "description": "size=regular"
+        },
+        {
+          "name": "--ch5-animation-size-small",
+          "description": "size=small"
+        },
+        {
+          "name": "--ch5-animation-size-large",
+          "description": "size=large"
+        },
+        {
+          "name": "--ch5-animation-size-x-large",
+          "description": "size=x-large"
+        },
+        {
+          "name": "--ch5-animation-color",
+          "description": "Animation color"
+        },
+        {
+          "name": "--vs",
+          "description": ""
+        }
+      ]
+    },
+    "ch5-background": {
+      "version": "1.0.0",
+      "variables": []
+    },
+    "ch5-button": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-button-font-size",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-font-style",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-font-weight",
+          "description": "The font weight of the button."
+        },
+        {
+          "name": "--ch5-button-icon-color",
+          "description": "The padding for icon of the button."
+        },
+        {
+          "name": "--ch5-button-icon-font-size",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-padding",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-content-line-height",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-default-border-width",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-primary-border-width",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-secondary-border-width",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-success-border-width",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-info-border-width",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-warning-border-width",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-danger-border-width",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-text-border-width",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-default-border-style",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-primary-border-style",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-secondary-border-style",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-success-border-style",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-info-border-style",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-warning-border-style",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-danger-border-style",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-text-border-style",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-border-radius",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-circle-border-radius",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-oval-border-radius",
+          "description": "button oval"
+        },
+        {
+          "name": "--ch5-button-tab-border-radius",
+          "description": "button tab"
+        },
+        {
+          "name": "--ch5-button-size",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-x-small-font-size",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-x-small-size",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-small-font-size",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-small-size",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-large-font-size",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-large-size",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-x-large-font-size",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-x-large-size",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-faicon-font-family",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-checkbox-checked-faicon",
+          "description": "Checkbox variables for advanced button"
+        },
+        {
+          "name": "--ch5-button-checkbox-unchecked-faicon",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-checkbox-checked-font-weight",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-checkbox-unchecked-font-weight",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-checkbox-padding",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-default-default-border-color",
+          "description": "The border color for default type of the button."
+        },
+        {
+          "name": "--ch5-button-default-default-background-color",
+          "description": "The background color for default type of the button."
+        },
+        {
+          "name": "--ch5-button-default-default-font-color",
+          "description": "The font color for default type of the button."
+        },
+        {
+          "name": "--ch5-button-default-pressed-border-color",
+          "description": "the border color for default type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-default-pressed-background-color",
+          "description": "the background color for default type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-default-pressed-font-color",
+          "description": "the font color for default type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-default-selected-border-color",
+          "description": "the border color for default type of the selected button"
+        },
+        {
+          "name": "--ch5-button-default-selected-background-color",
+          "description": "the background color for default type of the selected button"
+        },
+        {
+          "name": "--ch5-button-default-selected-font-color",
+          "description": "the font color for default type of the selected button"
+        },
+        {
+          "name": "--ch5-button-primary-default-border-color",
+          "description": "The border color for primary type of the button."
+        },
+        {
+          "name": "--ch5-button-primary-default-background-color",
+          "description": "The background color for primary type of the button."
+        },
+        {
+          "name": "--ch5-button-primary-default-font-color",
+          "description": "The font color for primary type of the button."
+        },
+        {
+          "name": "--ch5-button-primary-pressed-border-color",
+          "description": "the border color for primary type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-primary-pressed-background-color",
+          "description": "the background color for primary type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-primary-pressed-font-color",
+          "description": "the font color for primary type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-primary-selected-border-color",
+          "description": "the border color for primary type of the selected button"
+        },
+        {
+          "name": "--ch5-button-primary-selected-background-color",
+          "description": "the background color for primary type of the selected button"
+        },
+        {
+          "name": "--ch5-button-primary-selected-font-color",
+          "description": "the font color for primary type of the selected button"
+        },
+        {
+          "name": "--ch5-button-info-default-border-color",
+          "description": "The border color for info type of the button."
+        },
+        {
+          "name": "--ch5-button-info-default-background-color",
+          "description": "The background color for info type of the button."
+        },
+        {
+          "name": "--ch5-button-info-default-font-color",
+          "description": "The font color for info type of the button."
+        },
+        {
+          "name": "--ch5-button-info-pressed-border-color",
+          "description": "the border color for info type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-info-pressed-background-color",
+          "description": "the background color for info type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-info-pressed-font-color",
+          "description": "the font color for info type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-info-selected-border-color",
+          "description": "the border color for info type of the selected button"
+        },
+        {
+          "name": "--ch5-button-info-selected-background-color",
+          "description": "the background color for info type of the selected button"
+        },
+        {
+          "name": "--ch5-button-info-selected-font-color",
+          "description": "the font color for info type of the selected button"
+        },
+        {
+          "name": "--ch5-button-danger-default-border-color",
+          "description": "The border color for danger type of the button."
+        },
+        {
+          "name": "--ch5-button-danger-default-background-color",
+          "description": "The background color for danger type of the button."
+        },
+        {
+          "name": "--ch5-button-danger-default-font-color",
+          "description": "The font color for danger type of the button."
+        },
+        {
+          "name": "--ch5-button-danger-pressed-border-color",
+          "description": "the border color for danger type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-danger-pressed-background-color",
+          "description": "the background color for danger type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-danger-pressed-font-color",
+          "description": "the font color for danger type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-danger-selected-border-color",
+          "description": "the border color for danger type of the selected button"
+        },
+        {
+          "name": "--ch5-button-danger-selected-background-color",
+          "description": "the background color for danger type of the selected button"
+        },
+        {
+          "name": "--ch5-button-danger-selected-font-color",
+          "description": "the font color for danger type of the selected button"
+        },
+        {
+          "name": "--ch5-button-secondary-default-border-color",
+          "description": "The border color for secondary type of the button."
+        },
+        {
+          "name": "--ch5-button-secondary-default-background-color",
+          "description": "The background color for secondary type of the button."
+        },
+        {
+          "name": "--ch5-button-secondary-default-font-color",
+          "description": "The font color for secondary type of the button."
+        },
+        {
+          "name": "--ch5-button-secondary-pressed-border-color",
+          "description": "the border color for secondary type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-secondary-pressed-background-color",
+          "description": "the background color for secondary type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-secondary-pressed-font-color",
+          "description": "the font color for secondary type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-secondary-selected-border-color",
+          "description": "the border color for secondary type of the selected button"
+        },
+        {
+          "name": "--ch5-button-secondary-selected-background-color",
+          "description": "the background color for secondary type of the selected button"
+        },
+        {
+          "name": "--ch5-button-secondary-selected-font-color",
+          "description": "the font color for secondary type of the selected button"
+        },
+        {
+          "name": "--ch5-button-success-default-border-color",
+          "description": "The border color for success type of the button."
+        },
+        {
+          "name": "--ch5-button-success-default-background-color",
+          "description": "The background color for success type of the button."
+        },
+        {
+          "name": "--ch5-button-success-default-font-color",
+          "description": "The font color for success type of the button."
+        },
+        {
+          "name": "--ch5-button-success-pressed-border-color",
+          "description": "the border color for success type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-success-pressed-background-color",
+          "description": "the background color for success type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-success-pressed-font-color",
+          "description": "the font color for success type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-success-selected-border-color",
+          "description": "the border color for success type of the selected button"
+        },
+        {
+          "name": "--ch5-button-success-selected-background-color",
+          "description": "the background color for success type of the selected button"
+        },
+        {
+          "name": "--ch5-button-success-selected-font-color",
+          "description": "the font color for success type of the selected button"
+        },
+        {
+          "name": "--ch5-button-warning-default-border-color",
+          "description": "The border color for warning type of the button."
+        },
+        {
+          "name": "--ch5-button-warning-default-background-color",
+          "description": "The background color for warning type of the button."
+        },
+        {
+          "name": "--ch5-button-warning-default-font-color",
+          "description": "The font color for warning type of the button."
+        },
+        {
+          "name": "--ch5-button-warning-pressed-border-color",
+          "description": "the border color for warning type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-warning-pressed-background-color",
+          "description": "the background color for warning type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-warning-pressed-font-color",
+          "description": "the font color for warning type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-warning-selected-border-color",
+          "description": "the border color for warning type of the selected button"
+        },
+        {
+          "name": "--ch5-button-warning-selected-background-color",
+          "description": "the background color for warning type of the selected button"
+        },
+        {
+          "name": "--ch5-button-warning-selected-font-color",
+          "description": "the font color for warning type of the selected button"
+        },
+        {
+          "name": "--ch5-button-text-default-border-color",
+          "description": "The border color for text type of the button."
+        },
+        {
+          "name": "--ch5-button-text-default-background-color",
+          "description": "The background color for text type of the button."
+        },
+        {
+          "name": "--ch5-button-text-default-font-color",
+          "description": "The font color for text type of the button."
+        },
+        {
+          "name": "--ch5-button-text-pressed-border-color",
+          "description": "the border color for text type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-text-pressed-background-color",
+          "description": "the background color for text type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-text-pressed-font-color",
+          "description": "the font color for text type of the pressed button"
+        },
+        {
+          "name": "--ch5-button-text-selected-border-color",
+          "description": "the border color for text type of the selected button"
+        },
+        {
+          "name": "--ch5-button-text-selected-background-color",
+          "description": "the background color for text type of the selected button"
+        },
+        {
+          "name": "--ch5-button-text-selected-font-color",
+          "description": "the font color for text type of the selected button"
+        }
+      ]
+    },
+    "ch5-button-list": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-button-list-padding",
+          "description": "button container padding"
+        },
+        {
+          "name": "--ch5-button-list-button-container-width",
+          "description": "button container width"
+        },
+        {
+          "name": "--ch5-button-list-button-container-height",
+          "description": "button container height"
+        },
+        {
+          "name": "--ch5-button-list-button-container-padding",
+          "description": "button container padding"
+        }
+      ]
+    },
+    "ch5-color-chip": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-color-chip-div-height",
+          "description": "The height for div of the color-chip."
+        },
+        {
+          "name": "--ch5-color-chip-div-width",
+          "description": "The width for div of the color-chip."
+        },
+        {
+          "name": "--ch5-color-chip-background-color",
+          "description": "Background color for color-chip."
+        }
+      ]
+    },
+    "ch5-color-picker": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-color-picker-height",
+          "description": "Height for color picker"
+        },
+        {
+          "name": "--ch5-color-picker-width",
+          "description": "Width for color picker"
+        }
+      ]
+    },
+    "ch5-datetime": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-datetime-font-size",
+          "description": "Font size"
+        },
+        {
+          "name": "--ch5-datetime-height",
+          "description": "Datetime height"
+        },
+        {
+          "name": "--ch5-datetime-width",
+          "description": "Datetime width"
+        },
+        {
+          "name": "--ch5-datetime-background-color",
+          "description": "Background color"
+        }
+      ]
+    },
+    "ch5-dpad": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-dpad-regular-dimension",
+          "description": "Set the height and width of dpad for regular size"
+        },
+        {
+          "name": "--ch5-dpad-x-small-dimension",
+          "description": "Set the height and width of dpad for x-small size"
+        },
+        {
+          "name": "--ch5-dpad-small-dimension",
+          "description": "Set the height and width of dpad for small size"
+        },
+        {
+          "name": "--ch5-dpad-large-dimension",
+          "description": "Set the height and width of dpad for large size"
+        },
+        {
+          "name": "--ch5-dpad-x-large-dimension",
+          "description": "Set the height and width of dpad for x-large size"
+        },
+        {
+          "name": "--ch5-dpad-regular-edge-radius",
+          "description": "Set the border radius for 'plus' shape regular size"
+        },
+        {
+          "name": "--ch5-dpad-x-small-edge-radius",
+          "description": "Set the border radius for 'plus' shape x-small size"
+        },
+        {
+          "name": "--ch5-dpad-small-edge-radius",
+          "description": "Set the border radius for 'plus' shape small size"
+        },
+        {
+          "name": "--ch5-dpad-large-edge-radius",
+          "description": "Set the border radius for 'plus' shape large size"
+        },
+        {
+          "name": "--ch5-dpad-x-large-edge-radius",
+          "description": "Set the border radius for 'plus' shape x-large size"
+        },
+        {
+          "name": "--ch5-dpad-label-font-size",
+          "description": "Set the label font size"
+        },
+        {
+          "name": "--ch5-dpad-icon-font-size-x-small",
+          "description": "Set the icon font size for x-small size"
+        },
+        {
+          "name": "--ch5-dpad-icon-font-size-small",
+          "description": "Set the icon font size for small size"
+        },
+        {
+          "name": "--ch5-dpad-icon-font-size-regular",
+          "description": "Set the icon font size for regular size"
+        },
+        {
+          "name": "--ch5-dpad-icon-font-size-large",
+          "description": "Set the icon font size for large size"
+        },
+        {
+          "name": "--ch5-dpad-icon-font-size-x-large",
+          "description": "Set the icon font size for x-large size"
+        },
+        {
+          "name": "--ch5-dpad-default-default-background-color",
+          "description": "The background color for default type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-default-default-font-color",
+          "description": "The font color for default type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-default-pressed-background-color",
+          "description": "the pressed background color for default type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-default-pressed-font-color",
+          "description": "the pressed font color for default type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-primary-default-background-color",
+          "description": "The background color for primary type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-primary-default-font-color",
+          "description": "The font color for primary type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-primary-pressed-background-color",
+          "description": "the pressed background color for primary type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-primary-pressed-font-color",
+          "description": "the pressed font color for primary type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-info-default-background-color",
+          "description": "The background color for info type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-info-default-font-color",
+          "description": "The font color for info type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-info-pressed-background-color",
+          "description": "the pressed background color for info type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-info-pressed-font-color",
+          "description": "the pressed font color for info type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-danger-default-background-color",
+          "description": "The background color for danger type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-danger-default-font-color",
+          "description": "The font color for danger type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-danger-pressed-background-color",
+          "description": "the pressed background color for danger type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-danger-pressed-font-color",
+          "description": "the pressed font color for danger type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-secondary-default-background-color",
+          "description": "The background color for secondary type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-secondary-default-font-color",
+          "description": "The font color for secondary type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-secondary-pressed-background-color",
+          "description": "the pressed background color for secondary type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-secondary-pressed-font-color",
+          "description": "the pressed font color for secondary type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-success-default-background-color",
+          "description": "The background color for success type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-success-default-font-color",
+          "description": "The font color for success type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-success-pressed-background-color",
+          "description": "the pressed background color for success type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-success-pressed-font-color",
+          "description": "the pressed font color for success type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-warning-default-background-color",
+          "description": "The background color for warning type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-warning-default-font-color",
+          "description": "The font color for warning type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-warning-pressed-background-color",
+          "description": "the pressed background color for warning type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-warning-pressed-font-color",
+          "description": "the pressed font color for warning type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-text-default-background-color",
+          "description": "The background color for text type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-text-default-font-color",
+          "description": "The font color for text type of dpad."
+        },
+        {
+          "name": "--ch5-dpad-text-pressed-background-color",
+          "description": "the pressed background color for text type of dpad"
+        },
+        {
+          "name": "--ch5-dpad-text-pressed-font-color",
+          "description": "the pressed font color for text type of dpad"
+        }
+      ]
+    },
+    "ch5-image": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-image-height",
+          "description": "Set height of image"
+        },
+        {
+          "name": "--ch5-image-width",
+          "description": "Set width of image"
+        },
+        {
+          "name": "--ch5-image-object-fit",
+          "description": "Sets object fit property"
+        }
+      ]
+    },
+    "ch5-keypad": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-keypad-x-small-container-width",
+          "description": "ch5-keypad container width for x-small size"
+        },
+        {
+          "name": "--ch5-keypad-x-small-container-height",
+          "description": "ch5-keypad container height for x-small size"
+        },
+        {
+          "name": "--ch5-keypad-x-small-container-height-extra",
+          "description": "ch5-keypad container height-extra for x-small size"
+        },
+        {
+          "name": "--ch5-keypad-x-small-font-size-major",
+          "description": "ch5-keypad font-size-major for x-small size"
+        },
+        {
+          "name": "--ch5-keypad-x-small-font-size-minor",
+          "description": "ch5-keypad font-size-minor for x-small size"
+        },
+        {
+          "name": "--ch5-keypad-small-container-width",
+          "description": "ch5-keypad container width for small size"
+        },
+        {
+          "name": "--ch5-keypad-small-container-height",
+          "description": "ch5-keypad container height for small size"
+        },
+        {
+          "name": "--ch5-keypad-small-container-height-extra",
+          "description": "ch5-keypad container height-extra for small size"
+        },
+        {
+          "name": "--ch5-keypad-small-font-size-major",
+          "description": "ch5-keypad font-size-major for small size"
+        },
+        {
+          "name": "--ch5-keypad-small-font-size-minor",
+          "description": "ch5-keypad font-size-minor for small size"
+        },
+        {
+          "name": "--ch5-keypad-regular-container-width",
+          "description": "ch5-keypad container width for regular size"
+        },
+        {
+          "name": "--ch5-keypad-regular-container-height",
+          "description": "ch5-keypad container height for regular size"
+        },
+        {
+          "name": "--ch5-keypad-regular-container-height-extra",
+          "description": "ch5-keypad container height-extra for regular size"
+        },
+        {
+          "name": "--ch5-keypad-regular-font-size-major",
+          "description": "ch5-keypad font-size-major for regular size"
+        },
+        {
+          "name": "--ch5-keypad-regular-font-size-minor",
+          "description": "ch5-keypad font-size-minor for regular size"
+        },
+        {
+          "name": "--ch5-keypad-large-container-width",
+          "description": "ch5-keypad container width for large size"
+        },
+        {
+          "name": "--ch5-keypad-large-container-height",
+          "description": "ch5-keypad container height for large size"
+        },
+        {
+          "name": "--ch5-keypad-large-container-height-extra",
+          "description": "ch5-keypad container height-extra for large size"
+        },
+        {
+          "name": "--ch5-keypad-large-font-size-major",
+          "description": "ch5-keypad font-size-major for large size"
+        },
+        {
+          "name": "--ch5-keypad-large-font-size-minor",
+          "description": "ch5-keypad font-size-minor for large size"
+        },
+        {
+          "name": "--ch5-keypad-x-large-container-width",
+          "description": "ch5-keypad container width for x-large size"
+        },
+        {
+          "name": "--ch5-keypad-x-large-container-height",
+          "description": "ch5-keypad container height for x-large size"
+        },
+        {
+          "name": "--ch5-keypad-x-large-container-height-extra",
+          "description": "ch5-keypad container height-extra for x-large size"
+        },
+        {
+          "name": "--ch5-keypad-x-large-font-size-major",
+          "description": "ch5-keypad font-size-major for x-large size"
+        },
+        {
+          "name": "--ch5-keypad-x-large-font-size-minor",
+          "description": "ch5-keypad font-size-minor for x-large size"
+        },
+        {
+          "name": "--ch5-keypad-default-default-background-color",
+          "description": "The default background color for default type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-default-default-font-color",
+          "description": "The default font color for default type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-default-default-border-color",
+          "description": "The default border color for default type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-default-pressed-background-color",
+          "description": "the pressed background color for default type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-default-pressed-font-color",
+          "description": "the pressed font color for default type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-default-pressed-border-color",
+          "description": "the pressed border color for default type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-primary-default-background-color",
+          "description": "The default background color for primary type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-primary-default-font-color",
+          "description": "The default font color for primary type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-primary-default-border-color",
+          "description": "The default border color for primary type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-primary-pressed-background-color",
+          "description": "the pressed background color for primary type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-primary-pressed-font-color",
+          "description": "the pressed font color for primary type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-primary-pressed-border-color",
+          "description": "the pressed border color for primary type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-info-default-background-color",
+          "description": "The default background color for info type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-info-default-font-color",
+          "description": "The default font color for info type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-info-default-border-color",
+          "description": "The default border color for info type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-info-pressed-background-color",
+          "description": "the pressed background color for info type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-info-pressed-font-color",
+          "description": "the pressed font color for info type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-info-pressed-border-color",
+          "description": "the pressed border color for info type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-danger-default-background-color",
+          "description": "The default background color for danger type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-danger-default-font-color",
+          "description": "The default font color for danger type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-danger-default-border-color",
+          "description": "The default border color for danger type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-danger-pressed-background-color",
+          "description": "the pressed background color for danger type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-danger-pressed-font-color",
+          "description": "the pressed font color for danger type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-danger-pressed-border-color",
+          "description": "the pressed border color for danger type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-secondary-default-background-color",
+          "description": "The default background color for secondary type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-secondary-default-font-color",
+          "description": "The default font color for secondary type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-secondary-default-border-color",
+          "description": "The default border color for secondary type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-secondary-pressed-background-color",
+          "description": "the pressed background color for secondary type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-secondary-pressed-font-color",
+          "description": "the pressed font color for secondary type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-secondary-pressed-border-color",
+          "description": "the pressed border color for secondary type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-success-default-background-color",
+          "description": "The default background color for success type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-success-default-font-color",
+          "description": "The default font color for success type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-success-default-border-color",
+          "description": "The default border color for success type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-success-pressed-background-color",
+          "description": "the pressed background color for success type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-success-pressed-font-color",
+          "description": "the pressed font color for success type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-success-pressed-border-color",
+          "description": "the pressed border color for success type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-warning-default-background-color",
+          "description": "The default background color for warning type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-warning-default-font-color",
+          "description": "The default font color for warning type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-warning-default-border-color",
+          "description": "The default border color for warning type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-warning-pressed-background-color",
+          "description": "the pressed background color for warning type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-warning-pressed-font-color",
+          "description": "the pressed font color for warning type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-warning-pressed-border-color",
+          "description": "the pressed border color for warning type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-text-default-background-color",
+          "description": "The default background color for text type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-text-default-font-color",
+          "description": "The default font color for text type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-text-default-border-color",
+          "description": "The default border color for text type of keypad."
+        },
+        {
+          "name": "--ch5-keypad-text-pressed-background-color",
+          "description": "the pressed background color for text type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-text-pressed-font-color",
+          "description": "the pressed font color for text type of keypad"
+        },
+        {
+          "name": "--ch5-keypad-text-pressed-border-color",
+          "description": "the pressed border color for text type of keypad"
+        }
+      ]
+    },
+    "ch5-list": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-list-font-size",
+          "description": "Set the font size of the vertical list"
+        },
+        {
+          "name": "--ch5-list-font-style",
+          "description": "Set the font style of the vertical list"
+        },
+        {
+          "name": "--ch5-list-font-weight",
+          "description": "Set the font weight of the vertical list"
+        },
+        {
+          "name": "--ch5-list-item-border",
+          "description": "Set the border style of list items, configurable for each theme"
+        },
+        {
+          "name": "--ch5-list-item-padding",
+          "description": "Set the padding of list items"
+        }
+      ]
+    },
+    "ch5-label": {
+      "version": "1.0.0",
+      "variables": []
+    },
+    "ch5-modal-dialog": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-modal-font-size",
+          "description": "the default font size of the modal"
+        },
+        {
+          "name": "--ch5-modal-font-style",
+          "description": "the default font style of the modal"
+        },
+        {
+          "name": "--ch5-modal-font-weight",
+          "description": "the default font weight of the modal"
+        },
+        {
+          "name": "--ch5-modal-border-width",
+          "description": "the border width of the modal"
+        },
+        {
+          "name": "--ch5-modal-border-style",
+          "description": "the border style of the modal"
+        },
+        {
+          "name": "--ch5-modal-border-radius",
+          "description": "the border radius of the modal"
+        },
+        {
+          "name": "--ch5-modal-padding",
+          "description": "set padding for the modal"
+        },
+        {
+          "name": "--ch5-modal-close-icon-margin",
+          "description": "the margin of the icon at the top of the modal."
+        },
+        {
+          "name": "--ch5-modal-close-icon-padding",
+          "description": "the padding of the icon at the top of the modal."
+        },
+        {
+          "name": "--ch5-modal-close-icon-width",
+          "description": "the width of the icon at the top of the modal."
+        },
+        {
+          "name": "--ch5-modal-close-icon-font-size",
+          "description": "the font size of the icon at the top of the modal"
+        },
+        {
+          "name": "--ch5-modal-close-icon-font-style",
+          "description": "the font style of the icon at the top of the modal"
+        },
+        {
+          "name": "--ch5-modal-close-icon-font-weight",
+          "description": "the font weight of the icon at the top of the modal"
+        },
+        {
+          "name": "--ch5-modal-default-close-icon-font-size",
+          "description": "the default font size of the icon at the top of the modal."
+        },
+        {
+          "name": "--ch5-modal-default-close-icon-font-style",
+          "description": "the default font style of the icon at the top of the modal"
+        },
+        {
+          "name": "--ch5-modal-default-close-icon-font-weight",
+          "description": "the default font weight of the icon at the top of the modal"
+        },
+        {
+          "name": "--ch5-modal-title-font-size",
+          "description": "the font size for the title of the modal"
+        },
+        {
+          "name": "--ch5-modal-title-font-style",
+          "description": "the font style for the title of the modal"
+        },
+        {
+          "name": "--ch5-modal-title-font-weight",
+          "description": "the font weight for the title of the modal"
+        },
+        {
+          "name": "--ch5-modal-contents-padding",
+          "description": "the padding of the modal's content"
+        },
+        {
+          "name": "--ch5-modal-contents-font-size",
+          "description": "the font size for the content of the modal."
+        },
+        {
+          "name": "--ch5-modal-prompt-padding",
+          "description": "the padding for the prompt of the modal"
+        },
+        {
+          "name": "--ch5-modal-prompt-icon-margin-right",
+          "description": "the right margin for the prompt icon of the modal"
+        },
+        {
+          "name": "--ch5-modal-prompt-icon-font-size",
+          "description": "the font size for the prompt icon of the modal"
+        },
+        {
+          "name": "--ch5-modal-prompt-icon-font-style",
+          "description": "the font style for the prompt icon of the modal"
+        },
+        {
+          "name": "--ch5-modal-prompt-icon-font-weight",
+          "description": "the font weight for the prompt icon of the modal"
+        },
+        {
+          "name": "--ch5-modal-prompt-text-font-style",
+          "description": "the font style for the prompt text of the modal"
+        },
+        {
+          "name": "--ch5-modal-prompt-text-font-size",
+          "description": "the font size for the prompt text of the modal"
+        },
+        {
+          "name": "--ch5-modal-prompt-text-font-weight",
+          "description": "the font weight for the prompt text of the modal"
+        },
+        {
+          "name": "--ch5-modal-z-index",
+          "description": ""
+        },
+        {
+          "name": "--ch5-modal-mask-z-index",
+          "description": ""
+        }
+      ]
+    },
+    "ch5-overlay-panel": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-overlay-panel-font-size",
+          "description": "the default font size for the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-font-style",
+          "description": "the default font style for the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-font-weight",
+          "description": "the default font weight for the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-border-width",
+          "description": "the border width of the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-border-style",
+          "description": "the border style of the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-border-radius",
+          "description": "the border radius of the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-padding",
+          "description": "set padding for the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-close-icon-margin",
+          "description": "the margin of the icon at the top of the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-close-icon-padding",
+          "description": "the padding of the icon at the top of the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-close-icon-width",
+          "description": "the width of the icon at the top of the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-default-close-icon-font-size",
+          "description": "the font size of the icon at the top of the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-default-close-icon-font-style",
+          "description": "the font style of the icon at the top of the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-default-close-icon-font-weight",
+          "description": "the font weight of the icon at the top of the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-contents-padding",
+          "description": "the padding for the content of the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-contents-font-size",
+          "description": "the font size for the content of the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-contents-font-style",
+          "description": "the font style for the content of the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-contents-font-weight",
+          "description": "the font weight for the content of the overlay panel"
+        },
+        {
+          "name": "--ch5-overlay-panel-z-index",
+          "description": ""
+        }
+      ]
+    },
+    "ch5-segmented-gauge": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-segmented-gauge-led-style-height",
+          "description": "Led style gauge style height"
+        },
+        {
+          "name": "--ch5-segmented-gauge-led-style-width",
+          "description": "Led style gauge style width"
+        },
+        {
+          "name": "--ch5-segmented-gauge-segment-margin",
+          "description": "Margin for segmented gauge children"
+        },
+        {
+          "name": "--ch5-segmented-gauge-led-style-border-radius",
+          "description": "Led style border radius"
+        },
+        {
+          "name": "--ch5-segmented-gauge-state-graphic-green",
+          "description": "State graphic green"
+        },
+        {
+          "name": "--ch5-segmented-gauge-state-graphic-inactive",
+          "description": "State graphic inactive"
+        },
+        {
+          "name": "--ch5-segmented-gauge-state-graphic-yellow",
+          "description": "State graphic yellow"
+        },
+        {
+          "name": "--ch5-segmented-gauge-state-graphic-red",
+          "description": "State graphic green"
+        },
+        {
+          "name": "--ch5-segmented-gauge-state-graphic-blue",
+          "description": "State graphic green"
+        },
+        {
+          "name": "--ch5-segmented-gauge-state-graphic-orange",
+          "description": "State graphic green"
+        },
+        {
+          "name": "--ch5-segmented-gauge-state-graphic-white",
+          "description": "State graphic green"
+        },
+        {
+          "name": "--ch5-segmented-gauge-hidden-segment",
+          "description": "Segmented gauge hidden segment"
+        },
+        {
+          "name": "--ch5-segmented-gauge-hidden-margin",
+          "description": "Segmented gauge hidden margin"
+        }
+      ]
+    },
+    "ch5-select": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-select-font-size",
+          "description": "component main font size"
+        },
+        {
+          "name": "--ch5-select-font-style",
+          "description": "component main font style"
+        },
+        {
+          "name": "--ch5-select-font-weight",
+          "description": "component main font weight"
+        },
+        {
+          "name": "--ch5-select-padding",
+          "description": "top line content padding"
+        },
+        {
+          "name": "--ch5-select-border-width",
+          "description": "component border width"
+        },
+        {
+          "name": "--ch5-select-border-radius",
+          "description": "component border radius"
+        },
+        {
+          "name": "--ch5-select-combo-trigger-margin",
+          "description": "combo trigger button margin"
+        },
+        {
+          "name": "--ch5-select-combo-trigger-width",
+          "description": "combo trigger button width"
+        },
+        {
+          "name": "--ch5-select-combo-trigger-height",
+          "description": "combo trigger button height"
+        },
+        {
+          "name": "--ch5-select-item-selected-width",
+          "description": "top line width"
+        },
+        {
+          "name": "--ch5-select-panel-item-border-width",
+          "description": "item border width"
+        },
+        {
+          "name": "--ch5-select-panel-item-padding",
+          "description": "item padding"
+        },
+        {
+          "name": "--ch5-select-panel-items-box-shadow",
+          "description": "select panel shadow"
+        },
+        {
+          "name": "--ch5-select-panel-z-index",
+          "description": ""
+        }
+      ]
+    },
+    "ch5-signal-level-gauge": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-signal-level-gauge-small-height",
+          "description": "Height small"
+        },
+        {
+          "name": "--ch5-signal-level-gauge-small-width",
+          "description": "Width small"
+        },
+        {
+          "name": "--ch5-signal-level-gauge-regular-height",
+          "description": "Height regular"
+        },
+        {
+          "name": "--ch5-signal-level-gauge-regular-width",
+          "description": "Width regular"
+        },
+        {
+          "name": "--ch5-signal-level-gauge-large-height",
+          "description": "Height large"
+        },
+        {
+          "name": "--ch5-signal-level-gauge-large-width",
+          "description": "Width large"
+        },
+        {
+          "name": "--ch5-signal-level-gauge-x-large-height",
+          "description": "Height x-large"
+        },
+        {
+          "name": "--ch5-signal-level-gauge-x-large-width",
+          "description": "Width x-large"
+        },
+        {
+          "name": "--ch5-signal-level-gauge-bar-color",
+          "description": "Bar color"
+        },
+        {
+          "name": "--ch5-signal-level-gauge-selected-bar-color",
+          "description": "Selected bar color"
+        }
+      ]
+    },
+    "ch5-subpage-reference-list": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-subpage-reference-list-container-padding",
+          "description": "subpage-reference container padding"
+        },
+        {
+          "name": "--ch5-subpage-reference-list-scrollbar-width",
+          "description": "scrollbar width"
+        },
+        {
+          "name": "--ch5-subpage-reference-list-scrollbar-track-color",
+          "description": "scrollbar track color"
+        },
+        {
+          "name": "--ch5-subpage-reference-list-scrollbar-border-radius",
+          "description": "scrollbar border radius"
+        },
+        {
+          "name": "--ch5-subpage-reference-list-scrollbar-thumb-color",
+          "description": "scrollbar thumb color"
+        }
+      ]
+    },
+    "ch5-slider": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-slider-height",
+          "description": "slider target size"
+        },
+        {
+          "name": "--ch5-slider-target-border-width",
+          "description": "slider border width"
+        },
+        {
+          "name": "--ch5-slider-handle-border-width",
+          "description": "slider handle border width"
+        },
+        {
+          "name": "--ch5-slider-target-border-style",
+          "description": "slider border style"
+        },
+        {
+          "name": "--ch5-slider-handle-border-style",
+          "description": "slider handle border style"
+        },
+        {
+          "name": "--ch5-slider-width-x-small",
+          "description": "x-small width in px of the slider"
+        },
+        {
+          "name": "--ch5-slider-width-small",
+          "description": "small width in px of the slider"
+        },
+        {
+          "name": "--ch5-slider-width-regular",
+          "description": "regular width in px of the slider"
+        },
+        {
+          "name": "--ch5-slider-width-large",
+          "description": "large width in px of the slider"
+        },
+        {
+          "name": "--ch5-slider-width-x-large",
+          "description": "x-large width in px of the slider"
+        },
+        {
+          "name": "--ch5-slider-size-x-small-button-width",
+          "description": "x-small width in px of the button for advanced slider"
+        },
+        {
+          "name": "--ch5-slider-size-x-small-button-height",
+          "description": "x-small height in px of the button for advanced slider"
+        },
+        {
+          "name": "--ch5-slider-size-small-button-width",
+          "description": "small width in px of the button for advanced slider"
+        },
+        {
+          "name": "--ch5-slider-size-small-button-height",
+          "description": "small height in px of the button for advanced slider"
+        },
+        {
+          "name": "--ch5-slider-size-regular-button-width",
+          "description": "regular width in px of the button for advanced slider"
+        },
+        {
+          "name": "--ch5-slider-size-regular-button-height",
+          "description": "regular height in px of the button for advanced slider"
+        },
+        {
+          "name": "--ch5-slider-size-large-button-width",
+          "description": "large width in px of the button for advanced slider"
+        },
+        {
+          "name": "--ch5-slider-size-large-button-height",
+          "description": "large height in px of the button for advanced slider"
+        },
+        {
+          "name": "--ch5-slider-size-x-large-button-width",
+          "description": "x-large width in px of the button for advanced slider"
+        },
+        {
+          "name": "--ch5-slider-size-x-large-button-height",
+          "description": "x-large height in px of the button for advanced slider"
+        },
+        {
+          "name": "--ch5-slider-size-x-small-handle-width-rounded-rectangle",
+          "description": "x-small width in px of the handle when handleShape=\"rounded-rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-x-small-handle-height-rounded-rectangle",
+          "description": "x-small height in px of the handle when handleShape=\"rounded-rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-small-handle-width-rounded-rectangle",
+          "description": "small width in px of the handle when handleShape=\"rounded-rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-small-handle-height-rounded-rectangle",
+          "description": "small height in px of the handle when handleShape=\"rounded-rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-regular-handle-width-rounded-rectangle",
+          "description": "regular width in px of the handle when handleShape=\"rounded-rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-regular-handle-height-rounded-rectangle",
+          "description": "regular height in px of the handle when handleShape=\"rounded-rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-large-handle-width-rounded-rectangle",
+          "description": "large width in px of the handle when handleShape=\"rounded-rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-large-handle-height-rounded-rectangle",
+          "description": "large height in px of the handle when handleShape=\"rounded-rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-x-large-handle-width-rounded-rectangle",
+          "description": "x-large width in px of the handle when handleShape=\"rounded-rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-x-large-handle-height-rounded-rectangle",
+          "description": "x-large height in px of the handle when handleShape=\"rounded-rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-x-small-handle-width-rectangle",
+          "description": "x-small width in px of the handle when handleShape=\"rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-x-small-handle-height-rectangle",
+          "description": "x-small height in px of the handle when handleShape=\"rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-small-handle-width-rectangle",
+          "description": "small width in px of the handle when handleShape=\"rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-small-handle-height-rectangle",
+          "description": "small height in px of the handle when handleShape=\"rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-regular-handle-width-rectangle",
+          "description": "regular width in px of the handle when handleShape=\"rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-regular-handle-height-rectangle",
+          "description": "regular height in px of the handle when handleShape=\"rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-large-handle-width-rectangle",
+          "description": "large width in px of the handle when handleShape=\"rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-large-handle-height-rectangle",
+          "description": "large height in px of the handle when handleShape=\"rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-x-large-handle-width-rectangle",
+          "description": "x-large width in px of the handle when handleShape=\"rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-x-large-handle-height-rectangle",
+          "description": "x-large height in px of the handle when handleShape=\"rectangle\""
+        },
+        {
+          "name": "--ch5-slider-size-x-small-handle-width-circle",
+          "description": "x-small width in px of the handle when handleShape=\"circle\""
+        },
+        {
+          "name": "--ch5-slider-size-x-small-handle-height-circle",
+          "description": "x-small height in px of the handle when handleShape=\"circle\""
+        },
+        {
+          "name": "--ch5-slider-size-small-handle-width-circle",
+          "description": "small width in px of the handle when handleShape=\"circle\""
+        },
+        {
+          "name": "--ch5-slider-size-small-handle-height-circle",
+          "description": "small height in px of the handle when handleShape=\"circle\""
+        },
+        {
+          "name": "--ch5-slider-size-regular-handle-width-circle",
+          "description": "regular width in px of the handle when handleShape=\"circle\""
+        },
+        {
+          "name": "--ch5-slider-size-regular-handle-height-circle",
+          "description": "regular height in px of the handle when handleShape=\"circle\""
+        },
+        {
+          "name": "--ch5-slider-size-large-handle-width-circle",
+          "description": "large width in px of the handle when handleShape=\"circle\""
+        },
+        {
+          "name": "--ch5-slider-size-large-handle-height-circle",
+          "description": "large height in px of the handle when handleShape=\"circle\""
+        },
+        {
+          "name": "--ch5-slider-size-x-large-handle-width-circle",
+          "description": "x-large width in px of the handle when handleShape=\"circle\""
+        },
+        {
+          "name": "--ch5-slider-size-x-large-handle-height-circle",
+          "description": "x-large height in px of the handle when handleShape=\"circle\""
+        },
+        {
+          "name": "--ch5-slider-size-x-small-handle-width-oval",
+          "description": "x-small width in px of the handle when handleShape=\"oval\""
+        },
+        {
+          "name": "--ch5-slider-size-x-small-handle-height-oval",
+          "description": "x-small height in px of the handle when handleShape=\"oval\""
+        },
+        {
+          "name": "--ch5-slider-size-small-handle-width-oval",
+          "description": "small width in px of the handle when handleShape=\"oval\""
+        },
+        {
+          "name": "--ch5-slider-size-small-handle-height-oval",
+          "description": "small height in px of the handle when handleShape=\"oval\""
+        },
+        {
+          "name": "--ch5-slider-size-regular-handle-width-oval",
+          "description": "regular width in px of the handle when handleShape=\"oval\""
+        },
+        {
+          "name": "--ch5-slider-size-regular-handle-height-oval",
+          "description": "regular height in px of the handle when handleShape=\"oval\""
+        },
+        {
+          "name": "--ch5-slider-size-large-handle-width-oval",
+          "description": "large width in px of the handle when handleShape=\"oval\""
+        },
+        {
+          "name": "--ch5-slider-size-large-handle-height-oval",
+          "description": "large height in px of the handle when handleShape=\"oval\""
+        },
+        {
+          "name": "--ch5-slider-size-x-large-handle-width-oval",
+          "description": "x-large width in px of the handle when handleShape=\"oval\""
+        },
+        {
+          "name": "--ch5-slider-size-x-large-handle-height-oval",
+          "description": "x-large height in px of the handle when handleShape=\"oval\""
+        },
+        {
+          "name": "--ch5-slider-horizontal-pips",
+          "description": ""
+        },
+        {
+          "name": "--ch5-slider-vertical-pips",
+          "description": ""
+        },
+        {
+          "name": "--ch5-slider-tooltip-on-spacing-vertical-advanced",
+          "description": ""
+        },
+        {
+          "name": "--ch5-slider-tooltip-on-spacing-vertical-normal",
+          "description": ""
+        },
+        {
+          "name": "--ch5-slider-tooltip-on-spacing-horizontal-advanced",
+          "description": ""
+        },
+        {
+          "name": "--ch5-slider-tooltip-on-spacing-horizontal-normal",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-content-line-height",
+          "description": ""
+        },
+        {
+          "name": "--ch5-button-padding",
+          "description": ""
+        }
+      ]
+    },
+    "ch5-spinner": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-spinner-border-width",
+          "description": ""
+        },
+        {
+          "name": "--ch5-spinner-border-style",
+          "description": ""
+        },
+        {
+          "name": "--ch5-spinner-font-size",
+          "description": "the default font size of the spinner"
+        },
+        {
+          "name": "--ch5-spinner-font-style",
+          "description": "the default font style of the spinner"
+        },
+        {
+          "name": "--ch5-spinner-font-weight",
+          "description": "the default font weight of the spinner"
+        },
+        {
+          "name": "--ch5-spinner-icon-font-size",
+          "description": "the default font size for icon"
+        },
+        {
+          "name": "--ch5-spinner-icon-padding",
+          "description": "the padding of the icon within the slider item"
+        },
+        {
+          "name": "--ch5-spinner-icon-margin",
+          "description": "the margin of the icon within the slider item"
+        },
+        {
+          "name": "--ch5-spinner-overlay-opacity",
+          "description": "the opacity for the overlay of the spinner"
+        },
+        {
+          "name": "--ch5-spinner-wrapper-z-index",
+          "description": ""
+        },
+        {
+          "name": "--ch5-spinner-overlay-z-index",
+          "description": ""
+        }
+      ]
+    },
+    "ch5-tab-button": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-tab-button-button-container-width",
+          "description": "button container width"
+        },
+        {
+          "name": "--ch5-tab-button-button-container-height",
+          "description": "button container height"
+        }
+      ]
+    },
+    "ch5-text": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-text-min-width",
+          "description": ""
+        },
+        {
+          "name": "--ch5-text-min-height",
+          "description": ""
+        },
+        {
+          "name": "--ch5-text-width",
+          "description": ""
+        },
+        {
+          "name": "--ch5-text-height",
+          "description": ""
+        },
+        {
+          "name": "--ch5-text-padding-value",
+          "description": ""
+        }
+      ]
+    },
+    "ch5-textinput": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-textinput-input-background-color",
+          "description": "background color of textinput input field"
+        },
+        {
+          "name": "--ch5-textinput-input-border-radius",
+          "description": "the border radius for the textinput"
+        },
+        {
+          "name": "--ch5-textinput-input-border-width",
+          "description": "set the textinput border's width"
+        },
+        {
+          "name": "--ch5-textinput-input-border-style",
+          "description": "set the textinput border's style"
+        },
+        {
+          "name": "--ch5-textinput-font-style",
+          "description": "set the default font style for the textinput"
+        },
+        {
+          "name": "--ch5-textinput-font-weight",
+          "description": "set the default font weight for the textinput"
+        },
+        {
+          "name": "--ch5-textinput-regular-font-size",
+          "description": "set the font size for regular size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-input-regular-padding",
+          "description": "set padding for regular size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-size-regular-width",
+          "description": "set the width for regular size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-regular-mask-font-size",
+          "description": "set the font size for regular size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-regular-font-style",
+          "description": "set the font style for regular size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-regular-font-weight",
+          "description": "set the font weight for regular size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-icon-regular-margin",
+          "description": "set margin of icon for regular size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-x-small-font-size",
+          "description": "set the font size for x-small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-x-small-mask-font-size",
+          "description": "set the font size for x-small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-x-small-font-style",
+          "description": "set the font style for x-small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-x-small-font-weight",
+          "description": "set the font weight for x-small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-input-x-small-padding",
+          "description": "set padding for x-small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-size-x-small-width",
+          "description": "set the width for x-small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-icon-x-small-margin",
+          "description": "set margin of icon for x-small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-input-small-padding",
+          "description": "set padding for small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-small-font-size",
+          "description": "set the font size for small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-small-mask-font-size",
+          "description": "set the font size for small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-small-font-style",
+          "description": "set the font style for small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-small-font-weight",
+          "description": "set the font weight for small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-size-small-width",
+          "description": "set the width for small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-icon-small-margin",
+          "description": "set margin of icon for small size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-input-large-padding",
+          "description": "set padding for large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-large-font-size",
+          "description": "set the font size for large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-large-mask-font-size",
+          "description": "set the font size for large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-large-font-style",
+          "description": "set the font style for large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-large-font-weight",
+          "description": "set the font weight for large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-size-large-width",
+          "description": "set the width for large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-icon-large-font-size",
+          "description": "set the font size of icon for large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-icon-large-margin",
+          "description": "set margin of icon for large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-input-x-large-padding",
+          "description": "set padding for x-large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-x-large-font-size",
+          "description": "set the font size for x-large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-x-large-mask-font-size",
+          "description": "set the font size for x-large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-x-large-font-style",
+          "description": "set the font style for x-large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-x-large-font-weight",
+          "description": "set the font weight for x-large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-size-x-large-width",
+          "description": "set the width for x-large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-icon-x-large-font-size",
+          "description": "set the font size of icon for x-large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-icon-x-large-margin",
+          "description": "set margin of icon for x-large size of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-size-x-small-height",
+          "description": "set minimum height for size - x-small of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-size-small-height",
+          "description": "set minimum height for size - small of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-size-regular-height",
+          "description": "set minimum height for size - regular of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-size-large-height",
+          "description": "set minimum height for size - large of the textinput"
+        },
+        {
+          "name": "--ch5-textinput-size-x-large-height",
+          "description": "set minimum height for size - x-large of the textinput"
+        }
+      ]
+    },
+    "ch5-toggle": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-toggle-font-size",
+          "description": "default font size"
+        },
+        {
+          "name": "--ch5-toggle-font-style",
+          "description": "default font style"
+        },
+        {
+          "name": "--ch5-toggle-font-weight",
+          "description": "default font weight"
+        },
+        {
+          "name": "--ch5-toggle-label-font-size",
+          "description": "label font size"
+        },
+        {
+          "name": "--ch5-toggle-label-font-style",
+          "description": "label font style"
+        },
+        {
+          "name": "--ch5-toggle-label-font-weight",
+          "description": "label font weight"
+        },
+        {
+          "name": "--ch5-toggle-label-margin",
+          "description": "label margin"
+        },
+        {
+          "name": "--ch5-toggle-text-font-size",
+          "description": "font size applied on the on|off label"
+        },
+        {
+          "name": "--ch5-toggle-text-font-style",
+          "description": "font style applied on the on|off label"
+        },
+        {
+          "name": "--ch5-toggle-text-font-weight",
+          "description": "font weight applied on the on|off label"
+        },
+        {
+          "name": "--ch5-toggle-icon-font-size",
+          "description": "font size applied on the on|off icon"
+        },
+        {
+          "name": "--ch5-toggle-icon-font-style",
+          "description": "font style applied on the on|off icon"
+        },
+        {
+          "name": "--ch5-toggle-icon-font-weight",
+          "description": "font weight applied on the on|off icon"
+        },
+        {
+          "name": "--ch5-toggle-handle-circle-margin",
+          "description": "handle margin when the shape=\"circle\""
+        },
+        {
+          "name": "--ch5-toggle-handle-rectangle-margin",
+          "description": "handle margin when the shape=\"rectangle\""
+        },
+        {
+          "name": "--ch5-toggle-container-z-index",
+          "description": ""
+        },
+        {
+          "name": "--ch5-toggle-knob-z-index",
+          "description": ""
+        },
+        {
+          "name": "--ch5-toggle-z-index",
+          "description": ""
+        }
+      ]
+    },
+    "ch5-video": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-video-background-color",
+          "description": "Default video background color"
+        },
+        {
+          "name": "--ch5-video--size-xx-large-min-w-651",
+          "description": "size xx-large for min width 651px"
+        },
+        {
+          "name": "--ch5-video--size-x-large-min-w-651",
+          "description": "size x-large for min width 651px"
+        },
+        {
+          "name": "--ch5-video--size-large-min-w-651",
+          "description": "size large for min width 651px"
+        },
+        {
+          "name": "--ch5-video--size-regular-min-w-651",
+          "description": "size regular for min width 651px"
+        },
+        {
+          "name": "--ch5-video--size-small-min-w-651",
+          "description": "size small for min width 651px"
+        },
+        {
+          "name": "--ch5-video--size-x-small-min-w-651",
+          "description": "size x-small for min width 651px"
+        },
+        {
+          "name": "--ch5-video--size-xx-large-max-w-650",
+          "description": "size xx-large for max width 650px"
+        },
+        {
+          "name": "--ch5-video--size-x-large-max-w-650",
+          "description": "size x-large max width 650px"
+        },
+        {
+          "name": "--ch5-video--size-large-max-w-650",
+          "description": "size large max width 650px"
+        },
+        {
+          "name": "--ch5-video--size-regular-max-w-650",
+          "description": "size regular max width 650px"
+        },
+        {
+          "name": "--ch5-video--size-small-max-w-650",
+          "description": "size small max width 650px"
+        },
+        {
+          "name": "--ch5-video--size-x-small-max-w-650",
+          "description": "size x-small max width 650px"
+        }
+      ]
+    },
+    "ch5-wifi-signal-level-gauge": {
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-wifi-signal-level-gauge-small-height",
+          "description": "Size Height small"
+        },
+        {
+          "name": "--ch5-wifi-signal-level-gauge-small-width",
+          "description": "Size Width small"
+        },
+        {
+          "name": "--ch5-wifi-signal-level-gauge-regular-height",
+          "description": "Size Height regular"
+        },
+        {
+          "name": "--ch5-wifi-signal-level-gauge-regular-width",
+          "description": "Size Width regular"
+        },
+        {
+          "name": "--ch5-wifi-signal-level-gauge-large-height",
+          "description": "Size Height large"
+        },
+        {
+          "name": "--ch5-wifi-signal-level-gauge-large-width",
+          "description": "Size Width large"
+        },
+        {
+          "name": "--ch5-wifi-signal-level-gauge-x-large-height",
+          "description": "Size Height x-large"
+        },
+        {
+          "name": "--ch5-wifi-signal-level-gauge-x-large-width",
+          "description": "Size Width x-large"
+        },
+        {
+          "name": "--ch5-wifi-signal-level-gauge-style-accents",
+          "description": "gaugeStyle accents"
+        },
+        {
+          "name": "--ch5-wifi-signal-level-gauge-style-light",
+          "description": "gaugeStyle light"
+        },
+        {
+          "name": "--ch5-wifi-signal-level-gauge-style-dark",
+          "description": "gaugeStyle dark"
+        },
+        {
+          "name": "--ch5-wifi-signal-level-gauge-border-color",
+          "description": "border color"
+        }
+      ]
+    }
+  }
+}
