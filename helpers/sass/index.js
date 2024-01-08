@@ -15,6 +15,7 @@ const outputJSON = {
 const globalVars = fs.readFileSync(CONFIG.GLOBAL_VARIABLES_FILE_PATH, 'utf8');
 const globalMixins = fs.readFileSync(CONFIG.GLOBAL_MIXINS_FILE_PATH, 'utf8');
 const LightTheme = fs.readFileSync(CONFIG.THEME_VARIABLE_FILE, 'utf8').replace('@import "../../ch5-core/variables";', '')
+const globalVariables = getGlobalVariables();
 
 function removeComments(data) {
     const singleLineComments = new RegExp(/((?<!\/)[/]{2}(?!\/).*)/);
@@ -39,17 +40,26 @@ function removeHeaders(data) {
     return data;
 }
 
-function logger(...args) {
-    if (CONFIG.DEBUG === true) {
-        const arr = args;
-        for (let i = 0; i < arr.length; i++) {
-            if (typeof arr[i] === 'object') {
-                console.log(JSON.stringify(arr[i], null, 4));
-            } else {
-                console.log(arr[i]);
-            }
+function getGlobalVariables() {
+    const variables = [];
+    let data = removeComments(globalVars + LightTheme);
+    data = removeHeaders(data);
+    const lines = data.split('\n');
+    lines.forEach((line, i) => {
+        const splitLine = line.split(':');
+        if (splitLine.length === 2 && splitLine[0].includes('--')) {
+
+            const name = splitLine[0].trim();
+            const description = lines[i - 1]?.includes('///') ? lines[i - 1].replace('///', '').trim() : ''
+
+            variables.push({
+                name,
+                description
+            });
         }
-    }
+    });
+
+    return variables;
 }
 
 function getComponentVariables(component) {
@@ -82,7 +92,7 @@ function getComponentScss(component) {
     const entryFile = sourcePath + component + '/' + component + '.scss';
     const componentEntry = fs.readFileSync(entryFile, 'utf-8');
     const componentScss = flatten(componentEntry, path.resolve(path.join(sourcePath, component)));
-    let scss = globalVars + globalMixins + LightTheme + componentScss;
+    let scss = globalVars + globalMixins + componentScss;
 
     return removeComments(scss);
 }
@@ -105,17 +115,19 @@ function getComponentCss(data) {
     return css;
 }
 
-function getUnusedVariables(css, cssVariables) {
-    const unusedCssVariables = [];
-    for (const { name } of cssVariables) {
-        if (css.includes(`var(${name})`) === false) {
-            unusedCssVariables.push(name);
+function getUnusedVariables(css, variables) {
+    const unusedVariables = [];
+    for (let i = 0; i < variables.length; i++) {
+        if (css.includes(`var(${variables[i].name})`) === false) {
+            if (globalVariables.some(variable => variable.name === variables[i].name) === false) {
+                unusedVariables.push(variables[i].name);
+            }
         }
     }
-    return unusedCssVariables;
+    return unusedVariables;
 }
 
-function getVariablesNotDefined(data, cssVariables) {
+function getVariablesNotDefined(data, variables) {
     const variablesNotDefined = []
     const variableLines = data.split('\n')
         .filter(str => str.includes('var('))
@@ -128,8 +140,10 @@ function getVariablesNotDefined(data, cssVariables) {
     });
 
     for (const variable of usedVars) {
-        if (cssVariables.some(vars => vars.name === variable) === false) {
-            variablesNotDefined.push(variable);
+        if (variables.some(vars => vars.name === variable) === false) {
+            if (globalVariables.some(vars => vars.name === variable) === false) {
+                variablesNotDefined.push(variable);
+            }
         }
     }
 
@@ -140,31 +154,37 @@ async function initialize() {
     const start = Date.now();
     for (const component in components) {
 
-        const cssVariables = getComponentVariables(component);
+        const variables = getComponentVariables(component);
 
-        // logger(cssVariables);
         const componentScss = getComponentScss(component);
 
         const css = getComponentCss(componentScss);
 
-        const unusedCssVariables = getUnusedVariables(css, cssVariables);
+        const unusedVariables = getUnusedVariables(css, variables);
 
-        const variablesNotDefined = getVariablesNotDefined(css, cssVariables);
+        const variablesNotDefined = getVariablesNotDefined(css, variables);
 
-        if (unusedCssVariables.length !== 0) {
+
+        outputJSON['ch5ElementThemeDefs'][component] = {}
+        outputJSON['ch5ElementThemeDefs'][component]['version'] = components[component]['version'];
+        outputJSON['ch5ElementThemeDefs'][component]['variables'] = variables;
+
+        if (unusedVariables.length !== 0) {
             const data = {}
-            data[component] = unusedCssVariables;
-            console.log(data);
+            data[component] = [... new Set(unusedVariables)];
+            console.log(`\x1b[31m unused , ${JSON.stringify(data)} \x1b[0m`);
         }
 
         if (variablesNotDefined.length !== 0) {
             const data = {};
-            data[component] = variablesNotDefined;
-            console.log(data);
+            data[component] = [... new Set(variablesNotDefined)];
+
+            // Corner case
+            if (component === 'ch5-slider' && data[component].length === 1 && data[component][0] === '--temp-var') {
+                continue;
+            }
+            console.log(`\x1b[31m not defined , ${JSON.stringify(data)} \x1b[0m`);
         }
-        outputJSON['ch5ElementThemeDefs'][component] = {}
-        outputJSON['ch5ElementThemeDefs'][component]['version'] = CONFIG['COMPONENTS'][component]['version'];
-        outputJSON['ch5ElementThemeDefs'][component]['variables'] = cssVariables;
     }
 
     const writeToIndex = process.argv.findIndex(element => element === "--writeTo");

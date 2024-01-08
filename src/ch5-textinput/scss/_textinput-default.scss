@@ -18,6 +18,7 @@ ch5-textinput {
 
   &[dir="rtl"] {
     .ch5-textinput-container {
+
       /// Applied on the icon when iconPosition attribute is set to 'last'
       .ch5-textinput--icon.ch5-textinput--icon-position-last {
         margin-right: 0;
@@ -70,7 +71,7 @@ ch5-textinput {
       color: var(--ch5-textinput-icon-text-color);
     }
 
-    > span {
+    >span {
       display: flex;
       position: relative;
       align-items: center;
@@ -140,7 +141,7 @@ ch5-textinput {
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput-input-regular-lr-padding);
+        padding: 0 var(--ch5-textinput-input-regular-padding);
         font-size: var(--ch5-textinput-regular-font-size);
         font-weight: var(--ch5-textinput-regular-font-weight);
       }
@@ -176,7 +177,7 @@ ch5-textinput {
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput-input-x-small-lr-padding);
+        padding: 0 var(--ch5-textinput-input-x-small-padding);
         font-size: var(--ch5-textinput-x-small-font-size);
         font-weight: var(--ch5-textinput-x-small-font-weight);
       }
@@ -212,7 +213,7 @@ ch5-textinput {
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput-input-small-lr-padding);
+        padding: 0 var(--ch5-textinput-input-small-padding);
         font-size: var(--ch5-textinput-small-font-size);
         font-weight: var(--ch5-textinput-small-font-weight);
       }
@@ -248,7 +249,7 @@ ch5-textinput {
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput-input-large-lr-padding);
+        padding: 0 var(--ch5-textinput-input-large-padding);
         font-size: var(--ch5-textinput-large-font-size);
         font-weight: var(--ch5-textinput-large-font-weight);
       }
@@ -284,7 +285,7 @@ ch5-textinput {
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput-input-x-large-lr-padding);
+        padding: 0 var(--ch5-textinput-input-x-large-padding);
         font-size: var(--ch5-textinput-x-large-font-size);
         font-weight: var(--ch5-textinput-x-large-font-weight);
       }

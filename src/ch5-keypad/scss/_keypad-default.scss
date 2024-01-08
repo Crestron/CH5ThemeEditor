@@ -197,57 +197,47 @@ ch5-keypad {
 
   /// Applied when size="x-small"
   &.ch5-keypad--size-x-small {
-    @include ch5-keypad-fonts-sizes(
-      --ch5-keypad-x-small-container-width,
+    @include ch5-keypad-fonts-sizes(--ch5-keypad-x-small-container-width,
       --ch5-keypad-x-small-container-height,
       --ch5-keypad-x-small-container-height-extra,
       --ch5-keypad-x-small-font-size-major,
-      --ch5-keypad-x-small-font-size-minor
-    );
+      --ch5-keypad-x-small-font-size-minor);
   }
 
   /// Applied when size="small"
   &.ch5-keypad--size-small {
-    @include ch5-keypad-fonts-sizes(
-      --ch5-keypad-small-container-width,
+    @include ch5-keypad-fonts-sizes(--ch5-keypad-small-container-width,
       --ch5-keypad-small-container-height,
       --ch5-keypad-small-container-height-extra,
       --ch5-keypad-small-font-size-major,
-      --ch5-keypad-small-font-size-minor
-    );
+      --ch5-keypad-small-font-size-minor);
   }
 
   /// Applied when size="regular"
   &.ch5-keypad--size-regular {
-    @include ch5-keypad-fonts-sizes(
-      --ch5-keypad-regular-container-width,
+    @include ch5-keypad-fonts-sizes(--ch5-keypad-regular-container-width,
       --ch5-keypad-regular-container-height,
       --ch5-keypad-regular-container-height-extra,
       --ch5-keypad-regular-font-size-major,
-      --ch5-keypad-regular-font-size-minor
-    );
+      --ch5-keypad-regular-font-size-minor);
   }
 
   /// Applied when size="large"
   &.ch5-keypad--size-large {
-    @include ch5-keypad-fonts-sizes(
-      --ch5-keypad-large-container-width,
+    @include ch5-keypad-fonts-sizes(--ch5-keypad-large-container-width,
       --ch5-keypad-large-container-height,
       --ch5-keypad-large-container-height-extra,
       --ch5-keypad-large-font-size-major,
-      --ch5-keypad-large-font-size-minor
-    );
+      --ch5-keypad-large-font-size-minor);
   }
 
   /// Applied when size="x-large"
   &.ch5-keypad--size-x-large {
-    @include ch5-keypad-fonts-sizes(
-      --ch5-keypad-x-large-container-width,
+    @include ch5-keypad-fonts-sizes(--ch5-keypad-x-large-container-width,
       --ch5-keypad-x-large-container-height,
       --ch5-keypad-x-large-container-height-extra,
       --ch5-keypad-x-large-font-size-major,
-      --ch5-keypad-x-large-font-size-minor
-    );
+      --ch5-keypad-x-large-font-size-minor);
   }
 }
 

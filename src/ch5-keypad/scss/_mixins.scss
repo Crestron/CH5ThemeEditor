@@ -15,11 +15,11 @@
 	$property-default-font-color) {
 
 	.keypad-btn {
-		color: $property-default-font-color;
+		color: var(#{$property-default-font-color});
 
 		button {
-			background-color: $property-default-background-color;
-			border: 1px solid $property-default-border-color;
+			background-color: var(#{$property-default-background-color});
+			border: 1px solid var(#{$property-default-border-color});
 		}
 	}
 }
@@ -29,9 +29,9 @@
 	$property-pressed-font-color) {
 	&.keypad-btn {
 		button {
-			background-color: $property-pressed-background-color;
-			border: 1px solid $property-pressed-border-color;
-			color: $property-pressed-font-color;
+			background-color: var(#{$property-pressed-background-color});
+			border: 1px solid var(#{$property-pressed-border-color});
+			color: var(#{$property-pressed-font-color});
 		}
 	}
 }
@@ -41,16 +41,16 @@
 	$property-container-height-extra,
 	$property-container-font-major,
 	$property-container-font-minor) {
-	width: $property-container-width;
+	width: var(#{$property-container-width});
 
 	button {
 		.label-major {
-			font-size: $property-container-font-major;
-			line-height: $property-container-font-major;
+			font-size: var(#{$property-container-font-major});
+			line-height: var(#{$property-container-font-major});
 		}
 
 		.label-minor {
-			font-size: $property-container-font-minor;
+			font-size: var(#{$property-container-font-minor});
 		}
 
 	}

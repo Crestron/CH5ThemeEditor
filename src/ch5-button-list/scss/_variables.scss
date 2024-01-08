@@ -22,4 +22,13 @@ ch5-button-list {
 
   /// button container padding
   --ch5-button-list-button-container-padding: 5px;
+
+  /// Scrollbar border radius
+  --scrollbar-border-radius: var(--root-scrollbar-border-radius);
+
+  /// Scrollbar thumb color
+  --scrollbar-thumb-color: var(--root-scrollbar-thumb-color);
+
+  /// Scrollbar width
+  --scrollbar-width: var(--root-scrollbar-width);
 }

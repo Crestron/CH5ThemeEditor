@@ -23,10 +23,6 @@
         {
           "name": "--ch5-animation-color",
           "description": "Animation color"
-        },
-        {
-          "name": "--vs",
-          "description": ""
         }
       ]
     },
@@ -513,6 +509,18 @@
         {
           "name": "--ch5-button-list-button-container-padding",
           "description": "button container padding"
+        },
+        {
+          "name": "--scrollbar-border-radius",
+          "description": "Scrollbar border radius"
+        },
+        {
+          "name": "--scrollbar-thumb-color",
+          "description": "Scrollbar thumb color"
+        },
+        {
+          "name": "--scrollbar-width",
+          "description": "Scrollbar width"
         }
       ]
     },
@@ -789,14 +797,6 @@
           "description": "ch5-keypad container width for x-small size"
         },
         {
-          "name": "--ch5-keypad-x-small-container-height",
-          "description": "ch5-keypad container height for x-small size"
-        },
-        {
-          "name": "--ch5-keypad-x-small-container-height-extra",
-          "description": "ch5-keypad container height-extra for x-small size"
-        },
-        {
           "name": "--ch5-keypad-x-small-font-size-major",
           "description": "ch5-keypad font-size-major for x-small size"
         },
@@ -807,14 +807,6 @@
         {
           "name": "--ch5-keypad-small-container-width",
           "description": "ch5-keypad container width for small size"
-        },
-        {
-          "name": "--ch5-keypad-small-container-height",
-          "description": "ch5-keypad container height for small size"
-        },
-        {
-          "name": "--ch5-keypad-small-container-height-extra",
-          "description": "ch5-keypad container height-extra for small size"
         },
         {
           "name": "--ch5-keypad-small-font-size-major",
@@ -829,14 +821,6 @@
           "description": "ch5-keypad container width for regular size"
         },
         {
-          "name": "--ch5-keypad-regular-container-height",
-          "description": "ch5-keypad container height for regular size"
-        },
-        {
-          "name": "--ch5-keypad-regular-container-height-extra",
-          "description": "ch5-keypad container height-extra for regular size"
-        },
-        {
           "name": "--ch5-keypad-regular-font-size-major",
           "description": "ch5-keypad font-size-major for regular size"
         },
@@ -849,14 +833,6 @@
           "description": "ch5-keypad container width for large size"
         },
         {
-          "name": "--ch5-keypad-large-container-height",
-          "description": "ch5-keypad container height for large size"
-        },
-        {
-          "name": "--ch5-keypad-large-container-height-extra",
-          "description": "ch5-keypad container height-extra for large size"
-        },
-        {
           "name": "--ch5-keypad-large-font-size-major",
           "description": "ch5-keypad font-size-major for large size"
         },
@@ -867,14 +843,6 @@
         {
           "name": "--ch5-keypad-x-large-container-width",
           "description": "ch5-keypad container width for x-large size"
-        },
-        {
-          "name": "--ch5-keypad-x-large-container-height",
-          "description": "ch5-keypad container height for x-large size"
-        },
-        {
-          "name": "--ch5-keypad-x-large-container-height-extra",
-          "description": "ch5-keypad container height-extra for x-large size"
         },
         {
           "name": "--ch5-keypad-x-large-font-size-major",
@@ -1100,6 +1068,22 @@
         {
           "name": "--ch5-list-item-padding",
           "description": "Set the padding of list items"
+        },
+        {
+          "name": "--scrollbar-border-radius",
+          "description": "Scrollbar border radius"
+        },
+        {
+          "name": "--scrollbar-thumb-color",
+          "description": "Scrollbar thumb color"
+        },
+        {
+          "name": "--scrollbar-width",
+          "description": "Scrollbar width"
+        },
+        {
+          "name": "--scrollbar-track-color",
+          "description": "Scrollbar track color"
         }
       ]
     },
@@ -1193,6 +1177,14 @@
         {
           "name": "--ch5-modal-contents-font-size",
           "description": "the font size for the content of the modal."
+        },
+        {
+          "name": "--ch5-model-contents-font-style",
+          "description": "the font style for the content of the modal."
+        },
+        {
+          "name": "--ch5-model-contents-font-weight",
+          "description": "the font weight for the content of the modal."
         },
         {
           "name": "--ch5-modal-prompt-padding",

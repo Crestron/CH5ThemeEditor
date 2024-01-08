@@ -25,4 +25,16 @@ ch5-list {
 
   /// Set the padding of list items
   --ch5-list-item-padding: 10px;
+
+  /// Scrollbar border radius
+  --scrollbar-border-radius: var(--root-scrollbar-border-radius);
+
+  /// Scrollbar thumb color
+  --scrollbar-thumb-color: var(--root-scrollbar-thumb-color);
+
+  /// Scrollbar width
+  --scrollbar-width: var(--root-scrollbar-width);
+
+  /// Scrollbar track color
+  --scrollbar-track-color: var(--root-scrollbar-track-color);
 }
