@@ -41,6 +41,34 @@ function removeHeaders(data) {
     return data;
 }
 
+function getType(data, variables) {
+    let type = "";
+
+    if (data.includes('calc(') === false && data.startsWith('var(')) {
+        data = data.slice(4, data.lastIndexOf(')'));
+        const variable = variables.find((variable) => variable.name === data);
+        if (variable) {
+            data = variable.value;
+        } else {
+            const variable = globalVariables.find((variable) => variable.name === data);
+            if (variable) {
+                data = variable.value;
+            }
+        }
+    }
+    const units = ['px', '%', 'em', 'rem', 'vh', 'vw'];
+    const regex = new RegExp(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/);
+    if (isNaN(Number(data)) === false) {
+        return "number";
+    } else if ((data.includes('calc') || units.some(unit => data.includes(unit))) && data.includes('linear-gradient') === false) {
+        return "unit";
+    } else if (data.includes('rgb') || regex.test(data)) {
+        return "color";
+    } else {
+        return "string";
+    }
+}
+
 function getVariables(data) {
     const variables = [];
     data = removeComments(data);
@@ -55,13 +83,16 @@ function getVariables(data) {
             let value = splitLine[1].trim().replaceAll(';', '');
 
             // Corner Case
-            if (value === '#{$black}') { value = "rgb(0, 0, 0)" }
-            if (value === '#{$white}') { value = "rgb(255, 255, 255)" }
+            if (value === '#{$black}') { value = "#000"; }
+            if (value === '#{$white}') { value = "#fff"; }
+
+            const type = getType(value, variables);
 
             variables.push({
                 name,
                 description,
-                value
+                value,
+                type
             });
         }
     });
