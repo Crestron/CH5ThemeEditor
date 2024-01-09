@@ -1,13 +1,14 @@
 {
-    "DEBUG": true,
     "THEME_EDITOR_SOURCE_FILES_PATH": "./src/",
+    "THEME_EDITOR_THEME_FILES_PATH": "./src/ch5-core/themes/",
     "GLOBAL_VARIABLES_FILE_PATH": "./src/ch5-core/_variables.scss",
     "GLOBAL_MIXINS_FILE_PATH": "./src/style/_mixins.scss",
     "THEME_VARIABLE_FILE": "./src/ch5-core/themes/light.scss",
     "CSS_INPUT_FILE_NAME": "input.scss",
     "CSS_OUTPUT_FILE_NAME": "output.css",
-    "COMPONENT_THEME_VERSION": "1.0.0",
+    "GLOBAL_VARIABLES_VERSION": "1.0.0",
     "DEFAULT_OUTPUT_PATH": "./generated-metadata/sass-metadata.json",
+    "VARIABLES_PATH": "/scss/_variables.scss",
     "COMPONENTS": {
         "ch5-animation": {
             "value": "Ch5Animation",
@@ -111,6 +112,28 @@
         },
         "ch5-wifi-signal-level-gauge": {
             "value": "Ch5WifiSignalLevelGauge",
+            "version": "1.0.0"
+        }
+    },
+    "THEMES": {
+        "dark": {
+            "value": "Dark Theme",
+            "version": "1.0.0"
+        },
+        "light": {
+            "value": "Light Theme",
+            "version": "1.0.0"
+        },
+        "high-contrast": {
+            "value": "High Contrast Theme",
+            "version": "1.0.0"
+        },
+        "zoom-dark": {
+            "value": "Zoom Dark Theme",
+            "version": "1.0.0"
+        },
+        "zoom-light": {
+            "value": "Zoom Light Theme",
             "version": "1.0.0"
         }
     }

@@ -7,6 +7,7 @@ const { execSync } = require("child_process");
 const jsonfile = require('jsonfile');
 
 const components = CONFIG.COMPONENTS;
+const themes = CONFIG.THEMES;
 
 const outputJSON = {
     version: packageJson.version,
@@ -15,7 +16,7 @@ const outputJSON = {
 const globalVars = fs.readFileSync(CONFIG.GLOBAL_VARIABLES_FILE_PATH, 'utf8');
 const globalMixins = fs.readFileSync(CONFIG.GLOBAL_MIXINS_FILE_PATH, 'utf8');
 const LightTheme = fs.readFileSync(CONFIG.THEME_VARIABLE_FILE, 'utf8').replace('@import "../../ch5-core/variables";', '')
-const globalVariables = getGlobalVariables();
+const globalVariables = getVariables(globalVars + LightTheme);
 
 function removeComments(data) {
     const singleLineComments = new RegExp(/((?<!\/)[/]{2}(?!\/).*)/);
@@ -40,32 +41,7 @@ function removeHeaders(data) {
     return data;
 }
 
-function getGlobalVariables() {
-    const variables = [];
-    let data = removeComments(globalVars + LightTheme);
-    data = removeHeaders(data);
-    const lines = data.split('\n');
-    lines.forEach((line, i) => {
-        const splitLine = line.split(':');
-        if (splitLine.length === 2 && splitLine[0].includes('--')) {
-
-            const name = splitLine[0].trim();
-            const description = lines[i - 1]?.includes('///') ? lines[i - 1].replace('///', '').trim() : ''
-
-            variables.push({
-                name,
-                description
-            });
-        }
-    });
-
-    return variables;
-}
-
-function getComponentVariables(component) {
-    const sourcePath = CONFIG.THEME_EDITOR_SOURCE_FILES_PATH;
-    let data = fs.readFileSync(sourcePath + component + '/scss/_variables.scss', 'utf8');
-
+function getVariables(data) {
     const variables = [];
     data = removeComments(data);
     data = removeHeaders(data);
@@ -76,10 +52,16 @@ function getComponentVariables(component) {
 
             const name = splitLine[0].trim();
             const description = lines[i - 1]?.includes('///') ? lines[i - 1].replace('///', '').trim() : ''
+            let value = splitLine[1].trim().replaceAll(';', '');
+
+            // Corner Case
+            if (value === '#{$black}') { value = "rgb(0, 0, 0)" }
+            if (value === '#{$white}') { value = "rgb(255, 255, 255)" }
 
             variables.push({
                 name,
-                description
+                description,
+                value
             });
         }
     });
@@ -116,19 +98,19 @@ function getComponentCss(data) {
 }
 
 function getUnusedVariables(css, variables) {
-    const unusedVariables = [];
+    const unusedVariables = new Set();
     for (let i = 0; i < variables.length; i++) {
         if (css.includes(`var(${variables[i].name})`) === false) {
             if (globalVariables.some(variable => variable.name === variables[i].name) === false) {
-                unusedVariables.push(variables[i].name);
+                unusedVariables.add(variables[i].name);
             }
         }
     }
-    return unusedVariables;
+    return [...unusedVariables];
 }
 
 function getVariablesNotDefined(data, variables) {
-    const variablesNotDefined = []
+    const variablesNotDefined = new Set();
     const variableLines = data.split('\n')
         .filter(str => str.includes('var('))
         .map(str => str.split(':')[1].trim());
@@ -142,19 +124,21 @@ function getVariablesNotDefined(data, variables) {
     for (const variable of usedVars) {
         if (variables.some(vars => vars.name === variable) === false) {
             if (globalVariables.some(vars => vars.name === variable) === false) {
-                variablesNotDefined.push(variable);
+                variablesNotDefined.add(variable);
             }
         }
     }
 
-    return variablesNotDefined;
+    return [...variablesNotDefined];
 }
 
 async function initialize() {
     const start = Date.now();
     for (const component in components) {
 
-        const variables = getComponentVariables(component);
+        const { THEME_EDITOR_SOURCE_FILES_PATH: sourcePath, VARIABLES_PATH } = CONFIG;
+        const data = fs.readFileSync(sourcePath + component + VARIABLES_PATH, 'utf8');
+        const variables = getVariables(data);
 
         const componentScss = getComponentScss(component);
 
@@ -171,13 +155,13 @@ async function initialize() {
 
         if (unusedVariables.length !== 0) {
             const data = {}
-            data[component] = [... new Set(unusedVariables)];
+            data[component] = unusedVariables;
             console.log(`\x1b[31m unused , ${JSON.stringify(data)} \x1b[0m`);
         }
 
         if (variablesNotDefined.length !== 0) {
             const data = {};
-            data[component] = [... new Set(variablesNotDefined)];
+            data[component] = variablesNotDefined;
 
             // Corner case
             if (component === 'ch5-slider' && data[component].length === 1 && data[component][0] === '--temp-var') {
@@ -186,6 +170,26 @@ async function initialize() {
             console.log(`\x1b[31m not defined , ${JSON.stringify(data)} \x1b[0m`);
         }
     }
+
+    // Theme variables
+    outputJSON['ch5ElementThemeDefs']['ch5-core'] = {}
+    for (const theme in themes) {
+
+        const basePath = CONFIG.THEME_EDITOR_THEME_FILES_PATH;
+        const data = fs.readFileSync(basePath + theme + '.scss', 'utf8');
+
+        const variables = getVariables(data);
+
+        outputJSON['ch5ElementThemeDefs']['ch5-core'][theme] = {}
+        outputJSON['ch5ElementThemeDefs']['ch5-core'][theme]['version'] = themes[theme]['version'];
+        outputJSON['ch5ElementThemeDefs']['ch5-core'][theme]['variables'] = variables;
+    }
+
+    outputJSON['ch5ElementThemeDefs']['ch5-global'] = {}
+    outputJSON['ch5ElementThemeDefs']['ch5-global']['version'] = CONFIG.GLOBAL_VARIABLES_VERSION;
+    outputJSON['ch5ElementThemeDefs']['ch5-global']['variables'] = getVariables(globalVars);
+
+
 
     const writeToIndex = process.argv.findIndex(element => element === "--writeTo");
     if (writeToIndex >= 0 && process.argv.length > (writeToIndex + 1)) {
