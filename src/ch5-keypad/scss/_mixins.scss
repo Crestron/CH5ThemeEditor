@@ -13,13 +13,13 @@
 @mixin ch5-keypad-content($property-default-background-color,
 	$property-default-border-color,
 	$property-default-font-color) {
-	.keypad-row {
+
+	.keypad-btn {
 		color: $property-default-font-color;
-		.keypad-btn {
-			button {
-				background-color: $property-default-background-color;
-				border: 1px solid $property-default-border-color;
-			}
+
+		button {
+			background-color: $property-default-background-color;
+			border: 1px solid $property-default-border-color;
 		}
 	}
 }
@@ -42,46 +42,18 @@
 	$property-container-font-major,
 	$property-container-font-minor) {
 	width: $property-container-width;
-	height: $property-container-height;
 
-	.keypad-container {
-		width: $property-container-width;
-		height: $property-container-height;
-	}
-
-	&.ch5-keypad--for-extra-button {
-		height: $property-container-height-extra;
-
-		.keypad-container {
-			height: $property-container-height-extra;
-			min-width: $property-container-width;
+	button {
+		.label-major {
+			font-size: $property-container-font-major;
+			line-height: $property-container-font-major;
 		}
-	}
 
-	.keypad-row {
-		.keypad-btn {
-			button {
-				.label-major {
-					font-size: $property-container-font-major;
-					line-height: $property-container-font-major;
-				}
-				.label-minor {
-					font-size: $property-container-font-minor;
-				}
-			}
+		.label-minor {
+			font-size: $property-container-font-minor;
 		}
+
 	}
 
-	&.ch5-keypad.ch5-keypad--stretch-both {
-		height: 100%;
-		width: 100%;
-	}
 
-	&.ch5-keypad.ch5-keypad--stretch-height {
-		height: 100%;
-	}
-
-	&.ch5-keypad.ch5-keypad--stretch-width {
-		width: 100%;
-	}
 }

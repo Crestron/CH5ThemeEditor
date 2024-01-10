@@ -15,35 +15,30 @@ ch5-textinput {
   vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
 
   &[dir="rtl"] {
-    .ch5-textinput {
-      &__icon {
+    .ch5-textinput-container {
 
-        &--last {
-          margin-right: 0;
-        }
+      /// Applied on the icon when iconPosition attribute is set to 'last'
+      .ch5-textinput--icon.ch5-textinput--icon-position-last {
+        margin-right: 0;
+      }
 
-        &--first {
-          margin-left: 0;
-        }
+      /// Applied on the icon when iconPosition attribute is set to 'first'
+      .ch5-textinput--icon.ch5-textinput--icon-position-first {
+        margin-left: 0;
       }
     }
+
   }
 
   &[dir="ltr"] {
-    .ch5-textinput {
-      &__icon {
+    .ch5-textinput-container {
 
-        /// @require .ch5-textinput__icon
-        /// Applied on the icon when iconPosition attribute is set to 'last'
-        &--last {
-          margin-left: 0;
-        }
+      .ch5-textinput--icon.ch5-textinput--icon-position-first {
+        margin-right: 0;
+      }
 
-        /// @require .ch5-textinput__icon
-        /// Applied on the icon when iconPosition attribute is set to 'first'
-        &--first {
-          margin-right: 0;
-        }
+      .ch5-textinput--icon.ch5-textinput--icon-position-last {
+        margin-left: 0;
       }
     }
   }
@@ -53,135 +48,282 @@ ch5-textinput {
 .ch5-textinput {
   color: $ch5-textinput-text-color;
 
-  &__assets {
+  /// Applied on the label
+  .ch5-textinput--label {
+    display: block;
+    color: $ch5-textinput-label-text-color;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  /// Applied to text input container
+  .ch5-textinput-container {
     display: flex;
     align-items: center;
     border: $ch5-textinput-input-border-width solid $ch5-textinput-input-border-color;
     border-radius: $ch5-textinput-input-border-radius;
     height: 100%;
     width: 100%;
+
+    /// Applied on the icon
+    .ch5-textinput--icon {
+      color: $ch5-textinput-icon-text-color;
+    }
+
+    >span {
+      display: flex;
+      position: relative;
+      align-items: center;
+      width: 100%;
+    }
+
+    /// Applied on the input
+    .ch5-textinput--input {
+      background: transparent;
+      border: 0;
+      color: $ch5-textinput-input-text-color;
+      width: 100%;
+
+      /// Applied on the input when text-transform="none"
+      &.ch5-textinput--text-transform-none {
+        text-transform: none;
+      }
+
+      /// Applied on the input when text-transform="capitalize"
+      &.ch5-textinput--text-transform-capitalize {
+        text-transform: capitalize;
+      }
+
+      /// Applied on the input when text-transform="uppercase"
+      &.ch5-textinput--text-transform-uppercase {
+        text-transform: uppercase;
+      }
+
+      /// Applied on the input when text-transform="lowercase"
+      &.ch5-textinput--text-transform-lowercase {
+        text-transform: lowercase;
+      }
+    }
+
+    .ch5-textinput-mask {
+      width: 100%;
+      font-style: $ch5-font-style;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
   }
 
-  // text-transform
-  &--uppercase {
-    text-transform: uppercase;
-  }
-
-  &--lowercase {
-    text-transform: lowercase;
-  }
-
-  &--capitalize {
-    text-transform: capitalize;
-  }
-
-  &--none {
-    text-transform: none;
-  }
-
-  &--regular {
+  /// Applied to main class when size="regular"
+  &.ch5-textinput--size-regular {
     width: $ch5-textinput-size-regular-width;
 
-    span {
-      width: 100%;
+    .ch5-textinput--label {
       font-style: $ch5-textinput-regular-font-style;
       font-size: $ch5-textinput-regular-font-size;
       font-weight: $ch5-textinput-regular-font-weight;
     }
-    ._ch5-textinput-mask__letter {
-      font-size: $ch5-textinput-regular-mask-font-size;
-    }
 
+    .ch5-textinput-container {
+      .ch5-textinput--icon {
+        font-size: $ch5-textinput-regular-font-size;
+        margin: $ch5-textinput-icon-regular-tb-margin $ch5-textinput-icon-large-lr-margin;
+      }
+
+      .ch5-textinput--input {
+        padding: $ch5-textinput-input-regular-tb-padding $ch5-textinput-input-regular-lr-padding;
+        font-style: $ch5-textinput-regular-font-style;
+        font-size: $ch5-textinput-regular-font-size;
+        font-weight: $ch5-textinput-regular-font-weight;
+        height: $ch5-textinput-size-regular-height;
+      }
+
+      .ch5-textinput-mask {
+        padding: 0 $ch5-textinput-input-regular-lr-padding;
+        font-size: $ch5-textinput-regular-font-size;
+        font-weight: $ch5-textinput-regular-font-weight;
+      }
+
+      .ch5-textinput-mask--letter {
+        font-size: $ch5-textinput-regular-mask-font-size;
+      }
+    }
   }
 
-  &--x-small {
+  /// Applied to main class when size="x-small"
+  &.ch5-textinput--size-x-small {
     width: $ch5-textinput-size-x-small-width;
 
-    span {
-      width: 100%;
+    .ch5-textinput--label {
       font-style: $ch5-textinput-x-small-font-style;
       font-size: $ch5-textinput-x-small-font-size;
       font-weight: $ch5-textinput-x-small-font-weight;
     }
-    ._ch5-textinput-mask__letter {
-      font-size: $ch5-textinput-x-small-mask-font-size;
+
+    .ch5-textinput-container {
+      .ch5-textinput--icon {
+        font-size: $ch5-textinput-x-small-font-size;
+        margin: $ch5-textinput-icon-x-small-tb-margin $ch5-textinput-icon-x-small-lr-margin;
+      }
+
+      .ch5-textinput--input {
+        padding: $ch5-textinput-input-x-small-tb-padding $ch5-textinput-input-x-small-lr-padding;
+        font-style: $ch5-textinput-x-small-font-style;
+        font-size: $ch5-textinput-x-small-font-size;
+        font-weight: $ch5-textinput-x-small-font-weight;
+        height: $ch5-textinput-size-x-small-height;
+      }
+
+      .ch5-textinput-mask {
+        padding: 0 $ch5-textinput-input-x-small-lr-padding;
+        font-size: $ch5-textinput-x-small-font-size;
+        font-weight: $ch5-textinput-x-small-font-weight;
+      }
+
+      .ch5-textinput-mask--letter {
+        font-size: $ch5-textinput-x-small-mask-font-size;
+      }
     }
   }
 
-  &--small {
+  /// Applied to main class when size="small"
+  &.ch5-textinput--size-small {
     width: $ch5-textinput-size-small-width;
 
-    span {
-      width: 100%;
+    .ch5-textinput--label {
       font-style: $ch5-textinput-small-font-style;
       font-size: $ch5-textinput-small-font-size;
       font-weight: $ch5-textinput-small-font-weight;
     }
-    ._ch5-textinput-mask__letter {
-      font-size: $ch5-textinput-small-mask-font-size;
+
+    .ch5-textinput-container {
+      .ch5-textinput--icon {
+        font-size: $ch5-textinput-small-font-size;
+        margin: $ch5-textinput-icon-small-tb-margin $ch5-textinput-icon-small-lr-margin;
+      }
+
+      .ch5-textinput--input {
+        padding: $ch5-textinput-input-small-tb-padding $ch5-textinput-input-small-lr-padding;
+        font-style: $ch5-textinput-small-font-style;
+        font-size: $ch5-textinput-small-font-size;
+        font-weight: $ch5-textinput-small-font-weight;
+        height: $ch5-textinput-size-small-height;
+      }
+
+      .ch5-textinput-mask {
+        padding: 0 $ch5-textinput-input-small-lr-padding;
+        font-size: $ch5-textinput-small-font-size;
+        font-weight: $ch5-textinput-small-font-weight;
+      }
+
+      .ch5-textinput-mask--letter {
+        font-size: $ch5-textinput-small-mask-font-size;
+      }
     }
   }
 
-  &--large {
+  /// Applied to main class when size="large"
+  &.ch5-textinput--size-large {
     width: $ch5-textinput-size-large-width;
 
-    span {
-      width: 100%;
+    .ch5-textinput--label {
       font-style: $ch5-textinput-large-font-style;
       font-size: $ch5-textinput-large-font-size;
       font-weight: $ch5-textinput-large-font-weight;
     }
-    ._ch5-textinput-mask__letter {
-      font-size: $ch5-textinput-large-mask-font-size;
+
+    .ch5-textinput-container {
+      .ch5-textinput--icon {
+        font-size: $ch5-textinput-icon-large-font-size;
+        margin: $ch5-textinput-icon-large-tb-margin $ch5-textinput-icon-large-lr-margin;
+      }
+
+      .ch5-textinput--input {
+        padding: $ch5-textinput-input-large-tb-padding $ch5-textinput-input-large-lr-padding;
+        font-style: $ch5-textinput-large-font-style;
+        font-size: $ch5-textinput-large-font-size;
+        font-weight: $ch5-textinput-large-font-weight;
+        height: $ch5-textinput-size-large-height;
+      }
+
+      .ch5-textinput-mask {
+        padding: 0 $ch5-textinput-input-large-lr-padding;
+        font-size: $ch5-textinput-large-font-size;
+        font-weight: $ch5-textinput-large-font-weight;
+      }
+
+      .ch5-textinput-mask--letter {
+        font-size: $ch5-textinput-large-mask-font-size;
+      }
     }
   }
 
-  &--x-large {
+  /// Applied to main class when size="x-large"
+  &.ch5-textinput--size-x-large {
     width: $ch5-textinput-size-x-large-width;
 
-    span {
-      width: 100%;
+    .ch5-textinput--label {
       font-style: $ch5-textinput-x-large-font-style;
       font-size: $ch5-textinput-x-large-font-size;
       font-weight: $ch5-textinput-x-large-font-weight;
     }
-    ._ch5-textinput-mask__letter {
-      font-size: $ch5-textinput-x-large-mask-font-size;
+
+    .ch5-textinput-container {
+      .ch5-textinput--icon {
+        font-size: $ch5-textinput-icon-x-large-font-size;
+        margin: $ch5-textinput-icon-x-large-tb-margin $ch5-textinput-icon-x-large-lr-margin;
+      }
+
+      .ch5-textinput--input {
+        padding: $ch5-textinput-input-x-large-tb-padding $ch5-textinput-input-x-large-lr-padding;
+        font-style: $ch5-textinput-x-large-font-style;
+        font-size: $ch5-textinput-x-large-font-size;
+        font-weight: $ch5-textinput-x-large-font-weight;
+        height: $ch5-textinput-size-x-large-height;
+      }
+
+      .ch5-textinput-mask {
+        padding: 0 $ch5-textinput-input-x-large-lr-padding;
+        font-size: $ch5-textinput-x-large-font-size;
+        font-weight: $ch5-textinput-x-large-font-weight;
+      }
+
+      .ch5-textinput-mask--letter {
+        font-size: $ch5-textinput-x-large-mask-font-size;
+      }
     }
   }
-  .ch5-textinput__assets { 
-    & > span {
-      display: flex;
-      position: relative;
-      align-items: center;
-    }
-  }
-  &--content {
+
+  &[stretch="content"] {
     height: 100%;
     width: 100%;
-    .ch5-textinput__assets {      
+
+    .ch5-textinput-container {
       height: 100%;
       width: 100%;
-      input {
-        width: 100%;
+
+      .ch5-textinput--input {
         height: 100%;
       }
     }
   }
-  &--width {
+
+  &[stretch="width"] {
     width: 100%;
-    .ch5-textinput__assets {
-      input{
-        width: 100%;
-      }
+
+    .ch5-textinput-container {
+      width: 100%;
     }
   }
-  &--fixed {
+
+  &[stretch="fixed"] {
     width: 400px;
-    .ch5-textinput__assets {
-      input {
-        width: 100%;
-      }
+
+    .ch5-textinput-container {
+      width: 100%;
     }
   }
 }

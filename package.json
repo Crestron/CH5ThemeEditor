@@ -1,6 +1,10 @@
 {
     "name": "@crestron/ch5-theme", 
+<<<<<<< HEAD
     "version": "2.7.0", 
+=======
+    "version": "2.8.0", 
+>>>>>>> 37c09576120a5a98adbf0e521fb4153614079c30
     "description": "Crestron HTML5 (CH5) Themes CSS", 
     "author": "Crestron", 
     "license": "SEE LICENSE IN LICENSE.txt", 
@@ -35,11 +39,15 @@
     }, 
     "dependencies": {
         "@fortawesome/fontawesome-free": "^6.3.0", 
-        "@material-icons/font": "^1.0.25", 
-        "sassdoc": "^2.7.1"
+        "@material-icons/font": "^1.0.25"
     }, 
     "devDependencies": {
+<<<<<<< HEAD
         "@crestron/ch5-crcomlib": "2.7.0", 
+=======
+        "sassdoc": "^2.7.1", 
+        "@crestron/ch5-crcomlib": "2.8.0", 
+>>>>>>> 37c09576120a5a98adbf0e521fb4153614079c30
         "@raghavendradabbir/sass-flatten": "^0.2.9", 
         "@types/node": "^20.4.0", 
         "@types/puppeteer": "^5.4.4", 
@@ -56,7 +64,7 @@
         "jsonfile": "^6.1.0", 
         "lodash": "^4.17.15", 
         "mini-css-extract-plugin": "^1.2.0", 
-        "nouislider": "^13.1.5", 
+        "nouislider": "^15.7.1", 
         "path": "^0.12.7", 
         "puppeteer": "^10.1.0", 
         "rimraf": "^2.6.3", 
