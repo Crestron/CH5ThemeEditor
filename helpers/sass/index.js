@@ -11,12 +11,16 @@ const themes = CONFIG.THEMES;
 
 const outputJSON = {
     version: packageJson.version,
-    ch5Components: []
+    ch5Components: [],
+    ch5Themes: []
 };
 const globalVars = fs.readFileSync(CONFIG.GLOBAL_VARIABLES_FILE_PATH, 'utf8');
 const globalMixins = fs.readFileSync(CONFIG.GLOBAL_MIXINS_FILE_PATH, 'utf8');
-const LightTheme = fs.readFileSync(CONFIG.THEME_VARIABLE_FILE, 'utf8').replace('@import "../../ch5-core/variables";', '')
-const globalVariables = getVariables(globalVars + LightTheme);
+const sampleTheme = fs.readFileSync(CONFIG.SAMPLE_THEME_VARIABLES_FILE, 'utf8').replace('@import "../../ch5-core/variables";', '')
+const globalVariables = getVariables(globalVars + sampleTheme);
+
+const unusedVars = [];
+const undefinedVars = [];
 
 function removeComments(data) {
     const singleLineComments = new RegExp(/((?<!\/)[/]{2}(?!\/).*)/);
@@ -42,7 +46,6 @@ function removeHeaders(data) {
 }
 
 function getType(data, variables) {
-    let type = "";
 
     if (data.includes('calc(') === false && data.startsWith('var(')) {
         data = data.slice(4, data.lastIndexOf(')'));
@@ -57,12 +60,12 @@ function getType(data, variables) {
         }
     }
     const units = ['px', '%', 'em', 'rem', 'vh', 'vw'];
-    const regex = new RegExp(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/);
+    const hexColorRegex = new RegExp(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/);
     if (isNaN(Number(data)) === false) {
         return "number";
     } else if ((data.includes('calc') || units.some(unit => data.includes(unit))) && data.includes('linear-gradient') === false) {
         return "unit";
-    } else if (data.includes('rgb') || regex.test(data)) {
+    } else if (data.includes('rgb') || hexColorRegex.test(data)) {
         return "color";
     } else {
         return "string";
@@ -112,10 +115,10 @@ function getComponentScss(component) {
 
 function getComponentCss(data) {
 
-    // create a local scss file and compile
     const inputFile = CONFIG.CSS_INPUT_FILE_NAME;
     const outputFile = CONFIG.CSS_OUTPUT_FILE_NAME;
 
+    // create a local scss file and compile
     fs.writeFileSync(inputFile, data);
     execSync(`sass ${inputFile} ${outputFile}`);
     const css = fs.readFileSync(outputFile, 'utf-8');
@@ -140,8 +143,8 @@ function getUnusedVariables(css, variables) {
     return [...unusedVariables];
 }
 
-function getVariablesNotDefined(data, variables) {
-    const variablesNotDefined = new Set();
+function getUndefinedVariables(data, variables) {
+    const undefinedVariables = new Set();
     const variableLines = data.split('\n')
         .filter(str => str.includes('var('))
         .map(str => str.split(':')[1].trim());
@@ -155,12 +158,36 @@ function getVariablesNotDefined(data, variables) {
     for (const variable of usedVars) {
         if (variables.some(vars => vars.name === variable) === false) {
             if (globalVariables.some(vars => vars.name === variable) === false) {
-                variablesNotDefined.add(variable);
+                undefinedVariables.add(variable);
             }
         }
     }
 
-    return [...variablesNotDefined];
+    return [...undefinedVariables];
+}
+
+function validateVariables(component, variables) {
+    const componentScss = getComponentScss(component);
+
+    const css = getComponentCss(componentScss);
+
+    const unusedVariables = getUnusedVariables(css, variables);
+
+    const undefinedVariables = getUndefinedVariables(css, variables);
+
+    if (unusedVariables.length !== 0) {
+        unusedVars.push({
+            name: component,
+            variables: unusedVariables
+        })
+    }
+
+    if (undefinedVariables.length !== 0) {
+        undefinedVars.push({
+            name: component,
+            variables: undefinedVariables
+        })
+    }
 }
 
 async function initialize() {
@@ -171,45 +198,17 @@ async function initialize() {
         const data = fs.readFileSync(sourcePath + component + VARIABLES_PATH, 'utf8');
         const variables = getVariables(data);
 
-        const componentScss = getComponentScss(component);
-
-        const css = getComponentCss(componentScss);
-
-        const unusedVariables = getUnusedVariables(css, variables);
-
-        const variablesNotDefined = getVariablesNotDefined(css, variables);
-
-        const componentData = {
+        outputJSON['ch5Components'].push({
             name: component,
             version: components[component]['version'],
             variables
-        }
+        })
 
-        outputJSON['ch5Components'].push(componentData);
-
-        if (unusedVariables.length !== 0) {
-            const data = {}
-            data[component] = unusedVariables;
-            console.log(`\x1b[31m unused , ${JSON.stringify(data)} \x1b[0m`);
-        }
-
-        if (variablesNotDefined.length !== 0) {
-            const data = {};
-            data[component] = variablesNotDefined;
-
-            // Corner case
-            if (component === 'ch5-slider' && data[component].length === 1 && data[component][0] === '--temp-var') {
-                continue;
-            }
-            console.log(`\x1b[31m not defined , ${JSON.stringify(data)} \x1b[0m`);
-        }
+        // Add Variables validation
+        validateVariables(component, variables);
     }
 
     // Theme variables
-
-    const ch5CoreData = {
-        name: 'ch5-core'
-    }
     for (const theme in themes) {
 
         const basePath = CONFIG.THEME_EDITOR_THEME_FILES_PATH;
@@ -217,20 +216,31 @@ async function initialize() {
 
         const variables = getVariables(data);
 
-        ch5CoreData[theme] = {}
-        ch5CoreData[theme]['version'] = themes[theme]['version'];
-        ch5CoreData[theme]['variables'] = variables;
+        outputJSON['ch5Themes'].push({
+            name: theme,
+            version: themes[theme]['version'],
+            variables
+        });
     }
-    outputJSON['ch5Components'].push(ch5CoreData);
 
-    // Global Variables
-    outputJSON['ch5Components'].push({
-        name: 'ch5-global',
-        version: CONFIG.GLOBAL_VARIABLES_VERSION,
-        variables: getVariables(globalVars)
+    // Validate Variables
+    unusedVars.forEach(({ name, variables }) => {
+        variables.forEach((variable) => {
+            console.log(`\x1b[31m ${name} unused variable ${variable} \x1b[0m`);
+            process.exit(1);
+        })
     })
 
-
+    undefinedVars.forEach(({ name, variables }) => {
+        variables.forEach((variable) => {
+            if (name === 'ch5-slider' && variable === '--temp-var') {
+                // Corner case
+            } else {
+                console.log(`\x1b[31m ${name} undefined variable ${variable} \x1b[0m`);
+                process.exit(1);
+            }
+        })
+    })
 
     const writeToIndex = process.argv.findIndex(element => element === "--writeTo");
     if (writeToIndex >= 0 && process.argv.length > (writeToIndex + 1)) {
