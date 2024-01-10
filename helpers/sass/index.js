@@ -11,7 +11,7 @@ const themes = CONFIG.THEMES;
 
 const outputJSON = {
     version: packageJson.version,
-    ch5ElementThemeDefs: {}
+    ch5Components: []
 };
 const globalVars = fs.readFileSync(CONFIG.GLOBAL_VARIABLES_FILE_PATH, 'utf8');
 const globalMixins = fs.readFileSync(CONFIG.GLOBAL_MIXINS_FILE_PATH, 'utf8');
@@ -179,10 +179,13 @@ async function initialize() {
 
         const variablesNotDefined = getVariablesNotDefined(css, variables);
 
+        const componentData = {
+            name: component,
+            version: components[component]['version'],
+            variables
+        }
 
-        outputJSON['ch5ElementThemeDefs'][component] = {}
-        outputJSON['ch5ElementThemeDefs'][component]['version'] = components[component]['version'];
-        outputJSON['ch5ElementThemeDefs'][component]['variables'] = variables;
+        outputJSON['ch5Components'].push(componentData);
 
         if (unusedVariables.length !== 0) {
             const data = {}
@@ -203,7 +206,10 @@ async function initialize() {
     }
 
     // Theme variables
-    outputJSON['ch5ElementThemeDefs']['ch5-core'] = {}
+
+    const ch5CoreData = {
+        name: 'ch5-core'
+    }
     for (const theme in themes) {
 
         const basePath = CONFIG.THEME_EDITOR_THEME_FILES_PATH;
@@ -211,14 +217,18 @@ async function initialize() {
 
         const variables = getVariables(data);
 
-        outputJSON['ch5ElementThemeDefs']['ch5-core'][theme] = {}
-        outputJSON['ch5ElementThemeDefs']['ch5-core'][theme]['version'] = themes[theme]['version'];
-        outputJSON['ch5ElementThemeDefs']['ch5-core'][theme]['variables'] = variables;
+        ch5CoreData[theme] = {}
+        ch5CoreData[theme]['version'] = themes[theme]['version'];
+        ch5CoreData[theme]['variables'] = variables;
     }
+    outputJSON['ch5Components'].push(ch5CoreData);
 
-    outputJSON['ch5ElementThemeDefs']['ch5-global'] = {}
-    outputJSON['ch5ElementThemeDefs']['ch5-global']['version'] = CONFIG.GLOBAL_VARIABLES_VERSION;
-    outputJSON['ch5ElementThemeDefs']['ch5-global']['variables'] = getVariables(globalVars);
+    // Global Variables
+    outputJSON['ch5Components'].push({
+        name: 'ch5-global',
+        version: CONFIG.GLOBAL_VARIABLES_VERSION,
+        variables: getVariables(globalVars)
+    })
 
 
 

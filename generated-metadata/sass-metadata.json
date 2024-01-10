@@ -1,7 +1,8 @@
 {
   "version": "2.7.0",
-  "ch5ElementThemeDefs": {
-    "ch5-animation": {
+  "ch5Components": [
+    {
+      "name": "ch5-animation",
       "version": "1.0.0",
       "variables": [
         {
@@ -36,11 +37,13 @@
         }
       ]
     },
-    "ch5-background": {
+    {
+      "name": "ch5-background",
       "version": "1.0.0",
       "variables": []
     },
-    "ch5-button": {
+    {
+      "name": "ch5-button",
       "version": "1.0.0",
       "variables": [
         {
@@ -723,7 +726,8 @@
         }
       ]
     },
-    "ch5-button-list": {
+    {
+      "name": "ch5-button-list",
       "version": "1.0.0",
       "variables": [
         {
@@ -770,7 +774,8 @@
         }
       ]
     },
-    "ch5-color-chip": {
+    {
+      "name": "ch5-color-chip",
       "version": "1.0.0",
       "variables": [
         {
@@ -793,7 +798,8 @@
         }
       ]
     },
-    "ch5-color-picker": {
+    {
+      "name": "ch5-color-picker",
       "version": "1.0.0",
       "variables": [
         {
@@ -810,7 +816,8 @@
         }
       ]
     },
-    "ch5-datetime": {
+    {
+      "name": "ch5-datetime",
       "version": "1.0.0",
       "variables": [
         {
@@ -839,7 +846,8 @@
         }
       ]
     },
-    "ch5-dpad": {
+    {
+      "name": "ch5-dpad",
       "version": "1.0.0",
       "variables": [
         {
@@ -1132,7 +1140,8 @@
         }
       ]
     },
-    "ch5-image": {
+    {
+      "name": "ch5-image",
       "version": "1.0.0",
       "variables": [
         {
@@ -1155,7 +1164,8 @@
         }
       ]
     },
-    "ch5-keypad": {
+    {
+      "name": "ch5-keypad",
       "version": "1.0.0",
       "variables": [
         {
@@ -1538,7 +1548,8 @@
         }
       ]
     },
-    "ch5-list": {
+    {
+      "name": "ch5-list",
       "version": "1.0.0",
       "variables": [
         {
@@ -1597,11 +1608,13 @@
         }
       ]
     },
-    "ch5-label": {
+    {
+      "name": "ch5-label",
       "version": "1.0.0",
       "variables": []
     },
-    "ch5-modal-dialog": {
+    {
+      "name": "ch5-modal-dialog",
       "version": "1.0.0",
       "variables": [
         {
@@ -1804,7 +1817,8 @@
         }
       ]
     },
-    "ch5-overlay-panel": {
+    {
+      "name": "ch5-overlay-panel",
       "version": "1.0.0",
       "variables": [
         {
@@ -1917,7 +1931,8 @@
         }
       ]
     },
-    "ch5-segmented-gauge": {
+    {
+      "name": "ch5-segmented-gauge",
       "version": "1.0.0",
       "variables": [
         {
@@ -2000,7 +2015,8 @@
         }
       ]
     },
-    "ch5-select": {
+    {
+      "name": "ch5-select",
       "version": "1.0.0",
       "variables": [
         {
@@ -2089,7 +2105,8 @@
         }
       ]
     },
-    "ch5-signal-level-gauge": {
+    {
+      "name": "ch5-signal-level-gauge",
       "version": "1.0.0",
       "variables": [
         {
@@ -2154,7 +2171,8 @@
         }
       ]
     },
-    "ch5-subpage-reference-list": {
+    {
+      "name": "ch5-subpage-reference-list",
       "version": "1.0.0",
       "variables": [
         {
@@ -2189,7 +2207,8 @@
         }
       ]
     },
-    "ch5-slider": {
+    {
+      "name": "ch5-slider",
       "version": "1.0.0",
       "variables": [
         {
@@ -2602,7 +2621,8 @@
         }
       ]
     },
-    "ch5-spinner": {
+    {
+      "name": "ch5-spinner",
       "version": "1.0.0",
       "variables": [
         {
@@ -2673,7 +2693,8 @@
         }
       ]
     },
-    "ch5-tab-button": {
+    {
+      "name": "ch5-tab-button",
       "version": "1.0.0",
       "variables": [
         {
@@ -2690,7 +2711,8 @@
         }
       ]
     },
-    "ch5-text": {
+    {
+      "name": "ch5-text",
       "version": "1.0.0",
       "variables": [
         {
@@ -2725,7 +2747,8 @@
         }
       ]
     },
-    "ch5-textinput": {
+    {
+      "name": "ch5-textinput",
       "version": "1.0.0",
       "variables": [
         {
@@ -3018,7 +3041,8 @@
         }
       ]
     },
-    "ch5-toggle": {
+    {
+      "name": "ch5-toggle",
       "version": "1.0.0",
       "variables": [
         {
@@ -3131,7 +3155,8 @@
         }
       ]
     },
-    "ch5-video": {
+    {
+      "name": "ch5-video",
       "version": "1.0.0",
       "variables": [
         {
@@ -3214,7 +3239,8 @@
         }
       ]
     },
-    "ch5-wifi-signal-level-gauge": {
+    {
+      "name": "ch5-wifi-signal-level-gauge",
       "version": "1.0.0",
       "variables": [
         {
@@ -3291,7 +3317,8 @@
         }
       ]
     },
-    "ch5-core": {
+    {
+      "name": "ch5-core",
       "dark": {
         "version": "1.0.0",
         "variables": [
@@ -7398,7 +7425,8 @@
         ]
       }
     },
-    "ch5-global": {
+    {
+      "name": "ch5-global",
       "version": "1.0.0",
       "variables": [
         {
@@ -7451,5 +7479,5 @@
         }
       ]
     }
-  }
+  ]
 }
