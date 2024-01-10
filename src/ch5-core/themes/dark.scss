@@ -13,6 +13,30 @@
 @import "../../ch5-core/variables";
 
 .dark-theme {
+  /// Font size
+  --root-font-size: 16px;
+
+  /// Font style
+  --root-font-style: normal;
+
+  /// Font weight
+  --root-font-weight: normal;
+
+  /// Scrollbar width
+  --root-scrollbar-width: 7px;
+
+  /// Scrollbar border radius
+  --root-scrollbar-border-radius: 10px;
+
+  /// Scrollbar track color
+  --root-scrollbar-track-color: rgba(0, 0, 0, 0.1);
+
+  /// Scrollbar thumb color
+  --root-scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
+
+  /// Disabled opacity
+  --root-disabled-opacity: 0.5;
+
   // Color system
 
   --theme-default-background-color: #0099ff;
