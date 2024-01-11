@@ -122,6 +122,42 @@
   // ch5-animation
   --ch5-animation-color: #3f3f3f;
 
+  /// size=regular
+  --ch5-animation-size-regular: 72px;
+
+  /// size=small
+  --ch5-animation-size-small: 40px;
+
+  /// size=large
+  --ch5-animation-size-large: 104px;
+
+  /// size=x-large
+  --ch5-animation-size-x-large: 136px;
+
+  // ch5-color-chip
+  /// The height for div of the color-chip.
+  --ch5-color-chip-div-height: 40px;
+
+  /// The width for div of the color-chip.
+  --ch5-color-chip-div-width: 40px;
+
+  // ch5-color-picker
+  /// Height for color picker
+  --ch5-color-picker-height: 240px;
+
+  /// Width for color picker
+  --ch5-color-picker-width: 240px;
+
+  // ch5-date-time
+  /// Font size
+  --ch5-datetime-font-size: 14px;
+
+  /// Datetime height
+  --ch5-datetime-height: 35px;
+
+  /// Datetime width
+  --ch5-datetime-width: 200px;
+
   // ch5-overlay-panel
   /// the color of the icon at the top of the overlay panel
   --ch5-overlay-default-close-icon-color: #555;

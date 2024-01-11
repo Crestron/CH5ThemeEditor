@@ -8,7 +8,7 @@ const OptimizeCSSAssetsPlugin = require('css-minimizer-webpack-plugin');
 
 const distDir = 'output';
 const basePath = path.resolve(__dirname);
-const fileList = glob.sync('themes/**/*.scss');
+const fileList = glob.sync('themes/**/*.scss', {posix: true, dotRelative: true});
 const nodeModules = `./node_modules/`;
 const fontAwesomeCssBasePath = `${nodeModules}@fortawesome/fontawesome-free/css`;
 const materialIconsFilePath = `${nodeModules}@material-icons/font/css`;
