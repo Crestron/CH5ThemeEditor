@@ -12,11 +12,11 @@
 
 ch5-color-chip {
   /// The height for div of the color-chip.
-  --ch5-color-chip-div-height: 40px;
+  --ch5-color-chip-div-height: var(--theme-ch5-color-chip-div-height);
 
   /// The width for div of the color-chip.
-  --ch5-color-chip-div-width: 40px;
+  --ch5-color-chip-div-width: var(--theme-ch5-color-chip-div-width);
 
   /// Background color for color-chip.
-  --ch5-color-chip-background-color: #000;
+  --ch5-color-chip-background-color: var(--theme-ch5-color-chip-background-color);
 }

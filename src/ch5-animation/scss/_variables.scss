@@ -12,17 +12,17 @@
 
 ch5-animation {
   /// size=regular
-  --ch5-animation-size-regular: 72px;
+  --ch5-animation-size-regular: var(--theme-ch5-animation-size-regular);
 
   /// size=small
-  --ch5-animation-size-small: 40px;
+  --ch5-animation-size-small: var(--theme-ch5-animation-size-small);
 
   /// size=large
-  --ch5-animation-size-large: 104px;
+  --ch5-animation-size-large: var(--theme-ch5-animation-size-large);
 
   /// size=x-large
-  --ch5-animation-size-x-large: 136px;
+  --ch5-animation-size-x-large: var(--theme-ch5-animation-size-x-large);
 
   /// Animation color
-  --ch5-animation-color: var(--ch5-animation-color);
+  --ch5-animation-color: var(--theme-ch5-animation-color);
 }

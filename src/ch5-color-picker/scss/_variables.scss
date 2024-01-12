@@ -12,8 +12,8 @@
 
 ch5-color-picker {
   /// Height for color picker
-  --ch5-color-picker-height: 240px;
+  --ch5-color-picker-height: var(--theme-ch5-color-picker-height);
 
   /// Width for color picker
-  --ch5-color-picker-width: 240px;
+  --ch5-color-picker-width: var(--theme-ch5-color-picker-width);
 }

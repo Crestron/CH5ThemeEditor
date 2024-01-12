@@ -120,33 +120,34 @@
   --theme-text-selected-font-color: #561b8d;
 
   // ch5-animation
-  --ch5-animation-color: #000;
+  /// animation color
+  --theme-ch5-animation-color: #000;
 
   /// size=regular
-  --ch5-animation-size-regular: 72px;
+  --theme-ch5-animation-size-regular: 72px;
 
   /// size=small
-  --ch5-animation-size-small: 40px;
+  --theme-ch5-animation-size-small: 40px;
 
   /// size=large
-  --ch5-animation-size-large: 104px;
+  --theme-ch5-animation-size-large: 104px;
 
   /// size=x-large
-  --ch5-animation-size-x-large: 136px;
+  --theme-ch5-animation-size-x-large: 136px;
 
   // ch5-color-chip
   /// The height for div of the color-chip.
-  --ch5-color-chip-div-height: 40px;
+  --theme-ch5-color-chip-div-height: 40px;
 
   /// The width for div of the color-chip.
-  --ch5-color-chip-div-width: 40px;
+  --theme-ch5-color-chip-div-width: 40px;
 
   // ch5-color-picker
   /// Height for color picker
-  --ch5-color-picker-height: 240px;
+ --theme-ch5-color-picker-height: 240px;
 
   /// Width for color picker
-  --ch5-color-picker-width: 240px;
+ --theme-ch5-color-picker-width: 240px;
 
   // ch5-date-time
   /// Font size
@@ -298,7 +299,6 @@
   --ch5-triggerview-fallback-message-color-background: #fff;
 
   // ch5-modal-dialog
-
   /// The color of the icon at the top of the modal
   --ch5-modal-close-icon-color: #000;
 
