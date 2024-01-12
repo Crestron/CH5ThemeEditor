@@ -1211,3 +1211,7 @@ ch5-dpad {
 .ch5-disable-child-button {
   // DO NOT DELETE - used for Component Reference
 }
+.ch5-dpad .ch5-disable-child-button{
+  pointer-events: none;
+  cursor: default;
+}
