@@ -21,25 +21,25 @@ ch5-modal {
   --ch5-modal-font-weight: var(--root-font-weight);
 
   /// the border width of the modal
-  --ch5-modal-border-width: 1px;
+  --ch5-modal-border-width: var(--theme-ch5-modal-border-width);
 
   /// the border style of the modal
-  --ch5-modal-border-style: solid;
+  --ch5-modal-border-style: var(--theme-ch5-modal-border-style);
 
   /// the border radius of the modal
-  --ch5-modal-border-radius: 6px;
+  --ch5-modal-border-radius: var(--theme-ch5-modal-border-radius);
 
   /// set padding for the modal
-  --ch5-modal-padding: 1.25em;
+  --ch5-modal-padding: var(--theme-ch5-modal-padding);
 
   /// the margin of the icon at the top of the modal.
-  --ch5-modal-close-icon-margin: 0 5px;
+  --ch5-modal-close-icon-margin: var(--theme-ch5-modal-close-icon-margin);
 
   /// the padding of the icon at the top of the modal.
-  --ch5-modal-close-icon-padding: 0 5px 5px;
+  --ch5-modal-close-icon-padding: var(--theme-ch5-modal-close-icon-padding);
 
   /// the width of the icon at the top of the modal.
-  --ch5-modal-close-icon-width: 20px;
+  --ch5-modal-close-icon-width: var(--theme-ch5-modal-close-icon-width);
 
   /// the font size of the icon at the top of the modal
   --ch5-modal-close-icon-font-size: var(--ch5-modal-font-size);
@@ -51,7 +51,7 @@ ch5-modal {
   --ch5-modal-close-icon-font-weight: var(--ch5-modal-font-weight);
 
   /// the default font size of the icon at the top of the modal.
-  --ch5-modal-default-close-icon-font-size: 24px;
+  --ch5-modal-default-close-icon-font-size: var(--theme-ch5-modal-default-close-icon-font-size);
 
   /// the default font style of the icon at the top of the modal
   --ch5-modal-default-close-icon-font-style: var(--ch5-modal-font-style);
@@ -60,7 +60,7 @@ ch5-modal {
   --ch5-modal-default-close-icon-font-weight: var(--ch5-modal-font-weight);
 
   /// the font size for the title of the modal
-  --ch5-modal-title-font-size: 1.3em;
+  --ch5-modal-title-font-size: var(--theme-ch5-modal-title-font-size);
 
   /// the font style for the title of the modal
   --ch5-modal-title-font-style: var(--ch5-modal-font-style);
@@ -69,10 +69,10 @@ ch5-modal {
   --ch5-modal-title-font-weight: bold;
 
   /// the padding of the modal's content
-  --ch5-modal-contents-padding: 10px;
+  --ch5-modal-contents-padding: var(--theme-ch5-modal-contents-padding);
 
   /// the font size for the content of the modal.
-  --ch5-modal-contents-font-size: 18px;
+  --ch5-modal-contents-font-size: var(--theme-ch5-modal-contents-font-size);
 
   /// the font style for the content of the modal.
   --ch5-model-contents-font-style: var(--ch5-modal-font-style);
@@ -81,10 +81,10 @@ ch5-modal {
   --ch5-model-contents-font-weight: var(--ch5-modal-font-weight);
 
   /// the padding for the prompt of the modal
-  --ch5-modal-prompt-padding: 30px 0 30px 0;
+  --ch5-modal-prompt-padding: var(--theme-ch5-modal-prompt-padding);
 
   /// the right margin for the prompt icon of the modal
-  --ch5-modal-prompt-icon-margin-right: 10px;
+  --ch5-modal-prompt-icon-margin-right: var(--theme-ch5-modal-prompt-icon-margin-right);
 
   /// the font size for the prompt icon of the modal
   --ch5-modal-prompt-icon-font-size: var(--ch5-modal-font-size);
@@ -99,11 +99,11 @@ ch5-modal {
   --ch5-modal-prompt-text-font-style: var(--ch5-modal-font-style);
 
   /// the font size for the prompt text of the modal
-  --ch5-modal-prompt-text-font-size: 16px;
+  --ch5-modal-prompt-text-font-size: var(--theme-ch5-modal-prompt-text-font-size);
 
   /// the font weight for the prompt text of the modal
   --ch5-modal-prompt-text-font-weight: var(--ch5-modal-font-weight);
 
-  --ch5-modal-z-index: 10001;
-  --ch5-modal-mask-z-index: 10000;
+  --ch5-modal-z-index: var(--theme-ch5-modal-z-index);
+  --ch5-modal-mask-z-index: var(--theme-ch5-modal-mask-z-index);
 }

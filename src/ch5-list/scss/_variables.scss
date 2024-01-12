@@ -21,10 +21,10 @@ ch5-list {
   --ch5-list-font-weight: var(--root-font-weight);
 
   /// Set the border style of list items, configurable for each theme
-  --ch5-list-item-border: 1px solid transparent;
+  --ch5-list-item-border: var(--theme-ch5-list-item-border);
 
   /// Set the padding of list items
-  --ch5-list-item-padding: 10px;
+  --ch5-list-item-padding: var(--theme-ch5-list-item-padding);
 
   /// Scrollbar border radius
   --scrollbar-border-radius: var(--root-scrollbar-border-radius);

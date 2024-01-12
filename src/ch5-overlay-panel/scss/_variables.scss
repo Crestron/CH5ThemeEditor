@@ -21,28 +21,28 @@ ch5-overlay-panel {
   --ch5-overlay-panel-font-weight: var(--root-font-weight);
 
   /// the border width of the overlay panel
-  --ch5-overlay-panel-border-width: 1px;
+  --ch5-overlay-panel-border-width: var(--theme-ch5-overlay-panel-border-width);
 
   /// the border style of the overlay panel
-  --ch5-overlay-panel-border-style: solid;
+  --ch5-overlay-panel-border-style: var(--theme-ch5-overlay-panel-border-style);
 
   /// the border radius of the overlay panel
-  --ch5-overlay-panel-border-radius: 6px;
+  --ch5-overlay-panel-border-radius: var(--theme-ch5-overlay-panel-border-radius);
 
   /// set padding for the overlay panel
-  --ch5-overlay-panel-padding: 1.25em;
+  --ch5-overlay-panel-padding: var(--theme-ch5-overlay-panel-padding);
 
   /// the margin of the icon at the top of the overlay panel
-  --ch5-overlay-panel-close-icon-margin: 0 5px;
+  --ch5-overlay-panel-close-icon-margin: var(--theme-ch5-overlay-panel-close-icon-margin);
 
   /// the padding of the icon at the top of the overlay panel
-  --ch5-overlay-panel-close-icon-padding: 0 5px 5px;
+  --ch5-overlay-panel-close-icon-padding: var(--theme-ch5-overlay-panel-close-icon-padding);
 
   /// the width of the icon at the top of the overlay panel
-  --ch5-overlay-panel-close-icon-width: 20px;
+  --ch5-overlay-panel-close-icon-width: var(--theme-ch5-overlay-panel-close-icon-width);
 
   /// the font size of the icon at the top of the overlay panel
-  --ch5-overlay-default-close-icon-font-size: 24px;
+  --ch5-overlay-default-close-icon-font-size: var(--theme-ch5-overlay-default-close-icon-font-size);
 
   /// the font style of the icon at the top of the overlay panel
   --ch5-overlay-default-close-icon-font-style: var(--ch5-overlay-panel-font-style);
@@ -51,10 +51,10 @@ ch5-overlay-panel {
   --ch5-overlay-default-close-icon-font-weight: var(--ch5-overlay-panel-font-weight);
 
   /// the padding for the content of the overlay panel
-  --ch5-overlay-panel-contents-padding: 20px;
+  --ch5-overlay-panel-contents-padding: var(--theme-ch5-overlay-panel-contents-padding);
 
   /// the font size for the content of the overlay panel
-  --ch5-overlay-panel-contents-font-size: 18px;
+  --ch5-overlay-panel-contents-font-size: var(--theme-ch5-overlay-panel-contents-font-size);
 
   /// the font style for the content of the overlay panel
   --ch5-overlay-panel-contents-font-style: var(--ch5-overlay-panel-font-style);
@@ -62,5 +62,6 @@ ch5-overlay-panel {
   /// the font weight for the content of the overlay panel
   --ch5-overlay-panel-contents-font-weight: var(--ch5-overlay-panel-font-style);
 
-  --ch5-overlay-panel-z-index: 10000;
+  /// overlay panel z-index
+  --ch5-overlay-panel-z-index: var(--theme-ch5-overlay-panel-z-index);
 }

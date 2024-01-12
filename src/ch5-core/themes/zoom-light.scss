@@ -154,13 +154,26 @@
 
   // ch5-date-time
   /// Font size
-  --ch5-datetime-font-size: 14px;
+  --theme-ch5-datetime-font-size: 14px;
 
   /// Datetime height
-  --ch5-datetime-height: 35px;
+  --theme-ch5-datetime-height: 35px;
 
   /// Datetime width
-  --ch5-datetime-width: 200px;
+  --theme-ch5-datetime-width: 200px;
+
+  /// Background color
+  --theme-ch5-datetime-background-color: transparent;
+
+  // ch5-image
+  /// Set height of image
+  --theme-ch5-image-height: inherit;
+
+  /// Set width of image
+  --theme-ch5-image-width: inherit;
+
+  /// Sets object fit property
+  --theme-ch5-image-object-fit: contain;
 
   // ch5-overlay-panel
   /// the color of the icon at the top of the overlay panel
@@ -187,8 +200,80 @@
   /// the font color for the content of the overlay panel
   --ch5-overlay-panel-contents-font-color: #333;
 
-  // ch5-select
+  /// the border width of the overlay panel
+  --theme-ch5-overlay-panel-border-width: 1px;
 
+  /// the border style of the overlay panel
+  --theme-ch5-overlay-panel-border-style: solid;
+
+  /// the border radius of the overlay panel
+  --theme-ch5-overlay-panel-border-radius: 6px;
+
+  /// set padding for the overlay panel
+  --theme-ch5-overlay-panel-padding: 1.25em;
+
+  /// the margin of the icon at the top of the overlay panel
+  --theme-ch5-overlay-panel-close-icon-margin: 0 5px;
+
+  /// the padding of the icon at the top of the overlay panel
+  --theme-ch5-overlay-panel-close-icon-padding: 0 5px 5px;
+
+  /// the width of the icon at the top of the overlay panel
+  --theme-ch5-overlay-panel-close-icon-width: 20px;
+
+  /// the font size of the icon at the top of the overlay panel
+  --theme-ch5-overlay-default-close-icon-font-size: 24px;
+
+  /// the padding for the content of the overlay panel
+  --theme-ch5-overlay-panel-contents-padding: 20px;
+
+  /// the font size for the content of the overlay panel
+  --theme-ch5-overlay-panel-contents-font-size: 18px;
+
+  /// overlay panel z-index
+  --theme-ch5-overlay-panel-z-index: 10000;
+
+  //ch5-segmented-gaige
+  /// Led style gauge style height
+  --theme-ch5-segmented-gauge-led-style-height: 20px;
+
+  /// Led style gauge style width
+  --theme-ch5-segmented-gauge-led-style-width: 20px;
+
+  /// Margin for segmented gauge children
+  --theme-ch5-segmented-gauge-segment-margin: 2px;
+
+  /// Led style border radius
+  --theme-ch5-segmented-gauge-led-style-border-radius: 50%;
+
+  /// State graphic green
+  --theme-ch5-segmented-gauge-state-graphic-green: #22c55e;
+
+  /// State graphic inactive
+  --theme-ch5-segmented-gauge-state-graphic-inactive: #909090;
+
+  /// State graphic yellow
+  --theme-ch5-segmented-gauge-state-graphic-yellow: #eab308;
+
+  /// State graphic green
+  --theme-ch5-segmented-gauge-state-graphic-red: #ef4444;
+
+  /// State graphic green
+  --theme-ch5-segmented-gauge-state-graphic-blue: #3b82f6;
+
+  /// State graphic green
+  --theme-ch5-segmented-gauge-state-graphic-orange: #f97316;
+
+  /// State graphic green
+  --theme-ch5-segmented-gauge-state-graphic-white: #f8fafc;
+
+  /// Segmented gauge hidden segment
+  --theme-ch5-segmented-gauge-hidden-segment: 4px;
+
+  /// Segmented gauge hidden margin
+  --theme-ch5-segmented-gauge-hidden-margin: 0px;
+
+  // ch5-select
   /// component border color
   --ch5-select-border-color: #c6c8ca;
 
@@ -213,8 +298,40 @@
   /// select panel background color
   --ch5-select-panel-items-background-color: #{$white};
 
-  // ch5-spinner
+  /// top line content padding
+  --theme-ch5-select-padding: 4px;
 
+  /// component border width
+  --theme-ch5-select-border-width: 1px;
+
+  /// component border radius
+  --theme-ch5-select-border-radius: 2px;
+
+  /// combo trigger button margin
+  --theme-ch5-select-combo-trigger-margin: 0;
+
+  /// combo trigger button width
+  --theme-ch5-select-combo-trigger-width: 24px;
+
+  /// combo trigger button height
+  --theme-ch5-select-combo-trigger-height: 24px;
+
+  /// top line width
+  --theme-ch5-select-item-selected-width: calc(100% - 40px);
+
+  /// item border width
+  --theme-ch5-select-panel-item-border-width: 1px;
+
+  /// item padding
+  --theme-ch5-select-panel-item-padding: 8px;
+
+  /// select panel shadow
+  --theme-ch5-select-panel-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+
+  /// select panel z-index
+  --theme-ch5-select-panel-z-index: 10000;
+
+  // ch5-spinner
   /// The text color of the active item
   --ch5-spinner-active-item-color: #000;
 
@@ -329,6 +446,54 @@
   /// the text color for the prompt text of the modal
   --ch5-modal-prompt-text-font-color: #4a4a4a;
 
+  /// the border width of the modal
+  --theme-ch5-modal-border-width: 1px;
+
+  /// the border style of the modal
+  --theme-ch5-modal-border-style: solid;
+
+  /// the border radius of the modal
+  --theme-ch5-modal-border-radius: 6px;
+
+  /// set padding for the modal
+  --theme-ch5-modal-padding: 1.25em;
+
+  /// the margin of the icon at the top of the modal.
+  --theme-ch5-modal-close-icon-margin: 0 5px;
+
+  /// the padding of the icon at the top of the modal.
+  --theme-ch5-modal-close-icon-padding: 0 5px 5px;
+
+  /// the width of the icon at the top of the modal.
+  --theme-ch5-modal-close-icon-width: 20px;
+
+  /// the default font size of the icon at the top of the modal.
+  --theme-ch5-modal-default-close-icon-font-size: 24px;
+
+  /// the font size for the title of the modal
+  --theme-ch5-modal-title-font-size: 1.3em;
+
+  /// the padding of the modal's content
+  --theme-ch5-modal-contents-padding: 10px;
+
+  /// the font size for the content of the modal.
+  --theme-ch5-modal-contents-font-size: 18px;
+
+  /// the padding for the prompt of the modal
+  --theme-ch5-modal-prompt-padding: 30px 0 30px 0;
+
+  /// the right margin for the prompt icon of the modal
+  --theme-ch5-modal-prompt-icon-margin-right: 10px;
+
+  /// the font size for the prompt text of the modal
+  --theme-ch5-modal-prompt-text-font-size: 16px;
+
+  /// modal dialog z-index
+  --theme-ch5-modal-z-index: 10001;
+
+  /// mask z-index
+  --theme-ch5-modal-mask-z-index: 10000;
+
   // ch5-slider
   --ch5-slider-connect-bg: #0099ff;
   --ch5-slider-background-lighten-percent: 30%;
@@ -339,7 +504,6 @@
   --ch5-slider-pips-color: #8f8f8f;
 
   // ch5-list
-
   /// Set the text color of list items.
   --ch5-list-item-color: #333;
 
@@ -348,4 +512,10 @@
 
   /// Set the border color of list items
   --ch5-list-item-border-color: #bdbdbd;
+
+  /// Set the border style of list items, configurable for each theme
+  --theme-ch5-list-item-border: 1px solid transparent;
+
+  /// Set the padding of list items
+  --theme-ch5-list-item-padding: 10px;
 }

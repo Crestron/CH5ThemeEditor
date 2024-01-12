@@ -12,14 +12,14 @@
 
 ch5-datetime {
   /// Font size
-  --ch5-datetime-font-size: 14px;
+  --ch5-datetime-font-size: var(--theme-ch5-datetime-font-size);
 
   /// Datetime height
-  --ch5-datetime-height: 35px;
+  --ch5-datetime-height: var(--theme-ch5-datetime-height);
 
   /// Datetime width
-  --ch5-datetime-width: 200px;
+  --ch5-datetime-width: var(--theme-ch5-datetime-width);
 
   /// Background color
-  --ch5-datetime-background-color: transparent;
+  --ch5-datetime-background-color: var(--theme-ch5-datetime-background-color);
 }

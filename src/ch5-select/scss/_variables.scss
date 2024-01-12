@@ -21,34 +21,35 @@ ch5-select {
   --ch5-select-font-weight: var(--root-font-weight);
 
   /// top line content padding
-  --ch5-select-padding: 4px;
+  --ch5-select-padding: var(--theme-ch5-select-padding);
 
   /// component border width
-  --ch5-select-border-width: 1px;
+  --ch5-select-border-width: var(--theme-ch5-select-border-width);
 
   /// component border radius
-  --ch5-select-border-radius: 2px;
+  --ch5-select-border-radius: var(--theme-ch5-select-border-radius);
 
   /// combo trigger button margin
-  --ch5-select-combo-trigger-margin: 0;
+  --ch5-select-combo-trigger-margin: var(--theme-ch5-select-combo-trigger-margin);
 
   /// combo trigger button width
-  --ch5-select-combo-trigger-width: 24px;
+  --ch5-select-combo-trigger-width: var(--theme-ch5-select-combo-trigger-width);
 
   /// combo trigger button height
-  --ch5-select-combo-trigger-height: 24px;
+  --ch5-select-combo-trigger-height: var(--theme-ch5-select-combo-trigger-height);
 
   /// top line width
-  --ch5-select-item-selected-width: calc(100% - 40px);
+  --ch5-select-item-selected-width: var(--theme-ch5-select-item-selected-width);
 
   /// item border width
-  --ch5-select-panel-item-border-width: 1px;
+  --ch5-select-panel-item-border-width: var(--theme-ch5-select-panel-item-border-width);
 
   /// item padding
-  --ch5-select-panel-item-padding: 8px;
+  --ch5-select-panel-item-padding: var(--theme-ch5-select-panel-item-padding);
 
   /// select panel shadow
-  --ch5-select-panel-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  --ch5-select-panel-items-box-shadow: var(--theme-ch5-select-panel-items-box-shadow);
 
-  --ch5-select-panel-z-index: 10000;
+  /// select panel z-index
+  --ch5-select-panel-z-index: var(--theme-ch5-select-panel-z-index);
 }

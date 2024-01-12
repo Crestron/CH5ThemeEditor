@@ -12,41 +12,41 @@
 
 ch5-segmented-gauge {
   /// Led style gauge style height
-  --ch5-segmented-gauge-led-style-height: 20px;
+  --ch5-segmented-gauge-led-style-height: var(--theme-ch5-segmented-gauge-led-style-height);
 
   /// Led style gauge style width
-  --ch5-segmented-gauge-led-style-width: 20px;
+  --ch5-segmented-gauge-led-style-width: var(--theme-ch5-segmented-gauge-led-style-width);
 
   /// Margin for segmented gauge children
-  --ch5-segmented-gauge-segment-margin: 2px;
+  --ch5-segmented-gauge-segment-margin: var(--theme-ch5-segmented-gauge-segment-margin);
 
   /// Led style border radius
-  --ch5-segmented-gauge-led-style-border-radius: 50%;
+  --ch5-segmented-gauge-led-style-border-radius: var(--theme-ch5-segmented-gauge-led-style-border-radius);
 
   /// State graphic green
-  --ch5-segmented-gauge-state-graphic-green: #22c55e;
+  --ch5-segmented-gauge-state-graphic-green: var(--theme-ch5-segmented-gauge-state-graphic-green);
 
   /// State graphic inactive
-  --ch5-segmented-gauge-state-graphic-inactive: #909090;
+  --ch5-segmented-gauge-state-graphic-inactive: var(--theme-ch5-segmented-gauge-state-graphic-inactive);
 
   /// State graphic yellow
-  --ch5-segmented-gauge-state-graphic-yellow: #eab308;
+  --ch5-segmented-gauge-state-graphic-yellow: var(--theme-ch5-segmented-gauge-state-graphic-yellow);
 
   /// State graphic green
-  --ch5-segmented-gauge-state-graphic-red: #ef4444;
+  --ch5-segmented-gauge-state-graphic-red: var(--theme-ch5-segmented-gauge-state-graphic-red);
 
   /// State graphic green
-  --ch5-segmented-gauge-state-graphic-blue: #3b82f6;
+  --ch5-segmented-gauge-state-graphic-blue: var(--theme-ch5-segmented-gauge-state-graphic-blue);
 
   /// State graphic green
-  --ch5-segmented-gauge-state-graphic-orange: #f97316;
+  --ch5-segmented-gauge-state-graphic-orange: var(--theme-ch5-segmented-gauge-state-graphic-orange);
 
   /// State graphic green
-  --ch5-segmented-gauge-state-graphic-white: #f8fafc;
+  --ch5-segmented-gauge-state-graphic-white: var(--theme-ch5-segmented-gauge-state-graphic-white);
 
   /// Segmented gauge hidden segment
-  --ch5-segmented-gauge-hidden-segment: 4px;
+  --ch5-segmented-gauge-hidden-segment: var(--theme-ch5-segmented-gauge-hidden-segment);
 
   /// Segmented gauge hidden margin
-  --ch5-segmented-gauge-hidden-margin: 0px;
+  --ch5-segmented-gauge-hidden-margin: var(--theme-ch5-segmented-gauge-hidden-margin);
 }
