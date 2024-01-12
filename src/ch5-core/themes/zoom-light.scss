@@ -14,110 +14,110 @@
 
 .zoom-light-theme {
   /// Font size
-  --root-font-size: 16px;
+  --theme-fonts-font-size: 16px;
 
   /// Font style
-  --root-font-style: normal;
+  --theme-fonts-font-style: normal;
 
   /// Font weight
-  --root-font-weight: normal;
+  --theme-fonts-font-weight: normal;
 
   /// Scrollbar width
-  --root-scrollbar-width: 7px;
+  --theme-others-scrollbar-width: 7px;
 
   /// Scrollbar border radius
-  --root-scrollbar-border-radius: 10px;
+  --theme-others-scrollbar-border-radius: 10px;
 
   /// Scrollbar track color
-  --root-scrollbar-track-color: rgba(0, 0, 0, 0.1);
+  --theme-others-scrollbar-track-color: rgba(0, 0, 0, 0.1);
 
   /// Scrollbar thumb color
-  --root-scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
+  --theme-others-scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
 
   /// Disabled opacity
   --root-disabled-opacity: 0.5;
 
   // Color system
 
-  --theme-default-background-color: #0e72ed;
-  --theme-default-border-color: #0091ea;
-  --theme-default-font-color: #ffffff;
-  --theme-default-pressed-background-color: #0862d1;
-  --theme-default-pressed-border-color: #0091ea;
-  --theme-default-pressed-font-color: #ffffff;
-  --theme-default-selected-background-color: #0862d1;
-  --theme-default-selected-border-color: #0091ea;
-  --theme-default-selected-font-color: #ffffff;
+  --theme-colors-default-background-color: #0e72ed;
+  --theme-colors-default-border-color: #0091ea;
+  --theme-colors-default-font-color: #ffffff;
+  --theme-colors-default-pressed-background-color: #0862d1;
+  --theme-colors-default-pressed-border-color: #0091ea;
+  --theme-colors-default-pressed-font-color: #ffffff;
+  --theme-colors-default-selected-background-color: #0862d1;
+  --theme-colors-default-selected-border-color: #0091ea;
+  --theme-colors-default-selected-font-color: #ffffff;
 
-  --theme-primary-background-color: #e8e8f1;
-  --theme-primary-border-color: #bdbdbd;
-  --theme-primary-font-color: #333;
-  --theme-primary-pressed-background-color: #d9d9e6;
-  --theme-primary-pressed-border-color: #bdbdbd;
-  --theme-primary-pressed-font-color: #333;
-  --theme-primary-selected-background-color: #6e6e7a;
-  --theme-primary-selected-border-color: #bdbdbd;
-  --theme-primary-selected-font-color: #333;
+  --theme-colors-primary-background-color: #e8e8f1;
+  --theme-colors-primary-border-color: #bdbdbd;
+  --theme-colors-primary-font-color: #333;
+  --theme-colors-primary-pressed-background-color: #d9d9e6;
+  --theme-colors-primary-pressed-border-color: #bdbdbd;
+  --theme-colors-primary-pressed-font-color: #333;
+  --theme-colors-primary-selected-background-color: #6e6e7a;
+  --theme-colors-primary-selected-border-color: #bdbdbd;
+  --theme-colors-primary-selected-font-color: #333;
 
-  --theme-info-background-color: #f26d21;
-  --theme-info-border-color: #f26d21;
-  --theme-info-font-color: #ffffff;
-  --theme-info-pressed-background-color: #d56832;
-  --theme-info-pressed-border-color: #f26d21;
-  --theme-info-pressed-font-color: #ffffff;
-  --theme-info-selected-background-color: #d56832;
-  --theme-info-selected-border-color: #f26d21;
-  --theme-info-selected-font-color: #ffffff;
+  --theme-colors-info-background-color: #f26d21;
+  --theme-colors-info-border-color: #f26d21;
+  --theme-colors-info-font-color: #ffffff;
+  --theme-colors-info-pressed-background-color: #d56832;
+  --theme-colors-info-pressed-border-color: #f26d21;
+  --theme-colors-info-pressed-font-color: #ffffff;
+  --theme-colors-info-selected-background-color: #d56832;
+  --theme-colors-info-selected-border-color: #f26d21;
+  --theme-colors-info-selected-font-color: #ffffff;
 
-  --theme-danger-background-color: #de2828;
-  --theme-danger-border-color: #e53935;
-  --theme-danger-font-color: #ffffff;
-  --theme-danger-pressed-background-color: #ca2424;
-  --theme-danger-pressed-border-color: #e53935;
-  --theme-danger-pressed-font-color: #ffffff;
-  --theme-danger-selected-background-color: #ca2424;
-  --theme-danger-selected-border-color: #e53935;
-  --theme-danger-selected-font-color: #ffffff;
+  --theme-colors-danger-background-color: #de2828;
+  --theme-colors-danger-border-color: #e53935;
+  --theme-colors-danger-font-color: #ffffff;
+  --theme-colors-danger-pressed-background-color: #ca2424;
+  --theme-colors-danger-pressed-border-color: #e53935;
+  --theme-colors-danger-pressed-font-color: #ffffff;
+  --theme-colors-danger-selected-background-color: #ca2424;
+  --theme-colors-danger-selected-border-color: #e53935;
+  --theme-colors-danger-selected-font-color: #ffffff;
 
-  --theme-secondary-background-color: #e7f1fd;
-  --theme-secondary-border-color: #dbe7f5;
-  --theme-secondary-font-color: #333;
-  --theme-secondary-pressed-background-color: #9bc5f8;
-  --theme-secondary-pressed-border-color: #dbe7f5;
-  --theme-secondary-pressed-font-color: #333;
-  --theme-secondary-selected-background-color: #9bc5f8;
-  --theme-secondary-selected-border-color: #dbe7f5;
-  --theme-secondary-selected-font-color: #333;
+  --theme-colors-secondary-background-color: #e7f1fd;
+  --theme-colors-secondary-border-color: #dbe7f5;
+  --theme-colors-secondary-font-color: #333;
+  --theme-colors-secondary-pressed-background-color: #9bc5f8;
+  --theme-colors-secondary-pressed-border-color: #dbe7f5;
+  --theme-colors-secondary-pressed-font-color: #333;
+  --theme-colors-secondary-selected-background-color: #9bc5f8;
+  --theme-colors-secondary-selected-border-color: #dbe7f5;
+  --theme-colors-secondary-selected-font-color: #333;
 
-  --theme-success-background-color: #268543;
-  --theme-success-border-color: #43a047;
-  --theme-success-font-color: #ffffff;
-  --theme-success-pressed-background-color: #23d959;
-  --theme-success-pressed-border-color: #43a047;
-  --theme-success-pressed-font-color: #ffffff;
-  --theme-success-selected-background-color: #23d959;
-  --theme-success-selected-border-color: #43a047;
-  --theme-success-selected-font-color: #ffffff;
+  --theme-colors-success-background-color: #268543;
+  --theme-colors-success-border-color: #43a047;
+  --theme-colors-success-font-color: #ffffff;
+  --theme-colors-success-pressed-background-color: #23d959;
+  --theme-colors-success-pressed-border-color: #43a047;
+  --theme-colors-success-pressed-font-color: #ffffff;
+  --theme-colors-success-selected-background-color: #23d959;
+  --theme-colors-success-selected-border-color: #43a047;
+  --theme-colors-success-selected-font-color: #ffffff;
 
-  --theme-warning-background-color: #faac2a;
-  --theme-warning-border-color: #ffb300;
-  --theme-warning-font-color: #333;
-  --theme-warning-pressed-background-color: #ff6f00;
-  --theme-warning-pressed-border-color: #ffb300;
-  --theme-warning-pressed-font-color: #ffffff;
-  --theme-warning-selected-background-color: #ff6f00;
-  --theme-warning-selected-border-color: #ffb300;
-  --theme-warning-selected-font-color: #ffffff;
+  --theme-colors-warning-background-color: #faac2a;
+  --theme-colors-warning-border-color: #ffb300;
+  --theme-colors-warning-font-color: #333;
+  --theme-colors-warning-pressed-background-color: #ff6f00;
+  --theme-colors-warning-pressed-border-color: #ffb300;
+  --theme-colors-warning-pressed-font-color: #ffffff;
+  --theme-colors-warning-selected-background-color: #ff6f00;
+  --theme-colors-warning-selected-border-color: #ffb300;
+  --theme-colors-warning-selected-font-color: #ffffff;
 
-  --theme-text-background-color: #efeff4;
-  --theme-text-border-color: #e0e0e0;
-  --theme-text-font-color: #333;
-  --theme-text-pressed-background-color: #f5f5f8;
-  --theme-text-pressed-border-color: #e0e0e0;
-  --theme-text-pressed-font-color: #ffffff;
-  --theme-text-selected-background-color: #f5f5f8;
-  --theme-text-selected-border-color: #e0e0e0;
-  --theme-text-selected-font-color: #ffffff;
+  --theme-colors-text-background-color: #efeff4;
+  --theme-colors-text-border-color: #e0e0e0;
+  --theme-colors-text-font-color: #333;
+  --theme-colors-text-pressed-background-color: #f5f5f8;
+  --theme-colors-text-pressed-border-color: #e0e0e0;
+  --theme-colors-text-pressed-font-color: #ffffff;
+  --theme-colors-text-selected-background-color: #f5f5f8;
+  --theme-colors-text-selected-border-color: #e0e0e0;
+  --theme-colors-text-selected-font-color: #ffffff;
 
   // ch5-animation
   /// animation color
@@ -359,7 +359,7 @@
   --ch5-textinput-input-text-color: var(--ch5-textinput-text-color);
 
   /// The color of the icon within the textinput
-  --ch5-textinput-icon-text-color: var(--theme-success-background-color);
+  --ch5-textinput-icon-text-color: var(--theme-colors-success-background-color);
 
   /// the color for the label of the textinput
   --ch5-textinput-label-text-color: var(--ch5-textinput-text-color);

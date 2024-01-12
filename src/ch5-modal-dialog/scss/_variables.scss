@@ -12,13 +12,13 @@
 
 ch5-modal {
   /// the default font size of the modal
-  --ch5-modal-font-size: var(--root-font-size);
+  --ch5-modal-font-size: var(--theme-fonts-font-size);
 
   /// the default font style of the modal
-  --ch5-modal-font-style: var(--root-font-style);
+  --ch5-modal-font-style: var(--theme-fonts-font-style);
 
   /// the default font weight of the modal
-  --ch5-modal-font-weight: var(--root-font-weight);
+  --ch5-modal-font-weight: var(--theme-fonts-font-weight);
 
   /// the border width of the modal
   --ch5-modal-border-width: var(--theme-ch5-modal-border-width);

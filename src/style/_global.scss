@@ -16,9 +16,9 @@ html {
 }
 
 body {
-  font-style: var(--root-font-style);
-  font-size: var(--root-font-size);
-  font-weight: var(--root-font-weight);
+  font-style: var(--theme-fonts-font-style);
+  font-size: var(--theme-fonts-font-size);
+  font-weight: var(--theme-fonts-font-weight);
 }
 
 // custom scrollbar
@@ -26,18 +26,18 @@ body {
 [class*=" ch5-"] {
   &::-webkit-scrollbar,
   ::-webkit-scrollbar {
-    width: var(--root-scrollbar-width);
+    width: var(--theme-others-scrollbar-width);
   }
 
   &::-webkit-scrollbar-track,
   ::-webkit-scrollbar-track {
-    background-color: var(--root-scrollbar-track-color);
+    background-color: var(--theme-others-scrollbar-track-color);
   }
 
   &::-webkit-scrollbar-thumb,
   ::-webkit-scrollbar-thumb {
-    background-color: var(--root-scrollbar-thumb-color);
-    border-radius: var(--root-scrollbar-border-radius);
+    background-color: var(--theme-others-scrollbar-thumb-color);
+    border-radius: var(--theme-others-scrollbar-border-radius);
   }
 }
 

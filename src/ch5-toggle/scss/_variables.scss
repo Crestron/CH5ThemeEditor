@@ -12,13 +12,13 @@
 
 ch5-toggle {
   /// default font size
-  --ch5-toggle-font-size: var(--root-font-size);
+  --ch5-toggle-font-size: var(--theme-fonts-font-size);
 
   /// default font style
-  --ch5-toggle-font-style: var(--root-font-style);
+  --ch5-toggle-font-style: var(--theme-fonts-font-style);
 
   /// default font weight
-  --ch5-toggle-font-weight: var(--root-font-weight);
+  --ch5-toggle-font-weight: var(--theme-fonts-font-weight);
 
   /// label font size
   --ch5-toggle-label-font-size: var(--ch5-toggle-font-size);

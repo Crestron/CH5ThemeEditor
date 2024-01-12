@@ -24,11 +24,11 @@ ch5-button-list {
   --ch5-button-list-button-container-padding: 5px;
 
   /// Scrollbar border radius
-  --scrollbar-border-radius: var(--root-scrollbar-border-radius);
+  --scrollbar-border-radius: var(--theme-others-scrollbar-border-radius);
 
   /// Scrollbar thumb color
-  --scrollbar-thumb-color: var(--root-scrollbar-thumb-color);
+  --scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color);
 
   /// Scrollbar width
-  --scrollbar-width: var(--root-scrollbar-width);
+  --scrollbar-width: var(--theme-others-scrollbar-width);
 }

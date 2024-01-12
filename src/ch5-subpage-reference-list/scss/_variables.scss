@@ -15,14 +15,14 @@ ch5-subpage-reference-list {
   --ch5-subpage-reference-list-container-padding: 5px;
 
   /// scrollbar width
-  --ch5-subpage-reference-list-scrollbar-width: var(--root-scrollbar-width);
+  --ch5-subpage-reference-list-scrollbar-width: var(--theme-others-scrollbar-width);
 
   /// scrollbar track color
-  --ch5-subpage-reference-list-scrollbar-track-color: var(--root-scrollbar-track-color);
+  --ch5-subpage-reference-list-scrollbar-track-color: var(--theme-others-scrollbar-track-color);
 
   /// scrollbar border radius
-  --ch5-subpage-reference-list-scrollbar-border-radius: var(--root-scrollbar-border-radius);
+  --ch5-subpage-reference-list-scrollbar-border-radius: var(--theme-others-scrollbar-border-radius);
 
   /// scrollbar thumb color
-  --ch5-subpage-reference-list-scrollbar-thumb-color: var(--root-scrollbar-thumb-color);
+  --ch5-subpage-reference-list-scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color);
 }
