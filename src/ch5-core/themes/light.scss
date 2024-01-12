@@ -331,6 +331,37 @@
   /// select panel z-index
   --theme-ch5-select-panel-z-index: 10000;
 
+  // ch5-signal-level-gauge
+  /// Height small
+  --theme-ch5-signal-level-gauge-small-height: 24px;
+
+  /// Width small
+  --theme-ch5-signal-level-gauge-small-width: 36px;
+
+  /// Height regular
+  --theme-ch5-signal-level-gauge-regular-height: 35px;
+
+  /// Width regular
+  --theme-ch5-signal-level-gauge-regular-width: 45px;
+
+  /// Height large
+  --theme-ch5-signal-level-gauge-large-height: 60px;
+
+  /// Width large
+  --theme-ch5-signal-level-gauge-large-width: 90px;
+
+  /// Height x-large
+  --theme-ch5-signal-level-gauge-x-large-height: 96px;
+
+  /// Width x-large
+  --theme-ch5-signal-level-gauge-x-large-width: 180px;
+
+  /// Bar color
+  --theme-ch5-signal-level-gauge-bar-color: #808080;
+
+  /// Selected bar color
+  --theme-ch5-signal-level-gauge-selected-bar-color: #67bef0;
+
   // ch5-spinner
   /// The text color of the active item
   --ch5-spinner-active-item-color: #000;
@@ -350,8 +381,26 @@
   --ch5-spinner-background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05));
   --ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%);
 
-  // ch5-textinput
+  // default
+  --theme-ch5-spinner-border-width: 1px;
+  --theme-ch5-spinner-border-style: solid;
 
+  /// the default font size of the spinner
+  --theme-ch5-spinner-font-size: 22px;
+
+  /// the padding of the icon within the slider item
+  --theme-ch5-spinner-icon-padding: 0 0;
+
+  /// the margin of the icon within the slider item
+  --theme-ch5-spinner-icon-margin: 0 0;
+
+  /// the opacity for the overlay of the spinner
+  --theme-ch5-spinner-overlay-opacity: 0;
+
+  --theme-ch5-spinner-wrapper-z-index: 9999;
+  --theme-ch5-spinner-overlay-z-index: 999;
+
+  // ch5-textinput
   /// The text color of the textinput.
   --ch5-textinput-text-color: #000000;
 
