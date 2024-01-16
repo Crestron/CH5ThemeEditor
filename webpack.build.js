@@ -43,7 +43,7 @@ const themeList = {};
 themeList.themeName = glob.sync(distDir + '/themes/*-theme.css');
 
 const jsonData = JSON.stringify(themeList, null, 4);
-fs.writeFileSync(manifestSourceFilePath, jsonData);
+fs.writeFileSync(manifestSourceFilePath, jsonData); // TODO - write manifest file
 
 let fontAwesomeDestinationFilePath = "";
 let materialIconsDestinationFilePath = "";
