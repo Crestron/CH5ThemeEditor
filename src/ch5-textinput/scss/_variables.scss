@@ -14,16 +14,16 @@ ch5-textinput {
   // default
 
   /// background color of textinput input field
-  --ch5-textinput-input-background-color: transparent;
+  --ch5-textinput-input-background-color: var(--theme-ch5-textinput-input-background-color);
 
   /// the border radius for the textinput
-  --ch5-textinput-input-border-radius: 5px;
+  --ch5-textinput-input-border-radius: var(--theme-ch5-textinput-input-border-radius);
 
   /// set the textinput border's width
-  --ch5-textinput-input-border-width: 2px;
+  --ch5-textinput-input-border-width: var(--theme-ch5-textinput-input-border-width);
 
   /// set the textinput border's style
-  --ch5-textinput-input-border-style: solid;
+  --ch5-textinput-input-border-style: var(--theme-ch5-textinput-input-border-style);
 
   /// set the default font style for the textinput
   --ch5-textinput-font-style: var(--theme-fonts-font-style);
@@ -32,13 +32,13 @@ ch5-textinput {
   --ch5-textinput-font-weight: var(--theme-fonts-font-weight);
 
   /// set the font size for regular size of the textinput
-  --ch5-textinput-regular-font-size: 16px;
+  --ch5-textinput-regular-font-size: var(--theme-ch5-textinput-regular-font-size);
 
   /// set padding for regular size of the textinput
-  --ch5-textinput-input-regular-padding: 15px 20px;
+  --ch5-textinput-input-regular-padding: var(--theme-ch5-textinput-input-regular-padding);
 
   /// set the width for regular size of the textinput
-  --ch5-textinput-size-regular-width: 400px;
+  --ch5-textinput-size-regular-width: var(--theme-ch5-textinput-size-regular-width);
 
   /// set the font size for regular size of the textinput
   --ch5-textinput-regular-mask-font-size: calc(var(--ch5-textinput-regular-font-size) - 2px);
@@ -50,10 +50,10 @@ ch5-textinput {
   --ch5-textinput-regular-font-weight: var(--ch5-textinput-font-weight);
 
   /// set margin of icon for regular size of the textinput
-  --ch5-textinput-icon-regular-margin: 16px 16px;
+  --ch5-textinput-icon-regular-margin: var(--theme-ch5-textinput-icon-regular-margin);
 
   /// set the font size for x-small size of the textinput
-  --ch5-textinput-x-small-font-size: 12px;
+  --ch5-textinput-x-small-font-size: var(--theme-ch5-textinput-x-small-font-size);
 
   /// set the font size for x-small size of the textinput
   --ch5-textinput-x-small-mask-font-size: calc(var(--ch5-textinput-x-small-font-size) - 1px);
@@ -65,19 +65,19 @@ ch5-textinput {
   --ch5-textinput-x-small-font-weight: var(--ch5-textinput-font-weight);
 
   /// set padding for x-small size of the textinput
-  --ch5-textinput-input-x-small-padding: 10px 10px;
+  --ch5-textinput-input-x-small-padding: var(--theme-ch5-textinput-input-x-small-padding);
 
   /// set the width for x-small size of the textinput
-  --ch5-textinput-size-x-small-width: 200px;
+  --ch5-textinput-size-x-small-width: var(--theme-ch5-textinput-size-x-small-width);
 
   /// set margin of icon for x-small size of the textinput
-  --ch5-textinput-icon-x-small-margin: 12px 12px;
+  --ch5-textinput-icon-x-small-margin: var(--theme-ch5-textinput-icon-x-small-margin);
 
   /// set padding for small size of the textinput
-  --ch5-textinput-input-small-padding: 15px 15px;
+  --ch5-textinput-input-small-padding: var(--theme-ch5-textinput-input-small-padding);
 
   /// set the font size for small size of the textinput
-  --ch5-textinput-small-font-size: 14px;
+  --ch5-textinput-small-font-size: var(--theme-ch5-textinput-small-font-size);
 
   /// set the font size for small size of the textinput
   --ch5-textinput-small-mask-font-size: calc(var(--ch5-textinput-small-font-size) - 1px);
@@ -89,16 +89,16 @@ ch5-textinput {
   --ch5-textinput-small-font-weight: var(--ch5-textinput-font-weight);
 
   /// set the width for small size of the textinput
-  --ch5-textinput-size-small-width: 250px;
+  --ch5-textinput-size-small-width: var(--theme-ch5-textinput-size-small-width);
 
   /// set margin of icon for small size of the textinput
-  --ch5-textinput-icon-small-margin: 14px 14px;
+  --ch5-textinput-icon-small-margin: var(--theme-ch5-textinput-icon-small-margin);
 
   /// set padding for large size of the textinput
-  --ch5-textinput-input-large-padding: 15px 20px;
+  --ch5-textinput-input-large-padding: var(--theme-ch5-textinput-input-large-padding);
 
   /// set the font size for large size of the textinput
-  --ch5-textinput-large-font-size: 18px;
+  --ch5-textinput-large-font-size: var(--theme-ch5-textinput-large-font-size);
 
   /// set the font size for large size of the textinput
   --ch5-textinput-large-mask-font-size: calc(var(--ch5-textinput-large-font-size) - 4px);
@@ -110,19 +110,19 @@ ch5-textinput {
   --ch5-textinput-large-font-weight: var(--ch5-textinput-font-weight);
 
   /// set the width for large size of the textinput
-  --ch5-textinput-size-large-width: 500px;
+  --ch5-textinput-size-large-width: var(--theme-ch5-textinput-size-large-width);
 
   /// set the font size of icon for large size of the textinput
   --ch5-textinput-icon-large-font-size: var(--ch5-textinput-large-font-size);
 
   /// set margin of icon for large size of the textinput
-  --ch5-textinput-icon-large-margin: 18px 18px;
+  --ch5-textinput-icon-large-margin: var(--theme-ch5-textinput-icon-large-margin);
 
   /// set padding for x-large size of the textinput
-  --ch5-textinput-input-x-large-padding: 15px 20px;
+  --ch5-textinput-input-x-large-padding: var(--theme-ch5-textinput-input-x-large-padding);
 
   /// set the font size for x-large size of the textinput
-  --ch5-textinput-x-large-font-size: 22px;
+  --ch5-textinput-x-large-font-size: var(--theme-ch5-textinput-x-large-font-size);
 
   /// set the font size for x-large size of the textinput
   --ch5-textinput-x-large-mask-font-size: calc(var(--ch5-textinput-x-large-font-size) - 4px);
@@ -140,20 +140,20 @@ ch5-textinput {
   --ch5-textinput-icon-x-large-font-size: var(--ch5-textinput-x-large-font-size);
 
   /// set margin of icon for x-large size of the textinput
-  --ch5-textinput-icon-x-large-margin: 22px 22px;
+  --ch5-textinput-icon-x-large-margin: var(--theme-ch5-textinput-icon-x-large-margin);
 
   /// set minimum height for size - x-small of the textinput
-  --ch5-textinput-size-x-small-height: 40px;
+  --ch5-textinput-size-x-small-height: var(--theme-ch5-textinput-size-x-small-height);
 
   /// set minimum height for size - small of the textinput
-  --ch5-textinput-size-small-height: 48px;
+  --ch5-textinput-size-small-height: var(--theme-ch5-textinput-size-small-height);
 
   /// set minimum height for size - regular of the textinput
-  --ch5-textinput-size-regular-height: 52px;
+  --ch5-textinput-size-regular-height: var(--theme-ch5-textinput-size-regular-height);
 
   /// set minimum height for size - large of the textinput
-  --ch5-textinput-size-large-height: 56px;
+  --ch5-textinput-size-large-height: var(--theme-ch5-textinput-size-large-height);
 
   /// set minimum height for size - x-large of the textinput
-  --ch5-textinput-size-x-large-height: 60px;
+  --ch5-textinput-size-x-large-height: var(--theme-ch5-textinput-size-x-large-height);
 }

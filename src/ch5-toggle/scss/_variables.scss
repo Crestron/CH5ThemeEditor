@@ -30,7 +30,7 @@ ch5-toggle {
   --ch5-toggle-label-font-weight: var(--ch5-toggle-font-weight);
 
   /// label margin
-  --ch5-toggle-label-margin: 10px;
+  --ch5-toggle-label-margin: var(--theme-ch5-toggle-label-margin);
 
   /// font size applied on the on|off label
   --ch5-toggle-text-font-size: var(--ch5-toggle-font-size);
@@ -48,15 +48,20 @@ ch5-toggle {
   --ch5-toggle-icon-font-style: var(--ch5-toggle-font-style);
 
   /// font weight applied on the on|off icon
-  --ch5-toggle-icon-font-weight: 900;
+  --ch5-toggle-icon-font-weight: var(--theme-ch5-toggle-icon-font-weight);
 
   /// handle margin when the shape="circle"
-  --ch5-toggle-handle-circle-margin: 10px;
+  --ch5-toggle-handle-circle-margin: var(--theme-ch5-toggle-handle-circle-margin);
 
   /// handle margin when the shape="rectangle"
-  --ch5-toggle-handle-rectangle-margin: 10px;
+  --ch5-toggle-handle-rectangle-margin: var(--theme-ch5-toggle-handle-rectangle-margin);
 
-  --ch5-toggle-container-z-index: 3;
-  --ch5-toggle-knob-z-index: 2;
-  --ch5-toggle-z-index: 1;
+  /// containe z-index
+  --ch5-toggle-container-z-index: var(--theme-ch5-toggle-container-z-index);
+
+  /// toggle knob z-index
+  --ch5-toggle-knob-z-index: var(--theme-ch5-toggle-knob-z-index);
+
+  /// toggle z-index
+  --ch5-toggle-z-index: var(--theme-ch5-toggle-z-index);
 }

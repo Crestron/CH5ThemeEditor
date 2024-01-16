@@ -21,20 +21,20 @@ ch5-triggerview {
   --ch5-triggerview-font-weight: var(--theme-fonts-font-weight);
 
   /// triggerview minimum height in px
-  --ch5-triggerview-slide-min-height: 0px;
+  --ch5-triggerview-slide-min-height: var(--theme-ch5-triggerview-slide-min-height);
 
   /// triggerview maximum height in px
-  --ch5-triggerview-slide-max-height: none;
+  --ch5-triggerview-slide-max-height: var(--theme-ch5-triggerview-slide-max-height);
 
   /// duration of changing from one view to another.
-  --ch5-triggerview-transition-duration: 0.6s;
+  --ch5-triggerview-transition-duration: var(--theme-ch5-triggerview-transition-duration);
 
   /// transition effect(describe animation on content of the child view)
-  --ch5-triggerview-transition-timing-function: ease-out;
+  --ch5-triggerview-transition-timing-function: var(--theme-ch5-triggerview-transition-timing-function);
 
   // Do not remove below even if search result is 1
   /// gap between views in px
-  --ch5-triggerview-gap: 16px;
+  --ch5-triggerview-gap: var(--theme-ch5-triggerview-gap);
 
   --ch5-triggerview-background-color: var(--ch5-triggerview-background-color);
 

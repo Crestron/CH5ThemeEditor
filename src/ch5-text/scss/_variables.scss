@@ -11,9 +11,18 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-text {
-  --ch5-text-min-width: 64px;
-  --ch5-text-min-height: 44px;
-  --ch5-text-width: 150px;
-  --ch5-text-height: 48px;
-  --ch5-text-padding-value: 10px;
+  /// text min width
+  --ch5-text-min-width: var(--theme-ch5-text-min-width);
+
+  /// text min height
+  --ch5-text-min-height: var(--theme-ch5-text-min-height);
+
+  /// text width
+  --ch5-text-width: var(--theme-ch5-text-width);
+
+  /// text height
+  --ch5-text-height: var(--theme-ch5-text-height);
+
+  /// text padding
+  --ch5-text-padding-value: var(--theme-ch5-text-padding-value);
 }

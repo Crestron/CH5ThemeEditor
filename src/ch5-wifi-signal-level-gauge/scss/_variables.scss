@@ -12,38 +12,38 @@
 
 ch5-wifi-signal-level-gauge {
   /// Size Height small
-  --ch5-wifi-signal-level-gauge-small-height: 24px;
+  --ch5-wifi-signal-level-gauge-small-height: var(--theme-ch5-wifi-signal-level-gauge-small-height);
 
   /// Size Width small
-  --ch5-wifi-signal-level-gauge-small-width: 36px;
+  --ch5-wifi-signal-level-gauge-small-width: var(--theme-ch5-wifi-signal-level-gauge-small-width);
 
   /// Size Height regular
-  --ch5-wifi-signal-level-gauge-regular-height: 36px;
+  --ch5-wifi-signal-level-gauge-regular-height: var(--theme-ch5-wifi-signal-level-gauge-regular-height);
 
   /// Size Width regular
-  --ch5-wifi-signal-level-gauge-regular-width: 54px;
+  --ch5-wifi-signal-level-gauge-regular-width: var(--theme-ch5-wifi-signal-level-gauge-regular-width);
 
   /// Size Height large
-  --ch5-wifi-signal-level-gauge-large-height: 60px;
+  --ch5-wifi-signal-level-gauge-large-height: var(--theme-ch5-wifi-signal-level-gauge-large-height);
 
   /// Size Width large
-  --ch5-wifi-signal-level-gauge-large-width: 90px;
+  --ch5-wifi-signal-level-gauge-large-width: var(--theme-ch5-wifi-signal-level-gauge-large-width);
 
   /// Size Height x-large
-  --ch5-wifi-signal-level-gauge-x-large-height: 96px;
+  --ch5-wifi-signal-level-gauge-x-large-height: var(--theme-ch5-wifi-signal-level-gauge-x-large-height);
 
   /// Size Width x-large
-  --ch5-wifi-signal-level-gauge-x-large-width: 144px;
+  --ch5-wifi-signal-level-gauge-x-large-width: var(--theme-ch5-wifi-signal-level-gauge-x-large-width);
 
   /// gaugeStyle accents
-  --ch5-wifi-signal-level-gauge-style-accents: #87ceeb;
+  --ch5-wifi-signal-level-gauge-style-accents: var(--theme-ch5-wifi-signal-level-gauge-style-accents);
 
   /// gaugeStyle light
-  --ch5-wifi-signal-level-gauge-style-light: #ffffff;
+  --ch5-wifi-signal-level-gauge-style-light: var(--theme-ch5-wifi-signal-level-gauge-style-light);
 
   /// gaugeStyle dark
-  --ch5-wifi-signal-level-gauge-style-dark: #000000;
+  --ch5-wifi-signal-level-gauge-style-dark: var(--theme-ch5-wifi-signal-level-gauge-style-dark);
 
   /// border color
-  --ch5-wifi-signal-level-gauge-border-color: #939393;
+  --ch5-wifi-signal-level-gauge-border-color: var(--theme-ch5-wifi-signal-level-gauge-border-color);
 }

@@ -12,8 +12,8 @@
 
 ch5-tab-button {
   /// button container width
-  --ch5-tab-button-button-container-width: 5px;
+  --ch5-tab-button-button-container-width: var(--theme-ch5-tab-button-button-container-width);
 
   /// button container height
-  --ch5-tab-button-button-container-height: 5px;
+  --ch5-tab-button-button-container-height: var(--theme-ch5-tab-button-button-container-height);
 }

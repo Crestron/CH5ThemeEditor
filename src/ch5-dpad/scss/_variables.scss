@@ -12,58 +12,58 @@
 
 ch5-dpad {
   /// Set the height and width of dpad for regular size
-  --ch5-dpad-regular-dimension: 150px;
+  --ch5-dpad-regular-dimension: var(--theme-ch5-dpad-regular-dimension);
 
   /// Set the height and width of dpad for x-small size
-  --ch5-dpad-x-small-dimension: 100px;
+  --ch5-dpad-x-small-dimension: var(--theme-ch5-dpad-x-small-dimension);
 
   /// Set the height and width of dpad for small size
-  --ch5-dpad-small-dimension: 130px;
+  --ch5-dpad-small-dimension: var(--theme-ch5-dpad-small-dimension);
 
   /// Set the height and width of dpad for large size
-  --ch5-dpad-large-dimension: 180px;
+  --ch5-dpad-large-dimension: var(--theme-ch5-dpad-large-dimension);
 
   /// Set the height and width of dpad for x-large size
-  --ch5-dpad-x-large-dimension: 200px;
+  --ch5-dpad-x-large-dimension: var(--theme-ch5-dpad-x-large-dimension);
 
   // ------------------------------------------------------
 
   /// Set the border radius for 'plus' shape regular size
-  --ch5-dpad-regular-edge-radius: 10px;
+  --ch5-dpad-regular-edge-radius: var(--theme-ch5-dpad-regular-edge-radius);
 
   /// Set the border radius for 'plus' shape x-small size
-  --ch5-dpad-x-small-edge-radius: 6px;
+  --ch5-dpad-x-small-edge-radius: var(--theme-ch5-dpad-x-small-edge-radius);
 
   /// Set the border radius for 'plus' shape small size
-  --ch5-dpad-small-edge-radius: 10px;
+  --ch5-dpad-small-edge-radius: var(--theme-ch5-dpad-small-edge-radius);
 
   /// Set the border radius for 'plus' shape large size
-  --ch5-dpad-large-edge-radius: 10px;
+  --ch5-dpad-large-edge-radius: var(--theme-ch5-dpad-large-edge-radius);
 
   /// Set the border radius for 'plus' shape x-large size
-  --ch5-dpad-x-large-edge-radius: 10px;
+  --ch5-dpad-x-large-edge-radius: var(--theme-ch5-dpad-x-large-edge-radius);
 
   // ------------------------------------------------------
 
   /// Set the label font size
-  --ch5-dpad-label-font-size: 1.5rem;
+  --ch5-dpad-label-font-size: var(--theme-ch5-dpad-label-font-size);
 
   // ------------------------------------------------------
 
   /// Set the icon font size for x-small size
-  --ch5-dpad-icon-font-size-x-small: 1.3rem;
+  --ch5-dpad-icon-font-size-x-small: var(--theme-ch5-dpad-icon-font-size-x-small);
 
   /// Set the icon font size for small size
-  --ch5-dpad-icon-font-size-small: 1.8rem;
+  --ch5-dpad-icon-font-size-small: var(--theme-ch5-dpad-icon-font-size-small);
 
   /// Set the icon font size for regular size
-  --ch5-dpad-icon-font-size-regular: 2rem;
+  --ch5-dpad-icon-font-size-regular: var(--theme-ch5-dpad-icon-font-size-regular);
 
   /// Set the icon font size for large size
-  --ch5-dpad-icon-font-size-large: 2.2rem;
+  --ch5-dpad-icon-font-size-large: var(--theme-ch5-dpad-icon-font-size-large);
 
   /// Set the icon font size for x-large size
-  --ch5-dpad-icon-font-size-x-large: 2.4rem;
+  --ch5-dpad-icon-font-size-x-large: var(--theme-ch5-dpad-icon-font-size-x-large);
 
   // ---------------------------------------------------------------------------
 

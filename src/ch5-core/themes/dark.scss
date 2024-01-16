@@ -135,6 +135,86 @@
   /// size=x-large
   --theme-ch5-animation-size-x-large: 136px;
 
+  // ch5-button
+  /// The padding for icon of the button.
+  --theme-ch5-button-font-size: 14px;
+  --theme-ch5-button-icon-color: inherit;
+  --theme-ch5-button-icon-font-size: inherit;
+  --theme-ch5-button-padding: 0.25rem;
+  --theme-ch5-button-content-line-height: 1.2;
+
+  // button solid-border
+  --theme-ch5-button-default-border-width: 1px;
+  --theme-ch5-button-primary-border-width: 1px;
+  --theme-ch5-button-secondary-border-width: 1px;
+  --theme-ch5-button-success-border-width: 1px;
+  --theme-ch5-button-info-border-width: 1px;
+  --theme-ch5-button-warning-border-width: 1px;
+  --theme-ch5-button-danger-border-width: 1px;
+  --theme-ch5-button-text-border-width: 1px;
+
+  --theme-ch5-button-default-border-style: solid;
+  --theme-ch5-button-primary-border-style: solid;
+  --theme-ch5-button-secondary-border-style: solid;
+  --theme-ch5-button-success-border-style: solid;
+  --theme-ch5-button-info-border-style: solid;
+  --theme-ch5-button-warning-border-style: solid;
+  --theme-ch5-button-danger-border-style: solid;
+  --theme-ch5-button-text-border-style: solid;
+
+  // button rounded-rectangle
+  --theme-ch5-button-border-radius: 5px;
+
+  //button circle
+  --theme-ch5-button-circle-border-radius: 50%;
+
+  /// button oval
+  --theme-ch5-button-oval-border-radius: 50%;
+
+  /// button tab
+  --theme-ch5-button-tab-border-radius: 10px 10px 0 0;
+
+  // sizes
+  --theme-ch5-button-size: 42px;
+
+  // size x-small
+  --theme-ch5-button-x-small-font-size: 11px;
+  --theme-ch5-button-x-small-size: 32px;
+
+  // size small
+  --theme-ch5-button-small-font-size: 13px;
+  --theme-ch5-button-small-size: 36px;
+
+  // size large
+  --theme-ch5-button-large-font-size: 16px;
+  --theme-ch5-button-large-size: 52px;
+
+  // size x-large
+  --theme-ch5-button-x-large-font-size: 18px;
+  --theme-ch5-button-x-large-size: 72px;
+
+  // --ch5-button-faicon-font-family: "Font Awesome 5 Free";
+
+  /// Checkbox variables for advanced button
+  --theme-ch5-button-checkbox-checked-faicon: "\f14a";
+  --theme-ch5-button-checkbox-unchecked-faicon: "\f0c8";
+  --theme-ch5-button-checkbox-checked-font-weight: 400;
+  --theme-ch5-button-checkbox-unchecked-font-weight: 400;
+  --theme-ch5-button-checkbox-padding: 5px;
+
+  // ch5-button-list
+  /// button container padding
+  --theme-ch5-button-list-padding: 5px;
+
+  /// button container width
+  --theme-ch5-button-list-button-container-width: 100px;
+
+  /// button container height
+  --theme-ch5-button-list-button-container-height: 58px;
+
+  /// button container padding
+  --theme-ch5-button-list-button-container-padding: 5px;
+
   // ch5-color-chip
   /// The height for div of the color-chip.
   --theme-ch5-color-chip-div-height: 40px;
@@ -165,6 +245,55 @@
   /// Background color
   --theme-ch5-datetime-background-color: transparent;
 
+  // ch5-dpad
+  /// Set the height and width of dpad for regular size
+  --theme-ch5-dpad-regular-dimension: 150px;
+
+  /// Set the height and width of dpad for x-small size
+  --theme-ch5-dpad-x-small-dimension: 100px;
+
+  /// Set the height and width of dpad for small size
+  --theme-ch5-dpad-small-dimension: 130px;
+
+  /// Set the height and width of dpad for large size
+  --theme-ch5-dpad-large-dimension: 180px;
+
+  /// Set the height and width of dpad for x-large size
+  --theme-ch5-dpad-x-large-dimension: 200px;
+
+  /// Set the border radius for 'plus' shape regular size
+  --theme-ch5-dpad-regular-edge-radius: 10px;
+
+  /// Set the border radius for 'plus' shape x-small size
+  --theme-ch5-dpad-x-small-edge-radius: 6px;
+
+  /// Set the border radius for 'plus' shape small size
+  --theme-ch5-dpad-small-edge-radius: 10px;
+
+  /// Set the border radius for 'plus' shape large size
+  --theme-ch5-dpad-large-edge-radius: 10px;
+
+  /// Set the border radius for 'plus' shape x-large size
+  --theme-ch5-dpad-x-large-edge-radius: 10px;
+
+  /// Set the label font size
+  --theme-ch5-dpad-label-font-size: 1.5rem;
+
+  /// Set the icon font size for x-small size
+  --theme-ch5-dpad-icon-font-size-x-small: 1.3rem;
+
+  /// Set the icon font size for small size
+  --theme-ch5-dpad-icon-font-size-small: 1.8rem;
+
+  /// Set the icon font size for regular size
+  --theme-ch5-dpad-icon-font-size-regular: 2rem;
+
+  /// Set the icon font size for large size
+  --theme-ch5-dpad-icon-font-size-large: 2.2rem;
+
+  /// Set the icon font size for x-large size
+  --theme-ch5-dpad-icon-font-size-x-large: 2.4rem;
+
   // ch5-image
   /// Set height of image
   --theme-ch5-image-height: inherit;
@@ -174,6 +303,52 @@
 
   /// Sets object fit property
   --theme-ch5-image-object-fit: contain;
+
+  // ch5-keypad
+  /// ch5-keypad container width for x-small size
+  --theme-ch5-keypad-x-small-container-width: 210px;
+
+  /// ch5-keypad font-size-major for x-small size
+  --theme-ch5-keypad-x-small-font-size-major: 1.8rem;
+
+  /// ch5-keypad font-size-minor for x-small size
+  --theme-ch5-keypad-x-small-font-size-minor: 0.65rem;
+
+  /// ch5-keypad container width for small size
+  --theme-ch5-keypad-small-container-width: 249px;
+
+  /// ch5-keypad font-size-major for small size
+  --theme-ch5-keypad-small-font-size-major: 2rem;
+
+  /// ch5-keypad font-size-minor for small size
+  --theme-ch5-keypad-small-font-size-minor: 0.75rem;
+
+  /// ch5-keypad container width for regular size
+  --theme-ch5-keypad-regular-container-width: 267px;
+
+  /// ch5-keypad font-size-major for regular size
+  --theme-ch5-keypad-regular-font-size-major: 2.4rem;
+
+  /// ch5-keypad font-size-minor for regular size
+  --theme-ch5-keypad-regular-font-size-minor: 0.85rem;
+
+  /// ch5-keypad container width for large size
+  --theme-ch5-keypad-large-container-width: 294px;
+
+  /// ch5-keypad font-size-major for large size
+  --theme-ch5-keypad-large-font-size-major: 2.8rem;
+
+  /// ch5-keypad font-size-minor for large size
+  --theme-ch5-keypad-large-font-size-minor: 0.95rem;
+
+  /// ch5-keypad container width for x-large size
+  --theme-ch5-keypad-x-large-container-width: 312px;
+
+  /// ch5-keypad font-size-major for x-large size
+  --theme-ch5-keypad-x-large-font-size-major: 3rem;
+
+  /// ch5-keypad font-size-minor for x-large size
+  --theme-ch5-keypad-x-large-font-size-minor: 1.05rem;
 
   // ch5-overlay-panel
   /// the color of the icon at the top of the overlay panel
@@ -399,8 +574,38 @@
   /// the opacity for the overlay of the spinner
   --theme-ch5-spinner-overlay-opacity: 0;
 
+  /// spinner wrapper z-index
   --theme-ch5-spinner-wrapper-z-index: 9999;
+
+  /// spinner overlay z-index
   --theme-ch5-spinner-overlay-z-index: 999;
+
+  // ch5-subpage-reference-list
+  /// subpage-reference container padding
+  --theme-ch5-subpage-reference-list-container-padding: 5px;
+
+  // ch5-tab-button
+  /// button container width
+  --theme-ch5-tab-button-button-container-width: 5px;
+
+  /// button container height
+  --theme-ch5-tab-button-button-container-height: 5px;
+
+  // ch5-text
+  /// text min width
+  --theme-ch5-text-min-width: 64px;
+
+  /// text min height
+  --theme-ch5-text-min-height: 44px;
+
+  /// text width
+  --theme-ch5-text-width: 150px;
+
+  /// text height
+  --theme-ch5-text-height: 48px;
+
+  /// text padding
+  --theme-ch5-text-padding-value: 10px;
 
   // ch5-textinput
   /// The text color of the textinput.
@@ -420,6 +625,90 @@
 
   /// the color for the border of the textinput
   --ch5-textinput-input-border-color: var(--ch5-textinput-border-color);
+
+  /// background color of textinput input field
+  --theme-ch5-textinput-input-background-color: transparent;
+
+  /// the border radius for the textinput
+  --theme-ch5-textinput-input-border-radius: 5px;
+
+  /// set the textinput border's width
+  --theme-ch5-textinput-input-border-width: 2px;
+
+  /// set the textinput border's style
+  --theme-ch5-textinput-input-border-style: solid;
+
+  /// set the font size for regular size of the textinput
+  --theme-ch5-textinput-regular-font-size: 16px;
+
+  /// set padding for regular size of the textinput
+  --theme-ch5-textinput-input-regular-padding: 15px 20px;
+
+  /// set the width for regular size of the textinput
+  --theme-ch5-textinput-size-regular-width: 400px;
+
+  /// set margin of icon for regular size of the textinput
+  --theme-ch5-textinput-icon-regular-margin: 16px 16px;
+
+  /// set the font size for x-small size of the textinput
+  --theme-ch5-textinput-x-small-font-size: 12px;
+
+  /// set padding for x-small size of the textinput
+  --theme-ch5-textinput-input-x-small-padding: 10px 10px;
+
+  /// set the width for x-small size of the textinput
+  --theme-ch5-textinput-size-x-small-width: 200px;
+
+  /// set margin of icon for x-small size of the textinput
+  --theme-ch5-textinput-icon-x-small-margin: 12px 12px;
+
+  /// set padding for small size of the textinput
+  --theme-ch5-textinput-input-small-padding: 15px 15px;
+
+  /// set the font size for small size of the textinput
+  --theme-ch5-textinput-small-font-size: 14px;
+
+  /// set the width for small size of the textinput
+  --theme-ch5-textinput-size-small-width: 250px;
+
+  /// set margin of icon for small size of the textinput
+  --theme-ch5-textinput-icon-small-margin: 14px 14px;
+
+  /// set padding for large size of the textinput
+  --theme-ch5-textinput-input-large-padding: 15px 20px;
+
+  /// set the font size for large size of the textinput
+  --theme-ch5-textinput-large-font-size: 18px;
+
+  /// set the width for large size of the textinput
+  --theme-ch5-textinput-size-large-width: 500px;
+
+  /// set margin of icon for large size of the textinput
+  --theme-ch5-textinput-icon-large-margin: 18px 18px;
+
+  /// set padding for x-large size of the textinput
+  --theme-ch5-textinput-input-x-large-padding: 15px 20px;
+
+  /// set the font size for x-large size of the textinput
+  --theme-ch5-textinput-x-large-font-size: 22px;
+
+  /// set margin of icon for x-large size of the textinput
+  --theme-ch5-textinput-icon-x-large-margin: 22px 22px;
+
+  /// set minimum height for size - x-small of the textinput
+  --theme-ch5-textinput-size-x-small-height: 40px;
+
+  /// set minimum height for size - small of the textinput
+  --theme-ch5-textinput-size-small-height: 48px;
+
+  /// set minimum height for size - regular of the textinput
+  --theme-ch5-textinput-size-regular-height: 52px;
+
+  /// set minimum height for size - large of the textinput
+  --theme-ch5-textinput-size-large-height: 56px;
+
+  /// set minimum height for size - x-large of the textinput
+  --theme-ch5-textinput-size-x-large-height: 60px;
 
   // ch5-toggle
   /// The background color of the handle when value is true(checked).
@@ -460,13 +749,49 @@
   /// the background color of the knob when shape="rectangle"
   --ch5-toggle-rectangle-knob-color: #7b7b8c;
 
-  // ch5-triggerview
+  /// label margin
+  --theme-ch5-toggle-label-margin: 10px;
 
+  /// font weight applied on the on|off icon
+  --theme-ch5-toggle-icon-font-weight: 900;
+
+  /// handle margin when the shape="circle"
+  --theme-ch5-toggle-handle-circle-margin: 10px;
+
+  /// handle margin when the shape="rectangle"
+  --theme-ch5-toggle-handle-rectangle-margin: 10px;
+
+  /// containe z-index
+  --theme-ch5-toggle-container-z-index: 3;
+
+  /// toggle knob z-index
+  --theme-ch5-toggle-knob-z-index: 2;
+
+  /// toggle z-index
+  --theme-ch5-toggle-z-index: 1;
+
+  // ch5-triggerview
   /// The background color of the triggerview.
   --ch5-triggerview-background-color: transparent;
 
   /// The background color of fallback message.
   --ch5-triggerview-fallback-message-color-background: #fff;
+
+  /// triggerview minimum height in px
+  --theme-ch5-triggerview-slide-min-height: 0px;
+
+  /// triggerview maximum height in px
+  --theme-ch5-triggerview-slide-max-height: none;
+
+  /// duration of changing from one view to another.
+  --theme-ch5-triggerview-transition-duration: 0.6s;
+
+  /// transition effect(describe animation on content of the child view)
+  --theme-ch5-triggerview-transition-timing-function: ease-out;
+
+  // Do not remove below even if search result is 1
+  /// gap between views in px
+  --theme-ch5-triggerview-gap: 16px;
 
   // ch5-modal-dialog
   /// The color of the icon at the top of the modal
@@ -545,13 +870,234 @@
   --theme-ch5-modal-mask-z-index: 10000;
 
   // ch5-slider
+  /// slider connect background
   --ch5-slider-connect-bg: #0099ff;
+
+  /// slider background percentage
   --ch5-slider-background-lighten-percent: 30%;
+
+  /// slider target background
   --ch5-slider-target-bg: #2f2f33;
+
+  /// slider target border color
   --ch5-slider-target-border-color: #efefef;
+
+  /// slider target border color
   --ch5-slider-handle-bg: #efefef;
+
+  /// slider handler border color
   --ch5-slider-handle-border-color: #efefef;
+
+  /// slider pips color
   --ch5-slider-pips-color: #efefef;
+
+  /// slider target size
+  --theme-ch5-slider-height: 18px;
+
+  /// slider border width
+  --theme-ch5-slider-target-border-width: 1px;
+
+  /// slider handle border width
+  --theme-ch5-slider-handle-border-width: 1px;
+
+  /// slider border style
+  --theme-ch5-slider-target-border-style: solid;
+
+  /// slider handle border style
+  --theme-ch5-slider-handle-border-style: solid;
+
+  /// x-small width in px of the slider
+  --theme-ch5-slider-width-x-small: 200px;
+
+  /// small width in px of the slider
+  --theme-ch5-slider-width-small: 250px;
+
+  /// regular width in px of the slider
+  --theme-ch5-slider-width-regular: 300px;
+
+  /// large width in px of the slider
+  --theme-ch5-slider-width-large: 400px;
+
+  /// x-large width in px of the slider
+  --theme-ch5-slider-width-x-large: 500px;
+
+  /* == Button sizes == */
+
+  /// x-small width in px of the button for advanced slider
+  --theme-ch5-slider-size-x-small-button-width: 24px;
+
+  /// x-small height in px of the button for advanced slider
+  --theme-ch5-slider-size-x-small-button-height: 26px;
+
+  /// small width in px of the button for advanced slider
+  --theme-ch5-slider-size-small-button-width: 26px;
+
+  /// small height in px of the button for advanced slider
+  --theme-ch5-slider-size-small-button-height: 30px;
+
+  /// regular width in px of the button for advanced slider
+  --theme-ch5-slider-size-regular-button-width: 30px;
+
+  /// regular height in px of the button for advanced slider
+  --theme-ch5-slider-size-regular-button-height: 36px;
+
+  /// large width in px of the button for advanced slider
+  --theme-ch5-slider-size-large-button-width: 34px;
+
+  /// large height in px of the button for advanced slider
+  --theme-ch5-slider-size-large-button-height: 42px;
+
+  /// x-large width in px of the button for advanced slider
+  --theme-ch5-slider-size-x-large-button-width: 40px;
+
+  /// x-large height in px of the button for advanced slider
+  --theme-ch5-slider-size-x-large-button-height: 54px;
+
+  /* == Handle sizes == */
+
+  // rounded-rectangle
+
+  // x-small
+  /// x-small width in px of the handle when handleShape="rounded-rectangle"
+  --theme-ch5-slider-size-x-small-handle-width-rounded-rectangle: 26px;
+
+  /// x-small height in px of the handle when handleShape="rounded-rectangle"
+  --theme-ch5-slider-size-x-small-handle-height-rounded-rectangle: 24px;
+
+  // small
+  /// small width in px of the handle when handleShape="rounded-rectangle"
+  --theme-ch5-slider-size-small-handle-width-rounded-rectangle: 30px;
+
+  /// small height in px of the handle when handleShape="rounded-rectangle"
+  --theme-ch5-slider-size-small-handle-height-rounded-rectangle: 26px;
+
+  // regular
+  /// regular width in px of the handle when handleShape="rounded-rectangle"
+  --theme-ch5-slider-size-regular-handle-width-rounded-rectangle: 36px;
+
+  /// regular height in px of the handle when handleShape="rounded-rectangle"
+  --theme-ch5-slider-size-regular-handle-height-rounded-rectangle: 30px;
+
+  // large
+  /// large width in px of the handle when handleShape="rounded-rectangle"
+  --theme-ch5-slider-size-large-handle-width-rounded-rectangle: 42px;
+
+  /// large height in px of the handle when handleShape="rounded-rectangle"
+  --theme-ch5-slider-size-large-handle-height-rounded-rectangle: 34px;
+
+  // x-large
+  /// x-large width in px of the handle when handleShape="rounded-rectangle"
+  --theme-ch5-slider-size-x-large-handle-width-rounded-rectangle: 54px;
+
+  /// x-large height in px of the handle when handleShape="rounded-rectangle"
+  --theme-ch5-slider-size-x-large-handle-height-rounded-rectangle: 40px;
+
+  // rectangle
+
+  // x-small
+  /// x-small width in px of the handle when handleShape="rectangle"
+  --theme-ch5-slider-size-x-small-handle-width-rectangle: 26px;
+
+  /// x-small height in px of the handle when handleShape="rectangle"
+  --theme-ch5-slider-size-x-small-handle-height-rectangle: 24px;
+
+  // small
+  /// small width in px of the handle when handleShape="rectangle"
+  --theme-ch5-slider-size-small-handle-width-rectangle: 30px;
+
+  /// small height in px of the handle when handleShape="rectangle"
+  --theme-ch5-slider-size-small-handle-height-rectangle: 26px;
+
+  // regular
+  /// regular width in px of the handle when handleShape="rectangle"
+  --theme-ch5-slider-size-regular-handle-width-rectangle: 36px;
+
+  /// regular height in px of the handle when handleShape="rectangle"
+  --theme-ch5-slider-size-regular-handle-height-rectangle: 30px;
+
+  // large
+  /// large width in px of the handle when handleShape="rectangle"
+  --theme-ch5-slider-size-large-handle-width-rectangle: 42px;
+
+  /// large height in px of the handle when handleShape="rectangle"
+  --theme-ch5-slider-size-large-handle-height-rectangle: 34px;
+
+  // x-large
+  /// x-large width in px of the handle when handleShape="rectangle"
+  --theme-ch5-slider-size-x-large-handle-width-rectangle: 54px;
+
+  /// x-large height in px of the handle when handleShape="rectangle"
+  --theme-ch5-slider-size-x-large-handle-height-rectangle: 40px;
+
+  // circle
+
+  // x-small
+  /// x-small width in px of the handle when handleShape="circle"
+  --theme-ch5-slider-size-x-small-handle-width-circle: 26px;
+
+  // small
+  /// small width in px of the handle when handleShape="circle"
+  --theme-ch5-slider-size-small-handle-width-circle: 30px;
+
+  // regular
+  /// regular width in px of the handle when handleShape="circle"
+  --theme-ch5-slider-size-regular-handle-width-circle: 36px;
+
+  // large
+  /// large width in px of the handle when handleShape="circle"
+  --theme-ch5-slider-size-large-handle-width-circle: 42px;
+
+  // x-large
+  /// x-large width in px of the handle when handleShape="circle"
+  --theme-ch5-slider-size-x-large-handle-width-circle: 54px;
+
+  // oval
+
+  // x-small
+  /// x-small width in px of the handle when handleShape="oval"
+  --theme-ch5-slider-size-x-small-handle-width-oval: 26px;
+
+  // small
+  /// small width in px of the handle when handleShape="oval"
+  --theme-ch5-slider-size-small-handle-width-oval: 30px;
+
+  // regular
+  /// regular width in px of the handle when handleShape="oval"
+  --theme-ch5-slider-size-regular-handle-width-oval: 36px;
+
+  // large
+  /// large width in px of the handle when handleShape="oval"
+  --theme-ch5-slider-size-large-handle-width-oval: 42px;
+
+  // x-large
+  /// x-large width in px of the handle when handleShape="oval"
+  --theme-ch5-slider-size-x-large-handle-width-oval: 54px;
+
+  // Horizontal and Vertical
+
+  /// horizontal-pips
+  --theme-ch5-slider-horizontal-pips: 50px;
+
+  /// vertical pips
+  --theme-ch5-slider-vertical-pips: 65px;
+
+  /// tooltip spacing vertical advanced
+  --theme-ch5-slider-tooltip-on-spacing-vertical-advanced: 60px;
+
+  /// tooltip spacing vertical normal
+  --theme-ch5-slider-tooltip-on-spacing-vertical-normal: 58px;
+
+  /// tooltip spacing horizontal adanced
+  --theme-ch5-slider-tooltip-on-spacing-horizontal-advanced: 40px;
+
+  /// tooltip spacing horizontal normal
+  --theme-ch5-slider-tooltip-on-spacing-horizontal-normal: 40px;
+
+  /// button content line height
+  --theme-ch5-button-content-line-height: 1.2;
+
+  /// button padding
+  --theme-ch5-button-padding: 0.25rem;
 
   // ch5-list
   /// Set the text color of list items.
@@ -568,4 +1114,81 @@
 
   /// Set the padding of list items
   --theme-ch5-list-item-padding: 10px;
+
+  // ch5-video
+  /// Default video background color
+  --theme-ch5-video-background-color: #000;
+
+  /// size xx-large for min width 651px
+  --theme-ch5-video--size-xx-large-min-w-651: 600px;
+
+  /// size x-large for min width 651px
+  --theme-ch5-video--size-x-large-min-w-651: 560px;
+
+  /// size large for min width 651px
+  --theme-ch5-video--size-large-min-w-651: 520px;
+
+  /// size regular for min width 651px
+  --theme-ch5-video--size-regular-min-w-651: 480px;
+
+  /// size small for min width 651px
+  --theme-ch5-video--size-small-min-w-651: 440px;
+
+  /// size x-small for min width 651px
+  --theme-ch5-video--size-x-small-min-w-651: 400px;
+
+  /// size xx-large for max width 650px
+  --theme-ch5-video--size-xx-large-max-w-650: 300px;
+
+  /// size x-large max width 650px
+  --theme-ch5-video--size-x-large-max-w-650: 280px;
+
+  /// size large max width 650px
+  --theme-ch5-video--size-large-max-w-650: 260px;
+
+  /// size regular max width 650px
+  --theme-ch5-video--size-regular-max-w-650: 240px;
+
+  /// size small max width 650px
+  --theme-ch5-video--size-small-max-w-650: 220px;
+
+  /// size x-small max width 650px
+  --theme-ch5-video--size-x-small-max-w-650: 200px;
+
+  // ch5-wifi-signal-level-gauge
+  /// Size Height small
+  --theme-ch5-wifi-signal-level-gauge-small-height: 24px;
+
+  /// Size Width small
+  --theme-ch5-wifi-signal-level-gauge-small-width: 36px;
+
+  /// Size Height regular
+  --theme-ch5-wifi-signal-level-gauge-regular-height: 36px;
+
+  /// Size Width regular
+  --theme-ch5-wifi-signal-level-gauge-regular-width: 54px;
+
+  /// Size Height large
+  --theme-ch5-wifi-signal-level-gauge-large-height: 60px;
+
+  /// Size Width large
+  --theme-ch5-wifi-signal-level-gauge-large-width: 90px;
+
+  /// Size Height x-large
+  --theme-ch5-wifi-signal-level-gauge-x-large-height: 96px;
+
+  /// Size Width x-large
+  --theme-ch5-wifi-signal-level-gauge-x-large-width: 144px;
+
+  /// gaugeStyle accents
+  --theme-ch5-wifi-signal-level-gauge-style-accents: #87ceeb;
+
+  /// gaugeStyle light
+  --theme-ch5-wifi-signal-level-gauge-style-light: #ffffff;
+
+  /// gaugeStyle dark
+  --theme-ch5-wifi-signal-level-gauge-style-dark: #000000;
+
+  /// border color
+  --theme-ch5-wifi-signal-level-gauge-border-color: #939393;
 }

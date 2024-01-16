@@ -12,7 +12,7 @@
 
 ch5-subpage-reference-list {
   /// subpage-reference container padding
-  --ch5-subpage-reference-list-container-padding: 5px;
+  --ch5-subpage-reference-list-container-padding: var(--theme-ch5-subpage-reference-list-container-padding);
 
   /// scrollbar width
   --ch5-subpage-reference-list-scrollbar-width: var(--theme-others-scrollbar-width);

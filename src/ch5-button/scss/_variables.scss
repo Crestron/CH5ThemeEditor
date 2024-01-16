@@ -11,77 +11,77 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-button {
-  --ch5-button-font-size: 14px;
+  --ch5-button-font-size: var(--theme-ch5-button-font-size);
   --ch5-button-font-style: var(--theme-fonts-font-style);
 
   /// The font weight of the button.
   --ch5-button-font-weight: var(--theme-fonts-font-weight);
 
   /// The padding for icon of the button.
-  --ch5-button-icon-color: inherit;
-  --ch5-button-icon-font-size: inherit;
-  --ch5-button-padding: 0.25rem;
+  --ch5-button-icon-color: var(--theme-ch5-button-icon-color);
+  --ch5-button-icon-font-size: var(--theme-ch5-button-icon-font-size);
+  --ch5-button-padding: var(--theme-ch5-button-padding);
 
-  --ch5-button-content-line-height: 1.2;
+  --ch5-button-content-line-height: var(--theme-ch5-button-content-line-height);
 
   // button solid-border
-  --ch5-button-default-border-width: 1px;
-  --ch5-button-primary-border-width: 1px;
-  --ch5-button-secondary-border-width: 1px;
-  --ch5-button-success-border-width: 1px;
-  --ch5-button-info-border-width: 1px;
-  --ch5-button-warning-border-width: 1px;
-  --ch5-button-danger-border-width: 1px;
-  --ch5-button-text-border-width: 1px;
+  --ch5-button-default-border-width: var(--theme-ch5-button-default-border-width);
+  --ch5-button-primary-border-width: var(--theme-ch5-button-primary-border-width);
+  --ch5-button-secondary-border-width: var(--theme-ch5-button-secondary-border-width);
+  --ch5-button-success-border-width: var(--theme-ch5-button-success-border-width);
+  --ch5-button-info-border-width: var(--theme-ch5-button-info-border-width);
+  --ch5-button-warning-border-width: var(--theme-ch5-button-warning-border-width);
+  --ch5-button-danger-border-width: var(--theme-ch5-button-danger-border-width);
+  --ch5-button-text-border-width: var(--theme-ch5-button-text-border-width);
 
-  --ch5-button-default-border-style: solid;
-  --ch5-button-primary-border-style: solid;
-  --ch5-button-secondary-border-style: solid;
-  --ch5-button-success-border-style: solid;
-  --ch5-button-info-border-style: solid;
-  --ch5-button-warning-border-style: solid;
-  --ch5-button-danger-border-style: solid;
-  --ch5-button-text-border-style: solid;
+  --ch5-button-default-border-style: var(--theme-ch5-button-default-border-style);
+  --ch5-button-primary-border-style: var(--theme-ch5-button-primary-border-style);
+  --ch5-button-secondary-border-style: var(--theme-ch5-button-secondary-border-style);
+  --ch5-button-success-border-style: var(--theme-ch5-button-success-border-style);
+  --ch5-button-info-border-style: var(--theme-ch5-button-info-border-style);
+  --ch5-button-warning-border-style: var(--theme-ch5-button-warning-border-style);
+  --ch5-button-danger-border-style: var(--theme-ch5-button-danger-border-style);
+  --ch5-button-text-border-style: var(--theme-ch5-button-text-border-style);
 
   // button rounded-rectangle
-  --ch5-button-border-radius: 5px;
+  --ch5-button-border-radius: var(--theme-ch5-button-border-radius);
 
   //button circle
-  --ch5-button-circle-border-radius: 50%;
+  --ch5-button-circle-border-radius: var(--theme-ch5-button-circle-border-radius);
 
   /// button oval
-  --ch5-button-oval-border-radius: 50%;
+  --ch5-button-oval-border-radius: var(--theme-ch5-button-oval-border-radius);
 
   /// button tab
-  --ch5-button-tab-border-radius: 10px 10px 0 0;
+  --ch5-button-tab-border-radius: var(--theme-ch5-button-tab-border-radius);
 
   // sizes
-  --ch5-button-size: 42px;
+  --ch5-button-size: var(--theme-ch5-button-size);
 
   // size x-small
-  --ch5-button-x-small-font-size: 11px;
-  --ch5-button-x-small-size: 32px;
+  --ch5-button-x-small-font-size: var(--theme-ch5-button-x-small-font-size);
+  --ch5-button-x-small-size: var(--theme-ch5-button-x-small-size);
 
   // size small
-  --ch5-button-small-font-size: 13px;
-  --ch5-button-small-size: 36px;
+  --ch5-button-small-font-size: var(--theme-ch5-button-small-font-size);
+  --ch5-button-small-size: var(--theme-ch5-button-small-size);
 
   // size large
-  --ch5-button-large-font-size: 16px;
-  --ch5-button-large-size: 52px;
+  --ch5-button-large-font-size: var(--theme-ch5-button-large-font-size);
+  --ch5-button-large-size: var(--theme-ch5-button-large-size);
 
   // size x-large
-  --ch5-button-x-large-font-size: 18px;
-  --ch5-button-x-large-size: 72px;
+  --ch5-button-x-large-font-size: var(--theme-ch5-button-x-large-font-size);
+  --ch5-button-x-large-size: var(--theme-ch5-button-x-large-size);
 
   // --ch5-button-faicon-font-family: "Font Awesome 5 Free";
 
   /// Checkbox variables for advanced button
-  --ch5-button-checkbox-checked-faicon: "\f14a";
-  --ch5-button-checkbox-unchecked-faicon: "\f0c8";
-  --ch5-button-checkbox-checked-font-weight: 400;
-  --ch5-button-checkbox-unchecked-font-weight: 400;
-  --ch5-button-checkbox-padding: 5px;
+  --ch5-button-checkbox-checked-faicon: var(--theme-ch5-button-checkbox-checked-faicon);
+  --ch5-button-checkbox-unchecked-faicon: var(--theme-ch5-button-checkbox-unchecked-faicon);
+  --ch5-button-checkbox-checked-font-weight: var(--theme-ch5-button-checkbox-checked-font-weight);
+  --ch5-button-checkbox-unchecked-font-weight: var(--theme-ch5-button-checkbox-unchecked-font-weight);
+  --ch5-button-checkbox-padding: var(--theme-ch5-button-checkbox-padding);
 
   /* ===============================================
   CH5-BUTTON

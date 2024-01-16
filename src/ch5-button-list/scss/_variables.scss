@@ -12,16 +12,16 @@
 
 ch5-button-list {
   /// button container padding
-  --ch5-button-list-padding: 5px;
+  --ch5-button-list-padding: var(--theme-ch5-button-list-padding);
 
   /// button container width
-  --ch5-button-list-button-container-width: 100px;
+  --ch5-button-list-button-container-width: var(--theme-ch5-button-list-button-container-width);
 
   /// button container height
-  --ch5-button-list-button-container-height: 58px;
+  --ch5-button-list-button-container-height: var(--theme-ch5-button-list-button-container-height);
 
   /// button container padding
-  --ch5-button-list-button-container-padding: 5px;
+  --ch5-button-list-button-container-padding: var( --theme-ch5-button-list-button-container-padding);
 
   /// Scrollbar border radius
   --scrollbar-border-radius: var(--theme-others-scrollbar-border-radius);
