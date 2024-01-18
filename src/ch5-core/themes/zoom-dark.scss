@@ -12,7 +12,7 @@
 
 @import "../../ch5-core/variables";
 
-.zoom-dark-theme {
+[data-theme="zoom-dark-theme"], .zoom-dark-theme {
   /// Font size
   --theme-fonts-font-size: 16px;
 
@@ -374,9 +374,6 @@
 
   /// button x-large size
   --theme-ch5-button-x-large-size: 72px;
-
-  /// button font family
-  --ch5-button-faicon-font-family:  var(--fa-style-family-classic);
 
   /// Checkbox checked icon
   --theme-ch5-button-checkbox-checked-faicon: "\f14a";

@@ -402,13 +402,13 @@ ch5-button {
   }
 
   .ch5-button__checkbox--checked:before {
-    font-family: var(--ch5-button-faicon-font-family);
+    font-family: var(--fa-style-family-classic);
     content: var(--ch5-button-checkbox-checked-faicon);
     font-weight: var(--ch5-button-checkbox-checked-font-weight);
   }
 
   .ch5-button__checkbox--unchecked:before {
-    font-family: var(--ch5-button-faicon-font-family);
+    font-family: var(--fa-style-family-classic);
     content: var(--ch5-button-checkbox-unchecked-faicon);
     font-weight: var(--ch5-button-checkbox-unchecked-font-weight);
   }
