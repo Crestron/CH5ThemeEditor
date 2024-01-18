@@ -36,7 +36,9 @@ ch5-triggerview {
   /// gap between views in px
   --ch5-triggerview-gap: var(--theme-ch5-triggerview-gap);
 
+  /// background color
   --ch5-triggerview-background-color: var(--ch5-triggerview-background-color);
 
+  /// fallback message background color
   --ch5-triggerview-fallback-message-color-background: var(--ch5-triggerview-fallback-message-color-background);
 }

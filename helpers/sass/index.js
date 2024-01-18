@@ -294,7 +294,7 @@ async function initialize() {
 
 	undefinedVars.forEach(({ name, variables }) => {
 		variables.forEach((variable) => {
-			if (name === 'ch5-slider' && variable === '--temp-var') {
+			if ((name === 'ch5-slider' && variable === '--temp-var') || (name === "ch5-button" && variable === '--fa-style-family-classic')) {
 				// Corner case
 			} else {
 				console.log(`\x1b[31m ${name} undefined variable ${variable} \x1b[0m`);

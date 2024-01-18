@@ -104,6 +104,9 @@ ch5-modal {
   /// the font weight for the prompt text of the modal
   --ch5-modal-prompt-text-font-weight: var(--ch5-modal-font-weight);
 
+  /// modal z-index
   --ch5-modal-z-index: var(--theme-ch5-modal-z-index);
+
+  /// modal mask z-index
   --ch5-modal-mask-z-index: var(--theme-ch5-modal-mask-z-index);
 }
