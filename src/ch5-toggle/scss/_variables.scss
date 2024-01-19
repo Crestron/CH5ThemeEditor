@@ -64,4 +64,10 @@ ch5-toggle {
 
   /// toggle z-index
   --ch5-toggle-z-index: var(--theme-ch5-toggle-z-index);
+
+  /// The background color of the handle when shape="circle"
+  --ch5-toggle-handle-circle-background:var(--theme-ch5-toggle-handle-circle-background);
+
+  /// The background color of the knob when shape="circle"
+  --ch5-toggle-circle-knob-color: var(--theme-ch5-toggle-circle-knob-color);
 }
