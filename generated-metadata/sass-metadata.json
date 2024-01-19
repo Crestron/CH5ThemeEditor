@@ -732,7 +732,7 @@
       "variables": [
         {
           "name": "--ch5-button-list-padding",
-          "description": "button container padding",
+          "description": "Applies padding to the button list container",
           "value": "var(--theme-ch5-button-list-padding)",
           "type": "unit"
         },
@@ -750,7 +750,7 @@
         },
         {
           "name": "--ch5-button-list-button-container-padding",
-          "description": "button container padding",
+          "description": "Applies padding for the container of ch5-button in ch5-button-list",
           "value": "var(--theme-ch5-button-list-button-container-padding)",
           "type": "unit"
         },
@@ -780,19 +780,19 @@
       "variables": [
         {
           "name": "--ch5-color-chip-div-height",
-          "description": "The height for div of the color-chip.",
+          "description": "Height of the color-chip",
           "value": "var(--theme-ch5-color-chip-div-height)",
           "type": "unit"
         },
         {
           "name": "--ch5-color-chip-div-width",
-          "description": "The width for div of the color-chip.",
+          "description": "Width of the color-chip",
           "value": "var(--theme-ch5-color-chip-div-width)",
           "type": "unit"
         },
         {
           "name": "--ch5-color-chip-background-color",
-          "description": "Background color for color-chip.",
+          "description": "Initial background color for color-chip",
           "value": "var(--theme-ch5-color-chip-background-color)",
           "type": "color"
         }
@@ -3918,7 +3918,7 @@
             },
             {
               "name": "--theme-ch5-button-primary-border-width",
-              "description": "primary border width",
+              "description": "Primary border width",
               "value": "1px",
               "type": "unit"
             },
@@ -4116,25 +4116,25 @@
             },
             {
               "name": "--theme-ch5-button-list-padding",
-              "description": "Button container padding",
+              "description": "Applies padding to the button list container",
               "value": "5px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-list-button-container-width",
-              "description": "Button container width",
+              "description": "Button List container width",
               "value": "100px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-list-button-container-height",
-              "description": "Button container height",
+              "description": "Button List container height",
               "value": "58px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-list-button-container-padding",
-              "description": "Button container padding",
+              "description": "Applies padding for the container of ch5-button in ch5-button-list",
               "value": "5px",
               "type": "unit"
             },
@@ -4157,19 +4157,19 @@
           "variables": [
             {
               "name": "--theme-ch5-color-chip-div-height",
-              "description": "The height for div of the color-chip.",
+              "description": "Width of the color-chip",
               "value": "40px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-color-chip-div-width",
-              "description": "The width for div of the color-chip.",
+              "description": "Width of the color-chip",
               "value": "40px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-color-chip-background-color",
-              "description": "Background color for color-chip.",
+              "description": "Initial background color for color-chip",
               "value": "#000",
               "type": "color"
             }
@@ -4350,91 +4350,91 @@
           "variables": [
             {
               "name": "--theme-ch5-keypad-x-small-container-width",
-              "description": "ch5-keypad container width for x-small size",
+              "description": "Keypad container width for x-small size",
               "value": "210px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-x-small-font-size-major",
-              "description": "ch5-keypad font-size-major for x-small size",
+              "description": "Keypad font-size-major for x-small size",
               "value": "1.8rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-x-small-font-size-minor",
-              "description": "ch5-keypad font-size-minor for x-small size",
+              "description": "Keypad font-size-minor for x-small size",
               "value": "0.65rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-small-container-width",
-              "description": "ch5-keypad container width for small size",
+              "description": "Keypad container width for small size",
               "value": "249px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-small-font-size-major",
-              "description": "ch5-keypad font-size-major for small size",
+              "description": "Keypad font-size-major for small size",
               "value": "2rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-small-font-size-minor",
-              "description": "ch5-keypad font-size-minor for small size",
+              "description": "Keypad font-size-minor for small size",
               "value": "0.75rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-regular-container-width",
-              "description": "ch5-keypad container width for regular size",
+              "description": "Keypad container width for regular size",
               "value": "267px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-regular-font-size-major",
-              "description": "ch5-keypad font-size-major for regular size",
+              "description": "Keypad font-size-major for regular size",
               "value": "2.4rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-regular-font-size-minor",
-              "description": "ch5-keypad font-size-minor for regular size",
+              "description": "Keypad font-size-minor for regular size",
               "value": "0.85rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-large-container-width",
-              "description": "ch5-keypad container width for large size",
+              "description": "Keypad container width for large size",
               "value": "294px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-large-font-size-major",
-              "description": "ch5-keypad font-size-major for large size",
+              "description": "Keypad font-size-major for large size",
               "value": "2.8rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-large-font-size-minor",
-              "description": "ch5-keypad font-size-minor for large size",
+              "description": "Keypad font-size-minor for large size",
               "value": "0.95rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-x-large-container-width",
-              "description": "ch5-keypad container width for x-large size",
+              "description": "Keypad container width for x-large size",
               "value": "312px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-x-large-font-size-major",
-              "description": "ch5-keypad font-size-major for x-large size",
+              "description": "Keypad font-size-major for x-large size",
               "value": "3rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-x-large-font-size-minor",
-              "description": "ch5-keypad font-size-minor for x-large size",
+              "description": "Keypad font-size-minor for x-large size",
               "value": "1.05rem",
               "type": "unit"
             }
@@ -5211,7 +5211,7 @@
             },
             {
               "name": "--theme-ch5-textinput-border-color",
-              "description": "base border color",
+              "description": "Base border color",
               "value": "var(--theme-ch5-textinput-text-color)",
               "type": "color"
             },
@@ -5223,7 +5223,7 @@
             },
             {
               "name": "--theme-ch5-textinput-input-background-color",
-              "description": "background color of textinput input field",
+              "description": "Background color of textinput input field",
               "value": "transparent",
               "type": "string"
             },
@@ -6082,7 +6082,7 @@
             },
             {
               "name": "--theme-ch5-wifi-signal-level-gauge-border-color",
-              "description": "border color",
+              "description": "Border color",
               "value": "#939393",
               "type": "color"
             }
@@ -8904,13 +8904,13 @@
           "variables": [
             {
               "name": "--theme-colors-default-background-color",
-              "description": "background color",
+              "description": "Background color",
               "value": "#0000ff",
               "type": "color"
             },
             {
               "name": "--theme-colors-default-border-color",
-              "description": "border color",
+              "description": "Border color",
               "value": "#0000ff",
               "type": "color"
             },
@@ -8922,49 +8922,49 @@
             },
             {
               "name": "--theme-colors-default-pressed-background-color",
-              "description": "pressed background color",
+              "description": "Pressed background color",
               "value": "#00008b",
               "type": "color"
             },
             {
               "name": "--theme-colors-default-pressed-border-color",
-              "description": "pressed border color",
+              "description": "Pressed border color",
               "value": "#0000ff",
               "type": "color"
             },
             {
               "name": "--theme-colors-default-pressed-font-color",
-              "description": "pressed font color",
+              "description": "Pressed font color",
               "value": "#f0fff0",
               "type": "color"
             },
             {
               "name": "--theme-colors-default-selected-background-color",
-              "description": "selected background color",
+              "description": "Selected background color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-default-selected-border-color",
-              "description": "selected border color",
+              "description": "Selected border color",
               "value": "#0000ff",
               "type": "color"
             },
             {
               "name": "--theme-colors-default-selected-font-color",
-              "description": "selected font color",
+              "description": "Selected font color",
               "value": "#0000ff",
               "type": "color"
             },
             {
               "name": "--theme-colors-primary-background-color",
-              "description": "background color",
+              "description": "Background color",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-colors-primary-border-color",
-              "description": "border color",
+              "description": "Border color",
               "value": "#000000",
               "type": "color"
             },
@@ -8976,361 +8976,361 @@
             },
             {
               "name": "--theme-colors-primary-pressed-background-color",
-              "description": "primary pressed background color",
+              "description": "Primary pressed background color",
               "value": "#2b2b2b",
               "type": "color"
             },
             {
               "name": "--theme-colors-primary-pressed-border-color",
-              "description": "primary pressed border color",
+              "description": "Primary pressed border color",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-colors-primary-pressed-font-color",
-              "description": "primary pressed font color",
+              "description": "Primary pressed font color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-primary-selected-background-color",
-              "description": "primary select background color",
+              "description": "Primary select background color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-primary-selected-border-color",
-              "description": "primary selected border color",
+              "description": "Primary selected border color",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-colors-primary-selected-font-color",
-              "description": "primary selected font color",
+              "description": "Primary selected font color",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-colors-info-background-color",
-              "description": "info background color",
+              "description": "Info background color",
               "value": "#00ffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-info-border-color",
-              "description": "info border color",
+              "description": "Info border color",
               "value": "#00ffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-info-font-color",
-              "description": "info font color",
+              "description": "Info font color",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-colors-info-pressed-background-color",
-              "description": "info pressed background color",
+              "description": "Info pressed background color",
               "value": "#00e6e6",
               "type": "color"
             },
             {
               "name": "--theme-colors-info-pressed-border-color",
-              "description": "info pressed border color",
+              "description": "Info pressed border color",
               "value": "#00ffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-info-pressed-font-color",
-              "description": "info pressed font color",
+              "description": "Info pressed font color",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-colors-info-selected-background-color",
-              "description": "info selected background color",
+              "description": "Info selected background color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-info-selected-border-color",
-              "description": "info selected border color",
+              "description": "Info selected border color",
               "value": "#00ffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-info-selected-font-color",
-              "description": "info selected font color",
+              "description": "Info selected font color",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-colors-danger-background-color",
-              "description": "danger background color",
+              "description": "Danger background color",
               "value": "#ff0000",
               "type": "color"
             },
             {
               "name": "--theme-colors-danger-border-color",
-              "description": "danger border color",
+              "description": "Danger border color",
               "value": "#ff0000",
               "type": "color"
             },
             {
               "name": "--theme-colors-danger-font-color",
-              "description": "danger font color",
+              "description": "Danger font color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-danger-pressed-background-color",
-              "description": "danger pressed background color",
+              "description": "Danger pressed background color",
               "value": "#b71c1c",
               "type": "color"
             },
             {
               "name": "--theme-colors-danger-pressed-border-color",
-              "description": "danger pressed border color",
+              "description": "Danger pressed border color",
               "value": "#ff0000",
               "type": "color"
             },
             {
               "name": "--theme-colors-danger-pressed-font-color",
-              "description": "danger pressed font color",
+              "description": "Danger pressed font color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-danger-selected-background-color",
-              "description": "danger selected background color",
+              "description": "Danger selected background color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-danger-selected-border-color",
-              "description": "danger selected border color",
+              "description": "Danger selected border color",
               "value": "#ff0000",
               "type": "color"
             },
             {
               "name": "--theme-colors-danger-selected-font-color",
-              "description": "danger selected font color",
+              "description": "Danger selected font color",
               "value": "#ff0000",
               "type": "color"
             },
             {
               "name": "--theme-colors-secondary-background-color",
-              "description": "secondary background color",
+              "description": "Secondary background color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-secondary-border-color",
-              "description": "secondary border color",
+              "description": "Secondary border color",
               "value": "#939393",
               "type": "color"
             },
             {
               "name": "--theme-colors-secondary-font-color",
-              "description": "secondary font color",
+              "description": "Secondary font color",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-colors-secondary-pressed-background-color",
-              "description": "secondary pressed background color",
+              "description": "Secondary pressed background color",
               "value": "#939393",
               "type": "color"
             },
             {
               "name": "--theme-colors-secondary-pressed-border-color",
-              "description": "secondary pressed border color",
+              "description": "Secondary pressed border color",
               "value": "#939393",
               "type": "color"
             },
             {
               "name": "--theme-colors-secondary-pressed-font-color",
-              "description": "secondary pressed font color",
+              "description": "Secondary pressed font color",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-colors-secondary-selected-background-color",
-              "description": "secondary selected background color",
+              "description": "Secondary selected background color",
               "value": "#7e7e7e",
               "type": "color"
             },
             {
               "name": "--theme-colors-secondary-selected-border-color",
-              "description": "secondary selected border color",
+              "description": "Secondary selected border color",
               "value": "#939393",
               "type": "color"
             },
             {
               "name": "--theme-colors-secondary-selected-font-color",
-              "description": "secondary selected font color",
+              "description": "Secondary selected font color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-success-background-color",
-              "description": "success background color",
+              "description": "Success background color",
               "value": "#00ff00",
               "type": "color"
             },
             {
               "name": "--theme-colors-success-border-color",
-              "description": "success border color",
+              "description": "Success border color",
               "value": "#00ff00",
               "type": "color"
             },
             {
               "name": "--theme-colors-success-font-color",
-              "description": "success font color",
+              "description": "Success font color",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-colors-success-pressed-background-color",
-              "description": "success pressed background color",
+              "description": "Success pressed background color",
               "value": "#00aa00",
               "type": "color"
             },
             {
               "name": "--theme-colors-success-pressed-border-color",
-              "description": "success pressed border color",
+              "description": "Success pressed border color",
               "value": "#00ff00",
               "type": "color"
             },
             {
               "name": "--theme-colors-success-pressed-font-color",
-              "description": "success pressed font color",
+              "description": "Success pressed font color",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-colors-success-selected-background-color",
-              "description": "success selected background color",
+              "description": "Success selected background color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-success-selected-border-color",
-              "description": "success selected border color",
+              "description": "Success selected border color",
               "value": "#00ff00",
               "type": "color"
             },
             {
               "name": "--theme-colors-success-selected-font-color",
-              "description": "success selected font color",
+              "description": "Success selected font color",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-colors-warning-background-color",
-              "description": "warning background color",
+              "description": "Warning background color",
               "value": "#ff4500",
               "type": "color"
             },
             {
               "name": "--theme-colors-warning-border-color",
-              "description": "warning border color",
+              "description": "Warning border color",
               "value": "#ff4500",
               "type": "color"
             },
             {
               "name": "--theme-colors-warning-font-color",
-              "description": "warning font color",
+              "description": "Warning font color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-warning-pressed-background-color",
-              "description": "warning pressed background color",
+              "description": "Warning pressed background color",
               "value": "#ff6f00",
               "type": "color"
             },
             {
               "name": "--theme-colors-warning-pressed-border-color",
-              "description": "warning pressed border color",
+              "description": "Warning pressed border color",
               "value": "#ff4500",
               "type": "color"
             },
             {
               "name": "--theme-colors-warning-pressed-font-color",
-              "description": "warning pressed font color",
+              "description": "Warning pressed font color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-warning-selected-background-color",
-              "description": "warning selected background color",
+              "description": "Warning selected background color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-warning-selected-border-color",
-              "description": "warning selected border color",
+              "description": "Warning selected border color",
               "value": "#ff4500",
               "type": "color"
             },
             {
               "name": "--theme-colors-warning-selected-font-color",
-              "description": "warning selected font color",
+              "description": "Warning selected font color",
               "value": "#ff4500",
               "type": "color"
             },
             {
               "name": "--theme-colors-text-background-color",
-              "description": "text background color",
+              "description": "Text background color",
               "value": "#561b8d",
               "type": "color"
             },
             {
               "name": "--theme-colors-text-border-color",
-              "description": "text border color",
+              "description": "Text border color",
               "value": "#561b8d",
               "type": "color"
             },
             {
               "name": "--theme-colors-text-font-color",
-              "description": "text font color",
+              "description": "Text font color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-text-pressed-background-color",
-              "description": "text pressed background color",
+              "description": "Text pressed background color",
               "value": "#8429d9",
               "type": "color"
             },
             {
               "name": "--theme-colors-text-pressed-border-color",
-              "description": "text pressed border color",
+              "description": "Text pressed border color",
               "value": "#561b8d",
               "type": "color"
             },
             {
               "name": "--theme-colors-text-pressed-font-color",
-              "description": "text pressed font color",
+              "description": "Text pressed font color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-text-selected-background-color",
-              "description": "text selected background color",
+              "description": "Text selected background color",
               "value": "#ffffff",
               "type": "color"
             },
             {
               "name": "--theme-colors-text-selected-border-color",
-              "description": "text selected border color",
+              "description": "Text selected border color",
               "value": "#561b8d",
               "type": "color"
             },
             {
               "name": "--theme-colors-text-selected-font-color",
-              "description": "text selected font color",
+              "description": "Text selected font color",
               "value": "#561b8d",
               "type": "color"
             }
@@ -9341,31 +9341,31 @@
           "variables": [
             {
               "name": "--theme-ch5-animation-color",
-              "description": "animation color",
+              "description": "Animation color",
               "value": "#000",
               "type": "color"
             },
             {
               "name": "--theme-ch5-animation-size-regular",
-              "description": "size=regular",
+              "description": "Size=regular",
               "value": "72px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-animation-size-small",
-              "description": "size=small",
+              "description": "Size=small",
               "value": "40px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-animation-size-large",
-              "description": "size=large",
+              "description": "Size=large",
               "value": "104px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-animation-size-x-large",
-              "description": "size=x-large",
+              "description": "Size=x-large",
               "value": "136px",
               "type": "unit"
             }
@@ -9376,181 +9376,181 @@
           "variables": [
             {
               "name": "--theme-ch5-button-font-size",
-              "description": "font size",
+              "description": "Button font size",
               "value": "14px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-icon-color",
-              "description": "icon color",
+              "description": "Button Icon color",
               "value": "inherit",
               "type": "string"
             },
             {
               "name": "--theme-ch5-button-icon-font-size",
-              "description": "icon font size",
+              "description": "Button Icon font size",
               "value": "inherit",
               "type": "string"
             },
             {
               "name": "--theme-ch5-button-padding",
-              "description": "button padding",
+              "description": "Button padding",
               "value": "0.25rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-content-line-height",
-              "description": "button content-line-height",
+              "description": "Button content-line-height",
               "value": "1.2",
               "type": "number"
             },
             {
               "name": "--theme-ch5-button-default-border-width",
-              "description": "default border width",
+              "description": "Default border width",
               "value": "1px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-primary-border-width",
-              "description": "primary border width",
+              "description": "Primary border width",
               "value": "1px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-secondary-border-width",
-              "description": "secondary border width",
+              "description": "Secondary border width",
               "value": "1px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-success-border-width",
-              "description": "success border width",
+              "description": "Success border width",
               "value": "1px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-info-border-width",
-              "description": "info border width",
+              "description": "Info border width",
               "value": "1px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-warning-border-width",
-              "description": "warning border width",
+              "description": "Warning border width",
               "value": "1px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-danger-border-width",
-              "description": "danger border width",
+              "description": "Danger border width",
               "value": "1px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-text-border-width",
-              "description": "text border width",
+              "description": "Text border width",
               "value": "1px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-default-border-style",
-              "description": "default border style",
+              "description": "Default border style",
               "value": "solid",
               "type": "string"
             },
             {
               "name": "--theme-ch5-button-primary-border-style",
-              "description": "primary border style",
+              "description": "Primary border style",
               "value": "solid",
               "type": "string"
             },
             {
               "name": "--theme-ch5-button-secondary-border-style",
-              "description": "secondary border style",
+              "description": "Secondary border style",
               "value": "solid",
               "type": "string"
             },
             {
               "name": "--theme-ch5-button-success-border-style",
-              "description": "success border style",
+              "description": "Success border style",
               "value": "solid",
               "type": "string"
             },
             {
               "name": "--theme-ch5-button-info-border-style",
-              "description": "info border style",
+              "description": "Info border style",
               "value": "solid",
               "type": "string"
             },
             {
               "name": "--theme-ch5-button-warning-border-style",
-              "description": "warning border style",
+              "description": "Warning border style",
               "value": "solid",
               "type": "string"
             },
             {
               "name": "--theme-ch5-button-danger-border-style",
-              "description": "danger border style",
+              "description": "Danger border style",
               "value": "solid",
               "type": "string"
             },
             {
               "name": "--theme-ch5-button-text-border-style",
-              "description": "text border style",
+              "description": "Text border style",
               "value": "solid",
               "type": "string"
             },
             {
               "name": "--theme-ch5-button-border-radius",
-              "description": "button rounded-rectangle",
+              "description": "Button rounded-rectangle",
               "value": "5px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-circle-border-radius",
-              "description": "button circle",
+              "description": "Button circle",
               "value": "50%",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-oval-border-radius",
-              "description": "button oval",
+              "description": "Button oval",
               "value": "50%",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-tab-border-radius",
-              "description": "button tab",
+              "description": "Button tab",
               "value": "10px 10px 0 0",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-size",
-              "description": "button size",
+              "description": "Button size",
               "value": "42px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-x-small-font-size",
-              "description": "button x-small font size",
+              "description": "Button x-small font size",
               "value": "11px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-x-small-size",
-              "description": "button x-small size",
+              "description": "Button x-small size",
               "value": "32px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-small-font-size",
-              "description": "button small font size",
+              "description": "Button small font size",
               "value": "13px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-small-size",
-              "description": "button small size",
+              "description": "Button small size",
               "value": "36px",
               "type": "unit"
             },
@@ -9562,19 +9562,19 @@
             },
             {
               "name": "--theme-ch5-button-large-size",
-              "description": "button large size",
+              "description": "Button large size",
               "value": "52px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-x-large-font-size",
-              "description": "button x-large font size",
+              "description": "Button x-large font size",
               "value": "18px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-x-large-size",
-              "description": "button x-large size",
+              "description": "Button x-large size",
               "value": "72px",
               "type": "unit"
             },
@@ -9604,43 +9604,43 @@
             },
             {
               "name": "--theme-ch5-button-checkbox-padding",
-              "description": "button checkbox padding",
+              "description": "Button checkbox padding",
               "value": "5px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-list-padding",
-              "description": "button container padding",
+              "description": "Applies padding to the button list container",
               "value": "5px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-list-button-container-width",
-              "description": "button container width",
+              "description": "Button List container width",
               "value": "100px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-list-button-container-height",
-              "description": "button container height",
+              "description": "Button List container height",
               "value": "58px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-list-button-container-padding",
-              "description": "button container padding",
+              "description": "Applies padding for the container of ch5-button in ch5-button-list",
               "value": "5px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-button-content-line-height",
-              "description": "button content line height",
+              "description": "Button content line height",
               "value": "1.2",
               "type": "number"
             },
             {
               "name": "--theme-ch5-button-padding",
-              "description": "button padding",
+              "description": "Button padding",
               "value": "0.25rem",
               "type": "unit"
             }
@@ -9651,15 +9651,21 @@
           "variables": [
             {
               "name": "--theme-ch5-color-chip-div-height",
-              "description": "The height for div of the color-chip.",
+              "description": "Width of the color-chip",
               "value": "40px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-color-chip-div-width",
-              "description": "The width for div of the color-chip.",
+              "description": "Width of the color-chip",
               "value": "40px",
               "type": "unit"
+            },
+            {
+              "name": "--theme-ch5-color-chip-background-color",
+              "description": "Initial background color for color-chip",
+              "value": "#000",
+              "type": "color"
             }
           ]
         },
@@ -9838,91 +9844,91 @@
           "variables": [
             {
               "name": "--theme-ch5-keypad-x-small-container-width",
-              "description": "ch5-keypad container width for x-small size",
+              "description": "Keypad container width for x-small size",
               "value": "210px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-x-small-font-size-major",
-              "description": "ch5-keypad font-size-major for x-small size",
+              "description": "Keypad font-size-major for x-small size",
               "value": "1.8rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-x-small-font-size-minor",
-              "description": "ch5-keypad font-size-minor for x-small size",
+              "description": "Keypad font-size-minor for x-small size",
               "value": "0.65rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-small-container-width",
-              "description": "ch5-keypad container width for small size",
+              "description": "Keypad container width for small size",
               "value": "249px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-small-font-size-major",
-              "description": "ch5-keypad font-size-major for small size",
+              "description": "Keypad font-size-major for small size",
               "value": "2rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-small-font-size-minor",
-              "description": "ch5-keypad font-size-minor for small size",
+              "description": "Keypad font-size-minor for small size",
               "value": "0.75rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-regular-container-width",
-              "description": "ch5-keypad container width for regular size",
+              "description": "Keypad container width for regular size",
               "value": "267px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-regular-font-size-major",
-              "description": "ch5-keypad font-size-major for regular size",
+              "description": "Keypad font-size-major for regular size",
               "value": "2.4rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-regular-font-size-minor",
-              "description": "ch5-keypad font-size-minor for regular size",
+              "description": "Keypad font-size-minor for regular size",
               "value": "0.85rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-large-container-width",
-              "description": "ch5-keypad container width for large size",
+              "description": "Keypad container width for large size",
               "value": "294px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-large-font-size-major",
-              "description": "ch5-keypad font-size-major for large size",
+              "description": "Keypad font-size-major for large size",
               "value": "2.8rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-large-font-size-minor",
-              "description": "ch5-keypad font-size-minor for large size",
+              "description": "Keypad font-size-minor for large size",
               "value": "0.95rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-x-large-container-width",
-              "description": "ch5-keypad container width for x-large size",
+              "description": "Keypad container width for x-large size",
               "value": "312px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-x-large-font-size-major",
-              "description": "ch5-keypad font-size-major for x-large size",
+              "description": "Keypad font-size-major for x-large size",
               "value": "3rem",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-keypad-x-large-font-size-minor",
-              "description": "ch5-keypad font-size-minor for x-large size",
+              "description": "Keypad font-size-minor for x-large size",
               "value": "1.05rem",
               "type": "unit"
             }
@@ -9951,7 +9957,7 @@
             },
             {
               "name": "--theme-ch5-overlay-default-close-icon-font-size",
-              "description": "the font size of the icon at the top of the overlay panel",
+              "description": "The font size of the icon at the top of the overlay panel",
               "value": "24px",
               "type": "unit"
             },
@@ -10011,37 +10017,37 @@
             },
             {
               "name": "--theme-ch5-modal-mask-bg-color",
-              "description": "the background color of the mask element",
+              "description": "The background color of the mask element",
               "value": "rgba(150, 150, 150, 0.3)",
               "type": "color"
             },
             {
               "name": "--theme-ch5-modal-close-icon-background-color",
-              "description": "the background color of the icon at the top of the modal",
+              "description": "The background color of the icon at the top of the modal",
               "value": "#fff",
               "type": "color"
             },
             {
               "name": "--theme-ch5-modal-background-color",
-              "description": "the background color of the modal",
+              "description": "The background color of the modal",
               "value": "#fff",
               "type": "color"
             },
             {
               "name": "--theme-ch5-modal-text-color",
-              "description": "the text color of the modal",
+              "description": "The text color of the modal",
               "value": "#000",
               "type": "color"
             },
             {
               "name": "--theme-ch5-modal-contents-font-color",
-              "description": "the font color of the modal content",
+              "description": "The font color of the modal content",
               "value": "#000",
               "type": "color"
             },
             {
               "name": "--theme-ch5-modal-border-color",
-              "description": "the border color of the modal",
+              "description": "The border color of the modal",
               "value": "#939393",
               "type": "color"
             },
@@ -10172,67 +10178,67 @@
             },
             {
               "name": "--theme-ch5-overlay-panel-text-color",
-              "description": "the text color of the overlay panel",
+              "description": "The text color of the overlay panel",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-ch5-overlay-panel-contents-font-color",
-              "description": "the font color for the content of the overlay panel",
+              "description": "The font color for the content of the overlay panel",
               "value": "#000000",
               "type": "color"
             },
             {
               "name": "--theme-ch5-overlay-panel-border-width",
-              "description": "the border width of the overlay panel",
+              "description": "The border width of the overlay panel",
               "value": "1px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-overlay-panel-border-style",
-              "description": "the border style of the overlay panel",
+              "description": "The border style of the overlay panel",
               "value": "solid",
               "type": "string"
             },
             {
               "name": "--theme-ch5-overlay-panel-border-radius",
-              "description": "the border radius of the overlay panel",
+              "description": "The border radius of the overlay panel",
               "value": "6px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-overlay-panel-padding",
-              "description": "set padding for the overlay panel",
+              "description": "Set padding for the overlay panel",
               "value": "1.25em",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-overlay-panel-close-icon-margin",
-              "description": "the margin of the icon at the top of the overlay panel",
+              "description": "The margin of the icon at the top of the overlay panel",
               "value": "0 5px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-overlay-panel-close-icon-padding",
-              "description": "the padding of the icon at the top of the overlay panel",
+              "description": "The padding of the icon at the top of the overlay panel",
               "value": "0 5px 5px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-overlay-panel-close-icon-width",
-              "description": "the width of the icon at the top of the overlay panel",
+              "description": "The width of the icon at the top of the overlay panel",
               "value": "20px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-overlay-panel-contents-padding",
-              "description": "the padding for the content of the overlay panel",
+              "description": "The padding for the content of the overlay panel",
               "value": "20px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-overlay-panel-contents-font-size",
-              "description": "the font size for the content of the overlay panel",
+              "description": "The font size for the content of the overlay panel",
               "value": "18px",
               "type": "unit"
             },
@@ -10332,7 +10338,7 @@
           "variables": [
             {
               "name": "--theme-ch5-select-border-color",
-              "description": "component border color",
+              "description": "Component border color",
               "value": "#000",
               "type": "color"
             },
@@ -10350,31 +10356,31 @@
             },
             {
               "name": "--theme-ch5-select-panel-item-border-color",
-              "description": "item border color",
+              "description": "Item border color",
               "value": "transparent",
               "type": "string"
             },
             {
               "name": "--theme-ch5-select-panel-item-color",
-              "description": "item main text color",
+              "description": "Item main text color",
               "value": "var(--theme-colors-warning-background-color)",
               "type": "color"
             },
             {
               "name": "--theme-ch5-select-panel-item-background-color",
-              "description": "item background color",
+              "description": "Item background color",
               "value": "transparent",
               "type": "string"
             },
             {
               "name": "--theme-ch5-select-panel-item-hover-background-color",
-              "description": "item background color on mouse over",
+              "description": "Item background color on mouse over",
               "value": "#f8f9fa",
               "type": "color"
             },
             {
               "name": "--theme-ch5-select-panel-items-background-color",
-              "description": "select panel background color",
+              "description": "Select panel background color",
               "value": "#fff",
               "type": "color"
             },
@@ -10386,31 +10392,31 @@
             },
             {
               "name": "--theme-ch5-select-border-width",
-              "description": "component border width",
+              "description": "Component border width",
               "value": "1px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-select-border-radius",
-              "description": "component border radius",
+              "description": "Component border radius",
               "value": "2px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-select-combo-trigger-margin",
-              "description": "combo trigger button margin",
+              "description": "Combo trigger button margin",
               "value": "0",
               "type": "number"
             },
             {
               "name": "--theme-ch5-select-combo-trigger-width",
-              "description": "combo trigger button width",
+              "description": "Combo trigger button width",
               "value": "24px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-select-combo-trigger-height",
-              "description": "combo trigger button height",
+              "description": "Combo trigger button height",
               "value": "24px",
               "type": "unit"
             },
@@ -10534,19 +10540,19 @@
             },
             {
               "name": "--theme-ch5-spinner-highlight-box-shadow-color",
-              "description": "the box shadow color of the spinner",
+              "description": "The box shadow color of the spinner",
               "value": "rgba(0, 0, 0, 0.3)",
               "type": "color"
             },
             {
               "name": "--theme-ch5-spinner-highlight-border-color",
-              "description": "the border color of the spinner",
+              "description": "The border color of the spinner",
               "value": "#ff0000",
               "type": "color"
             },
             {
               "name": "--theme-ch5-spinner-background-color",
-              "description": "spinner background color",
+              "description": "Spinner background color",
               "value": "#0000ff",
               "type": "color"
             },
@@ -10628,13 +10634,13 @@
           "variables": [
             {
               "name": "--theme-ch5-tab-button-button-container-width",
-              "description": "button container width",
+              "description": "Button container width",
               "value": "5px",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-tab-button-button-container-height",
-              "description": "button container height",
+              "description": "Button container height",
               "value": "5px",
               "type": "unit"
             }
@@ -10693,13 +10699,13 @@
             },
             {
               "name": "--theme-ch5-textinput-label-text-color",
-              "description": "the color for the label of the textinput",
+              "description": "The color for the label of the textinput",
               "value": "var(--theme-ch5-textinput-text-color)",
               "type": "color"
             },
             {
               "name": "--theme-ch5-textinput-border-color",
-              "description": "base border color",
+              "description": "Base border color",
               "value": "var(--theme-colors-default-background-color)",
               "type": "color"
             },
@@ -10711,7 +10717,7 @@
             },
             {
               "name": "--theme-ch5-textinput-input-background-color",
-              "description": "background color of textinput input field",
+              "description": "Background color of textinput input field",
               "value": "transparent",
               "type": "string"
             },
@@ -10896,61 +10902,61 @@
             },
             {
               "name": "--theme-ch5-toggle-text-font-color",
-              "description": "the text color of the on|off label",
+              "description": "The text color of the on|off label",
               "value": "#000",
               "type": "color"
             },
             {
               "name": "--theme-ch5-toggle-icon-font-color",
-              "description": "the color of the on|off icon",
+              "description": "The color of the on|off icon",
               "value": "#fff",
               "type": "color"
             },
             {
               "name": "--theme-ch5-toggle-handle-circle-background",
-              "description": "the background color of the handle when shape=\"circle\"",
+              "description": "The background color of the handle when shape=\"circle\"",
               "value": "#939393",
               "type": "color"
             },
             {
               "name": "--theme-ch5-toggle-circle-label-on-color",
-              "description": "the text color of the on label when shape=\"circle\"",
+              "description": "The text color of the on label when shape=\"circle\"",
               "value": "#fff",
               "type": "color"
             },
             {
               "name": "--theme-ch5-toggle-circle-label-off-color",
-              "description": "the text color of the off label when shape=\"circle\"",
+              "description": "The text color of the off label when shape=\"circle\"",
               "value": "#000",
               "type": "color"
             },
             {
               "name": "--theme-ch5-toggle-circle-knob-color",
-              "description": "the background color of the knob when shape=\"circle\"",
+              "description": "The background color of the knob when shape=\"circle\"",
               "value": "#fff",
               "type": "color"
             },
             {
               "name": "--theme-ch5-toggle-handle-rectangle-background",
-              "description": "the background color of the handle when shape=\"rectangle\"",
+              "description": "The background color of the handle when shape=\"rectangle\"",
               "value": "#464747",
               "type": "color"
             },
             {
               "name": "--theme-ch5-toggle-rectangle-label-on-color",
-              "description": "the text color of the on label when shape=\"rectangle\"",
+              "description": "The text color of the on label when shape=\"rectangle\"",
               "value": "#fff",
               "type": "color"
             },
             {
               "name": "--theme-ch5-toggle-rectangle-label-off-color",
-              "description": "the text color of the off label when shape=\"rectangle\"",
+              "description": "The text color of the off label when shape=\"rectangle\"",
               "value": "#fff",
               "type": "color"
             },
             {
               "name": "--theme-ch5-toggle-rectangle-knob-color",
-              "description": "the background color of the knob when shape=\"rectangle\"",
+              "description": "The background color of the knob when shape=\"rectangle\"",
               "value": "#888",
               "type": "color"
             },
@@ -10980,7 +10986,7 @@
             },
             {
               "name": "--theme-ch5-toggle-container-z-index",
-              "description": "container z-index",
+              "description": "Container z-index",
               "value": "3",
               "type": "number"
             },
@@ -11003,43 +11009,43 @@
           "variables": [
             {
               "name": "--theme-ch5-slider-connect-bg",
-              "description": "slider connect background",
+              "description": "Slider connect background",
               "value": "#0000ff",
               "type": "color"
             },
             {
               "name": "--theme-ch5-slider-background-lighten-percent",
-              "description": "slider background percentage",
+              "description": "Slider background percentage",
               "value": "30%",
               "type": "unit"
             },
             {
               "name": "--theme-ch5-slider-target-bg",
-              "description": "slider target background",
+              "description": "Slider target background",
               "value": "transparent",
               "type": "string"
             },
             {
               "name": "--theme-ch5-slider-target-border-color",
-              "description": "slider target border color",
+              "description": "Slider target border color",
               "value": "#000",
               "type": "color"
             },
             {
               "name": "--theme-ch5-slider-handle-bg",
-              "description": "slider handle background",
+              "description": "Slider handle background",
               "value": "#fff",
               "type": "color"
             },
             {
               "name": "--theme-ch5-slider-handle-border-color",
-              "description": "slider handler border color",
+              "description": "Slider handler border color",
               "value": "#000",
               "type": "color"
             },
             {
               "name": "--theme-ch5-slider-pips-color",
-              "description": "slider pips color",
+              "description": "Slider pips color",
               "value": "#000",
               "type": "color"
             },
@@ -11570,7 +11576,7 @@
             },
             {
               "name": "--theme-ch5-wifi-signal-level-gauge-border-color",
-              "description": "border color",
+              "description": "Border color",
               "value": "#939393",
               "type": "color"
             }

@@ -304,7 +304,7 @@
   /// Default border width
   --theme-ch5-button-default-border-width: 1px;
 
-  /// primary border width
+  /// Primary border width
   --theme-ch5-button-primary-border-width: 1px;
 
   /// Secondary border width
@@ -361,43 +361,43 @@
   /// Button border radius for shape = tab
   --theme-ch5-button-tab-border-radius: 10px 10px 0 0;
 
-  /// Button size // TODO
+  /// Button size
   --theme-ch5-button-size: 42px;
 
-  /// Button font size for size = x-small // TODO
+  /// Button font size for size = x-small
   --theme-ch5-button-x-small-font-size: 11px;
 
-  /// Button font size for size = x-small // TODO
+  /// Button font size for size = x-small
   --theme-ch5-button-x-small-size: 32px;
 
-  /// Button font size for size = small // TODO
+  /// Button font size for size = small
   --theme-ch5-button-small-font-size: 13px;
 
-  /// Button small size // TODO
+  /// Button small size
   --theme-ch5-button-small-size: 36px;
 
-  /// large font size // TODO
+  /// large font size
   --theme-ch5-button-large-font-size: 16px;
 
-  /// Button large size // TODO
+  /// Button large size
   --theme-ch5-button-large-size: 52px;
 
-  /// Button x-large font size // TODO
+  /// Button x-large font size
   --theme-ch5-button-x-large-font-size: 18px;
 
-  /// Button x-large size // TODO
+  /// Button x-large size
   --theme-ch5-button-x-large-size: 72px;
 
-  /// Checkbox checked icon // TODO
+  /// Checkbox checked icon
   --theme-ch5-button-checkbox-checked-faicon: "\f14a";
 
-  /// Checkbox unchecked icon // TODO
+  /// Checkbox unchecked icon
   --theme-ch5-button-checkbox-unchecked-faicon: "\f0c8";
 
-  /// Checkbox checked font weight // TODO
+  /// Checkbox checked font weight
   --theme-ch5-button-checkbox-checked-font-weight: 400;
 
-  /// Checkbox unchecked font weight // TODO
+  /// Checkbox unchecked font weight
   --theme-ch5-button-checkbox-unchecked-font-weight: 400;
 
   /// Button padding for checkbox
@@ -527,49 +527,49 @@
   // ch5-keypad
   // ***************************************
 
-  /// ch5-keypad container width for x-small size
+  /// Keypad container width for x-small size
   --theme-ch5-keypad-x-small-container-width: 210px;
 
-  /// ch5-keypad font-size-major for x-small size
+  /// Keypad font-size-major for x-small size
   --theme-ch5-keypad-x-small-font-size-major: 1.8rem;
 
-  /// ch5-keypad font-size-minor for x-small size
+  /// Keypad font-size-minor for x-small size
   --theme-ch5-keypad-x-small-font-size-minor: 0.65rem;
 
-  /// ch5-keypad container width for small size
+  /// Keypad container width for small size
   --theme-ch5-keypad-small-container-width: 249px;
 
-  /// ch5-keypad font-size-major for small size
+  /// Keypad font-size-major for small size
   --theme-ch5-keypad-small-font-size-major: 2rem;
 
-  /// ch5-keypad font-size-minor for small size
+  /// Keypad font-size-minor for small size
   --theme-ch5-keypad-small-font-size-minor: 0.75rem;
 
-  /// ch5-keypad container width for regular size
+  /// Keypad container width for regular size
   --theme-ch5-keypad-regular-container-width: 267px;
 
-  /// ch5-keypad font-size-major for regular size
+  /// Keypad font-size-major for regular size
   --theme-ch5-keypad-regular-font-size-major: 2.4rem;
 
-  /// ch5-keypad font-size-minor for regular size
+  /// Keypad font-size-minor for regular size
   --theme-ch5-keypad-regular-font-size-minor: 0.85rem;
 
-  /// ch5-keypad container width for large size
+  /// Keypad container width for large size
   --theme-ch5-keypad-large-container-width: 294px;
 
-  /// ch5-keypad font-size-major for large size
+  /// Keypad font-size-major for large size
   --theme-ch5-keypad-large-font-size-major: 2.8rem;
 
-  /// ch5-keypad font-size-minor for large size
+  /// Keypad font-size-minor for large size
   --theme-ch5-keypad-large-font-size-minor: 0.95rem;
 
-  /// ch5-keypad container width for x-large size
+  /// Keypad container width for x-large size
   --theme-ch5-keypad-x-large-container-width: 312px;
 
-  /// ch5-keypad font-size-major for x-large size
+  /// Keypad font-size-major for x-large size
   --theme-ch5-keypad-x-large-font-size-major: 3rem;
 
-  /// ch5-keypad font-size-minor for x-large size
+  /// Keypad font-size-minor for x-large size
   --theme-ch5-keypad-x-large-font-size-minor: 1.05rem;
 
   // ***************************************
@@ -830,7 +830,10 @@
   /// Subpage-reference container padding
   --theme-ch5-subpage-reference-list-container-padding: 5px;
 
+  // ***************************************
   // ch5-tab-button
+  // ***************************************
+
   /// Button container width
   --theme-ch5-tab-button-button-container-width: 5px;
 
@@ -872,13 +875,13 @@
   /// The color for the label of the textinput
   --theme-ch5-textinput-label-text-color: var(--theme-ch5-textinput-text-color);
 
-  /// base border color
+  /// Base border color
   --theme-ch5-textinput-border-color: var(--theme-ch5-textinput-text-color);
 
   /// The color for the border of the textinput
   --theme-ch5-textinput-input-border-color: var(--theme-ch5-textinput-border-color);
 
-  /// background color of textinput input field
+  /// Background color of textinput input field
   --theme-ch5-textinput-input-background-color: transparent;
 
   /// The border radius for the textinput
@@ -1005,13 +1008,13 @@
   /// label margin
   --theme-ch5-toggle-label-margin: 10px;
 
-  /// font weight applied on the on|off icon
+  /// Font weight applied on the on|off icon
   --theme-ch5-toggle-icon-font-weight: 900;
 
-  /// handle margin when the shape="circle"
+  /// Handle margin when the shape="circle"
   --theme-ch5-toggle-handle-circle-margin: 10px;
 
-  /// handle margin when the shape="rectangle"
+  /// Handle margin when the shape="rectangle"
   --theme-ch5-toggle-handle-rectangle-margin: 10px;
 
   /// Container z-index
@@ -1144,7 +1147,7 @@
   /// Slider target border color
   --theme-ch5-slider-target-border-color: #efefef;
 
-  /// Slider target border color
+  /// Slider handle background
   --theme-ch5-slider-handle-bg: #efefef;
 
   /// Slider handler border color
@@ -1337,10 +1340,10 @@
 
   // Horizontal and Vertical
 
-  /// horizontal-pips
+  /// Horizontal-pips
   --theme-ch5-slider-horizontal-pips: 50px;
 
-  /// vertical pips
+  /// Vertical pips
   --theme-ch5-slider-vertical-pips: 65px;
 
   /// Tooltip spacing vertical advanced
@@ -1460,6 +1463,6 @@
   /// gaugeStyle dark
   --theme-ch5-wifi-signal-level-gauge-style-dark: #000000;
 
-  /// border color
+  /// Border color
   --theme-ch5-wifi-signal-level-gauge-border-color: #939393;
 }

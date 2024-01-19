@@ -55,11 +55,10 @@ function findMissingThemeVariables() {
 	}
 	if (missing.length !== 0) {
 		missing.forEach(variable => {
-			console.log(`\x1b[31m ${variable.source} variable ${variable.variable} is missing in ${variable.destination} \x1b[0m`);
-		})
+			console.log(`\x1b[31m ${variable.source} variable '${variable.variable}' is missing in ${variable.destination} \x1b[0m`);
+		});
 		process.exit(1);
 	}
-
 }
 
 function removeComments(data) {
