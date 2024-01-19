@@ -219,10 +219,23 @@ function getUndefinedVariables(data, variables) {
 		.map(str => str.split(':')[1].trim());
 
 	const usedVars = variableLines.map((str) => {
-		const startIndex = str.indexOf('var(');
-		const endIndex = str.indexOf(')', startIndex);
-		return str.slice(startIndex + 4, endIndex);
-	});
+		const count = str.split('var(').length - 1;
+		if (count === 1) {
+			const startIndex = str.indexOf('var(');
+			const endIndex = str.indexOf(')', startIndex);
+			return str.slice(startIndex + 4, endIndex);
+		} else {
+			let newStr = str;
+			const vars = []
+			for (let i = 0; i < count; i++) {
+				const startIndex = newStr.indexOf('var(');
+				const endIndex = newStr.indexOf(')', startIndex);
+				vars.push(newStr.slice(startIndex + 4, endIndex));
+				newStr = newStr.slice(endIndex)
+			}
+			return vars;
+		}
+	}).flat();
 
 	for (const variable of usedVars) {
 		if (variables.some(vars => vars.name === variable) === false) {
