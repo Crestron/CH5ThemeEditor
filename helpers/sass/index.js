@@ -22,6 +22,46 @@ const globalVariables = getVariables(globalVars + sampleTheme, "global");
 const unusedVars = [];
 const undefinedVars = [];
 
+function findMissingThemeVariables() {
+	const themesVariables = [];
+	const missing = [];
+
+	// Add theme variables
+	for (const theme in themes) {
+		const data = fs.readFileSync(CONFIG.THEME_EDITOR_THEME_FILES_PATH + theme + '.scss', 'utf-8')
+		themesVariables.push({
+			name: themes[theme]['value'],
+			variables: getVariables(data)
+		})
+	}
+
+	for (let i = 0; i < themesVariables.length; i++) {
+		for (let j = 0; j < themesVariables.length; j++) {
+
+			// Skip if the index are same
+			if (i === j) { continue; }
+
+			themesVariables[i]['variables'].forEach((currentVar) => {
+				const found = themesVariables[j]['variables'].findIndex((variable) => variable.name === currentVar.name);
+				if (found === -1) {
+					missing.push({
+						source: themesVariables[i]['name'],
+						variable: currentVar.name,
+						destination: themesVariables[j]['name']
+					})
+				}
+			})
+		}
+	}
+	if (missing.length !== 0) {
+		missing.forEach(variable => {
+			console.log(`\x1b[31m ${variable.source} variable ${variable.variable} is missing in ${variable.destination} \x1b[0m`);
+		})
+		process.exit(1);
+	}
+
+}
+
 function removeComments(data) {
 	const singleLineComments = new RegExp(/((?<!\/)[/]{2}(?!\/).*)/);
 	const multiLineComments = new RegExp(/(\/\*[^*]*\*+(?:[^/*][^*]*\*+)*\/)/);
@@ -325,5 +365,5 @@ async function initialize() {
 	console.log(`Schema generated in ${((Date.now() - start) / 1000).toFixed(2)} seconds`)
 }
 
-
+findMissingThemeVariables()
 initialize();

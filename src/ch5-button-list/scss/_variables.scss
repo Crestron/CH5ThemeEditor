@@ -11,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-button-list {
-  /// button container padding
+  /// Applies padding to the button list container
   --ch5-button-list-padding: var(--theme-ch5-button-list-padding);
 
   /// button container width
@@ -20,7 +20,7 @@ ch5-button-list {
   /// button container height
   --ch5-button-list-button-container-height: var(--theme-ch5-button-list-button-container-height);
 
-  /// button container padding
+  /// Applies padding for the container of ch5-button in ch5-button-list
   --ch5-button-list-button-container-padding: var(--theme-ch5-button-list-button-container-padding);
 
   /// Scrollbar border radius
