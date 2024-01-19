@@ -12,7 +12,8 @@
 
 @import "../../ch5-core/variables";
 
-[data-theme="zoom-dark-theme"], .zoom-dark-theme {
+[data-theme="zoom-dark-theme"],
+.zoom-dark-theme {
   /// Font size
   --theme-fonts-font-size: 16px;
 
@@ -540,28 +541,28 @@
 
   // ch5-overlay-panel
   /// the color of the icon at the top of the overlay panel
-  --ch5-overlay-default-close-icon-color: #fefefe;
+  --theme-ch5-overlay-default-close-icon-color: #fefefe;
 
   /// the color of the icon at the top of the overlay panel when it is hovered
-  --ch5-overlay-default-close-icon-color-hover: #9898a6;
+  --theme-ch5-overlay-default-close-icon-color-hover: #9898a6;
 
   /// the background color of the mask element
-  --ch5-overlay-default-mask-bg-color: rgba(94, 94, 102, 0.3);
+  --theme-ch5-overlay-default-mask-bg-color: rgba(94, 94, 102, 0.3);
 
   /// the background color of the icon at the top of the overlay panel
-  --ch5-overlay-panel-close-icon-background-color: #17171a;
+  --theme-ch5-overlay-panel-close-icon-background-color: #17171a;
 
   /// the background color of the overlay panel
-  --ch5-overlay-panel-background-color: #17171a;
+  --theme-ch5-overlay-panel-background-color: #17171a;
 
   /// the border color of the overlay panel
-  --ch5-overlay-panel-border-color: #000000;
+  --theme-ch5-overlay-panel-border-color: #000000;
 
   /// the text color of the overlay panel
-  --ch5-overlay-panel-text-color: #fefefe;
+  --theme-ch5-overlay-panel-text-color: #fefefe;
 
   /// the font color for the content of the overlay panel
-  --ch5-overlay-panel-contents-font-color: #fefefe;
+  --theme-ch5-overlay-panel-contents-font-color: #fefefe;
 
   /// the border width of the overlay panel
   --theme-ch5-overlay-panel-border-width: 1px;
@@ -638,28 +639,28 @@
 
   // ch5-select
   /// component border color
-  --ch5-select-border-color: #5e5e66;
+  --theme-ch5-select-border-color: #5e5e66;
 
   /// Component main font color
-  --ch5-select-font-color: #797979;
+  --theme-ch5-select-font-color: #797979;
 
   /// Selected item background color
-  --ch5-select-panel-item-selected-background-color: #004d80;
+  --theme-ch5-select-panel-item-selected-background-color: #004d80;
 
   /// item border color
-  --ch5-select-panel-item-border-color: transparent;
+  --theme-ch5-select-panel-item-border-color: transparent;
 
   /// item main text color
-  --ch5-select-panel-item-color: #9898a6;
+  --theme-ch5-select-panel-item-color: #9898a6;
 
   /// item background color
-  --ch5-select-panel-item-background-color: transparent;
+  --theme-ch5-select-panel-item-background-color: transparent;
 
   /// item background color on mouse over
-  --ch5-select-panel-item-hover-background-color: #fefefe;
+  --theme-ch5-select-panel-item-hover-background-color: #fefefe;
 
   /// select panel background color
-  --ch5-select-panel-items-background-color: #3b3b40;
+  --theme-ch5-select-panel-items-background-color: #3b3b40;
 
   /// top line content padding
   --theme-ch5-select-padding: 4px;
@@ -727,26 +728,26 @@
 
   // ch5-spinner
   /// The text color of the active item
-  --ch5-spinner-active-item-color: #fff;
+  --theme-ch5-spinner-active-item-color: #fff;
 
   /// The text color of the item.
-  --ch5-spinner-item-color: #9898a6;
+  --theme-ch5-spinner-item-color: #9898a6;
 
   /// The background color for the overlay of the spinner.
-  --ch5-spinner-overlay-background-color: #ff0000;
+  --theme-ch5-spinner-overlay-background-color: #ff0000;
   /// the box shadow color of the spinner
-  --ch5-spinner-highlight-box-shadow-color: rgba(0, 0, 0, 0.3);
+  --theme-ch5-spinner-highlight-box-shadow-color: rgba(0, 0, 0, 0.3);
   /// the border color of the spinner
-  --ch5-spinner-highlight-border-color: #ff0000;
+  --theme-ch5-spinner-highlight-border-color: #ff0000;
 
   /// spinner background color
-  --ch5-spinner-background-color: #3b3b40;
+  --theme-ch5-spinner-background-color: #3b3b40;
 
   /// spinner background gradient before
-  --ch5-spinner-background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05));
+  --theme-ch5-spinner-background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05));
 
   /// spinner background gradient after
-  --ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%);
+  --theme-ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%);
 
   /// spinner border width
   --theme-ch5-spinner-border-width: 1px;
@@ -801,22 +802,22 @@
 
   // ch5-textinput
   /// The text color of the textinput.
-  --ch5-textinput-text-color: #efefef;
+  --theme-ch5-textinput-text-color: #efefef;
 
   /// Set the color of text for the textinput
-  --ch5-textinput-input-text-color: var(--ch5-textinput-text-color);
+  --theme-ch5-textinput-input-text-color: var(--theme-ch5-textinput-text-color);
 
   /// The color of the icon within the textinput
-  --ch5-textinput-icon-text-color: var(--theme-colors-success-background-color);
+  --theme-ch5-textinput-icon-text-color: var(--theme-colors-success-background-color);
 
   /// the color for the label of the textinput
-  --ch5-textinput-label-text-color: var(--ch5-textinput-text-color);
+  --theme-ch5-textinput-label-text-color: var(--theme-ch5-textinput-text-color);
 
   /// base border color
-  --ch5-textinput-border-color: var(--ch5-textinput-text-color);
+  --theme-ch5-textinput-border-color: var(--theme-ch5-textinput-text-color);
 
   /// the color for the border of the textinput
-  --ch5-textinput-input-border-color: var(--ch5-textinput-border-color);
+  --theme-ch5-textinput-input-border-color: var(--theme-ch5-textinput-border-color);
 
   /// background color of textinput input field
   --theme-ch5-textinput-input-background-color: transparent;
@@ -904,42 +905,42 @@
 
   // ch5-toggle
   /// The background color of the handle when value is true(checked).
-  --ch5-toggle-handle-checked-color: #3aa64e;
+  --theme-ch5-toggle-handle-checked-color: #3aa64e;
 
   /// The text color of the label
-  --ch5-toggle-label-font-color: #efefef;
+  --theme-ch5-toggle-label-font-color: #efefef;
 
   /// the text color of the on|off label
-  --ch5-toggle-text-font-color: #797979;
+  --theme-ch5-toggle-text-font-color: #797979;
 
   /// the color of the on|off icon
-  --ch5-toggle-icon-font-color: #17171a;
+  --theme-ch5-toggle-icon-font-color: #17171a;
 
   // circle
   /// the background color of the handle when shape="circle"
-  --ch5-toggle-handle-circle-background: #797979;
+  --theme-ch5-toggle-handle-circle-background: #797979;
 
   /// the text color of the on label when shape="circle"
-  --ch5-toggle-circle-label-on-color: #{$white};
+  --theme-ch5-toggle-circle-label-on-color: #{$white};
 
   /// the text color of the off label when shape="circle"
-  --ch5-toggle-circle-label-off-color: #666;
+  --theme-ch5-toggle-circle-label-off-color: #666;
 
   /// the background color of the knob when shape="circle"
-  --ch5-toggle-circle-knob-color: #17171a;
+  --theme-ch5-toggle-circle-knob-color: #17171a;
 
   // rectangle
   /// the background color of the handle when shape="rectangle"
-  --ch5-toggle-handle-rectangle-background: #383840;
+  --theme-ch5-toggle-handle-rectangle-background: #383840;
 
   /// the text color of the on label when shape="rectangle"
-  --ch5-toggle-rectangle-label-on-color: #{$white};
+  --theme-ch5-toggle-rectangle-label-on-color: #{$white};
 
   /// the text color of the off label when shape="rectangle"
-  --ch5-toggle-rectangle-label-off-color: #{$white};
+  --theme-ch5-toggle-rectangle-label-off-color: #{$white};
 
   /// the background color of the knob when shape="rectangle"
-  --ch5-toggle-rectangle-knob-color: #7b7b8c;
+  --theme-ch5-toggle-rectangle-knob-color: #7b7b8c;
 
   /// label margin
   --theme-ch5-toggle-label-margin: 10px;
@@ -964,10 +965,10 @@
 
   // ch5-triggerview
   /// The background color of the triggerview.
-  --ch5-triggerview-background-color: transparent;
+  --theme-ch5-triggerview-background-color: transparent;
 
   /// The background color of fallback message.
-  --ch5-triggerview-fallback-message-color-background: #fff;
+  --theme-ch5-triggerview-fallback-message-color-background: #fff;
 
   /// triggerview minimum height in px
   --theme-ch5-triggerview-slide-min-height: 0px;
@@ -987,31 +988,31 @@
 
   // ch5-modal-dialog
   /// The color of the icon at the top of the modal
-  --ch5-modal-close-icon-color: #000;
+  --theme-ch5-modal-close-icon-color: #000;
 
   /// The color of the icon at the top of the modal when it is hovered
-  --ch5-modal-close-icon-color-hover: #333;
+  --theme-ch5-modal-close-icon-color-hover: #333;
 
   /// the background color of the mask element
-  --ch5-modal-mask-bg-color: rgba(72, 72, 72, 0.7);
+  --theme-ch5-modal-mask-bg-color: rgba(72, 72, 72, 0.7);
 
   /// the background color of the icon at the top of the modal
-  --ch5-modal-close-icon-background-color: #17171a;
+  --theme-ch5-modal-close-icon-background-color: #17171a;
 
   /// the background color of the modal
-  --ch5-modal-background-color: #17171a;
+  --theme-ch5-modal-background-color: #17171a;
 
   /// the text color of the modal
-  --ch5-modal-text-color: #4a4a4a;
+  --theme-ch5-modal-text-color: #4a4a4a;
 
   /// the font color of the modal content
-  --ch5-modal-contents-font-color: #333;
+  --theme-ch5-modal-contents-font-color: #333;
 
   /// the border color of the modal
-  --ch5-modal-border-color: #efefef;
+  --theme-ch5-modal-border-color: #efefef;
 
   /// the text color for the prompt text of the modal
-  --ch5-modal-prompt-text-font-color: #4a4a4a;
+  --theme-ch5-modal-prompt-text-font-color: #4a4a4a;
 
   /// the border width of the modal
   --theme-ch5-modal-border-width: 1px;
@@ -1063,25 +1064,25 @@
 
   // ch5-slider
   /// slider connect background
-  --ch5-slider-connect-bg: #0099ff;
+  --theme-ch5-slider-connect-bg: #0099ff;
 
   /// slider background percentage
-  --ch5-slider-background-lighten-percent: 30%;
+  --theme-ch5-slider-background-lighten-percent: 30%;
 
   /// slider target background
-  --ch5-slider-target-bg: #2f2f33;
+  --theme-ch5-slider-target-bg: #2f2f33;
 
   /// slider target border color
-  --ch5-slider-target-border-color: #efefef;
+  --theme-ch5-slider-target-border-color: #efefef;
 
   /// slider handle background
-  --ch5-slider-handle-bg: #efefef;
+  --theme-ch5-slider-handle-bg: #efefef;
 
   /// slider handler border color
-  --ch5-slider-handle-border-color: #efefef;
+  --theme-ch5-slider-handle-border-color: #efefef;
 
   /// slider pips color
-  --ch5-slider-pips-color: #efefef;
+  --theme-ch5-slider-pips-color: #efefef;
 
   /// slider target size
   --theme-ch5-slider-height: 18px;
@@ -1293,13 +1294,13 @@
 
   // ch5-list
   /// Set the text color of list items.
-  --ch5-list-item-color: #fff;
+  --theme-ch5-list-item-color: #fff;
 
   /// Set the background color of list items, configurable for each theme
-  --ch5-list-item-background-color: #3b3b40;
+  --theme-ch5-list-item-background-color: #3b3b40;
 
   /// Set the border color of list items
-  --ch5-list-item-border-color: #5e5e66;
+  --theme-ch5-list-item-border-color: #5e5e66;
 
   /// Set the border style of list items, configurable for each theme
   --theme-ch5-list-item-border: 1px solid transparent;

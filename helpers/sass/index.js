@@ -126,14 +126,6 @@ function getVariables(data, sectionName) {
 					value,
 					type
 				});
-				// variables.push({
-				// 	data: {
-				// 		name,
-				// 		description,
-				// 		value,
-				// 		type
-				// 	}
-				// });
 			}
 
 		}
@@ -284,25 +276,41 @@ async function initialize() {
 		});
 	}
 
+	let unusedVariables = [];
 	// Validate Variables
 	unusedVars.forEach(({ name, variables }) => {
 		variables.forEach((variable) => {
-			console.log(`\x1b[31m ${name} unused variable ${variable} \x1b[0m`);
-			process.exit(1);
-		})
-	})
+			// console.log(`\x1b[31m ${name} unused variable ${variable} \x1b[0m`);
+			unusedVariables.push({ name, variable });
+		});
+	});
 
+	let undefinedVariables = [];
 	undefinedVars.forEach(({ name, variables }) => {
 		variables.forEach((variable) => {
 			if ((name === 'ch5-slider' && variable === '--temp-var') || (name === "ch5-button" && variable === '--fa-style-family-classic')) {
 				// Corner case
 			} else {
-				console.log(`\x1b[31m ${name} undefined variable ${variable} \x1b[0m`);
-				process.exit(1);
+				undefinedVariables.push({ name, variable });
 			}
-		})
-	})
-
+		});
+	});
+	if (unusedVariables.length !== 0 || undefinedVariables.length !== 0) {
+		if (unusedVariables.length !== 0) {
+			console.log(`\x1b[31m unused variables: \x1b[0m`);
+			for (let i = 0; i < unusedVariables.length; i++) {
+				console.log(`\x1b[31m ${unusedVariables[i].name}: ${unusedVariables[i].variable} \x1b[0m`);
+			}
+			console.log("");
+		}
+		if (undefinedVariables.length !== 0) {
+			console.log(`\x1b[31m undefined variables: \x1b[0m`);
+			for (let i = 0; i < undefinedVariables.length; i++) {
+				console.log(`\x1b[31m ${undefinedVariables[i].name}: ${undefinedVariables[i].variable} \x1b[0m`);
+			}
+		}
+		process.exit(1);
+	}
 	const writeToIndex = process.argv.findIndex(element => element === "--writeTo");
 	if (writeToIndex >= 0 && process.argv.length > (writeToIndex + 1)) {
 		const writeTo = process.argv[writeToIndex + 1];

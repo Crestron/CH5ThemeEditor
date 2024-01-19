@@ -38,14 +38,14 @@ ch5-button-list {
   & ~ .scrollbar-container {
     position: absolute;
     background-color: var(--theme-others-scrollbar-track-color);
-    border-radius: var(--scrollbar-border-radius);
+    border-radius: var(--ch5-button-list-scrollbar-border-radius);
 
     .scrollbar {
       position: absolute;
       will-change: width, transform;
       position: absolute;
-      border-radius: var(--scrollbar-border-radius);
-      background: var(--scrollbar-thumb-color);
+      border-radius: var(--ch5-button-list-scrollbar-border-radius);
+      background: var(--ch5-button-list-scrollbar-thumb-color);
     }
   }
 

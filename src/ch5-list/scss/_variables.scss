@@ -26,15 +26,18 @@ ch5-list {
   /// Set the padding of list items
   --ch5-list-item-padding: var(--theme-ch5-list-item-padding);
 
+  /// List item background color
+  --ch5-list-item-background-color: var(--theme-ch5-list-item-background-color);
+
   /// Scrollbar border radius
-  --scrollbar-border-radius: var(--theme-others-scrollbar-border-radius);
+  --ch5-list-scrollbar-border-radius: var(--theme-others-scrollbar-border-radius);
 
   /// Scrollbar thumb color
-  --scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color);
+  --ch5-list-scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color);
 
   /// Scrollbar width
-  --scrollbar-width: var(--theme-others-scrollbar-width);
+  --ch5-list-scrollbar-width: var(--theme-others-scrollbar-width);
 
   /// Scrollbar track color
-  --scrollbar-track-color: var(--theme-others-scrollbar-track-color);
+  --ch5-list-scrollbar-track-color: var(--theme-others-scrollbar-track-color);
 }

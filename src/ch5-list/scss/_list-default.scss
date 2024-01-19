@@ -55,10 +55,10 @@ ch5-list {
 
   .scrollbar-container {
     position: absolute;
-    height: var(--scrollbar-width);
-    width: var(--scrollbar-width);
-    background-color: var(--scrollbar-track-color);
-    border-radius: var(--scrollbar-border-radius);
+    height: var(--ch5-list-scrollbar-width);
+    width: var(--ch5-list-scrollbar-width);
+    background-color: var(--ch5-list-scrollbar-track-color);
+    border-radius: var(--ch5-list-scrollbar-border-radius);
   }
 
   .scrollbar {
@@ -67,8 +67,8 @@ ch5-list {
     left: 0;
     height: 100%;
     width: 100%;
-    border-radius: var(--scrollbar-border-radius);
-    background: var(--scrollbar-thumb-color);
+    border-radius: var(--ch5-list-scrollbar-border-radius);
+    background: var(--ch5-list-scrollbar-thumb-color);
   }
 
   ::-webkit-scrollbar {
@@ -77,7 +77,7 @@ ch5-list {
 
   /// Applied when the list is displayed vertically and scrollbar="true" is added
   .ch5-list-vertical-scrollbar {
-    padding-right: var(--scrollbar-width);
+    padding-right: var(--ch5-list-scrollbar-width);
 
     & ~ .scrollbar-container {
       top: 0;
@@ -89,7 +89,7 @@ ch5-list {
 
   /// Applied when scrollbar="true" is added
   .ch5-list-horizontal-scrollbar {
-    padding-bottom: var(--scrollbar-width);
+    padding-bottom: var(--ch5-list-scrollbar-width);
 
     & ~ .scrollbar-container {
       width: 100%;
