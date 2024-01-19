@@ -43,7 +43,7 @@ ch5-select-option {
   font-style: var(--ch5-select-font-style);
   font-size: var(--ch5-select-font-size);
   font-weight: var(--ch5-select-font-weight);
-  color: var(--ch5-select-font-color);
+  color: var(--theme-ch5-select-font-color);
 
   &[dir="rtl"] {
     @include rtl-style;
@@ -116,20 +116,20 @@ ch5-select-option {
   @include layout-center;
   padding: var(--ch5-select-panel-item-padding);
   cursor: pointer;
-  color: var(--ch5-select-panel-item-color);
-  border: var(--ch5-select-panel-item-border-width) solid var(--ch5-select-panel-item-border-color);
-  background-color: var(--ch5-select-panel-item-background-color);
+  color: var(--theme-ch5-select-panel-item-color);
+  border: var(--ch5-select-panel-item-border-width) solid var(--theme-ch5-select-panel-item-border-color);
+  background-color: var(--theme-ch5-select-panel-item-background-color);
 
   &[dir="rtl"] {
     @include rtl-style;
   }
 
   &:not(.ch5-select__panel__item--selected):hover {
-    background-color: var(--ch5-select-panel-item-hover-background-color);
+    background-color: var(--theme-ch5-select-panel-item-hover-background-color);
   }
   /// Selected
   &.ch5-select__panel__item--selected {
-    background-color: var(--ch5-select-panel-item-selected-background-color);
+    background-color: var(--theme-ch5-select-panel-item-selected-background-color);
   }
 }
 

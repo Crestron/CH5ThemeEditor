@@ -19,11 +19,11 @@ ch5-overlay-panel {
   display: inline-block;
   position: absolute;
 
-  background-color: var(--ch5-overlay-panel-background-color);
+  background-color: var(--theme-ch5-overlay-panel-background-color);
   border-radius: var(--ch5-overlay-panel-border-radius);
   border: var(--ch5-overlay-panel-border-width) var(--ch5-overlay-panel-border-style)
-    var(--ch5-overlay-panel-border-color);
-  color: var(--ch5-overlay-panel-text-color);
+    var(--theme-ch5-overlay-panel-border-color);
+  color: var(--theme-ch5-overlay-panel-text-color);
   padding: var(--ch5-overlay-panel-padding);
   min-width: 200px;
   z-index: var(--ch5-overlay-panel-z-index);
@@ -39,7 +39,7 @@ ch5-overlay-panel {
     cursor: pointer;
     float: right;
 
-    background-color: var(--ch5-overlay-panel-close-icon-background-color);
+    background-color: var(--theme-ch5-overlay-panel-close-icon-background-color);
     margin: var(--ch5-overlay-panel-close-icon-margin);
     padding: var(--ch5-overlay-panel-close-icon-padding);
     width: var(--ch5-overlay-panel-close-icon-width);
@@ -54,7 +54,7 @@ ch5-overlay-panel {
 
   /// Class for default close icon
   .ch5-overlay-panel-default-close-icon {
-    color: var(--ch5-overlay-default-close-icon-color);
+    color: var(--theme-ch5-overlay-default-close-icon-color);
     font-style: var(--ch5-overlay-default-close-icon-font-style);
     font-size: var(--ch5-overlay-default-close-icon-font-size);
     font-weight: var(--ch5-overlay-default-close-icon-font-weight);
@@ -62,7 +62,7 @@ ch5-overlay-panel {
       content: "\00d7";
     }
     &:hover {
-      color: var(--ch5-overlay-default-close-icon-color-hover);
+      color: var(--theme-ch5-overlay-default-close-icon-color-hover);
     }
   }
 }
@@ -105,7 +105,7 @@ ch5-overlay-panel {
 
 /// Applied for default stile of panel mask
 .ch5-overlay-panel-mask-default-style {
-  background-color: var(--ch5-overlay-default-mask-bg-color);
+  background-color: var(--theme-ch5-overlay-default-mask-bg-color);
 }
 
 /// Applied for content of the panel
@@ -114,5 +114,5 @@ ch5-overlay-panel {
   font-style: var(--ch5-overlay-panel-contents-font-style);
   font-size: var(--ch5-overlay-panel-contents-font-size);
   font-weight: var(--ch5-overlay-panel-contents-font-weight);
-  color: var(--ch5-overlay-panel-contents-font-color);
+  color: var(--theme-ch5-overlay-panel-contents-font-color);
 }

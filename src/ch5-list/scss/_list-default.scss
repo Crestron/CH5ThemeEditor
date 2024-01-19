@@ -98,11 +98,11 @@ ch5-list {
   }
 
   .list-item {
-    background-color: var(--ch5-list-item-background-color);
+    background-color: var(--theme-ch5-list-item-background-color);
     border: var(--ch5-list-item-border);
     padding: var(--ch5-list-item-padding);
-    border-color: var(--ch5-list-item-border-color);
-    color: var(--ch5-list-item-color);
+    border-color: var(--theme-ch5-list-item-border-color);
+    color: var(--theme-ch5-list-item-color);
     vertical-align: text-top;
   }
 }

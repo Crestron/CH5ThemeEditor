@@ -16,7 +16,7 @@ ch5-spinner {
 
 ch5-spinner {
   display: inline-block;
-  background-color: var(--ch5-spinner-background-color);
+  background-color: var(--theme-ch5-spinner-background-color);
 }
 
 /// Main class
@@ -49,12 +49,12 @@ ch5-spinner {
     }
 
     &:after {
-      background: var(--ch5-spinner-background-gradient-after);
+      background: var(--theme-ch5-spinner-background-gradient-after);
       bottom: 0;
     }
 
     &:before {
-      background: var(--ch5-spinner-background-gradient-before);
+      background: var(--theme-ch5-spinner-background-gradient-before);
       top: 0;
     }
   }
@@ -70,8 +70,8 @@ ch5-spinner {
     width: 100%;
     left: 0;
     right: 0;
-    border-bottom: var(--ch5-spinner-border-width) var(--ch5-spinner-border-style) var(--ch5-spinner-highlight-border-color);
-    box-shadow: 0px 0px 3px var(--ch5-spinner-highlight-box-shadow-color);
+    border-bottom: var(--ch5-spinner-border-width) var(--ch5-spinner-border-style) var(--theme-ch5-spinner-highlight-border-color);
+    box-shadow: 0px 0px 3px var(--theme-ch5-spinner-highlight-box-shadow-color);
   }
 
   &__overlay {
@@ -83,7 +83,7 @@ ch5-spinner {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: var(--ch5-spinner-overlay-background-color);
+    background: var(--theme-ch5-spinner-overlay-background-color);
     cursor: grabbing;
     opacity: var(--ch5-spinner-overlay-opacity);
     display: none;
@@ -91,7 +91,7 @@ ch5-spinner {
   /// @require .ch5-spinner
   /// Applied on the item
   &__item {
-    color: var(--ch5-spinner-item-color);
+    color: var(--theme-ch5-spinner-item-color);
     white-space: nowrap;
     transition: all 0.4s ease;
     justify-content: center;
@@ -101,7 +101,7 @@ ch5-spinner {
   /// Applied on the active item
   &--active {
     font-size: var(--ch5-spinner-font-size);
-    color: var(--ch5-spinner-active-item-color);
+    color: var(--theme-ch5-spinner-active-item-color);
   }
   /// @require .ch5-spinner
   /// Applied on the icon
