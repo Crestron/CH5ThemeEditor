@@ -250,3 +250,8 @@ ch5-slider {
   /// button padding
   --ch5-button-padding: var(--theme-ch5-button-padding);
 }
+
+// extending the variables by button
+ch5-slider-button {
+  @extend ch5-button;
+}

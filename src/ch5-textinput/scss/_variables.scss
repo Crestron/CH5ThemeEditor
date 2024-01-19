@@ -156,4 +156,7 @@ ch5-textinput {
 
   /// set minimum height for size - x-large of the textinput
   --ch5-textinput-size-x-large-height: var(--theme-ch5-textinput-size-x-large-height);
+
+  /// base border color
+  --ch5-textinput-input-border-color: var(--theme-ch5-textinput-input-border-color);
 }
