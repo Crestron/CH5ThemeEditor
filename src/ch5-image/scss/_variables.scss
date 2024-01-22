@@ -11,12 +11,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-image {
-  /// Set height of image
-  --ch5-image-height: var(--theme-ch5-image-height);
-
-  /// Set width of image
-  --ch5-image-width: var(--theme-ch5-image-width);
-
   /// Sets object fit property
   --ch5-image-object-fit: var(--theme-ch5-image-object-fit);
 }

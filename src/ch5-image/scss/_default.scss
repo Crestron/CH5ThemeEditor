@@ -21,8 +21,8 @@ ch5-image {
 /// Added automatically on the first child of the ch5-image element.
 .ch5-image {
   &.ch5-image__img {
-    height: var(--ch5-image-height);
-    width: var(--ch5-image-width);
+    height: inherit;
+    width: inherit;
     max-height: 100%;
     max-width: 100%;
     object-fit: var(--ch5-image-object-fit);

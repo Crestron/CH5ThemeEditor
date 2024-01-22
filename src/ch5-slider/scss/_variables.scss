@@ -253,5 +253,5 @@ ch5-slider {
 
 // extending the variables by button
 ch5-slider-button {
-  @extend ch5-button;
+  @extend ch5-button !optional;
 }
