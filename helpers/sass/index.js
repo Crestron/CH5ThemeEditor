@@ -48,9 +48,9 @@ function findMissingThemeVariables() {
 						source: themesVariables[i]['name'],
 						variable: currentVar.name,
 						destination: themesVariables[j]['name']
-					})
+					});
 				}
-			})
+			});
 		}
 	}
 	if (missing.length !== 0) {
@@ -104,12 +104,15 @@ function getType(data, variables) {
 	} else if ((data.includes('calc') || units.some(unit => data.includes(unit))) && data.includes('linear-gradient') === false) {
 		return "unit";
 	} else if (data.includes('rgb') || hexColorRegex.test(data)) {
+		// TODO - this has to check plain color names too. Also linear gradient can be here
 		return "color";
 	} else {
 		return "string";
 	}
 }
 
+// TODO - sort Json variables
+// TODO - check for duplicate variables in same theme - ex: --theme-ch5-button-content-line-height
 function getVariables(data, sectionName) {
 	const variables = [];
 	data = removeComments(data);
