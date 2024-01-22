@@ -163,8 +163,8 @@
 
   &.ch5-advanced-slider-container {
     .noUi-target {
-      margin-top: calc(calc(var(#{$handle-height}) / 2) + 1);
-      margin-bottom: calc(calc(var(#{$handle-height}) / 2) + 1);
+      margin-top: calc(calc(var(#{$handle-height}) / 2) + 1px);
+      margin-bottom: calc(calc(var(#{$handle-height}) / 2) + 1px);
     }
 
     &.ch5-slider--tooltip--on {
