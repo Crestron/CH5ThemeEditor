@@ -34,8 +34,8 @@
     top: 0;
     opacity: 0;
     transition-property: opacity;
-    transition-duration: 1s;
-    transition-timing-function: ease;
+    transition-duration: var(--ch5-background--transition-duration);
+    transition-timing-function: var(--ch5-background--transition-timing-function);
 
     &.ch5bg-fadein {
       opacity: 1;

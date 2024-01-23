@@ -10,3 +10,7 @@
 /// @group ch5-background-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-background {
+  --ch5-background--transition-timing-function: var(--theme-ch5-background--transition-timing-function);
+  --ch5-background--transition-duration: var(--theme-ch5-background--transition-duration);
+}
