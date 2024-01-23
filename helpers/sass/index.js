@@ -339,15 +339,25 @@ async function initialize() {
 	// Validate Variables
 	unusedVars.forEach(({ name, variables }) => {
 		variables.forEach((variable) => {
-			// console.log(`\x1b[31m ${name} unused variable ${variable} \x1b[0m`);
-			unusedVariables.push({ name, variable });
+			const cornerCase1 = name === 'ch5-triggerview' && variable === '--ch5-triggerview-gap';
+			const cornerCase2 = name === 'ch5-triggerview' && variable === '--ch5-triggerview-slide-max-height';
+			const cornerCase3 = name === 'ch5-triggerview' && variable === '--ch5-triggerview-slide-min-height';
+			const cornerCase4 = name === 'ch5-triggerview' && variable === '--ch5-triggerview-transition-duration';
+			if (cornerCase1 || cornerCase2 || cornerCase3 || cornerCase4) {
+				// Corner Case
+			} else {
+				unusedVariables.push({ name, variable });
+			}
+
 		});
 	});
 
 	let undefinedVariables = [];
 	undefinedVars.forEach(({ name, variables }) => {
 		variables.forEach((variable) => {
-			if ((name === 'ch5-slider' && variable === '--temp-var') || (name === "ch5-button" && variable === '--fa-style-family-classic')) {
+			const cornerCase1 = name === 'ch5-slider' && variable === '--temp-var';
+			const cornerCase2 = name === 'ch5-button' && variable === '--fa-style-family-classic';
+			if (cornerCase1 || cornerCase2) {
 				// Corner case
 			} else {
 				undefinedVariables.push({ name, variable });

@@ -779,21 +779,21 @@
       "version": "1.0.0",
       "variables": [
         {
-          "name": "--ch5-color-chip-background-color",
+          "name": "--ch5-color-chip--background-color",
           "description": "Initial background color for color-chip",
-          "value": "var(--theme-ch5-color-chip-background-color)",
+          "value": "var(--theme-ch5-color-chip--background-color)",
           "type": "color"
         },
         {
-          "name": "--ch5-color-chip-height",
+          "name": "--ch5-color-chip--height",
           "description": "Height of the color-chip",
-          "value": "var(--theme-ch5-color-chip-height)",
+          "value": "var(--theme-ch5-color-chip--height)",
           "type": "unit"
         },
         {
-          "name": "--ch5-color-chip-width",
+          "name": "--ch5-color-chip--width",
           "description": "Width of the color-chip",
-          "value": "var(--theme-ch5-color-chip-width)",
+          "value": "var(--theme-ch5-color-chip--width)",
           "type": "unit"
         }
       ]
@@ -803,15 +803,15 @@
       "version": "1.0.0",
       "variables": [
         {
-          "name": "--ch5-color-picker-height",
+          "name": "--ch5-color-picker--height",
           "description": "Height for color picker",
-          "value": "var(--theme-ch5-color-picker-height)",
+          "value": "var(--theme-ch5-color-picker--height)",
           "type": "unit"
         },
         {
-          "name": "--ch5-color-picker-width",
+          "name": "--ch5-color-picker--width",
           "description": "Width for color picker",
-          "value": "var(--theme-ch5-color-picker-width)",
+          "value": "var(--theme-ch5-color-picker--width)",
           "type": "unit"
         }
       ]
@@ -3180,6 +3180,60 @@
       ]
     },
     {
+      "name": "ch5-triggerview",
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-triggerview-font-size",
+          "description": "default font size value for the triggerview",
+          "value": "var(--theme-fonts-font-size)",
+          "type": "unit"
+        },
+        {
+          "name": "--ch5-triggerview-font-style",
+          "description": "default font style for the triggerview",
+          "value": "var(--theme-fonts-font-style)",
+          "type": "string"
+        },
+        {
+          "name": "--ch5-triggerview-font-weight",
+          "description": "default font weight for the triggerview",
+          "value": "var(--theme-fonts-font-weight)",
+          "type": "string"
+        },
+        {
+          "name": "--ch5-triggerview-gap",
+          "description": "gap between views in px",
+          "value": "var(--theme-ch5-triggerview-gap)",
+          "type": "unit"
+        },
+        {
+          "name": "--ch5-triggerview-slide-max-height",
+          "description": "triggerview maximum height in px",
+          "value": "var(--theme-ch5-triggerview-slide-max-height)",
+          "type": "string"
+        },
+        {
+          "name": "--ch5-triggerview-slide-min-height",
+          "description": "triggerview minimum height in px",
+          "value": "var(--theme-ch5-triggerview-slide-min-height)",
+          "type": "unit"
+        },
+        {
+          "name": "--ch5-triggerview-transition-duration",
+          "description": "duration of changing from one view to another.",
+          "value": "var(--theme-ch5-triggerview-transition-duration)",
+          "type": "string"
+        },
+        {
+          "name": "--ch5-triggerview-transition-timing-function",
+          "description": "transition effect(describe animation on content of the child view)",
+          "value": "var(--theme-ch5-triggerview-transition-timing-function)",
+          "type": "string"
+        }
+      ]
+    },
+    {
       "name": "ch5-video",
       "version": "1.0.0",
       "variables": [
@@ -4342,6 +4396,35 @@
               "type": "color"
             },
             {
+              "name": "--theme-ch5-overlay-default-close-icon-font-size",
+              "description": "The font size of the icon at the top of the overlay panel",
+              "value": "24px",
+              "type": "unit"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-mask-bg-color",
+              "description": "The background color of the mask element",
+              "value": "rgba(94, 94, 102, 0.3)",
+              "type": "color"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-close-icon-color-hover",
+              "description": "The color of the icon at the top of the overlay panel when it is hovered",
+              "value": "#9898a6",
+              "type": "color"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-close-icon-color",
+              "description": "The color of the icon at the top of the overlay panel",
+              "value": "#fefefe",
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "name": "ch5-triggerview",
+          "variables": [
+            {
               "name": "--theme-ch5-triggerview-gap",
               "description": "gap between views in px",
               "value": "16px",
@@ -4370,42 +4453,6 @@
               "description": "Triggerview minimum height in px",
               "value": "0px",
               "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-triggerview-fallback-message-color-background",
-              "description": "The background color of fallback message.",
-              "value": "#fff",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-triggerview-background-color",
-              "description": "The background color of the triggerview.",
-              "value": "transparent",
-              "type": "string"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-font-size",
-              "description": "The font size of the icon at the top of the overlay panel",
-              "value": "24px",
-              "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-mask-bg-color",
-              "description": "The background color of the mask element",
-              "value": "rgba(94, 94, 102, 0.3)",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-color-hover",
-              "description": "The color of the icon at the top of the overlay panel when it is hovered",
-              "value": "#9898a6",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-color",
-              "description": "The color of the icon at the top of the overlay panel",
-              "value": "#fefefe",
-              "type": "color"
             }
           ]
         },
@@ -5498,13 +5545,13 @@
           "name": "ch5-color-picker",
           "variables": [
             {
-              "name": "--theme-ch5-color-picker-width",
+              "name": "--theme-ch5-color-picker--width",
               "description": "Width for color picker",
               "value": "240px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-color-picker-height",
+              "name": "--theme-ch5-color-picker--height",
               "description": "Height for color picker",
               "value": "240px",
               "type": "unit"
@@ -5515,19 +5562,19 @@
           "name": "ch5-color-chip",
           "variables": [
             {
-              "name": "--theme-ch5-color-chip-background-color",
+              "name": "--theme-ch5-color-chip--background-color",
               "description": "Initial background color for color-chip",
               "value": "#000",
               "type": "color"
             },
             {
-              "name": "--theme-ch5-color-chip-width",
+              "name": "--theme-ch5-color-chip--width",
               "description": "Width of the color-chip",
               "value": "40px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-color-chip-height",
+              "name": "--theme-ch5-color-chip--height",
               "description": "Width of the color-chip",
               "value": "40px",
               "type": "unit"
@@ -7065,6 +7112,35 @@
               "type": "color"
             },
             {
+              "name": "--theme-ch5-overlay-default-close-icon-font-size",
+              "description": "The font size of the icon at the top of the overlay panel",
+              "value": "24px",
+              "type": "unit"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-mask-bg-color",
+              "description": "The background color of the mask element",
+              "value": "rgba(150, 150, 150, 0.3)",
+              "type": "color"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-close-icon-color-hover",
+              "description": "The color of the icon at the top of the overlay panel when it is hovered",
+              "value": "#333",
+              "type": "color"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-close-icon-color",
+              "description": "The color of the icon at the top of the overlay panel",
+              "value": "#555",
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "name": "ch5-triggerview",
+          "variables": [
+            {
               "name": "--theme-ch5-triggerview-gap",
               "description": "gap between views in px",
               "value": "16px",
@@ -7093,42 +7169,6 @@
               "description": "Triggerview minimum height in px",
               "value": "0px",
               "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-triggerview-fallback-message-color-background",
-              "description": "The background color of fallback message.",
-              "value": "#fff",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-triggerview-background-color",
-              "description": "The background color of the triggerview.",
-              "value": "transparent",
-              "type": "string"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-font-size",
-              "description": "The font size of the icon at the top of the overlay panel",
-              "value": "24px",
-              "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-mask-bg-color",
-              "description": "The background color of the mask element",
-              "value": "rgba(150, 150, 150, 0.3)",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-color-hover",
-              "description": "The color of the icon at the top of the overlay panel when it is hovered",
-              "value": "#333",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-color",
-              "description": "The color of the icon at the top of the overlay panel",
-              "value": "#555",
-              "type": "color"
             }
           ]
         },
@@ -8221,13 +8261,13 @@
           "name": "ch5-color-picker",
           "variables": [
             {
-              "name": "--theme-ch5-color-picker-width",
+              "name": "--theme-ch5-color-picker--width",
               "description": "Width for color picker",
               "value": "240px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-color-picker-height",
+              "name": "--theme-ch5-color-picker--height",
               "description": "Height for color picker",
               "value": "240px",
               "type": "unit"
@@ -8238,19 +8278,19 @@
           "name": "ch5-color-chip",
           "variables": [
             {
-              "name": "--theme-ch5-color-chip-background-color",
+              "name": "--theme-ch5-color-chip--background-color",
               "description": "Initial background color for color-chip",
               "value": "#000",
               "type": "color"
             },
             {
-              "name": "--theme-ch5-color-chip-width",
+              "name": "--theme-ch5-color-chip--width",
               "description": "Width of the color-chip",
               "value": "40px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-color-chip-height",
+              "name": "--theme-ch5-color-chip--height",
               "description": "Width of the color-chip",
               "value": "40px",
               "type": "unit"
@@ -9788,6 +9828,35 @@
               "type": "color"
             },
             {
+              "name": "--theme-ch5-overlay-default-close-icon-font-size",
+              "description": "The font size of the icon at the top of the overlay panel",
+              "value": "24px",
+              "type": "unit"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-mask-bg-color",
+              "description": "The background color of the mask element",
+              "value": "rgba(150, 150, 150, 0.3)",
+              "type": "color"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-close-icon-color-hover",
+              "description": "The color of the icon at the top of the overlay panel when it is hovered",
+              "value": "#000",
+              "type": "color"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-close-icon-color",
+              "description": "The color of the icon at the top of the overlay panel",
+              "value": "#000",
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "name": "ch5-triggerview",
+          "variables": [
+            {
               "name": "--theme-ch5-triggerview-gap",
               "description": "gap between views in px",
               "value": "16px",
@@ -9816,42 +9885,6 @@
               "description": "Triggerview minimum height in px",
               "value": "0px",
               "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-triggerview-fallback-message-color-background",
-              "description": "The background color of fallback message.",
-              "value": "#fff",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-triggerview-background-color",
-              "description": "The background color of the triggerview.",
-              "value": "transparent",
-              "type": "string"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-font-size",
-              "description": "The font size of the icon at the top of the overlay panel",
-              "value": "24px",
-              "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-mask-bg-color",
-              "description": "The background color of the mask element",
-              "value": "rgba(150, 150, 150, 0.3)",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-color-hover",
-              "description": "The color of the icon at the top of the overlay panel when it is hovered",
-              "value": "#000",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-color",
-              "description": "The color of the icon at the top of the overlay panel",
-              "value": "#000",
-              "type": "color"
             }
           ]
         },
@@ -10944,13 +10977,13 @@
           "name": "ch5-color-picker",
           "variables": [
             {
-              "name": "--theme-ch5-color-picker-width",
+              "name": "--theme-ch5-color-picker--width",
               "description": "Width for color picker",
               "value": "240px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-color-picker-height",
+              "name": "--theme-ch5-color-picker--height",
               "description": "Height for color picker",
               "value": "240px",
               "type": "unit"
@@ -10961,19 +10994,19 @@
           "name": "ch5-color-chip",
           "variables": [
             {
-              "name": "--theme-ch5-color-chip-background-color",
+              "name": "--theme-ch5-color-chip--background-color",
               "description": "Initial background color for color-chip",
               "value": "#000",
               "type": "color"
             },
             {
-              "name": "--theme-ch5-color-chip-width",
+              "name": "--theme-ch5-color-chip--width",
               "description": "Width of the color-chip",
               "value": "40px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-color-chip-height",
+              "name": "--theme-ch5-color-chip--height",
               "description": "Width of the color-chip",
               "value": "40px",
               "type": "unit"
@@ -12511,6 +12544,35 @@
               "type": "color"
             },
             {
+              "name": "--theme-ch5-overlay-default-close-icon-font-size",
+              "description": "The font size of the icon at the top of the overlay panel",
+              "value": "24px",
+              "type": "unit"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-mask-bg-color",
+              "description": "The background color of the mask element",
+              "value": "rgba(94, 94, 102, 0.3)",
+              "type": "color"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-close-icon-color-hover",
+              "description": "The color of the icon at the top of the overlay panel when it is hovered",
+              "value": "#9898a6",
+              "type": "color"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-close-icon-color",
+              "description": "The color of the icon at the top of the overlay panel",
+              "value": "#fefefe",
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "name": "ch5-triggerview",
+          "variables": [
+            {
               "name": "--theme-ch5-triggerview-gap",
               "description": "gap between views in px",
               "value": "16px",
@@ -12539,42 +12601,6 @@
               "description": "Triggerview minimum height in px",
               "value": "0px",
               "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-triggerview-fallback-message-color-background",
-              "description": "The background color of fallback message.",
-              "value": "#fff",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-triggerview-background-color",
-              "description": "The background color of the triggerview.",
-              "value": "transparent",
-              "type": "string"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-font-size",
-              "description": "The font size of the icon at the top of the overlay panel",
-              "value": "24px",
-              "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-mask-bg-color",
-              "description": "The background color of the mask element",
-              "value": "rgba(94, 94, 102, 0.3)",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-color-hover",
-              "description": "The color of the icon at the top of the overlay panel when it is hovered",
-              "value": "#9898a6",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-color",
-              "description": "The color of the icon at the top of the overlay panel",
-              "value": "#fefefe",
-              "type": "color"
             }
           ]
         },
@@ -13667,13 +13693,13 @@
           "name": "ch5-color-picker",
           "variables": [
             {
-              "name": "--theme-ch5-color-picker-width",
+              "name": "--theme-ch5-color-picker--width",
               "description": "Width for color picker",
               "value": "240px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-color-picker-height",
+              "name": "--theme-ch5-color-picker--height",
               "description": "Height for color picker",
               "value": "240px",
               "type": "unit"
@@ -13684,19 +13710,19 @@
           "name": "ch5-color-chip",
           "variables": [
             {
-              "name": "--theme-ch5-color-chip-background-color",
+              "name": "--theme-ch5-color-chip--background-color",
               "description": "Background color for color-chip.",
               "value": "#000",
               "type": "color"
             },
             {
-              "name": "--theme-ch5-color-chip-width",
+              "name": "--theme-ch5-color-chip--width",
               "description": "The width for div of the color-chip.",
               "value": "40px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-color-chip-height",
+              "name": "--theme-ch5-color-chip--height",
               "description": "The height for div of the color-chip.",
               "value": "40px",
               "type": "unit"
@@ -15234,6 +15260,35 @@
               "type": "color"
             },
             {
+              "name": "--theme-ch5-overlay-default-close-icon-font-size",
+              "description": "The font size of the icon at the top of the overlay panel",
+              "value": "24px",
+              "type": "unit"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-mask-bg-color",
+              "description": "The background color of the mask element",
+              "value": "rgba(150, 150, 150, 0.3)",
+              "type": "color"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-close-icon-color-hover",
+              "description": "The color of the icon at the top of the overlay panel when it is hovered",
+              "value": "#333",
+              "type": "color"
+            },
+            {
+              "name": "--theme-ch5-overlay-default-close-icon-color",
+              "description": "The color of the icon at the top of the overlay panel",
+              "value": "#555",
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "name": "ch5-triggerview",
+          "variables": [
+            {
               "name": "--theme-ch5-triggerview-gap",
               "description": "gap between views in px",
               "value": "16px",
@@ -15262,42 +15317,6 @@
               "description": "Triggerview minimum height in px",
               "value": "0px",
               "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-triggerview-fallback-message-color-background",
-              "description": "The background color of fallback message.",
-              "value": "#fff",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-triggerview-background-color",
-              "description": "The background color of the triggerview.",
-              "value": "transparent",
-              "type": "string"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-font-size",
-              "description": "The font size of the icon at the top of the overlay panel",
-              "value": "24px",
-              "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-mask-bg-color",
-              "description": "The background color of the mask element",
-              "value": "rgba(150, 150, 150, 0.3)",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-color-hover",
-              "description": "The color of the icon at the top of the overlay panel when it is hovered",
-              "value": "#333",
-              "type": "color"
-            },
-            {
-              "name": "--theme-ch5-overlay-default-close-icon-color",
-              "description": "The color of the icon at the top of the overlay panel",
-              "value": "#555",
-              "type": "color"
             }
           ]
         },
@@ -16390,13 +16409,13 @@
           "name": "ch5-color-picker",
           "variables": [
             {
-              "name": "--theme-ch5-color-picker-width",
+              "name": "--theme-ch5-color-picker--width",
               "description": "Width for color picker",
               "value": "240px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-color-picker-height",
+              "name": "--theme-ch5-color-picker--height",
               "description": "Height for color picker",
               "value": "240px",
               "type": "unit"
@@ -16407,19 +16426,19 @@
           "name": "ch5-color-chip",
           "variables": [
             {
-              "name": "--theme-ch5-color-chip-background-color",
+              "name": "--theme-ch5-color-chip--background-color",
               "description": "Background color for color-chip.",
               "value": "#000",
               "type": "color"
             },
             {
-              "name": "--theme-ch5-color-chip-width",
+              "name": "--theme-ch5-color-chip--width",
               "description": "The width for div of the color-chip.",
               "value": "40px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-color-chip-height",
+              "name": "--theme-ch5-color-chip--height",
               "description": "The height for div of the color-chip.",
               "value": "40px",
               "type": "unit"

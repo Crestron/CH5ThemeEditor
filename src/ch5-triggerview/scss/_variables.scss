@@ -35,10 +35,4 @@ ch5-triggerview {
   // Do not remove below even if search result is 1
   /// gap between views in px
   --ch5-triggerview-gap: var(--theme-ch5-triggerview-gap);
-
-  /// background color
-  --ch5-triggerview-background-color: var(--theme-ch5-triggerview-background-color);
-
-  /// fallback message background color
-  --ch5-triggerview-fallback-message-color-background: var(--theme-ch5-triggerview-fallback-message-color-background);
 }
