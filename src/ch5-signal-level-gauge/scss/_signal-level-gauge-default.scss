@@ -12,16 +12,9 @@
 
 ch5-signal-level-gauge {
   @include ch5-component-base();
-}
 
-ch5-signal-level-gauge {
   display: inline-flex;
   vertical-align: middle;
-}
-
-/// Added automatically on the ch5-signal-level-gauge element
-.ch5-signal-level-gauge {
-  position: relative;
 }
 
 /// Added automatically based on the disabled attribute or by receiveStateEnable
@@ -29,8 +22,11 @@ ch5-signal-level-gauge {
   @include ch5-component-disabled();
 }
 
+/// Added automatically on the ch5-signal-level-gauge element
 .ch5-signal-level-gauge {
+  position: relative;
   display: inline-flex;
+
   /// Applied when the bar is not receiving signal.
   .ch5-signal-level-gauge--bar-color {
     background-color: var(--ch5-signal-level-gauge-bar-color);
@@ -48,28 +44,28 @@ ch5-signal-level-gauge {
   &.ch5-signal-level-gauge--orientation-horizontal {
     align-items: flex-end;
   }
-  @include setSize("small", --ch5-signal-level-gauge-small-height, --ch5-signal-level-gauge-small-width);
-  @include setSize("regular", --ch5-signal-level-gauge-regular-height, --ch5-signal-level-gauge-regular-width);
-  @include setSize("large", --ch5-signal-level-gauge-large-height, --ch5-signal-level-gauge-large-width);
-  @include setSize("x-large", --ch5-signal-level-gauge-x-large-height, --ch5-signal-level-gauge-x-large-width);
-}
+  
+  /// Applied when size='small'
+  &.ch5-signal-level-gauge--size-small {
+    height: var(--ch5-signal-level-gauge-small-height);
+    width: var(--ch5-signal-level-gauge-small-width);
+  }
 
-/// Applied when size='small'
-.ch5-signal-level-gauge--size-small {
-  // DO NOT DELETE - used for Component Reference
-}
+  /// Applied when size='regular'
+  &.ch5-signal-level-gauge--size-regular {
+    height: var(--ch5-signal-level-gauge-regular-height);
+    width: var(--ch5-signal-level-gauge-regular-width);
+  }
 
-/// Applied when size='regular'
-.ch5-signal-level-gauge--size-regular {
-  // DO NOT DELETE - used for Component Reference
-}
+  /// Applied when size='large'
+  &.ch5-signal-level-gauge--size-large {
+    height: var(--ch5-signal-level-gauge-large-height);
+    width: var(--ch5-signal-level-gauge-large-width);
+  }
 
-/// Applied when size='large'
-.ch5-signal-level-gauge--size-large {
-  // DO NOT DELETE - used for Component Reference
-}
-
-/// Applied when size='x-large'
-.ch5-signal-level-gauge--size-x-large {
-  // DO NOT DELETE - used for Component Reference
+  /// Applied when size='x-large'
+  &.ch5-signal-level-gauge--size-x-large {
+    height: var(--ch5-signal-level-gauge-x-large-height);
+    width: var(--ch5-signal-level-gauge-x-large-width);
+  }
 }

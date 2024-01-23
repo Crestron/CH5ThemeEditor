@@ -12,9 +12,7 @@
 
 ch5-text {
   @include ch5-component-base();
-}
 
-ch5-text {
   display: inline-block;
   width: -moz-available; // WebKit-based browsers will ignore this.
   width: -webkit-fill-available; // Mozilla-based browsers will ignore this.
@@ -28,7 +26,7 @@ ch5-text {
   width: var(--ch5-text-width);
   height: var(--ch5-text-height);
   overflow: hidden;
-  padding: var(--ch5-text-padding-value);
+  padding: var(--ch5-text-padding);
 
   span {
     display: inline-block;

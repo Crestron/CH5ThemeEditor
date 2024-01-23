@@ -33,7 +33,7 @@ ch5-toggle {
   --ch5-toggle-label-margin: var(--theme-ch5-toggle-label-margin);
 
   /// font size applied on the on|off label
-  --ch5-toggle-text-font-size: var(--ch5-toggle-font-size);
+  --ch5-toggle-text-font-size: var(--ch5-toggle-font-size); // TODO - difference betwwen toggle font size and text font size
 
   /// font style applied on the on|off label
   --ch5-toggle-text-font-style: var(--ch5-toggle-font-style);
@@ -57,13 +57,13 @@ ch5-toggle {
   --ch5-toggle-handle-rectangle-margin: var(--theme-ch5-toggle-handle-rectangle-margin);
 
   /// containe z-index
-  --ch5-toggle-container-z-index: var(--theme-ch5-toggle-container-z-index);
+  --ch5-toggle-container-z-index: var(--theme-ch5-toggle-container-z-index);// TODO - must not be set
 
   /// toggle knob z-index
-  --ch5-toggle-knob-z-index: var(--theme-ch5-toggle-knob-z-index);
+  --ch5-toggle-knob-z-index: var(--theme-ch5-toggle-knob-z-index);// TODO - must not be set
 
   /// toggle z-index
-  --ch5-toggle-z-index: var(--theme-ch5-toggle-z-index);
+  --ch5-toggle-z-index: var(--theme-ch5-toggle-z-index); // TODO - must not be set
 
   /// The background color of the handle when shape="circle"
   --ch5-toggle-handle-circle-background:var(--theme-ch5-toggle-handle-circle-background);

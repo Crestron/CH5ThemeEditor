@@ -39,21 +39,21 @@
     /// Set horizontalAlignment as center
     &-center {
       text-align: center;
-      padding: 0 var(--ch5-text-padding-value);
+      padding: 0 var(--ch5-text-padding);
     }
 
     /// @require .ch5-text--horizontal-alignment
     /// Set horizontalAlignment as left
     &-left {
       text-align: left;
-      padding-right: var(--ch5-text-padding-value);
+      padding-right: var(--ch5-text-padding);
     }
 
     /// @require .ch5-text--horizontal-alignment
     /// Set horizontalAlignment as right
     &-right {
       text-align: right;
-      padding-left: var(--ch5-text-padding-value);
+      padding-left: var(--ch5-text-padding);
     }
   }
 }

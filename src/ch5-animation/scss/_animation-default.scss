@@ -18,7 +18,7 @@ ch5-animation {
 .ch5-animation {
   position: relative;
   display: inline-block;
-  color: var(--ch5-animation-color);
+  color: var(--ch5-animation--color);
 
   /// Applied when startAnimating='true'
   .ch5-animation--start-animating-true {

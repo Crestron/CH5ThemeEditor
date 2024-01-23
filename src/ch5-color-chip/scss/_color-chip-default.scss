@@ -21,8 +21,8 @@ ch5-color-chip {
   position: relative;
   display: inline-block;
   background-color: var(--ch5-color-chip-background-color);
-  height: var(--ch5-color-chip-div-height);
-  width: var(--ch5-color-chip-div-width);
+  height: var(--ch5-color-chip-height);
+  width: var(--ch5-color-chip-width);
 }
 
 /// Color Chip disabled class

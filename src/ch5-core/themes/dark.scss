@@ -267,19 +267,19 @@
   // ***************************************
 
   /// Animation color
-  --theme-ch5-animation-color: #fff;
+  --theme-ch5-animation--color: #fff;
 
   /// Animation size = regular
-  --theme-ch5-animation-size-regular: 72px;
+  --theme-ch5-animation--size-regular: 72px;
 
   /// Animation size = small
-  --theme-ch5-animation-size-small: 40px;
+  --theme-ch5-animation--size-small: 40px;
 
   /// Animation size = large
-  --theme-ch5-animation-size-large: 104px;
+  --theme-ch5-animation--size-large: 104px;
 
   /// Animation size = x-large
-  --theme-ch5-animation-size-x-large: 136px;
+  --theme-ch5-animation--size-x-large: 136px;
 
   // ***************************************
   // ch5-button
@@ -289,10 +289,10 @@
   --theme-ch5-button-font-size: 14px;
 
   /// Button Icon color
-  --theme-ch5-button-icon-color: inherit;
+  --theme-ch5-button-icon-color: inherit; // TODO - why Inherit.
 
   /// Button Icon font size
-  --theme-ch5-button-icon-font-size: inherit;
+  --theme-ch5-button-icon-size: inherit; // TODO - why Inherit.
 
   /// Button padding
   --theme-ch5-button-padding: 0.25rem;
@@ -300,7 +300,6 @@
   /// Button content-line-height
   --theme-ch5-button-content-line-height: 1.2;
 
-  // button solid-border
   /// Default border width
   --theme-ch5-button-default-border-width: 1px;
 
@@ -389,10 +388,10 @@
   --theme-ch5-button-x-large-size: 72px;
 
   /// Checkbox checked icon
-  --theme-ch5-button-checkbox-checked-faicon: "\f14a";
+  --theme-ch5-button-checkbox-checked-faicon: "\f14a"; // TODO - These should not be CSS variables. They should be scss variables
 
   /// Checkbox unchecked icon
-  --theme-ch5-button-checkbox-unchecked-faicon: "\f0c8";
+  --theme-ch5-button-checkbox-unchecked-faicon: "\f0c8"; // TODO - These should not be CSS variables. They should be scss variables
 
   /// Checkbox checked font weight
   --theme-ch5-button-checkbox-checked-font-weight: 400;
@@ -424,10 +423,10 @@
   // ***************************************
 
   /// Width of the color-chip
-  --theme-ch5-color-chip-div-height: 40px;
+  --theme-ch5-color-chip-height: 40px;
 
   /// Width of the color-chip
-  --theme-ch5-color-chip-div-width: 40px;
+  --theme-ch5-color-chip-width: 40px;
 
   /// Initial background color for color-chip
   --theme-ch5-color-chip-background-color: #000;
@@ -851,7 +850,7 @@
   --theme-ch5-text-height: 48px;
 
   /// Text padding
-  --theme-ch5-text-padding-value: 10px;
+  --theme-ch5-text-padding: 10px;
 
   // ***************************************
   // ch5-textinput
@@ -1120,10 +1119,10 @@
   --theme-ch5-modal-prompt-text-font-size: 16px;
 
   /// modal dialog z-index
-  --theme-ch5-modal-z-index: 10001;
+  --theme-ch5-modal-z-index: 10001; // TODO - These should not be CSS variables. They should be scss variables
 
   /// mask z-index
-  --theme-ch5-modal-mask-z-index: 10000;
+  --theme-ch5-modal-mask-z-index: 10000; // TODO - These should not be CSS variables. They should be scss variables
 
   // ***************************************
   // ch5-slider
@@ -1133,7 +1132,7 @@
   --theme-ch5-slider-connect-bg: #0099ff;
 
   /// Slider background percentage
-  --theme-ch5-slider-background-lighten-percent: 30%;
+  --theme-ch5-slider-background-lighten-percent: 30%; //TODO - Variable seems to be unused in any place
 
   /// Slider target background
   --theme-ch5-slider-target-bg: #2f2f33;
@@ -1180,8 +1179,6 @@
   /// x-large width in px of the slider
   --theme-ch5-slider-width-x-large: 500px;
 
-  /* == Button sizes == */
-
   /// x-small width in px of the button for advanced slider
   --theme-ch5-slider-size-x-small-button-width: 24px;
 
@@ -1212,127 +1209,95 @@
   /// x-large height in px of the button for advanced slider
   --theme-ch5-slider-size-x-large-button-height: 54px;
 
-  /* == Handle sizes == */
-
-  // rounded-rectangle
-
-  // x-small
   /// x-small width in px of the handle when handleShape="rounded-rectangle"
   --theme-ch5-slider-size-x-small-handle-width-rounded-rectangle: 26px;
 
   /// x-small height in px of the handle when handleShape="rounded-rectangle"
   --theme-ch5-slider-size-x-small-handle-height-rounded-rectangle: 24px;
 
-  // small
   /// Small width in px of the handle when handleShape="rounded-rectangle"
   --theme-ch5-slider-size-small-handle-width-rounded-rectangle: 30px;
 
   /// Small height in px of the handle when handleShape="rounded-rectangle"
   --theme-ch5-slider-size-small-handle-height-rounded-rectangle: 26px;
 
-  // regular
   /// regular width in px of the handle when handleShape="rounded-rectangle"
   --theme-ch5-slider-size-regular-handle-width-rounded-rectangle: 36px;
 
   /// regular height in px of the handle when handleShape="rounded-rectangle"
   --theme-ch5-slider-size-regular-handle-height-rounded-rectangle: 30px;
 
-  // large
   /// large width in px of the handle when handleShape="rounded-rectangle"
   --theme-ch5-slider-size-large-handle-width-rounded-rectangle: 42px;
 
   /// large height in px of the handle when handleShape="rounded-rectangle"
   --theme-ch5-slider-size-large-handle-height-rounded-rectangle: 34px;
 
-  // x-large
   /// x-large width in px of the handle when handleShape="rounded-rectangle"
   --theme-ch5-slider-size-x-large-handle-width-rounded-rectangle: 54px;
 
   /// x-large height in px of the handle when handleShape="rounded-rectangle"
   --theme-ch5-slider-size-x-large-handle-height-rounded-rectangle: 40px;
 
-  // rectangle
-
-  // x-small
   /// x-small width in px of the handle when handleShape="rectangle"
   --theme-ch5-slider-size-x-small-handle-width-rectangle: 26px;
 
   /// x-small height in px of the handle when handleShape="rectangle"
   --theme-ch5-slider-size-x-small-handle-height-rectangle: 24px;
 
-  // small
   /// Small width in px of the handle when handleShape="rectangle"
   --theme-ch5-slider-size-small-handle-width-rectangle: 30px;
 
   /// Small height in px of the handle when handleShape="rectangle"
   --theme-ch5-slider-size-small-handle-height-rectangle: 26px;
 
-  // regular
   /// regular width in px of the handle when handleShape="rectangle"
   --theme-ch5-slider-size-regular-handle-width-rectangle: 36px;
 
   /// regular height in px of the handle when handleShape="rectangle"
   --theme-ch5-slider-size-regular-handle-height-rectangle: 30px;
 
-  // large
   /// large width in px of the handle when handleShape="rectangle"
   --theme-ch5-slider-size-large-handle-width-rectangle: 42px;
 
   /// large height in px of the handle when handleShape="rectangle"
   --theme-ch5-slider-size-large-handle-height-rectangle: 34px;
 
-  // x-large
   /// x-large width in px of the handle when handleShape="rectangle"
   --theme-ch5-slider-size-x-large-handle-width-rectangle: 54px;
 
   /// x-large height in px of the handle when handleShape="rectangle"
   --theme-ch5-slider-size-x-large-handle-height-rectangle: 40px;
 
-  // circle
-
-  // x-small
   /// x-small width in px of the handle when handleShape="circle"
   --theme-ch5-slider-size-x-small-handle-width-circle: 26px;
 
-  // small
   /// Small width in px of the handle when handleShape="circle"
   --theme-ch5-slider-size-small-handle-width-circle: 30px;
 
-  // regular
   /// regular width in px of the handle when handleShape="circle"
   --theme-ch5-slider-size-regular-handle-width-circle: 36px;
 
-  // large
   /// large width in px of the handle when handleShape="circle"
   --theme-ch5-slider-size-large-handle-width-circle: 42px;
 
-  // x-large
   /// x-large width in px of the handle when handleShape="circle"
   --theme-ch5-slider-size-x-large-handle-width-circle: 54px;
 
-  // oval
-
-  // x-small
   /// x-small width in px of the handle when handleShape="oval"
   --theme-ch5-slider-size-x-small-handle-width-oval: 26px;
 
-  // small
   /// Small width in px of the handle when handleShape="oval"
   --theme-ch5-slider-size-small-handle-width-oval: 30px;
 
-  // regular
   /// regular width in px of the handle when handleShape="oval"
   --theme-ch5-slider-size-regular-handle-width-oval: 36px;
 
-  // large
   /// large width in px of the handle when handleShape="oval"
   --theme-ch5-slider-size-large-handle-width-oval: 42px;
 
-  // x-large
   /// x-large width in px of the handle when handleShape="oval"
   --theme-ch5-slider-size-x-large-handle-width-oval: 54px;
-
-  // Horizontal and Vertical
 
   /// Horizontal-pips
   --theme-ch5-slider-horizontal-pips: 50px;
@@ -1346,7 +1311,7 @@
   /// Tooltip spacing vertical normal
   --theme-ch5-slider-tooltip-on-spacing-vertical-normal: 58px;
 
-  /// Tooltip spacing horizontal adanced
+  /// Tooltip spacing horizontal advanced
   --theme-ch5-slider-tooltip-on-spacing-horizontal-advanced: 40px;
 
   /// Tooltip spacing horizontal normal
@@ -1372,7 +1337,7 @@
   --theme-ch5-list-item-border-color: #5e5e66;
 
   /// Set the border style of list items, configurable for each theme
-  --theme-ch5-list-item-border: 1px solid transparent;
+  --theme-ch5-list-item-border: 1px solid transparent; //TODO - make 3 variables
 
   /// Set the padding of list items
   --theme-ch5-list-item-padding: 10px;
@@ -1385,40 +1350,40 @@
   --theme-ch5-video-background-color: #000;
 
   /// Size xx-large for min width 651px
-  --theme-ch5-video--size-xx-large-min-w-651: 600px;
+  --theme-ch5-video-size-xx-large-min-w-651: 600px;
 
   /// Size x-large for min width 651px
-  --theme-ch5-video--size-x-large-min-w-651: 560px;
+  --theme-ch5-video-size-x-large-min-w-651: 560px;
 
   /// Size large for min width 651px
-  --theme-ch5-video--size-large-min-w-651: 520px;
+  --theme-ch5-video-size-large-min-w-651: 520px;
 
   /// Size regular for min width 651px
-  --theme-ch5-video--size-regular-min-w-651: 480px;
+  --theme-ch5-video-size-regular-min-w-651: 480px;
 
   /// Size small for min width 651px
-  --theme-ch5-video--size-small-min-w-651: 440px;
+  --theme-ch5-video-size-small-min-w-651: 440px;
 
   /// Size x-small for min width 651px
-  --theme-ch5-video--size-x-small-min-w-651: 400px;
+  --theme-ch5-video-size-x-small-min-w-651: 400px;
 
   /// Size xx-large for max width 650px
-  --theme-ch5-video--size-xx-large-max-w-650: 300px;
+  --theme-ch5-video-size-xx-large-max-w-650: 300px;
 
   /// Size x-large max width 650px
-  --theme-ch5-video--size-x-large-max-w-650: 280px;
+  --theme-ch5-video-size-x-large-max-w-650: 280px;
 
   /// Size large max width 650px
-  --theme-ch5-video--size-large-max-w-650: 260px;
+  --theme-ch5-video-size-large-max-w-650: 260px;
 
   /// Size regular max width 650px
-  --theme-ch5-video--size-regular-max-w-650: 240px;
+  --theme-ch5-video-size-regular-max-w-650: 240px;
 
   /// Size small max width 650px
-  --theme-ch5-video--size-small-max-w-650: 220px;
+  --theme-ch5-video-size-small-max-w-650: 220px;
 
   /// Size x-small max width 650px
-  --theme-ch5-video--size-x-small-max-w-650: 200px;
+  --theme-ch5-video-size-x-small-max-w-650: 200px;
 
   // ***************************************
   // ch5-wifi-signal-level-gauge
