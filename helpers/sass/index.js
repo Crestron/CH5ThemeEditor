@@ -111,7 +111,6 @@ function getType(data, variables) {
 	}
 }
 
-// TODO - sort Json variables
 function getVariables(data, sectionName) {
 	const variables = [];
 	const variablesSet = new Set();
@@ -178,7 +177,7 @@ function getVariables(data, sectionName) {
 		}
 	});
 
-	return variables;
+	return variables.sort((a, b) => a.name > b.name ? 1 : -1);
 }
 
 function getComponentScss(component) {
