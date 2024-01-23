@@ -6,33 +6,33 @@
       "version": "1.0.0",
       "variables": [
         {
-          "name": "--ch5-animation-size-regular",
+          "name": "--ch5-animation--size-regular",
           "description": "Animation size = regular",
-          "value": "var(--theme-ch5-animation-size-regular)",
+          "value": "var(--theme-ch5-animation--size-regular)",
           "type": "unit"
         },
         {
-          "name": "--ch5-animation-size-small",
+          "name": "--ch5-animation--size-small",
           "description": "Animation size = small",
-          "value": "var(--theme-ch5-animation-size-small)",
+          "value": "var(--theme-ch5-animation--size-small)",
           "type": "unit"
         },
         {
-          "name": "--ch5-animation-size-large",
+          "name": "--ch5-animation--size-large",
           "description": "Animation size = large",
-          "value": "var(--theme-ch5-animation-size-large)",
+          "value": "var(--theme-ch5-animation--size-large)",
           "type": "unit"
         },
         {
-          "name": "--ch5-animation-size-x-large",
+          "name": "--ch5-animation--size-x-large",
           "description": "Animation size = x-large",
-          "value": "var(--theme-ch5-animation-size-x-large)",
+          "value": "var(--theme-ch5-animation--size-x-large)",
           "type": "unit"
         },
         {
-          "name": "--ch5-animation-color",
+          "name": "--ch5-animation--color",
           "description": "Animation color",
-          "value": "var(--theme-ch5-animation-color)",
+          "value": "var(--theme-ch5-animation--color)",
           "type": "color"
         }
       ]
@@ -2746,9 +2746,9 @@
           "type": "unit"
         },
         {
-          "name": "--ch5-text-padding-value",
+          "name": "--ch5-text-padding",
           "description": "text padding",
-          "value": "var(--theme-ch5-text-padding-value)",
+          "value": "var(--theme-ch5-text-padding)",
           "type": "unit"
         }
       ]
@@ -3846,31 +3846,31 @@
           "name": "ch5-animation",
           "variables": [
             {
-              "name": "--theme-ch5-animation-color",
+              "name": "--theme-ch5-animation--color",
               "description": "Animation color",
               "value": "#fff",
               "type": "color"
             },
             {
-              "name": "--theme-ch5-animation-size-regular",
+              "name": "--theme-ch5-animation--size-regular",
               "description": "Animation size = regular",
               "value": "72px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-small",
+              "name": "--theme-ch5-animation--size-small",
               "description": "Animation size = small",
               "value": "40px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-large",
+              "name": "--theme-ch5-animation--size-large",
               "description": "Animation size = large",
               "value": "104px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-x-large",
+              "name": "--theme-ch5-animation--size-x-large",
               "description": "Animation size = x-large",
               "value": "136px",
               "type": "unit"
@@ -3897,18 +3897,6 @@
               "description": "Button Icon font size",
               "value": "inherit",
               "type": "string"
-            },
-            {
-              "name": "--theme-ch5-button-padding",
-              "description": "Button padding",
-              "value": "0.25rem",
-              "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-button-content-line-height",
-              "description": "Button content-line-height",
-              "value": "1.2",
-              "type": "number"
             },
             {
               "name": "--theme-ch5-button-default-border-width",
@@ -5168,7 +5156,7 @@
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-text-padding-value",
+              "name": "--theme-ch5-text-padding",
               "description": "Text padding",
               "value": "10px",
               "type": "unit"
@@ -5869,7 +5857,7 @@
             },
             {
               "name": "--theme-ch5-slider-tooltip-on-spacing-horizontal-advanced",
-              "description": "Tooltip spacing horizontal adanced",
+              "description": "Tooltip spacing horizontal advanced",
               "value": "40px",
               "type": "unit"
             },
@@ -6581,31 +6569,31 @@
           "name": "ch5-animation",
           "variables": [
             {
-              "name": "--theme-ch5-animation-color",
+              "name": "--theme-ch5-animation--color",
               "description": "Animation color",
               "value": "#3f3f3f",
               "type": "color"
             },
             {
-              "name": "--theme-ch5-animation-size-regular",
+              "name": "--theme-ch5-animation--size-regular",
               "description": "Animation size = regular",
               "value": "72px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-small",
+              "name": "--theme-ch5-animation--size-small",
               "description": "Animation size = small",
               "value": "40px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-large",
+              "name": "--theme-ch5-animation--size-large",
               "description": "Animation size = large",
               "value": "104px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-x-large",
+              "name": "--theme-ch5-animation--size-x-large",
               "description": "Animation size = x-large",
               "value": "136px",
               "type": "unit"
@@ -6632,18 +6620,6 @@
               "description": "Button Icon font size",
               "value": "inherit",
               "type": "string"
-            },
-            {
-              "name": "--theme-ch5-button-padding",
-              "description": "Button padding",
-              "value": "0.25rem",
-              "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-button-content-line-height",
-              "description": "Button content-line-height",
-              "value": "1.2",
-              "type": "number"
             },
             {
               "name": "--theme-ch5-button-default-border-width",
@@ -7903,7 +7879,7 @@
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-text-padding-value",
+              "name": "--theme-ch5-text-padding",
               "description": "Text padding",
               "value": "10px",
               "type": "unit"
@@ -9316,31 +9292,31 @@
           "name": "ch5-animation",
           "variables": [
             {
-              "name": "--theme-ch5-animation-color",
+              "name": "--theme-ch5-animation--color",
               "description": "Animation color",
               "value": "#000",
               "type": "color"
             },
             {
-              "name": "--theme-ch5-animation-size-regular",
+              "name": "--theme-ch5-animation--size-regular",
               "description": "Size=regular",
               "value": "72px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-small",
+              "name": "--theme-ch5-animation--size-small",
               "description": "Size=small",
               "value": "40px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-large",
+              "name": "--theme-ch5-animation--size-large",
               "description": "Size=large",
               "value": "104px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-x-large",
+              "name": "--theme-ch5-animation--size-x-large",
               "description": "Size=x-large",
               "value": "136px",
               "type": "unit"
@@ -9367,18 +9343,6 @@
               "description": "Button Icon font size",
               "value": "inherit",
               "type": "string"
-            },
-            {
-              "name": "--theme-ch5-button-padding",
-              "description": "Button padding",
-              "value": "0.25rem",
-              "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-button-content-line-height",
-              "description": "Button content-line-height",
-              "value": "1.2",
-              "type": "number"
             },
             {
               "name": "--theme-ch5-button-default-border-width",
@@ -10638,7 +10602,7 @@
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-text-padding-value",
+              "name": "--theme-ch5-text-padding",
               "description": "Text padding",
               "value": "10px",
               "type": "unit"
@@ -12051,31 +12015,31 @@
           "name": "ch5-animation",
           "variables": [
             {
-              "name": "--theme-ch5-animation-color",
+              "name": "--theme-ch5-animation--color",
               "description": "Animation color",
               "value": "#fff",
               "type": "color"
             },
             {
-              "name": "--theme-ch5-animation-size-regular",
+              "name": "--theme-ch5-animation--size-regular",
               "description": "Size=regular",
               "value": "72px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-small",
+              "name": "--theme-ch5-animation--size-small",
               "description": "Size=small",
               "value": "40px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-large",
+              "name": "--theme-ch5-animation--size-large",
               "description": "Size=large",
               "value": "104px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-x-large",
+              "name": "--theme-ch5-animation--size-x-large",
               "description": "Size=x-large",
               "value": "136px",
               "type": "unit"
@@ -12102,18 +12066,6 @@
               "description": "Icon font size",
               "value": "inherit",
               "type": "string"
-            },
-            {
-              "name": "--theme-ch5-button-padding",
-              "description": "Button padding",
-              "value": "0.25rem",
-              "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-button-content-line-height",
-              "description": "Button content-line-height",
-              "value": "1.2",
-              "type": "number"
             },
             {
               "name": "--theme-ch5-button-default-border-width",
@@ -13373,7 +13325,7 @@
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-text-padding-value",
+              "name": "--theme-ch5-text-padding",
               "description": "Text padding",
               "value": "10px",
               "type": "unit"
@@ -14786,31 +14738,31 @@
           "name": "ch5-animation",
           "variables": [
             {
-              "name": "--theme-ch5-animation-color",
+              "name": "--theme-ch5-animation--color",
               "description": "Animation color",
               "value": "#3f3f3f",
               "type": "color"
             },
             {
-              "name": "--theme-ch5-animation-size-regular",
+              "name": "--theme-ch5-animation--size-regular",
               "description": "Size=regular",
               "value": "72px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-small",
+              "name": "--theme-ch5-animation--size-small",
               "description": "Size=small",
               "value": "40px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-large",
+              "name": "--theme-ch5-animation--size-large",
               "description": "Size=large",
               "value": "104px",
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-animation-size-x-large",
+              "name": "--theme-ch5-animation--size-x-large",
               "description": "Size=x-large",
               "value": "136px",
               "type": "unit"
@@ -14837,18 +14789,6 @@
               "description": "Icon font size",
               "value": "inherit",
               "type": "string"
-            },
-            {
-              "name": "--theme-ch5-button-padding",
-              "description": "Button padding",
-              "value": "0.25rem",
-              "type": "unit"
-            },
-            {
-              "name": "--theme-ch5-button-content-line-height",
-              "description": "Button content-line-height",
-              "value": "1.2",
-              "type": "number"
             },
             {
               "name": "--theme-ch5-button-default-border-width",
@@ -16108,7 +16048,7 @@
               "type": "unit"
             },
             {
-              "name": "--theme-ch5-text-padding-value",
+              "name": "--theme-ch5-text-padding",
               "description": "Text padding",
               "value": "10px",
               "type": "unit"
