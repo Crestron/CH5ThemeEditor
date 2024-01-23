@@ -111,10 +111,9 @@ function getType(data, variables) {
 	}
 }
 
-// TODO - sort Json variables
-// TODO - check for duplicate variables in same theme - ex: --theme-ch5-button-content-line-height
 function getVariables(data, sectionName) {
 	const variables = [];
+	const variablesSet = new Set();
 	data = removeComments(data);
 	data = removeHeaders(data);
 	const lines = data.split('\n');
@@ -124,9 +123,14 @@ function getVariables(data, sectionName) {
 		if (splitLine.length === 2 && splitLine[0].includes('--')) {
 
 			const name = splitLine[0].trim();
+			if (variablesSet.has(name)) {
+				console.log(`\x1b[31m '${name}' Duplicate Variable \x1b[0m`)
+				process.exit(1);
+			}
+			variablesSet.add(name);
 			const description = lines[i - 1]?.includes('///') ? lines[i - 1].replace('///', '').trim() : '';
 			if (description === "") {
-				console.log(`\x1b[31m ${name} does not have description \x1b[0m`)
+				console.log(`\x1b[31m '${name}' does not have description \x1b[0m`)
 				process.exit(1);
 			}
 			let value = splitLine[1].trim().replaceAll(';', '');
@@ -173,7 +177,7 @@ function getVariables(data, sectionName) {
 		}
 	});
 
-	return variables;
+	return variables.sort((a, b) => a.name > b.name ? 1 : -1);
 }
 
 function getComponentScss(component) {
