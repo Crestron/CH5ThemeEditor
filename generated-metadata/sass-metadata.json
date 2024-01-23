@@ -1141,6 +1141,30 @@
       ]
     },
     {
+      "name": "ch5-form",
+      "version": "1.0.0",
+      "variables": [
+        {
+          "name": "--ch5-form-font-size",
+          "description": "set the default font size for the form",
+          "value": "var(--theme-fonts-font-size)",
+          "type": "unit"
+        },
+        {
+          "name": "--ch5-form-font-style",
+          "description": "set the default font style for the form",
+          "value": "var(--theme-fonts-font-style)",
+          "type": "string"
+        },
+        {
+          "name": "--ch5-form-font-weight",
+          "description": "set the default font weight for the form",
+          "value": "var(--theme-fonts-font-weight)",
+          "type": "string"
+        }
+      ]
+    },
+    {
       "name": "ch5-image",
       "version": "1.0.0",
       "variables": [
