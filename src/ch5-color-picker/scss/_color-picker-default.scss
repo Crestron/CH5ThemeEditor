@@ -18,8 +18,8 @@ ch5-color-picker {
 .ch5-color-picker {
   position: relative;
   display: inline-flex;
-  width: var(--ch5-color-picker-width);
-  height: var(--ch5-color-picker-height);
+  width: var(--ch5-color-picker--width);
+  height: var(--ch5-color-picker--height);
 }
 
 /// Added automatically based on the disabled attribute or by receiveStateEnable

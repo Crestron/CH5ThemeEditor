@@ -12,11 +12,11 @@
 
 ch5-color-chip {
   /// Height of the color-chip
-  --ch5-color-chip-height: var(--theme-ch5-color-chip-height);
+  --ch5-color-chip--height: var(--theme-ch5-color-chip--height);
 
   /// Width of the color-chip
-  --ch5-color-chip-width: var(--theme-ch5-color-chip-width);
+  --ch5-color-chip--width: var(--theme-ch5-color-chip--width);
 
   /// Initial background color for color-chip
-  --ch5-color-chip-background-color: var(--theme-ch5-color-chip-background-color);
+  --ch5-color-chip--background-color: var(--theme-ch5-color-chip--background-color);
 }
