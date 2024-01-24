@@ -123,7 +123,8 @@ function getVariables(data, sectionName) {
 
 			const description = variableMetaData[0];
 			const type = variableMetaData[1].replace('type:', '').trim();
-			const values = variableMetaData[2].replace('values:', '').trim().split(',').map((str) => str.trim()).filter((str) => str.trim())
+			const valueMetadata = variableMetaData[2].replace('values:', '').trim()
+			const values = type === 'color' ? valueMetadata : valueMetadata.split(',').map((str) => str.trim()).filter((str) => str.trim())
 			const example = variableMetaData[3].replace('example:', '').trim()
 
 			let value = splitLine[1].trim().replaceAll(';', '');
@@ -385,17 +386,9 @@ async function initialize() {
 		}
 		process.exit(1);
 	}
-	const writeToIndex = process.argv.findIndex(element => element === "--writeTo");
-	if (writeToIndex >= 0 && process.argv.length > (writeToIndex + 1)) {
-		const writeTo = process.argv[writeToIndex + 1];
-		if (writeTo && writeTo !== "") {
-			jsonfile.writeFileSync(writeTo, outputJSON, { spaces: 2, EOL: '\r\n' });
-		} else {
-			jsonfile.writeFileSync(CONFIG.DEFAULT_OUTPUT_PATH, outputJSON, { spaces: 2, EOL: '\r\n' });
-		}
-	} else {
-		jsonfile.writeFileSync(CONFIG.DEFAULT_OUTPUT_PATH, outputJSON, { spaces: 2, EOL: '\r\n' });
-	}
+
+	const outputPath = process.argv[3] !== undefined ? process.argv[3] : CONFIG.DEFAULT_OUTPUT_PATH;
+	fs.writeFileSync(outputPath, JSON.stringify(outputJSON, null, 4));
 	console.log(`Schema generated in ${((Date.now() - start) / 1000).toFixed(2)} seconds`)
 }
 

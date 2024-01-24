@@ -24,7 +24,7 @@
     "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json",
     "gen:sass-json": "ts-node ./helpers/sass-output/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
     "gen:sass-metadata": "node ./helpers/metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json",
-    "gen:sass": "node ./helpers/sass/index.js --writetofilepath",
+    "gen:sass": "node ./helpers/sass/index.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-metadata.json",
     "my:showcase": "npm run clean && webpack --config webpack.build.js --output-path $npm_package_config_showcase",
     "my:testing": "npm run clean && webpack --config webpack.build.js --output-path $npm_package_config_testing",
     "my:shell": "npm run clean && webpack --config webpack.build.js --output-path $npm_package_config_shell",
