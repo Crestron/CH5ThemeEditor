@@ -536,6 +536,20 @@
   /// values: px, vw, vh, em, rem, % 
   /// example: 136px
   --theme-ch5-animation--size-x-large: 136px;
+ 
+  // ***************************************
+  // ch5-background
+  // ***************************************
+
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: 1s
+  --theme-ch5-background--transition-duration: 1s;
+  
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: ease
+  --theme-ch5-background--transition-timing-function: ease;
 
   // ***************************************
   // ch5-button
