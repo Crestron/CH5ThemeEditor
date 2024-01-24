@@ -11,232 +11,421 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-keypad {
-  /// ch5-keypad container width for x-small size
+  /// ch5-keypad container width for x-small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 210px 
+  /// related-theme-variable: --theme-ch5-keypad-x-small-container-width
   --ch5-keypad-x-small-container-width: var(--theme-ch5-keypad-x-small-container-width);
 
-  /// ch5-keypad font-size-major for x-small size
+  /// ch5-keypad font-size-major for x-small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1.8rem 
+  /// related-theme-variable: --theme-ch5-keypad-x-small-font-size-major
   --ch5-keypad-x-small-font-size-major: var(--theme-ch5-keypad-x-small-font-size-major);
 
-  /// ch5-keypad font-size-minor for x-small size
+  /// ch5-keypad font-size-minor for x-small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0.65rem 
+  /// related-theme-variable: --theme-ch5-keypad-x-small-font-size-minor
   --ch5-keypad-x-small-font-size-minor: var(--theme-ch5-keypad-x-small-font-size-minor);
 
   // -----------------------------------------------
 
-  /// ch5-keypad container width for small size
+  /// ch5-keypad container width for small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 249px 
+  /// related-theme-variable: --theme-ch5-keypad-small-container-width
   --ch5-keypad-small-container-width: var(--theme-ch5-keypad-small-container-width);
 
-  /// ch5-keypad font-size-major for small size
+  /// ch5-keypad font-size-major for small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 2rem 
+  /// related-theme-variable: --theme-ch5-keypad-small-font-size-major
   --ch5-keypad-small-font-size-major: var(--theme-ch5-keypad-small-font-size-major);
 
-  /// ch5-keypad font-size-minor for small size
+  /// ch5-keypad font-size-minor for small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0.75rem 
+  /// related-theme-variable: --theme-ch5-keypad-small-font-size-minor
   --ch5-keypad-small-font-size-minor: var(--theme-ch5-keypad-small-font-size-minor);
 
   // -----------------------------------------------
 
-  /// ch5-keypad container width for regular size
+  /// ch5-keypad container width for regular size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 267px 
+  /// related-theme-variable: --theme-ch5-keypad-regular-container-width
   --ch5-keypad-regular-container-width: var(--theme-ch5-keypad-regular-container-width);
 
-  /// ch5-keypad font-size-major for regular size
+  /// ch5-keypad font-size-major for regular size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 2.4rem 
+  /// related-theme-variable: --theme-ch5-keypad-regular-font-size-major
   --ch5-keypad-regular-font-size-major: var(--theme-ch5-keypad-regular-font-size-major);
 
-  /// ch5-keypad font-size-minor for regular size
+  /// ch5-keypad font-size-minor for regular size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0.85rem 
+  /// related-theme-variable: --theme-ch5-keypad-regular-font-size-minor
   --ch5-keypad-regular-font-size-minor: var(--theme-ch5-keypad-regular-font-size-minor);
 
   // -----------------------------------------------
 
-  /// ch5-keypad container width for large size
+  /// ch5-keypad container width for large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 294px 
+  /// related-theme-variable: --theme-ch5-keypad-large-container-width
   --ch5-keypad-large-container-width: var(--theme-ch5-keypad-large-container-width);
 
-  /// ch5-keypad font-size-major for large size
+  /// ch5-keypad font-size-major for large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 2.8rem 
+  /// related-theme-variable: --theme-ch5-keypad-large-font-size-major
   --ch5-keypad-large-font-size-major: var(--theme-ch5-keypad-large-font-size-major);
 
-  /// ch5-keypad font-size-minor for large size
+  /// ch5-keypad font-size-minor for large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0.95rem 
+  /// related-theme-variable: --theme-ch5-keypad-large-font-size-minor
   --ch5-keypad-large-font-size-minor: var(--theme-ch5-keypad-large-font-size-minor);
 
   // -----------------------------------------------
 
-  /// ch5-keypad container width for x-large size
+  /// ch5-keypad container width for x-large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 312px 
+  /// related-theme-variable: --theme-ch5-keypad-x-large-container-width
   --ch5-keypad-x-large-container-width: var(--theme-ch5-keypad-x-large-container-width);
 
-  /// ch5-keypad font-size-major for x-large size
+  /// ch5-keypad font-size-major for x-large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 3rem 
+  /// related-theme-variable: --theme-ch5-keypad-x-large-font-size-major
   --ch5-keypad-x-large-font-size-major: var(--theme-ch5-keypad-x-large-font-size-major);
 
-  /// ch5-keypad font-size-minor for x-large size
+  /// ch5-keypad font-size-minor for x-large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1.05rem 
+  /// related-theme-variable: --theme-ch5-keypad-x-large-font-size-minor
   --ch5-keypad-x-large-font-size-minor: var(--theme-ch5-keypad-x-large-font-size-minor);
 
   // ------------------------------------------------------
 
   // default type
 
-  /// The default background color for default type of keypad
+  /// The default background color for default type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-default-background-color
   --ch5-keypad-default-default-background-color: var(--theme-colors-default-background-color);
 
-  /// The default font color for default type of keypad.
+  /// The default font color for default type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-default-font-color
   --ch5-keypad-default-default-font-color: var(--theme-colors-default-font-color);
 
-  /// The default border color for default type of keypad.
+  /// The default border color for default type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-default-border-color
   --ch5-keypad-default-default-border-color: var(--theme-colors-default-border-color);
 
-  /// the pressed background color for default type of keypad
+  /// the pressed background color for default type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-default-pressed-background-color
   --ch5-keypad-default-pressed-background-color: var(--theme-colors-default-pressed-background-color);
 
-  /// the pressed font color for default type of keypad
+  /// the pressed font color for default type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-default-pressed-font-color
   --ch5-keypad-default-pressed-font-color: var(--theme-colors-default-pressed-font-color);
 
-  /// the pressed border color for default type of keypad
+  /// the pressed border color for default type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-default-pressed-border-color
   --ch5-keypad-default-pressed-border-color: var(--theme-colors-default-pressed-border-color);
 
   // ------------------------------------------------------
 
   // primary type
 
-  /// The default background color for primary type of keypad
+  /// The default background color for primary type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-primary-background-color
   --ch5-keypad-primary-default-background-color: var(--theme-colors-primary-background-color);
 
-  /// The default font color for primary type of keypad.
+  /// The default font color for primary type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-primary-font-color
   --ch5-keypad-primary-default-font-color: var(--theme-colors-primary-font-color);
 
-  /// The default border color for primary type of keypad.
+  /// The default border color for primary type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-primary-border-color
   --ch5-keypad-primary-default-border-color: var(--theme-colors-primary-border-color);
 
-  /// the pressed background color for primary type of keypad
+  /// the pressed background color for primary type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-primary-pressed-background-color
   --ch5-keypad-primary-pressed-background-color: var(--theme-colors-primary-pressed-background-color);
 
-  /// the pressed font color for primary type of keypad
+  /// the pressed font color for primary type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-primary-pressed-font-color
   --ch5-keypad-primary-pressed-font-color: var(--theme-colors-primary-pressed-font-color);
 
-  /// the pressed border color for primary type of keypad
+  /// the pressed border color for primary type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-primary-pressed-border-color
   --ch5-keypad-primary-pressed-border-color: var(--theme-colors-primary-pressed-border-color);
 
   // ------------------------------------------------------
 
   // info type
 
-  /// The default background color for info type of keypad
+  /// The default background color for info type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-info-background-color
   --ch5-keypad-info-default-background-color: var(--theme-colors-info-background-color);
 
-  /// The default font color for info type of keypad.
+  /// The default font color for info type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-info-font-color
   --ch5-keypad-info-default-font-color: var(--theme-colors-info-font-color);
 
-  /// The default border color for info type of keypad.
+  /// The default border color for info type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-info-border-color
   --ch5-keypad-info-default-border-color: var(--theme-colors-info-border-color);
 
-  /// the pressed background color for info type of keypad
+  /// the pressed background color for info type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-info-pressed-background-color
   --ch5-keypad-info-pressed-background-color: var(--theme-colors-info-pressed-background-color);
 
-  /// the pressed font color for info type of keypad
+  /// the pressed font color for info type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-info-pressed-font-color
   --ch5-keypad-info-pressed-font-color: var(--theme-colors-info-pressed-font-color);
 
-  /// the pressed border color for info type of keypad
+  /// the pressed border color for info type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-info-pressed-border-color
   --ch5-keypad-info-pressed-border-color: var(--theme-colors-info-pressed-border-color);
 
   // ------------------------------------------------------
 
   // danger type
 
-  /// The default background color for danger type of keypad
+  /// The default background color for danger type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-danger-background-color
   --ch5-keypad-danger-default-background-color: var(--theme-colors-danger-background-color);
 
-  /// The default font color for danger type of keypad.
+  /// The default font color for danger type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-danger-font-color
   --ch5-keypad-danger-default-font-color: var(--theme-colors-danger-font-color);
 
-  /// The default border color for danger type of keypad.
+  /// The default border color for danger type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-danger-border-color
   --ch5-keypad-danger-default-border-color: var(--theme-colors-danger-border-color);
 
-  /// the pressed background color for danger type of keypad
+  /// the pressed background color for danger type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-danger-pressed-background-color
   --ch5-keypad-danger-pressed-background-color: var(--theme-colors-danger-pressed-background-color);
 
-  /// the pressed font color for danger type of keypad
+  /// the pressed font color for danger type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-danger-pressed-font-color
   --ch5-keypad-danger-pressed-font-color: var(--theme-colors-danger-pressed-font-color);
 
-  /// the pressed border color for danger type of keypad
+  /// the pressed border color for danger type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-danger-pressed-border-color
   --ch5-keypad-danger-pressed-border-color: var(--theme-colors-danger-pressed-border-color);
 
   // ------------------------------------------------------
 
   // secondary type
 
-  /// The default background color for secondary type of keypad
+  /// The default background color for secondary type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-secondary-background-color
   --ch5-keypad-secondary-default-background-color: var(--theme-colors-secondary-background-color);
 
-  /// The default font color for secondary type of keypad.
+  /// The default font color for secondary type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-secondary-font-color
   --ch5-keypad-secondary-default-font-color: var(--theme-colors-secondary-font-color);
 
-  /// The default border color for secondary type of keypad.
+  /// The default border color for secondary type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-secondary-border-color
   --ch5-keypad-secondary-default-border-color: var(--theme-colors-secondary-border-color);
 
-  /// the pressed background color for secondary type of keypad
+  /// the pressed background color for secondary type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-secondary-pressed-background-color
   --ch5-keypad-secondary-pressed-background-color: var(--theme-colors-secondary-pressed-background-color);
 
-  /// the pressed font color for secondary type of keypad
+  /// the pressed font color for secondary type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-secondary-pressed-font-color
   --ch5-keypad-secondary-pressed-font-color: var(--theme-colors-secondary-pressed-font-color);
 
-  /// the pressed border color for secondary type of keypad
+  /// the pressed border color for secondary type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-secondary-pressed-border-color
   --ch5-keypad-secondary-pressed-border-color: var(--theme-colors-secondary-pressed-border-color);
 
   // ------------------------------------------------------
 
   // success type
 
-  /// The default background color for success type of keypad
+  /// The default background color for success type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-success-background-color
   --ch5-keypad-success-default-background-color: var(--theme-colors-success-background-color);
 
-  /// The default font color for success type of keypad.
+  /// The default font color for success type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-success-font-color
   --ch5-keypad-success-default-font-color: var(--theme-colors-success-font-color);
 
-  /// The default border color for success type of keypad.
+  /// The default border color for success type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-success-border-color
   --ch5-keypad-success-default-border-color: var(--theme-colors-success-border-color);
 
-  /// the pressed background color for success type of keypad
+  /// the pressed background color for success type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-success-pressed-background-color
   --ch5-keypad-success-pressed-background-color: var(--theme-colors-success-pressed-background-color);
 
-  /// the pressed font color for success type of keypad
+  /// the pressed font color for success type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-success-pressed-font-color
   --ch5-keypad-success-pressed-font-color: var(--theme-colors-success-pressed-font-color);
 
-  /// the pressed border color for success type of keypad
+  /// the pressed border color for success type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-success-pressed-border-color
   --ch5-keypad-success-pressed-border-color: var(--theme-colors-success-pressed-border-color);
 
   // ------------------------------------------------------
 
   // warning type
 
-  /// The default background color for warning type of keypad
+  /// The default background color for warning type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-warning-background-color
   --ch5-keypad-warning-default-background-color: var(--theme-colors-warning-background-color);
 
-  /// The default font color for warning type of keypad.
+  /// The default font color for warning type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-warning-font-color
   --ch5-keypad-warning-default-font-color: var(--theme-colors-warning-font-color);
 
-  /// The default border color for warning type of keypad.
+  /// The default border color for warning type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-warning-border-color
   --ch5-keypad-warning-default-border-color: var(--theme-colors-warning-border-color);
 
-  /// the pressed background color for warning type of keypad
+  /// the pressed background color for warning type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-warning-pressed-background-color
   --ch5-keypad-warning-pressed-background-color: var(--theme-colors-warning-pressed-background-color);
 
-  /// the pressed font color for warning type of keypad
+  /// the pressed font color for warning type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-warning-pressed-font-color
   --ch5-keypad-warning-pressed-font-color: var(--theme-colors-warning-pressed-font-color);
 
-  /// the pressed border color for warning type of keypad
+  /// the pressed border color for warning type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-warning-pressed-border-color
   --ch5-keypad-warning-pressed-border-color: var(--theme-colors-warning-pressed-border-color);
 
   // ------------------------------------------------------
 
   // text type
 
-  /// The default background color for text type of keypad
+  /// The default background color for text type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-text-background-color
   --ch5-keypad-text-default-background-color: var(--theme-colors-text-background-color);
 
-  /// The default font color for text type of keypad.
+  /// The default font color for text type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-text-font-color
   --ch5-keypad-text-default-font-color: var(--theme-colors-text-font-color);
 
-  /// The default border color for text type of keypad.
+  /// The default border color for text type of keypad.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-text-border-color
   --ch5-keypad-text-default-border-color: var(--theme-colors-text-border-color);
 
-  /// the pressed background color for text type of keypad
+  /// the pressed background color for text type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-text-pressed-background-color
   --ch5-keypad-text-pressed-background-color: var(--theme-colors-text-pressed-background-color);
 
-  /// the pressed font color for text type of keypad
+  /// the pressed font color for text type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-text-pressed-font-color
   --ch5-keypad-text-pressed-font-color: var(--theme-colors-text-pressed-font-color);
 
-  /// the pressed border color for text type of keypad
+  /// the pressed border color for text type of keypad  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-colors-text-pressed-border-color
   --ch5-keypad-text-pressed-border-color: var(--theme-colors-text-pressed-border-color);
 }

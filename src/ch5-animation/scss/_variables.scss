@@ -12,17 +12,37 @@
 
 ch5-animation {
   /// Animation size = regular
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 72px 
+  /// related-theme-variable: --theme-ch5-animation--size-regular
   --ch5-animation--size-regular: var(--theme-ch5-animation--size-regular);
 
   /// Animation size = small
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 40px 
+  /// related-theme-variable: --theme-ch5-animation--size-small
   --ch5-animation--size-small: var(--theme-ch5-animation--size-small);
 
   /// Animation size = large
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 104px 
+  /// related-theme-variable: --theme-ch5-animation--size-large
   --ch5-animation--size-large: var(--theme-ch5-animation--size-large);
 
   /// Animation size = x-large
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 136px 
+  /// related-theme-variable: --theme-ch5-animation--size-x-large
   --ch5-animation--size-x-large: var(--theme-ch5-animation--size-x-large);
 
   /// Animation color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #3f3f3f 
+  /// related-theme-variable: --theme-ch5-animation--color
   --ch5-animation--color: var(--theme-ch5-animation--color);
 }

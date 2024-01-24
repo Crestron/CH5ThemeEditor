@@ -12,36 +12,69 @@
 
 ch5-spinner {
   // default
-  /// spinner border width
+  /// spinner border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px 
+  /// related-theme-variable: --theme-ch5-spinner-border-width
   --ch5-spinner-border-width: var(--theme-ch5-spinner-border-width);
 
-  /// spinner border style
+  /// spinner border style  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid 
+  /// related-theme-variable: --theme-ch5-spinner-border-style
   --ch5-spinner-border-style: var(--theme-ch5-spinner-border-style);
 
-  /// the default font size of the spinner
+  /// the default font size of the spinner  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 22px 
+  /// related-theme-variable: --theme-ch5-spinner-font-size
   --ch5-spinner-font-size: var(--theme-ch5-spinner-font-size);
 
-  /// the default font style of the spinner
+  /// the default font style of the spinner  /// type: string 
+  /// values: large, solid, center 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-fonts-font-style
   --ch5-spinner-font-style: var(--theme-fonts-font-style);
 
-  /// the default font weight of the spinner
+  /// the default font weight of the spinner  /// type: string 
+  /// values: large, solid, center 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-fonts-font-weight
   --ch5-spinner-font-weight: var(--theme-fonts-font-weight);
 
-  /// the default font size for icon
+  /// the default font size for icon  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --ch5-spinner-font-size
   --ch5-spinner-icon-font-size: var(--ch5-spinner-font-size);
 
-  /// the padding of the icon within the slider item
+  /// the padding of the icon within the slider item  /// type: string 
+  /// values: large, solid, center 
+  /// example: 0 0 
+  /// related-theme-variable: --theme-ch5-spinner-icon-padding
   --ch5-spinner-icon-padding: var(--theme-ch5-spinner-icon-padding);
 
-  /// the margin of the icon within the slider item
+  /// the margin of the icon within the slider item  /// type: string 
+  /// values: large, solid, center 
+  /// example: 0 0 
+  /// related-theme-variable: --theme-ch5-spinner-icon-margin
   --ch5-spinner-icon-margin: var(--theme-ch5-spinner-icon-margin);
 
-  /// the opacity for the overlay of the spinner
+  /// the opacity for the overlay of the spinner  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 0 
+  /// related-theme-variable: --theme-ch5-spinner-overlay-opacity
   --ch5-spinner-overlay-opacity: var(--theme-ch5-spinner-overlay-opacity);
 
-  /// spinner wrapper z-index
+  /// spinner wrapper z-index  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 9999 
+  /// related-theme-variable: --theme-ch5-spinner-wrapper-z-index
   --ch5-spinner-wrapper-z-index: var(--theme-ch5-spinner-wrapper-z-index);
 
-  /// spinner overlay z-index
+  /// spinner overlay z-index  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 999 
+  /// related-theme-variable: --theme-ch5-spinner-overlay-z-index
   --ch5-spinner-overlay-z-index: var(--theme-ch5-spinner-overlay-z-index);
 }

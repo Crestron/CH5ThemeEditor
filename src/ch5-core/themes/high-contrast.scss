@@ -18,1183 +18,1907 @@
   // Fonts
   // ***************************************
 
-  /// Font size at the theme level
+  /// Font size at the theme level  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 16px
   --theme-fonts-font-size: 16px;
 
-  /// Font style at the theme level
+  /// Font style at the theme level  /// type: string 
+  /// values: large, solid, center 
+  /// example: normal
   --theme-fonts-font-style: normal;
 
-  /// Font weight at the theme level
+  /// Font weight at the theme level  /// type: string 
+  /// values: large, solid, center 
+  /// example: normal
   --theme-fonts-font-weight: normal;
 
-  /// Scrollbar width at the theme level
+  /// Scrollbar width at the theme level  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 7px
   --theme-others-scrollbar-width: 7px;
 
-  /// Scrollbar border radius at the theme level
+  /// Scrollbar border radius at the theme level  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
   --theme-others-scrollbar-border-radius: 10px;
 
-  /// Scrollbar track color at the theme level
+  /// Scrollbar track color at the theme level  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: rgba(0, 0, 0, 0.1)
   --theme-others-scrollbar-track-color: rgba(0, 0, 0, 0.1);
 
-  /// Scrollbar thumb color at the theme level
+  /// Scrollbar thumb color at the theme level  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: rgba(0, 0, 0, 0.5)
   --theme-others-scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
 
-  /// Disabled opacity value at the theme level
+  /// Disabled opacity value at the theme level  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 0.5
   --theme-others-disabled-opacity: 0.5;
 
   // ***************************************
   // Color system
   // ***************************************
 
-  /// Background color
+  /// Background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #0000ff
   --theme-colors-default-background-color: #0000ff;
 
-  /// Border color
+  /// Border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #0000ff
   --theme-colors-default-border-color: #0000ff;
 
-  /// font color
+  /// font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-default-font-color: #ffffff;
 
-  /// Pressed background color
+  /// Pressed background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #00008b
   --theme-colors-default-pressed-background-color: #00008b;
 
-  /// Pressed border color
+  /// Pressed border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #0000ff
   --theme-colors-default-pressed-border-color: #0000ff;
 
-  /// Pressed font color
+  /// Pressed font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #f0fff0
   --theme-colors-default-pressed-font-color: #f0fff0;
 
-  /// Selected background color
+  /// Selected background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-default-selected-background-color: #ffffff;
 
-  /// Selected border color
+  /// Selected border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #0000ff
   --theme-colors-default-selected-border-color: #0000ff;
 
-  /// Selected font color
+  /// Selected font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #0000ff
   --theme-colors-default-selected-font-color: #0000ff;
 
-  /// Background color
+  /// Background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-colors-primary-background-color: #000000;
 
-  /// Border color
+  /// Border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-colors-primary-border-color: #000000;
 
-  /// font color
+  /// font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-primary-font-color: #ffffff;
 
-  /// Primary pressed background color
+  /// Primary pressed background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #2b2b2b
   --theme-colors-primary-pressed-background-color: #2b2b2b;
 
-  /// Primary pressed border color
+  /// Primary pressed border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-colors-primary-pressed-border-color: #000000;
 
-  /// Primary pressed font color
+  /// Primary pressed font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-primary-pressed-font-color: #ffffff;
 
-  /// Primary select background color
+  /// Primary select background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-primary-selected-background-color: #ffffff;
 
-  /// Primary selected border color
+  /// Primary selected border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-colors-primary-selected-border-color: #000000;
 
-  /// Primary selected font color
+  /// Primary selected font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-colors-primary-selected-font-color: #000000;
 
-  /// Info background color
+  /// Info background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #00ffff
   --theme-colors-info-background-color: #00ffff;
 
-  /// Info border color
+  /// Info border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #00ffff
   --theme-colors-info-border-color: #00ffff;
 
-  /// Info font color
+  /// Info font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-colors-info-font-color: #000000;
 
-  /// Info pressed background color
+  /// Info pressed background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #00e6e6
   --theme-colors-info-pressed-background-color: #00e6e6;
 
-  /// Info pressed border color
+  /// Info pressed border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #00ffff
   --theme-colors-info-pressed-border-color: #00ffff;
 
-  /// Info pressed font color
+  /// Info pressed font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-colors-info-pressed-font-color: #000000;
 
-  /// Info selected background color
+  /// Info selected background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-info-selected-background-color: #ffffff;
 
-  /// Info selected border color
+  /// Info selected border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #00ffff
   --theme-colors-info-selected-border-color: #00ffff;
 
-  /// Info selected font color
+  /// Info selected font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-colors-info-selected-font-color: #000000;
 
-  /// Danger background color
+  /// Danger background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ff0000
   --theme-colors-danger-background-color: #ff0000;
 
-  /// Danger border color
+  /// Danger border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ff0000
   --theme-colors-danger-border-color: #ff0000;
 
-  /// Danger font color
+  /// Danger font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-danger-font-color: #ffffff;
 
-  /// Danger pressed background color
+  /// Danger pressed background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #b71c1c
   --theme-colors-danger-pressed-background-color: #b71c1c;
 
-  /// Danger pressed border color
+  /// Danger pressed border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ff0000
   --theme-colors-danger-pressed-border-color: #ff0000;
 
-  /// Danger pressed font color
+  /// Danger pressed font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-danger-pressed-font-color: #ffffff;
 
-  /// Danger selected background color
+  /// Danger selected background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-danger-selected-background-color: #ffffff;
 
-  /// Danger selected border color
+  /// Danger selected border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ff0000
   --theme-colors-danger-selected-border-color: #ff0000;
 
-  /// Danger selected font color
+  /// Danger selected font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ff0000
   --theme-colors-danger-selected-font-color: #ff0000;
 
-  /// Secondary background color
+  /// Secondary background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-secondary-background-color: #ffffff;
 
-  /// Secondary border color
+  /// Secondary border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #939393
   --theme-colors-secondary-border-color: #939393;
 
-  /// Secondary font color
+  /// Secondary font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-colors-secondary-font-color: #000000;
 
-  /// Secondary pressed background color
+  /// Secondary pressed background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #939393
   --theme-colors-secondary-pressed-background-color: #939393;
 
-  /// Secondary pressed border color
+  /// Secondary pressed border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #939393
   --theme-colors-secondary-pressed-border-color: #939393;
 
-  /// Secondary pressed font color
+  /// Secondary pressed font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-colors-secondary-pressed-font-color: #000000;
 
-  /// Secondary selected background color
+  /// Secondary selected background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #7e7e7e
   --theme-colors-secondary-selected-background-color: #7e7e7e;
 
-  /// Secondary selected border color
+  /// Secondary selected border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #939393
   --theme-colors-secondary-selected-border-color: #939393;
 
-  /// Secondary selected font color
+  /// Secondary selected font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-secondary-selected-font-color: #ffffff;
 
-  /// Success background color
+  /// Success background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #00ff00
   --theme-colors-success-background-color: #00ff00;
 
-  /// Success border color
+  /// Success border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #00ff00
   --theme-colors-success-border-color: #00ff00;
 
-  /// Success font color
+  /// Success font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-colors-success-font-color: #000000;
 
-  /// Success pressed background color
+  /// Success pressed background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #00aa00
   --theme-colors-success-pressed-background-color: #00aa00;
 
-  /// Success pressed border color
+  /// Success pressed border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #00ff00
   --theme-colors-success-pressed-border-color: #00ff00;
 
-  /// Success pressed font color
+  /// Success pressed font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-colors-success-pressed-font-color: #000000;
 
-  /// Success selected background color
+  /// Success selected background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-success-selected-background-color: #ffffff;
 
-  /// Success selected border color
+  /// Success selected border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #00ff00
   --theme-colors-success-selected-border-color: #00ff00;
 
-  /// Success selected font color
+  /// Success selected font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-colors-success-selected-font-color: #000000;
 
-  /// Warning background color
+  /// Warning background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ff4500
   --theme-colors-warning-background-color: #ff4500;
 
-  /// Warning border color
+  /// Warning border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ff4500
   --theme-colors-warning-border-color: #ff4500;
 
-  /// Warning font color
+  /// Warning font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-warning-font-color: #ffffff;
 
-  /// Warning pressed background color
+  /// Warning pressed background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ff6f00
   --theme-colors-warning-pressed-background-color: #ff6f00;
 
-  /// Warning pressed border color
+  /// Warning pressed border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ff4500
   --theme-colors-warning-pressed-border-color: #ff4500;
 
-  /// Warning pressed font color
+  /// Warning pressed font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-warning-pressed-font-color: #ffffff;
 
-  /// Warning selected background color
+  /// Warning selected background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-warning-selected-background-color: #ffffff;
 
-  /// Warning selected border color
+  /// Warning selected border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ff4500
   --theme-colors-warning-selected-border-color: #ff4500;
 
-  /// Warning selected font color
+  /// Warning selected font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ff4500
   --theme-colors-warning-selected-font-color: #ff4500;
 
-  /// Text background color
+  /// Text background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #561b8d
   --theme-colors-text-background-color: #561b8d;
 
-  /// Text border color
+  /// Text border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #561b8d
   --theme-colors-text-border-color: #561b8d;
 
-  /// Text font color
+  /// Text font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-text-font-color: #ffffff;
 
-  /// Text pressed background color
+  /// Text pressed background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #8429d9
   --theme-colors-text-pressed-background-color: #8429d9;
 
-  /// Text pressed border color
+  /// Text pressed border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #561b8d
   --theme-colors-text-pressed-border-color: #561b8d;
 
-  /// Text pressed font color
+  /// Text pressed font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-text-pressed-font-color: #ffffff;
 
-  /// Text selected background color
+  /// Text selected background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-colors-text-selected-background-color: #ffffff;
 
-  /// Text selected border color
+  /// Text selected border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #561b8d
   --theme-colors-text-selected-border-color: #561b8d;
 
-  /// Text selected font color
+  /// Text selected font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #561b8d
   --theme-colors-text-selected-font-color: #561b8d;
 
   // ***************************************
   // ch5-animation
   // ***************************************
 
-  /// Animation color
+  /// Animation color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-animation--color: #000;
 
-  /// Size=regular
+  /// Size=regular  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 72px
   --theme-ch5-animation--size-regular: 72px;
 
-  /// Size=small
+  /// Size=small  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 40px
   --theme-ch5-animation--size-small: 40px;
 
-  /// Size=large
+  /// Size=large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 104px
   --theme-ch5-animation--size-large: 104px;
 
-  /// Size=x-large
+  /// Size=x-large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 136px
   --theme-ch5-animation--size-x-large: 136px;
 
   // ***************************************
   // ch5-button
   // ***************************************
 
-  /// Button font size
+  /// Button font size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 14px
   --theme-ch5-button-font-size: 14px;
 
-  /// Button Icon color
+  /// Button Icon color  /// type: string 
+  /// values: large, solid, center 
+  /// example: inherit
   --theme-ch5-button-icon-color: inherit;
 
-  /// Button Icon font size
+  /// Button Icon font size  /// type: string 
+  /// values: large, solid, center 
+  /// example: inherit
   --theme-ch5-button-icon-size: inherit;
 
   // button solid-border
-  /// Default border width
+  /// Default border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-button-default-border-width: 1px;
 
-  /// Primary border width
+  /// Primary border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-button-primary-border-width: 1px;
 
-  /// Secondary border width
+  /// Secondary border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-button-secondary-border-width: 1px;
 
-  /// Success border width
+  /// Success border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-button-success-border-width: 1px;
 
-  /// Info border width
+  /// Info border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-button-info-border-width: 1px;
 
-  /// Warning border width
+  /// Warning border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-button-warning-border-width: 1px;
 
-  /// Danger border width
+  /// Danger border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-button-danger-border-width: 1px;
 
-  /// Text border width
+  /// Text border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-button-text-border-width: 1px;
 
-  /// Default border style
+  /// Default border style  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-button-default-border-style: solid;
 
-  /// Primary border style
+  /// Primary border style  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-button-primary-border-style: solid;
 
-  /// Secondary border style
+  /// Secondary border style  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-button-secondary-border-style: solid;
 
-  /// Success border style
+  /// Success border style  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-button-success-border-style: solid;
 
-  /// Info border style
+  /// Info border style  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-button-info-border-style: solid;
 
-  /// Warning border style
+  /// Warning border style  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-button-warning-border-style: solid;
 
-  /// Danger border style
+  /// Danger border style  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-button-danger-border-style: solid;
 
-  /// Text border style
+  /// Text border style  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-button-text-border-style: solid;
 
-  /// Button rounded-rectangle
+  /// Button rounded-rectangle  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 5px
   --theme-ch5-button-border-radius: 5px;
 
-  /// Button circle
+  /// Button circle  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 50%
   --theme-ch5-button-circle-border-radius: 50%;
 
-  /// Button oval
+  /// Button oval  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 50%
   --theme-ch5-button-oval-border-radius: 50%;
 
-  /// Button tab
+  /// Button tab  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px 10px 0 0
   --theme-ch5-button-tab-border-radius: 10px 10px 0 0;
 
-  /// Button size
+  /// Button size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 42px
   --theme-ch5-button-size: 42px;
 
-  /// Button x-small font size
+  /// Button x-small font size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 11px
   --theme-ch5-button-x-small-font-size: 11px;
 
-  /// Button x-small size
+  /// Button x-small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 32px
   --theme-ch5-button-x-small-size: 32px;
 
-  /// Button small font size
+  /// Button small font size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 13px
   --theme-ch5-button-small-font-size: 13px;
 
-  /// Button small size
+  /// Button small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 36px
   --theme-ch5-button-small-size: 36px;
 
-  /// large font size
+  /// large font size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 16px
   --theme-ch5-button-large-font-size: 16px;
 
-  /// Button large size
+  /// Button large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 52px
   --theme-ch5-button-large-size: 52px;
 
-  /// Button x-large font size
+  /// Button x-large font size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 18px
   --theme-ch5-button-x-large-font-size: 18px;
 
-  /// Button x-large size
+  /// Button x-large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 72px
   --theme-ch5-button-x-large-size: 72px;
 
-  /// Checkbox checked icon
+  /// Checkbox checked icon  /// type: string 
+  /// values: large, solid, center 
+  /// example: "\f14a"
   --theme-ch5-button-checkbox-checked-faicon: "\f14a";
 
-  /// Checkbox unchecked icon
+  /// Checkbox unchecked icon  /// type: string 
+  /// values: large, solid, center 
+  /// example: "\f0c8"
   --theme-ch5-button-checkbox-unchecked-faicon: "\f0c8";
 
-  /// Checkbox checked font weight
+  /// Checkbox checked font weight  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 400
   --theme-ch5-button-checkbox-checked-font-weight: 400;
 
-  /// Checkbox unchecked font weight
+  /// Checkbox unchecked font weight  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 400
   --theme-ch5-button-checkbox-unchecked-font-weight: 400;
 
-  /// Button checkbox padding
+  /// Button checkbox padding  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 5px
   --theme-ch5-button-checkbox-padding: 5px;
 
   // ***************************************
   // ch5-button-list
   // ***************************************
 
-  /// Applies padding to the button list container
+  /// Applies padding to the button list container  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 5px
   --theme-ch5-button-list-padding: 5px;
 
-  /// Button List container width
+  /// Button List container width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 100px
   --theme-ch5-button-list-button-container-width: 100px;
 
-  /// Button List container height
+  /// Button List container height  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 58px
   --theme-ch5-button-list-button-container-height: 58px;
 
-  /// Applies padding for the container of ch5-button in ch5-button-list
+  /// Applies padding for the container of ch5-button in ch5-button-list  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 5px
   --theme-ch5-button-list-button-container-padding: 5px;
 
   // ***************************************
   // ch5-color-chip
   // ***************************************
 
-  /// Width of the color-chip
+  /// Width of the color-chip  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 40px
   --theme-ch5-color-chip--height: 40px;
 
-  /// Width of the color-chip
+  /// Width of the color-chip  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 40px
   --theme-ch5-color-chip--width: 40px;
 
-  /// Initial background color for color-chip
+  /// Initial background color for color-chip  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-color-chip--background-color: #000;
 
   // ***************************************
   // ch5-color-picker
   // ***************************************
 
-  /// Height for color picker
+  /// Height for color picker  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 240px
   --theme-ch5-color-picker--height: 240px;
 
-  /// Width for color picker
+  /// Width for color picker  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 240px
   --theme-ch5-color-picker--width: 240px;
 
   // ***************************************
   // ch5-date-time
   // ***************************************
 
-  /// Font size
+  /// Font size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 14px
   --theme-ch5-datetime-font-size: 14px;
 
-  /// Datetime height
+  /// Datetime height  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 35px
   --theme-ch5-datetime-height: 35px;
 
-  /// Datetime width
+  /// Datetime width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 200px
   --theme-ch5-datetime-width: 200px;
 
-  /// Background color
+  /// Background color  /// type: string 
+  /// values: large, solid, center 
+  /// example: transparent
   --theme-ch5-datetime-background-color: transparent;
 
   // ***************************************
   // ch5-dpad
   // ***************************************
 
-  /// Set the height and width of dpad for regular size
+  /// Set the height and width of dpad for regular size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 150px
   --theme-ch5-dpad-regular-dimension: 150px;
 
-  /// Set the height and width of dpad for x-small size
+  /// Set the height and width of dpad for x-small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 100px
   --theme-ch5-dpad-x-small-dimension: 100px;
 
-  /// Set the height and width of dpad for small size
+  /// Set the height and width of dpad for small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 130px
   --theme-ch5-dpad-small-dimension: 130px;
 
-  /// Set the height and width of dpad for large size
+  /// Set the height and width of dpad for large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 180px
   --theme-ch5-dpad-large-dimension: 180px;
 
-  /// Set the height and width of dpad for x-large size
+  /// Set the height and width of dpad for x-large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 200px
   --theme-ch5-dpad-x-large-dimension: 200px;
 
-  /// Set the border radius for 'plus' shape regular size
+  /// Set the border radius for 'plus' shape regular size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
   --theme-ch5-dpad-regular-edge-radius: 10px;
 
-  /// Set the border radius for 'plus' shape x-small size
+  /// Set the border radius for 'plus' shape x-small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 6px
   --theme-ch5-dpad-x-small-edge-radius: 6px;
 
-  /// Set the border radius for 'plus' shape small size
+  /// Set the border radius for 'plus' shape small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
   --theme-ch5-dpad-small-edge-radius: 10px;
 
-  /// Set the border radius for 'plus' shape large size
+  /// Set the border radius for 'plus' shape large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
   --theme-ch5-dpad-large-edge-radius: 10px;
 
-  /// Set the border radius for 'plus' shape x-large size
+  /// Set the border radius for 'plus' shape x-large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
   --theme-ch5-dpad-x-large-edge-radius: 10px;
 
-  /// Set the label font size
+  /// Set the label font size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1.5rem
   --theme-ch5-dpad-label-font-size: 1.5rem;
 
-  /// Set the icon font size for x-small size
+  /// Set the icon font size for x-small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1.3rem
   --theme-ch5-dpad-icon-font-size-x-small: 1.3rem;
 
-  /// Set the icon font size for small size
+  /// Set the icon font size for small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1.8rem
   --theme-ch5-dpad-icon-font-size-small: 1.8rem;
 
-  /// Set the icon font size for regular size
+  /// Set the icon font size for regular size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 2rem
   --theme-ch5-dpad-icon-font-size-regular: 2rem;
 
-  /// Set the icon font size for large size
+  /// Set the icon font size for large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 2.2rem
   --theme-ch5-dpad-icon-font-size-large: 2.2rem;
 
-  /// Set the icon font size for x-large size
+  /// Set the icon font size for x-large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 2.4rem
   --theme-ch5-dpad-icon-font-size-x-large: 2.4rem;
 
   // ***************************************
   // ch5-image
   // ***************************************
 
-  /// Sets object fit property
+  /// Sets object fit property  /// type: string 
+  /// values: large, solid, center 
+  /// example: contain
   --theme-ch5-image-object-fit: contain;
 
   // ***************************************
   // ch5-keypad
   // ***************************************
 
-  /// Keypad container width for x-small size
+  /// Keypad container width for x-small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 210px
   --theme-ch5-keypad-x-small-container-width: 210px;
 
-  /// Keypad font-size-major for x-small size
+  /// Keypad font-size-major for x-small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1.8rem
   --theme-ch5-keypad-x-small-font-size-major: 1.8rem;
 
-  /// Keypad font-size-minor for x-small size
+  /// Keypad font-size-minor for x-small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0.65rem
   --theme-ch5-keypad-x-small-font-size-minor: 0.65rem;
 
-  /// Keypad container width for small size
+  /// Keypad container width for small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 249px
   --theme-ch5-keypad-small-container-width: 249px;
 
-  /// Keypad font-size-major for small size
+  /// Keypad font-size-major for small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 2rem
   --theme-ch5-keypad-small-font-size-major: 2rem;
 
-  /// Keypad font-size-minor for small size
+  /// Keypad font-size-minor for small size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0.75rem
   --theme-ch5-keypad-small-font-size-minor: 0.75rem;
 
-  /// Keypad container width for regular size
+  /// Keypad container width for regular size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 267px
   --theme-ch5-keypad-regular-container-width: 267px;
 
-  /// Keypad font-size-major for regular size
+  /// Keypad font-size-major for regular size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 2.4rem
   --theme-ch5-keypad-regular-font-size-major: 2.4rem;
 
-  /// Keypad font-size-minor for regular size
+  /// Keypad font-size-minor for regular size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0.85rem
   --theme-ch5-keypad-regular-font-size-minor: 0.85rem;
 
-  /// Keypad container width for large size
+  /// Keypad container width for large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 294px
   --theme-ch5-keypad-large-container-width: 294px;
 
-  /// Keypad font-size-major for large size
+  /// Keypad font-size-major for large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 2.8rem
   --theme-ch5-keypad-large-font-size-major: 2.8rem;
 
-  /// Keypad font-size-minor for large size
+  /// Keypad font-size-minor for large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0.95rem
   --theme-ch5-keypad-large-font-size-minor: 0.95rem;
 
-  /// Keypad container width for x-large size
+  /// Keypad container width for x-large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 312px
   --theme-ch5-keypad-x-large-container-width: 312px;
 
-  /// Keypad font-size-major for x-large size
+  /// Keypad font-size-major for x-large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 3rem
   --theme-ch5-keypad-x-large-font-size-major: 3rem;
 
-  /// Keypad font-size-minor for x-large size
+  /// Keypad font-size-minor for x-large size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1.05rem
   --theme-ch5-keypad-x-large-font-size-minor: 1.05rem;
 
   // ***************************************
   // ch5-overlay-panel
   // ***************************************
 
-  /// The color of the icon at the top of the overlay panel
+  /// The color of the icon at the top of the overlay panel  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-overlay-default-close-icon-color: #000;
 
-  /// The color of the icon at the top of the overlay panel when it is hovered
+  /// The color of the icon at the top of the overlay panel when it is hovered  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-overlay-default-close-icon-color-hover: #000;
 
-  /// The background color of the mask element
+  /// The background color of the mask element  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: rgba(150, 150, 150, 0.3)
   --theme-ch5-overlay-default-mask-bg-color: rgba(150, 150, 150, 0.3);
 
-  /// The background color of the icon at the top of the overlay panel
+  /// The background color of the icon at the top of the overlay panel  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-overlay-panel-close-icon-background-color: #{$white};
 
-  /// The background color of the overlay panel
+  /// The background color of the overlay panel  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-overlay-panel-background-color: #{$white};
 
-  /// The border color of the overlay panel
+  /// The border color of the overlay panel  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-ch5-overlay-panel-border-color: #000000;
 
-  /// The text color of the overlay panel
+  /// The text color of the overlay panel  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-ch5-overlay-panel-text-color: #000000;
 
-  /// The font color for the content of the overlay panel
+  /// The font color for the content of the overlay panel  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-ch5-overlay-panel-contents-font-color: #000000;
 
-  /// The border width of the overlay panel
+  /// The border width of the overlay panel  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-overlay-panel-border-width: 1px;
 
-  /// The border style of the overlay panel
+  /// The border style of the overlay panel  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-overlay-panel-border-style: solid;
 
-  /// The border radius of the overlay panel
+  /// The border radius of the overlay panel  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 6px
   --theme-ch5-overlay-panel-border-radius: 6px;
 
-  /// Set padding for the overlay panel
+  /// Set padding for the overlay panel  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1.25em
   --theme-ch5-overlay-panel-padding: 1.25em;
 
-  /// The margin of the icon at the top of the overlay panel
+  /// The margin of the icon at the top of the overlay panel  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0 5px
   --theme-ch5-overlay-panel-close-icon-margin: 0 5px;
 
-  /// The padding of the icon at the top of the overlay panel
+  /// The padding of the icon at the top of the overlay panel  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0 5px 5px
   --theme-ch5-overlay-panel-close-icon-padding: 0 5px 5px;
 
-  /// The width of the icon at the top of the overlay panel
+  /// The width of the icon at the top of the overlay panel  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 20px
   --theme-ch5-overlay-panel-close-icon-width: 20px;
 
-  /// The font size of the icon at the top of the overlay panel
+  /// The font size of the icon at the top of the overlay panel  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 24px
   --theme-ch5-overlay-default-close-icon-font-size: 24px;
 
-  /// The padding for the content of the overlay panel
+  /// The padding for the content of the overlay panel  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 20px
   --theme-ch5-overlay-panel-contents-padding: 20px;
 
-  /// The font size for the content of the overlay panel
+  /// The font size for the content of the overlay panel  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 18px
   --theme-ch5-overlay-panel-contents-font-size: 18px;
 
-  /// overlay panel z-index
+  /// overlay panel z-index  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 10000
   --theme-ch5-overlay-panel-z-index: 10000;
 
   // ***************************************
   // ch5-segmented-gauge
   // ***************************************
 
-  /// Led style gauge style height
+  /// Led style gauge style height  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 20px
   --theme-ch5-segmented-gauge-led-style-height: 20px;
 
-  /// Led style gauge style width
+  /// Led style gauge style width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 20px
   --theme-ch5-segmented-gauge-led-style-width: 20px;
 
-  /// Margin for segmented gauge children
+  /// Margin for segmented gauge children  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 2px
   --theme-ch5-segmented-gauge-segment-margin: 2px;
 
-  /// Led style border radius
+  /// Led style border radius  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 50%
   --theme-ch5-segmented-gauge-led-style-border-radius: 50%;
 
-  /// State graphic green
+  /// State graphic green  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #22c55e
   --theme-ch5-segmented-gauge-state-graphic-green: #22c55e;
 
-  /// State graphic inactive
+  /// State graphic inactive  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #909090
   --theme-ch5-segmented-gauge-state-graphic-inactive: #909090;
 
-  /// State graphic yellow
+  /// State graphic yellow  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #eab308
   --theme-ch5-segmented-gauge-state-graphic-yellow: #eab308;
 
-  /// State graphic green
+  /// State graphic green  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ef4444
   --theme-ch5-segmented-gauge-state-graphic-red: #ef4444;
 
-  /// State graphic green
+  /// State graphic green  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #3b82f6
   --theme-ch5-segmented-gauge-state-graphic-blue: #3b82f6;
 
-  /// State graphic green
+  /// State graphic green  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #f97316
   --theme-ch5-segmented-gauge-state-graphic-orange: #f97316;
 
-  /// State graphic green
+  /// State graphic green  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #f8fafc
   --theme-ch5-segmented-gauge-state-graphic-white: #f8fafc;
 
-  /// Segmented gauge hidden segment
+  /// Segmented gauge hidden segment  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 4px
   --theme-ch5-segmented-gauge-hidden-segment: 4px;
 
-  /// Segmented gauge hidden margin
+  /// Segmented gauge hidden margin  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0px
   --theme-ch5-segmented-gauge-hidden-margin: 0px;
 
   // ***************************************
   // ch5-select
   // ***************************************
 
-  /// Component border color
+  /// Component border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-select-border-color: #000;
 
-  /// Component main font color
+  /// Component main font color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-select-font-color: #000;
 
-  /// Selected item background color
+  /// Selected item background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #0000ff
   --theme-ch5-select-panel-item-selected-background-color: #0000ff;
 
-  /// Item border color
+  /// Item border color  /// type: string 
+  /// values: large, solid, center 
+  /// example: transparent
   --theme-ch5-select-panel-item-border-color: transparent;
 
-  /// Item main text color
+  /// Item main text color  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: var(--theme-colors-warning-background-color)
   --theme-ch5-select-panel-item-color: var(--theme-colors-warning-background-color);
 
-  /// Item background color
+  /// Item background color  /// type: string 
+  /// values: large, solid, center 
+  /// example: transparent
   --theme-ch5-select-panel-item-background-color: transparent;
 
-  /// Item background color on mouse over
+  /// Item background color on mouse over  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #f8f9fa
   --theme-ch5-select-panel-item-hover-background-color: #f8f9fa;
 
-  /// Select panel background color
+  /// Select panel background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-select-panel-items-background-color: #{$white};
 
-  /// Top line content padding
+  /// Top line content padding  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 4px
   --theme-ch5-select-padding: 4px;
 
-  /// Component border width
+  /// Component border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-select-border-width: 1px;
 
-  /// Component border radius
+  /// Component border radius  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 2px
   --theme-ch5-select-border-radius: 2px;
 
-  /// Combo trigger button margin
+  /// Combo trigger button margin  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 0
   --theme-ch5-select-combo-trigger-margin: 0;
 
-  /// Combo trigger button width
+  /// Combo trigger button width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 24px
   --theme-ch5-select-combo-trigger-width: 24px;
 
-  /// Combo trigger button height
+  /// Combo trigger button height  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 24px
   --theme-ch5-select-combo-trigger-height: 24px;
 
-  /// Top line width
+  /// Top line width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: calc(100% - 40px)
   --theme-ch5-select-item-selected-width: calc(100% - 40px);
 
-  /// Item border width
+  /// Item border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-select-panel-item-border-width: 1px;
 
-  /// Item padding
+  /// Item padding  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 8px
   --theme-ch5-select-panel-item-padding: 8px;
 
-  /// Select panel shadow
+  /// Select panel shadow  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
   --theme-ch5-select-panel-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 
-  /// Select panel z-index
+  /// Select panel z-index  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 10000
   --theme-ch5-select-panel-z-index: 10000;
 
   // ***************************************
   // ch5-signal-level-gauge
   // ***************************************
 
-  /// Height small
+  /// Height small  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 24px
   --theme-ch5-signal-level-gauge-small-height: 24px;
 
-  /// Width small
+  /// Width small  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 36px
   --theme-ch5-signal-level-gauge-small-width: 36px;
 
-  /// Height regular
+  /// Height regular  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 35px
   --theme-ch5-signal-level-gauge-regular-height: 35px;
 
-  /// Width regular
+  /// Width regular  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 45px
   --theme-ch5-signal-level-gauge-regular-width: 45px;
 
-  /// Height large
+  /// Height large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 60px
   --theme-ch5-signal-level-gauge-large-height: 60px;
 
-  /// Width large
+  /// Width large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 90px
   --theme-ch5-signal-level-gauge-large-width: 90px;
 
-  /// Height x-large
+  /// Height x-large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 96px
   --theme-ch5-signal-level-gauge-x-large-height: 96px;
 
-  /// Width x-large
+  /// Width x-large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 180px
   --theme-ch5-signal-level-gauge-x-large-width: 180px;
 
-  /// Bar color
+  /// Bar color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #808080
   --theme-ch5-signal-level-gauge-bar-color: #808080;
 
-  /// Selected bar color
+  /// Selected bar color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #67bef0
   --theme-ch5-signal-level-gauge-selected-bar-color: #67bef0;
 
   // ***************************************
   // ch5-spinner
   // ***************************************
 
-  /// The text color of the active item
+  /// The text color of the active item  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-spinner-active-item-color: #fff;
 
-  /// The text color of the item.
+  /// The text color of the item.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #939393
   --theme-ch5-spinner-item-color: #939393;
 
-  /// The background color for the overlay of the spinner.
+  /// The background color for the overlay of the spinner.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-spinner-overlay-background-color: #000;
 
-  /// The box shadow color of the spinner
+  /// The box shadow color of the spinner  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: rgba(0, 0, 0, 0.3)
   --theme-ch5-spinner-highlight-box-shadow-color: rgba(0, 0, 0, 0.3);
 
-  /// The border color of the spinner
+  /// The border color of the spinner  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ff0000
   --theme-ch5-spinner-highlight-border-color: #ff0000;
 
-  /// Spinner background color
+  /// Spinner background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #0000ff
   --theme-ch5-spinner-background-color: #0000ff;
 
-  /// Spinner background gradient before
+  /// Spinner background gradient before  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05))
   --theme-ch5-spinner-background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05));
 
-  /// Spinner background gradient after
+  /// Spinner background gradient after  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%)
   --theme-ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%);
 
-  /// Spinner border width
+  /// Spinner border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-spinner-border-width: 1px;
 
-  /// Spinner border style
+  /// Spinner border style  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-spinner-border-style: solid;
 
-  /// The default font size of the spinner
+  /// The default font size of the spinner  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 22px
   --theme-ch5-spinner-font-size: 22px;
 
-  /// The padding of the icon within the slider item
+  /// The padding of the icon within the slider item  /// type: string 
+  /// values: large, solid, center 
+  /// example: 0 0
   --theme-ch5-spinner-icon-padding: 0 0;
 
-  /// The margin of the icon within the slider item
+  /// The margin of the icon within the slider item  /// type: string 
+  /// values: large, solid, center 
+  /// example: 0 0
   --theme-ch5-spinner-icon-margin: 0 0;
 
-  /// The opacity for the overlay of the spinner
+  /// The opacity for the overlay of the spinner  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 0
   --theme-ch5-spinner-overlay-opacity: 0;
 
-  /// Spinner wrapper z-index
+  /// Spinner wrapper z-index  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 9999
   --theme-ch5-spinner-wrapper-z-index: 9999;
 
-  /// Spinner overlay z-index
+  /// Spinner overlay z-index  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 999
   --theme-ch5-spinner-overlay-z-index: 999;
 
   // ***************************************
   // ch5-subpage-reference-list
   // ***************************************
 
-  /// Subpage-reference container padding
+  /// Subpage-reference container padding  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 5px
   --theme-ch5-subpage-reference-list-container-padding: 5px;
 
   // ch5-tab-button
-  /// Button container width
+  /// Button container width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 5px
   --theme-ch5-tab-button-button-container-width: 5px;
 
-  /// Button container height
+  /// Button container height  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 5px
   --theme-ch5-tab-button-button-container-height: 5px;
 
   // ***************************************
   // ch5-text
   // ***************************************
 
-  /// Text min width
+  /// Text min width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 64px
   --theme-ch5-text-min-width: 64px;
 
-  /// Text min height
+  /// Text min height  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 44px
   --theme-ch5-text-min-height: 44px;
 
-  /// Text width
+  /// Text width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 150px
   --theme-ch5-text-width: 150px;
 
-  /// Text height
+  /// Text height  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 48px
   --theme-ch5-text-height: 48px;
 
-  /// Text padding
+  /// Text padding  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
   --theme-ch5-text-padding: 10px;
 
   // ***************************************
   // ch5-textinput
   // ***************************************
 
-  /// The text color of the textinput.
+  /// The text color of the textinput.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #4a4a4a
   --theme-ch5-textinput-text-color: #4a4a4a;
 
-  /// Set the color of text for the textinput
+  /// Set the color of text for the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: var(--theme-ch5-textinput-text-color)
   --theme-ch5-textinput-input-text-color: var(--theme-ch5-textinput-text-color);
 
-  /// The color of the icon within the textinput
+  /// The color of the icon within the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: var(--theme-colors-success-background-color)
   --theme-ch5-textinput-icon-text-color: var(--theme-colors-success-background-color);
 
-  /// The color for the label of the textinput
+  /// The color for the label of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: var(--theme-ch5-textinput-text-color)
   --theme-ch5-textinput-label-text-color: var(--theme-ch5-textinput-text-color);
 
-  /// Base border color
+  /// Base border color  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: var(--theme-colors-default-background-color)
   --theme-ch5-textinput-border-color: var(--theme-colors-default-background-color);
 
-  /// The color for the border of the textinput
+  /// The color for the border of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: var(--theme-ch5-textinput-border-color)
   --theme-ch5-textinput-input-border-color: var(--theme-ch5-textinput-border-color);
 
-  /// Background color of textinput input field
+  /// Background color of textinput input field  /// type: string 
+  /// values: large, solid, center 
+  /// example: transparent
   --theme-ch5-textinput-input-background-color: transparent;
 
-  /// The border radius for the textinput
+  /// The border radius for the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 5px
   --theme-ch5-textinput-input-border-radius: 5px;
 
-  /// Set the textinput border's width
+  /// Set the textinput border's width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 2px
   --theme-ch5-textinput-input-border-width: 2px;
 
-  /// Set the textinput border's style
+  /// Set the textinput border's style  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-textinput-input-border-style: solid;
 
-  /// Set the font size for regular size of the textinput
+  /// Set the font size for regular size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 16px
   --theme-ch5-textinput-regular-font-size: 16px;
 
-  /// Set padding for regular size of the textinput
+  /// Set padding for regular size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 15px 20px
   --theme-ch5-textinput-input-regular-padding: 15px 20px;
 
-  /// Set the width for regular size of the textinput
+  /// Set the width for regular size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 400px
   --theme-ch5-textinput-size-regular-width: 400px;
 
-  /// Set margin of icon for regular size of the textinput
+  /// Set margin of icon for regular size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 16px 16px
   --theme-ch5-textinput-icon-regular-margin: 16px 16px;
 
-  /// Set the font size for x-small size of the textinput
+  /// Set the font size for x-small size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 12px
   --theme-ch5-textinput-x-small-font-size: 12px;
 
-  /// Set padding for x-small size of the textinput
+  /// Set padding for x-small size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px 10px
   --theme-ch5-textinput-input-x-small-padding: 10px 10px;
 
-  /// Set the width for x-small size of the textinput
+  /// Set the width for x-small size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 200px
   --theme-ch5-textinput-size-x-small-width: 200px;
 
-  /// Set margin of icon for x-small size of the textinput
+  /// Set margin of icon for x-small size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 12px 12px
   --theme-ch5-textinput-icon-x-small-margin: 12px 12px;
 
-  /// Set padding for small size of the textinput
+  /// Set padding for small size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 15px 15px
   --theme-ch5-textinput-input-small-padding: 15px 15px;
 
-  /// Set the font size for small size of the textinput
+  /// Set the font size for small size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 14px
   --theme-ch5-textinput-small-font-size: 14px;
 
-  /// Set the width for small size of the textinput
+  /// Set the width for small size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 250px
   --theme-ch5-textinput-size-small-width: 250px;
 
-  /// Set margin of icon for small size of the textinput
+  /// Set margin of icon for small size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 14px 14px
   --theme-ch5-textinput-icon-small-margin: 14px 14px;
 
-  /// Set padding for large size of the textinput
+  /// Set padding for large size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 15px 20px
   --theme-ch5-textinput-input-large-padding: 15px 20px;
 
-  /// Set the font size for large size of the textinput
+  /// Set the font size for large size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 18px
   --theme-ch5-textinput-large-font-size: 18px;
 
-  /// Set the width for large size of the textinput
+  /// Set the width for large size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 500px
   --theme-ch5-textinput-size-large-width: 500px;
 
-  /// Set margin of icon for large size of the textinput
+  /// Set margin of icon for large size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 18px 18px
   --theme-ch5-textinput-icon-large-margin: 18px 18px;
 
-  /// Set padding for x-large size of the textinput
+  /// Set padding for x-large size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 15px 20px
   --theme-ch5-textinput-input-x-large-padding: 15px 20px;
 
-  /// Set the font size for x-large size of the textinput
+  /// Set the font size for x-large size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 22px
   --theme-ch5-textinput-x-large-font-size: 22px;
 
-  /// Set margin of icon for x-large size of the textinput
+  /// Set margin of icon for x-large size of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 22px 22px
   --theme-ch5-textinput-icon-x-large-margin: 22px 22px;
 
-  /// Set minimum height for size - x-small of the textinput
+  /// Set minimum height for size - x-small of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 40px
   --theme-ch5-textinput-size-x-small-height: 40px;
 
-  /// Set minimum height for size - small of the textinput
+  /// Set minimum height for size - small of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 48px
   --theme-ch5-textinput-size-small-height: 48px;
 
-  /// Set minimum height for size - regular of the textinput
+  /// Set minimum height for size - regular of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 52px
   --theme-ch5-textinput-size-regular-height: 52px;
 
-  /// Set minimum height for size - large of the textinput
+  /// Set minimum height for size - large of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 56px
   --theme-ch5-textinput-size-large-height: 56px;
 
-  /// Set minimum height for size - x-large of the textinput
+  /// Set minimum height for size - x-large of the textinput  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 60px
   --theme-ch5-textinput-size-x-large-height: 60px;
 
   // ***************************************
   // ch5-toggle
   // ***************************************
 
-  /// The background color of the handle when value is true(checked).
+  /// The background color of the handle when value is true(checked).  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #0000ff
   --theme-ch5-toggle-handle-checked-color: #0000ff;
 
-  /// The text color of the label
+  /// The text color of the label  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-toggle-label-font-color: #000;
 
-  /// The text color of the on|off label
+  /// The text color of the on|off label  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-toggle-text-font-color: #000;
 
-  /// The color of the on|off icon
+  /// The color of the on|off icon  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-toggle-icon-font-color: #{$white};
 
-  /// The background color of the handle when shape="circle"
+  /// The background color of the handle when shape="circle"  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #939393
   --theme-ch5-toggle-handle-circle-background: #939393;
 
-  /// The text color of the on label when shape="circle"
+  /// The text color of the on label when shape="circle"  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-toggle-circle-label-on-color: #{$white};
 
-  /// The text color of the off label when shape="circle"
+  /// The text color of the off label when shape="circle"  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-toggle-circle-label-off-color: #000;
 
-  /// The background color of the knob when shape="circle"
+  /// The background color of the knob when shape="circle"  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-toggle-circle-knob-color: #{$white};
 
-  /// The background color of the handle when shape="rectangle"
+  /// The background color of the handle when shape="rectangle"  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #464747
   --theme-ch5-toggle-handle-rectangle-background: #464747;
 
-  /// The text color of the on label when shape="rectangle"
+  /// The text color of the on label when shape="rectangle"  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-toggle-rectangle-label-on-color: #{$white};
 
-  /// The text color of the off label when shape="rectangle"
+  /// The text color of the off label when shape="rectangle"  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-toggle-rectangle-label-off-color: #{$white};
 
-  /// The background color of the knob when shape="rectangle"
+  /// The background color of the knob when shape="rectangle"  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #888
   --theme-ch5-toggle-rectangle-knob-color: #888;
 
-  /// label margin
+  /// label margin  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
   --theme-ch5-toggle-label-margin: 10px;
 
-  /// font weight applied on the on|off icon
+  /// font weight applied on the on|off icon  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 900
   --theme-ch5-toggle-icon-font-weight: 900;
 
-  /// Handle margin when the shape="circle"
+  /// Handle margin when the shape="circle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
   --theme-ch5-toggle-handle-circle-margin: 10px;
 
-  /// Handle margin when the shape="rectangle"
+  /// Handle margin when the shape="rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
   --theme-ch5-toggle-handle-rectangle-margin: 10px;
 
-  /// Container z-index
+  /// Container z-index  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 3
   --theme-ch5-toggle-container-z-index: 3;
 
-  /// Toggle knob z-index
+  /// Toggle knob z-index  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 2
   --theme-ch5-toggle-knob-z-index: 2;
 
-  /// Toggle z-index
+  /// Toggle z-index  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 1
   --theme-ch5-toggle-z-index: 1;
 
   // ***************************************
   // ch5-triggerview
   // ***************************************
 
-  /// Triggerview minimum height in px
+  /// Triggerview minimum height in px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0px
   --theme-ch5-triggerview-slide-min-height: 0px;
 
-  /// Triggerview maximum height in px
+  /// Triggerview maximum height in px  /// type: string 
+  /// values: large, solid, center 
+  /// example: none
   --theme-ch5-triggerview-slide-max-height: none;
 
-  /// Duration of changing from one view to another.
+  /// Duration of changing from one view to another.  /// type: string 
+  /// values: large, solid, center 
+  /// example: 0.6s
   --theme-ch5-triggerview-transition-duration: 0.6s;
 
-  /// Transition effect(describe animation on content of the child view)
+  /// Transition effect(describe animation on content of the child view)  /// type: string 
+  /// values: large, solid, center 
+  /// example: ease-out
   --theme-ch5-triggerview-transition-timing-function: ease-out;
 
   // Do not remove below even if search result is 1
-  /// gap between views in px
+  /// gap between views in px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 16px
   --theme-ch5-triggerview-gap: 16px;
 
   // ***************************************
   // ch5-modal-dialog
   // ***************************************
 
-  /// The color of the icon at the top of the modal
+  /// The color of the icon at the top of the modal  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-modal-close-icon-color: #000;
 
-  /// The color of the icon at the top of the modal when it is hovered
+  /// The color of the icon at the top of the modal when it is hovered  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #0000ff
   --theme-ch5-modal-close-icon-color-hover: #0000ff;
 
-  /// The background color of the mask element
+  /// The background color of the mask element  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: rgba(150, 150, 150, 0.3)
   --theme-ch5-modal-mask-bg-color: rgba(150, 150, 150, 0.3);
 
-  /// The background color of the icon at the top of the modal
+  /// The background color of the icon at the top of the modal  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-modal-close-icon-background-color: #{$white};
 
-  /// The background color of the modal
+  /// The background color of the modal  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-modal-background-color: #{$white};
 
-  /// The text color of the modal
+  /// The text color of the modal  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-modal-text-color: #000;
 
-  /// The font color of the modal content
+  /// The font color of the modal content  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-modal-contents-font-color: #000;
 
-  /// The border color of the modal
+  /// The border color of the modal  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #939393
   --theme-ch5-modal-border-color: #939393;
 
-  /// The text color for the prompt text of the modal
+  /// The text color for the prompt text of the modal  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #4a4a4a
   --theme-ch5-modal-prompt-text-font-color: #4a4a4a;
 
-  /// The border width of the modal
+  /// The border width of the modal  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-modal-border-width: 1px;
 
-  /// The border style of the modal
+  /// The border style of the modal  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-modal-border-style: solid;
 
-  /// The border radius of the modal
+  /// The border radius of the modal  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 6px
   --theme-ch5-modal-border-radius: 6px;
 
-  /// Set padding for the modal
+  /// Set padding for the modal  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1.25em
   --theme-ch5-modal-padding: 1.25em;
 
-  /// The margin of the icon at the top of the modal.
+  /// The margin of the icon at the top of the modal.  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0 5px
   --theme-ch5-modal-close-icon-margin: 0 5px;
 
-  /// The padding of the icon at the top of the modal.
+  /// The padding of the icon at the top of the modal.  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0 5px 5px
   --theme-ch5-modal-close-icon-padding: 0 5px 5px;
 
-  /// The width of the icon at the top of the modal.
+  /// The width of the icon at the top of the modal.  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 20px
   --theme-ch5-modal-close-icon-width: 20px;
 
-  /// The default font size of the icon at the top of the modal.
+  /// The default font size of the icon at the top of the modal.  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 24px
   --theme-ch5-modal-default-close-icon-font-size: 24px;
 
-  /// The font size for the title of the modal
+  /// The font size for the title of the modal  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1.3em
   --theme-ch5-modal-title-font-size: 1.3em;
 
-  /// The padding of the modal's content
+  /// The padding of the modal's content  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
   --theme-ch5-modal-contents-padding: 10px;
 
-  /// The font size for the content of the modal.
+  /// The font size for the content of the modal.  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 18px
   --theme-ch5-modal-contents-font-size: 18px;
 
-  /// The padding for the prompt of the modal
+  /// The padding for the prompt of the modal  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 30px 0 30px 0
   --theme-ch5-modal-prompt-padding: 30px 0 30px 0;
 
-  /// The right margin for the prompt icon of the modal
+  /// The right margin for the prompt icon of the modal  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
   --theme-ch5-modal-prompt-icon-margin-right: 10px;
 
-  /// The font size for the prompt text of the modal
+  /// The font size for the prompt text of the modal  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 16px
   --theme-ch5-modal-prompt-text-font-size: 16px;
 
-  /// modal dialog z-index
+  /// modal dialog z-index  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 10001
   --theme-ch5-modal-z-index: 10001;
 
-  /// mask z-index
+  /// mask z-index  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 10000
   --theme-ch5-modal-mask-z-index: 10000;
 
   // ***************************************
   // ch5-slider
   // ***************************************
 
-  /// Slider connect background
+  /// Slider connect background  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #0000ff
   --theme-ch5-slider-connect-bg: #0000ff;
 
-  /// Slider background percentage
+  /// Slider background percentage  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 30%
   --theme-ch5-slider-background-lighten-percent: 30%;
 
-  /// Slider target background
+  /// Slider target background  /// type: string 
+  /// values: large, solid, center 
+  /// example: transparent
   --theme-ch5-slider-target-bg: transparent;
 
-  /// Slider target border color
+  /// Slider target border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-slider-target-border-color: #000;
 
-  /// Slider handle background
+  /// Slider handle background  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-slider-handle-bg: #fff;
 
-  /// Slider handler border color
+  /// Slider handler border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-slider-handle-border-color: #000;
 
-  /// Slider pips color
+  /// Slider pips color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-slider-pips-color: #000;
 
-  /// Slider target size
+  /// Slider target size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 18px
   --theme-ch5-slider-height: 18px;
 
-  /// Slider border width
+  /// Slider border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-slider-target-border-width: 1px;
 
-  /// Slider handle border width
+  /// Slider handle border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px
   --theme-ch5-slider-handle-border-width: 1px;
 
-  /// Slider border style
+  /// Slider border style  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-slider-target-border-style: solid;
 
-  /// Slider handle border style
+  /// Slider handle border style  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid
   --theme-ch5-slider-handle-border-style: solid;
 
-  /// x-small width in px of the slider
+  /// x-small width in px of the slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 200px
   --theme-ch5-slider-width-x-small: 200px;
 
-  /// Small width in px of the slider
+  /// Small width in px of the slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 250px
   --theme-ch5-slider-width-small: 250px;
 
-  /// regular width in px of the slider
+  /// regular width in px of the slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 300px
   --theme-ch5-slider-width-regular: 300px;
 
-  /// large width in px of the slider
+  /// large width in px of the slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 400px
   --theme-ch5-slider-width-large: 400px;
 
-  /// x-large width in px of the slider
+  /// x-large width in px of the slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 500px
   --theme-ch5-slider-width-x-large: 500px;
 
   /* == Button sizes == */
 
-  /// x-small width in px of the button for advanced slider
+  /// x-small width in px of the button for advanced slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 24px
   --theme-ch5-slider-size-x-small-button-width: 24px;
 
-  /// x-small height in px of the button for advanced slider
+  /// x-small height in px of the button for advanced slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 26px
   --theme-ch5-slider-size-x-small-button-height: 26px;
 
-  /// Small width in px of the button for advanced slider
+  /// Small width in px of the button for advanced slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 26px
   --theme-ch5-slider-size-small-button-width: 26px;
 
-  /// Small height in px of the button for advanced slider
+  /// Small height in px of the button for advanced slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 30px
   --theme-ch5-slider-size-small-button-height: 30px;
 
-  /// regular width in px of the button for advanced slider
+  /// regular width in px of the button for advanced slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 30px
   --theme-ch5-slider-size-regular-button-width: 30px;
 
-  /// regular height in px of the button for advanced slider
+  /// regular height in px of the button for advanced slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 36px
   --theme-ch5-slider-size-regular-button-height: 36px;
 
-  /// large width in px of the button for advanced slider
+  /// large width in px of the button for advanced slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 34px
   --theme-ch5-slider-size-large-button-width: 34px;
 
-  /// large height in px of the button for advanced slider
+  /// large height in px of the button for advanced slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 42px
   --theme-ch5-slider-size-large-button-height: 42px;
 
-  /// x-large width in px of the button for advanced slider
+  /// x-large width in px of the button for advanced slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 40px
   --theme-ch5-slider-size-x-large-button-width: 40px;
 
-  /// x-large height in px of the button for advanced slider
+  /// x-large height in px of the button for advanced slider  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 54px
   --theme-ch5-slider-size-x-large-button-height: 54px;
 
   /* == Handle sizes == */
@@ -1202,246 +1926,382 @@
   // rounded-rectangle
 
   // x-small
-  /// x-small width in px of the handle when handleShape="rounded-rectangle"
+  /// x-small width in px of the handle when handleShape="rounded-rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 26px
   --theme-ch5-slider-size-x-small-handle-width-rounded-rectangle: 26px;
 
-  /// x-small height in px of the handle when handleShape="rounded-rectangle"
+  /// x-small height in px of the handle when handleShape="rounded-rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 24px
   --theme-ch5-slider-size-x-small-handle-height-rounded-rectangle: 24px;
 
   // small
-  /// Small width in px of the handle when handleShape="rounded-rectangle"
+  /// Small width in px of the handle when handleShape="rounded-rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 30px
   --theme-ch5-slider-size-small-handle-width-rounded-rectangle: 30px;
 
-  /// Small height in px of the handle when handleShape="rounded-rectangle"
+  /// Small height in px of the handle when handleShape="rounded-rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 26px
   --theme-ch5-slider-size-small-handle-height-rounded-rectangle: 26px;
 
   // regular
-  /// regular width in px of the handle when handleShape="rounded-rectangle"
+  /// regular width in px of the handle when handleShape="rounded-rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 36px
   --theme-ch5-slider-size-regular-handle-width-rounded-rectangle: 36px;
 
-  /// regular height in px of the handle when handleShape="rounded-rectangle"
+  /// regular height in px of the handle when handleShape="rounded-rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 30px
   --theme-ch5-slider-size-regular-handle-height-rounded-rectangle: 30px;
 
   // large
-  /// large width in px of the handle when handleShape="rounded-rectangle"
+  /// large width in px of the handle when handleShape="rounded-rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 42px
   --theme-ch5-slider-size-large-handle-width-rounded-rectangle: 42px;
 
-  /// large height in px of the handle when handleShape="rounded-rectangle"
+  /// large height in px of the handle when handleShape="rounded-rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 34px
   --theme-ch5-slider-size-large-handle-height-rounded-rectangle: 34px;
 
   // x-large
-  /// x-large width in px of the handle when handleShape="rounded-rectangle"
+  /// x-large width in px of the handle when handleShape="rounded-rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 54px
   --theme-ch5-slider-size-x-large-handle-width-rounded-rectangle: 54px;
 
-  /// x-large height in px of the handle when handleShape="rounded-rectangle"
+  /// x-large height in px of the handle when handleShape="rounded-rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 40px
   --theme-ch5-slider-size-x-large-handle-height-rounded-rectangle: 40px;
 
   // rectangle
 
   // x-small
-  /// x-small width in px of the handle when handleShape="rectangle"
+  /// x-small width in px of the handle when handleShape="rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 26px
   --theme-ch5-slider-size-x-small-handle-width-rectangle: 26px;
 
-  /// x-small height in px of the handle when handleShape="rectangle"
+  /// x-small height in px of the handle when handleShape="rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 24px
   --theme-ch5-slider-size-x-small-handle-height-rectangle: 24px;
 
   // small
-  /// Small width in px of the handle when handleShape="rectangle"
+  /// Small width in px of the handle when handleShape="rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 30px
   --theme-ch5-slider-size-small-handle-width-rectangle: 30px;
 
-  /// Small height in px of the handle when handleShape="rectangle"
+  /// Small height in px of the handle when handleShape="rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 26px
   --theme-ch5-slider-size-small-handle-height-rectangle: 26px;
 
   // regular
-  /// regular width in px of the handle when handleShape="rectangle"
+  /// regular width in px of the handle when handleShape="rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 36px
   --theme-ch5-slider-size-regular-handle-width-rectangle: 36px;
 
-  /// regular height in px of the handle when handleShape="rectangle"
+  /// regular height in px of the handle when handleShape="rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 30px
   --theme-ch5-slider-size-regular-handle-height-rectangle: 30px;
 
   // large
-  /// large width in px of the handle when handleShape="rectangle"
+  /// large width in px of the handle when handleShape="rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 42px
   --theme-ch5-slider-size-large-handle-width-rectangle: 42px;
 
-  /// large height in px of the handle when handleShape="rectangle"
+  /// large height in px of the handle when handleShape="rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 34px
   --theme-ch5-slider-size-large-handle-height-rectangle: 34px;
 
   // x-large
-  /// x-large width in px of the handle when handleShape="rectangle"
+  /// x-large width in px of the handle when handleShape="rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 54px
   --theme-ch5-slider-size-x-large-handle-width-rectangle: 54px;
 
-  /// x-large height in px of the handle when handleShape="rectangle"
+  /// x-large height in px of the handle when handleShape="rectangle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 40px
   --theme-ch5-slider-size-x-large-handle-height-rectangle: 40px;
 
   // circle
 
   // x-small
-  /// x-small width in px of the handle when handleShape="circle"
+  /// x-small width in px of the handle when handleShape="circle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 26px
   --theme-ch5-slider-size-x-small-handle-width-circle: 26px;
 
   // small
-  /// Small width in px of the handle when handleShape="circle"
+  /// Small width in px of the handle when handleShape="circle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 30px
   --theme-ch5-slider-size-small-handle-width-circle: 30px;
 
   // regular
-  /// regular width in px of the handle when handleShape="circle"
+  /// regular width in px of the handle when handleShape="circle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 36px
   --theme-ch5-slider-size-regular-handle-width-circle: 36px;
 
   // large
-  /// large width in px of the handle when handleShape="circle"
+  /// large width in px of the handle when handleShape="circle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 42px
   --theme-ch5-slider-size-large-handle-width-circle: 42px;
 
   // x-large
-  /// x-large width in px of the handle when handleShape="circle"
+  /// x-large width in px of the handle when handleShape="circle"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 54px
   --theme-ch5-slider-size-x-large-handle-width-circle: 54px;
 
   // oval
 
   // x-small
-  /// x-small width in px of the handle when handleShape="oval"
+  /// x-small width in px of the handle when handleShape="oval"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 26px
   --theme-ch5-slider-size-x-small-handle-width-oval: 26px;
 
   // small
-  /// Small width in px of the handle when handleShape="oval"
+  /// Small width in px of the handle when handleShape="oval"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 30px
   --theme-ch5-slider-size-small-handle-width-oval: 30px;
 
   // regular
-  /// regular width in px of the handle when handleShape="oval"
+  /// regular width in px of the handle when handleShape="oval"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 36px
   --theme-ch5-slider-size-regular-handle-width-oval: 36px;
 
   // large
-  /// large width in px of the handle when handleShape="oval"
+  /// large width in px of the handle when handleShape="oval"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 42px
   --theme-ch5-slider-size-large-handle-width-oval: 42px;
 
   // x-large
-  /// x-large width in px of the handle when handleShape="oval"
+  /// x-large width in px of the handle when handleShape="oval"  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 54px
   --theme-ch5-slider-size-x-large-handle-width-oval: 54px;
 
   // Horizontal and Vertical
 
-  /// Horizontal-pips
+  /// Horizontal-pips  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 50px
   --theme-ch5-slider-horizontal-pips: 50px;
 
-  /// Vertical pips
+  /// Vertical pips  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 65px
   --theme-ch5-slider-vertical-pips: 65px;
 
-  /// Tooltip spacing vertical advanced
+  /// Tooltip spacing vertical advanced  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 60px
   --theme-ch5-slider-tooltip-on-spacing-vertical-advanced: 60px;
 
-  /// Tooltip spacing vertical normal
+  /// Tooltip spacing vertical normal  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 58px
   --theme-ch5-slider-tooltip-on-spacing-vertical-normal: 58px;
 
-  /// Tooltip spacing horizontal adanced
+  /// Tooltip spacing horizontal adanced  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 40px
   --theme-ch5-slider-tooltip-on-spacing-horizontal-advanced: 40px;
 
-  /// Tooltip spacing horizontal normal
+  /// Tooltip spacing horizontal normal  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 40px
   --theme-ch5-slider-tooltip-on-spacing-horizontal-normal: 40px;
 
-  /// Button content line height
+  /// Button content line height  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 1.2
   --theme-ch5-button-content-line-height: 1.2;
 
-  /// Button padding
+  /// Button padding  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0.25rem
   --theme-ch5-button-padding: 0.25rem;
 
   // ***************************************
   // ch5-list
   // ***************************************
 
-  /// Set the text color of list items.
+  /// Set the text color of list items.  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-list-item-color: #fff;
 
-  /// Set the background color of list items, configurable for each theme
+  /// Set the background color of list items, configurable for each theme  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #0000ff
   --theme-ch5-list-item-background-color: #0000ff;
 
-  /// Set the border color of list items
+  /// Set the border color of list items  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
   --theme-ch5-list-item-border-color: #fff;
 
-  /// Set the border style of list items, configurable for each theme
+  /// Set the border style of list items, configurable for each theme  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px solid transparent
   --theme-ch5-list-item-border: 1px solid transparent;
 
-  /// Set the padding of list items
+  /// Set the padding of list items  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
   --theme-ch5-list-item-padding: 10px;
 
   // ***************************************
   // ch5-video
   // ***************************************
 
-  /// Default video background color
+  /// Default video background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000
   --theme-ch5-video-background-color: #000;
 
-  /// Size xx-large for min width 651px
+  /// Size xx-large for min width 651px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 600px
   --theme-ch5-video-size-xx-large-min-w-651: 600px;
 
-  /// Size x-large for min width 651px
+  /// Size x-large for min width 651px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 560px
   --theme-ch5-video-size-x-large-min-w-651: 560px;
 
-  /// Size large for min width 651px
+  /// Size large for min width 651px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 520px
   --theme-ch5-video-size-large-min-w-651: 520px;
 
-  /// Size regular for min width 651px
+  /// Size regular for min width 651px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 480px
   --theme-ch5-video-size-regular-min-w-651: 480px;
 
-  /// Size small for min width 651px
+  /// Size small for min width 651px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 440px
   --theme-ch5-video-size-small-min-w-651: 440px;
 
-  /// Size x-small for min width 651px
+  /// Size x-small for min width 651px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 400px
   --theme-ch5-video-size-x-small-min-w-651: 400px;
 
-  /// Size xx-large for max width 650px
+  /// Size xx-large for max width 650px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 300px
   --theme-ch5-video-size-xx-large-max-w-650: 300px;
 
-  /// Size x-large max width 650px
+  /// Size x-large max width 650px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 280px
   --theme-ch5-video-size-x-large-max-w-650: 280px;
 
-  /// Size large max width 650px
+  /// Size large max width 650px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 260px
   --theme-ch5-video-size-large-max-w-650: 260px;
 
-  /// Size regular max width 650px
+  /// Size regular max width 650px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 240px
   --theme-ch5-video-size-regular-max-w-650: 240px;
 
-  /// Size small max width 650px
+  /// Size small max width 650px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 220px
   --theme-ch5-video-size-small-max-w-650: 220px;
 
-  /// Size x-small max width 650px
+  /// Size x-small max width 650px  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 200px
   --theme-ch5-video-size-x-small-max-w-650: 200px;
 
   // ***************************************
   // ch5-wifi-signal-level-gauge
   // ***************************************
 
-  /// Size Height small
+  /// Size Height small  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 24px
   --theme-ch5-wifi-signal-level-gauge-small-height: 24px;
 
-  /// Size Width small
+  /// Size Width small  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 36px
   --theme-ch5-wifi-signal-level-gauge-small-width: 36px;
 
-  /// Size Height regular
+  /// Size Height regular  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 36px
   --theme-ch5-wifi-signal-level-gauge-regular-height: 36px;
 
-  /// Size Width regular
+  /// Size Width regular  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 54px
   --theme-ch5-wifi-signal-level-gauge-regular-width: 54px;
 
-  /// Size Height large
+  /// Size Height large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 60px
   --theme-ch5-wifi-signal-level-gauge-large-height: 60px;
 
-  /// Size Width large
+  /// Size Width large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 90px
   --theme-ch5-wifi-signal-level-gauge-large-width: 90px;
 
-  /// Size Height x-large
+  /// Size Height x-large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 96px
   --theme-ch5-wifi-signal-level-gauge-x-large-height: 96px;
 
-  /// Size Width x-large
+  /// Size Width x-large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 144px
   --theme-ch5-wifi-signal-level-gauge-x-large-width: 144px;
 
-  /// gaugeStyle accents
+  /// gaugeStyle accents  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #87ceeb
   --theme-ch5-wifi-signal-level-gauge-style-accents: #87ceeb;
 
-  /// gaugeStyle light
+  /// gaugeStyle light  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
   --theme-ch5-wifi-signal-level-gauge-style-light: #ffffff;
 
-  /// gaugeStyle dark
+  /// gaugeStyle dark  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000000
   --theme-ch5-wifi-signal-level-gauge-style-dark: #000000;
 
-  /// Border color
+  /// Border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #939393
   --theme-ch5-wifi-signal-level-gauge-border-color: #939393;
 }

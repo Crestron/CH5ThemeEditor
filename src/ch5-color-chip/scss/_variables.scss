@@ -11,12 +11,21 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-color-chip {
-  /// Height of the color-chip
+  /// Height of the color-chip  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 40px 
+  /// related-theme-variable: --theme-ch5-color-chip--height
   --ch5-color-chip--height: var(--theme-ch5-color-chip--height);
 
-  /// Width of the color-chip
+  /// Width of the color-chip  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 40px 
+  /// related-theme-variable: --theme-ch5-color-chip--width
   --ch5-color-chip--width: var(--theme-ch5-color-chip--width);
 
-  /// Initial background color for color-chip
+  /// Initial background color for color-chip  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #000 
+  /// related-theme-variable: --theme-ch5-color-chip--background-color
   --ch5-color-chip--background-color: var(--theme-ch5-color-chip--background-color);
 }

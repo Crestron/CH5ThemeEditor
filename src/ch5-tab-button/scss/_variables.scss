@@ -11,9 +11,15 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-tab-button {
-  /// button container width
+  /// button container width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 5px 
+  /// related-theme-variable: --theme-ch5-tab-button-button-container-width
   --ch5-tab-button-button-container-width: var(--theme-ch5-tab-button-button-container-width);
 
-  /// button container height
+  /// button container height  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 5px 
+  /// related-theme-variable: --theme-ch5-tab-button-button-container-height
   --ch5-tab-button-button-container-height: var(--theme-ch5-tab-button-button-container-height);
 }

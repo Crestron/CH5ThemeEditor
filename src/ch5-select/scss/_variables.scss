@@ -11,51 +11,99 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-select {
-  /// component main font size
+  /// component main font size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-fonts-font-size
   --ch5-select-font-size:var(--theme-fonts-font-size);
 
-  /// component main font style
+  /// component main font style  /// type: string 
+  /// values: large, solid, center 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-fonts-font-style
   --ch5-select-font-style: var(--theme-fonts-font-style);
 
-  /// component main font weight
+  /// component main font weight  /// type: string 
+  /// values: large, solid, center 
+  /// example: verify component variable in theme manually 
+  /// related-theme-variable: --theme-fonts-font-weight
   --ch5-select-font-weight: var(--theme-fonts-font-weight);
 
-  /// top line content padding
+  /// top line content padding  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 4px 
+  /// related-theme-variable: --theme-ch5-select-padding
   --ch5-select-padding: var(--theme-ch5-select-padding);
 
-  /// component border width
+  /// component border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px 
+  /// related-theme-variable: --theme-ch5-select-border-width
   --ch5-select-border-width: var(--theme-ch5-select-border-width);
 
-  /// component border radius
+  /// component border radius  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-select-border-radius
   --ch5-select-border-radius: var(--theme-ch5-select-border-radius);
 
-  /// combo trigger button margin
+  /// combo trigger button margin  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 0 
+  /// related-theme-variable: --theme-ch5-select-combo-trigger-margin
   --ch5-select-combo-trigger-margin: var(--theme-ch5-select-combo-trigger-margin);
 
-  /// combo trigger button width
+  /// combo trigger button width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 24px 
+  /// related-theme-variable: --theme-ch5-select-combo-trigger-width
   --ch5-select-combo-trigger-width: var(--theme-ch5-select-combo-trigger-width);
 
-  /// combo trigger button height
+  /// combo trigger button height  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 24px 
+  /// related-theme-variable: --theme-ch5-select-combo-trigger-height
   --ch5-select-combo-trigger-height: var(--theme-ch5-select-combo-trigger-height);
 
-  /// top line width
+  /// top line width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: calc(100% - 40px) 
+  /// related-theme-variable: --theme-ch5-select-item-selected-width
   --ch5-select-item-selected-width: var(--theme-ch5-select-item-selected-width);
 
-  /// item border width
+  /// item border width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px 
+  /// related-theme-variable: --theme-ch5-select-panel-item-border-width
   --ch5-select-panel-item-border-width: var(--theme-ch5-select-panel-item-border-width);
 
-  /// item padding
+  /// item padding  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 8px 
+  /// related-theme-variable: --theme-ch5-select-panel-item-padding
   --ch5-select-panel-item-padding: var(--theme-ch5-select-panel-item-padding);
 
-  /// select panel shadow
+  /// select panel shadow  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) 
+  /// related-theme-variable: --theme-ch5-select-panel-items-box-shadow
   --ch5-select-panel-items-box-shadow: var(--theme-ch5-select-panel-items-box-shadow);
 
-  /// select panel z-index
+  /// select panel z-index  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 10000 
+  /// related-theme-variable: --theme-ch5-select-panel-z-index
   --ch5-select-panel-z-index: var(--theme-ch5-select-panel-z-index);
 
-  /// select panel background color
+  /// select panel background color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff 
+  /// related-theme-variable: --theme-ch5-select-panel-items-background-color
   --ch5-select-panel-items-background-color: var(--theme-ch5-select-panel-items-background-color);
 
-  /// select border color
+  /// select border color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #c6c8ca 
+  /// related-theme-variable: --theme-ch5-select-border-color
   --ch5-select-border-color: var(--theme-ch5-select-border-color);
 }
