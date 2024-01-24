@@ -11,6 +11,16 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-background {
+
+  /// transition effect
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: ease
   --ch5-background--transition-timing-function: var(--theme-ch5-background--transition-timing-function);
+
+  /// transition duration
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: 1s
   --ch5-background--transition-duration: var(--theme-ch5-background--transition-duration);
 }

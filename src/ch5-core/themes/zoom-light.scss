@@ -536,11 +536,13 @@
   // ch5-background
   // ***************************************
 
+  /// transition duration
   /// type: string 
   /// values: large, solid, center 
   /// example: 1s
   --theme-ch5-background--transition-duration: 1s;
-  
+
+  /// transition effect
   /// type: string 
   /// values: large, solid, center 
   /// example: ease
