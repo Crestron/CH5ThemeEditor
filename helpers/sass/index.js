@@ -84,33 +84,6 @@ function removeHeaders(data) {
 	return data;
 }
 
-function getType(data, variables) {
-	if (data.includes('calc(') === false && data.startsWith('var(')) {
-		data = data.slice(4, data.lastIndexOf(')'));
-		const variable = variables.find((variable) => variable.name === data);
-		if (variable) {
-			data = variable.value;
-		} else if (data !== "--fa-style-family-classic") {
-			const variable = globalVariables.find((variable) => variable.name === data);
-			if (variable) {
-				data = variable.value;
-			}
-		}
-	}
-	const units = ['px', '%', 'em', 'rem', 'vh', 'vw'];
-	const hexColorRegex = new RegExp(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/);
-	if (isNaN(Number(data)) === false) {
-		return "number";
-	} else if ((data.includes('calc') || units.some(unit => data.includes(unit))) && data.includes('linear-gradient') === false) {
-		return "unit";
-	} else if (data.includes('rgb') || hexColorRegex.test(data)) {
-		// TODO - this has to check plain color names too. Also linear gradient can be here
-		return "color";
-	} else {
-		return "string";
-	}
-}
-
 function getVariables(data, sectionName) {
 	const variables = [];
 	const variablesSet = new Set();
@@ -163,7 +136,8 @@ function getVariables(data, sectionName) {
 			if (sectionName === "theme") {
 				let sectionUpdatedName = sectionName;
 				if (name.indexOf("--theme-ch5-") !== -1) {
-					for (const component in components) {
+					const reversedComponets = Object.keys(components).reverse();
+					for (const component of reversedComponets) {
 						if (name.indexOf(component) !== -1) {
 							sectionUpdatedName = component;
 							break;
