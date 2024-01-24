@@ -100,7 +100,8 @@
             "large",
             "solid",
             "center"
-          ]
+          ],
+          "relatedThemeVariable": "--theme-ch5-background--transition-duration"
         },
         {
           "name": "--ch5-background--transition-timing-function",
@@ -112,7 +113,8 @@
             "large",
             "solid",
             "center"
-          ]
+          ],
+          "relatedThemeVariable": "--theme-ch5-background--transition-timing-function"
         }
       ]
     },

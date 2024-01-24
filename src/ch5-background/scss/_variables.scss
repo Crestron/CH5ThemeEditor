@@ -16,11 +16,13 @@ ch5-background {
   /// type: string 
   /// values: large, solid, center 
   /// example: ease
+  /// related-theme-variable: --theme-ch5-background--transition-timing-function
   --ch5-background--transition-timing-function: var(--theme-ch5-background--transition-timing-function);
 
   /// transition duration
   /// type: string 
   /// values: large, solid, center 
   /// example: 1s
+  /// related-theme-variable: --theme-ch5-background--transition-duration
   --ch5-background--transition-duration: var(--theme-ch5-background--transition-duration);
 }
