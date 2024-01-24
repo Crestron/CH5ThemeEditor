@@ -122,24 +122,43 @@ function getVariables(data, sectionName) {
 		const splitLine = line.split(':');
 		if (splitLine.length === 2 && splitLine[0].includes('--')) {
 
+			if (sectionName !== 'theme' && sectionName !== 'global' && splitLine[0].trim().startsWith('--theme') === false) {
+				if (line.includes('var(') === false) {
+					console.log(`\x1b[31m '${splitLine[0].trim()}' missing theme variable \x1b[0m`)
+				}
+			}
 			const name = splitLine[0].trim();
 			if (variablesSet.has(name)) {
 				console.log(`\x1b[31m '${name}' Duplicate Variable \x1b[0m`)
 				process.exit(1);
 			}
 			variablesSet.add(name);
-			const description = lines[i - 1]?.includes('///') ? lines[i - 1].replace('///', '').trim() : '';
-			if (description === "") {
-				console.log(`\x1b[31m '${name}' does not have description \x1b[0m`)
+			let start = i - 1;
+			for (let j = i - 1; j >= 0; j--) {
+				if (lines[j].includes('///') === false) {
+					break;
+				}
+				start = j;
+			}
+
+			const variableMetaData = lines.slice(start, i).join('\n').split('///').map(str => str.trim()).filter(str => str.length !== 0);
+
+			if (variableMetaData.length < 4) {
+				console.log(name + 'invalid metadata')
 				process.exit(1);
 			}
+
+			const description = variableMetaData[0];
+			const type = variableMetaData[1].replace('type:', '').trim();
+			const values = variableMetaData[2].replace('values:', '').trim().split(',').map((str) => str.trim()).filter((str) => str.trim())
+			const example = variableMetaData[3].replace('example:', '').trim()
+
 			let value = splitLine[1].trim().replaceAll(';', '');
 
 			// Corner Case
 			if (value === '#{$black}') { value = "#000"; }
 			if (value === '#{$white}') { value = "#fff"; }
 
-			const type = getType(value, variables);
 
 			if (sectionName === "theme") {
 				let sectionUpdatedName = sectionName;
@@ -161,17 +180,29 @@ function getVariables(data, sectionName) {
 						name,
 						description,
 						value,
-						type
+						type,
+						example,
+						values
 					}
+				});
+				if (variableMetaData.length === 5) {
+					const relatedThemeVariable = variableMetaData[4].replace('related-theme-variable:', '').trim()
+					variables[variables.length - 1]['data']['relatedThemeVariable'] = relatedThemeVariable;
 				}
-				);
+
 			} else {
 				variables.push({
 					name,
 					description,
 					value,
-					type
+					type,
+					example,
+					values
 				});
+				if (variableMetaData.length === 5) {
+					const relatedThemeVariable = variableMetaData[4].replace('related-theme-variable:', '').trim()
+					variables[variables.length - 1]['relatedThemeVariable'] = relatedThemeVariable;
+				}
 			}
 
 		}

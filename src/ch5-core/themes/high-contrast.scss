@@ -2131,6 +2131,12 @@
   /// example: 10000
   --theme-ch5-modal-mask-z-index: 10000;
 
+  /// the font weight for the title of the modal
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: bold
+  --theme-ch5-modal-title-font-weight: bold;
+
   // ***************************************
   // ch5-slider
   // ***************************************
