@@ -13,19 +13,19 @@
 ch5-form {
   /// set the default font size for the form  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 16px
   /// related-theme-variable: --theme-fonts-font-size
   --ch5-form-font-size: var(--theme-fonts-font-size);
 
   /// set the default font style for the form  /// type: string 
   /// values: large, solid, center 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal
   /// related-theme-variable: --theme-fonts-font-style
   --ch5-form-font-style: var(--theme-fonts-font-style);
 
   /// set the default font weight for the form  /// type: string 
   /// values: large, solid, center 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal
   /// related-theme-variable: --theme-fonts-font-weight
   --ch5-form-font-weight: var(--theme-fonts-font-weight);
 }

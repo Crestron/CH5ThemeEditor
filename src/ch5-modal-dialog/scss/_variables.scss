@@ -14,126 +14,126 @@ ch5-modal-dialog {
   /// the default font size of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 16px
   /// related-theme-variable: --theme-fonts-font-size
   --ch5-modal-font-size: var(--theme-fonts-font-size);
 
   /// the default font style of the modal
   /// type: string 
   /// values: large, solid, center 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal
   /// related-theme-variable: --theme-fonts-font-style
   --ch5-modal-font-style: var(--theme-fonts-font-style);
 
   /// the default font weight of the modal
   /// type: string 
   /// values: large, solid, center 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal
   /// related-theme-variable: --theme-fonts-font-weight
   --ch5-modal-font-weight: var(--theme-fonts-font-weight);
 
   /// the border width of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 1px
   /// related-theme-variable: --theme-ch5-modal-border-width
   --ch5-modal-border-width: var(--theme-ch5-modal-border-width);
 
   /// the border style of the modal
   /// type: string 
   /// values: large, solid, center 
-  /// example: INVALID JSON / verify manually 
+  /// example: solid
   /// related-theme-variable: --theme-ch5-modal-border-style
   --ch5-modal-border-style: var(--theme-ch5-modal-border-style);
 
   /// the border radius of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 6px
   /// related-theme-variable: --theme-ch5-modal-border-radius
   --ch5-modal-border-radius: var(--theme-ch5-modal-border-radius);
 
   /// set padding for the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 1.25em
   /// related-theme-variable: --theme-ch5-modal-padding
   --ch5-modal-padding: var(--theme-ch5-modal-padding);
 
   /// the margin of the icon at the top of the modal.
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 0 5px
   /// related-theme-variable: --theme-ch5-modal-close-icon-margin
   --ch5-modal-close-icon-margin: var(--theme-ch5-modal-close-icon-margin);
 
   /// the padding of the icon at the top of the modal.
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 0 5px 5px
   /// related-theme-variable: --theme-ch5-modal-close-icon-padding
   --ch5-modal-close-icon-padding: var(--theme-ch5-modal-close-icon-padding);
 
   /// the width of the icon at the top of the modal.
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 20px
   /// related-theme-variable: --theme-ch5-modal-close-icon-width
   --ch5-modal-close-icon-width: var(--theme-ch5-modal-close-icon-width);
 
   /// the font size of the icon at the top of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 16px 
   /// related-theme-variable: --ch5-modal-font-size
   --ch5-modal-close-icon-font-size: var(--ch5-modal-font-size);
 
   /// the font style of the icon at the top of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal
   /// related-theme-variable: --ch5-modal-font-style
   --ch5-modal-close-icon-font-style: var(--ch5-modal-font-style);
 
   /// the font weight of the icon at the top of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal
   /// related-theme-variable: --ch5-modal-font-weight
   --ch5-modal-close-icon-font-weight: var(--ch5-modal-font-weight);
 
   /// the default font size of the icon at the top of the modal.
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 24px
   /// related-theme-variable: --theme-ch5-modal-default-close-icon-font-size
   --ch5-modal-default-close-icon-font-size: var(--theme-ch5-modal-default-close-icon-font-size);
 
   /// the default font style of the icon at the top of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal
   /// related-theme-variable: --ch5-modal-font-style
   --ch5-modal-default-close-icon-font-style: var(--ch5-modal-font-style);
 
   /// the default font weight of the icon at the top of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal 
   /// related-theme-variable: --ch5-modal-font-weight
   --ch5-modal-default-close-icon-font-weight: var(--ch5-modal-font-weight);
 
   /// the font size for the title of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 1.3em
   /// related-theme-variable: --theme-ch5-modal-title-font-size
   --ch5-modal-title-font-size: var(--theme-ch5-modal-title-font-size);
 
   /// the font style for the title of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal
   /// related-theme-variable: --ch5-modal-font-style
   --ch5-modal-title-font-style: var(--ch5-modal-font-style);
 
@@ -147,98 +147,98 @@ ch5-modal-dialog {
   /// the padding of the modal's content
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 10px
   /// related-theme-variable: --theme-ch5-modal-contents-padding
   --ch5-modal-contents-padding: var(--theme-ch5-modal-contents-padding);
 
   /// the font size for the content of the modal.
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 18px
   /// related-theme-variable: --theme-ch5-modal-contents-font-size
   --ch5-modal-contents-font-size: var(--theme-ch5-modal-contents-font-size);
 
   /// the font style for the content of the modal.
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal
   /// related-theme-variable: --ch5-modal-font-style
   --ch5-model-contents-font-style: var(--ch5-modal-font-style);
 
   /// the font weight for the content of the modal.
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal
   /// related-theme-variable: --ch5-modal-font-weight
   --ch5-model-contents-font-weight: var(--ch5-modal-font-weight);
 
   /// the padding for the prompt of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 30px 0 30px 0
   /// related-theme-variable: --theme-ch5-modal-prompt-padding
   --ch5-modal-prompt-padding: var(--theme-ch5-modal-prompt-padding);
 
   /// the right margin for the prompt icon of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 10px
   /// related-theme-variable: --theme-ch5-modal-prompt-icon-margin-right
   --ch5-modal-prompt-icon-margin-right: var(--theme-ch5-modal-prompt-icon-margin-right);
 
   /// the font size for the prompt icon of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 16px 
   /// related-theme-variable: --ch5-modal-font-size
   --ch5-modal-prompt-icon-font-size: var(--ch5-modal-font-size);
 
   /// the font style for the prompt icon of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal
   /// related-theme-variable: --ch5-modal-font-style
   --ch5-modal-prompt-icon-font-style: var(--ch5-modal-font-style);
 
   /// the font weight for the prompt icon of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal 
   /// related-theme-variable: --ch5-modal-font-weight
   --ch5-modal-prompt-icon-font-weight: var(--ch5-modal-font-weight);
 
   /// the font style for the prompt text of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal
   /// related-theme-variable: --ch5-modal-font-style
   --ch5-modal-prompt-text-font-style: var(--ch5-modal-font-style);
 
   /// the font size for the prompt text of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: 16px
   /// related-theme-variable: --theme-ch5-modal-prompt-text-font-size
   --ch5-modal-prompt-text-font-size: var(--theme-ch5-modal-prompt-text-font-size);
 
   /// the font weight for the prompt text of the modal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: INVALID JSON / verify manually 
+  /// example: normal
   /// related-theme-variable: --ch5-modal-font-weight
   --ch5-modal-prompt-text-font-weight: var(--ch5-modal-font-weight);
 
   /// modal z-index
   /// type: number 
   /// values: 1, 10, 100 
-  /// example: INVALID JSON / verify manually 
+  /// example: 10001
   /// related-theme-variable: --theme-ch5-modal-z-index
   --ch5-modal-z-index: var(--theme-ch5-modal-z-index);
 
   /// modal mask z-index
   /// type: number 
   /// values: 1, 10, 100 
-  /// example: INVALID JSON / verify manually 
+  /// example: 10000
   /// related-theme-variable: --theme-ch5-modal-mask-z-index
   --ch5-modal-mask-z-index: var(--theme-ch5-modal-mask-z-index);
 }

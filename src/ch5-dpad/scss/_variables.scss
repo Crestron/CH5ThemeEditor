@@ -119,25 +119,25 @@ ch5-dpad {
 
   /// The background color for default type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #0099ff
   /// related-theme-variable: --theme-colors-default-background-color
   --ch5-dpad-default-default-background-color: var(--theme-colors-default-background-color);
 
   /// The font color for default type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #ffffff
   /// related-theme-variable: --theme-colors-default-font-color
   --ch5-dpad-default-default-font-color: var(--theme-colors-default-font-color);
 
   /// the pressed background color for default type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #008ae6
   /// related-theme-variable: --theme-colors-default-pressed-background-color
   --ch5-dpad-default-pressed-background-color: var(--theme-colors-default-pressed-background-color);
 
   /// the pressed font color for default type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #f0fff0
   /// related-theme-variable: --theme-colors-default-pressed-font-color
   --ch5-dpad-default-pressed-font-color: var(--theme-colors-default-pressed-font-color);
 
@@ -147,25 +147,25 @@ ch5-dpad {
 
   /// The background color for primary type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #fafafa
   /// related-theme-variable: --theme-colors-primary-background-color
   --ch5-dpad-primary-default-background-color: var(--theme-colors-primary-background-color);
 
   /// The font color for primary type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #333
   /// related-theme-variable: --theme-colors-primary-font-color
   --ch5-dpad-primary-default-font-color: var(--theme-colors-primary-font-color);
 
   /// the pressed background color for primary type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #bdbdbd
   /// related-theme-variable: --theme-colors-primary-pressed-background-color
   --ch5-dpad-primary-pressed-background-color: var(--theme-colors-primary-pressed-background-color);
 
   /// the pressed font color for primary type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #333
   /// related-theme-variable: --theme-colors-primary-pressed-font-color
   --ch5-dpad-primary-pressed-font-color: var(--theme-colors-primary-pressed-font-color);
 
@@ -175,25 +175,25 @@ ch5-dpad {
 
   /// The background color for info type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #00bcd4
   /// related-theme-variable: --theme-colors-info-background-color
   --ch5-dpad-info-default-background-color: var(--theme-colors-info-background-color);
 
   /// The font color for info type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #f0fff0
   /// related-theme-variable: --theme-colors-info-font-color
   --ch5-dpad-info-default-font-color: var(--theme-colors-info-font-color);
 
   /// the pressed background color for info type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #0097a7
   /// related-theme-variable: --theme-colors-info-pressed-background-color
   --ch5-dpad-info-pressed-background-color: var(--theme-colors-info-pressed-background-color);
 
   /// the pressed font color for info type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #f0fff0
   /// related-theme-variable: --theme-colors-info-pressed-font-color
   --ch5-dpad-info-pressed-font-color: var(--theme-colors-info-pressed-font-color);
 
@@ -203,25 +203,25 @@ ch5-dpad {
 
   /// The background color for danger type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #f44336
   /// related-theme-variable: --theme-colors-danger-background-color
   --ch5-dpad-danger-default-background-color: var(--theme-colors-danger-background-color);
 
   /// The font color for danger type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #ffffff
   /// related-theme-variable: --theme-colors-danger-font-color
   --ch5-dpad-danger-default-font-color: var(--theme-colors-danger-font-color);
 
   /// the pressed background color for danger type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #b71c1c
   /// related-theme-variable: --theme-colors-danger-pressed-background-color
   --ch5-dpad-danger-pressed-background-color: var(--theme-colors-danger-pressed-background-color);
 
   /// the pressed font color for danger type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #ffffff
   /// related-theme-variable: --theme-colors-danger-pressed-font-color
   --ch5-dpad-danger-pressed-font-color: var(--theme-colors-danger-pressed-font-color);
 
@@ -231,25 +231,25 @@ ch5-dpad {
 
   /// The background color for secondary type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #bdbdbd
   /// related-theme-variable: --theme-colors-secondary-background-color
   --ch5-dpad-secondary-default-background-color: var(--theme-colors-secondary-background-color);
 
   /// The font color for secondary type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #333
   /// related-theme-variable: --theme-colors-secondary-font-color
   --ch5-dpad-secondary-default-font-color: var(--theme-colors-secondary-font-color);
 
   /// the pressed background color for secondary type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #9e9e9e
   /// related-theme-variable: --theme-colors-secondary-pressed-background-color
   --ch5-dpad-secondary-pressed-background-color: var(--theme-colors-secondary-pressed-background-color);
 
   /// the pressed font color for secondary type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #ffffff
   /// related-theme-variable: --theme-colors-secondary-pressed-font-color
   --ch5-dpad-secondary-pressed-font-color: var(--theme-colors-secondary-pressed-font-color);
 
@@ -259,25 +259,25 @@ ch5-dpad {
 
   /// The background color for success type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #4caf50
   /// related-theme-variable: --theme-colors-success-background-color
   --ch5-dpad-success-default-background-color: var(--theme-colors-success-background-color);
 
   /// The font color for success type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #f0fff0
   /// related-theme-variable: --theme-colors-success-font-color
   --ch5-dpad-success-default-font-color: var(--theme-colors-success-font-color);
 
   /// the pressed background color for success type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #388e3c
   /// related-theme-variable: --theme-colors-success-pressed-background-color
   --ch5-dpad-success-pressed-background-color: var(--theme-colors-success-pressed-background-color);
 
   /// the pressed font color for success type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #f0fff0
   /// related-theme-variable: --theme-colors-success-pressed-font-color
   --ch5-dpad-success-pressed-font-color: var(--theme-colors-success-pressed-font-color);
 
@@ -287,25 +287,25 @@ ch5-dpad {
 
   /// The background color for warning type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #ffc107
   /// related-theme-variable: --theme-colors-warning-background-color
   --ch5-dpad-warning-default-background-color: var(--theme-colors-warning-background-color);
 
   /// The font color for warning type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #333
   /// related-theme-variable: --theme-colors-warning-font-color
   --ch5-dpad-warning-default-font-color: var(--theme-colors-warning-font-color);
 
   /// the pressed background color for warning type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #ff6f00
   /// related-theme-variable: --theme-colors-warning-pressed-background-color
   --ch5-dpad-warning-pressed-background-color: var(--theme-colors-warning-pressed-background-color);
 
   /// the pressed font color for warning type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #f0fff0
   /// related-theme-variable: --theme-colors-warning-pressed-font-color
   --ch5-dpad-warning-pressed-font-color: var(--theme-colors-warning-pressed-font-color);
 
@@ -315,25 +315,25 @@ ch5-dpad {
 
   /// The background color for text type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #efefef
   /// related-theme-variable: --theme-colors-text-background-color
   --ch5-dpad-text-default-background-color: var(--theme-colors-text-background-color);
 
   /// The font color for text type of dpad.  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #333
   /// related-theme-variable: --theme-colors-text-font-color
   --ch5-dpad-text-default-font-color: var(--theme-colors-text-font-color);
 
   /// the pressed background color for text type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #808080
   /// related-theme-variable: --theme-colors-text-pressed-background-color
   --ch5-dpad-text-pressed-background-color: var(--theme-colors-text-pressed-background-color);
 
   /// the pressed font color for text type of dpad  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: verify component variable in theme manually 
+  /// example: #333
   /// related-theme-variable: --theme-colors-text-pressed-font-color
   --ch5-dpad-text-pressed-font-color: var(--theme-colors-text-pressed-font-color);
 }

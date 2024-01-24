@@ -11,121 +11,141 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-toggle {
-  /// default font size  /// type: unit 
+  /// default font size
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: verify component variable in theme manually 
+  /// example: 16px
   /// related-theme-variable: --theme-fonts-font-size
   --ch5-toggle-font-size: var(--theme-fonts-font-size);
 
-  /// default font style  /// type: string 
+  /// default font style
+  /// type: string 
   /// values: large, solid, center 
-  /// example: verify component variable in theme manually 
+  /// example: normal
   /// related-theme-variable: --theme-fonts-font-style
   --ch5-toggle-font-style: var(--theme-fonts-font-style);
 
-  /// default font weight  /// type: string 
+  /// default font weight
+  /// type: string 
   /// values: large, solid, center 
-  /// example: verify component variable in theme manually 
+  /// example: normal 
   /// related-theme-variable: --theme-fonts-font-weight
   --ch5-toggle-font-weight: var(--theme-fonts-font-weight);
 
-  /// label font size  /// type: unit 
+  /// label font size
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: verify component variable in theme manually 
+  /// example: 16px 
   /// related-theme-variable: --ch5-toggle-font-size
   --ch5-toggle-label-font-size: var(--ch5-toggle-font-size);
 
-  /// label font style  /// type: unit 
+  /// label font style
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: verify component variable in theme manually 
+  /// example: normal 
   /// related-theme-variable: --ch5-toggle-font-style
   --ch5-toggle-label-font-style: var(--ch5-toggle-font-style);
 
-  /// label font weight  /// type: unit 
+  /// label font weight
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: verify component variable in theme manually 
+  /// example: normal 
   /// related-theme-variable: --ch5-toggle-font-weight
   --ch5-toggle-label-font-weight: var(--ch5-toggle-font-weight);
 
-  /// label margin  /// type: unit 
+  /// label margin
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px 
   /// related-theme-variable: --theme-ch5-toggle-label-margin
   --ch5-toggle-label-margin: var(--theme-ch5-toggle-label-margin);
 
-  /// font size applied on the on|off label  /// type: unit 
+  /// font size applied on the on|off label
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: verify component variable in theme manually 
+  /// example: 16px 
   /// related-theme-variable: --ch5-toggle-font-size
   --ch5-toggle-text-font-size: var(--ch5-toggle-font-size); // TODO - difference betwwen toggle font size and text font size
 
-  /// font style applied on the on|off label  /// type: unit 
+  /// font style applied on the on|off label
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: verify component variable in theme manually 
+  /// example: normal 
   /// related-theme-variable: --ch5-toggle-font-style
   --ch5-toggle-text-font-style: var(--ch5-toggle-font-style);
 
-  /// font weight applied on the on|off label  /// type: unit 
+  /// font weight applied on the on|off label
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: verify component variable in theme manually 
+  /// example: normal 
   /// related-theme-variable: --ch5-toggle-font-weight
   --ch5-toggle-text-font-weight: var(--ch5-toggle-font-weight);
 
-  /// font size applied on the on|off icon  /// type: unit 
+  /// font size applied on the on|off icon
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: verify component variable in theme manually 
+  /// example: 16px 
   /// related-theme-variable: --ch5-toggle-font-size
   --ch5-toggle-icon-font-size: var(--ch5-toggle-font-size);
 
-  /// font style applied on the on|off icon  /// type: unit 
+  /// font style applied on the on|off icon
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: verify component variable in theme manually 
+  /// example: normal 
   /// related-theme-variable: --ch5-toggle-font-style
   --ch5-toggle-icon-font-style: var(--ch5-toggle-font-style);
 
-  /// font weight applied on the on|off icon  /// type: number 
+  /// font weight applied on the on|off icon
+  /// type: number 
   /// values: 1, 10, 100 
   /// example: 900 
   /// related-theme-variable: --theme-ch5-toggle-icon-font-weight
   --ch5-toggle-icon-font-weight: var(--theme-ch5-toggle-icon-font-weight);
 
-  /// handle margin when the shape="circle"  /// type: unit 
+  /// handle margin when the shape="circle"
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px 
   /// related-theme-variable: --theme-ch5-toggle-handle-circle-margin
   --ch5-toggle-handle-circle-margin: var(--theme-ch5-toggle-handle-circle-margin);
 
-  /// handle margin when the shape="rectangle"  /// type: unit 
+  /// handle margin when the shape="rectangle"
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px 
   /// related-theme-variable: --theme-ch5-toggle-handle-rectangle-margin
   --ch5-toggle-handle-rectangle-margin: var(--theme-ch5-toggle-handle-rectangle-margin);
 
-  /// containe z-index  /// type: number 
+  /// containe z-index
+  /// type: number 
   /// values: 1, 10, 100 
   /// example: 3 
   /// related-theme-variable: --theme-ch5-toggle-container-z-index
-  --ch5-toggle-container-z-index: var(--theme-ch5-toggle-container-z-index);// TODO - must not be set
+  --ch5-toggle-container-z-index: var(--theme-ch5-toggle-container-z-index); // TODO - must not be set
 
-  /// toggle knob z-index  /// type: number 
+  /// toggle knob z-index
+  /// type: number 
   /// values: 1, 10, 100 
   /// example: 2 
   /// related-theme-variable: --theme-ch5-toggle-knob-z-index
-  --ch5-toggle-knob-z-index: var(--theme-ch5-toggle-knob-z-index);// TODO - must not be set
+  --ch5-toggle-knob-z-index: var(--theme-ch5-toggle-knob-z-index); // TODO - must not be set
 
-  /// toggle z-index  /// type: number 
+  /// toggle z-index
+  /// type: number 
   /// values: 1, 10, 100 
   /// example: 1 
   /// related-theme-variable: --theme-ch5-toggle-z-index
   --ch5-toggle-z-index: var(--theme-ch5-toggle-z-index); // TODO - must not be set
 
-  /// The background color of the handle when shape="circle"  /// type: color 
+  /// The background color of the handle when shape="circle"
+  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #d8d9db 
   /// related-theme-variable: --theme-ch5-toggle-handle-circle-background
-  --ch5-toggle-handle-circle-background:var(--theme-ch5-toggle-handle-circle-background);
+  --ch5-toggle-handle-circle-background: var(--theme-ch5-toggle-handle-circle-background);
 
-  /// The background color of the knob when shape="circle"  /// type: color 
+  /// The background color of the knob when shape="circle"
+  /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #fff 
   /// related-theme-variable: --theme-ch5-toggle-circle-knob-color

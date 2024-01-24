@@ -13,19 +13,19 @@
 ch5-select {
   /// component main font size  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: verify component variable in theme manually 
+  /// example: 16px
   /// related-theme-variable: --theme-fonts-font-size
   --ch5-select-font-size:var(--theme-fonts-font-size);
 
   /// component main font style  /// type: string 
   /// values: large, solid, center 
-  /// example: verify component variable in theme manually 
+  /// example: normal
   /// related-theme-variable: --theme-fonts-font-style
   --ch5-select-font-style: var(--theme-fonts-font-style);
 
   /// component main font weight  /// type: string 
   /// values: large, solid, center 
-  /// example: verify component variable in theme manually 
+  /// example: normal
   /// related-theme-variable: --theme-fonts-font-weight
   --ch5-select-font-weight: var(--theme-fonts-font-weight);
 

@@ -263,7 +263,7 @@
                     "description": "The background color for danger type of the button.",
                     "value": "var(--theme-colors-danger-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f44336",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-background-color"
                 },
@@ -272,7 +272,7 @@
                     "description": "The border color for danger type of the button.",
                     "value": "var(--theme-colors-danger-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#e53935",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-border-color"
                 },
@@ -281,7 +281,7 @@
                     "description": "The font color for danger type of the button.",
                     "value": "var(--theme-colors-danger-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-font-color"
                 },
@@ -290,7 +290,7 @@
                     "description": "the background color for danger type of the pressed button",
                     "value": "var(--theme-colors-danger-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#b71c1c",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-pressed-background-color"
                 },
@@ -299,7 +299,7 @@
                     "description": "the border color for danger type of the pressed button",
                     "value": "var(--theme-colors-danger-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#e53935",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-pressed-border-color"
                 },
@@ -308,7 +308,7 @@
                     "description": "the font color for danger type of the pressed button",
                     "value": "var(--theme-colors-danger-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-pressed-font-color"
                 },
@@ -317,7 +317,7 @@
                     "description": "the background color for danger type of the selected button",
                     "value": "var(--theme-colors-danger-selected-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#c62828",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-selected-background-color"
                 },
@@ -326,7 +326,7 @@
                     "description": "the border color for danger type of the selected button",
                     "value": "var(--theme-colors-danger-selected-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#e53935",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-selected-border-color"
                 },
@@ -335,7 +335,7 @@
                     "description": "the font color for danger type of the selected button",
                     "value": "var(--theme-colors-danger-selected-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-selected-font-color"
                 },
@@ -373,7 +373,7 @@
                     "description": "The background color for default type of the button.",
                     "value": "var(--theme-colors-default-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#0099ff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-background-color"
                 },
@@ -382,7 +382,7 @@
                     "description": "The border color for default type of the button.",
                     "value": "var(--theme-colors-default-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#0091ea",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-border-color"
                 },
@@ -391,7 +391,7 @@
                     "description": "The font color for default type of the button.",
                     "value": "var(--theme-colors-default-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-font-color"
                 },
@@ -400,7 +400,7 @@
                     "description": "the background color for default type of the pressed button",
                     "value": "var(--theme-colors-default-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#008ae6",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-pressed-background-color"
                 },
@@ -409,7 +409,7 @@
                     "description": "the border color for default type of the pressed button",
                     "value": "var(--theme-colors-default-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#0091ea",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-pressed-border-color"
                 },
@@ -418,7 +418,7 @@
                     "description": "the font color for default type of the pressed button",
                     "value": "var(--theme-colors-default-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-pressed-font-color"
                 },
@@ -427,7 +427,7 @@
                     "description": "the background color for default type of the selected button",
                     "value": "var(--theme-colors-default-selected-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#00073bf",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-selected-background-color"
                 },
@@ -436,7 +436,7 @@
                     "description": "the border color for default type of the selected button",
                     "value": "var(--theme-colors-default-selected-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#0091ea",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-selected-border-color"
                 },
@@ -445,7 +445,7 @@
                     "description": "the font color for default type of the selected button",
                     "value": "var(--theme-colors-default-selected-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-selected-font-color"
                 },
@@ -470,7 +470,7 @@
                     "description": "button font style",
                     "value": "var(--theme-fonts-font-style)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -483,7 +483,7 @@
                     "description": "The font weight of the button.",
                     "value": "var(--theme-fonts-font-weight)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -551,7 +551,7 @@
                     "description": "The background color for info type of the button.",
                     "value": "var(--theme-colors-info-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "v#00bcd4",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-background-color"
                 },
@@ -560,7 +560,7 @@
                     "description": "The border color for info type of the button.",
                     "value": "var(--theme-colors-info-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#oobcd4",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-border-color"
                 },
@@ -569,7 +569,7 @@
                     "description": "The font color for info type of the button.",
                     "value": "var(--theme-colors-info-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-font-color"
                 },
@@ -578,7 +578,7 @@
                     "description": "the background color for info type of the pressed button",
                     "value": "var(--theme-colors-info-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#0097a7",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-pressed-background-color"
                 },
@@ -587,7 +587,7 @@
                     "description": "the border color for info type of the pressed button",
                     "value": "var(--theme-colors-info-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#00bcd4",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-pressed-border-color"
                 },
@@ -596,7 +596,7 @@
                     "description": "the font color for info type of the pressed button",
                     "value": "var(--theme-colors-info-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-pressed-font-color"
                 },
@@ -605,7 +605,7 @@
                     "description": "the background color for info type of the selected button",
                     "value": "var(--theme-colors-info-selected-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#00838f",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-selected-background-color"
                 },
@@ -614,7 +614,7 @@
                     "description": "the border color for info type of the selected button",
                     "value": "var(--theme-colors-info-selected-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#00bcd4",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-selected-border-color"
                 },
@@ -623,7 +623,7 @@
                     "description": "the font color for info type of the selected button",
                     "value": "var(--theme-colors-info-selected-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-selected-font-color"
                 },
@@ -725,7 +725,7 @@
                     "description": "The background color for primary type of the button.",
                     "value": "var(--theme-colors-primary-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "fafafa",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-background-color"
                 },
@@ -734,7 +734,7 @@
                     "description": "The border color for primary type of the button.",
                     "value": "var(--theme-colors-primary-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#bdbdbd",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-border-color"
                 },
@@ -743,7 +743,7 @@
                     "description": "The font color for primary type of the button.",
                     "value": "var(--theme-colors-primary-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-font-color"
                 },
@@ -752,7 +752,7 @@
                     "description": "the background color for primary type of the pressed button",
                     "value": "var(--theme-colors-primary-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#bdbdbd",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-pressed-background-color"
                 },
@@ -761,7 +761,7 @@
                     "description": "the border color for primary type of the pressed button",
                     "value": "var(--theme-colors-primary-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#bdbdbd",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-pressed-border-color"
                 },
@@ -770,7 +770,7 @@
                     "description": "the font color for primary type of the pressed button",
                     "value": "var(--theme-colors-primary-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-pressed-font-color"
                 },
@@ -779,7 +779,7 @@
                     "description": "the background color for primary type of the selected button",
                     "value": "var(--theme-colors-primary-selected-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#e0e0e0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-selected-background-color"
                 },
@@ -788,7 +788,7 @@
                     "description": "the border color for primary type of the selected button",
                     "value": "var(--theme-colors-primary-selected-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#bdbdbd",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-selected-border-color"
                 },
@@ -797,7 +797,7 @@
                     "description": "the font color for primary type of the selected button",
                     "value": "var(--theme-colors-primary-selected-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-selected-font-color"
                 },
@@ -835,7 +835,7 @@
                     "description": "The background color for secondary type of the button.",
                     "value": "var(--theme-colors-secondary-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#bdbdbd",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-background-color"
                 },
@@ -844,7 +844,7 @@
                     "description": "The border color for secondary type of the button.",
                     "value": "var(--theme-colors-secondary-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#9e9e9e",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-border-color"
                 },
@@ -853,7 +853,7 @@
                     "description": "The font color for secondary type of the button.",
                     "value": "var(--theme-colors-secondary-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-font-color"
                 },
@@ -862,7 +862,7 @@
                     "description": "the background color for secondary type of the pressed button",
                     "value": "var(--theme-colors-secondary-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#9e9e9e",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-pressed-background-color"
                 },
@@ -871,7 +871,7 @@
                     "description": "the border color for secondary type of the pressed button",
                     "value": "var(--theme-colors-secondary-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#9e9e9e",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-pressed-border-color"
                 },
@@ -880,7 +880,7 @@
                     "description": "the font color for secondary type of the pressed button",
                     "value": "var(--theme-colors-secondary-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-pressed-font-color"
                 },
@@ -889,7 +889,7 @@
                     "description": "the background color for secondary type of the selected button",
                     "value": "var(--theme-colors-secondary-selected-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#757575",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-selected-background-color"
                 },
@@ -898,7 +898,7 @@
                     "description": "the border color for secondary type of the selected button",
                     "value": "var(--theme-colors-secondary-selected-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#9e9e9e",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-selected-border-color"
                 },
@@ -907,7 +907,7 @@
                     "description": "the font color for secondary type of the selected button",
                     "value": "var(--theme-colors-secondary-selected-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-selected-font-color"
                 },
@@ -993,7 +993,7 @@
                     "description": "The background color for success type of the button.",
                     "value": "var(--theme-colors-success-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#4caf59",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-background-color"
                 },
@@ -1002,7 +1002,7 @@
                     "description": "The border color for success type of the button.",
                     "value": "var(--theme-colors-success-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#43a047",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-border-color"
                 },
@@ -1011,7 +1011,7 @@
                     "description": "The font color for success type of the button.",
                     "value": "var(--theme-colors-success-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-font-color"
                 },
@@ -1020,7 +1020,7 @@
                     "description": "the background color for success type of the pressed button",
                     "value": "var(--theme-colors-success-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#388e3c",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-pressed-background-color"
                 },
@@ -1029,7 +1029,7 @@
                     "description": "the border color for success type of the pressed button",
                     "value": "var(--theme-colors-success-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#43a047",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-pressed-border-color"
                 },
@@ -1038,7 +1038,7 @@
                     "description": "the font color for success type of the pressed button",
                     "value": "var(--theme-colors-success-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-pressed-font-color"
                 },
@@ -1047,7 +1047,7 @@
                     "description": "the background color for success type of the selected button",
                     "value": "var(--theme-colors-success-selected-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#2e7d32",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-selected-background-color"
                 },
@@ -1056,7 +1056,7 @@
                     "description": "the border color for success type of the selected button",
                     "value": "var(--theme-colors-success-selected-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#43a047",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-selected-border-color"
                 },
@@ -1065,7 +1065,7 @@
                     "description": "the font color for success type of the selected button",
                     "value": "var(--theme-colors-success-selected-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-selected-font-color"
                 },
@@ -1119,7 +1119,7 @@
                     "description": "The background color for text type of the button.",
                     "value": "var(--theme-colors-text-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#efefef",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-background-color"
                 },
@@ -1128,7 +1128,7 @@
                     "description": "The border color for text type of the button.",
                     "value": "var(--theme-colors-text-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#e0e0e0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-border-color"
                 },
@@ -1137,7 +1137,7 @@
                     "description": "The font color for text type of the button.",
                     "value": "var(--theme-colors-text-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-font-color"
                 },
@@ -1146,7 +1146,7 @@
                     "description": "the background color for text type of the pressed button",
                     "value": "var(--theme-colors-text-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#808080",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-pressed-background-color"
                 },
@@ -1155,7 +1155,7 @@
                     "description": "the border color for text type of the pressed button",
                     "value": "var(--theme-colors-text-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#e0e0e0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-pressed-border-color"
                 },
@@ -1164,7 +1164,7 @@
                     "description": "the font color for text type of the pressed button",
                     "value": "var(--theme-colors-text-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-pressed-font-color"
                 },
@@ -1173,7 +1173,7 @@
                     "description": "the background color for text type of the selected button",
                     "value": "var(--theme-colors-text-selected-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#9e9e9e",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-selected-background-color"
                 },
@@ -1182,7 +1182,7 @@
                     "description": "the border color for text type of the selected button",
                     "value": "var(--theme-colors-text-selected-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#e0e0e0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-selected-border-color"
                 },
@@ -1191,7 +1191,7 @@
                     "description": "the font color for text type of the selected button",
                     "value": "var(--theme-colors-text-selected-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-selected-font-color"
                 },
@@ -1229,7 +1229,7 @@
                     "description": "The background color for warning type of the button.",
                     "value": "var(--theme-colors-warning-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffc107",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-background-color"
                 },
@@ -1238,7 +1238,7 @@
                     "description": "The border color for warning type of the button.",
                     "value": "var(--theme-colors-warning-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffb300",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-border-color"
                 },
@@ -1247,7 +1247,7 @@
                     "description": "The font color for warning type of the button.",
                     "value": "var(--theme-colors-warning-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-font-color"
                 },
@@ -1256,7 +1256,7 @@
                     "description": "the background color for warning type of the pressed button",
                     "value": "var(--theme-colors-warning-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ff6f00",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-pressed-background-color"
                 },
@@ -1265,7 +1265,7 @@
                     "description": "the border color for warning type of the pressed button",
                     "value": "var(--theme-colors-warning-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffb300",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-pressed-border-color"
                 },
@@ -1274,7 +1274,7 @@
                     "description": "the font color for warning type of the pressed button",
                     "value": "var(--theme-colors-warning-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-pressed-font-color"
                 },
@@ -1283,7 +1283,7 @@
                     "description": "the background color for warning type of the selected button",
                     "value": "var(--theme-colors-warning-selected-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ff8f00",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-selected-background-color"
                 },
@@ -1292,7 +1292,7 @@
                     "description": "the border color for warning type of the selected button",
                     "value": "var(--theme-colors-warning-selected-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffb300",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-selected-border-color"
                 },
@@ -1301,7 +1301,7 @@
                     "description": "the font color for warning type of the selected button",
                     "value": "var(--theme-colors-warning-selected-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-selected-font-color"
                 },
@@ -1380,7 +1380,7 @@
                     "description": "button container height",
                     "value": "var(--theme-ch5-button-list-button-container-height)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "58px",
                     "values": [
                         "px",
                         "vw",
@@ -1388,14 +1388,15 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-button-list-button-container-height"
                 },
                 {
                     "name": "--ch5-button-list-button-container-padding",
                     "description": "Applies padding for the container of ch5-button in ch5-button-list",
                     "value": "var(--theme-ch5-button-list-button-container-padding)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "5px",
                     "values": [
                         "px",
                         "vw",
@@ -1403,14 +1404,15 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-button-list-button-container-padding"
                 },
                 {
                     "name": "--ch5-button-list-button-container-width",
                     "description": "button container width",
                     "value": "var(--theme-ch5-button-list-button-container-width)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "100px",
                     "values": [
                         "px",
                         "vw",
@@ -1418,14 +1420,15 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-button-list-button-container-width"
                 },
                 {
                     "name": "--ch5-button-list-padding",
                     "description": "Applies padding to the button list container",
                     "value": "var(--theme-ch5-button-list-padding)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "5px",
                     "values": [
                         "px",
                         "vw",
@@ -1433,14 +1436,15 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-button-list-padding"
                 },
                 {
                     "name": "--ch5-button-list-scrollbar-border-radius",
                     "description": "Scrollbar border radius",
                     "value": "var(--theme-others-scrollbar-border-radius)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "10px",
                     "values": [
                         "px",
                         "vw",
@@ -1448,22 +1452,24 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-others-scrollbar-border-radius"
                 },
                 {
                     "name": "--ch5-button-list-scrollbar-thumb-color",
                     "description": "Scrollbar thumb color",
                     "value": "var(--theme-others-scrollbar-thumb-color)",
                     "type": "color",
-                    "example": "INVALID JSON / verify manually",
-                    "values": "rgb(35,35,35), #1a1a1a, red"
+                    "example": "rgba(0, 0, 0, 0.5)",
+                    "values": "rgb(35,35,35), #1a1a1a, red",
+                    "relatedThemeVariable": "--theme-others-scrollbar-thumb-color"
                 },
                 {
                     "name": "--ch5-button-list-scrollbar-width",
                     "description": "Scrollbar width",
                     "value": "var(--theme-others-scrollbar-width)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "7px",
                     "values": [
                         "px",
                         "vw",
@@ -1471,7 +1477,8 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-others-scrollbar-width"
                 }
             ]
         },
@@ -1636,7 +1643,7 @@
                     "description": "The background color for danger type of dpad.",
                     "value": "var(--theme-colors-danger-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f44336",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-background-color"
                 },
@@ -1645,7 +1652,7 @@
                     "description": "The font color for danger type of dpad.",
                     "value": "var(--theme-colors-danger-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-font-color"
                 },
@@ -1654,7 +1661,7 @@
                     "description": "the pressed background color for danger type of dpad",
                     "value": "var(--theme-colors-danger-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#b71c1c",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-pressed-background-color"
                 },
@@ -1663,7 +1670,7 @@
                     "description": "the pressed font color for danger type of dpad",
                     "value": "var(--theme-colors-danger-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-pressed-font-color"
                 },
@@ -1672,7 +1679,7 @@
                     "description": "The background color for default type of dpad.",
                     "value": "var(--theme-colors-default-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#0099ff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-background-color"
                 },
@@ -1681,7 +1688,7 @@
                     "description": "The font color for default type of dpad.",
                     "value": "var(--theme-colors-default-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-font-color"
                 },
@@ -1690,7 +1697,7 @@
                     "description": "the pressed background color for default type of dpad",
                     "value": "var(--theme-colors-default-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#008ae6",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-pressed-background-color"
                 },
@@ -1699,7 +1706,7 @@
                     "description": "the pressed font color for default type of dpad",
                     "value": "var(--theme-colors-default-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-pressed-font-color"
                 },
@@ -1788,7 +1795,7 @@
                     "description": "The background color for info type of dpad.",
                     "value": "var(--theme-colors-info-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#00bcd4",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-background-color"
                 },
@@ -1797,7 +1804,7 @@
                     "description": "The font color for info type of dpad.",
                     "value": "var(--theme-colors-info-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-font-color"
                 },
@@ -1806,7 +1813,7 @@
                     "description": "the pressed background color for info type of dpad",
                     "value": "var(--theme-colors-info-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#0097a7",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-pressed-background-color"
                 },
@@ -1815,7 +1822,7 @@
                     "description": "the pressed font color for info type of dpad",
                     "value": "var(--theme-colors-info-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-pressed-font-color"
                 },
@@ -1872,7 +1879,7 @@
                     "description": "The background color for primary type of dpad.",
                     "value": "var(--theme-colors-primary-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#fafafa",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-background-color"
                 },
@@ -1881,7 +1888,7 @@
                     "description": "The font color for primary type of dpad.",
                     "value": "var(--theme-colors-primary-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-font-color"
                 },
@@ -1890,7 +1897,7 @@
                     "description": "the pressed background color for primary type of dpad",
                     "value": "var(--theme-colors-primary-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#bdbdbd",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-pressed-background-color"
                 },
@@ -1899,7 +1906,7 @@
                     "description": "the pressed font color for primary type of dpad",
                     "value": "var(--theme-colors-primary-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-pressed-font-color"
                 },
@@ -1940,7 +1947,7 @@
                     "description": "The background color for secondary type of dpad.",
                     "value": "var(--theme-colors-secondary-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#bdbdbd",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-background-color"
                 },
@@ -1949,7 +1956,7 @@
                     "description": "The font color for secondary type of dpad.",
                     "value": "var(--theme-colors-secondary-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-font-color"
                 },
@@ -1958,7 +1965,7 @@
                     "description": "the pressed background color for secondary type of dpad",
                     "value": "var(--theme-colors-secondary-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#9e9e9e",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-pressed-background-color"
                 },
@@ -1967,7 +1974,7 @@
                     "description": "the pressed font color for secondary type of dpad",
                     "value": "var(--theme-colors-secondary-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-pressed-font-color"
                 },
@@ -2008,7 +2015,7 @@
                     "description": "The background color for success type of dpad.",
                     "value": "var(--theme-colors-success-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#4caf50",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-background-color"
                 },
@@ -2017,7 +2024,7 @@
                     "description": "The font color for success type of dpad.",
                     "value": "var(--theme-colors-success-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-font-color"
                 },
@@ -2026,7 +2033,7 @@
                     "description": "the pressed background color for success type of dpad",
                     "value": "var(--theme-colors-success-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#388e3c",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-pressed-background-color"
                 },
@@ -2035,7 +2042,7 @@
                     "description": "the pressed font color for success type of dpad",
                     "value": "var(--theme-colors-success-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-pressed-font-color"
                 },
@@ -2044,7 +2051,7 @@
                     "description": "The background color for text type of dpad.",
                     "value": "var(--theme-colors-text-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#efefef",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-background-color"
                 },
@@ -2053,7 +2060,7 @@
                     "description": "The font color for text type of dpad.",
                     "value": "var(--theme-colors-text-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-font-color"
                 },
@@ -2062,7 +2069,7 @@
                     "description": "the pressed background color for text type of dpad",
                     "value": "var(--theme-colors-text-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#808080",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-pressed-background-color"
                 },
@@ -2071,7 +2078,7 @@
                     "description": "the pressed font color for text type of dpad",
                     "value": "var(--theme-colors-text-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-pressed-font-color"
                 },
@@ -2080,7 +2087,7 @@
                     "description": "The background color for warning type of dpad.",
                     "value": "var(--theme-colors-warning-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffc107",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-background-color"
                 },
@@ -2089,7 +2096,7 @@
                     "description": "The font color for warning type of dpad.",
                     "value": "var(--theme-colors-warning-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-font-color"
                 },
@@ -2098,7 +2105,7 @@
                     "description": "the pressed background color for warning type of dpad",
                     "value": "var(--theme-colors-warning-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ff6f00",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-pressed-background-color"
                 },
@@ -2107,7 +2114,7 @@
                     "description": "the pressed font color for warning type of dpad",
                     "value": "var(--theme-colors-warning-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-pressed-font-color"
                 },
@@ -2186,7 +2193,7 @@
                     "description": "set the default font size for the form",
                     "value": "var(--theme-fonts-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -2202,7 +2209,7 @@
                     "description": "set the default font style for the form",
                     "value": "var(--theme-fonts-font-style)",
                     "type": "string",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -2215,7 +2222,7 @@
                     "description": "set the default font weight for the form",
                     "value": "var(--theme-fonts-font-weight)",
                     "type": "string",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -2253,7 +2260,7 @@
                     "description": "The default background color for danger type of keypad",
                     "value": "var(--theme-colors-danger-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f44336",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-background-color"
                 },
@@ -2262,7 +2269,7 @@
                     "description": "The default border color for danger type of keypad.",
                     "value": "var(--theme-colors-danger-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#e53935",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-border-color"
                 },
@@ -2271,7 +2278,7 @@
                     "description": "The default font color for danger type of keypad.",
                     "value": "var(--theme-colors-danger-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-font-color"
                 },
@@ -2280,7 +2287,7 @@
                     "description": "the pressed background color for danger type of keypad",
                     "value": "var(--theme-colors-danger-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#b71c1c",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-pressed-background-color"
                 },
@@ -2289,7 +2296,7 @@
                     "description": "the pressed border color for danger type of keypad",
                     "value": "var(--theme-colors-danger-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#e53935",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-pressed-border-color"
                 },
@@ -2298,7 +2305,7 @@
                     "description": "the pressed font color for danger type of keypad",
                     "value": "var(--theme-colors-danger-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-danger-pressed-font-color"
                 },
@@ -2307,7 +2314,7 @@
                     "description": "The default background color for default type of keypad",
                     "value": "var(--theme-colors-default-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#0099ff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-background-color"
                 },
@@ -2316,7 +2323,7 @@
                     "description": "The default border color for default type of keypad.",
                     "value": "var(--theme-colors-default-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#0091ea",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-border-color"
                 },
@@ -2325,7 +2332,7 @@
                     "description": "The default font color for default type of keypad.",
                     "value": "var(--theme-colors-default-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-font-color"
                 },
@@ -2334,7 +2341,7 @@
                     "description": "the pressed background color for default type of keypad",
                     "value": "var(--theme-colors-default-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#008ae6",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-pressed-background-color"
                 },
@@ -2343,7 +2350,7 @@
                     "description": "the pressed border color for default type of keypad",
                     "value": "var(--theme-colors-default-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#0091ea",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-pressed-border-color"
                 },
@@ -2352,7 +2359,7 @@
                     "description": "the pressed font color for default type of keypad",
                     "value": "var(--theme-colors-default-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-default-pressed-font-color"
                 },
@@ -2361,7 +2368,7 @@
                     "description": "The default background color for info type of keypad",
                     "value": "var(--theme-colors-info-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#00bcd4",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-background-color"
                 },
@@ -2370,7 +2377,7 @@
                     "description": "The default border color for info type of keypad.",
                     "value": "var(--theme-colors-info-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#00bcd4",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-border-color"
                 },
@@ -2379,7 +2386,7 @@
                     "description": "The default font color for info type of keypad.",
                     "value": "var(--theme-colors-info-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-font-color"
                 },
@@ -2388,7 +2395,7 @@
                     "description": "the pressed background color for info type of keypad",
                     "value": "var(--theme-colors-info-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#0097a7",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-pressed-background-color"
                 },
@@ -2397,7 +2404,7 @@
                     "description": "the pressed border color for info type of keypad",
                     "value": "var(--theme-colors-info-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#00bcd4",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-pressed-border-color"
                 },
@@ -2406,7 +2413,7 @@
                     "description": "the pressed font color for info type of keypad",
                     "value": "var(--theme-colors-info-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-info-pressed-font-color"
                 },
@@ -2463,7 +2470,7 @@
                     "description": "The default background color for primary type of keypad",
                     "value": "var(--theme-colors-primary-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#fafafa",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-background-color"
                 },
@@ -2472,7 +2479,7 @@
                     "description": "The default border color for primary type of keypad.",
                     "value": "var(--theme-colors-primary-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#bdbdbd",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-border-color"
                 },
@@ -2481,7 +2488,7 @@
                     "description": "The default font color for primary type of keypad.",
                     "value": "var(--theme-colors-primary-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-font-color"
                 },
@@ -2490,7 +2497,7 @@
                     "description": "the pressed background color for primary type of keypad",
                     "value": "var(--theme-colors-primary-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#bdbdbd",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-pressed-background-color"
                 },
@@ -2499,7 +2506,7 @@
                     "description": "the pressed border color for primary type of keypad",
                     "value": "var(--theme-colors-primary-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#bdbdbd",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-pressed-border-color"
                 },
@@ -2508,7 +2515,7 @@
                     "description": "the pressed font color for primary type of keypad",
                     "value": "var(--theme-colors-primary-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-primary-pressed-font-color"
                 },
@@ -2565,7 +2572,7 @@
                     "description": "The default background color for secondary type of keypad",
                     "value": "var(--theme-colors-secondary-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#bdbdbd",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-background-color"
                 },
@@ -2574,7 +2581,7 @@
                     "description": "The default border color for secondary type of keypad.",
                     "value": "var(--theme-colors-secondary-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#9e9e9e",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-border-color"
                 },
@@ -2583,7 +2590,7 @@
                     "description": "The default font color for secondary type of keypad.",
                     "value": "var(--theme-colors-secondary-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-font-color"
                 },
@@ -2592,7 +2599,7 @@
                     "description": "the pressed background color for secondary type of keypad",
                     "value": "var(--theme-colors-secondary-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#9e9e9e",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-pressed-background-color"
                 },
@@ -2601,7 +2608,7 @@
                     "description": "the pressed border color for secondary type of keypad",
                     "value": "var(--theme-colors-secondary-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#9e9e9e",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-pressed-border-color"
                 },
@@ -2610,7 +2617,7 @@
                     "description": "the pressed font color for secondary type of keypad",
                     "value": "var(--theme-colors-secondary-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffffff",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-secondary-pressed-font-color"
                 },
@@ -2667,7 +2674,7 @@
                     "description": "The default background color for success type of keypad",
                     "value": "var(--theme-colors-success-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#4caf50",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-background-color"
                 },
@@ -2676,7 +2683,7 @@
                     "description": "The default border color for success type of keypad.",
                     "value": "var(--theme-colors-success-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#43a047",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-border-color"
                 },
@@ -2685,7 +2692,7 @@
                     "description": "The default font color for success type of keypad.",
                     "value": "var(--theme-colors-success-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-font-color"
                 },
@@ -2694,7 +2701,7 @@
                     "description": "the pressed background color for success type of keypad",
                     "value": "var(--theme-colors-success-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#388e3c",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-pressed-background-color"
                 },
@@ -2703,7 +2710,7 @@
                     "description": "the pressed border color for success type of keypad",
                     "value": "var(--theme-colors-success-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#43a047",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-pressed-border-color"
                 },
@@ -2712,7 +2719,7 @@
                     "description": "the pressed font color for success type of keypad",
                     "value": "var(--theme-colors-success-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-success-pressed-font-color"
                 },
@@ -2721,7 +2728,7 @@
                     "description": "The default background color for text type of keypad",
                     "value": "var(--theme-colors-text-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#efefef",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-background-color"
                 },
@@ -2730,7 +2737,7 @@
                     "description": "The default border color for text type of keypad.",
                     "value": "var(--theme-colors-text-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#e0e0e0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-border-color"
                 },
@@ -2739,7 +2746,7 @@
                     "description": "The default font color for text type of keypad.",
                     "value": "var(--theme-colors-text-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-font-color"
                 },
@@ -2748,7 +2755,7 @@
                     "description": "the pressed background color for text type of keypad",
                     "value": "var(--theme-colors-text-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#808080",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-pressed-background-color"
                 },
@@ -2757,7 +2764,7 @@
                     "description": "the pressed border color for text type of keypad",
                     "value": "var(--theme-colors-text-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#e0e0e0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-pressed-border-color"
                 },
@@ -2766,7 +2773,7 @@
                     "description": "the pressed font color for text type of keypad",
                     "value": "var(--theme-colors-text-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-text-pressed-font-color"
                 },
@@ -2775,7 +2782,7 @@
                     "description": "The default background color for warning type of keypad",
                     "value": "var(--theme-colors-warning-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffc107",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-background-color"
                 },
@@ -2784,7 +2791,7 @@
                     "description": "The default border color for warning type of keypad.",
                     "value": "var(--theme-colors-warning-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffb300",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-border-color"
                 },
@@ -2793,7 +2800,7 @@
                     "description": "The default font color for warning type of keypad.",
                     "value": "var(--theme-colors-warning-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#333",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-font-color"
                 },
@@ -2802,7 +2809,7 @@
                     "description": "the pressed background color for warning type of keypad",
                     "value": "var(--theme-colors-warning-pressed-background-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ff6f00",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-pressed-background-color"
                 },
@@ -2811,7 +2818,7 @@
                     "description": "the pressed border color for warning type of keypad",
                     "value": "var(--theme-colors-warning-pressed-border-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#ffb300",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-pressed-border-color"
                 },
@@ -2820,7 +2827,7 @@
                     "description": "the pressed font color for warning type of keypad",
                     "value": "var(--theme-colors-warning-pressed-font-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "#f0fff0",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-colors-warning-pressed-font-color"
                 },
@@ -2931,7 +2938,7 @@
                     "description": "Set the font size of the vertical list",
                     "value": "var(--theme-fonts-font-size)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -2947,7 +2954,7 @@
                     "description": "Set the font style of the vertical list",
                     "value": "var(--theme-fonts-font-style)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -2960,7 +2967,7 @@
                     "description": "Set the font weight of the vertical list",
                     "value": "var(--theme-fonts-font-weight)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -3014,7 +3021,7 @@
                     "description": "Scrollbar border radius",
                     "value": "var(--theme-others-scrollbar-border-radius)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "10px",
                     "values": [
                         "px",
                         "vw",
@@ -3030,7 +3037,7 @@
                     "description": "Scrollbar thumb color",
                     "value": "var(--theme-others-scrollbar-thumb-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "rgba(0, 0, 0, 0.5)",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-others-scrollbar-thumb-color"
                 },
@@ -3039,7 +3046,7 @@
                     "description": "Scrollbar track color",
                     "value": "var(--theme-others-scrollbar-track-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "rgba(0, 0, 0, 0.1)",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-others-scrollbar-track-color"
                 },
@@ -3048,7 +3055,7 @@
                     "description": "Scrollbar width",
                     "value": "var(--theme-others-scrollbar-width)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "7px",
                     "values": [
                         "px",
                         "vw",
@@ -3075,7 +3082,7 @@
                     "description": "the border radius of the modal",
                     "value": "var(--theme-ch5-modal-border-radius)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "6px",
                     "values": [
                         "px",
                         "vw",
@@ -3091,7 +3098,7 @@
                     "description": "the border style of the modal",
                     "value": "var(--theme-ch5-modal-border-style)",
                     "type": "string",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "solid",
                     "values": [
                         "large",
                         "solid",
@@ -3104,7 +3111,7 @@
                     "description": "the border width of the modal",
                     "value": "var(--theme-ch5-modal-border-width)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "1px",
                     "values": [
                         "px",
                         "vw",
@@ -3120,7 +3127,7 @@
                     "description": "the font size of the icon at the top of the modal",
                     "value": "var(--ch5-modal-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -3136,7 +3143,7 @@
                     "description": "the font style of the icon at the top of the modal",
                     "value": "var(--ch5-modal-font-style)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3152,7 +3159,7 @@
                     "description": "the font weight of the icon at the top of the modal",
                     "value": "var(--ch5-modal-font-weight)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3168,7 +3175,7 @@
                     "description": "the margin of the icon at the top of the modal.",
                     "value": "var(--theme-ch5-modal-close-icon-margin)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "0 5px",
                     "values": [
                         "px",
                         "vw",
@@ -3184,7 +3191,7 @@
                     "description": "the padding of the icon at the top of the modal.",
                     "value": "var(--theme-ch5-modal-close-icon-padding)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "0 5px 5px",
                     "values": [
                         "px",
                         "vw",
@@ -3200,7 +3207,7 @@
                     "description": "the width of the icon at the top of the modal.",
                     "value": "var(--theme-ch5-modal-close-icon-width)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "20px",
                     "values": [
                         "px",
                         "vw",
@@ -3216,7 +3223,7 @@
                     "description": "the font size for the content of the modal.",
                     "value": "var(--theme-ch5-modal-contents-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "18px",
                     "values": [
                         "px",
                         "vw",
@@ -3232,7 +3239,7 @@
                     "description": "the padding of the modal's content",
                     "value": "var(--theme-ch5-modal-contents-padding)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "10px",
                     "values": [
                         "px",
                         "vw",
@@ -3248,7 +3255,7 @@
                     "description": "the default font size of the icon at the top of the modal.",
                     "value": "var(--theme-ch5-modal-default-close-icon-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "24px",
                     "values": [
                         "px",
                         "vw",
@@ -3264,7 +3271,7 @@
                     "description": "the default font style of the icon at the top of the modal",
                     "value": "var(--ch5-modal-font-style)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3280,7 +3287,7 @@
                     "description": "the default font weight of the icon at the top of the modal",
                     "value": "var(--ch5-modal-font-weight)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3296,7 +3303,7 @@
                     "description": "the default font size of the modal",
                     "value": "var(--theme-fonts-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -3312,7 +3319,7 @@
                     "description": "the default font style of the modal",
                     "value": "var(--theme-fonts-font-style)",
                     "type": "string",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -3325,7 +3332,7 @@
                     "description": "the default font weight of the modal",
                     "value": "var(--theme-fonts-font-weight)",
                     "type": "string",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -3338,7 +3345,7 @@
                     "description": "modal mask z-index",
                     "value": "var(--theme-ch5-modal-mask-z-index)",
                     "type": "number",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "10000",
                     "values": [
                         "1",
                         "10",
@@ -3351,7 +3358,7 @@
                     "description": "set padding for the modal",
                     "value": "var(--theme-ch5-modal-padding)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "1.25em",
                     "values": [
                         "px",
                         "vw",
@@ -3367,7 +3374,7 @@
                     "description": "the font size for the prompt icon of the modal",
                     "value": "var(--ch5-modal-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -3383,7 +3390,7 @@
                     "description": "the font style for the prompt icon of the modal",
                     "value": "var(--ch5-modal-font-style)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3399,7 +3406,7 @@
                     "description": "the font weight for the prompt icon of the modal",
                     "value": "var(--ch5-modal-font-weight)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3415,7 +3422,7 @@
                     "description": "the right margin for the prompt icon of the modal",
                     "value": "var(--theme-ch5-modal-prompt-icon-margin-right)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "10px",
                     "values": [
                         "px",
                         "vw",
@@ -3431,7 +3438,7 @@
                     "description": "the padding for the prompt of the modal",
                     "value": "var(--theme-ch5-modal-prompt-padding)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "30px 0 30px 0",
                     "values": [
                         "px",
                         "vw",
@@ -3447,7 +3454,7 @@
                     "description": "the font size for the prompt text of the modal",
                     "value": "var(--theme-ch5-modal-prompt-text-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -3463,7 +3470,7 @@
                     "description": "the font style for the prompt text of the modal",
                     "value": "var(--ch5-modal-font-style)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3479,7 +3486,7 @@
                     "description": "the font weight for the prompt text of the modal",
                     "value": "var(--ch5-modal-font-weight)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3495,7 +3502,7 @@
                     "description": "the font size for the title of the modal",
                     "value": "var(--theme-ch5-modal-title-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "1.3em",
                     "values": [
                         "px",
                         "vw",
@@ -3511,7 +3518,7 @@
                     "description": "the font style for the title of the modal",
                     "value": "var(--ch5-modal-font-style)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3540,7 +3547,7 @@
                     "description": "modal z-index",
                     "value": "var(--theme-ch5-modal-z-index)",
                     "type": "number",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "10001",
                     "values": [
                         "1",
                         "10",
@@ -3553,7 +3560,7 @@
                     "description": "the font style for the content of the modal.",
                     "value": "var(--ch5-modal-font-style)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3569,7 +3576,7 @@
                     "description": "the font weight for the content of the modal.",
                     "value": "var(--ch5-modal-font-weight)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3591,7 +3598,7 @@
                     "description": "the font size of the icon at the top of the overlay panel",
                     "value": "var(--theme-ch5-overlay-default-close-icon-font-size)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "24px",
                     "values": [
                         "px",
                         "vw",
@@ -3599,14 +3606,15 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-overlay-default-close-icon-font-size"
                 },
                 {
                     "name": "--ch5-overlay-default-close-icon-font-style",
                     "description": "the font style of the icon at the top of the overlay panel",
                     "value": "var(--ch5-overlay-panel-font-style)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3614,14 +3622,15 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--ch5-overlay-panel-font-style"
                 },
                 {
                     "name": "--ch5-overlay-default-close-icon-font-weight",
                     "description": "the font weight of the icon at the top of the overlay panel",
                     "value": "var(--ch5-overlay-panel-font-weight)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3629,7 +3638,8 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--ch5-overlay-panel-font-weight"
                 },
                 {
                     "name": "--ch5-overlay-panel-border-radius",
@@ -3644,7 +3654,8 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-overlay-panel-border-radius"
                 },
                 {
                     "name": "--ch5-overlay-panel-border-style",
@@ -3656,7 +3667,8 @@
                         "large",
                         "solid",
                         "center"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-overlay-panel-border-style"
                 },
                 {
                     "name": "--ch5-overlay-panel-border-width",
@@ -3671,7 +3683,8 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-overlay-panel-border-width"
                 },
                 {
                     "name": "--ch5-overlay-panel-close-icon-margin",
@@ -3686,7 +3699,8 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-overlay-panel-close-icon-margin"
                 },
                 {
                     "name": "--ch5-overlay-panel-close-icon-padding",
@@ -3701,7 +3715,8 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-overlay-panel-close-icon-padding"
                 },
                 {
                     "name": "--ch5-overlay-panel-close-icon-width",
@@ -3716,7 +3731,8 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-overlay-panel-close-icon-width"
                 },
                 {
                     "name": "--ch5-overlay-panel-contents-font-size",
@@ -3731,14 +3747,15 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-overlay-panel-contents-font-size"
                 },
                 {
                     "name": "--ch5-overlay-panel-contents-font-style",
                     "description": "the font style for the content of the overlay panel",
                     "value": "var(--ch5-overlay-panel-font-style)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3746,14 +3763,15 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--ch5-overlay-panel-font-style"
                 },
                 {
                     "name": "--ch5-overlay-panel-contents-font-weight",
                     "description": "the font weight for the content of the overlay panel",
                     "value": "var(--ch5-overlay-panel-font-style)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -3761,7 +3779,8 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--ch5-overlay-panel-font-style"
                 },
                 {
                     "name": "--ch5-overlay-panel-contents-padding",
@@ -3776,14 +3795,15 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-overlay-panel-contents-padding"
                 },
                 {
                     "name": "--ch5-overlay-panel-font-size",
                     "description": "the default font size for the overlay panel",
                     "value": "var(--theme-fonts-font-size)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -3791,31 +3811,34 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-fonts-font-size"
                 },
                 {
                     "name": "--ch5-overlay-panel-font-style",
                     "description": "the default font style for the overlay panel",
                     "value": "var(--theme-fonts-font-style)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
                         "center"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-fonts-font-style"
                 },
                 {
                     "name": "--ch5-overlay-panel-font-weight",
                     "description": "the default font weight for the overlay panel",
                     "value": "var(--theme-fonts-font-weight)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
                         "center"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-fonts-font-weight"
                 },
                 {
                     "name": "--ch5-overlay-panel-padding",
@@ -3830,7 +3853,8 @@
                         "em",
                         "rem",
                         "%"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-overlay-panel-padding"
                 },
                 {
                     "name": "--ch5-overlay-panel-z-index",
@@ -3842,7 +3866,8 @@
                         "1",
                         "10",
                         "100"
-                    ]
+                    ],
+                    "relatedThemeVariable": "--theme-ch5-overlay-panel-z-index"
                 }
             ]
         },
@@ -4106,7 +4131,7 @@
                     "description": "component main font size",
                     "value": "var(--theme-fonts-font-size)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -4122,7 +4147,7 @@
                     "description": "component main font style",
                     "value": "var(--theme-fonts-font-style)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -4135,7 +4160,7 @@
                     "description": "component main font weight",
                     "value": "var(--theme-fonts-font-weight)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -4424,7 +4449,7 @@
                     "description": "scrollbar border radius",
                     "value": "var(--theme-others-scrollbar-border-radius)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "10px",
                     "values": [
                         "px",
                         "vw",
@@ -4440,7 +4465,7 @@
                     "description": "scrollbar thumb color",
                     "value": "var(--theme-others-scrollbar-thumb-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "rgba(0, 0, 0, 0.5)",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-others-scrollbar-thumb-color"
                 },
@@ -4449,7 +4474,7 @@
                     "description": "scrollbar track color",
                     "value": "var(--theme-others-scrollbar-track-color)",
                     "type": "color",
-                    "example": "verify component variable in theme manually",
+                    "example": "rgba(0, 0, 0, 0.1)",
                     "values": "rgb(35,35,35), #1a1a1a, red",
                     "relatedThemeVariable": "--theme-others-scrollbar-track-color"
                 },
@@ -4458,7 +4483,7 @@
                     "description": "scrollbar width",
                     "value": "var(--theme-others-scrollbar-width)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "7px",
                     "values": [
                         "px",
                         "vw",
@@ -4480,7 +4505,7 @@
                     "description": "button content line height",
                     "value": "var(--theme-ch5-button-content-line-height)",
                     "type": "number",
-                    "example": "verify component variable in theme manually",
+                    "example": "1.2",
                     "values": [
                         "1",
                         "10",
@@ -4493,7 +4518,7 @@
                     "description": "button padding",
                     "value": "var(--theme-ch5-button-padding)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "0.25rem",
                     "values": [
                         "px",
                         "vw",
@@ -4602,7 +4627,7 @@
                     "description": "large height in px of the handle when handleShape=\"circle\"",
                     "value": "var(--ch5-slider-size-large-handle-width-circle)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "42px",
                     "values": [
                         "px",
                         "vw",
@@ -4618,7 +4643,7 @@
                     "description": "large height in px of the handle when handleShape=\"oval\"",
                     "value": "calc(var(--ch5-slider-size-large-handle-width-oval) / 1.5)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "42px",
                     "values": [
                         "px",
                         "vw",
@@ -4762,7 +4787,7 @@
                     "description": "regular height in px of the handle when handleShape=\"circle\"",
                     "value": "var(--ch5-slider-size-regular-handle-width-circle)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "36px",
                     "values": [
                         "px",
                         "vw",
@@ -4778,7 +4803,7 @@
                     "description": "regular height in px of the handle when handleShape=\"oval\"",
                     "value": "calc(var(--ch5-slider-size-regular-handle-width-oval) / 1.5)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "36px",
                     "values": [
                         "px",
                         "vw",
@@ -4922,7 +4947,7 @@
                     "description": "small height in px of the handle when handleShape=\"circle\"",
                     "value": "var(--ch5-slider-size-small-handle-width-circle)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "30px",
                     "values": [
                         "px",
                         "vw",
@@ -4938,7 +4963,7 @@
                     "description": "small height in px of the handle when handleShape=\"oval\"",
                     "value": "calc(var(--ch5-slider-size-small-handle-width-oval) / 1.5)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "30px",
                     "values": [
                         "px",
                         "vw",
@@ -5082,7 +5107,7 @@
                     "description": "x-large height in px of the handle when handleShape=\"circle\"",
                     "value": "var(--ch5-slider-size-x-large-handle-width-circle)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "54px",
                     "values": [
                         "px",
                         "vw",
@@ -5098,7 +5123,7 @@
                     "description": "x-large height in px of the handle when handleShape=\"oval\"",
                     "value": "calc(var(--ch5-slider-size-x-large-handle-width-oval) / 1.5)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "54px",
                     "values": [
                         "px",
                         "vw",
@@ -5242,7 +5267,7 @@
                     "description": "x-small height in px of the handle when handleShape=\"circle\"",
                     "value": "var(--ch5-slider-size-x-small-handle-width-circle)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "26px",
                     "values": [
                         "px",
                         "vw",
@@ -5258,7 +5283,7 @@
                     "description": "x-small height in px of the handle when handleShape=\"oval\"",
                     "value": "calc(var(--ch5-slider-size-x-small-handle-width-oval) / 1.5)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "26px",
                     "values": [
                         "px",
                         "vw",
@@ -5610,7 +5635,7 @@
                     "description": "the default font style of the spinner",
                     "value": "var(--theme-fonts-font-style)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -5623,7 +5648,7 @@
                     "description": "the default font weight of the spinner",
                     "value": "var(--theme-fonts-font-weight)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -5636,7 +5661,7 @@
                     "description": "the default font size for icon",
                     "value": "var(--ch5-spinner-font-size)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "22px",
                     "values": [
                         "px",
                         "vw",
@@ -5852,7 +5877,7 @@
                     "description": "set the default font style for the textinput",
                     "value": "var(--theme-fonts-font-style)",
                     "type": "string",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -5865,7 +5890,7 @@
                     "description": "set the default font weight for the textinput",
                     "value": "var(--theme-fonts-font-weight)",
                     "type": "string",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -5878,7 +5903,7 @@
                     "description": "set the font size of icon for large size of the textinput",
                     "value": "var(--ch5-textinput-large-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "18px",
                     "values": [
                         "px",
                         "vw",
@@ -5894,7 +5919,7 @@
                     "description": "set margin of icon for large size of the textinput",
                     "value": "var(--theme-ch5-textinput-icon-large-margin)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "18px 18px",
                     "values": [
                         "px",
                         "vw",
@@ -5910,7 +5935,7 @@
                     "description": "set margin of icon for regular size of the textinput",
                     "value": "var(--theme-ch5-textinput-icon-regular-margin)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "16px 16px",
                     "values": [
                         "px",
                         "vw",
@@ -5926,7 +5951,7 @@
                     "description": "set margin of icon for small size of the textinput",
                     "value": "var(--theme-ch5-textinput-icon-small-margin)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "14px 14px",
                     "values": [
                         "px",
                         "vw",
@@ -5942,7 +5967,7 @@
                     "description": "set the font size of icon for x-large size of the textinput",
                     "value": "var(--ch5-textinput-x-large-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "22px",
                     "values": [
                         "px",
                         "vw",
@@ -5958,7 +5983,7 @@
                     "description": "set margin of icon for x-large size of the textinput",
                     "value": "var(--theme-ch5-textinput-icon-x-large-margin)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "22px 22px",
                     "values": [
                         "px",
                         "vw",
@@ -5974,7 +5999,7 @@
                     "description": "set margin of icon for x-small size of the textinput",
                     "value": "var(--theme-ch5-textinput-icon-x-small-margin)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "12px 12px",
                     "values": [
                         "px",
                         "vw",
@@ -5990,7 +6015,7 @@
                     "description": "background color of textinput input field",
                     "value": "var(--theme-ch5-textinput-input-background-color)",
                     "type": "string",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "transparent",
                     "values": [
                         "large",
                         "solid",
@@ -6003,7 +6028,7 @@
                     "description": "base border color",
                     "value": "var(--theme-ch5-textinput-input-border-color)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "var(--theme-ch5-textinput-border-color)",
                     "values": [
                         "px",
                         "vw",
@@ -6019,7 +6044,7 @@
                     "description": "the border radius for the textinput",
                     "value": "var(--theme-ch5-textinput-input-border-radius)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "5px",
                     "values": [
                         "px",
                         "vw",
@@ -6035,7 +6060,7 @@
                     "description": "set the textinput border's style",
                     "value": "var(--theme-ch5-textinput-input-border-style)",
                     "type": "string",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "solid",
                     "values": [
                         "large",
                         "solid",
@@ -6048,7 +6073,7 @@
                     "description": "set the textinput border's width",
                     "value": "var(--theme-ch5-textinput-input-border-width)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "solid",
                     "values": [
                         "px",
                         "vw",
@@ -6064,7 +6089,7 @@
                     "description": "set padding for large size of the textinput",
                     "value": "var(--theme-ch5-textinput-input-large-padding)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "15px 20px",
                     "values": [
                         "px",
                         "vw",
@@ -6080,7 +6105,7 @@
                     "description": "set padding for regular size of the textinput",
                     "value": "var(--theme-ch5-textinput-input-regular-padding)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "15px 20px",
                     "values": [
                         "px",
                         "vw",
@@ -6096,7 +6121,7 @@
                     "description": "set padding for small size of the textinput",
                     "value": "var(--theme-ch5-textinput-input-small-padding)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "15px 15px",
                     "values": [
                         "px",
                         "vw",
@@ -6112,7 +6137,7 @@
                     "description": "set padding for x-large size of the textinput",
                     "value": "var(--theme-ch5-textinput-input-x-large-padding)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "15px 20px",
                     "values": [
                         "px",
                         "vw",
@@ -6128,7 +6153,7 @@
                     "description": "set padding for x-small size of the textinput",
                     "value": "var(--theme-ch5-textinput-input-x-small-padding)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "10px 10px",
                     "values": [
                         "px",
                         "vw",
@@ -6144,7 +6169,7 @@
                     "description": "set the font size for large size of the textinput",
                     "value": "var(--theme-ch5-textinput-large-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "18px",
                     "values": [
                         "px",
                         "vw",
@@ -6160,7 +6185,7 @@
                     "description": "set the font style for large size of the textinput",
                     "value": "var(--ch5-textinput-font-style)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6176,7 +6201,7 @@
                     "description": "set the font weight for large size of the textinput",
                     "value": "var(--ch5-textinput-font-weight)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6192,7 +6217,7 @@
                     "description": "set the font size for large size of the textinput",
                     "value": "calc(var(--ch5-textinput-large-font-size) - 4px)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "18px",
                     "values": [
                         "px",
                         "vw",
@@ -6208,7 +6233,7 @@
                     "description": "set the font size for regular size of the textinput",
                     "value": "var(--theme-ch5-textinput-regular-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -6224,7 +6249,7 @@
                     "description": "set the font style for regular size of the textinput",
                     "value": "var(--ch5-textinput-font-style)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6240,7 +6265,7 @@
                     "description": "set the font weight for regular size of the textinput",
                     "value": "var(--ch5-textinput-font-weight)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6256,7 +6281,7 @@
                     "description": "set the font size for regular size of the textinput",
                     "value": "calc(var(--ch5-textinput-regular-font-size) - 2px)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -6272,7 +6297,7 @@
                     "description": "set minimum height for size - large of the textinput",
                     "value": "var(--theme-ch5-textinput-size-large-height)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "56px",
                     "values": [
                         "px",
                         "vw",
@@ -6288,7 +6313,7 @@
                     "description": "set the width for large size of the textinput",
                     "value": "var(--theme-ch5-textinput-size-large-width)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "500px",
                     "values": [
                         "px",
                         "vw",
@@ -6304,7 +6329,7 @@
                     "description": "set minimum height for size - regular of the textinput",
                     "value": "var(--theme-ch5-textinput-size-regular-height)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "52px",
                     "values": [
                         "px",
                         "vw",
@@ -6320,7 +6345,7 @@
                     "description": "set the width for regular size of the textinput",
                     "value": "var(--theme-ch5-textinput-size-regular-width)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "400px",
                     "values": [
                         "px",
                         "vw",
@@ -6336,7 +6361,7 @@
                     "description": "set minimum height for size - small of the textinput",
                     "value": "var(--theme-ch5-textinput-size-small-height)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "48px",
                     "values": [
                         "px",
                         "vw",
@@ -6352,7 +6377,7 @@
                     "description": "set the width for small size of the textinput",
                     "value": "var(--theme-ch5-textinput-size-small-width)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "250px",
                     "values": [
                         "px",
                         "vw",
@@ -6368,7 +6393,7 @@
                     "description": "set minimum height for size - x-large of the textinput",
                     "value": "var(--theme-ch5-textinput-size-x-large-height)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "60px",
                     "values": [
                         "px",
                         "vw",
@@ -6384,7 +6409,7 @@
                     "description": "set the width for x-large size of the textinput",
                     "value": "var(--ch5-textinput-size-large-width)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "500px",
                     "values": [
                         "px",
                         "vw",
@@ -6400,7 +6425,7 @@
                     "description": "set minimum height for size - x-small of the textinput",
                     "value": "var(--theme-ch5-textinput-size-x-small-height)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "40px",
                     "values": [
                         "px",
                         "vw",
@@ -6416,7 +6441,7 @@
                     "description": "set the width for x-small size of the textinput",
                     "value": "var(--theme-ch5-textinput-size-x-small-width)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "200px",
                     "values": [
                         "px",
                         "vw",
@@ -6432,7 +6457,7 @@
                     "description": "set the font size for small size of the textinput",
                     "value": "var(--theme-ch5-textinput-small-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "14px",
                     "values": [
                         "px",
                         "vw",
@@ -6448,7 +6473,7 @@
                     "description": "set the font style for small size of the textinput",
                     "value": "var(--ch5-textinput-font-style)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6464,7 +6489,7 @@
                     "description": "set the font weight for small size of the textinput",
                     "value": "var(--ch5-textinput-font-weight)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6480,7 +6505,7 @@
                     "description": "set the font size for small size of the textinput",
                     "value": "calc(var(--ch5-textinput-small-font-size) - 1px)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "14px",
                     "values": [
                         "px",
                         "vw",
@@ -6496,7 +6521,7 @@
                     "description": "set the font size for x-large size of the textinput",
                     "value": "var(--theme-ch5-textinput-x-large-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "22px",
                     "values": [
                         "px",
                         "vw",
@@ -6512,7 +6537,7 @@
                     "description": "set the font style for x-large size of the textinput",
                     "value": "var(--ch5-textinput-font-style)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6528,7 +6553,7 @@
                     "description": "set the font weight for x-large size of the textinput",
                     "value": "var(--ch5-textinput-font-weight)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6544,7 +6569,7 @@
                     "description": "set the font size for x-large size of the textinput",
                     "value": "calc(var(--ch5-textinput-x-large-font-size) - 4px)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "22px",
                     "values": [
                         "px",
                         "vw",
@@ -6560,7 +6585,7 @@
                     "description": "set the font size for x-small size of the textinput",
                     "value": "var(--theme-ch5-textinput-x-small-font-size)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "12px",
                     "values": [
                         "px",
                         "vw",
@@ -6576,7 +6601,7 @@
                     "description": "set the font style for x-small size of the textinput",
                     "value": "var(--ch5-textinput-font-style)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6592,7 +6617,7 @@
                     "description": "set the font weight for x-small size of the textinput",
                     "value": "var(--ch5-textinput-font-weight)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6608,7 +6633,7 @@
                     "description": "set the font size for x-small size of the textinput",
                     "value": "calc(var(--ch5-textinput-x-small-font-size) - 1px)",
                     "type": "unit",
-                    "example": "INVALID JSON / verify manually",
+                    "example": "12px",
                     "values": [
                         "px",
                         "vw",
@@ -6652,7 +6677,7 @@
                     "description": "default font size",
                     "value": "var(--theme-fonts-font-size)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -6668,7 +6693,7 @@
                     "description": "default font style",
                     "value": "var(--theme-fonts-font-style)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -6681,7 +6706,7 @@
                     "description": "default font weight",
                     "value": "var(--theme-fonts-font-weight)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -6735,7 +6760,7 @@
                     "description": "font size applied on the on|off icon",
                     "value": "var(--ch5-toggle-font-size)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -6751,7 +6776,7 @@
                     "description": "font style applied on the on|off icon",
                     "value": "var(--ch5-toggle-font-style)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6793,7 +6818,7 @@
                     "description": "label font size",
                     "value": "var(--ch5-toggle-font-size)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -6809,7 +6834,7 @@
                     "description": "label font style",
                     "value": "var(--ch5-toggle-font-style)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6825,7 +6850,7 @@
                     "description": "label font weight",
                     "value": "var(--ch5-toggle-font-weight)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6857,7 +6882,7 @@
                     "description": "font size applied on the on|off label",
                     "value": "var(--ch5-toggle-font-size)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -6873,7 +6898,7 @@
                     "description": "font style applied on the on|off label",
                     "value": "var(--ch5-toggle-font-style)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6889,7 +6914,7 @@
                     "description": "font weight applied on the on|off label",
                     "value": "var(--ch5-toggle-font-weight)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "px",
                         "vw",
@@ -6924,7 +6949,7 @@
                     "description": "default font size value for the triggerview",
                     "value": "var(--theme-fonts-font-size)",
                     "type": "unit",
-                    "example": "verify component variable in theme manually",
+                    "example": "16px",
                     "values": [
                         "px",
                         "vw",
@@ -6940,7 +6965,7 @@
                     "description": "default font style for the triggerview",
                     "value": "var(--theme-fonts-font-style)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
@@ -6953,7 +6978,7 @@
                     "description": "default font weight for the triggerview",
                     "value": "var(--theme-fonts-font-weight)",
                     "type": "string",
-                    "example": "verify component variable in theme manually",
+                    "example": "normal",
                     "values": [
                         "large",
                         "solid",
