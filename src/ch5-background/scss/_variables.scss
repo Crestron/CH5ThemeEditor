@@ -20,8 +20,8 @@ ch5-background {
   --ch5-background--transition-timing-function: var(--theme-ch5-background--transition-timing-function);
 
   /// transition duration
-  /// type: string 
-  /// values: large, solid, center 
+  /// type: unit 
+  /// values: 1s, 2s, 3s 
   /// example: 1s
   /// related-theme-variable: --theme-ch5-background--transition-duration
   --ch5-background--transition-duration: var(--theme-ch5-background--transition-duration);

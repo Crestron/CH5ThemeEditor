@@ -4,7 +4,6 @@ const fs = require('fs');
 const flatten = require('@raghavendradabbir/sass-flatten');
 const path = require('path');
 const { execSync } = require("child_process");
-const jsonfile = require('jsonfile');
 
 const components = CONFIG.COMPONENTS;
 const themes = CONFIG.THEMES;
@@ -124,14 +123,8 @@ function getVariables(data, sectionName) {
 			const description = variableMetaData[0];
 			const type = variableMetaData[1].replace('type:', '').trim();
 			const valueMetadata = variableMetaData[2].replace('values:', '').trim()
-			const values = type === 'color' ? valueMetadata : valueMetadata.split(',').map((str) => str.trim()).filter((str) => str.trim())
+			const possibleValues = type === 'color' ? valueMetadata : valueMetadata.split(',').map((str) => str.trim()).filter((str) => str.trim())
 			const example = variableMetaData[3].replace('example:', '').trim()
-
-			let value = splitLine[1].trim().replaceAll(';', '');
-
-			// Corner Case
-			if (value === '#{$black}') { value = "#000"; }
-			if (value === '#{$white}') { value = "#fff"; }
 
 
 			if (sectionName === "theme") {
@@ -154,10 +147,9 @@ function getVariables(data, sectionName) {
 					data: {
 						name,
 						description,
-						value,
 						type,
 						example,
-						values
+						possibleValues
 					}
 				});
 				if (variableMetaData.length === 5) {
@@ -169,10 +161,9 @@ function getVariables(data, sectionName) {
 				variables.push({
 					name,
 					description,
-					value,
 					type,
 					example,
-					values
+					possibleValues
 				});
 				if (variableMetaData.length === 5) {
 					const relatedThemeVariable = variableMetaData[4].replace('related-theme-variable:', '').trim()
