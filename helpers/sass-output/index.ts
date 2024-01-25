@@ -32,6 +32,12 @@ function logger(...args: any[]) {
     }
   }
 }
+function createEmptyList(name: string) {
+  outputJSON['ch5ElementThemeDefs'][name] = {
+    componentThemeVersion: components[name]['version'],
+    selectors: []
+  }
+}
 
 function processComponentClasses(componentClasses: string[], flattenScss: FLATTENED_SCSS) {
 
@@ -296,16 +302,16 @@ async function initialize() {
   const start = Date.now();
   const componentKeys = Object.keys(components);
 
-  componentKeys.length = 1
-
   for (let i = 0; i < componentKeys.length; i++) {
-    const flattenScss = flattenScssComponents(componentKeys[i]);
-    await addSassVariables(flattenScss);
-    flattenScss.css = convertScssToCss(flattenScss.scss);
-    const componentClasses = generateComponentClasses(flattenScss.flatScss);
-    // logger(componentClasses)
-    // componentClasses.forEach((data: string) => logger(data));
-    processComponentClasses(componentClasses, flattenScss)
+    // const flattenScss = flattenScssComponents(componentKeys[i]);
+    // await addSassVariables(flattenScss);
+    // flattenScss.css = convertScssToCss(flattenScss.scss);
+    // const componentClasses = generateComponentClasses(flattenScss.flatScss);
+    // // logger(componentClasses)
+    // // componentClasses.forEach((data: string) => logger(data));
+    // processComponentClasses(componentClasses, flattenScss)
+
+    createEmptyList(componentKeys[i]);
   }
   logger(JSON.stringify(outputJSON, null, 4))
 
