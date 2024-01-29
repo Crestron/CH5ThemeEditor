@@ -10,32 +10,64 @@
 /// @group ch5-signal-level-gauge-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Height small
-$ch5-signal-level-gauge-small-height: 24px !default;
+ch5-signal-level-gauge {
+  /// Height small  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 24px 
+  /// related-theme-variable: --theme-ch5-signal-level-gauge-small-height
+  --ch5-signal-level-gauge-small-height: var(--theme-ch5-signal-level-gauge-small-height);
 
-/// Width small
-$ch5-signal-level-gauge-small-width: 36px !default;
+  /// Width small  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 36px 
+  /// related-theme-variable: --theme-ch5-signal-level-gauge-small-width
+  --ch5-signal-level-gauge-small-width: var(--theme-ch5-signal-level-gauge-small-width);
 
-/// Height regular
-$ch5-signal-level-gauge-regular-height: 35px !default;
+  /// Height regular  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 35px 
+  /// related-theme-variable: --theme-ch5-signal-level-gauge-regular-height
+  --ch5-signal-level-gauge-regular-height: var(--theme-ch5-signal-level-gauge-regular-height);
 
-/// Width regular
-$ch5-signal-level-gauge-regular-width: 45px !default;
+  /// Width regular  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 45px 
+  /// related-theme-variable: --theme-ch5-signal-level-gauge-regular-width
+  --ch5-signal-level-gauge-regular-width: var(--theme-ch5-signal-level-gauge-regular-width);
 
-/// Height large
-$ch5-signal-level-gauge-large-height: 60px !default;
+  /// Height large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 60px 
+  /// related-theme-variable: --theme-ch5-signal-level-gauge-large-height
+  --ch5-signal-level-gauge-large-height: var(--theme-ch5-signal-level-gauge-large-height);
 
-/// Width large
-$ch5-signal-level-gauge-large-width: 90px !default;
+  /// Width large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 90px 
+  /// related-theme-variable: --theme-ch5-signal-level-gauge-large-width
+  --ch5-signal-level-gauge-large-width: var(--theme-ch5-signal-level-gauge-large-width);
 
-/// Height x-large
-$ch5-signal-level-gauge-xlarge-height: 96px !default;
+  /// Height x-large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 96px 
+  /// related-theme-variable: --theme-ch5-signal-level-gauge-x-large-height
+  --ch5-signal-level-gauge-x-large-height: var(--theme-ch5-signal-level-gauge-x-large-height);
 
-/// Width x-large
-$ch5-signal-level-gauge-xlarge-width: 180px !default;
+  /// Width x-large  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 180px 
+  /// related-theme-variable: --theme-ch5-signal-level-gauge-x-large-width
+  --ch5-signal-level-gauge-x-large-width: var(--theme-ch5-signal-level-gauge-x-large-width);
 
-/// Bar color
-$ch5-signal-level-gauge-bar-color: #808080 !default;
+  /// Bar color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #808080 
+  /// related-theme-variable: --theme-ch5-signal-level-gauge-bar-color
+  --ch5-signal-level-gauge-bar-color: var(--theme-ch5-signal-level-gauge-bar-color);
 
-/// Selected bar color
-$ch5-signal-level-gauge-selected-bar-color: #67bef0 !default;
+  /// Selected bar color  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #67bef0 
+  /// related-theme-variable: --theme-ch5-signal-level-gauge-selected-bar-color
+  --ch5-signal-level-gauge-selected-bar-color: var(--theme-ch5-signal-level-gauge-selected-bar-color);
+}

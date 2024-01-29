@@ -37,23 +37,23 @@
       }
       .ch5-button--label {
         display: block;
-        @include text-truncate;
+        @include text-truncate();
       }
 
       .cb-btn {
         display: inline-flex;
         align-items: center;
         justify-content: space-between;
-        line-height: $ch5-button-content-line-height;
-        padding: $ch5-button-padding;
+        line-height: var(--ch5-button-content-line-height);
+        padding: var(--ch5-button-padding);
         vertical-align: middle;
-        padding-top: calc($ch5-button-padding / 2);
-        padding-bottom: calc($ch5-button-padding / 2);
+        padding-top: calc(var(--ch5-button-padding) / 2);
+        padding-bottom: calc(var(--ch5-button-padding) / 2);
       }
 
       .ch5-button--label {
-        padding-left: calc($ch5-button-padding / 2);
-        padding-right: calc($ch5-button-padding / 2);
+        padding-left: calc(var(--ch5-button-padding) / 2);
+        padding-right: calc(var(--ch5-button-padding) / 2);
       }
     }
 
@@ -132,7 +132,7 @@
   }
   .ch5-button--icon,
   .ch5-button--img {
-    line-height: $ch5-button-content-line-height;
+    line-height: var(--ch5-button-content-line-height);
   }
 
   // icon positions
@@ -288,9 +288,9 @@
 
   .ch5-slider-button--pressed {
     .ch5-button {
-      border-color: $default-pressed-border-color;
-      background-color: $default-pressed-background-color;
-      color: $default-pressed-font-color;
+      border-color: var(--theme-colors-default-pressed-border-color);
+      background-color: var(--theme-colors-default-pressed-background-color);
+      color: var(--theme-colors-default-pressed-font-color);
     }
   }
 }

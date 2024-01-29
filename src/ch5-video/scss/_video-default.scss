@@ -41,7 +41,7 @@ ch5-video[show="false"][noshowtype="visibility"] {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  background: #000;
+  background: var(--ch5-video-background-color);
 
   img {
     height: 100%;
@@ -109,6 +109,5 @@ body.ch5-video-fullscreen {
 
 /// Video disabled class
 .ch5-video--disabled {
-  pointer-events: none;
-  opacity: $ch5-disabled-opacity;
+  @include ch5-component-disabled();
 }

@@ -10,17 +10,28 @@
 /// @group ch5-datetime-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Font size regular
-$ch5-animation-font-size-regular: 72px !default;
+ch5-datetime {
+  /// Font size  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 14px 
+  /// related-theme-variable: --theme-ch5-datetime-font-size
+  --ch5-datetime-font-size: var(--theme-ch5-datetime-font-size);
 
-/// Font size small
-$ch5-animation-font-size-small: 40px !default;
+  /// Datetime height  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 35px 
+  /// related-theme-variable: --theme-ch5-datetime-height
+  --ch5-datetime-height: var(--theme-ch5-datetime-height);
 
-/// Font size large
-$ch5-animation-font-size-large: 104px !default;
+  /// Datetime width  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 200px 
+  /// related-theme-variable: --theme-ch5-datetime-width
+  --ch5-datetime-width: var(--theme-ch5-datetime-width);
 
-/// Font size x-large
-$ch5-animation-font-size-x-large: 136px !default;
-
-/// Animation color
-$ch5-animation-color: $theme-foreground-color !default;
+  /// Background color  /// type: string 
+  /// values: large, solid, center 
+  /// example: transparent 
+  /// related-theme-variable: --theme-ch5-datetime-background-color
+  --ch5-datetime-background-color: var(--theme-ch5-datetime-background-color);
+}

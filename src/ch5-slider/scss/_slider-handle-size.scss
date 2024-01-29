@@ -13,236 +13,236 @@
 $handle-data: (
 	rectangle: (
 		x-small: (
-			width: $ch5-slider-size-x-small-handle-width-rectangle,
-			height: $ch5-slider-size-x-small-handle-height-rectangle,
+			width: --ch5-slider-size-x-small-handle-width-rectangle,
+			height: --ch5-slider-size-x-small-handle-height-rectangle,
 		),
 		small: (
-			width: $ch5-slider-size-small-handle-width-rectangle,
-			height: $ch5-slider-size-small-handle-height-rectangle,
+			width: --ch5-slider-size-small-handle-width-rectangle,
+			height: --ch5-slider-size-small-handle-height-rectangle,
 		),
 		regular: (
-			width: $ch5-slider-size-regular-handle-width-rectangle,
-			height: $ch5-slider-size-regular-handle-height-rectangle,
+			width: --ch5-slider-size-regular-handle-width-rectangle,
+			height: --ch5-slider-size-regular-handle-height-rectangle,
 		),
 		large: (
-			width: $ch5-slider-size-large-handle-width-rectangle,
-			height: $ch5-slider-size-large-handle-height-rectangle,
+			width: --ch5-slider-size-large-handle-width-rectangle,
+			height: --ch5-slider-size-large-handle-height-rectangle,
 		),
 		x-large: (
-			width: $ch5-slider-size-x-large-handle-width-rectangle,
-			height: $ch5-slider-size-x-large-handle-height-rectangle,
+			width: --ch5-slider-size-x-large-handle-width-rectangle,
+			height: --ch5-slider-size-x-large-handle-height-rectangle,
 		),
 	),
 	rounded-rectangle: (
 		x-small: (
-			width: $ch5-slider-size-x-small-handle-width-rounded-rectangle,
-			height: $ch5-slider-size-x-small-handle-height-rounded-rectangle,
+			width: --ch5-slider-size-x-small-handle-width-rounded-rectangle,
+			height: --ch5-slider-size-x-small-handle-height-rounded-rectangle,
 		),
 		small: (
-			width: $ch5-slider-size-small-handle-width-rounded-rectangle,
-			height: $ch5-slider-size-small-handle-height-rounded-rectangle,
+			width: --ch5-slider-size-small-handle-width-rounded-rectangle,
+			height: --ch5-slider-size-small-handle-height-rounded-rectangle,
 		),
 		regular: (
-			width: $ch5-slider-size-regular-handle-width-rounded-rectangle,
-			height: $ch5-slider-size-regular-handle-height-rounded-rectangle,
+			width: --ch5-slider-size-regular-handle-width-rounded-rectangle,
+			height: --ch5-slider-size-regular-handle-height-rounded-rectangle,
 		),
 		large: (
-			width: $ch5-slider-size-large-handle-width-rounded-rectangle,
-			height: $ch5-slider-size-large-handle-height-rounded-rectangle,
+			width: --ch5-slider-size-large-handle-width-rounded-rectangle,
+			height: --ch5-slider-size-large-handle-height-rounded-rectangle,
 		),
 		x-large: (
-			width: $ch5-slider-size-x-large-handle-width-rounded-rectangle,
-			height: $ch5-slider-size-x-large-handle-height-rounded-rectangle,
+			width: --ch5-slider-size-x-large-handle-width-rounded-rectangle,
+			height: --ch5-slider-size-x-large-handle-height-rounded-rectangle,
 		),
 	),
 	oval: (
 		x-small: (
-			width: $ch5-slider-size-x-small-handle-width-oval,
-			height: $ch5-slider-size-x-small-handle-height-oval,
+			width: --ch5-slider-size-x-small-handle-width-oval,
+			height: --ch5-slider-size-x-small-handle-height-oval,
 		),
 		small: (
-			width: $ch5-slider-size-small-handle-width-oval,
-			height: $ch5-slider-size-small-handle-height-oval,
+			width: --ch5-slider-size-small-handle-width-oval,
+			height: --ch5-slider-size-small-handle-height-oval,
 		),
 		regular: (
-			width: $ch5-slider-size-regular-handle-width-oval,
-			height: $ch5-slider-size-regular-handle-height-oval,
+			width: --ch5-slider-size-regular-handle-width-oval,
+			height: --ch5-slider-size-regular-handle-height-oval,
 		),
 		large: (
-			width: $ch5-slider-size-large-handle-width-oval,
-			height: $ch5-slider-size-large-handle-height-oval,
+			width: --ch5-slider-size-large-handle-width-oval,
+			height: --ch5-slider-size-large-handle-height-oval,
 		),
 		x-large: (
-			width: $ch5-slider-size-x-large-handle-width-oval,
-			height: $ch5-slider-size-x-large-handle-height-oval,
+			width: --ch5-slider-size-x-large-handle-width-oval,
+			height: --ch5-slider-size-x-large-handle-height-oval,
 		),
 	),
 	circle: (
 		x-small: (
-			width: $ch5-slider-size-x-small-handle-width-circle,
-			height: $ch5-slider-size-x-small-handle-height-circle,
+			width: --ch5-slider-size-x-small-handle-width-circle,
+			height: --ch5-slider-size-x-small-handle-height-circle,
 		),
 		small: (
-			width: $ch5-slider-size-small-handle-width-circle,
-			height: $ch5-slider-size-small-handle-height-circle,
+			width: --ch5-slider-size-small-handle-width-circle,
+			height: --ch5-slider-size-small-handle-height-circle,
 		),
 		regular: (
-			width: $ch5-slider-size-regular-handle-width-circle,
-			height: $ch5-slider-size-regular-handle-height-circle,
+			width: --ch5-slider-size-regular-handle-width-circle,
+			height: --ch5-slider-size-regular-handle-height-circle,
 		),
 		large: (
-			width: $ch5-slider-size-large-handle-width-circle,
-			height: $ch5-slider-size-large-handle-height-circle,
+			width: --ch5-slider-size-large-handle-width-circle,
+			height: --ch5-slider-size-large-handle-height-circle,
 		),
 		x-large: (
-			width: $ch5-slider-size-x-large-handle-width-circle,
-			height: $ch5-slider-size-x-large-handle-height-circle,
+			width: --ch5-slider-size-x-large-handle-width-circle,
+			height: --ch5-slider-size-x-large-handle-height-circle,
 		),
 	),
 );
 
 $handle-sizes: (
 	x-small: (
-		width: $ch5-slider-size-x-small-button-width,
-		height: $ch5-slider-size-x-small-button-height,
+		width: --ch5-slider-size-x-small-button-width,
+		height: --ch5-slider-size-x-small-button-height,
 	),
 	small: (
-		width: $ch5-slider-size-small-button-width,
-		height: $ch5-slider-size-small-button-height,
+		width: --ch5-slider-size-small-button-width,
+		height: --ch5-slider-size-small-button-height,
 	),
 	regular: (
-		width: $ch5-slider-size-regular-button-width,
-		height: $ch5-slider-size-regular-button-height,
+		width: --ch5-slider-size-regular-button-width,
+		height: --ch5-slider-size-regular-button-height,
 	),
 	large: (
-		width: $ch5-slider-size-large-button-width,
-		height: $ch5-slider-size-large-button-height,
+		width: --ch5-slider-size-large-button-width,
+		height: --ch5-slider-size-large-button-height,
 	),
 	x-large: (
-		width: $ch5-slider-size-x-large-button-width,
-		height: $ch5-slider-size-x-large-button-height,
+		width: --ch5-slider-size-x-large-button-width,
+		height: --ch5-slider-size-x-large-button-height,
 	),
 );
 
 $button-data: (
 	circle: (
 		x-small: (
-			width: $ch5-slider-size-x-small-button-width,
-			height: $ch5-slider-size-x-small-button-width,
+			width: --ch5-slider-size-x-small-button-width,
+			height: --ch5-slider-size-x-small-button-width,
 		),
 		small: (
-			width: $ch5-slider-size-small-button-width,
-			height: $ch5-slider-size-small-button-width,
+			width: --ch5-slider-size-small-button-width,
+			height: --ch5-slider-size-small-button-width,
 		),
 		regular: (
-			width: $ch5-slider-size-regular-button-width,
-			height: $ch5-slider-size-regular-button-width,
+			width: --ch5-slider-size-regular-button-width,
+			height: --ch5-slider-size-regular-button-width,
 		),
 		large: (
-			width: $ch5-slider-size-large-button-width,
-			height: $ch5-slider-size-large-button-width,
+			width: --ch5-slider-size-large-button-width,
+			height: --ch5-slider-size-large-button-width,
 		),
 		x-large: (
-			width: $ch5-slider-size-x-large-button-width,
-			height: $ch5-slider-size-x-large-button-width,
+			width: --ch5-slider-size-x-large-button-width,
+			height: --ch5-slider-size-x-large-button-width,
 		),
 	),
 	oval: (
 		x-small: (
-			width: $ch5-slider-size-x-small-button-height,
-			height: $ch5-slider-size-x-small-button-width,
+			width: --ch5-slider-size-x-small-button-height,
+			height: --ch5-slider-size-x-small-button-width,
 		),
 		small: (
-			width: $ch5-slider-size-small-button-height,
-			height: $ch5-slider-size-small-button-width,
+			width: --ch5-slider-size-small-button-height,
+			height: --ch5-slider-size-small-button-width,
 		),
 		regular: (
-			width: $ch5-slider-size-regular-button-height,
-			height: $ch5-slider-size-regular-button-width,
+			width: --ch5-slider-size-regular-button-height,
+			height: --ch5-slider-size-regular-button-width,
 		),
 		large: (
-			width: $ch5-slider-size-large-button-height,
-			height: $ch5-slider-size-large-button-width,
+			width: --ch5-slider-size-large-button-height,
+			height: --ch5-slider-size-large-button-width,
 		),
 		x-large: (
-			width: $ch5-slider-size-x-large-button-height,
-			height: $ch5-slider-size-x-large-button-width,
+			width: --ch5-slider-size-x-large-button-height,
+			height: --ch5-slider-size-x-large-button-width,
 		),
 	),
 	rectangle: (
 		x-small: (
-			width: $ch5-slider-size-x-small-button-width,
-			height: $ch5-slider-size-x-small-button-height,
+			width: --ch5-slider-size-x-small-button-width,
+			height: --ch5-slider-size-x-small-button-height,
 		),
 		small: (
-			width: $ch5-slider-size-small-button-width,
-			height: $ch5-slider-size-small-button-height,
+			width: --ch5-slider-size-small-button-width,
+			height: --ch5-slider-size-small-button-height,
 		),
 		regular: (
-			width: $ch5-slider-size-regular-button-width,
-			height: $ch5-slider-size-regular-button-height,
+			width: --ch5-slider-size-regular-button-width,
+			height: --ch5-slider-size-regular-button-height,
 		),
 		large: (
-			width: $ch5-slider-size-large-button-width,
-			height: $ch5-slider-size-large-button-height,
+			width: --ch5-slider-size-large-button-width,
+			height: --ch5-slider-size-large-button-height,
 		),
 		x-large: (
-			width: $ch5-slider-size-x-large-button-width,
-			height: $ch5-slider-size-x-large-button-height,
+			width: --ch5-slider-size-x-large-button-width,
+			height: --ch5-slider-size-x-large-button-height,
 		),
 	),
 	rounded-rectangle: (
 		x-small: (
-			width: $ch5-slider-size-x-small-button-width,
-			height: $ch5-slider-size-x-small-button-height,
+			width: --ch5-slider-size-x-small-button-width,
+			height: --ch5-slider-size-x-small-button-height,
 		),
 		small: (
-			width: $ch5-slider-size-small-button-width,
-			height: $ch5-slider-size-small-button-height,
+			width: --ch5-slider-size-small-button-width,
+			height: --ch5-slider-size-small-button-height,
 		),
 		regular: (
-			width: $ch5-slider-size-regular-button-width,
-			height: $ch5-slider-size-regular-button-height,
+			width: --ch5-slider-size-regular-button-width,
+			height: --ch5-slider-size-regular-button-height,
 		),
 		large: (
-			width: $ch5-slider-size-large-button-width,
-			height: $ch5-slider-size-large-button-height,
+			width: --ch5-slider-size-large-button-width,
+			height: --ch5-slider-size-large-button-height,
 		),
 		x-large: (
-			width: $ch5-slider-size-x-large-button-width,
-			height: $ch5-slider-size-x-large-button-height,
+			width: --ch5-slider-size-x-large-button-width,
+			height: --ch5-slider-size-x-large-button-height,
 		),
 	),
 	tab: (
 		x-small: (
-			width: $ch5-slider-size-x-small-button-width,
-			height: $ch5-slider-size-x-small-button-height,
+			width: --ch5-slider-size-x-small-button-width,
+			height: --ch5-slider-size-x-small-button-height,
 		),
 		small: (
-			width: $ch5-slider-size-small-button-width,
-			height: $ch5-slider-size-small-button-height,
+			width: --ch5-slider-size-small-button-width,
+			height: --ch5-slider-size-small-button-height,
 		),
 		regular: (
-			width: $ch5-slider-size-regular-button-width,
-			height: $ch5-slider-size-regular-button-height,
+			width: --ch5-slider-size-regular-button-width,
+			height: --ch5-slider-size-regular-button-height,
 		),
 		large: (
-			width: $ch5-slider-size-large-button-width,
-			height: $ch5-slider-size-large-button-height,
+			width: --ch5-slider-size-large-button-width,
+			height: --ch5-slider-size-large-button-height,
 		),
 		x-large: (
-			width: $ch5-slider-size-x-large-button-width,
-			height: $ch5-slider-size-x-large-button-height,
+			width: --ch5-slider-size-x-large-button-width,
+			height: --ch5-slider-size-x-large-button-height,
 		),
 	),
 );
 
 $sizes: (
-	x-small: $ch5-slider-width-x-small,
-	small: $ch5-slider-width-small,
-	regular: $ch5-slider-width-regular,
-	large: $ch5-slider-width-large,
-	x-large: $ch5-slider-width-x-large,
+	x-small: --ch5-slider-width-x-small,
+	small: --ch5-slider-width-small,
+	regular: --ch5-slider-width-regular,
+	large: --ch5-slider-width-large,
+	x-large: --ch5-slider-width-x-large,
 );
 
 .ch5-slider {
@@ -275,7 +275,7 @@ $sizes: (
 			@each $slider-size in map-keys($sizes) {
 				&.ch5-slider--size--#{$slider-size} {
 					.ch5-slider-button-container {
-						width: map-deep-get($sizes, $slider-size);
+						width: var(map-deep-get($sizes, #{$slider-size}));
 					}
 				}
 			}
@@ -322,7 +322,7 @@ $sizes: (
 			@each $slider-size in map-keys($sizes) {
 				&.ch5-slider--size--#{$slider-size} {
 					.ch5-slider-button-container {
-						height: map-deep-get($sizes, $slider-size);
+						height: var(map-deep-get($sizes, #{$slider-size}));
 					}
 				}
 			}

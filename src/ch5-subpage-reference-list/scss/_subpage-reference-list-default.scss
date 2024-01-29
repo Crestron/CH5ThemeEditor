@@ -10,6 +10,10 @@
 /// @group ch5-subpage-reference-list
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-subpage-reference-list {
+  @include ch5-component-base();
+}
+
 /// Main class
 .ch5-subpage-reference-list {
   position: relative;
@@ -26,21 +30,21 @@
   }
 
   &.ch5-subpage-reference-list::-webkit-scrollbar {
-    height: 0px;
-    width: 0px;
+    height: 0;
+    width: 0;
   }
 
   & ~ .scrollbar-container {
     position: absolute;
-    background-color: $ch5-scrollbar-track-color;
-    border-radius: $ch5-scrollbar-border-radius;
+    background-color: var(--ch5-subpage-reference-list-scrollbar-track-color);
+    border-radius: var(--ch5-subpage-reference-list-scrollbar-border-radius);
 
     .scrollbar {
       position: absolute;
       will-change: width, transform;
       position: absolute;
-      border-radius: $ch5-scrollbar-border-radius;
-      background: $ch5-scrollbar-thumb-color;
+      border-radius: var(--ch5-subpage-reference-list-scrollbar-border-radius);
+      background: var(--ch5-subpage-reference-list-scrollbar-thumb-color);
     }
   }
 
@@ -73,12 +77,11 @@ ch5-subpage-reference-list {
 }
 /// Applied when the subpage reference list is disabled
 .ch5-subpage-reference-list--disabled {
-  opacity: 0.5 !important;
+  @include ch5-component-disabled();
 }
 
 .ch5-subpage-reference-list.ch5-subpage-reference-list--disabled {
   & ~ .scrollbar-container {
-    pointer-events: none;
-    opacity: $ch5-disabled-opacity;
+    @include ch5-component-disabled();
   }
 }

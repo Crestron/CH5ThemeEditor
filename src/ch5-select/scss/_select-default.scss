@@ -10,12 +10,17 @@
 /// @group ch5-select
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-select,
+ch5-select-option {
+  @include ch5-component-base();
+}
+
 /// Main class
 .ch5-select {
   position: relative;
   display: block;
-  border: $ch5-select-border-width solid $ch5-select-border-color;
-  border-radius: $ch5-select-border-radius;
+  border: var(--ch5-select-border-width) solid var(--ch5-select-border-color);
+  border-radius: var(--ch5-select-border-radius);
 }
 
 .ch5-select__combo:hover {
@@ -33,12 +38,12 @@
 
   width: 100%;
   overflow: hidden;
-  padding: $ch5-select-padding;
+  padding: var(--ch5-select-padding);
   box-sizing: border-box;
-  font-style: $ch5-select-font-style;
-  font-size: $ch5-select-font-size;
-  font-weight: $ch5-select-font-weight;
-  color: $ch5-select-font-color;
+  font-style: var(--ch5-select-font-style);
+  font-size: var(--ch5-select-font-size);
+  font-weight: var(--ch5-select-font-weight);
+  color: var(--theme-ch5-select-font-color);
 
   &[dir="rtl"] {
     @include rtl-style;
@@ -47,14 +52,14 @@
   /// Dropdown button
   .ch5-select__combo_trigger {
     display: block;
-    width: $ch5-select-combo-trigger-width;
-    height: $ch5-select-combo-trigger-height;
+    width: var(--ch5-select-combo-trigger-width);
+    height: var(--ch5-select-combo-trigger-height);
     overflow: hidden;
-    margin: $ch5-select-combo-trigger-margin;
+    margin: var(--ch5-select-combo-trigger-margin);
   }
 
   .ch5-select__selected_items {
-    width: $ch5-select-item-selected-width;
+    width: var(--ch5-select-item-selected-width);
     overflow: hidden;
     @include layout-h;
     @include layout-flex;
@@ -87,12 +92,12 @@
   position: absolute;
   left: 0;
   display: none;
-  background-color: $ch5-select-panel-items-background-color;
-  box-shadow: $ch5-select-panel-items-box-shadow;
+  background-color: var(--ch5-select-panel-items-background-color);
+  box-shadow: var(--ch5-select-panel-items-box-shadow);
 }
 
 .ch5-select__combo .ch5-select__panel__items {
-  z-index: $ch5-select-panel-z-index;
+  z-index: var(--ch5-select-panel-z-index);
 }
 
 .ch5-select__panel-open .ch5-select__panel__items,
@@ -109,29 +114,28 @@
   @include layout-h;
   @include layout-flex;
   @include layout-center;
-  padding: $ch5-select-panel-item-padding;
+  padding: var(--ch5-select-panel-item-padding);
   cursor: pointer;
-  color: $ch5-select-panel-item-color;
-  border: $ch5-select-panel-item-border-width solid $ch5-select-panel-item-border-color;
-  background-color: $ch5-select-panel-item-background-color;
+  color: var(--theme-ch5-select-panel-item-color);
+  border: var(--ch5-select-panel-item-border-width) solid var(--theme-ch5-select-panel-item-border-color);
+  background-color: var(--theme-ch5-select-panel-item-background-color);
 
   &[dir="rtl"] {
     @include rtl-style;
   }
 
   &:not(.ch5-select__panel__item--selected):hover {
-    background-color: $ch5-select-panel-item-hover-background-color;
+    background-color: var(--theme-ch5-select-panel-item-hover-background-color);
   }
   /// Selected
   &.ch5-select__panel__item--selected {
-    background-color: $ch5-select-panel-item-selected-background-color;
+    background-color: var(--theme-ch5-select-panel-item-selected-background-color);
   }
 }
 
 /// Added automatically based on the disabled attribute or by receiveStateEnable
 .ch5-select--disabled {
-  pointer-events: none;
-  opacity: 0.5;
+  @include ch5-component-disabled();
 }
 
 /// Applied when item is selected
@@ -158,4 +162,3 @@
 .ch5-select__panel--open {
   // DO NOT DELETE - used for Component Reference
 }
-

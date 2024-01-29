@@ -10,6 +10,15 @@
 /// @group ch5-tab-button
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-tab-button {
+  @include ch5-component-base();
+}
+
+ch5-tab-button {
+  position: relative;
+  display: grid;
+}
+
 /// Main class
 .ch5-tab-button {
   position: relative;
@@ -24,15 +33,9 @@
   }
 }
 
-ch5-tab-button {
-  position: relative;
-  display: grid;
-}
-
 /// Applied tab button is set to disabled
 .ch5-tab-button--disabled {
-  pointer-events: none;
-  opacity: $ch5-disabled-opacity;
+  @include ch5-component-disabled();
 }
 
 .ch5-tab-button--disabled div {
@@ -40,15 +43,14 @@ ch5-tab-button {
 }
 
 .ch5-tab-button.ch5-tab-button--disabled {
-  &~.scrollbar-container {
-    pointer-events: none;
-    opacity: $ch5-disabled-opacity;
+  & ~ .scrollbar-container {
+    @include ch5-component-disabled();
   }
 }
 
 .ch5-tab-button--button-container {
-  width: $ch5-tab-button-button-container-width;
-  height: $ch5-tab-button-button-container-height;
-  min-width: $ch5-tab-button-button-container-width;
-  min-height: $ch5-tab-button-button-container-height;
+  width: var(--ch5-tab-button-button-container-width);
+  height: var(--ch5-tab-button-button-container-height);
+  min-width: var(--ch5-tab-button-button-container-width);
+  min-height: var(--ch5-tab-button-button-container-height);
 }

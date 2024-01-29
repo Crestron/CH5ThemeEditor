@@ -10,6 +10,10 @@
 /// @group ch5-segmented-gauge
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-segmented-gauge {
+  @include ch5-component-base();
+}
+
 // styles to avoid extra width for segmented gauge
 ch5-segmented-gauge {
   display: inline-flex;
@@ -22,12 +26,11 @@ ch5-segmented-gauge {
   cursor: pointer;
 
   .ch5-segmented-gauge-segment {
-    background-color: $ch5-segmented-gauge-state-graphic-inactive;
+    background-color: var(--ch5-segmented-gauge-state-graphic-inactive);
   }
 }
 
 /// Disabled class
 .ch5-segmented-gauge--disabled {
-  pointer-events: none;
-  opacity: $ch5-disabled-opacity;
+  @include ch5-component-disabled();
 }

@@ -53,7 +53,9 @@ const sassdoc = require('sassdoc'),
           }
           const newGroupName = `${newGroupNamePrefix}-${newGroupNamePostFix}`;
           const groupIndex = getGroupIndexValue(resultData, newGroupName);
-          resultData[groupIndex].schemadata[0]['metadata'].push(schemadataItem);
+          if (groupIndex !== -1) {
+            resultData[groupIndex].schemadata[0]['metadata'].push(schemadataItem);
+          }
         });
 
       }
@@ -82,7 +84,7 @@ const sassdoc = require('sassdoc'),
       includeProperty.description = meta.description;
       includeProperty.group = meta.group[0];
       // if (includeProperty.type !== 'variable') {
-        includeProperty.value = meta.context.value;
+      includeProperty.value = meta.context.value;
       // }
       return includeProperty;
     });
@@ -133,6 +135,6 @@ const sassdoc = require('sassdoc'),
   }
 
   createSassMetadata(SOURCE_FILE_PATH, WRITE_TO_FILE_PATH);
-  
+
 })(sassdoc, fse, logging);
 

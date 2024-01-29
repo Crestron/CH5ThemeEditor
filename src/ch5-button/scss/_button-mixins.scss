@@ -19,8 +19,8 @@
 		background-size: contain;
 		background-position: center;
 		color: inherit;
-		height: $property-image-height * 1.5;
-		width: $property-image-height * 1.5;
+		height: calc(var(#{$property-image-height}) * 1.5);
+		width: calc(var(#{$property-image-height}) * 1.5);
 
 		&::before,
 		&::after {
@@ -31,28 +31,24 @@
 	/// Applied on icons
 	.ch5-button--icon {
 		vertical-align: middle;
-		color: $property-icon-color;
-		font-size: $property-icon-font-size;
+		color: var(#{$property-icon-color});
+		font-size: var(#{$property-icon-font-size});
 	}
 }
 
 @mixin ch5-button-size-set($property-size,
 	$property-font-size,
-	$property-font-style,
-	$property-font-weight,
 	$property-icon-color,
 	$property-icon-font-size) {
 	.cb-btn {
-		width: $property-size * 2;
-		height: $property-size;
-		font-size: $property-font-size;
-		font-style: $property-font-style;
-		font-weight: $property-font-weight;
+		width: calc(var(#{$property-size}) * 2);
+		height: var(#{$property-size});
+		font-size: var(#{$property-font-size});
 	}
 
 	.ch5-button__checkbox--checked:before,
 	.ch5-button__checkbox--unchecked:before {
-		font-size: $property-font-size;
+		font-size: var(#{$property-font-size});
 	}
 
 	@include ch5-button-set-icon-classes($property-font-size, $property-icon-color, $property-icon-font-size);
@@ -61,17 +57,17 @@
 @mixin ch5-button-content--selected($property-selected-border-color,
 	$property-selected-background-color,
 	$property-selected-font-color) {
-	border-color: $property-selected-border-color;
-	background-color: $property-selected-background-color;
-	color: $property-selected-font-color;
+	border-color: var(#{$property-selected-border-color});
+	background-color: var(#{$property-selected-background-color});
+	color: var(#{$property-selected-font-color});
 }
 
 @mixin ch5-button-content--pressed($property-pressed-border-color,
 	$property-pressed-background-color,
 	$property-pressed-font-color) {
-	border-color: $property-pressed-border-color;
-	background-color: $property-pressed-background-color;
-	color: $property-pressed-font-color;
+	border-color: var(#{$property-pressed-border-color});
+	background-color: var(#{$property-pressed-background-color});
+	color: var(#{$property-pressed-font-color});
 }
 
 @mixin ch5-button-content($property-border-width,
@@ -79,9 +75,9 @@
 	$property-default-border-color,
 	$property-default-background-color,
 	$property-default-font-color) {
-	border-style: $property-border-style;
-	border-width: $property-border-width;
-	border-color: $property-default-border-color;
-	background-color: $property-default-background-color;
-	color: $property-default-font-color;
+	border-style: var(#{$property-border-style});
+	border-width: var(#{$property-border-width});
+	border-color: var(#{$property-default-border-color});
+	background-color: var(#{$property-default-background-color});
+	color: var(#{$property-default-font-color});
 }

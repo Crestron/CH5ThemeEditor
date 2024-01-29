@@ -10,12 +10,15 @@
 /// @group ch5-label
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-label {
+  @include ch5-component-base();
+}
+
 /// Main class
 .ch5-label {
   position: relative;
 }
 
 .ch5-label--disabled {
-  pointer-events: none;
-  opacity: $ch5-disabled-opacity;
+  @include ch5-component-disabled();
 }

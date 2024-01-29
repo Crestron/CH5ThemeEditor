@@ -1,0 +1,48 @@
+{
+  "name": "@crestron/ch5-theme",
+  "version": "2.7.0",
+  "description": "Crestron HTML5 (CH5) Themes CSS",
+  "author": "Crestron",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "files": [
+    "LICENSE.txt",
+    "output/themes"
+  ],
+  "repository": {
+    "url": "https://github.com/Crestron/CH5ThemeEditor.git",
+    "type": "git"
+  },
+  "keywords": [
+    "ch5",
+    "Theme"
+  ],
+  "scripts": {
+    "build:dev": "npm run clean && webpack --config webpack.build.js --output-path ./output/themes",
+    "build:prod": "npm run clean && webpack --config webpack.build.js --output-path ./output/themes --mode production",
+    "clean": "rimraf output",
+    "create-theme": "node ./helpers/create-theme.js",
+    "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json",
+    "gen:sass-json": "ts-node ./sass-schema/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
+    "gen:sass-metadata": "node ./helpers/metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json",
+    "my:showcase": "npm run clean && webpack --config webpack.build.js --output-path $npm_package_config_showcase",
+    "my:testing": "npm run clean && webpack --config webpack.build.js --output-path $npm_package_config_testing",
+    "my:shell": "npm run clean && webpack --config webpack.build.js --output-path $npm_package_config_shell",
+    "my:pack": "reset && npm run build:prod && npm pack"
+  },
+  "config": {
+    "local": "./output/themes",
+    "showcase": "./../../CH5/CH5ShowcaseApp/node_modules/@crestron/ch5-theme/output/themes/",
+    "testing": "../../JiraDefects/CH5C-3025/shell-template/node_modules/@crestron/ch5-theme/output/themes/",
+    "shell": "./../../CH5/CH5SampleProjects/UISampleProjects/Shell/node_modules/@crestron/ch5-theme/output/themes/"
+  },
+  "devDependencies": {
+    "@crestron/ch5-crcomlib": "2.8.0",
+    "@raghavendradabbir/sass-flatten": "^0.2.9",
+    "find-unused-sass-variables": "^5.0.0",
+    "fs-extra": "^11.1.1",
+    "get-sass-vars": "^4.0.2",
+    "jsonfile": "^6.1.0",
+    "lodash": "^4.17.15",
+    "sassdoc": "^2.7.1"
+  }
+}

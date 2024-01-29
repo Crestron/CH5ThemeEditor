@@ -28,7 +28,6 @@
   flex-direction: row;
 }
 
-
 @mixin layout-flex {
   -ms-flex: 1 1 0.000000001px;
   -webkit-flex: 1;
@@ -59,4 +58,24 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 100%;
+}
+
+@mixin ch5-component-base() {
+  outline: 0 !important;
+
+  * {
+    outline: 0 !important;
+  }
+
+  &:not(:defined) {
+    display: inline-block;
+    opacity: 0;
+    // visibility:hidden;
+    // display:none;
+  }
+}
+
+@mixin ch5-component-disabled() {
+  pointer-events: none;
+  opacity: var(--theme-others-disabled-opacity);
 }

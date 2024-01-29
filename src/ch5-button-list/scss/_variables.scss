@@ -10,16 +10,53 @@
 /// @group ch5-button-list-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Variables below
+ch5-button-list {
+  /// Applies padding to the button list container
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 5px 
+  /// related-theme-variable: --theme-ch5-button-list-padding 
+  --ch5-button-list-padding: var(--theme-ch5-button-list-padding);
 
-/// button container padding
-$ch5-button-list-padding: 5px !default;
+  /// button container width
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 100px
+  /// related-theme-variable: --theme-ch5-button-list-button-container-width
+  --ch5-button-list-button-container-width: var(--theme-ch5-button-list-button-container-width);
 
-/// button container width
-$ch5-button-list-button-container-width: 100px !default;
+  /// button container height
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 58px
+  /// related-theme-variable: --theme-ch5-button-list-button-container-height
+  --ch5-button-list-button-container-height: var(--theme-ch5-button-list-button-container-height);
 
-/// button container height
-$ch5-button-list-button-container-height: 58px !default;
+  /// Applies padding for the container of ch5-button in ch5-button-list
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 5px
+  /// related-theme-variable: --theme-ch5-button-list-button-container-padding
+  --ch5-button-list-button-container-padding: var(--theme-ch5-button-list-button-container-padding);
 
-/// button container padding
-$ch5-button-list-button-container-padding: 5px !default;
+  /// Scrollbar border radius
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
+  /// related-theme-variable: --theme-others-scrollbar-border-radius
+  --ch5-button-list-scrollbar-border-radius: var(--theme-others-scrollbar-border-radius);
+
+  /// Scrollbar thumb color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: rgba(0, 0, 0, 0.5)
+  /// related-theme-variable: --theme-others-scrollbar-thumb-color
+  --ch5-button-list-scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color);
+
+  /// Scrollbar width
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 7px 
+  /// related-theme-variable: --theme-others-scrollbar-width
+  --ch5-button-list-scrollbar-width: var(--theme-others-scrollbar-width);
+}

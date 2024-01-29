@@ -28,7 +28,7 @@ const fse = require('fs-extra');
   }
 
   try {
-    const outputArray = {};
+    const responseArray = {};
 
     {
       // font awesome
@@ -46,7 +46,7 @@ const fse = require('fs-extra');
           }
         }
       }
-      outputArray.fontAwesome = itemArray;
+      responseArray.fontAwesome = itemArray;
     }
 
     {
@@ -73,7 +73,7 @@ const fse = require('fs-extra');
           });
         }
       }
-      outputArray.materialIcons = itemArray;
+      responseArray.materialIcons = itemArray;
     }
 
     {
@@ -92,11 +92,11 @@ const fse = require('fs-extra');
         }
       }
 
-      outputArray.sgIcons = itemArray;
+      responseArray.sgIcons = itemArray;
     }
 
     const outputPath = process.argv[3] !== undefined ? process.argv[3] : './generated-metadata/icon-library.json';
-    fse.outputFileSync(outputPath, JSON.stringify(outputArray, null, 4));
+    fse.outputFileSync(outputPath, JSON.stringify(responseArray, null, 4));
 
   } catch (err) {
     console.error(err);

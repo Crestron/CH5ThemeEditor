@@ -10,38 +10,82 @@
 /// @group ch5-spinner-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// default
-$ch5-spinner-border-width: 1px !default;
-$ch5-spinner-border-style: solid !default;
+ch5-spinner {
+  // default
+  /// spinner border width
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 1px 
+  /// related-theme-variable: --theme-ch5-spinner-border-width
+  --ch5-spinner-border-width: var(--theme-ch5-spinner-border-width);
 
-/// the default font size unit of the spinner
-$ch5-spinner-font-size-unit: $ch5-font-size-unit !default;
+  /// spinner border style
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: solid 
+  /// related-theme-variable: --theme-ch5-spinner-border-style
+  --ch5-spinner-border-style: var(--theme-ch5-spinner-border-style);
 
-/// the default font size value of the spinner
-$ch5-spinner-font-size-value: 22 !default;
+  /// the default font size of the spinner
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 22px 
+  /// related-theme-variable: --theme-ch5-spinner-font-size
+  --ch5-spinner-font-size: var(--theme-ch5-spinner-font-size);
 
-/// the default font size of the spinner
-$ch5-spinner-font-size: $ch5-spinner-font-size-value + $ch5-spinner-font-size-unit !default;
+  /// the default font style of the spinner
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: normal
+  /// related-theme-variable: --theme-fonts-font-style
+  --ch5-spinner-font-style: var(--theme-fonts-font-style);
 
-/// the default font style of the spinner
-$ch5-spinner-font-style: $ch5-font-style !default;
+  /// the default font weight of the spinner
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: normal
+  /// related-theme-variable: --theme-fonts-font-weight
+  --ch5-spinner-font-weight: var(--theme-fonts-font-weight);
 
-/// the default font weight of the spinner
-$ch5-spinner-font-weight: $ch5-font-weight !default;
+  /// the default font size for icon
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 22px 
+  /// related-theme-variable: --ch5-spinner-font-size
+  --ch5-spinner-icon-font-size: var(--ch5-spinner-font-size);
 
-/// the default font size for icon
-$ch5-spinner-icon-font-size: $ch5-spinner-font-size !default;
+  /// the padding of the icon within the slider item
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: 0 0 
+  /// related-theme-variable: --theme-ch5-spinner-icon-padding
+  --ch5-spinner-icon-padding: var(--theme-ch5-spinner-icon-padding);
 
+  /// the margin of the icon within the slider item
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: 0 0 
+  /// related-theme-variable: --theme-ch5-spinner-icon-margin
+  --ch5-spinner-icon-margin: var(--theme-ch5-spinner-icon-margin);
 
-/// the padding of the icon within the slider item
-$ch5-spinner-icon-padding: 0px 0 !default;
+  /// the opacity for the overlay of the spinner
+  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 0 
+  /// related-theme-variable: --theme-ch5-spinner-overlay-opacity
+  --ch5-spinner-overlay-opacity: var(--theme-ch5-spinner-overlay-opacity);
 
+  /// spinner wrapper z-index
+  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 9999 
+  /// related-theme-variable: --theme-ch5-spinner-wrapper-z-index
+  --ch5-spinner-wrapper-z-index: var(--theme-ch5-spinner-wrapper-z-index);
 
-/// the margin of the icon within the slider item
-$ch5-spinner-icon-margin: 0px 0 !default;
-
-/// the opacity for the overlay of the spinner
-$ch5-spinner-overlay-opacity: 0.0 !default;
-
-$ch5-spinner-wrapper-z-index: 9999 !default;
-$ch5-spinner-overlay-z-index: 999 !default;
+  /// spinner overlay z-index
+  /// type: number 
+  /// values: 1, 10, 100 
+  /// example: 999 
+  /// related-theme-variable: --theme-ch5-spinner-overlay-z-index
+  --ch5-spinner-overlay-z-index: var(--theme-ch5-spinner-overlay-z-index);
+}
