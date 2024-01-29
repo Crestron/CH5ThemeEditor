@@ -126,6 +126,11 @@ function getVariables(data, sectionName) {
 			const possibleValues = type === 'color' ? valueMetadata : valueMetadata.split(',').map((str) => str.trim()).filter((str) => str.trim())
 			const example = variableMetaData[3].replace('example:', '').trim()
 
+			let value = splitLine[1].trim().replaceAll(';', '');
+
+			// Corner Case
+			if (value === '#{$black}') { value = "#000"; }
+			if (value === '#{$white}') { value = "#fff"; }
 
 			if (sectionName === "theme") {
 				let sectionUpdatedName = sectionName;
@@ -149,6 +154,7 @@ function getVariables(data, sectionName) {
 						description,
 						type,
 						example,
+						value,
 						possibleValues
 					}
 				});
@@ -163,6 +169,7 @@ function getVariables(data, sectionName) {
 					description,
 					type,
 					example,
+					value,
 					possibleValues
 				});
 				if (variableMetaData.length === 5) {
