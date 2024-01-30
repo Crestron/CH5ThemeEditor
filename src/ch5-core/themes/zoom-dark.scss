@@ -1078,119 +1078,130 @@
   // ch5-overlay-panel
   // ***************************************
 
+  /// The font size for the overlay panel at theme level
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 16px
+  --theme-ch5-overlay-panel--font-size: var(--theme-fonts-font-size);
+
+  /// The font style for the overlay panel at theme level
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: bold
+  --theme-ch5-overlay-panel--font-style: var(--theme-fonts-font-style);
+
+  /// The font weight for the overlay panel at theme level
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: bold
+  --theme-ch5-overlay-panel--font-weight: var(--theme-fonts-font-weight);
   /// The color of the icon at the top of the overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #fefefe
-  --theme-ch5-overlay-default-close-icon-color: #fefefe;
+  --theme-ch5-overlay-panel--close-icon-color: #fefefe;
 
   /// The color of the icon at the top of the overlay panel when it is hovered
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9898a6
-  --theme-ch5-overlay-default-close-icon-color-hover: #9898a6;
+  --theme-ch5-overlay-panel--close-icon-color-hover: #9898a6;
 
   /// The background color of the mask element
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgba(94, 94, 102, 0.3)
-  --theme-ch5-overlay-default-mask-bg-color: rgba(94, 94, 102, 0.3);
+  --theme-ch5-overlay-panel--mask-background-color: rgba(94, 94, 102, 0.3);
 
   /// The background color of the icon at the top of the overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #17171a
-  --theme-ch5-overlay-panel-close-icon-background-color: #17171a;
+  --theme-ch5-overlay-panel--close-icon-background-color: #17171a;
 
   /// The background color of the overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #17171a
-  --theme-ch5-overlay-panel-background-color: #17171a;
+  --theme-ch5-overlay-panel--background-color: #17171a;
 
   /// The border color of the overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #000000
-  --theme-ch5-overlay-panel-border-color: #000000;
+  --theme-ch5-overlay-panel--border-color: #000000;
 
   /// The text color of the overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #fefefe
-  --theme-ch5-overlay-panel-text-color: #fefefe;
+  --theme-ch5-overlay-panel--text-color: #fefefe;
 
   /// The font color for the content of the overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #fefefe
-  --theme-ch5-overlay-panel-contents-font-color: #fefefe;
+  --theme-ch5-overlay-panel--contents-font-color: #fefefe;
 
   /// The border width of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px
-  --theme-ch5-overlay-panel-border-width: 1px;
+  --theme-ch5-overlay-panel--border-width: 1px;
 
   /// The border style of the overlay panel
   /// type: string 
   /// values: large, solid, center 
   /// example: solid
-  --theme-ch5-overlay-panel-border-style: solid;
+  --theme-ch5-overlay-panel--border-style: solid;
 
   /// The border radius of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 6px
-  --theme-ch5-overlay-panel-border-radius: 6px;
+  --theme-ch5-overlay-panel--border-radius: 6px;
 
   /// Set padding for the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1.25em
-  --theme-ch5-overlay-panel-padding: 1.25em;
+  --theme-ch5-overlay-panel--padding: 1.25em;
 
   /// The margin of the icon at the top of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 0 5px
-  --theme-ch5-overlay-panel-close-icon-margin: 0 5px;
+  --theme-ch5-overlay-panel--close-icon-margin: 0 5px;
 
   /// The padding of the icon at the top of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 0 5px 5px
-  --theme-ch5-overlay-panel-close-icon-padding: 0 5px 5px;
+  --theme-ch5-overlay-panel--close-icon-padding: 0 5px 5px;
 
   /// The width of the icon at the top of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 20px
-  --theme-ch5-overlay-panel-close-icon-width: 20px;
+  --theme-ch5-overlay-panel--close-icon-width: 20px;
 
   /// The font size of the icon at the top of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 24px
-  --theme-ch5-overlay-default-close-icon-font-size: 24px;
+  --theme-ch5-overlay-panel--close-icon-font-size: 24px;
 
   /// The padding for the content of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 20px
-  --theme-ch5-overlay-panel-contents-padding: 20px;
+  --theme-ch5-overlay-panel--contents-padding: 20px;
 
   /// The font size for the content of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 18px
-  --theme-ch5-overlay-panel-contents-font-size: 18px;
-
-  /// overlay panel z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 10000
-  --theme-ch5-overlay-panel-z-index: 10000;
+  --theme-ch5-overlay-panel--contents-font-size: 18px;
 
   //ch5-segmented-gauge
   /// Led style gauge style height
