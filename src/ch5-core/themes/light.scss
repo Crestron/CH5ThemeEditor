@@ -854,25 +854,25 @@
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 14px
-  --theme-ch5-datetime-font-size: 14px;
+  --theme-ch5-datetime--font-size: 14px;
 
   /// Datetime height
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 35px
-  --theme-ch5-datetime-height: 35px;
+  --theme-ch5-datetime--height: 35px;
 
   /// Datetime width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 200px
-  --theme-ch5-datetime-width: 200px;
+  --theme-ch5-datetime--width: 200px;
 
   /// Background color
   /// type: string 
   /// values: large, solid, center 
   /// example: transparent
-  --theme-ch5-datetime-background-color: transparent;
+  --theme-ch5-datetime--background-color: transparent;
 
   // ***************************************
   // ch5-dpad
