@@ -11,27 +11,31 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-datetime {
-  /// Font size  /// type: unit 
+  /// Font size
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 14px 
-  /// related-theme-variable: --theme-ch5-datetime-font-size
-  --ch5-datetime-font-size: var(--theme-ch5-datetime-font-size);
+  /// related-theme-variable: --theme-ch5-datetime--font-size
+  --ch5-datetime--font-size: var(--theme-ch5-datetime--font-size);
 
-  /// Datetime height  /// type: unit 
+  /// Datetime height
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 35px 
-  /// related-theme-variable: --theme-ch5-datetime-height
-  --ch5-datetime-height: var(--theme-ch5-datetime-height);
+  /// related-theme-variable: --theme-ch5-datetime--height
+  --ch5-datetime--height: var(--theme-ch5-datetime--height);
 
-  /// Datetime width  /// type: unit 
+  /// Datetime width
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 200px 
-  /// related-theme-variable: --theme-ch5-datetime-width
-  --ch5-datetime-width: var(--theme-ch5-datetime-width);
+  /// related-theme-variable: --theme-ch5-datetime--width
+  --ch5-datetime--width: var(--theme-ch5-datetime--width);
 
-  /// Background color  /// type: string 
+  /// Background color
+  /// type: string 
   /// values: large, solid, center 
   /// example: transparent 
-  /// related-theme-variable: --theme-ch5-datetime-background-color
-  --ch5-datetime-background-color: var(--theme-ch5-datetime-background-color);
+  /// related-theme-variable: --theme-ch5-datetime--background-color
+  --ch5-datetime--background-color: var(--theme-ch5-datetime--background-color);
 }
