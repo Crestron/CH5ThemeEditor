@@ -29,11 +29,11 @@ ch5-signal-level-gauge {
 
   /// Applied when the bar is not receiving signal.
   .ch5-signal-level-gauge--bar-color {
-    background-color: var(--ch5-signal-level-gauge-bar-color);
+    background-color: var(--ch5-signal-level-gauge--bar-color);
   }
   /// Applied when the bar is receiving signal.
   .ch5-signal-level-gauge--selected-bar-color {
-    background-color: var(--ch5-signal-level-gauge-selected-bar-color);
+    background-color: var(--ch5-signal-level-gauge--selected-bar-color);
   }
   /// Vertical orientation
   &.ch5-signal-level-gauge--orientation-vertical {
@@ -47,25 +47,25 @@ ch5-signal-level-gauge {
   
   /// Applied when size='small'
   &.ch5-signal-level-gauge--size-small {
-    height: var(--ch5-signal-level-gauge-small-height);
-    width: var(--ch5-signal-level-gauge-small-width);
+    height: var(--ch5-signal-level-gauge--small-height);
+    width: var(--ch5-signal-level-gauge--small-width);
   }
 
   /// Applied when size='regular'
   &.ch5-signal-level-gauge--size-regular {
-    height: var(--ch5-signal-level-gauge-regular-height);
-    width: var(--ch5-signal-level-gauge-regular-width);
+    height: var(--ch5-signal-level-gauge--regular-height);
+    width: var(--ch5-signal-level-gauge--regular-width);
   }
 
   /// Applied when size='large'
   &.ch5-signal-level-gauge--size-large {
-    height: var(--ch5-signal-level-gauge-large-height);
-    width: var(--ch5-signal-level-gauge-large-width);
+    height: var(--ch5-signal-level-gauge--large-height);
+    width: var(--ch5-signal-level-gauge--large-width);
   }
 
   /// Applied when size='x-large'
   &.ch5-signal-level-gauge--size-x-large {
-    height: var(--ch5-signal-level-gauge-x-large-height);
-    width: var(--ch5-signal-level-gauge-x-large-width);
+    height: var(--ch5-signal-level-gauge--x-large-height);
+    width: var(--ch5-signal-level-gauge--x-large-width);
   }
 }
