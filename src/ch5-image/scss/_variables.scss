@@ -11,9 +11,10 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-image {
-  /// Sets object fit property  /// type: string 
+  /// Sets object fit property
+  /// type: string 
   /// values: large, solid, center 
   /// example: contain 
-  /// related-theme-variable: --theme-ch5-image-object-fit
-  --ch5-image-object-fit: var(--theme-ch5-image-object-fit);
+  /// related-theme-variable: --theme-ch5-image--object-fit
+  --ch5-image--object-fit: var(--theme-ch5-image--object-fit);
 }

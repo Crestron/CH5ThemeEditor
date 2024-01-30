@@ -25,7 +25,7 @@ ch5-image {
     width: inherit;
     max-height: 100%;
     max-width: 100%;
-    object-fit: var(--ch5-image-object-fit);
+    object-fit: var(--ch5-image--object-fit);
     display: inline-block;
   }
   // flip image
@@ -34,8 +34,8 @@ ch5-image {
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
+    /* filter: FlipH;
+    -ms-filter: "FlipH"; */
   }
 }
 
