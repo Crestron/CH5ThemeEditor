@@ -61,8 +61,8 @@ ch5-video[show="false"][noshowtype="visibility"] {
     top: 5px;
     padding: 2px;
     opacity: 1;
-    border-radius: 20px;
-    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 100%;
+    background-color: var(--ch5-video--full-screen-icon-background-color);
     transition: opacity 0.2s ease-in;
 
     &.hide {
@@ -72,9 +72,9 @@ ch5-video[show="false"][noshowtype="visibility"] {
 
     .svgIconStyle {
       padding: 2px;
-      width: 32px;
-      height: 32px;
-      fill: #fff;
+      width: var(--ch5-video--full-screen-icon-size);
+      height: var(--ch5-video--full-screen-icon-size);
+      fill: var(--ch5-video--full-screen-icon-fill-color);
     }
 
     &:hover {

@@ -18,6 +18,27 @@ ch5-video {
   /// related-theme-variable: --theme-ch5-video--background-color
   --ch5-video--background-color: var(--theme-ch5-video--background-color);
 
+  /// video full screen icon background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: rgb(0, 0, 0, 0.2)
+  /// related-theme-variable: --theme-ch5-video--full-screen-icon-background-color
+  --ch5-video--full-screen-icon-background-color: var(--theme-ch5-video--full-screen-icon-background-color);
+
+  /// video full screen icon fill color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #fff
+  /// related-theme-variable: --theme-ch5-video--full-screen-icon-fill-color
+  --ch5-video--full-screen-icon-fill-color: var(--theme-ch5-video--full-screen-icon-fill-color);
+
+  /// video full screen icon size
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 32px 
+  /// related-theme-variable: --theme-ch5-video--full-screen-icon-size
+  --ch5-video--full-screen-icon-size: var(--theme-ch5-video--full-screen-icon-size);
+
   /// size xx-large for min width 651px
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
