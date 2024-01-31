@@ -43,20 +43,20 @@ ch5-button-list {
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px
-  /// related-theme-variable: --theme-others-scrollbar-border-radius
-  --ch5-button-list--scrollbar-border-radius: var(--theme-others-scrollbar-border-radius);
+  /// related-theme-variable: --theme-ch5-button-list--scrollbar-border-radius
+  --ch5-button-list--scrollbar-border-radius: var(--theme-ch5-button-list--scrollbar-border-radius);
 
   /// Scrollbar thumb color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgba(0, 0, 0, 0.5)
-  /// related-theme-variable: --theme-others-scrollbar-thumb-color
-  --ch5-button-list--scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color);
+  /// related-theme-variable: --theme-ch5-button-list--scrollbar-thumb-color
+  --ch5-button-list--scrollbar-thumb-color: var(--theme-ch5-button-list--scrollbar-thumb-color);
 
   /// Scrollbar width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 7px 
-  /// related-theme-variable: --theme-others-scrollbar-width
-  --ch5-button-list--scrollbar-width: var(--theme-others-scrollbar-width);
+  /// related-theme-variable: --theme-ch5-button-list--scrollbar-width
+  --ch5-button-list--scrollbar-width: var(--theme-ch5-button-list--scrollbar-width);
 }

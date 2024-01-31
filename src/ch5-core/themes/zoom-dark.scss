@@ -552,9 +552,7 @@
   /// type: string 
   /// values: large, solid, center 
   /// example: normal
-  --theme-ch5-button--font-weight: var(--theme-fonts-font-weight);
-  
-  /// Icon color
+  --theme-ch5-button--font-weight: var(--theme-fonts-font-weight);  /// Icon color
   /// type: string 
   /// values: large, solid, center 
   /// example: inherit
@@ -1203,9 +1201,7 @@
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #6d6d6d
-  --theme-ch5-button--text-selected-font-color: var(--theme-colors-text-selected-font-color);
-  
-  // ***************************************
+  --theme-ch5-button--text-selected-font-color: var(--theme-colors-text-selected-font-color);  // ***************************************
   // ch5-button-list
   // ***************************************
 
@@ -1233,7 +1229,23 @@
   /// example: 5px
   --theme-ch5-button-list--button-container-padding: 5px;
 
-  // ***************************************
+  /// Scrollbar width at the theme level
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 7px
+  --theme-ch5-button-list--scrollbar-width: var(--theme-others-scrollbar-width);
+
+  /// Scrollbar border radius at the theme level
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, % 
+  /// example: 10px
+  --theme-ch5-button-list--scrollbar-border-radius: var(--theme-others-scrollbar-border-radius);
+
+  /// Scrollbar thumb color at the theme level
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: rgba(0, 0, 0, 0.5)
+  --theme-ch5-button-list--scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color);  // ***************************************
   // ch5-color-chip
   // ***************************************
 
@@ -1374,6 +1386,205 @@
   /// values: px, vw, vh, em, rem, % 
   /// example: 2.4rem
   --theme-ch5-dpad--icon-font-size-x-large: 2.4rem;
+
+  /// Default background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #0099ff
+  --theme-ch5-dpad--default-background-color: var(--theme-colors-default-background-color);
+
+  /// Default font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
+  --theme-ch5-dpad--default-font-color: var(--theme-colors-default-font-color);
+
+  /// Default pressed background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #008ae6
+  --theme-ch5-dpad--default-pressed-background-color: var(--theme-colors-default-pressed-background-color);
+
+  /// Default pressed font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
+  --theme-ch5-dpad--default-pressed-font-color: var(--theme-colors-default-pressed-font-color);
+
+
+  /// Primary background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #17171a
+  --theme-ch5-dpad--primary-background-color: var(--theme-colors-primary-background-color);
+
+  /// Primary font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
+  --theme-ch5-dpad--primary-font-color: var(--theme-colors-primary-font-color);
+
+  /// Primary pressed background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #353539
+  --theme-ch5-dpad--primary-pressed-background-color: var(--theme-colors-primary-pressed-background-color);
+
+  /// Primary pressed font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
+  --theme-ch5-dpad--primary-pressed-font-color: var(--theme-colors-primary-pressed-font-color);
+
+
+  /// Info background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #00bcd4
+  --theme-ch5-dpad--info-background-color: var(--theme-colors-info-background-color);
+
+  /// Info font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
+  --theme-ch5-dpad--info-font-color: var(--theme-colors-info-font-color);
+
+  /// Info pressed background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #0097a7
+  --theme-ch5-dpad--info-pressed-background-color: var(--theme-colors-info-pressed-background-color);
+
+  /// Info pressed font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
+  --theme-ch5-dpad--info-pressed-font-color: var(--theme-colors-info-pressed-font-color);
+
+
+  /// Danger background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #f44336
+  --theme-ch5-dpad--danger-background-color: var(--theme-colors-danger-background-color);
+
+  /// Danger font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
+  --theme-ch5-dpad--danger-font-color: var(--theme-colors-danger-font-color);
+
+  /// Danger pressed background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #b71c1c
+  --theme-ch5-dpad--danger-pressed-background-color: var(--theme-colors-danger-pressed-background-color);
+
+  /// Danger pressed font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
+  --theme-ch5-dpad--danger-pressed-font-color: var(--theme-colors-danger-pressed-font-color);
+
+
+  /// Secondary background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #5e5e66
+  --theme-ch5-dpad--secondary-background-color: var(--theme-colors-secondary-background-color);
+
+  /// Secondary font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
+  --theme-ch5-dpad--secondary-font-color: var(--theme-colors-secondary-font-color);
+
+  /// Secondary pressed background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #9e9e9e
+  --theme-ch5-dpad--secondary-pressed-background-color: var(--theme-colors-secondary-pressed-background-color);
+
+  /// Secondary pressed font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffffff
+  --theme-ch5-dpad--secondary-pressed-font-color: var(--theme-colors-secondary-pressed-font-color);
+
+
+  /// Success background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #4caf50
+  --theme-ch5-dpad--success-background-color: var(--theme-colors-success-background-color);
+
+  /// Success font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #f0fff0
+  --theme-ch5-dpad--success-font-color: var(--theme-colors-success-font-color);
+
+  /// Success pressed background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #388e3c
+  --theme-ch5-dpad--success-pressed-background-color: var(--theme-colors-success-pressed-background-color);
+
+  /// Success pressed font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #f0fff0
+  --theme-ch5-dpad--success-pressed-font-color: var(--theme-colors-success-pressed-font-color);
+
+
+  /// Warning background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #ffc009
+  --theme-ch5-dpad--warning-background-color: var(--theme-colors-warning-background-color);
+
+  /// Warning font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #333
+  --theme-ch5-dpad--warning-font-color: var(--theme-colors-warning-font-color);
+
+  /// Warning pressed background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #f7cd4f
+  --theme-ch5-dpad--warning-pressed-background-color: var(--theme-colors-warning-pressed-background-color);
+
+  /// Warning pressed font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #333
+  --theme-ch5-dpad--warning-pressed-font-color: var(--theme-colors-warning-pressed-font-color);
+
+
+  /// Text background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #efefef
+  --theme-ch5-dpad--text-background-color: var(--theme-colors-text-background-color);
+
+  /// Text font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #6d6d6d
+  --theme-ch5-dpad--text-font-color: var(--theme-colors-text-font-color);
+
+  /// Text pressed background color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #d7d4d4
+  --theme-ch5-dpad--text-pressed-background-color: var(--theme-colors-text-pressed-background-color);
+
+  /// Text pressed font color
+  /// type: color 
+  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// example: #6d6d6d
+  --theme-ch5-dpad--text-pressed-font-color: var(--theme-colors-text-pressed-font-color);
 
   // ***************************************
   // ch5-image
@@ -1812,9 +2023,7 @@
 
   --theme-ch5-spinner--item-color: #9898a6;
 
-  --theme-ch5-spinner--overlay-background-color: #ff0000;
-  
-  --theme-ch5-spinner--highlight-box-shadow-color: rgba(0, 0, 0, 0.3);
+  --theme-ch5-spinner--overlay-background-color: #ff0000;  --theme-ch5-spinner--highlight-box-shadow-color: rgba(0, 0, 0, 0.3);
  
   --theme-ch5-spinner--highlight-border-color: #ff0000;
 
