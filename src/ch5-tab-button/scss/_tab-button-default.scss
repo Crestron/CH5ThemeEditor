@@ -49,8 +49,8 @@ ch5-tab-button {
 }
 
 .ch5-tab-button--button-container {
-  width: var(--ch5-tab-button-button-container-width);
-  height: var(--ch5-tab-button-button-container-height);
-  min-width: var(--ch5-tab-button-button-container-width);
-  min-height: var(--ch5-tab-button-button-container-height);
+  width: var(--ch5-tab-button--button-container-width);
+  height: var(--ch5-tab-button--button-container-height);
+  min-width: var(--ch5-tab-button--button-container-width);
+  min-height: var(--ch5-tab-button--button-container-height);
 }
