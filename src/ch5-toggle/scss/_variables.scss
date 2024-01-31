@@ -116,27 +116,6 @@ ch5-toggle {
   /// related-theme-variable: --theme-ch5-toggle--handle-rectangle-margin
   --ch5-toggle--handle-rectangle-margin: var(--theme-ch5-toggle--handle-rectangle-margin);
 
-  /// containe z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 3 
-  /// related-theme-variable: --theme-ch5-toggle--container-z-index
-  --ch5-toggle--container-z-index: var(--theme-ch5-toggle--container-z-index); // TODO - must not be set
-
-  /// toggle knob z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 2 
-  /// related-theme-variable: --theme-ch5-toggle--knob-z-index
-  --ch5-toggle--knob-z-index: var(--theme-ch5-toggle--knob-z-index); // TODO - must not be set
-
-  /// toggle z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 1 
-  /// related-theme-variable: --theme-ch5-toggle--z-index
-  --ch5-toggle--z-index: var(--theme-ch5-toggle--z-index); // TODO - must not be set
-
   /// The background color of the handle when shape="circle"
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 

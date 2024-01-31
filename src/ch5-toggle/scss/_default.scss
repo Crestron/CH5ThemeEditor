@@ -26,7 +26,7 @@ ch5-toggle:focus {
   font-size: var(--ch5-toggle--font-size);
   font-style: var(--ch5-toggle--font-style);
   font-weight: var(--ch5-toggle--font-weight);
-  z-index: var(--ch5-toggle--z-index);
+  z-index: 1;
 
   &[hidden] {
     display: none;
@@ -94,7 +94,7 @@ ch5-toggle:focus {
     /* ch5-toggle - on/off container */
     div {
       position: relative;
-      z-index: var(--ch5-toggle--container-z-index);
+      z-index: 3;
       line-height: 2em;
       text-align: center;
       user-select: none;
@@ -114,7 +114,7 @@ ch5-toggle:focus {
       position: absolute;
       right: 50%;
       top: 0;
-      z-index: var(--ch5-toggle--knob-z-index);
+      z-index: 2;
       display: block;
       width: 50%;
       height: 100%;
