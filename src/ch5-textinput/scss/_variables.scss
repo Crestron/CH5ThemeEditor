@@ -108,8 +108,8 @@ ch5-textinput {
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 16px 
-  /// related-theme-variable: --ch5-textinput--regular-font-size
-  --ch5-textinput--regular-mask-font-size: calc(var(--ch5-textinput--regular-font-size) - 2px);
+  /// related-theme-variable: --theme-ch5-textinput--regular-mask-font-size
+  --ch5-textinput--regular-mask-font-size: var(--theme-ch5-textinput--regular-mask-font-size);
 
   /// set margin of icon for regular size of the textinput
   /// type: unit 
@@ -129,14 +129,14 @@ ch5-textinput {
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 12px 
-  /// related-theme-variable: --ch5-textinput--x-small-font-size
-  --ch5-textinput--x-small-mask-font-size: calc(var(--ch5-textinput--x-small-font-size) - 1px);
+  /// related-theme-variable: --theme-ch5-textinput--x-small-font-size
+  --ch5-textinput--x-small-mask-font-size: var(--theme-ch5-textinput--x-small-font-size);
 
   /// set the font style for x-small size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  /// related-theme-variable: --ch5-textinput--regular-font-style
+  /// related-theme-variable: --theme-ch5-textinput--x-small-font-style
   --ch5-textinput--x-small-font-style: var(--theme-ch5-textinput--x-small-font-style);
 
   /// set padding for x-small size of the textinput
@@ -178,21 +178,21 @@ ch5-textinput {
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 14px 
-  /// related-theme-variable: --ch5-textinput--small-font-size
-  --ch5-textinput--small-mask-font-size: calc(var(--ch5-textinput--small-font-size) - 1px);
+  /// related-theme-variable: --theme-ch5-textinput--small-font-size
+  --ch5-textinput--small-mask-font-size: var(--theme-ch5-textinput--small-font-size);
 
   /// set the font style for small size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  /// related-theme-variable: --ch5-textinput--small-font-style
+  /// related-theme-variable: --theme-ch5-textinput--small-font-style
   --ch5-textinput--small-font-style: var(--theme-ch5-textinput--small-font-style);
 
   /// set the font weight for small size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal 
-  /// related-theme-variable: --ch5-textinput--regular-font-weight
+  /// related-theme-variable: --theme-ch5-textinput--small-font-weight
   --ch5-textinput--small-font-weight: var(--theme-ch5-textinput--small-font-weight);
 
   /// set the width for small size of the textinput
@@ -227,21 +227,21 @@ ch5-textinput {
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 18px 
-  /// related-theme-variable: --ch5-textinput--large-font-size
-  --ch5-textinput--large-mask-font-size: calc(var(--theme-ch5-textinput--large-font-size) - 4px);
+  /// related-theme-variable: --theme-ch5-textinput--large-mask-font-size
+  --ch5-textinput--large-mask-font-size: var(--theme-ch5-textinput--large-mask-font-size);
 
   /// set the font style for large size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal 
-  /// related-theme-variable: --ch5-textinput--regular-font-style
+  /// related-theme-variable: --theme-ch5-textinput--large-font-style
   --ch5-textinput--large-font-style: var(--theme-ch5-textinput--large-font-style);
 
   /// set the font weight for large size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal 
-  /// related-theme-variable: --ch5-textinput--regular-font-weight
+  /// related-theme-variable: --theme-ch5-textinput--large-font-weight
   --ch5-textinput--large-font-weight: var(--theme-ch5-textinput--large-font-weight);
 
   /// set the width for large size of the textinput
@@ -276,29 +276,29 @@ ch5-textinput {
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 22px
-  /// related-theme-variable: --ch5-textinput--x-large-font-size
-  --ch5-textinput--x-large-mask-font-size: calc(var(--ch5-textinput--x-large-font-size) - 4px);
+  /// related-theme-variable: --theme-ch5-textinput--x-large-mask-font-size
+  --ch5-textinput--x-large-mask-font-size: var(--theme-ch5-textinput--x-large-mask-font-size);
 
   /// set the font style for x-large size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal 
-  /// related-theme-variable: --ch5-textinput--regular-font-style
+  /// related-theme-variable: --theme-ch5-textinput--x-large-font-style
   --ch5-textinput--x-large-font-style: var(--theme-ch5-textinput--x-large-font-style);
 
   /// set the font weight for x-large size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal 
-  /// related-theme-variable: --ch5-textinput--regular-font-weight
+  /// related-theme-variable: --theme-ch5-textinput--x-large-font-weight
   --ch5-textinput--x-large-font-weight: var(--theme-ch5-textinput--x-large-font-weight);
 
   /// set the width for x-large size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 500px 
-  /// related-theme-variable: --ch5-textinput--size-large-width
-  --ch5-textinput--size-x-large-width: var(--theme-ch5-textinput--size-large-width);
+  /// related-theme-variable: --theme-ch5-textinput--size-x-large-width
+  --ch5-textinput--size-x-large-width: var(--theme-ch5-textinput--size-x-large-width);
 
   /// set margin of icon for x-large size of the textinput
   /// type: unit 
@@ -345,7 +345,7 @@ ch5-textinput {
   /// base border color
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: var(--theme-ch5-textinput--border-color)
+  /// example: var(--theme-ch5-textinput--text-color)
   /// related-theme-variable: --theme-ch5-textinput--input-border-color
   --ch5-textinput--input-border-color: var(--theme-ch5-textinput--input-border-color);
 

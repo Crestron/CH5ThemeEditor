@@ -2235,6 +2235,13 @@
   // ch5-textinput
   // ***************************************
 
+
+  --theme-ch5-textinput--regular-mask-font-size: 14px;
+  --theme-ch5-textinput--small-mask-font-size: 13px;
+  --theme-ch5-textinput--x-small-mask-font-size: 11px;
+  --theme-ch5-textinput--large-mask-font-size: 14px;
+  --theme-ch5-textinput--x-large-mask-font-size: 18px;
+
   /// Font size at the theme level
   /// type: unit
   /// values: px, vw, vh, em, rem, %
@@ -2347,17 +2354,11 @@
   /// example: var(--theme-ch5-textinput--text-color)
   --theme-ch5-textinput--label-text-color: var(--theme-ch5-textinput--text-color);
 
-  /// Base border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #666666
-  --theme-ch5-textinput--border-color: #666666;
-
   /// The color for the border of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: var(--theme-ch5-textinput--border-color)
-  --theme-ch5-textinput--input-border-color: var(--theme-ch5-textinput--border-color);
+  /// example: var(--theme-ch5-textinput--text-color)
+  --theme-ch5-textinput--input-border-color: var(--theme-ch5-textinput--text-color);
 
   /// Background color of textinput input field
   /// type: string 
@@ -2454,6 +2455,12 @@
   /// values: px, vw, vh, em, rem, % 
   /// example: 500px
   --theme-ch5-textinput--size-large-width: 500px;
+
+  /// Set the width for x large size of the textinput
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 500px
+  --theme-ch5-textinput--size-x-large-width: 500px;
 
   /// Set margin of icon for large size of the textinput
   /// type: unit 
