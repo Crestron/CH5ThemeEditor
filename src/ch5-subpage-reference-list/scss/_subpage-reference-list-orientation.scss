@@ -33,7 +33,7 @@
     /// Applied for the container of subpage
     .ch5-subpage-reference-list--subpage-container {
       height: 100%;
-      padding: var(--ch5-subpage-reference-list-container-padding);
+      padding: var(--ch5-subpage-reference-list--container-padding);
     }
 
     &.ch5-subpage-reference-list--stretch-both {
@@ -100,7 +100,7 @@
 
     .ch5-subpage-reference-list--subpage-container {
       width: 100%;
-      padding: var(--ch5-subpage-reference-list-container-padding);
+      padding: var(--ch5-subpage-reference-list--container-padding);
     }
 
     &.ch5-subpage-reference-list--stretch-both {
