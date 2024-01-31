@@ -38,9 +38,9 @@ ch5-keypad {
       grid-column-start: 2;
 
       button {
-        color: var(--ch5-keypad--success-default-font-color);
-        background-color: var(--ch5-keypad--success-default-background-color);
-        border: 1px solid var(--ch5-keypad--success-default-border-color);
+        color: var(--ch5-keypad--success-font-color);
+        background-color: var(--ch5-keypad--success-background-color);
+        border: 1px solid var(--ch5-keypad--success-border-color);
       }
 
       &.keypad-btn.keypad-btn-pressed button {
@@ -64,7 +64,7 @@ ch5-keypad {
 
   /// Applied when type="default"
   &.ch5-keypad--type-default {
-    @include ch5-keypad-content(--ch5-keypad--default-default-background-color, --ch5-keypad--default-default-border-color, --ch5-keypad--default-default-font-color);
+    @include ch5-keypad-content(--ch5-keypad--default-background-color, --ch5-keypad--default-border-color, --ch5-keypad--default-font-color);
 
     /// Applied when button in the pressed state
     .keypad-btn-pressed {
@@ -74,7 +74,7 @@ ch5-keypad {
 
   /// Applied when type="default"
   &.ch5-keypad--type-primary {
-    @include ch5-keypad-content(--ch5-keypad--primary-default-background-color, --ch5-keypad--primary-default-border-color, --ch5-keypad--primary-default-font-color);
+    @include ch5-keypad-content(--ch5-keypad--primary-background-color, --ch5-keypad--primary-border-color, --ch5-keypad--primary-font-color);
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(--ch5-keypad--primary-pressed-background-color, --ch5-keypad--primary-pressed-border-color, --ch5-keypad--primary-pressed-font-color);
@@ -83,7 +83,7 @@ ch5-keypad {
 
   /// Applied when type="info"
   &.ch5-keypad--type-info {
-    @include ch5-keypad-content(--ch5-keypad--info-default-background-color, --ch5-keypad--info-default-border-color, --ch5-keypad--info-default-font-color);
+    @include ch5-keypad-content(--ch5-keypad--info-background-color, --ch5-keypad--info-border-color, --ch5-keypad--info-font-color);
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(--ch5-keypad--info-pressed-background-color, --ch5-keypad--info-pressed-border-color, --ch5-keypad--info-pressed-font-color);
@@ -92,7 +92,7 @@ ch5-keypad {
 
   /// Applied when type="text"
   &.ch5-keypad--type-text {
-    @include ch5-keypad-content(--ch5-keypad--text-default-background-color, --ch5-keypad--text-default-border-color, --ch5-keypad--text-default-font-color);
+    @include ch5-keypad-content(--ch5-keypad--text-background-color, --ch5-keypad--text-border-color, --ch5-keypad--text-font-color);
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(--ch5-keypad--text-pressed-background-color, --ch5-keypad--text-pressed-border-color, --ch5-keypad--text-pressed-font-color);
@@ -101,7 +101,7 @@ ch5-keypad {
 
   /// Applied when type="danger"
   &.ch5-keypad--type-danger {
-    @include ch5-keypad-content(--ch5-keypad--danger-default-background-color, --ch5-keypad--danger-default-border-color, --ch5-keypad--danger-default-font-color);
+    @include ch5-keypad-content(--ch5-keypad--danger-background-color, --ch5-keypad--danger-border-color, --ch5-keypad--danger-font-color);
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(--ch5-keypad--danger-pressed-background-color, --ch5-keypad--danger-pressed-border-color, --ch5-keypad--danger-pressed-font-color);
@@ -110,7 +110,7 @@ ch5-keypad {
 
   /// Applied when type="warning"
   &.ch5-keypad--type-warning {
-    @include ch5-keypad-content(--ch5-keypad--warning-default-background-color, --ch5-keypad--warning-default-border-color, --ch5-keypad--warning-default-font-color);
+    @include ch5-keypad-content(--ch5-keypad--warning-background-color, --ch5-keypad--warning-border-color, --ch5-keypad--warning-font-color);
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(--ch5-keypad--warning-pressed-background-color, --ch5-keypad--warning-pressed-border-color, --ch5-keypad--warning-pressed-font-color);
@@ -119,7 +119,7 @@ ch5-keypad {
 
   /// Applied when type="success"
   &.ch5-keypad--type-success {
-    @include ch5-keypad-content(--ch5-keypad--success-default-background-color, --ch5-keypad--success-default-border-color, --ch5-keypad--success-default-font-color);
+    @include ch5-keypad-content(--ch5-keypad--success-background-color, --ch5-keypad--success-border-color, --ch5-keypad--success-font-color);
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(--ch5-keypad--success-pressed-background-color, --ch5-keypad--success-pressed-border-color, --ch5-keypad--success-pressed-font-color);
@@ -128,7 +128,7 @@ ch5-keypad {
 
   /// Applied when type="secondary"
   &.ch5-keypad--type-secondary {
-    @include ch5-keypad-content(--ch5-keypad--secondary-default-background-color, --ch5-keypad--secondary-default-border-color, --ch5-keypad--secondary-default-font-color);
+    @include ch5-keypad-content(--ch5-keypad--secondary-background-color, --ch5-keypad--secondary-border-color, --ch5-keypad--secondary-font-color);
 
     .keypad-btn-pressed {
       @include ch5-keypad-content--pressed(--ch5-keypad--secondary-pressed-background-color, --ch5-keypad--secondary-pressed-border-color, --ch5-keypad--secondary-pressed-font-color);
