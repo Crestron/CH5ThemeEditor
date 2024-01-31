@@ -2065,36 +2065,22 @@
   // ch5-triggerview
   // ***************************************
 
-  /// Triggerview minimum height in px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0px
-  --theme-ch5-triggerview-slide-min-height: 0px;
+  --theme-ch5-triggerview--slide-min-height: 0px;
 
-  /// Triggerview maximum height in px
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: none
-  --theme-ch5-triggerview-slide-max-height: none;
+  --theme-ch5-triggerview--slide-max-height: none;
 
-  /// Duration of changing from one view to another.
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: 0.6s
-  --theme-ch5-triggerview-transition-duration: 0.6s;
+  --theme-ch5-triggerview--transition-duration: 0.6s;
 
-  /// Transition effect(describe animation on content of the child view)
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: ease-out
-  --theme-ch5-triggerview-transition-timing-function: ease-out;
+  --theme-ch5-triggerview--transition-timing-function: ease-out;
 
-  // Do not remove below even if search result is 1
-  /// gap between views in px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 16px
-  --theme-ch5-triggerview-gap: 16px;
+  --theme-ch5-triggerview--gap: 16px;
+
+  --theme-ch5-triggerview--font-size: var(--theme-fonts-font-size);
+
+  --theme-ch5-triggerview--font-style: var(--theme-fonts-font-style);
+
+  --theme-ch5-triggerview--font-weight: var(--theme-fonts-font-weight);
+
 
   // ***************************************
   // ch5-modal-dialog
