@@ -23,10 +23,10 @@ ch5-toggle:focus {
   position: relative;
   display: inline-block;
   box-sizing: border-box;
-  font-size: var(--ch5-toggle-font-size);
-  font-style: var(--ch5-toggle-font-style);
-  font-weight: var(--ch5-toggle-font-weight);
-  z-index: var(--ch5-toggle-z-index);
+  font-size: var(--ch5-toggle--font-size);
+  font-style: var(--ch5-toggle--font-style);
+  font-weight: var(--ch5-toggle--font-weight);
+  z-index: var(--ch5-toggle--z-index);
 
   &[hidden] {
     display: none;
@@ -43,11 +43,11 @@ ch5-toggle:focus {
   .ch5-toggle__label {
     display: inline-flex;
     vertical-align: middle;
-    font-style: var(--ch5-toggle-label-font-style);
-    font-size: var(--ch5-toggle-label-font-size);
-    font-weight: var(--ch5-toggle-label-font-weight);
-    color: var(--theme-ch5-toggle-label-font-color);
-    margin: var(--ch5-toggle-label-margin);
+    font-style: var(--ch5-toggle--label-font-style);
+    font-size: var(--ch5-toggle--label-font-size);
+    font-weight: var(--ch5-toggle--label-font-weight);
+    color: var(--ch5-toggle--label-font-color);
+    margin: var(--ch5-toggle--label-margin);
 
     &[hidden] {
       display: none;
@@ -57,25 +57,25 @@ ch5-toggle:focus {
   .ch5-toggle__on-label,
   .ch5-toggle__off-label {
     word-wrap: normal;
-    color: var(--theme-ch5-toggle-text-font-color);
-    font-style: var(--ch5-toggle-text-font-style);
-    font-size: var(--ch5-toggle-text-font-size);
-    font-weight: var(--ch5-toggle-text-font-weight);
+    color: var(--ch5-toggle--text-font-color);
+    font-style: var(--ch5-toggle--text-font-style);
+    font-size: var(--ch5-toggle--text-font-size);
+    font-weight: var(--ch5-toggle--text-font-weight);
   }
 
   /// Applied for on label
   .ch5-toggle__on-label,
-    /// Applied for off label
-    .ch5-toggle__off-label,
-    /// Applied for icon-on
-    .ch5-toggle__on-icon,
-    /// Applied for icon-off
-    .ch5-toggle__off-icon {
+  /// Applied for off label
+  .ch5-toggle__off-label,
+  /// Applied for icon-on
+  .ch5-toggle__on-icon,
+  /// Applied for icon-off
+  .ch5-toggle__off-icon {
     margin: 0 2px 0 2px;
-    color: var(--theme-ch5-toggle-icon-font-color);
-    font-style: var(--ch5-toggle-icon-font-style);
-    font-size: var(--ch5-toggle-icon-font-size);
-    font-weight: var(--ch5-toggle-icon-font-weight);
+    color: var(--ch5-toggle--icon-font-color);
+    font-style: var(--ch5-toggle--icon-font-style);
+    font-size: var(--ch5-toggle--icon-font-size);
+    font-weight: var(--ch5-toggle--icon-font-weight);
   }
 
   /* ch5-toggle - handle default */
@@ -94,7 +94,7 @@ ch5-toggle:focus {
     /* ch5-toggle - on/off container */
     div {
       position: relative;
-      z-index: var(--ch5-toggle-container-z-index);
+      z-index: var(--ch5-toggle--container-z-index);
       line-height: 2em;
       text-align: center;
       user-select: none;
@@ -114,7 +114,7 @@ ch5-toggle:focus {
       position: absolute;
       right: 50%;
       top: 0;
-      z-index: var(--ch5-toggle-knob-z-index);
+      z-index: var(--ch5-toggle--knob-z-index);
       display: block;
       width: 50%;
       height: 100%;
@@ -127,22 +127,22 @@ ch5-toggle:focus {
   &.ch5-toggle--circle {
     .ch5-toggle__handle {
       border-radius: 1.75em;
-      background-color: var(--theme-ch5-toggle-handle-circle-background);
-      margin: var(--ch5-toggle-handle-circle-margin);
+      background-color: var(--ch5-toggle--handle-circle-background);
+      margin: var(--ch5-toggle--handle-circle-margin);
 
       div {
         width: 100%;
         transition: all 0.2s ease-out;
 
         &:first-of-type {
-          color: var(--theme-ch5-toggle-circle-label-off-color);
+          color: var(--ch5-toggle--circle-label-off-color);
           text-align: center;
           padding-left: 1.75em;
         }
 
         &:last-of-type {
           display: none;
-          color: var(--theme-ch5-toggle-circle-label-on-color);
+          color: var(--ch5-toggle--circle-label-on-color);
           text-align: center;
           padding-right: 1.75em;
         }
@@ -153,8 +153,8 @@ ch5-toggle:focus {
         top: 0;
         width: 33%;
         border-radius: 100%;
-        background-color: var(--ch5-toggle-circle-knob-color);
-        border: 0.25em solid var(--ch5-toggle-handle-circle-background);
+        background-color: var(--ch5-toggle--circle-knob-color);
+        border: 0.25em solid var(--ch5-toggle--handle-circle-background);
       }
     }
   }
@@ -162,10 +162,10 @@ ch5-toggle:focus {
   /* ch5-toggle - rectangle shape */
   &.ch5-toggle--rectangle {
     .ch5-toggle__handle {
-      background: var(--theme-ch5-toggle-handle-rectangle-background);
+      background: var(--ch5-toggle--handle-rectangle-background);
       border-radius: 1px;
       box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0;
-      margin: var(--ch5-toggle-handle-rectangle-margin);
+      margin: var(--ch5-toggle--handle-rectangle-margin);
 
       div {
         display: inline-flex;
@@ -173,17 +173,17 @@ ch5-toggle:focus {
         transition: all 0.1s;
 
         &:first-of-type {
-          color: var(--theme-ch5-toggle-rectangle-label-off-color);
+          color: var(--ch5-toggle--rectangle-label-off-color);
         }
 
         &:last-of-type {
-          color: var(--theme-ch5-toggle-rectangle-label-on-color);
+          color: var(--ch5-toggle--rectangle-label-on-color);
         }
       }
 
       a {
         border-radius: 1px;
-        background-color: var(--theme-ch5-toggle-rectangle-knob-color);
+        background-color: var(--ch5-toggle--rectangle-knob-color);
       }
     }
   }
@@ -209,8 +209,8 @@ ch5-toggle:focus {
     /// Class to apply when shape='circle'
     &.ch5-toggle--circle {
       .ch5-toggle__handle {
-        // box-shadow: inset 0 0 0 30px var(--theme-ch5-toggle-handle-checked-color;
-        background-color: var(--theme-ch5-toggle-handle-checked-color);
+        // box-shadow: inset 0 0 0 30px var(--ch5-toggle-handle-checked-color;
+        background-color: var(--ch5-toggle--handle-checked-color);
         transition: background-color 0.3s linear;
 
         div:first-of-type {
@@ -224,8 +224,8 @@ ch5-toggle:focus {
         a {
           left: 100%;
           margin-left: -33%;
-          background-color: var(--ch5-toggle-circle-knob-color);
-          border-color: var(--theme-ch5-toggle-handle-checked-color);
+          background-color: var(--ch5-toggle--circle-knob-color);
+          border-color: var(--ch5-toggle--handle-checked-color);
         }
       }
     }
@@ -239,7 +239,7 @@ ch5-toggle:focus {
         }
 
         a {
-          background-color: var(--theme-ch5-toggle-handle-checked-color);
+          background-color: var(--ch5-toggle--handle-checked-color);
         }
       }
     }
@@ -252,7 +252,7 @@ ch5-toggle:focus {
 
   /// Class to apply when orientation='vertical'
   &.ch5-toggle--vertical {
-    > div {
+    >div {
       padding: 50% 0;
       height: 0;
       -webkit-transform: rotate(90deg);
