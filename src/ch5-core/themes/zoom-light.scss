@@ -502,34 +502,14 @@
   // ch5-animation
   // ***************************************
 
-  /// Animation color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #3f3f3f
   --theme-ch5-animation--color: #3f3f3f;
 
-  /// Size=regular
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 72px
   --theme-ch5-animation--size-regular: 72px;
 
-  /// Size=small
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 40px
   --theme-ch5-animation--size-small: 40px;
 
-  /// Size=large
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 104px
   --theme-ch5-animation--size-large: 104px;
 
-  /// Size=x-large
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 136px
   --theme-ch5-animation--size-x-large: 136px;
 
   // ***************************************
@@ -808,22 +788,10 @@
   // ch5-color-chip
   // ***************************************
 
-  /// The height for div of the color-chip.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 40px
   --theme-ch5-color-chip--height: 40px;
 
-  /// The width for div of the color-chip.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 40px
   --theme-ch5-color-chip--width: 40px;
 
-  /// Background color for color-chip.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #000
   --theme-ch5-color-chip--background-color: #000;
 
   // ***************************************
@@ -846,28 +814,12 @@
   // ch5-date-time
   // ***************************************
 
-  /// Font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 14px
   --theme-ch5-datetime--font-size: 14px;
 
-  /// Datetime height
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 35px
   --theme-ch5-datetime--height: 35px;
 
-  /// Datetime width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 200px
   --theme-ch5-datetime--width: 200px;
 
-  /// Background color
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: transparent
   --theme-ch5-datetime--background-color: transparent;
 
   // ***************************************
@@ -1227,65 +1179,28 @@
   /// example: bold
   --theme-ch5-overlay-panel--contents-font-weight: var(--theme-fonts-font-style);
 
-  //ch5-segmented-gauge
-  /// Led style gauge style height
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 20px
+  // ***************************************
+  // ch5-segmented-gauge
+  // ***************************************
+
   --theme-ch5-segmented-gauge--led-style-height: 20px;
 
-  /// Led style gauge style width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 20px
   --theme-ch5-segmented-gauge--led-style-width: 20px;
 
-  /// Led style border radius
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 50%
   --theme-ch5-segmented-gauge--led-style-border-radius: 50%;
 
-  /// State graphic green
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #22c55e
   --theme-ch5-segmented-gauge--state-graphic-green: #22c55e;
 
-  /// State graphic inactive
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #909090
   --theme-ch5-segmented-gauge--state-graphic-inactive: #909090;
 
-  /// State graphic yellow
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #eab308
   --theme-ch5-segmented-gauge--state-graphic-yellow: #eab308;
 
-  /// State graphic green
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #ef4444
   --theme-ch5-segmented-gauge--state-graphic-red: #ef4444;
 
-  /// State graphic green
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #3b82f6
   --theme-ch5-segmented-gauge--state-graphic-blue: #3b82f6;
 
-  /// State graphic green
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #f97316
   --theme-ch5-segmented-gauge--state-graphic-orange: #f97316;
 
-  /// State graphic green
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #f8fafc
   --theme-ch5-segmented-gauge--state-graphic-white: #f8fafc;
 
   // ***************************************
@@ -1410,64 +1325,24 @@
   // ch5-signal-level-gauge
   // ***************************************
 
-  /// Height small at the theme level
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 24px
   --theme-ch5-signal-level-gauge--small-height: 24px;
 
-  /// Width small at the theme level
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 36px
   --theme-ch5-signal-level-gauge--small-width: 36px;
 
-  /// Height regular at the theme level
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 35px
   --theme-ch5-signal-level-gauge--regular-height: 35px;
 
-  /// Width regular at the theme level
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 45px
   --theme-ch5-signal-level-gauge--regular-width: 45px;
 
-  /// Height large at the theme level
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 60px
   --theme-ch5-signal-level-gauge--large-height: 60px;
 
-  /// Width large at the theme level
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 90px
   --theme-ch5-signal-level-gauge--large-width: 90px;
 
-  /// Height x-large at the theme level
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 96px
   --theme-ch5-signal-level-gauge--x-large-height: 96px;
 
-  /// Width x-large at the theme level
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 180px
   --theme-ch5-signal-level-gauge--x-large-width: 180px;
 
-  /// Bar color at the theme level
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #808080
   --theme-ch5-signal-level-gauge--bar-color: #808080;
 
-  /// Selected bar color at the theme level
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #67bef0
   --theme-ch5-signal-level-gauge--selected-bar-color: #67bef0;
 
   // ***************************************
