@@ -37,21 +37,21 @@ ch5-list {
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px solid transparent 
   /// related-theme-variable: --theme-ch5-list-item-border
-  --ch5-list--item-border: var(--theme-ch5-list-item-border);
+  --ch5-list--item-border: var(--theme-ch5-list--item-border);
 
   /// Set the padding of list items
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px 
   /// related-theme-variable: --theme-ch5-list-item-padding
-  --ch5-list--item-padding: var(--theme-ch5-list-item-padding);
+  --ch5-list--item-padding: var(--theme-ch5-list--item-padding);
 
   /// List item background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #fafafa 
   /// related-theme-variable: --theme-ch5-list-item-background-color
-  --ch5-list--item-background-color: var(--theme-ch5-list-item-background-color);
+  --ch5-list--item-background-color: var(--theme-ch5-list--item-background-color);
 
   /// Scrollbar border radius
   /// type: unit 
