@@ -113,18 +113,36 @@ function getVariables(data, sectionName) {
 				start = j;
 			}
 
+			let description = '';
+			let type = '';
+			let valueMetadata = '';
+			let possibleValues = '';
+			let example = '';
+
 			const variableMetaData = lines.slice(start, i).join('\n').split('///').map(str => str.trim()).filter(str => str.length !== 0);
 
 			if (variableMetaData.length < 4) {
-				console.log(name + 'invalid metadata')
-				process.exit(1);
-			}
+				// console.log(name + 'invalid metadata')
+				// process.exit(1);
 
-			const description = variableMetaData[0];
-			const type = variableMetaData[1].replace('type:', '').trim();
-			const valueMetadata = variableMetaData[2].replace('values:', '').trim()
-			const possibleValues = type === 'color' ? valueMetadata : valueMetadata.split(',').map((str) => str.trim()).filter((str) => str.trim())
-			const example = variableMetaData[3].replace('example:', '').trim()
+				if (sectionName === 'theme') {
+					const componentName = name.replace('--theme-', '').split('--')[0]
+					const componentVariables = outputJSON['ch5Components'].find(t => t.name === componentName)['variables']
+					const variableObj = componentVariables.find(t => t.name === name.replace('--theme', '-'));
+					if (variableObj) {
+						description = variableObj.description + ' at theme level';
+						type = variableObj.type
+						example = variableObj.example
+						possibleValues = variableObj.possibleValues
+					}
+				}
+			} else {
+				description = variableMetaData[0];
+				type = variableMetaData[1].replace('type:', '').trim();
+				valueMetadata = variableMetaData[2].replace('values:', '').trim()
+				possibleValues = type === 'color' ? ["rgb(35,35,35)", "#1a1a1a", "red"] : valueMetadata.split(',').map((str) => str.trim()).filter((str) => str.trim())
+				example = variableMetaData[3].replace('example:', '').trim()
+			}
 
 			let value = splitLine[1].trim().replaceAll(';', '');
 
