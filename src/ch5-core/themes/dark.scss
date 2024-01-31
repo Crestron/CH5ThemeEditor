@@ -2718,12 +2718,6 @@
   /// example: #0099ff
   --theme-ch5-slider--connect-bg: #0099ff;
 
-  /// Slider background percentage
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 30% //TODO - Variable seems to be unused in any place
-  --theme-ch5-slider--background-lighten-percent: 30%; //TODO - Variable seems to be unused in any place
-
   /// Slider target background
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
