@@ -2331,209 +2331,275 @@
   // ch5-textinput
   // ***************************************
 
+  /// Font size at the theme level
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 16px
+  --theme-ch5-textinput--regular-font-size: var(--theme-fonts-font-size);
+
+  /// Font style at the theme level
+  /// type: string
+  /// values: large, solid, center
+  /// example: normal
+  --theme-ch5-textinput--regular-font-style: var(--theme-fonts-font-style);
+
+  /// Font weight at the theme level
+  /// type: string
+  /// values: large, solid, center
+  /// example: normal
+  --theme-ch5-textinput--regular-font-weight: var(--theme-fonts-font-weight);
+
+  /// Font size at the theme level
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 16px
+  --theme-ch5-textinput--small-font-size: 14px;
+
+  /// Font style at the theme level
+  /// type: string
+  /// values: large, solid, center
+  /// example: normal
+  --theme-ch5-textinput--small-font-style: var(--theme-fonts-font-style);
+
+  /// Font weight at the theme level
+  /// type: string
+  /// values: large, solid, center
+  /// example: normal
+  --theme-ch5-textinput--small-font-weight: var(--theme-fonts-font-weight);
+
+  /// Font size at the theme level
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 16px
+  --theme-ch5-textinput--large-font-size: 18px;
+
+  /// Font style at the theme level
+  /// type: string
+  /// values: large, solid, center
+  /// example: normal
+  --theme-ch5-textinput--large-font-style: var(--theme-fonts-font-style);
+
+  /// Font weight at the theme level
+  /// type: string
+  /// values: large, solid, center
+  /// example: normal
+  --theme-ch5-textinput--large-font-weight: var(--theme-fonts-font-weight);
+
+  /// Font size at the theme level
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 16px
+  --theme-ch5-textinput--x-large-font-size: 22px;
+
+  /// Font style at the theme level
+  /// type: string
+  /// values: large, solid, center
+  /// example: normal
+  --theme-ch5-textinput--x-large-font-style: var(--theme-fonts-font-style);
+
+  /// Font weight at the theme level
+  /// type: string
+  /// values: large, solid, center
+  /// example: normal
+  --theme-ch5-textinput--x-large-font-weight: var(--theme-fonts-font-weight);
+
+  /// Font size at the theme level
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 16px
+  --theme-ch5-textinput--x-small-font-size: 12px
+
+  /// Font style at the theme level
+  /// type: string
+  /// values: large, solid, center
+  /// example: normal
+  --theme-ch5-textinput--x-small-font-style: var(--theme-fonts-font-style);
+
+  /// Font weight at the theme level
+  /// type: string
+  /// values: large, solid, center
+  /// example: normal
+  --theme-ch5-textinput--x-small-font-weight: var(--theme-fonts-font-weight);
+
   /// The text color of the textinput.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #efefef
-  --theme-ch5-textinput-text-color: #efefef;
+  --theme-ch5-textinput--text-color: #efefef;
 
   /// Set the color of text for the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: var(--theme-ch5-textinput-text-color)
-  --theme-ch5-textinput-input-text-color: var(--theme-ch5-textinput-text-color);
+  /// example: var(--theme-ch5-textinput--text-color)
+  --theme-ch5-textinput--input-text-color: var(--theme-ch5-textinput--text-color);
 
   /// The color of the icon within the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: var(--theme-colors-success-background-color)
-  --theme-ch5-textinput-icon-text-color: var(--theme-colors-success-background-color);
+  --theme-ch5-textinput--icon-text-color: var(--theme-colors-success-background-color);
 
   /// The color for the label of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: var(--theme-ch5-textinput-text-color)
-  --theme-ch5-textinput-label-text-color: var(--theme-ch5-textinput-text-color);
+  /// example: var(--theme-ch5-textinput--text-color)
+  --theme-ch5-textinput--label-text-color: var(--theme-ch5-textinput--text-color);
 
   /// Base border color
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: var(--theme-ch5-textinput-text-color)
-  --theme-ch5-textinput-border-color: var(--theme-ch5-textinput-text-color);
+  /// example: var(--theme-ch5-textinput--text-color)
+  --theme-ch5-textinput--border-color: var(--theme-ch5-textinput--text-color);
 
   /// The color for the border of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: var(--theme-ch5-textinput-border-color)
-  --theme-ch5-textinput-input-border-color: var(--theme-ch5-textinput-border-color);
+  /// example: var(--theme-ch5-textinput--border-color)
+  --theme-ch5-textinput--input-border-color: var(--theme-ch5-textinput--border-color);
 
   /// Background color of textinput input field
   /// type: string 
   /// values: large, solid, center 
   /// example: transparent
-  --theme-ch5-textinput-input-background-color: transparent;
+  --theme-ch5-textinput--input-background-color: transparent;
 
   /// The border radius for the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 5px
-  --theme-ch5-textinput-input-border-radius: 5px;
+  --theme-ch5-textinput--input-border-radius: 5px;
 
   /// Set the textinput border's width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 2px
-  --theme-ch5-textinput-input-border-width: 2px;
+  --theme-ch5-textinput--input-border-width: 2px;
 
   /// Set the textinput border's style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid
-  --theme-ch5-textinput-input-border-style: solid;
+  --theme-ch5-textinput--input-border-style: solid;
 
-  /// Set the font size for regular size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 16px
-  --theme-ch5-textinput-regular-font-size: 16px;
 
   /// Set padding for regular size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 15px 20px
-  --theme-ch5-textinput-input-regular-padding: 15px 20px;
+  --theme-ch5-textinput--input-regular-padding: 15px 20px;
 
   /// Set the width for regular size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 400px
-  --theme-ch5-textinput-size-regular-width: 400px;
+  --theme-ch5-textinput--size-regular-width: 400px;
 
   /// Set margin of icon for regular size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 16px 16px
-  --theme-ch5-textinput-icon-regular-margin: 16px 16px;
+  --theme-ch5-textinput--icon-regular-margin: 16px 16px;
 
-  /// Set the font size for x-small size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 12px
-  --theme-ch5-textinput-x-small-font-size: 12px;
 
   /// Set padding for x-small size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px 10px
-  --theme-ch5-textinput-input-x-small-padding: 10px 10px;
+  --theme-ch5-textinput--input-x-small-padding: 10px 10px;
 
   /// Set the width for x-small size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 200px
-  --theme-ch5-textinput-size-x-small-width: 200px;
+  --theme-ch5-textinput--size-x-small-width: 200px;
 
   /// Set margin of icon for x-small size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 12px 12px
-  --theme-ch5-textinput-icon-x-small-margin: 12px 12px;
+  --theme-ch5-textinput--icon-x-small-margin: 12px 12px;
 
   /// Set padding for small size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 15px 15px
-  --theme-ch5-textinput-input-small-padding: 15px 15px;
+  --theme-ch5-textinput--input-small-padding: 15px 15px;
 
-  /// Set the font size for small size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 14px
-  --theme-ch5-textinput-small-font-size: 14px;
+
 
   /// Set the width for small size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 250px
-  --theme-ch5-textinput-size-small-width: 250px;
+  --theme-ch5-textinput--size-small-width: 250px;
 
   /// Set margin of icon for small size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 14px 14px
-  --theme-ch5-textinput-icon-small-margin: 14px 14px;
+  --theme-ch5-textinput--icon-small-margin: 14px 14px;
 
   /// Set padding for large size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 15px 20px
-  --theme-ch5-textinput-input-large-padding: 15px 20px;
+  --theme-ch5-textinput--input-large-padding: 15px 20px;
 
-  /// Set the font size for large size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 18px
-  --theme-ch5-textinput-large-font-size: 18px;
+
 
   /// Set the width for large size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 500px
-  --theme-ch5-textinput-size-large-width: 500px;
+  --theme-ch5-textinput--size-large-width: 500px;
 
   /// Set margin of icon for large size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 18px 18px
-  --theme-ch5-textinput-icon-large-margin: 18px 18px;
+  --theme-ch5-textinput--icon-large-margin: 18px 18px;
 
   /// Set padding for x-large size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 15px 20px
-  --theme-ch5-textinput-input-x-large-padding: 15px 20px;
-
-  /// Set the font size for x-large size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 22px
-  --theme-ch5-textinput-x-large-font-size: 22px;
+  --theme-ch5-textinput--input-x-large-padding: 15px 20px;
 
   /// Set margin of icon for x-large size of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 22px 22px
-  --theme-ch5-textinput-icon-x-large-margin: 22px 22px;
+  --theme-ch5-textinput--icon-x-large-margin: 22px 22px;
 
   /// Set minimum height for size - x-small of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 40px
-  --theme-ch5-textinput-size-x-small-height: 40px;
+  --theme-ch5-textinput--size-x-small-height: 40px;
 
   /// Set minimum height for size - small of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 48px
-  --theme-ch5-textinput-size-small-height: 48px;
+  --theme-ch5-textinput--size-small-height: 48px;
 
   /// Set minimum height for size - regular of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 52px
-  --theme-ch5-textinput-size-regular-height: 52px;
+  --theme-ch5-textinput--size-regular-height: 52px;
 
   /// Set minimum height for size - large of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 56px
-  --theme-ch5-textinput-size-large-height: 56px;
+  --theme-ch5-textinput--size-large-height: 56px;
 
   /// Set minimum height for size - x-large of the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 60px
-  --theme-ch5-textinput-size-x-large-height: 60px;
+  --theme-ch5-textinput--size-x-large-height: 60px;
 
   // ***************************************
   // ch5-toggle
