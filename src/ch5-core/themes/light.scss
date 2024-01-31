@@ -537,6 +537,19 @@
   // ch5-button
   // ***************************************
 
+
+  /// Button content line height
+  /// type: number
+  /// values: 1, 10, 100
+  /// example: 1.2
+  --theme-ch5-button--content-line-height: 1.2;
+
+  /// Button padding
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 0.25rem
+  --theme-ch5-button--padding: 0.25rem;
+
   /// Button font size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
@@ -1203,7 +1216,7 @@
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #6d6d6d
-  --theme-ch5-button--text-selected-font-color: var(--theme-colors-text-selected-font-color);  // ***************************************
+  --theme-ch5-button--text-selected-font-color: var(--theme-colors-text-selected-font-color); // ***************************************
   // ch5-button-list
   // ***************************************
 
@@ -1247,7 +1260,7 @@
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgba(0, 0, 0, 0.5)
-  --theme-ch5-button-list--scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color);  // ***************************************
+  --theme-ch5-button-list--scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color); // ***************************************
   // ch5-color-chip
   // ***************************************
 
@@ -2298,13 +2311,11 @@
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 16px
-  --theme-ch5-textinput--x-small-font-size: 12px
-
-  /// Font style at the theme level
-  /// type: string
-  /// values: large, solid, center
-  /// example: normal
-  --theme-ch5-textinput--x-small-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-textinput--x-small-font-size: 12px /// Font style at the theme level
+    /// type: string
+    /// values: large, solid, center
+    /// example: normal
+    --theme-ch5-textinput--x-small-font-style: var(--theme-fonts-font-style);
 
   /// Font weight at the theme level
   /// type: string
@@ -2312,7 +2323,7 @@
   /// example: normal
   --theme-ch5-textinput--x-small-font-weight: var(--theme-fonts-font-weight);
 
- /// The text color of the textinput.
+  /// The text color of the textinput.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #000000
@@ -3069,13 +3080,13 @@
   /// type: number 
   /// values: 1, 10, 100 
   /// example: 1.2
-  --theme-ch5-button--content-line-height: 1.2;
+  --theme-ch5-slider-button--content-line-height: 1.2;
 
   /// Button padding
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 0.25rem
-  --theme-ch5-button--padding: 0.25rem;
+  --theme-ch5-slider-button--padding: 0.25rem;
 
   // ***************************************
   // ch5-list

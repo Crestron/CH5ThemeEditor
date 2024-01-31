@@ -435,10 +435,10 @@ async function initialize() {
 	// Validate Variables
 	unusedVars.forEach(({ name, variables }) => {
 		variables.forEach((variable) => {
-			const cornerCase1 = name === 'ch5-triggerview' && variable === '--ch5-triggerview-gap';
-			const cornerCase2 = name === 'ch5-triggerview' && variable === '--ch5-triggerview-slide-max-height';
-			const cornerCase3 = name === 'ch5-triggerview' && variable === '--ch5-triggerview-slide-min-height';
-			const cornerCase4 = name === 'ch5-triggerview' && variable === '--ch5-triggerview-transition-duration';
+			const cornerCase1 = name === 'ch5-triggerview' && variable === '--ch5-triggerview--gap';
+			const cornerCase2 = name === 'ch5-triggerview' && variable === '--ch5-triggerview--slide-max-height';
+			const cornerCase3 = name === 'ch5-triggerview' && variable === '--ch5-triggerview--slide-min-height';
+			const cornerCase4 = name === 'ch5-triggerview' && variable === '--ch5-triggerview--transition-duration';
 			if (cornerCase1 || cornerCase2 || cornerCase3 || cornerCase4) {
 				// Corner Case
 			} else {
@@ -453,7 +453,12 @@ async function initialize() {
 		variables.forEach((variable) => {
 			const cornerCase1 = name === 'ch5-slider' && variable === '--temp-var';
 			const cornerCase2 = name === 'ch5-button' && variable === '--fa-style-family-classic';
-			if (cornerCase1 || cornerCase2) {
+			const cornerCase3 = name === 'ch5-slider' && variable === '--ch5-slider--size-x-small-handle-height-oval';
+			const cornerCase4 = name === 'ch5-slider' && variable === '--ch5-slider--size-small-handle-height-oval';
+			const cornerCase5 = name === 'ch5-slider' && variable === '--ch5-slider--size-regular-handle-height-oval';
+			const cornerCase6 = name === 'ch5-slider' && variable === '--ch5-slider--size-large-handle-height-oval';
+			const cornerCase7 = name === 'ch5-slider' && variable === '--ch5-slider--size-x-large-handle-height-oval';
+			if (cornerCase1 || cornerCase2 || cornerCase3 || cornerCase4 || cornerCase5 || cornerCase6 || cornerCase7) {
 				// Corner case
 			} else {
 				undefinedVariables.push({ name, variable });
