@@ -1686,101 +1686,43 @@
   // ch5-spinner
   // ***************************************
 
-  /// The text color of the active item
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fff
-  --theme-ch5-spinner-active-item-color: #fff;
+  --theme-ch5-spinner--active-item-color: #fff;
 
-  /// The text color of the item.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #939393
-  --theme-ch5-spinner-item-color: #939393;
+  --theme-ch5-spinner--font-style: var(--theme-fonts-font-style);
 
-  /// The background color for the overlay of the spinner.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #000
-  --theme-ch5-spinner-overlay-background-color: #000;
+  --theme-ch5-spinner--font-weight: var(--theme-fonts-font-weight);
 
-  /// The box shadow color of the spinner
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: rgba(0, 0, 0, 0.3)
-  --theme-ch5-spinner-highlight-box-shadow-color: rgba(0, 0, 0, 0.3);
+  --theme-ch5-spinner--icon-font-size: var(--theme-ch5-spinner-font-size);
 
-  /// The border color of the spinner
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #ff0000
-  --theme-ch5-spinner-highlight-border-color: #ff0000;
+  --theme-ch5-spinner--item-color: #939393;
 
-  /// Spinner background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #0000ff
-  --theme-ch5-spinner-background-color: #0000ff;
+  --theme-ch5-spinner--overlay-background-color: #000;
 
-  /// Spinner background gradient before
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05))
-  --theme-ch5-spinner-background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05));
+  --theme-ch5-spinner--highlight-box-shadow-color: rgba(0, 0, 0, 0.3);
 
-  /// Spinner background gradient after
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%)
-  --theme-ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%);
+  --theme-ch5-spinner--highlight-border-color: #ff0000;
 
-  /// Spinner border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-spinner-border-width: 1px;
+  --theme-ch5-spinner--background-color: #0000ff;
 
-  /// Spinner border style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-spinner-border-style: solid;
+  --theme-ch5-spinner--background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05));
 
-  /// The default font size of the spinner
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 22px
-  --theme-ch5-spinner-font-size: 22px;
+  --theme-ch5-spinner--background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%);
 
-  /// The padding of the icon within the slider item
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: 0 0
-  --theme-ch5-spinner-icon-padding: 0 0;
+  --theme-ch5-spinner--border-width: 1px;
 
-  /// The margin of the icon within the slider item
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: 0 0
-  --theme-ch5-spinner-icon-margin: 0 0;
+  --theme-ch5-spinner--border-style: solid;
 
-  /// The opacity for the overlay of the spinner
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 0
-  --theme-ch5-spinner-overlay-opacity: 0;
+  --theme-ch5-spinner--font-size: 22px;
 
-  /// Spinner wrapper z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 9999
-  --theme-ch5-spinner-wrapper-z-index: 9999;
+  --theme-ch5-spinner--icon-padding: 0 0;
 
-  /// Spinner overlay z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 999
-  --theme-ch5-spinner-overlay-z-index: 999;
+  --theme-ch5-spinner--icon-margin: 0 0;
+
+  --theme-ch5-spinner--overlay-opacity: 0;
+
+  --theme-ch5-spinner--wrapper-z-index: 9999;
+
+  --theme-ch5-spinner--overlay-z-index: 999;
 
   // ***************************************
   // ch5-subpage-reference-list
