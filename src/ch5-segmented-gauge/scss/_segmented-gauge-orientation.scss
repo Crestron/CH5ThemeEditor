@@ -17,7 +17,7 @@
     flex-direction: row;
 
     .ch5-segmented-gauge-segment {
-      margin-right: var(--ch5-segmented-gauge--segment-margin);
+      margin-right: 2px;
     }
 
     .ch5-segmented-gauge--segment--state-graphic-hidden {
@@ -32,7 +32,7 @@
     transform: rotate(180deg);
 
     .ch5-segmented-gauge-segment {
-      margin-top: var(--ch5-segmented-gauge--segment-margin);
+      margin-top: 2px;
     }
 
     .ch5-segmented-gauge--segment--state-graphic-hidden {

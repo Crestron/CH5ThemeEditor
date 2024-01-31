@@ -25,13 +25,6 @@ ch5-segmented-gauge {
   /// related-theme-variable: --theme-ch5-segmented-gauge--led-style-width
   --ch5-segmented-gauge--led-style-width: var(--theme-ch5-segmented-gauge--led-style-width);
 
-  /// The margin between the gauge
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 2px 
-  /// related-theme-variable: --theme-ch5-segmented-gauge--segment-margin
-  --ch5-segmented-gauge--segment-margin: var(--theme-ch5-segmented-gauge--segment-margin);
-
   /// The initial border radius for the segmented gauge
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
