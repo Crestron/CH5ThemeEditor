@@ -1180,7 +1180,7 @@
   /// values: large, solid, center 
   /// example: bold
   --theme-ch5-overlay-panel--contents-font-style: var(--theme-fonts-font-weight);
-  
+
   /// The font weight for the content of the overlay panel
   /// type: string 
   /// values: large, solid, center 
@@ -1455,11 +1455,15 @@
   // ch5-subpage-reference-list
   // ***************************************
 
-  /// Subpage-reference container padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 5px
   --theme-ch5-subpage-reference-list-container-padding: 5px;
+
+  --theme-ch5-subpage-reference-list-scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color);
+
+  --theme-ch5-subpage-reference-list-scrollbar-border-radius: var(--theme-others-scrollbar-border-radius);
+
+  --theme-ch5-subpage-reference-list-scrollbar-track-color: var(--theme-others-scrollbar-track-color);
+
+  --theme-ch5-subpage-reference-list-scrollbar-width: var(--theme-others-scrollbar-width);
 
   // ***************************************
   // ch5-tab-button
