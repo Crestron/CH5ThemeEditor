@@ -17,9 +17,9 @@ ch5-triggerviewchild {
 
 /// The class added on the component
 ch5-triggerview {
-  font-size: var(--ch5-triggerview-font-size);
-  font-style: var(--ch5-triggerview-font-style);
-  font-weight: var(--ch5-triggerview-font-weight);
+  font-size: var(--ch5-triggerview--font-size);
+  font-style: var(--ch5-triggerview--font-style);
+  font-weight: var(--ch5-triggerview--font-weight);
 
   .swiper-container,
   .swiper {
@@ -37,7 +37,7 @@ ch5-triggerview {
     transition-property: transform, -webkit-transform;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
-    transition-timing-function: var(--ch5-triggerview-transition-timing-function);
+    transition-timing-function: var(--ch5-triggerview--transition-timing-function);
   }
   .slider-full-width-page {
     width: 100%;
