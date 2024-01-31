@@ -1206,6 +1206,30 @@
   /// example: 18px
   --theme-ch5-overlay-panel--contents-font-size: 18px;
 
+  /// The font style of the icon at the top of the overlay panel
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: bold
+  --theme-ch5-overlay-panel--close-icon-font-style: var(--theme-fonts-font-style);
+
+  /// The font weight of the icon at the top of the overlay panel
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: bold
+  --theme-ch5-overlay-panel--close-icon-font-weight: var(--theme-fonts-font-weight);
+
+  /// The font style for the content of the overlay panel
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: bold
+  --theme-ch5-overlay-panel--contents-font-style: var(--theme-fonts-font-weight);
+
+  /// The font weight for the content of the overlay panel
+  /// type: string 
+  /// values: large, solid, center 
+  /// example: bold
+  --theme-ch5-overlay-panel--contents-font-weight: var(--theme-fonts-font-style);
+
   // ***************************************
   // ch5-segmented-gauge
   // ***************************************

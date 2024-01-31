@@ -92,15 +92,15 @@ ch5-overlay-panel {
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  /// related-theme-variable: --ch5-overlay-panel--font-style
-  --ch5-overlay-panel--close-icon-font-style: var(--ch5-overlay-panel--font-style);
+  /// related-theme-variable: --theme-ch5-overlay-panel--close-icon-font-styl
+  --ch5-overlay-panel--close-icon-font-style: var(--theme-ch5-overlay-panel--close-icon-font-style);
 
   /// The font weight of the icon at the top of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal 
-  /// related-theme-variable: --ch5-overlay-panel--font-weight
-  --ch5-overlay-panel--close-icon-font-weight: var(--ch5-overlay-panel--font-weight);
+  /// related-theme-variable: --theme-ch5-overlay-panel--close-icon-font-weight
+  --ch5-overlay-panel--close-icon-font-weight: var(--theme-ch5-overlay-panel--close-icon-font-weight);
 
   /// The padding for the content of the overlay panel
   /// type: unit 
@@ -120,15 +120,15 @@ ch5-overlay-panel {
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  /// related-theme-variable: --ch5-overlay--panel-font-style
-  --ch5-overlay-panel--contents-font-style: var(--ch5-overlay-panel--font-style);
+  /// related-theme-variable: --theme-ch5-overlay-panel--contents-font-style
+  --ch5-overlay-panel--contents-font-style: var(--theme-ch5-overlay-panel--contents-font-style);
 
   /// The font weight for the content of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  /// related-theme-variable: --ch5-overlay-panel--font-style
-  --ch5-overlay-panel--contents-font-weight: var(--ch5-overlay-panel--font-style);
+  /// related-theme-variable: --theme-ch5-overlay-panel--contents-font-weight
+  --ch5-overlay-panel--contents-font-weight: var(--theme-ch5-overlay-panel--contents-font-weight);
 
   /// The font color for the content of the overlay panel
   /// type: color 
