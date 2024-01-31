@@ -305,6 +305,80 @@ function getSectionNames(variablesList) {
 	return response;
 }
 
+function checkComponentVariable() {
+	const components = outputJSON['ch5Components'];
+	const themes = outputJSON['ch5Themes'];
+	const missingVariables = [];
+	const relatedThemeDescription = [];
+	const variableThemeVariables = [];
+
+	for (const component of components) {
+		const componentVariables = component['variables'];
+
+		for (const theme of themes) {
+			const themeVariables = theme['variables'];
+			const componentThemeVariables = themeVariables.find(t => t.name === component.name);
+
+			if (componentThemeVariables) {
+				componentVariables.forEach(element => {
+					const variable = componentThemeVariables['variables'].find(t => t.name === element.name.replace('-', '--theme'))
+					if (variable === undefined) {
+						missingVariables.push(`${component.name} ${element.name} missing at ${theme.themeName} theme`)
+					}
+				});
+				componentThemeVariables['variables'].forEach(element => {
+					const variable = componentVariables.find(t => t.name === element.name.replace('--theme', '-'))
+					if (variable === undefined) {
+						missingVariables.push(`${component.name} ${element.name} missing at component`)
+					}
+				});
+			}
+		}
+
+	}
+
+	for (const component of components) {
+		const variables = component['variables'];
+
+		for (const variable of variables) {
+			if (variable.relatedThemeVariable.startsWith('--theme') === false) {
+				relatedThemeDescription.push(`validate ${variable.name} relatedThemeVariable variable`);
+			}
+		}
+
+	}
+
+	for (const component of components) {
+		const variables = component['variables'];
+
+		for (const variable of variables) {
+			if (variable.value.startsWith('var(--theme-') === false) {
+				variableThemeVariables.push(`validate ${variable.name} theme variable`);
+			}
+		}
+
+	}
+
+	if (missingVariables.length !== 0) {
+		missingVariables.forEach((description) => {
+			console.log(`\x1b[31m ${description} \x1b[0m`);
+		});
+		// process.exit(1);
+	}
+	if (relatedThemeDescription.length !== 0) {
+		relatedThemeDescription.forEach((description) => {
+			console.log(`\x1b[31m ${description} \x1b[0m`);
+		});
+		// process.exit(1);
+	}
+	if (variableThemeVariables.length !== 0) {
+		variableThemeVariables.forEach((description) => {
+			console.log(`\x1b[31m ${description} \x1b[0m`);
+		});
+		// process.exit(1);
+	}
+}
+
 async function initialize() {
 	const start = Date.now();
 	for (const component in components) {
@@ -385,10 +459,12 @@ async function initialize() {
 		process.exit(1);
 	}
 
+	checkComponentVariable();
+
 	const outputPath = process.argv[3] !== undefined ? process.argv[3] : CONFIG.DEFAULT_OUTPUT_PATH;
 	fs.writeFileSync(outputPath, JSON.stringify(outputJSON, null, 4));
 	console.log(`Schema generated in ${((Date.now() - start) / 1000).toFixed(2)} seconds`)
 }
 
-findMissingThemeVariables()
+findMissingThemeVariables();
 initialize();
