@@ -43,7 +43,7 @@
     }
 
     &.ch5-subpage-reference-list--scrollbar-true {
-      padding-bottom: var(--ch5-subpage-reference-list-scrollbar-width);
+      padding-bottom: var(--ch5-subpage-reference-list--scrollbar-width);
 
       & ~ .scrollbar-container {
         width: 100%;
