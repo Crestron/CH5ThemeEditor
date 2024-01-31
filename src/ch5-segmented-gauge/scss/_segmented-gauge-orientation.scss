@@ -17,12 +17,12 @@
     flex-direction: row;
 
     .ch5-segmented-gauge-segment {
-      margin-right: var(--ch5-segmented-gauge-segment-margin);
+      margin-right: 2px;
     }
 
     .ch5-segmented-gauge--segment--state-graphic-hidden {
-      width: var(--ch5-segmented-gauge-hidden-segment); // to remove the color for first segment
-      margin-right: var(--ch5-segmented-gauge-hidden-margin);
+      width: 4px; // to remove the color for first segment
+      margin-right: 0px;
     }
   }
 
@@ -32,12 +32,12 @@
     transform: rotate(180deg);
 
     .ch5-segmented-gauge-segment {
-      margin-top: var(--ch5-segmented-gauge-segment-margin);
+      margin-top: 2px;
     }
 
     .ch5-segmented-gauge--segment--state-graphic-hidden {
-      height: var(--ch5-segmented-gauge-hidden-segment); // to remove the color for first segment
-      margin-top: var(--ch5-segmented-gauge-hidden-margin);
+      height: 4px; // to remove the color for first segment
+      margin-top: 0px;
     }
   }
 }
