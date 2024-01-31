@@ -1209,79 +1209,67 @@
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 20px
-  --theme-ch5-segmented-gauge-led-style-height: 20px;
+  --theme-ch5-segmented-gauge--led-style-height: 20px;
 
   /// Led style gauge style width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 20px
-  --theme-ch5-segmented-gauge-led-style-width: 20px;
+  --theme-ch5-segmented-gauge--led-style-width: 20px;
 
   /// Margin for segmented gauge children
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 2px
-  --theme-ch5-segmented-gauge-segment-margin: 2px;
+  --theme-ch5-segmented-gauge--segment-margin: 2px;
 
   /// Led style border radius
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 50%
-  --theme-ch5-segmented-gauge-led-style-border-radius: 50%;
+  --theme-ch5-segmented-gauge--led-style-border-radius: 50%;
 
   /// State graphic green
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #22c55e
-  --theme-ch5-segmented-gauge-state-graphic-green: #22c55e;
+  --theme-ch5-segmented-gauge--state-graphic-green: #22c55e;
 
   /// State graphic inactive
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #909090
-  --theme-ch5-segmented-gauge-state-graphic-inactive: #909090;
+  --theme-ch5-segmented-gauge--state-graphic-inactive: #909090;
 
   /// State graphic yellow
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #eab308
-  --theme-ch5-segmented-gauge-state-graphic-yellow: #eab308;
+  --theme-ch5-segmented-gauge--state-graphic-yellow: #eab308;
 
   /// State graphic green
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ef4444
-  --theme-ch5-segmented-gauge-state-graphic-red: #ef4444;
+  --theme-ch5-segmented-gauge--state-graphic-red: #ef4444;
 
   /// State graphic green
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #3b82f6
-  --theme-ch5-segmented-gauge-state-graphic-blue: #3b82f6;
+  --theme-ch5-segmented-gauge--state-graphic-blue: #3b82f6;
 
   /// State graphic green
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f97316
-  --theme-ch5-segmented-gauge-state-graphic-orange: #f97316;
+  --theme-ch5-segmented-gauge--state-graphic-orange: #f97316;
 
   /// State graphic green
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f8fafc
-  --theme-ch5-segmented-gauge-state-graphic-white: #f8fafc;
-
-  /// Segmented gauge hidden segment
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 4px
-  --theme-ch5-segmented-gauge-hidden-segment: 4px;
-
-  /// Segmented gauge hidden margin
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0px
-  --theme-ch5-segmented-gauge-hidden-margin: 0px;
+  --theme-ch5-segmented-gauge--state-graphic-white: #f8fafc;
 
   // ***************************************
   // ch5-select
@@ -1405,61 +1393,61 @@
   // ch5-signal-level-gauge
   // ***************************************
 
-  /// Height small
+  /// Height small at the theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 24px
   --theme-ch5-signal-level-gauge--small-height: 24px;
 
-  /// Width small
+  /// Width small at the theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 36px
   --theme-ch5-signal-level-gauge--small-width: 36px;
 
-  /// Height regular
+  /// Height regular at the theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 35px
   --theme-ch5-signal-level-gauge--regular-height: 35px;
 
-  /// Width regular
+  /// Width regular at the theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 45px
   --theme-ch5-signal-level-gauge--regular-width: 45px;
 
-  /// Height large
+  /// Height large at the theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 60px
   --theme-ch5-signal-level-gauge--large-height: 60px;
 
-  /// Width large
+  /// Width large at the theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 90px
   --theme-ch5-signal-level-gauge--large-width: 90px;
 
-  /// Height x-large
+  /// Height x-large at the theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 96px
   --theme-ch5-signal-level-gauge--x-large-height: 96px;
 
-  /// Width x-large
+  /// Width x-large at the theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 180px
   --theme-ch5-signal-level-gauge--x-large-width: 180px;
 
-  /// Bar color
+  /// Bar color at the theme level
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #808080
   --theme-ch5-signal-level-gauge--bar-color: #808080;
 
-  /// Selected bar color
+  /// Selected bar color at the theme level
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #67bef0

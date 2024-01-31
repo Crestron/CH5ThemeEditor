@@ -11,70 +11,70 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-signal-level-gauge {
-  /// Height small
+  /// The initial height of signal level gauge for size small
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 24px 
   /// related-theme-variable: --theme-ch5-signal-level-gauge--small-height
   --ch5-signal-level-gauge--small-height: var(--theme-ch5-signal-level-gauge--small-height);
 
-  /// Width small
+  /// The initial width of signal level gauge for size small
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 36px 
   /// related-theme-variable: --theme-ch5-signal-level-gauge--small-width
   --ch5-signal-level-gauge--small-width: var(--theme-ch5-signal-level-gauge--small-width);
 
-  /// Height regular
+  /// The initial height of signal level gauge for size regular
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 35px 
   /// related-theme-variable: --theme-ch5-signal-level-gauge--regular-height
   --ch5-signal-level-gauge--regular-height: var(--theme-ch5-signal-level-gauge--regular-height);
 
-  /// Width regular
+  /// The initial width of signal level gauge for size regular
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 45px 
   /// related-theme-variable: --theme-ch5-signal-level-gauge--regular-width
   --ch5-signal-level-gauge--regular-width: var(--theme-ch5-signal-level-gauge--regular-width);
 
-  /// Height large
+  /// The initial height of signal level gauge for size large
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 60px 
   /// related-theme-variable: --theme-ch5-signal-level-gauge--large-height
   --ch5-signal-level-gauge--large-height: var(--theme-ch5-signal-level-gauge--large-height);
 
-  /// Width large
+  /// The initial width of signal level gauge for size large
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 90px 
   /// related-theme-variable: --theme-ch5-signal-level-gauge--large-width
   --ch5-signal-level-gauge--large-width: var(--theme-ch5-signal-level-gauge--large-width);
 
-  /// Height x-large
+  /// The initial height of signal level gauge for size x-large
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 96px 
   /// related-theme-variable: --theme-ch5-signal-level-gauge--x-large-height
   --ch5-signal-level-gauge--x-large-height: var(--theme-ch5-signal-level-gauge--x-large-height);
 
-  /// Width x-large
+  /// The initial width of signal level gauge for size x-large
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 180px 
   /// related-theme-variable: --theme-ch5-signal-level-gauge--x-large-width
   --ch5-signal-level-gauge--x-large-width: var(--theme-ch5-signal-level-gauge--x-large-width);
 
-  /// Bar color
+  /// The initial color for the bar of the signal level gauge
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #808080 
   /// related-theme-variable: --theme-ch5-signal-level-gauge--bar-color
   --ch5-signal-level-gauge--bar-color: var(--theme-ch5-signal-level-gauge--bar-color);
 
-  /// Selected bar color
+  /// The initial color for the selected bar in signal level gauge
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #67bef0 
