@@ -2277,35 +2277,29 @@
   // ch5-list
   // ***************************************
 
-  /// Set the text color of list items.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #333
-  --theme-ch5-list-item-color: #333;
+  --theme-ch5-list--item-color: #333;
 
-  /// Set the background color of list items, configurable for each theme
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fafafa
-  --theme-ch5-list-item-background-color: #fafafa;
+  --theme-ch5-list--item-background-color: #fafafa;
 
-  /// Set the border color of list items
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #bdbdbd
-  --theme-ch5-list-item-border-color: #bdbdbd;
+  --theme-ch5-list--item-border-color: #bdbdbd;
 
-  /// Set the border style of list items, configurable for each theme
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px solid transparent
-  --theme-ch5-list-item-border: 1px solid transparent;
+  --theme-ch5-list--item-border: 1px solid transparent;
 
-  /// Set the padding of list items
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px
-  --theme-ch5-list-item-padding: 10px;
+  --theme-ch5-list--item-padding: 10px;
+
+  --theme-ch5-list--font-size: var(--theme-fonts-font-size);
+
+  --theme-ch5-list--font-style: var(--theme-fonts-font-style);
+
+  --theme-ch5-list--font-weight: var(--theme-fonts-font-weight);
+
+  --theme-ch5-list--scrollbar-border-radius: var(--theme-others-scrollbar-border-radius);
+
+  --theme-ch5-list--scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color);
+
+  --theme-ch5-list--scrollbar-track-color: var(--theme-others-scrollbar-track-color);
+
+  --theme-ch5-list--scrollbar-width: var(--theme-others-scrollbar-width);
 
   // ***************************************
   // ch5-video
