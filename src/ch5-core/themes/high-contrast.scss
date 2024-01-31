@@ -540,224 +540,224 @@
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 14px
-  --theme-ch5-button-font-size: 14px;
+  --theme-ch5-button--font-size: 14px;
 
   /// Button Icon color
   /// type: string 
   /// values: large, solid, center 
   /// example: inherit
-  --theme-ch5-button-icon-color: inherit;
+  --theme-ch5-button--icon-color: inherit;
 
   /// Button Icon font size
   /// type: string 
   /// values: large, solid, center 
   /// example: inherit
-  --theme-ch5-button-icon-size: inherit;
+  --theme-ch5-button--icon-size: inherit;
 
   // button solid-border
   /// Default border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px
-  --theme-ch5-button-default-border-width: 1px;
+  --theme-ch5-button--default-border-width: 1px;
 
   /// Primary border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px
-  --theme-ch5-button-primary-border-width: 1px;
+  --theme-ch5-button--primary-border-width: 1px;
 
   /// Secondary border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px
-  --theme-ch5-button-secondary-border-width: 1px;
+  --theme-ch5-button--secondary-border-width: 1px;
 
   /// Success border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px
-  --theme-ch5-button-success-border-width: 1px;
+  --theme-ch5-button--success-border-width: 1px;
 
   /// Info border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px
-  --theme-ch5-button-info-border-width: 1px;
+  --theme-ch5-button--info-border-width: 1px;
 
   /// Warning border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px
-  --theme-ch5-button-warning-border-width: 1px;
+  --theme-ch5-button--warning-border-width: 1px;
 
   /// Danger border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px
-  --theme-ch5-button-danger-border-width: 1px;
+  --theme-ch5-button--danger-border-width: 1px;
 
   /// Text border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px
-  --theme-ch5-button-text-border-width: 1px;
+  --theme-ch5-button--text-border-width: 1px;
 
   /// Default border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid
-  --theme-ch5-button-default-border-style: solid;
+  --theme-ch5-button--default-border-style: solid;
 
   /// Primary border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid
-  --theme-ch5-button-primary-border-style: solid;
+  --theme-ch5-button--primary-border-style: solid;
 
   /// Secondary border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid
-  --theme-ch5-button-secondary-border-style: solid;
+  --theme-ch5-button--secondary-border-style: solid;
 
   /// Success border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid
-  --theme-ch5-button-success-border-style: solid;
+  --theme-ch5-button--success-border-style: solid;
 
   /// Info border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid
-  --theme-ch5-button-info-border-style: solid;
+  --theme-ch5-button--info-border-style: solid;
 
   /// Warning border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid
-  --theme-ch5-button-warning-border-style: solid;
+  --theme-ch5-button--warning-border-style: solid;
 
   /// Danger border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid
-  --theme-ch5-button-danger-border-style: solid;
+  --theme-ch5-button--danger-border-style: solid;
 
   /// Text border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid
-  --theme-ch5-button-text-border-style: solid;
+  --theme-ch5-button--text-border-style: solid;
 
   /// Button rounded-rectangle
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 5px
-  --theme-ch5-button-border-radius: 5px;
+  --theme-ch5-button--border-radius: 5px;
 
   /// Button circle
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 50%
-  --theme-ch5-button-circle-border-radius: 50%;
+  --theme-ch5-button--circle-border-radius: 50%;
 
   /// Button oval
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 50%
-  --theme-ch5-button-oval-border-radius: 50%;
+  --theme-ch5-button--oval-border-radius: 50%;
 
   /// Button tab
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px 10px 0 0
-  --theme-ch5-button-tab-border-radius: 10px 10px 0 0;
+  --theme-ch5-button--tab-border-radius: 10px 10px 0 0;
 
   /// Button size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 42px
-  --theme-ch5-button-size: 42px;
+  --theme-ch5-button--size: 42px;
 
   /// Button x-small font size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 11px
-  --theme-ch5-button-x-small-font-size: 11px;
+  --theme-ch5-button--x-small-font-size: 11px;
 
   /// Button x-small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 32px
-  --theme-ch5-button-x-small-size: 32px;
+  --theme-ch5-button--x-small-size: 32px;
 
   /// Button small font size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 13px
-  --theme-ch5-button-small-font-size: 13px;
+  --theme-ch5-button--small-font-size: 13px;
 
   /// Button small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 36px
-  --theme-ch5-button-small-size: 36px;
+  --theme-ch5-button--small-size: 36px;
 
   /// large font size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 16px
-  --theme-ch5-button-large-font-size: 16px;
+  --theme-ch5-button--large-font-size: 16px;
 
   /// Button large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 52px
-  --theme-ch5-button-large-size: 52px;
+  --theme-ch5-button--large-size: 52px;
 
   /// Button x-large font size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 18px
-  --theme-ch5-button-x-large-font-size: 18px;
+  --theme-ch5-button--x-large-font-size: 18px;
 
   /// Button x-large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 72px
-  --theme-ch5-button-x-large-size: 72px;
+  --theme-ch5-button--x-large-size: 72px;
 
   /// Checkbox checked icon
   /// type: string 
   /// values: large, solid, center 
   /// example: "\f14a"
-  --theme-ch5-button-checkbox-checked-faicon: "\f14a";
+  --theme-ch5-button--checkbox-checked-faicon: "\f14a";
 
   /// Checkbox unchecked icon
   /// type: string 
   /// values: large, solid, center 
   /// example: "\f0c8"
-  --theme-ch5-button-checkbox-unchecked-faicon: "\f0c8";
+  --theme-ch5-button--checkbox-unchecked-faicon: "\f0c8";
 
   /// Checkbox checked font weight
   /// type: number 
   /// values: 1, 10, 100 
   /// example: 400
-  --theme-ch5-button-checkbox-checked-font-weight: 400;
+  --theme-ch5-button--checkbox-checked-font-weight: 400;
 
   /// Checkbox unchecked font weight
   /// type: number 
   /// values: 1, 10, 100 
   /// example: 400
-  --theme-ch5-button-checkbox-unchecked-font-weight: 400;
+  --theme-ch5-button--checkbox-unchecked-font-weight: 400;
 
   /// Button checkbox padding
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 5px
-  --theme-ch5-button-checkbox-padding: 5px;
+  --theme-ch5-button--checkbox-padding: 5px;
 
   // ***************************************
   // ch5-button-list
@@ -767,25 +767,25 @@
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 5px
-  --theme-ch5-button-list-padding: 5px;
+  --theme-ch5-button-list--padding: 5px;
 
   /// Button List container width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 100px
-  --theme-ch5-button-list-button-container-width: 100px;
+  --theme-ch5-button-list--button-container-width: 100px;
 
   /// Button List container height
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 58px
-  --theme-ch5-button-list-button-container-height: 58px;
+  --theme-ch5-button-list--button-container-height: 58px;
 
   /// Applies padding for the container of ch5-button in ch5-button-list
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 5px
-  --theme-ch5-button-list-button-container-padding: 5px;
+  --theme-ch5-button-list--button-container-padding: 5px;
 
   // ***************************************
   // ch5-color-chip
@@ -825,97 +825,97 @@
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 150px
-  --theme-ch5-dpad-regular-dimension: 150px;
+  --theme-ch5-dpad--regular-dimension: 150px;
 
   /// Set the height and width of dpad for x-small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 100px
-  --theme-ch5-dpad-x-small-dimension: 100px;
+  --theme-ch5-dpad--x-small-dimension: 100px;
 
   /// Set the height and width of dpad for small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 130px
-  --theme-ch5-dpad-small-dimension: 130px;
+  --theme-ch5-dpad--small-dimension: 130px;
 
   /// Set the height and width of dpad for large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 180px
-  --theme-ch5-dpad-large-dimension: 180px;
+  --theme-ch5-dpad--large-dimension: 180px;
 
   /// Set the height and width of dpad for x-large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 200px
-  --theme-ch5-dpad-x-large-dimension: 200px;
+  --theme-ch5-dpad--x-large-dimension: 200px;
 
   /// Set the border radius for 'plus' shape regular size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px
-  --theme-ch5-dpad-regular-edge-radius: 10px;
+  --theme-ch5-dpad--regular-edge-radius: 10px;
 
   /// Set the border radius for 'plus' shape x-small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 6px
-  --theme-ch5-dpad-x-small-edge-radius: 6px;
+  --theme-ch5-dpad--x-small-edge-radius: 6px;
 
   /// Set the border radius for 'plus' shape small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px
-  --theme-ch5-dpad-small-edge-radius: 10px;
+  --theme-ch5-dpad--small-edge-radius: 10px;
 
   /// Set the border radius for 'plus' shape large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px
-  --theme-ch5-dpad-large-edge-radius: 10px;
+  --theme-ch5-dpad--large-edge-radius: 10px;
 
   /// Set the border radius for 'plus' shape x-large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px
-  --theme-ch5-dpad-x-large-edge-radius: 10px;
+  --theme-ch5-dpad--x-large-edge-radius: 10px;
 
   /// Set the label font size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1.5rem
-  --theme-ch5-dpad-label-font-size: 1.5rem;
+  --theme-ch5-dpad--label-font-size: 1.5rem;
 
   /// Set the icon font size for x-small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1.3rem
-  --theme-ch5-dpad-icon-font-size-x-small: 1.3rem;
+  --theme-ch5-dpad--icon-font-size-x-small: 1.3rem;
 
   /// Set the icon font size for small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1.8rem
-  --theme-ch5-dpad-icon-font-size-small: 1.8rem;
+  --theme-ch5-dpad--icon-font-size-small: 1.8rem;
 
   /// Set the icon font size for regular size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 2rem
-  --theme-ch5-dpad-icon-font-size-regular: 2rem;
+  --theme-ch5-dpad--icon-font-size-regular: 2rem;
 
   /// Set the icon font size for large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 2.2rem
-  --theme-ch5-dpad-icon-font-size-large: 2.2rem;
+  --theme-ch5-dpad--icon-font-size-large: 2.2rem;
 
   /// Set the icon font size for x-large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 2.4rem
-  --theme-ch5-dpad-icon-font-size-x-large: 2.4rem;
+  --theme-ch5-dpad--icon-font-size-x-large: 2.4rem;
 
   // ***************************************
   // ch5-image
@@ -931,91 +931,91 @@
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 210px
-  --theme-ch5-keypad-x-small-container-width: 210px;
+  --theme-ch5-keypad--x-small-container-width: 210px;
 
   /// Keypad font-size-major for x-small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1.8rem
-  --theme-ch5-keypad-x-small-font-size-major: 1.8rem;
+  --theme-ch5-keypad--x-small-font-size-major: 1.8rem;
 
   /// Keypad font-size-minor for x-small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 0.65rem
-  --theme-ch5-keypad-x-small-font-size-minor: 0.65rem;
+  --theme-ch5-keypad--x-small-font-size-minor: 0.65rem;
 
   /// Keypad container width for small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 249px
-  --theme-ch5-keypad-small-container-width: 249px;
+  --theme-ch5-keypad--small-container-width: 249px;
 
   /// Keypad font-size-major for small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 2rem
-  --theme-ch5-keypad-small-font-size-major: 2rem;
+  --theme-ch5-keypad--small-font-size-major: 2rem;
 
   /// Keypad font-size-minor for small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 0.75rem
-  --theme-ch5-keypad-small-font-size-minor: 0.75rem;
+  --theme-ch5-keypad--small-font-size-minor: 0.75rem;
 
   /// Keypad container width for regular size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 267px
-  --theme-ch5-keypad-regular-container-width: 267px;
+  --theme-ch5-keypad--regular-container-width: 267px;
 
   /// Keypad font-size-major for regular size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 2.4rem
-  --theme-ch5-keypad-regular-font-size-major: 2.4rem;
+  --theme-ch5-keypad--regular-font-size-major: 2.4rem;
 
   /// Keypad font-size-minor for regular size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 0.85rem
-  --theme-ch5-keypad-regular-font-size-minor: 0.85rem;
+  --theme-ch5-keypad--regular-font-size-minor: 0.85rem;
 
   /// Keypad container width for large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 294px
-  --theme-ch5-keypad-large-container-width: 294px;
+  --theme-ch5-keypad--large-container-width: 294px;
 
   /// Keypad font-size-major for large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 2.8rem
-  --theme-ch5-keypad-large-font-size-major: 2.8rem;
+  --theme-ch5-keypad--large-font-size-major: 2.8rem;
 
   /// Keypad font-size-minor for large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 0.95rem
-  --theme-ch5-keypad-large-font-size-minor: 0.95rem;
+  --theme-ch5-keypad--large-font-size-minor: 0.95rem;
 
   /// Keypad container width for x-large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 312px
-  --theme-ch5-keypad-x-large-container-width: 312px;
+  --theme-ch5-keypad--x-large-container-width: 312px;
 
   /// Keypad font-size-major for x-large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 3rem
-  --theme-ch5-keypad-x-large-font-size-major: 3rem;
+  --theme-ch5-keypad--x-large-font-size-major: 3rem;
 
   /// Keypad font-size-minor for x-large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1.05rem
-  --theme-ch5-keypad-x-large-font-size-minor: 1.05rem;
+  --theme-ch5-keypad--x-large-font-size-minor: 1.05rem;
 
   // ***************************************
   // ch5-overlay-panel
@@ -2257,13 +2257,13 @@
   /// type: number 
   /// values: 1, 10, 100 
   /// example: 1.2
-  --theme-ch5-button-content-line-height: 1.2;
+  --theme-ch5-button--content-line-height: 1.2;
 
   /// Button padding
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 0.25rem
-  --theme-ch5-button-padding: 0.25rem;
+  --theme-ch5-button--padding: 0.25rem;
 
   // ***************************************
   // ch5-list
