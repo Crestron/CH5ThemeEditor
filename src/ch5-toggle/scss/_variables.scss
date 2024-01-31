@@ -36,7 +36,7 @@ ch5-toggle {
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 16px 
-  /// related-theme-variable: --ch5-toggle--font-size
+  /// related-theme-variable: --theme-ch5-toggle--label-font-size
   --ch5-toggle--label-font-size: var(--theme-ch5-toggle--label-font-size);
 
   /// label font style
