@@ -17,70 +17,70 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 18px 
   /// related-theme-variable: --theme-ch5-slider-height
-  --ch5-slider-height: var(--theme-ch5-slider-height);
+  --ch5-slider---height: var(--theme-ch5-slider-height);
 
   /// slider border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-slider-target-border-width
-  --ch5-slider-target-border-width: var(--theme-ch5-slider-target-border-width);
+  --ch5-slider---target-border-width: var(--theme-ch5-slider-target-border-width);
 
   /// slider handle border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-slider-handle-border-width
-  --ch5-slider-handle-border-width: var(--theme-ch5-slider-handle-border-width);
+  --ch5-slider---handle-border-width: var(--theme-ch5-slider-handle-border-width);
 
   /// slider border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid 
   /// related-theme-variable: --theme-ch5-slider-target-border-style
-  --ch5-slider-target-border-style: var(--theme-ch5-slider-target-border-style);
+  --ch5-slider---target-border-style: var(--theme-ch5-slider-target-border-style);
 
   /// slider handle border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid 
   /// related-theme-variable: --theme-ch5-slider-handle-border-style
-  --ch5-slider-handle-border-style: var(--theme-ch5-slider-handle-border-style);
+  --ch5-slider---handle-border-style: var(--theme-ch5-slider-handle-border-style);
 
   /// x-small width in px of the slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 200px 
   /// related-theme-variable: --theme-ch5-slider-width-x-small
-  --ch5-slider-width-x-small: var(--theme-ch5-slider-width-x-small);
+  --ch5-slider---width-x-small: var(--theme-ch5-slider-width-x-small);
 
   /// small width in px of the slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 250px 
   /// related-theme-variable: --theme-ch5-slider-width-small
-  --ch5-slider-width-small: var(--theme-ch5-slider-width-small);
+  --ch5-slider---width-small: var(--theme-ch5-slider-width-small);
 
   /// regular width in px of the slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 300px 
   /// related-theme-variable: --theme-ch5-slider-width-regular
-  --ch5-slider-width-regular: var(--theme-ch5-slider-width-regular);
+  --ch5-slider---width-regular: var(--theme-ch5-slider-width-regular);
 
   /// large width in px of the slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 400px 
   /// related-theme-variable: --theme-ch5-slider-width-large
-  --ch5-slider-width-large: var(--theme-ch5-slider-width-large);
+  --ch5-slider---width-large: var(--theme-ch5-slider-width-large);
 
   /// x-large width in px of the slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 500px 
   /// related-theme-variable: --theme-ch5-slider-width-x-large
-  --ch5-slider-width-x-large: var(--theme-ch5-slider-width-x-large);
+  --ch5-slider---width-x-large: var(--theme-ch5-slider-width-x-large);
 
   /* == Button sizes == */
 
@@ -89,70 +89,70 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 24px 
   /// related-theme-variable: --theme-ch5-slider-size-x-small-button-width
-  --ch5-slider-size-x-small-button-width: var(--theme-ch5-slider-size-x-small-button-width);
+  --ch5-slider---size-x-small-button-width: var(--theme-ch5-slider-size-x-small-button-width);
 
   /// x-small height in px of the button for advanced slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 26px 
   /// related-theme-variable: --theme-ch5-slider-size-x-small-button-height
-  --ch5-slider-size-x-small-button-height: var(--theme-ch5-slider-size-x-small-button-height);
+  --ch5-slider---size-x-small-button-height: var(--theme-ch5-slider-size-x-small-button-height);
 
   /// small width in px of the button for advanced slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 26px 
   /// related-theme-variable: --theme-ch5-slider-size-small-button-width
-  --ch5-slider-size-small-button-width: var(--theme-ch5-slider-size-small-button-width);
+  --ch5-slider---size-small-button-width: var(--theme-ch5-slider-size-small-button-width);
 
   /// small height in px of the button for advanced slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 30px 
   /// related-theme-variable: --theme-ch5-slider-size-small-button-height
-  --ch5-slider-size-small-button-height: var(--theme-ch5-slider-size-small-button-height);
+  --ch5-slider---size-small-button-height: var(--theme-ch5-slider-size-small-button-height);
 
   /// regular width in px of the button for advanced slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 30px 
   /// related-theme-variable: --theme-ch5-slider-size-regular-button-width
-  --ch5-slider-size-regular-button-width: var(--theme-ch5-slider-size-regular-button-width);
+  --ch5-slider---size-regular-button-width: var(--theme-ch5-slider-size-regular-button-width);
 
   /// regular height in px of the button for advanced slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 36px 
   /// related-theme-variable: --theme-ch5-slider-size-regular-button-height
-  --ch5-slider-size-regular-button-height: var(--theme-ch5-slider-size-regular-button-height);
+  --ch5-slider---size-regular-button-height: var(--theme-ch5-slider-size-regular-button-height);
 
   /// large width in px of the button for advanced slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 34px 
   /// related-theme-variable: --theme-ch5-slider-size-large-button-width
-  --ch5-slider-size-large-button-width: var(--theme-ch5-slider-size-large-button-width);
+  --ch5-slider--size-large-button-width: var(--theme-ch5-slider-size-large-button-width);
 
   /// large height in px of the button for advanced slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 42px 
   /// related-theme-variable: --theme-ch5-slider-size-large-button-height
-  --ch5-slider-size-large-button-height: var(--theme-ch5-slider-size-large-button-height);
+  --ch5-slider--size-large-button-height: var(--theme-ch5-slider-size-large-button-height);
 
   /// x-large width in px of the button for advanced slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 40px 
   /// related-theme-variable: --theme-ch5-slider-size-x-large-button-width
-  --ch5-slider-size-x-large-button-width: var(--theme-ch5-slider-size-x-large-button-width);
+  --ch5-slider--size-x-large-button-width: var(--theme-ch5-slider-size-x-large-button-width);
 
   /// x-large height in px of the button for advanced slider
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 54px 
   /// related-theme-variable: --theme-ch5-slider-size-x-large-button-height
-  --ch5-slider-size-x-large-button-height: var(--theme-ch5-slider-size-x-large-button-height);
+  --ch5-slider--size-x-large-button-height: var(--theme-ch5-slider-size-x-large-button-height);
 
   /* == Handle sizes == */
 
@@ -164,14 +164,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 26px 
   /// related-theme-variable: --theme-ch5-slider-size-x-small-handle-width-rounded-rectangle
-  --ch5-slider-size-x-small-handle-width-rounded-rectangle: var(--theme-ch5-slider-size-x-small-handle-width-rounded-rectangle);
+  --ch5-slider--size-x-small-handle-width-rounded-rectangle: var(--theme-ch5-slider-size-x-small-handle-width-rounded-rectangle);
 
   /// x-small height in px of the handle when handleShape="rounded-rectangle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 24px 
   /// related-theme-variable: --theme-ch5-slider-size-x-small-handle-height-rounded-rectangle
-  --ch5-slider-size-x-small-handle-height-rounded-rectangle: var(--theme-ch5-slider-size-x-small-handle-height-rounded-rectangle);
+  --ch5-slider--size-x-small-handle-height-rounded-rectangle: var(--theme-ch5-slider-size-x-small-handle-height-rounded-rectangle);
 
   // small
   /// small width in px of the handle when handleShape="rounded-rectangle"
@@ -179,14 +179,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 30px 
   /// related-theme-variable: --theme-ch5-slider-size-small-handle-width-rounded-rectangle
-  --ch5-slider-size-small-handle-width-rounded-rectangle: var(--theme-ch5-slider-size-small-handle-width-rounded-rectangle);
+  --ch5-slider--size-small-handle-width-rounded-rectangle: var(--theme-ch5-slider-size-small-handle-width-rounded-rectangle);
 
   /// small height in px of the handle when handleShape="rounded-rectangle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 26px 
   /// related-theme-variable: --theme-ch5-slider-size-small-handle-height-rounded-rectangle
-  --ch5-slider-size-small-handle-height-rounded-rectangle: var(--theme-ch5-slider-size-small-handle-height-rounded-rectangle);
+  --ch5-slider--size-small-handle-height-rounded-rectangle: var(--theme-ch5-slider-size-small-handle-height-rounded-rectangle);
 
   // regular
   /// regular width in px of the handle when handleShape="rounded-rectangle"
@@ -194,14 +194,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 36px 
   /// related-theme-variable: --theme-ch5-slider-size-regular-handle-width-rounded-rectangle
-  --ch5-slider-size-regular-handle-width-rounded-rectangle: var(--theme-ch5-slider-size-regular-handle-width-rounded-rectangle);
+  --ch5-slider--size-regular-handle-width-rounded-rectangle: var(--theme-ch5-slider-size-regular-handle-width-rounded-rectangle);
 
   /// regular height in px of the handle when handleShape="rounded-rectangle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 30px 
   /// related-theme-variable: --theme-ch5-slider-size-regular-handle-height-rounded-rectangle
-  --ch5-slider-size-regular-handle-height-rounded-rectangle: var(--theme-ch5-slider-size-regular-handle-height-rounded-rectangle);
+  --ch5-slider--size-regular-handle-height-rounded-rectangle: var(--theme-ch5-slider-size-regular-handle-height-rounded-rectangle);
 
   // large
   /// large width in px of the handle when handleShape="rounded-rectangle"
@@ -209,14 +209,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 42px 
   /// related-theme-variable: --theme-ch5-slider-size-large-handle-width-rounded-rectangle
-  --ch5-slider-size-large-handle-width-rounded-rectangle: var(--theme-ch5-slider-size-large-handle-width-rounded-rectangle);
+  --ch5-slider--size-large-handle-width-rounded-rectangle: var(--theme-ch5-slider-size-large-handle-width-rounded-rectangle);
 
   /// large height in px of the handle when handleShape="rounded-rectangle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 34px 
   /// related-theme-variable: --theme-ch5-slider-size-large-handle-height-rounded-rectangle
-  --ch5-slider-size-large-handle-height-rounded-rectangle: var(--theme-ch5-slider-size-large-handle-height-rounded-rectangle);
+  --ch5-slider--size-large-handle-height-rounded-rectangle: var(--theme-ch5-slider-size-large-handle-height-rounded-rectangle);
 
   // x-large
   /// x-large width in px of the handle when handleShape="rounded-rectangle"
@@ -224,14 +224,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 54px 
   /// related-theme-variable: --theme-ch5-slider-size-x-large-handle-width-rounded-rectangle
-  --ch5-slider-size-x-large-handle-width-rounded-rectangle: var(--theme-ch5-slider-size-x-large-handle-width-rounded-rectangle);
+  --ch5-slider--size-x-large-handle-width-rounded-rectangle: var(--theme-ch5-slider-size-x-large-handle-width-rounded-rectangle);
 
   /// x-large height in px of the handle when handleShape="rounded-rectangle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 40px 
   /// related-theme-variable: --theme-ch5-slider-size-x-large-handle-height-rounded-rectangle
-  --ch5-slider-size-x-large-handle-height-rounded-rectangle: var(--theme-ch5-slider-size-x-large-handle-height-rounded-rectangle);
+  --ch5-slider--size-x-large-handle-height-rounded-rectangle: var(--theme-ch5-slider-size-x-large-handle-height-rounded-rectangle);
 
   // rectangle
 
@@ -241,14 +241,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 26px 
   /// related-theme-variable: --theme-ch5-slider-size-x-small-handle-width-rectangle
-  --ch5-slider-size-x-small-handle-width-rectangle: var(--theme-ch5-slider-size-x-small-handle-width-rectangle);
+  --ch5-slider--size-x-small-handle-width-rectangle: var(--theme-ch5-slider-size-x-small-handle-width-rectangle);
 
   /// x-small height in px of the handle when handleShape="rectangle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 24px 
   /// related-theme-variable: --theme-ch5-slider-size-x-small-handle-height-rectangle
-  --ch5-slider-size-x-small-handle-height-rectangle: var(--theme-ch5-slider-size-x-small-handle-height-rectangle);
+  --ch5-slider--size-x-small-handle-height-rectangle: var(--theme-ch5-slider-size-x-small-handle-height-rectangle);
 
   // small
   /// small width in px of the handle when handleShape="rectangle"
@@ -256,14 +256,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 30px 
   /// related-theme-variable: --theme-ch5-slider-size-small-handle-width-rectangle
-  --ch5-slider-size-small-handle-width-rectangle: var(--theme-ch5-slider-size-small-handle-width-rectangle);
+  --ch5-slider--size-small-handle-width-rectangle: var(--theme-ch5-slider-size-small-handle-width-rectangle);
 
   /// small height in px of the handle when handleShape="rectangle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 26px 
   /// related-theme-variable: --theme-ch5-slider-size-small-handle-height-rectangle
-  --ch5-slider-size-small-handle-height-rectangle: var(--theme-ch5-slider-size-small-handle-height-rectangle);
+  --ch5-slider--size-small-handle-height-rectangle: var(--theme-ch5-slider-size-small-handle-height-rectangle);
 
   // regular
   /// regular width in px of the handle when handleShape="rectangle"
@@ -271,14 +271,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 36px 
   /// related-theme-variable: --theme-ch5-slider-size-regular-handle-width-rectangle
-  --ch5-slider-size-regular-handle-width-rectangle: var(--theme-ch5-slider-size-regular-handle-width-rectangle);
+  --ch5-slider--size-regular-handle-width-rectangle: var(--theme-ch5-slider-size-regular-handle-width-rectangle);
 
   /// regular height in px of the handle when handleShape="rectangle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 30px 
   /// related-theme-variable: --theme-ch5-slider-size-regular-handle-height-rectangle
-  --ch5-slider-size-regular-handle-height-rectangle: var(--theme-ch5-slider-size-regular-handle-height-rectangle);
+  --ch5-slider--size-regular-handle-height-rectangle: var(--theme-ch5-slider-size-regular-handle-height-rectangle);
 
   // large
   /// large width in px of the handle when handleShape="rectangle"
@@ -286,14 +286,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 42px 
   /// related-theme-variable: --theme-ch5-slider-size-large-handle-width-rectangle
-  --ch5-slider-size-large-handle-width-rectangle: var(--theme-ch5-slider-size-large-handle-width-rectangle);
+  --ch5-slider--size-large-handle-width-rectangle: var(--theme-ch5-slider-size-large-handle-width-rectangle);
 
   /// large height in px of the handle when handleShape="rectangle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 34px 
   /// related-theme-variable: --theme-ch5-slider-size-large-handle-height-rectangle
-  --ch5-slider-size-large-handle-height-rectangle: var(--theme-ch5-slider-size-large-handle-height-rectangle);
+  --ch5-slider--size-large-handle-height-rectangle: var(--theme-ch5-slider-size-large-handle-height-rectangle);
 
   // x-large
   /// x-large width in px of the handle when handleShape="rectangle"
@@ -301,14 +301,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 54px 
   /// related-theme-variable: --theme-ch5-slider-size-x-large-handle-width-rectangle
-  --ch5-slider-size-x-large-handle-width-rectangle: var(--theme-ch5-slider-size-x-large-handle-width-rectangle);
+  --ch5-slider--size-x-large-handle-width-rectangle: var(--theme-ch5-slider-size-x-large-handle-width-rectangle);
 
   /// x-large height in px of the handle when handleShape="rectangle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 40px 
   /// related-theme-variable: --theme-ch5-slider-size-x-large-handle-height-rectangle
-  --ch5-slider-size-x-large-handle-height-rectangle: var(--theme-ch5-slider-size-x-large-handle-height-rectangle);
+  --ch5-slider--size-x-large-handle-height-rectangle: var(--theme-ch5-slider-size-x-large-handle-height-rectangle);
 
   // circle
 
@@ -318,14 +318,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 26px 
   /// related-theme-variable: --theme-ch5-slider-size-x-small-handle-width-circle
-  --ch5-slider-size-x-small-handle-width-circle: var(--theme-ch5-slider-size-x-small-handle-width-circle);
+  --ch5-slider--size-x-small-handle-width-circle: var(--theme-ch5-slider-size-x-small-handle-width-circle);
 
   /// x-small height in px of the handle when handleShape="circle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 26px
-  /// related-theme-variable: --ch5-slider-size-x-small-handle-width-circle
-  --ch5-slider-size-x-small-handle-height-circle: var(--ch5-slider-size-x-small-handle-width-circle);
+  /// related-theme-variable: --ch5-slider--size-x-small-handle-width-circle
+  --ch5-slider--size-x-small-handle-height-circle: var(--ch5-slider--size-x-small-handle-width-circle);
 
   // small
   /// small width in px of the handle when handleShape="circle"
@@ -333,14 +333,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 30px 
   /// related-theme-variable: --theme-ch5-slider-size-small-handle-width-circle
-  --ch5-slider-size-small-handle-width-circle: var(--theme-ch5-slider-size-small-handle-width-circle);
+  --ch5-slider--size-small-handle-width-circle: var(--theme-ch5-slider-size-small-handle-width-circle);
 
   /// small height in px of the handle when handleShape="circle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 30px
-  /// related-theme-variable: --ch5-slider-size-small-handle-width-circle
-  --ch5-slider-size-small-handle-height-circle: var(--ch5-slider-size-small-handle-width-circle);
+  /// related-theme-variable: --ch5-slider--size-small-handle-width-circle
+  --ch5-slider--size-small-handle-height-circle: var(--ch5-slider--size-small-handle-width-circle);
 
   // regular
   /// regular width in px of the handle when handleShape="circle"
@@ -348,14 +348,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 36px 
   /// related-theme-variable: --theme-ch5-slider-size-regular-handle-width-circle
-  --ch5-slider-size-regular-handle-width-circle: var(--theme-ch5-slider-size-regular-handle-width-circle);
+  --ch5-slider--size-regular-handle-width-circle: var(--theme-ch5-slider-size-regular-handle-width-circle);
 
   /// regular height in px of the handle when handleShape="circle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 36px
-  /// related-theme-variable: --ch5-slider-size-regular-handle-width-circle
-  --ch5-slider-size-regular-handle-height-circle: var(--ch5-slider-size-regular-handle-width-circle);
+  /// related-theme-variable: --ch5-slider--size-regular-handle-width-circle
+  --ch5-slider--size-regular-handle-height-circle: var(--ch5-slider--size-regular-handle-width-circle);
 
   // large
   /// large width in px of the handle when handleShape="circle"
@@ -363,14 +363,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 42px 
   /// related-theme-variable: --theme-ch5-slider-size-large-handle-width-circle
-  --ch5-slider-size-large-handle-width-circle: var(--theme-ch5-slider-size-large-handle-width-circle);
+  --ch5-slider--size-large-handle-width-circle: var(--theme-ch5-slider-size-large-handle-width-circle);
 
   /// large height in px of the handle when handleShape="circle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 42px 
-  /// related-theme-variable: --ch5-slider-size-large-handle-width-circle
-  --ch5-slider-size-large-handle-height-circle: var(--ch5-slider-size-large-handle-width-circle);
+  /// related-theme-variable: --ch5-slider--size-large-handle-width-circle
+  --ch5-slider--size-large-handle-height-circle: var(--ch5-slider--size-large-handle-width-circle);
 
   // x-large
   /// x-large width in px of the handle when handleShape="circle"
@@ -378,14 +378,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 54px 
   /// related-theme-variable: --theme-ch5-slider-size-x-large-handle-width-circle
-  --ch5-slider-size-x-large-handle-width-circle: var(--theme-ch5-slider-size-x-large-handle-width-circle);
+  --ch5-slider--size-x-large-handle-width-circle: var(--theme-ch5-slider-size-x-large-handle-width-circle);
 
   /// x-large height in px of the handle when handleShape="circle"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 54px
-  /// related-theme-variable: --ch5-slider-size-x-large-handle-width-circle
-  --ch5-slider-size-x-large-handle-height-circle: var(--ch5-slider-size-x-large-handle-width-circle);
+  /// related-theme-variable: --ch5-slider--size-x-large-handle-width-circle
+  --ch5-slider--size-x-large-handle-height-circle: var(--ch5-slider--size-x-large-handle-width-circle);
 
   // oval
 
@@ -395,14 +395,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 26px 
   /// related-theme-variable: --theme-ch5-slider-size-x-small-handle-width-oval
-  --ch5-slider-size-x-small-handle-width-oval: var(--theme-ch5-slider-size-x-small-handle-width-oval);
+  --ch5-slider--size-x-small-handle-width-oval: var(--theme-ch5-slider-size-x-small-handle-width-oval);
 
   /// x-small height in px of the handle when handleShape="oval"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 26px 
-  /// related-theme-variable: --ch5-slider-size-x-small-handle-width-oval
-  --ch5-slider-size-x-small-handle-height-oval: calc(var(--ch5-slider-size-x-small-handle-width-oval) / 1.5);
+  /// related-theme-variable: --ch5-slider--size-x-small-handle-width-oval
+  --ch5-slider--size-x-small-handle-height-oval: calc(var(--ch5-slider--size-x-small-handle-width-oval) / 1.5);
 
   // small
   /// small width in px of the handle when handleShape="oval"
@@ -410,14 +410,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 30px 
   /// related-theme-variable: --theme-ch5-slider-size-small-handle-width-oval
-  --ch5-slider-size-small-handle-width-oval: var(--theme-ch5-slider-size-small-handle-width-oval);
+  --ch5-slider--size-small-handle-width-oval: var(--theme-ch5-slider-size-small-handle-width-oval);
 
   /// small height in px of the handle when handleShape="oval"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 30px 
-  /// related-theme-variable: --ch5-slider-size-small-handle-width-oval
-  --ch5-slider-size-small-handle-height-oval: calc(var(--ch5-slider-size-small-handle-width-oval) / 1.5);
+  /// related-theme-variable: --ch5-slider--size-small-handle-width-oval
+  --ch5-slider--size-small-handle-height-oval: calc(var(--ch5-slider--size-small-handle-width-oval) / 1.5);
 
   // regular
   /// regular width in px of the handle when handleShape="oval"
@@ -425,14 +425,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 36px 
   /// related-theme-variable: --theme-ch5-slider-size-regular-handle-width-oval
-  --ch5-slider-size-regular-handle-width-oval: var(--theme-ch5-slider-size-regular-handle-width-oval);
+  --ch5-slider--size-regular-handle-width-oval: var(--theme-ch5-slider-size-regular-handle-width-oval);
 
   /// regular height in px of the handle when handleShape="oval"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 36px
-  /// related-theme-variable: --ch5-slider-size-regular-handle-width-oval
-  --ch5-slider-size-regular-handle-height-oval: calc(var(--ch5-slider-size-regular-handle-width-oval) / 1.5);
+  /// related-theme-variable: --ch5-slider--size-regular-handle-width-oval
+  --ch5-slider--size-regular-handle-height-oval: calc(var(--ch5-slider--size-regular-handle-width-oval) / 1.5);
 
   // large
   /// large width in px of the handle when handleShape="oval"
@@ -440,14 +440,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 42px 
   /// related-theme-variable: --theme-ch5-slider-size-large-handle-width-oval
-  --ch5-slider-size-large-handle-width-oval: var(--theme-ch5-slider-size-large-handle-width-oval);
+  --ch5-slider--size-large-handle-width-oval: var(--theme-ch5-slider-size-large-handle-width-oval);
 
   /// large height in px of the handle when handleShape="oval"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 42px 
-  /// related-theme-variable: --ch5-slider-size-large-handle-width-oval
-  --ch5-slider-size-large-handle-height-oval: calc(var(--ch5-slider-size-large-handle-width-oval) / 1.5);
+  /// related-theme-variable: --ch5-slider--size-large-handle-width-oval
+  --ch5-slider--size-large-handle-height-oval: calc(var(--ch5-slider--size-large-handle-width-oval) / 1.5);
 
   // x-large
   /// x-large width in px of the handle when handleShape="oval"
@@ -455,14 +455,14 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 54px 
   /// related-theme-variable: --theme-ch5-slider-size-x-large-handle-width-oval
-  --ch5-slider-size-x-large-handle-width-oval: var(--theme-ch5-slider-size-x-large-handle-width-oval);
+  --ch5-slider--size-x-large-handle-width-oval: var(--theme-ch5-slider-size-x-large-handle-width-oval);
 
   /// x-large height in px of the handle when handleShape="oval"
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 54px
-  /// related-theme-variable: --ch5-slider-size-x-large-handle-width-oval
-  --ch5-slider-size-x-large-handle-height-oval: calc(var(--ch5-slider-size-x-large-handle-width-oval) / 1.5);
+  /// related-theme-variable: --ch5-slider--size-x-large-handle-width-oval
+  --ch5-slider--size-x-large-handle-height-oval: calc(var(--ch5-slider--size-x-large-handle-width-oval) / 1.5);
 
   // Horizontal and Vertical
 
@@ -471,42 +471,42 @@ ch5-slider {
   /// values: px, vw, vh, em, rem, % 
   /// example: 50px 
   /// related-theme-variable: --theme-ch5-slider-horizontal-pips
-  --ch5-slider-horizontal-pips: var(--theme-ch5-slider-horizontal-pips);
+  --ch5-slider--horizontal-pips: var(--theme-ch5-slider-horizontal-pips);
 
   /// vertical pips
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 65px 
   /// related-theme-variable: --theme-ch5-slider-vertical-pips
-  --ch5-slider-vertical-pips: var(--theme-ch5-slider-vertical-pips);
+  --ch5-slider--vertical-pips: var(--theme-ch5-slider-vertical-pips);
 
   /// tooltip spacing vertical advanced
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 60px 
   /// related-theme-variable: --theme-ch5-slider-tooltip-on-spacing-vertical-advanced
-  --ch5-slider-tooltip-on-spacing-vertical-advanced: var(--theme-ch5-slider-tooltip-on-spacing-vertical-advanced);
+  --ch5-slider--tooltip-on-spacing-vertical-advanced: var(--theme-ch5-slider-tooltip-on-spacing-vertical-advanced);
 
   /// tooltip spacing vertical normal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 58px 
   /// related-theme-variable: --theme-ch5-slider-tooltip-on-spacing-vertical-normal
-  --ch5-slider-tooltip-on-spacing-vertical-normal: var(--theme-ch5-slider-tooltip-on-spacing-vertical-normal);
+  --ch5-slider--tooltip-on-spacing-vertical-normal: var(--theme-ch5-slider-tooltip-on-spacing-vertical-normal);
 
   /// tooltip spacing horizontal adanced
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 40px 
   /// related-theme-variable: --theme-ch5-slider-tooltip-on-spacing-horizontal-advanced
-  --ch5-slider-tooltip-on-spacing-horizontal-advanced: var(--theme-ch5-slider-tooltip-on-spacing-horizontal-advanced);
+  --ch5-slider--tooltip-on-spacing-horizontal-advanced: var(--theme-ch5-slider-tooltip-on-spacing-horizontal-advanced);
 
   /// tooltip spacing horizontal normal
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 40px 
   /// related-theme-variable: --theme-ch5-slider-tooltip-on-spacing-horizontal-normal
-  --ch5-slider-tooltip-on-spacing-horizontal-normal: var(--theme-ch5-slider-tooltip-on-spacing-horizontal-normal);
+  --ch5-slider--tooltip-on-spacing-horizontal-normal: var(--theme-ch5-slider-tooltip-on-spacing-horizontal-normal);
 
   /// button content line height
   /// type: number 
