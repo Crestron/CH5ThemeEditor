@@ -18,7 +18,6 @@ ch5-textinput {
 
   &[dir="rtl"] {
     .ch5-textinput-container {
-
       /// Applied on the icon when iconPosition attribute is set to 'last'
       .ch5-textinput--icon.ch5-textinput--icon-position-last {
         margin-right: 0;
@@ -46,12 +45,12 @@ ch5-textinput {
 
 /// Main class
 .ch5-textinput {
-  color: var(--theme-ch5-textinput--text-color);
+  color: var(--ch5-textinput--text-color);
 
   /// Applied on the label
   .ch5-textinput--label {
     display: block;
-    color: var(--theme-ch5-textinput--label-text-color);
+    color: var(--ch5-textinput--label-text-color);
     width: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -68,10 +67,10 @@ ch5-textinput {
 
     /// Applied on the icon
     .ch5-textinput--icon {
-      color: var(--theme-ch5-textinput--icon-text-color);
+      color: var(--ch5-textinput--icon-text-color);
     }
 
-    >span {
+    > span {
       display: flex;
       position: relative;
       align-items: center;
@@ -82,7 +81,7 @@ ch5-textinput {
     .ch5-textinput--input {
       background: var(--ch5-textinput--input-background-color);
       border: 0;
-      color: var(--theme-ch5-textinput--input-text-color);
+      color: var(--ch5-textinput--input-text-color);
       width: 100%;
 
       /// Applied on the input when text-transform="none"
