@@ -1749,119 +1749,47 @@
   // ch5-select
   // ***************************************
 
-  /// Component border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #5e5e66
-  --theme-ch5-select-border-color: #5e5e66;
+  --theme-ch5-select--border-color: #5e5e66;
 
-  /// Component main font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #797979
-  --theme-ch5-select-font-color: #797979;
+  --theme-ch5-select--font-color: #797979;
 
-  /// Selected item background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #004d80
-  --theme-ch5-select-panel-item-selected-background-color: #004d80;
+  --theme-ch5-select--panel-item-selected-background-color: #004d80;
 
-  /// Item border color
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: transparent
-  --theme-ch5-select-panel-item-border-color: transparent;
+  --theme-ch5-select--panel-item-border-color: transparent;
 
-  /// Item main text color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #9898a6
-  --theme-ch5-select-panel-item-color: #9898a6;
+  --theme-ch5-select--panel-item-color: #9898a6;
 
-  /// Item background color
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: transparent
-  --theme-ch5-select-panel-item-background-color: transparent;
+  --theme-ch5-select--panel-item-background-color: transparent;
 
-  /// Item background color on mouse over
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fefefe
-  --theme-ch5-select-panel-item-hover-background-color: #fefefe;
+  --theme-ch5-select--panel-item-hover-background-color: #fefefe;
 
-  /// Select panel background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #3b3b40
-  --theme-ch5-select-panel-items-background-color: #3b3b40;
+  --theme-ch5-select--panel-items-background-color: #3b3b40;
 
-  /// Top line content padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 4px
-  --theme-ch5-select-padding: 4px;
+  --theme-ch5-select--padding: 4px;
 
-  /// Component border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-select-border-width: 1px;
+  --theme-ch5-select--border-width: 1px;
 
-  /// Component border radius
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 2px
-  --theme-ch5-select-border-radius: 2px;
+  --theme-ch5-select--border-radius: 2px;
 
-  /// Combo trigger button margin
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 0
-  --theme-ch5-select-combo-trigger-margin: 0;
+  --theme-ch5-select--combo-trigger-margin: 0;
 
-  /// Combo trigger button width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 24px
-  --theme-ch5-select-combo-trigger-width: 24px;
+  --theme-ch5-select--combo-trigger-width: 24px;
 
-  /// Combo trigger button height
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 24px
-  --theme-ch5-select-combo-trigger-height: 24px;
+  --theme-ch5-select--combo-trigger-height: 24px;
 
-  /// Top line width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: calc(100% - 40px)
-  --theme-ch5-select-item-selected-width: calc(100% - 40px);
+  --theme-ch5-select--item-selected-width: calc(100% - 40px);
 
-  /// Item border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-select-panel-item-border-width: 1px;
+  --theme-ch5-select--panel-item-border-width: 1px;
 
-  /// Item padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 8px
-  --theme-ch5-select-panel-item-padding: 8px;
+  --theme-ch5-select--panel-item-padding: 8px;
 
-  /// Select panel shadow
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  --theme-ch5-select-panel-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  --theme-ch5-select--panel-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 
-  /// Select panel z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 10000
-  --theme-ch5-select-panel-z-index: 10000;
+  --theme-ch5-select--font-size: var(--theme-fonts-font-size);
+
+  --theme-ch5-select--font-style: var(--theme-fonts-font-style);
+
+  --theme-ch5-select--font-weight: var(--theme-fonts-font-weight);
 
   // ***************************************
   // ch5-signal-level-gauge
