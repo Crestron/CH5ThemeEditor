@@ -14,10 +14,12 @@
   @each $key in $keys {
     $map: map-get($map, $key);
   }
+
   @return $map;
 }
 
 @mixin ch5SliderSetButtonSize($button-width, $button-height, $shape) {
+
   .slider-on-button,
   .slider-off-button {
     .ch5-button--#{$shape} {
@@ -34,8 +36,9 @@
     width: var(#{$handle-width});
     height: var(#{$handle-height});
     right: calc(-1 * (var(#{$handle-width})) / 2);
-    top: calc(-1 * (var(#{$handle-height}) + (2 * var(--ch5-slider---target-border-width)) - var(--ch5-slider---height)) / 2);
+    top: calc(-1 * (var(#{$handle-height}) + (2 * var(--ch5-slider--target-border-width)) - var(--ch5-slider--height)) / 2);
   }
+
   .ch5-slider-button-container {
     display: flex;
     align-items: center;
@@ -50,12 +53,12 @@
 
   &:not(.ch5-advanced-slider-container) {
     .ch5-slider-button-container {
-      padding: max(calc((var(--ch5-slider---height) - var(#{$handle-height})) / 2), calc((var(#{$handle-height}) - var(--ch5-slider---height)) / 2)) calc((var(#{$handle-width}) / 2) - 1px);
+      padding: max(calc((var(--ch5-slider--height) - var(#{$handle-height})) / 2), calc((var(#{$handle-height}) - var(--ch5-slider--height)) / 2)) calc((var(#{$handle-width}) / 2) - 1px);
     }
 
     &.ch5-slider--tooltip--on {
       &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
-        margin-top: var(--ch5-slider---tooltip-on-spacing-horizontal-normal);
+        margin-top: var(--ch5-slider--tooltip-on-spacing-horizontal-normal);
       }
     }
 
@@ -64,14 +67,17 @@
         margin-left: calc((var(#{$handle-width}) / 2) + 1px);
         margin-right: calc((var(#{$handle-width}) / 2) + 1px);
       }
+
       .noUi-pips-horizontal {
-        top: calc(var(#{$handle-height}) - var(--ch5-slider---height) + 4px);
-        height: var(--ch5-slider---horizontal-pips);
+        top: calc(var(#{$handle-height}) - var(--ch5-slider--height) + 4px);
+        height: var(--ch5-slider--horizontal-pips);
       }
+
       .ch5-slider-button-container {
         // Based on https://github.com/postcss/postcss-calc/issues/104
-        --temp-var: calc(-1 * (var(--ch5-slider---height) - var(#{$handle-height})) / 2);
+        --temp-var: calc(-1 * (var(--ch5-slider--height) - var(#{$handle-height})) / 2);
         margin-bottom: calc(30px + max(calc(var(--temp-var) * -1), var(--temp-var)));
+
         .noUi-pips-horizontal {
           padding: 10px 0 0 0;
         }
@@ -93,6 +99,7 @@
     .ch5-title-container {
       max-width: calc(var(#{$slider-size}) + var(#{$handle-width}));
     }
+
     .ch5-slider-button-container {
       width: calc(var(#{$slider-size}) + var(#{$handle-width}));
     }
@@ -102,6 +109,7 @@
         top: calc(calc((var(#{$handle-height}) - var(--ch5-slider--height))) + 4px);
         height: var(--ch5-slider--horizontal-pips);
       }
+
       .ch5-slider-button-container {
         // Based on https://github.com/postcss/postcss-calc/issues/104
         --temp-var: calc(-1 * (var(--ch5-slider--height) - var(#{$handle-height})) / 2);
@@ -118,6 +126,7 @@
     right: calc(-1 * (var(#{$handle-width}) + calc(2 * var(--ch5-slider--target-border-width)) - var(--ch5-slider--height)) / 2);
     bottom: calc(-1 * var(#{$handle-height}) / 2);
   }
+
   .ch5-slider-button-container {
     flex-direction: column-reverse;
     display: flex;
@@ -148,12 +157,15 @@
         margin-top: calc(calc(var(#{$handle-height}) / 2) + 1px);
         margin-bottom: calc(calc(var(#{$handle-height}) / 2) + 1px);
       }
+
       .noUi-pips-vertical {
         left: calc(calc((var(#{$handle-width}) - var(--ch5-slider--height))) + 4px);
         width: var(--ch5-slider--vertical-pips);
       }
+
       .ch5-slider-button-container {
         margin-right: 60px;
+
         .noUi-pips-vertical {
           padding: 0 0 0 10px;
         }
@@ -171,36 +183,45 @@
       &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width) .ch5-slider-button-container {
         margin-left: var(--ch5-slider--tooltip-on-spacing-vertical-advanced);
       }
+
       .ch5-title-container {
         max-width: calc(var(#{$handle-width}) + var(--ch5-slider--tooltip-on-spacing-vertical-advanced));
       }
     }
+
     .ch5-title-container {
       max-width: var(#{$handle-width});
     }
+
     .ch5-slider-button-container {
       height: calc(var(#{$slider-size}) + var(#{$handle-height}));
     }
+
     &.ch5-slider-ticks {
       .ch5-title-container {
         max-width: calc(var(--ch5-slider--tooltip-on-spacing-vertical-advanced) + var(#{$handle-width}));
       }
+
       &.ch5-slider--tooltip--on {
         .ch5-title-container {
           max-width: calc(var(--ch5-slider--tooltip-on-spacing-vertical-advanced) + var(#{$handle-width}) + 60px);
         }
       }
+
       .noUi-pips-vertical {
         left: calc(calc((var(#{$handle-width}) - var(--ch5-slider--height))) + 4);
         width: var(--ch5-slider--vertical-pips);
       }
+
       .ch5-slider-button-container {
         // Based on https://github.com/postcss/postcss-calc/issues/104
         --temp-var: calc(-1 * (var(--ch5-slider--height) - var(#{$handle-height})) / 2);
         margin-right: calc(50px + max(calc(var(--temp-var) * -1), var(--temp-var)));
       }
+
       &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(.ch5-slider--stretch--height) {
         max-width: calc(calc(var(#{$handle-height}) * 1.2) + var(--ch5-slider--vertical-pips));
+
         &.ch5-slider--tooltip--on {
           max-width: calc(var(--ch5-slider--tooltip-on-spacing-vertical-advanced) + calc(var(#{$handle-height}) * 1.2) + var(--ch5-slider--vertical-pips));
         }
