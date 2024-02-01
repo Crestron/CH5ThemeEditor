@@ -484,15 +484,15 @@ ch5-slider {
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 0.25rem 
-  /// related-theme-variable: --theme-ch5-slider-button--padding
-  --ch5-slider-button--padding: var(--theme-ch5-slider-button--padding);
+  /// related-theme-variable: --theme-ch5-slider--button-padding
+  --ch5-slider--button-padding: var(--theme-ch5-slider--button-padding);
 
   /// slider button content line height
   /// type: number 
   /// values: 1, 10, 100 
   /// example: 1.2 
-  /// related-theme-variable: --theme-ch5-slider-button--content-line-height
-  --ch5-slider-button--content-line-height: var(--theme-ch5-slider-button--content-line-height);
+  /// related-theme-variable: --theme-ch5-slider--button-content-line-height
+  --ch5-slider--button-content-line-height: var(--theme-ch5-slider--button-content-line-height);
 
   /// slider button default pressed border color
   /// type: color
