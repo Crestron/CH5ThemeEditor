@@ -200,7 +200,7 @@ function getVariables(data, sectionName) {
 		}
 	});
 
-	return variables.sort((a, b) => a.name > b.name ? 1 : -1);
+	return variables;
 }
 
 function getComponentScss(component) {
@@ -411,20 +411,48 @@ function checkComponentVariable() {
 		missingVariables.forEach((description) => {
 			console.log(`\x1b[31m ${description} \x1b[0m`);
 		});
-		// process.exit(1);
+		process.exit(1);
 	}
 	if (relatedThemeDescription.length !== 0) {
 		relatedThemeDescription.forEach((description) => {
 			console.log(`\x1b[31m ${description} \x1b[0m`);
 		});
-		// process.exit(1);
+		process.exit(1);
 	}
 	if (variableThemeVariables.length !== 0) {
 		variableThemeVariables.forEach((description) => {
 			console.log(`\x1b[31m ${description} \x1b[0m`);
 		});
-		// process.exit(1);
+		process.exit(1);
 	}
+}
+
+function sortOutputJSON() {
+
+	// Sort components
+	outputJSON['ch5Components']
+		.sort((a, b) => a.name > b.name ? 1 : -1)
+
+	// Sort component variables
+	outputJSON['ch5Components']
+		.forEach(component => component['variables']
+			.sort((a, b) => a.name > b.name ? 1 : -1))
+
+	// sort theme 
+	outputJSON['ch5Themes']
+		.sort((a, b) => a.themeName > b.themeName ? 1 : -1)
+
+	// sort theme components
+	outputJSON['ch5Themes']
+		.forEach(theme => theme['variables']
+			.sort((a, b) => a.name > b.name ? 1 : -1))
+
+	// sort theme components variables
+	outputJSON['ch5Themes']
+		.forEach(theme => theme['variables']
+			.forEach(componentVars => componentVars['variables']
+				.sort((a, b) => a.name > b.name ? 1 : -1)))
+
 }
 
 async function initialize() {
@@ -522,6 +550,7 @@ async function initialize() {
 	}
 
 	checkComponentVariable();
+	sortOutputJSON();
 
 	const outputPath = process.argv[3] !== undefined ? process.argv[3] : CONFIG.DEFAULT_OUTPUT_PATH;
 	fs.writeFileSync(outputPath, JSON.stringify(outputJSON, null, 4));
