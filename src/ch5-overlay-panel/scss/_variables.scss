@@ -20,7 +20,7 @@ ch5-overlay-panel {
 
   /// description: The default font style for the overlay panel
   /// type: string 
-  /// values: large, solid, center 
+  /// values: normal, italic, oblique 
   /// example: normal
   /// related-theme-variable: --theme-ch5-overlay-panel--font-style
   --ch5-overlay-panel--font-style: var(--theme-ch5-overlay-panel--font-style);
@@ -41,7 +41,7 @@ ch5-overlay-panel {
 
   /// description: The border style of the overlay panel
   /// type: string 
-  /// values: large, solid, center 
+  /// values: hidden, dotted, dashed, solid
   /// example: solid 
   /// related-theme-variable: --theme-ch5-overlay-panel--border-style
   --ch5-overlay-panel--border-style: var(--theme-ch5-overlay-panel--border-style);
@@ -97,7 +97,7 @@ ch5-overlay-panel {
 
   /// description: The font weight of the icon at the top of the overlay panel
   /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// values: normal, bold 
   /// example: normal 
   /// related-theme-variable: --theme-ch5-overlay-panel--close-icon-font-weight
   --ch5-overlay-panel--close-icon-font-weight: var(--theme-ch5-overlay-panel--close-icon-font-weight);
@@ -118,14 +118,14 @@ ch5-overlay-panel {
 
   /// description: The font style for the content of the overlay panel
   /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// values: normal, italic, oblique
   /// example: normal
   /// related-theme-variable: --theme-ch5-overlay-panel--contents-font-style
   --ch5-overlay-panel--contents-font-style: var(--theme-ch5-overlay-panel--contents-font-style);
 
   /// description: The font weight for the content of the overlay panel
   /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// values: normal, bold 
   /// example: normal
   /// related-theme-variable: --theme-ch5-overlay-panel--contents-font-weight
   --ch5-overlay-panel--contents-font-weight: var(--theme-ch5-overlay-panel--contents-font-weight);

@@ -13,7 +13,7 @@
 ch5-image {
   /// description: Sets object fit property
   /// type: string 
-  /// values: large, solid, center 
+  /// values: fill, contain, cover, none, scale-down 
   /// example: contain 
   /// related-theme-variable: --theme-ch5-image--object-fit
   --ch5-image--object-fit: var(--theme-ch5-image--object-fit);

@@ -14,7 +14,7 @@ ch5-background {
 
   /// description: transition effect
   /// type: string 
-  /// values: large, solid, center 
+  /// values: ease-in, ease-out, linear, ease
   /// example: ease
   /// related-theme-variable: --theme-ch5-background--transition-timing-function
   --ch5-background--transition-timing-function: var(--theme-ch5-background--transition-timing-function);
