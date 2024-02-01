@@ -37,7 +37,7 @@ ch5-button-list {
 
   & ~ .scrollbar-container {
     position: absolute;
-    background-color: var(--theme-others-scrollbar-track-color);
+    background-color: var(--theme-others--scrollbar-track-color);
     border-radius: var(--ch5-button-list--scrollbar-border-radius);
 
     .scrollbar {

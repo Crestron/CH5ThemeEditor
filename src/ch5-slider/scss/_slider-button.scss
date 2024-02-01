@@ -294,9 +294,9 @@
 
   .ch5-slider-button--pressed {
     .ch5-button {
-      border-color: var(--theme-colors-default-pressed-border-color);
-      background-color: var(--theme-colors-default-pressed-background-color);
-      color: var(--theme-colors-default-pressed-font-color);
+      border-color: var(--theme-colors--default-pressed-border-color);
+      background-color: var(--theme-colors--default-pressed-background-color);
+      color: var(--theme-colors--default-pressed-font-color);
     }
   }
 }

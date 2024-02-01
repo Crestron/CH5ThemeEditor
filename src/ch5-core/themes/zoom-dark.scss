@@ -18,49 +18,49 @@
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 16px
-  --theme-fonts-font-size: 16px;
+  --theme-fonts--font-size: 16px;
 
   /// Font style
   /// type: string 
   /// values: large, solid, center 
   /// example: normal
-  --theme-fonts-font-style: normal;
+  --theme-fonts--font-style: normal;
 
   /// Font weight
   /// type: string 
   /// values: large, solid, center 
   /// example: normal
-  --theme-fonts-font-weight: normal;
+  --theme-fonts--font-weight: normal;
 
   /// Scrollbar width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 7px
-  --theme-others-scrollbar-width: 7px;
+  --theme-others--scrollbar-width: 7px;
 
   /// Scrollbar border radius
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px
-  --theme-others-scrollbar-border-radius: 10px;
+  --theme-others--scrollbar-border-radius: 10px;
 
   /// Scrollbar track color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgba(0, 0, 0, 0.1)
-  --theme-others-scrollbar-track-color: rgba(0, 0, 0, 0.1);
+  --theme-others--scrollbar-track-color: rgba(0, 0, 0, 0.1);
 
   /// Scrollbar thumb color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgba(0, 0, 0, 0.5)
-  --theme-others-scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
+  --theme-others--scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
 
   /// Disabled opacity
   /// type: number 
   /// values: 1, 10, 100 
   /// example: 0.5
-  --theme-others-disabled-opacity: 0.5;
+  --theme-others--disabled-opacity: 0.5;
 
   // ***************************************
   // Color system
@@ -70,433 +70,433 @@
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4f9af7
-  --theme-colors-default-background-color: #4f9af7;
+  --theme-colors--default-background-color: #4f9af7;
 
   /// Border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0099ff
-  --theme-colors-default-border-color: #0099ff;
+  --theme-colors--default-border-color: #0099ff;
 
   /// Font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-default-font-color: #ffffff;
+  --theme-colors--default-font-color: #ffffff;
 
   /// Pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0e72ed
-  --theme-colors-default-pressed-background-color: #0e72ed;
+  --theme-colors--default-pressed-background-color: #0e72ed;
 
   /// Pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0099ff
-  --theme-colors-default-pressed-border-color: #0099ff;
+  --theme-colors--default-pressed-border-color: #0099ff;
 
   /// Pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-default-pressed-font-color: #ffffff;
+  --theme-colors--default-pressed-font-color: #ffffff;
 
   /// Selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0e72ed
-  --theme-colors-default-selected-background-color: #0e72ed;
+  --theme-colors--default-selected-background-color: #0e72ed;
 
   /// Selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0099ff
-  --theme-colors-default-selected-border-color: #0099ff;
+  --theme-colors--default-selected-border-color: #0099ff;
 
   /// Selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-default-selected-font-color: #ffffff;
+  --theme-colors--default-selected-font-color: #ffffff;
 
   /// Background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #383838
-  --theme-colors-primary-background-color: #383838;
+  --theme-colors--primary-background-color: #383838;
 
   /// Border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f8f7f8
-  --theme-colors-primary-border-color: #f8f7f8;
+  --theme-colors--primary-border-color: #f8f7f8;
 
   /// Font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-primary-font-color: #ffffff;
+  --theme-colors--primary-font-color: #ffffff;
 
   /// Primary pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4c4c4c
-  --theme-colors-primary-pressed-background-color: #4c4c4c;
+  --theme-colors--primary-pressed-background-color: #4c4c4c;
 
   /// Primary pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f8f7f8
-  --theme-colors-primary-pressed-border-color: #f8f7f8;
+  --theme-colors--primary-pressed-border-color: #f8f7f8;
 
   /// Primary pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-primary-pressed-font-color: #ffffff;
+  --theme-colors--primary-pressed-font-color: #ffffff;
 
   /// Primary select background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9b9b9b
-  --theme-colors-primary-selected-background-color: #9b9b9b;
+  --theme-colors--primary-selected-background-color: #9b9b9b;
 
   /// Primary selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f8f7f8
-  --theme-colors-primary-selected-border-color: #f8f7f8;
+  --theme-colors--primary-selected-border-color: #f8f7f8;
 
   /// Primary selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-primary-selected-font-color: #ffffff;
+  --theme-colors--primary-selected-font-color: #ffffff;
 
   /// Info background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f26d21
-  --theme-colors-info-background-color: #f26d21;
+  --theme-colors--info-background-color: #f26d21;
 
   /// Info border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f26d21
-  --theme-colors-info-border-color: #f26d21;
+  --theme-colors--info-border-color: #f26d21;
 
   /// Info font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-info-font-color: #ffffff;
+  --theme-colors--info-font-color: #ffffff;
 
   /// Info pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #d56832
-  --theme-colors-info-pressed-background-color: #d56832;
+  --theme-colors--info-pressed-background-color: #d56832;
 
   /// Info pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f26d21
-  --theme-colors-info-pressed-border-color: #f26d21;
+  --theme-colors--info-pressed-border-color: #f26d21;
 
   /// Info pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-info-pressed-font-color: #ffffff;
+  --theme-colors--info-pressed-font-color: #ffffff;
 
   /// Info selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #d56832
-  --theme-colors-info-selected-background-color: #d56832;
+  --theme-colors--info-selected-background-color: #d56832;
 
   /// Info selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f26d21
-  --theme-colors-info-selected-border-color: #f26d21;
+  --theme-colors--info-selected-border-color: #f26d21;
 
   /// Info selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-info-selected-font-color: #ffffff;
+  --theme-colors--info-selected-font-color: #ffffff;
 
   /// Danger background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #de2828
-  --theme-colors-danger-background-color: #de2828;
+  --theme-colors--danger-background-color: #de2828;
 
   /// Danger border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f44337
-  --theme-colors-danger-border-color: #f44337;
+  --theme-colors--danger-border-color: #f44337;
 
   /// Danger font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-danger-font-color: #ffffff;
+  --theme-colors--danger-font-color: #ffffff;
 
   /// Danger pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ca2424
-  --theme-colors-danger-pressed-background-color: #ca2424;
+  --theme-colors--danger-pressed-background-color: #ca2424;
 
   /// Danger pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f44337
-  --theme-colors-danger-pressed-border-color: #f44337;
+  --theme-colors--danger-pressed-border-color: #f44337;
 
   /// Danger pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-danger-pressed-font-color: #ffffff;
+  --theme-colors--danger-pressed-font-color: #ffffff;
 
   /// Danger selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ca2424
-  --theme-colors-danger-selected-background-color: #ca2424;
+  --theme-colors--danger-selected-background-color: #ca2424;
 
   /// Danger selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f44337
-  --theme-colors-danger-selected-border-color: #f44337;
+  --theme-colors--danger-selected-border-color: #f44337;
 
   /// Danger selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-danger-selected-font-color: #ffffff;
+  --theme-colors--danger-selected-font-color: #ffffff;
 
   /// Secondary background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #282f38
-  --theme-colors-secondary-background-color: #282f38;
+  --theme-colors--secondary-background-color: #282f38;
 
   /// Secondary border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #434951
-  --theme-colors-secondary-border-color: #434951;
+  --theme-colors--secondary-border-color: #434951;
 
   /// Secondary font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-secondary-font-color: #ffffff;
+  --theme-colors--secondary-font-color: #ffffff;
 
   /// Secondary pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4f9af7
-  --theme-colors-secondary-pressed-background-color: #4f9af7;
+  --theme-colors--secondary-pressed-background-color: #4f9af7;
 
   /// Secondary pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #3590ff
-  --theme-colors-secondary-pressed-border-color: #3590ff;
+  --theme-colors--secondary-pressed-border-color: #3590ff;
 
   /// Secondary pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-secondary-pressed-font-color: #ffffff;
+  --theme-colors--secondary-pressed-font-color: #ffffff;
 
   /// Secondary selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4f9af7
-  --theme-colors-secondary-selected-background-color: #4f9af7;
+  --theme-colors--secondary-selected-background-color: #4f9af7;
 
   /// Secondary selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #3590ff
-  --theme-colors-secondary-selected-border-color: #3590ff;
+  --theme-colors--secondary-selected-border-color: #3590ff;
 
   /// Secondary selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-secondary-selected-font-color: #ffffff;
+  --theme-colors--secondary-selected-font-color: #ffffff;
 
   /// Success background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #268543
-  --theme-colors-success-background-color: #268543;
+  --theme-colors--success-background-color: #268543;
 
   /// Success border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4caf50
-  --theme-colors-success-border-color: #4caf50;
+  --theme-colors--success-border-color: #4caf50;
 
   /// Success font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-success-font-color: #ffffff;
+  --theme-colors--success-font-color: #ffffff;
 
   /// Success pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #23d959
-  --theme-colors-success-pressed-background-color: #23d959;
+  --theme-colors--success-pressed-background-color: #23d959;
 
   /// Success pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4caf50
-  --theme-colors-success-pressed-border-color: #4caf50;
+  --theme-colors--success-pressed-border-color: #4caf50;
 
   /// Success pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-success-pressed-font-color: #ffffff;
+  --theme-colors--success-pressed-font-color: #ffffff;
 
   /// Success selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #23d959
-  --theme-colors-success-selected-background-color: #23d959;
+  --theme-colors--success-selected-background-color: #23d959;
 
   /// Success selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4caf50
-  --theme-colors-success-selected-border-color: #4caf50;
+  --theme-colors--success-selected-border-color: #4caf50;
 
   /// Success selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-colors-success-selected-font-color: #ffffff;
+  --theme-colors--success-selected-font-color: #ffffff;
 
   /// Warning background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #faac2a
-  --theme-colors-warning-background-color: #faac2a;
+  --theme-colors--warning-background-color: #faac2a;
 
   /// Warning border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffc009
-  --theme-colors-warning-border-color: #ffc009;
+  --theme-colors--warning-border-color: #ffc009;
 
   /// Warning font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333
-  --theme-colors-warning-font-color: #333;
+  --theme-colors--warning-font-color: #333;
 
   /// Warning pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f7cd4f
-  --theme-colors-warning-pressed-background-color: #f7cd4f;
+  --theme-colors--warning-pressed-background-color: #f7cd4f;
 
   /// Warning pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffc009
-  --theme-colors-warning-pressed-border-color: #ffc009;
+  --theme-colors--warning-pressed-border-color: #ffc009;
 
   /// Warning pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333
-  --theme-colors-warning-pressed-font-color: #333;
+  --theme-colors--warning-pressed-font-color: #333;
 
   /// Warning selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f7cd4f
-  --theme-colors-warning-selected-background-color: #f7cd4f;
+  --theme-colors--warning-selected-background-color: #f7cd4f;
 
   /// Warning selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffc009
-  --theme-colors-warning-selected-border-color: #ffc009;
+  --theme-colors--warning-selected-border-color: #ffc009;
 
   /// Warning selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333
-  --theme-colors-warning-selected-font-color: #333;
+  --theme-colors--warning-selected-font-color: #333;
 
   /// Text background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #383838
-  --theme-colors-text-background-color: #383838;
+  --theme-colors--text-background-color: #383838;
 
   /// Text border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-colors-text-border-color: #9e9e9e;
+  --theme-colors--text-border-color: #9e9e9e;
 
   /// Text font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #6d6d6d
-  --theme-colors-text-font-color: #6d6d6d;
+  --theme-colors--text-font-color: #6d6d6d;
 
   /// Text pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4c4c4c
-  --theme-colors-text-pressed-background-color: #4c4c4c;
+  --theme-colors--text-pressed-background-color: #4c4c4c;
 
   /// Text pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-colors-text-pressed-border-color: #9e9e9e;
+  --theme-colors--text-pressed-border-color: #9e9e9e;
 
   /// Text pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #6d6d6d
-  --theme-colors-text-pressed-font-color: #6d6d6d;
+  --theme-colors--text-pressed-font-color: #6d6d6d;
 
   /// Text selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4c4c4c
-  --theme-colors-text-selected-background-color: #4c4c4c;
+  --theme-colors--text-selected-background-color: #4c4c4c;
 
   /// Text selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-colors-text-selected-border-color: #9e9e9e;
+  --theme-colors--text-selected-border-color: #9e9e9e;
 
   /// Text selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #6d6d6d
-  --theme-colors-text-selected-font-color: #6d6d6d;
+  --theme-colors--text-selected-font-color: #6d6d6d;
 
   // ***************************************
   // ch5-animation
@@ -558,13 +558,13 @@
   /// type: string 
   /// values: large, solid, center 
   /// example: normal
-  --theme-ch5-button--font-style: var(--theme-fonts-font-style);
+  --theme-ch5-button--font-style: var(--theme-fonts--font-style);
 
   /// Font weight at the theme level
   /// type: string 
   /// values: large, solid, center 
   /// example: normal
-  --theme-ch5-button--font-weight: var(--theme-fonts-font-weight); /// Icon color
+  --theme-ch5-button--font-weight: var(--theme-fonts--font-weight); /// Icon color
   /// type: string 
   /// values: large, solid, center 
   /// example: inherit
@@ -787,433 +787,433 @@
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0099ff
-  --theme-ch5-button--default-background-color: var(--theme-colors-default-background-color);
+  --theme-ch5-button--default-background-color: var(--theme-colors--default-background-color);
 
   /// Default border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0099ff
-  --theme-ch5-button--default-border-color: var(--theme-colors-default-border-color);
+  --theme-ch5-button--default-border-color: var(--theme-colors--default-border-color);
 
   /// Default font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--default-font-color: var(--theme-colors-default-font-color);
+  --theme-ch5-button--default-font-color: var(--theme-colors--default-font-color);
 
   /// Default pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #008ae6
-  --theme-ch5-button--default-pressed-background-color: var(--theme-colors-default-pressed-background-color);
+  --theme-ch5-button--default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
 
   /// Default pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0099ff
-  --theme-ch5-button--default-pressed-border-color: var(--theme-colors-default-pressed-border-color);
+  --theme-ch5-button--default-pressed-border-color: var(--theme-colors--default-pressed-border-color);
 
   /// Default pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--default-pressed-font-color: var(--theme-colors-default-pressed-font-color);
+  --theme-ch5-button--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
 
   /// Default selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0079c9
-  --theme-ch5-button--default-selected-background-color: var(--theme-colors-default-selected-background-color);
+  --theme-ch5-button--default-selected-background-color: var(--theme-colors--default-selected-background-color);
 
   /// Default selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0099ff
-  --theme-ch5-button--default-selected-border-color: var(--theme-colors-default-selected-border-color);
+  --theme-ch5-button--default-selected-border-color: var(--theme-colors--default-selected-border-color);
 
   /// Default selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--default-selected-font-color: var(--theme-colors-default-selected-font-color);
+  --theme-ch5-button--default-selected-font-color: var(--theme-colors--default-selected-font-color);
 
   /// Primary background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #17171a
-  --theme-ch5-button--primary-background-color: var(--theme-colors-primary-background-color);
+  --theme-ch5-button--primary-background-color: var(--theme-colors--primary-background-color);
 
   /// Primary border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f8f7f8
-  --theme-ch5-button--primary-border-color: var(--theme-colors-primary-border-color);
+  --theme-ch5-button--primary-border-color: var(--theme-colors--primary-border-color);
 
   /// Primary font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--primary-font-color: var(--theme-colors-primary-font-color);
+  --theme-ch5-button--primary-font-color: var(--theme-colors--primary-font-color);
 
   /// Primary pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #353539
-  --theme-ch5-button--primary-pressed-background-color: var(--theme-colors-primary-pressed-background-color);
+  --theme-ch5-button--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
 
   /// Primary pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f8f7f8
-  --theme-ch5-button--primary-pressed-border-color: var(--theme-colors-primary-pressed-border-color);
+  --theme-ch5-button--primary-pressed-border-color: var(--theme-colors--primary-pressed-border-color);
 
   /// Primary pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--primary-pressed-font-color: var(--theme-colors-primary-pressed-font-color);
+  --theme-ch5-button--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
 
   /// Primary selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #29292e
-  --theme-ch5-button--primary-selected-background-color: var(--theme-colors-primary-selected-background-color);
+  --theme-ch5-button--primary-selected-background-color: var(--theme-colors--primary-selected-background-color);
 
   /// Primary selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f8f7f8
-  --theme-ch5-button--primary-selected-border-color: var(--theme-colors-primary-selected-border-color);
+  --theme-ch5-button--primary-selected-border-color: var(--theme-colors--primary-selected-border-color);
 
   /// Primary selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--primary-selected-font-color: var(--theme-colors-primary-selected-font-color);
+  --theme-ch5-button--primary-selected-font-color: var(--theme-colors--primary-selected-font-color);
 
   /// Info background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #00bcd4
-  --theme-ch5-button--info-background-color: var(--theme-colors-info-background-color);
+  --theme-ch5-button--info-background-color: var(--theme-colors--info-background-color);
 
   /// Info border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #00bcd4
-  --theme-ch5-button--info-border-color: var(--theme-colors-info-border-color);
+  --theme-ch5-button--info-border-color: var(--theme-colors--info-border-color);
 
   /// Info font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--info-font-color: var(--theme-colors-info-font-color);
+  --theme-ch5-button--info-font-color: var(--theme-colors--info-font-color);
 
   /// Info pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0097a7
-  --theme-ch5-button--info-pressed-background-color: var(--theme-colors-info-pressed-background-color);
+  --theme-ch5-button--info-pressed-background-color: var(--theme-colors--info-pressed-background-color);
 
   /// Info pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #00bcd4
-  --theme-ch5-button--info-pressed-border-color: var(--theme-colors-info-pressed-border-color);
+  --theme-ch5-button--info-pressed-border-color: var(--theme-colors--info-pressed-border-color);
 
   /// Info pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--info-pressed-font-color: var(--theme-colors-info-pressed-font-color);
+  --theme-ch5-button--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
 
   /// Info selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0094a7
-  --theme-ch5-button--info-selected-background-color: var(--theme-colors-info-selected-background-color);
+  --theme-ch5-button--info-selected-background-color: var(--theme-colors--info-selected-background-color);
 
   /// Info selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #00bcd4
-  --theme-ch5-button--info-selected-border-color: var(--theme-colors-info-selected-border-color);
+  --theme-ch5-button--info-selected-border-color: var(--theme-colors--info-selected-border-color);
 
   /// Info selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--info-selected-font-color: var(--theme-colors-info-selected-font-color);
+  --theme-ch5-button--info-selected-font-color: var(--theme-colors--info-selected-font-color);
 
   /// Danger background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f44336
-  --theme-ch5-button--danger-background-color: var(--theme-colors-danger-background-color);
+  --theme-ch5-button--danger-background-color: var(--theme-colors--danger-background-color);
 
   /// Danger border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f44337
-  --theme-ch5-button--danger-border-color: var(--theme-colors-danger-border-color);
+  --theme-ch5-button--danger-border-color: var(--theme-colors--danger-border-color);
 
   /// Danger font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--danger-font-color: var(--theme-colors-danger-font-color);
+  --theme-ch5-button--danger-font-color: var(--theme-colors--danger-font-color);
 
   /// Danger pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #b71c1c
-  --theme-ch5-button--danger-pressed-background-color: var(--theme-colors-danger-pressed-background-color);
+  --theme-ch5-button--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
 
   /// Danger pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f44337
-  --theme-ch5-button--danger-pressed-border-color: var(--theme-colors-danger-pressed-border-color);
+  --theme-ch5-button--danger-pressed-border-color: var(--theme-colors--danger-pressed-border-color);
 
   /// Danger pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--danger-pressed-font-color: var(--theme-colors-danger-pressed-font-color);
+  --theme-ch5-button--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
 
   /// Danger selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #c62828
-  --theme-ch5-button--danger-selected-background-color: var(--theme-colors-danger-selected-background-color);
+  --theme-ch5-button--danger-selected-background-color: var(--theme-colors--danger-selected-background-color);
 
   /// Danger selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f44337
-  --theme-ch5-button--danger-selected-border-color: var(--theme-colors-danger-selected-border-color);
+  --theme-ch5-button--danger-selected-border-color: var(--theme-colors--danger-selected-border-color);
 
   /// Danger selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--danger-selected-font-color: var(--theme-colors-danger-selected-font-color);
+  --theme-ch5-button--danger-selected-font-color: var(--theme-colors--danger-selected-font-color);
 
   /// Secondary background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #5e5e66
-  --theme-ch5-button--secondary-background-color: var(--theme-colors-secondary-background-color);
+  --theme-ch5-button--secondary-background-color: var(--theme-colors--secondary-background-color);
 
   /// Secondary border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-ch5-button--secondary-border-color: var(--theme-colors-secondary-border-color);
+  --theme-ch5-button--secondary-border-color: var(--theme-colors--secondary-border-color);
 
   /// Secondary font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--secondary-font-color: var(--theme-colors-secondary-font-color);
+  --theme-ch5-button--secondary-font-color: var(--theme-colors--secondary-font-color);
 
   /// Secondary pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-ch5-button--secondary-pressed-background-color: var(--theme-colors-secondary-pressed-background-color);
+  --theme-ch5-button--secondary-pressed-background-color: var(--theme-colors--secondary-pressed-background-color);
 
   /// Secondary pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-ch5-button--secondary-pressed-border-color: var(--theme-colors-secondary-pressed-border-color);
+  --theme-ch5-button--secondary-pressed-border-color: var(--theme-colors--secondary-pressed-border-color);
 
   /// Secondary pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--secondary-pressed-font-color: var(--theme-colors-secondary-pressed-font-color);
+  --theme-ch5-button--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
 
   /// Secondary selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4a4a50
-  --theme-ch5-button--secondary-selected-background-color: var(--theme-colors-secondary-selected-background-color);
+  --theme-ch5-button--secondary-selected-background-color: var(--theme-colors--secondary-selected-background-color);
 
   /// Secondary selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-ch5-button--secondary-selected-border-color: var(--theme-colors-secondary-selected-border-color);
+  --theme-ch5-button--secondary-selected-border-color: var(--theme-colors--secondary-selected-border-color);
 
   /// Secondary selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-button--secondary-selected-font-color: var(--theme-colors-secondary-selected-font-color);
+  --theme-ch5-button--secondary-selected-font-color: var(--theme-colors--secondary-selected-font-color);
 
   /// Success background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4caf50
-  --theme-ch5-button--success-background-color: var(--theme-colors-success-background-color);
+  --theme-ch5-button--success-background-color: var(--theme-colors--success-background-color);
 
   /// Success border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4caf50
-  --theme-ch5-button--success-border-color: var(--theme-colors-success-border-color);
+  --theme-ch5-button--success-border-color: var(--theme-colors--success-border-color);
 
   /// Success font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0
-  --theme-ch5-button--success-font-color: var(--theme-colors-success-font-color);
+  --theme-ch5-button--success-font-color: var(--theme-colors--success-font-color);
 
   /// Success pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #388e3c
-  --theme-ch5-button--success-pressed-background-color: var(--theme-colors-success-pressed-background-color);
+  --theme-ch5-button--success-pressed-background-color: var(--theme-colors--success-pressed-background-color);
 
   /// Success pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4caf50
-  --theme-ch5-button--success-pressed-border-color: var(--theme-colors-success-pressed-border-color);
+  --theme-ch5-button--success-pressed-border-color: var(--theme-colors--success-pressed-border-color);
 
   /// Success pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0
-  --theme-ch5-button--success-pressed-font-color: var(--theme-colors-success-pressed-font-color);
+  --theme-ch5-button--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
 
   /// Success selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #3c8a3f
-  --theme-ch5-button--success-selected-background-color: var(--theme-colors-success-selected-background-color);
+  --theme-ch5-button--success-selected-background-color: var(--theme-colors--success-selected-background-color);
 
   /// Success selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4caf50
-  --theme-ch5-button--success-selected-border-color: var(--theme-colors-success-selected-border-color);
+  --theme-ch5-button--success-selected-border-color: var(--theme-colors--success-selected-border-color);
 
   /// Success selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0
-  --theme-ch5-button--success-selected-font-color: var(--theme-colors-success-selected-font-color);
+  --theme-ch5-button--success-selected-font-color: var(--theme-colors--success-selected-font-color);
 
   /// Warning background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffc009
-  --theme-ch5-button--warning-background-color: var(--theme-colors-warning-background-color);
+  --theme-ch5-button--warning-background-color: var(--theme-colors--warning-background-color);
 
   /// Warning border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffc009
-  --theme-ch5-button--warning-border-color: var(--theme-colors-warning-border-color);
+  --theme-ch5-button--warning-border-color: var(--theme-colors--warning-border-color);
 
   /// Warning font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333
-  --theme-ch5-button--warning-font-color: var(--theme-colors-warning-font-color);
+  --theme-ch5-button--warning-font-color: var(--theme-colors--warning-font-color);
 
   /// Warning pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f7cd4f
-  --theme-ch5-button--warning-pressed-background-color: var(--theme-colors-warning-pressed-background-color);
+  --theme-ch5-button--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
 
   /// Warning pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffc009
-  --theme-ch5-button--warning-pressed-border-color: var(--theme-colors-warning-pressed-border-color);
+  --theme-ch5-button--warning-pressed-border-color: var(--theme-colors--warning-pressed-border-color);
 
   /// Warning pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333
-  --theme-ch5-button--warning-pressed-font-color: var(--theme-colors-warning-pressed-font-color);
+  --theme-ch5-button--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
 
   /// Warning selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #c99807
-  --theme-ch5-button--warning-selected-background-color: var(--theme-colors-warning-selected-background-color);
+  --theme-ch5-button--warning-selected-background-color: var(--theme-colors--warning-selected-background-color);
 
   /// Warning selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffc009
-  --theme-ch5-button--warning-selected-border-color: var(--theme-colors-warning-selected-border-color);
+  --theme-ch5-button--warning-selected-border-color: var(--theme-colors--warning-selected-border-color);
 
   /// Warning selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333
-  --theme-ch5-button--warning-selected-font-color: var(--theme-colors-warning-selected-font-color);
+  --theme-ch5-button--warning-selected-font-color: var(--theme-colors--warning-selected-font-color);
 
   /// Text background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #efefef
-  --theme-ch5-button--text-background-color: var(--theme-colors-text-background-color);
+  --theme-ch5-button--text-background-color: var(--theme-colors--text-background-color);
 
   /// Text border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-ch5-button--text-border-color: var(--theme-colors-text-border-color);
+  --theme-ch5-button--text-border-color: var(--theme-colors--text-border-color);
 
   /// Text font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #6d6d6d
-  --theme-ch5-button--text-font-color: var(--theme-colors-text-font-color);
+  --theme-ch5-button--text-font-color: var(--theme-colors--text-font-color);
 
   /// Text pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #d7d4d4
-  --theme-ch5-button--text-pressed-background-color: var(--theme-colors-text-pressed-background-color);
+  --theme-ch5-button--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
 
   /// Text pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-ch5-button--text-pressed-border-color: var(--theme-colors-text-pressed-border-color);
+  --theme-ch5-button--text-pressed-border-color: var(--theme-colors--text-pressed-border-color);
 
   /// Text pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #6d6d6d
-  --theme-ch5-button--text-pressed-font-color: var(--theme-colors-text-pressed-font-color);
+  --theme-ch5-button--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
 
   /// Text selected background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #bdbdbd
-  --theme-ch5-button--text-selected-background-color: var(--theme-colors-text-selected-background-color);
+  --theme-ch5-button--text-selected-background-color: var(--theme-colors--text-selected-background-color);
 
   /// Text selected border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-ch5-button--text-selected-border-color: var(--theme-colors-text-selected-border-color);
+  --theme-ch5-button--text-selected-border-color: var(--theme-colors--text-selected-border-color);
 
   /// Text selected font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #6d6d6d
-  --theme-ch5-button--text-selected-font-color: var(--theme-colors-text-selected-font-color); // ***************************************
+  --theme-ch5-button--text-selected-font-color: var(--theme-colors--text-selected-font-color); // ***************************************
   // ch5-button-list
   // ***************************************
 
@@ -1245,19 +1245,19 @@
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 7px
-  --theme-ch5-button-list--scrollbar-width: var(--theme-others-scrollbar-width);
+  --theme-ch5-button-list--scrollbar-width: var(--theme-others--scrollbar-width);
 
   /// Scrollbar border radius at the theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px
-  --theme-ch5-button-list--scrollbar-border-radius: var(--theme-others-scrollbar-border-radius);
+  --theme-ch5-button-list--scrollbar-border-radius: var(--theme-others--scrollbar-border-radius);
 
   /// Scrollbar thumb color at the theme level
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgba(0, 0, 0, 0.5)
-  --theme-ch5-button-list--scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color); // ***************************************
+  --theme-ch5-button-list--scrollbar-thumb-color: var(--theme-others--scrollbar-thumb-color); // ***************************************
   // ch5-color-chip
   // ***************************************
 
@@ -1403,200 +1403,200 @@
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0099ff
-  --theme-ch5-dpad--default-background-color: var(--theme-colors-default-background-color);
+  --theme-ch5-dpad--default-background-color: var(--theme-colors--default-background-color);
 
   /// Default font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-dpad--default-font-color: var(--theme-colors-default-font-color);
+  --theme-ch5-dpad--default-font-color: var(--theme-colors--default-font-color);
 
   /// Default pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #008ae6
-  --theme-ch5-dpad--default-pressed-background-color: var(--theme-colors-default-pressed-background-color);
+  --theme-ch5-dpad--default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
 
   /// Default pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-dpad--default-pressed-font-color: var(--theme-colors-default-pressed-font-color);
+  --theme-ch5-dpad--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
 
 
   /// Primary background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #17171a
-  --theme-ch5-dpad--primary-background-color: var(--theme-colors-primary-background-color);
+  --theme-ch5-dpad--primary-background-color: var(--theme-colors--primary-background-color);
 
   /// Primary font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-dpad--primary-font-color: var(--theme-colors-primary-font-color);
+  --theme-ch5-dpad--primary-font-color: var(--theme-colors--primary-font-color);
 
   /// Primary pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #353539
-  --theme-ch5-dpad--primary-pressed-background-color: var(--theme-colors-primary-pressed-background-color);
+  --theme-ch5-dpad--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
 
   /// Primary pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-dpad--primary-pressed-font-color: var(--theme-colors-primary-pressed-font-color);
+  --theme-ch5-dpad--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
 
 
   /// Info background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #00bcd4
-  --theme-ch5-dpad--info-background-color: var(--theme-colors-info-background-color);
+  --theme-ch5-dpad--info-background-color: var(--theme-colors--info-background-color);
 
   /// Info font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-dpad--info-font-color: var(--theme-colors-info-font-color);
+  --theme-ch5-dpad--info-font-color: var(--theme-colors--info-font-color);
 
   /// Info pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0097a7
-  --theme-ch5-dpad--info-pressed-background-color: var(--theme-colors-info-pressed-background-color);
+  --theme-ch5-dpad--info-pressed-background-color: var(--theme-colors--info-pressed-background-color);
 
   /// Info pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-dpad--info-pressed-font-color: var(--theme-colors-info-pressed-font-color);
+  --theme-ch5-dpad--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
 
 
   /// Danger background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f44336
-  --theme-ch5-dpad--danger-background-color: var(--theme-colors-danger-background-color);
+  --theme-ch5-dpad--danger-background-color: var(--theme-colors--danger-background-color);
 
   /// Danger font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-dpad--danger-font-color: var(--theme-colors-danger-font-color);
+  --theme-ch5-dpad--danger-font-color: var(--theme-colors--danger-font-color);
 
   /// Danger pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #b71c1c
-  --theme-ch5-dpad--danger-pressed-background-color: var(--theme-colors-danger-pressed-background-color);
+  --theme-ch5-dpad--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
 
   /// Danger pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-dpad--danger-pressed-font-color: var(--theme-colors-danger-pressed-font-color);
+  --theme-ch5-dpad--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
 
 
   /// Secondary background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #5e5e66
-  --theme-ch5-dpad--secondary-background-color: var(--theme-colors-secondary-background-color);
+  --theme-ch5-dpad--secondary-background-color: var(--theme-colors--secondary-background-color);
 
   /// Secondary font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-dpad--secondary-font-color: var(--theme-colors-secondary-font-color);
+  --theme-ch5-dpad--secondary-font-color: var(--theme-colors--secondary-font-color);
 
   /// Secondary pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-ch5-dpad--secondary-pressed-background-color: var(--theme-colors-secondary-pressed-background-color);
+  --theme-ch5-dpad--secondary-pressed-background-color: var(--theme-colors--secondary-pressed-background-color);
 
   /// Secondary pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-dpad--secondary-pressed-font-color: var(--theme-colors-secondary-pressed-font-color);
+  --theme-ch5-dpad--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
 
 
   /// Success background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4caf50
-  --theme-ch5-dpad--success-background-color: var(--theme-colors-success-background-color);
+  --theme-ch5-dpad--success-background-color: var(--theme-colors--success-background-color);
 
   /// Success font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0
-  --theme-ch5-dpad--success-font-color: var(--theme-colors-success-font-color);
+  --theme-ch5-dpad--success-font-color: var(--theme-colors--success-font-color);
 
   /// Success pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #388e3c
-  --theme-ch5-dpad--success-pressed-background-color: var(--theme-colors-success-pressed-background-color);
+  --theme-ch5-dpad--success-pressed-background-color: var(--theme-colors--success-pressed-background-color);
 
   /// Success pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0
-  --theme-ch5-dpad--success-pressed-font-color: var(--theme-colors-success-pressed-font-color);
+  --theme-ch5-dpad--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
 
 
   /// Warning background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffc009
-  --theme-ch5-dpad--warning-background-color: var(--theme-colors-warning-background-color);
+  --theme-ch5-dpad--warning-background-color: var(--theme-colors--warning-background-color);
 
   /// Warning font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333
-  --theme-ch5-dpad--warning-font-color: var(--theme-colors-warning-font-color);
+  --theme-ch5-dpad--warning-font-color: var(--theme-colors--warning-font-color);
 
   /// Warning pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f7cd4f
-  --theme-ch5-dpad--warning-pressed-background-color: var(--theme-colors-warning-pressed-background-color);
+  --theme-ch5-dpad--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
 
   /// Warning pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333
-  --theme-ch5-dpad--warning-pressed-font-color: var(--theme-colors-warning-pressed-font-color);
+  --theme-ch5-dpad--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
 
 
   /// Text background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #efefef
-  --theme-ch5-dpad--text-background-color: var(--theme-colors-text-background-color);
+  --theme-ch5-dpad--text-background-color: var(--theme-colors--text-background-color);
 
   /// Text font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #6d6d6d
-  --theme-ch5-dpad--text-font-color: var(--theme-colors-text-font-color);
+  --theme-ch5-dpad--text-font-color: var(--theme-colors--text-font-color);
 
   /// Text pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #d7d4d4
-  --theme-ch5-dpad--text-pressed-background-color: var(--theme-colors-text-pressed-background-color);
+  --theme-ch5-dpad--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
 
   /// Text pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #6d6d6d
-  --theme-ch5-dpad--text-pressed-font-color: var(--theme-colors-text-pressed-font-color);
+  --theme-ch5-dpad--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
 
   // ***************************************
   // ch5-image
@@ -1707,289 +1707,289 @@
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0099ff
-  --theme-ch5-keypad--default-background-color: var(--theme-colors-default-background-color);
+  --theme-ch5-keypad--default-background-color: var(--theme-colors--default-background-color);
 
   /// Default border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0099ff
-  --theme-ch5-keypad--default-border-color: var(--theme-colors-default-border-color);
+  --theme-ch5-keypad--default-border-color: var(--theme-colors--default-border-color);
 
   /// Default font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-keypad--default-font-color: var(--theme-colors-default-font-color);
+  --theme-ch5-keypad--default-font-color: var(--theme-colors--default-font-color);
 
   /// Default pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #008ae6
-  --theme-ch5-keypad--default-pressed-background-color: var(--theme-colors-default-pressed-background-color);
+  --theme-ch5-keypad--default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
 
   /// Default pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0099ff
-  --theme-ch5-keypad--default-pressed-border-color: var(--theme-colors-default-pressed-border-color);
+  --theme-ch5-keypad--default-pressed-border-color: var(--theme-colors--default-pressed-border-color);
 
   /// Default pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-keypad--default-pressed-font-color: var(--theme-colors-default-pressed-font-color);
+  --theme-ch5-keypad--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
 
   /// Primary background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #17171a
-  --theme-ch5-keypad--primary-background-color: var(--theme-colors-primary-background-color);
+  --theme-ch5-keypad--primary-background-color: var(--theme-colors--primary-background-color);
 
   /// Primary border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f8f7f8
-  --theme-ch5-keypad--primary-border-color: var(--theme-colors-primary-border-color);
+  --theme-ch5-keypad--primary-border-color: var(--theme-colors--primary-border-color);
 
   /// Primary font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-keypad--primary-font-color: var(--theme-colors-primary-font-color);
+  --theme-ch5-keypad--primary-font-color: var(--theme-colors--primary-font-color);
 
   /// Primary pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #353539
-  --theme-ch5-keypad--primary-pressed-background-color: var(--theme-colors-primary-pressed-background-color);
+  --theme-ch5-keypad--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
 
   /// Primary pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f8f7f8
-  --theme-ch5-keypad--primary-pressed-border-color: var(--theme-colors-primary-pressed-border-color);
+  --theme-ch5-keypad--primary-pressed-border-color: var(--theme-colors--primary-pressed-border-color);
 
   /// Primary pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-keypad--primary-pressed-font-color: var(--theme-colors-primary-pressed-font-color);
+  --theme-ch5-keypad--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
 
   /// Info background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #00bcd4
-  --theme-ch5-keypad--info-background-color: var(--theme-colors-info-background-color);
+  --theme-ch5-keypad--info-background-color: var(--theme-colors--info-background-color);
 
   /// Info border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #00bcd4
-  --theme-ch5-keypad--info-border-color: var(--theme-colors-info-border-color);
+  --theme-ch5-keypad--info-border-color: var(--theme-colors--info-border-color);
 
   /// Info font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-keypad--info-font-color: var(--theme-colors-info-font-color);
+  --theme-ch5-keypad--info-font-color: var(--theme-colors--info-font-color);
 
   /// Info pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0097a7
-  --theme-ch5-keypad--info-pressed-background-color: var(--theme-colors-info-pressed-background-color);
+  --theme-ch5-keypad--info-pressed-background-color: var(--theme-colors--info-pressed-background-color);
 
   /// Info pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #00bcd4
-  --theme-ch5-keypad--info-pressed-border-color: var(--theme-colors-info-pressed-border-color);
+  --theme-ch5-keypad--info-pressed-border-color: var(--theme-colors--info-pressed-border-color);
 
   /// Info pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-keypad--info-pressed-font-color: var(--theme-colors-info-pressed-font-color);
+  --theme-ch5-keypad--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
 
   /// Danger background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f44336
-  --theme-ch5-keypad--danger-background-color: var(--theme-colors-danger-background-color);
+  --theme-ch5-keypad--danger-background-color: var(--theme-colors--danger-background-color);
 
   /// Danger border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f44337
-  --theme-ch5-keypad--danger-border-color: var(--theme-colors-danger-border-color);
+  --theme-ch5-keypad--danger-border-color: var(--theme-colors--danger-border-color);
 
   /// Danger font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-keypad--danger-font-color: var(--theme-colors-danger-font-color);
+  --theme-ch5-keypad--danger-font-color: var(--theme-colors--danger-font-color);
 
   /// Danger pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #b71c1c
-  --theme-ch5-keypad--danger-pressed-background-color: var(--theme-colors-danger-pressed-background-color);
+  --theme-ch5-keypad--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
 
   /// Danger pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f44337
-  --theme-ch5-keypad--danger-pressed-border-color: var(--theme-colors-danger-pressed-border-color);
+  --theme-ch5-keypad--danger-pressed-border-color: var(--theme-colors--danger-pressed-border-color);
 
   /// Danger pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-keypad--danger-pressed-font-color: var(--theme-colors-danger-pressed-font-color);
+  --theme-ch5-keypad--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
 
   /// Secondary background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #5e5e66
-  --theme-ch5-keypad--secondary-background-color: var(--theme-colors-secondary-background-color);
+  --theme-ch5-keypad--secondary-background-color: var(--theme-colors--secondary-background-color);
 
   /// Secondary border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-ch5-keypad--secondary-border-color: var(--theme-colors-secondary-border-color);
+  --theme-ch5-keypad--secondary-border-color: var(--theme-colors--secondary-border-color);
 
   /// Secondary font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-keypad--secondary-font-color: var(--theme-colors-secondary-font-color);
+  --theme-ch5-keypad--secondary-font-color: var(--theme-colors--secondary-font-color);
 
   /// Secondary pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-ch5-keypad--secondary-pressed-background-color: var(--theme-colors-secondary-pressed-background-color);
+  --theme-ch5-keypad--secondary-pressed-background-color: var(--theme-colors--secondary-pressed-background-color);
 
   /// Secondary pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-ch5-keypad--secondary-pressed-border-color: var(--theme-colors-secondary-pressed-border-color);
+  --theme-ch5-keypad--secondary-pressed-border-color: var(--theme-colors--secondary-pressed-border-color);
 
   /// Secondary pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
-  --theme-ch5-keypad--secondary-pressed-font-color: var(--theme-colors-secondary-pressed-font-color);
+  --theme-ch5-keypad--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
 
   /// Success background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4caf50
-  --theme-ch5-keypad--success-background-color: var(--theme-colors-success-background-color);
+  --theme-ch5-keypad--success-background-color: var(--theme-colors--success-background-color);
 
   /// Success border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4caf50
-  --theme-ch5-keypad--success-border-color: var(--theme-colors-success-border-color);
+  --theme-ch5-keypad--success-border-color: var(--theme-colors--success-border-color);
 
   /// Success font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0
-  --theme-ch5-keypad--success-font-color: var(--theme-colors-success-font-color);
+  --theme-ch5-keypad--success-font-color: var(--theme-colors--success-font-color);
 
   /// Success pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #388e3c
-  --theme-ch5-keypad--success-pressed-background-color: var(--theme-colors-success-pressed-background-color);
+  --theme-ch5-keypad--success-pressed-background-color: var(--theme-colors--success-pressed-background-color);
 
   /// Success pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4caf50
-  --theme-ch5-keypad--success-pressed-border-color: var(--theme-colors-success-pressed-border-color);
+  --theme-ch5-keypad--success-pressed-border-color: var(--theme-colors--success-pressed-border-color);
 
   /// Success pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0
-  --theme-ch5-keypad--success-pressed-font-color: var(--theme-colors-success-pressed-font-color);
+  --theme-ch5-keypad--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
 
   /// Warning background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffc009
-  --theme-ch5-keypad--warning-background-color: var(--theme-colors-warning-background-color);
+  --theme-ch5-keypad--warning-background-color: var(--theme-colors--warning-background-color);
 
   /// Warning border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffc009
-  --theme-ch5-keypad--warning-border-color: var(--theme-colors-warning-border-color);
+  --theme-ch5-keypad--warning-border-color: var(--theme-colors--warning-border-color);
 
   /// Warning font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333
-  --theme-ch5-keypad--warning-font-color: var(--theme-colors-warning-font-color);
+  --theme-ch5-keypad--warning-font-color: var(--theme-colors--warning-font-color);
 
   /// Warning pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f7cd4f
-  --theme-ch5-keypad--warning-pressed-background-color: var(--theme-colors-warning-pressed-background-color);
+  --theme-ch5-keypad--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
 
   /// Warning pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffc009
-  --theme-ch5-keypad--warning-pressed-border-color: var(--theme-colors-warning-pressed-border-color);
+  --theme-ch5-keypad--warning-pressed-border-color: var(--theme-colors--warning-pressed-border-color);
 
   /// Warning pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333
-  --theme-ch5-keypad--warning-pressed-font-color: var(--theme-colors-warning-pressed-font-color);
+  --theme-ch5-keypad--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
 
   /// Text background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #efefef
-  --theme-ch5-keypad--text-background-color: var(--theme-colors-text-background-color);
+  --theme-ch5-keypad--text-background-color: var(--theme-colors--text-background-color);
 
   /// Text border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-ch5-keypad--text-border-color: var(--theme-colors-text-border-color);
+  --theme-ch5-keypad--text-border-color: var(--theme-colors--text-border-color);
 
   /// Text font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #6d6d6d
-  --theme-ch5-keypad--text-font-color: var(--theme-colors-text-font-color);
+  --theme-ch5-keypad--text-font-color: var(--theme-colors--text-font-color);
 
   /// Text pressed background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #d7d4d4
-  --theme-ch5-keypad--text-pressed-background-color: var(--theme-colors-text-pressed-background-color);
+  --theme-ch5-keypad--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
 
   /// Text pressed border color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
-  --theme-ch5-keypad--text-pressed-border-color: var(--theme-colors-text-pressed-border-color);
+  --theme-ch5-keypad--text-pressed-border-color: var(--theme-colors--text-pressed-border-color);
 
   /// Text pressed font color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #6d6d6d
-  --theme-ch5-keypad--text-pressed-font-color: var(--theme-colors-text-pressed-font-color);
+  --theme-ch5-keypad--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
 
   // ***************************************
   // ch5-overlay-panel
@@ -1999,19 +1999,19 @@
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 16px
-  --theme-ch5-overlay-panel--font-size: var(--theme-fonts-font-size);
+  --theme-ch5-overlay-panel--font-size: var(--theme-fonts--font-size);
 
   /// The font style for the overlay panel at theme level
   /// type: string 
   /// values: large, solid, center 
   /// example: bold
-  --theme-ch5-overlay-panel--font-style: var(--theme-fonts-font-style);
+  --theme-ch5-overlay-panel--font-style: var(--theme-fonts--font-style);
 
   /// The font weight for the overlay panel at theme level
   /// type: string 
   /// values: large, solid, center 
   /// example: bold
-  --theme-ch5-overlay-panel--font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-overlay-panel--font-weight: var(--theme-fonts--font-weight);
   /// The color of the icon at the top of the overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
@@ -2124,25 +2124,25 @@
   /// type: string 
   /// values: large, solid, center 
   /// example: bold
-  --theme-ch5-overlay-panel--close-icon-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-overlay-panel--close-icon-font-style: var(--theme-fonts--font-style);
 
   /// The font weight of the icon at the top of the overlay panel
   /// type: string 
   /// values: large, solid, center 
   /// example: bold
-  --theme-ch5-overlay-panel--close-icon-font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-overlay-panel--close-icon-font-weight: var(--theme-fonts--font-weight);
 
   /// The font style for the content of the overlay panel
   /// type: string 
   /// values: large, solid, center 
   /// example: bold
-  --theme-ch5-overlay-panel--contents-font-style: var(--theme-fonts-font-weight);
+  --theme-ch5-overlay-panel--contents-font-style: var(--theme-fonts--font-weight);
 
   /// The font weight for the content of the overlay panel
   /// type: string 
   /// values: large, solid, center 
   /// example: bold
-  --theme-ch5-overlay-panel--contents-font-weight: var(--theme-fonts-font-style);
+  --theme-ch5-overlay-panel--contents-font-weight: var(--theme-fonts--font-style);
 
   // ***************************************
   // ch5-segmented-gauge
@@ -2207,11 +2207,11 @@
 
   --theme-ch5-select--panel-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 
-  --theme-ch5-select--font-size: var(--theme-fonts-font-size);
+  --theme-ch5-select--font-size: var(--theme-fonts--font-size);
 
-  --theme-ch5-select--font-style: var(--theme-fonts-font-style);
+  --theme-ch5-select--font-style: var(--theme-fonts--font-style);
 
-  --theme-ch5-select--font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-select--font-weight: var(--theme-fonts--font-weight);
 
   // ***************************************
   // ch5-signal-level-gauge
@@ -2243,9 +2243,9 @@
 
   --theme-ch5-spinner--active-item-color: #fff;
 
-  --theme-ch5-spinner--font-style: var(--theme-fonts-font-style);
+  --theme-ch5-spinner--font-style: var(--theme-fonts--font-style);
 
-  --theme-ch5-spinner--font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-spinner--font-weight: var(--theme-fonts--font-weight);
 
   --theme-ch5-spinner--icon-font-size: var(--theme-ch5-spinner-font-size);
 
@@ -2281,13 +2281,13 @@
 
   --theme-ch5-subpage-reference-list--container-padding: 5px;
 
-  --theme-ch5-subpage-reference-list--scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color);
+  --theme-ch5-subpage-reference-list--scrollbar-thumb-color: var(--theme-others--scrollbar-thumb-color);
 
-  --theme-ch5-subpage-reference-list--scrollbar-border-radius: var(--theme-others-scrollbar-border-radius);
+  --theme-ch5-subpage-reference-list--scrollbar-border-radius: var(--theme-others--scrollbar-border-radius);
 
-  --theme-ch5-subpage-reference-list--scrollbar-track-color: var(--theme-others-scrollbar-track-color);
+  --theme-ch5-subpage-reference-list--scrollbar-track-color: var(--theme-others--scrollbar-track-color);
 
-  --theme-ch5-subpage-reference-list--scrollbar-width: var(--theme-others-scrollbar-width);
+  --theme-ch5-subpage-reference-list--scrollbar-width: var(--theme-others--scrollbar-width);
 
   // ***************************************
   // ch5-tab-button
@@ -2297,13 +2297,13 @@
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 5px
-  --theme-ch5-tab-button-button-container-width: 5px;
+  --theme-ch5-tab-button--button-container-width: 5px;
 
   /// Button container height
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 5px
-  --theme-ch5-tab-button-button-container-height: 5px;
+  --theme-ch5-tab-button--button-container-height: 5px;
 
   // ***************************************
   // ch5-text
@@ -2353,19 +2353,19 @@
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 16px
-  --theme-ch5-textinput--regular-font-size: var(--theme-fonts-font-size);
+  --theme-ch5-textinput--regular-font-size: var(--theme-fonts--font-size);
 
   /// Font style at the theme level
   /// type: string
   /// values: large, solid, center
   /// example: normal
-  --theme-ch5-textinput--regular-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-textinput--regular-font-style: var(--theme-fonts--font-style);
 
   /// Font weight at the theme level
   /// type: string
   /// values: large, solid, center
   /// example: normal
-  --theme-ch5-textinput--regular-font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-textinput--regular-font-weight: var(--theme-fonts--font-weight);
 
   /// Font size at the theme level
   /// type: unit
@@ -2377,13 +2377,13 @@
   /// type: string
   /// values: large, solid, center
   /// example: normal
-  --theme-ch5-textinput--small-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-textinput--small-font-style: var(--theme-fonts--font-style);
 
   /// Font weight at the theme level
   /// type: string
   /// values: large, solid, center
   /// example: normal
-  --theme-ch5-textinput--small-font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-textinput--small-font-weight: var(--theme-fonts--font-weight);
 
   /// Font size at the theme level
   /// type: unit
@@ -2395,13 +2395,13 @@
   /// type: string
   /// values: large, solid, center
   /// example: normal
-  --theme-ch5-textinput--large-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-textinput--large-font-style: var(--theme-fonts--font-style);
 
   /// Font weight at the theme level
   /// type: string
   /// values: large, solid, center
   /// example: normal
-  --theme-ch5-textinput--large-font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-textinput--large-font-weight: var(--theme-fonts--font-weight);
 
   /// Font size at the theme level
   /// type: unit
@@ -2413,13 +2413,13 @@
   /// type: string
   /// values: large, solid, center
   /// example: normal
-  --theme-ch5-textinput--x-large-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-textinput--x-large-font-style: var(--theme-fonts--font-style);
 
   /// Font weight at the theme level
   /// type: string
   /// values: large, solid, center
   /// example: normal
-  --theme-ch5-textinput--x-large-font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-textinput--x-large-font-weight: var(--theme-fonts--font-weight);
 
   /// Font size at the theme level
   /// type: unit
@@ -2429,13 +2429,13 @@
     /// type: string
     /// values: large, solid, center
     /// example: normal
-    --theme-ch5-textinput--x-small-font-style: var(--theme-fonts-font-style);
+    --theme-ch5-textinput--x-small-font-style: var(--theme-fonts--font-style);
 
   /// Font weight at the theme level
   /// type: string
   /// values: large, solid, center
   /// example: normal
-  --theme-ch5-textinput--x-small-font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-textinput--x-small-font-weight: var(--theme-fonts--font-weight);
 
   /// The text color of the textinput.
   /// type: color 
@@ -2452,8 +2452,8 @@
   /// The color of the icon within the textinput
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
-  /// example: var(--theme-colors-success-background-color)
-  --theme-ch5-textinput--icon-text-color: var(--theme-colors-success-background-color);
+  /// example: var(--theme-colors--success-background-color)
+  --theme-ch5-textinput--icon-text-color: var(--theme-colors--success-background-color);
 
   /// The color for the label of the textinput
   /// type: unit 
@@ -2621,27 +2621,27 @@
   // ch5-toggle
   // ***************************************
 
-  --theme-ch5-toggle--font-size: var(--theme-fonts-font-size);
+  --theme-ch5-toggle--font-size: var(--theme-fonts--font-size);
 
-  --theme-ch5-toggle--font-style: var(--theme-fonts-font-style);
+  --theme-ch5-toggle--font-style: var(--theme-fonts--font-style);
 
-  --theme-ch5-toggle--font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-toggle--font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-toggle--label-font-size: var(--theme-fonts-font-size);
+  --theme-ch5-toggle--label-font-size: var(--theme-fonts--font-size);
 
-  --theme-ch5-toggle--label-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-toggle--label-font-style: var(--theme-fonts--font-style);
 
-  --theme-ch5-toggle--label-font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-toggle--label-font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-toggle--text-font-size: var(--theme-fonts-font-size);
+  --theme-ch5-toggle--text-font-size: var(--theme-fonts--font-size);
 
-  --theme-ch5-toggle--text-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-toggle--text-font-style: var(--theme-fonts--font-style);
 
-  --theme-ch5-toggle--text-font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-toggle--text-font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-toggle--icon-font-size: var(--theme-fonts-font-size);
+  --theme-ch5-toggle--icon-font-size: var(--theme-fonts--font-size);
 
-  --theme-ch5-toggle--icon-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-toggle--icon-font-style: var(--theme-fonts--font-style);
 
   --theme-ch5-toggle--handle-checked-color: #3aa64e;
 
@@ -2689,11 +2689,11 @@
 
   --theme-ch5-triggerview--gap: 16px;
 
-  --theme-ch5-triggerview--font-size: var(--theme-fonts-font-size);
+  --theme-ch5-triggerview--font-size: var(--theme-fonts--font-size);
 
-  --theme-ch5-triggerview--font-style: var(--theme-fonts-font-style);
+  --theme-ch5-triggerview--font-style: var(--theme-fonts--font-style);
 
-  --theme-ch5-triggerview--font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-triggerview--font-weight: var(--theme-fonts--font-weight);
 
 
   // ***************************************
@@ -2704,79 +2704,79 @@
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 16px 
-  --theme-ch5-modal-dialog--close-icon-font-size: var(--theme-fonts-font-size);
+  --theme-ch5-modal-dialog--close-icon-font-size: var(--theme-fonts--font-size);
 
   /// the font style of the icon at the top of the modal at theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  --theme-ch5-modal-dialog--close-icon-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-modal-dialog--close-icon-font-style: var(--theme-fonts--font-style);
 
   /// the font weight of the icon at the top of the modal at theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  --theme-ch5-modal-dialog--close-icon-font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-modal-dialog--close-icon-font-weight: var(--theme-fonts--font-weight);
 
   /// the default font style of the icon at the top of the modal at theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  --theme-ch5-modal-dialog--default-close-icon-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-modal-dialog--default-close-icon-font-style: var(--theme-fonts--font-style);
 
   /// the default font weight of the icon at the top of the modal at theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal 
-  --theme-ch5-modal-dialog--default-close-icon-font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-modal-dialog--default-close-icon-font-weight: var(--theme-fonts--font-weight);
 
   /// the font style for the title of the modal at theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  --theme-ch5-modal-dialog--title-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-modal-dialog--title-font-style: var(--theme-fonts--font-style);
 
   /// the font style for the content of the modal at theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  --theme-ch5-modal-dialog--contents-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-modal-dialog--contents-font-style: var(--theme-fonts--font-style);
 
   /// the font weight for the content of the modal at theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  --theme-ch5-modal-dialog--contents-font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-modal-dialog--contents-font-weight: var(--theme-fonts--font-weight);
 
   /// the font size for the prompt icon of the modal at theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 16px 
-  --theme-ch5-modal-dialog--prompt-icon-font-size: var(--theme-fonts-font-size);
+  --theme-ch5-modal-dialog--prompt-icon-font-size: var(--theme-fonts--font-size);
 
   /// the font style for the prompt icon of the modal at theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  --theme-ch5-modal-dialog--prompt-icon-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-modal-dialog--prompt-icon-font-style: var(--theme-fonts--font-style);
 
   /// the font weight for the prompt icon of the modal at theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal 
-  --theme-ch5-modal-dialog--prompt-icon-font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-modal-dialog--prompt-icon-font-weight: var(--theme-fonts--font-weight);
 
   /// the font style for the prompt text of the modal at theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  --theme-ch5-modal-dialog--prompt-text-font-style: var(--theme-fonts-font-style);
+  --theme-ch5-modal-dialog--prompt-text-font-style: var(--theme-fonts--font-style);
 
   /// the font weight for the prompt text of the modal at theme level
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
-  --theme-ch5-modal-dialog--prompt-text-font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-modal-dialog--prompt-text-font-weight: var(--theme-fonts--font-weight);
 
   /// The color of the icon at the top of the modal
   /// type: color 
@@ -3358,19 +3358,19 @@
 
   --theme-ch5-list--item-padding: 10px;
 
-  --theme-ch5-list--font-size: var(--theme-fonts-font-size);
+  --theme-ch5-list--font-size: var(--theme-fonts--font-size);
 
-  --theme-ch5-list--font-style: var(--theme-fonts-font-style);
+  --theme-ch5-list--font-style: var(--theme-fonts--font-style);
 
-  --theme-ch5-list--font-weight: var(--theme-fonts-font-weight);
+  --theme-ch5-list--font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-list--scrollbar-border-radius: var(--theme-others-scrollbar-border-radius);
+  --theme-ch5-list--scrollbar-border-radius: var(--theme-others--scrollbar-border-radius);
 
-  --theme-ch5-list--scrollbar-thumb-color: var(--theme-others-scrollbar-thumb-color);
+  --theme-ch5-list--scrollbar-thumb-color: var(--theme-others--scrollbar-thumb-color);
 
-  --theme-ch5-list--scrollbar-track-color: var(--theme-others-scrollbar-track-color);
+  --theme-ch5-list--scrollbar-track-color: var(--theme-others--scrollbar-track-color);
 
-  --theme-ch5-list--scrollbar-width: var(--theme-others-scrollbar-width);
+  --theme-ch5-list--scrollbar-width: var(--theme-others--scrollbar-width);
 
   // ***************************************
   // ch5-video
