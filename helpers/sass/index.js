@@ -20,6 +20,7 @@ const globalVariables = getVariables(globalVars + sampleTheme, "global");
 
 const unusedVars = [];
 const undefinedVars = [];
+const globalVariablesInComponent = []
 
 function findMissingThemeVariables() {
 	const themesVariables = [];
@@ -210,6 +211,26 @@ function getComponentScss(component) {
 	const scss = globalVars + globalMixins + componentScss;
 	return removeComments(scss);
 }
+function getComponentScssWithoutVariables(component) {
+	const res = [];
+	const sourcePath = CONFIG.THEME_EDITOR_SOURCE_FILES_PATH
+	const entryFile = sourcePath + component + '/' + component + '.scss';
+	const componentEntry = fs.readFileSync(entryFile, 'utf-8')
+		.replace('@import "./scss/variables";', '')
+		.replace("@import './scss/variables';", '')
+		.replace('@import "scss/variables";', '')
+		.replace("@import 'scss/variables';", '')
+		.replace('@import "./scss/variables.scss";', '');
+	const componentScss = flatten(componentEntry, path.resolve(path.join(sourcePath, component)));
+
+	const variables = componentScss.split('var(--theme-');
+	if (variables.length !== 1) {
+		for (let i = 1; i < variables.length; i++) {
+			res.push('--theme-' + variables[i].slice(0, variables[i].indexOf(')')))
+		}
+	}
+	return res;
+}
 
 function getComponentCss(data) {
 
@@ -280,6 +301,8 @@ function getUndefinedVariables(data, variables) {
 function validateVariables(component, variables) {
 	const componentScss = getComponentScss(component);
 
+	const componentThemeVariables = getComponentScssWithoutVariables(component)
+
 	const css = getComponentCss(componentScss);
 
 	const unusedVariables = getUnusedVariables(css, variables);
@@ -297,6 +320,13 @@ function validateVariables(component, variables) {
 		undefinedVars.push({
 			name: component,
 			variables: undefinedVariables
+		})
+	}
+
+	if (componentThemeVariables.length !== 0) {
+		globalVariablesInComponent.push({
+			name: component,
+			variables: componentThemeVariables
 		})
 	}
 }
@@ -465,7 +495,8 @@ async function initialize() {
 			}
 		});
 	});
-	if (unusedVariables.length !== 0 || undefinedVariables.length !== 0) {
+
+	if (unusedVariables.length !== 0 || undefinedVariables.length !== 0 || globalVariablesInComponent.length !== 0) {
 		if (unusedVariables.length !== 0) {
 			console.log(`\x1b[31m unused variables: \x1b[0m`);
 			for (let i = 0; i < unusedVariables.length; i++) {
@@ -477,6 +508,14 @@ async function initialize() {
 			console.log(`\x1b[31m undefined variables: \x1b[0m`);
 			for (let i = 0; i < undefinedVariables.length; i++) {
 				console.log(`\x1b[31m ${undefinedVariables[i].name}: ${undefinedVariables[i].variable} \x1b[0m`);
+			}
+		}
+		if (globalVariablesInComponent.length !== 0) {
+			console.log(`\x1b[31m Theme variables in Component: \x1b[0m`);
+			for (let i = 0; i < globalVariablesInComponent.length; i++) {
+				for (let j = 0; j < globalVariablesInComponent[i].variables.length; j++) {
+					console.log(`\x1b[31m ${globalVariablesInComponent[i].name}: ${globalVariablesInComponent[i].variables[j]} \x1b[0m`);
+				}
 			}
 		}
 		process.exit(1);
