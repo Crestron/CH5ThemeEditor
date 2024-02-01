@@ -1250,6 +1250,12 @@
   /// example: rgba(0, 0, 0, 0.5)
   --theme-ch5-button-list--scrollbar-thumb-color: var(--theme-others--scrollbar-thumb-color);
 
+  /// Scrollbar track color at the theme level
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: rgba(0, 0, 0, 0.1)
+  --theme-ch5-button-list--scrollbar-track-color: var(--theme-others--scrollbar-track-color);
+
   // ***************************************
   // ch5-color-chip
   // ***************************************
@@ -2718,6 +2724,24 @@
   // ***************************************
   // ch5-slider
   // ***************************************
+
+  /// Default pressed border color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #0099ff
+  --theme-ch5-slider--button-default-pressed-border-color: var(--theme-colors--default-pressed-border-color);
+
+  /// Default pressed background color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #008ae6
+  --theme-ch5-slider--button-default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
+
+  /// Default pressed font color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-ch5-slider--button-default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
 
   /// Slider connect background
   /// type: color

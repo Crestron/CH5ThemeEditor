@@ -35,9 +35,9 @@ ch5-button-list {
     width: 0px;
   }
 
-  & ~ .scrollbar-container {
+  &~.scrollbar-container {
     position: absolute;
-    background-color: var(--theme-others--scrollbar-track-color);
+    background-color: var(--ch5-button-list--scrollbar-track-color);
     border-radius: var(--ch5-button-list--scrollbar-border-radius);
 
     .scrollbar {
@@ -50,13 +50,13 @@ ch5-button-list {
   }
 
   &.ch5-button-list--scrollbar-true {
-    & ~ .scrollbar-container {
+    &~.scrollbar-container {
       display: block;
     }
   }
 
   &.ch5-button-list--scrollbar-false {
-    & ~ .scrollbar-container {
+    &~.scrollbar-container {
       display: none;
     }
   }
@@ -82,7 +82,7 @@ ch5-button-list {
 }
 
 .ch5-button-list.ch5-button-list--disabled {
-  & ~ .scrollbar-container {
+  &~.scrollbar-container {
     @include ch5-component-disabled();
   }
 }

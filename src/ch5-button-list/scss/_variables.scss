@@ -59,4 +59,11 @@ ch5-button-list {
   /// example: 7px 
   /// related-theme-variable: --theme-ch5-button-list--scrollbar-width
   --ch5-button-list--scrollbar-width: var(--theme-ch5-button-list--scrollbar-width);
+
+  /// Scrollbar track color 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: rgba(0, 0, 0, 0.1)
+  /// related-theme-variable: --theme-ch5-button-list--scrollbar-track-color
+  --ch5-button-list--scrollbar-track-color: var(--theme-ch5-button-list--scrollbar-track-color);
 }
