@@ -11,13 +11,15 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-color-picker {
-  /// Height for color picker  /// type: unit 
+  /// description: Height for color picker
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 240px 
   /// related-theme-variable: --theme-ch5-color-picker--height
   --ch5-color-picker--height: var(--theme-ch5-color-picker--height);
 
-  /// Width for color picker  /// type: unit 
+  /// description: Width for color picker
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 240px 
   /// related-theme-variable: --theme-ch5-color-picker--width

@@ -138,7 +138,7 @@ function getVariables(data, sectionName) {
 					}
 				}
 			} else {
-				description = variableMetaData[0];
+				description = variableMetaData[0].replace("description:", '').trim();
 				type = variableMetaData[1].replace('type:', '').trim();
 				valueMetadata = variableMetaData[2].replace('values:', '').trim()
 				possibleValues = type === 'color' ? ["rgb(35,35,35)", "#1a1a1a", "red"] : valueMetadata.split(',').map((str) => str.trim()).filter((str) => str.trim())

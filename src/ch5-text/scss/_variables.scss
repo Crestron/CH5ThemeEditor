@@ -11,31 +11,36 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-text {
-  /// text min width  /// type: unit 
+  /// description: text min width
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 64px 
   /// related-theme-variable: --theme-ch5-text-min-width
   --ch5-text-min-width: var(--theme-ch5-text-min-width);
 
-  /// text min height  /// type: unit 
+  /// description: text min height
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 44px 
   /// related-theme-variable: --theme-ch5-text-min-height
   --ch5-text-min-height: var(--theme-ch5-text-min-height);
 
-  /// text width  /// type: unit 
+  /// description: text width
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 150px 
   /// related-theme-variable: --theme-ch5-text-width
   --ch5-text-width: var(--theme-ch5-text-width);
 
-  /// text height  /// type: unit 
+  /// description: text height
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 48px 
   /// related-theme-variable: --theme-ch5-text-height
   --ch5-text-height: var(--theme-ch5-text-height);
 
-  /// text padding  /// type: unit 
+  /// description: text padding
+  /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px 
   /// related-theme-variable: --theme-ch5-text-padding

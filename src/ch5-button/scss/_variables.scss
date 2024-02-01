@@ -11,287 +11,287 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-button {
-  /// button font size
+  /// description: button font size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 14px 
   /// related-theme-variable: --theme-ch5-button--font-size
   --ch5-button--font-size: var(--theme-ch5-button--font-size);
 
-  /// button font style
+  /// description: button font style
   /// type: string 
   /// values: large, solid, center 
   /// example: normal
   /// related-theme-variable: --theme-ch5-button--font-style
   --ch5-button--font-style: var(--theme-ch5-button--font-style);
 
-  /// The font weight of the button.
+  /// description: The font weight of the button.
   /// type: string 
   /// values: large, solid, center 
   /// example: normal 
   /// related-theme-variable: --theme-ch5-button--font-weight
   --ch5-button--font-weight: var(--theme-ch5-button--font-weight);
 
-  /// The padding for icon of the button.
+  /// description: The padding for icon of the button.
   /// type: string 
   /// values: large, solid, center 
   /// example: inherit 
   /// related-theme-variable: --theme-ch5-button--icon-color
   --ch5-button--icon-color: var(--theme-ch5-button--icon-color);
 
-  /// button icon font size
+  /// description: button icon font size
   /// type: string 
   /// values: large, solid, center 
   /// example: inherit 
   /// related-theme-variable: --theme-ch5-button--icon-size
   --ch5-button--icon-size: var(--theme-ch5-button--icon-size);
 
-  /// button padding
+  /// description: button padding
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 0.25rem 
   /// related-theme-variable: --theme-ch5-button--padding
   --ch5-button--padding: var(--theme-ch5-button--padding);
 
-  /// button content line height
+  /// description: button content line height
   /// type: number 
   /// values: 1, 10, 100 
   /// example: 1.2 
   /// related-theme-variable: --theme-ch5-button--content-line-height
   --ch5-button--content-line-height: var(--theme-ch5-button--content-line-height);
 
-  /// button border width
+  /// description: button border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-button--default-border-width
   --ch5-button--default-border-width: var(--theme-ch5-button--default-border-width);
 
-  /// primary border width
+  /// description: primary border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-button--primary-border-width
   --ch5-button--primary-border-width: var(--theme-ch5-button--primary-border-width);
 
-  /// secondary border width
+  /// description: secondary border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-button--secondary-border-width
   --ch5-button--secondary-border-width: var(--theme-ch5-button--secondary-border-width);
 
-  /// success border width
+  /// description: success border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-button--success-border-width
   --ch5-button--success-border-width: var(--theme-ch5-button--success-border-width);
 
-  /// info border width
+  /// description: info border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-button--info-border-width
   --ch5-button--info-border-width: var(--theme-ch5-button--info-border-width);
 
-  /// warning border width
+  /// description: warning border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-button--warning-border-width
   --ch5-button--warning-border-width: var(--theme-ch5-button--warning-border-width);
 
-  /// danger border width
+  /// description: danger border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-button--danger-border-width
   --ch5-button--danger-border-width: var(--theme-ch5-button--danger-border-width);
 
-  /// text border width
+  /// description: text border width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-button--text-border-width
   --ch5-button--text-border-width: var(--theme-ch5-button--text-border-width);
 
-  /// default border style
+  /// description: default border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid 
   /// related-theme-variable: --theme-ch5-button--default-border-style
   --ch5-button--default-border-style: var(--theme-ch5-button--default-border-style);
 
-  /// primary border style
+  /// description: primary border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid 
   /// related-theme-variable: --theme-ch5-button--primary-border-style
   --ch5-button--primary-border-style: var(--theme-ch5-button--primary-border-style);
 
-  /// secondary border style
+  /// description: secondary border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid 
   /// related-theme-variable: --theme-ch5-button--secondary-border-style
   --ch5-button--secondary-border-style: var(--theme-ch5-button--secondary-border-style);
 
-  /// success border style
+  /// description: success border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid 
   /// related-theme-variable: --theme-ch5-button--success-border-style
   --ch5-button--success-border-style: var(--theme-ch5-button--success-border-style);
 
-  /// info border style
+  /// description: info border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid 
   /// related-theme-variable: --theme-ch5-button--info-border-style
   --ch5-button--info-border-style: var(--theme-ch5-button--info-border-style);
 
-  /// warning border style
+  /// description: warning border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid 
   /// related-theme-variable: --theme-ch5-button--warning-border-style
   --ch5-button--warning-border-style: var(--theme-ch5-button--warning-border-style);
 
-  /// danger border style
+  /// description: danger border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid 
   /// related-theme-variable: --theme-ch5-button--danger-border-style
   --ch5-button--danger-border-style: var(--theme-ch5-button--danger-border-style);
 
-  /// text border style
+  /// description: text border style
   /// type: string 
   /// values: large, solid, center 
   /// example: solid 
   /// related-theme-variable: --theme-ch5-button--text-border-style
   --ch5-button--text-border-style: var(--theme-ch5-button--text-border-style);
 
-  /// button rounded-rectangle
+  /// description: button rounded-rectangle
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 5px 
   /// related-theme-variable: --theme-ch5-button--border-radius
   --ch5-button--border-radius: var(--theme-ch5-button--border-radius);
 
-  /// button circle
+  /// description: button circle
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 50% 
   /// related-theme-variable: --theme-ch5-button--circle-border-radius
   --ch5-button--circle-border-radius: var(--theme-ch5-button--circle-border-radius);
 
-  /// button oval
+  /// description: button oval
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 50% 
   /// related-theme-variable: --theme-ch5-button--oval-border-radius
   --ch5-button--oval-border-radius: var(--theme-ch5-button--oval-border-radius);
 
-  /// button tab
+  /// description: button tab
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px 10px 0 0 
   /// related-theme-variable: --theme-ch5-button--tab-border-radius
   --ch5-button--tab-border-radius: var(--theme-ch5-button--tab-border-radius);
 
-  /// sizes
+  /// description: sizes
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 42px 
   /// related-theme-variable: --theme-ch5-button--size
   --ch5-button--size: var(--theme-ch5-button--size);
 
-  /// x-small font size
+  /// description: x-small font size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 11px 
   /// related-theme-variable: --theme-ch5-button--x-small-font-size
   --ch5-button--x-small-font-size: var(--theme-ch5-button--x-small-font-size);
 
-  /// button x-small size
+  /// description: button x-small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 32px 
   /// related-theme-variable: --theme-ch5-button--x-small-size
   --ch5-button--x-small-size: var(--theme-ch5-button--x-small-size);
 
-  /// button small font size
+  /// description: button small font size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 13px 
   /// related-theme-variable: --theme-ch5-button--small-font-size
   --ch5-button--small-font-size: var(--theme-ch5-button--small-font-size);
 
-  /// button small size
+  /// description: button small size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 36px 
   /// related-theme-variable: --theme-ch5-button--small-size
   --ch5-button--small-size: var(--theme-ch5-button--small-size);
 
-  /// large font size
+  /// description: large font size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 16px 
   /// related-theme-variable: --theme-ch5-button--large-font-size
   --ch5-button--large-font-size: var(--theme-ch5-button--large-font-size);
 
-  /// button large size
+  /// description: button large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 52px 
   /// related-theme-variable: --theme-ch5-button--large-size
   --ch5-button--large-size: var(--theme-ch5-button--large-size);
 
-  /// x-large font size
+  /// description: x-large font size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 18px 
   /// related-theme-variable: --theme-ch5-button--x-large-font-size
   --ch5-button--x-large-font-size: var(--theme-ch5-button--x-large-font-size);
 
-  /// button x-large size
+  /// description: button x-large size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 72px 
   /// related-theme-variable: --theme-ch5-button--x-large-size
   --ch5-button--x-large-size: var(--theme-ch5-button--x-large-size);
 
-  /// checkbox checked icon
+  /// description: checkbox checked icon
   /// type: string 
   /// values: large, solid, center 
   /// example: "\f14a" 
   /// related-theme-variable: --theme-ch5-button--checkbox-checked-faicon
   --ch5-button--checkbox-checked-faicon: var(--theme-ch5-button--checkbox-checked-faicon);
 
-  /// checkbox unchecked icon
+  /// description: checkbox unchecked icon
   /// type: string 
   /// values: large, solid, center 
   /// example: "\f0c8" 
   /// related-theme-variable: --theme-ch5-button--checkbox-unchecked-faicon
   --ch5-button--checkbox-unchecked-faicon: var(--theme-ch5-button--checkbox-unchecked-faicon);
 
-  /// checkbox checked font weight
+  /// description: checkbox checked font weight
   /// type: number 
   /// values: 1, 10, 100 
   /// example: 400 
   /// related-theme-variable: --theme-ch5-button--checkbox-checked-font-weight
   --ch5-button--checkbox-checked-font-weight: var(--theme-ch5-button--checkbox-checked-font-weight);
 
-  /// checkbox unchecked font weight
+  /// description: checkbox unchecked font weight
   /// type: number 
   /// values: 1, 10, 100 
   /// example: 400 
   /// related-theme-variable: --theme-ch5-button--checkbox-unchecked-font-weight
   --ch5-button--checkbox-unchecked-font-weight: var(--theme-ch5-button--checkbox-unchecked-font-weight);
 
-  /// checkbox padding
+  /// description: checkbox padding
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 5px 
@@ -304,63 +304,63 @@ ch5-button {
 
   // danger type
 
-  /// The border color for default type of the button.
+  /// description: The border color for default type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0091ea
   /// related-theme-variable: --theme-ch5-button--default-border-color
   --ch5-button--default-border-color: var(--theme-ch5-button--default-border-color);
 
-  /// The background color for default type of the button.
+  /// description: The background color for default type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0099ff
   /// related-theme-variable: --theme-ch5-button--default-background-color
   --ch5-button--default-background-color: var(--theme-ch5-button--default-background-color);
 
-  /// The font color for default type of the button.
+  /// description: The font color for default type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
   /// related-theme-variable: --theme-ch5-button--default-font-color
   --ch5-button--default-font-color: var(--theme-ch5-button--default-font-color);
 
-  /// the border color for default type of the pressed button
+  /// description: the border color for default type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0091ea 
   /// related-theme-variable: --theme-ch5-button--default-pressed-border-color
   --ch5-button--default-pressed-border-color: var(--theme-ch5-button--default-pressed-border-color);
 
-  /// the background color for default type of the pressed button
+  /// description: the background color for default type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #008ae6
   /// related-theme-variable: --theme-ch5-button--default-pressed-background-color
   --ch5-button--default-pressed-background-color: var(--theme-ch5-button--default-pressed-background-color);
 
-  /// the font color for default type of the pressed button
+  /// description: the font color for default type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: f0fff0
   /// related-theme-variable: --theme-ch5-button--default-pressed-font-color
   --ch5-button--default-pressed-font-color: var(--theme-ch5-button--default-pressed-font-color);
 
-  /// the border color for default type of the selected button
+  /// description: the border color for default type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0091ea
   /// related-theme-variable: --theme-ch5-button--default-selected-border-color
   --ch5-button--default-selected-border-color: var(--theme-ch5-button--default-selected-border-color);
 
-  /// the background color for default type of the selected button
+  /// description: the background color for default type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #00073bf 
   /// related-theme-variable: --theme-ch5-button--default-selected-background-color
   --ch5-button--default-selected-background-color: var(--theme-ch5-button--default-selected-background-color);
 
-  /// the font color for default type of the selected button
+  /// description: the font color for default type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0 
@@ -371,63 +371,63 @@ ch5-button {
 
   // primary type
 
-  /// The border color for primary type of the button.
+  /// description: The border color for primary type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #bdbdbd 
   /// related-theme-variable: --theme-ch5-button--primary-border-color
   --ch5-button--primary-border-color: var(--theme-ch5-button--primary-border-color);
 
-  /// The background color for primary type of the button.
+  /// description: The background color for primary type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: fafafa 
   /// related-theme-variable: --theme-ch5-button--primary-background-color
   --ch5-button--primary-background-color: var(--theme-ch5-button--primary-background-color);
 
-  /// The font color for primary type of the button.
+  /// description: The font color for primary type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333 
   /// related-theme-variable: --theme-ch5-button--primary-font-color
   --ch5-button--primary-font-color: var(--theme-ch5-button--primary-font-color);
 
-  /// the border color for primary type of the pressed button
+  /// description: the border color for primary type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #bdbdbd 
   /// related-theme-variable: --theme-ch5-button--primary-pressed-border-color
   --ch5-button--primary-pressed-border-color: var(--theme-ch5-button--primary-pressed-border-color);
 
-  /// the background color for primary type of the pressed button
+  /// description: the background color for primary type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #bdbdbd
   /// related-theme-variable: --theme-ch5-button--primary-pressed-background-color
   --ch5-button--primary-pressed-background-color: var(--theme-ch5-button--primary-pressed-background-color);
 
-  /// the font color for primary type of the pressed button
+  /// description: the font color for primary type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333 
   /// related-theme-variable: --theme-ch5-button--primary-pressed-font-color
   --ch5-button--primary-pressed-font-color: var(--theme-ch5-button--primary-pressed-font-color);
 
-  /// the border color for primary type of the selected button
+  /// description: the border color for primary type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #bdbdbd 
   /// related-theme-variable: --theme-ch5-button--primary-selected-border-color
   --ch5-button--primary-selected-border-color: var(--theme-ch5-button--primary-selected-border-color);
 
-  /// the background color for primary type of the selected button
+  /// description: the background color for primary type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #e0e0e0
   /// related-theme-variable: --theme-ch5-button--primary-selected-background-color
   --ch5-button--primary-selected-background-color: var(--theme-ch5-button--primary-selected-background-color);
 
-  /// the font color for primary type of the selected button
+  /// description: the font color for primary type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333
@@ -438,63 +438,63 @@ ch5-button {
 
   // info type
 
-  /// The border color for info type of the button.
+  /// description: The border color for info type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #oobcd4 
   /// related-theme-variable: --theme-ch5-button--info-border-color
   --ch5-button--info-border-color: var(--theme-ch5-button--info-border-color);
 
-  /// The background color for info type of the button.
+  /// description: The background color for info type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: v#00bcd4 
   /// related-theme-variable: --theme-ch5-button--info-background-color
   --ch5-button--info-background-color: var(--theme-ch5-button--info-background-color);
 
-  /// The font color for info type of the button.
+  /// description: The font color for info type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0 
   /// related-theme-variable: --theme-ch5-button--info-font-color
   --ch5-button--info-font-color: var(--theme-ch5-button--info-font-color);
 
-  /// the border color for info type of the pressed button
+  /// description: the border color for info type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #00bcd4 
   /// related-theme-variable: --theme-ch5-button--info-pressed-border-color
   --ch5-button--info-pressed-border-color: var(--theme-ch5-button--info-pressed-border-color);
 
-  /// the background color for info type of the pressed button
+  /// description: the background color for info type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #0097a7 
   /// related-theme-variable: --theme-ch5-button--info-pressed-background-color
   --ch5-button--info-pressed-background-color: var(--theme-ch5-button--info-pressed-background-color);
 
-  /// the font color for info type of the pressed button
+  /// description: the font color for info type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0 
   /// related-theme-variable: --theme-ch5-button--info-pressed-font-color
   --ch5-button--info-pressed-font-color: var(--theme-ch5-button--info-pressed-font-color);
 
-  /// the border color for info type of the selected button
+  /// description: the border color for info type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #00bcd4 
   /// related-theme-variable: --theme-ch5-button--info-selected-border-color
   --ch5-button--info-selected-border-color: var(--theme-ch5-button--info-selected-border-color);
 
-  /// the background color for info type of the selected button
+  /// description: the background color for info type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #00838f 
   /// related-theme-variable: --theme-ch5-button--info-selected-background-color
   --ch5-button--info-selected-background-color: var(--theme-ch5-button--info-selected-background-color);
 
-  /// the font color for info type of the selected button
+  /// description: the font color for info type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0 
@@ -505,63 +505,63 @@ ch5-button {
 
   // danger type
 
-  /// The border color for danger type of the button.
+  /// description: The border color for danger type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #e53935
   /// related-theme-variable: --theme-ch5-button--danger-border-color
   --ch5-button--danger-border-color: var(--theme-ch5-button--danger-border-color);
 
-  /// The background color for danger type of the button.
+  /// description: The background color for danger type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f44336 
   /// related-theme-variable: --theme-ch5-button--danger-background-color
   --ch5-button--danger-background-color: var(--theme-ch5-button--danger-background-color);
 
-  /// The font color for danger type of the button.
+  /// description: The font color for danger type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
   /// related-theme-variable: --theme-ch5-button--danger-font-color
   --ch5-button--danger-font-color: var(--theme-ch5-button--danger-font-color);
 
-  /// the border color for danger type of the pressed button
+  /// description: the border color for danger type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #e53935
   /// related-theme-variable: --theme-ch5-button--danger-pressed-border-color
   --ch5-button--danger-pressed-border-color: var(--theme-ch5-button--danger-pressed-border-color);
 
-  /// the background color for danger type of the pressed button
+  /// description: the background color for danger type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #b71c1c
   /// related-theme-variable: --theme-ch5-button--danger-pressed-background-color
   --ch5-button--danger-pressed-background-color: var(--theme-ch5-button--danger-pressed-background-color);
 
-  /// the font color for danger type of the pressed button
+  /// description: the font color for danger type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff 
   /// related-theme-variable: --theme-ch5-button--danger-pressed-font-color
   --ch5-button--danger-pressed-font-color: var(--theme-ch5-button--danger-pressed-font-color);
 
-  /// the border color for danger type of the selected button
+  /// description: the border color for danger type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #e53935 
   /// related-theme-variable: --theme-ch5-button--danger-selected-border-color
   --ch5-button--danger-selected-border-color: var(--theme-ch5-button--danger-selected-border-color);
 
-  /// the background color for danger type of the selected button
+  /// description: the background color for danger type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #c62828 
   /// related-theme-variable: --theme-ch5-button--danger-selected-background-color
   --ch5-button--danger-selected-background-color: var(--theme-ch5-button--danger-selected-background-color);
 
-  /// the font color for danger type of the selected button
+  /// description: the font color for danger type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff 
@@ -572,63 +572,63 @@ ch5-button {
 
   // secondary type
 
-  /// The border color for secondary type of the button.
+  /// description: The border color for secondary type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e 
   /// related-theme-variable: --theme-ch5-button--secondary-border-color
   --ch5-button--secondary-border-color: var(--theme-ch5-button--secondary-border-color);
 
-  /// The background color for secondary type of the button.
+  /// description: The background color for secondary type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #bdbdbd 
   /// related-theme-variable: --theme-ch5-button--secondary-background-color
   --ch5-button--secondary-background-color: var(--theme-ch5-button--secondary-background-color);
 
-  /// The font color for secondary type of the button.
+  /// description: The font color for secondary type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333 
   /// related-theme-variable: --theme-ch5-button--secondary-font-color
   --ch5-button--secondary-font-color: var(--theme-ch5-button--secondary-font-color);
 
-  /// the border color for secondary type of the pressed button
+  /// description: the border color for secondary type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e 
   /// related-theme-variable: --theme-ch5-button--secondary-pressed-border-color
   --ch5-button--secondary-pressed-border-color: var(--theme-ch5-button--secondary-pressed-border-color);
 
-  /// the background color for secondary type of the pressed button
+  /// description: the background color for secondary type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
   /// related-theme-variable: --theme-ch5-button--secondary-pressed-background-color
   --ch5-button--secondary-pressed-background-color: var(--theme-ch5-button--secondary-pressed-background-color);
 
-  /// the font color for secondary type of the pressed button
+  /// description: the font color for secondary type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
   /// related-theme-variable: --theme-ch5-button--secondary-pressed-font-color
   --ch5-button--secondary-pressed-font-color: var(--theme-ch5-button--secondary-pressed-font-color);
 
-  /// the border color for secondary type of the selected button
+  /// description: the border color for secondary type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e
   /// related-theme-variable: --theme-ch5-button--secondary-selected-border-color
   --ch5-button--secondary-selected-border-color: var(--theme-ch5-button--secondary-selected-border-color);
 
-  /// the background color for secondary type of the selected button
+  /// description: the background color for secondary type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #757575 
   /// related-theme-variable: --theme-ch5-button--secondary-selected-background-color
   --ch5-button--secondary-selected-background-color: var(--theme-ch5-button--secondary-selected-background-color);
 
-  /// the font color for secondary type of the selected button
+  /// description: the font color for secondary type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffffff
@@ -639,63 +639,63 @@ ch5-button {
 
   // success type
 
-  /// The border color for success type of the button.
+  /// description: The border color for success type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #43a047
   /// related-theme-variable: --theme-ch5-button--success-border-color
   --ch5-button--success-border-color: var(--theme-ch5-button--success-border-color);
 
-  /// The background color for success type of the button.
+  /// description: The background color for success type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #4caf59 
   /// related-theme-variable: --theme-ch5-button--success-background-color
   --ch5-button--success-background-color: var(--theme-ch5-button--success-background-color);
 
-  /// The font color for success type of the button.
+  /// description: The font color for success type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0 
   /// related-theme-variable: --theme-ch5-button--success-font-color
   --ch5-button--success-font-color: var(--theme-ch5-button--success-font-color);
 
-  /// the border color for success type of the pressed button
+  /// description: the border color for success type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #43a047 
   /// related-theme-variable: --theme-ch5-button--success-pressed-border-color
   --ch5-button--success-pressed-border-color: var(--theme-ch5-button--success-pressed-border-color);
 
-  /// the background color for success type of the pressed button
+  /// description: the background color for success type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #388e3c 
   /// related-theme-variable: --theme-ch5-button--success-pressed-background-color
   --ch5-button--success-pressed-background-color: var(--theme-ch5-button--success-pressed-background-color);
 
-  /// the font color for success type of the pressed button
+  /// description: the font color for success type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0 
   /// related-theme-variable: --theme-ch5-button--success-pressed-font-color
   --ch5-button--success-pressed-font-color: var(--theme-ch5-button--success-pressed-font-color);
 
-  /// the border color for success type of the selected button
+  /// description: the border color for success type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #43a047 
   /// related-theme-variable: --theme-ch5-button--success-selected-border-color
   --ch5-button--success-selected-border-color: var(--theme-ch5-button--success-selected-border-color);
 
-  /// the background color for success type of the selected button
+  /// description: the background color for success type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #2e7d32 
   /// related-theme-variable: --theme-ch5-button--success-selected-background-color
   --ch5-button--success-selected-background-color: var(--theme-ch5-button--success-selected-background-color);
 
-  /// the font color for success type of the selected button
+  /// description: the font color for success type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0
@@ -706,63 +706,63 @@ ch5-button {
 
   // warning type
 
-  /// The border color for warning type of the button.
+  /// description: The border color for warning type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffb300 
   /// related-theme-variable: --theme-ch5-button--warning-border-color
   --ch5-button--warning-border-color: var(--theme-ch5-button--warning-border-color);
 
-  /// The background color for warning type of the button.
+  /// description: The background color for warning type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffc107 
   /// related-theme-variable: --theme-ch5-button--warning-background-color
   --ch5-button--warning-background-color: var(--theme-ch5-button--warning-background-color);
 
-  /// The font color for warning type of the button.
+  /// description: The font color for warning type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333
   /// related-theme-variable: --theme-ch5-button--warning-font-color
   --ch5-button--warning-font-color: var(--theme-ch5-button--warning-font-color);
 
-  /// the border color for warning type of the pressed button
+  /// description: the border color for warning type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffb300 
   /// related-theme-variable: --theme-ch5-button--warning-pressed-border-color
   --ch5-button--warning-pressed-border-color: var(--theme-ch5-button--warning-pressed-border-color);
 
-  /// the background color for warning type of the pressed button
+  /// description: the background color for warning type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ff6f00 
   /// related-theme-variable: --theme-ch5-button--warning-pressed-background-color
   --ch5-button--warning-pressed-background-color: var(--theme-ch5-button--warning-pressed-background-color);
 
-  /// the font color for warning type of the pressed button
+  /// description: the font color for warning type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #f0fff0 
   /// related-theme-variable: --theme-ch5-button--warning-pressed-font-color
   --ch5-button--warning-pressed-font-color: var(--theme-ch5-button--warning-pressed-font-color);
 
-  /// the border color for warning type of the selected button
+  /// description: the border color for warning type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ffb300 
   /// related-theme-variable: --theme-ch5-button--warning-selected-border-color
   --ch5-button--warning-selected-border-color: var(--theme-ch5-button--warning-selected-border-color);
 
-  /// the background color for warning type of the selected button
+  /// description: the background color for warning type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #ff8f00
   /// related-theme-variable: --theme-ch5-button--warning-selected-background-color
   --ch5-button--warning-selected-background-color: var(--theme-ch5-button--warning-selected-background-color);
 
-  /// the font color for warning type of the selected button
+  /// description: the font color for warning type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333 
@@ -773,63 +773,63 @@ ch5-button {
 
   // text type
 
-  /// The border color for text type of the button.
+  /// description: The border color for text type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #e0e0e0
   /// related-theme-variable: --theme-ch5-button--text-border-color
   --ch5-button--text-border-color: var(--theme-ch5-button--text-border-color);
 
-  /// The background color for text type of the button.
+  /// description: The background color for text type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #efefef
   /// related-theme-variable: --theme-ch5-button--text-background-color
   --ch5-button--text-background-color: var(--theme-ch5-button--text-background-color);
 
-  /// The font color for text type of the button.
+  /// description: The font color for text type of the button.
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333 
   /// related-theme-variable: --theme-ch5-button--text-font-color
   --ch5-button--text-font-color: var(--theme-ch5-button--text-font-color);
 
-  /// the border color for text type of the pressed button
+  /// description: the border color for text type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #e0e0e0 
   /// related-theme-variable: --theme-ch5-button--text-pressed-border-color
   --ch5-button--text-pressed-border-color: var(--theme-ch5-button--text-pressed-border-color);
 
-  /// the background color for text type of the pressed button
+  /// description: the background color for text type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #808080 
   /// related-theme-variable: --theme-ch5-button--text-pressed-background-color
   --ch5-button--text-pressed-background-color: var(--theme-ch5-button--text-pressed-background-color);
 
-  /// the font color for text type of the pressed button
+  /// description: the font color for text type of the pressed button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333 
   /// related-theme-variable: --theme-ch5-button--text-pressed-font-color
   --ch5-button--text-pressed-font-color: var(--theme-ch5-button--text-pressed-font-color);
 
-  /// the border color for text type of the selected button
+  /// description: the border color for text type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #e0e0e0 
   /// related-theme-variable: --theme-ch5-button--text-selected-border-color
   --ch5-button--text-selected-border-color: var(--theme-ch5-button--text-selected-border-color);
 
-  /// the background color for text type of the selected button
+  /// description: the background color for text type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #9e9e9e 
   /// related-theme-variable: --theme-ch5-button--text-selected-background-color
   --ch5-button--text-selected-background-color: var(--theme-ch5-button--text-selected-background-color);
 
-  /// the font color for text type of the selected button
+  /// description: the font color for text type of the selected button
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #333 

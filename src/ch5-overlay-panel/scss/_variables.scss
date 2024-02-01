@@ -11,168 +11,168 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-overlay-panel {
-  /// The default font size for the overlay panel
+  /// description: The default font size for the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 16px
   /// related-theme-variable: --theme-ch5-overlay-panel--font-size
   --ch5-overlay-panel--font-size: var(--theme-ch5-overlay-panel--font-size);
 
-  /// The default font style for the overlay panel
+  /// description: The default font style for the overlay panel
   /// type: string 
   /// values: large, solid, center 
   /// example: normal
   /// related-theme-variable: --theme-ch5-overlay-panel--font-style
   --ch5-overlay-panel--font-style: var(--theme-ch5-overlay-panel--font-style);
 
-  /// The default font weight for the overlay panel
+  /// description: The default font weight for the overlay panel
   /// type: string 
   /// values: large, solid, center 
   /// example: normal
   /// related-theme-variable: --theme-ch5-overlay-panel--font-weight
   --ch5-overlay-panel--font-weight: var(--theme-ch5-overlay-panel--font-weight);
 
-  /// The border width of the overlay panel
+  /// description: The border width of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-overlay-panel--border-width
   --ch5-overlay-panel--border-width: var(--theme-ch5-overlay-panel--border-width);
 
-  /// The border style of the overlay panel
+  /// description: The border style of the overlay panel
   /// type: string 
   /// values: large, solid, center 
   /// example: solid 
   /// related-theme-variable: --theme-ch5-overlay-panel--border-style
   --ch5-overlay-panel--border-style: var(--theme-ch5-overlay-panel--border-style);
 
-  /// The border radius of the overlay panel
+  /// description: The border radius of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 6px 
   /// related-theme-variable: --theme-ch5-overlay-panel--border-radius
   --ch5-overlay-panel--border-radius: var(--theme-ch5-overlay-panel--border-radius);
 
-  /// Set padding for the overlay panel
+  /// description: Set padding for the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 1.25em 
   /// related-theme-variable: --theme-ch5-overlay-panel--padding
   --ch5-overlay-panel--padding: var(--theme-ch5-overlay-panel--padding);
 
-  /// The margin of the icon at the top of the overlay panel
+  /// description: The margin of the icon at the top of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 0 5px 
   /// related-theme-variable: --theme-ch5-overlay-panel--close-icon-margin
   --ch5-overlay-panel--close-icon-margin: var(--theme-ch5-overlay-panel--close-icon-margin);
 
-  /// The padding of the icon at the top of the overlay panel
+  /// description: The padding of the icon at the top of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 0 5px 5px 
   /// related-theme-variable: --theme-ch5-overlay-panel--close-icon-padding
   --ch5-overlay-panel--close-icon-padding: var(--theme-ch5-overlay-panel--close-icon-padding);
 
-  /// The width of the icon at the top of the overlay panel
+  /// description: The width of the icon at the top of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 20px 
   /// related-theme-variable: --theme-ch5-overlay-panel--close-icon-width
   --ch5-overlay-panel--close-icon-width: var(--theme-ch5-overlay-panel--close-icon-width);
 
-  /// The font size of the icon at the top of the overlay panel
+  /// description: The font size of the icon at the top of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 24px
   /// related-theme-variable: --theme-ch5-overlay-panel--close-icon-font-size
   --ch5-overlay-panel--close-icon-font-size: var(--theme-ch5-overlay-panel--close-icon-font-size);
 
-  /// The font style of the icon at the top of the overlay panel
+  /// description: The font style of the icon at the top of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
   /// related-theme-variable: --theme-ch5-overlay-panel--close-icon-font-styl
   --ch5-overlay-panel--close-icon-font-style: var(--theme-ch5-overlay-panel--close-icon-font-style);
 
-  /// The font weight of the icon at the top of the overlay panel
+  /// description: The font weight of the icon at the top of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal 
   /// related-theme-variable: --theme-ch5-overlay-panel--close-icon-font-weight
   --ch5-overlay-panel--close-icon-font-weight: var(--theme-ch5-overlay-panel--close-icon-font-weight);
 
-  /// The padding for the content of the overlay panel
+  /// description: The padding for the content of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 20px 
   /// related-theme-variable: --theme-ch5-overlay-panel--contents-padding
   --ch5-overlay-panel--contents-padding: var(--theme-ch5-overlay-panel--contents-padding);
 
-  /// The font size for the content of the overlay panel
+  /// description: The font size for the content of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 18px 
   /// related-theme-variable: --theme-ch5-overlay-panel--contents-font-size
   --ch5-overlay-panel--contents-font-size: var(--theme-ch5-overlay-panel--contents-font-size);
 
-  /// The font style for the content of the overlay panel
+  /// description: The font style for the content of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
   /// related-theme-variable: --theme-ch5-overlay-panel--contents-font-style
   --ch5-overlay-panel--contents-font-style: var(--theme-ch5-overlay-panel--contents-font-style);
 
-  /// The font weight for the content of the overlay panel
+  /// description: The font weight for the content of the overlay panel
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: normal
   /// related-theme-variable: --theme-ch5-overlay-panel--contents-font-weight
   --ch5-overlay-panel--contents-font-weight: var(--theme-ch5-overlay-panel--contents-font-weight);
 
-  /// The font color for the content of the overlay panel
+  /// description: The font color for the content of the overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #fefefe 
   /// related-theme-variable: --theme-ch5-overlay-panel--contents-font-color
   --ch5-overlay-panel--contents-font-color: var(--theme-ch5-overlay-panel--contents-font-color);
 
-  /// The mask background color of overlay panel
+  /// description: The mask background color of overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgba(94, 94, 102, 0.3)
   /// related-theme-variable: --theme-ch5-overlay-panel--mask-background-color
   --ch5-overlay-panel--mask-background-color: var(--theme-ch5-overlay-panel--mask-background-color);
 
-  /// The color of the icon at the top of the overlay panel when it is hovered
+  /// description: The color of the icon at the top of the overlay panel when it is hovered
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgba(94, 94, 102, 0.3)
   /// related-theme-variable: --theme-ch5-overlay-panel--close-icon-color-hover
   --ch5-overlay-panel--close-icon-color-hover: var(--theme-ch5-overlay-panel--close-icon-color-hover);
 
-  /// The color of the icon at the top of the overlay panel
+  /// description: The color of the icon at the top of the overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgba(94, 94, 102, 0.3)
   /// related-theme-variable: --theme-ch5-overlay-panel--close-icon-color
   --ch5-overlay-panel--close-icon-color: var(--theme-ch5-overlay-panel--close-icon-color);
 
-  /// The background color of the icon at the top of the overlay panel
+  /// description: The background color of the icon at the top of the overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgba(94, 94, 102, 0.3)
   /// related-theme-variable: --theme-ch5-overlay-panel--close-icon-background-color
   --ch5-overlay-panel--close-icon-background-color: var(--theme-ch5-overlay-panel--close-icon-background-color);
 
-  /// The text color of the overlay panel
+  /// description: The text color of the overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgba(94, 94, 102, 0.3)
   /// related-theme-variable: --theme-ch5-overlay-panel--text-color
   --ch5-overlay-panel--text-color: var(--theme-ch5-overlay-panel--text-color);
 
-  /// The border color of the overlay panel
+  /// description: The border color of the overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgba(94, 94, 102, 0.3)
@@ -180,7 +180,7 @@ ch5-overlay-panel {
   --ch5-overlay-panel--border-color: var(--theme-ch5-overlay-panel--border-color);
 
 
-  /// The background color of the overlay panel
+  /// description: The background color of the overlay panel
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgba(94, 94, 102, 0.3)

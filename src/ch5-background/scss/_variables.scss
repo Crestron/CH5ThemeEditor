@@ -12,14 +12,14 @@
 
 ch5-background {
 
-  /// transition effect
+  /// description: transition effect
   /// type: string 
   /// values: large, solid, center 
   /// example: ease
   /// related-theme-variable: --theme-ch5-background--transition-timing-function
   --ch5-background--transition-timing-function: var(--theme-ch5-background--transition-timing-function);
 
-  /// transition duration
+  /// description: transition duration
   /// type: unit 
   /// values: 1s, 2s, 3s 
   /// example: 1s

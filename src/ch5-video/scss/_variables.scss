@@ -11,70 +11,70 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-video {
-  /// Default video background color
+  /// description: Default video background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #000 
   /// related-theme-variable: --theme-ch5-video--background-color
   --ch5-video--background-color: var(--theme-ch5-video--background-color);
 
-  /// video full screen icon background color
+  /// description: video full screen icon background color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: rgb(0, 0, 0, 0.2)
   /// related-theme-variable: --theme-ch5-video--full-screen-icon-background-color
   --ch5-video--full-screen-icon-background-color: var(--theme-ch5-video--full-screen-icon-background-color);
 
-  /// video full screen icon fill color
+  /// description: video full screen icon fill color
   /// type: color 
   /// values: rgb(35,35,35), #1a1a1a, red 
   /// example: #fff
   /// related-theme-variable: --theme-ch5-video--full-screen-icon-fill-color
   --ch5-video--full-screen-icon-fill-color: var(--theme-ch5-video--full-screen-icon-fill-color);
 
-  /// video full screen icon size
+  /// description: video full screen icon size
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 32px 
   /// related-theme-variable: --theme-ch5-video--full-screen-icon-size
   --ch5-video--full-screen-icon-size: var(--theme-ch5-video--full-screen-icon-size);
 
-  /// size xx-large for min width 651px
+  /// description: size xx-large for min width 651px
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 600px 
   /// related-theme-variable: --theme-ch5-video--size-xx-large-min-w-651
   --ch5-video--size-xx-large-min-w-651: var(--theme-ch5-video--size-xx-large-min-w-651);
 
-  /// size x-large for min width 651px
+  /// description: size x-large for min width 651px
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 560px 
   /// related-theme-variable: --theme-ch5-video--size-x-large-min-w-651
   --ch5-video--size-x-large-min-w-651: var(--theme-ch5-video--size-x-large-min-w-651);
 
-  /// size large for min width 651px
+  /// description: size large for min width 651px
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 520px 
   /// related-theme-variable: --theme-ch5-video--size-large-min-w-651
   --ch5-video--size-large-min-w-651: var(--theme-ch5-video--size-large-min-w-651);
 
-  /// size regular for min width 651px
+  /// description: size regular for min width 651px
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 480px 
   /// related-theme-variable: --theme-ch5-video--size-regular-min-w-651
   --ch5-video--size-regular-min-w-651: var(--theme-ch5-video--size-regular-min-w-651);
 
-  /// size small for min width 651px
+  /// description: size small for min width 651px
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 440px 
   /// related-theme-variable: --theme-ch5-video--size-small-min-w-651
   --ch5-video--size-small-min-w-651: var(--theme-ch5-video--size-small-min-w-651);
 
-  /// size x-small for min width 651px
+  /// description: size x-small for min width 651px
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 400px 
@@ -82,42 +82,42 @@ ch5-video {
   --ch5-video--size-x-small-min-w-651: var(--theme-ch5-video--size-x-small-min-w-651);
 
 
-  /// size xx-large for max width 650px
+  /// description: size xx-large for max width 650px
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 300px 
   /// related-theme-variable: --theme-ch5-video--size-xx-large-max-w-650
   --ch5-video--size-xx-large-max-w-650: var(--theme-ch5-video--size-xx-large-max-w-650);
 
-  /// size x-large max width 650px
+  /// description: size x-large max width 650px
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 280px 
   /// related-theme-variable: --theme-ch5-video--size-x-large-max-w-650
   --ch5-video--size-x-large-max-w-650: var(--theme-ch5-video--size-x-large-max-w-650);
 
-  /// size large max width 650px
+  /// description: size large max width 650px
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 260px 
   /// related-theme-variable: --theme-ch5-video--size-large-max-w-650
   --ch5-video--size-large-max-w-650: var(--theme-ch5-video--size-large-max-w-650);
 
-  /// size regular max width 650px
+  /// description: size regular max width 650px
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 240px 
   /// related-theme-variable: --theme-ch5-video--size-regular-max-w-650
   --ch5-video--size-regular-max-w-650: var(--theme-ch5-video--size-regular-max-w-650);
 
-  /// size small max width 650px
+  /// description: size small max width 650px
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 220px 
   /// related-theme-variable: --theme-ch5-video--size-small-max-w-650
   --ch5-video--size-small-max-w-650: var(--theme-ch5-video--size-small-max-w-650);
 
-  /// size x-small max width 650px
+  /// description: size x-small max width 650px
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 200px 
