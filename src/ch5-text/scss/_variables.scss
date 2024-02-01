@@ -15,34 +15,34 @@ ch5-text {
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 64px 
-  /// related-theme-variable: --theme-ch5-text-min-width
-  --ch5-text-min-width: var(--theme-ch5-text-min-width);
+  /// related-theme-variable: --theme-ch5-text--min-width
+  --ch5-text--min-width: var(--theme-ch5-text--min-width);
 
   /// description: text min height
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 44px 
-  /// related-theme-variable: --theme-ch5-text-min-height
-  --ch5-text-min-height: var(--theme-ch5-text-min-height);
+  /// related-theme-variable: --theme-ch5-text--min-height
+  --ch5-text--min-height: var(--theme-ch5-text--min-height);
 
   /// description: text width
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 150px 
-  /// related-theme-variable: --theme-ch5-text-width
-  --ch5-text-width: var(--theme-ch5-text-width);
+  /// related-theme-variable: --theme-ch5-text--width
+  --ch5-text--width: var(--theme-ch5-text--width);
 
   /// description: text height
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 48px 
-  /// related-theme-variable: --theme-ch5-text-height
-  --ch5-text-height: var(--theme-ch5-text-height);
+  /// related-theme-variable: --theme-ch5-text--height
+  --ch5-text--height: var(--theme-ch5-text--height);
 
   /// description: text padding
   /// type: unit 
   /// values: px, vw, vh, em, rem, % 
   /// example: 10px 
-  /// related-theme-variable: --theme-ch5-text-padding
-  --ch5-text-padding: var(--theme-ch5-text-padding);
+  /// related-theme-variable: --theme-ch5-text--padding
+  --ch5-text--padding: var(--theme-ch5-text--padding);
 }
