@@ -18,10 +18,12 @@ ch5-datetime {
 
 /// Class to set the container properties of ch5-datetime
 .ch5-datetime {
-  width: var(--ch5-datetime-width);
-  height: var(--ch5-datetime-height);
-  font-size: var(--ch5-datetime-font-size);
-  background-color: var(--ch5-datetime-background-color);
+  width: var(--ch5-datetime--width);
+  height: var(--ch5-datetime--height);
+  font-size: var(--ch5-datetime--font-size);
+  font-weight: var(--ch5-datetime--font-weight);
+  font-style: var(--ch5-datetime--font-style);
+  background-color: var(--ch5-datetime--background-color);
   white-space: nowrap;
   display: flex;
   align-items: center;

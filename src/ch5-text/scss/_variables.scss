@@ -11,33 +11,38 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-text {
-  /// text min width  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Minimum width of text component
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 64px 
-  /// related-theme-variable: --theme-ch5-text-min-width
-  --ch5-text-min-width: var(--theme-ch5-text-min-width);
+  /// related-theme-variable: --theme-ch5-text--min-width
+  --ch5-text--min-width: var(--theme-ch5-text--min-width);
 
-  /// text min height  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Minimum height of text component
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 44px 
-  /// related-theme-variable: --theme-ch5-text-min-height
-  --ch5-text-min-height: var(--theme-ch5-text-min-height);
+  /// related-theme-variable: --theme-ch5-text--min-height
+  --ch5-text--min-height: var(--theme-ch5-text--min-height);
 
-  /// text width  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Width of text component
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 150px 
-  /// related-theme-variable: --theme-ch5-text-width
-  --ch5-text-width: var(--theme-ch5-text-width);
+  /// related-theme-variable: --theme-ch5-text--width
+  --ch5-text--width: var(--theme-ch5-text--width);
 
-  /// text height  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Height of text component
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 48px 
-  /// related-theme-variable: --theme-ch5-text-height
-  --ch5-text-height: var(--theme-ch5-text-height);
+  /// related-theme-variable: --theme-ch5-text--height
+  --ch5-text--height: var(--theme-ch5-text--height);
 
-  /// text padding  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Padding for the text component
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 10px 
-  /// related-theme-variable: --theme-ch5-text-padding
-  --ch5-text-padding: var(--theme-ch5-text-padding);
+  /// related-theme-variable: --theme-ch5-text--padding
+  --ch5-text--padding: var(--theme-ch5-text--padding);
 }

@@ -20,6 +20,7 @@ const globalVariables = getVariables(globalVars + sampleTheme, "global");
 
 const unusedVars = [];
 const undefinedVars = [];
+const globalVariablesInComponent = []
 
 function findMissingThemeVariables() {
 	const themesVariables = [];
@@ -113,18 +114,36 @@ function getVariables(data, sectionName) {
 				start = j;
 			}
 
+			let description = '';
+			let type = '';
+			let valueMetadata = '';
+			let possibleValues = '';
+			let example = '';
+
 			const variableMetaData = lines.slice(start, i).join('\n').split('///').map(str => str.trim()).filter(str => str.length !== 0);
 
 			if (variableMetaData.length < 4) {
-				console.log(name + 'invalid metadata')
-				process.exit(1);
-			}
+				// console.log(name + 'invalid metadata')
+				// process.exit(1);
 
-			const description = variableMetaData[0];
-			const type = variableMetaData[1].replace('type:', '').trim();
-			const valueMetadata = variableMetaData[2].replace('values:', '').trim()
-			const possibleValues = type === 'color' ? valueMetadata : valueMetadata.split(',').map((str) => str.trim()).filter((str) => str.trim())
-			const example = variableMetaData[3].replace('example:', '').trim()
+				if (sectionName === 'theme') {
+					const componentName = name.replace('--theme-', '').split('--')[0]
+					const componentVariables = outputJSON['ch5Components'].find(t => t.name === componentName)['variables']
+					const variableObj = componentVariables.find(t => t.name === name.replace('--theme', '-'));
+					if (variableObj) {
+						description = variableObj.description + ' at theme level';
+						type = variableObj.type
+						example = variableObj.example
+						possibleValues = variableObj.possibleValues
+					}
+				}
+			} else {
+				description = variableMetaData[0].replace("description:", '').trim();
+				type = variableMetaData[1].replace('type:', '').trim();
+				valueMetadata = variableMetaData[2].replace('values:', '').trim()
+				possibleValues = type === 'color' ? ["rgb(35,35,35)", "#1a1a1a", "red"] : valueMetadata.split(',').map((str) => str.trim()).filter((str) => str.trim())
+				example = variableMetaData[3].replace('example:', '').trim()
+			}
 
 			let value = splitLine[1].trim().replaceAll(';', '');
 
@@ -181,7 +200,7 @@ function getVariables(data, sectionName) {
 		}
 	});
 
-	return variables.sort((a, b) => a.name > b.name ? 1 : -1);
+	return variables;
 }
 
 function getComponentScss(component) {
@@ -191,6 +210,26 @@ function getComponentScss(component) {
 	const componentScss = flatten(componentEntry, path.resolve(path.join(sourcePath, component)));
 	const scss = globalVars + globalMixins + componentScss;
 	return removeComments(scss);
+}
+function getComponentScssWithoutVariables(component) {
+	const res = [];
+	const sourcePath = CONFIG.THEME_EDITOR_SOURCE_FILES_PATH
+	const entryFile = sourcePath + component + '/' + component + '.scss';
+	const componentEntry = fs.readFileSync(entryFile, 'utf-8')
+		.replace('@import "./scss/variables";', '')
+		.replace("@import './scss/variables';", '')
+		.replace('@import "scss/variables";', '')
+		.replace("@import 'scss/variables';", '')
+		.replace('@import "./scss/variables.scss";', '');
+	const componentScss = flatten(componentEntry, path.resolve(path.join(sourcePath, component)));
+
+	const variables = componentScss.split('var(--theme-');
+	if (variables.length !== 1) {
+		for (let i = 1; i < variables.length; i++) {
+			res.push('--theme-' + variables[i].slice(0, variables[i].indexOf(')')))
+		}
+	}
+	return res;
 }
 
 function getComponentCss(data) {
@@ -262,6 +301,8 @@ function getUndefinedVariables(data, variables) {
 function validateVariables(component, variables) {
 	const componentScss = getComponentScss(component);
 
+	const componentThemeVariables = getComponentScssWithoutVariables(component)
+
 	const css = getComponentCss(componentScss);
 
 	const unusedVariables = getUnusedVariables(css, variables);
@@ -279,6 +320,13 @@ function validateVariables(component, variables) {
 		undefinedVars.push({
 			name: component,
 			variables: undefinedVariables
+		})
+	}
+
+	if (componentThemeVariables.length !== 0) {
+		globalVariablesInComponent.push({
+			name: component,
+			variables: componentThemeVariables
 		})
 	}
 }
@@ -303,6 +351,108 @@ function getSectionNames(variablesList) {
 		});
 	}
 	return response;
+}
+
+function checkComponentVariable() {
+	const components = outputJSON['ch5Components'];
+	const themes = outputJSON['ch5Themes'];
+	const missingVariables = [];
+	const relatedThemeDescription = [];
+	const variableThemeVariables = [];
+
+	for (const component of components) {
+		const componentVariables = component['variables'];
+
+		for (const theme of themes) {
+			const themeVariables = theme['variables'];
+			const componentThemeVariables = themeVariables.find(t => t.name === component.name);
+
+			if (componentThemeVariables) {
+				componentVariables.forEach(element => {
+					const variable = componentThemeVariables['variables'].find(t => t.name === element.name.replace('-', '--theme'))
+					if (variable === undefined) {
+						missingVariables.push(`${component.name} ${element.name} missing at ${theme.themeName} theme`)
+					}
+				});
+				componentThemeVariables['variables'].forEach(element => {
+					const variable = componentVariables.find(t => t.name === element.name.replace('--theme', '-'))
+					if (variable === undefined) {
+						missingVariables.push(`${component.name} ${element.name} missing at component`)
+					}
+				});
+			}
+		}
+
+	}
+
+	for (const component of components) {
+		const variables = component['variables'];
+
+		for (const variable of variables) {
+			if (variable.relatedThemeVariable.startsWith('--theme') === false) {
+				relatedThemeDescription.push(`validate ${variable.name} relatedThemeVariable variable`);
+			}
+		}
+
+	}
+
+	for (const component of components) {
+		const variables = component['variables'];
+
+		for (const variable of variables) {
+			if (variable.value.startsWith('var(--theme-') === false) {
+				variableThemeVariables.push(`validate ${variable.name} theme variable`);
+			}
+		}
+
+	}
+
+	if (missingVariables.length !== 0) {
+		missingVariables.forEach((description) => {
+			console.log(`\x1b[31m ${description} \x1b[0m`);
+		});
+		process.exit(1);
+	}
+	if (relatedThemeDescription.length !== 0) {
+		relatedThemeDescription.forEach((description) => {
+			console.log(`\x1b[31m ${description} \x1b[0m`);
+		});
+		process.exit(1);
+	}
+	if (variableThemeVariables.length !== 0) {
+		variableThemeVariables.forEach((description) => {
+			console.log(`\x1b[31m ${description} \x1b[0m`);
+		});
+		process.exit(1);
+	}
+}
+
+function sortOutputJSON() {
+
+	// Sort components
+	outputJSON['ch5Components']
+		.sort((a, b) => a.name > b.name ? 1 : -1)
+
+	// Sort component variables
+	outputJSON['ch5Components']
+		.forEach(component => component['variables']
+			.sort((a, b) => a.name > b.name ? 1 : -1))
+
+	// sort theme 
+	outputJSON['ch5Themes']
+		.sort((a, b) => a.themeName > b.themeName ? 1 : -1)
+
+	// sort theme components
+	outputJSON['ch5Themes']
+		.forEach(theme => theme['variables']
+			.sort((a, b) => a.name > b.name ? 1 : -1))
+
+	// sort theme components variables
+	outputJSON['ch5Themes']
+		.forEach(theme => theme['variables']
+			.forEach(componentVars => componentVars['variables']
+				.sort((a, b) => a.name > b.name ? 1 : -1)))
+
 }
 
 async function initialize() {
@@ -343,10 +493,10 @@ async function initialize() {
 	// Validate Variables
 	unusedVars.forEach(({ name, variables }) => {
 		variables.forEach((variable) => {
-			const cornerCase1 = name === 'ch5-triggerview' && variable === '--ch5-triggerview-gap';
-			const cornerCase2 = name === 'ch5-triggerview' && variable === '--ch5-triggerview-slide-max-height';
-			const cornerCase3 = name === 'ch5-triggerview' && variable === '--ch5-triggerview-slide-min-height';
-			const cornerCase4 = name === 'ch5-triggerview' && variable === '--ch5-triggerview-transition-duration';
+			const cornerCase1 = name === 'ch5-triggerview' && variable === '--ch5-triggerview--gap';
+			const cornerCase2 = name === 'ch5-triggerview' && variable === '--ch5-triggerview--slide-max-height';
+			const cornerCase3 = name === 'ch5-triggerview' && variable === '--ch5-triggerview--slide-min-height';
+			const cornerCase4 = name === 'ch5-triggerview' && variable === '--ch5-triggerview--transition-duration';
 			if (cornerCase1 || cornerCase2 || cornerCase3 || cornerCase4) {
 				// Corner Case
 			} else {
@@ -361,14 +511,20 @@ async function initialize() {
 		variables.forEach((variable) => {
 			const cornerCase1 = name === 'ch5-slider' && variable === '--temp-var';
 			const cornerCase2 = name === 'ch5-button' && variable === '--fa-style-family-classic';
-			if (cornerCase1 || cornerCase2) {
+			const cornerCase3 = name === 'ch5-slider' && variable === '--ch5-slider--size-x-small-handle-height-oval';
+			const cornerCase4 = name === 'ch5-slider' && variable === '--ch5-slider--size-small-handle-height-oval';
+			const cornerCase5 = name === 'ch5-slider' && variable === '--ch5-slider--size-regular-handle-height-oval';
+			const cornerCase6 = name === 'ch5-slider' && variable === '--ch5-slider--size-large-handle-height-oval';
+			const cornerCase7 = name === 'ch5-slider' && variable === '--ch5-slider--size-x-large-handle-height-oval';
+			if (cornerCase1 || cornerCase2 || cornerCase3 || cornerCase4 || cornerCase5 || cornerCase6 || cornerCase7) {
 				// Corner case
 			} else {
 				undefinedVariables.push({ name, variable });
 			}
 		});
 	});
-	if (unusedVariables.length !== 0 || undefinedVariables.length !== 0) {
+
+	if (unusedVariables.length !== 0 || undefinedVariables.length !== 0 || globalVariablesInComponent.length !== 0) {
 		if (unusedVariables.length !== 0) {
 			console.log(`\x1b[31m unused variables: \x1b[0m`);
 			for (let i = 0; i < unusedVariables.length; i++) {
@@ -382,13 +538,24 @@ async function initialize() {
 				console.log(`\x1b[31m ${undefinedVariables[i].name}: ${undefinedVariables[i].variable} \x1b[0m`);
 			}
 		}
+		if (globalVariablesInComponent.length !== 0) {
+			console.log(`\x1b[31m Theme variables in Component: \x1b[0m`);
+			for (let i = 0; i < globalVariablesInComponent.length; i++) {
+				for (let j = 0; j < globalVariablesInComponent[i].variables.length; j++) {
+					console.log(`\x1b[31m ${globalVariablesInComponent[i].name}: ${globalVariablesInComponent[i].variables[j]} \x1b[0m`);
+				}
+			}
+		}
 		process.exit(1);
 	}
+
+	checkComponentVariable();
+	sortOutputJSON();
 
 	const outputPath = process.argv[3] !== undefined ? process.argv[3] : CONFIG.DEFAULT_OUTPUT_PATH;
 	fs.writeFileSync(outputPath, JSON.stringify(outputJSON, null, 4));
 	console.log(`Schema generated in ${((Date.now() - start) / 1000).toFixed(2)} seconds`)
 }
 
-findMissingThemeVariables()
+findMissingThemeVariables();
 initialize();

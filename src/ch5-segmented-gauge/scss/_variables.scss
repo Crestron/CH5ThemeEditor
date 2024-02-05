@@ -11,81 +11,73 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-segmented-gauge {
-  /// Led style gauge style height  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Height for each gauge 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 20px 
-  /// related-theme-variable: --theme-ch5-segmented-gauge-led-style-height
-  --ch5-segmented-gauge-led-style-height: var(--theme-ch5-segmented-gauge-led-style-height);
+  /// related-theme-variable: --theme-ch5-segmented-gauge--led-style-height
+  --ch5-segmented-gauge--led-style-height: var(--theme-ch5-segmented-gauge--led-style-height);
 
-  /// Led style gauge style width  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Width for each gauge
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 20px 
-  /// related-theme-variable: --theme-ch5-segmented-gauge-led-style-width
-  --ch5-segmented-gauge-led-style-width: var(--theme-ch5-segmented-gauge-led-style-width);
+  /// related-theme-variable: --theme-ch5-segmented-gauge--led-style-width
+  --ch5-segmented-gauge--led-style-width: var(--theme-ch5-segmented-gauge--led-style-width);
 
-  /// Margin for segmented gauge children  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 2px 
-  /// related-theme-variable: --theme-ch5-segmented-gauge-segment-margin
-  --ch5-segmented-gauge-segment-margin: var(--theme-ch5-segmented-gauge-segment-margin);
-
-  /// Led style border radius  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Border radius for the segmented gauge
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 50% 
-  /// related-theme-variable: --theme-ch5-segmented-gauge-led-style-border-radius
-  --ch5-segmented-gauge-led-style-border-radius: var(--theme-ch5-segmented-gauge-led-style-border-radius);
+  /// related-theme-variable: --theme-ch5-segmented-gauge--led-style-border-radius
+  --ch5-segmented-gauge--led-style-border-radius: var(--theme-ch5-segmented-gauge--led-style-border-radius);
 
-  /// State graphic green  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: Background color for state graphic representation of green
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #22c55e 
-  /// related-theme-variable: --theme-ch5-segmented-gauge-state-graphic-green
-  --ch5-segmented-gauge-state-graphic-green: var(--theme-ch5-segmented-gauge-state-graphic-green);
+  /// related-theme-variable: --theme-ch5-segmented-gauge--state-graphic-green
+  --ch5-segmented-gauge--state-graphic-green: var(--theme-ch5-segmented-gauge--state-graphic-green);
 
-  /// State graphic inactive  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: Background color for state graphic inactive
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #909090 
-  /// related-theme-variable: --theme-ch5-segmented-gauge-state-graphic-inactive
-  --ch5-segmented-gauge-state-graphic-inactive: var(--theme-ch5-segmented-gauge-state-graphic-inactive);
+  /// related-theme-variable: --theme-ch5-segmented-gauge--state-graphic-inactive
+  --ch5-segmented-gauge--state-graphic-inactive: var(--theme-ch5-segmented-gauge--state-graphic-inactive);
 
-  /// State graphic yellow  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: Background color for state graphic representation of yellow
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #eab308 
-  /// related-theme-variable: --theme-ch5-segmented-gauge-state-graphic-yellow
-  --ch5-segmented-gauge-state-graphic-yellow: var(--theme-ch5-segmented-gauge-state-graphic-yellow);
+  /// related-theme-variable: --theme-ch5-segmented-gauge--state-graphic-yellow
+  --ch5-segmented-gauge--state-graphic-yellow: var(--theme-ch5-segmented-gauge--state-graphic-yellow);
 
-  /// State graphic green  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: Background color for state graphic representation of red
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ef4444 
-  /// related-theme-variable: --theme-ch5-segmented-gauge-state-graphic-red
-  --ch5-segmented-gauge-state-graphic-red: var(--theme-ch5-segmented-gauge-state-graphic-red);
+  /// related-theme-variable: --theme-ch5-segmented-gauge--state-graphic-red
+  --ch5-segmented-gauge--state-graphic-red: var(--theme-ch5-segmented-gauge--state-graphic-red);
 
-  /// State graphic green  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: Background color for state graphic representation of blue
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #3b82f6 
-  /// related-theme-variable: --theme-ch5-segmented-gauge-state-graphic-blue
-  --ch5-segmented-gauge-state-graphic-blue: var(--theme-ch5-segmented-gauge-state-graphic-blue);
+  /// related-theme-variable: --theme-ch5-segmented-gauge--state-graphic-blue
+  --ch5-segmented-gauge--state-graphic-blue: var(--theme-ch5-segmented-gauge--state-graphic-blue);
 
-  /// State graphic green  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: Background color for state graphic representation of orange
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f97316 
-  /// related-theme-variable: --theme-ch5-segmented-gauge-state-graphic-orange
-  --ch5-segmented-gauge-state-graphic-orange: var(--theme-ch5-segmented-gauge-state-graphic-orange);
+  /// related-theme-variable: --theme-ch5-segmented-gauge--state-graphic-orange
+  --ch5-segmented-gauge--state-graphic-orange: var(--theme-ch5-segmented-gauge--state-graphic-orange);
 
-  /// State graphic green  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: Background color for state graphic representation of white
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f8fafc 
-  /// related-theme-variable: --theme-ch5-segmented-gauge-state-graphic-white
-  --ch5-segmented-gauge-state-graphic-white: var(--theme-ch5-segmented-gauge-state-graphic-white);
-
-  /// Segmented gauge hidden segment  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 4px 
-  /// related-theme-variable: --theme-ch5-segmented-gauge-hidden-segment
-  --ch5-segmented-gauge-hidden-segment: var(--theme-ch5-segmented-gauge-hidden-segment);
-
-  /// Segmented gauge hidden margin  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0px 
-  /// related-theme-variable: --theme-ch5-segmented-gauge-hidden-margin
-  --ch5-segmented-gauge-hidden-margin: var(--theme-ch5-segmented-gauge-hidden-margin);
+  /// related-theme-variable: --theme-ch5-segmented-gauge--state-graphic-white
+  --ch5-segmented-gauge--state-graphic-white: var(--theme-ch5-segmented-gauge--state-graphic-white);
 }

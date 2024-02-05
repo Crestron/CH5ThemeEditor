@@ -23,7 +23,7 @@ ch5-button-list {
   user-select: none;
   display: grid;
   height: 100%;
-  padding: var(--ch5-button-list-padding);
+  padding: var(--ch5-button-list--padding);
   scrollbar-width: none; // needed to hide the firefox scrollbar
 
   &.active {
@@ -35,28 +35,28 @@ ch5-button-list {
     width: 0px;
   }
 
-  & ~ .scrollbar-container {
+  &~.scrollbar-container {
     position: absolute;
-    background-color: var(--theme-others-scrollbar-track-color);
-    border-radius: var(--ch5-button-list-scrollbar-border-radius);
+    background-color: var(--ch5-button-list--scrollbar-track-color);
+    border-radius: var(--ch5-button-list--scrollbar-border-radius);
 
     .scrollbar {
       position: absolute;
       will-change: width, transform;
       position: absolute;
-      border-radius: var(--ch5-button-list-scrollbar-border-radius);
-      background: var(--ch5-button-list-scrollbar-thumb-color);
+      border-radius: var(--ch5-button-list--scrollbar-border-radius);
+      background: var(--ch5-button-list--scrollbar-thumb-color);
     }
   }
 
   &.ch5-button-list--scrollbar-true {
-    & ~ .scrollbar-container {
+    &~.scrollbar-container {
       display: block;
     }
   }
 
   &.ch5-button-list--scrollbar-false {
-    & ~ .scrollbar-container {
+    &~.scrollbar-container {
       display: none;
     }
   }
@@ -82,16 +82,16 @@ ch5-button-list {
 }
 
 .ch5-button-list.ch5-button-list--disabled {
-  & ~ .scrollbar-container {
+  &~.scrollbar-container {
     @include ch5-component-disabled();
   }
 }
 
 /// Applied for the container of ch5-button
 .ch5-button-list--button-container {
-  width: var(--ch5-button-list-button-container-width);
-  height: var(--ch5-button-list-button-container-height);
-  padding: var(--ch5-button-list-button-container-padding);
-  min-width: var(--ch5-button-list-button-container-width);
-  min-height: var(--ch5-button-list-button-container-height);
+  width: var(--ch5-button-list--button-container-width);
+  height: var(--ch5-button-list--button-container-height);
+  padding: var(--ch5-button-list--button-container-padding);
+  min-width: var(--ch5-button-list--button-container-width);
+  min-height: var(--ch5-button-list--button-container-height);
 }

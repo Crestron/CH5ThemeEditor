@@ -11,75 +11,87 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-wifi-signal-level-gauge {
-  /// Size Height small  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Size Height small
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 24px 
-  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge-small-height
-  --ch5-wifi-signal-level-gauge-small-height: var(--theme-ch5-wifi-signal-level-gauge-small-height);
+  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--small-height
+  --ch5-wifi-signal-level-gauge--small-height: var(--theme-ch5-wifi-signal-level-gauge--small-height);
 
-  /// Size Width small  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Size Width small
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 36px 
-  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge-small-width
-  --ch5-wifi-signal-level-gauge-small-width: var(--theme-ch5-wifi-signal-level-gauge-small-width);
+  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--small-width
+  --ch5-wifi-signal-level-gauge--small-width: var(--theme-ch5-wifi-signal-level-gauge--small-width);
 
-  /// Size Height regular  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Size Height regular
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 36px 
-  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge-regular-height
-  --ch5-wifi-signal-level-gauge-regular-height: var(--theme-ch5-wifi-signal-level-gauge-regular-height);
+  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--regular-height
+  --ch5-wifi-signal-level-gauge--regular-height: var(--theme-ch5-wifi-signal-level-gauge--regular-height);
 
-  /// Size Width regular  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Size Width regular
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 54px 
-  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge-regular-width
-  --ch5-wifi-signal-level-gauge-regular-width: var(--theme-ch5-wifi-signal-level-gauge-regular-width);
+  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--regular-width
+  --ch5-wifi-signal-level-gauge--regular-width: var(--theme-ch5-wifi-signal-level-gauge--regular-width);
 
-  /// Size Height large  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Size Height large
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 60px 
-  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge-large-height
-  --ch5-wifi-signal-level-gauge-large-height: var(--theme-ch5-wifi-signal-level-gauge-large-height);
+  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--large-height
+  --ch5-wifi-signal-level-gauge--large-height: var(--theme-ch5-wifi-signal-level-gauge--large-height);
 
-  /// Size Width large  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Size Width large
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 90px 
-  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge-large-width
-  --ch5-wifi-signal-level-gauge-large-width: var(--theme-ch5-wifi-signal-level-gauge-large-width);
+  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--large-width
+  --ch5-wifi-signal-level-gauge--large-width: var(--theme-ch5-wifi-signal-level-gauge--large-width);
 
-  /// Size Height x-large  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Size Height x-large
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 96px 
-  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge-x-large-height
-  --ch5-wifi-signal-level-gauge-x-large-height: var(--theme-ch5-wifi-signal-level-gauge-x-large-height);
+  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--x-large-height
+  --ch5-wifi-signal-level-gauge--x-large-height: var(--theme-ch5-wifi-signal-level-gauge--x-large-height);
 
-  /// Size Width x-large  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Size Width x-large
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 144px 
-  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge-x-large-width
-  --ch5-wifi-signal-level-gauge-x-large-width: var(--theme-ch5-wifi-signal-level-gauge-x-large-width);
+  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--x-large-width
+  --ch5-wifi-signal-level-gauge--x-large-width: var(--theme-ch5-wifi-signal-level-gauge--x-large-width);
 
-  /// gaugeStyle accents  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: gaugeStyle accents
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #87ceeb 
-  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge-style-accents
-  --ch5-wifi-signal-level-gauge-style-accents: var(--theme-ch5-wifi-signal-level-gauge-style-accents);
+  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--style-accents
+  --ch5-wifi-signal-level-gauge--style-accents: var(--theme-ch5-wifi-signal-level-gauge--style-accents);
 
-  /// gaugeStyle light  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: gaugeStyle light
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff 
-  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge-style-light
-  --ch5-wifi-signal-level-gauge-style-light: var(--theme-ch5-wifi-signal-level-gauge-style-light);
+  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--style-light
+  --ch5-wifi-signal-level-gauge--style-light: var(--theme-ch5-wifi-signal-level-gauge--style-light);
 
-  /// gaugeStyle dark  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: gaugeStyle dark
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #000000 
-  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge-style-dark
-  --ch5-wifi-signal-level-gauge-style-dark: var(--theme-ch5-wifi-signal-level-gauge-style-dark);
+  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--style-dark
+  --ch5-wifi-signal-level-gauge--style-dark: var(--theme-ch5-wifi-signal-level-gauge--style-dark);
 
-  /// border color  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: border color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #939393 
-  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge-border-color
-  --ch5-wifi-signal-level-gauge-border-color: var(--theme-ch5-wifi-signal-level-gauge-border-color);
+  /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--border-color
+  --ch5-wifi-signal-level-gauge--border-color: var(--theme-ch5-wifi-signal-level-gauge--border-color);
 }

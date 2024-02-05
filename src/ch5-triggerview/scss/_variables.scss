@@ -11,60 +11,60 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-triggerview {
-  /// default font size value for the triggerview
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Font size for the triggerview
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 16px 
-  /// related-theme-variable: --theme-fonts-font-size
-  --ch5-triggerview-font-size: var(--theme-fonts-font-size);
+  /// related-theme-variable: --theme-ch5-triggerview--font-size
+  --ch5-triggerview--font-size: var(--theme-ch5-triggerview--font-size);
 
-  /// default font style for the triggerview
-  /// type: string 
-  /// values: large, solid, center 
+  /// description: Font style for the triggerview
+  /// type: list
+  /// values: normal, italic
   /// example: normal 
-  /// related-theme-variable: --theme-fonts-font-style
-  --ch5-triggerview-font-style: var(--theme-fonts-font-style);
+  /// related-theme-variable: --theme-ch5-triggerview--font-style
+  --ch5-triggerview--font-style: var(--theme-ch5-triggerview--font-style);
 
-  /// default font weight for the triggerview
-  /// type: string 
-  /// values: large, solid, center 
+  /// description: Font weight for the triggerview
+  /// type: list
+  /// values: normal, bold
   /// example: normal
-  /// related-theme-variable: --theme-fonts-font-weight
-  --ch5-triggerview-font-weight: var(--theme-fonts-font-weight);
+  /// related-theme-variable: --theme-ch5-triggerview--font-weight
+  --ch5-triggerview--font-weight: var(--theme-ch5-triggerview--font-weight);
 
-  /// triggerview minimum height in px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Minimum height for triggerview
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 0px 
   /// related-theme-variable: --theme-ch5-triggerview-slide-min-height
-  --ch5-triggerview-slide-min-height: var(--theme-ch5-triggerview-slide-min-height);
+  --ch5-triggerview--slide-min-height: var(--theme-ch5-triggerview--slide-min-height);
 
-  /// triggerview maximum height in px
-  /// type: string 
-  /// values: large, solid, center 
+  /// description: Maximum height for triggerview
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: none 
   /// related-theme-variable: --theme-ch5-triggerview-slide-max-height
-  --ch5-triggerview-slide-max-height: var(--theme-ch5-triggerview-slide-max-height);
+  --ch5-triggerview--slide-max-height: var(--theme-ch5-triggerview--slide-max-height);
 
-  /// duration of changing from one view to another.
-  /// type: string 
-  /// values: large, solid, center 
+  /// description: Duration of changing from one view to another.
+  /// type: unit 
+  /// values: s
   /// example: 0.6s 
   /// related-theme-variable: --theme-ch5-triggerview-transition-duration
-  --ch5-triggerview-transition-duration: var(--theme-ch5-triggerview-transition-duration);
+  --ch5-triggerview--transition-duration: var(--theme-ch5-triggerview--transition-duration);
 
-  /// transition effect(describe animation on content of the child view)
-  /// type: string 
-  /// values: large, solid, center 
+  /// description: Transition effect(describe animation on content of the child view)
+  /// type: list 
+  /// values: ease-in, ease-out, linear, ease, ease-in-out 
   /// example: ease-out 
   /// related-theme-variable: --theme-ch5-triggerview-transition-timing-function
-  --ch5-triggerview-transition-timing-function: var(--theme-ch5-triggerview-transition-timing-function);
+  --ch5-triggerview--transition-timing-function: var(--theme-ch5-triggerview--transition-timing-function);
 
   // Do not remove below even if search result is 1
-  /// gap between views in px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: gap between views in px
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 16px 
   /// related-theme-variable: --theme-ch5-triggerview-gap
-  --ch5-triggerview-gap: var(--theme-ch5-triggerview-gap);
+  --ch5-triggerview--gap: var(--theme-ch5-triggerview--gap);
 }

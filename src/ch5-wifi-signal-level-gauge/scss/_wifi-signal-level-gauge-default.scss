@@ -38,10 +38,10 @@ ch5-wifi-signal-level-gauge {
 }
 
 @each $align in $alignment {
-  @include setSize("small", --ch5-wifi-signal-level-gauge-small-height, --ch5-wifi-signal-level-gauge-small-width, $align);
-  @include setSize("regular", --ch5-wifi-signal-level-gauge-regular-height, --ch5-wifi-signal-level-gauge-regular-width, $align);
-  @include setSize("large", --ch5-wifi-signal-level-gauge-large-height, --ch5-wifi-signal-level-gauge-large-width, $align);
-  @include setSize("x-large", --ch5-wifi-signal-level-gauge-x-large-height, --ch5-wifi-signal-level-gauge-x-large-width, $align);
+  @include setSize("small", --ch5-wifi-signal-level-gauge--small-height, --ch5-wifi-signal-level-gauge--small-width, $align);
+  @include setSize("regular", --ch5-wifi-signal-level-gauge--regular-height, --ch5-wifi-signal-level-gauge--regular-width, $align);
+  @include setSize("large", --ch5-wifi-signal-level-gauge--large-height, --ch5-wifi-signal-level-gauge--large-width, $align);
+  @include setSize("x-large", --ch5-wifi-signal-level-gauge--x-large-height, --ch5-wifi-signal-level-gauge--x-large-width, $align);
 }
 
 /// Disabled Class

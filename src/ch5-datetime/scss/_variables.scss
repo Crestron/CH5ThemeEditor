@@ -11,27 +11,45 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-datetime {
-  /// Font size  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Font size
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 14px 
-  /// related-theme-variable: --theme-ch5-datetime-font-size
-  --ch5-datetime-font-size: var(--theme-ch5-datetime-font-size);
+  /// related-theme-variable: --theme-ch5-datetime--font-size
+  --ch5-datetime--font-size: var(--theme-ch5-datetime--font-size);
 
-  /// Datetime height  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Height of Datetime component
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 35px 
-  /// related-theme-variable: --theme-ch5-datetime-height
-  --ch5-datetime-height: var(--theme-ch5-datetime-height);
+  /// related-theme-variable: --theme-ch5-datetime--height
+  --ch5-datetime--height: var(--theme-ch5-datetime--height);
 
-  /// Datetime width  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Width of Datetime component
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 200px 
-  /// related-theme-variable: --theme-ch5-datetime-width
-  --ch5-datetime-width: var(--theme-ch5-datetime-width);
+  /// related-theme-variable: --theme-ch5-datetime--width
+  --ch5-datetime--width: var(--theme-ch5-datetime--width);
 
-  /// Background color  /// type: string 
-  /// values: large, solid, center 
+  /// description: Background color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: transparent 
-  /// related-theme-variable: --theme-ch5-datetime-background-color
-  --ch5-datetime-background-color: var(--theme-ch5-datetime-background-color);
+  /// related-theme-variable: --theme-ch5-datetime--background-color
+  --ch5-datetime--background-color: var(--theme-ch5-datetime--background-color);
+
+  /// description: Font weight
+  /// type: list 
+  /// values: normal, italic
+  /// example: normal 
+  /// related-theme-variable: --theme-ch5-datetime--font-weight
+  --ch5-datetime--font-weight: var(--theme-ch5-datetime--font-weight);
+
+  /// description: Font style
+  /// type: list 
+  /// values: normal, bold
+  /// example: normal 
+  /// related-theme-variable: --theme-ch5-datetime--font-style
+  --ch5-datetime--font-style: var(--theme-ch5-datetime--font-style);
 }

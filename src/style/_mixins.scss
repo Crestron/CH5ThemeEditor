@@ -77,5 +77,5 @@
 
 @mixin ch5-component-disabled() {
   pointer-events: none;
-  opacity: var(--theme-others-disabled-opacity);
+  opacity: var(--theme-others--disabled-opacity);
 }

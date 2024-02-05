@@ -15,2742 +15,1765 @@
 [data-theme="zoom-light-theme"],
 .zoom-light-theme {
   /// Font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 16px
-  --theme-fonts-font-size: 16px;
+  --theme-fonts--font-size: 16px;
 
   /// Font style
-  /// type: string 
-  /// values: large, solid, center 
+  /// type: list
+  /// values: normal, italic
   /// example: normal
-  --theme-fonts-font-style: normal;
+  --theme-fonts--font-style: normal;
 
   /// Font weight
-  /// type: string 
-  /// values: large, solid, center 
+  /// type: list
+  /// values: normal, bold
   /// example: normal
-  --theme-fonts-font-weight: normal;
+  --theme-fonts--font-weight: normal;
 
   /// Scrollbar width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 7px
-  --theme-others-scrollbar-width: 7px;
+  --theme-others--scrollbar-width: 7px;
 
   /// Scrollbar border radius
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 10px
-  --theme-others-scrollbar-border-radius: 10px;
+  --theme-others--scrollbar-border-radius: 10px;
 
   /// Scrollbar track color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.1)
-  --theme-others-scrollbar-track-color: rgba(0, 0, 0, 0.1);
+  --theme-others--scrollbar-track-color: rgba(0, 0, 0, 0.1);
 
   /// Scrollbar thumb color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.5)
-  --theme-others-scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
+  --theme-others--scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
 
   /// Disabled opacity
-  /// type: number 
-  /// values: 1, 10, 100 
+  /// type: number
+  /// values: 1, 10, 100
   /// example: 0.5
-  --theme-others-disabled-opacity: 0.5;
+  --theme-others--disabled-opacity: 0.5;
 
   // ***************************************
   // Color system
   // ***************************************
 
   /// Background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0e72ed
-  --theme-colors-default-background-color: #0e72ed;
+  --theme-colors--default-background-color: #0e72ed;
 
   /// Border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0091ea
-  --theme-colors-default-border-color: #0091ea;
+  --theme-colors--default-border-color: #0091ea;
 
   /// Font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-default-font-color: #ffffff;
+  --theme-colors--default-font-color: #ffffff;
 
   /// Pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0862d1
-  --theme-colors-default-pressed-background-color: #0862d1;
+  --theme-colors--default-pressed-background-color: #0862d1;
 
   /// Pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0091ea
-  --theme-colors-default-pressed-border-color: #0091ea;
+  --theme-colors--default-pressed-border-color: #0091ea;
 
   /// Pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-default-pressed-font-color: #ffffff;
+  --theme-colors--default-pressed-font-color: #ffffff;
 
   /// Selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0862d1
-  --theme-colors-default-selected-background-color: #0862d1;
+  --theme-colors--default-selected-background-color: #0862d1;
 
   /// Selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0091ea
-  --theme-colors-default-selected-border-color: #0091ea;
+  --theme-colors--default-selected-border-color: #0091ea;
 
   /// Selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-default-selected-font-color: #ffffff;
+  --theme-colors--default-selected-font-color: #ffffff;
 
   /// Background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e8e8f1
-  --theme-colors-primary-background-color: #e8e8f1;
+  --theme-colors--primary-background-color: #e8e8f1;
 
   /// Border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #bdbdbd
-  --theme-colors-primary-border-color: #bdbdbd;
+  --theme-colors--primary-border-color: #bdbdbd;
 
   /// Font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  --theme-colors-primary-font-color: #333;
+  --theme-colors--primary-font-color: #333;
 
   /// Primary pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #d9d9e6
-  --theme-colors-primary-pressed-background-color: #d9d9e6;
+  --theme-colors--primary-pressed-background-color: #d9d9e6;
 
   /// Primary pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #bdbdbd
-  --theme-colors-primary-pressed-border-color: #bdbdbd;
+  --theme-colors--primary-pressed-border-color: #bdbdbd;
 
   /// Primary pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  --theme-colors-primary-pressed-font-color: #333;
+  --theme-colors--primary-pressed-font-color: #333;
 
   /// Primary select background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #6e6e7a
-  --theme-colors-primary-selected-background-color: #6e6e7a;
+  --theme-colors--primary-selected-background-color: #6e6e7a;
 
   /// Primary selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #bdbdbd
-  --theme-colors-primary-selected-border-color: #bdbdbd;
+  --theme-colors--primary-selected-border-color: #bdbdbd;
 
   /// Primary selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  --theme-colors-primary-selected-font-color: #333;
+  --theme-colors--primary-selected-font-color: #333;
 
   /// Info background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f26d21
-  --theme-colors-info-background-color: #f26d21;
+  --theme-colors--info-background-color: #f26d21;
 
   /// Info border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f26d21
-  --theme-colors-info-border-color: #f26d21;
+  --theme-colors--info-border-color: #f26d21;
 
   /// Info font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-info-font-color: #ffffff;
+  --theme-colors--info-font-color: #ffffff;
 
   /// Info pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #d56832
-  --theme-colors-info-pressed-background-color: #d56832;
+  --theme-colors--info-pressed-background-color: #d56832;
 
   /// Info pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f26d21
-  --theme-colors-info-pressed-border-color: #f26d21;
+  --theme-colors--info-pressed-border-color: #f26d21;
 
   /// Info pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-info-pressed-font-color: #ffffff;
+  --theme-colors--info-pressed-font-color: #ffffff;
 
   /// Info selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #d56832
-  --theme-colors-info-selected-background-color: #d56832;
+  --theme-colors--info-selected-background-color: #d56832;
 
   /// Info selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f26d21
-  --theme-colors-info-selected-border-color: #f26d21;
+  --theme-colors--info-selected-border-color: #f26d21;
 
   /// Info selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-info-selected-font-color: #ffffff;
+  --theme-colors--info-selected-font-color: #ffffff;
 
   /// Danger background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #de2828
-  --theme-colors-danger-background-color: #de2828;
+  --theme-colors--danger-background-color: #de2828;
 
   /// Danger border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e53935
-  --theme-colors-danger-border-color: #e53935;
+  --theme-colors--danger-border-color: #e53935;
 
   /// Danger font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-danger-font-color: #ffffff;
+  --theme-colors--danger-font-color: #ffffff;
 
   /// Danger pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ca2424
-  --theme-colors-danger-pressed-background-color: #ca2424;
+  --theme-colors--danger-pressed-background-color: #ca2424;
 
   /// Danger pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e53935
-  --theme-colors-danger-pressed-border-color: #e53935;
+  --theme-colors--danger-pressed-border-color: #e53935;
 
   /// Danger pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-danger-pressed-font-color: #ffffff;
+  --theme-colors--danger-pressed-font-color: #ffffff;
 
   /// Danger selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ca2424
-  --theme-colors-danger-selected-background-color: #ca2424;
+  --theme-colors--danger-selected-background-color: #ca2424;
 
   /// Danger selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e53935
-  --theme-colors-danger-selected-border-color: #e53935;
+  --theme-colors--danger-selected-border-color: #e53935;
 
   /// Danger selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-danger-selected-font-color: #ffffff;
+  --theme-colors--danger-selected-font-color: #ffffff;
 
   /// Secondary background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e7f1fd
-  --theme-colors-secondary-background-color: #e7f1fd;
+  --theme-colors--secondary-background-color: #e7f1fd;
 
   /// Secondary border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #dbe7f5
-  --theme-colors-secondary-border-color: #dbe7f5;
+  --theme-colors--secondary-border-color: #dbe7f5;
 
   /// Secondary font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  --theme-colors-secondary-font-color: #333;
+  --theme-colors--secondary-font-color: #333;
 
   /// Secondary pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #9bc5f8
-  --theme-colors-secondary-pressed-background-color: #9bc5f8;
+  --theme-colors--secondary-pressed-background-color: #9bc5f8;
 
   /// Secondary pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #dbe7f5
-  --theme-colors-secondary-pressed-border-color: #dbe7f5;
+  --theme-colors--secondary-pressed-border-color: #dbe7f5;
 
   /// Secondary pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  --theme-colors-secondary-pressed-font-color: #333;
+  --theme-colors--secondary-pressed-font-color: #333;
 
   /// Secondary selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #9bc5f8
-  --theme-colors-secondary-selected-background-color: #9bc5f8;
+  --theme-colors--secondary-selected-background-color: #9bc5f8;
 
   /// Secondary selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #dbe7f5
-  --theme-colors-secondary-selected-border-color: #dbe7f5;
+  --theme-colors--secondary-selected-border-color: #dbe7f5;
 
   /// Secondary selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  --theme-colors-secondary-selected-font-color: #333;
+  --theme-colors--secondary-selected-font-color: #333;
 
   /// Success background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #268543
-  --theme-colors-success-background-color: #268543;
+  --theme-colors--success-background-color: #268543;
 
   /// Success border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #43a047
-  --theme-colors-success-border-color: #43a047;
+  --theme-colors--success-border-color: #43a047;
 
   /// Success font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-success-font-color: #ffffff;
+  --theme-colors--success-font-color: #ffffff;
 
   /// Success pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #23d959
-  --theme-colors-success-pressed-background-color: #23d959;
+  --theme-colors--success-pressed-background-color: #23d959;
 
   /// Success pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #43a047
-  --theme-colors-success-pressed-border-color: #43a047;
+  --theme-colors--success-pressed-border-color: #43a047;
 
   /// Success pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-success-pressed-font-color: #ffffff;
+  --theme-colors--success-pressed-font-color: #ffffff;
 
   /// Success selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #23d959
-  --theme-colors-success-selected-background-color: #23d959;
+  --theme-colors--success-selected-background-color: #23d959;
 
   /// Success selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #43a047
-  --theme-colors-success-selected-border-color: #43a047;
+  --theme-colors--success-selected-border-color: #43a047;
 
   /// Success selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-success-selected-font-color: #ffffff;
+  --theme-colors--success-selected-font-color: #ffffff;
 
   /// Warning background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #faac2a
-  --theme-colors-warning-background-color: #faac2a;
+  --theme-colors--warning-background-color: #faac2a;
 
   /// Warning border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffb300
-  --theme-colors-warning-border-color: #ffb300;
+  --theme-colors--warning-border-color: #ffb300;
 
   /// Warning font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  --theme-colors-warning-font-color: #333;
+  --theme-colors--warning-font-color: #333;
 
   /// Warning pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ff6f00
-  --theme-colors-warning-pressed-background-color: #ff6f00;
+  --theme-colors--warning-pressed-background-color: #ff6f00;
 
   /// Warning pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffb300
-  --theme-colors-warning-pressed-border-color: #ffb300;
+  --theme-colors--warning-pressed-border-color: #ffb300;
 
   /// Warning pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-warning-pressed-font-color: #ffffff;
+  --theme-colors--warning-pressed-font-color: #ffffff;
 
   /// Warning selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ff6f00
-  --theme-colors-warning-selected-background-color: #ff6f00;
+  --theme-colors--warning-selected-background-color: #ff6f00;
 
   /// Warning selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffb300
-  --theme-colors-warning-selected-border-color: #ffb300;
+  --theme-colors--warning-selected-border-color: #ffb300;
 
   /// Warning selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-warning-selected-font-color: #ffffff;
+  --theme-colors--warning-selected-font-color: #ffffff;
 
   /// Text background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #efeff4
-  --theme-colors-text-background-color: #efeff4;
+  --theme-colors--text-background-color: #efeff4;
 
   /// Text border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e0e0e0
-  --theme-colors-text-border-color: #e0e0e0;
+  --theme-colors--text-border-color: #e0e0e0;
 
   /// Text font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  --theme-colors-text-font-color: #333;
+  --theme-colors--text-font-color: #333;
 
   /// Text pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f5f5f8
-  --theme-colors-text-pressed-background-color: #f5f5f8;
+  --theme-colors--text-pressed-background-color: #f5f5f8;
 
   /// Text pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e0e0e0
-  --theme-colors-text-pressed-border-color: #e0e0e0;
+  --theme-colors--text-pressed-border-color: #e0e0e0;
 
   /// Text pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-text-pressed-font-color: #ffffff;
+  --theme-colors--text-pressed-font-color: #ffffff;
 
   /// Text selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f5f5f8
-  --theme-colors-text-selected-background-color: #f5f5f8;
+  --theme-colors--text-selected-background-color: #f5f5f8;
 
   /// Text selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e0e0e0
-  --theme-colors-text-selected-border-color: #e0e0e0;
+  --theme-colors--text-selected-border-color: #e0e0e0;
 
   /// Text selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors-text-selected-font-color: #ffffff;
+  --theme-colors--text-selected-font-color: #ffffff;
 
   // ***************************************
   // ch5-animation
   // ***************************************
 
-  /// Animation color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #3f3f3f
   --theme-ch5-animation--color: #3f3f3f;
 
-  /// Size=regular
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 72px
   --theme-ch5-animation--size-regular: 72px;
 
-  /// Size=small
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 40px
   --theme-ch5-animation--size-small: 40px;
 
-  /// Size=large
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 104px
   --theme-ch5-animation--size-large: 104px;
 
-  /// Size=x-large
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 136px
   --theme-ch5-animation--size-x-large: 136px;
 
   // ***************************************
   // ch5-background
   // ***************************************
 
-  /// transition duration
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: 1s
   --theme-ch5-background--transition-duration: 1s;
 
-  /// transition effect
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: ease
   --theme-ch5-background--transition-timing-function: ease;
 
   // ***************************************
   // ch5-button
   // ***************************************
 
-  /// Font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 14px
-  --theme-ch5-button-font-size: 14px;
+  --theme-ch5-button--content-line-height: 1.2;
 
-  /// Icon color
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: inherit
-  --theme-ch5-button-icon-color: inherit;
+  --theme-ch5-button--padding: 0.25rem;
 
-  /// Icon font size
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: inherit
-  --theme-ch5-button-icon-size: inherit;
+  --theme-ch5-button--font-size: 14px;
 
-  // button solid-border
-  /// Default border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-button-default-border-width: 1px;
+  --theme-ch5-button--font-style: var(--theme-fonts--font-style);
 
-  /// Primary border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-button-primary-border-width: 1px;
+  --theme-ch5-button--font-weight: var(--theme-fonts--font-weight);
 
-  /// Secondary border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-button-secondary-border-width: 1px;
+  --theme-ch5-button--icon-color: inherit;
 
-  /// Success border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-button-success-border-width: 1px;
+  --theme-ch5-button--icon-size: inherit;
 
-  /// Info border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-button-info-border-width: 1px;
+  --theme-ch5-button--default-border-width: 1px;
 
-  /// Warning border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-button-warning-border-width: 1px;
+  --theme-ch5-button--primary-border-width: 1px;
 
-  /// Danger border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-button-danger-border-width: 1px;
+  --theme-ch5-button--secondary-border-width: 1px;
 
-  /// Text border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-button-text-border-width: 1px;
+  --theme-ch5-button--success-border-width: 1px;
 
-  /// Default border style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-button-default-border-style: solid;
+  --theme-ch5-button--info-border-width: 1px;
 
-  /// Primary border style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-button-primary-border-style: solid;
+  --theme-ch5-button--warning-border-width: 1px;
 
-  /// Secondary border style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-button-secondary-border-style: solid;
+  --theme-ch5-button--danger-border-width: 1px;
 
-  /// Success border style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-button-success-border-style: solid;
+  --theme-ch5-button--text-border-width: 1px;
 
-  /// Info border style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-button-info-border-style: solid;
+  --theme-ch5-button--default-border-style: solid;
 
-  /// Warning border style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-button-warning-border-style: solid;
+  --theme-ch5-button--primary-border-style: solid;
 
-  /// Danger border style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-button-danger-border-style: solid;
+  --theme-ch5-button--secondary-border-style: solid;
 
-  /// Text border style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-button-text-border-style: solid;
+  --theme-ch5-button--success-border-style: solid;
 
-  /// Button rounded-rectangle
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 5px
-  --theme-ch5-button-border-radius: 5px;
+  --theme-ch5-button--info-border-style: solid;
 
-  /// Button circle
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 50%
-  --theme-ch5-button-circle-border-radius: 50%;
+  --theme-ch5-button--warning-border-style: solid;
 
-  /// Button oval
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 50%
-  --theme-ch5-button-oval-border-radius: 50%;
+  --theme-ch5-button--danger-border-style: solid;
 
-  /// Button tab
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px 10px 0 0
-  --theme-ch5-button-tab-border-radius: 10px 10px 0 0;
+  --theme-ch5-button--text-border-style: solid;
 
-  /// Button size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 42px
-  --theme-ch5-button-size: 42px;
+  --theme-ch5-button--border-radius: 5px;
 
-  // size x-small
-  /// Button x-small font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 11px
-  --theme-ch5-button-x-small-font-size: 11px;
+  --theme-ch5-button--circle-border-radius: 50%;
 
-  /// Button x-small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 32px
-  --theme-ch5-button-x-small-size: 32px;
+  --theme-ch5-button--oval-border-radius: 50%;
 
-  /// Button small font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 13px
-  --theme-ch5-button-small-font-size: 13px;
+  --theme-ch5-button--tab-border-radius: 10px 10px 0 0;
 
-  /// Button small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 36px
-  --theme-ch5-button-small-size: 36px;
+  --theme-ch5-button--size: 42px;
 
-  /// large font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 16px
-  --theme-ch5-button-large-font-size: 16px;
+  --theme-ch5-button--x-small-font-size: 11px;
 
-  /// Button large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 52px
-  --theme-ch5-button-large-size: 52px;
+  --theme-ch5-button--x-small-size: 32px;
 
-  /// Button x-large font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 18px
-  --theme-ch5-button-x-large-font-size: 18px;
+  --theme-ch5-button--small-font-size: 13px;
 
-  /// Button x-large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 72px
-  --theme-ch5-button-x-large-size: 72px;
+  --theme-ch5-button--small-size: 36px;
 
-  /// Checkbox checked icon
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: "\f14a"
-  --theme-ch5-button-checkbox-checked-faicon: "\f14a";
+  --theme-ch5-button--large-font-size: 16px;
 
-  /// Checkbox unchecked icon
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: "\f0c8"
-  --theme-ch5-button-checkbox-unchecked-faicon: "\f0c8";
+  --theme-ch5-button--large-size: 52px;
 
-  /// Checkbox checked font weight
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 400
-  --theme-ch5-button-checkbox-checked-font-weight: 400;
+  --theme-ch5-button--x-large-font-size: 18px;
 
-  /// Checkbox unchecked font weight
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 400
-  --theme-ch5-button-checkbox-unchecked-font-weight: 400;
+  --theme-ch5-button--x-large-size: 72px;
 
-  /// Button checkbox padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 5px
-  --theme-ch5-button-checkbox-padding: 5px;
+  --theme-ch5-button--checkbox-checked-faicon: "\f14a";
+
+  --theme-ch5-button--checkbox-unchecked-faicon: "\f0c8";
+
+  --theme-ch5-button--checkbox-checked-font-weight: 400;
+
+  --theme-ch5-button--checkbox-unchecked-font-weight: 400;
+
+  --theme-ch5-button--checkbox-padding: 5px;
+
+
+  --theme-ch5-button--default-background-color: var(--theme-colors--default-background-color);
+
+  --theme-ch5-button--default-border-color: var(--theme-colors--default-border-color);
+
+  --theme-ch5-button--default-font-color: var(--theme-colors--default-font-color);
+
+  --theme-ch5-button--default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
+
+  --theme-ch5-button--default-pressed-border-color: var(--theme-colors--default-pressed-border-color);
+
+  --theme-ch5-button--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
+
+  --theme-ch5-button--default-selected-background-color: var(--theme-colors--default-selected-background-color);
+
+  --theme-ch5-button--default-selected-border-color: var(--theme-colors--default-selected-border-color);
+
+  --theme-ch5-button--default-selected-font-color: var(--theme-colors--default-selected-font-color);
+
+  --theme-ch5-button--primary-background-color: var(--theme-colors--primary-background-color);
+
+  --theme-ch5-button--primary-border-color: var(--theme-colors--primary-border-color);
+
+  --theme-ch5-button--primary-font-color: var(--theme-colors--primary-font-color);
+
+  --theme-ch5-button--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
+
+  --theme-ch5-button--primary-pressed-border-color: var(--theme-colors--primary-pressed-border-color);
+
+  --theme-ch5-button--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
+
+  --theme-ch5-button--primary-selected-background-color: var(--theme-colors--primary-selected-background-color);
+
+  --theme-ch5-button--primary-selected-border-color: var(--theme-colors--primary-selected-border-color);
+
+  --theme-ch5-button--primary-selected-font-color: var(--theme-colors--primary-selected-font-color);
+
+  --theme-ch5-button--info-background-color: var(--theme-colors--info-background-color);
+
+  --theme-ch5-button--info-border-color: var(--theme-colors--info-border-color);
+
+  --theme-ch5-button--info-font-color: var(--theme-colors--info-font-color);
+
+  --theme-ch5-button--info-pressed-background-color: var(--theme-colors--info-pressed-background-color);
+
+  --theme-ch5-button--info-pressed-border-color: var(--theme-colors--info-pressed-border-color);
+
+  --theme-ch5-button--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
+
+  --theme-ch5-button--info-selected-background-color: var(--theme-colors--info-selected-background-color);
+
+  --theme-ch5-button--info-selected-border-color: var(--theme-colors--info-selected-border-color);
+
+  --theme-ch5-button--info-selected-font-color: var(--theme-colors--info-selected-font-color);
+
+  --theme-ch5-button--danger-background-color: var(--theme-colors--danger-background-color);
+
+  --theme-ch5-button--danger-border-color: var(--theme-colors--danger-border-color);
+
+  --theme-ch5-button--danger-font-color: var(--theme-colors--danger-font-color);
+
+  --theme-ch5-button--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
+
+  --theme-ch5-button--danger-pressed-border-color: var(--theme-colors--danger-pressed-border-color);
+
+  --theme-ch5-button--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
+
+  --theme-ch5-button--danger-selected-background-color: var(--theme-colors--danger-selected-background-color);
+
+  --theme-ch5-button--danger-selected-border-color: var(--theme-colors--danger-selected-border-color);
+
+  --theme-ch5-button--danger-selected-font-color: var(--theme-colors--danger-selected-font-color);
+
+  --theme-ch5-button--secondary-background-color: var(--theme-colors--secondary-background-color);
+
+  --theme-ch5-button--secondary-border-color: var(--theme-colors--secondary-border-color);
+
+  --theme-ch5-button--secondary-font-color: var(--theme-colors--secondary-font-color);
+
+  --theme-ch5-button--secondary-pressed-background-color: var(--theme-colors--secondary-pressed-background-color);
+
+  --theme-ch5-button--secondary-pressed-border-color: var(--theme-colors--secondary-pressed-border-color);
+
+  --theme-ch5-button--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
+
+  --theme-ch5-button--secondary-selected-background-color: var(--theme-colors--secondary-selected-background-color);
+
+  --theme-ch5-button--secondary-selected-border-color: var(--theme-colors--secondary-selected-border-color);
+
+  --theme-ch5-button--secondary-selected-font-color: var(--theme-colors--secondary-selected-font-color);
+
+  --theme-ch5-button--success-background-color: var(--theme-colors--success-background-color);
+
+  --theme-ch5-button--success-border-color: var(--theme-colors--success-border-color);
+
+  --theme-ch5-button--success-font-color: var(--theme-colors--success-font-color);
+
+  --theme-ch5-button--success-pressed-background-color: var(--theme-colors--success-pressed-background-color);
+
+  --theme-ch5-button--success-pressed-border-color: var(--theme-colors--success-pressed-border-color);
+
+  --theme-ch5-button--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
+
+  --theme-ch5-button--success-selected-background-color: var(--theme-colors--success-selected-background-color);
+
+  --theme-ch5-button--success-selected-border-color: var(--theme-colors--success-selected-border-color);
+
+  --theme-ch5-button--success-selected-font-color: var(--theme-colors--success-selected-font-color);
+
+  --theme-ch5-button--warning-background-color: var(--theme-colors--warning-background-color);
+
+  --theme-ch5-button--warning-border-color: var(--theme-colors--warning-border-color);
+
+  --theme-ch5-button--warning-font-color: var(--theme-colors--warning-font-color);
+
+  --theme-ch5-button--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
+
+  --theme-ch5-button--warning-pressed-border-color: var(--theme-colors--warning-pressed-border-color);
+
+  --theme-ch5-button--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
+
+  --theme-ch5-button--warning-selected-background-color: var(--theme-colors--warning-selected-background-color);
+
+  --theme-ch5-button--warning-selected-border-color: var(--theme-colors--warning-selected-border-color);
+
+  --theme-ch5-button--warning-selected-font-color: var(--theme-colors--warning-selected-font-color);
+
+  --theme-ch5-button--text-background-color: var(--theme-colors--text-background-color);
+
+  --theme-ch5-button--text-border-color: var(--theme-colors--text-border-color);
+
+  --theme-ch5-button--text-font-color: var(--theme-colors--text-font-color);
+
+  --theme-ch5-button--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
+
+  --theme-ch5-button--text-pressed-border-color: var(--theme-colors--text-pressed-border-color);
+
+  --theme-ch5-button--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
+
+  --theme-ch5-button--text-selected-background-color: var(--theme-colors--text-selected-background-color);
+
+  --theme-ch5-button--text-selected-border-color: var(--theme-colors--text-selected-border-color);
+
+  --theme-ch5-button--text-selected-font-color: var(--theme-colors--text-selected-font-color);
 
   // ***************************************
   // ch5-button-list
   // ***************************************
 
-  /// Button container padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 5px
-  --theme-ch5-button-list-padding: 5px;
+  --theme-ch5-button-list--padding: 5px;
 
-  /// Button container width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 100px
-  --theme-ch5-button-list-button-container-width: 100px;
+  --theme-ch5-button-list--button-container-width: 100px;
 
-  /// Button container height
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 58px
-  --theme-ch5-button-list-button-container-height: 58px;
+  --theme-ch5-button-list--button-container-height: 58px;
 
-  /// Button container padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 5px
-  --theme-ch5-button-list-button-container-padding: 5px;
+  --theme-ch5-button-list--button-container-padding: 5px;
+
+  --theme-ch5-button-list--scrollbar-width: var(--theme-others--scrollbar-width);
+
+  --theme-ch5-button-list--scrollbar-border-radius: var(--theme-others--scrollbar-border-radius);
+
+  --theme-ch5-button-list--scrollbar-thumb-color: var(--theme-others--scrollbar-thumb-color);
+
+  --theme-ch5-button-list--scrollbar-track-color: var(--theme-others--scrollbar-track-color);
 
   // ***************************************
   // ch5-color-chip
   // ***************************************
 
-  /// The height for div of the color-chip.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 40px
   --theme-ch5-color-chip--height: 40px;
 
-  /// The width for div of the color-chip.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 40px
   --theme-ch5-color-chip--width: 40px;
 
-  /// Background color for color-chip.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #000
   --theme-ch5-color-chip--background-color: #000;
 
   // ***************************************
   // ch5-color-picker
   // ***************************************
 
-  /// Height for color picker
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 240px
   --theme-ch5-color-picker--height: 240px;
 
-  /// Width for color picker
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 240px
   --theme-ch5-color-picker--width: 240px;
 
   // ***************************************
   // ch5-date-time
   // ***************************************
 
-  /// Font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 14px
-  --theme-ch5-datetime-font-size: 14px;
+  --theme-ch5-datetime--font-size: 14px;
 
-  /// Datetime height
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 35px
-  --theme-ch5-datetime-height: 35px;
+  --theme-ch5-datetime--height: 35px;
 
-  /// Datetime width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 200px
-  --theme-ch5-datetime-width: 200px;
+  --theme-ch5-datetime--width: 200px;
 
-  /// Background color
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: transparent
-  --theme-ch5-datetime-background-color: transparent;
+  --theme-ch5-datetime--background-color: transparent;
+
+  --theme-ch5-datetime--font-weight: var(--theme-fonts--font-weight);
+  
+  --theme-ch5-datetime--font-style: var(--theme-fonts--font-style);
 
   // ***************************************
   // ch5-dpad
   // ***************************************
 
-  /// Set the height and width of dpad for regular size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 150px
-  --theme-ch5-dpad-regular-dimension: 150px;
+  --theme-ch5-dpad--regular-size: 150px;
 
-  /// Set the height and width of dpad for x-small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 100px
-  --theme-ch5-dpad-x-small-dimension: 100px;
+  --theme-ch5-dpad--x-small-size: 100px;
 
-  /// Set the height and width of dpad for small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 130px
-  --theme-ch5-dpad-small-dimension: 130px;
+  --theme-ch5-dpad--small-size: 130px;
 
-  /// Set the height and width of dpad for large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 180px
-  --theme-ch5-dpad-large-dimension: 180px;
+  --theme-ch5-dpad--large-size: 180px;
 
-  /// Set the height and width of dpad for x-large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 200px
-  --theme-ch5-dpad-x-large-dimension: 200px;
+  --theme-ch5-dpad--x-large-size: 200px;
 
-  /// Set the border radius for 'plus' shape regular size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px
-  --theme-ch5-dpad-regular-edge-radius: 10px;
+  --theme-ch5-dpad--regular-border-radius: 10px;
 
-  /// Set the border radius for 'plus' shape x-small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 6px
-  --theme-ch5-dpad-x-small-edge-radius: 6px;
+  --theme-ch5-dpad--x-small-border-radius: 6px;
 
-  /// Set the border radius for 'plus' shape small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px
-  --theme-ch5-dpad-small-edge-radius: 10px;
+  --theme-ch5-dpad--small-border-radius: 10px;
 
-  /// Set the border radius for 'plus' shape large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px
-  --theme-ch5-dpad-large-edge-radius: 10px;
+  --theme-ch5-dpad--large-border-radius: 10px;
 
-  /// Set the border radius for 'plus' shape x-large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px
-  --theme-ch5-dpad-x-large-edge-radius: 10px;
+  --theme-ch5-dpad--x-large-border-radius: 10px;
 
-  /// Set the label font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1.5rem
-  --theme-ch5-dpad-label-font-size: 1.5rem;
+  --theme-ch5-dpad--label-font-size: 1.5rem;
 
-  /// Set the icon font size for x-small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1.3rem
-  --theme-ch5-dpad-icon-font-size-x-small: 1.3rem;
+  --theme-ch5-dpad--icon-size-x-small: 1.3rem;
 
-  /// Set the icon font size for small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1.8rem
-  --theme-ch5-dpad-icon-font-size-small: 1.8rem;
+  --theme-ch5-dpad--icon-size-small: 1.8rem;
 
-  /// Set the icon font size for regular size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 2rem
-  --theme-ch5-dpad-icon-font-size-regular: 2rem;
+  --theme-ch5-dpad--icon-size-regular: 2rem;
 
-  /// Set the icon font size for large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 2.2rem
-  --theme-ch5-dpad-icon-font-size-large: 2.2rem;
+  --theme-ch5-dpad--icon-size-large: 2.2rem;
 
-  /// Set the icon font size for x-large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 2.4rem
-  --theme-ch5-dpad-icon-font-size-x-large: 2.4rem;
+  --theme-ch5-dpad--icon-size-x-large: 2.4rem;
+
+  --theme-ch5-dpad--default-background-color: var(--theme-colors--default-background-color);
+
+  --theme-ch5-dpad--default-font-color: var(--theme-colors--default-font-color);
+
+  --theme-ch5-dpad--default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
+
+  --theme-ch5-dpad--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
+
+
+  --theme-ch5-dpad--primary-background-color: var(--theme-colors--primary-background-color);
+
+  --theme-ch5-dpad--primary-font-color: var(--theme-colors--primary-font-color);
+
+  --theme-ch5-dpad--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
+
+  --theme-ch5-dpad--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
+
+
+  --theme-ch5-dpad--info-background-color: var(--theme-colors--info-background-color);
+
+  --theme-ch5-dpad--info-font-color: var(--theme-colors--info-font-color);
+
+  --theme-ch5-dpad--info-pressed-background-color: var(--theme-colors--info-pressed-background-color);
+
+  --theme-ch5-dpad--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
+
+
+  --theme-ch5-dpad--danger-background-color: var(--theme-colors--danger-background-color);
+
+  --theme-ch5-dpad--danger-font-color: var(--theme-colors--danger-font-color);
+
+  --theme-ch5-dpad--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
+
+  --theme-ch5-dpad--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
+
+
+  --theme-ch5-dpad--secondary-background-color: var(--theme-colors--secondary-background-color);
+
+  --theme-ch5-dpad--secondary-font-color: var(--theme-colors--secondary-font-color);
+
+  --theme-ch5-dpad--secondary-pressed-background-color: var(--theme-colors--secondary-pressed-background-color);
+
+  --theme-ch5-dpad--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
+
+
+  --theme-ch5-dpad--success-background-color: var(--theme-colors--success-background-color);
+
+  --theme-ch5-dpad--success-font-color: var(--theme-colors--success-font-color);
+
+  --theme-ch5-dpad--success-pressed-background-color: var(--theme-colors--success-pressed-background-color);
+
+  --theme-ch5-dpad--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
+
+
+  --theme-ch5-dpad--warning-background-color: var(--theme-colors--warning-background-color);
+
+  --theme-ch5-dpad--warning-font-color: var(--theme-colors--warning-font-color);
+
+  --theme-ch5-dpad--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
+
+  --theme-ch5-dpad--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
+
+
+  --theme-ch5-dpad--text-background-color: var(--theme-colors--text-background-color);
+
+  --theme-ch5-dpad--text-font-color: var(--theme-colors--text-font-color);
+
+  --theme-ch5-dpad--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
+
+  --theme-ch5-dpad--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
+  
+  // ***************************************
+  // ch5-form
+  // ***************************************
+  
+  --theme-ch5-form--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-form--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-form--font-weight: var(--theme-fonts--font-weight);
 
   // ***************************************
   // ch5-image
   // ***************************************
 
-  /// Sets object fit property
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: contain
-  --theme-ch5-image-object-fit: contain;
+  --theme-ch5-image--object-fit: contain;
 
   // ***************************************
   // ch5-keypad
   // ***************************************
 
-  /// Keypad container width for x-small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 210px
-  --theme-ch5-keypad-x-small-container-width: 210px;
+  --theme-ch5-keypad--x-small-container-width: 210px;
 
-  /// Keypad font-size-major for x-small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1.8rem
-  --theme-ch5-keypad-x-small-font-size-major: 1.8rem;
+  --theme-ch5-keypad--x-small-font-size-major: 1.8rem;
 
-  /// Keypad font-size-minor for x-small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0.65rem
-  --theme-ch5-keypad-x-small-font-size-minor: 0.65rem;
+  --theme-ch5-keypad--x-small-font-size-minor: 0.65rem;
 
-  /// Keypad container width for small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 249px
-  --theme-ch5-keypad-small-container-width: 249px;
+  --theme-ch5-keypad--small-container-width: 249px;
 
-  /// Keypad font-size-major for small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 2rem
-  --theme-ch5-keypad-small-font-size-major: 2rem;
+  --theme-ch5-keypad--small-font-size-major: 2rem;
 
-  /// Keypad font-size-minor for small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0.75rem
-  --theme-ch5-keypad-small-font-size-minor: 0.75rem;
+  --theme-ch5-keypad--small-font-size-minor: 0.75rem;
 
-  /// Keypad container width for regular size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 267px
-  --theme-ch5-keypad-regular-container-width: 267px;
+  --theme-ch5-keypad--regular-container-width: 267px;
 
-  /// Keypad font-size-major for regular size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 2.4rem
-  --theme-ch5-keypad-regular-font-size-major: 2.4rem;
+  --theme-ch5-keypad--regular-font-size-major: 2.4rem;
 
-  /// Keypad font-size-minor for regular size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0.85rem
-  --theme-ch5-keypad-regular-font-size-minor: 0.85rem;
+  --theme-ch5-keypad--regular-font-size-minor: 0.85rem;
 
-  /// Keypad container width for large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 294px
-  --theme-ch5-keypad-large-container-width: 294px;
+  --theme-ch5-keypad--large-container-width: 294px;
 
-  /// Keypad font-size-major for large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 2.8rem
-  --theme-ch5-keypad-large-font-size-major: 2.8rem;
+  --theme-ch5-keypad--large-font-size-major: 2.8rem;
 
-  /// Keypad font-size-minor for large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0.95rem
-  --theme-ch5-keypad-large-font-size-minor: 0.95rem;
+  --theme-ch5-keypad--large-font-size-minor: 0.95rem;
 
-  /// Keypad container width for x-large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 312px
-  --theme-ch5-keypad-x-large-container-width: 312px;
+  --theme-ch5-keypad--x-large-container-width: 312px;
 
-  /// Keypad font-size-major for x-large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 3rem
-  --theme-ch5-keypad-x-large-font-size-major: 3rem;
+  --theme-ch5-keypad--x-large-font-size-major: 3rem;
 
-  /// Keypad font-size-minor for x-large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1.05rem
-  --theme-ch5-keypad-x-large-font-size-minor: 1.05rem;
+  --theme-ch5-keypad--x-large-font-size-minor: 1.05rem;
+
+
+  --theme-ch5-keypad--default-background-color: var(--theme-colors--default-background-color);
+
+  --theme-ch5-keypad--default-border-color: var(--theme-colors--default-border-color);
+
+  --theme-ch5-keypad--default-font-color: var(--theme-colors--default-font-color);
+
+  --theme-ch5-keypad--default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
+
+  --theme-ch5-keypad--default-pressed-border-color: var(--theme-colors--default-pressed-border-color);
+
+  --theme-ch5-keypad--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
+
+  --theme-ch5-keypad--primary-background-color: var(--theme-colors--primary-background-color);
+
+  --theme-ch5-keypad--primary-border-color: var(--theme-colors--primary-border-color);
+
+  --theme-ch5-keypad--primary-font-color: var(--theme-colors--primary-font-color);
+
+  --theme-ch5-keypad--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
+
+  --theme-ch5-keypad--primary-pressed-border-color: var(--theme-colors--primary-pressed-border-color);
+
+  --theme-ch5-keypad--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
+
+  --theme-ch5-keypad--info-background-color: var(--theme-colors--info-background-color);
+
+  --theme-ch5-keypad--info-border-color: var(--theme-colors--info-border-color);
+
+  --theme-ch5-keypad--info-font-color: var(--theme-colors--info-font-color);
+
+  --theme-ch5-keypad--info-pressed-background-color: var(--theme-colors--info-pressed-background-color);
+
+  --theme-ch5-keypad--info-pressed-border-color: var(--theme-colors--info-pressed-border-color);
+
+  --theme-ch5-keypad--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
+
+  --theme-ch5-keypad--danger-background-color: var(--theme-colors--danger-background-color);
+
+  --theme-ch5-keypad--danger-border-color: var(--theme-colors--danger-border-color);
+
+  --theme-ch5-keypad--danger-font-color: var(--theme-colors--danger-font-color);
+
+  --theme-ch5-keypad--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
+
+  --theme-ch5-keypad--danger-pressed-border-color: var(--theme-colors--danger-pressed-border-color);
+
+  --theme-ch5-keypad--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
+
+  --theme-ch5-keypad--secondary-background-color: var(--theme-colors--secondary-background-color);
+
+  --theme-ch5-keypad--secondary-border-color: var(--theme-colors--secondary-border-color);
+
+  --theme-ch5-keypad--secondary-font-color: var(--theme-colors--secondary-font-color);
+
+  --theme-ch5-keypad--secondary-pressed-background-color: var(--theme-colors--secondary-pressed-background-color);
+
+  --theme-ch5-keypad--secondary-pressed-border-color: var(--theme-colors--secondary-pressed-border-color);
+
+  --theme-ch5-keypad--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
+
+  --theme-ch5-keypad--success-background-color: var(--theme-colors--success-background-color);
+
+  --theme-ch5-keypad--success-border-color: var(--theme-colors--success-border-color);
+
+  --theme-ch5-keypad--success-font-color: var(--theme-colors--success-font-color);
+
+  --theme-ch5-keypad--success-pressed-background-color: var(--theme-colors--success-pressed-background-color);
+
+  --theme-ch5-keypad--success-pressed-border-color: var(--theme-colors--success-pressed-border-color);
+
+  --theme-ch5-keypad--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
+
+  --theme-ch5-keypad--warning-background-color: var(--theme-colors--warning-background-color);
+
+  --theme-ch5-keypad--warning-border-color: var(--theme-colors--warning-border-color);
+
+  --theme-ch5-keypad--warning-font-color: var(--theme-colors--warning-font-color);
+
+  --theme-ch5-keypad--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
+
+  --theme-ch5-keypad--warning-pressed-border-color: var(--theme-colors--warning-pressed-border-color);
+
+  --theme-ch5-keypad--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
+
+  --theme-ch5-keypad--text-background-color: var(--theme-colors--text-background-color);
+
+  --theme-ch5-keypad--text-border-color: var(--theme-colors--text-border-color);
+
+  --theme-ch5-keypad--text-font-color: var(--theme-colors--text-font-color);
+
+  --theme-ch5-keypad--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
+
+  --theme-ch5-keypad--text-pressed-border-color: var(--theme-colors--text-pressed-border-color);
+
+  --theme-ch5-keypad--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
 
   // ***************************************
   // ch5-overlay-panel
   // ***************************************
 
-  /// The color of the icon at the top of the overlay panel
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #555
-  --theme-ch5-overlay-default-close-icon-color: #555;
+  --theme-ch5-overlay-panel--font-size: var(--theme-fonts--font-size);
 
-  /// The color of the icon at the top of the overlay panel when it is hovered
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #333
-  --theme-ch5-overlay-default-close-icon-color-hover: #333;
+  --theme-ch5-overlay-panel--font-style: var(--theme-fonts--font-style);
 
-  /// The background color of the mask element
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: rgba(150, 150, 150, 0.3)
-  --theme-ch5-overlay-default-mask-bg-color: rgba(150, 150, 150, 0.3);
+  --theme-ch5-overlay-panel--font-weight: var(--theme-fonts--font-weight);
 
-  /// The background color of the icon at the top of the overlay panel
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fff
-  --theme-ch5-overlay-panel-close-icon-background-color: #fff;
+  --theme-ch5-overlay-panel--close-icon-color: #555;
 
-  /// The background color of the overlay panel
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fff
-  --theme-ch5-overlay-panel-background-color: #fff;
+  --theme-ch5-overlay-panel--close-icon-color-hover: #333;
 
-  /// The border color of the overlay panel
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #aeaeae
-  --theme-ch5-overlay-panel-border-color: #aeaeae;
+  --theme-ch5-overlay-panel--mask-background-color: rgba(150, 150, 150, 0.3);
 
-  /// The text color of the overlay panel
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #4a4a4a
-  --theme-ch5-overlay-panel-text-color: #4a4a4a;
+  --theme-ch5-overlay-panel--close-icon-background-color: #fff;
 
-  /// The font color for the content of the overlay panel
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #333
-  --theme-ch5-overlay-panel-contents-font-color: #333;
+  --theme-ch5-overlay-panel--background-color: #fff;
 
-  /// The border width of the overlay panel
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-overlay-panel-border-width: 1px;
+  --theme-ch5-overlay-panel--border-color: #aeaeae;
 
-  /// The border style of the overlay panel
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-overlay-panel-border-style: solid;
+  --theme-ch5-overlay-panel--text-color: #4a4a4a;
 
-  /// The border radius of the overlay panel
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 6px
-  --theme-ch5-overlay-panel-border-radius: 6px;
+  --theme-ch5-overlay-panel--contents-font-color: #333;
 
-  /// Set padding for the overlay panel
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1.25em
-  --theme-ch5-overlay-panel-padding: 1.25em;
+  --theme-ch5-overlay-panel--border-width: 1px;
 
-  /// The margin of the icon at the top of the overlay panel
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0 5px
-  --theme-ch5-overlay-panel-close-icon-margin: 0 5px;
+  --theme-ch5-overlay-panel--border-style: solid;
 
-  /// The padding of the icon at the top of the overlay panel
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0 5px 5px
-  --theme-ch5-overlay-panel-close-icon-padding: 0 5px 5px;
+  --theme-ch5-overlay-panel--border-radius: 6px;
 
-  /// The width of the icon at the top of the overlay panel
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 20px
-  --theme-ch5-overlay-panel-close-icon-width: 20px;
+  --theme-ch5-overlay-panel--padding: 1.25em;
 
-  /// The font size of the icon at the top of the overlay panel
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 24px
-  --theme-ch5-overlay-default-close-icon-font-size: 24px;
+  --theme-ch5-overlay-panel--close-icon-margin: 0 5px;
 
-  /// The padding for the content of the overlay panel
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 20px
-  --theme-ch5-overlay-panel-contents-padding: 20px;
+  --theme-ch5-overlay-panel--close-icon-padding: 0 5px 5px;
 
-  /// The font size for the content of the overlay panel
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 18px
-  --theme-ch5-overlay-panel-contents-font-size: 18px;
+  --theme-ch5-overlay-panel--close-icon-width: 20px;
 
-  /// overlay panel z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 10000
-  --theme-ch5-overlay-panel-z-index: 10000;
+  --theme-ch5-overlay-panel--close-icon-font-size: 24px;
 
-  //ch5-segmented-gauge
-  /// Led style gauge style height
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 20px
-  --theme-ch5-segmented-gauge-led-style-height: 20px;
+  --theme-ch5-overlay-panel--contents-padding: 20px;
 
-  /// Led style gauge style width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 20px
-  --theme-ch5-segmented-gauge-led-style-width: 20px;
+  --theme-ch5-overlay-panel--contents-font-size: 18px;
 
-  /// Margin for segmented gauge children
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 2px
-  --theme-ch5-segmented-gauge-segment-margin: 2px;
+  --theme-ch5-overlay-panel--close-icon-font-style: var(--theme-fonts--font-style);
 
-  /// Led style border radius
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 50%
-  --theme-ch5-segmented-gauge-led-style-border-radius: 50%;
+  --theme-ch5-overlay-panel--close-icon-font-weight: var(--theme-fonts--font-weight);
 
-  /// State graphic green
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #22c55e
-  --theme-ch5-segmented-gauge-state-graphic-green: #22c55e;
+  --theme-ch5-overlay-panel--contents-font-style: var(--theme-fonts--font-weight);
 
-  /// State graphic inactive
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #909090
-  --theme-ch5-segmented-gauge-state-graphic-inactive: #909090;
+  --theme-ch5-overlay-panel--contents-font-weight: var(--theme-fonts--font-style);
 
-  /// State graphic yellow
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #eab308
-  --theme-ch5-segmented-gauge-state-graphic-yellow: #eab308;
+  // ***************************************
+  // ch5-segmented-gauge
+  // ***************************************
 
-  /// State graphic green
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #ef4444
-  --theme-ch5-segmented-gauge-state-graphic-red: #ef4444;
+  --theme-ch5-segmented-gauge--led-style-height: 20px;
 
-  /// State graphic green
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #3b82f6
-  --theme-ch5-segmented-gauge-state-graphic-blue: #3b82f6;
+  --theme-ch5-segmented-gauge--led-style-width: 20px;
 
-  /// State graphic green
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #f97316
-  --theme-ch5-segmented-gauge-state-graphic-orange: #f97316;
+  --theme-ch5-segmented-gauge--led-style-border-radius: 50%;
 
-  /// State graphic green
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #f8fafc
-  --theme-ch5-segmented-gauge-state-graphic-white: #f8fafc;
+  --theme-ch5-segmented-gauge--state-graphic-green: #22c55e;
 
-  /// Segmented gauge hidden segment
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 4px
-  --theme-ch5-segmented-gauge-hidden-segment: 4px;
+  --theme-ch5-segmented-gauge--state-graphic-inactive: #909090;
 
-  /// Segmented gauge hidden margin
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0px
-  --theme-ch5-segmented-gauge-hidden-margin: 0px;
+  --theme-ch5-segmented-gauge--state-graphic-yellow: #eab308;
+
+  --theme-ch5-segmented-gauge--state-graphic-red: #ef4444;
+
+  --theme-ch5-segmented-gauge--state-graphic-blue: #3b82f6;
+
+  --theme-ch5-segmented-gauge--state-graphic-orange: #f97316;
+
+  --theme-ch5-segmented-gauge--state-graphic-white: #f8fafc;
 
   // ***************************************
   // ch5-select
   // ***************************************
 
-  /// Component border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #c6c8ca
-  --theme-ch5-select-border-color: #c6c8ca;
+  --theme-ch5-select--border-color: #c6c8ca;
 
-  /// Component main font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #000
-  --theme-ch5-select-font-color: #{$black};
+  --theme-ch5-select--font-color: #{$black};
 
-  /// Selected item background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #cce5ff
-  --theme-ch5-select-panel-item-selected-background-color: #cce5ff;
+  --theme-ch5-select--panel-item-selected-background-color: #cce5ff;
 
-  /// Item border color
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: transparent
-  --theme-ch5-select-panel-item-border-color: transparent;
+  --theme-ch5-select--panel-item-border-color: transparent;
 
-  /// Item main text color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #212529
-  --theme-ch5-select-panel-item-color: #212529;
+  --theme-ch5-select--panel-item-color: #212529;
 
-  /// Item background color
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: transparent
-  --theme-ch5-select-panel-item-background-color: transparent;
+  --theme-ch5-select--panel-item-background-color: transparent;
 
-  /// Item background color on mouse over
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #f8f9fa
-  --theme-ch5-select-panel-item-hover-background-color: #f8f9fa;
+  --theme-ch5-select--panel-item-hover-background-color: #f8f9fa;
 
-  /// Select panel background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fff
-  --theme-ch5-select-panel-items-background-color: #{$white};
+  --theme-ch5-select--panel-items-background-color: #{$white};
 
-  /// Top line content padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 4px
-  --theme-ch5-select-padding: 4px;
+  --theme-ch5-select--padding: 4px;
 
-  /// Component border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-select-border-width: 1px;
+  --theme-ch5-select--border-width: 1px;
 
-  /// Component border radius
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 2px
-  --theme-ch5-select-border-radius: 2px;
+  --theme-ch5-select--border-radius: 2px;
 
-  /// Combo trigger button margin
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 0
-  --theme-ch5-select-combo-trigger-margin: 0;
+  --theme-ch5-select--combo-trigger-margin: 0;
 
-  /// Combo trigger button width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 24px
-  --theme-ch5-select-combo-trigger-width: 24px;
+  --theme-ch5-select--combo-trigger-width: 24px;
 
-  /// Combo trigger button height
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 24px
-  --theme-ch5-select-combo-trigger-height: 24px;
+  --theme-ch5-select--combo-trigger-height: 24px;
 
-  /// Top line width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: calc(100% - 40px)
-  --theme-ch5-select-item-selected-width: calc(100% - 40px);
+  --theme-ch5-select--item-selected-width: calc(100% - 40px);
 
-  /// Item border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-select-panel-item-border-width: 1px;
+  --theme-ch5-select--panel-item-border-width: 1px;
 
-  /// Item padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 8px
-  --theme-ch5-select-panel-item-padding: 8px;
+  --theme-ch5-select--panel-item-padding: 8px;
 
-  /// Select panel shadow
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
-  --theme-ch5-select-panel-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  --theme-ch5-select--panel-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 
-  /// Select panel z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 10000
-  --theme-ch5-select-panel-z-index: 10000;
+  --theme-ch5-select--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-select--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-select--font-weight: var(--theme-fonts--font-weight);
 
   // ***************************************
   // ch5-signal-level-gauge
   // ***************************************
 
-  /// Height small
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 24px
-  --theme-ch5-signal-level-gauge-small-height: 24px;
+  --theme-ch5-signal-level-gauge--small-height: 24px;
 
-  /// Width small
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 36px
-  --theme-ch5-signal-level-gauge-small-width: 36px;
+  --theme-ch5-signal-level-gauge--small-width: 36px;
 
-  /// Height regular
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 35px
-  --theme-ch5-signal-level-gauge-regular-height: 35px;
+  --theme-ch5-signal-level-gauge--regular-height: 35px;
 
-  /// Width regular
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 45px
-  --theme-ch5-signal-level-gauge-regular-width: 45px;
+  --theme-ch5-signal-level-gauge--regular-width: 45px;
 
-  /// Height large
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 60px
-  --theme-ch5-signal-level-gauge-large-height: 60px;
+  --theme-ch5-signal-level-gauge--large-height: 60px;
 
-  /// Width large
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 90px
-  --theme-ch5-signal-level-gauge-large-width: 90px;
+  --theme-ch5-signal-level-gauge--large-width: 90px;
 
-  /// Height x-large
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 96px
-  --theme-ch5-signal-level-gauge-x-large-height: 96px;
+  --theme-ch5-signal-level-gauge--x-large-height: 96px;
 
-  /// Width x-large
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 180px
-  --theme-ch5-signal-level-gauge-x-large-width: 180px;
+  --theme-ch5-signal-level-gauge--x-large-width: 180px;
 
-  /// Bar color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #808080
-  --theme-ch5-signal-level-gauge-bar-color: #808080;
+  --theme-ch5-signal-level-gauge--bar-color: #808080;
 
-  /// Selected bar color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #67bef0
-  --theme-ch5-signal-level-gauge-selected-bar-color: #67bef0;
+  --theme-ch5-signal-level-gauge--selected-bar-color: #67bef0;
 
   // ***************************************
   // ch5-spinner
   // ***************************************
 
-  /// The text color of the active item
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #000
-  --theme-ch5-spinner-active-item-color: #000;
+  --theme-ch5-spinner--active-item-color: #000;
 
-  /// The text color of the item.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #333
-  --theme-ch5-spinner-item-color: #333;
+  --theme-ch5-spinner--font-style: var(--theme-fonts--font-style);
 
-  /// The background color for the overlay of the spinner.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #000
-  --theme-ch5-spinner-overlay-background-color: #000;
-  /// The box shadow color of the spinner
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: rgba(0, 0, 0, 0.3)
-  --theme-ch5-spinner-highlight-box-shadow-color: rgba(0, 0, 0, 0.3);
-  /// The border color of the spinner
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #00ff00
-  --theme-ch5-spinner-highlight-border-color: #00ff00;
+  --theme-ch5-spinner--font-weight: var(--theme-fonts--font-weight);
 
-  /// Spinner background color
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: transparent
-  --theme-ch5-spinner-background-color: transparent;
+  --theme-ch5-spinner--icon-font-size: var(--theme-ch5-spinner-font-size);
 
-  /// Spinner background gradient before
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05))
-  --theme-ch5-spinner-background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05));
+  --theme-ch5-spinner--item-color: #333;
 
-  /// Spinner background gradient after
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%)
-  --theme-ch5-spinner-background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%);
+  --theme-ch5-spinner--overlay-background-color: #000;
 
-  /// Spinner border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-spinner-border-width: 1px;
+  --theme-ch5-spinner--highlight-box-shadow-color: rgba(0, 0, 0, 0.3);
 
-  /// Spinner border style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-spinner-border-style: solid;
+  --theme-ch5-spinner--highlight-border-color: #00ff00;
 
-  /// The default font size of the spinner
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 22px
-  --theme-ch5-spinner-font-size: 22px;
+  --theme-ch5-spinner--background-color: transparent;
 
-  /// The padding of the icon within the slider item
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: 0 0
-  --theme-ch5-spinner-icon-padding: 0 0;
+  --theme-ch5-spinner--background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05));
 
-  /// The margin of the icon within the slider item
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: 0 0
-  --theme-ch5-spinner-icon-margin: 0 0;
+  --theme-ch5-spinner--background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%);
 
-  /// The opacity for the overlay of the spinner
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 0
-  --theme-ch5-spinner-overlay-opacity: 0;
+  --theme-ch5-spinner--border-width: 1px;
 
-  /// Spinner wrapper z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 9999
-  --theme-ch5-spinner-wrapper-z-index: 9999;
+  --theme-ch5-spinner--border-style: solid;
 
-  /// Spinner overlay z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 999
-  --theme-ch5-spinner-overlay-z-index: 999;
+  --theme-ch5-spinner--font-size: 22px;
+
+  --theme-ch5-spinner--icon-padding: 0 0;
+
+  --theme-ch5-spinner--icon-margin: 0 0;
+
+  --theme-ch5-spinner--overlay-opacity: 0;
 
   // ***************************************
   // ch5-subpage-reference-list
   // ***************************************
 
-  /// Subpage-reference container padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 5px
-  --theme-ch5-subpage-reference-list-container-padding: 5px;
+  --theme-ch5-subpage-reference-list--container-padding: 5px;
+
+  --theme-ch5-subpage-reference-list--scrollbar-thumb-color: var(--theme-others--scrollbar-thumb-color);
+
+  --theme-ch5-subpage-reference-list--scrollbar-border-radius: var(--theme-others--scrollbar-border-radius);
+
+  --theme-ch5-subpage-reference-list--scrollbar-track-color: var(--theme-others--scrollbar-track-color);
+
+  --theme-ch5-subpage-reference-list--scrollbar-width: var(--theme-others--scrollbar-width);
 
   // ***************************************
   // ch5-tab-button
   // ***************************************
 
-  /// Button container width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 5px
-  --theme-ch5-tab-button-button-container-width: 5px;
+  --theme-ch5-tab-button--button-container-width: 5px;
 
-  /// Button container height
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 5px
-  --theme-ch5-tab-button-button-container-height: 5px;
+  --theme-ch5-tab-button--button-container-height: 5px;
 
   // ***************************************
   // ch5-text
   // ***************************************
 
-  /// Text min width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 64px
-  --theme-ch5-text-min-width: 64px;
+  --theme-ch5-text--min-width: 64px;
 
-  /// Text min height
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 44px
-  --theme-ch5-text-min-height: 44px;
+  --theme-ch5-text--min-height: 44px;
 
-  /// Text width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 150px
-  --theme-ch5-text-width: 150px;
+  --theme-ch5-text--width: 150px;
 
-  /// Text height
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 48px
-  --theme-ch5-text-height: 48px;
+  --theme-ch5-text--height: 48px;
 
-  /// Text padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px
-  --theme-ch5-text-padding: 10px;
+  --theme-ch5-text--padding: 10px;
 
   // ***************************************
   // ch5-textinput
   // ***************************************
 
-  /// The text color of the textinput.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #000000
-  --theme-ch5-textinput-text-color: #000000;
+  --theme-ch5-textinput--regular-mask-font-size: 14px;
 
-  /// Set the color of text for the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: var(--theme-ch5-textinput-text-color)
-  --theme-ch5-textinput-input-text-color: var(--theme-ch5-textinput-text-color);
+  --theme-ch5-textinput--small-mask-font-size: 13px;
 
-  /// The color of the icon within the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: var(--theme-colors-success-background-color)
-  --theme-ch5-textinput-icon-text-color: var(--theme-colors-success-background-color);
+  --theme-ch5-textinput--x-small-mask-font-size: 11px;
 
-  /// The color for the label of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: var(--theme-ch5-textinput-text-color)
-  --theme-ch5-textinput-label-text-color: var(--theme-ch5-textinput-text-color);
+  --theme-ch5-textinput--large-mask-font-size: 14px;
 
-  /// Base border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #666666
-  --theme-ch5-textinput-border-color: #666666;
+  --theme-ch5-textinput--x-large-mask-font-size: 18px;
 
-  /// The color for the border of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: var(--theme-ch5-textinput-border-color)
-  --theme-ch5-textinput-input-border-color: var(--theme-ch5-textinput-border-color);
+  --theme-ch5-textinput--regular-font-size: var(--theme-fonts--font-size);
 
-  /// Background color of textinput input field
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: transparent
-  --theme-ch5-textinput-input-background-color: transparent;
+  --theme-ch5-textinput--regular-font-style: var(--theme-fonts--font-style);
 
-  /// The border radius for the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 5px
-  --theme-ch5-textinput-input-border-radius: 5px;
+  --theme-ch5-textinput--regular-font-weight: var(--theme-fonts--font-weight);
 
-  /// Set the textinput border's width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 2px
-  --theme-ch5-textinput-input-border-width: 2px;
+  --theme-ch5-textinput--small-font-size: 14px;
 
-  /// Set the textinput border's style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-textinput-input-border-style: solid;
+  --theme-ch5-textinput--small-font-style: var(--theme-fonts--font-style);
 
-  /// Set the font size for regular size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 16px
-  --theme-ch5-textinput-regular-font-size: 16px;
+  --theme-ch5-textinput--small-font-weight: var(--theme-fonts--font-weight);
 
-  /// Set padding for regular size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 15px 20px
-  --theme-ch5-textinput-input-regular-padding: 15px 20px;
+  --theme-ch5-textinput--large-font-size: 18px;
 
-  /// Set the width for regular size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 400px
-  --theme-ch5-textinput-size-regular-width: 400px;
+  --theme-ch5-textinput--large-font-style: var(--theme-fonts--font-style);
 
-  /// Set margin of icon for regular size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 16px 16px
-  --theme-ch5-textinput-icon-regular-margin: 16px 16px;
+  --theme-ch5-textinput--large-font-weight: var(--theme-fonts--font-weight);
 
-  /// Set the font size for x-small size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 12px
-  --theme-ch5-textinput-x-small-font-size: 12px;
+  --theme-ch5-textinput--x-large-font-size: 22px;
 
-  /// Set padding for x-small size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px 10px
-  --theme-ch5-textinput-input-x-small-padding: 10px 10px;
+  --theme-ch5-textinput--x-large-font-style: var(--theme-fonts--font-style);
 
-  /// Set the width for x-small size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 200px
-  --theme-ch5-textinput-size-x-small-width: 200px;
+  --theme-ch5-textinput--x-large-font-weight: var(--theme-fonts--font-weight);
 
-  /// Set margin of icon for x-small size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 12px 12px
-  --theme-ch5-textinput-icon-x-small-margin: 12px 12px;
+  --theme-ch5-textinput--x-small-font-size: 12px;
 
-  /// Set padding for small size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 15px 15px
-  --theme-ch5-textinput-input-small-padding: 15px 15px;
+  --theme-ch5-textinput--x-small-font-style: var(--theme-fonts--font-style);
 
-  /// Set the font size for small size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 14px
-  --theme-ch5-textinput-small-font-size: 14px;
+  --theme-ch5-textinput--x-small-font-weight: var(--theme-fonts--font-weight);
 
-  /// Set the width for small size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 250px
-  --theme-ch5-textinput-size-small-width: 250px;
+  --theme-ch5-textinput--mask-text-color: #000000;
 
-  /// Set margin of icon for small size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 14px 14px
-  --theme-ch5-textinput-icon-small-margin: 14px 14px;
+  --theme-ch5-textinput--input-text-color: var(--theme-ch5-textinput--mask-text-color);
 
-  /// Set padding for large size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 15px 20px
-  --theme-ch5-textinput-input-large-padding: 15px 20px;
+  --theme-ch5-textinput--icon-text-color: var(--theme-colors--success-background-color);
 
-  /// Set the font size for large size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 18px
-  --theme-ch5-textinput-large-font-size: 18px;
+  --theme-ch5-textinput--label-text-color: var(--theme-ch5-textinput--mask-text-color);
 
-  /// Set the width for large size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 500px
-  --theme-ch5-textinput-size-large-width: 500px;
+  --theme-ch5-textinput--input-border-color: var(--theme-ch5-textinput--mask-text-color);
 
-  /// Set margin of icon for large size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 18px 18px
-  --theme-ch5-textinput-icon-large-margin: 18px 18px;
+  --theme-ch5-textinput--input-background-color: transparent;
 
-  /// Set padding for x-large size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 15px 20px
-  --theme-ch5-textinput-input-x-large-padding: 15px 20px;
+  --theme-ch5-textinput--input-border-radius: 5px;
 
-  /// Set the font size for x-large size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 22px
-  --theme-ch5-textinput-x-large-font-size: 22px;
+  --theme-ch5-textinput--input-border-width: 2px;
 
-  /// Set margin of icon for x-large size of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 22px 22px
-  --theme-ch5-textinput-icon-x-large-margin: 22px 22px;
+  --theme-ch5-textinput--input-border-style: solid;
 
-  /// Set minimum height for size - x-small of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 40px
-  --theme-ch5-textinput-size-x-small-height: 40px;
+  --theme-ch5-textinput--regular-input-padding: 15px 20px;
 
-  /// Set minimum height for size - small of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 48px
-  --theme-ch5-textinput-size-small-height: 48px;
+  --theme-ch5-textinput--regular-width: 400px;
 
-  /// Set minimum height for size - regular of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 52px
-  --theme-ch5-textinput-size-regular-height: 52px;
+  --theme-ch5-textinput--regular-icon-margin: 16px 16px;
 
-  /// Set minimum height for size - large of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 56px
-  --theme-ch5-textinput-size-large-height: 56px;
+  --theme-ch5-textinput--x-small-input-padding: 10px 10px;
 
-  /// Set minimum height for size - x-large of the textinput
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 60px
-  --theme-ch5-textinput-size-x-large-height: 60px;
+  --theme-ch5-textinput--x-small-width: 200px;
+
+  --theme-ch5-textinput--x-small-icon-margin: 12px 12px;
+
+  --theme-ch5-textinput--small-input-padding: 15px 15px;
+
+  --theme-ch5-textinput--small-width: 250px;
+
+  --theme-ch5-textinput--small-icon-margin: 14px 14px;
+
+  --theme-ch5-textinput--large-input-padding: 15px 20px;
+
+  --theme-ch5-textinput--large-width: 500px;
+
+  --theme-ch5-textinput--x-large-width: 500px;
+
+  --theme-ch5-textinput--large-icon-margin: 18px 18px;
+
+  --theme-ch5-textinput--x-large-input-padding: 15px 20px;
+
+  --theme-ch5-textinput--x-large-icon-margin: 22px 22px;
+
+  --theme-ch5-textinput--x-small-height: 40px;
+
+  --theme-ch5-textinput--small-height: 48px;
+
+  --theme-ch5-textinput--regular-height: 52px;
+
+  --theme-ch5-textinput--large-height: 56px;
+
+  --theme-ch5-textinput--x-large-height: 60px;
 
   // ***************************************
   // ch5-toggle
   // ***************************************
 
-  /// The background color of the handle when value is true(checked).
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #4bd865
-  --theme-ch5-toggle-handle-checked-color: #4bd865;
+  --theme-ch5-toggle--label-font-size: var(--theme-fonts--font-size);
 
-  /// The text color of the label
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #4a4a4a
-  --theme-ch5-toggle-label-font-color: #4a4a4a;
+  --theme-ch5-toggle--label-font-style: var(--theme-fonts--font-style);
 
-  /// The text color of the on|off label
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #4a4a4a
-  --theme-ch5-toggle-text-font-color: #4a4a4a;
+  --theme-ch5-toggle--label-font-weight: var(--theme-fonts--font-weight);
 
-  /// The color of the on|off icon
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fff
-  --theme-ch5-toggle-icon-font-color: #{$white};
+  --theme-ch5-toggle--text-font-size: var(--theme-fonts--font-size);
 
-  // circle
-  /// The background color of the handle when shape="circle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #d8d9db
-  --theme-ch5-toggle-handle-circle-background: #d8d9db;
+  --theme-ch5-toggle--text-font-style: var(--theme-fonts--font-style);
 
-  /// The text color of the on label when shape="circle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fff
-  --theme-ch5-toggle-circle-label-on-color: #{$white};
+  --theme-ch5-toggle--text-font-weight: var(--theme-fonts--font-weight);
 
-  /// The text color of the off label when shape="circle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #666
-  --theme-ch5-toggle-circle-label-off-color: #666;
+  --theme-ch5-toggle--icon-font-size: var(--theme-fonts--font-size);
 
-  /// The background color of the knob when shape="circle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fff
-  --theme-ch5-toggle-circle-knob-color: #{$white};
+  --theme-ch5-toggle--icon-font-style: var(--theme-fonts--font-style);
 
-  // rectangle
-  /// The background color of the handle when shape="rectangle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #464747
-  --theme-ch5-toggle-handle-rectangle-background: #464747;
+  --theme-ch5-toggle--handle-checked-color: #4bd865;
 
-  /// The text color of the on label when shape="rectangle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fff
-  --theme-ch5-toggle-rectangle-label-on-color: #{$white};
+  --theme-ch5-toggle--label-font-color: #4a4a4a;
 
-  /// The text color of the off label when shape="rectangle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fff
-  --theme-ch5-toggle-rectangle-label-off-color: #{$white};
+  --theme-ch5-toggle--text-font-color: #4a4a4a;
 
-  /// The background color of the knob when shape="rectangle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #888
-  --theme-ch5-toggle-rectangle-knob-color: #888;
+  --theme-ch5-toggle--icon-font-color: #{$white};
+
+  --theme-ch5-toggle--handle-circle-background: #d8d9db;
+
+  --theme-ch5-toggle--circle-label-on-color: #{$white};
+
+  --theme-ch5-toggle--circle-label-off-color: #666;
+
+  --theme-ch5-toggle--circle-knob-color: #{$white};
+
+  --theme-ch5-toggle--handle-rectangle-background: #464747;
+
+  --theme-ch5-toggle--rectangle-label-on-color: #{$white};
+
+  --theme-ch5-toggle--rectangle-label-off-color: #{$white};
+
+  --theme-ch5-toggle--rectangle-knob-color: #888;
+
+  --theme-ch5-toggle--label-margin: 10px;
+
+  --theme-ch5-toggle--icon-font-weight: 900;
+
+  --theme-ch5-toggle--handle-circle-margin: 10px;
+
+  --theme-ch5-toggle--handle-rectangle-margin: 10px;
 
   // ***************************************
   // ch5-triggerview
   // ***************************************
 
-  /// label margin
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px
-  --theme-ch5-toggle-label-margin: 10px;
+  --theme-ch5-triggerview--slide-min-height: 0px;
 
-  /// Font weight applied on the on|off icon
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 900
-  --theme-ch5-toggle-icon-font-weight: 900;
+  --theme-ch5-triggerview--slide-max-height: none;
 
-  /// Handle margin when the shape="circle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px
-  --theme-ch5-toggle-handle-circle-margin: 10px;
+  --theme-ch5-triggerview--transition-duration: 0.6s;
 
-  /// Handle margin when the shape="rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px
-  --theme-ch5-toggle-handle-rectangle-margin: 10px;
+  --theme-ch5-triggerview--transition-timing-function: ease-out;
 
-  /// Container z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 3
-  --theme-ch5-toggle-container-z-index: 3;
+  --theme-ch5-triggerview--gap: 16px;
 
-  /// Toggle knob z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 2
-  --theme-ch5-toggle-knob-z-index: 2;
+  --theme-ch5-triggerview--font-size: var(--theme-fonts--font-size);
 
-  /// Toggle z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 1
-  --theme-ch5-toggle-z-index: 1;
+  --theme-ch5-triggerview--font-style: var(--theme-fonts--font-style);
 
-  /// Triggerview minimum height in px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0px
-  --theme-ch5-triggerview-slide-min-height: 0px;
-
-  /// Triggerview maximum height in px
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: none
-  --theme-ch5-triggerview-slide-max-height: none;
-
-  /// Duration of changing from one view to another.
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: 0.6s
-  --theme-ch5-triggerview-transition-duration: 0.6s;
-
-  /// Transition effect(describe animation on content of the child view)
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: ease-out
-  --theme-ch5-triggerview-transition-timing-function: ease-out;
-
-  // Do not remove below even if search result is 1
-  /// gap between views in px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 16px
-  --theme-ch5-triggerview-gap: 16px;
+  --theme-ch5-triggerview--font-weight: var(--theme-fonts--font-weight);
 
   // ***************************************
   // ch5-modal-dialog
   // ***************************************
 
-  /// The color of the icon at the top of the modal
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #555
-  --theme-ch5-modal-close-icon-color: #555;
+  --theme-ch5-modal-dialog--close-icon-font-size: var(--theme-fonts--font-size);
 
-  /// The color of the icon at the top of the modal when it is hovered
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #333
-  --theme-ch5-modal-close-icon-color-hover: #333;
+  --theme-ch5-modal-dialog--close-icon-font-style: var(--theme-fonts--font-style);
 
-  /// The background color of the mask element
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: rgba(150, 150, 150, 0.3)
-  --theme-ch5-modal-mask-bg-color: rgba(150, 150, 150, 0.3);
+  --theme-ch5-modal-dialog--close-icon-font-weight: var(--theme-fonts--font-weight);
 
-  /// The background color of the icon at the top of the modal
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fff
-  --theme-ch5-modal-close-icon-background-color: #{$white};
+  --theme-ch5-modal-dialog--default-close-icon-font-style: var(--theme-fonts--font-style);
 
-  /// The background color of the modal
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fff
-  --theme-ch5-modal-background-color: #{$white};
+  --theme-ch5-modal-dialog--default-close-icon-font-weight: var(--theme-fonts--font-weight);
 
-  /// The text color of the modal
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #4a4a4a
-  --theme-ch5-modal-text-color: #4a4a4a;
+  --theme-ch5-modal-dialog--title-font-style: var(--theme-fonts--font-style);
 
-  /// The font color of the modal content
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #333
-  --theme-ch5-modal-contents-font-color: #333;
+  --theme-ch5-modal-dialog--contents-font-style: var(--theme-fonts--font-style);
 
-  /// The border color of the modal
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #939393
-  --theme-ch5-modal-border-color: #939393;
+  --theme-ch5-modal-dialog--contents-font-weight: var(--theme-fonts--font-weight);
 
-  /// The text color for the prompt text of the modal
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #4a4a4a
-  --theme-ch5-modal-prompt-text-font-color: #4a4a4a;
+  --theme-ch5-modal-dialog--prompt-icon-font-size: var(--theme-fonts--font-size);
 
-  /// The border width of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-modal-border-width: 1px;
+  --theme-ch5-modal-dialog--prompt-icon-font-style: var(--theme-fonts--font-style);
 
-  /// The border style of the modal
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-modal-border-style: solid;
+  --theme-ch5-modal-dialog--prompt-icon-font-weight: var(--theme-fonts--font-weight);
 
-  /// The border radius of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 6px
-  --theme-ch5-modal-border-radius: 6px;
+  --theme-ch5-modal-dialog--prompt-text-font-style: var(--theme-fonts--font-style);
 
-  /// Set padding for the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1.25em
-  --theme-ch5-modal-padding: 1.25em;
+  --theme-ch5-modal-dialog--prompt-text-font-weight: var(--theme-fonts--font-weight);
 
-  /// The margin of the icon at the top of the modal.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0 5px
-  --theme-ch5-modal-close-icon-margin: 0 5px;
+  --theme-ch5-modal-dialog--close-icon-color: #555;
 
-  /// The padding of the icon at the top of the modal.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0 5px 5px
-  --theme-ch5-modal-close-icon-padding: 0 5px 5px;
+  --theme-ch5-modal-dialog--close-icon-color-hover: #333;
 
-  /// The width of the icon at the top of the modal.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 20px
-  --theme-ch5-modal-close-icon-width: 20px;
+  --theme-ch5-modal-dialog--mask-bg-color: rgba(150, 150, 150, 0.3);
 
-  /// The default font size of the icon at the top of the modal.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 24px
-  --theme-ch5-modal-default-close-icon-font-size: 24px;
+  --theme-ch5-modal-dialog--close-icon-background-color: #{$white};
 
-  /// The font size for the title of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1.3em
-  --theme-ch5-modal-title-font-size: 1.3em;
+  --theme-ch5-modal-dialog--background-color: #{$white};
 
-  /// The padding of the modal's content
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px
-  --theme-ch5-modal-contents-padding: 10px;
+  --theme-ch5-modal-dialog--text-color: #4a4a4a;
 
-  /// The font size for the content of the modal.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 18px
-  --theme-ch5-modal-contents-font-size: 18px;
+  --theme-ch5-modal-dialog--contents-font-color: #333;
 
-  /// The padding for the prompt of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 30px 0 30px 0
-  --theme-ch5-modal-prompt-padding: 30px 0 30px 0;
+  --theme-ch5-modal-dialog--border-color: #939393;
 
-  /// The right margin for the prompt icon of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px
-  --theme-ch5-modal-prompt-icon-margin-right: 10px;
+  --theme-ch5-modal-dialog--prompt-text-font-color: #4a4a4a;
 
-  /// The font size for the prompt text of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 16px
-  --theme-ch5-modal-prompt-text-font-size: 16px;
+  --theme-ch5-modal-dialog--border-width: 1px;
 
-  /// modal dialog z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 10001
-  --theme-ch5-modal-z-index: 10001;
+  --theme-ch5-modal-dialog--border-style: solid;
 
-  /// mask z-index
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 10000
-  --theme-ch5-modal-mask-z-index: 10000;
+  --theme-ch5-modal-dialog--border-radius: 6px;
 
-  /// the font weight for the title of the modal
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: bold
-  --theme-ch5-modal-title-font-weight: bold;
+  --theme-ch5-modal-dialog--padding: 1.25em;
+
+  --theme-ch5-modal-dialog--close-icon-margin: 0 5px;
+
+  --theme-ch5-modal-dialog--close-icon-padding: 0 5px 5px;
+
+  --theme-ch5-modal-dialog--close-icon-width: 20px;
+
+  --theme-ch5-modal-dialog--default-close-icon-font-size: 24px;
+
+  --theme-ch5-modal-dialog--title-font-size: 1.3em;
+
+  --theme-ch5-modal-dialog--contents-padding: 10px;
+
+  --theme-ch5-modal-dialog--contents-font-size: 18px;
+
+  --theme-ch5-modal-dialog--prompt-padding: 30px 0 30px 0;
+
+  --theme-ch5-modal-dialog--prompt-icon-margin-right: 10px;
+
+  --theme-ch5-modal-dialog--prompt-text-font-size: 16px;
+
+  --theme-ch5-modal-dialog--title-font-weight: bold;
 
   // ***************************************
   // ch5-slider
   // ***************************************
 
-  /// Slider connect background
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #0099ff
-  --theme-ch5-slider-connect-bg: #0099ff;
+  --theme-ch5-slider--button-default-pressed-border-color: var(--theme-colors--default-pressed-border-color);
 
-  /// Slider background percentage
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 30%
-  --theme-ch5-slider-background-lighten-percent: 30%;
+  --theme-ch5-slider--button-default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
 
-  /// Slider target background
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: transparent
-  --theme-ch5-slider-target-bg: transparent;
+  --theme-ch5-slider--button-default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
 
-  /// Slider target border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #8f8f8f
-  --theme-ch5-slider-target-border-color: #8f8f8f;
+  --theme-ch5-slider--connect-bg: #0099ff;
 
-  /// Slider handle background
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fff
-  --theme-ch5-slider-handle-bg: #fff;
+  --theme-ch5-slider--target-bg: transparent;
 
-  /// Slider handler border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #8f8f8f
-  --theme-ch5-slider-handle-border-color: #8f8f8f;
+  --theme-ch5-slider--target-border-color: #8f8f8f;
 
-  /// Slider pips color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #8f8f8f
-  --theme-ch5-slider-pips-color: #8f8f8f;
+  --theme-ch5-slider--handle-bg: #fff;
 
-  /// Slider target size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 18px
-  --theme-ch5-slider-height: 18px;
+  --theme-ch5-slider--handle-border-color: #8f8f8f;
 
-  /// Slider border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-slider-target-border-width: 1px;
+  --theme-ch5-slider--pips-color: #8f8f8f;
 
-  /// Slider handle border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px
-  --theme-ch5-slider-handle-border-width: 1px;
+  --theme-ch5-slider--height: 18px;
 
-  /// Slider border style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-slider-target-border-style: solid;
+  --theme-ch5-slider--target-border-width: 1px;
 
-  /// Slider handle border style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: solid
-  --theme-ch5-slider-handle-border-style: solid;
+  --theme-ch5-slider--handle-border-width: 1px;
 
-  /// x-small width in px of the slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 200px
-  --theme-ch5-slider-width-x-small: 200px;
+  --theme-ch5-slider--target-border-style: solid;
 
-  /// Small width in px of the slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 250px
-  --theme-ch5-slider-width-small: 250px;
+  --theme-ch5-slider--handle-border-style: solid;
 
-  /// regular width in px of the slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 300px
-  --theme-ch5-slider-width-regular: 300px;
+  --theme-ch5-slider--width-x-small: 200px;
 
-  /// large width in px of the slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 400px
-  --theme-ch5-slider-width-large: 400px;
+  --theme-ch5-slider--width-small: 250px;
 
-  /// x-large width in px of the slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 500px
-  --theme-ch5-slider-width-x-large: 500px;
+  --theme-ch5-slider--width-regular: 300px;
+
+  --theme-ch5-slider--width-large: 400px;
+
+  --theme-ch5-slider--width-x-large: 500px;
 
   /* == Button sizes == */
 
-  /// x-small width in px of the button for advanced slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 24px
-  --theme-ch5-slider-size-x-small-button-width: 24px;
+  --theme-ch5-slider--size-x-small-button-width: 24px;
 
-  /// x-small height in px of the button for advanced slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 26px
-  --theme-ch5-slider-size-x-small-button-height: 26px;
+  --theme-ch5-slider--size-x-small-button-height: 26px;
 
-  /// Small width in px of the button for advanced slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 26px
-  --theme-ch5-slider-size-small-button-width: 26px;
+  --theme-ch5-slider--size-small-button-width: 26px;
 
-  /// Small height in px of the button for advanced slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 30px
-  --theme-ch5-slider-size-small-button-height: 30px;
+  --theme-ch5-slider--size-small-button-height: 30px;
 
-  /// regular width in px of the button for advanced slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 30px
-  --theme-ch5-slider-size-regular-button-width: 30px;
+  --theme-ch5-slider--size-regular-button-width: 30px;
 
-  /// regular height in px of the button for advanced slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 36px
-  --theme-ch5-slider-size-regular-button-height: 36px;
+  --theme-ch5-slider--size-regular-button-height: 36px;
 
-  /// large width in px of the button for advanced slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 34px
-  --theme-ch5-slider-size-large-button-width: 34px;
+  --theme-ch5-slider--size-large-button-width: 34px;
 
-  /// large height in px of the button for advanced slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 42px
-  --theme-ch5-slider-size-large-button-height: 42px;
+  --theme-ch5-slider--size-large-button-height: 42px;
 
-  /// x-large width in px of the button for advanced slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 40px
-  --theme-ch5-slider-size-x-large-button-width: 40px;
+  --theme-ch5-slider--size-x-large-button-width: 40px;
 
-  /// x-large height in px of the button for advanced slider
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 54px
-  --theme-ch5-slider-size-x-large-button-height: 54px;
+  --theme-ch5-slider--size-x-large-button-height: 54px;
 
   /* == Handle sizes == */
 
   // rounded-rectangle
 
-  // x-small
-  /// x-small width in px of the handle when handleShape="rounded-rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 26px
-  --theme-ch5-slider-size-x-small-handle-width-rounded-rectangle: 26px;
+  --theme-ch5-slider--size-x-small-handle-width-rounded-rectangle: 26px;
 
-  /// x-small height in px of the handle when handleShape="rounded-rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 24px
-  --theme-ch5-slider-size-x-small-handle-height-rounded-rectangle: 24px;
+  --theme-ch5-slider--size-x-small-handle-height-rounded-rectangle: 24px;
 
-  // small
-  /// Small width in px of the handle when handleShape="rounded-rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 30px
-  --theme-ch5-slider-size-small-handle-width-rounded-rectangle: 30px;
+  --theme-ch5-slider--size-small-handle-width-rounded-rectangle: 30px;
 
-  /// Small height in px of the handle when handleShape="rounded-rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 26px
-  --theme-ch5-slider-size-small-handle-height-rounded-rectangle: 26px;
+  --theme-ch5-slider--size-small-handle-height-rounded-rectangle: 26px;
 
-  // regular
-  /// regular width in px of the handle when handleShape="rounded-rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 36px
-  --theme-ch5-slider-size-regular-handle-width-rounded-rectangle: 36px;
+  --theme-ch5-slider--size-regular-handle-width-rounded-rectangle: 36px;
 
-  /// regular height in px of the handle when handleShape="rounded-rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 30px
-  --theme-ch5-slider-size-regular-handle-height-rounded-rectangle: 30px;
+  --theme-ch5-slider--size-regular-handle-height-rounded-rectangle: 30px;
 
-  // large
-  /// large width in px of the handle when handleShape="rounded-rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 42px
-  --theme-ch5-slider-size-large-handle-width-rounded-rectangle: 42px;
+  --theme-ch5-slider--size-large-handle-width-rounded-rectangle: 42px;
 
-  /// large height in px of the handle when handleShape="rounded-rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 34px
-  --theme-ch5-slider-size-large-handle-height-rounded-rectangle: 34px;
+  --theme-ch5-slider--size-large-handle-height-rounded-rectangle: 34px;
 
-  // x-large
-  /// x-large width in px of the handle when handleShape="rounded-rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 54px
-  --theme-ch5-slider-size-x-large-handle-width-rounded-rectangle: 54px;
+  --theme-ch5-slider--size-x-large-handle-width-rounded-rectangle: 54px;
 
-  /// x-large height in px of the handle when handleShape="rounded-rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 40px
-  --theme-ch5-slider-size-x-large-handle-height-rounded-rectangle: 40px;
+  --theme-ch5-slider--size-x-large-handle-height-rounded-rectangle: 40px;
 
   // rectangle
 
-  // x-small
-  /// x-small width in px of the handle when handleShape="rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 26px
-  --theme-ch5-slider-size-x-small-handle-width-rectangle: 26px;
+  --theme-ch5-slider--size-x-small-handle-width-rectangle: 26px;
 
-  /// x-small height in px of the handle when handleShape="rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 24px
-  --theme-ch5-slider-size-x-small-handle-height-rectangle: 24px;
+  --theme-ch5-slider--size-x-small-handle-height-rectangle: 24px;
 
-  // small
-  /// Small width in px of the handle when handleShape="rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 30px
-  --theme-ch5-slider-size-small-handle-width-rectangle: 30px;
+  --theme-ch5-slider--size-small-handle-width-rectangle: 30px;
 
-  /// Small height in px of the handle when handleShape="rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 26px
-  --theme-ch5-slider-size-small-handle-height-rectangle: 26px;
+  --theme-ch5-slider--size-small-handle-height-rectangle: 26px;
 
-  // regular
-  /// regular width in px of the handle when handleShape="rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 36px
-  --theme-ch5-slider-size-regular-handle-width-rectangle: 36px;
+  --theme-ch5-slider--size-regular-handle-width-rectangle: 36px;
 
-  /// regular height in px of the handle when handleShape="rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 30px
-  --theme-ch5-slider-size-regular-handle-height-rectangle: 30px;
+  --theme-ch5-slider--size-regular-handle-height-rectangle: 30px;
 
-  // large
-  /// large width in px of the handle when handleShape="rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 42px
-  --theme-ch5-slider-size-large-handle-width-rectangle: 42px;
+  --theme-ch5-slider--size-large-handle-width-rectangle: 42px;
 
-  /// large height in px of the handle when handleShape="rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 34px
-  --theme-ch5-slider-size-large-handle-height-rectangle: 34px;
+  --theme-ch5-slider--size-large-handle-height-rectangle: 34px;
 
-  // x-large
-  /// x-large width in px of the handle when handleShape="rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 54px
-  --theme-ch5-slider-size-x-large-handle-width-rectangle: 54px;
+  --theme-ch5-slider--size-x-large-handle-width-rectangle: 54px;
 
-  /// x-large height in px of the handle when handleShape="rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 40px
-  --theme-ch5-slider-size-x-large-handle-height-rectangle: 40px;
+  --theme-ch5-slider--size-x-large-handle-height-rectangle: 40px;
 
   // circle
 
-  // x-small
-  /// x-small width in px of the handle when handleShape="circle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 26px
-  --theme-ch5-slider-size-x-small-handle-width-circle: 26px;
+  --theme-ch5-slider--size-x-small-handle-width-circle: 26px;
 
-  // small
-  /// Small width in px of the handle when handleShape="circle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 30px
-  --theme-ch5-slider-size-small-handle-width-circle: 30px;
+  --theme-ch5-slider--size-small-handle-width-circle: 30px;
 
-  // regular
-  /// regular width in px of the handle when handleShape="circle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 36px
-  --theme-ch5-slider-size-regular-handle-width-circle: 36px;
+  --theme-ch5-slider--size-regular-handle-width-circle: 36px;
 
-  // large
-  /// large width in px of the handle when handleShape="circle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 42px
-  --theme-ch5-slider-size-large-handle-width-circle: 42px;
+  --theme-ch5-slider--size-large-handle-width-circle: 42px;
 
-  // x-large
-  /// x-large width in px of the handle when handleShape="circle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 54px
-  --theme-ch5-slider-size-x-large-handle-width-circle: 54px;
+  --theme-ch5-slider--size-x-large-handle-width-circle: 54px;
 
   // oval
 
-  // x-small
-  /// x-small width in px of the handle when handleShape="oval"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 26px
-  --theme-ch5-slider-size-x-small-handle-width-oval: 26px;
+  --theme-ch5-slider--size-x-small-handle-width-oval: 26px;
 
-  // small
-  /// Small width in px of the handle when handleShape="oval"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 30px
-  --theme-ch5-slider-size-small-handle-width-oval: 30px;
+  --theme-ch5-slider--size-small-handle-width-oval: 30px;
 
-  // regular
-  /// regular width in px of the handle when handleShape="oval"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 36px
-  --theme-ch5-slider-size-regular-handle-width-oval: 36px;
+  --theme-ch5-slider--size-regular-handle-width-oval: 36px;
 
-  // large
-  /// large width in px of the handle when handleShape="oval"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 42px
-  --theme-ch5-slider-size-large-handle-width-oval: 42px;
+  --theme-ch5-slider--size-large-handle-width-oval: 42px;
 
-  // x-large
-  /// x-large width in px of the handle when handleShape="oval"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 54px
-  --theme-ch5-slider-size-x-large-handle-width-oval: 54px;
+  --theme-ch5-slider--size-x-large-handle-width-oval: 54px;
 
   // Horizontal and Vertical
 
-  /// Horizontal-pips
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 50px
-  --theme-ch5-slider-horizontal-pips: 50px;
+  --theme-ch5-slider--horizontal-pips: 50px;
 
-  /// Vertical pips
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 65px
-  --theme-ch5-slider-vertical-pips: 65px;
+  --theme-ch5-slider--vertical-pips: 65px;
 
-  /// Tooltip spacing vertical advanced
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 60px
-  --theme-ch5-slider-tooltip-on-spacing-vertical-advanced: 60px;
+  --theme-ch5-slider--tooltip-on-spacing-vertical-advanced: 60px;
 
-  /// Tooltip spacing vertical normal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 58px
-  --theme-ch5-slider-tooltip-on-spacing-vertical-normal: 58px;
+  --theme-ch5-slider--tooltip-on-spacing-vertical-normal: 58px;
 
-  /// Tooltip spacing horizontal adanced
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 40px
-  --theme-ch5-slider-tooltip-on-spacing-horizontal-advanced: 40px;
+  --theme-ch5-slider--tooltip-on-spacing-horizontal-advanced: 40px;
 
-  /// Tooltip spacing horizontal normal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 40px
-  --theme-ch5-slider-tooltip-on-spacing-horizontal-normal: 40px;
+  --theme-ch5-slider--tooltip-on-spacing-horizontal-normal: 40px;
 
-  /// Button content line height
-  /// type: number 
-  /// values: 1, 10, 100 
-  /// example: 1.2
-  --theme-ch5-button-content-line-height: 1.2;
+  --theme-ch5-slider--button-content-line-height: 1.2;
 
-  /// Button padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 0.25rem
-  --theme-ch5-button-padding: 0.25rem;
+  --theme-ch5-slider--button-padding: 0.25rem;
 
   // ***************************************
   // ch5-list
   // ***************************************
 
-  /// Set the text color of list items.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #333
-  --theme-ch5-list-item-color: #333;
+  --theme-ch5-list--item-color: #333;
 
-  /// Set the background color of list items, configurable for each theme
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #fafafa
-  --theme-ch5-list-item-background-color: #fafafa;
+  --theme-ch5-list--item-background-color: #fafafa;
 
-  /// Set the border color of list items
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #bdbdbd
-  --theme-ch5-list-item-border-color: #bdbdbd;
+  --theme-ch5-list--item-border-color: #bdbdbd;
 
-  /// Set the border style of list items, configurable for each theme
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 1px solid transparent
-  --theme-ch5-list-item-border: 1px solid transparent;
+  --theme-ch5-list--item-border: 1px solid transparent;
 
-  /// Set the padding of list items
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 10px
-  --theme-ch5-list-item-padding: 10px;
+  --theme-ch5-list--item-padding: 10px;
+
+  --theme-ch5-list--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-list--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-list--font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-list--scrollbar-border-radius: var(--theme-others--scrollbar-border-radius);
+
+  --theme-ch5-list--scrollbar-thumb-color: var(--theme-others--scrollbar-thumb-color);
+
+  --theme-ch5-list--scrollbar-track-color: var(--theme-others--scrollbar-track-color);
+
+  --theme-ch5-list--scrollbar-width: var(--theme-others--scrollbar-width);
 
   // ***************************************
   // ch5-video
   // ***************************************
 
-  /// Default video background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #000
-  --theme-ch5-video-background-color: #000;
+  --theme-ch5-video--background-color: #000;
 
-  /// Size xx-large for min width 651px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 600px
-  --theme-ch5-video-size-xx-large-min-w-651: 600px;
+  --theme-ch5-video--full-screen-icon-background-color: rgb(0, 0, 0, 0.2);
 
-  /// Size x-large for min width 651px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 560px
-  --theme-ch5-video-size-x-large-min-w-651: 560px;
+  --theme-ch5-video--full-screen-icon-fill-color: #fff;
 
-  /// Size large for min width 651px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 520px
-  --theme-ch5-video-size-large-min-w-651: 520px;
+  --theme-ch5-video--full-screen-icon-size: 32px;
 
-  /// Size regular for min width 651px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 480px
-  --theme-ch5-video-size-regular-min-w-651: 480px;
+  --theme-ch5-video--size-xx-large-min-w-651: 600px;
 
-  /// Size small for min width 651px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 440px
-  --theme-ch5-video-size-small-min-w-651: 440px;
+  --theme-ch5-video--size-x-large-min-w-651: 560px;
 
-  /// Size x-small for min width 651px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 400px
-  --theme-ch5-video-size-x-small-min-w-651: 400px;
+  --theme-ch5-video--size-large-min-w-651: 520px;
 
-  /// Size xx-large for max width 650px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 300px
-  --theme-ch5-video-size-xx-large-max-w-650: 300px;
+  --theme-ch5-video--size-regular-min-w-651: 480px;
 
-  /// Size x-large max width 650px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 280px
-  --theme-ch5-video-size-x-large-max-w-650: 280px;
+  --theme-ch5-video--size-small-min-w-651: 440px;
 
-  /// Size large max width 650px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 260px
-  --theme-ch5-video-size-large-max-w-650: 260px;
+  --theme-ch5-video--size-x-small-min-w-651: 400px;
 
-  /// Size regular max width 650px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 240px
-  --theme-ch5-video-size-regular-max-w-650: 240px;
+  --theme-ch5-video--size-xx-large-max-w-650: 300px;
 
-  /// Size small max width 650px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 220px
-  --theme-ch5-video-size-small-max-w-650: 220px;
+  --theme-ch5-video--size-x-large-max-w-650: 280px;
 
-  /// Size x-small max width 650px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 200px
-  --theme-ch5-video-size-x-small-max-w-650: 200px;
+  --theme-ch5-video--size-large-max-w-650: 260px;
+
+  --theme-ch5-video--size-regular-max-w-650: 240px;
+
+  --theme-ch5-video--size-small-max-w-650: 220px;
+
+  --theme-ch5-video--size-x-small-max-w-650: 200px;
 
   // ***************************************
   // ch5-wifi-signal-level-gauge
   // ***************************************
 
-  /// Size Height small
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 24px
-  --theme-ch5-wifi-signal-level-gauge-small-height: 24px;
+  --theme-ch5-wifi-signal-level-gauge--small-height: 24px;
 
-  /// Size Width small
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 36px
-  --theme-ch5-wifi-signal-level-gauge-small-width: 36px;
+  --theme-ch5-wifi-signal-level-gauge--small-width: 36px;
 
-  /// Size Height regular
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 36px
-  --theme-ch5-wifi-signal-level-gauge-regular-height: 36px;
+  --theme-ch5-wifi-signal-level-gauge--regular-height: 36px;
 
-  /// Size Width regular
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 54px
-  --theme-ch5-wifi-signal-level-gauge-regular-width: 54px;
+  --theme-ch5-wifi-signal-level-gauge--regular-width: 54px;
 
-  /// Size Height large
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 60px
-  --theme-ch5-wifi-signal-level-gauge-large-height: 60px;
+  --theme-ch5-wifi-signal-level-gauge--large-height: 60px;
 
-  /// Size Width large
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 90px
-  --theme-ch5-wifi-signal-level-gauge-large-width: 90px;
+  --theme-ch5-wifi-signal-level-gauge--large-width: 90px;
 
-  /// Size Height x-large
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 96px
-  --theme-ch5-wifi-signal-level-gauge-x-large-height: 96px;
+  --theme-ch5-wifi-signal-level-gauge--x-large-height: 96px;
 
-  /// Size Width x-large
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 144px
-  --theme-ch5-wifi-signal-level-gauge-x-large-width: 144px;
+  --theme-ch5-wifi-signal-level-gauge--x-large-width: 144px;
 
-  /// gaugeStyle accents
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #87ceeb
-  --theme-ch5-wifi-signal-level-gauge-style-accents: #87ceeb;
+  --theme-ch5-wifi-signal-level-gauge--style-accents: #87ceeb;
 
-  /// gaugeStyle light
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #ffffff
-  --theme-ch5-wifi-signal-level-gauge-style-light: #ffffff;
+  --theme-ch5-wifi-signal-level-gauge--style-light: #ffffff;
 
-  /// gaugeStyle dark
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #000000
-  --theme-ch5-wifi-signal-level-gauge-style-dark: #000000;
+  --theme-ch5-wifi-signal-level-gauge--style-dark: #000000;
 
-  /// Border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
-  /// example: #939393
-  --theme-ch5-wifi-signal-level-gauge-border-color: #939393;
+  --theme-ch5-wifi-signal-level-gauge--border-color: #939393;
 }

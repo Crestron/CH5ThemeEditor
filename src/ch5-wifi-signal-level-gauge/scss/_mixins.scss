@@ -11,9 +11,9 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 $gaugeStyle: (
-  "light": --ch5-wifi-signal-level-gauge-style-light,
-  "dark": --ch5-wifi-signal-level-gauge-style-dark,
-  "accents": --ch5-wifi-signal-level-gauge-style-accents,
+  "light": --ch5-wifi-signal-level-gauge--style-light,
+  "dark": --ch5-wifi-signal-level-gauge--style-dark,
+  "accents": --ch5-wifi-signal-level-gauge--style-accents,
 );
 
 @mixin gaugeValueForSignals($alignmentValue) {
@@ -27,7 +27,7 @@ $gaugeStyle: (
   @each $theme, $color in $gaugeStyle {
     .ch5-wifi-signal-level-gauge--gauge-style-#{$theme} {
       .ch5-wifi-signal-level-gauge--selected-false {
-        color: var(--ch5-wifi-signal-level-gauge-border-color);
+        color: var(--ch5-wifi-signal-level-gauge--border-color);
       }
       .ch5-wifi-signal-level-gauge--selected-true {
         color: var(#{$color});
