@@ -39,17 +39,17 @@ ch5-datetime {
   /// related-theme-variable: --theme-ch5-datetime--background-color
   --ch5-datetime--background-color: var(--theme-ch5-datetime--background-color);
 
-  /// description: Background color
+  /// description: Font weight
   /// type: list 
   /// values: normal, italic
   /// example: normal 
-  /// related-theme-variable: --theme-ch5-datetime--background-color
+  /// related-theme-variable: --theme-ch5-datetime--font-weight
   --ch5-datetime--font-weight: var(--theme-ch5-datetime--font-weight);
-;
-  /// description: Background color
+
+  /// description: Font style
   /// type: list 
   /// values: normal, bold
   /// example: normal 
-  /// related-theme-variable: --theme--ch5-datetime--font-style
-  --ch5-datetime--font-style: var(--theme--ch5-datetime--font-style);
+  /// related-theme-variable: --theme-ch5-datetime--font-style
+  --ch5-datetime--font-style: var(--theme-ch5-datetime--font-style);
 }

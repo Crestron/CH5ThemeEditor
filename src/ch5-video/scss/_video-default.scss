@@ -11,10 +11,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-video {
-  display: inline-block;
+  display: inline-flex;
   position: relative;
-  font-size: 0;
-  vertical-align: top;
 
   &.full-screen {
     position: fixed !important;
