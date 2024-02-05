@@ -23,9 +23,6 @@ ch5-toggle:focus {
   position: relative;
   display: inline-block;
   box-sizing: border-box;
-  // font-size: var(--ch5-toggle--font-size);
-  // font-style: var(--ch5-toggle--font-style);
-  // font-weight: var(--ch5-toggle--font-weight);
   z-index: 1;
 
   &[hidden] {
