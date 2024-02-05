@@ -13,6 +13,7 @@
 ch5-video {
   display: inline-flex;
   position: relative;
+  vertical-align: top;
 
   &.full-screen {
     position: fixed !important;
