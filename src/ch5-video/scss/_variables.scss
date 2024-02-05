@@ -11,115 +11,115 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-video {
-  /// description: Default video background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: Default background color for video
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #000 
   /// related-theme-variable: --theme-ch5-video--background-color
   --ch5-video--background-color: var(--theme-ch5-video--background-color);
 
-  /// description: video full screen icon background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: Video full screen icon background color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgb(0, 0, 0, 0.2)
   /// related-theme-variable: --theme-ch5-video--full-screen-icon-background-color
   --ch5-video--full-screen-icon-background-color: var(--theme-ch5-video--full-screen-icon-background-color);
 
-  /// description: video full screen icon fill color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// description: Video full screen icon fill color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff
   /// related-theme-variable: --theme-ch5-video--full-screen-icon-fill-color
   --ch5-video--full-screen-icon-fill-color: var(--theme-ch5-video--full-screen-icon-fill-color);
 
-  /// description: video full screen icon size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Video full screen icon size
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 32px 
   /// related-theme-variable: --theme-ch5-video--full-screen-icon-size
   --ch5-video--full-screen-icon-size: var(--theme-ch5-video--full-screen-icon-size);
 
-  /// description: size xx-large for min width 651px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: size=xx-large for min width 651px
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 600px 
   /// related-theme-variable: --theme-ch5-video--size-xx-large-min-w-651
   --ch5-video--size-xx-large-min-w-651: var(--theme-ch5-video--size-xx-large-min-w-651);
 
-  /// description: size x-large for min width 651px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: size=x-large for min width 651px
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 560px 
   /// related-theme-variable: --theme-ch5-video--size-x-large-min-w-651
   --ch5-video--size-x-large-min-w-651: var(--theme-ch5-video--size-x-large-min-w-651);
 
-  /// description: size large for min width 651px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: size=large for min width 651px
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 520px 
   /// related-theme-variable: --theme-ch5-video--size-large-min-w-651
   --ch5-video--size-large-min-w-651: var(--theme-ch5-video--size-large-min-w-651);
 
-  /// description: size regular for min width 651px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: size=regular for min width 651px
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 480px 
   /// related-theme-variable: --theme-ch5-video--size-regular-min-w-651
   --ch5-video--size-regular-min-w-651: var(--theme-ch5-video--size-regular-min-w-651);
 
-  /// description: size small for min width 651px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: size=small for min width 651px
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 440px 
   /// related-theme-variable: --theme-ch5-video--size-small-min-w-651
   --ch5-video--size-small-min-w-651: var(--theme-ch5-video--size-small-min-w-651);
 
-  /// description: size x-small for min width 651px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: size=x-small for min width 651px
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 400px 
   /// related-theme-variable: --theme-ch5-video--size-x-small-min-w-651
   --ch5-video--size-x-small-min-w-651: var(--theme-ch5-video--size-x-small-min-w-651);
 
 
-  /// description: size xx-large for max width 650px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: size=xx-large for max width 650px
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 300px 
   /// related-theme-variable: --theme-ch5-video--size-xx-large-max-w-650
   --ch5-video--size-xx-large-max-w-650: var(--theme-ch5-video--size-xx-large-max-w-650);
 
-  /// description: size x-large max width 650px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: size=x-large max width 650px
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 280px 
   /// related-theme-variable: --theme-ch5-video--size-x-large-max-w-650
   --ch5-video--size-x-large-max-w-650: var(--theme-ch5-video--size-x-large-max-w-650);
 
-  /// description: size large max width 650px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: size=large max width 650px
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 260px 
   /// related-theme-variable: --theme-ch5-video--size-large-max-w-650
   --ch5-video--size-large-max-w-650: var(--theme-ch5-video--size-large-max-w-650);
 
-  /// description: size regular max width 650px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: size=regular max width 650px
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 240px 
   /// related-theme-variable: --theme-ch5-video--size-regular-max-w-650
   --ch5-video--size-regular-max-w-650: var(--theme-ch5-video--size-regular-max-w-650);
 
-  /// description: size small max width 650px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: size=small max width 650px
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 220px 
   /// related-theme-variable: --theme-ch5-video--size-small-max-w-650
   --ch5-video--size-small-max-w-650: var(--theme-ch5-video--size-small-max-w-650);
 
-  /// description: size x-small max width 650px
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: size=x-small max width 650px
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 200px 
   /// related-theme-variable: --theme-ch5-video--size-x-small-max-w-650
   --ch5-video--size-x-small-max-w-650: var(--theme-ch5-video--size-x-small-max-w-650);

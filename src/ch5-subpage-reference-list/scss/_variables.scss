@@ -12,36 +12,36 @@
 
 ch5-subpage-reference-list {
   /// description: subpage-reference container padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 5px 
   /// related-theme-variable: --theme-ch5-subpage-reference-list--container-padding
   --ch5-subpage-reference-list--container-padding: var(--theme-ch5-subpage-reference-list--container-padding);
 
   /// description: scrollbar width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 7px
   /// related-theme-variable: --theme-ch5-subpage-reference-list--scrollbar-width
   --ch5-subpage-reference-list--scrollbar-width: var(--theme-ch5-subpage-reference-list--scrollbar-width);
 
   /// description: scrollbar track color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.1)
   /// related-theme-variable: --theme-ch5-subpage-reference-list--scrollbar-track-color
   --ch5-subpage-reference-list--scrollbar-track-color: var(--theme-ch5-subpage-reference-list--scrollbar-track-color);
 
   /// description: scrollbar border radius
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 10px
   /// related-theme-variable: --theme-ch5-subpage-reference-list--scrollbar-border-radius
   --ch5-subpage-reference-list--scrollbar-border-radius: var(--theme-ch5-subpage-reference-list--scrollbar-border-radius);
 
   /// description: scrollbar thumb color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.5)
   /// related-theme-variable: --theme-ch5-subpage-reference-list--scrollbar-thumb-color
   --ch5-subpage-reference-list--scrollbar-thumb-color: var(--theme-ch5-subpage-reference-list--scrollbar-thumb-color);

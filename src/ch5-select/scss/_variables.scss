@@ -12,148 +12,148 @@
 
 ch5-select {
   /// description: Component main font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 16px
   /// related-theme-variable: --theme-ch5-select--font-size
   --ch5-select--font-size: var(--theme-ch5-select--font-size);
 
   /// description: Component main font style
-  /// type: string 
-  /// values: large, solid, center 
+  /// type: list
+  /// values: normal, italic
   /// example: normal
   /// related-theme-variable: --theme-ch5-select--font-style
   --ch5-select--font-style: var(--theme-ch5-select--font-style);
 
   /// description: Component main font weight
-  /// type: string 
-  /// values: large, solid, center 
+  /// type: list
+  /// values: normal, bold
   /// example: normal
   /// related-theme-variable: --theme-ch5-select--font-weight
   --ch5-select--font-weight: var(--theme-ch5-select--font-weight);
 
   /// description: Top line content padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 4px 
   /// related-theme-variable: --theme-ch5-select--padding
   --ch5-select--padding: var(--theme-ch5-select--padding);
 
   /// description: Component border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-select--border-width
   --ch5-select--border-width: var(--theme-ch5-select--border-width);
 
   /// description: Component border radius
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 2px 
   /// related-theme-variable: --theme-ch5-select--border-radius
   --ch5-select--border-radius: var(--theme-ch5-select--border-radius);
 
   /// description: Combo trigger button margin
-  /// type: number 
-  /// values: 1, 10, 100 
+  /// type: number
+  /// values: 1, 10, 100
   /// example: 0 
   /// related-theme-variable: --theme-ch5-select--combo-trigger-margin
   --ch5-select--combo-trigger-margin: var(--theme-ch5-select--combo-trigger-margin);
 
   /// description: Combo trigger button width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 24px 
   /// related-theme-variable: --theme-ch5-select--combo-trigger-width
   --ch5-select--combo-trigger-width: var(--theme-ch5-select--combo-trigger-width);
 
   /// description: Combo trigger button height
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 24px 
   /// related-theme-variable: --theme-ch5-select--combo-trigger-height
   --ch5-select--combo-trigger-height: var(--theme-ch5-select--combo-trigger-height);
 
   /// description: Top line width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: calc(100% - 40px) 
   /// related-theme-variable: --theme-ch5-select--item-selected-width
   --ch5-select--item-selected-width: var(--theme-ch5-select--item-selected-width);
 
   /// description: Item border width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-select--panel-item-border-width
   --ch5-select--panel-item-border-width: var(--theme-ch5-select--panel-item-border-width);
 
   /// description: Item padding
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 8px 
   /// related-theme-variable: --theme-ch5-select--panel-item-padding
   --ch5-select--panel-item-padding: var(--theme-ch5-select--panel-item-padding);
 
   /// description: Select panel shadow
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) 
   /// related-theme-variable: --theme-ch5-select--panel-items-box-shadow
   --ch5-select--panel-items-box-shadow: var(--theme-ch5-select--panel-items-box-shadow);
 
   /// description: Select panel background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff 
   /// related-theme-variable: --theme-ch5-select--panel-items-background-color
   --ch5-select--panel-items-background-color: var(--theme-ch5-select--panel-items-background-color);
 
   /// description: Select border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #c6c8ca 
   /// related-theme-variable: --theme-ch5-select--border-color
   --ch5-select--border-color: var(--theme-ch5-select--border-color);
 
   /// description: Select panel item hover background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f8f9fa 
   /// related-theme-variable: --theme-ch5-select--panel-item-hover-background-color
   --ch5-select--panel-item-hover-background-color: var(--theme-ch5-select--panel-item-hover-background-color);
 
   /// description: Select panel item background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: transparent 
   /// related-theme-variable: --theme-ch5-select--panel-item-background-color
   --ch5-select--panel-item-background-color: var(--theme-ch5-select--panel-item-background-color);
 
   /// description: Select panel item color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #212529 
   /// related-theme-variable: --theme-ch5-select--panel-item-color
   --ch5-select--panel-item-color: var(--theme-ch5-select--panel-item-color);
 
   /// description: Select panel item border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: transparent 
   /// related-theme-variable: --theme-ch5-select--panel-item-border-color
   --ch5-select--panel-item-border-color: var(--theme-ch5-select--panel-item-border-color);
 
   /// description: Select panel item selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #cce5ff
   /// related-theme-variable: --theme-ch5-select--panel-item-selected-background-color
   --ch5-select--panel-item-selected-background-color: var(--theme-ch5-select--panel-item-selected-background-color);
 
   /// description: Select font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #000
   /// related-theme-variable: --theme-ch5-select--font-color
   --ch5-select--font-color: var(--theme-ch5-select--font-color);

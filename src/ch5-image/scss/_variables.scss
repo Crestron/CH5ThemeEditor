@@ -11,8 +11,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-image {
-  /// description: Sets object fit property
-  /// type: string 
+  /// description: Sets object fit property of image
+  /// type: list 
   /// values: fill, contain, cover, none, scale-down 
   /// example: contain 
   /// related-theme-variable: --theme-ch5-image--object-fit

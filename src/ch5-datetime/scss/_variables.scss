@@ -12,29 +12,29 @@
 
 ch5-datetime {
   /// description: Font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 14px 
   /// related-theme-variable: --theme-ch5-datetime--font-size
   --ch5-datetime--font-size: var(--theme-ch5-datetime--font-size);
 
-  /// description: Datetime height
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Height of Datetime component
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 35px 
   /// related-theme-variable: --theme-ch5-datetime--height
   --ch5-datetime--height: var(--theme-ch5-datetime--height);
 
-  /// description: Datetime width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Width of Datetime component
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 200px 
   /// related-theme-variable: --theme-ch5-datetime--width
   --ch5-datetime--width: var(--theme-ch5-datetime--width);
 
   /// description: Background color
   /// type: string 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: transparent 
   /// related-theme-variable: --theme-ch5-datetime--background-color
   --ch5-datetime--background-color: var(--theme-ch5-datetime--background-color);

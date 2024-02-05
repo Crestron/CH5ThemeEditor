@@ -15,50 +15,50 @@
 [data-theme="zoom-light-theme"],
 .zoom-light-theme {
   /// Font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 16px
   --theme-fonts--font-size: 16px;
 
   /// Font style
-  /// type: string 
-  /// values: large, solid, center 
+  /// type: list
+  /// values: normal, italic
   /// example: normal
   --theme-fonts--font-style: normal;
 
   /// Font weight
-  /// type: string 
-  /// values: large, solid, center 
+  /// type: list
+  /// values: normal, bold
   /// example: normal
   --theme-fonts--font-weight: normal;
 
   /// Scrollbar width
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 7px
   --theme-others--scrollbar-width: 7px;
 
   /// Scrollbar border radius
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 10px
   --theme-others--scrollbar-border-radius: 10px;
 
   /// Scrollbar track color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.1)
   --theme-others--scrollbar-track-color: rgba(0, 0, 0, 0.1);
 
   /// Scrollbar thumb color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.5)
   --theme-others--scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
 
   /// Disabled opacity
-  /// type: number 
-  /// values: 1, 10, 100 
+  /// type: number
+  /// values: 1, 10, 100
   /// example: 0.5
   --theme-others--disabled-opacity: 0.5;
 
@@ -67,434 +67,434 @@
   // ***************************************
 
   /// Background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0e72ed
   --theme-colors--default-background-color: #0e72ed;
 
   /// Border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0091ea
   --theme-colors--default-border-color: #0091ea;
 
   /// Font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--default-font-color: #ffffff;
 
   /// Pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0862d1
   --theme-colors--default-pressed-background-color: #0862d1;
 
   /// Pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0091ea
   --theme-colors--default-pressed-border-color: #0091ea;
 
   /// Pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--default-pressed-font-color: #ffffff;
 
   /// Selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0862d1
   --theme-colors--default-selected-background-color: #0862d1;
 
   /// Selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0091ea
   --theme-colors--default-selected-border-color: #0091ea;
 
   /// Selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--default-selected-font-color: #ffffff;
 
   /// Background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e8e8f1
   --theme-colors--primary-background-color: #e8e8f1;
 
   /// Border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #bdbdbd
   --theme-colors--primary-border-color: #bdbdbd;
 
   /// Font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   --theme-colors--primary-font-color: #333;
 
   /// Primary pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #d9d9e6
   --theme-colors--primary-pressed-background-color: #d9d9e6;
 
   /// Primary pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #bdbdbd
   --theme-colors--primary-pressed-border-color: #bdbdbd;
 
   /// Primary pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   --theme-colors--primary-pressed-font-color: #333;
 
   /// Primary select background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #6e6e7a
   --theme-colors--primary-selected-background-color: #6e6e7a;
 
   /// Primary selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #bdbdbd
   --theme-colors--primary-selected-border-color: #bdbdbd;
 
   /// Primary selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   --theme-colors--primary-selected-font-color: #333;
 
   /// Info background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f26d21
   --theme-colors--info-background-color: #f26d21;
 
   /// Info border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f26d21
   --theme-colors--info-border-color: #f26d21;
 
   /// Info font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--info-font-color: #ffffff;
 
   /// Info pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #d56832
   --theme-colors--info-pressed-background-color: #d56832;
 
   /// Info pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f26d21
   --theme-colors--info-pressed-border-color: #f26d21;
 
   /// Info pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--info-pressed-font-color: #ffffff;
 
   /// Info selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #d56832
   --theme-colors--info-selected-background-color: #d56832;
 
   /// Info selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f26d21
   --theme-colors--info-selected-border-color: #f26d21;
 
   /// Info selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--info-selected-font-color: #ffffff;
 
   /// Danger background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #de2828
   --theme-colors--danger-background-color: #de2828;
 
   /// Danger border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e53935
   --theme-colors--danger-border-color: #e53935;
 
   /// Danger font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--danger-font-color: #ffffff;
 
   /// Danger pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ca2424
   --theme-colors--danger-pressed-background-color: #ca2424;
 
   /// Danger pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e53935
   --theme-colors--danger-pressed-border-color: #e53935;
 
   /// Danger pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--danger-pressed-font-color: #ffffff;
 
   /// Danger selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ca2424
   --theme-colors--danger-selected-background-color: #ca2424;
 
   /// Danger selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e53935
   --theme-colors--danger-selected-border-color: #e53935;
 
   /// Danger selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--danger-selected-font-color: #ffffff;
 
   /// Secondary background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e7f1fd
   --theme-colors--secondary-background-color: #e7f1fd;
 
   /// Secondary border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #dbe7f5
   --theme-colors--secondary-border-color: #dbe7f5;
 
   /// Secondary font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   --theme-colors--secondary-font-color: #333;
 
   /// Secondary pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #9bc5f8
   --theme-colors--secondary-pressed-background-color: #9bc5f8;
 
   /// Secondary pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #dbe7f5
   --theme-colors--secondary-pressed-border-color: #dbe7f5;
 
   /// Secondary pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   --theme-colors--secondary-pressed-font-color: #333;
 
   /// Secondary selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #9bc5f8
   --theme-colors--secondary-selected-background-color: #9bc5f8;
 
   /// Secondary selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #dbe7f5
   --theme-colors--secondary-selected-border-color: #dbe7f5;
 
   /// Secondary selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   --theme-colors--secondary-selected-font-color: #333;
 
   /// Success background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #268543
   --theme-colors--success-background-color: #268543;
 
   /// Success border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #43a047
   --theme-colors--success-border-color: #43a047;
 
   /// Success font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--success-font-color: #ffffff;
 
   /// Success pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #23d959
   --theme-colors--success-pressed-background-color: #23d959;
 
   /// Success pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #43a047
   --theme-colors--success-pressed-border-color: #43a047;
 
   /// Success pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--success-pressed-font-color: #ffffff;
 
   /// Success selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #23d959
   --theme-colors--success-selected-background-color: #23d959;
 
   /// Success selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #43a047
   --theme-colors--success-selected-border-color: #43a047;
 
   /// Success selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--success-selected-font-color: #ffffff;
 
   /// Warning background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #faac2a
   --theme-colors--warning-background-color: #faac2a;
 
   /// Warning border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffb300
   --theme-colors--warning-border-color: #ffb300;
 
   /// Warning font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   --theme-colors--warning-font-color: #333;
 
   /// Warning pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ff6f00
   --theme-colors--warning-pressed-background-color: #ff6f00;
 
   /// Warning pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffb300
   --theme-colors--warning-pressed-border-color: #ffb300;
 
   /// Warning pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--warning-pressed-font-color: #ffffff;
 
   /// Warning selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ff6f00
   --theme-colors--warning-selected-background-color: #ff6f00;
 
   /// Warning selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffb300
   --theme-colors--warning-selected-border-color: #ffb300;
 
   /// Warning selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--warning-selected-font-color: #ffffff;
 
   /// Text background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #efeff4
   --theme-colors--text-background-color: #efeff4;
 
   /// Text border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e0e0e0
   --theme-colors--text-border-color: #e0e0e0;
 
   /// Text font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   --theme-colors--text-font-color: #333;
 
   /// Text pressed background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f5f5f8
   --theme-colors--text-pressed-background-color: #f5f5f8;
 
   /// Text pressed border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e0e0e0
   --theme-colors--text-pressed-border-color: #e0e0e0;
 
   /// Text pressed font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--text-pressed-font-color: #ffffff;
 
   /// Text selected background color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f5f5f8
   --theme-colors--text-selected-background-color: #f5f5f8;
 
   /// Text selected border color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #e0e0e0
   --theme-colors--text-selected-border-color: #e0e0e0;
 
   /// Text selected font color
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--text-selected-font-color: #ffffff;
 
@@ -524,7 +524,6 @@
   // ch5-button
   // ***************************************
 
-
   --theme-ch5-button--content-line-height: 1.2;
 
   --theme-ch5-button--padding: 0.25rem;
@@ -539,7 +538,6 @@
 
   --theme-ch5-button--icon-size: inherit;
 
-  // button solid-border
   --theme-ch5-button--default-border-width: 1px;
 
   --theme-ch5-button--primary-border-width: 1px;
@@ -582,7 +580,6 @@
 
   --theme-ch5-button--size: 42px;
 
-  // size x-small
   --theme-ch5-button--x-small-font-size: 11px;
 
   --theme-ch5-button--x-small-size: 32px;
@@ -758,8 +755,6 @@
   // ch5-button-list
   // ***************************************
 
-  --theme-ch5-button-list--scrollbar-track-color: var(--theme-others--scrollbar-track-color);
-
   --theme-ch5-button-list--padding: 5px;
 
   --theme-ch5-button-list--button-container-width: 100px;
@@ -772,7 +767,11 @@
 
   --theme-ch5-button-list--scrollbar-border-radius: var(--theme-others--scrollbar-border-radius);
 
-  --theme-ch5-button-list--scrollbar-thumb-color: var(--theme-others--scrollbar-thumb-color); // ***************************************
+  --theme-ch5-button-list--scrollbar-thumb-color: var(--theme-others--scrollbar-thumb-color);
+
+  --theme-ch5-button-list--scrollbar-track-color: var(--theme-others--scrollbar-track-color);
+
+  // ***************************************
   // ch5-color-chip
   // ***************************************
 
@@ -806,37 +805,38 @@
   // ch5-dpad
   // ***************************************
 
-  --theme-ch5-dpad--regular-dimension: 150px;
+  --theme-ch5-dpad--regular-size: 150px;
 
-  --theme-ch5-dpad--x-small-dimension: 100px;
+  --theme-ch5-dpad--x-small-size: 100px;
 
-  --theme-ch5-dpad--small-dimension: 130px;
+  --theme-ch5-dpad--small-size: 130px;
 
-  --theme-ch5-dpad--large-dimension: 180px;
+  --theme-ch5-dpad--large-size: 180px;
 
-  --theme-ch5-dpad--x-large-dimension: 200px;
+  --theme-ch5-dpad--x-large-size: 200px;
 
-  --theme-ch5-dpad--regular-edge-radius: 10px;
+  --theme-ch5-dpad--regular-border-radius: 10px;
 
-  --theme-ch5-dpad--x-small-edge-radius: 6px;
+  --theme-ch5-dpad--x-small-border-radius: 6px;
 
-  --theme-ch5-dpad--small-edge-radius: 10px;
+  --theme-ch5-dpad--small-border-radius: 10px;
 
-  --theme-ch5-dpad--large-edge-radius: 10px;
+  --theme-ch5-dpad--large-border-radius: 10px;
 
-  --theme-ch5-dpad--x-large-edge-radius: 10px;
+  --theme-ch5-dpad--x-large-border-radius: 10px;
 
   --theme-ch5-dpad--label-font-size: 1.5rem;
 
-  --theme-ch5-dpad--icon-font-size-x-small: 1.3rem;
+  --theme-ch5-dpad--icon-size-x-small: 1.3rem;
 
-  --theme-ch5-dpad--icon-font-size-small: 1.8rem;
+  --theme-ch5-dpad--icon-size-small: 1.8rem;
 
-  --theme-ch5-dpad--icon-font-size-regular: 2rem;
+  --theme-ch5-dpad--icon-size-regular: 2rem;
 
-  --theme-ch5-dpad--icon-font-size-large: 2.2rem;
+  --theme-ch5-dpad--icon-size-large: 2.2rem;
 
-  --theme-ch5-dpad--icon-font-size-x-large: 2.4rem;
+  --theme-ch5-dpad--icon-size-x-large: 2.4rem;
+
   --theme-ch5-dpad--default-background-color: var(--theme-colors--default-background-color);
 
   --theme-ch5-dpad--default-font-color: var(--theme-colors--default-font-color);
@@ -907,6 +907,16 @@
   --theme-ch5-dpad--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
 
   --theme-ch5-dpad--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
+  
+  // ***************************************
+  // ch5-form
+  // ***************************************
+  
+  --theme-ch5-form--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-form--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-form--font-weight: var(--theme-fonts--font-weight);
 
   // ***************************************
   // ch5-image
@@ -1096,6 +1106,7 @@
   --theme-ch5-overlay-panel--close-icon-font-weight: var(--theme-fonts--font-weight);
 
   --theme-ch5-overlay-panel--contents-font-style: var(--theme-fonts--font-weight);
+
   --theme-ch5-overlay-panel--contents-font-weight: var(--theme-fonts--font-style);
 
   // ***************************************
@@ -1310,15 +1321,15 @@
 
   --theme-ch5-textinput--x-small-font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-textinput--text-color: #000000;
+  --theme-ch5-textinput--mask-text-color: #000000;
 
-  --theme-ch5-textinput--input-text-color: var(--theme-ch5-textinput--text-color);
+  --theme-ch5-textinput--input-text-color: var(--theme-ch5-textinput--mask-text-color);
 
   --theme-ch5-textinput--icon-text-color: var(--theme-colors--success-background-color);
 
-  --theme-ch5-textinput--label-text-color: var(--theme-ch5-textinput--text-color);
+  --theme-ch5-textinput--label-text-color: var(--theme-ch5-textinput--mask-text-color);
 
-  --theme-ch5-textinput--input-border-color: var(--theme-ch5-textinput--text-color);
+  --theme-ch5-textinput--input-border-color: var(--theme-ch5-textinput--mask-text-color);
 
   --theme-ch5-textinput--input-background-color: transparent;
 
@@ -1328,55 +1339,49 @@
 
   --theme-ch5-textinput--input-border-style: solid;
 
-  --theme-ch5-textinput--input-regular-padding: 15px 20px;
+  --theme-ch5-textinput--regular-input-padding: 15px 20px;
 
-  --theme-ch5-textinput--size-regular-width: 400px;
+  --theme-ch5-textinput--regular-width: 400px;
 
-  --theme-ch5-textinput--icon-regular-margin: 16px 16px;
+  --theme-ch5-textinput--regular-icon-margin: 16px 16px;
 
-  --theme-ch5-textinput--input-x-small-padding: 10px 10px;
+  --theme-ch5-textinput--x-small-input-padding: 10px 10px;
 
-  --theme-ch5-textinput--size-x-small-width: 200px;
+  --theme-ch5-textinput--x-small-width: 200px;
 
-  --theme-ch5-textinput--icon-x-small-margin: 12px 12px;
+  --theme-ch5-textinput--x-small-icon-margin: 12px 12px;
 
-  --theme-ch5-textinput--input-small-padding: 15px 15px;
+  --theme-ch5-textinput--small-input-padding: 15px 15px;
 
-  --theme-ch5-textinput--size-small-width: 250px;
+  --theme-ch5-textinput--small-width: 250px;
 
-  --theme-ch5-textinput--icon-small-margin: 14px 14px;
+  --theme-ch5-textinput--small-icon-margin: 14px 14px;
 
-  --theme-ch5-textinput--input-large-padding: 15px 20px;
+  --theme-ch5-textinput--large-input-padding: 15px 20px;
 
-  --theme-ch5-textinput--size-large-width: 500px;
+  --theme-ch5-textinput--large-width: 500px;
 
-  --theme-ch5-textinput--size-x-large-width: 500px;
+  --theme-ch5-textinput--x-large-width: 500px;
 
-  --theme-ch5-textinput--icon-large-margin: 18px 18px;
+  --theme-ch5-textinput--large-icon-margin: 18px 18px;
 
-  --theme-ch5-textinput--input-x-large-padding: 15px 20px;
+  --theme-ch5-textinput--x-large-input-padding: 15px 20px;
 
-  --theme-ch5-textinput--icon-x-large-margin: 22px 22px;
+  --theme-ch5-textinput--x-large-icon-margin: 22px 22px;
 
-  --theme-ch5-textinput--size-x-small-height: 40px;
+  --theme-ch5-textinput--x-small-height: 40px;
 
-  --theme-ch5-textinput--size-small-height: 48px;
+  --theme-ch5-textinput--small-height: 48px;
 
-  --theme-ch5-textinput--size-regular-height: 52px;
+  --theme-ch5-textinput--regular-height: 52px;
 
-  --theme-ch5-textinput--size-large-height: 56px;
+  --theme-ch5-textinput--large-height: 56px;
 
-  --theme-ch5-textinput--size-x-large-height: 60px;
+  --theme-ch5-textinput--x-large-height: 60px;
 
   // ***************************************
   // ch5-toggle
   // ***************************************
-
-  --theme-ch5-toggle--font-size: var(--theme-fonts--font-size);
-
-  --theme-ch5-toggle--font-style: var(--theme-fonts--font-style);
-
-  --theme-ch5-toggle--font-weight: var(--theme-fonts--font-weight);
 
   --theme-ch5-toggle--label-font-size: var(--theme-fonts--font-size);
 
@@ -1445,7 +1450,6 @@
   --theme-ch5-triggerview--font-style: var(--theme-fonts--font-style);
 
   --theme-ch5-triggerview--font-weight: var(--theme-fonts--font-weight);
-
 
   // ***************************************
   // ch5-modal-dialog
@@ -1593,90 +1597,70 @@
 
   // rounded-rectangle
 
-  // x-small
   --theme-ch5-slider--size-x-small-handle-width-rounded-rectangle: 26px;
 
   --theme-ch5-slider--size-x-small-handle-height-rounded-rectangle: 24px;
 
-  // small
   --theme-ch5-slider--size-small-handle-width-rounded-rectangle: 30px;
 
   --theme-ch5-slider--size-small-handle-height-rounded-rectangle: 26px;
 
-  // regular
   --theme-ch5-slider--size-regular-handle-width-rounded-rectangle: 36px;
 
   --theme-ch5-slider--size-regular-handle-height-rounded-rectangle: 30px;
 
-  // large
   --theme-ch5-slider--size-large-handle-width-rounded-rectangle: 42px;
 
   --theme-ch5-slider--size-large-handle-height-rounded-rectangle: 34px;
 
-  // x-large
   --theme-ch5-slider--size-x-large-handle-width-rounded-rectangle: 54px;
 
   --theme-ch5-slider--size-x-large-handle-height-rounded-rectangle: 40px;
 
   // rectangle
 
-  // x-small
   --theme-ch5-slider--size-x-small-handle-width-rectangle: 26px;
 
   --theme-ch5-slider--size-x-small-handle-height-rectangle: 24px;
 
-  // small
   --theme-ch5-slider--size-small-handle-width-rectangle: 30px;
 
   --theme-ch5-slider--size-small-handle-height-rectangle: 26px;
 
-  // regular
   --theme-ch5-slider--size-regular-handle-width-rectangle: 36px;
 
   --theme-ch5-slider--size-regular-handle-height-rectangle: 30px;
 
-  // large
   --theme-ch5-slider--size-large-handle-width-rectangle: 42px;
 
   --theme-ch5-slider--size-large-handle-height-rectangle: 34px;
 
-  // x-large
   --theme-ch5-slider--size-x-large-handle-width-rectangle: 54px;
 
   --theme-ch5-slider--size-x-large-handle-height-rectangle: 40px;
 
   // circle
 
-  // x-small
   --theme-ch5-slider--size-x-small-handle-width-circle: 26px;
 
-  // small
   --theme-ch5-slider--size-small-handle-width-circle: 30px;
 
-  // regular
   --theme-ch5-slider--size-regular-handle-width-circle: 36px;
 
-  // large
   --theme-ch5-slider--size-large-handle-width-circle: 42px;
 
-  // x-large
   --theme-ch5-slider--size-x-large-handle-width-circle: 54px;
 
   // oval
 
-  // x-small
   --theme-ch5-slider--size-x-small-handle-width-oval: 26px;
 
-  // small
   --theme-ch5-slider--size-small-handle-width-oval: 30px;
 
-  // regular
   --theme-ch5-slider--size-regular-handle-width-oval: 36px;
 
-  // large
   --theme-ch5-slider--size-large-handle-width-oval: 42px;
 
-  // x-large
   --theme-ch5-slider--size-x-large-handle-width-oval: 54px;
 
   // Horizontal and Vertical

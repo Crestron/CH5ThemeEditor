@@ -11,192 +11,172 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-toggle {
-  /// description: default font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
-  /// example: 16px
-  /// related-theme-variable: --theme-ch5-toggle-font-size
-  --ch5-toggle--font-size: var(--theme-ch5-toggle--font-size);
 
-  /// description: default font style
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: normal
-  /// related-theme-variable: --theme-ch5-toggle-font-style
-  --ch5-toggle--font-style: var(--theme-ch5-toggle--font-style);
-
-  /// description: default font weight
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: normal 
-  /// related-theme-variable: --theme-ch5-toggle--font-weight
-  --ch5-toggle--font-weight: var(--theme-ch5-toggle--font-weight);
-
-  /// description: label font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Font size for toggle label
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 16px 
   /// related-theme-variable: --theme-ch5-toggle--label-font-size
   --ch5-toggle--label-font-size: var(--theme-ch5-toggle--label-font-size);
 
-  /// description: label font style
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Font style for toggle label
+  /// type: list
+  /// values: normal, italic
   /// example: normal 
   /// related-theme-variable: --theme-ch5-toggle--label-font-style
   --ch5-toggle--label-font-style: var(--theme-ch5-toggle--label-font-style);
 
-  /// description: label font weight
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Font weight for toggle label
+  /// type: list 
+  /// values: normal, bold
   /// example: normal 
   /// related-theme-variable: --theme-ch5-toggle--label-font-weight
   --ch5-toggle--label-font-weight: var(--theme-ch5-toggle--label-font-weight);
 
-  /// description: label margin
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Margin for toggle label
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 10px 
   /// related-theme-variable: --theme-ch5-toggle-label-margin
   --ch5-toggle--label-margin: var(--theme-ch5-toggle--label-margin);
 
-  /// description: font size applied on the on|off label
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Font size applied on the on|off label
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 16px 
   /// related-theme-variable: --theme-ch5-toggle--text-font-size
-  --ch5-toggle--text-font-size: var(--theme-ch5-toggle--text-font-size); // TODO - difference betwwen toggle font size and text font size
+  --ch5-toggle--text-font-size: var(--theme-ch5-toggle--text-font-size); // TODO - difference between toggle font size and text font size
 
-  /// description: font style applied on the on|off label
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Font style applied on the on|off label
+  /// type: list
+  /// values: normal, italic
   /// example: normal 
   /// related-theme-variable: --theme-ch5-toggle--text-font-style
   --ch5-toggle--text-font-style: var(--theme-ch5-toggle--text-font-style);
 
-  /// description: font weight applied on the on|off label
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Font weight applied on the on|off label
+  /// type: list
+  /// values: normal, bold
   /// example: normal 
   /// related-theme-variable: --theme-ch5-toggle--text-font-weight
   --ch5-toggle--text-font-weight: var(--theme-ch5-toggle--text-font-weight);
 
-  /// description: font size applied on the on|off icon
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Font size applied on the on|off icon
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 16px 
   /// related-theme-variable: --theme-ch5-toggle--icon-font-size
   --ch5-toggle--icon-font-size: var(--theme-ch5-toggle--icon-font-size);
 
-  /// description: font style applied on the on|off icon
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Font style applied on the on|off icon
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: normal 
   /// related-theme-variable: --theme-ch5-toggle--icon-font-style
   --ch5-toggle--icon-font-style: var(--theme-ch5-toggle--icon-font-style);
 
-  /// description: font weight applied on the on|off icon
-  /// type: number 
-  /// values: 1, 10, 100 
+  /// description: Font weight applied on the on|off icon
+  /// type: number
+  /// values: 1, 10, 100
   /// example: 900 
   /// related-theme-variable: --theme-ch5-toggle--icon-font-weight
   --ch5-toggle--icon-font-weight: var(--theme-ch5-toggle--icon-font-weight);
 
   /// description: handle margin when the shape="circle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 10px 
   /// related-theme-variable: --theme-ch5-toggle--handle-circle-margin
   --ch5-toggle--handle-circle-margin: var(--theme-ch5-toggle--handle-circle-margin);
 
   /// description: handle margin when the shape="rectangle"
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 10px 
   /// related-theme-variable: --theme-ch5-toggle--handle-rectangle-margin
   --ch5-toggle--handle-rectangle-margin: var(--theme-ch5-toggle--handle-rectangle-margin);
 
   /// description: The background color of the handle when shape="circle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #d8d9db 
   /// related-theme-variable: --theme-ch5-toggle--handle-circle-background
   --ch5-toggle--handle-circle-background: var(--theme-ch5-toggle--handle-circle-background);
 
   /// description: The background color of the knob when shape="circle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff 
   /// related-theme-variable: --theme-ch5-toggle--circle-knob-color
   --ch5-toggle--circle-knob-color: var(--theme-ch5-toggle--circle-knob-color);
 
   /// description: The text color of the label
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #4a4a4a
   /// related-theme-variable: --theme-ch5-toggle--label-font-color
   --ch5-toggle--label-font-color: var(--theme-ch5-toggle--label-font-color);
 
   /// description: The text color of the on|off label
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #4a4a4a
   /// related-theme-variable: --theme-ch5-toggle--text-font-color
   --ch5-toggle--text-font-color: var(--theme-ch5-toggle--text-font-color);
 
   /// description: The color of the on|off icon
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff
   /// related-theme-variable: --theme-ch5-toggle--icon-font-color
   --ch5-toggle--icon-font-color: var(--theme-ch5-toggle--icon-font-color);
 
   /// description: The text color of the on label when shape="circle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff
   /// related-theme-variable: --theme-ch5-toggle--circle-label-on-color
   --ch5-toggle--circle-label-on-color: var(--theme-ch5-toggle--circle-label-on-color);
 
   /// description: The text color of the off label when shape="rectangle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff
   /// related-theme-variable: --theme-ch5-toggle--rectangle-label-off-color
   --ch5-toggle--rectangle-label-off-color: var(--theme-ch5-toggle--rectangle-label-off-color);
 
   /// description: The text color of the off label when shape="circle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #666
   /// related-theme-variable: --theme-ch5-toggle--circle-label-off-color
   --ch5-toggle--circle-label-off-color: var(--theme-ch5-toggle--circle-label-off-color);
 
   // rectangle
   /// description: The background color of the handle when shape="rectangle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #464747
   /// related-theme-variable: --theme-ch5-toggle--handle-rectangle-background
   --ch5-toggle--handle-rectangle-background: var(--theme-ch5-toggle--handle-rectangle-background);
 
   /// description: The text color of the on label when shape="rectangle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff
   /// related-theme-variable:  --theme-ch5-toggle--rectangle-label-on-color
   --ch5-toggle--rectangle-label-on-color: var(--theme-ch5-toggle--rectangle-label-on-color);
 
   /// description: The background color of the knob when shape="rectangle"
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #888
   /// related-theme-variable:  --theme-ch5-toggle--rectangle-knob-color
   --ch5-toggle--rectangle-knob-color: var(--theme-ch5-toggle--rectangle-knob-color);
 
   /// description: The background color of the handle when value is true(checked).
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #4bd865
   /// related-theme-variable:  --theme-ch5-toggle--handle-checked-color
   --ch5-toggle--handle-checked-color: var(--theme-ch5-toggle--handle-checked-color);

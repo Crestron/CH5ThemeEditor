@@ -13,260 +13,260 @@
 ch5-modal-dialog {
 
   /// description: the border width of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 1px
   /// related-theme-variable: --theme-ch5-modal-dialog--border-width
   --ch5-modal-dialog--border-width: var(--theme-ch5-modal-dialog--border-width);
 
   /// description: the border style of the modal
-  /// type: string 
-  /// values: large, solid, center 
+  /// type: list
+  /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
   /// example: solid
   /// related-theme-variable: --theme-ch5-modal-dialog--border-style
   --ch5-modal-dialog--border-style: var(--theme-ch5-modal-dialog--border-style);
 
   /// description: the border radius of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 6px
   /// related-theme-variable: --theme-ch5-modal-dialog--border-radius
   --ch5-modal-dialog--border-radius: var(--theme-ch5-modal-dialog--border-radius);
 
   /// description: set padding for the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 1.25em
   /// related-theme-variable: --theme-ch5-modal-dialog--padding
   --ch5-modal-dialog--padding: var(--theme-ch5-modal-dialog--padding);
 
   /// description: the margin of the icon at the top of the modal.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 0 5px
   /// related-theme-variable: --theme-ch5-modal-dialog--close-icon-margin
   --ch5-modal-dialog--close-icon-margin: var(--theme-ch5-modal-dialog--close-icon-margin);
 
   /// description: the padding of the icon at the top of the modal.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 0 5px 5px
   /// related-theme-variable: --theme-ch5-modal-dialog--close-icon-padding
   --ch5-modal-dialog--close-icon-padding: var(--theme-ch5-modal-dialog--close-icon-padding);
 
   /// description: the width of the icon at the top of the modal.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 20px
   /// related-theme-variable: --theme-ch5-modal-dialog--close-icon-width
   --ch5-modal-dialog--close-icon-width: var(--theme-ch5-modal-dialog--close-icon-width);
 
   /// description: the font size of the icon at the top of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 16px 
   /// related-theme-variable:--theme-ch5-modal-dialog--close-icon-font-size
   --ch5-modal-dialog--close-icon-font-size: var(--theme-ch5-modal-dialog--close-icon-font-size);
 
   /// description: the font style of the icon at the top of the modal
-  /// type: unit 
-  /// values: normal, italic, oblique 
+  /// type: list
+  /// values: normal, italic
   /// example: normal
   /// related-theme-variable: --theme-ch5-modal-dialog--close-icon-font-style
   --ch5-modal-dialog--close-icon-font-style: var(--theme-ch5-modal-dialog--close-icon-font-style);
 
   /// description: the font weight of the icon at the top of the modal
-  /// type: unit 
-  /// values: normal, bold  
+  /// type: list
+  /// values: normal, bold
   /// example: normal
   /// related-theme-variable: --theme-ch5-modal-dialog--close-icon-font-weight
   --ch5-modal-dialog--close-icon-font-weight: var(--theme-ch5-modal-dialog--close-icon-font-weight);
 
   /// description: the default font size of the icon at the top of the modal.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 24px
   /// related-theme-variable: --theme-ch5-modal-dialog--default-close-icon-font-size
   --ch5-modal-dialog--default-close-icon-font-size: var(--theme-ch5-modal-dialog--default-close-icon-font-size);
 
   /// description: the default font style of the icon at the top of the modal
-  /// type: unit 
-  /// values: normal, italic, oblique 
+  /// type: list
+  /// values: normal, italic
   /// example: normal
   /// related-theme-variable: --theme-ch5-modal-dialog--default-close-icon-font-style
   --ch5-modal-dialog--default-close-icon-font-style: var(--theme-ch5-modal-dialog--default-close-icon-font-style);
 
   /// description: the default font weight of the icon at the top of the modal
-  /// type: unit 
-  /// values: normal, bold  
+  /// type: list
+  /// values: normal, bold
   /// example: normal 
   /// related-theme-variable: --theme-ch5-modal-dialog--default-close-icon-font-weight
   --ch5-modal-dialog--default-close-icon-font-weight: var(--theme-ch5-modal-dialog--default-close-icon-font-weight);
 
   /// description: the font size for the title of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 1.3em
   /// related-theme-variable: --theme-ch5-modal-dialog--title-font-size
   --ch5-modal-dialog--title-font-size: var(--theme-ch5-modal-dialog--title-font-size);
 
   /// description: the font style for the title of the modal
-  /// type: unit 
-  /// values: normal, italic, oblique 
+  /// type: list
+  /// values: normal, italic
   /// example: normal
   /// related-theme-variable: --theme-ch5-modal-dialog--title-font-style
   --ch5-modal-dialog--title-font-style: var(--theme-ch5-modal-dialog--title-font-style);
 
   /// description: the font weight for the title of the modal
-  /// type: string 
-  /// values: normal, bold 
+  /// type: list
+  /// values: normal, bold
   /// example: bold
   /// related-theme-variable: --theme-ch5-modal-dialog--title-font-weight
   --ch5-modal-dialog--title-font-weight: var(--theme-ch5-modal-dialog--title-font-weight);
 
   /// description: the padding of the modal's content
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 10px
   /// related-theme-variable: --theme-ch5-modal-dialog--contents-padding
   --ch5-modal-dialog--contents-padding: var(--theme-ch5-modal-dialog--contents-padding);
 
   /// description: the font size for the content of the modal.
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 18px
   /// related-theme-variable: --theme-ch5-modal-dialog--contents-font-size
   --ch5-modal-dialog--contents-font-size: var(--theme-ch5-modal-dialog--contents-font-size);
 
   /// description: the font style for the content of the modal
-  /// type: unit 
-  /// values: normal, italic, oblique
+  /// type: list
+  /// values: normal, italic
   /// example: normal
   /// related-theme-variable: --theme-ch5-modal-dialog--contents-font-style
   --ch5-modal-dialog--contents-font-style: var(--theme-ch5-modal-dialog--contents-font-style);
 
   /// description: the font weight for the content of the modal
-  /// type: unit 
-  /// values: normal, bold 
+  /// type: list
+  /// values: normal, bold
   /// example: normal
   /// related-theme-variable: --theme-ch5-modal-dialog--contents-font-weight
   --ch5-modal-dialog--contents-font-weight: var(--theme-ch5-modal-dialog--contents-font-weight);
 
   /// description: the padding for the prompt of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 30px 0 30px 0
   /// related-theme-variable: --theme-ch5-modal-dialog--prompt-padding
   --ch5-modal-dialog--prompt-padding: var(--theme-ch5-modal-dialog--prompt-padding);
 
   /// description: the right margin for the prompt icon of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 10px
   /// related-theme-variable: --theme-ch5-modal-dialog--prompt-icon-margin-right
   --ch5-modal-dialog--prompt-icon-margin-right: var(--theme-ch5-modal-dialog--prompt-icon-margin-right);
 
   /// description: the font size for the prompt icon of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 16px 
   /// related-theme-variable: --theme-ch5-modal-dialog--prompt-icon-font-size
   --ch5-modal-dialog--prompt-icon-font-size: var(--theme-ch5-modal-dialog--prompt-icon-font-size);
 
   /// description: the font style for the prompt icon of the modal
-  /// type: unit 
-  /// values: normal, italic, oblique
+  /// type: list
+  /// values: normal, italic
   /// example: normal
   /// related-theme-variable: --theme-ch5-modal-dialog--prompt-icon-font-style
   --ch5-modal-dialog--prompt-icon-font-style: var(--theme-ch5-modal-dialog--prompt-icon-font-style);
 
   /// description: the font weight for the prompt icon of the modal
-  /// type: unit 
-  /// values: normal, bold 
+  /// type: list
+  /// values: normal, bold
   /// example: normal 
   /// related-theme-variable: --theme-ch5-modal-dialog--prompt-icon-font-weight
   --ch5-modal-dialog--prompt-icon-font-weight: var(--theme-ch5-modal-dialog--prompt-icon-font-weight);
 
   /// description: the font style for the prompt text of the modal
-  /// type: unit 
-  /// values: normal, italic, oblique
+  /// type: list
+  /// values: normal, italic
   /// example: normal
   /// related-theme-variable: --theme-ch5-modal-dialog--prompt-text-font-style
   --ch5-modal-dialog--prompt-text-font-style: var(--theme-ch5-modal-dialog--prompt-text-font-style);
 
   /// description: the font size for the prompt text of the modal
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 16px
   /// related-theme-variable: --theme-ch5-modal-dialog--prompt-text-font-size
   --ch5-modal-dialog--prompt-text-font-size: var(--theme-ch5-modal-dialog--prompt-text-font-size);
 
   /// description: the font weight for the prompt text of the modal
-  /// type: unit 
+  /// type: list
   /// values: normal, bold
   /// example: normal
   /// related-theme-variable: --theme-ch5-modal-dialog--prompt-text-font-weight
   --ch5-modal-dialog--prompt-text-font-weight: var(--theme-ch5-modal-dialog--prompt-text-font-weight);
 
   /// description: The background color of the modal
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #17171a
   /// related-theme-variable: --theme-ch5-modal-dialog--background-color
   --ch5-modal-dialog--background-color: var(--theme-ch5-modal-dialog--background-color);
 
   /// description: The background color of the mask element
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(72, 72, 72, 0.7)
   /// related-theme-variable: --theme-ch5-modal-dialog--mask-bg-color
   --ch5-modal-dialog--mask-bg-color: var(--theme-ch5-modal-dialog--mask-bg-color);
 
   /// description: The font color of the modal content
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   /// related-theme-variable: --theme-ch5-modal-dialog--contents-font-color
   --ch5-modal-dialog--contents-font-color: var(--theme-ch5-modal-dialog--contents-font-color);
 
   /// description: The text color of the modal
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #4a4a4a
   /// related-theme-variable: --theme-ch5-modal-dialog--text-color
   --ch5-modal-dialog--text-color: var(--theme-ch5-modal-dialog--text-color);
 
   /// description: The border color of the modal
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #efefef
   /// related-theme-variable: --theme-ch5-modal-dialog--border-color
   --ch5-modal-dialog--border-color: var(--theme-ch5-modal-dialog--border-color);
 
   /// description: The text color for the prompt text of the modal
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #4a4a4a
   /// related-theme-variable: --theme-ch5-modal-dialog--prompt-text-font-color
   --ch5-modal-dialog--prompt-text-font-color: var(--theme-ch5-modal-dialog--prompt-text-font-color);
 
   /// description: The background color of the icon at the top of the modal
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #17171a
   /// related-theme-variable: --theme-ch5-modal-dialog--close-icon-background-color
   --ch5-modal-dialog--close-icon-background-color: var(--theme-ch5-modal-dialog--close-icon-background-color);
 
   /// description: The color of the icon at the top of the modal
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #000
   /// related-theme-variable: --theme-ch5-modal-dialog--close-icon-color
   --ch5-modal-dialog--close-icon-color: var(--theme-ch5-modal-dialog--close-icon-color);
 
   /// description: The color of the icon at the top of the modal when it is hovered
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   /// related-theme-variable: --theme-ch5-modal-dialog--close-icon-color-hover
   --ch5-modal-dialog--close-icon-color-hover: var(--theme-ch5-modal-dialog--close-icon-color-hover);

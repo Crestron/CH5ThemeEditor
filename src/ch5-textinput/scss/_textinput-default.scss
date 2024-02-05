@@ -45,7 +45,7 @@ ch5-textinput {
 
 /// Main class
 .ch5-textinput {
-  color: var(--ch5-textinput--text-color);
+  color: var(--ch5-textinput--mask-text-color);
 
   /// Applied on the label
   .ch5-textinput--label {
@@ -117,7 +117,7 @@ ch5-textinput {
 
   /// Applied to main class when size="regular"
   &.ch5-textinput--size-regular {
-    width: var(--ch5-textinput--size-regular-width);
+    width: var(--ch5-textinput--regular-width);
 
     .ch5-textinput--label {
       font-style: var(--ch5-textinput--regular-font-style);
@@ -128,19 +128,19 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: var(--ch5-textinput--regular-font-size);
-        margin: var(--ch5-textinput--icon-regular-margin);
+        margin: var(--ch5-textinput--regular-icon-margin);
       }
 
       .ch5-textinput--input {
-        padding: var(--ch5-textinput--input-regular-padding);
+        padding: var(--ch5-textinput--regular-input-padding);
         font-style: var(--ch5-textinput--regular-font-style);
         font-size: var(--ch5-textinput--regular-font-size);
         font-weight: var(--ch5-textinput--regular-font-weight);
-        height: var(--ch5-textinput--size-regular-height);
+        height: var(--ch5-textinput--regular-height);
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput--input-regular-padding);
+        padding: 0 var(--ch5-textinput--regular-input-padding);
         font-size: var(--ch5-textinput--regular-font-size);
         font-weight: var(--ch5-textinput--regular-font-weight);
       }
@@ -153,7 +153,7 @@ ch5-textinput {
 
   /// Applied to main class when size="x-small"
   &.ch5-textinput--size-x-small {
-    width: var(--ch5-textinput--size-x-small-width);
+    width: var(--ch5-textinput--x-small-width);
 
     .ch5-textinput--label {
       font-style: var(--ch5-textinput--x-small-font-style);
@@ -164,19 +164,19 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: var(--ch5-textinput--x-small-font-size);
-        margin: var(--ch5-textinput--icon-x-small-margin);
+        margin: var(--ch5-textinput--x-small-icon-margin);
       }
 
       .ch5-textinput--input {
-        padding: var(--ch5-textinput--input-x-small-padding);
+        padding: var(--ch5-textinput--x-small-input-padding);
         font-style: var(--ch5-textinput--x-small-font-style);
         font-size: var(--ch5-textinput--x-small-font-size);
         font-weight: var(--ch5-textinput--x-small-font-weight);
-        height: var(--ch5-textinput--size-x-small-height);
+        height: var(--ch5-textinput--x-small-height);
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput--input-x-small-padding);
+        padding: 0 var(--ch5-textinput--x-small-input-padding);
         font-size: var(--ch5-textinput--x-small-font-size);
         font-weight: var(--ch5-textinput--x-small-font-weight);
       }
@@ -189,7 +189,7 @@ ch5-textinput {
 
   /// Applied to main class when size="small"
   &.ch5-textinput--size-small {
-    width: var(--ch5-textinput--size-small-width);
+    width: var(--ch5-textinput--small-width);
 
     .ch5-textinput--label {
       font-style: var(--ch5-textinput--small-font-style);
@@ -200,19 +200,19 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: var(--ch5-textinput--small-font-size);
-        margin: var(--ch5-textinput--icon-small-margin);
+        margin: var(--ch5-textinput--small-icon-margin);
       }
 
       .ch5-textinput--input {
-        padding: var(--ch5-textinput--input-small-padding);
+        padding: var(--ch5-textinput--small-input-padding);
         font-style: var(--ch5-textinput--small-font-style);
         font-size: var(--ch5-textinput--small-font-size);
         font-weight: var(--ch5-textinput--small-font-weight);
-        height: var(--ch5-textinput--size-small-height);
+        height: var(--ch5-textinput--small-height);
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput--input-small-padding);
+        padding: 0 var(--ch5-textinput--small-input-padding);
         font-size: var(--ch5-textinput--small-font-size);
         font-weight: var(--ch5-textinput--small-font-weight);
       }
@@ -225,7 +225,7 @@ ch5-textinput {
 
   /// Applied to main class when size="large"
   &.ch5-textinput--size-large {
-    width: var(--ch5-textinput--size-large-width);
+    width: var(--ch5-textinput--large-width);
 
     .ch5-textinput--label {
       font-style: var(--ch5-textinput--large-font-style);
@@ -236,19 +236,19 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: var(--ch5-textinput--large-font-size);
-        margin: var(--ch5-textinput--icon-large-margin);
+        margin: var(--ch5-textinput--large-icon-margin);
       }
 
       .ch5-textinput--input {
-        padding: var(--ch5-textinput--input-large-padding);
+        padding: var(--ch5-textinput--large-input-padding);
         font-style: var(--ch5-textinput--large-font-style);
         font-size: var(--ch5-textinput--large-font-size);
         font-weight: var(--ch5-textinput--large-font-weight);
-        height: var(--ch5-textinput--size-large-height);
+        height: var(--ch5-textinput--large-height);
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput--input-large-padding);
+        padding: 0 var(--ch5-textinput--large-input-padding);
         font-size: var(--ch5-textinput--large-font-size);
         font-weight: var(--ch5-textinput--large-font-weight);
       }
@@ -261,7 +261,7 @@ ch5-textinput {
 
   /// Applied to main class when size="x-large"
   &.ch5-textinput--size-x-large {
-    width: var(--ch5-textinput--size-x-large-width);
+    width: var(--ch5-textinput--x-large-width);
 
     .ch5-textinput--label {
       font-style: var(--ch5-textinput--x-large-font-style);
@@ -272,19 +272,19 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: var(--ch5-textinput--large-font-size);
-        margin: var(--ch5-textinput--icon-x-large-margin);
+        margin: var(--ch5-textinput--x-large-icon-margin);
       }
 
       .ch5-textinput--input {
-        padding: var(--ch5-textinput--input-x-large-padding);
+        padding: var(--ch5-textinput--x-large-input-padding);
         font-style: var(--ch5-textinput--x-large-font-style);
         font-size: var(--ch5-textinput--x-large-font-size);
         font-weight: var(--ch5-textinput--x-large-font-weight);
-        height: var(--ch5-textinput--size-x-large-height);
+        height: var(--ch5-textinput--x-large-height);
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput--input-x-large-padding);
+        padding: 0 var(--ch5-textinput--x-large-input-padding);
         font-size: var(--ch5-textinput--x-large-font-size);
         font-weight: var(--ch5-textinput--x-large-font-weight);
       }

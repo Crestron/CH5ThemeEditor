@@ -12,82 +12,82 @@
 
 ch5-dpad {
   /// description: Set the height and width of dpad for regular size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 150px 
-  /// related-theme-variable: --theme-ch5-dpad--regular-dimension
-  --ch5-dpad--regular-dimension: var(--theme-ch5-dpad--regular-dimension);
+  /// related-theme-variable: --theme-ch5-dpad--regular-size
+  --ch5-dpad--regular-size: var(--theme-ch5-dpad--regular-size);
 
   /// description: Set the height and width of dpad for x-small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 100px 
-  /// related-theme-variable: --theme-ch5-dpad--x-small-dimension
-  --ch5-dpad--x-small-dimension: var(--theme-ch5-dpad--x-small-dimension);
+  /// related-theme-variable: --theme-ch5-dpad--x-small-size
+  --ch5-dpad--x-small-size: var(--theme-ch5-dpad--x-small-size);
 
   /// description: Set the height and width of dpad for small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 130px 
-  /// related-theme-variable: --theme-ch5-dpad--small-dimension
-  --ch5-dpad--small-dimension: var(--theme-ch5-dpad--small-dimension);
+  /// related-theme-variable: --theme-ch5-dpad--small-size
+  --ch5-dpad--small-size: var(--theme-ch5-dpad--small-size);
 
   /// description: Set the height and width of dpad for large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 180px 
-  /// related-theme-variable: --theme-ch5-dpad--large-dimension
-  --ch5-dpad--large-dimension: var(--theme-ch5-dpad--large-dimension);
+  /// related-theme-variable: --theme-ch5-dpad--large-size
+  --ch5-dpad--large-size: var(--theme-ch5-dpad--large-size);
 
   /// description: Set the height and width of dpad for x-large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 200px 
-  /// related-theme-variable: --theme-ch5-dpad--x-large-dimension
-  --ch5-dpad--x-large-dimension: var(--theme-ch5-dpad--x-large-dimension);
+  /// related-theme-variable: --theme-ch5-dpad--x-large-size
+  --ch5-dpad--x-large-size: var(--theme-ch5-dpad--x-large-size);
 
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 
   /// description: Set the border radius for 'plus' shape regular size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 10px 
-  /// related-theme-variable: --theme-ch5-dpad--regular-edge-radius
-  --ch5-dpad--regular-edge-radius: var(--theme-ch5-dpad--regular-edge-radius);
+  /// related-theme-variable: --theme-ch5-dpad--regular-border-radius
+  --ch5-dpad--regular-border-radius: var(--theme-ch5-dpad--regular-border-radius);
 
   /// description: Set the border radius for 'plus' shape x-small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 6px 
-  /// related-theme-variable: --theme-ch5-dpad--x-small-edge-radius
-  --ch5-dpad--x-small-edge-radius: var(--theme-ch5-dpad--x-small-edge-radius);
+  /// related-theme-variable: --theme-ch5-dpad--x-small-border-radius
+  --ch5-dpad--x-small-border-radius: var(--theme-ch5-dpad--x-small-border-radius);
 
   /// description: Set the border radius for 'plus' shape small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 10px 
-  /// related-theme-variable: --theme-ch5-dpad--small-edge-radius
-  --ch5-dpad--small-edge-radius: var(--theme-ch5-dpad--small-edge-radius);
+  /// related-theme-variable: --theme-ch5-dpad--small-border-radius
+  --ch5-dpad--small-border-radius: var(--theme-ch5-dpad--small-border-radius);
 
   /// description: Set the border radius for 'plus' shape large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 10px 
-  /// related-theme-variable: --theme-ch5-dpad--large-edge-radius
-  --ch5-dpad--large-edge-radius: var(--theme-ch5-dpad--large-edge-radius);
+  /// related-theme-variable: --theme-ch5-dpad--large-border-radius
+  --ch5-dpad--large-border-radius: var(--theme-ch5-dpad--large-border-radius);
 
   /// description: Set the border radius for 'plus' shape x-large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 10px 
-  /// related-theme-variable: --theme-ch5-dpad--x-large-edge-radius
-  --ch5-dpad--x-large-edge-radius: var(--theme-ch5-dpad--x-large-edge-radius);
+  /// related-theme-variable: --theme-ch5-dpad--x-large-border-radius
+  --ch5-dpad--x-large-border-radius: var(--theme-ch5-dpad--x-large-border-radius);
 
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 
   /// description: Set the label font size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 1.5rem 
   /// related-theme-variable: --theme-ch5-dpad--label-font-size
   --ch5-dpad--label-font-size: var(--theme-ch5-dpad--label-font-size);
@@ -95,68 +95,68 @@ ch5-dpad {
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 
   /// description: Set the icon font size for x-small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 1.3rem 
-  /// related-theme-variable: --theme-ch5-dpad--icon-font-size-x-small
-  --ch5-dpad--icon-font-size-x-small: var(--theme-ch5-dpad--icon-font-size-x-small);
+  /// related-theme-variable: --theme-ch5-dpad--icon-size-x-small
+  --ch5-dpad--icon-size-x-small: var(--theme-ch5-dpad--icon-size-x-small);
 
   /// description: Set the icon font size for small size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 1.8rem 
-  /// related-theme-variable: --theme-ch5-dpad--icon-font-size-small
-  --ch5-dpad--icon-font-size-small: var(--theme-ch5-dpad--icon-font-size-small);
+  /// related-theme-variable: --theme-ch5-dpad--icon-size-small
+  --ch5-dpad--icon-size-small: var(--theme-ch5-dpad--icon-size-small);
 
   /// description: Set the icon font size for regular size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 2rem 
-  /// related-theme-variable: --theme-ch5-dpad--icon-font-size-regular
-  --ch5-dpad--icon-font-size-regular: var(--theme-ch5-dpad--icon-font-size-regular);
+  /// related-theme-variable: --theme-ch5-dpad--icon-size-regular
+  --ch5-dpad--icon-size-regular: var(--theme-ch5-dpad--icon-size-regular);
 
   /// description: Set the icon font size for large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 2.2rem 
-  /// related-theme-variable: --theme-ch5-dpad--icon-font-size-large
-  --ch5-dpad--icon-font-size-large: var(--theme-ch5-dpad--icon-font-size-large);
+  /// related-theme-variable: --theme-ch5-dpad--icon-size-large
+  --ch5-dpad--icon-size-large: var(--theme-ch5-dpad--icon-size-large);
 
   /// description: Set the icon font size for x-large size
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 2.4rem 
-  /// related-theme-variable: --theme-ch5-dpad--icon-font-size-x-large
-  --ch5-dpad--icon-font-size-x-large: var(--theme-ch5-dpad--icon-font-size-x-large);
+  /// related-theme-variable: --theme-ch5-dpad--icon-size-x-large
+  --ch5-dpad--icon-size-x-large: var(--theme-ch5-dpad--icon-size-x-large);
 
  // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 
   // default type
 
   /// description: The background color for default type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0099ff
   /// related-theme-variable: --theme-ch5-dpad--default-background-color
   --ch5-dpad--default-background-color: var(--theme-ch5-dpad--default-background-color);
 
   /// description: The font color for default type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   /// related-theme-variable: --theme-ch5-dpad--default-font-color
   --ch5-dpad--default-font-color: var(--theme-ch5-dpad--default-font-color);
 
   /// description: the pressed background color for default type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #008ae6
   /// related-theme-variable: --theme-ch5-dpad--default-pressed-background-color
   --ch5-dpad--default-pressed-background-color: var(--theme-ch5-dpad--default-pressed-background-color);
 
   /// description: the pressed font color for default type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-dpad--default-pressed-font-color
   --ch5-dpad--default-pressed-font-color: var(--theme-ch5-dpad--default-pressed-font-color);
@@ -166,29 +166,29 @@ ch5-dpad {
   // primary type
 
   /// description: The background color for primary type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fafafa
   /// related-theme-variable: --theme-ch5-dpad--primary-background-color
   --ch5-dpad--primary-background-color: var(--theme-ch5-dpad--primary-background-color);
 
   /// description: The font color for primary type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   /// related-theme-variable: --theme-ch5-dpad--primary-font-color
   --ch5-dpad--primary-font-color: var(--theme-ch5-dpad--primary-font-color);
 
   /// description: the pressed background color for primary type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #bdbdbd
   /// related-theme-variable: --theme-ch5-dpad--primary-pressed-background-color
   --ch5-dpad--primary-pressed-background-color: var(--theme-ch5-dpad--primary-pressed-background-color);
 
   /// description: the pressed font color for primary type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   /// related-theme-variable: --theme-ch5-dpad--primary-pressed-font-color
   --ch5-dpad--primary-pressed-font-color: var(--theme-ch5-dpad--primary-pressed-font-color);
@@ -198,29 +198,29 @@ ch5-dpad {
   // info type
 
   /// description: The background color for info type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #00bcd4
   /// related-theme-variable: --theme-ch5-dpad--info-background-color
   --ch5-dpad--info-background-color: var(--theme-ch5-dpad--info-background-color);
 
   /// description: The font color for info type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-dpad--info-font-color
   --ch5-dpad--info-font-color: var(--theme-ch5-dpad--info-font-color);
 
   /// description: the pressed background color for info type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0097a7
   /// related-theme-variable: --theme-ch5-dpad--info-pressed-background-color
   --ch5-dpad--info-pressed-background-color: var(--theme-ch5-dpad--info-pressed-background-color);
 
   /// description: the pressed font color for info type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-dpad--info-pressed-font-color
   --ch5-dpad--info-pressed-font-color: var(--theme-ch5-dpad--info-pressed-font-color);
@@ -230,29 +230,29 @@ ch5-dpad {
   // danger type
 
   /// description: The background color for danger type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f44336
   /// related-theme-variable: --theme-ch5-dpad--danger-background-color
   --ch5-dpad--danger-background-color: var(--theme-ch5-dpad--danger-background-color);
 
   /// description: The font color for danger type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   /// related-theme-variable: --theme-ch5-dpad--danger-font-color
   --ch5-dpad--danger-font-color: var(--theme-ch5-dpad--danger-font-color);
 
   /// description: the pressed background color for danger type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #b71c1c
   /// related-theme-variable: --theme-ch5-dpad--danger-pressed-background-color
   --ch5-dpad--danger-pressed-background-color: var(--theme-ch5-dpad--danger-pressed-background-color);
 
   /// description: the pressed font color for danger type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   /// related-theme-variable: --theme-ch5-dpad--danger-pressed-font-color
   --ch5-dpad--danger-pressed-font-color: var(--theme-ch5-dpad--danger-pressed-font-color);
@@ -262,29 +262,29 @@ ch5-dpad {
   // secondary type
 
   /// description: The background color for secondary type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #bdbdbd
   /// related-theme-variable: --theme-ch5-dpad--secondary-background-color
   --ch5-dpad--secondary-background-color: var(--theme-ch5-dpad--secondary-background-color);
 
   /// description: The font color for secondary type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   /// related-theme-variable: --theme-ch5-dpad--secondary-font-color
   --ch5-dpad--secondary-font-color: var(--theme-ch5-dpad--secondary-font-color);
 
   /// description: the pressed background color for secondary type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #9e9e9e
   /// related-theme-variable: --theme-ch5-dpad--secondary-pressed-background-color
   --ch5-dpad--secondary-pressed-background-color: var(--theme-ch5-dpad--secondary-pressed-background-color);
 
   /// description: the pressed font color for secondary type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   /// related-theme-variable: --theme-ch5-dpad--secondary-pressed-font-color
   --ch5-dpad--secondary-pressed-font-color: var(--theme-ch5-dpad--secondary-pressed-font-color);
@@ -294,29 +294,29 @@ ch5-dpad {
   // success type
 
   /// description: The background color for success type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #4caf50
   /// related-theme-variable: --theme-ch5-dpad--success-background-color
   --ch5-dpad--success-background-color: var(--theme-ch5-dpad--success-background-color);
 
   /// description: The font color for success type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-dpad--success-font-color
   --ch5-dpad--success-font-color: var(--theme-ch5-dpad--success-font-color);
 
   /// description: the pressed background color for success type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #388e3c
   /// related-theme-variable: --theme-ch5-dpad--success-pressed-background-color
   --ch5-dpad--success-pressed-background-color: var(--theme-ch5-dpad--success-pressed-background-color);
 
   /// description: the pressed font color for success type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-dpad--success-pressed-font-color
   --ch5-dpad--success-pressed-font-color: var(--theme-ch5-dpad--success-pressed-font-color);
@@ -326,29 +326,29 @@ ch5-dpad {
   // warning type
 
   /// description: The background color for warning type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffc107
   /// related-theme-variable: --theme-ch5-dpad--warning-background-color
   --ch5-dpad--warning-background-color: var(--theme-ch5-dpad--warning-background-color);
 
   /// description: The font color for warning type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   /// related-theme-variable: --theme-ch5-dpad--warning-font-color
   --ch5-dpad--warning-font-color: var(--theme-ch5-dpad--warning-font-color);
 
   /// description: the pressed background color for warning type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ff6f00
   /// related-theme-variable: --theme-ch5-dpad--warning-pressed-background-color
   --ch5-dpad--warning-pressed-background-color: var(--theme-ch5-dpad--warning-pressed-background-color);
 
   /// description: the pressed font color for warning type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-dpad--warning-pressed-font-color
   --ch5-dpad--warning-pressed-font-color: var(--theme-ch5-dpad--warning-pressed-font-color);
@@ -358,29 +358,29 @@ ch5-dpad {
   // text type
 
   /// description: The background color for text type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #efefef
   /// related-theme-variable: --theme-ch5-dpad--text-background-color
   --ch5-dpad--text-background-color: var(--theme-ch5-dpad--text-background-color);
 
   /// description: The font color for text type of dpad.
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   /// related-theme-variable: --theme-ch5-dpad--text-font-color
   --ch5-dpad--text-font-color: var(--theme-ch5-dpad--text-font-color);
 
   /// description: the pressed background color for text type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #808080
   /// related-theme-variable: --theme-ch5-dpad--text-pressed-background-color
   --ch5-dpad--text-pressed-background-color: var(--theme-ch5-dpad--text-pressed-background-color);
 
   /// description: the pressed font color for text type of dpad
-  /// type: color 
-  /// values: rgb(35,35,35), #1a1a1a, red 
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
   /// related-theme-variable: --theme-ch5-dpad--text-pressed-font-color
   --ch5-dpad--text-pressed-font-color: var(--theme-ch5-dpad--text-pressed-font-color);

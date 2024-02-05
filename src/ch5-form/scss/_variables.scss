@@ -11,24 +11,24 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-form {
-  /// description: set the default font size for the form
-  /// type: unit 
-  /// values: px, vw, vh, em, rem, % 
+  /// description: Font size for the form
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
   /// example: 16px
-  /// related-theme-variable: --theme-fonts-font-size
-  --ch5-form-font-size: var(--theme-fonts--font-size);
+  /// related-theme-variable: --theme-ch5-form-font-size
+  --ch5-form--font-size: var(--theme-ch5-form--font-size);
 
-  /// description: set the default font style for the form
-  /// type: string 
-  /// values: large, solid, center 
+  /// description:Font style for the form
+  /// type: list
+  /// values: normal, italic
   /// example: normal
-  /// related-theme-variable: --theme-fonts-font-style
-  --ch5-form-font-style: var(--theme-fonts--font-style);
+  /// related-theme-variable: --theme-ch5-form-font-style
+  --ch5-form--font-style: var(--theme-ch5-form--font-style);
 
-  /// description: set the default font weight for the form
-  /// type: string 
-  /// values: large, solid, center 
+  /// description: Font weight for the form
+  /// type: list
+  /// values: normal, bold
   /// example: normal
-  /// related-theme-variable: --theme-fonts-font-weight
-  --ch5-form-font-weight: var(--theme-fonts--font-weight);
+  /// related-theme-variable: --theme-ch5-form-font-weight
+  --ch5-form--font-weight: var(--theme-ch5-form--font-weight);
 }

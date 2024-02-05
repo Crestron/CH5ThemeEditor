@@ -163,3 +163,10 @@ Also, please ensure to add a comment with three slashes in each file. If not, th
 
 ### Unused scss variables
 node helpers/unused-scss-variables.mjs > output.txt
+
+### CSS Variables naming convention
+
+#### Theme Variables
+
+#### Component Variables
+
