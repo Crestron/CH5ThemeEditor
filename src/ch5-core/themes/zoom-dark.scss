@@ -1757,21 +1757,13 @@
   // ch5-wifi-signal-level-gauge
   // ***************************************
 
-  --theme-ch5-wifi-signal-level-gauge--small-height: 24px;
+  --theme-ch5-wifi-signal-level-gauge--small-size: 24px;
 
-  --theme-ch5-wifi-signal-level-gauge--small-width: 36px;
+  --theme-ch5-wifi-signal-level-gauge--regular-size: 36px;
 
-  --theme-ch5-wifi-signal-level-gauge--regular-height: 36px;
+  --theme-ch5-wifi-signal-level-gauge--large-size: 60px;
 
-  --theme-ch5-wifi-signal-level-gauge--regular-width: 54px;
-
-  --theme-ch5-wifi-signal-level-gauge--large-height: 60px;
-
-  --theme-ch5-wifi-signal-level-gauge--large-width: 90px;
-
-  --theme-ch5-wifi-signal-level-gauge--x-large-height: 96px;
-
-  --theme-ch5-wifi-signal-level-gauge--x-large-width: 144px;
+  --theme-ch5-wifi-signal-level-gauge--x-large-size: 96px;
 
   --theme-ch5-wifi-signal-level-gauge--style-accents: #87ceeb;
 
@@ -1779,5 +1771,5 @@
 
   --theme-ch5-wifi-signal-level-gauge--style-dark: #000000;
 
-  --theme-ch5-wifi-signal-level-gauge--border-color: #939393;
+  --theme-ch5-wifi-signal-level-gauge--bar-color: #939393;
 }
