@@ -41,14 +41,14 @@ ch5-datetime {
 
   /// description: Font weight
   /// type: list 
-  /// values: normal, italic
+  /// values: normal, bold
   /// example: normal 
   /// related-theme-variable: --theme-ch5-datetime--font-weight
   --ch5-datetime--font-weight: var(--theme-ch5-datetime--font-weight);
 
   /// description: Font style
   /// type: list 
-  /// values: normal, bold
+  /// values: normal, italic
   /// example: normal 
   /// related-theme-variable: --theme-ch5-datetime--font-style
   --ch5-datetime--font-style: var(--theme-ch5-datetime--font-style);

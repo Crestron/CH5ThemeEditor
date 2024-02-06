@@ -130,7 +130,12 @@ function getVariables(data, sectionName) {
 					const componentName = name.replace('--theme-', '').split('--')[0]
 					const componentVariables = outputJSON['ch5Components'].find(t => t.name === componentName)['variables']
 					const variableObj = componentVariables.find(t => t.name === name.replace('--theme', '-'));
+
+					variableObj.description = variableObj.description.trim();
 					if (variableObj) {
+						if (variableObj.description.endsWith(".")) {
+							variableObj.description = variableObj.description.substring(0, variableObj.description.length - 1);
+						}
 						description = variableObj.description + ' at theme level';
 						type = variableObj.type
 						example = variableObj.example

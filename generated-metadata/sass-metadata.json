@@ -8320,13 +8320,13 @@
 					"description": "border color",
 					"type": "color",
 					"example": "#939393",
-					"value": "var(--theme-ch5-wifi-signal-level-gauge--border-color)",
+					"value": "var(--theme-ch5-wifi-signal-level-gauge--bar-color)",
 					"possibleValues": [
 						"rgb(35,35,35)",
 						"#1a1a1a",
 						"red"
 					],
-					"relatedThemeVariable": "--theme-ch5-wifi-signal-level-gauge--border-color"
+					"relatedThemeVariable": "--theme-ch5-wifi-signal-level-gauge--bar-color"
 				},
 				{
 					"name": "--ch5-wifi-signal-level-gauge--large-height",
@@ -16174,7 +16174,7 @@
 					"name": "ch5-wifi-signal-level-gauge",
 					"variables": [
 						{
-							"name": "--theme-ch5-wifi-signal-level-gauge--border-color",
+							"name": "--theme-ch5-wifi-signal-level-gauge--bar-color",
 							"description": "border color at theme level",
 							"type": "color",
 							"example": "#939393",
@@ -25004,7 +25004,7 @@
 					"name": "ch5-wifi-signal-level-gauge",
 					"variables": [
 						{
-							"name": "--theme-ch5-wifi-signal-level-gauge--border-color",
+							"name": "--theme-ch5-wifi-signal-level-gauge--bar-color",
 							"description": "border color at theme level",
 							"type": "color",
 							"example": "#939393",
@@ -33834,7 +33834,7 @@
 					"name": "ch5-wifi-signal-level-gauge",
 					"variables": [
 						{
-							"name": "--theme-ch5-wifi-signal-level-gauge--border-color",
+							"name": "--theme-ch5-wifi-signal-level-gauge--bar-color",
 							"description": "border color at theme level",
 							"type": "color",
 							"example": "#939393",
@@ -42664,7 +42664,7 @@
 					"name": "ch5-wifi-signal-level-gauge",
 					"variables": [
 						{
-							"name": "--theme-ch5-wifi-signal-level-gauge--border-color",
+							"name": "--theme-ch5-wifi-signal-level-gauge--bar-color",
 							"description": "border color at theme level",
 							"type": "color",
 							"example": "#939393",
@@ -51494,7 +51494,7 @@
 					"name": "ch5-wifi-signal-level-gauge",
 					"variables": [
 						{
-							"name": "--theme-ch5-wifi-signal-level-gauge--border-color",
+							"name": "--theme-ch5-wifi-signal-level-gauge--bar-color",
 							"description": "border color at theme level",
 							"type": "color",
 							"example": "#939393",

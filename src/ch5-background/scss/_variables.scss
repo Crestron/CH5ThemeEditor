@@ -13,7 +13,7 @@
 ch5-background {
 
   /// description: Transition effect. This value can be set as 'transitionEffect' attribute for the component. The component value will override CSS value.
-  /// type: string 
+  /// type: list 
   /// values: ease-in, ease-out, linear, ease, ease-in-out
   /// example: ease
   /// related-theme-variable: --theme-ch5-background--transition-timing-function

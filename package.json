@@ -22,13 +22,10 @@
     "clean": "rimraf output",
     "create-theme": "node ./helpers/create-theme.js",
     "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json",
-    "gen:sass-json": "ts-node ./helpers/sass-output/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
-    "gen:sass-metadata": "node ./helpers/metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json",
-    "gen:sass": "node ./helpers/sass/index.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-metadata.json",
-    "my:showcase": "npm run clean && webpack --config webpack.build.js --output-path $npm_package_config_showcase",
-    "my:testing": "npm run clean && webpack --config webpack.build.js --output-path $npm_package_config_testing",
-    "my:shell": "npm run clean && webpack --config webpack.build.js --output-path $npm_package_config_shell",
-    "my:pack": "reset && npm run build:prod && npm pack"
+    "gen:sass-output": "ts-node ./helpers/sass-output/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
+    "gen:sass-schema": "node ./helpers/metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json",
+    "gen:sass-metadata": "node ./helpers/sass-metadata/index.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-metadata.json",
+    "gen:sass:all": "npm run gen:sass-metadata && npm run gen:sass-output && npm run gen:sass-schema && npm run gen:icon-library"
   },
   "config": {
     "local": "./output/themes",
