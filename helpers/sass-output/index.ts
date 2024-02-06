@@ -1,4 +1,4 @@
-const packageJson = require('../package.json')
+const packageJson = require('../../package.json') // TODO: Currently picking from parent folder package.json, In future it should be picked from helpers folder
 const CONFIG = require('./config.json');
 const fs = require('fs');
 const flatten = require('@raghavendradabbir/sass-flatten');
@@ -313,7 +313,6 @@ async function initialize() {
 
     createEmptyList(componentKeys[i]);
   }
-  logger(JSON.stringify(outputJSON, null, 4))
 
   const writeToIndex: number = process.argv.findIndex(element => element === "--writeTo");
   if (writeToIndex >= 0 && process.argv.length > (writeToIndex + 1)) {
