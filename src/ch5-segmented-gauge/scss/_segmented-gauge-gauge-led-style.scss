@@ -15,17 +15,17 @@
   /// Led style rectangle class
   &.ch5-segmented-gauge--gauge-led-style-rectangle {
     .ch5-segmented-gauge-segment {
-      height: var(--ch5-segmented-gauge--led-style-height);
-      width: var(--ch5-segmented-gauge--led-style-width);
+      height: var(--ch5-segmented-gauge--rectangle-each-gauge-height);
+      width: var(--ch5-segmented-gauge--rectangle-each-gauge-width);
     }
   }
 
   /// Led style circle class
   &.ch5-segmented-gauge--gauge-led-style-circle {
     .ch5-segmented-gauge-segment {
-      height: var(--ch5-segmented-gauge--led-style-height);
-      width: var(--ch5-segmented-gauge--led-style-width);
-      border-radius: var(--ch5-segmented-gauge--led-style-border-radius);
+      height: var(--ch5-segmented-gauge--circle-each-gauge-size);
+      width: var(--ch5-segmented-gauge--circle-each-gauge-size);
+      border-radius: 50%;
     }
   }
 }
