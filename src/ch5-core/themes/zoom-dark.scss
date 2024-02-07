@@ -1283,6 +1283,14 @@
 
   --theme-ch5-text--padding: 10px;
 
+  --theme-ch5-text--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-text--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-text--font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-text--font-color: var(--theme-fonts--font-color);
+
   // ***************************************
   // ch5-textinput
   // ***************************************
@@ -1399,7 +1407,7 @@
 
   --theme-ch5-toggle--text-font-style: var(--theme-fonts--font-style);
 
-  --theme-ch5-toggle--text-font-weight: var(--theme-fonts--font-weight);
+  --theme-ch5-toggle--text-font-weight: 900;
 
   --theme-ch5-toggle--icon-font-size: var(--theme-fonts--font-size);
 
@@ -1409,7 +1417,7 @@
 
   --theme-ch5-toggle--label-font-color: #efefef;
 
-  --theme-ch5-toggle--text-font-color: #797979;
+  --theme-ch5-toggle--text-font-color: #17171a;
 
   --theme-ch5-toggle--icon-font-color: #17171a;
 

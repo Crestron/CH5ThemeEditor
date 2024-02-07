@@ -27,6 +27,10 @@ ch5-text {
   height: var(--ch5-text--height);
   overflow: hidden;
   padding: var(--ch5-text--padding);
+  color: var(--ch5-text--font-color);
+  font-style: var(--ch5-text--font-style);
+  font-size: var(--ch5-text--font-size);
+  font-weight: var(--ch5-text--font-weight);
 
   span {
     display: inline-block;

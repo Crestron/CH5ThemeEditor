@@ -1385,6 +1385,14 @@
 
   --theme-ch5-textinput--x-large-height: 60px;
 
+  --theme-ch5-text--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-text--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-text--font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-text--font-color: var(--theme-fonts--font-color);
+
   // ***************************************
   // ch5-toggle
   // ***************************************
@@ -1399,7 +1407,7 @@
 
   --theme-ch5-toggle--text-font-style: var(--theme-fonts--font-style);
 
-  --theme-ch5-toggle--text-font-weight: var(--theme-fonts--font-weight);
+  --theme-ch5-toggle--text-font-weight: 900;
 
   --theme-ch5-toggle--icon-font-size: var(--theme-fonts--font-size);
 
@@ -1409,7 +1417,7 @@
 
   --theme-ch5-toggle--label-font-color: #000;
 
-  --theme-ch5-toggle--text-font-color: #000;
+  --theme-ch5-toggle--text-font-color: #{$white};
 
   --theme-ch5-toggle--icon-font-color: #{$white};
 

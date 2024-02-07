@@ -806,7 +806,7 @@
   --theme-ch5-datetime--background-color: transparent;
 
   --theme-ch5-datetime--font-weight: var(--theme-fonts--font-weight);
-  
+
   --theme-ch5-datetime--font-style: var(--theme-fonts--font-style);
 
   // ***************************************
@@ -915,11 +915,11 @@
   --theme-ch5-dpad--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
 
   --theme-ch5-dpad--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
-  
+
   // ***************************************
   // ch5-form
   // ***************************************
-  
+
   --theme-ch5-form--font-size: var(--theme-fonts--font-size);
 
   --theme-ch5-form--font-style: var(--theme-fonts--font-style);
@@ -1147,7 +1147,7 @@
 
   --theme-ch5-select--border-style: solid;
 
---theme-ch5-select--border-color: #5e5e66;
+  --theme-ch5-select--border-color: #5e5e66;
 
   --theme-ch5-select--font-color: #797979;
 
@@ -1283,6 +1283,14 @@
 
   --theme-ch5-text--padding: 10px;
 
+  --theme-ch5-text--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-text--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-text--font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-text--font-color: var(--theme-colors--default-font-color);
+
   // ***************************************
   // ch5-textinput
   // ***************************************
@@ -1399,7 +1407,7 @@
 
   --theme-ch5-toggle--text-font-style: var(--theme-fonts--font-style);
 
-  --theme-ch5-toggle--text-font-weight: var(--theme-fonts--font-weight);
+  --theme-ch5-toggle--text-font-weight: 900;
 
   --theme-ch5-toggle--icon-font-size: var(--theme-fonts--font-size);
 
@@ -1409,7 +1417,7 @@
 
   --theme-ch5-toggle--label-font-color: #efefef;
 
-  --theme-ch5-toggle--text-font-color: #797979;
+  --theme-ch5-toggle--text-font-color: #17171a;
 
   --theme-ch5-toggle--icon-font-color: #17171a;
 

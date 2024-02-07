@@ -31,4 +31,32 @@ ch5-text {
   /// example: 10px 
   /// related-theme-variable: --theme-ch5-text--padding
   --ch5-text--padding: var(--theme-ch5-text--padding);
+
+  /// description: Font size of the text
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 16px 
+  /// related-theme-variable: --theme-ch5-text--font-size
+  --ch5-text--font-size: var(--theme-ch5-text--font-size);
+
+  /// description: Font style of the text
+  /// type: list
+  /// values: normal, italic
+  /// example: normal 
+  /// related-theme-variable: --theme-ch5-text--font-style
+  --ch5-text--font-style: var(--theme-ch5-text--font-style);
+
+  /// description: Font weight of the text
+  /// type: list
+  /// values: normal, bold
+  /// example: normal 
+  /// related-theme-variable: --theme-ch5-text--font-weight
+  --ch5-text--font-weight: var(--theme-ch5-text--font-weight);
+
+  /// description: Font color of the text
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #4a4a4a
+  /// related-theme-variable: --theme-ch5-toggle--label-font-color
+  --ch5-text--font-color: var(--theme-ch5-text--font-color);
 }
