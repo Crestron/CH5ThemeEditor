@@ -1219,11 +1219,13 @@
 
   --theme-ch5-spinner--active-item-color: #fff;
 
+  --theme-ch5-spinner--font-size: 22px;
+
   --theme-ch5-spinner--font-style: var(--theme-fonts--font-style);
 
   --theme-ch5-spinner--font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-spinner--icon-font-size: var(--theme-ch5-spinner-font-size);
+  --theme-ch5-spinner--icon-size: var(--theme-ch5-spinner-font-size);
 
   --theme-ch5-spinner--item-color: #9898a6;
 
@@ -1235,21 +1237,13 @@
 
   --theme-ch5-spinner--background-color: #3b3b40;
 
-  --theme-ch5-spinner--background-gradient-before: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05));
-
-  --theme-ch5-spinner--background-gradient-after: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%);
-
   --theme-ch5-spinner--border-width: 1px;
 
   --theme-ch5-spinner--border-style: solid;
 
-  --theme-ch5-spinner--font-size: 22px;
-
   --theme-ch5-spinner--icon-padding: 0 0;
 
   --theme-ch5-spinner--icon-margin: 0 0;
-
-  --theme-ch5-spinner--overlay-opacity: 0;
 
   // ***************************************
   // ch5-subpage-reference-list
