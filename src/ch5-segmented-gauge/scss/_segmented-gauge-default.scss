@@ -12,10 +12,8 @@
 
 ch5-segmented-gauge {
   @include ch5-component-base();
-}
 
-// styles to avoid extra width for segmented gauge
-ch5-segmented-gauge {
+  // styles to avoid extra width for segmented gauge
   display: inline-flex;
 }
 

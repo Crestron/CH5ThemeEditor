@@ -1,4 +1,4 @@
-const packageJson = require('../../package.json')
+const packageJson = require('../../package.json') // TODO: Currently picking from parent folder package.json, In future it should be picked from helpers folder
 const CONFIG = require('./config.json');
 const fs = require('fs');
 const flatten = require('@raghavendradabbir/sass-flatten');
@@ -127,12 +127,12 @@ function getVariables(data, sectionName) {
 				// process.exit(1);
 
 				if (sectionName === 'theme') {
-					const componentName = name.replace('--theme-', '').split('--')[0]
-					const componentVariables = outputJSON['ch5Components'].find(t => t.name === componentName)['variables']
+					const componentName = name.replace('--theme-', '').split('--')[0];
+					const componentVariables = outputJSON['ch5Components'].find(t => t.name === componentName)['variables'];
 					const variableObj = componentVariables.find(t => t.name === name.replace('--theme', '-'));
-
-					variableObj.description = variableObj.description.trim();
+					
 					if (variableObj) {
+						variableObj.description = variableObj.description.trim();
 						if (variableObj.description.endsWith(".")) {
 							variableObj.description = variableObj.description.substring(0, variableObj.description.length - 1);
 						}
@@ -209,7 +209,7 @@ function getVariables(data, sectionName) {
 }
 
 function getComponentScss(component) {
-	const sourcePath = CONFIG.THEME_EDITOR_SOURCE_FILES_PATH
+	const sourcePath = CONFIG.THEME_EDITOR_SOURCE_FILES_PATH;
 	const entryFile = sourcePath + component + '/' + component + '.scss';
 	const componentEntry = fs.readFileSync(entryFile, 'utf-8');
 	const componentScss = flatten(componentEntry, path.resolve(path.join(sourcePath, component)));
@@ -218,7 +218,7 @@ function getComponentScss(component) {
 }
 function getComponentScssWithoutVariables(component) {
 	const res = [];
-	const sourcePath = CONFIG.THEME_EDITOR_SOURCE_FILES_PATH
+	const sourcePath = CONFIG.THEME_EDITOR_SOURCE_FILES_PATH;
 	const entryFile = sourcePath + component + '/' + component + '.scss';
 	const componentEntry = fs.readFileSync(entryFile, 'utf-8')
 		.replace('@import "./scss/variables";', '')

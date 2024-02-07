@@ -21,12 +21,16 @@ ch5-text {
 /// Main Class
 .ch5-text {
   position: relative;
-  min-width: var(--ch5-text--min-width);
-  min-height: var(--ch5-text--min-height);
+  min-width: 64px;
+  min-height: 44px;
   width: var(--ch5-text--width);
   height: var(--ch5-text--height);
   overflow: hidden;
   padding: var(--ch5-text--padding);
+  color: var(--ch5-text--font-color);
+  font-style: var(--ch5-text--font-style);
+  font-size: var(--ch5-text--font-size);
+  font-weight: var(--ch5-text--font-weight);
 
   span {
     display: inline-block;

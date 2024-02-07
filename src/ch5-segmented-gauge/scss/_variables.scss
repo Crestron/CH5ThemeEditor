@@ -11,26 +11,26 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-segmented-gauge {
-  /// description: Height for each gauge 
+  /// description: Height of each gauge for gaugeLedStyle="rectangle"
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 20px 
-  /// related-theme-variable: --theme-ch5-segmented-gauge--led-style-height
-  --ch5-segmented-gauge--led-style-height: var(--theme-ch5-segmented-gauge--led-style-height);
+  /// related-theme-variable: --theme-ch5-segmented-gauge--rectangle-each-gauge-height
+  --ch5-segmented-gauge--rectangle-each-gauge-height: var(--theme-ch5-segmented-gauge--rectangle-each-gauge-height);
 
-  /// description: Width for each gauge
+  /// description: Width of each gauge for gaugeLedStyle="rectangle"
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 20px 
-  /// related-theme-variable: --theme-ch5-segmented-gauge--led-style-width
-  --ch5-segmented-gauge--led-style-width: var(--theme-ch5-segmented-gauge--led-style-width);
+  /// related-theme-variable: --theme-ch5-segmented-gauge--rectangle-each-gauge-width
+  --ch5-segmented-gauge--rectangle-each-gauge-width: var(--theme-ch5-segmented-gauge--rectangle-each-gauge-width);
 
-  /// description: Border radius for the segmented gauge
+  /// description: Size of each gauge for gaugeLedStyle="circle"
   /// type: unit
   /// values: px, vw, vh, em, rem, %
-  /// example: 50% 
-  /// related-theme-variable: --theme-ch5-segmented-gauge--led-style-border-radius
-  --ch5-segmented-gauge--led-style-border-radius: var(--theme-ch5-segmented-gauge--led-style-border-radius);
+  /// example: 20px 
+  /// related-theme-variable: --theme-ch5-segmented-gauge--circle-each-gauge-size
+  --ch5-segmented-gauge--circle-each-gauge-size: var(--theme-ch5-segmented-gauge--circle-each-gauge-size);
 
   /// description: Background color for state graphic representation of green
   /// type: color

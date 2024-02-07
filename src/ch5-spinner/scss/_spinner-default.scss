@@ -12,9 +12,7 @@
 
 ch5-spinner {
   @include ch5-component-base();
-}
 
-ch5-spinner {
   display: inline-block;
   background-color: var(--ch5-spinner--background-color);
 }
@@ -30,6 +28,7 @@ ch5-spinner {
   font-weight: var(--ch5-spinner--font-weight);
   cursor: pointer;
   width: 100%;
+  
   /// @require .ch5-spinner
   /// Applied for spinner wrapper
   &__wrapper {
@@ -49,12 +48,12 @@ ch5-spinner {
     }
 
     &:after {
-      background: var(--ch5-spinner--background-gradient-after);
+      background: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%);
       bottom: 0;
     }
 
     &:before {
-      background: var(--ch5-spinner--background-gradient-before);
+      background: linear-gradient(#fff 5%, rgba(255, 255, 255, 0.05));
       top: 0;
     }
   }
@@ -85,7 +84,7 @@ ch5-spinner {
     height: 100%;
     background: var(--ch5-spinner--overlay-background-color);
     cursor: grabbing;
-    opacity: var(--ch5-spinner--overlay-opacity);
+    opacity: 0;
     display: none;
   }
   /// @require .ch5-spinner
@@ -106,7 +105,7 @@ ch5-spinner {
   /// @require .ch5-spinner
   /// Applied on the icon
   &__icon {
-    font-size: var(--ch5-spinner--icon-font-size);
+    font-size: var(--ch5-spinner--icon-size);
     padding: var(--ch5-spinner--icon-padding);
     margin: var(--ch5-spinner--icon-margin);
   }

@@ -11,68 +11,61 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-spinner {
-  /// description: spinner border width
+  /// description: Border width for spinner
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-spinner--border-width
   --ch5-spinner--border-width: var(--theme-ch5-spinner--border-width);
 
-  /// description: Spinner border style
+  /// description: Border style for spinner
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
   /// example: solid 
   /// related-theme-variable: --theme-ch5-spinner--border-style
   --ch5-spinner--border-style: var(--theme-ch5-spinner--border-style);
 
-  /// description: The default font size of the spinner
+  /// description: Font size for spinner
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 22px 
   /// related-theme-variable: --theme-ch5-spinner--font-size
   --ch5-spinner--font-size: var(--theme-ch5-spinner--font-size);
 
-  /// description: The default font style of the spinner
-  /// type: string 
-  /// values: large, solid, center 
+  /// description: Font style for spinner
+  /// type: list 
+  /// values: normal, italic 
   /// example: normal
   /// related-theme-variable: --theme-ch5-spinner--font-style
   --ch5-spinner--font-style: var(--theme-ch5-spinner--font-style);
 
-  /// description: The default font weight of the spinner
+  /// description: Font weight for spinner
   /// type: list
   /// values: normal, bold
   /// example: normal
   /// related-theme-variable: --theme-ch5-spinner--font-weight
   --ch5-spinner--font-weight: var(--theme-ch5-spinner--font-weight);
 
-  /// description: The default font size for icon
+  /// description: Size of icon used in spinner
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 22px 
-  /// related-theme-variable: --theme-ch5-spinner--icon-font-size
-  --ch5-spinner--icon-font-size: var(--theme-ch5-spinner--icon-font-size);
+  /// related-theme-variable: --theme-ch5-spinner--icon-size
+  --ch5-spinner--icon-size: var(--theme-ch5-spinner--icon-size);
 
-  /// description: The padding of the icon within the slider item
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: 0 0 
+  /// description: Icon padding in spinner item
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, %
+  /// example: 0
   /// related-theme-variable: --theme-ch5-spinner--icon-padding
   --ch5-spinner--icon-padding: var(--theme-ch5-spinner--icon-padding);
 
-  /// description: The margin of the icon within the slider item
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: 0 0 
+  /// description: Icon margin in spinner item
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, %
+  /// example: 0
   /// related-theme-variable: --theme-ch5-spinner--icon-margin
   --ch5-spinner--icon-margin: var(--theme-ch5-spinner--icon-margin);
-
-  /// description: The opacity for the overlay of the spinner
-  /// type: number
-  /// values: 1, 10, 100
-  /// example: 0 
-  /// related-theme-variable: --theme-ch5-spinner--overlay-opacity
-  --ch5-spinner--overlay-opacity: var(--theme-ch5-spinner--overlay-opacity);
 
   /// description: Background color for spinner overlay
   /// type: color
@@ -81,21 +74,6 @@ ch5-spinner {
   /// related-theme-variable: --theme-ch5-spinner--overlay-background-color
   --ch5-spinner--overlay-background-color: var(--theme-ch5-spinner--overlay-background-color);
 
-  /// description: Spinner background gradient color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%) 
-  /// related-theme-variable: --theme-ch5-spinner--background-gradient-after
-  --ch5-spinner--background-gradient-after: var(--theme-ch5-spinner--background-gradient-after);
-
-  /// description: Spinner background gradient color before state
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: linear-gradient(rgba(255, 255, 255, 0.05), #fff 120%) 
-  /// related-theme-variable: --theme-ch5-spinner--background-gradient-before
-  --ch5-spinner--background-gradient-before: var(--theme-ch5-spinner--background-gradient-before);
-
-
   /// description: Highlight border color for spinner
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
@@ -103,7 +81,7 @@ ch5-spinner {
   /// related-theme-variable: --theme-ch5-spinner--highlight-border-color
   --ch5-spinner--highlight-border-color: var(--theme-ch5-spinner--highlight-border-color);
 
-  /// description: Hightlight box shadow color
+  /// description: Highlight box shadow color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.3)  

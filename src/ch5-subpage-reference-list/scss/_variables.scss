@@ -7,39 +7,39 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-subpage-reference-list--variables
+/// @group ch5-subpage-reference-list-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-subpage-reference-list {
-  /// description: subpage-reference container padding
+  /// description: Padding for the subpage reference list container
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 5px 
   /// related-theme-variable: --theme-ch5-subpage-reference-list--container-padding
   --ch5-subpage-reference-list--container-padding: var(--theme-ch5-subpage-reference-list--container-padding);
 
-  /// description: scrollbar width
+  /// description: Scrollbar width for subpage reference list
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 7px
   /// related-theme-variable: --theme-ch5-subpage-reference-list--scrollbar-width
   --ch5-subpage-reference-list--scrollbar-width: var(--theme-ch5-subpage-reference-list--scrollbar-width);
 
-  /// description: scrollbar track color
+  /// description: Scrollbar track color for subpage reference list
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.1)
   /// related-theme-variable: --theme-ch5-subpage-reference-list--scrollbar-track-color
   --ch5-subpage-reference-list--scrollbar-track-color: var(--theme-ch5-subpage-reference-list--scrollbar-track-color);
 
-  /// description: scrollbar border radius
+  /// description: Scrollbar border radius for subpage reference list
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 10px
   /// related-theme-variable: --theme-ch5-subpage-reference-list--scrollbar-border-radius
   --ch5-subpage-reference-list--scrollbar-border-radius: var(--theme-ch5-subpage-reference-list--scrollbar-border-radius);
 
-  /// description: scrollbar thumb color
+  /// description: Scrollbar thumb color for subpage reference list
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.5)
