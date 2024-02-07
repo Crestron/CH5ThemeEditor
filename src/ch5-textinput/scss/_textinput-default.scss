@@ -18,6 +18,7 @@ ch5-textinput {
 
   &[dir="rtl"] {
     .ch5-textinput-container {
+
       /// Applied on the icon when iconPosition attribute is set to 'last'
       .ch5-textinput--icon.ch5-textinput--icon-position-last {
         margin-right: 0;
@@ -70,7 +71,7 @@ ch5-textinput {
       color: var(--ch5-textinput--icon-text-color);
     }
 
-    > span {
+    >span {
       display: flex;
       position: relative;
       align-items: center;
@@ -140,7 +141,7 @@ ch5-textinput {
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput--regular-input-padding);
+        padding: 0 20px;
         font-size: var(--ch5-textinput--regular-font-size);
         font-weight: var(--ch5-textinput--regular-font-weight);
       }
@@ -176,7 +177,7 @@ ch5-textinput {
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput--x-small-input-padding);
+        padding: 0 10px;
         font-size: var(--ch5-textinput--x-small-font-size);
         font-weight: var(--ch5-textinput--x-small-font-weight);
       }
@@ -212,7 +213,7 @@ ch5-textinput {
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput--small-input-padding);
+        padding: 0 15px;
         font-size: var(--ch5-textinput--small-font-size);
         font-weight: var(--ch5-textinput--small-font-weight);
       }
@@ -248,7 +249,7 @@ ch5-textinput {
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput--large-input-padding);
+        padding: 0 20px;
         font-size: var(--ch5-textinput--large-font-size);
         font-weight: var(--ch5-textinput--large-font-weight);
       }
@@ -284,7 +285,7 @@ ch5-textinput {
       }
 
       .ch5-textinput-mask {
-        padding: 0 var(--ch5-textinput--x-large-input-padding);
+        padding: 0 22px;
         font-size: var(--ch5-textinput--x-large-font-size);
         font-weight: var(--ch5-textinput--x-large-font-weight);
       }
