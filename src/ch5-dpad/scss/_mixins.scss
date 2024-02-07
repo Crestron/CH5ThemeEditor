@@ -167,8 +167,8 @@
 }
 
 @mixin ch5-dpad-content-plus-direction-btn($property-size, $property-icon-font-size, $property-border-radius) {
-  min-width: var(#{$property-size});
-  min-height: var(#{$property-size});
+  // min-width: var(#{$property-size});
+  // min-height: var(#{$property-size});
 
   .dpad-container {
     width: var(#{$property-size});

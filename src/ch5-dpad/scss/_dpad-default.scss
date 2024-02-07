@@ -18,8 +18,8 @@ ch5-dpad {
 .ch5-dpad {
   position: relative;
   display: inline-flex;
-  min-width: var(--ch5-dpad--regular-size);
-  min-height: var(--ch5-dpad--regular-size);
+  min-width: 100px;
+  min-height: 100px;
   vertical-align: top;
 
   &.ch5-dpad--size-regular {
@@ -163,7 +163,6 @@ ch5-dpad {
 
   /// Defines the dpad shape plus
   &.ch5-dpad--shape-plus {
-    
     /// Applied when disableCenterButton="true"
     .ch5-disable-child-button {
       pointer-events: none; // Do not set opacity here
@@ -535,9 +534,8 @@ ch5-dpad {
     }
   }
 
-/// Defines the dpad shape
+  /// Defines the dpad shape
   &.ch5-dpad--shape-circle {
-    
     .ch5-disable-child-button {
       cursor: default;
       pointer-events: auto; // Note that pointer events should NOT be set to none here for circle shape only and do not set opacity here
