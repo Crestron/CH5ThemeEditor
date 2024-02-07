@@ -5013,33 +5013,33 @@
 					"description": "Select panel item background color",
 					"type": "color",
 					"example": "transparent",
-					"value": "var(--theme-ch5-select--panel-item-background-color)",
+					"value": "var(--theme-ch5-select--option-item-background-color)",
 					"possibleValues": [
 						"rgb(35,35,35)",
 						"#1a1a1a",
 						"red"
 					],
-					"relatedThemeVariable": "--theme-ch5-select--panel-item-background-color"
+					"relatedThemeVariable": "--theme-ch5-select--option-item-background-color"
 				},
 				{
 					"name": "--ch5-select--panel-item-border-color",
 					"description": "Select panel item border color",
 					"type": "color",
 					"example": "transparent",
-					"value": "var(--theme-ch5-select--panel-item-border-color)",
+					"value": "var(--theme-ch5-select--option-item-border-color)",
 					"possibleValues": [
 						"rgb(35,35,35)",
 						"#1a1a1a",
 						"red"
 					],
-					"relatedThemeVariable": "--theme-ch5-select--panel-item-border-color"
+					"relatedThemeVariable": "--theme-ch5-select--option-item-border-color"
 				},
 				{
 					"name": "--ch5-select--panel-item-border-width",
 					"description": "Item border width",
 					"type": "unit",
 					"example": "1px",
-					"value": "var(--theme-ch5-select--panel-item-border-width)",
+					"value": "var(--theme-ch5-select--option-item-border-width)",
 					"possibleValues": [
 						"px",
 						"vw",
@@ -5048,40 +5048,40 @@
 						"rem",
 						"%"
 					],
-					"relatedThemeVariable": "--theme-ch5-select--panel-item-border-width"
+					"relatedThemeVariable": "--theme-ch5-select--option-item-border-width"
 				},
 				{
 					"name": "--ch5-select--panel-item-color",
 					"description": "Select panel item color",
 					"type": "color",
 					"example": "#212529",
-					"value": "var(--theme-ch5-select--panel-item-color)",
+					"value": "var(--theme-ch5-select--option-item-color)",
 					"possibleValues": [
 						"rgb(35,35,35)",
 						"#1a1a1a",
 						"red"
 					],
-					"relatedThemeVariable": "--theme-ch5-select--panel-item-color"
+					"relatedThemeVariable": "--theme-ch5-select--option-item-color"
 				},
 				{
 					"name": "--ch5-select--panel-item-hover-background-color",
 					"description": "Select panel item hover background color",
 					"type": "color",
 					"example": "#f8f9fa",
-					"value": "var(--theme-ch5-select--panel-item-hover-background-color)",
+					"value": "var(--theme-ch5-select--option-item-hover-background-color)",
 					"possibleValues": [
 						"rgb(35,35,35)",
 						"#1a1a1a",
 						"red"
 					],
-					"relatedThemeVariable": "--theme-ch5-select--panel-item-hover-background-color"
+					"relatedThemeVariable": "--theme-ch5-select--option-item-hover-background-color"
 				},
 				{
 					"name": "--ch5-select--panel-item-padding",
 					"description": "Item padding",
 					"type": "unit",
 					"example": "8px",
-					"value": "var(--theme-ch5-select--panel-item-padding)",
+					"value": "var(--theme-ch5-select--option-item-padding)",
 					"possibleValues": [
 						"px",
 						"vw",
@@ -5090,40 +5090,40 @@
 						"rem",
 						"%"
 					],
-					"relatedThemeVariable": "--theme-ch5-select--panel-item-padding"
+					"relatedThemeVariable": "--theme-ch5-select--option-item-padding"
 				},
 				{
 					"name": "--ch5-select--panel-item-selected-background-color",
 					"description": "Select panel item selected background color",
 					"type": "color",
 					"example": "#cce5ff",
-					"value": "var(--theme-ch5-select--panel-item-selected-background-color)",
+					"value": "var(--theme-ch5-select--option-item-selected-background-color)",
 					"possibleValues": [
 						"rgb(35,35,35)",
 						"#1a1a1a",
 						"red"
 					],
-					"relatedThemeVariable": "--theme-ch5-select--panel-item-selected-background-color"
+					"relatedThemeVariable": "--theme-ch5-select--option-item-selected-background-color"
 				},
 				{
 					"name": "--ch5-select--panel-items-background-color",
 					"description": "Select panel background color",
 					"type": "color",
 					"example": "#fff",
-					"value": "var(--theme-ch5-select--panel-items-background-color)",
+					"value": "var(--theme-ch5-select--option-items-background-color)",
 					"possibleValues": [
 						"rgb(35,35,35)",
 						"#1a1a1a",
 						"red"
 					],
-					"relatedThemeVariable": "--theme-ch5-select--panel-items-background-color"
+					"relatedThemeVariable": "--theme-ch5-select--option-items-background-color"
 				},
 				{
 					"name": "--ch5-select--panel-items-box-shadow",
 					"description": "Select panel shadow",
 					"type": "unit",
 					"example": "0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)",
-					"value": "var(--theme-ch5-select--panel-items-box-shadow)",
+					"value": "var(--theme-ch5-select--option-items-box-shadow)",
 					"possibleValues": [
 						"px",
 						"vw",
@@ -5132,7 +5132,7 @@
 						"rem",
 						"%"
 					],
-					"relatedThemeVariable": "--theme-ch5-select--panel-items-box-shadow"
+					"relatedThemeVariable": "--theme-ch5-select--option-items-box-shadow"
 				}
 			]
 		},
@@ -6492,11 +6492,11 @@
 					"relatedThemeVariable": "--theme-ch5-spinner--highlight-box-shadow-color"
 				},
 				{
-					"name": "--ch5-spinner--icon-font-size",
+					"name": "--ch5-spinner--icon-size",
 					"description": "The default font size for icon",
 					"type": "unit",
 					"example": "22px",
-					"value": "var(--theme-ch5-spinner--icon-font-size)",
+					"value": "var(--theme-ch5-spinner--icon-size)",
 					"possibleValues": [
 						"px",
 						"vw",
@@ -6505,7 +6505,7 @@
 						"rem",
 						"%"
 					],
-					"relatedThemeVariable": "--theme-ch5-spinner--icon-font-size"
+					"relatedThemeVariable": "--theme-ch5-spinner--icon-size"
 				},
 				{
 					"name": "--ch5-spinner--icon-margin",
@@ -7551,17 +7551,17 @@
 			"version": "1.0.0",
 			"variables": [
 				{
-					"name": "--ch5-toggle--circle-knob-color",
+					"name": "--ch5-toggle--circle-handle-background-color",
 					"description": "The background color of the knob when shape=\"circle\"",
 					"type": "color",
 					"example": "#fff",
-					"value": "var(--theme-ch5-toggle--circle-knob-color)",
+					"value": "var(--theme-ch5-toggle--circle-handle-background-color)",
 					"possibleValues": [
 						"rgb(35,35,35)",
 						"#1a1a1a",
 						"red"
 					],
-					"relatedThemeVariable": "--theme-ch5-toggle--circle-knob-color"
+					"relatedThemeVariable": "--theme-ch5-toggle--circle-handle-background-color"
 				},
 				{
 					"name": "--ch5-toggle--circle-label-off-color",
@@ -7838,17 +7838,17 @@
 					"relatedThemeVariable": "--theme-ch5-toggle-label-margin"
 				},
 				{
-					"name": "--ch5-toggle--rectangle-knob-color",
+					"name": "--ch5-toggle--rectangle-handle-background-color",
 					"description": "The background color of the knob when shape=\"rectangle\"",
 					"type": "color",
 					"example": "#888",
-					"value": "var(--theme-ch5-toggle--rectangle-knob-color)",
+					"value": "var(--theme-ch5-toggle--rectangle-handle-background-color)",
 					"possibleValues": [
 						"rgb(35,35,35)",
 						"#1a1a1a",
 						"red"
 					],
-					"relatedThemeVariable": "--theme-ch5-toggle--rectangle-knob-color"
+					"relatedThemeVariable": "--theme-ch5-toggle--rectangle-handle-background-color"
 				},
 				{
 					"name": "--ch5-toggle--rectangle-label-off-color",
@@ -13098,7 +13098,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-background-color",
+							"name": "--theme-ch5-select--option-item-background-color",
 							"description": "Select panel item background color at theme level",
 							"type": "color",
 							"example": "transparent",
@@ -13110,7 +13110,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-border-color",
+							"name": "--theme-ch5-select--option-item-border-color",
 							"description": "Select panel item border color at theme level",
 							"type": "color",
 							"example": "transparent",
@@ -13122,7 +13122,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-border-width",
+							"name": "--theme-ch5-select--option-item-border-width",
 							"description": "Item border width at theme level",
 							"type": "unit",
 							"example": "1px",
@@ -13137,7 +13137,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-color",
+							"name": "--theme-ch5-select--option-item-color",
 							"description": "Select panel item color at theme level",
 							"type": "color",
 							"example": "#212529",
@@ -13149,7 +13149,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-hover-background-color",
+							"name": "--theme-ch5-select--option-item-hover-background-color",
 							"description": "Select panel item hover background color at theme level",
 							"type": "color",
 							"example": "#f8f9fa",
@@ -13161,7 +13161,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-padding",
+							"name": "--theme-ch5-select--option-item-padding",
 							"description": "Item padding at theme level",
 							"type": "unit",
 							"example": "8px",
@@ -13176,7 +13176,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-selected-background-color",
+							"name": "--theme-ch5-select--option-item-selected-background-color",
 							"description": "Select panel item selected background color at theme level",
 							"type": "color",
 							"example": "#cce5ff",
@@ -13188,7 +13188,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-items-background-color",
+							"name": "--theme-ch5-select--option-items-background-color",
 							"description": "Select panel background color at theme level",
 							"type": "color",
 							"example": "#fff",
@@ -13200,7 +13200,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-items-box-shadow",
+							"name": "--theme-ch5-select--option-items-box-shadow",
 							"description": "Select panel shadow at theme level",
 							"type": "unit",
 							"example": "0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)",
@@ -14481,7 +14481,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-spinner--icon-font-size",
+							"name": "--theme-ch5-spinner--icon-size",
 							"description": "The default font size for icon at theme level",
 							"type": "unit",
 							"example": "22px",
@@ -15463,7 +15463,7 @@
 					"name": "ch5-toggle",
 					"variables": [
 						{
-							"name": "--theme-ch5-toggle--circle-knob-color",
+							"name": "--theme-ch5-toggle--circle-handle-background-color",
 							"description": "The background color of the knob when shape=\"circle\" at theme level",
 							"type": "color",
 							"example": "#fff",
@@ -15730,7 +15730,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-toggle--rectangle-knob-color",
+							"name": "--theme-ch5-toggle--rectangle-handle-background-color",
 							"description": "The background color of the knob when shape=\"rectangle\" at theme level",
 							"type": "color",
 							"example": "#888",
@@ -21928,7 +21928,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-background-color",
+							"name": "--theme-ch5-select--option-item-background-color",
 							"description": "Select panel item background color at theme level",
 							"type": "color",
 							"example": "transparent",
@@ -21940,7 +21940,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-border-color",
+							"name": "--theme-ch5-select--option-item-border-color",
 							"description": "Select panel item border color at theme level",
 							"type": "color",
 							"example": "transparent",
@@ -21952,7 +21952,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-border-width",
+							"name": "--theme-ch5-select--option-item-border-width",
 							"description": "Item border width at theme level",
 							"type": "unit",
 							"example": "1px",
@@ -21967,7 +21967,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-color",
+							"name": "--theme-ch5-select--option-item-color",
 							"description": "Select panel item color at theme level",
 							"type": "color",
 							"example": "#212529",
@@ -21979,7 +21979,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-hover-background-color",
+							"name": "--theme-ch5-select--option-item-hover-background-color",
 							"description": "Select panel item hover background color at theme level",
 							"type": "color",
 							"example": "#f8f9fa",
@@ -21991,7 +21991,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-padding",
+							"name": "--theme-ch5-select--option-item-padding",
 							"description": "Item padding at theme level",
 							"type": "unit",
 							"example": "8px",
@@ -22006,7 +22006,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-selected-background-color",
+							"name": "--theme-ch5-select--option-item-selected-background-color",
 							"description": "Select panel item selected background color at theme level",
 							"type": "color",
 							"example": "#cce5ff",
@@ -22018,7 +22018,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-items-background-color",
+							"name": "--theme-ch5-select--option-items-background-color",
 							"description": "Select panel background color at theme level",
 							"type": "color",
 							"example": "#fff",
@@ -22030,7 +22030,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-items-box-shadow",
+							"name": "--theme-ch5-select--option-items-box-shadow",
 							"description": "Select panel shadow at theme level",
 							"type": "unit",
 							"example": "0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)",
@@ -23311,7 +23311,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-spinner--icon-font-size",
+							"name": "--theme-ch5-spinner--icon-size",
 							"description": "The default font size for icon at theme level",
 							"type": "unit",
 							"example": "22px",
@@ -24293,7 +24293,7 @@
 					"name": "ch5-toggle",
 					"variables": [
 						{
-							"name": "--theme-ch5-toggle--circle-knob-color",
+							"name": "--theme-ch5-toggle--circle-handle-background-color",
 							"description": "The background color of the knob when shape=\"circle\" at theme level",
 							"type": "color",
 							"example": "#fff",
@@ -24560,7 +24560,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-toggle--rectangle-knob-color",
+							"name": "--theme-ch5-toggle--rectangle-handle-background-color",
 							"description": "The background color of the knob when shape=\"rectangle\" at theme level",
 							"type": "color",
 							"example": "#888",
@@ -30758,7 +30758,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-background-color",
+							"name": "--theme-ch5-select--option-item-background-color",
 							"description": "Select panel item background color at theme level",
 							"type": "color",
 							"example": "transparent",
@@ -30770,7 +30770,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-border-color",
+							"name": "--theme-ch5-select--option-item-border-color",
 							"description": "Select panel item border color at theme level",
 							"type": "color",
 							"example": "transparent",
@@ -30782,7 +30782,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-border-width",
+							"name": "--theme-ch5-select--option-item-border-width",
 							"description": "Item border width at theme level",
 							"type": "unit",
 							"example": "1px",
@@ -30797,7 +30797,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-color",
+							"name": "--theme-ch5-select--option-item-color",
 							"description": "Select panel item color at theme level",
 							"type": "color",
 							"example": "#212529",
@@ -30809,7 +30809,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-hover-background-color",
+							"name": "--theme-ch5-select--option-item-hover-background-color",
 							"description": "Select panel item hover background color at theme level",
 							"type": "color",
 							"example": "#f8f9fa",
@@ -30821,7 +30821,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-padding",
+							"name": "--theme-ch5-select--option-item-padding",
 							"description": "Item padding at theme level",
 							"type": "unit",
 							"example": "8px",
@@ -30836,7 +30836,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-selected-background-color",
+							"name": "--theme-ch5-select--option-item-selected-background-color",
 							"description": "Select panel item selected background color at theme level",
 							"type": "color",
 							"example": "#cce5ff",
@@ -30848,7 +30848,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-items-background-color",
+							"name": "--theme-ch5-select--option-items-background-color",
 							"description": "Select panel background color at theme level",
 							"type": "color",
 							"example": "#fff",
@@ -30860,7 +30860,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-items-box-shadow",
+							"name": "--theme-ch5-select--option-items-box-shadow",
 							"description": "Select panel shadow at theme level",
 							"type": "unit",
 							"example": "0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)",
@@ -32141,7 +32141,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-spinner--icon-font-size",
+							"name": "--theme-ch5-spinner--icon-size",
 							"description": "The default font size for icon at theme level",
 							"type": "unit",
 							"example": "22px",
@@ -33123,7 +33123,7 @@
 					"name": "ch5-toggle",
 					"variables": [
 						{
-							"name": "--theme-ch5-toggle--circle-knob-color",
+							"name": "--theme-ch5-toggle--circle-handle-background-color",
 							"description": "The background color of the knob when shape=\"circle\" at theme level",
 							"type": "color",
 							"example": "#fff",
@@ -33390,7 +33390,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-toggle--rectangle-knob-color",
+							"name": "--theme-ch5-toggle--rectangle-handle-background-color",
 							"description": "The background color of the knob when shape=\"rectangle\" at theme level",
 							"type": "color",
 							"example": "#888",
@@ -39588,7 +39588,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-background-color",
+							"name": "--theme-ch5-select--option-item-background-color",
 							"description": "Select panel item background color at theme level",
 							"type": "color",
 							"example": "transparent",
@@ -39600,7 +39600,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-border-color",
+							"name": "--theme-ch5-select--option-item-border-color",
 							"description": "Select panel item border color at theme level",
 							"type": "color",
 							"example": "transparent",
@@ -39612,7 +39612,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-border-width",
+							"name": "--theme-ch5-select--option-item-border-width",
 							"description": "Item border width at theme level",
 							"type": "unit",
 							"example": "1px",
@@ -39627,7 +39627,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-color",
+							"name": "--theme-ch5-select--option-item-color",
 							"description": "Select panel item color at theme level",
 							"type": "color",
 							"example": "#212529",
@@ -39639,7 +39639,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-hover-background-color",
+							"name": "--theme-ch5-select--option-item-hover-background-color",
 							"description": "Select panel item hover background color at theme level",
 							"type": "color",
 							"example": "#f8f9fa",
@@ -39651,7 +39651,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-padding",
+							"name": "--theme-ch5-select--option-item-padding",
 							"description": "Item padding at theme level",
 							"type": "unit",
 							"example": "8px",
@@ -39666,7 +39666,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-selected-background-color",
+							"name": "--theme-ch5-select--option-item-selected-background-color",
 							"description": "Select panel item selected background color at theme level",
 							"type": "color",
 							"example": "#cce5ff",
@@ -39678,7 +39678,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-items-background-color",
+							"name": "--theme-ch5-select--option-items-background-color",
 							"description": "Select panel background color at theme level",
 							"type": "color",
 							"example": "#fff",
@@ -39690,7 +39690,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-items-box-shadow",
+							"name": "--theme-ch5-select--option-items-box-shadow",
 							"description": "Select panel shadow at theme level",
 							"type": "unit",
 							"example": "0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)",
@@ -40971,7 +40971,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-spinner--icon-font-size",
+							"name": "--theme-ch5-spinner--icon-size",
 							"description": "The default font size for icon at theme level",
 							"type": "unit",
 							"example": "22px",
@@ -41953,7 +41953,7 @@
 					"name": "ch5-toggle",
 					"variables": [
 						{
-							"name": "--theme-ch5-toggle--circle-knob-color",
+							"name": "--theme-ch5-toggle--circle-handle-background-color",
 							"description": "The background color of the knob when shape=\"circle\" at theme level",
 							"type": "color",
 							"example": "#fff",
@@ -42220,7 +42220,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-toggle--rectangle-knob-color",
+							"name": "--theme-ch5-toggle--rectangle-handle-background-color",
 							"description": "The background color of the knob when shape=\"rectangle\" at theme level",
 							"type": "color",
 							"example": "#888",
@@ -48418,7 +48418,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-background-color",
+							"name": "--theme-ch5-select--option-item-background-color",
 							"description": "Select panel item background color at theme level",
 							"type": "color",
 							"example": "transparent",
@@ -48430,7 +48430,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-border-color",
+							"name": "--theme-ch5-select--option-item-border-color",
 							"description": "Select panel item border color at theme level",
 							"type": "color",
 							"example": "transparent",
@@ -48442,7 +48442,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-border-width",
+							"name": "--theme-ch5-select--option-item-border-width",
 							"description": "Item border width at theme level",
 							"type": "unit",
 							"example": "1px",
@@ -48457,7 +48457,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-color",
+							"name": "--theme-ch5-select--option-item-color",
 							"description": "Select panel item color at theme level",
 							"type": "color",
 							"example": "#212529",
@@ -48469,7 +48469,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-hover-background-color",
+							"name": "--theme-ch5-select--option-item-hover-background-color",
 							"description": "Select panel item hover background color at theme level",
 							"type": "color",
 							"example": "#f8f9fa",
@@ -48481,7 +48481,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-padding",
+							"name": "--theme-ch5-select--option-item-padding",
 							"description": "Item padding at theme level",
 							"type": "unit",
 							"example": "8px",
@@ -48496,7 +48496,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-item-selected-background-color",
+							"name": "--theme-ch5-select--option-item-selected-background-color",
 							"description": "Select panel item selected background color at theme level",
 							"type": "color",
 							"example": "#cce5ff",
@@ -48508,7 +48508,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-items-background-color",
+							"name": "--theme-ch5-select--option-items-background-color",
 							"description": "Select panel background color at theme level",
 							"type": "color",
 							"example": "#fff",
@@ -48520,7 +48520,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-select--panel-items-box-shadow",
+							"name": "--theme-ch5-select--option-items-box-shadow",
 							"description": "Select panel shadow at theme level",
 							"type": "unit",
 							"example": "0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)",
@@ -49801,7 +49801,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-spinner--icon-font-size",
+							"name": "--theme-ch5-spinner--icon-size",
 							"description": "The default font size for icon at theme level",
 							"type": "unit",
 							"example": "22px",
@@ -50783,7 +50783,7 @@
 					"name": "ch5-toggle",
 					"variables": [
 						{
-							"name": "--theme-ch5-toggle--circle-knob-color",
+							"name": "--theme-ch5-toggle--circle-handle-background-color",
 							"description": "The background color of the knob when shape=\"circle\" at theme level",
 							"type": "color",
 							"example": "#fff",
@@ -51050,7 +51050,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-toggle--rectangle-knob-color",
+							"name": "--theme-ch5-toggle--rectangle-handle-background-color",
 							"description": "The background color of the knob when shape=\"rectangle\" at theme level",
 							"type": "color",
 							"example": "#888",
