@@ -92,29 +92,29 @@ ch5-select {
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 1px 
-  /// related-theme-variable: --theme-ch5-select-option--item-border-width
-  --ch5-select-option--item-border-width: var(--theme-ch5-select-option--item-border-width);
+  /// related-theme-variable: --theme-ch5-select--option-item-border-width
+  --ch5-select--option-item-border-width: var(--theme-ch5-select--option-item-border-width);
 
   /// description: Item padding
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 8px 
-  /// related-theme-variable: --theme-ch5-select-option--item-padding
-  --ch5-select-option--item-padding: var(--theme-ch5-select-option--item-padding);
+  /// related-theme-variable: --theme-ch5-select--option-item-padding
+  --ch5-select--option-item-padding: var(--theme-ch5-select--option-item-padding);
 
   /// description: Select panel shadow
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) 
-  /// related-theme-variable: --theme-ch5-select-option--items-box-shadow
-  --ch5-select-option--items-box-shadow: var(--theme-ch5-select-option--items-box-shadow);
+  /// related-theme-variable: --theme-ch5-select--option-items-box-shadow
+  --ch5-select--option-items-box-shadow: var(--theme-ch5-select--option-items-box-shadow);
 
   /// description: Select panel background color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff 
-  /// related-theme-variable: --theme-ch5-select-option--items-background-color
-  --ch5-select-option--items-background-color: var(--theme-ch5-select-option--items-background-color);
+  /// related-theme-variable: --theme-ch5-select--option-items-background-color
+  --ch5-select--option-items-background-color: var(--theme-ch5-select--option-items-background-color);
 
   /// description: Select border color
   /// type: color
@@ -127,36 +127,36 @@ ch5-select {
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f8f9fa 
-  /// related-theme-variable: --theme-ch5-select-option--item-hover-background-color
-  --ch5-select-option--item-hover-background-color: var(--theme-ch5-select-option--item-hover-background-color);
+  /// related-theme-variable: --theme-ch5-select--option-item-hover-background-color
+  --ch5-select--option-item-hover-background-color: var(--theme-ch5-select--option-item-hover-background-color);
 
   /// description: Select panel item background color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: transparent 
-  /// related-theme-variable: --theme-ch5-select-option--item-background-color
-  --ch5-select-option--item-background-color: var(--theme-ch5-select-option--item-background-color);
+  /// related-theme-variable: --theme-ch5-select--option-item-background-color
+  --ch5-select--option-item-background-color: var(--theme-ch5-select--option-item-background-color);
 
   /// description: Select panel item color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #212529 
-  /// related-theme-variable: --theme-ch5-select-option--item-color
-  --ch5-select-option--item-color: var(--theme-ch5-select-option--item-color);
+  /// related-theme-variable: --theme-ch5-select--option-item-color
+  --ch5-select--option-item-color: var(--theme-ch5-select--option-item-color);
 
   /// description: Select panel item border color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: transparent 
-  /// related-theme-variable: --theme-ch5-select-option--item-border-color
-  --ch5-select-option--item-border-color: var(--theme-ch5-select-option--item-border-color);
+  /// related-theme-variable: --theme-ch5-select--option-item-border-color
+  --ch5-select--option-item-border-color: var(--theme-ch5-select--option-item-border-color);
 
   /// description: Select panel item selected background color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #cce5ff
-  /// related-theme-variable: --theme-ch5-select-option--item-selected-background-color
-  --ch5-select-option--item-selected-background-color: var(--theme-ch5-select-option--item-selected-background-color);
+  /// related-theme-variable: --theme-ch5-select--option-item-selected-background-color
+  --ch5-select--option-item-selected-background-color: var(--theme-ch5-select--option-item-selected-background-color);
 
   /// description: Select font color
   /// type: color
