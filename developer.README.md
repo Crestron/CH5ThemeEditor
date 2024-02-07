@@ -170,3 +170,4 @@ node helpers/unused-scss-variables.mjs > output.txt
 
 #### Component Variables
 
+min-width and min-height should not be customizable.
