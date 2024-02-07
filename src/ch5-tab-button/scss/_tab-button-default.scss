@@ -41,7 +41,7 @@ ch5-tab-button {
 }
 
 .ch5-tab-button.ch5-tab-button--disabled {
-  & ~ .scrollbar-container {
+  &~.scrollbar-container {
     @include ch5-component-disabled();
   }
 }
@@ -49,6 +49,6 @@ ch5-tab-button {
 .ch5-tab-button--button-container {
   width: var(--ch5-tab-button--button-container-width);
   height: var(--ch5-tab-button--button-container-height);
-  min-width: var(--ch5-tab-button--button-container-width);
-  min-height: var(--ch5-tab-button--button-container-height);
+  min-width: 5px;
+  min-height: 5px;
 }
