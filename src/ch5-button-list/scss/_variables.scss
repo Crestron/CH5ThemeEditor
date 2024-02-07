@@ -15,8 +15,8 @@ ch5-button-list {
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 5px 
-  /// related-theme-variable: --theme-ch5-button-list--padding 
-  --ch5-button-list--padding: var(--theme-ch5-button-list--padding);
+  /// related-theme-variable: --theme-ch5-button-list--container-padding 
+  --ch5-button-list--container-padding: var(--theme-ch5-button-list--container-padding);
 
   /// description: button container width
   /// type: unit

@@ -23,7 +23,7 @@ ch5-button-list {
   user-select: none;
   display: grid;
   height: 100%;
-  padding: var(--ch5-button-list--padding);
+  padding: var(--ch5-button-list--container-padding);
   scrollbar-width: none; // needed to hide the firefox scrollbar
 
   &.active {
@@ -92,6 +92,6 @@ ch5-button-list {
   width: var(--ch5-button-list--button-container-width);
   height: var(--ch5-button-list--button-container-height);
   padding: var(--ch5-button-list--button-container-padding);
-  min-width: var(--ch5-button-list--button-container-width);
-  min-height: var(--ch5-button-list--button-container-height);
+  min-width: 100px;
+  min-height: 58px;
 }
