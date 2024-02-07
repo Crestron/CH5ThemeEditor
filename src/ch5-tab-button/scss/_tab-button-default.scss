@@ -12,9 +12,7 @@
 
 ch5-tab-button {
   @include ch5-component-base();
-}
 
-ch5-tab-button {
   position: relative;
   display: grid;
 }

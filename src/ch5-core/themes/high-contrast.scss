@@ -1145,21 +1145,23 @@
   // ch5-select
   // ***************************************
 
-  --theme-ch5-select--border-color: #000;
+  --theme-ch5-select--border-style: solid;
+
+--theme-ch5-select--border-color: #000;
 
   --theme-ch5-select--font-color: #000;
 
-  --theme-ch5-select--panel-item-selected-background-color: #0000ff;
+  --theme-ch5-select-option--item-selected-background-color: #0000ff;
 
-  --theme-ch5-select--panel-item-border-color: transparent;
+  --theme-ch5-select-option--item-border-color: transparent;
 
-  --theme-ch5-select--panel-item-color: var(--theme-colors--warning-background-color);
+  --theme-ch5-select-option--item-color: var(--theme-colors--warning-background-color);
 
-  --theme-ch5-select--panel-item-background-color: transparent;
+  --theme-ch5-select-option--item-background-color: transparent;
 
-  --theme-ch5-select--panel-item-hover-background-color: #f8f9fa;
+  --theme-ch5-select-option--item-hover-background-color: #f8f9fa;
 
-  --theme-ch5-select--panel-items-background-color: #{$white};
+  --theme-ch5-select-option--items-background-color: #{$white};
 
   --theme-ch5-select--padding: 4px;
 
@@ -1173,13 +1175,13 @@
 
   --theme-ch5-select--combo-trigger-height: 24px;
 
-  --theme-ch5-select--item-selected-width: calc(100% - 40px);
+  --theme-ch5-select--selected-item-width: calc(100% - 40px);
 
-  --theme-ch5-select--panel-item-border-width: 1px;
+  --theme-ch5-select-option--item-border-width: 1px;
 
-  --theme-ch5-select--panel-item-padding: 8px;
+  --theme-ch5-select-option--item-padding: 8px;
 
-  --theme-ch5-select--panel-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  --theme-ch5-select-option--items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 
   --theme-ch5-select--font-size: var(--theme-fonts--font-size);
 
@@ -1407,7 +1409,9 @@
 
   --theme-ch5-toggle--icon-font-style: var(--theme-fonts--font-style);
 
-  --theme-ch5-toggle--handle-checked-color: #0000ff;
+  --theme-ch5-toggle--rectangle-handle-selected-background-color: #0000ff;
+
+  --theme-ch5-toggle--circle-handle-selected-background-color: #0000ff;
 
   --theme-ch5-toggle--label-font-color: #000;
 
@@ -1415,13 +1419,13 @@
 
   --theme-ch5-toggle--icon-font-color: #{$white};
 
-  --theme-ch5-toggle--handle-circle-background: #939393;
+  --theme-ch5-toggle--circle-handle-border-color: #939393;
 
   --theme-ch5-toggle--circle-label-on-color: #{$white};
 
   --theme-ch5-toggle--circle-label-off-color: #000;
 
-  --theme-ch5-toggle--circle-knob-color: #{$white};
+  --theme-ch5-toggle--circle-handle-background-color: #{$white};
 
   --theme-ch5-toggle--handle-rectangle-background: #464747;
 
@@ -1429,7 +1433,7 @@
 
   --theme-ch5-toggle--rectangle-label-off-color: #{$white};
 
-  --theme-ch5-toggle--rectangle-knob-color: #888;
+  --theme-ch5-toggle--rectangle-handle-background-color: #888;
 
   --theme-ch5-toggle--label-margin: 10px;
 

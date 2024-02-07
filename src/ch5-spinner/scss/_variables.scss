@@ -11,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-spinner {
-  /// description: spinner border width
+  /// description: Spinner border width
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 1px 
@@ -25,28 +25,28 @@ ch5-spinner {
   /// related-theme-variable: --theme-ch5-spinner--border-style
   --ch5-spinner--border-style: var(--theme-ch5-spinner--border-style);
 
-  /// description: The default font size of the spinner
+  /// description: Font size of the spinner
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 22px 
   /// related-theme-variable: --theme-ch5-spinner--font-size
   --ch5-spinner--font-size: var(--theme-ch5-spinner--font-size);
 
-  /// description: The default font style of the spinner
-  /// type: string 
-  /// values: large, solid, center 
+  /// description: Font style of the spinner
+  /// type: list 
+  /// values: normal, italic 
   /// example: normal
   /// related-theme-variable: --theme-ch5-spinner--font-style
   --ch5-spinner--font-style: var(--theme-ch5-spinner--font-style);
 
-  /// description: The default font weight of the spinner
+  /// description: Font weight of the spinner
   /// type: list
   /// values: normal, bold
   /// example: normal
   /// related-theme-variable: --theme-ch5-spinner--font-weight
   --ch5-spinner--font-weight: var(--theme-ch5-spinner--font-weight);
 
-  /// description: The default font size for icon
+  /// description: Font size for icon
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 22px 
@@ -54,16 +54,16 @@ ch5-spinner {
   --ch5-spinner--icon-font-size: var(--theme-ch5-spinner--icon-font-size);
 
   /// description: The padding of the icon within the slider item
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: 0 0 
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, %
+  /// example: 0
   /// related-theme-variable: --theme-ch5-spinner--icon-padding
   --ch5-spinner--icon-padding: var(--theme-ch5-spinner--icon-padding);
 
   /// description: The margin of the icon within the slider item
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: 0 0 
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, %
+  /// example: 0
   /// related-theme-variable: --theme-ch5-spinner--icon-margin
   --ch5-spinner--icon-margin: var(--theme-ch5-spinner--icon-margin);
 

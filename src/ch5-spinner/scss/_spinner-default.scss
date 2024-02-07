@@ -12,9 +12,7 @@
 
 ch5-spinner {
   @include ch5-component-base();
-}
 
-ch5-spinner {
   display: inline-block;
   background-color: var(--ch5-spinner--background-color);
 }
@@ -30,6 +28,7 @@ ch5-spinner {
   font-weight: var(--ch5-spinner--font-weight);
   cursor: pointer;
   width: 100%;
+  
   /// @require .ch5-spinner
   /// Applied for spinner wrapper
   &__wrapper {
