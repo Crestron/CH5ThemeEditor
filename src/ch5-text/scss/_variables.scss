@@ -11,20 +11,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-text {
-  /// description: Minimum width of text component
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 64px 
-  /// related-theme-variable: --theme-ch5-text--min-width
-  --ch5-text--min-width: var(--theme-ch5-text--min-width);
-
-  /// description: Minimum height of text component
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 44px 
-  /// related-theme-variable: --theme-ch5-text--min-height
-  --ch5-text--min-height: var(--theme-ch5-text--min-height);
-
   /// description: Width of text component
   /// type: unit
   /// values: px, vw, vh, em, rem, %
