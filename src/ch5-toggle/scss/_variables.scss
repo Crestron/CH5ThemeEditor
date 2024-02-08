@@ -96,7 +96,7 @@ ch5-toggle {
   /// related-theme-variable: --theme-ch5-toggle--circle-background-color
   --ch5-toggle--circle-background-color: var(--theme-ch5-toggle--circle-background-color);
 
-  /// description: The background color of the knob when shape="circle"
+  /// description: The background color of the handle when shape="circle"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff 
@@ -146,12 +146,12 @@ ch5-toggle {
   --ch5-toggle--circle-label-off-color: var(--theme-ch5-toggle--circle-label-off-color);
 
   // rectangle
-  /// description: The background color of the handle when shape="rectangle"
+  /// description: The background color of the toggle when shape="rectangle" 
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #464747
-  /// related-theme-variable: --theme-ch5-toggle--handle-rectangle-background
-  --ch5-toggle--handle-rectangle-background: var(--theme-ch5-toggle--handle-rectangle-background);
+  /// related-theme-variable: --theme-ch5-toggle--rectangle-background
+  --ch5-toggle--rectangle-background: var(--theme-ch5-toggle--rectangle-background);
 
   /// description: The text color of the on label when shape="rectangle"
   /// type: color
@@ -160,7 +160,7 @@ ch5-toggle {
   /// related-theme-variable:  --theme-ch5-toggle--rectangle-label-on-color
   --ch5-toggle--rectangle-label-on-color: var(--theme-ch5-toggle--rectangle-label-on-color);
 
-  /// description: Background color of the knob when shape="rectangle"
+  /// description: Background color of the handle when shape="rectangle"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #888
