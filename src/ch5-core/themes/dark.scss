@@ -1678,7 +1678,9 @@
 
   --theme-ch5-list--item-border-color: #5e5e66;
 
-  --theme-ch5-list--item-border: 1px solid transparent; //TODO - make 3 variables
+  --theme-ch5-list--item-border-width: 1px; 
+
+  --theme-ch5-list--item-border-style: solid;
 
   --theme-ch5-list--item-padding: 10px;
 
