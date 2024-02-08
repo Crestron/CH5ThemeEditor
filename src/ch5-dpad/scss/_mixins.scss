@@ -97,25 +97,25 @@
 
   &.direction-btn.up:after,
   &.direction-btn.down:before {
-    box-shadow: calc(-1 * var($property-border-radius)) 0 0 0 var(#{$property-background-color});
+    box-shadow: calc(-1 * var(#{$property-border-radius})) 0 0 0 var(#{$property-background-color});
     z-index: 10;
   }
 
   &.direction-btn.up:before,
   &.direction-btn.down:after {
-    box-shadow: var($property-border-radius) 0 0 0 var(#{$property-background-color});
+    box-shadow: var(#{$property-border-radius}) 0 0 0 var(#{$property-background-color});
     z-index: 10;
   }
 
   &.direction-btn.left:before,
   &.direction-btn.right:after {
-    box-shadow: calc(-1 * var($property-border-radius)) 0 0 0 var(#{$property-background-color});
+    box-shadow: calc(-1 * var(#{$property-border-radius})) 0 0 0 var(#{$property-background-color});
     z-index: 10;
   }
 
   &.direction-btn.left:after,
   &.direction-btn.right:before {
-    box-shadow: var($property-border-radius) 0 0 0 var(#{$property-background-color});
+    box-shadow: var(#{$property-border-radius}) 0 0 0 var(#{$property-background-color});
     z-index: 10;
   }
 }

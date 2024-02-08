@@ -22,7 +22,7 @@
     "clean": "rimraf output",
     "create-theme": "node ./helpers/create-theme.js",
     "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json",
-    "gen:sass-output": "ts-node ./helpers/sass-output/index.ts --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
+    "gen:sass-output": "node ./helpers/sass-output/index.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
     "gen:sass-schema": "node ./helpers/metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json",
     "gen:sass-metadata": "node ./helpers/sass-metadata/index.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-metadata.json",
     "gen:sass:all": "npm run gen:sass-metadata && npm run gen:sass-output && npm run gen:sass-schema && npm run gen:icon-library"
@@ -50,7 +50,6 @@
     "rimraf": "^5.0.5",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2",
-    "ts-node": "^10.2.1",
     "webpack": "^5.74.0",
     "webpack-cli": "^5.1.4"
   }
