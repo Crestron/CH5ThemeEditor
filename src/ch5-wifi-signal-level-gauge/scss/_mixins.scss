@@ -75,7 +75,7 @@ $gaugeStyle: (
           width: calc(var(#{$height}) * 1.5);
         } @else if $alignmentValue == down {
           height: var(#{$height});
-          width:calc(var(#{$height}) * 1.5);;
+          width: calc(var(#{$height}) * 1.5);
         }
       }
 
