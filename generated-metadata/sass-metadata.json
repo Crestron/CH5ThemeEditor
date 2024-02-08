@@ -530,7 +530,7 @@
 					"description": "button font size",
 					"type": "unit",
 					"example": "14px",
-					"value": "var(--theme-ch5-button--font-size)",
+					"value": "var(--theme-ch5-button--regular-font-size)",
 					"possibleValues": [
 						"px",
 						"vw",
@@ -539,33 +539,33 @@
 						"rem",
 						"%"
 					],
-					"relatedThemeVariable": "--theme-ch5-button--font-size"
+					"relatedThemeVariable": "--theme-ch5-button--regular-font-size"
 				},
 				{
 					"name": "--ch5-button--font-style",
 					"description": "button font style",
 					"type": "string",
 					"example": "normal",
-					"value": "var(--theme-ch5-button--font-style)",
+					"value": "var(--theme-ch5-button--regular-font-style)",
 					"possibleValues": [
 						"large",
 						"solid",
 						"center"
 					],
-					"relatedThemeVariable": "--theme-ch5-button--font-style"
+					"relatedThemeVariable": "--theme-ch5-button--regular-font-style"
 				},
 				{
 					"name": "--ch5-button--font-weight",
 					"description": "The font weight of the button.",
 					"type": "string",
 					"example": "normal",
-					"value": "var(--theme-ch5-button--font-weight)",
+					"value": "var(--theme-ch5-button--regular-font-weight)",
 					"possibleValues": [
 						"large",
 						"solid",
 						"center"
 					],
-					"relatedThemeVariable": "--theme-ch5-button--font-weight"
+					"relatedThemeVariable": "--theme-ch5-button--regular-font-weight"
 				},
 				{
 					"name": "--ch5-button--icon-color",
@@ -1100,7 +1100,7 @@
 					"description": "sizes",
 					"type": "unit",
 					"example": "42px",
-					"value": "var(--theme-ch5-button--size)",
+					"value": "var(--theme-ch5-button--regular-size)",
 					"possibleValues": [
 						"px",
 						"vw",
@@ -1109,7 +1109,7 @@
 						"rem",
 						"%"
 					],
-					"relatedThemeVariable": "--theme-ch5-button--size"
+					"relatedThemeVariable": "--theme-ch5-button--regular-size"
 				},
 				{
 					"name": "--ch5-button--small-font-size",
@@ -8988,7 +8988,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-size",
+							"name": "--theme-ch5-button--regular-font-size",
 							"description": "button font size at theme level",
 							"type": "unit",
 							"example": "14px",
@@ -9003,7 +9003,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-style",
+							"name": "--theme-ch5-button--regular-font-style",
 							"description": "button font style at theme level",
 							"type": "string",
 							"example": "normal",
@@ -9015,7 +9015,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-weight",
+							"name": "--theme-ch5-button--regular-font-weight",
 							"description": "The font weight of the button. at theme level",
 							"type": "string",
 							"example": "normal",
@@ -9516,7 +9516,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--size",
+							"name": "--theme-ch5-button--regular-size",
 							"description": "sizes at theme level",
 							"type": "unit",
 							"example": "42px",
@@ -17818,7 +17818,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-size",
+							"name": "--theme-ch5-button--regular-font-size",
 							"description": "button font size at theme level",
 							"type": "unit",
 							"example": "14px",
@@ -17833,7 +17833,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-style",
+							"name": "--theme-ch5-button--regular-font-style",
 							"description": "button font style at theme level",
 							"type": "string",
 							"example": "normal",
@@ -17845,7 +17845,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-weight",
+							"name": "--theme-ch5-button--regular-font-weight",
 							"description": "The font weight of the button. at theme level",
 							"type": "string",
 							"example": "normal",
@@ -18346,7 +18346,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--size",
+							"name": "--theme-ch5-button--regular-size",
 							"description": "sizes at theme level",
 							"type": "unit",
 							"example": "42px",
@@ -26648,7 +26648,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-size",
+							"name": "--theme-ch5-button--regular-font-size",
 							"description": "button font size at theme level",
 							"type": "unit",
 							"example": "14px",
@@ -26663,7 +26663,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-style",
+							"name": "--theme-ch5-button--regular-font-style",
 							"description": "button font style at theme level",
 							"type": "string",
 							"example": "normal",
@@ -26675,7 +26675,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-weight",
+							"name": "--theme-ch5-button--regular-font-weight",
 							"description": "The font weight of the button. at theme level",
 							"type": "string",
 							"example": "normal",
@@ -27176,7 +27176,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--size",
+							"name": "--theme-ch5-button--regular-size",
 							"description": "sizes at theme level",
 							"type": "unit",
 							"example": "42px",
@@ -35478,7 +35478,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-size",
+							"name": "--theme-ch5-button--regular-font-size",
 							"description": "button font size at theme level",
 							"type": "unit",
 							"example": "14px",
@@ -35493,7 +35493,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-style",
+							"name": "--theme-ch5-button--regular-font-style",
 							"description": "button font style at theme level",
 							"type": "string",
 							"example": "normal",
@@ -35505,7 +35505,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-weight",
+							"name": "--theme-ch5-button--regular-font-weight",
 							"description": "The font weight of the button. at theme level",
 							"type": "string",
 							"example": "normal",
@@ -36006,7 +36006,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--size",
+							"name": "--theme-ch5-button--regular-size",
 							"description": "sizes at theme level",
 							"type": "unit",
 							"example": "42px",
@@ -44308,7 +44308,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-size",
+							"name": "--theme-ch5-button--regular-font-size",
 							"description": "button font size at theme level",
 							"type": "unit",
 							"example": "14px",
@@ -44323,7 +44323,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-style",
+							"name": "--theme-ch5-button--regular-font-style",
 							"description": "button font style at theme level",
 							"type": "string",
 							"example": "normal",
@@ -44335,7 +44335,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--font-weight",
+							"name": "--theme-ch5-button--regular-font-weight",
 							"description": "The font weight of the button. at theme level",
 							"type": "string",
 							"example": "normal",
@@ -44836,7 +44836,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-button--size",
+							"name": "--theme-ch5-button--regular-size",
 							"description": "sizes at theme level",
 							"type": "unit",
 							"example": "42px",
