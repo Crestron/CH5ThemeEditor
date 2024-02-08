@@ -68,26 +68,33 @@ ch5-toggle {
   /// related-theme-variable: --theme-ch5-toggle--icon-font-size
   --ch5-toggle--icon-font-size: var(--theme-ch5-toggle--icon-font-size);
 
-  /// description: handle margin when the shape="circle"
+  /// description: Handle margin when the shape="circle"
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 10px 
   /// related-theme-variable: --theme-ch5-toggle--handle-circle-margin
   --ch5-toggle--handle-circle-margin: var(--theme-ch5-toggle--handle-circle-margin);
 
-  /// description: handle margin when the shape="rectangle"
+  /// description: Handle margin when the shape="rectangle"
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 10px 
   /// related-theme-variable: --theme-ch5-toggle--handle-rectangle-margin
   --ch5-toggle--handle-rectangle-margin: var(--theme-ch5-toggle--handle-rectangle-margin);
 
-  /// description: The background color of the handle when shape="circle"
+  /// description: The border color of the handle when shape="circle"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #d8d9db 
   /// related-theme-variable: --theme-ch5-toggle--circle-handle-border-color
   --ch5-toggle--circle-handle-border-color: var(--theme-ch5-toggle--circle-handle-border-color);
+
+  /// description: The background color of the toggle when shape="circle"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #d8d9db 
+  /// related-theme-variable: --theme-ch5-toggle--circle-background-color
+  --ch5-toggle--circle-background-color: var(--theme-ch5-toggle--circle-background-color);
 
   /// description: The background color of the knob when shape="circle"
   /// type: color

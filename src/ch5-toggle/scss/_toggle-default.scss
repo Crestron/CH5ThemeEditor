@@ -126,7 +126,7 @@ ch5-toggle:focus {
   &.ch5-toggle--circle {
     .ch5-toggle__handle {
       border-radius: 1.75em;
-      background-color: var(--ch5-toggle--circle-handle-border-color);
+      background-color: var(--ch5-toggle--circle-background-color);
       margin: var(--ch5-toggle--handle-circle-margin);
 
       div {
