@@ -111,18 +111,18 @@ ch5-slider {
   }
 
   .noUi-connect {
-    background: var(--ch5-slider--connect-bg);
+    background: var(--ch5-slider--connect-background-color);
   }
 
   .noUi-connects {
-    background: var(--ch5-slider--target-bg);
+    background: var(--ch5-slider--target-background-color);
   }
 
   .noUi-handle {
     border-style: var(--ch5-slider--handle-border-style);
     border-color: var(--ch5-slider--handle-border-color);
     border-width: var(--ch5-slider--handle-border-width);
-    background: var(--ch5-slider--handle-bg);
+    background: var(--ch5-slider--handle-background-color);
     box-shadow: none;
   }
 
