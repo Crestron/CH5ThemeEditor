@@ -11,31 +11,10 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-button {
-  /// description: button font size
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 14px 
-  /// related-theme-variable: --theme-ch5-button--font-size
-  --ch5-button--font-size: var(--theme-ch5-button--font-size);
-
-  /// description: button font style
-  /// type: list
-  /// values: normal, italic
-  /// example: normal
-  /// related-theme-variable: --theme-ch5-button--font-style
-  --ch5-button--font-style: var(--theme-ch5-button--font-style);
-
-  /// description: The font weight of the button.
-  /// type: list
-  /// values: normal, bold
-  /// example: normal 
-  /// related-theme-variable: --theme-ch5-button--font-weight
-  --ch5-button--font-weight: var(--theme-ch5-button--font-weight);
-
-  /// description: The padding for icon of the button.
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: inherit 
+  /// description: Color of icon inside the button
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #0091ea
   /// related-theme-variable: --theme-ch5-button--icon-color
   --ch5-button--icon-color: var(--theme-ch5-button--icon-color);
 
@@ -204,8 +183,29 @@ ch5-button {
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 42px 
-  /// related-theme-variable: --theme-ch5-button--size
-  --ch5-button--size: var(--theme-ch5-button--size);
+  /// related-theme-variable: --theme-ch5-button--regular-size
+  --ch5-button--regular-size: var(--theme-ch5-button--regular-size);
+
+  /// description: Font size of the button
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 14px 
+  /// related-theme-variable: --theme-ch5-button--regular-font-size
+  --ch5-button--regular-font-size: var(--theme-ch5-button--regular-font-size);
+
+  /// description: Font style of the button
+  /// type: list
+  /// values: normal, italic
+  /// example: normal
+  /// related-theme-variable: --theme-ch5-button--regular-font-style
+  --ch5-button--regular-font-style: var(--theme-ch5-button--regular-font-style);
+
+  /// description: Font weight of the button
+  /// type: list
+  /// values: normal, bold
+  /// example: normal 
+  /// related-theme-variable: --theme-ch5-button--regular-font-weight
+  --ch5-button--regular-font-weight: var(--theme-ch5-button--regular-font-weight);
 
   /// description: x-small font size
   /// type: unit
@@ -262,34 +262,6 @@ ch5-button {
   /// example: 72px 
   /// related-theme-variable: --theme-ch5-button--x-large-size
   --ch5-button--x-large-size: var(--theme-ch5-button--x-large-size);
-
-  /// description: checkbox checked icon
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: "\f14a" 
-  /// related-theme-variable: --theme-ch5-button--checkbox-checked-faicon
-  --ch5-button--checkbox-checked-faicon: var(--theme-ch5-button--checkbox-checked-faicon);
-
-  /// description: checkbox unchecked icon
-  /// type: string 
-  /// values: large, solid, center 
-  /// example: "\f0c8" 
-  /// related-theme-variable: --theme-ch5-button--checkbox-unchecked-faicon
-  --ch5-button--checkbox-unchecked-faicon: var(--theme-ch5-button--checkbox-unchecked-faicon);
-
-  /// description: checkbox checked font weight
-  /// type: number
-  /// values: 1, 10, 100
-  /// example: 400 
-  /// related-theme-variable: --theme-ch5-button--checkbox-checked-font-weight
-  --ch5-button--checkbox-checked-font-weight: var(--theme-ch5-button--checkbox-checked-font-weight);
-
-  /// description: checkbox unchecked font weight
-  /// type: number
-  /// values: 1, 10, 100
-  /// example: 400 
-  /// related-theme-variable: --theme-ch5-button--checkbox-unchecked-font-weight
-  --ch5-button--checkbox-unchecked-font-weight: var(--theme-ch5-button--checkbox-unchecked-font-weight);
 
   /// description: checkbox padding
   /// type: unit

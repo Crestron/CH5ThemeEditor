@@ -51,8 +51,8 @@ ch5-button {
       display: inline-flex;
       align-items: center;
       justify-content: space-between;
-      font-style: var(--ch5-button--font-style);
-      font-weight: var(--ch5-button--font-weight);
+      font-style: var(--ch5-button--regular-font-style);
+      font-weight: var(--ch5-button--regular-font-weight);
       line-height: var(--ch5-button--content-line-height);
       padding: var(--ch5-button--padding);
       vertical-align: middle; //adding this property to prevent button taking extra height for iconUrlFilltype="initial" and vAlignLabel="bottom"
@@ -223,7 +223,7 @@ ch5-button {
 
       .cb-btn {
         height: 100% !important;
-        min-height: var(--ch5-button--size); // Added as a fix for the issue of button height varying when moved from width to height in stretch
+        min-height: var(--ch5-button--regular-size); // Added as a fix for the issue of button height varying when moved from width to height in stretch
       }
     }
 
@@ -235,7 +235,7 @@ ch5-button {
       .cb-btn {
         width: 100% !important;
         height: 100% !important;
-        min-height: var(--ch5-button--size); // Added as a fix for the issue of button height varying when moved from width to height in stretch
+        min-height: var(--ch5-button--regular-size); // Added as a fix for the issue of button height varying when moved from width to height in stretch
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -270,8 +270,8 @@ ch5-button {
     }
 
     &.ch5-button--size-regular .cb-btn {
-      width: calc(var(--ch5-button--size) * 2);
-      height: calc(var(--ch5-button--size) * 2);
+      width: calc(var(--ch5-button--regular-size) * 2);
+      height: calc(var(--ch5-button--regular-size) * 2);
     }
 
     &.ch5-button--stretch-width,
@@ -403,14 +403,14 @@ ch5-button {
 
   .ch5-button__checkbox--checked:before {
     font-family: var(--fa-style-family-classic);
-    content: var(--ch5-button--checkbox-checked-faicon);
-    font-weight: var(--ch5-button--checkbox-checked-font-weight);
+    content: "\f14a";
+    font-weight: 400;
   }
 
   .ch5-button__checkbox--unchecked:before {
     font-family: var(--fa-style-family-classic);
-    content: var(--ch5-button--checkbox-unchecked-faicon);
-    font-weight: var(--ch5-button--checkbox-unchecked-font-weight);
+    content: "\f0c8";
+    font-weight: 400;
   }
 
   .cx-button-checkbox-pos-left {
@@ -439,7 +439,7 @@ ch5-button {
 
 /// Applied when size="regular"
 .ch5-button--size-regular {
-  @include ch5-button-size-set(--ch5-button--size, --ch5-button--font-size, --ch5-button--icon-color, --ch5-button--icon-size);
+  @include ch5-button-size-set(--ch5-button--regular-size, --ch5-button--regular-font-size, --ch5-button--icon-color, --ch5-button--icon-size);
 }
 
 /// Applied when size="x-small"
@@ -464,8 +464,8 @@ ch5-button {
 
 .ch5-button--vertical:not(.ch5-button--circle) {
   &.ch5-button--size-regular {
-    width: var(--ch5-button--size);
-    height: calc(var(--ch5-button--size) * 2);
+    width: var(--ch5-button--regular-size);
+    height: calc(var(--ch5-button--regular-size) * 2);
   }
 
   &.ch5-button--size-x-small {
@@ -498,7 +498,7 @@ ch5-button {
     height: 100%;
 
     .cb-btn {
-      min-height: var(--ch5-button--size); // Added as a fix for the issue of button height varying when moved from width to height in stretch
+      min-height: var(--ch5-button--regular-size); // Added as a fix for the issue of button height varying when moved from width to height in stretch
     }
   }
 
@@ -508,7 +508,7 @@ ch5-button {
     height: 100%;
 
     .cb-btn {
-      min-height: var(--ch5-button--size); // Added as a fix for the issue of button height varying when moved from width to height in stretch
+      min-height: var(--ch5-button--regular-size); // Added as a fix for the issue of button height varying when moved from width to height in stretch
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -536,12 +536,12 @@ ch5-button[stretch="both"] {
 
 ch5-button[mode="?"] {
   &.ch5-button--size-regular {
-    @include ch5-button-size-set(--ch5-button--size, --ch5-button--font-size, --ch5-button--icon-color, --ch5-button--icon-size);
+    @include ch5-button-size-set(--ch5-button--regular-size, --ch5-button--regular-font-size, --ch5-button--icon-color, --ch5-button--icon-size);
 
     ch5-button-mode-state[state="normal"],
     ch5-button-mode-state[state="pressed"],
     ch5-button-mode-state[state="selected"] {
-      @include ch5-button-size-set(--ch5-button--size, --ch5-button--font-size, --ch5-button--icon-color, --ch5-button--icon-size);
+      @include ch5-button-size-set(--ch5-button--regular-size, --ch5-button--regular-font-size, --ch5-button--icon-color, --ch5-button--icon-size);
     }
   }
 
