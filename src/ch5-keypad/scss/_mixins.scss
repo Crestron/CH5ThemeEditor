@@ -11,19 +11,23 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @mixin ch5-keypad-content($property-value) {
-  $property-default-background-color: "--ch5-keypad--" + $property-value + "-background-color";
-  $property-default-border-color: "--ch5-keypad--" + $property-value + "-border-color";
-  $property-default-font-color: "--ch5-keypad--" + $property-value + "-font-color";
+  $property-background-color: "--ch5-keypad--" + $property-value + "-background-color";
+  $property-border-color: "--ch5-keypad--" + $property-value + "-border-color";
+  $property-border-style: "--ch5-keypad--" + $property-value + "-border-style";
+  $property-border-width: "--ch5-keypad--" + $property-value + "-border-width";
+  $property-font-color: "--ch5-keypad--" + $property-value + "-font-color";
   $property-pressed-background-color: "--ch5-keypad--" + $property-value + "-pressed-background-color";
   $property-pressed-border-color: "--ch5-keypad--" + $property-value + "-pressed-border-color";
+  $property-pressed-border-style: "--ch5-keypad--" + $property-value + "-pressed-border-style";
+  $property-pressed-border-width: "--ch5-keypad--" + $property-value + "-pressed-border-width";
   $property-pressed-font-color: "--ch5-keypad--" + $property-value + "-pressed-font-color";
 
   .keypad-btn {
-    color: var(#{$property-default-font-color});
+    color: var(#{$property-font-color});
 
     button {
-      background-color: var(#{$property-default-background-color});
-      border: 1px solid var(#{$property-default-border-color});
+      background-color: var(#{$property-background-color});
+      border: var(#{$property-border-width}) var(#{$property-border-style}) var(#{$property-border-color});
     }
   }
 
@@ -31,7 +35,7 @@
     &.keypad-btn {
       button {
         background-color: var(#{$property-pressed-background-color});
-        border: 1px solid var(#{$property-pressed-border-color});
+        border: var(#{$property-pressed-border-width}) var(#{$property-pressed-border-style}) var(#{$property-pressed-border-color});
         color: var(#{$property-pressed-font-color});
       }
     }

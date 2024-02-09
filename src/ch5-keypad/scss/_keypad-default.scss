@@ -20,8 +20,8 @@ ch5-keypad {
 .ch5-keypad {
   display: grid;
   aspect-ratio: 3/4;
-  padding: 6px;
-  gap: 6px;
+  padding: var(--ch5-keypad--padding);
+  gap: var(--ch5-keypad--gap-between-buttons);
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
 
@@ -38,15 +38,15 @@ ch5-keypad {
       grid-column-start: 2;
 
       button {
-        color: var(--ch5-keypad--success-font-color);
-        background-color: var(--ch5-keypad--success-background-color);
-        border: 1px solid var(--ch5-keypad--success-border-color);
+        color: var(--ch5-keypad--extra-button-font-color);
+        background-color: var(--ch5-keypad--extra-button-background-color);
+        border: var(--ch5-keypad--extra-button-border-width) var(--ch5-keypad--extra-button-border-style) var(--ch5-keypad--extra-button-border-color);
       }
 
       &.keypad-btn.keypad-btn-pressed button {
-        color: var(--ch5-keypad--success-pressed-font-color);
-        background-color: var(--ch5-keypad--success-pressed-background-color);
-        border: 1px solid var(--ch5-keypad--success-pressed-border-color);
+        color: var(--ch5-keypad--extra-button-pressed-font-color);
+        background-color: var(--ch5-keypad--extra-button-pressed-background-color);
+        border: var(--ch5-keypad--extra-button-pressed-border-width) var(--ch5-keypad--extra-button-pressed-border-style) var(--ch5-keypad--extra-button-pressed-border-color);
       }
     }
   }

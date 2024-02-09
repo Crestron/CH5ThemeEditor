@@ -4428,7 +4428,7 @@
 					"description": "The font size of the icon at the top of the overlay panel",
 					"type": "unit",
 					"example": "24px",
-					"value": "var(--theme-ch5-overlay-panel--close-icon-font-size)",
+					"value": "var(--theme-ch5-overlay-panel--close-icon-size)",
 					"possibleValues": [
 						"px",
 						"vw",
@@ -4437,7 +4437,7 @@
 						"rem",
 						"%"
 					],
-					"relatedThemeVariable": "--theme-ch5-overlay-panel--close-icon-font-size"
+					"relatedThemeVariable": "--theme-ch5-overlay-panel--close-icon-size"
 				},
 				{
 					"name": "--ch5-overlay-panel--close-icon-font-style",
@@ -12554,7 +12554,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-overlay-panel--close-icon-font-size",
+							"name": "--theme-ch5-overlay-panel--close-icon-size",
 							"description": "The font size of the icon at the top of the overlay panel at theme level",
 							"type": "unit",
 							"example": "24px",
@@ -21384,7 +21384,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-overlay-panel--close-icon-font-size",
+							"name": "--theme-ch5-overlay-panel--close-icon-size",
 							"description": "The font size of the icon at the top of the overlay panel at theme level",
 							"type": "unit",
 							"example": "24px",
@@ -30214,7 +30214,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-overlay-panel--close-icon-font-size",
+							"name": "--theme-ch5-overlay-panel--close-icon-size",
 							"description": "The font size of the icon at the top of the overlay panel at theme level",
 							"type": "unit",
 							"example": "24px",
@@ -39044,7 +39044,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-overlay-panel--close-icon-font-size",
+							"name": "--theme-ch5-overlay-panel--close-icon-size",
 							"description": "The font size of the icon at the top of the overlay panel at theme level",
 							"type": "unit",
 							"example": "24px",
@@ -47874,7 +47874,7 @@
 							]
 						},
 						{
-							"name": "--theme-ch5-overlay-panel--close-icon-font-size",
+							"name": "--theme-ch5-overlay-panel--close-icon-size",
 							"description": "The font size of the icon at the top of the overlay panel at theme level",
 							"type": "unit",
 							"example": "24px",

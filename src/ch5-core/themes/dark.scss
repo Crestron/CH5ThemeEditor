@@ -927,6 +927,10 @@
   // ch5-keypad
   // ***************************************
 
+  --theme-ch5-keypad--gap-between-buttons: 6px;
+
+  --theme-ch5-keypad--padding: 6px;
+
   --theme-ch5-keypad--x-small-container-width: 210px;
 
   --theme-ch5-keypad--x-small-font-size-major: 1.8rem;
@@ -962,11 +966,19 @@
 
   --theme-ch5-keypad--default-border-color: var(--theme-colors--default-border-color);
 
+  --theme-ch5-keypad--default-border-width: 1px;
+
+  --theme-ch5-keypad--default-border-style: solid;
+
   --theme-ch5-keypad--default-font-color: var(--theme-colors--default-font-color);
 
   --theme-ch5-keypad--default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
 
   --theme-ch5-keypad--default-pressed-border-color: var(--theme-colors--default-pressed-border-color);
+
+  --theme-ch5-keypad--default-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--default-pressed-border-style: solid;
 
   --theme-ch5-keypad--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
 
@@ -974,11 +986,19 @@
 
   --theme-ch5-keypad--primary-border-color: var(--theme-colors--primary-border-color);
 
+  --theme-ch5-keypad--primary-border-width: 1px;
+
+  --theme-ch5-keypad--primary-border-style: solid;
+
   --theme-ch5-keypad--primary-font-color: var(--theme-colors--primary-font-color);
 
   --theme-ch5-keypad--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
 
   --theme-ch5-keypad--primary-pressed-border-color: var(--theme-colors--primary-pressed-border-color);
+
+  --theme-ch5-keypad--primary-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--primary-pressed-border-style: solid;
 
   --theme-ch5-keypad--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
 
@@ -986,11 +1006,19 @@
 
   --theme-ch5-keypad--info-border-color: var(--theme-colors--info-border-color);
 
+  --theme-ch5-keypad--info-border-width: 1px;
+
+  --theme-ch5-keypad--info-border-style: solid;
+
   --theme-ch5-keypad--info-font-color: var(--theme-colors--info-font-color);
 
   --theme-ch5-keypad--info-pressed-background-color: var(--theme-colors--info-pressed-background-color);
 
   --theme-ch5-keypad--info-pressed-border-color: var(--theme-colors--info-pressed-border-color);
+
+  --theme-ch5-keypad--info-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--info-pressed-border-style: solid;
 
   --theme-ch5-keypad--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
 
@@ -998,11 +1026,19 @@
 
   --theme-ch5-keypad--danger-border-color: var(--theme-colors--danger-border-color);
 
+  --theme-ch5-keypad--danger-border-width: 1px;
+
+  --theme-ch5-keypad--danger-border-style: solid;
+
   --theme-ch5-keypad--danger-font-color: var(--theme-colors--danger-font-color);
 
   --theme-ch5-keypad--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
 
   --theme-ch5-keypad--danger-pressed-border-color: var(--theme-colors--danger-pressed-border-color);
+
+  --theme-ch5-keypad--danger-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--danger-pressed-border-style: solid;
 
   --theme-ch5-keypad--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
 
@@ -1010,11 +1046,19 @@
 
   --theme-ch5-keypad--secondary-border-color: var(--theme-colors--secondary-border-color);
 
+  --theme-ch5-keypad--secondary-border-width: 1px;
+
+  --theme-ch5-keypad--secondary-border-style: solid;
+
   --theme-ch5-keypad--secondary-font-color: var(--theme-colors--secondary-font-color);
 
   --theme-ch5-keypad--secondary-pressed-background-color: var(--theme-colors--secondary-pressed-background-color);
 
   --theme-ch5-keypad--secondary-pressed-border-color: var(--theme-colors--secondary-pressed-border-color);
+
+  --theme-ch5-keypad--secondary-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--secondary-pressed-border-style: solid;
 
   --theme-ch5-keypad--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
 
@@ -1022,11 +1066,19 @@
 
   --theme-ch5-keypad--success-border-color: var(--theme-colors--success-border-color);
 
+  --theme-ch5-keypad--success-border-width: 1px;
+
+  --theme-ch5-keypad--success-border-style: solid;
+
   --theme-ch5-keypad--success-font-color: var(--theme-colors--success-font-color);
 
   --theme-ch5-keypad--success-pressed-background-color: var(--theme-colors--success-pressed-background-color);
 
   --theme-ch5-keypad--success-pressed-border-color: var(--theme-colors--success-pressed-border-color);
+
+  --theme-ch5-keypad--success-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--success-pressed-border-style: solid;
 
   --theme-ch5-keypad--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
 
@@ -1034,11 +1086,19 @@
 
   --theme-ch5-keypad--warning-border-color: var(--theme-colors--warning-border-color);
 
+  --theme-ch5-keypad--warning-border-width: 1px;
+
+  --theme-ch5-keypad--warning-border-style: solid;
+
   --theme-ch5-keypad--warning-font-color: var(--theme-colors--warning-font-color);
 
   --theme-ch5-keypad--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
 
   --theme-ch5-keypad--warning-pressed-border-color: var(--theme-colors--warning-pressed-border-color);
+
+  --theme-ch5-keypad--warning-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--warning-pressed-border-style: solid;
 
   --theme-ch5-keypad--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
 
@@ -1046,13 +1106,41 @@
 
   --theme-ch5-keypad--text-border-color: var(--theme-colors--text-border-color);
 
+  --theme-ch5-keypad--text-border-width: 1px;
+
+  --theme-ch5-keypad--text-border-style: solid;
+
   --theme-ch5-keypad--text-font-color: var(--theme-colors--text-font-color);
 
   --theme-ch5-keypad--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
 
   --theme-ch5-keypad--text-pressed-border-color: var(--theme-colors--text-pressed-border-color);
 
+  --theme-ch5-keypad--text-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--text-pressed-border-style: solid;
+
   --theme-ch5-keypad--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
+  
+  --theme-ch5-keypad--extra-button-background-color: var(--theme-colors--success-background-color);
+
+  --theme-ch5-keypad--extra-button-border-color: var(--theme-colors--success-border-color);
+
+  --theme-ch5-keypad--extra-button-border-width: 1px;
+
+  --theme-ch5-keypad--extra-button-border-style: solid;
+
+  --theme-ch5-keypad--extra-button-font-color: var(--theme-colors--success-font-color);
+
+  --theme-ch5-keypad--extra-button-pressed-background-color: var(--theme-colors--success-pressed-background-color);
+
+  --theme-ch5-keypad--extra-button-pressed-border-color: var(--theme-colors--success-pressed-border-color);
+
+  --theme-ch5-keypad--extra-button-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--extra-button-pressed-border-style: solid;
+
+  --theme-ch5-keypad--extra-button-pressed-font-color: var(--theme-colors--success-pressed-font-color);
 
   // ***************************************
   // ch5-overlay-panel
@@ -1092,17 +1180,13 @@
 
   --theme-ch5-overlay-panel--close-icon-padding: 0 5px 5px;
 
-  --theme-ch5-overlay-panel--close-icon-width: 20px;
+  --theme-ch5-overlay-panel--close-button-width: 20px;
 
-  --theme-ch5-overlay-panel--close-icon-font-size: 24px;
+  --theme-ch5-overlay-panel--close-icon-size: 24px;
 
   --theme-ch5-overlay-panel--contents-padding: 20px;
 
   --theme-ch5-overlay-panel--contents-font-size: 18px;
-
-  --theme-ch5-overlay-panel--close-icon-font-style: var(--theme-fonts--font-style);
-
-  --theme-ch5-overlay-panel--close-icon-font-weight: var(--theme-fonts--font-weight);
 
   --theme-ch5-overlay-panel--contents-font-style: var(--theme-fonts--font-weight);
 
@@ -1394,7 +1478,7 @@
 
   --theme-ch5-toggle--text-font-weight: 900;
 
-  --theme-ch5-toggle--icon-font-size: var(--theme-fonts--font-size);
+  --theme-ch5-toggle--icon-size: var(--theme-fonts--font-size);
 
   --theme-ch5-toggle--rectangle-handle-selected-background-color: #3aa64e;
 
@@ -1444,15 +1528,7 @@
   // ch5-modal-dialog
   // ***************************************
 
-  --theme-ch5-modal-dialog--close-icon-font-size: var(--theme-fonts--font-size);
-
-  --theme-ch5-modal-dialog--close-icon-font-style: var(--theme-fonts--font-style);
-
-  --theme-ch5-modal-dialog--close-icon-font-weight: var(--theme-fonts--font-weight);
-
-  --theme-ch5-modal-dialog--default-close-icon-font-style: var(--theme-fonts--font-style);
-
-  --theme-ch5-modal-dialog--default-close-icon-font-weight: var(--theme-fonts--font-weight);
+  --theme-ch5-modal-dialog--close-icon-size: var(--theme-fonts--font-size);
 
   --theme-ch5-modal-dialog--title-font-style: var(--theme-fonts--font-style);
 
@@ -1460,11 +1536,7 @@
 
   --theme-ch5-modal-dialog--contents-font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-modal-dialog--prompt-icon-font-size: var(--theme-fonts--font-size);
-
-  --theme-ch5-modal-dialog--prompt-icon-font-style: var(--theme-fonts--font-style);
-
-  --theme-ch5-modal-dialog--prompt-icon-font-weight: var(--theme-fonts--font-weight);
+  --theme-ch5-modal-dialog--prompt-icon-size: var(--theme-fonts--font-size);
 
   --theme-ch5-modal-dialog--prompt-text-font-style: var(--theme-fonts--font-style);
 
@@ -1500,9 +1572,9 @@
 
   --theme-ch5-modal-dialog--close-icon-padding: 0 5px 5px;
 
-  --theme-ch5-modal-dialog--close-icon-width: 20px;
+  --theme-ch5-modal-dialog--close-button-width: 20px;
 
-  --theme-ch5-modal-dialog--default-close-icon-font-size: 24px;
+  --theme-ch5-modal-dialog--default-close-icon-size: 24px;
 
   --theme-ch5-modal-dialog--title-font-size: 1.3em;
 

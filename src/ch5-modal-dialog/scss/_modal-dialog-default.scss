@@ -35,14 +35,13 @@ ch5-modal-dialog {
     outline: none;
     cursor: pointer;
     float: right;
+    color: var(--ch5-modal-dialog--close-icon-color);
 
     background-color: var(--ch5-modal-dialog--close-icon-background-color);
     margin: var(--ch5-modal-dialog--close-icon-margin);
     padding: var(--ch5-modal-dialog--close-icon-padding);
-    width: var(--ch5-modal-dialog--close-icon-width);
-    font-size: var(--ch5-modal-dialog--close-icon-font-size);
-    font-style: var(--ch5-modal-dialog--close-icon-font-style);
-    font-weight: var(--ch5-modal-dialog--close-icon-font-weight);
+    width: var(--ch5-modal-dialog--close-button-width);
+    font-size: var(--ch5-modal-dialog--close-icon-size);
 
     &.f-left {
       float: left;
@@ -54,10 +53,8 @@ ch5-modal-dialog {
   }
 
   .ch5-modal-dialog-default-close-icon {
+    font-size: var(--ch5-modal-dialog--default-close-icon-size);
     color: var(--ch5-modal-dialog--close-icon-color);
-    font-size: var(--ch5-modal-dialog--default-close-icon-font-size);
-    font-style: var(--ch5-modal-dialog--default-close-icon-font-style);
-    font-weight: var(--ch5-modal-dialog--default-close-icon-font-weight);
 
     &:before {
       content: "\00d7";
@@ -98,9 +95,7 @@ ch5-modal-dialog {
   .ch5-modal-dialog-prompt-icon {
     vertical-align: middle;
     margin-right: var(--ch5-modal-dialog--prompt-icon-margin-right);
-    font-size: var(--ch5-modal-dialog--prompt-icon-font-size);
-    font-style: var(--ch5-modal-dialog--prompt-icon-font-style);
-    font-weight: var(--ch5-modal-dialog--prompt-icon-font-weight);
+    font-size: var(--ch5-modal-dialog--prompt-icon-size);
   }
 
   /// a span element
