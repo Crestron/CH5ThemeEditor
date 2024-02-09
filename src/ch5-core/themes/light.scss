@@ -1238,7 +1238,7 @@
 
   --theme-ch5-select--option-item-hover-background-color: #f8f9fa;
 
-  --theme-ch5-select--option-items-background-color: #{$white};
+  --theme-ch5-select--option-background-color: #{$white};
 
   --theme-ch5-select--padding: 4px;
 
@@ -1246,19 +1246,17 @@
 
   --theme-ch5-select--border-radius: 2px;
 
-  --theme-ch5-select--combo-trigger-margin: 0;
+  --theme-ch5-select--dropdown-icon-margin: 0;
 
-  --theme-ch5-select--combo-trigger-width: 24px;
+  --theme-ch5-select--dropdown-icon-width: 24px;
 
-  --theme-ch5-select--combo-trigger-height: 24px;
-
-  --theme-ch5-select--selected-item-width: calc(100% - 40px);
+  --theme-ch5-select--dropdown-icon-height: 24px;
 
   --theme-ch5-select--option-item-border-width: 1px;
 
   --theme-ch5-select--option-item-padding: 8px;
 
-  --theme-ch5-select--option-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  --theme-ch5-select--option-item-border-style: solid;
 
   --theme-ch5-select--font-size: var(--theme-fonts--font-size);
 
