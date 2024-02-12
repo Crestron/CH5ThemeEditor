@@ -529,7 +529,7 @@
   // ch5-button
   // ***************************************
 
-  --theme-ch5-button--content-line-height: 1.2;
+  --theme-ch5-button--line-height: 1.2;
 
   --theme-ch5-button--padding: 0.25rem;
 
@@ -541,7 +541,15 @@
 
   --theme-ch5-button--icon-color: inherit;
 
-  --theme-ch5-button--icon-size: inherit;
+  --theme-ch5-button--regular-icon-size: var(--theme-ch5-button--regular-font-size);
+
+  --theme-ch5-button--x-small-icon-size: var(--theme-ch5-button--x-small-font-size);
+
+  --theme-ch5-button--small-icon-size: var(--theme-ch5-button--small-font-size);
+
+  --theme-ch5-button--large-icon-size: var(--theme-ch5-button--large-font-size);
+
+  --theme-ch5-button--x-large-icon-size: var(--theme-ch5-button--x-large-font-size);
 
   --theme-ch5-button--default-border-width: 1px;
 
@@ -575,34 +583,57 @@
 
   --theme-ch5-button--text-border-style: solid;
 
-  --theme-ch5-button--border-radius: 5px;
-
-  --theme-ch5-button--circle-border-radius: 50%;
+  --theme-ch5-button--rounded-rectangle-border-radius: 5px;
 
   --theme-ch5-button--oval-border-radius: 50%;
 
   --theme-ch5-button--tab-border-radius: 10px 10px 0 0;
 
-  --theme-ch5-button--regular-size: 42px;
+  --theme-ch5-button--regular-width: 84px;
+
+  --theme-ch5-button--regular-height: 42px;
 
   --theme-ch5-button--x-small-font-size: 11px;
 
-  --theme-ch5-button--x-small-size: 32px;
+  --theme-ch5-button--x-small-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-button--x-small-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--x-small-width: 64px;
+
+  --theme-ch5-button--x-small-height: 32px;
 
   --theme-ch5-button--small-font-size: 13px;
 
-  --theme-ch5-button--small-size: 36px;
+  --theme-ch5-button--small-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-button--small-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--small-width: 72px;
+
+  --theme-ch5-button--small-height: 36px;
 
   --theme-ch5-button--large-font-size: 16px;
 
-  --theme-ch5-button--large-size: 52px;
+  --theme-ch5-button--large-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-button--large-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--large-width: 104px;
+
+  --theme-ch5-button--large-height: 52px;
 
   --theme-ch5-button--x-large-font-size: 18px;
 
-  --theme-ch5-button--x-large-size: 72px;
+  --theme-ch5-button--x-large-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-button--x-large-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--x-large-width: 144px;
+
+  --theme-ch5-button--x-large-height: 72px;
 
   --theme-ch5-button--checkbox-padding: 5px;
-
 
   --theme-ch5-button--default-background-color: var(--theme-colors--default-background-color);
 
@@ -846,7 +877,6 @@
 
   --theme-ch5-dpad--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
 
-
   --theme-ch5-dpad--primary-background-color: var(--theme-colors--primary-background-color);
 
   --theme-ch5-dpad--primary-font-color: var(--theme-colors--primary-font-color);
@@ -854,7 +884,6 @@
   --theme-ch5-dpad--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
 
   --theme-ch5-dpad--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
-
 
   --theme-ch5-dpad--info-background-color: var(--theme-colors--info-background-color);
 
@@ -864,7 +893,6 @@
 
   --theme-ch5-dpad--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
 
-
   --theme-ch5-dpad--danger-background-color: var(--theme-colors--danger-background-color);
 
   --theme-ch5-dpad--danger-font-color: var(--theme-colors--danger-font-color);
@@ -872,7 +900,6 @@
   --theme-ch5-dpad--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
 
   --theme-ch5-dpad--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
-
 
   --theme-ch5-dpad--secondary-background-color: var(--theme-colors--secondary-background-color);
 
@@ -882,7 +909,6 @@
 
   --theme-ch5-dpad--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
 
-
   --theme-ch5-dpad--success-background-color: var(--theme-colors--success-background-color);
 
   --theme-ch5-dpad--success-font-color: var(--theme-colors--success-font-color);
@@ -891,7 +917,6 @@
 
   --theme-ch5-dpad--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
 
-
   --theme-ch5-dpad--warning-background-color: var(--theme-colors--warning-background-color);
 
   --theme-ch5-dpad--warning-font-color: var(--theme-colors--warning-font-color);
@@ -899,7 +924,6 @@
   --theme-ch5-dpad--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
 
   --theme-ch5-dpad--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
-
 
   --theme-ch5-dpad--text-background-color: var(--theme-colors--text-background-color);
 
@@ -962,7 +986,6 @@
   --theme-ch5-keypad--x-large-font-size-major: 3rem;
 
   --theme-ch5-keypad--x-large-font-size-minor: 1.05rem;
-
 
   --theme-ch5-keypad--default-background-color: var(--theme-colors--default-background-color);
 
@@ -1752,7 +1775,7 @@
 
   --theme-ch5-list--item-border-color: #bdbdbd;
 
-  --theme-ch5-list--item-border-width: 1px; 
+  --theme-ch5-list--item-border-width: 1px;
 
   --theme-ch5-list--item-border-style: solid;
 
