@@ -11,7 +11,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-slider {
-  /// description: Height for slider
+  /// description: Height for slider. Note: If orientation is vertical then height variable will be set to width css property and vice-versa
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 18px 
@@ -46,35 +46,35 @@ ch5-slider {
   /// related-theme-variable: --theme-ch5-slider--handle-border-style
   --ch5-slider--handle-border-style: var(--theme-ch5-slider--handle-border-style);
 
-  /// description: Width of slider for size=x-small
+  /// description: Width of slider for size=x-small. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 200px 
   /// related-theme-variable: --theme-ch5-slider--width-x-small
   --ch5-slider--width-x-small: var(--theme-ch5-slider--width-x-small);
 
-  /// description: Width of slider for size=small
+  /// description: Width of slider for size=small. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 250px 
   /// related-theme-variable: --theme-ch5-slider--width-small
   --ch5-slider--width-small: var(--theme-ch5-slider--width-small);
 
-  /// description: Width of slider for size=regular
+  /// description: Width of slider for size=regular. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 300px 
   /// related-theme-variable: --theme-ch5-slider--width-regular
   --ch5-slider--width-regular: var(--theme-ch5-slider--width-regular);
 
-  /// description: Width of slider for size=large
+  /// description: Width of slider for size=large. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 400px 
   /// related-theme-variable: --theme-ch5-slider--width-large
   --ch5-slider--width-large: var(--theme-ch5-slider--width-large);
 
-  /// description: Width of slider for size=x-large
+  /// description: Width of slider for size=x-large. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 500px 
@@ -158,14 +158,14 @@ ch5-slider {
   // rounded-rectangle
 
   // x-small
-  /// description: Handle width for size=x-small when shape=rounded-rectangle
+  /// description: Handle width for size=x-small when shape=rounded-rectangle. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 26px 
   /// related-theme-variable: --theme-ch5-slider--size-x-small-handle-width-rounded-rectangle
   --ch5-slider--size-x-small-handle-width-rounded-rectangle: var(--theme-ch5-slider--size-x-small-handle-width-rounded-rectangle);
 
-  /// description: Handle height for size=x-small when shape=rounded-rectangle
+  /// description: Handle height for size=x-small when shape=rounded-rectangle. Note: If orientation is vertical then height variable will be set to width css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 24px 
@@ -173,14 +173,14 @@ ch5-slider {
   --ch5-slider--size-x-small-handle-height-rounded-rectangle: var(--theme-ch5-slider--size-x-small-handle-height-rounded-rectangle);
 
   // small
-  /// description: Handle width for size=small when shape=rounded-rectangle
+  /// description: Handle width for size=small when shape=rounded-rectangle. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 30px 
   /// related-theme-variable: --theme-ch5-slider--size-small-handle-width-rounded-rectangle
   --ch5-slider--size-small-handle-width-rounded-rectangle: var(--theme-ch5-slider--size-small-handle-width-rounded-rectangle);
 
-  /// description: Handle height for size=small when shape=rounded-rectangle
+  /// description: Handle height for size=small when shape=rounded-rectangle. Note: If orientation is vertical then height variable will be set to width css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 26px 
@@ -188,14 +188,14 @@ ch5-slider {
   --ch5-slider--size-small-handle-height-rounded-rectangle: var(--theme-ch5-slider--size-small-handle-height-rounded-rectangle);
 
   // regular
-  /// description: Handle width for size=regular when shape=rounded-rectangle
+  /// description: Handle width for size=regular when shape=rounded-rectangle. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 36px 
   /// related-theme-variable: --theme-ch5-slider--size-regular-handle-width-rounded-rectangle
   --ch5-slider--size-regular-handle-width-rounded-rectangle: var(--theme-ch5-slider--size-regular-handle-width-rounded-rectangle);
 
-  /// description: Handle height for size=regular when shape=rounded-rectangle
+  /// description: Handle height for size=regular when shape=rounded-rectangle. Note: If orientation is vertical then height variable will be set to width css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 30px 
@@ -203,14 +203,14 @@ ch5-slider {
   --ch5-slider--size-regular-handle-height-rounded-rectangle: var(--theme-ch5-slider--size-regular-handle-height-rounded-rectangle);
 
   // large
-  /// description: Handle width for size=large when shape=rounded-rectangle
+  /// description: Handle width for size=large when shape=rounded-rectangle. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 42px 
   /// related-theme-variable: --theme-ch5-slider--size-large-handle-width-rounded-rectangle
   --ch5-slider--size-large-handle-width-rounded-rectangle: var(--theme-ch5-slider--size-large-handle-width-rounded-rectangle);
 
-  /// description: Handle height for size=large when shape=rounded-rectangle
+  /// description: Handle height for size=large when shape=rounded-rectangle. Note: If orientation is vertical then height variable will be set to width css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 34px 
@@ -218,14 +218,14 @@ ch5-slider {
   --ch5-slider--size-large-handle-height-rounded-rectangle: var(--theme-ch5-slider--size-large-handle-height-rounded-rectangle);
 
   // x-large
-  /// description: Handle width for size=x-large when shape=rounded-rectangle
+  /// description: Handle width for size=x-large when shape=rounded-rectangle. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 54px 
   /// related-theme-variable: --theme-ch5-slider--size-x-large-handle-width-rounded-rectangle
   --ch5-slider--size-x-large-handle-width-rounded-rectangle: var(--theme-ch5-slider--size-x-large-handle-width-rounded-rectangle);
 
-  /// description: Handle height for size=x-large when shape=rounded-rectangle
+  /// description: Handle height for size=x-large when shape=rounded-rectangle. Note: If orientation is vertical then height variable will be set to width css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 40px 
@@ -235,14 +235,14 @@ ch5-slider {
   // rectangle
 
   // x-small
-  /// description: Handle width for size=x-small when shape=rectangle
+  /// description: Handle width for size=x-small when shape=rectangle. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 26px 
   /// related-theme-variable: --theme-ch5-slider--size-x-small-handle-width-rectangle
   --ch5-slider--size-x-small-handle-width-rectangle: var(--theme-ch5-slider--size-x-small-handle-width-rectangle);
 
-  /// description: Handle height for size=x-small when shape=rectangle
+  /// description: Handle height for size=x-small when shape=rectangle. Note: If orientation is vertical then height variable will be set to width css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 24px 
@@ -250,14 +250,14 @@ ch5-slider {
   --ch5-slider--size-x-small-handle-height-rectangle: var(--theme-ch5-slider--size-x-small-handle-height-rectangle);
 
   // small
-  /// description: Handle width for size=small when shape=rectangle
+  /// description: Handle width for size=small when shape=rectangle. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 30px 
   /// related-theme-variable: --theme-ch5-slider--size-small-handle-width-rectangle
   --ch5-slider--size-small-handle-width-rectangle: var(--theme-ch5-slider--size-small-handle-width-rectangle);
 
-  /// description: Handle height for size=small when shape=rectangle
+  /// description: Handle height for size=small when shape=rectangle. Note: If orientation is vertical then height variable will be set to width css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 26px 
@@ -265,14 +265,14 @@ ch5-slider {
   --ch5-slider--size-small-handle-height-rectangle: var(--theme-ch5-slider--size-small-handle-height-rectangle);
 
   // regular
-  /// description: Handle width for size=regular when shape=rectangle
+  /// description: Handle width for size=regular when shape=rectangle. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 36px 
   /// related-theme-variable: --theme-ch5-slider--size-regular-handle-width-rectangle
   --ch5-slider--size-regular-handle-width-rectangle: var(--theme-ch5-slider--size-regular-handle-width-rectangle);
 
-  /// description: Handle height for size=regular when shape=rectangle
+  /// description: Handle height for size=regular when shape=rectangle. Note: If orientation is vertical then height variable will be set to width css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 30px 
@@ -280,14 +280,14 @@ ch5-slider {
   --ch5-slider--size-regular-handle-height-rectangle: var(--theme-ch5-slider--size-regular-handle-height-rectangle);
 
   // large
-  /// description: Handle width for size=large when shape=rectangle
+  /// description: Handle width for size=large when shape=rectangle. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 42px 
   /// related-theme-variable: --theme-ch5-slider--size-large-handle-width-rectangle
   --ch5-slider--size-large-handle-width-rectangle: var(--theme-ch5-slider--size-large-handle-width-rectangle);
 
-  /// description: Handle height for size=large when shape=rectangle
+  /// description: Handle height for size=large when shape=rectangle. Note: If orientation is vertical then height variable will be set to width css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 34px 
@@ -295,14 +295,14 @@ ch5-slider {
   --ch5-slider--size-large-handle-height-rectangle: var(--theme-ch5-slider--size-large-handle-height-rectangle);
 
   // x-large
-  /// description: Handle width for size=x-large when shape=rectangle
+  /// description: Handle width for size=x-large when shape=rectangle. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 54px 
   /// related-theme-variable: --theme-ch5-slider--size-x-large-handle-width-rectangle
   --ch5-slider--size-x-large-handle-width-rectangle: var(--theme-ch5-slider--size-x-large-handle-width-rectangle);
 
-  /// description: Handle height for size=x-large when shape=rectangle
+  /// description: Handle height for size=x-large when shape=rectangle. Note: If orientation is vertical then height variable will be set to width css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 40px 

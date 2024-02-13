@@ -165,14 +165,14 @@ ch5-button {
   /// related-theme-variable: --theme-ch5-button--tab-border-radius
   --ch5-button--tab-border-radius: var(--theme-ch5-button--tab-border-radius);
 
-  /// description: Button width for size="regular". For shape="circle", width with be considered as height.
+  /// description: Button width for size="regular". For shape="circle", width with be considered as height. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 42px
   /// related-theme-variable: --theme-ch5-button--regular-width
   --ch5-button--regular-width: var(--theme-ch5-button--regular-width);
 
-  /// description: Button height for size="regular"
+  /// description: Button height for size="regular". Note: If orientation is vertical then height variable will be set to width css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 42px
@@ -235,14 +235,14 @@ ch5-button {
   /// related-theme-variable: --theme-ch5-button--x-small-font-weight
   --ch5-button--x-small-font-weight: var(--theme-ch5-button--x-small-font-weight);
 
-  /// description: Button width for size="x-small". For shape="circle", width with be considered as height.
+  /// description: Button width for size="x-small". For shape="circle", width with be considered as height. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 32px
   /// related-theme-variable: --theme-ch5-button--x-small-width
   --ch5-button--x-small-width: var(--theme-ch5-button--x-small-width);
 
-  /// description: Button height for size="x-small"
+  /// description: Button height for size="x-small". Note: If orientation is vertical then height variable will be set to width css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 32px
@@ -276,14 +276,14 @@ ch5-button {
   /// related-theme-variable: --theme-ch5-button--small-font-weight
   --ch5-button--small-font-weight: var(--theme-ch5-button--small-font-weight);
 
-  /// description: Button width for size="small". For shape="circle", width with be considered as height.
+  /// description: Button width for size="small". For shape="circle", width with be considered as height. Note: If orientation is vertical then width variable will be set to height css property.
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 36px
   /// related-theme-variable: --theme-ch5-button--small-width
   --ch5-button--small-width: var(--theme-ch5-button--small-width);
 
-  /// description: Button height for size="small"
+  /// description: Button height for size="small". Note: If orientation is vertical then height variable will be set to width css property and vice-versa
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 36px
@@ -317,14 +317,14 @@ ch5-button {
   /// related-theme-variable: --theme-ch5-button--large-font-weight
   --ch5-button--large-font-weight: var(--theme-ch5-button--large-font-weight);
 
-  /// description: Button width for size="large". For shape="circle", width with be considered as height.
+  /// description: Button width for size="large". For shape="circle", width with be considered as height. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 52px
   /// related-theme-variable: --theme-ch5-button--large-width
   --ch5-button--large-width: var(--theme-ch5-button--large-width);
 
-  /// description: Button height for size="large"
+  /// description: Button height for size="large". Note: If orientation is vertical then height variable will be set to width css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 52px
@@ -358,14 +358,14 @@ ch5-button {
   /// related-theme-variable: --theme-ch5-button--x-large-font-weight
   --ch5-button--x-large-font-weight: var(--theme-ch5-button--x-large-font-weight);
 
-  /// description: Button width for size="x-large". For shape="circle", width with be considered as height.
+  /// description: Button width for size="x-large". For shape="circle", width with be considered as height. Note: If orientation is vertical then width variable will be set to height css property
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 72px
   /// related-theme-variable: --theme-ch5-button--x-large-width
   --ch5-button--x-large-width: var(--theme-ch5-button--x-large-width);
 
-  /// description: Button height for size="x-large"
+  /// description: Button height for size="x-large". Note: If orientation is vertical then height variable will be set to width css property and vice-versa
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 72px
