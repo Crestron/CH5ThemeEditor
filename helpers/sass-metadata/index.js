@@ -146,6 +146,9 @@ function getVariables(data, sectionName) {
 						dataObj.type = variableObj.type
 						dataObj.example = variableObj.example
 						dataObj.possibleValues = variableObj.possibleValues
+						if (dataObj.type === 'multiUnit') {
+							dataObj.childTypes = ['top', 'right', 'bottom', 'left'];
+						}
 					}
 				}
 			} else {
