@@ -11,14 +11,14 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-tab-button {
-  /// description: Width for the container of each button in tab button
+  /// description: Applicable when orientation is vertical sets the Width for the container of each button in tab button
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 5px 
   /// related-theme-variable: --theme-ch5-tab-button--button-container-width
   --ch5-tab-button--button-container-width: var(--theme-ch5-tab-button--button-container-width);
 
-  /// description: Height for the container of each button in tab button
+  /// description: Applicable when orientation is horizontal sets the Height for the container of each button in tab button
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 5px 

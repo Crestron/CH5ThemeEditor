@@ -529,19 +529,27 @@
   // ch5-button
   // ***************************************
 
-  --theme-ch5-button--content-line-height: 1.2;
+  --theme-ch5-button--line-height: 1.2;
 
   --theme-ch5-button--padding: 0.25rem;
 
-  --theme-ch5-button--font-size: 14px;
+  --theme-ch5-button--regular-font-size: 14px;
 
-  --theme-ch5-button--font-style: var(--theme-fonts--font-style);
+  --theme-ch5-button--regular-font-style: var(--theme-fonts--font-style);
 
-  --theme-ch5-button--font-weight: var(--theme-fonts--font-weight);
+  --theme-ch5-button--regular-font-weight: var(--theme-fonts--font-weight);
 
   --theme-ch5-button--icon-color: inherit;
 
-  --theme-ch5-button--icon-size: inherit;
+  --theme-ch5-button--regular-icon-size: var(--theme-ch5-button--regular-font-size);
+
+  --theme-ch5-button--x-small-icon-size: var(--theme-ch5-button--x-small-font-size);
+
+  --theme-ch5-button--small-icon-size: var(--theme-ch5-button--small-font-size);
+
+  --theme-ch5-button--large-icon-size: var(--theme-ch5-button--large-font-size);
+
+  --theme-ch5-button--x-large-icon-size: var(--theme-ch5-button--x-large-font-size);
 
   --theme-ch5-button--default-border-width: 1px;
 
@@ -575,42 +583,57 @@
 
   --theme-ch5-button--text-border-style: solid;
 
-  --theme-ch5-button--border-radius: 5px;
-
-  --theme-ch5-button--circle-border-radius: 50%;
+  --theme-ch5-button--rounded-rectangle-border-radius: 5px;
 
   --theme-ch5-button--oval-border-radius: 50%;
 
   --theme-ch5-button--tab-border-radius: 10px 10px 0 0;
 
-  --theme-ch5-button--size: 42px;
+  --theme-ch5-button--regular-width: 84px;
+
+  --theme-ch5-button--regular-height: 42px;
 
   --theme-ch5-button--x-small-font-size: 11px;
 
-  --theme-ch5-button--x-small-size: 32px;
+  --theme-ch5-button--x-small-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-button--x-small-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--x-small-width: 64px;
+
+  --theme-ch5-button--x-small-height: 32px;
 
   --theme-ch5-button--small-font-size: 13px;
 
-  --theme-ch5-button--small-size: 36px;
+  --theme-ch5-button--small-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-button--small-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--small-width: 72px;
+
+  --theme-ch5-button--small-height: 36px;
 
   --theme-ch5-button--large-font-size: 16px;
 
-  --theme-ch5-button--large-size: 52px;
+  --theme-ch5-button--large-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-button--large-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--large-width: 104px;
+
+  --theme-ch5-button--large-height: 52px;
 
   --theme-ch5-button--x-large-font-size: 18px;
 
-  --theme-ch5-button--x-large-size: 72px;
+  --theme-ch5-button--x-large-font-style: var(--theme-fonts--font-style);
 
-  --theme-ch5-button--checkbox-checked-faicon: "\f14a";
+  --theme-ch5-button--x-large-font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-button--checkbox-unchecked-faicon: "\f0c8";
+  --theme-ch5-button--x-large-width: 144px;
 
-  --theme-ch5-button--checkbox-checked-font-weight: 400;
-
-  --theme-ch5-button--checkbox-unchecked-font-weight: 400;
+  --theme-ch5-button--x-large-height: 72px;
 
   --theme-ch5-button--checkbox-padding: 5px;
-
 
   --theme-ch5-button--default-background-color: var(--theme-colors--default-background-color);
 
@@ -854,7 +877,6 @@
 
   --theme-ch5-dpad--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
 
-
   --theme-ch5-dpad--primary-background-color: var(--theme-colors--primary-background-color);
 
   --theme-ch5-dpad--primary-font-color: var(--theme-colors--primary-font-color);
@@ -862,7 +884,6 @@
   --theme-ch5-dpad--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
 
   --theme-ch5-dpad--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
-
 
   --theme-ch5-dpad--info-background-color: var(--theme-colors--info-background-color);
 
@@ -872,7 +893,6 @@
 
   --theme-ch5-dpad--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
 
-
   --theme-ch5-dpad--danger-background-color: var(--theme-colors--danger-background-color);
 
   --theme-ch5-dpad--danger-font-color: var(--theme-colors--danger-font-color);
@@ -880,7 +900,6 @@
   --theme-ch5-dpad--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
 
   --theme-ch5-dpad--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
-
 
   --theme-ch5-dpad--secondary-background-color: var(--theme-colors--secondary-background-color);
 
@@ -890,7 +909,6 @@
 
   --theme-ch5-dpad--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
 
-
   --theme-ch5-dpad--success-background-color: var(--theme-colors--success-background-color);
 
   --theme-ch5-dpad--success-font-color: var(--theme-colors--success-font-color);
@@ -899,7 +917,6 @@
 
   --theme-ch5-dpad--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
 
-
   --theme-ch5-dpad--warning-background-color: var(--theme-colors--warning-background-color);
 
   --theme-ch5-dpad--warning-font-color: var(--theme-colors--warning-font-color);
@@ -907,7 +924,6 @@
   --theme-ch5-dpad--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
 
   --theme-ch5-dpad--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
-
 
   --theme-ch5-dpad--text-background-color: var(--theme-colors--text-background-color);
 
@@ -936,6 +952,10 @@
   // ***************************************
   // ch5-keypad
   // ***************************************
+
+  --theme-ch5-keypad--gap-between-buttons: 6px;
+
+  --theme-ch5-keypad--padding: 6px;
 
   --theme-ch5-keypad--x-small-container-width: 210px;
 
@@ -967,10 +987,13 @@
 
   --theme-ch5-keypad--x-large-font-size-minor: 1.05rem;
 
-
   --theme-ch5-keypad--default-background-color: var(--theme-colors--default-background-color);
 
   --theme-ch5-keypad--default-border-color: var(--theme-colors--default-border-color);
+
+  --theme-ch5-keypad--default-border-width: 1px;
+
+  --theme-ch5-keypad--default-border-style: solid;
 
   --theme-ch5-keypad--default-font-color: var(--theme-colors--default-font-color);
 
@@ -978,11 +1001,19 @@
 
   --theme-ch5-keypad--default-pressed-border-color: var(--theme-colors--default-pressed-border-color);
 
+  --theme-ch5-keypad--default-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--default-pressed-border-style: solid;
+
   --theme-ch5-keypad--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
 
   --theme-ch5-keypad--primary-background-color: var(--theme-colors--primary-background-color);
 
   --theme-ch5-keypad--primary-border-color: var(--theme-colors--primary-border-color);
+
+  --theme-ch5-keypad--primary-border-width: 1px;
+
+  --theme-ch5-keypad--primary-border-style: solid;
 
   --theme-ch5-keypad--primary-font-color: var(--theme-colors--primary-font-color);
 
@@ -990,11 +1021,19 @@
 
   --theme-ch5-keypad--primary-pressed-border-color: var(--theme-colors--primary-pressed-border-color);
 
+  --theme-ch5-keypad--primary-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--primary-pressed-border-style: solid;
+
   --theme-ch5-keypad--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
 
   --theme-ch5-keypad--info-background-color: var(--theme-colors--info-background-color);
 
   --theme-ch5-keypad--info-border-color: var(--theme-colors--info-border-color);
+
+  --theme-ch5-keypad--info-border-width: 1px;
+
+  --theme-ch5-keypad--info-border-style: solid;
 
   --theme-ch5-keypad--info-font-color: var(--theme-colors--info-font-color);
 
@@ -1002,11 +1041,19 @@
 
   --theme-ch5-keypad--info-pressed-border-color: var(--theme-colors--info-pressed-border-color);
 
+  --theme-ch5-keypad--info-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--info-pressed-border-style: solid;
+
   --theme-ch5-keypad--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
 
   --theme-ch5-keypad--danger-background-color: var(--theme-colors--danger-background-color);
 
   --theme-ch5-keypad--danger-border-color: var(--theme-colors--danger-border-color);
+
+  --theme-ch5-keypad--danger-border-width: 1px;
+
+  --theme-ch5-keypad--danger-border-style: solid;
 
   --theme-ch5-keypad--danger-font-color: var(--theme-colors--danger-font-color);
 
@@ -1014,11 +1061,19 @@
 
   --theme-ch5-keypad--danger-pressed-border-color: var(--theme-colors--danger-pressed-border-color);
 
+  --theme-ch5-keypad--danger-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--danger-pressed-border-style: solid;
+
   --theme-ch5-keypad--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
 
   --theme-ch5-keypad--secondary-background-color: var(--theme-colors--secondary-background-color);
 
   --theme-ch5-keypad--secondary-border-color: var(--theme-colors--secondary-border-color);
+
+  --theme-ch5-keypad--secondary-border-width: 1px;
+
+  --theme-ch5-keypad--secondary-border-style: solid;
 
   --theme-ch5-keypad--secondary-font-color: var(--theme-colors--secondary-font-color);
 
@@ -1026,11 +1081,19 @@
 
   --theme-ch5-keypad--secondary-pressed-border-color: var(--theme-colors--secondary-pressed-border-color);
 
+  --theme-ch5-keypad--secondary-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--secondary-pressed-border-style: solid;
+
   --theme-ch5-keypad--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
 
   --theme-ch5-keypad--success-background-color: var(--theme-colors--success-background-color);
 
   --theme-ch5-keypad--success-border-color: var(--theme-colors--success-border-color);
+
+  --theme-ch5-keypad--success-border-width: 1px;
+
+  --theme-ch5-keypad--success-border-style: solid;
 
   --theme-ch5-keypad--success-font-color: var(--theme-colors--success-font-color);
 
@@ -1038,11 +1101,19 @@
 
   --theme-ch5-keypad--success-pressed-border-color: var(--theme-colors--success-pressed-border-color);
 
+  --theme-ch5-keypad--success-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--success-pressed-border-style: solid;
+
   --theme-ch5-keypad--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
 
   --theme-ch5-keypad--warning-background-color: var(--theme-colors--warning-background-color);
 
   --theme-ch5-keypad--warning-border-color: var(--theme-colors--warning-border-color);
+
+  --theme-ch5-keypad--warning-border-width: 1px;
+
+  --theme-ch5-keypad--warning-border-style: solid;
 
   --theme-ch5-keypad--warning-font-color: var(--theme-colors--warning-font-color);
 
@@ -1050,11 +1121,19 @@
 
   --theme-ch5-keypad--warning-pressed-border-color: var(--theme-colors--warning-pressed-border-color);
 
+  --theme-ch5-keypad--warning-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--warning-pressed-border-style: solid;
+
   --theme-ch5-keypad--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
 
   --theme-ch5-keypad--text-background-color: var(--theme-colors--text-background-color);
 
   --theme-ch5-keypad--text-border-color: var(--theme-colors--text-border-color);
+
+  --theme-ch5-keypad--text-border-width: 1px;
+
+  --theme-ch5-keypad--text-border-style: solid;
 
   --theme-ch5-keypad--text-font-color: var(--theme-colors--text-font-color);
 
@@ -1062,7 +1141,31 @@
 
   --theme-ch5-keypad--text-pressed-border-color: var(--theme-colors--text-pressed-border-color);
 
+  --theme-ch5-keypad--text-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--text-pressed-border-style: solid;
+
   --theme-ch5-keypad--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
+
+  --theme-ch5-keypad--extra-button-background-color: var(--theme-colors--success-background-color);
+
+  --theme-ch5-keypad--extra-button-border-color: var(--theme-colors--success-border-color);
+
+  --theme-ch5-keypad--extra-button-border-width: 1px;
+
+  --theme-ch5-keypad--extra-button-border-style: solid;
+
+  --theme-ch5-keypad--extra-button-font-color: var(--theme-colors--success-font-color);
+
+  --theme-ch5-keypad--extra-button-pressed-background-color: var(--theme-colors--success-pressed-background-color);
+
+  --theme-ch5-keypad--extra-button-pressed-border-color: var(--theme-colors--success-pressed-border-color);
+
+  --theme-ch5-keypad--extra-button-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--extra-button-pressed-border-style: solid;
+
+  --theme-ch5-keypad--extra-button-pressed-font-color: var(--theme-colors--success-pressed-font-color);
 
   // ***************************************
   // ch5-overlay-panel
@@ -1102,17 +1205,13 @@
 
   --theme-ch5-overlay-panel--close-icon-padding: 0 5px 5px;
 
-  --theme-ch5-overlay-panel--close-icon-width: 20px;
+  --theme-ch5-overlay-panel--close-button-width: 20px;
 
-  --theme-ch5-overlay-panel--close-icon-font-size: 24px;
+  --theme-ch5-overlay-panel--close-icon-size: 24px;
 
   --theme-ch5-overlay-panel--contents-padding: 20px;
 
   --theme-ch5-overlay-panel--contents-font-size: 18px;
-
-  --theme-ch5-overlay-panel--close-icon-font-style: var(--theme-fonts--font-style);
-
-  --theme-ch5-overlay-panel--close-icon-font-weight: var(--theme-fonts--font-weight);
 
   --theme-ch5-overlay-panel--contents-font-style: var(--theme-fonts--font-weight);
 
@@ -1162,7 +1261,7 @@
 
   --theme-ch5-select--option-item-hover-background-color: #f8f9fa;
 
-  --theme-ch5-select--option-items-background-color: #{$white};
+  --theme-ch5-select--option-background-color: #{$white};
 
   --theme-ch5-select--padding: 4px;
 
@@ -1170,19 +1269,17 @@
 
   --theme-ch5-select--border-radius: 2px;
 
-  --theme-ch5-select--combo-trigger-margin: 0;
+  --theme-ch5-select--dropdown-icon-margin: 0;
 
-  --theme-ch5-select--combo-trigger-width: 24px;
+  --theme-ch5-select--dropdown-icon-width: 24px;
 
-  --theme-ch5-select--combo-trigger-height: 24px;
-
-  --theme-ch5-select--selected-item-width: calc(100% - 40px);
+  --theme-ch5-select--dropdown-icon-height: 24px;
 
   --theme-ch5-select--option-item-border-width: 1px;
 
   --theme-ch5-select--option-item-padding: 8px;
 
-  --theme-ch5-select--option-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  --theme-ch5-select--option-item-border-style: solid;
 
   --theme-ch5-select--font-size: var(--theme-fonts--font-size);
 
@@ -1264,9 +1361,9 @@
   // ch5-tab-button
   // ***************************************
 
-  --theme-ch5-tab-button--button-container-width: 5px;
+  --theme-ch5-tab-button--button-container-width: 100%;
 
-  --theme-ch5-tab-button--button-container-height: 5px;
+  --theme-ch5-tab-button--button-container-height: 100%;
 
   // ***************************************
   // ch5-text
@@ -1404,7 +1501,7 @@
 
   --theme-ch5-toggle--text-font-weight: 900;
 
-  --theme-ch5-toggle--icon-font-size: var(--theme-fonts--font-size);
+  --theme-ch5-toggle--icon-size: var(--theme-fonts--font-size);
 
   --theme-ch5-toggle--rectangle-handle-selected-background-color: #4bd865;
 
@@ -1418,13 +1515,15 @@
 
   --theme-ch5-toggle--circle-handle-border-color: #d8d9db;
 
+  --theme-ch5-toggle--circle-background-color: #d8d9db;
+
   --theme-ch5-toggle--circle-label-on-color: #{$white};
 
   --theme-ch5-toggle--circle-label-off-color: #666;
 
   --theme-ch5-toggle--circle-handle-background-color: #{$white};
 
-  --theme-ch5-toggle--handle-rectangle-background: #464747;
+  --theme-ch5-toggle--rectangle-background: #464747;
 
   --theme-ch5-toggle--rectangle-label-on-color: #{$white};
 
@@ -1452,15 +1551,7 @@
   // ch5-modal-dialog
   // ***************************************
 
-  --theme-ch5-modal-dialog--close-icon-font-size: var(--theme-fonts--font-size);
-
-  --theme-ch5-modal-dialog--close-icon-font-style: var(--theme-fonts--font-style);
-
-  --theme-ch5-modal-dialog--close-icon-font-weight: var(--theme-fonts--font-weight);
-
-  --theme-ch5-modal-dialog--default-close-icon-font-style: var(--theme-fonts--font-style);
-
-  --theme-ch5-modal-dialog--default-close-icon-font-weight: var(--theme-fonts--font-weight);
+  --theme-ch5-modal-dialog--close-icon-size: var(--theme-fonts--font-size);
 
   --theme-ch5-modal-dialog--title-font-style: var(--theme-fonts--font-style);
 
@@ -1468,11 +1559,7 @@
 
   --theme-ch5-modal-dialog--contents-font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-modal-dialog--prompt-icon-font-size: var(--theme-fonts--font-size);
-
-  --theme-ch5-modal-dialog--prompt-icon-font-style: var(--theme-fonts--font-style);
-
-  --theme-ch5-modal-dialog--prompt-icon-font-weight: var(--theme-fonts--font-weight);
+  --theme-ch5-modal-dialog--prompt-icon-size: var(--theme-fonts--font-size);
 
   --theme-ch5-modal-dialog--prompt-text-font-style: var(--theme-fonts--font-style);
 
@@ -1508,9 +1595,9 @@
 
   --theme-ch5-modal-dialog--close-icon-padding: 0 5px 5px;
 
-  --theme-ch5-modal-dialog--close-icon-width: 20px;
+  --theme-ch5-modal-dialog--close-button-width: 20px;
 
-  --theme-ch5-modal-dialog--default-close-icon-font-size: 24px;
+  --theme-ch5-modal-dialog--default-close-icon-size: 24px;
 
   --theme-ch5-modal-dialog--title-font-size: 1.3em;
 
@@ -1536,13 +1623,13 @@
 
   --theme-ch5-slider--button-default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
 
-  --theme-ch5-slider--connect-bg: #0099ff;
+  --theme-ch5-slider--connect-background-color: #0099ff;
 
-  --theme-ch5-slider--target-bg: transparent;
+  --theme-ch5-slider--target-background-color: transparent;
 
   --theme-ch5-slider--target-border-color: #8f8f8f;
 
-  --theme-ch5-slider--handle-bg: #fff;
+  --theme-ch5-slider--handle-background-color: #fff;
 
   --theme-ch5-slider--handle-border-color: #8f8f8f;
 
@@ -1688,7 +1775,9 @@
 
   --theme-ch5-list--item-border-color: #bdbdbd;
 
-  --theme-ch5-list--item-border: 1px solid transparent;
+  --theme-ch5-list--item-border-width: 1px;
+
+  --theme-ch5-list--item-border-style: solid;
 
   --theme-ch5-list--item-padding: 10px;
 

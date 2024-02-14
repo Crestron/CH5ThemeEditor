@@ -11,84 +11,91 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-list {
-  /// description: Set the font size of the vertical list
+  /// description: Font size for the list
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 16px
   /// related-theme-variable: --theme-ch5-list--font-size
   --ch5-list--font-size: var(--theme-ch5-list--font-size);
 
-  /// description: Set the font style of the vertical list
+  /// description: Font style for the list
   /// type: list
   /// values: normal, italic
   /// example: normal
   /// related-theme-variable: --theme-ch5-list--font-style
   --ch5-list--font-style: var(--theme-ch5-list--font-style);
 
-  /// description: Set the font weight of the vertical list
+  /// description: Font weight for the list
   /// type: list
   /// values: normal, bold
   /// example: normal
   /// related-theme-variable: --theme-ch5-list--font-weight
   --ch5-list--font-weight: var(--theme-ch5-list--font-weight);
 
-  /// description: Set the border style of list items, configurable for each theme
+  /// description: Border width for list items
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 2px
+  /// related-theme-variable: --theme-ch5-list--item-border-width
+  --ch5-list--item-border-width: var(--theme-ch5-list--item-border-width);
+
+  /// description: Border style for the list items
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
-  /// example: 1px solid transparent 
-  /// related-theme-variable: --theme-ch5-list-item-border
-  --ch5-list--item-border: var(--theme-ch5-list--item-border);
+  /// example: solid
+  /// related-theme-variable: --theme-ch5-list--item-border-style
+  --ch5-list--item-border-style: var(--theme-ch5-list--item-border-style);
 
-  /// description: Set the padding of list items
+  /// description: Padding for the list items
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 10px 
-  /// related-theme-variable: --theme-ch5-list-item-padding
+  /// related-theme-variable: --theme-ch5-list--item-padding
   --ch5-list--item-padding: var(--theme-ch5-list--item-padding);
 
   /// description: List item background color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fafafa 
-  /// related-theme-variable: --theme-ch5-list-item-background-color
+  /// related-theme-variable: --theme-ch5-list--item-background-color
   --ch5-list--item-background-color: var(--theme-ch5-list--item-background-color);
 
-  /// description: Scrollbar border radius
+  /// description: Scrollbar border radius for list
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 10px
   /// related-theme-variable: --theme-ch5-list--scrollbar-border-radius
   --ch5-list--scrollbar-border-radius: var(--theme-ch5-list--scrollbar-border-radius);
 
-  /// description: Scrollbar thumb color
+  /// description: Scrollbar thumb color for list
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.5)
   /// related-theme-variable: --theme-ch5-list--scrollbar-thumb-color
   --ch5-list--scrollbar-thumb-color: var(--theme-ch5-list--scrollbar-thumb-color);
 
-  /// description: Scrollbar width
+  /// description: Scrollbar width for list
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 7px
   /// related-theme-variable: --theme-ch5-list--scrollbar-width
   --ch5-list--scrollbar-width: var(--theme-ch5-list--scrollbar-width);
 
-  /// description: Scrollbar track color
+  /// description: Scrollbar track color for list
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.1)
   /// related-theme-variable: --theme-ch5-list--scrollbar-track-color
   --ch5-list--scrollbar-track-color: var(--theme-ch5-list--scrollbar-track-color);
 
-  /// description: Set the border color of list items
+  /// description: Border color for list items
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.1)
   /// related-theme-variable: --theme-ch5-list--item-border-color
   --ch5-list--item-border-color: var(--theme-ch5-list--item-border-color);
 
-  /// description: Set the text color of list items.
+  /// description: Text color for list items
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.1)

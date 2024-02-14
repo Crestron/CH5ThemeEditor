@@ -10,10 +10,6 @@
 /// @group ch5-list
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-ch5-list {
-  @include ch5-component-base();
-}
-
 /// Add the "disabled" attribute to the ch5-list tag in order to disable the list.
 .ch5-list--disabled {
   @include ch5-component-disabled();
@@ -44,6 +40,7 @@ ch5-list {
 }
 
 ch5-list {
+  @include ch5-component-base();
   cursor: grab;
   display: inline-block;
   overflow: hidden;
@@ -99,9 +96,10 @@ ch5-list {
 
   .list-item {
     background-color: var(--ch5-list--item-background-color);
-    border: var(--ch5-list--item-border);
-    padding: var(--ch5-list--item-padding);
+    border-width: var(--ch5-list--item-border-width);
+    border-style: var(--ch5-list--item-border-style);
     border-color: var(--ch5-list--item-border-color);
+    padding: var(--ch5-list--item-padding);
     color: var(--ch5-list--item-color);
     vertical-align: text-top;
   }

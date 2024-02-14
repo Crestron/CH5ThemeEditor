@@ -52,14 +52,14 @@ ch5-select-option {
   /// Dropdown button
   .ch5-select__combo_trigger {
     display: block;
-    width: var(--ch5-select--combo-trigger-width);
-    height: var(--ch5-select--combo-trigger-height);
+    width: var(--ch5-select--dropdown-icon-width);
+    height: var(--ch5-select--dropdown-icon-height);
     overflow: hidden;
-    margin: var(--ch5-select--combo-trigger-margin);
+    margin: var(--ch5-select--dropdown-icon-margin);
   }
 
   .ch5-select__selected_items {
-    width: var(--ch5-select--selected-item-width);
+    width: calc(100% - 40px); // Not really sure if we need this
     overflow: hidden;
     @include layout-h;
     @include layout-flex;
@@ -92,8 +92,9 @@ ch5-select-option {
   position: absolute;
   left: 0;
   display: none;
-  background-color: var(--ch5-select--option-items-background-color);
-  box-shadow: var(--ch5-select--option-items-box-shadow);
+  background-color: var(--ch5-select--option-background-color);
+  box-shadow:0 2 px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+
 }
 
 .ch5-select__combo .ch5-select__panel__items {
@@ -102,7 +103,7 @@ ch5-select-option {
 
 .ch5-select__panel-open .ch5-select__panel__items,
 .ch5-select__panel .ch5-select__panel__items {
-  display: block;
+  display: block; 
 }
 
 .ch5-select__panel .ch5-select__panel__items {
@@ -117,7 +118,7 @@ ch5-select-option {
   padding: var(--ch5-select--option-item-padding);
   cursor: pointer;
   color: var(--ch5-select--option-item-color);
-  border: var(--ch5-select--option-item-border-width) solid var(--ch5-select--option-item-border-color);
+  border: var(--ch5-select--option-item-border-width) var(--ch5-select--option-item-border-style) var(--ch5-select--option-item-border-color);
   background-color: var(--ch5-select--option-item-background-color);
 
   &[dir="rtl"] {

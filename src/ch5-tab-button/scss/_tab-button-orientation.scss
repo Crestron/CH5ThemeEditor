@@ -11,11 +11,11 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-tab-button {
+
   /// Applied when orientation is horizontal
   &.ch5-tab-button--orientation-horizontal {
     .ch5-tab-button--button-container {
-      height: 100%;
-      flex: 1 1;
+      height: var(--ch5-tab-button--button-container-height);
     }
   }
 
@@ -24,9 +24,7 @@
     flex-direction: column;
 
     .ch5-tab-button--button-container {
-      height: 100%;
-      width: 100%;
-      flex: 1 1;
+      width: var(--ch5-tab-button--button-container-width);
     }
   }
 }
