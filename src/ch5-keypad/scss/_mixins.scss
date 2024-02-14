@@ -50,6 +50,8 @@
   width: var(#{$property-container-width});
 
   button {
+    line-height: inherit;
+    
     .label-major {
       font-size: var(#{$property-container-font-major});
       line-height: var(#{$property-container-font-major});
