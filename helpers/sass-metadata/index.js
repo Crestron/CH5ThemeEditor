@@ -171,7 +171,7 @@ function getVariables(data, sectionName) {
 			if (variableMetaData.length === 5) {
 				dataObj.relatedThemeVariable = variableMetaData[4].replace('related-theme-variable:', '').trim();
 			}
-			if (dataObj.type === "unit" && (dataObj.value.includes('border') || dataObj.value.includes('margin') || dataObj.value.includes('padding'))) {
+			if (dataObj.type === "unit" && ((dataObj.value.includes('border') && !dataObj.value.includes('border-width')) || dataObj.value.includes('margin') || dataObj.value.includes('padding'))) {
 				dataObj.type = 'multiUnit';
 				dataObj.childTypes = ['top', 'right', 'bottom', 'left'];
 			}
