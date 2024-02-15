@@ -29,6 +29,7 @@ ch5-slider:focus {
 ch5-slider {
   position: relative;
   display: inline-block;
+  display: inline-flex;
   vertical-align: top;
 
   [disabled] .noUi-handle,
