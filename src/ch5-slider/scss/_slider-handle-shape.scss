@@ -16,9 +16,6 @@
 		.noUi-target {
 			border: 0;
 		}
-		.noUi-base {
-			border-radius: 4px;
-		}
 	}
 
 	/// Applied when slider shape="rectangle"
@@ -27,11 +24,6 @@
 		.noUi-target,
 		.noUi-connects {
 			border-radius: 0;
-		}
-		&.ch5-slider-ticks {
-			.noUi-base {
-				border-radius: 0;
-			}
 		}
 	}
 
@@ -44,12 +36,16 @@
 		.noUi-handle {
 			border-radius: 50%;
 		}
-		&.ch5-slider-ticks {
-			.noUi-base {
-				border-radius: 8px;
+	}
+
+		/// Applied when slider shape="rounded-rectangle"
+		&.ch5-slider--shape--rounded-rectangle {
+			.noUi-target,
+			.noUi-connects,
+			.noUi-handle {
+				border-radius: 3px;
 			}
 		}
-	}
 
 	/// Applied when slider shape="oval"
 	&.ch5-slider--shape--oval {
@@ -59,11 +55,6 @@
 		}
 		.noUi-handle {
 			border-radius: 50%;
-		}
-		&.ch5-slider-ticks {
-			.noUi-base {
-				border-radius: 10px;
-			}
 		}
 	}
 }

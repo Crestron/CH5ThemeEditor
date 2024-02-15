@@ -409,6 +409,27 @@ ch5-slider {
   /// related-theme-variable: --theme-ch5-slider--vertical-pips
   --ch5-slider--vertical-pips: var(--theme-ch5-slider--vertical-pips);
 
+  /// description: Font size of the tooltip
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 14px
+  /// related-theme-variable: --theme-ch5-slider--tooltip-font-size
+  --ch5-slider--tooltip-font-size: var(--theme-ch5-slider--tooltip-font-size);
+
+  /// description: Font style of the tooltip
+  /// type: list
+  /// values: normal, italic
+  /// example: normal
+  /// related-theme-variable: --theme-ch5-slider--tooltip-font-style
+  --ch5-slider--tooltip-font-style: var(--theme-ch5-slider--tooltip-font-style);
+
+  /// description: Font weight of the tooltip
+  /// type: list
+  /// values: normal, bold
+  /// example: normal
+  /// related-theme-variable: --theme-ch5-slider--tooltip-font-weight
+  --ch5-slider--tooltip-font-weight: var(--theme-ch5-slider--tooltip-font-weight);
+
   /// description: Tooltip spacing for vertical advanced slider
   /// type: unit
   /// values: px, vw, vh, em, rem, %
