@@ -12,18 +12,12 @@
 
 .ch5-slider {
 
-	.ch5-slider-ticks {
-		.noUi-target {
-			border: 0;
-		}
-	}
-
 	/// Applied when slider shape="rectangle"
 	&.ch5-slider--shape--rectangle {
 		.noUi-handle,
 		.noUi-target,
 		.noUi-connects {
-			border-radius: 0;
+			border-radius: var(--ch5-slider--shape-rectangle-border-radius);
 		}
 	}
 
@@ -31,7 +25,7 @@
 	&.ch5-slider--shape--circle {
 		.noUi-target,
 		.noUi-connects {
-			border-radius: 8px;
+			border-radius: var(--ch5-slider--shape-circle-border-radius);
 		}
 		.noUi-handle {
 			border-radius: 50%;
@@ -43,7 +37,7 @@
 			.noUi-target,
 			.noUi-connects,
 			.noUi-handle {
-				border-radius: 3px;
+				border-radius: var(--ch5-slider--shape-rounded-rectangle-border-radius);
 			}
 		}
 
@@ -51,10 +45,10 @@
 	&.ch5-slider--shape--oval {
 		.noUi-target,
 		.noUi-connects {
-			border-radius: 10px;
+			border-radius: var(--ch5-slider--shape-oval-border-radius);
 		}
 		.noUi-handle {
-			border-radius: 50%;
+			border-radius: var(--ch5-slider--shape-oval-handle-border-radius);
 		}
 	}
 }

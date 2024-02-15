@@ -534,6 +534,41 @@ ch5-slider {
   /// example: #ffffff
   /// related-theme-variable: --theme-ch5-slider--button-default-pressed-font-color
   --ch5-slider--button-default-pressed-font-color: var(--theme-ch5-slider--button-default-pressed-font-color);
+
+  /// description: Border radius for slider when handleshape="rectangle"
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 0
+  /// related-theme-variable: --theme-ch5-slider--shape-rectangle-border-radius
+  --ch5-slider--shape-rectangle-border-radius: var(--theme-ch5-slider--shape-rectangle-border-radius);
+
+  /// description: Border radius for slider when handleshape="circle"
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 8px
+  /// related-theme-variable: --theme-ch5-slider--shape-circle-border-radius
+  --ch5-slider--shape-circle-border-radius: var(--theme-ch5-slider--shape-circle-border-radius);
+
+  /// description: Border radius for slider when handleshape="rounded-rectangle"
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 8px
+  /// related-theme-variable: --theme-ch5-slider--shape-rounded-rectangle-border-radius
+  --ch5-slider--shape-rounded-rectangle-border-radius: var(--theme-ch5-slider--shape-rounded-rectangle-border-radius);
+
+  /// description: Border radius for slider when handleshape="oval"
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 10px
+  /// related-theme-variable: --theme-ch5-slider--shape-oval-border-radius
+  --ch5-slider--shape-oval-border-radius: var(--theme-ch5-slider--shape-oval-border-radius);
+
+  /// description: Border radius for slider handle when handleshape="oval"
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 50%
+  /// related-theme-variable: --theme-ch5-slider--shape-oval-handle-border-radius
+  --ch5-slider--shape-oval-handle-border-radius: var(--theme-ch5-slider--shape-oval-handle-border-radius);
 }
 
 // extending the variables by button
