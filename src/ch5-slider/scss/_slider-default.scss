@@ -12,21 +12,12 @@
 
 // NOTE: Slider highlighted area height is fixed and cannot be changed. If changed, the issue will be with the handle height
 
-ch5-slider {
-  @include ch5-component-base();
-
-  --ch5-slider--size-x-small-handle-height-oval: calc(var(--ch5-slider--size-x-small-handle-width-oval) / 1.5);
-  --ch5-slider--size-small-handle-height-oval: calc(var(--ch5-slider--size-small-handle-width-oval) / 1.5);
-  --ch5-slider--size-regular-handle-height-oval: calc(var(--ch5-slider--size-regular-handle-width-oval) / 1.5);
-  --ch5-slider--size-large-handle-height-oval: calc(var(--ch5-slider--size-large-handle-width-oval) / 1.5);
-  --ch5-slider--size-x-large-handle-height-oval: calc(var(--ch5-slider--size-x-large-handle-width-oval) / 1.5);
-}
-
 ch5-slider:focus {
   outline: none;
 }
 
 ch5-slider {
+  @include ch5-component-base();
   position: relative;
   display: inline-block;
   display: inline-flex;

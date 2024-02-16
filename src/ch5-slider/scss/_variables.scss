@@ -569,6 +569,41 @@ ch5-slider {
   /// example: 50%
   /// related-theme-variable: --theme-ch5-slider--shape-oval-handle-border-radius
   --ch5-slider--shape-oval-handle-border-radius: var(--theme-ch5-slider--shape-oval-handle-border-radius);
+
+  /// description: Handle height for slider when handleshape="oval" and handlesize="x-small"
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 17px 
+  /// related-theme-variable: --theme-ch5-slider--size-x-small-handle-height-oval
+  --ch5-slider--size-x-small-handle-height-oval: var(--theme-ch5-slider--size-x-small-handle-height-oval);
+
+  /// description: Handle height for slider when handleshape="oval" and handlesize="small"
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 20px 
+  /// related-theme-variable: --theme-ch5-slider--size-small-handle-height-oval
+  --ch5-slider--size-small-handle-height-oval: var(--theme-ch5-slider--size-small-handle-height-oval);
+
+  /// description: Handle height for slider when handleshape="oval" and handlesize="regular"
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 24px 
+  /// related-theme-variable: --theme-ch5-slider--size-regular-handle-height-oval
+  --ch5-slider--size-regular-handle-height-oval: var(--theme-ch5-slider--size-regular-handle-height-oval);
+
+  /// description: Handle height for slider when handleshape="oval" and handlesize="large"
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 28px 
+  /// related-theme-variable: --theme-ch5-slider--size-large-handle-height-oval
+  --ch5-slider--size-large-handle-height-oval: var(--theme-ch5-slider--size-large-handle-height-oval);
+
+  /// description: Handle height for slider when handleshape="oval" and handlesize="x-large"
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 36px 
+  /// related-theme-variable: --theme-ch5-slider--size-x-large-handle-height-oval
+  --ch5-slider--size-x-large-handle-height-oval: var(--theme-ch5-slider--size-x-large-handle-height-oval);
 }
 
 // extending the variables by button
