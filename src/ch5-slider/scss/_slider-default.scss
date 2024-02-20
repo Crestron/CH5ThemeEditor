@@ -12,23 +12,15 @@
 
 // NOTE: Slider highlighted area height is fixed and cannot be changed. If changed, the issue will be with the handle height
 
-ch5-slider {
-  @include ch5-component-base();
-
-  --ch5-slider--size-x-small-handle-height-oval: calc(var(--ch5-slider--size-x-small-handle-width-oval) / 1.5);
-  --ch5-slider--size-small-handle-height-oval: calc(var(--ch5-slider--size-small-handle-width-oval) / 1.5);
-  --ch5-slider--size-regular-handle-height-oval: calc(var(--ch5-slider--size-regular-handle-width-oval) / 1.5);
-  --ch5-slider--size-large-handle-height-oval: calc(var(--ch5-slider--size-large-handle-width-oval) / 1.5);
-  --ch5-slider--size-x-large-handle-height-oval: calc(var(--ch5-slider--size-x-large-handle-width-oval) / 1.5);
-}
-
 ch5-slider:focus {
   outline: none;
 }
 
 ch5-slider {
+  @include ch5-component-base();
   position: relative;
   display: inline-block;
+  display: inline-flex;
   vertical-align: top;
 
   [disabled] .noUi-handle,
@@ -46,7 +38,7 @@ ch5-slider {
 
   .slider-off-button,
   .slider-on-button {
-    opacity: 0.5 !important;
+    @include ch5-component-disabled();
     z-index: 2;
 
     div {
@@ -94,7 +86,6 @@ ch5-slider {
   }
 
   .noUi-handle {
-
     &:before,
     &:after {
       content: none;
@@ -227,7 +218,9 @@ html:not([dir="rtl"]) .ch5_slider--shape--rounded-rectangle .noUi-horizontal .no
 /* Tooltip */
 
 .noUi-tooltip {
-  font-size: 14px;
+  font-size: var(--ch5-slider--tooltip-font-size);
+  font-style: var(--ch5-slider--tooltip-font-style);
+  font-weight: var(--ch5-slider--tooltip-font-weight);
   align-items: center;
 }
 
