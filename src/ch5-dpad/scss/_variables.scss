@@ -140,12 +140,12 @@ ch5-dpad {
   /// related-theme-variable: --theme-ch5-dpad--default-background-color
   --ch5-dpad--default-background-color: var(--theme-ch5-dpad--default-background-color);
 
-  /// description: Font color for type="default" of dpad.
+  /// description: Icon / font color for type="default" of dpad.
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  /// related-theme-variable: --theme-ch5-dpad--default-font-color
-  --ch5-dpad--default-font-color: var(--theme-ch5-dpad--default-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--default-color
+  --ch5-dpad--default-color: var(--theme-ch5-dpad--default-color);
 
   /// description: Pressed background color for type="default" of dpad
   /// type: color
@@ -154,12 +154,12 @@ ch5-dpad {
   /// related-theme-variable: --theme-ch5-dpad--default-pressed-background-color
   --ch5-dpad--default-pressed-background-color: var(--theme-ch5-dpad--default-pressed-background-color);
 
-  /// description: Pressed font color for type="default" of dpad
+  /// description: Pressed icon / font color for type="default" of dpad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f0fff0
-  /// related-theme-variable: --theme-ch5-dpad--default-pressed-font-color
-  --ch5-dpad--default-pressed-font-color: var(--theme-ch5-dpad--default-pressed-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--default-pressed-color
+  --ch5-dpad--default-pressed-color: var(--theme-ch5-dpad--default-pressed-color);
 
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
@@ -176,8 +176,8 @@ ch5-dpad {
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  /// related-theme-variable: --theme-ch5-dpad--primary-font-color
-  --ch5-dpad--primary-font-color: var(--theme-ch5-dpad--primary-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--primary-color
+  --ch5-dpad--primary-color: var(--theme-ch5-dpad--primary-color);
 
   /// description: Pressed background color for type="primary" of dpad
   /// type: color
@@ -186,12 +186,12 @@ ch5-dpad {
   /// related-theme-variable: --theme-ch5-dpad--primary-pressed-background-color
   --ch5-dpad--primary-pressed-background-color: var(--theme-ch5-dpad--primary-pressed-background-color);
 
-  /// description: Pressed font color for type="primary" of dpad
+  /// description: Pressed icon / font color for type="primary" of dpad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  /// related-theme-variable: --theme-ch5-dpad--primary-pressed-font-color
-  --ch5-dpad--primary-pressed-font-color: var(--theme-ch5-dpad--primary-pressed-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--primary-pressed-color
+  --ch5-dpad--primary-pressed-color: var(--theme-ch5-dpad--primary-pressed-color);
 
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
@@ -208,8 +208,8 @@ ch5-dpad {
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f0fff0
-  /// related-theme-variable: --theme-ch5-dpad--info-font-color
-  --ch5-dpad--info-font-color: var(--theme-ch5-dpad--info-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--info-color
+  --ch5-dpad--info-color: var(--theme-ch5-dpad--info-color);
 
   /// description: Pressed background color for type="info" of dpad
   /// type: color
@@ -218,12 +218,12 @@ ch5-dpad {
   /// related-theme-variable: --theme-ch5-dpad--info-pressed-background-color
   --ch5-dpad--info-pressed-background-color: var(--theme-ch5-dpad--info-pressed-background-color);
 
-  /// description: Pressed font color for type="info" of dpad
+  /// description: Pressed icon / font color for type="info" of dpad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f0fff0
-  /// related-theme-variable: --theme-ch5-dpad--info-pressed-font-color
-  --ch5-dpad--info-pressed-font-color: var(--theme-ch5-dpad--info-pressed-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--info-pressed-color
+  --ch5-dpad--info-pressed-color: var(--theme-ch5-dpad--info-pressed-color);
 
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
@@ -240,8 +240,8 @@ ch5-dpad {
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  /// related-theme-variable: --theme-ch5-dpad--danger-font-color
-  --ch5-dpad--danger-font-color: var(--theme-ch5-dpad--danger-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--danger-color
+  --ch5-dpad--danger-color: var(--theme-ch5-dpad--danger-color);
 
   /// description: Pressed background color for type="danger" of dpad
   /// type: color
@@ -250,12 +250,12 @@ ch5-dpad {
   /// related-theme-variable: --theme-ch5-dpad--danger-pressed-background-color
   --ch5-dpad--danger-pressed-background-color: var(--theme-ch5-dpad--danger-pressed-background-color);
 
-  /// description: Pressed font color for type="danger" of dpad
+  /// description: Pressed icon / font color for type="danger" of dpad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  /// related-theme-variable: --theme-ch5-dpad--danger-pressed-font-color
-  --ch5-dpad--danger-pressed-font-color: var(--theme-ch5-dpad--danger-pressed-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--danger-pressed-color
+  --ch5-dpad--danger-pressed-color: var(--theme-ch5-dpad--danger-pressed-color);
 
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
@@ -272,8 +272,8 @@ ch5-dpad {
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  /// related-theme-variable: --theme-ch5-dpad--secondary-font-color
-  --ch5-dpad--secondary-font-color: var(--theme-ch5-dpad--secondary-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--secondary-color
+  --ch5-dpad--secondary-color: var(--theme-ch5-dpad--secondary-color);
 
   /// description: Pressed background color for type="secondary" of dpad
   /// type: color
@@ -282,12 +282,12 @@ ch5-dpad {
   /// related-theme-variable: --theme-ch5-dpad--secondary-pressed-background-color
   --ch5-dpad--secondary-pressed-background-color: var(--theme-ch5-dpad--secondary-pressed-background-color);
 
-  /// description: Pressed font color for type="secondary" of dpad
+  /// description: Pressed icon / font color for type="secondary" of dpad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  /// related-theme-variable: --theme-ch5-dpad--secondary-pressed-font-color
-  --ch5-dpad--secondary-pressed-font-color: var(--theme-ch5-dpad--secondary-pressed-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--secondary-pressed-color
+  --ch5-dpad--secondary-pressed-color: var(--theme-ch5-dpad--secondary-pressed-color);
 
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
@@ -304,8 +304,8 @@ ch5-dpad {
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f0fff0
-  /// related-theme-variable: --theme-ch5-dpad--success-font-color
-  --ch5-dpad--success-font-color: var(--theme-ch5-dpad--success-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--success-color
+  --ch5-dpad--success-color: var(--theme-ch5-dpad--success-color);
 
   /// description: Pressed background color for type="success" of dpad
   /// type: color
@@ -314,12 +314,12 @@ ch5-dpad {
   /// related-theme-variable: --theme-ch5-dpad--success-pressed-background-color
   --ch5-dpad--success-pressed-background-color: var(--theme-ch5-dpad--success-pressed-background-color);
 
-  /// description: Pressed font color for type="success" of dpad
+  /// description: Pressed icon / font color for type="success" of dpad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f0fff0
-  /// related-theme-variable: --theme-ch5-dpad--success-pressed-font-color
-  --ch5-dpad--success-pressed-font-color: var(--theme-ch5-dpad--success-pressed-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--success-pressed-color
+  --ch5-dpad--success-pressed-color: var(--theme-ch5-dpad--success-pressed-color);
 
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
@@ -336,8 +336,8 @@ ch5-dpad {
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  /// related-theme-variable: --theme-ch5-dpad--warning-font-color
-  --ch5-dpad--warning-font-color: var(--theme-ch5-dpad--warning-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--warning-color
+  --ch5-dpad--warning-color: var(--theme-ch5-dpad--warning-color);
 
   /// description: Pressed background color for type="warning" of dpad
   /// type: color
@@ -346,12 +346,12 @@ ch5-dpad {
   /// related-theme-variable: --theme-ch5-dpad--warning-pressed-background-color
   --ch5-dpad--warning-pressed-background-color: var(--theme-ch5-dpad--warning-pressed-background-color);
 
-  /// description: Pressed font color for type="warning" of dpad
+  /// description: Pressed icon / font color for type="warning" of dpad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #f0fff0
-  /// related-theme-variable: --theme-ch5-dpad--warning-pressed-font-color
-  --ch5-dpad--warning-pressed-font-color: var(--theme-ch5-dpad--warning-pressed-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--warning-pressed-color
+  --ch5-dpad--warning-pressed-color: var(--theme-ch5-dpad--warning-pressed-color);
 
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
@@ -368,8 +368,8 @@ ch5-dpad {
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  /// related-theme-variable: --theme-ch5-dpad--text-font-color
-  --ch5-dpad--text-font-color: var(--theme-ch5-dpad--text-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--text-color
+  --ch5-dpad--text-color: var(--theme-ch5-dpad--text-color);
 
   /// description: Pressed background color for type="text" of dpad
   /// type: color
@@ -378,10 +378,10 @@ ch5-dpad {
   /// related-theme-variable: --theme-ch5-dpad--text-pressed-background-color
   --ch5-dpad--text-pressed-background-color: var(--theme-ch5-dpad--text-pressed-background-color);
 
-  /// description: Pressed font color for type="text" of dpad
+  /// description: Pressed icon / font color for type="text" of dpad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333
-  /// related-theme-variable: --theme-ch5-dpad--text-pressed-font-color
-  --ch5-dpad--text-pressed-font-color: var(--theme-ch5-dpad--text-pressed-font-color);
+  /// related-theme-variable: --theme-ch5-dpad--text-pressed-color
+  --ch5-dpad--text-pressed-color: var(--theme-ch5-dpad--text-pressed-color);
 }
