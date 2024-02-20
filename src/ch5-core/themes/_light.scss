@@ -19,6 +19,30 @@
   // Fonts
   // ***************************************
 
+  /// Theme body font color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #000
+  --theme-colors--theme-body-font-color: #000;
+
+  /// Theme header font color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #485fc7
+  --theme-colors--theme-header-font-color: #485fc7;
+
+  /// Theme background color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f8f8f8
+  --theme-colors--theme-background-color: #f8f8f8;
+
+  /// Theme border color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #9e9e9e
+  --theme-colors--theme-border-color: #9e9e9e;
+
   /// Font size at the theme level
   /// type: unit
   /// values: px, vw, vh, em, rem, %

@@ -7,56 +7,84 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-zoom-light-theme-variables
+/// @group ch5-high-contrast-theme-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import "../../ch5-core/variables";
 
-[data-theme="zoom-light-theme"],
-.zoom-light-theme {
-  /// Font size
+[data-theme="high-contrast-theme"],
+.high-contrast-theme {
+  // ***************************************
+  // Fonts
+  // ***************************************
+
+  /// Theme body font color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #001351
+  --theme-colors--theme-body-font-color: #001351;
+
+  /// Theme header font color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #485fc7
+  --theme-colors--theme-header-font-color: #485fc7;
+
+  /// Theme background color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--theme-background-color: #ffffff;
+
+  /// Theme border color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #001351
+  --theme-colors--theme-border-color: #001351;
+
+  /// Font size at the theme level
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 16px
   --theme-fonts--font-size: 16px;
 
-  /// Font style
+  /// Font style at the theme level
   /// type: list
   /// values: normal, italic
   /// example: normal
   --theme-fonts--font-style: normal;
 
-  /// Font weight
+  /// Font weight at the theme level
   /// type: list
   /// values: normal, bold
   /// example: normal
   --theme-fonts--font-weight: normal;
 
-  /// Scrollbar width
+  /// Scrollbar width at the theme level
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 7px
   --theme-others--scrollbar-width: 7px;
 
-  /// Scrollbar border radius
+  /// Scrollbar border radius at the theme level
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 10px
   --theme-others--scrollbar-border-radius: 10px;
 
-  /// Scrollbar track color
+  /// Scrollbar track color at the theme level
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.1)
   --theme-others--scrollbar-track-color: rgba(0, 0, 0, 0.1);
 
-  /// Scrollbar thumb color
+  /// Scrollbar thumb color at the theme level
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: rgba(0, 0, 0, 0.5)
   --theme-others--scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
 
-  /// Disabled opacity
+  /// Disabled opacity value at the theme level
   /// type: number
   /// values: 1, 10, 100
   /// example: 0.5
@@ -66,443 +94,443 @@
   // Color system
   // ***************************************
 
-  /// Background color
+  /// Background color for type="default"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #0e72ed
-  --theme-colors--default-background-color: #0e72ed;
+  /// example: #0000ff
+  --theme-colors--default-background-color: #0000ff;
 
-  /// Border color
+  /// Border color for type="default"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #0091ea
-  --theme-colors--default-border-color: #0091ea;
+  /// example: #0000ff
+  --theme-colors--default-border-color: #0000ff;
 
-  /// Font color
+  /// Font color for type="default"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--default-font-color: #ffffff;
 
-  /// Pressed background color
+  /// Pressed background color for type="default"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #0862d1
-  --theme-colors--default-pressed-background-color: #0862d1;
+  /// example: #00008b
+  --theme-colors--default-pressed-background-color: #00008b;
 
-  /// Pressed border color
+  /// Pressed border color for type="default"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #0091ea
-  --theme-colors--default-pressed-border-color: #0091ea;
+  /// example: #0000ff
+  --theme-colors--default-pressed-border-color: #0000ff;
 
-  /// Pressed font color
+  /// Pressed font color for type="default"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #ffffff
-  --theme-colors--default-pressed-font-color: #ffffff;
+  /// example: #f0fff0
+  --theme-colors--default-pressed-font-color: #f0fff0;
 
-  /// Selected background color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #0862d1
-  --theme-colors--default-selected-background-color: #0862d1;
-
-  /// Selected border color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #0091ea
-  --theme-colors--default-selected-border-color: #0091ea;
-
-  /// Selected font color
+  /// Selected background color for type="default"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors--default-selected-font-color: #ffffff;
+  --theme-colors--default-selected-background-color: #ffffff;
 
-  /// Background color
+  /// Selected border color for type="default"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #e8e8f1
-  --theme-colors--primary-background-color: #e8e8f1;
+  /// example: #0000ff
+  --theme-colors--default-selected-border-color: #0000ff;
 
-  /// Border color
+  /// Selected font color for type="default"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #bdbdbd
-  --theme-colors--primary-border-color: #bdbdbd;
+  /// example: #0000ff
+  --theme-colors--default-selected-font-color: #0000ff;
 
-  /// Font color
+  /// Background color for type="primary"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #333
-  --theme-colors--primary-font-color: #333;
+  /// example: #000000
+  --theme-colors--primary-background-color: #000000;
 
-  /// Primary pressed background color
+  /// Border color for type="primary"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #d9d9e6
-  --theme-colors--primary-pressed-background-color: #d9d9e6;
+  /// example: #000000
+  --theme-colors--primary-border-color: #000000;
 
-  /// Primary pressed border color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #bdbdbd
-  --theme-colors--primary-pressed-border-color: #bdbdbd;
-
-  /// Primary pressed font color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #333
-  --theme-colors--primary-pressed-font-color: #333;
-
-  /// Primary select background color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #6e6e7a
-  --theme-colors--primary-selected-background-color: #6e6e7a;
-
-  /// Primary selected border color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #bdbdbd
-  --theme-colors--primary-selected-border-color: #bdbdbd;
-
-  /// Primary selected font color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #333
-  --theme-colors--primary-selected-font-color: #333;
-
-  /// Info background color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #f26d21
-  --theme-colors--info-background-color: #f26d21;
-
-  /// Info border color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #f26d21
-  --theme-colors--info-border-color: #f26d21;
-
-  /// Info font color
+  /// Font color for type="primary"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors--info-font-color: #ffffff;
+  --theme-colors--primary-font-color: #ffffff;
 
-  /// Info pressed background color
+  /// Pressed background color for type="primary"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #d56832
-  --theme-colors--info-pressed-background-color: #d56832;
+  /// example: #2b2b2b
+  --theme-colors--primary-pressed-background-color: #2b2b2b;
 
-  /// Info pressed border color
+  /// Pressed border color for type="primary"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #f26d21
-  --theme-colors--info-pressed-border-color: #f26d21;
+  /// example: #000000
+  --theme-colors--primary-pressed-border-color: #000000;
 
-  /// Info pressed font color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #ffffff
-  --theme-colors--info-pressed-font-color: #ffffff;
-
-  /// Info selected background color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #d56832
-  --theme-colors--info-selected-background-color: #d56832;
-
-  /// Info selected border color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #f26d21
-  --theme-colors--info-selected-border-color: #f26d21;
-
-  /// Info selected font color
+  /// Pressed font color for type="primary"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors--info-selected-font-color: #ffffff;
+  --theme-colors--primary-pressed-font-color: #ffffff;
 
-  /// Danger background color
+  /// Selected background color for type="primary"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #de2828
-  --theme-colors--danger-background-color: #de2828;
+  /// example: #ffffff
+  --theme-colors--primary-selected-background-color: #ffffff;
 
-  /// Danger border color
+  /// Selected border color for type="primary"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #e53935
-  --theme-colors--danger-border-color: #e53935;
+  /// example: #000000
+  --theme-colors--primary-selected-border-color: #000000;
 
-  /// Danger font color
+  /// Selected font color for type="primary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #000000
+  --theme-colors--primary-selected-font-color: #000000;
+
+  /// Background color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #00ffff
+  --theme-colors--info-background-color: #00ffff;
+
+  /// Border color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #00ffff
+  --theme-colors--info-border-color: #00ffff;
+
+  /// Font color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #000000
+  --theme-colors--info-font-color: #000000;
+
+  /// Pressed background color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #00e6e6
+  --theme-colors--info-pressed-background-color: #00e6e6;
+
+  /// Pressed border color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #00ffff
+  --theme-colors--info-pressed-border-color: #00ffff;
+
+  /// Pressed font color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #000000
+  --theme-colors--info-pressed-font-color: #000000;
+
+  /// Selected background color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--info-selected-background-color: #ffffff;
+
+  /// Selected border color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #00ffff
+  --theme-colors--info-selected-border-color: #00ffff;
+
+  /// Selected font color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #000000
+  --theme-colors--info-selected-font-color: #000000;
+
+  /// Background color for type="danger"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ff0000
+  --theme-colors--danger-background-color: #ff0000;
+
+  /// Border color for type="danger"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ff0000
+  --theme-colors--danger-border-color: #ff0000;
+
+  /// Font color for type="danger"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--danger-font-color: #ffffff;
 
-  /// Danger pressed background color
+  /// Pressed background color for type="danger"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #ca2424
-  --theme-colors--danger-pressed-background-color: #ca2424;
+  /// example: #b71c1c
+  --theme-colors--danger-pressed-background-color: #b71c1c;
 
-  /// Danger pressed border color
+  /// Pressed border color for type="danger"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #e53935
-  --theme-colors--danger-pressed-border-color: #e53935;
+  /// example: #ff0000
+  --theme-colors--danger-pressed-border-color: #ff0000;
 
-  /// Danger pressed font color
+  /// Pressed font color for type="danger"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--danger-pressed-font-color: #ffffff;
 
-  /// Danger selected background color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #ca2424
-  --theme-colors--danger-selected-background-color: #ca2424;
-
-  /// Danger selected border color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #e53935
-  --theme-colors--danger-selected-border-color: #e53935;
-
-  /// Danger selected font color
+  /// Selected background color for type="danger"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors--danger-selected-font-color: #ffffff;
+  --theme-colors--danger-selected-background-color: #ffffff;
 
-  /// Secondary background color
+  /// Selected border color for type="danger"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #e7f1fd
-  --theme-colors--secondary-background-color: #e7f1fd;
+  /// example: #ff0000
+  --theme-colors--danger-selected-border-color: #ff0000;
 
-  /// Secondary border color
+  /// Selected font color for type="danger"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #dbe7f5
-  --theme-colors--secondary-border-color: #dbe7f5;
+  /// example: #ff0000
+  --theme-colors--danger-selected-font-color: #ff0000;
 
-  /// Secondary font color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #333
-  --theme-colors--secondary-font-color: #333;
-
-  /// Secondary pressed background color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #9bc5f8
-  --theme-colors--secondary-pressed-background-color: #9bc5f8;
-
-  /// Secondary pressed border color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #dbe7f5
-  --theme-colors--secondary-pressed-border-color: #dbe7f5;
-
-  /// Secondary pressed font color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #333
-  --theme-colors--secondary-pressed-font-color: #333;
-
-  /// Secondary selected background color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #9bc5f8
-  --theme-colors--secondary-selected-background-color: #9bc5f8;
-
-  /// Secondary selected border color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #dbe7f5
-  --theme-colors--secondary-selected-border-color: #dbe7f5;
-
-  /// Secondary selected font color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #333
-  --theme-colors--secondary-selected-font-color: #333;
-
-  /// Success background color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #268543
-  --theme-colors--success-background-color: #268543;
-
-  /// Success border color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #43a047
-  --theme-colors--success-border-color: #43a047;
-
-  /// Success font color
+  /// Background color for type="secondary"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors--success-font-color: #ffffff;
+  --theme-colors--secondary-background-color: #ffffff;
 
-  /// Success pressed background color
+  /// Border color for type="secondary"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #23d959
-  --theme-colors--success-pressed-background-color: #23d959;
+  /// example: #939393
+  --theme-colors--secondary-border-color: #939393;
 
-  /// Success pressed border color
+  /// Font color for type="secondary"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #43a047
-  --theme-colors--success-pressed-border-color: #43a047;
+  /// example: #000000
+  --theme-colors--secondary-font-color: #000000;
 
-  /// Success pressed font color
+  /// Pressed background color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #939393
+  --theme-colors--secondary-pressed-background-color: #939393;
+
+  /// Pressed border color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #939393
+  --theme-colors--secondary-pressed-border-color: #939393;
+
+  /// Pressed font color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #000000
+  --theme-colors--secondary-pressed-font-color: #000000;
+
+  /// Selected background color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #7e7e7e
+  --theme-colors--secondary-selected-background-color: #7e7e7e;
+
+  /// Selected border color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #939393
+  --theme-colors--secondary-selected-border-color: #939393;
+
+  /// Selected font color for type="secondary"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors--success-pressed-font-color: #ffffff;
+  --theme-colors--secondary-selected-font-color: #ffffff;
 
-  /// Success selected background color
+  /// Background color for type="success"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #23d959
-  --theme-colors--success-selected-background-color: #23d959;
+  /// example: #00ff00
+  --theme-colors--success-background-color: #00ff00;
 
-  /// Success selected border color
+  /// Border color for type="success"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #43a047
-  --theme-colors--success-selected-border-color: #43a047;
+  /// example: #00ff00
+  --theme-colors--success-border-color: #00ff00;
 
-  /// Success selected font color
+  /// Font color for type="success"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #000000
+  --theme-colors--success-font-color: #000000;
+
+  /// Pressed background color for type="success"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #00aa00
+  --theme-colors--success-pressed-background-color: #00aa00;
+
+  /// Pressed border color for type="success"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #00ff00
+  --theme-colors--success-pressed-border-color: #00ff00;
+
+  /// Pressed font color for type="success"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #000000
+  --theme-colors--success-pressed-font-color: #000000;
+
+  /// Selected background color for type="success"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors--success-selected-font-color: #ffffff;
+  --theme-colors--success-selected-background-color: #ffffff;
 
-  /// Warning background color
+  /// Selected border color for type="success"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #faac2a
-  --theme-colors--warning-background-color: #faac2a;
+  /// example: #00ff00
+  --theme-colors--success-selected-border-color: #00ff00;
 
-  /// Warning border color
+  /// Selected font color for type="success"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #ffb300
-  --theme-colors--warning-border-color: #ffb300;
+  /// example: #000000
+  --theme-colors--success-selected-font-color: #000000;
 
-  /// Warning font color
+  /// Background color for type="warning"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #333
-  --theme-colors--warning-font-color: #333;
+  /// example: #ff4500
+  --theme-colors--warning-background-color: #ff4500;
 
-  /// Warning pressed background color
+  /// Border color for type="warning"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ff4500
+  --theme-colors--warning-border-color: #ff4500;
+
+  /// Font color for type="warning"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--warning-font-color: #ffffff;
+
+  /// Pressed background color for type="warning"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ff6f00
   --theme-colors--warning-pressed-background-color: #ff6f00;
 
-  /// Warning pressed border color
+  /// Pressed border color for type="warning"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #ffb300
-  --theme-colors--warning-pressed-border-color: #ffb300;
+  /// example: #ff4500
+  --theme-colors--warning-pressed-border-color: #ff4500;
 
-  /// Warning pressed font color
+  /// Pressed font color for type="warning"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--warning-pressed-font-color: #ffffff;
 
-  /// Warning selected background color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #ff6f00
-  --theme-colors--warning-selected-background-color: #ff6f00;
-
-  /// Warning selected border color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #ffb300
-  --theme-colors--warning-selected-border-color: #ffb300;
-
-  /// Warning selected font color
+  /// Selected background color for type="warning"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors--warning-selected-font-color: #ffffff;
+  --theme-colors--warning-selected-background-color: #ffffff;
 
-  /// Text background color
+  /// Selected border color for type="warning"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #efeff4
-  --theme-colors--text-background-color: #efeff4;
+  /// example: #ff4500
+  --theme-colors--warning-selected-border-color: #ff4500;
 
-  /// Text border color
+  /// Selected font color for type="warning"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #e0e0e0
-  --theme-colors--text-border-color: #e0e0e0;
+  /// example: #ff4500
+  --theme-colors--warning-selected-font-color: #ff4500;
 
-  /// Text font color
+  /// Background color for type="text"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #333
-  --theme-colors--text-font-color: #333;
+  /// example: #561b8d
+  --theme-colors--text-background-color: #561b8d;
 
-  /// Text pressed background color
+  /// Border color for type="text"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #f5f5f8
-  --theme-colors--text-pressed-background-color: #f5f5f8;
+  /// example: #561b8d
+  --theme-colors--text-border-color: #561b8d;
 
-  /// Text pressed border color
+  /// Font color for type="text"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #e0e0e0
-  --theme-colors--text-pressed-border-color: #e0e0e0;
+  /// example: #ffffff
+  --theme-colors--text-font-color: #ffffff;
 
-  /// Text pressed font color
+  /// Pressed background color for type="text"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #8429d9
+  --theme-colors--text-pressed-background-color: #8429d9;
+
+  /// Pressed border color for type="text"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #561b8d
+  --theme-colors--text-pressed-border-color: #561b8d;
+
+  /// Pressed font color for type="text"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
   --theme-colors--text-pressed-font-color: #ffffff;
 
-  /// Text selected background color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #f5f5f8
-  --theme-colors--text-selected-background-color: #f5f5f8;
-
-  /// Text selected border color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #e0e0e0
-  --theme-colors--text-selected-border-color: #e0e0e0;
-
-  /// Text selected font color
+  /// Selected background color for type="text"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #ffffff
-  --theme-colors--text-selected-font-color: #ffffff;
+  --theme-colors--text-selected-background-color: #ffffff;
+
+  /// Selected border color for type="text"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #561b8d
+  --theme-colors--text-selected-border-color: #561b8d;
+
+  /// Selected font color for type="text"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #561b8d
+  --theme-colors--text-selected-font-color: #561b8d;
 
   // ***************************************
   // ch5-animation
   // ***************************************
 
-  --theme-ch5-animation--color: #3f3f3f;
+  --theme-ch5-animation--color: #000;
 
   --theme-ch5-animation--size-regular: 72px;
 
@@ -1172,21 +1200,21 @@
 
   --theme-ch5-overlay-panel--font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-overlay-panel--close-icon-color: #555;
+  --theme-ch5-overlay-panel--close-icon-color: #000;
 
-  --theme-ch5-overlay-panel--close-icon-color-hover: #333;
+  --theme-ch5-overlay-panel--close-icon-color-hover: #000;
 
   --theme-ch5-overlay-panel--mask-background-color: rgba(150, 150, 150, 0.3);
 
-  --theme-ch5-overlay-panel--close-icon-background-color: #fff;
+  --theme-ch5-overlay-panel--close-icon-background-color: #{$white};
 
-  --theme-ch5-overlay-panel--background-color: #fff;
+  --theme-ch5-overlay-panel--background-color: #{$white};
 
-  --theme-ch5-overlay-panel--border-color: #aeaeae;
+  --theme-ch5-overlay-panel--border-color: #000000;
 
-  --theme-ch5-overlay-panel--text-color: #4a4a4a;
+  --theme-ch5-overlay-panel--text-color: #000000;
 
-  --theme-ch5-overlay-panel--contents-font-color: #333;
+  --theme-ch5-overlay-panel--contents-font-color: #000000;
 
   --theme-ch5-overlay-panel--border-width: 1px;
 
@@ -1242,15 +1270,15 @@
 
   --theme-ch5-select--border-style: solid;
 
-  --theme-ch5-select--border-color: #c6c8ca;
+  --theme-ch5-select--border-color: #000;
 
-  --theme-ch5-select--font-color: #{$black};
+  --theme-ch5-select--font-color: #000;
 
-  --theme-ch5-select--option-item-selected-background-color: #cce5ff;
+  --theme-ch5-select--option-item-selected-background-color: #0000ff;
 
   --theme-ch5-select--option-item-border-color: transparent;
 
-  --theme-ch5-select--option-item-color: #212529;
+  --theme-ch5-select--option-item-color: var(--theme-colors--warning-background-color);
 
   --theme-ch5-select--option-item-background-color: transparent;
 
@@ -1310,7 +1338,7 @@
   // ch5-spinner
   // ***************************************
 
-  --theme-ch5-spinner--active-item-color: #000;
+  --theme-ch5-spinner--active-item-color: #fff;
 
   --theme-ch5-spinner--font-size: 22px;
 
@@ -1320,15 +1348,15 @@
 
   --theme-ch5-spinner--icon-size: var(--theme-ch5-spinner-font-size);
 
-  --theme-ch5-spinner--item-color: #333;
+  --theme-ch5-spinner--item-color: #939393;
 
   --theme-ch5-spinner--overlay-background-color: #000;
 
   --theme-ch5-spinner--highlight-box-shadow-color: rgba(0, 0, 0, 0.3);
 
-  --theme-ch5-spinner--highlight-border-color: #00ff00;
+  --theme-ch5-spinner--highlight-border-color: #ff0000;
 
-  --theme-ch5-spinner--background-color: transparent;
+  --theme-ch5-spinner--background-color: #0000ff;
 
   --theme-ch5-spinner--border-width: 1px;
 
@@ -1369,14 +1397,6 @@
   --theme-ch5-text--height: 48px;
 
   --theme-ch5-text--padding: 10px;
-
-  --theme-ch5-text--font-size: var(--theme-fonts--font-size);
-
-  --theme-ch5-text--font-style: var(--theme-fonts--font-style);
-
-  --theme-ch5-text--font-weight: var(--theme-fonts--font-weight);
-
-  --theme-ch5-text--font-color: var(--theme-fonts--font-color);
 
   // ***************************************
   // ch5-textinput
@@ -1422,7 +1442,7 @@
 
   --theme-ch5-textinput--x-small-font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-textinput--mask-text-color: #000000;
+  --theme-ch5-textinput--mask-text-color: #4a4a4a;
 
   --theme-ch5-textinput--input-text-color: var(--theme-ch5-textinput--mask-text-color);
 
@@ -1430,7 +1450,7 @@
 
   --theme-ch5-textinput--label-text-color: var(--theme-ch5-textinput--mask-text-color);
 
-  --theme-ch5-textinput--input-border-color: #666;
+  --theme-ch5-textinput--input-border-color: blue;
 
   --theme-ch5-textinput--input-background-color: transparent;
 
@@ -1480,6 +1500,14 @@
 
   --theme-ch5-textinput--x-large-height: 60px;
 
+  --theme-ch5-text--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-text--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-text--font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-text--font-color: var(--theme-fonts--font-color);
+
   // ***************************************
   // ch5-toggle
   // ***************************************
@@ -1498,23 +1526,23 @@
 
   --theme-ch5-toggle--icon-size: var(--theme-fonts--font-size);
 
-  --theme-ch5-toggle--rectangle-handle-selected-background-color: #4bd865;
+  --theme-ch5-toggle--rectangle-handle-selected-background-color: #0000ff;
 
-  --theme-ch5-toggle--circle-handle-selected-background-color: #4bd865;
+  --theme-ch5-toggle--circle-handle-selected-background-color: #0000ff;
 
-  --theme-ch5-toggle--label-font-color: #4a4a4a;
+  --theme-ch5-toggle--label-font-color: #000;
 
   --theme-ch5-toggle--text-font-color: #{$white};
 
   --theme-ch5-toggle--icon-font-color: #{$white};
 
-  --theme-ch5-toggle--circle-handle-border-color: #d8d9db;
+  --theme-ch5-toggle--circle-handle-border-color: #939393;
 
-  --theme-ch5-toggle--circle-background-color: #d8d9db;
+  --theme-ch5-toggle--circle-background-color: #939393;
 
   --theme-ch5-toggle--circle-label-on-color: #{$white};
 
-  --theme-ch5-toggle--circle-label-off-color: #666;
+  --theme-ch5-toggle--circle-label-off-color: #000;
 
   --theme-ch5-toggle--circle-handle-background-color: #{$white};
 
@@ -1560,9 +1588,9 @@
 
   --theme-ch5-modal-dialog--prompt-text-font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-modal-dialog--close-icon-color: #555;
+  --theme-ch5-modal-dialog--close-icon-color: #000;
 
-  --theme-ch5-modal-dialog--close-icon-color-hover: #333;
+  --theme-ch5-modal-dialog--close-icon-color-hover: #0000ff;
 
   --theme-ch5-modal-dialog--mask-bg-color: rgba(150, 150, 150, 0.3);
 
@@ -1570,9 +1598,9 @@
 
   --theme-ch5-modal-dialog--background-color: #{$white};
 
-  --theme-ch5-modal-dialog--text-color: #4a4a4a;
+  --theme-ch5-modal-dialog--text-color: #000;
 
-  --theme-ch5-modal-dialog--contents-font-color: #333;
+  --theme-ch5-modal-dialog--contents-font-color: #000;
 
   --theme-ch5-modal-dialog--border-color: #939393;
 
@@ -1624,17 +1652,17 @@
 
   --theme-ch5-slider--button-default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
 
-  --theme-ch5-slider--connect-background-color: #0099ff;
+  --theme-ch5-slider--connect-background-color: #0000ff;
 
   --theme-ch5-slider--target-background-color: transparent;
 
-  --theme-ch5-slider--target-border-color: #8f8f8f;
+  --theme-ch5-slider--target-border-color: #000;
 
   --theme-ch5-slider--handle-background-color: #fff;
 
-  --theme-ch5-slider--handle-border-color: #8f8f8f;
+  --theme-ch5-slider--handle-border-color: #000;
 
-  --theme-ch5-slider--pips-color: #8f8f8f;
+  --theme-ch5-slider--pips-color: #000;
 
   --theme-ch5-slider--height: 18px;
 
@@ -1790,11 +1818,11 @@
   // ch5-list
   // ***************************************
 
-  --theme-ch5-list--item-color: #333;
+  --theme-ch5-list--item-color: #fff;
 
-  --theme-ch5-list--item-background-color: #fafafa;
+  --theme-ch5-list--item-background-color: #0000ff;
 
-  --theme-ch5-list--item-border-color: #bdbdbd;
+  --theme-ch5-list--item-border-color: #fff;
 
   --theme-ch5-list--item-border-width: 1px;
 

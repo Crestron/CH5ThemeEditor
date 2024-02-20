@@ -1,4 +1,4 @@
-const packageJson = require('../../package.json') // TODO: Currently picking from parent folder package.json, In future it should be picked from helpers folder
+const packageJson = require('../../package.json') // Currently picking from parent folder package.json, In future it should be picked from helpers folder
 const CONFIG = require('./config.json');
 const fs = require('fs');
 const flatten = require('@raghavendradabbir/sass-flatten');
@@ -7,6 +7,8 @@ const { execSync } = require("child_process");
 
 const components = CONFIG.COMPONENTS;
 const themes = CONFIG.THEMES;
+
+// TODO - Need all corner cases
 
 const outputJSON = {
 	version: packageJson.version,
@@ -28,7 +30,7 @@ function findMissingThemeVariables() {
 
 	// Add theme variables
 	for (const theme in themes) {
-		const data = fs.readFileSync(CONFIG.THEME_EDITOR_THEME_FILES_PATH + theme + '.scss', 'utf-8')
+		const data = fs.readFileSync(CONFIG.THEME_EDITOR_THEME_FILES_PATH + "_" + theme + '.scss', 'utf-8');
 		themesVariables.push({
 			name: themes[theme]['value'],
 			variables: getVariables(data)
@@ -215,6 +217,7 @@ function getComponentScss(component) {
 	const scss = globalVars + globalMixins + componentScss;
 	return removeComments(scss);
 }
+
 function getComponentScssWithoutVariables(component) {
 	const res = [];
 	const sourcePath = CONFIG.THEME_EDITOR_SOURCE_FILES_PATH;
@@ -237,7 +240,6 @@ function getComponentScssWithoutVariables(component) {
 }
 
 function getComponentCss(data) {
-
 	const inputFile = CONFIG.CSS_INPUT_FILE_NAME;
 	const outputFile = CONFIG.CSS_OUTPUT_FILE_NAME;
 
@@ -479,9 +481,8 @@ async function initialize() {
 
 	// Theme variables
 	for (const theme in themes) {
-
 		const basePath = CONFIG.THEME_EDITOR_THEME_FILES_PATH;
-		const data = fs.readFileSync(basePath + theme + '.scss', 'utf8');
+		const data = fs.readFileSync(basePath + "_" + theme + '.scss', 'utf8');
 
 		const variables = getVariables(data, "theme");
 
