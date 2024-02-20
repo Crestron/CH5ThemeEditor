@@ -316,3 +316,20 @@ ch5-dpad {
 .ch5-disable-child-button {
   // DO NOT DELETE - used for Component Reference
 }
+
+// https://crestroneng.atlassian.net/browse/CH5C-19198
+.zoom-light-theme {
+.ch5-dpad--type-default.ch5-dpad--size-regular.ch5-dpad--shape-plus {
+    .ch5-dpad-child {
+      color: #222230;
+    }
+  }
+}
+
+.zoom-dark-theme {
+.ch5-dpad--type-default.ch5-dpad--size-regular.ch5-dpad--shape-plus {
+    .ch5-dpad-child {
+      color: #F5F5F5;
+    } 
+  }
+}

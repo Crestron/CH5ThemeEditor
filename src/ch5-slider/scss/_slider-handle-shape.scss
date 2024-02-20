@@ -52,3 +52,36 @@
 		}
 	}
 }
+
+// https://crestroneng.atlassian.net/browse/CH5C-19197
+.zoom-light-theme {
+	.ch5-slider--shape--rounded-rectangle {
+		.noUi-target {
+      border-color: #C1C6CE;
+    }
+
+		.noUi-connect {
+			background: #0E72ED;
+		}
+
+		.noUi-connects {
+			background: #C1C6CE;
+		}
+	}
+}
+
+.zoom-dark-theme {
+	.ch5-slider--shape--rounded-rectangle {
+		.noUi-target {
+      border-color: #DFE3E8;
+    }
+
+		.noUi-connect {
+			background: #4F9AF7;
+		}
+
+		.noUi-connects {
+			background: #DFE3E8;
+		}
+	}
+}
