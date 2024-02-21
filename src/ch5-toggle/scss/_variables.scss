@@ -150,8 +150,8 @@ ch5-toggle {
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #464747
-  /// related-theme-variable: --theme-ch5-toggle--rectangle-background
-  --ch5-toggle--rectangle-background: var(--theme-ch5-toggle--rectangle-background);
+  /// related-theme-variable: --theme-ch5-toggle--rectangle-background-color
+  --ch5-toggle--rectangle-background-color: var(--theme-ch5-toggle--rectangle-background-color);
 
   /// description: Text color of the on label when shape="rectangle"
   /// type: color
