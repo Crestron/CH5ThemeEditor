@@ -10,19 +10,19 @@
 /// @group ch5-dpad-mixins
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@mixin ch5-dpad-child-content($property-background-color, $property-font-color) {
+@mixin ch5-dpad-child-content($property-background-color, $property-color) {
   background-color: var(#{$property-background-color});
-  color: var(#{$property-font-color});
+  color: var(#{$property-color});
 }
 
 @mixin ch5-dpad-content($property-value) {
   $property-background-color: "--ch5-dpad--" + $property-value + "-background-color";
-  $property-font-color: "--ch5-dpad--" + $property-value + "-font-color";
+  $property-color: "--ch5-dpad--" + $property-value + "-color";
   $property-pressed-background-color: "--ch5-dpad--" + $property-value + "-pressed-background-color";
-  $property-pressed-font-color: "--ch5-dpad--" + $property-value + "-pressed-font-color";
+  $property-pressed-color: "--ch5-dpad--" + $property-value + "-pressed-color";
 
   .ch5-dpad-child {
-    @include ch5-dpad-child-content($property-background-color, $property-font-color);
+    @include ch5-dpad-child-content($property-background-color, $property-color);
   }
 
   $dpadSizes: ("regular", "x-small", "small", "large", "x-large");
@@ -55,28 +55,28 @@
         .direction-btn {
           /// Applied when up button is in the pressed state
           &.ch5-dpad-button-up--pressed {
-            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-font-color);
+            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-color);
           }
           /// Applied when left button is in the pressed state
           &.ch5-dpad-button-left--pressed {
-            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-font-color);
+            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-color);
           }
 
           /// Applied when right button is in the pressed state
           &.ch5-dpad-button-right--pressed {
-            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-font-color);
+            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-color);
           }
 
           /// Applied when down button is in the pressed state
           &.ch5-dpad-button-down--pressed {
-            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-font-color);
+            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-color);
           }
         }
 
         .center {
           /// Applied when center button is in the pressed state
           &.ch5-dpad-button-center--pressed {
-            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-font-color);
+            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-color);
           }
         }
       }
@@ -84,15 +84,15 @@
   }
 }
 
-@mixin ch5-dpad-content--selected($property-background-color, $property-font-color) {
+@mixin ch5-dpad-content--selected($property-background-color, $property-color) {
   .ch5-dpad-child {
-    @include ch5-dpad-child-content($property-background-color, $property-font-color);
+    @include ch5-dpad-child-content($property-background-color, $property-color);
   }
 }
 
-@mixin ch5-dpad-content--pressed($property-border-radius, $property-background-color, $property-font-color) {
+@mixin ch5-dpad-content--pressed($property-border-radius, $property-background-color, $property-color) {
   &.ch5-dpad-child {
-    @include ch5-dpad-child-content($property-background-color, $property-font-color);
+    @include ch5-dpad-child-content($property-background-color, $property-color);
   }
 
   &.direction-btn.up:after,

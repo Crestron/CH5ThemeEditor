@@ -22,6 +22,12 @@
       text-overflow: ellipsis;
       overflow: hidden;
     }
+
+    .ch5-toggle__on-icon,
+    .ch5-toggle__off-icon {
+      color: var(--ch5-toggle--regular-icon-color);
+      font-size: var(--ch5-toggle--regular-icon-size);
+    }
   }
 
   /// Applied when size='x-small'
@@ -31,7 +37,7 @@
     /* height: 16.66px; */
     .ch5-toggle__off-label,
     .ch5-toggle__on-label {
-      font-size: 10px;
+      font-size: var(--ch5-toggle--x-small-font-size);
       display: table-cell;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -40,7 +46,8 @@
 
     .ch5-toggle__off-icon,
     .ch5-toggle__on-icon {
-      font-size: 10px;
+      color: var(--ch5-toggle--x-small-icon-color);
+      font-size: var(--ch5-toggle--x-small-icon-size);
     }
   }
 
@@ -51,7 +58,7 @@
     /*  height: 25px; */
     .ch5-toggle__off-label,
     .ch5-toggle__on-label {
-      font-size: 12px;
+      font-size: var(--ch5-toggle--small-font-size);
       display: table-cell;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -60,7 +67,8 @@
 
     .ch5-toggle__off-icon,
     .ch5-toggle__on-icon {
-      font-size: 12px;
+      color: var(--ch5-toggle--small-icon-color);
+      font-size: var(--ch5-toggle--small-icon-size);
     }
   }
 
@@ -71,7 +79,7 @@
     /*  height: 41.66px; */
     .ch5-toggle__off-label,
     .ch5-toggle__on-label {
-      font-size: 18px;
+      font-size: var(--ch5-toggle--large-font-size);
       display: table-cell;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -80,7 +88,8 @@
 
     .ch5-toggle__off-icon,
     .ch5-toggle__on-icon {
-      font-size: 18px;
+      color: var(--ch5-toggle--large-icon-color);  
+      font-size: var(--ch5-toggle--large-icon-size);
     }
   }
 
@@ -91,7 +100,7 @@
     /*   height: 50px; */
     .ch5-toggle__off-label,
     .ch5-toggle__on-label {
-      font-size: 20px;
+      font-size: var(--ch5-toggle--x-large-font-size);
       display: table-cell;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -100,7 +109,8 @@
 
     .ch5-toggle__off-icon,
     .ch5-toggle__on-icon {
-      font-size: 20px;
+      color: var(--ch5-toggle--x-large-icon-color);
+      font-size: var(--ch5-toggle--x-large-icon-size);
     }
   }
 }

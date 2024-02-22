@@ -14,7 +14,6 @@
 
 [data-theme="zoom-light-theme"],
 .zoom-light-theme {
-
   // ***************************************
   // Fonts
   // ***************************************
@@ -895,67 +894,67 @@
 
   --theme-ch5-dpad--default-background-color: var(--theme-colors--default-background-color);
 
-  --theme-ch5-dpad--default-font-color: var(--theme-colors--default-font-color);
+  --theme-ch5-dpad--default-color: var(--theme-colors--default-font-color);
 
   --theme-ch5-dpad--default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
 
-  --theme-ch5-dpad--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
+  --theme-ch5-dpad--default-pressed-color: var(--theme-colors--default-pressed-font-color);
 
   --theme-ch5-dpad--primary-background-color: var(--theme-colors--primary-background-color);
 
-  --theme-ch5-dpad--primary-font-color: var(--theme-colors--primary-font-color);
+  --theme-ch5-dpad--primary-color: #222230;
 
   --theme-ch5-dpad--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
 
-  --theme-ch5-dpad--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
+  --theme-ch5-dpad--primary-pressed-color: #222230;
 
   --theme-ch5-dpad--info-background-color: var(--theme-colors--info-background-color);
 
-  --theme-ch5-dpad--info-font-color: var(--theme-colors--info-font-color);
+  --theme-ch5-dpad--info-color: var(--theme-colors--info-font-color);
 
   --theme-ch5-dpad--info-pressed-background-color: var(--theme-colors--info-pressed-background-color);
 
-  --theme-ch5-dpad--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
+  --theme-ch5-dpad--info-pressed-color: var(--theme-colors--info-pressed-font-color);
 
   --theme-ch5-dpad--danger-background-color: var(--theme-colors--danger-background-color);
 
-  --theme-ch5-dpad--danger-font-color: var(--theme-colors--danger-font-color);
+  --theme-ch5-dpad--danger-color: var(--theme-colors--danger-font-color);
 
   --theme-ch5-dpad--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
 
-  --theme-ch5-dpad--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
+  --theme-ch5-dpad--danger-pressed-color: var(--theme-colors--danger-pressed-font-color);
 
   --theme-ch5-dpad--secondary-background-color: var(--theme-colors--secondary-background-color);
 
-  --theme-ch5-dpad--secondary-font-color: var(--theme-colors--secondary-font-color);
+  --theme-ch5-dpad--secondary-color: var(--theme-colors--secondary-font-color);
 
   --theme-ch5-dpad--secondary-pressed-background-color: var(--theme-colors--secondary-pressed-background-color);
 
-  --theme-ch5-dpad--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
+  --theme-ch5-dpad--secondary-pressed-color: var(--theme-colors--secondary-pressed-font-color);
 
   --theme-ch5-dpad--success-background-color: var(--theme-colors--success-background-color);
 
-  --theme-ch5-dpad--success-font-color: var(--theme-colors--success-font-color);
+  --theme-ch5-dpad--success-color: var(--theme-colors--success-font-color);
 
   --theme-ch5-dpad--success-pressed-background-color: var(--theme-colors--success-pressed-background-color);
 
-  --theme-ch5-dpad--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
+  --theme-ch5-dpad--success-pressed-color: var(--theme-colors--success-pressed-font-color);
 
   --theme-ch5-dpad--warning-background-color: var(--theme-colors--warning-background-color);
 
-  --theme-ch5-dpad--warning-font-color: var(--theme-colors--warning-font-color);
+  --theme-ch5-dpad--warning-color: var(--theme-colors--warning-font-color);
 
   --theme-ch5-dpad--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
 
-  --theme-ch5-dpad--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
+  --theme-ch5-dpad--warning-pressed-color: var(--theme-colors--warning-pressed-font-color);
 
   --theme-ch5-dpad--text-background-color: var(--theme-colors--text-background-color);
 
-  --theme-ch5-dpad--text-font-color: var(--theme-colors--text-font-color);
+  --theme-ch5-dpad--text-color: var(--theme-colors--text-font-color);
 
   --theme-ch5-dpad--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
 
-  --theme-ch5-dpad--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
+  --theme-ch5-dpad--text-pressed-color: var(--theme-colors--text-pressed-font-color);
 
   // ***************************************
   // ch5-form
@@ -1519,41 +1518,63 @@
 
   --theme-ch5-toggle--label-font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-toggle--text-font-size: var(--theme-fonts--font-size);
+  --theme-ch5-toggle--regular-font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-toggle--x-small-font-size: 10px;
+  
+  --theme-ch5-toggle--small-font-size: 12px;
+  
+  --theme-ch5-toggle--large-font-size: 18px;
+
+  --theme-ch5-toggle--x-large-font-size: 20px;
 
   --theme-ch5-toggle--text-font-style: var(--theme-fonts--font-style);
 
   --theme-ch5-toggle--text-font-weight: 900;
 
-  --theme-ch5-toggle--icon-size: var(--theme-fonts--font-size);
+  --theme-ch5-toggle--regular-icon-size: var(--theme-fonts--font-size);
 
-  --theme-ch5-toggle--rectangle-handle-selected-background-color: #4bd865;
+  --theme-ch5-toggle--rectangle-handle-on-background-color: #0e72ed;
 
-  --theme-ch5-toggle--circle-handle-selected-background-color: #4bd865;
+  --theme-ch5-toggle--circle-handle-on-background-color: #0e72ed;
+  
+  --theme-ch5-toggle--x-small-icon-size: 10px;
+
+  --theme-ch5-toggle--small-icon-size: 12px;
+
+  --theme-ch5-toggle--large-icon-size: 18px;
+
+  --theme-ch5-toggle--x-large-icon-size: 20px;
+
+  --theme-ch5-toggle--circle-handle-on-border-color: #0e72ed;
 
   --theme-ch5-toggle--label-font-color: #4a4a4a;
 
   --theme-ch5-toggle--text-font-color: #{$white};
 
-  --theme-ch5-toggle--icon-font-color: #{$white};
+  --theme-ch5-toggle--regular-icon-color: #{$white};
 
-  --theme-ch5-toggle--circle-handle-border-color: #d8d9db;
+  --theme-ch5-toggle--small-icon-color: #{$white};
 
-  --theme-ch5-toggle--circle-background-color: #d8d9db;
+  --theme-ch5-toggle--x-small-icon-color: #{$white};
 
-  --theme-ch5-toggle--circle-label-on-color: #{$white};
+  --theme-ch5-toggle--large-icon-color: #{$white};
 
-  --theme-ch5-toggle--circle-label-off-color: #666;
+  --theme-ch5-toggle--x-large-icon-color: #{$white};
 
-  --theme-ch5-toggle--circle-handle-background-color: #{$white};
+  --theme-ch5-toggle--circle-handle-off-border-color: #c1c6ce;
 
-  --theme-ch5-toggle--rectangle-background: #464747;
+  --theme-ch5-toggle--circle-handle-border-width: 2px;
 
-  --theme-ch5-toggle--rectangle-label-on-color: #{$white};
+  --theme-ch5-toggle--circle-handle-border-style: solid;
 
-  --theme-ch5-toggle--rectangle-label-off-color: #{$white};
+  --theme-ch5-toggle--circle-background-color: #c1c6ce;
 
-  --theme-ch5-toggle--rectangle-handle-background-color: #888;
+  --theme-ch5-toggle--circle-knob-background-color: #{$white};
+
+  --theme-ch5-toggle--rectangle-background-color: #c1c6ce;
+
+  --theme-ch5-toggle--rectangle-handle-off-background-color: #888;
 
   --theme-ch5-toggle--label-margin: 10px;
 
@@ -1641,23 +1662,23 @@
   // ch5-slider
   // ***************************************
 
-  --theme-ch5-slider--tooltip-font-size: 14px; 
+  --theme-ch5-slider--tooltip-font-size: 14px;
 
   --theme-ch5-slider--tooltip-font-style: normal;
 
-  --theme-ch5-slider--tooltip-font-weight: normal;  
-  
+  --theme-ch5-slider--tooltip-font-weight: normal;
+
   --theme-ch5-slider--button-default-pressed-border-color: var(--theme-colors--default-pressed-border-color);
 
   --theme-ch5-slider--button-default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
 
   --theme-ch5-slider--button-default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
 
-  --theme-ch5-slider--connect-background-color: #0099ff;
+  --theme-ch5-slider--connect-background-color: #0E72ED;
 
-  --theme-ch5-slider--target-background-color: transparent;
+  --theme-ch5-slider--target-background-color: #C1C6CE;
 
-  --theme-ch5-slider--target-border-color: #8f8f8f;
+  --theme-ch5-slider--target-border-color: #C1C6CE;
 
   --theme-ch5-slider--handle-background-color: #fff;
 
@@ -1698,11 +1719,11 @@
   --theme-ch5-slider--size-x-small-handle-height-oval: 17.3px;
 
   --theme-ch5-slider--size-small-handle-height-oval: 20px;
-  
+
   --theme-ch5-slider--size-regular-handle-height-oval: 24px;
-  
+
   --theme-ch5-slider--size-large-handle-height-oval: 28px;
-  
+
   --theme-ch5-slider--size-x-large-handle-height-oval: 36px;
 
   /* == Button sizes == */
