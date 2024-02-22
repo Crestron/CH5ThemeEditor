@@ -144,7 +144,7 @@ ch5-toggle:focus {
         top: 0;
         width: 33%;
         border-radius: 100%;
-        background-color: var(--ch5-toggle--circle-handle-background-color);
+        background-color: var(--ch5-toggle--circle-knob-background-color);
         border-width: var(--ch5-toggle--circle-handle-border-width);
         border-style: var(--ch5-toggle--circle-handle-border-style);
         border-color: var(--ch5-toggle--circle-handle-off-border-color);
@@ -155,7 +155,7 @@ ch5-toggle:focus {
   /* ch5-toggle - rectangle shape */
   &.ch5-toggle--rectangle {
     .ch5-toggle__handle {
-      background: var(--ch5-toggle--rectangle-background-color);
+      background: var(--ch5-toggle--rectangle-knob-background-color);
       border-radius: 1px;
       box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0;
       margin: var(--ch5-toggle--handle-rectangle-margin);
@@ -209,7 +209,7 @@ ch5-toggle:focus {
         a {
           left: 100%;
           margin-left: -33%;
-          background-color: var(--ch5-toggle--circle-handle-background-color);
+          background-color: var(--ch5-toggle--circle-knob-background-color);
           border-color: var(--ch5-toggle--circle-handle-on-border-color);
         }
       }
