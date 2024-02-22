@@ -10,15 +10,37 @@
 /// @group ch5-video-switcher
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+ch5-video-switcher {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 /// Main class
 .ch5-video-switcher {
   width: 500px;
   aspect-ratio: 16/9;
   padding: 10px;
   display: flex;
-  overflow: hidden;
+  overflow: scroll;
   gap: 10px;
   background-color: #015181;
+  scrollbar-width: none;
+  position: relative; // needed to hide the firefox scrollbar
+
+  .scrollbar-container {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    .scrollbar {
+      position: absolute;
+      will-change: width, transform;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
 
   &--source-list {
     display: flex;
@@ -27,9 +49,19 @@
     flex-direction: column;
     align-items: flex-start;
     align-content: start;
-    overflow: auto;
+    overflow: scroll;
     gap: var(--gap);
     justify-content: space-evenly;
+    will-change: transform;
+
+    &::-webkit-scrollbar {
+      height: 0px;
+      width: 0px;
+    }
+
+    &.active {
+      cursor: -webkit-grabbing;
+    }
 
     .source-container {
       aspect-ratio: 1/1;
@@ -59,6 +91,19 @@
       }
     }
   }
+
+  &.ch5-video-switcher--source-list-scrollbar-true {
+    .scrollbar-container {
+      display: block;
+    }
+  }
+
+  &.ch5-video-switcher--source-list-scrollbar-false {
+    .scrollbar-container {
+      display: none;
+    }
+  }
+
 
   &--screen-list {
     display: flex;

@@ -1,10 +1,38 @@
 .ch5-video-switcher {
     &--source-list-position-top {
         flex-direction: column;
+
+        &.ch5-video-switcher--source-list-scrollbar-true {
+            //padding-bottom: var(--ch5-button-list--scrollbar-width);
+
+            .scrollbar-container {
+                width: 100%;
+                top: 33.3%;
+                height: 7px;
+
+                .scrollbar {
+                    height: 100%;
+                }
+            }
+        }
     }
 
     &--source-list-position-bottom {
         flex-direction: column-reverse;
+
+        &.ch5-video-switcher--source-list-scrollbar-true {
+            //padding-bottom: var(--ch5-button-list--scrollbar-width);
+
+            .scrollbar-container {
+                width: 100%;
+                bottom: 0;
+                height: 7px;
+
+                .scrollbar {
+                    height: 100%;
+                }
+            }
+        }
     }
 
     &--source-list-position-left {
@@ -15,25 +43,53 @@
             width: calc(100% / 3);
             flex-direction: row;
         }
-
         .ch5-video-switcher--screen-list {
-            width: 66%;
             height: 100%;
+            width: 66%;
+        }
+
+        &.ch5-video-switcher--source-list-scrollbar-true {
+            // padding-right: var(--ch5-button-list--scrollbar-width);
+
+            .scrollbar-container {
+                top: 0;
+                height: 100%;
+                left: 33.3%;
+                /* left: auto; */
+                width: 7px;
+
+                .scrollbar {
+                    width: 100%;
+                }
+            }
         }
     }
 
     &--source-list-position-right {
         flex-direction: row-reverse;
-
         .ch5-video-switcher--source-list {
             height: 100%;
             width: calc(100% / 3);
             flex-direction: row;
         }
-
         .ch5-video-switcher--screen-list {
-            width: 66%;
             height: 100%;
+            width: 66%;
+        }
+
+        &.ch5-video-switcher--source-list-scrollbar-true {
+           /*  padding-right: 7px; */
+            .scrollbar-container {
+                top: 0;
+                height: 100%;
+                right: 0;
+                left: auto;
+                width: 7px;
+
+                .scrollbar {
+                    width: 100%;
+                }
+            }
         }
     }
 }
