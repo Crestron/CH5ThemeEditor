@@ -1518,39 +1518,63 @@
 
   --theme-ch5-toggle--label-font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-toggle--text-font-size: var(--theme-fonts--font-size);
+  --theme-ch5-toggle--regular-text-font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-toggle--x-small-text-font-size: 10px;
+  
+  --theme-ch5-toggle--small-text-font-size: 12px;
+  
+  --theme-ch5-toggle--large-text-font-size: 18px;
+
+  --theme-ch5-toggle--x-large-text-font-size: 20px;
 
   --theme-ch5-toggle--text-font-style: var(--theme-fonts--font-style);
 
   --theme-ch5-toggle--text-font-weight: 900;
 
-  --theme-ch5-toggle--icon-size: var(--theme-fonts--font-size);
+  --theme-ch5-toggle--regular-icon-size: var(--theme-fonts--font-size);
 
   --theme-ch5-toggle--rectangle-handle-selected-background-color: #4f9af7;
 
   --theme-ch5-toggle--circle-handle-selected-background-color: #4f9af7;
+  
+  --theme-ch5-toggle--x-small-icon-size: 10px;
+
+  --theme-ch5-toggle--small-icon-size: 12px;
+
+  --theme-ch5-toggle--large-icon-size: 18px;
+
+  --theme-ch5-toggle--x-large-icon-size: 20px;
+
+  --theme-ch5-toggle--rectangle-handle-on-background-color: #3aa64e;
+
+  --theme-ch5-toggle--circle-handle-on-background-color: #3aa64e;
+
+  --theme-ch5-toggle--circle-handle-on-border-color: #3aa64e;
 
   --theme-ch5-toggle--label-font-color: #efefef;
 
   --theme-ch5-toggle--text-font-color: #17171a;
 
-  --theme-ch5-toggle--icon-font-color: #17171a;
+  --theme-ch5-toggle--regular-icon-font-color: #17171a;
 
   --theme-ch5-toggle--circle-handle-border-color: #dfe3e8;
+  
+  --theme-ch5-toggle--small-icon-font-color: #17171a;
+
+  --theme-ch5-toggle--x-small-icon-font-color: #17171a;
+
+  --theme-ch5-toggle--large-icon-font-color: #17171a;
+
+  --theme-ch5-toggle--x-large-icon-font-color: #17171a;
+
+  --theme-ch5-toggle--circle-handle-off-border-color: #797979;
 
   --theme-ch5-toggle--circle-background-color: #dfe3e8;
-
-  --theme-ch5-toggle--circle-label-on-color: #{$white};
-
-  --theme-ch5-toggle--circle-label-off-color: #666;
 
   --theme-ch5-toggle--circle-handle-background-color: #17171a;
 
   --theme-ch5-toggle--rectangle-background-color: #dfe3e8;
-
-  --theme-ch5-toggle--rectangle-label-on-color: #{$white};
-
-  --theme-ch5-toggle--rectangle-label-off-color: #{$white};
 
   --theme-ch5-toggle--rectangle-handle-background-color: #7b7b8c;
 
