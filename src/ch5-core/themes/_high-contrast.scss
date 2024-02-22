@@ -1518,15 +1518,15 @@
 
   --theme-ch5-toggle--label-font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-toggle--regular-text-font-size: var(--theme-fonts--font-size);
+  --theme-ch5-toggle--regular-font-size: var(--theme-fonts--font-size);
 
-  --theme-ch5-toggle--x-small-text-font-size: 10px;
+  --theme-ch5-toggle--x-small-font-size: 10px;
   
-  --theme-ch5-toggle--small-text-font-size: 12px;
+  --theme-ch5-toggle--small-font-size: 12px;
   
-  --theme-ch5-toggle--large-text-font-size: 18px;
+  --theme-ch5-toggle--large-font-size: 18px;
 
-  --theme-ch5-toggle--x-large-text-font-size: 20px;
+  --theme-ch5-toggle--x-large-font-size: 20px;
 
   --theme-ch5-toggle--text-font-style: var(--theme-fonts--font-style);
 
@@ -1552,17 +1552,21 @@
 
   --theme-ch5-toggle--text-font-color: #{$white};
 
-  --theme-ch5-toggle--regular-icon-font-color: #{$white};
+  --theme-ch5-toggle--regular-icon-color: #{$white};
 
-  --theme-ch5-toggle--small-icon-font-color: #{$white};
+  --theme-ch5-toggle--small-icon-color: #{$white};
 
-  --theme-ch5-toggle--x-small-icon-font-color: #{$white};
+  --theme-ch5-toggle--x-small-icon-color: #{$white};
 
-  --theme-ch5-toggle--large-icon-font-color: #{$white};
+  --theme-ch5-toggle--large-icon-color: #{$white};
 
-  --theme-ch5-toggle--x-large-icon-font-color: #{$white};
+  --theme-ch5-toggle--x-large-icon-color: #{$white};
 
   --theme-ch5-toggle--circle-handle-off-border-color: #939393;
+
+  --theme-ch5-toggle--circle-handle-border-width: 0.25em;
+
+  --theme-ch5-toggle--circle-handle-border-style: solid;
 
   --theme-ch5-toggle--circle-background-color: #939393;
 

@@ -43,36 +43,36 @@ ch5-toggle {
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 16px
-  /// related-theme-variable: --theme-ch5-toggle--regular-text-font-size
-  --ch5-toggle--regular-text-font-size: var(--theme-ch5-toggle--regular-text-font-size); 
+  /// related-theme-variable: --theme-ch5-toggle--regular-font-size
+  --ch5-toggle--regular-font-size: var(--theme-ch5-toggle--regular-font-size); 
 
   /// description: Font size applied on the on|off label when size="small"
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 12px
-  /// related-theme-variable: --theme-ch5-toggle--small-text-font-size
-  --ch5-toggle--small-text-font-size: var(--theme-ch5-toggle--small-text-font-size);
+  /// related-theme-variable: --theme-ch5-toggle--small-font-size
+  --ch5-toggle--small-font-size: var(--theme-ch5-toggle--small-font-size);
 
   /// description: Font size applied on the on|off label when size="x-small"
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 10px
-  /// related-theme-variable: --theme-ch5-toggle--x-small-text-font-size
-  --ch5-toggle--x-small-text-font-size: var(--theme-ch5-toggle--x-small-text-font-size);
+  /// related-theme-variable: --theme-ch5-toggle--x-small-font-size
+  --ch5-toggle--x-small-font-size: var(--theme-ch5-toggle--x-small-font-size);
 
   /// description: Font size applied on the on|off label when size="large"
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 18px
-  /// related-theme-variable: --theme-ch5-toggle--large-text-font-size
-  --ch5-toggle--large-text-font-size: var(--theme-ch5-toggle--large-text-font-size);
+  /// related-theme-variable: --theme-ch5-toggle--large-font-size
+  --ch5-toggle--large-font-size: var(--theme-ch5-toggle--large-font-size);
 
   /// description: Font size applied on the on|off label when size="x-large"
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 20px
-  /// related-theme-variable: --theme-ch5-toggle--x-large-text-font-size
-  --ch5-toggle--x-large-text-font-size: var(--theme-ch5-toggle--x-large-text-font-size);
+  /// related-theme-variable: --theme-ch5-toggle--x-large-font-size
+  --ch5-toggle--x-large-font-size: var(--theme-ch5-toggle--x-large-font-size);
 
   /// description: Font style applied on the on|off label
   /// type: list
@@ -144,6 +144,20 @@ ch5-toggle {
   /// related-theme-variable: --theme-ch5-toggle--circle-handle-off-border-color
   --ch5-toggle--circle-handle-off-border-color: var(--theme-ch5-toggle--circle-handle-off-border-color);
 
+  /// description: Border width of the handle when shape="circle"
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 1px
+  /// related-theme-variable: --theme-ch5-toggle--circle-handle-border-width
+  --ch5-toggle--circle-handle-border-width: var(--theme-ch5-toggle--circle-handle-border-width);
+
+  /// description: Border style of the handle when shape="circle"
+  /// type: list
+  /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// example: solid
+  /// related-theme-variable: --theme-ch5-toggle--circle-handle-border-style
+  --ch5-toggle--circle-handle-border-style: var(--theme-ch5-toggle--circle-handle-border-style);
+
   /// description: Border color of the handle when shape="circle" and value="true".
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
@@ -183,36 +197,36 @@ ch5-toggle {
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff
-  /// related-theme-variable: --theme-ch5-toggle--regular-icon-font-color
-  --ch5-toggle--regular-icon-font-color: var(--theme-ch5-toggle--regular-icon-font-color);
+  /// related-theme-variable: --theme-ch5-toggle--regular-icon-color
+  --ch5-toggle--regular-icon-color: var(--theme-ch5-toggle--regular-icon-color);
 
   /// description: Color of the on|off icon when size="small"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff
-  /// related-theme-variable: --theme-ch5-toggle--small-icon-font-color
-  --ch5-toggle--small-icon-font-color: var(--theme-ch5-toggle--small-icon-font-color);
+  /// related-theme-variable: --theme-ch5-toggle--small-icon-color
+  --ch5-toggle--small-icon-color: var(--theme-ch5-toggle--small-icon-color);
 
   /// description: Color of the on|off icon when size="x-small"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff
-  /// related-theme-variable: --theme-ch5-toggle--x-small-icon-font-color
-  --ch5-toggle--x-small-icon-font-color: var(--theme-ch5-toggle--x-small-icon-font-color);
+  /// related-theme-variable: --theme-ch5-toggle--x-small-icon-color
+  --ch5-toggle--x-small-icon-color: var(--theme-ch5-toggle--x-small-icon-color);
 
   /// description: Color of the on|off icon when size="large"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff
-  /// related-theme-variable: --theme-ch5-toggle--large-icon-font-color
-  --ch5-toggle--large-icon-font-color: var(--theme-ch5-toggle--large-icon-font-color);
+  /// related-theme-variable: --theme-ch5-toggle--large-icon-color
+  --ch5-toggle--large-icon-color: var(--theme-ch5-toggle--large-icon-color);
 
   /// description: Color of the on|off icon when size="x-large"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #fff
-  /// related-theme-variable: --theme-ch5-toggle--x-large-icon-font-color
-  --ch5-toggle--x-large-icon-font-color: var(--theme-ch5-toggle--x-large-icon-font-color);
+  /// related-theme-variable: --theme-ch5-toggle--x-large-icon-color
+  --ch5-toggle--x-large-icon-color: var(--theme-ch5-toggle--x-large-icon-color);
 
   // rectangle
   /// description: Background color of the toggle when shape="rectangle"

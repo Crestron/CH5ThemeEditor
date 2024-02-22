@@ -25,7 +25,7 @@
 
     .ch5-toggle__on-icon,
     .ch5-toggle__off-icon {
-      color: var(--ch5-toggle--regular-icon-font-color);
+      color: var(--ch5-toggle--regular-icon-color);
       font-size: var(--ch5-toggle--regular-icon-size);
     }
   }
@@ -37,7 +37,7 @@
     /* height: 16.66px; */
     .ch5-toggle__off-label,
     .ch5-toggle__on-label {
-      font-size: var(--ch5-toggle--x-small-text-font-size);
+      font-size: var(--ch5-toggle--x-small-font-size);
       display: table-cell;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -46,7 +46,7 @@
 
     .ch5-toggle__off-icon,
     .ch5-toggle__on-icon {
-      color: var(--ch5-toggle--x-small-icon-font-color);
+      color: var(--ch5-toggle--x-small-icon-color);
       font-size: var(--ch5-toggle--x-small-icon-size);
     }
   }
@@ -58,7 +58,7 @@
     /*  height: 25px; */
     .ch5-toggle__off-label,
     .ch5-toggle__on-label {
-      font-size: var(--ch5-toggle--small-text-font-size);
+      font-size: var(--ch5-toggle--small-font-size);
       display: table-cell;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -67,7 +67,7 @@
 
     .ch5-toggle__off-icon,
     .ch5-toggle__on-icon {
-      color: var(--ch5-toggle--small-icon-font-color);
+      color: var(--ch5-toggle--small-icon-color);
       font-size: var(--ch5-toggle--small-icon-size);
     }
   }
@@ -79,7 +79,7 @@
     /*  height: 41.66px; */
     .ch5-toggle__off-label,
     .ch5-toggle__on-label {
-      font-size: var(--ch5-toggle--large-text-font-size);
+      font-size: var(--ch5-toggle--large-font-size);
       display: table-cell;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -88,7 +88,7 @@
 
     .ch5-toggle__off-icon,
     .ch5-toggle__on-icon {
-      color: var(--ch5-toggle--large-icon-font-color);  
+      color: var(--ch5-toggle--large-icon-color);  
       font-size: var(--ch5-toggle--large-icon-size);
     }
   }
@@ -100,7 +100,7 @@
     /*   height: 50px; */
     .ch5-toggle__off-label,
     .ch5-toggle__on-label {
-      font-size: var(--ch5-toggle--x-large-text-font-size);
+      font-size: var(--ch5-toggle--x-large-font-size);
       display: table-cell;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -109,7 +109,7 @@
 
     .ch5-toggle__off-icon,
     .ch5-toggle__on-icon {
-      color: var(--ch5-toggle--x-large-icon-font-color);
+      color: var(--ch5-toggle--x-large-icon-color);
       font-size: var(--ch5-toggle--x-large-icon-size);
     }
   }

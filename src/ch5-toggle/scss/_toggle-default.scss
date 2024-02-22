@@ -56,7 +56,7 @@ ch5-toggle:focus {
     word-wrap: normal;
     color: var(--ch5-toggle--text-font-color);
     font-style: var(--ch5-toggle--text-font-style);
-    font-size: var(--ch5-toggle--regular-text-font-size);
+    font-size: var(--ch5-toggle--regular-font-size);
     font-weight: var(--ch5-toggle--text-font-weight);
   }
 
@@ -145,7 +145,9 @@ ch5-toggle:focus {
         width: 33%;
         border-radius: 100%;
         background-color: var(--ch5-toggle--circle-handle-background-color);
-        border: 0.25em solid var(--ch5-toggle--circle-handle-off-border-color);
+        border-width: var(--ch5-toggle--circle-handle-border-width);
+        border-style: var(--ch5-toggle--circle-handle-border-style);
+        border-color: var(--ch5-toggle--circle-handle-off-border-color);
       }
     }
   }
