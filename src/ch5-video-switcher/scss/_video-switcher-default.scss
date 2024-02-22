@@ -42,6 +42,30 @@ ch5-video-switcher {
     }
   }
 
+  &--source-list-scrollbar-true {
+    .scrollbar-container {
+      display: block;
+    }
+  }
+
+  &--source-list-scrollbar-false {
+    .scrollbar-container {
+      display: none;
+    }
+  }
+
+  &--screen-list-display-screen-label-true {
+    .ch5-video-switcher--screen-list-label {
+      display: block;
+    }
+  }
+
+  &--screen-list-display-screen-label-false {
+    .ch5-video-switcher--screen-list-label {
+      display: none;
+    }
+  }
+
   &--source-list {
     display: flex;
     height: calc(100% / 3);
@@ -82,28 +106,35 @@ ch5-video-switcher {
         justify-content: center;
       }
 
-      label {
+      .ch5-video-switcher--source-list-label {
         color: #ffffff;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         font-size: 12px;
+        width: 100%;
+      }
+
+    }
+
+    &-label-left {
+      .ch5-video-switcher--source-list-label {
+        text-align: left;
+      }
+    }
+
+    &-label-right {
+      .ch5-video-switcher--source-list-label {
+        text-align: right;
+      }
+    }
+
+    &-label-center {
+      .ch5-video-switcher--source-list-label {
+        text-align: center;
       }
     }
   }
-
-  &.ch5-video-switcher--source-list-scrollbar-true {
-    .scrollbar-container {
-      display: block;
-    }
-  }
-
-  &.ch5-video-switcher--source-list-scrollbar-false {
-    .scrollbar-container {
-      display: none;
-    }
-  }
-
 
   &--screen-list {
     display: flex;
@@ -151,11 +182,12 @@ ch5-video-switcher {
           text-overflow: ellipsis;
           font-size: 12px;
           position: relative;
+          width: 100%;
         }
       }
     }
 
-    label {
+    .ch5-video-switcher--screen-list-label {
       position: absolute;
       left: 10px;
       color: #ffffff;
@@ -165,6 +197,26 @@ ch5-video-switcher {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+
+    &-label {
+      &-right {
+        .ch5-video-switcher--screen-list-label {
+          text-align: right;
+        }
+      }
+
+      &-left {
+        .ch5-video-switcher--screen-list-label {
+          text-align: left;
+        }
+      }
+
+      &-center {
+        .ch5-video-switcher--screen-list-label {
+          text-align: center;
+        }
+      }
     }
   }
 }
