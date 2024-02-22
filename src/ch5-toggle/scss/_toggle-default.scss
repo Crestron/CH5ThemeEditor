@@ -155,7 +155,7 @@ ch5-toggle:focus {
   /* ch5-toggle - rectangle shape */
   &.ch5-toggle--rectangle {
     .ch5-toggle__handle {
-      background: var(--ch5-toggle--rectangle-knob-background-color);
+      background: var(--ch5-toggle--rectangle-background-color);
       border-radius: 1px;
       box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0;
       margin: var(--ch5-toggle--handle-rectangle-margin);
@@ -168,7 +168,7 @@ ch5-toggle:focus {
 
       a {
         border-radius: 1px;
-        background-color: var(--ch5-toggle--rectangle-handle-background-color);
+        background-color: var(--ch5-toggle--rectangle-handle-off-background-color);
       }
     }
   }

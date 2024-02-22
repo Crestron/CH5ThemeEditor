@@ -894,19 +894,19 @@
 
   --theme-ch5-dpad--default-background-color: var(--theme-colors--default-background-color);
 
-  --theme-ch5-dpad--default-color: #222230;
+  --theme-ch5-dpad--default-color: var(--theme-colors--default-font-color);
 
   --theme-ch5-dpad--default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
 
-  --theme-ch5-dpad--default-pressed-color:#222230;
+  --theme-ch5-dpad--default-pressed-color: var(--theme-colors--default-pressed-font-color);
 
   --theme-ch5-dpad--primary-background-color: var(--theme-colors--primary-background-color);
 
-  --theme-ch5-dpad--primary-color: var(--theme-colors--primary-font-color);
+  --theme-ch5-dpad--primary-color: #222230;
 
   --theme-ch5-dpad--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
 
-  --theme-ch5-dpad--primary-pressed-color: var(--theme-colors--primary-pressed-font-color);
+  --theme-ch5-dpad--primary-pressed-color: #222230;
 
   --theme-ch5-dpad--info-background-color: var(--theme-colors--info-background-color);
 
@@ -1572,9 +1572,9 @@
 
   --theme-ch5-toggle--circle-knob-background-color: #{$white};
 
-  --theme-ch5-toggle--rectangle-knob-background-color: #c1c6ce;
+  --theme-ch5-toggle--rectangle-background-color: #c1c6ce;
 
-  --theme-ch5-toggle--rectangle-handle-background-color: #888;
+  --theme-ch5-toggle--rectangle-handle-off-background-color: #888;
 
   --theme-ch5-toggle--label-margin: 10px;
 
