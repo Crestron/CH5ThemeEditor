@@ -174,13 +174,11 @@ ch5-video-switcher {
           justify-content: center;
         }
 
-        label {
+        .ch5-video-switcher--source-list-label {
           color: #ffffff;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
-          font-size: 12px;
-          position: relative;
           width: 100%;
         }
       }
