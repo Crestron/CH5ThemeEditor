@@ -67,12 +67,10 @@ ch5-video-switcher {
   }
 
   &--source-list {
-    --internal-columns:1;
+    --internal-columns: 1;
     --gap: 20px;
     display: flex;
-    height: calc(100% / 3);
     flex-wrap: wrap;
-    flex-direction: column;
     align-items: flex-start;
     align-content: start;
     overflow: scroll;
@@ -95,7 +93,6 @@ ch5-video-switcher {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      height: calc(calc(100% / var(--internal-columns) - var(--gap)));
 
       .source-icon {
         font-size: 1em;
@@ -141,8 +138,6 @@ ch5-video-switcher {
 
   &--screen-list {
     display: flex;
-    height: 66%;
-    width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;

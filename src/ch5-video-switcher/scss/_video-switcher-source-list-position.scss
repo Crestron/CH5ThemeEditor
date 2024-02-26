@@ -1,31 +1,63 @@
 .ch5-video-switcher {
-    &--source-list-position-top {
+    &.ch5-video-switcher--source-list-position-top {
         flex-direction: column;
 
         &.ch5-video-switcher--source-list-scrollbar-true {
-            //padding-bottom: var(--ch5-button-list--scrollbar-width);
-
             .scrollbar-container {
-                width: calc(100% - 20px);
-                top: 33.3%;
-                height: 7px;
-
-                .scrollbar {
-                    height: 100%;
-                }
+                top: calc(100% / 3);
             }
         }
     }
 
-    &--source-list-position-bottom {
+    &.ch5-video-switcher--source-list-position-bottom {
         flex-direction: column-reverse;
 
         &.ch5-video-switcher--source-list-scrollbar-true {
-            //padding-bottom: var(--ch5-button-list--scrollbar-width);
+            .scrollbar-container {
+                bottom: 0;
+            }
+        }
+    }
 
+    &.ch5-video-switcher--source-list-position-left {
+        flex-direction: row;
+
+        &.ch5-video-switcher--source-list-scrollbar-true {
+            .scrollbar-container {
+                left: calc(100% / 3);
+            }
+        }
+    }
+
+    &.ch5-video-switcher--source-list-position-right {
+        flex-direction: row-reverse;
+
+        &.ch5-video-switcher--source-list-scrollbar-true {
+            .scrollbar-container {
+                right: 0;
+            }
+        }
+    }
+
+    // Common - Top and Bottom
+    &.ch5-video-switcher--source-list-position-top,
+    &.ch5-video-switcher--source-list-position-bottom {
+        .ch5-video-switcher--source-list {
+            height: calc(100% / 3);
+            flex-direction: column;
+
+            .source-container {
+                height: calc(calc(100% / var(--internal-columns) - var(--gap)));
+            }
+        }
+
+        .ch5-video-switcher--screen-list {
+            height: calc(calc(100% / 3) * 2);
+        }
+
+        &.ch5-video-switcher--source-list-scrollbar-true {
             .scrollbar-container {
                 width: calc(100% - 20px);
-                bottom: 0;
                 height: 7px;
 
                 .scrollbar {
@@ -35,29 +67,28 @@
         }
     }
 
-    &--source-list-position-left {
-        flex-direction: row;
-
+    &.ch5-video-switcher--source-list-position-left,
+    &.ch5-video-switcher--source-list-position-right {
         .ch5-video-switcher--source-list {
             height: 100%;
             width: calc(100% / 3);
             flex-direction: row;
+
+            .source-container {
+                width: calc(calc(100% / var(--internal-columns) - var(--gap)));
+            }
         }
 
         .ch5-video-switcher--screen-list {
             height: 100%;
-            width: 66%;
+            width: calc(calc(100% / 3) * 2);
         }
 
         &.ch5-video-switcher--source-list-scrollbar-true {
-            // padding-right: var(--ch5-button-list--scrollbar-width);
 
             .scrollbar-container {
                 top: 0;
                 height: calc(100% - 20px);
-                ;
-                left: 33.3%;
-                /* left: auto; */
                 width: 7px;
 
                 .scrollbar {
@@ -67,34 +98,5 @@
         }
     }
 
-    &--source-list-position-right {
-        flex-direction: row-reverse;
 
-        .ch5-video-switcher--source-list {
-            height: 100%;
-            width: calc(100% / 3);
-            flex-direction: row;
-        }
-
-        .ch5-video-switcher--screen-list {
-            height: 100%;
-            width: 66%;
-        }
-
-        &.ch5-video-switcher--source-list-scrollbar-true {
-
-            /*  padding-right: 7px; */
-            .scrollbar-container {
-                top: 0;
-                height: calc(100% - 20px);
-                right: 0;
-                left: auto;
-                width: 7px;
-
-                .scrollbar {
-                    width: 100%;
-                }
-            }
-        }
-    }
 }
