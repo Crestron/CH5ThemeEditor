@@ -23,7 +23,7 @@ ch5-video-switcher {
   aspect-ratio: 16/9;
   padding: 10px;
   display: flex;
-  overflow: scroll;
+  overflow: hidden;
   gap: 10px;
   background-color: #015181;
   scrollbar-width: none;
