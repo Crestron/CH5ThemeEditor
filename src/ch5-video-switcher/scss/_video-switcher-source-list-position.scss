@@ -6,7 +6,7 @@
             //padding-bottom: var(--ch5-button-list--scrollbar-width);
 
             .scrollbar-container {
-                width: 100%;
+                width: calc(100% - 20px);
                 top: 33.3%;
                 height: 7px;
 
@@ -24,7 +24,7 @@
             //padding-bottom: var(--ch5-button-list--scrollbar-width);
 
             .scrollbar-container {
-                width: 100%;
+                width: calc(100% - 20px);
                 bottom: 0;
                 height: 7px;
 
@@ -43,6 +43,7 @@
             width: calc(100% / 3);
             flex-direction: row;
         }
+
         .ch5-video-switcher--screen-list {
             height: 100%;
             width: 66%;
@@ -53,7 +54,8 @@
 
             .scrollbar-container {
                 top: 0;
-                height: 100%;
+                height: calc(100% - 20px);
+                ;
                 left: 33.3%;
                 /* left: auto; */
                 width: 7px;
@@ -67,21 +69,24 @@
 
     &--source-list-position-right {
         flex-direction: row-reverse;
+
         .ch5-video-switcher--source-list {
             height: 100%;
             width: calc(100% / 3);
             flex-direction: row;
         }
+
         .ch5-video-switcher--screen-list {
             height: 100%;
             width: 66%;
         }
 
         &.ch5-video-switcher--source-list-scrollbar-true {
-           /*  padding-right: 7px; */
+
+            /*  padding-right: 7px; */
             .scrollbar-container {
                 top: 0;
-                height: 100%;
+                height: calc(100% - 20px);
                 right: 0;
                 left: auto;
                 width: 7px;
