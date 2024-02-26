@@ -77,7 +77,7 @@ ch5-video-switcher {
     align-content: start;
     overflow: scroll;
     gap: var(--gap);
-    justify-content: space-evenly;
+    justify-content: start;
     will-change: transform;
 
     &::-webkit-scrollbar {
