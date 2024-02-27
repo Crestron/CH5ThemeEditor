@@ -137,14 +137,10 @@ ch5-video-switcher {
   }
 
   &--screen-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-gap: 5px;
 
     .screen-container {
-      width: 45%;
-      height: 90%;
       border-radius: 10px;
       border: 2px solid #000000;
       display: flex;

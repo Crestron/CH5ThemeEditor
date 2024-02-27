@@ -1,21 +1,24 @@
 .ch5-video-switcher {
-    &--screen-list{
-       
-        &.ch5-video-switcher--screen-aspect-ratio-stretch{
-            .screen-container{
+    &--screen-list {
+        &.ch5-video-switcher--screen-aspect-ratio-stretch {
+            .screen-container {
                 min-width: 100%;
                 min-height: 100%;
-            } 
+            }
         }
 
-        &.ch5-video-switcher--screen-aspect-ratio-16-9{
-            aspect-ratio: 16/9;
+        &.ch5-video-switcher--screen-aspect-ratio-16-9 {
+            .screen-container {
+                aspect-ratio: 16/9;
+            }
+
         }
 
-        &.ch5-video-switcher--screen-aspect-ratio-16-3{
-            aspect-ratio: 4/3;
+        &.ch5-video-switcher--screen-aspect-ratio-14-3 {
+            .screen-container {
+                aspect-ratio: 4/3;
+            }
         }
     }
 
-    
 }
