@@ -41,25 +41,29 @@ ch5-video-switcher {
       background: rgba(0, 0, 0, 0.5);
     }
   }
-///
+
+  ///
   &--source-list-scrollbar-true {
     .scrollbar-container {
       display: block;
     }
   }
-///
+
+  ///
   &--source-list-scrollbar-false {
     .scrollbar-container {
       display: none;
     }
   }
-///
+
+  ///
   &--screen-list-display-screen-label-true {
     .ch5-video-switcher--screen-list-label {
       display: block;
     }
   }
-///
+
+  ///
   &--screen-list-display-screen-label-false {
     .ch5-video-switcher--screen-list-label {
       display: none;
@@ -214,6 +218,5 @@ ch5-video-switcher {
 
 /// Applied when the video switcher is disabled
 .ch5-video-switcher--disabled {
-  pointer-events: none;
-  opacity: $ch5-video-switcher-disabled-opacity;
+  @include ch5-component-disabled();
 }
