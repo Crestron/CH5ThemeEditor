@@ -75,27 +75,6 @@ ch5-modal-dialog {
   /// related-theme-variable: --theme-ch5-modal-dialog--default-close-icon-size
   --ch5-modal-dialog--default-close-icon-size: var(--theme-ch5-modal-dialog--default-close-icon-size);
 
-  /// description: Font size for the title of the modal
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 1.3em
-  /// related-theme-variable: --theme-ch5-modal-dialog--title-font-size
-  --ch5-modal-dialog--title-font-size: var(--theme-ch5-modal-dialog--title-font-size);
-
-  /// description: Font style for the title of the modal
-  /// type: list
-  /// values: normal, italic
-  /// example: normal
-  /// related-theme-variable: --theme-ch5-modal-dialog--title-font-style
-  --ch5-modal-dialog--title-font-style: var(--theme-ch5-modal-dialog--title-font-style);
-
-  /// description: Font weight for the title of the modal
-  /// type: list
-  /// values: normal, bold
-  /// example: bold
-  /// related-theme-variable: --theme-ch5-modal-dialog--title-font-weight
-  --ch5-modal-dialog--title-font-weight: var(--theme-ch5-modal-dialog--title-font-weight);
-
   /// description: Padding of the modal's content
   /// type: unit
   /// values: px, vw, vh, em, rem, %
@@ -215,14 +194,14 @@ ch5-modal-dialog {
   /// related-theme-variable: --theme-ch5-modal-dialog--close-icon-background-color
   --ch5-modal-dialog--close-icon-background-color: var(--theme-ch5-modal-dialog--close-icon-background-color);
 
-  /// description: Color of the icon at the top of the modal
+  /// description: Color of the close icon at the top of the modal. Note: Applied only for the default icon in modal-dialog
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #000
   /// related-theme-variable: --theme-ch5-modal-dialog--close-icon-color
   --ch5-modal-dialog--close-icon-color: var(--theme-ch5-modal-dialog--close-icon-color);
 
-  /// description: Color of the icon at the top of the modal when it is hovered
+  /// description: Color of the close icon at the top of the modal when it is hovered. Note: Applied only for the default icon in modal-dialog
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #333

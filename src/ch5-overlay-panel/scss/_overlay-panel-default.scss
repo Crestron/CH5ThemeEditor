@@ -102,11 +102,6 @@ ch5-overlay-panel {
   height: 100%;
 }
 
-/// Applied for default stile of panel mask
-.ch5-overlay-panel-mask-default-style {
-  background-color: var(--ch5-overlay-panel--mask-background-color);
-}
-
 /// Applied for content of the panel
 .ch5-overlay-panel-contents {
   padding: var(--ch5-overlay-panel--contents-padding);
