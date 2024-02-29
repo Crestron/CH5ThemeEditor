@@ -20,8 +20,8 @@ ch5-keypad {
 .ch5-keypad {
   display: grid;
   aspect-ratio: 3/4;
-  padding: 6px;
-  gap: 6px;
+  padding: var(--ch5-keypad--padding);
+  gap: var(--ch5-keypad--gap-between-buttons);
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
 
@@ -38,15 +38,15 @@ ch5-keypad {
       grid-column-start: 2;
 
       button {
-        color: var(--ch5-keypad--success-font-color);
-        background-color: var(--ch5-keypad--success-background-color);
-        border: 1px solid var(--ch5-keypad--success-border-color);
+        color: var(--ch5-keypad--extra-button-font-color);
+        background-color: var(--ch5-keypad--extra-button-background-color);
+        border: var(--ch5-keypad--extra-button-border-width) var(--ch5-keypad--extra-button-border-style) var(--ch5-keypad--extra-button-border-color);
       }
 
       &.keypad-btn.keypad-btn-pressed button {
-        color: var(--ch5-keypad--success-pressed-font-color);
-        background-color: var(--ch5-keypad--success-pressed-background-color);
-        border: 1px solid var(--ch5-keypad--success-pressed-border-color);
+        color: var(--ch5-keypad--extra-button-pressed-font-color);
+        background-color: var(--ch5-keypad--extra-button-pressed-background-color);
+        border: var(--ch5-keypad--extra-button-pressed-border-width) var(--ch5-keypad--extra-button-pressed-border-style) var(--ch5-keypad--extra-button-pressed-border-color);
       }
     }
   }
@@ -64,75 +64,42 @@ ch5-keypad {
 
   /// Applied when type="default"
   &.ch5-keypad--type-default {
-    @include ch5-keypad-content(--ch5-keypad--default-background-color, --ch5-keypad--default-border-color, --ch5-keypad--default-font-color);
-
-    /// Applied when button in the pressed state
-    .keypad-btn-pressed {
-      @include ch5-keypad-content--pressed(--ch5-keypad--default-pressed-background-color, --ch5-keypad--default-pressed-border-color, --ch5-keypad--default-pressed-font-color);
-    }
+    @include ch5-keypad-content("default");
   }
 
-  /// Applied when type="default"
+  /// Applied when type="primary"
   &.ch5-keypad--type-primary {
-    @include ch5-keypad-content(--ch5-keypad--primary-background-color, --ch5-keypad--primary-border-color, --ch5-keypad--primary-font-color);
-
-    .keypad-btn-pressed {
-      @include ch5-keypad-content--pressed(--ch5-keypad--primary-pressed-background-color, --ch5-keypad--primary-pressed-border-color, --ch5-keypad--primary-pressed-font-color);
-    }
+    @include ch5-keypad-content("primary");
   }
 
   /// Applied when type="info"
   &.ch5-keypad--type-info {
-    @include ch5-keypad-content(--ch5-keypad--info-background-color, --ch5-keypad--info-border-color, --ch5-keypad--info-font-color);
-
-    .keypad-btn-pressed {
-      @include ch5-keypad-content--pressed(--ch5-keypad--info-pressed-background-color, --ch5-keypad--info-pressed-border-color, --ch5-keypad--info-pressed-font-color);
-    }
+    @include ch5-keypad-content("info");
   }
 
   /// Applied when type="text"
   &.ch5-keypad--type-text {
-    @include ch5-keypad-content(--ch5-keypad--text-background-color, --ch5-keypad--text-border-color, --ch5-keypad--text-font-color);
-
-    .keypad-btn-pressed {
-      @include ch5-keypad-content--pressed(--ch5-keypad--text-pressed-background-color, --ch5-keypad--text-pressed-border-color, --ch5-keypad--text-pressed-font-color);
-    }
+    @include ch5-keypad-content("text");
   }
 
   /// Applied when type="danger"
   &.ch5-keypad--type-danger {
-    @include ch5-keypad-content(--ch5-keypad--danger-background-color, --ch5-keypad--danger-border-color, --ch5-keypad--danger-font-color);
-
-    .keypad-btn-pressed {
-      @include ch5-keypad-content--pressed(--ch5-keypad--danger-pressed-background-color, --ch5-keypad--danger-pressed-border-color, --ch5-keypad--danger-pressed-font-color);
-    }
+    @include ch5-keypad-content("danger");
   }
 
   /// Applied when type="warning"
   &.ch5-keypad--type-warning {
-    @include ch5-keypad-content(--ch5-keypad--warning-background-color, --ch5-keypad--warning-border-color, --ch5-keypad--warning-font-color);
-
-    .keypad-btn-pressed {
-      @include ch5-keypad-content--pressed(--ch5-keypad--warning-pressed-background-color, --ch5-keypad--warning-pressed-border-color, --ch5-keypad--warning-pressed-font-color);
-    }
+    @include ch5-keypad-content("warning");
   }
 
   /// Applied when type="success"
   &.ch5-keypad--type-success {
-    @include ch5-keypad-content(--ch5-keypad--success-background-color, --ch5-keypad--success-border-color, --ch5-keypad--success-font-color);
-
-    .keypad-btn-pressed {
-      @include ch5-keypad-content--pressed(--ch5-keypad--success-pressed-background-color, --ch5-keypad--success-pressed-border-color, --ch5-keypad--success-pressed-font-color);
-    }
+    @include ch5-keypad-content("success");
   }
 
   /// Applied when type="secondary"
   &.ch5-keypad--type-secondary {
-    @include ch5-keypad-content(--ch5-keypad--secondary-background-color, --ch5-keypad--secondary-border-color, --ch5-keypad--secondary-font-color);
-
-    .keypad-btn-pressed {
-      @include ch5-keypad-content--pressed(--ch5-keypad--secondary-pressed-background-color, --ch5-keypad--secondary-pressed-border-color, --ch5-keypad--secondary-pressed-font-color);
-    }
+    @include ch5-keypad-content("secondary");
   }
 
   /// Applied when button in the textOrientation="top"
@@ -197,47 +164,27 @@ ch5-keypad {
 
   /// Applied when size="x-small"
   &.ch5-keypad--size-x-small {
-    @include ch5-keypad-fonts-sizes(--ch5-keypad--x-small-container-width,
-      --ch5-keypad--x-small-container-height,
-      --ch5-keypad--x-small-container-height-extra,
-      --ch5-keypad--x-small-font-size-major,
-      --ch5-keypad--x-small-font-size-minor);
+    @include ch5-keypad-fonts-sizes("x-small");
   }
 
   /// Applied when size="small"
   &.ch5-keypad--size-small {
-    @include ch5-keypad-fonts-sizes(--ch5-keypad--small-container-width,
-      --ch5-keypad--small-container-height,
-      --ch5-keypad--small-container-height-extra,
-      --ch5-keypad--small-font-size-major,
-      --ch5-keypad--small-font-size-minor);
+    @include ch5-keypad-fonts-sizes("small");
   }
 
   /// Applied when size="regular"
   &.ch5-keypad--size-regular {
-    @include ch5-keypad-fonts-sizes(--ch5-keypad--regular-container-width,
-      --ch5-keypad--regular-container-height,
-      --ch5-keypad--regular-container-height-extra,
-      --ch5-keypad--regular-font-size-major,
-      --ch5-keypad--regular-font-size-minor);
+    @include ch5-keypad-fonts-sizes("regular");
   }
 
   /// Applied when size="large"
   &.ch5-keypad--size-large {
-    @include ch5-keypad-fonts-sizes(--ch5-keypad--large-container-width,
-      --ch5-keypad--large-container-height,
-      --ch5-keypad--large-container-height-extra,
-      --ch5-keypad--large-font-size-major,
-      --ch5-keypad--large-font-size-minor);
+    @include ch5-keypad-fonts-sizes("large");
   }
 
   /// Applied when size="x-large"
   &.ch5-keypad--size-x-large {
-    @include ch5-keypad-fonts-sizes(--ch5-keypad--x-large-container-width,
-      --ch5-keypad--x-large-container-height,
-      --ch5-keypad--x-large-container-height-extra,
-      --ch5-keypad--x-large-font-size-major,
-      --ch5-keypad--x-large-font-size-minor);
+    @include ch5-keypad-fonts-sizes("x-large");
   }
 }
 
@@ -307,5 +254,10 @@ ch5-keypad {
 
 /// Applied when stretch="both"
 .ch5-keypad--stretch-both {
+  // DO NOT DELETE - used for Component Reference
+}
+
+/// Applied when button in the pressed state
+.keypad-btn-pressed {
   // DO NOT DELETE - used for Component Reference
 }

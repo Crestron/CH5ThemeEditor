@@ -21,8 +21,7 @@ ch5-overlay-panel {
 
   background-color: var(--ch5-overlay-panel--background-color);
   border-radius: var(--ch5-overlay-panel--border-radius);
-  border: var(--ch5-overlay-panel--border-width) var(--ch5-overlay-panel--border-style)
-    var(--ch5-overlay-panel--border-color);
+  border: var(--ch5-overlay-panel--border-width) var(--ch5-overlay-panel--border-style) var(--ch5-overlay-panel--border-color);
   color: var(--ch5-overlay-panel--text-color);
   padding: var(--ch5-overlay-panel--padding);
   min-width: 200px;
@@ -38,11 +37,12 @@ ch5-overlay-panel {
     outline: none;
     cursor: pointer;
     float: right;
+    line-height: 1.15;
 
     background-color: var(--ch5-overlay-panel--close-icon-background-color);
     margin: var(--ch5-overlay-panel--close-icon-margin);
     padding: var(--ch5-overlay-panel--close-icon-padding);
-    width: var(--ch5-overlay-panel--close-icon-width);
+    width: var(--ch5-overlay-panel--close-button-width);
 
     &.f-left {
       float: left;
@@ -55,9 +55,8 @@ ch5-overlay-panel {
   /// Class for default close icon
   .ch5-overlay-panel-default-close-icon {
     color: var(--ch5-overlay-panel--close-icon-color);
-    font-style: var(--ch5-overlay-panel--close-icon-font-style);
-    font-size: var(--ch5-overlay-panel--close-icon-font-size);
-    font-weight: var(--ch5-overlay-panel--close-icon-font-weight);
+    font-size: var(--ch5-overlay-panel--close-icon-size);
+
     &:before {
       content: "\00d7";
     }

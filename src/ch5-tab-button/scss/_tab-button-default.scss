@@ -20,7 +20,6 @@ ch5-tab-button {
 /// Main class
 .ch5-tab-button {
   position: relative;
-  height: fit-content;
   user-select: none;
   will-change: transform;
   display: flex;
@@ -47,8 +46,9 @@ ch5-tab-button {
 }
 
 .ch5-tab-button--button-container {
-  width: var(--ch5-tab-button--button-container-width);
-  height: var(--ch5-tab-button--button-container-height);
+  width: 5px;
+  height: 5px;
   min-width: 5px;
   min-height: 5px;
+  flex: 1 1;
 }

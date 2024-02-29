@@ -109,7 +109,7 @@ ch5-textinput {
   /// related-theme-variable: --theme-ch5-textinput--regular-width
   --ch5-textinput--regular-width: var(--theme-ch5-textinput--regular-width);
 
-  /// description: set minimum height for size=regular of the textinput
+  /// description: Minimum height for size=regular of the textinput
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 52px
@@ -141,8 +141,8 @@ ch5-textinput {
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 12px
-  /// related-theme-variable: --theme-ch5-textinput--x-small-font-size
-  --ch5-textinput--x-small-mask-font-size: var(--theme-ch5-textinput--x-small-font-size);
+  /// related-theme-variable: --theme-ch5-textinput--x-small-mask-font-size
+  --ch5-textinput--x-small-mask-font-size: var(--theme-ch5-textinput--x-small-mask-font-size);
 
   /// description: Font style for size=x-small of the textinput
   /// type: list
@@ -204,8 +204,8 @@ ch5-textinput {
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 14px
-  /// related-theme-variable: --theme-ch5-textinput--small-font-size
-  --ch5-textinput--small-mask-font-size: var(--theme-ch5-textinput--small-font-size);
+  /// related-theme-variable: --theme-ch5-textinput--small-mask-font-size
+  --ch5-textinput--small-mask-font-size: var(--theme-ch5-textinput--small-mask-font-size);
 
   /// description: Font style for size=small of the textinput
   /// type: list

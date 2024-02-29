@@ -1,4 +1,4 @@
-const packageJson = require('../../package.json') // TODO: Currently picking from parent folder package.json, In future it should be picked from helpers folder
+const packageJson = require('../../package.json') // Currently picking from parent folder package.json, In future it should be picked from helpers folder
 const CONFIG = require('./config.json');
 const fs = require('fs');
 const flatten = require('@raghavendradabbir/sass-flatten');
@@ -7,6 +7,8 @@ const { execSync } = require("child_process");
 
 const components = CONFIG.COMPONENTS;
 const themes = CONFIG.THEMES;
+
+// TODO - Need all corner cases
 
 const outputJSON = {
 	version: packageJson.version,
@@ -28,7 +30,7 @@ function findMissingThemeVariables() {
 
 	// Add theme variables
 	for (const theme in themes) {
-		const data = fs.readFileSync(CONFIG.THEME_EDITOR_THEME_FILES_PATH + theme + '.scss', 'utf-8')
+		const data = fs.readFileSync(CONFIG.THEME_EDITOR_THEME_FILES_PATH + "_" + theme + '.scss', 'utf-8');
 		themesVariables.push({
 			name: themes[theme]['value'],
 			variables: getVariables(data)
@@ -122,6 +124,12 @@ function getVariables(data, sectionName) {
 
 			const variableMetaData = lines.slice(start, i).join('\n').split('///').map(str => str.trim()).filter(str => str.length !== 0);
 
+
+			const dataObj = {
+				name,
+				value: splitLine[1].trim().replaceAll(';', '')
+			}
+
 			if (variableMetaData.length < 4) {
 				// console.log(name + 'invalid metadata')
 				// process.exit(1);
@@ -130,37 +138,52 @@ function getVariables(data, sectionName) {
 					const componentName = name.replace('--theme-', '').split('--')[0];
 					const componentVariables = outputJSON['ch5Components'].find(t => t.name === componentName)['variables'];
 					const variableObj = componentVariables.find(t => t.name === name.replace('--theme', '-'));
-					
+
 					if (variableObj) {
 						variableObj.description = variableObj.description.trim();
 						if (variableObj.description.endsWith(".")) {
 							variableObj.description = variableObj.description.substring(0, variableObj.description.length - 1);
 						}
-						description = variableObj.description + ' at theme level';
-						type = variableObj.type
-						example = variableObj.example
-						possibleValues = variableObj.possibleValues
+						dataObj.description = variableObj.description + ' at theme level';
+						dataObj.type = variableObj.type
+						dataObj.example = variableObj.example
+						dataObj.possibleValues = variableObj.possibleValues
+						if (dataObj.type === 'multiUnit') {
+							dataObj.childTypes = ['top', 'right', 'bottom', 'left'];
+						}
 					}
 				}
 			} else {
-				description = variableMetaData[0].replace("description:", '').trim();
-				type = variableMetaData[1].replace('type:', '').trim();
-				valueMetadata = variableMetaData[2].replace('values:', '').trim()
-				possibleValues = type === 'color' ? ["rgb(35,35,35)", "#1a1a1a", "red"] : valueMetadata.split(',').map((str) => str.trim()).filter((str) => str.trim())
-				example = variableMetaData[3].replace('example:', '').trim()
+				dataObj.description = variableMetaData[0].replace("description:", '').trim();
+				dataObj.type = variableMetaData[1].replace('type:', '').trim();
+				dataObj.possibleValues = variableMetaData[2].replace('values:', '').trim().split(',').map((str) => str.trim()).filter((str) => str.trim())
+				dataObj.example = variableMetaData[3].replace('example:', '').trim()
 			}
 
-			let value = splitLine[1].trim().replaceAll(';', '');
+			// corner case
+			if (dataObj.type === 'color') {
+				dataObj.possibleValues = ['rgb(35,35,35)', '#1a1a1a', 'red'];
+			}
+			if (dataObj.value === '#{$black}') {
+				dataObj.value = '#000';
+			}
+			if (dataObj.value === '#{$white}') {
+				dataObj.value = '#fff';
+			}
+			if (variableMetaData.length === 5) {
+				dataObj.relatedThemeVariable = variableMetaData[4].replace('related-theme-variable:', '').trim();
+			}
+			if (dataObj.type === "unit" && ((dataObj.value.includes('border') && !dataObj.value.includes('border-width')) || dataObj.value.includes('margin') || dataObj.value.includes('padding'))) {
+				dataObj.type = 'multiUnit';
+				dataObj.childTypes = ['top', 'right', 'bottom', 'left'];
+			}
 
-			// Corner Case
-			if (value === '#{$black}') { value = "#000"; }
-			if (value === '#{$white}') { value = "#fff"; }
 
 			if (sectionName === "theme") {
 				let sectionUpdatedName = sectionName;
 				if (name.indexOf("--theme-ch5-") !== -1) {
-					const reversedComponets = Object.keys(components).reverse();
-					for (const component of reversedComponets) {
+					const reversedComponents = Object.keys(components).reverse();
+					for (const component of reversedComponents) {
 						if (name.indexOf(component) !== -1) {
 							sectionUpdatedName = component;
 							break;
@@ -173,33 +196,11 @@ function getVariables(data, sectionName) {
 
 				variables.push({
 					sectionName: sectionUpdatedName,
-					data: {
-						name,
-						description,
-						type,
-						example,
-						value,
-						possibleValues
-					}
+					data: dataObj
 				});
-				if (variableMetaData.length === 5) {
-					const relatedThemeVariable = variableMetaData[4].replace('related-theme-variable:', '').trim()
-					variables[variables.length - 1]['data']['relatedThemeVariable'] = relatedThemeVariable;
-				}
 
 			} else {
-				variables.push({
-					name,
-					description,
-					type,
-					example,
-					value,
-					possibleValues
-				});
-				if (variableMetaData.length === 5) {
-					const relatedThemeVariable = variableMetaData[4].replace('related-theme-variable:', '').trim()
-					variables[variables.length - 1]['relatedThemeVariable'] = relatedThemeVariable;
-				}
+				variables.push(dataObj);
 			}
 
 		}
@@ -216,6 +217,7 @@ function getComponentScss(component) {
 	const scss = globalVars + globalMixins + componentScss;
 	return removeComments(scss);
 }
+
 function getComponentScssWithoutVariables(component) {
 	const res = [];
 	const sourcePath = CONFIG.THEME_EDITOR_SOURCE_FILES_PATH;
@@ -238,7 +240,6 @@ function getComponentScssWithoutVariables(component) {
 }
 
 function getComponentCss(data) {
-
 	const inputFile = CONFIG.CSS_INPUT_FILE_NAME;
 	const outputFile = CONFIG.CSS_OUTPUT_FILE_NAME;
 
@@ -480,9 +481,8 @@ async function initialize() {
 
 	// Theme variables
 	for (const theme in themes) {
-
 		const basePath = CONFIG.THEME_EDITOR_THEME_FILES_PATH;
-		const data = fs.readFileSync(basePath + theme + '.scss', 'utf8');
+		const data = fs.readFileSync(basePath + "_" + theme + '.scss', 'utf8');
 
 		const variables = getVariables(data, "theme");
 

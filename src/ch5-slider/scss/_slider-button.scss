@@ -133,6 +133,7 @@
     position: relative;
     cursor: pointer;
     user-select: none;
+    flex-shrink: 1;
   }
 
   .ch5-button--icon,

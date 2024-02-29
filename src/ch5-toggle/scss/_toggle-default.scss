@@ -56,7 +56,7 @@ ch5-toggle:focus {
     word-wrap: normal;
     color: var(--ch5-toggle--text-font-color);
     font-style: var(--ch5-toggle--text-font-style);
-    font-size: var(--ch5-toggle--text-font-size);
+    font-size: var(--ch5-toggle--regular-font-size);
     font-weight: var(--ch5-toggle--text-font-weight);
   }
 
@@ -69,12 +69,6 @@ ch5-toggle:focus {
   /// Applied for icon-off
   .ch5-toggle__off-icon {
     margin: 0 2px 0 2px;
-  }
-
-  .ch5-toggle__on-icon,
-  .ch5-toggle__off-icon {
-    color: var(--ch5-toggle--icon-font-color);
-    font-size: var(--ch5-toggle--icon-font-size);
   }
 
   /* ch5-toggle - handle default */
@@ -126,7 +120,7 @@ ch5-toggle:focus {
   &.ch5-toggle--circle {
     .ch5-toggle__handle {
       border-radius: 1.75em;
-      background-color: var(--ch5-toggle--circle-handle-border-color);
+      background-color: var(--ch5-toggle--circle-background-color);
       margin: var(--ch5-toggle--handle-circle-margin);
 
       div {
@@ -134,14 +128,12 @@ ch5-toggle:focus {
         transition: all 0.2s ease-out;
 
         &:first-of-type {
-          color: var(--ch5-toggle--circle-label-off-color);
           text-align: center;
           padding-left: 1.75em;
         }
 
         &:last-of-type {
           display: none;
-          color: var(--ch5-toggle--circle-label-on-color);
           text-align: center;
           padding-right: 1.75em;
         }
@@ -152,8 +144,10 @@ ch5-toggle:focus {
         top: 0;
         width: 33%;
         border-radius: 100%;
-        background-color: var(--ch5-toggle--circle-handle-background-color);
-        border: 0.25em solid var(--ch5-toggle--circle-handle-border-color);
+        background-color: var(--ch5-toggle--circle-knob-background-color);
+        border-width: var(--ch5-toggle--circle-handle-border-width);
+        border-style: var(--ch5-toggle--circle-handle-border-style);
+        border-color: var(--ch5-toggle--circle-handle-off-border-color);
       }
     }
   }
@@ -161,7 +155,7 @@ ch5-toggle:focus {
   /* ch5-toggle - rectangle shape */
   &.ch5-toggle--rectangle {
     .ch5-toggle__handle {
-      background: var(--ch5-toggle--handle-rectangle-background);
+      background: var(--ch5-toggle--rectangle-background-color);
       border-radius: 1px;
       box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0;
       margin: var(--ch5-toggle--handle-rectangle-margin);
@@ -170,19 +164,11 @@ ch5-toggle:focus {
         display: inline-flex;
         width: 50%;
         transition: all 0.1s;
-
-        &:first-of-type {
-          color: var(--ch5-toggle--rectangle-label-off-color);
-        }
-
-        &:last-of-type {
-          color: var(--ch5-toggle--rectangle-label-on-color);
-        }
       }
 
       a {
         border-radius: 1px;
-        background-color: var(--ch5-toggle--rectangle-handle-background-color);
+        background-color: var(--ch5-toggle--rectangle-handle-off-background-color);
       }
     }
   }
@@ -209,7 +195,7 @@ ch5-toggle:focus {
     &.ch5-toggle--circle {
       .ch5-toggle__handle {
         // box-shadow: inset 0 0 0 30px var(--ch5-toggle-handle-checked-color;
-        background-color: var(--ch5-toggle--circle-handle-selected-background-color);
+        background-color: var(--ch5-toggle--circle-handle-on-background-color);
         transition: background-color 0.3s linear;
 
         div:first-of-type {
@@ -223,8 +209,8 @@ ch5-toggle:focus {
         a {
           left: 100%;
           margin-left: -33%;
-          background-color: var(--ch5-toggle--circle-handle-background-color);
-          border-color: var(--ch5-toggle--circle-handle-selected-background-color);
+          background-color: var(--ch5-toggle--circle-knob-background-color);
+          border-color: var(--ch5-toggle--circle-handle-on-border-color);
         }
       }
     }
@@ -238,7 +224,7 @@ ch5-toggle:focus {
         }
 
         a {
-          background-color: var(--ch5-toggle--rectangle-handle-selected-background-color);
+          background-color: var(--ch5-toggle--rectangle-handle-on-background-color);
         }
       }
     }
