@@ -42,6 +42,7 @@ ch5-video-switcher {
     }
   }
 
+  /// @require .ch5-video-switcher
   /// Applied when scrollbar is set to true
   &--source-list-scrollbar-true {
     .scrollbar-container {
@@ -49,6 +50,7 @@ ch5-video-switcher {
     }
   }
 
+  /// @require .ch5-video-switcher
   /// Applied when scrollbar is set to false
   &--source-list-scrollbar-false {
     .scrollbar-container {
@@ -56,6 +58,7 @@ ch5-video-switcher {
     }
   }
 
+  /// @require .ch5-video-switcher
   /// Applied when display screen label  is set to true
   &--screen-list-display-screen-label-true {
     .ch5-video-switcher--screen-list-label {
@@ -63,6 +66,7 @@ ch5-video-switcher {
     }
   }
 
+  /// @require .ch5-video-switcher
   /// Applied when display screen label  is set to false
   &--screen-list-display-screen-label-false {
     .ch5-video-switcher--screen-list-label {
