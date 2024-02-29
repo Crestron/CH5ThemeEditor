@@ -17,7 +17,7 @@ ch5-video-switcher {
   }
 }
 
-/// Main class
+/// Class to set the container properties of ch5-video-switcher
 .ch5-video-switcher {
   width: 500px;
   aspect-ratio: 16/9;
@@ -41,25 +41,25 @@ ch5-video-switcher {
       background: rgba(0, 0, 0, 0.5);
     }
   }
-
+///
   &--source-list-scrollbar-true {
     .scrollbar-container {
       display: block;
     }
   }
-
+///
   &--source-list-scrollbar-false {
     .scrollbar-container {
       display: none;
     }
   }
-
+///
   &--screen-list-display-screen-label-true {
     .ch5-video-switcher--screen-list-label {
       display: block;
     }
   }
-
+///
   &--screen-list-display-screen-label-false {
     .ch5-video-switcher--screen-list-label {
       display: none;
@@ -139,6 +139,7 @@ ch5-video-switcher {
   &--screen-list {
     display: grid;
     grid-gap: 5px;
+    overflow: hidden;
 
     .screen-container {
       border-radius: 10px;
@@ -211,6 +212,7 @@ ch5-video-switcher {
   }
 }
 
+/// Applied when the video switcher is disabled
 .ch5-video-switcher--disabled {
   pointer-events: none;
   opacity: $ch5-video-switcher-disabled-opacity;
