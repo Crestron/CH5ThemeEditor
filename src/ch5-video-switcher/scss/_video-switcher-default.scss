@@ -26,8 +26,8 @@ ch5-video-switcher {
   overflow: hidden;
   gap: 10px;
   background-color: #015181;
-  scrollbar-width: none;
-  position: relative; // needed to hide the firefox scrollbar
+  scrollbar-width: none; // needed to hide the firefox scrollbar
+  position: relative;
 
   .scrollbar-container {
     position: absolute;
@@ -42,28 +42,28 @@ ch5-video-switcher {
     }
   }
 
-  ///
+  /// Applied when scrollbar is set to true
   &--source-list-scrollbar-true {
     .scrollbar-container {
       display: block;
     }
   }
 
-  ///
+  /// Applied when scrollbar is set to false
   &--source-list-scrollbar-false {
     .scrollbar-container {
       display: none;
     }
   }
 
-  ///
+  /// Applied when display screen label  is set to true
   &--screen-list-display-screen-label-true {
     .ch5-video-switcher--screen-list-label {
       display: block;
     }
   }
 
-  ///
+  /// Applied when display screen label  is set to false
   &--screen-list-display-screen-label-false {
     .ch5-video-switcher--screen-list-label {
       display: none;
