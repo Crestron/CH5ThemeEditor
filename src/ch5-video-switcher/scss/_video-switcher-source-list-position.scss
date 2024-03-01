@@ -104,7 +104,7 @@
         &.ch5-video-switcher--source-list-scrollbar-true {
 
             .scrollbar-container {
-                top: 0;
+                top: 10px; // _elcontainer padding 10
                 height: calc(100% - 20px);
                 width: 7px;
 

@@ -20,6 +20,7 @@ ch5-video-switcher {
 /// Class to set the container properties of ch5-video-switcher
 .ch5-video-switcher {
   width: 500px;
+  min-width: 500px;
   aspect-ratio: 16/9;
   padding: 10px;
   display: flex;
