@@ -19,27 +19,27 @@ ch5-video-switcher {
 
 /// Class to set the container properties of ch5-video-switcher
 .ch5-video-switcher {
-  width: 500px;
+  width: var(--ch5-video-switcher--width); 
   min-width: 500px;
   aspect-ratio: 16/9;
   padding: 10px;
   display: flex;
   overflow: hidden;
   gap: 10px;
-  background-color: #015181;
+  background-color: var(--ch5-video-switcher--background-color); 
   scrollbar-width: none; // needed to hide the firefox scrollbar
   position: relative;
 
   .scrollbar-container {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    background-color: var(--ch5-video-switcher--scrollbar-container-background-color); 
+    border-radius: var(--ch5-video-switcher--scrollbar-container-border-radius);
 
     .scrollbar {
       position: absolute;
       will-change: width, transform;
-      border-radius: 10px;
-      background: rgba(0, 0, 0, 0.5);
+      border-radius: var(--ch5-video-switcher--scrollbar-border-radius);
+      background: var(--ch5-video-switcher--scrollbar-background-color);
     }
   }
 
@@ -77,7 +77,7 @@ ch5-video-switcher {
 
   &--source-list {
     --internal-columns: 1;
-    --gap: 20px;
+    --gap: var(--ch5-video-switcher--source-list-gap);
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -104,19 +104,21 @@ ch5-video-switcher {
       flex-wrap: wrap;
 
       .source-icon {
-        font-size: 1em;
+        font-size: var(--ch5-video-switcher--source-icon-size);
         width: 80%;
         height: 80%;
-        border: 1px solid;
-        border-radius: 25%;
-        background-color: white;
+        border-width: var(--ch5-video-switcher--source-icon-border-width);
+        border-style: var(--ch5-video-switcher--source-icon-border-style);
+        border-color: var(--ch5-video-switcher--source-icon-border-color);
+        border-radius: var(--ch5-video-switcher--source-icon-border-radius);
+        background-color: var(--ch5-video-switcher--source-icon-background-color); 
         display: flex;
         align-items: center;
         justify-content: center;
       }
 
       .ch5-video-switcher--source-list-label {
-        color: #ffffff;
+        color: var(--ch5-video-switcher--source-list-label-color);
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -147,16 +149,18 @@ ch5-video-switcher {
 
   &--screen-list {
     display: grid;
-    grid-gap: 5px;
+    grid-gap: var(--ch5-video-switcher--screen-list-grid-gap);
     overflow: hidden;
 
     .screen-container {
-      border-radius: 10px;
-      border: 2px solid #000000;
+      border-radius: var(--ch5-video-switcher--screen-container-border-radius);
+      border-width: var(--ch5-video-switcher--screen-container-border-width);
+      border-style: var(--ch5-video-switcher--screen-container-border-style);
+      border-color: var(--ch5-video-switcher--screen-container-border-color);
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #08456A;
+      background-color: var(--ch5-video-switcher--screen-container-background-color);
       position: relative;
 
       .source-onscreen {
@@ -191,7 +195,7 @@ ch5-video-switcher {
 
     .ch5-video-switcher--screen-list-label {
       position: absolute;
-      color: #ffffff;
+      color: var(--ch5-video-switcher--screen-list-label-color);
       width: 100%;
       text-align: center;
       white-space: nowrap;
