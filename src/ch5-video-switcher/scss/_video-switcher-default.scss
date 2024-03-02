@@ -149,14 +149,14 @@ ch5-video-switcher {
 
   &--screen-list {
     display: grid;
-    grid-gap: var(--ch5-video-switcher--screen-list-grid-gap);
+    grid-gap: 5px;
     overflow: hidden;
 
     .screen-container {
       border-radius: var(--ch5-video-switcher--screen-container-border-radius);
-      border-width: var(--ch5-video-switcher--screen-container-border-width);
+      /* border-width: var(--ch5-video-switcher--screen-container-border-width);
       border-style: var(--ch5-video-switcher--screen-container-border-style);
-      border-color: var(--ch5-video-switcher--screen-container-border-color);
+      border-color: var(--ch5-video-switcher--screen-container-border-color); */
       display: flex;
       align-items: center;
       justify-content: center;

@@ -110,13 +110,6 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--source-list-label-color
   --ch5-video-switcher--source-list-label-color: var(--theme-ch5-video-switcher--source-list-label-color);
 
-  /// description: Gap between each screen
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 6px
-  /// related-theme-variable: --theme-ch5-video-switcher--screen-list-grid-gap
-  --ch5-video-switcher--screen-list-grid-gap: var(--theme-ch5-video-switcher--screen-list-grid-gap);
-
   /// description: Background color for screen container
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
@@ -131,26 +124,26 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--screen-container-border-radius
   --ch5-video-switcher--screen-container-border-radius: var(--theme-ch5-video-switcher--screen-container-border-radius);
 
-  /// description: Border width for screen container
+  /* /// description: Border width for screen container
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 1px
   /// related-theme-variable: --theme-ch5-video-switcher--screen-container-border-width
-  --ch5-video-switcher--screen-container-border-width: var(--theme-ch5-video-switcher--screen-container-border-width);
+  --ch5-video-switcher--screen-container-border-width: var(--theme-ch5-video-switcher--screen-container-border-width); */
 
-  /// description: Border style for the video switcher screen container
+  /* /// description: Border style for the video switcher screen container
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
   /// example: solid
   /// related-theme-variable: --theme-ch5-video-switcher--screen-container-border-style
-  --ch5-video-switcher--screen-container-border-style: var(--theme-ch5-video-switcher--screen-container-border-style);
+  --ch5-video-switcher--screen-container-border-style: var(--theme-ch5-video-switcher--screen-container-border-style); */
 
-  /// description: Border color for screen container
+ /*  /// description: Border color for screen container
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0091ea
   /// related-theme-variable: --theme-ch5-video-switcher--screen-container-border-color
-  --ch5-video-switcher--screen-container-border-color: var(--theme-ch5-video-switcher--screen-container-border-color);
+  --ch5-video-switcher--screen-container-border-color: var(--theme-ch5-video-switcher--screen-container-border-color); */
 
   /// description: Color for screen list label
   /// type: color
