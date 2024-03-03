@@ -19,20 +19,20 @@ ch5-video-switcher {
 
 /// Class to set the container properties of ch5-video-switcher
 .ch5-video-switcher {
-  width: var(--ch5-video-switcher--width); 
+  width: var(--ch5-video-switcher--width);
   min-width: 500px;
   aspect-ratio: 16/9;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   overflow: hidden;
   gap: 10px;
-  background-color: var(--ch5-video-switcher--background-color); 
+  background-color: var(--ch5-video-switcher--background-color);
   scrollbar-width: none; // needed to hide the firefox scrollbar
   position: relative;
 
   .scrollbar-container {
     position: absolute;
-    background-color: var(--ch5-video-switcher--scrollbar-container-background-color); 
+    background-color: var(--ch5-video-switcher--scrollbar-container-background-color);
     border-radius: var(--ch5-video-switcher--scrollbar-container-border-radius);
 
     .scrollbar {
@@ -107,11 +107,11 @@ ch5-video-switcher {
         font-size: var(--ch5-video-switcher--source-icon-size);
         width: 80%;
         height: 80%;
-        border-width: var(--ch5-video-switcher--source-icon-border-width);
+        /* border-width: var(--ch5-video-switcher--source-icon-border-width);
         border-style: var(--ch5-video-switcher--source-icon-border-style);
-        border-color: var(--ch5-video-switcher--source-icon-border-color);
+        border-color: var(--ch5-video-switcher--source-icon-border-color); */
         border-radius: var(--ch5-video-switcher--source-icon-border-radius);
-        background-color: var(--ch5-video-switcher--source-icon-background-color); 
+        background-color: var(--ch5-video-switcher--source-icon-background-color);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -149,14 +149,15 @@ ch5-video-switcher {
 
   &--screen-list {
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 2px;
     overflow: hidden;
+    align-items: center;
 
     .screen-container {
       border-radius: var(--ch5-video-switcher--screen-container-border-radius);
-      /* border-width: var(--ch5-video-switcher--screen-container-border-width);
+      border-width: var(--ch5-video-switcher--screen-container-border-width);
       border-style: var(--ch5-video-switcher--screen-container-border-style);
-      border-color: var(--ch5-video-switcher--screen-container-border-color); */
+      border-color: var(--ch5-video-switcher--screen-container-border-color);
       display: flex;
       align-items: center;
       justify-content: center;
