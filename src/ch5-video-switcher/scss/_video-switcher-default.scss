@@ -80,11 +80,9 @@ ch5-video-switcher {
     --gap: var(--ch5-video-switcher--source-list-gap);
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     align-content: start;
     overflow: scroll;
     gap: var(--gap);
-    justify-content: start;
     will-change: transform;
 
     &::-webkit-scrollbar {
@@ -190,6 +188,7 @@ ch5-video-switcher {
           overflow: hidden;
           text-overflow: ellipsis;
           width: 100%;
+          text-align: center;
         }
       }
     }
