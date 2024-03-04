@@ -60,11 +60,11 @@
     &.ch5-video-switcher--source-list-position-top,
     &.ch5-video-switcher--source-list-position-bottom {
         .ch5-video-switcher--source-list {
-            height: calc(100% / 3);
+            height: calc((calc(100% / 3)) - var(--ch5-video-switcher--source-list-margin));
             flex-direction: column;
 
             .source-container {
-                height: calc(calc(100% / var(--internal-columns) - var(--gap)));
+                height: calc(calc(100% / var(--number-of-source-list-divisions) - var(--source-list-item-spacing)));
             }
         }
 
@@ -88,11 +88,12 @@
     &.ch5-video-switcher--source-list-position-right {
         .ch5-video-switcher--source-list {
             height: 100%;
-            width: calc(100% / 3);
+           // width: calc(100% / 3);
+            width: calc((calc(100% / 3)) - var(--ch5-video-switcher--source-list-margin));
             flex-direction: row;
 
             .source-container {
-                width: calc(calc(100% / var(--internal-columns) - var(--gap)));
+                width: calc(calc(100% / var(--number-of-source-list-divisions) - var(--source-list-item-spacing)));
             }
         }
 

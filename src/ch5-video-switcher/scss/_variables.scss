@@ -132,10 +132,17 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--screen-list-label-color
   --ch5-video-switcher--screen-list-label-color: var(--theme-ch5-video-switcher--screen-list-label-color);
 
-  /// description: Screen Margin
+  /// description: Screen margin
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 1px
   /// related-theme-variable: --theme-ch5-video-switcher--screen-margin
   --ch5-video-switcher--screen-margin: var(--theme-ch5-video-switcher--screen-margin);
+
+  /// description: Source list margin
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 1px
+  /// related-theme-variable: --theme-ch5-video-switcher--source-list-margin
+  --ch5-video-switcher--source-list-margin: var(--theme-ch5-video-switcher--source-list-margin);
 }

@@ -76,14 +76,16 @@ ch5-video-switcher {
   }
 
   &--source-list {
-    --internal-columns: 1;
-    --gap: var(--ch5-video-switcher--source-list-gap);
+    --number-of-source-list-divisions: 1;
+    --source-list-item-spacing: var(--ch5-video-switcher--source-list-gap);
+    --source-list-margin: var(--ch5-video-switcher--source-list-margin);
     display: flex;
     flex-wrap: wrap;
     align-content: start;
     overflow: scroll;
-    gap: var(--gap);
     will-change: transform;
+    gap: var(--source-list-item-spacing);
+    margin: var(--source-list-margin);
 
     &::-webkit-scrollbar {
       height: 0px;
@@ -118,7 +120,7 @@ ch5-video-switcher {
         overflow: hidden;
         text-overflow: ellipsis;
         width: 100%;
-        font-size: calc(100% / var(--internal-columns));
+        font-size: calc(100% / var(--number-of-source-list-divisions));
       }
 
     }
@@ -147,7 +149,6 @@ ch5-video-switcher {
     grid-gap: 2px;
     overflow: hidden;
     align-items: center;
-    
 
     .screen-container {
       border-radius: var(--ch5-video-switcher--screen-container-border-radius);
@@ -160,7 +161,7 @@ ch5-video-switcher {
       background-color: var(--ch5-video-switcher--screen-container-background-color);
       position: relative;
       /* flex-direction: column; */
-     /*  margin: var(--ch5-video-switcher--screen-margin); */
+      /*  margin: var(--ch5-video-switcher--screen-margin); */
 
       .source-onscreen {
         display: flex;
@@ -169,6 +170,7 @@ ch5-video-switcher {
         flex-wrap: wrap;
         aspect-ratio: 1/1;
         width: 40%;
+
         /* align-self:center; */
         .source-icon {
           font-size: 1em;
