@@ -107,9 +107,6 @@ ch5-video-switcher {
         font-size: var(--ch5-video-switcher--source-icon-size);
         width: 80%;
         height: 80%;
-        /* border-width: var(--ch5-video-switcher--source-icon-border-width);
-        border-style: var(--ch5-video-switcher--source-icon-border-style);
-        border-color: var(--ch5-video-switcher--source-icon-border-color); */
         border-radius: var(--ch5-video-switcher--source-icon-border-radius);
         background-color: var(--ch5-video-switcher--source-icon-background-color);
         display: flex;
@@ -152,6 +149,7 @@ ch5-video-switcher {
     grid-gap: 2px;
     overflow: hidden;
     align-items: center;
+    
 
     .screen-container {
       border-radius: var(--ch5-video-switcher--screen-container-border-radius);
@@ -163,6 +161,8 @@ ch5-video-switcher {
       justify-content: center;
       background-color: var(--ch5-video-switcher--screen-container-background-color);
       position: relative;
+      /* flex-direction: column; */
+     /*  margin: var(--ch5-video-switcher--screen-margin); */
 
       .source-onscreen {
         display: flex;
@@ -171,7 +171,7 @@ ch5-video-switcher {
         flex-wrap: wrap;
         aspect-ratio: 1/1;
         width: 40%;
-
+        /* align-self:center; */
         .source-icon {
           font-size: 1em;
           width: 80%;
@@ -202,6 +202,7 @@ ch5-video-switcher {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      /* align-self:start; */
       top: 0;
     }
 
