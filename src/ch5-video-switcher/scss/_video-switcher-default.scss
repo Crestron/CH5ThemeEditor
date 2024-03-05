@@ -77,15 +77,13 @@ ch5-video-switcher {
 
   &--source-list {
     --number-of-source-list-divisions: 1;
-    --source-list-item-spacing: var(--ch5-video-switcher--source-list-gap);
-    --source-list-margin: var(--ch5-video-switcher--source-list-margin);
     display: flex;
     flex-wrap: wrap;
     align-content: start;
     overflow: scroll;
     will-change: transform;
-    gap: var(--source-list-item-spacing);
-    margin: var(--source-list-margin);
+    gap: var(--ch5-video-switcher--source-list-gap);
+    margin: var(--ch5-video-switcher--source-list-margin);
 
     &::-webkit-scrollbar {
       height: 0px;
@@ -102,11 +100,12 @@ ch5-video-switcher {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
+      overflow-x: hidden;
 
       .source-icon {
         font-size: var(--ch5-video-switcher--source-icon-size);
-        width: 80%;
-        height: 80%;
+        height: calc(100% - var(--ch5-video-switcher-source-label-height));
+        aspect-ratio: 1/1;
         border-radius: var(--ch5-video-switcher--source-icon-border-radius);
         background-color: var(--ch5-video-switcher--source-icon-background-color);
         display: flex;
@@ -121,6 +120,7 @@ ch5-video-switcher {
         text-overflow: ellipsis;
         width: 100%;
         font-size: calc(100% / var(--number-of-source-list-divisions));
+        height: var(--ch5-video-switcher-source-label-height);
       }
 
     }

@@ -139,8 +139,7 @@
             "value": "Ch5VideoSwitcher",
             "version": "1.0.0",
             "undefined": [
-                "--gap",
-                "--internal-columns"
+                "--number-of-source-list-divisions"
             ]
         },
         "ch5-wifi-signal-level-gauge": {

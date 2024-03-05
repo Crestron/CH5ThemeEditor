@@ -64,7 +64,7 @@
             flex-direction: column;
 
             .source-container {
-                height: calc(calc(100% / var(--number-of-source-list-divisions) - var(--source-list-item-spacing)));
+                height: calc(calc(100% / var(--number-of-source-list-divisions) - var(--ch5-video-switcher--source-list-gap)));
             }
         }
 
@@ -93,7 +93,7 @@
             flex-direction: row;
 
             .source-container {
-                width: calc(calc(100% / var(--number-of-source-list-divisions) - var(--source-list-item-spacing)));
+                width: calc(calc(100% / var(--number-of-source-list-divisions) - var(--ch5-video-switcher--source-list-gap)));
             }
         }
 
