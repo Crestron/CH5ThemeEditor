@@ -115,7 +115,6 @@ ch5-video-switcher {
         border-width: var(--ch5-video-switcher--source-icon-border-width);
         border-style: var(--ch5-video-switcher--source-icon-border-style);
         border-color: var(--ch5-video-switcher--source-icon-border-color);
-        background-color: var(--ch5-video-switcher--source-icon-background-color);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -189,8 +188,7 @@ ch5-video-switcher {
           width: 80%;
           height: 80%;
           border: 1px solid;
-          border-radius: 25%;
-          background-color: white;
+          border-radius: var(--ch5-video-switcher--source-icon-border-radius);
           display: flex;
           align-items: center;
           justify-content: center;
