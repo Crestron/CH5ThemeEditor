@@ -132,7 +132,7 @@ ch5-video-switcher {
         font-weight: var(--ch5-video-switcher--source-list-label-weight);
         font-style: var(--ch5-video-switcher--source-list-label-style);
         color: var(--ch5-video-switcher--source-list-label-color);
-        
+
       }
 
     }
@@ -201,12 +201,14 @@ ch5-video-switcher {
         }
 
         .ch5-video-switcher--source-list-label {
-          color: #ffffff;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
           width: 100%;
           text-align: center;
+          font-weight: var(--ch5-video-switcher--source-list-label-weight);
+          font-style: var(--ch5-video-switcher--source-list-label-style);
+          color: var(--ch5-video-switcher--source-list-label-color);
         }
       }
     }
