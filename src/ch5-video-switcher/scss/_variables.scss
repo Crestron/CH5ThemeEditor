@@ -145,11 +145,4 @@ ch5-video-switcher {
   /// example: 1px
   /// related-theme-variable: --theme-ch5-video-switcher--source-list-margin
   --ch5-video-switcher--source-list-margin: var(--theme-ch5-video-switcher--source-list-margin);
-
-  /// description: Source label height
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 1px
-  /// related-theme-variable: --theme-ch5-video-switcher--source-label-height
-  --ch5-video-switcher--source-label-height: var(--theme-ch5-video-switcher--source-label-height);
 }
