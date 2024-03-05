@@ -105,12 +105,27 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--source-icon-background-color
   --ch5-video-switcher--source-icon-background-color: var(--theme-ch5-video-switcher--source-icon-background-color);
 
-  /// description: Color for soure list
+  /// description: Color for soure list label
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #015181
   /// related-theme-variable: --theme-ch5-video-switcher--source-list-label-color
   --ch5-video-switcher--source-list-label-color: var(--theme-ch5-video-switcher--source-list-label-color);
+
+  /// description: Font style for source list label
+  /// type: list
+  /// values: normal, italic
+  /// example: normal 
+  /// related-theme-variable: --theme-ch5-video-switcher--source-list-label-style
+  --ch5-video-switcher--source-list-label-style: var(--theme-ch5-video-switcher--source-list-label-style);
+
+  /// description: Font weight for source list label
+  /// type: list
+  /// values: normal, bold
+  /// example: normal 
+  /// related-theme-variable: --theme-ch5-video-switcher--source-list-label-weight
+  --ch5-video-switcher--source-list-label-weight: var(--theme-ch5-video-switcher--source-list-label-weight);
+
 
   /// description: Background color for screen container
   /// type: color

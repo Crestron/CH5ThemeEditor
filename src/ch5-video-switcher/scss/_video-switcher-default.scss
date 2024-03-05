@@ -123,13 +123,16 @@ ch5-video-switcher {
       }
 
       .ch5-video-switcher--source-list-label {
-        color: var(--ch5-video-switcher--source-list-label-color);
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         width: 100%;
         font-size: calc(100% / var(--number-of-source-list-divisions));
         line-height: 1.5;
+        font-weight: var(--ch5-video-switcher--source-list-label-weight);
+        font-style: var(--ch5-video-switcher--source-list-label-style);
+        color: var(--ch5-video-switcher--source-list-label-color);
+        
       }
 
     }

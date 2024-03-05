@@ -1933,7 +1933,11 @@
 
   --theme-ch5-video-switcher--source-icon-background-color: #000;
 
-  --theme-ch5-video-switcher--source-list-label-color: #fff;
+  --theme-ch5-video-switcher--source-list-label-color: var(--theme-colors--theme-body-font-color);
+
+  --theme-ch5-video-switcher--source-list-label-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-video-switcher--source-list-label-weight: var(--theme-fonts--font-weight);
 
   --theme-ch5-video-switcher--screen-container-background-color: transparent;
 
