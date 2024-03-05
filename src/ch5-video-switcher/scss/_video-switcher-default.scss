@@ -119,6 +119,7 @@ ch5-video-switcher {
         align-items: center;
         justify-content: center;
         flex: 1;
+        color: var(--ch5-video-switcher--source-list-label-color);
       }
 
       .ch5-video-switcher--source-list-label {
@@ -196,6 +197,7 @@ ch5-video-switcher {
           border-width: var(--ch5-video-switcher--source-icon-border-width);
           border-style: var(--ch5-video-switcher--source-icon-border-style);
           border-color: var(--ch5-video-switcher--source-icon-border-color);
+          color: var(--ch5-video-switcher--source-list-label-color);
         }
 
         .ch5-video-switcher--source-list-label {
