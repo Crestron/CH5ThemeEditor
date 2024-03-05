@@ -150,6 +150,6 @@ ch5-video-switcher {
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 1px
-  /// related-theme-variable: --theme-ch5-video-switcher-source-label-height
-  --ch5-video-switcher-source-label-height:var(--theme-ch5-video-switcher-source-label-height);
+  /// related-theme-variable: --theme-ch5-video-switcher--source-label-height
+  --ch5-video-switcher--source-label-height: var(--theme-ch5-video-switcher--source-label-height);
 }

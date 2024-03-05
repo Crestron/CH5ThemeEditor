@@ -140,6 +140,9 @@
             "version": "1.0.0",
             "undefined": [
                 "--number-of-source-list-divisions"
+            ],
+            "unused": [
+                "--ch5-video-switcher--screen-margin"
             ]
         },
         "ch5-wifi-signal-level-gauge": {
