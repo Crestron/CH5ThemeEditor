@@ -29,6 +29,10 @@ ch5-video-switcher {
   background-color: var(--ch5-video-switcher--background-color);
   scrollbar-width: none; // needed to hide the firefox scrollbar
   position: relative;
+  border-radius: var(--ch5-video-switcher--container-border-radius);
+  border-width: var(--ch5-video-switcher--container-border-width);
+  border-style: var(--ch5-video-switcher--container-border-style);
+  border-color: var(--ch5-video-switcher--container-border-color);
 
   .scrollbar-container {
     position: absolute;
@@ -82,6 +86,7 @@ ch5-video-switcher {
     align-content: start;
     overflow: scroll;
     will-change: transform;
+    justify-content: space-around;
     gap: var(--ch5-video-switcher--source-list-gap);
     margin: var(--ch5-video-switcher--source-list-margin);
 
@@ -107,6 +112,9 @@ ch5-video-switcher {
         height: 100%;
         aspect-ratio: 1/1;
         border-radius: var(--ch5-video-switcher--source-icon-border-radius);
+        border-width: var(--ch5-video-switcher--source-icon-border-width);
+        border-style: var(--ch5-video-switcher--source-icon-border-style);
+        border-color: var(--ch5-video-switcher--source-icon-border-color);
         background-color: var(--ch5-video-switcher--source-icon-background-color);
         display: flex;
         align-items: center;
@@ -170,7 +178,7 @@ ch5-video-switcher {
         align-items: center;
         flex-wrap: wrap;
         aspect-ratio: 1/1;
-        width: 40%;
+        height: 40%;
 
         /* align-self:center; */
         .source-icon {

@@ -26,6 +26,7 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--background-color
   --ch5-video-switcher--background-color: var(--theme-ch5-video-switcher--background-color);
 
+
   /// description: Background color for scrollbar container
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
@@ -75,6 +76,27 @@ ch5-video-switcher {
   /// example: 5px
   /// related-theme-variable: --theme-ch5-video-switcher--source-icon-border-radius
   --ch5-video-switcher--source-icon-border-radius: var(--theme-ch5-video-switcher--source-icon-border-radius);
+
+  /// description: Border width for source icon
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 5px
+  /// related-theme-variable: --theme-ch5-video-switcher--source-icon-border-width
+  --ch5-video-switcher--source-icon-border-width: var(--theme-ch5-video-switcher--source-icon-border-width);
+
+  /// description: Border style for source icon
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 5px
+  /// related-theme-variable: --theme-ch5-video-switcher--source-icon-border-style
+  --ch5-video-switcher--source-icon-border-style: var(--theme-ch5-video-switcher--source-icon-border-style);
+
+  /// description: Border color for source icon
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #015181
+  /// related-theme-variable: --theme-ch5-video-switcher--source-icon-border-color
+  --ch5-video-switcher--source-icon-border-color: var(--theme-ch5-video-switcher--source-icon-border-color);
 
   /// description: Background color for source icon
   /// type: color
@@ -145,4 +167,33 @@ ch5-video-switcher {
   /// example: 1px
   /// related-theme-variable: --theme-ch5-video-switcher--source-list-margin
   --ch5-video-switcher--source-list-margin: var(--theme-ch5-video-switcher--source-list-margin);
+
+  /// description: Border radius for video switcher container
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 5px
+  /// related-theme-variable: --theme-ch5-video-switcher--container-border-radius
+  --ch5-video-switcher--container-border-radius: var(--theme-ch5-video-switcher--container-border-radius);
+
+  /// description: Border width for video switcher container
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 1px
+  /// related-theme-variable: --theme-ch5-video-switcher--container-border-width
+  --ch5-video-switcher--container-border-width: var(--theme-ch5-video-switcher--container-border-width);
+
+  /// description: Border style for the video switcher container
+  /// type: list
+  /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// example: solid
+  /// related-theme-variable: --theme-ch5-video-switcher--container-border-style
+  --ch5-video-switcher--container-border-style: var(--theme-ch5-video-switcher--container-border-style);
+
+  /// description: Border color for video switcher container
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #0091ea
+  /// related-theme-variable: --theme-ch5-video-switcher--container-border-color
+  --ch5-video-switcher--container-border-color: var(--theme-ch5-video-switcher--container-border-color);
+
 }

@@ -1909,7 +1909,7 @@
 
   --theme-ch5-video-switcher--width: 500px;
 
-  --theme-ch5-video-switcher--background-color: #015181;
+  --theme-ch5-video-switcher--background-color: transparent;
 
   --theme-ch5-video-switcher--scrollbar-container-background-color: rgba(0, 0, 0, 0.1);
 
@@ -1926,11 +1926,17 @@
 
   --theme-ch5-video-switcher--source-icon-border-radius: 25%;
 
+  --theme-ch5-video-switcher--source-icon-border-width: 1px;
+
+  --theme-ch5-video-switcher--source-icon-border-style: solid;
+
+  --theme-ch5-video-switcher--source-icon-border-color: var(--theme-colors--theme-border-color);
+
   --theme-ch5-video-switcher--source-icon-background-color: #fff;
 
   --theme-ch5-video-switcher--source-list-label-color: #fff;
 
-  --theme-ch5-video-switcher--screen-container-background-color: #08456A;
+  --theme-ch5-video-switcher--screen-container-background-color: transparent;
 
   --theme-ch5-video-switcher--screen-container-border-radius: 10px;
 
@@ -1938,13 +1944,21 @@
 
   --theme-ch5-video-switcher--screen-container-border-style: solid;
 
-  --theme-ch5-video-switcher--screen-container-border-color: #000;
+  --theme-ch5-video-switcher--screen-container-border-color: var(--theme-colors--theme-border-color);;
 
   --theme-ch5-video-switcher--screen-list-label-color: #fff;
 
   --theme-ch5-video-switcher--screen-margin: 5px;
 
   --theme-ch5-video-switcher--source-list-margin: 5px;
+
+  --theme-ch5-video-switcher--container-border-radius: 2px;
+
+  --theme-ch5-video-switcher--container-border-width: 1px;
+
+  --theme-ch5-video-switcher--container-border-style: solid;
+
+  --theme-ch5-video-switcher--container-border-color: var(--theme-colors--theme-border-color);
 
   // ***************************************
   // ch5-wifi-signal-level-gauge
