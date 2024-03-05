@@ -154,6 +154,27 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--screen-list-label-color
   --ch5-video-switcher--screen-list-label-color: var(--theme-ch5-video-switcher--screen-list-label-color);
 
+  /// description: Font style for screen list label
+  /// type: list
+  /// values: normal, italic
+  /// example: normal 
+  /// related-theme-variable: --theme-ch5-video-switcher--screen-list-label-style
+  --ch5-video-switcher--screen-list-label-style: var(--theme-ch5-video-switcher--screen-list-label-style);
+
+  /// description: Font weight for screen list label
+  /// type: list
+  /// values: normal, bold
+  /// example: normal 
+  /// related-theme-variable: --theme-ch5-video-switcher--screen-list-label-weight
+  --ch5-video-switcher--screen-list-label-weight: var(--theme-ch5-video-switcher--screen-list-label-weight);
+
+  /// description: Font size for screen list label
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 16px 
+  /// related-theme-variable: --theme-ch5-video-switcher--screen-list-label-size
+  --ch5-video-switcher--screen-list-label-size: var(--theme-ch5-video-switcher--screen-list-label-size);
+
   /// description: Screen margin
   /// type: unit
   /// values: px, vw, vh, em, rem, %

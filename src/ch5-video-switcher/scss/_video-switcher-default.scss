@@ -191,6 +191,10 @@ ch5-video-switcher {
           display: flex;
           align-items: center;
           justify-content: center;
+          border-radius: var(--ch5-video-switcher--source-icon-border-radius);
+          border-width: var(--ch5-video-switcher--source-icon-border-width);
+          border-style: var(--ch5-video-switcher--source-icon-border-style);
+          border-color: var(--ch5-video-switcher--source-icon-border-color);
         }
 
         .ch5-video-switcher--source-list-label {
@@ -207,6 +211,9 @@ ch5-video-switcher {
     .ch5-video-switcher--screen-list-label {
       position: absolute;
       color: var(--ch5-video-switcher--screen-list-label-color);
+      font-style: var(--ch5-video-switcher--screen-list-label-style);
+      font-weight: var(--ch5-video-switcher--screen-list-label-weight);
+      font-size: var(--ch5-video-switcher--screen-list-label-size);
       width: 100%;
       text-align: center;
       white-space: nowrap;

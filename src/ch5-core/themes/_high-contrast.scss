@@ -1944,7 +1944,13 @@
 
   --theme-ch5-video-switcher--screen-container-border-color: var(--theme-colors--theme-border-color);
 
-  --theme-ch5-video-switcher--screen-list-label-color: #fff;
+  --theme-ch5-video-switcher--screen-list-label-color: var(--theme-colors--theme-body-font-color);
+
+  --theme-ch5-video-switcher--screen-list-label-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-video-switcher--screen-list-label-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-video-switcher--screen-list-label-size: var(--theme-fonts--font-size);
 
   --theme-ch5-video-switcher--screen-margin: 5px;
 
