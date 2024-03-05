@@ -173,7 +173,7 @@ ch5-video-switcher {
       background-color: var(--ch5-video-switcher--screen-container-background-color);
       position: relative;
       /* flex-direction: column; */
-      /*  margin: var(--ch5-video-switcher--screen-margin); */
+      padding: var(--ch5-video-switcher--screen-padding);
 
       .source-onscreen {
         display: flex;
@@ -225,7 +225,9 @@ ch5-video-switcher {
       overflow: hidden;
       text-overflow: ellipsis;
       /* align-self:start; */
-      top: 0;
+      top: var(--ch5-video-switcher--screen-padding);
+      left: var(--ch5-video-switcher--screen-padding);
+      right: var(--ch5-video-switcher--screen-padding);
     }
 
     &-label {
