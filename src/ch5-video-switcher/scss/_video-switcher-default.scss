@@ -34,6 +34,11 @@ ch5-video-switcher {
   border-style: var(--ch5-video-switcher--container-border-style);
   border-color: var(--ch5-video-switcher--container-border-color);
 
+  &.ch5-video-switcher::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+  }
+
   .scrollbar-container {
     position: absolute;
     background-color: var(--ch5-video-switcher--scrollbar-container-background-color);

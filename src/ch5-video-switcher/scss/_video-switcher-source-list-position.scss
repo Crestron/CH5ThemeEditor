@@ -74,8 +74,9 @@
 
         &.ch5-video-switcher--source-list-scrollbar-true {
             .scrollbar-container {
-                width: calc(100% - 20px);
-                height: 7px;
+                width: 100%;
+                height: var(--ch5-video-switcher--scrollbar-width);
+                left: 0;
 
                 .scrollbar {
                     height: 100%;
@@ -88,7 +89,6 @@
     &.ch5-video-switcher--source-list-position-right {
         .ch5-video-switcher--source-list {
             height: 100%;
-           // width: calc(100% / 3);
             width: calc((calc(100% / 3)) - var(--ch5-video-switcher--source-list-margin));
             flex-direction: row;
 
@@ -105,9 +105,9 @@
         &.ch5-video-switcher--source-list-scrollbar-true {
 
             .scrollbar-container {
-                top: 5px; // _elcontainer padding 5
-                height: calc(100% - 20px);
-                width: 7px;
+                top: 0px;
+                height: 100%;
+                width: var(--ch5-video-switcher--scrollbar-width);
 
                 .scrollbar {
                     width: 100%;

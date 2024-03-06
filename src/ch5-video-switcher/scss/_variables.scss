@@ -55,6 +55,13 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--scrollbar-background-color
   --ch5-video-switcher--scrollbar-background-color: var(--theme-ch5-video-switcher--scrollbar-background-color);
 
+  /// description: Scrollbar width for container
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 7px 
+  /// related-theme-variable: --theme-ch5-video-switcher--scrollbar-width
+  --ch5-video-switcher--scrollbar-width: var(--theme-ch5-video-switcher--scrollbar-width);
+
   /// description: Gap between each source
   /// type: unit
   /// values: px, vw, vh, em, rem, %
