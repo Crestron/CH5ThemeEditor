@@ -94,8 +94,10 @@ ch5-video-switcher {
     justify-content: space-around;
     gap: var(--ch5-video-switcher--source-list-gap);
     margin: var(--ch5-video-switcher--source-list-margin);
+    scrollbar-width: none;
 
-    &::-webkit-scrollbar {
+
+    &.ch5-video-switcher-source-list::-webkit-scrollbar {
       height: 0px;
       width: 0px;
     }
@@ -187,6 +189,7 @@ ch5-video-switcher {
         flex-wrap: wrap;
         aspect-ratio: 1/1;
         height: 40%;
+        overflow: hidden;
 
         /* align-self:center; */
         .source-icon {
