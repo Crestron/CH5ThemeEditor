@@ -292,12 +292,4 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-
-  .ch5-slider-button--pressed {
-    .ch5-button {
-      border-color: var(--ch5-slider--button-default-pressed-border-color);
-      background-color: var(--ch5-slider--button-default-pressed-background-color);
-      color: var(--ch5-slider--button-default-pressed-font-color);
-    }
-  }
 }
