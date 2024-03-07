@@ -1204,8 +1204,6 @@
 
   --theme-ch5-overlay-panel--close-icon-color-hover: #333;
 
-  --theme-ch5-overlay-panel--mask-background-color: rgba(150, 150, 150, 0.3);
-
   --theme-ch5-overlay-panel--close-icon-background-color: #fff;
 
   --theme-ch5-overlay-panel--background-color: #fff;
@@ -1598,8 +1596,6 @@
 
   --theme-ch5-modal-dialog--close-icon-size: var(--theme-fonts--font-size);
 
-  --theme-ch5-modal-dialog--title-font-style: var(--theme-fonts--font-style);
-
   --theme-ch5-modal-dialog--contents-font-style: var(--theme-fonts--font-style);
 
   --theme-ch5-modal-dialog--contents-font-weight: var(--theme-fonts--font-weight);
@@ -1644,8 +1640,6 @@
 
   --theme-ch5-modal-dialog--default-close-icon-size: 24px;
 
-  --theme-ch5-modal-dialog--title-font-size: 1.3em;
-
   --theme-ch5-modal-dialog--contents-padding: 10px;
 
   --theme-ch5-modal-dialog--contents-font-size: 18px;
@@ -1656,8 +1650,6 @@
 
   --theme-ch5-modal-dialog--prompt-text-font-size: 16px;
 
-  --theme-ch5-modal-dialog--title-font-weight: bold;
-
   // ***************************************
   // ch5-slider
   // ***************************************
@@ -1667,12 +1659,6 @@
   --theme-ch5-slider--tooltip-font-style: normal;
 
   --theme-ch5-slider--tooltip-font-weight: normal;
-
-  --theme-ch5-slider--button-default-pressed-border-color: var(--theme-colors--default-pressed-border-color);
-
-  --theme-ch5-slider--button-default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
-
-  --theme-ch5-slider--button-default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
 
   --theme-ch5-slider--connect-background-color: #0E72ED;
 
@@ -1819,10 +1805,6 @@
   --theme-ch5-slider--size-x-large-handle-width-oval: 54px;
 
   // Horizontal and Vertical
-
-  --theme-ch5-slider--horizontal-pips: 50px;
-
-  --theme-ch5-slider--vertical-pips: 65px;
 
   --theme-ch5-slider--tooltip-on-spacing-vertical-advanced: 60px;
 

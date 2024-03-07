@@ -19,7 +19,6 @@
 }
 
 @mixin ch5SliderSetButtonSize($button-width, $button-height, $shape) {
-
   .slider-on-button,
   .slider-off-button {
     .ch5-button--#{$shape} {
@@ -70,7 +69,7 @@
 
       .noUi-pips-horizontal {
         top: calc(var(#{$handle-height}) - var(--ch5-slider--height) + 4px);
-        height: var(--ch5-slider--horizontal-pips);
+        height: 50px;
       }
 
       .ch5-slider-button-container {
@@ -107,7 +106,7 @@
     &.ch5-slider-ticks {
       .noUi-pips-horizontal {
         top: calc(calc((var(#{$handle-height}) - var(--ch5-slider--height))) + 4px);
-        height: var(--ch5-slider--horizontal-pips);
+        height: 50px; // Variable is not required here
       }
 
       .ch5-slider-button-container {
@@ -160,7 +159,7 @@
 
       .noUi-pips-vertical {
         left: calc(calc((var(#{$handle-width}) - var(--ch5-slider--height))) + 4px);
-        width: var(--ch5-slider--vertical-pips);
+        width: 65px; // Variable is not required here
       }
 
       .ch5-slider-button-container {
@@ -210,7 +209,7 @@
 
       .noUi-pips-vertical {
         left: calc(calc((var(#{$handle-width}) - var(--ch5-slider--height))) + 4);
-        width: var(--ch5-slider--vertical-pips);
+        width: 65px;
       }
 
       .ch5-slider-button-container {
@@ -220,10 +219,10 @@
       }
 
       &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(.ch5-slider--stretch--height) {
-        max-width: calc(calc(var(#{$handle-height}) * 1.2) + var(--ch5-slider--vertical-pips));
+        max-width: calc(calc(var(#{$handle-height}) * 1.2) + 65px);
 
         &.ch5-slider--tooltip--on {
-          max-width: calc(var(--ch5-slider--tooltip-on-spacing-vertical-advanced) + calc(var(#{$handle-height}) * 1.2) + var(--ch5-slider--vertical-pips));
+          max-width: calc(var(--ch5-slider--tooltip-on-spacing-vertical-advanced) + calc(var(#{$handle-height}) * 1.2) + 65px);
         }
       }
     }
