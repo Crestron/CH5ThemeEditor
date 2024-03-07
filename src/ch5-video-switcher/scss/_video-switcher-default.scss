@@ -114,7 +114,7 @@ ch5-video-switcher {
       align-items: center;
       flex-direction: column;
       overflow-x: hidden;
-      font-size: var(--ch5-video-switcher--screen-icon-size);
+      font-size: var(--ch5-video-switcher--source-icon-size);
 
       .source-icon {
         font-size: calc(1em /  var(--number-of-source-list-divisions));
@@ -140,7 +140,7 @@ ch5-video-switcher {
         overflow: hidden;
         text-overflow: ellipsis;
         width: 100%;
-        font-size: calc(calc(0.3em / var(--number-of-source-list-divisions)) + calc(4px / var(--number-of-source-list-divisions))); //var(--number-of-source-list-divisions));
+        font-size: calc(calc(0.3em / var(--number-of-source-list-divisions)) + calc(4px / var(--number-of-source-list-divisions)));
         line-height: 1.5;
         font-weight: var(--ch5-video-switcher--source-list-label-weight);
         font-style: var(--ch5-video-switcher--source-list-label-style);
@@ -185,29 +185,25 @@ ch5-video-switcher {
       position: relative;
       /* flex-direction: column; */
       padding: var(--ch5-video-switcher--screen-padding);
-
+    
       .source-onscreen {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-        aspect-ratio: 1/1;
+        // flex-wrap: wrap;
+        flex-direction: column;
+        // aspect-ratio: 1/1;
         width: 100% !important; // TODO - remove importnat after fixing in crcomlib
+        height: auto !important; // TODO - still checking if this makes sense
         font-size: var(--ch5-video-switcher--screen-icon-size);
 
         .source-icon {
           font-size: 1em;
           width: 80%;
           height: 80%;
-          // border: 1px solid; // TODO -- Make it a variable
-          // border-radius: var(--ch5-video-switcher--source-icon-border-radius);
           display: flex;
           align-items: center;
           justify-content: center;
-          // border-radius: var(--ch5-video-switcher--source-icon-border-radius);
-          // border-width: var(--ch5-video-switcher--source-icon-border-width);
-          // border-style: var(--ch5-video-switcher--source-icon-border-style);
-          // border-color: var(--ch5-video-switcher--source-icon-border-color);
           color: var(--ch5-video-switcher--source-list-label-color);
         }
 
@@ -217,6 +213,7 @@ ch5-video-switcher {
           text-overflow: ellipsis;
           width: 100%;
           text-align: center;
+          font-size: calc(0.2em + 10px);
           font-weight: var(--ch5-video-switcher--source-list-label-weight);
           font-style: var(--ch5-video-switcher--source-list-label-style);
           color: var(--ch5-video-switcher--source-list-label-color);
