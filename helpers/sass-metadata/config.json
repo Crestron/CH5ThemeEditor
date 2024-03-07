@@ -20,7 +20,10 @@
         },
         "ch5-button": {
             "value": "Ch5Button",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "undefined": [
+                "--fa-style-family-classic"
+            ]
         },
         "ch5-button-list": {
             "value": "Ch5ButtonList",
@@ -84,7 +87,15 @@
         },
         "ch5-slider": {
             "value": "Ch5Slider",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "undefined": [
+                "--temp-var",
+                "--ch5-slider--size-x-small-handle-height-oval",
+                "--ch5-slider--size-small-handle-height-oval",
+                "--ch5-slider--size-regular-handle-height-oval",
+                "--ch5-slider--size-large-handle-height-oval",
+                "--ch5-slider--size-x-large-handle-height-oval"
+            ]
         },
         "ch5-spinner": {
             "value": "Ch5Spinner",
@@ -112,11 +123,24 @@
         },
         "ch5-triggerview": {
             "value": "ch5Triggerview",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "unused": [
+                "--ch5-triggerview--gap",
+                "--ch5-triggerview--slide-max-height",
+                "--ch5-triggerview--slide-min-height",
+                "--ch5-triggerview--transition-duration"
+            ]
         },
         "ch5-video": {
             "value": "Ch5Video",
             "version": "1.0.0"
+        },
+        "ch5-video-switcher": {
+            "value": "Ch5VideoSwitcher",
+            "version": "1.0.0",
+            "undefined": [
+                "--number-of-source-list-divisions"
+            ]
         },
         "ch5-wifi-signal-level-gauge": {
             "value": "Ch5WifiSignalLevelGauge",

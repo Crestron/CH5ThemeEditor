@@ -1519,9 +1519,9 @@
   --theme-ch5-toggle--regular-font-size: var(--theme-fonts--font-size);
 
   --theme-ch5-toggle--x-small-font-size: 10px;
-  
+
   --theme-ch5-toggle--small-font-size: 12px;
-  
+
   --theme-ch5-toggle--large-font-size: 18px;
 
   --theme-ch5-toggle--x-large-font-size: 20px;
@@ -1544,7 +1544,7 @@
 
   --theme-ch5-toggle--circle-handle-on-background-color: #0000ff;
 
-  --theme-ch5-toggle--circle-handle-on-border-color: #0000ff; 
+  --theme-ch5-toggle--circle-handle-on-border-color: #0000ff;
 
   --theme-ch5-toggle--label-font-color: #000;
 
@@ -1654,7 +1654,7 @@
   // ch5-slider
   // ***************************************
 
-  --theme-ch5-slider--tooltip-font-size: 14px; 
+  --theme-ch5-slider--tooltip-font-size: 14px;
 
   --theme-ch5-slider--tooltip-font-style: normal;
 
@@ -1705,11 +1705,11 @@
   --theme-ch5-slider--size-x-small-handle-height-oval: 17.3px;
 
   --theme-ch5-slider--size-small-handle-height-oval: 20px;
-  
+
   --theme-ch5-slider--size-regular-handle-height-oval: 24px;
-  
+
   --theme-ch5-slider--size-large-handle-height-oval: 28px;
-  
+
   --theme-ch5-slider--size-x-large-handle-height-oval: 36px;
 
   /* == Button sizes == */
@@ -1883,6 +1883,72 @@
   --theme-ch5-video--size-small-max-w-650: 220px;
 
   --theme-ch5-video--size-x-small-max-w-650: 200px;
+
+  // ***************************************
+  // ch5-video-switcher
+  // ***************************************
+
+  --theme-ch5-video-switcher--width: 500px;
+
+  --theme-ch5-video-switcher--background-color: transparent;
+
+  --theme-ch5-video-switcher--scrollbar-width: var(--theme-others--scrollbar-width);
+
+  --theme-ch5-video-switcher--scrollbar-container-background-color: rgba(0, 0, 0, 0.1);
+
+  --theme-ch5-video-switcher--scrollbar-container-border-radius: 10px;
+
+  --theme-ch5-video-switcher--scrollbar-border-radius: 10px;
+
+  --theme-ch5-video-switcher--scrollbar-background-color: rgba(0, 0, 0, 0.5);
+
+  --theme-ch5-video-switcher--source-list-gap: 20px;
+
+  --theme-ch5-video-switcher--source-icon-size: 1em;
+
+  --theme-ch5-video-switcher--source-icon-border-radius: 25%;
+
+  --theme-ch5-video-switcher--source-icon-border-width: 1px;
+
+  --theme-ch5-video-switcher--source-icon-border-style: solid;
+
+  --theme-ch5-video-switcher--source-icon-border-color: var(--theme-colors--theme-border-color);
+
+  --theme-ch5-video-switcher--source-list-label-color: var(--theme-colors--theme-body-font-color);
+
+  --theme-ch5-video-switcher--source-list-label-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-video-switcher--source-list-label-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-video-switcher--screen-container-background-color: transparent;
+
+  --theme-ch5-video-switcher--screen-container-border-radius: 10px;
+
+  --theme-ch5-video-switcher--screen-container-border-width: 1px;
+
+  --theme-ch5-video-switcher--screen-container-border-style: solid;
+
+  --theme-ch5-video-switcher--screen-container-border-color: var(--theme-colors--theme-border-color);
+
+  --theme-ch5-video-switcher--screen-list-label-color: var(--theme-colors--theme-body-font-color);
+
+  --theme-ch5-video-switcher--screen-list-label-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-video-switcher--screen-list-label-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-video-switcher--screen-list-label-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-video-switcher--screen-padding: 5px;
+
+  --theme-ch5-video-switcher--source-list-margin: 5px;
+
+  --theme-ch5-video-switcher--container-border-radius: 2px;
+
+  --theme-ch5-video-switcher--container-border-width: 1px;
+
+  --theme-ch5-video-switcher--container-border-style: solid;
+
+  --theme-ch5-video-switcher--container-border-color: var(--theme-colors--theme-border-color);
 
   // ***************************************
   // ch5-wifi-signal-level-gauge

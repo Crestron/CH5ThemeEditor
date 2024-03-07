@@ -1,0 +1,118 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2023 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-video-switcher
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ch5-video-switcher {
+
+    /// Applied when sourceListPosition='top'
+    &.ch5-video-switcher--source-list-position-top {
+        flex-direction: column;
+
+        &.ch5-video-switcher--source-list-scrollbar-true {
+            .scrollbar-container {
+                top: calc(100% / 3);
+            }
+        }
+    }
+
+    /// Applied when sourceListPosition='bottom'
+    &.ch5-video-switcher--source-list-position-bottom {
+        flex-direction: column-reverse;
+
+        &.ch5-video-switcher--source-list-scrollbar-true {
+            .scrollbar-container {
+                bottom: 0;
+            }
+        }
+    }
+
+    /// Applied when sourceListPosition='left'
+    &.ch5-video-switcher--source-list-position-left {
+        flex-direction: row;
+
+        &.ch5-video-switcher--source-list-scrollbar-true {
+            .scrollbar-container {
+                left: calc(100% / 3);
+            }
+        }
+    }
+
+    /// Applied when sourceListPosition='right'
+    &.ch5-video-switcher--source-list-position-right {
+        flex-direction: row-reverse;
+
+        &.ch5-video-switcher--source-list-scrollbar-true {
+            .scrollbar-container {
+                right: 0;
+            }
+        }
+    }
+
+    // Common - Top and Bottom
+    &.ch5-video-switcher--source-list-position-top,
+    &.ch5-video-switcher--source-list-position-bottom {
+        .ch5-video-switcher--source-list {
+            height: calc((calc(100% / 3)) - var(--ch5-video-switcher--source-list-margin));
+            flex-direction: column;
+
+            .source-container {
+                height: calc(calc(100% / var(--number-of-source-list-divisions) - var(--ch5-video-switcher--source-list-gap)));
+            }
+        }
+
+        .ch5-video-switcher--screen-list {
+            height: calc(calc(100% / 3) * 2);
+        }
+
+        &.ch5-video-switcher--source-list-scrollbar-true {
+            .scrollbar-container {
+                width: 100%;
+                height: var(--ch5-video-switcher--scrollbar-width);
+                left: 0;
+
+                .scrollbar {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    &.ch5-video-switcher--source-list-position-left,
+    &.ch5-video-switcher--source-list-position-right {
+        .ch5-video-switcher--source-list {
+            height: 100%;
+            width: calc((calc(100% / 3)) - var(--ch5-video-switcher--source-list-margin));
+            flex-direction: row;
+
+            .source-container {
+                width: calc(calc(100% / var(--number-of-source-list-divisions) - var(--ch5-video-switcher--source-list-gap)));
+            }
+        }
+
+        .ch5-video-switcher--screen-list {
+            height: 100%;
+            width: calc(calc(100% / 3) * 2);
+        }
+
+        &.ch5-video-switcher--source-list-scrollbar-true {
+
+            .scrollbar-container {
+                top: 0px;
+                height: 100%;
+                width: var(--ch5-video-switcher--scrollbar-width);
+
+                .scrollbar {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
