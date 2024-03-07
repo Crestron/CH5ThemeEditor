@@ -127,6 +127,14 @@ ch5-video-switcher {
         justify-content: center;
         flex: 1;
         color: var(--ch5-video-switcher--source-list-label-color);
+
+        &.sg {
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 100%;
+          border: none;
+        }
       }
 
       .ch5-video-switcher--source-list-label {
