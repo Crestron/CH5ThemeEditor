@@ -12,7 +12,7 @@
 
 ch5-video-switcher {
 
-  /// description: Width for the video switcher
+  /// description: Width for the video switcher. Changing this will automatically set the height.
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 500px
@@ -232,4 +232,6 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--container-border-color
   --ch5-video-switcher--container-border-color: var(--theme-ch5-video-switcher--container-border-color);
 
+
+  --ch5-video-switcher--screen-icon-size: 40px;
 }

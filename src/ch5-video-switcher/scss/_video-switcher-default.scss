@@ -10,8 +10,9 @@
 /// @group ch5-video-switcher
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 ch5-video-switcher {
+  @include ch5-component-base();
+
   ::-webkit-scrollbar {
     display: none;
   }
@@ -21,7 +22,7 @@ ch5-video-switcher {
 .ch5-video-switcher {
   width: var(--ch5-video-switcher--width);
   min-width: 500px;
-  aspect-ratio: 16/9;
+  aspect-ratio: 9/6;
   padding: 5px;
   display: flex;
   overflow: hidden;
@@ -84,6 +85,7 @@ ch5-video-switcher {
     }
   }
 
+  // TODO - do we need CSS Class name
   &--source-list {
     --number-of-source-list-divisions: 1;
     display: flex;
@@ -95,7 +97,6 @@ ch5-video-switcher {
     gap: var(--ch5-video-switcher--source-list-gap);
     margin: var(--ch5-video-switcher--source-list-margin);
     scrollbar-width: none;
-
 
     &.ch5-video-switcher-source-list::-webkit-scrollbar {
       height: 0px;
@@ -113,20 +114,17 @@ ch5-video-switcher {
       align-items: center;
       flex-direction: column;
       overflow-x: hidden;
+      font-size: var(--ch5-video-switcher--screen-icon-size);
 
       .source-icon {
-        font-size: var(--ch5-video-switcher--source-icon-size);
+        font-size: calc(1em /  var(--number-of-source-list-divisions));
         height: 100%;
         aspect-ratio: 1/1;
-        border-radius: var(--ch5-video-switcher--source-icon-border-radius);
-        border-width: var(--ch5-video-switcher--source-icon-border-width);
-        border-style: var(--ch5-video-switcher--source-icon-border-style);
-        border-color: var(--ch5-video-switcher--source-icon-border-color);
         display: flex;
         align-items: center;
         justify-content: center;
         flex: 1;
-        color: var(--ch5-video-switcher--source-list-label-color);
+        color: var(--ch5-video-switcher--source-list-label-color); //TODo - check source list vs source icon
 
         &.sg {
           background-position: 50%;
@@ -142,14 +140,12 @@ ch5-video-switcher {
         overflow: hidden;
         text-overflow: ellipsis;
         width: 100%;
-        font-size: calc(100% / var(--number-of-source-list-divisions));
+        font-size: calc(calc(0.3em / var(--number-of-source-list-divisions)) + calc(4px / var(--number-of-source-list-divisions))); //var(--number-of-source-list-divisions));
         line-height: 1.5;
         font-weight: var(--ch5-video-switcher--source-list-label-weight);
         font-style: var(--ch5-video-switcher--source-list-label-style);
         color: var(--ch5-video-switcher--source-list-label-color);
-
       }
-
     }
 
     &-label-left {
@@ -196,22 +192,22 @@ ch5-video-switcher {
         align-items: center;
         flex-wrap: wrap;
         aspect-ratio: 1/1;
-        height: 40%;
+        width: 100% !important; // TODO - remove importnat after fixing in crcomlib
+        font-size: var(--ch5-video-switcher--screen-icon-size);
 
-        /* align-self:center; */
         .source-icon {
           font-size: 1em;
           width: 80%;
           height: 80%;
-          border: 1px solid;
-          border-radius: var(--ch5-video-switcher--source-icon-border-radius);
+          // border: 1px solid; // TODO -- Make it a variable
+          // border-radius: var(--ch5-video-switcher--source-icon-border-radius);
           display: flex;
           align-items: center;
           justify-content: center;
-          border-radius: var(--ch5-video-switcher--source-icon-border-radius);
-          border-width: var(--ch5-video-switcher--source-icon-border-width);
-          border-style: var(--ch5-video-switcher--source-icon-border-style);
-          border-color: var(--ch5-video-switcher--source-icon-border-color);
+          // border-radius: var(--ch5-video-switcher--source-icon-border-radius);
+          // border-width: var(--ch5-video-switcher--source-icon-border-width);
+          // border-style: var(--ch5-video-switcher--source-icon-border-style);
+          // border-color: var(--ch5-video-switcher--source-icon-border-color);
           color: var(--ch5-video-switcher--source-list-label-color);
         }
 
@@ -239,7 +235,8 @@ ch5-video-switcher {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      /* align-self:start; */
+      line-height: 1;
+      min-height: var(--ch5-video-switcher--screen-list-label-size);
       top: var(--ch5-video-switcher--screen-padding);
     }
 
