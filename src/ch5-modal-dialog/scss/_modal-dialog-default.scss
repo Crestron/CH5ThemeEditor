@@ -76,12 +76,6 @@ ch5-modal-dialog {
   }
 }
 
-.ch5-modal-dialog-title {
-  font-size: var(--ch5-modal-dialog--title-font-size);
-  font-style: var(--ch5-modal-dialog--title-font-style);
-  font-weight: var(--ch5-modal-dialog--title-font-weight);
-}
-
 /// modal section (a div) that wraps the prompt-icon and the prompt-text
 .ch5-modal-dialog-prompt {
   &:before {

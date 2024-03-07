@@ -395,20 +395,6 @@ ch5-slider {
 
   // Horizontal and Vertical
 
-  /// description: Horizontal pips
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 50px 
-  /// related-theme-variable: --theme-ch5-slider--horizontal-pips
-  --ch5-slider--horizontal-pips: var(--theme-ch5-slider--horizontal-pips);
-
-  /// description: Vertical pips
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 65px 
-  /// related-theme-variable: --theme-ch5-slider--vertical-pips
-  --ch5-slider--vertical-pips: var(--theme-ch5-slider--vertical-pips);
-
   /// description: Font size of the tooltip
   /// type: unit
   /// values: px, vw, vh, em, rem, %
@@ -513,27 +499,6 @@ ch5-slider {
   /// example: 1.2 
   /// related-theme-variable: --theme-ch5-slider--button-content-line-height
   --ch5-slider--button-content-line-height: var(--theme-ch5-slider--button-content-line-height);
-
-  /// description: Slider button default pressed border color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #0099ff
-  /// related-theme-variable: --theme-ch5-slider--button-default-pressed-border-color
-  --ch5-slider--button-default-pressed-border-color: var(--theme-ch5-slider--button-default-pressed-border-color);
-
-  /// description: Slider button default pressed background color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #008ae6
-  /// related-theme-variable: --theme-ch5-slider--button-default-pressed-background-color
-  --ch5-slider--button-default-pressed-background-color: var(--theme-ch5-slider--button-default-pressed-background-color);
-
-  /// description: Default pressed font color
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #ffffff
-  /// related-theme-variable: --theme-ch5-slider--button-default-pressed-font-color
-  --ch5-slider--button-default-pressed-font-color: var(--theme-ch5-slider--button-default-pressed-font-color);
 
   /// description: Border radius for slider when handleshape="rectangle"
   /// type: unit
