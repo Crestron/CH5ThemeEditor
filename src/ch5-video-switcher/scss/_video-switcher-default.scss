@@ -233,20 +233,20 @@ ch5-video-switcher {
       text-overflow: ellipsis;
       /* align-self:start; */
       top: var(--ch5-video-switcher--screen-padding);
-      left: var(--ch5-video-switcher--screen-padding);
-      right: var(--ch5-video-switcher--screen-padding);
     }
 
     &-label {
       &-right {
         .ch5-video-switcher--screen-list-label {
           text-align: right;
+          right: var(--ch5-video-switcher--screen-padding);
         }
       }
 
       &-left {
         .ch5-video-switcher--screen-list-label {
           text-align: left;
+          left: var(--ch5-video-switcher--screen-padding);
         }
       }
 
