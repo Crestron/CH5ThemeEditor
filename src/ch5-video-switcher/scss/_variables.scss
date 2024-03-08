@@ -12,7 +12,7 @@
 
 ch5-video-switcher {
 
-  /// description: Width for the video switcher. Changing this will automatically set the height.
+  /// description: Width for the video switcher. Changing this will automatically set the height. Note: min-width is 500px
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 500px
