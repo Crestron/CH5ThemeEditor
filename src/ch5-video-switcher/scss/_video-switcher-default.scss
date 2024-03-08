@@ -236,6 +236,7 @@ ch5-video-switcher {
       line-height: 1;
       min-height: var(--ch5-video-switcher--screen-list-label-size);
       top: var(--ch5-video-switcher--screen-padding);
+      user-select: none;
     }
 
     &-label {
