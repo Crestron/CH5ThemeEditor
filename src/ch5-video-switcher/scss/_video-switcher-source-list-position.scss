@@ -18,7 +18,7 @@
 
         &.ch5-video-switcher--source-list-scrollbar-true {
             .scrollbar-container {
-                top: calc(100% / 3);
+                top: calc(calc(100% / 3) - 3px);
             }
         }
     }
@@ -60,7 +60,7 @@
     &.ch5-video-switcher--source-list-position-top,
     &.ch5-video-switcher--source-list-position-bottom {
         .ch5-video-switcher--source-list {
-            height: calc((calc(100% / 3)) - var(--ch5-video-switcher--source-list-margin));
+            height: calc((calc(100% / 3)) - var(--ch5-video-switcher--source-list-padding));
             flex-direction: column;
 
             .source-container {
@@ -89,7 +89,7 @@
     &.ch5-video-switcher--source-list-position-right {
         .ch5-video-switcher--source-list {
             height: 100%;
-            width: calc((calc(100% / 3)) - var(--ch5-video-switcher--source-list-margin));
+            width: calc((calc(100% / 3)) - var(--ch5-video-switcher--source-list-padding));
             flex-direction: row;
 
             .source-container {
