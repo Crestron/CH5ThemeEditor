@@ -11,29 +11,27 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-video-switcher {
-    &--screen-list {
-
-        /// Applied when screen aspect ratio is stretch
-        &.ch5-video-switcher--screen-aspect-ratio-stretch {
-            .screen-container {
-                min-width: 100%;
-                min-height: 100%;
-            }
-        }
-
-        /// Applied when screen aspect ratio is 16:9
-        &.ch5-video-switcher--screen-aspect-ratio-16-9 {
-            .screen-container {
-                aspect-ratio: 16/9;
-            }
-        }
-
-        /// Applied when screen aspect ratio is 4:3
-        &.ch5-video-switcher--screen-aspect-ratio-4-3 {
-            .screen-container {
-                aspect-ratio: 4/3;
-            }
-        }
+  &--screen-list {
+    /// Applied when screen aspect ratio is stretch
+    &.ch5-video-switcher--screen-aspect-ratio-stretch {
+      .screen-container {
+        min-width: 100%;
+        min-height: 100%;
+      }
     }
 
+    /// Applied when screen aspect ratio is 16:9
+    &.ch5-video-switcher--screen-aspect-ratio-16-9 {
+      .screen-container {
+        aspect-ratio: 16/9;
+      }
+    }
+
+    /// Applied when screen aspect ratio is 4:3
+    &.ch5-video-switcher--screen-aspect-ratio-4-3 {
+      .screen-container {
+        aspect-ratio: 4/3;
+      }
+    }
+  }
 }

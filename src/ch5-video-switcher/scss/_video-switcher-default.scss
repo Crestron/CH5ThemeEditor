@@ -23,23 +23,24 @@ ch5-video-switcher {
   width: var(--ch5-video-switcher--width);
   min-width: 500px;
   aspect-ratio: 9/6;
-  padding: 5px;
+  // padding: 5px;
   display: flex;
   overflow: hidden;
-  gap: 10px;
+  gap: var(--ch5-video-switcher--scrollbar-width);
   background-color: var(--ch5-video-switcher--background-color);
   scrollbar-width: none; // needed to hide the firefox scrollbar
   position: relative;
-  border-radius: var(--ch5-video-switcher--container-border-radius);
-  border-width: var(--ch5-video-switcher--container-border-width);
-  border-style: var(--ch5-video-switcher--container-border-style);
-  border-color: var(--ch5-video-switcher--container-border-color);
+  border-radius: var(--ch5-video-switcher--border-radius);
+  border-width: var(--ch5-video-switcher--border-width);
+  border-style: var(--ch5-video-switcher--border-style);
+  border-color: var(--ch5-video-switcher--border-color);
 
   &.ch5-video-switcher::-webkit-scrollbar {
-    height: 0px;
-    width: 0px;
+    height: 0;
+    width: 0;
   }
 
+  // This is for source-list only
   .scrollbar-container {
     position: absolute;
     background-color: var(--ch5-video-switcher--scrollbar-container-background-color);
@@ -50,22 +51,6 @@ ch5-video-switcher {
       will-change: width, transform;
       border-radius: var(--ch5-video-switcher--scrollbar-border-radius);
       background: var(--ch5-video-switcher--scrollbar-background-color);
-    }
-  }
-
-  /// @require .ch5-video-switcher
-  /// Applied when scrollbar is set to true
-  &--source-list-scrollbar-true {
-    .scrollbar-container {
-      display: block;
-    }
-  }
-
-  /// @require .ch5-video-switcher
-  /// Applied when scrollbar is set to false
-  &--source-list-scrollbar-false {
-    .scrollbar-container {
-      display: none;
     }
   }
 
@@ -85,89 +70,8 @@ ch5-video-switcher {
     }
   }
 
-  // TODO - do we need CSS Class name
-  &--source-list {
-    --number-of-source-list-divisions: 1;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: start;
-    overflow: scroll;
-    will-change: transform;
-    justify-content: space-around;
-    gap: var(--ch5-video-switcher--source-list-gap);
-    padding: var(--ch5-video-switcher--source-list-padding);
-    scrollbar-width: none;
-
-    &.ch5-video-switcher-source-list::-webkit-scrollbar {
-      height: 0px;
-      width: 0px;
-    }
-
-    &.active {
-      cursor: -webkit-grabbing;
-    }
-
-    .source-container {
-      aspect-ratio: 1/1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      overflow-x: hidden;
-      font-size: var(--ch5-video-switcher--source-icon-size);
-      // gap: calc(10px /  var(--number-of-source-list-divisions));
-
-      .source-icon {
-        font-size: calc(1em /  var(--number-of-source-list-divisions));
-        // height: 100%;
-        aspect-ratio: 1/1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // flex: 1;
-        color: var(--ch5-video-switcher--source-list-label-color); //TODo - check source list vs source icon
-
-        &.sg {
-          background-position: 50%;
-          background-repeat: no-repeat;
-          background-size: contain;
-          width: 100%;
-          border: none;
-        }
-      }
-
-      .ch5-video-switcher--source-list-label {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 100%;
-        font-size: calc(calc(0.3em / var(--number-of-source-list-divisions)) + calc(4px / var(--number-of-source-list-divisions)));
-        line-height: 1.5;
-        font-weight: var(--ch5-video-switcher--source-list-label-weight);
-        font-style: var(--ch5-video-switcher--source-list-label-style);
-        color: var(--ch5-video-switcher--source-list-label-color);
-      }
-    }
-
-    &-label-left {
-      .ch5-video-switcher--source-list-label {
-        text-align: left;
-      }
-    }
-
-    &-label-right {
-      .ch5-video-switcher--source-list-label {
-        text-align: right;
-      }
-    }
-
-    &-label-center {
-      .ch5-video-switcher--source-list-label {
-        text-align: center;
-      }
-    }
-  }
-
+  /// @require .ch5-video-switcher
+  /// Applied to the list of screens
   &--screen-list {
     display: grid;
     grid-gap: 2px;
@@ -186,7 +90,7 @@ ch5-video-switcher {
       position: relative;
       /* flex-direction: column; */
       padding: var(--ch5-video-switcher--screen-padding);
-    
+
       .source-onscreen {
         display: flex;
         justify-content: center;

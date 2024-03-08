@@ -12,7 +12,7 @@
 
 ch5-video-switcher {
 
-  /// description: Width for the video switcher. Changing this will automatically set the height. Note: min-width is 500px
+  /// description: Width for the video switcher. Setting the width will automatically set the height based on aspect ratio. Minimum width set is 500px
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 500px
@@ -25,7 +25,6 @@ ch5-video-switcher {
   /// example: #015181
   /// related-theme-variable: --theme-ch5-video-switcher--background-color
   --ch5-video-switcher--background-color: var(--theme-ch5-video-switcher--background-color);
-
 
   /// description: Background color for scrollbar container
   /// type: color
@@ -96,7 +95,6 @@ ch5-video-switcher {
   /// example: normal 
   /// related-theme-variable: --theme-ch5-video-switcher--source-list-label-weight
   --ch5-video-switcher--source-list-label-weight: var(--theme-ch5-video-switcher--source-list-label-weight);
-
 
   /// description: Background color for screen container
   /// type: color
@@ -179,29 +177,29 @@ ch5-video-switcher {
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 5px
-  /// related-theme-variable: --theme-ch5-video-switcher--container-border-radius
-  --ch5-video-switcher--container-border-radius: var(--theme-ch5-video-switcher--container-border-radius);
+  /// related-theme-variable: --theme-ch5-video-switcher--border-radius
+  --ch5-video-switcher--border-radius: var(--theme-ch5-video-switcher--border-radius);
 
-  /// description: Border width for video switcher container
+  /// description: Border width for video switcher
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 1px
-  /// related-theme-variable: --theme-ch5-video-switcher--container-border-width
-  --ch5-video-switcher--container-border-width: var(--theme-ch5-video-switcher--container-border-width);
+  /// related-theme-variable: --theme-ch5-video-switcher--border-width
+  --ch5-video-switcher--border-width: var(--theme-ch5-video-switcher--border-width);
 
-  /// description: Border style for the video switcher container
+  /// description: Border style for the video switcher
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
   /// example: solid
-  /// related-theme-variable: --theme-ch5-video-switcher--container-border-style
-  --ch5-video-switcher--container-border-style: var(--theme-ch5-video-switcher--container-border-style);
+  /// related-theme-variable: --theme-ch5-video-switcher--border-style
+  --ch5-video-switcher--border-style: var(--theme-ch5-video-switcher--border-style);
 
-  /// description: Border color for video switcher container
+  /// description: Border color for video switcher
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #0091ea
-  /// related-theme-variable: --theme-ch5-video-switcher--container-border-color
-  --ch5-video-switcher--container-border-color: var(--theme-ch5-video-switcher--container-border-color);
+  /// related-theme-variable: --theme-ch5-video-switcher--border-color
+  --ch5-video-switcher--border-color: var(--theme-ch5-video-switcher--border-color);
 
   /// description: Icon size for screen icon
   /// type: unit
