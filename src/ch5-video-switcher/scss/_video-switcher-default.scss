@@ -95,7 +95,7 @@ ch5-video-switcher {
     will-change: transform;
     justify-content: space-around;
     gap: var(--ch5-video-switcher--source-list-gap);
-    margin: var(--ch5-video-switcher--source-list-margin);
+    padding: var(--ch5-video-switcher--source-list-padding);
     scrollbar-width: none;
 
     &.ch5-video-switcher-source-list::-webkit-scrollbar {
@@ -115,15 +115,16 @@ ch5-video-switcher {
       flex-direction: column;
       overflow-x: hidden;
       font-size: var(--ch5-video-switcher--source-icon-size);
+      // gap: calc(10px /  var(--number-of-source-list-divisions));
 
       .source-icon {
         font-size: calc(1em /  var(--number-of-source-list-divisions));
-        height: 100%;
+        // height: 100%;
         aspect-ratio: 1/1;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex: 1;
+        // flex: 1;
         color: var(--ch5-video-switcher--source-list-label-color); //TODo - check source list vs source icon
 
         &.sg {

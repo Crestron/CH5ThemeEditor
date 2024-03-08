@@ -1905,15 +1905,9 @@
 
   --theme-ch5-video-switcher--source-list-gap: 20px;
 
-  --theme-ch5-video-switcher--source-icon-size: 1em;
+    --theme-ch5-video-switcher--screen-icon-size: 36px;
 
-  --theme-ch5-video-switcher--source-icon-border-radius: 25%;
-
-  --theme-ch5-video-switcher--source-icon-border-width: 1px;
-
-  --theme-ch5-video-switcher--source-icon-border-style: solid;
-
-  --theme-ch5-video-switcher--source-icon-border-color: var(--theme-colors--theme-border-color);
+  --theme-ch5-video-switcher--source-icon-size: 40px;
 
   --theme-ch5-video-switcher--source-list-label-color: var(--theme-colors--theme-body-font-color);
 
@@ -1921,7 +1915,7 @@
 
   --theme-ch5-video-switcher--source-list-label-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-video-switcher--screen-container-background-color: transparent;
+  --theme-ch5-video-switcher--screen-container-background-color: #f5f5f5;
 
   --theme-ch5-video-switcher--screen-container-border-radius: 10px;
 
@@ -1941,7 +1935,7 @@
 
   --theme-ch5-video-switcher--screen-padding: 5px;
 
-  --theme-ch5-video-switcher--source-list-margin: 5px;
+  --theme-ch5-video-switcher--source-list-padding: 5px;
 
   --theme-ch5-video-switcher--container-border-radius: 2px;
 
