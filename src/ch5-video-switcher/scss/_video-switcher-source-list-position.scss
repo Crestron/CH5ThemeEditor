@@ -18,7 +18,7 @@
 
         &.ch5-video-switcher--source-list-scrollbar-true {
             .scrollbar-container {
-                top: calc(100% / 3);
+                top: calc(calc(100% / 3) - 3px);
             }
         }
     }
