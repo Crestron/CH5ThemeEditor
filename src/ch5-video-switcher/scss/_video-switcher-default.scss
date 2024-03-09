@@ -45,14 +45,14 @@ ch5-video-switcher {
   // This is for source-list only
   .scrollbar-container {
     position: absolute;
-    background-color: var(--ch5-video-switcher--scrollbar-container-background-color);
-    border-radius: var(--ch5-video-switcher--scrollbar-container-border-radius);
+    background-color: var(--ch5-video-switcher--scrollbar-track-color);
+    border-radius: var(--ch5-video-switcher--scrollbar-border-radius);
 
     .scrollbar {
       position: absolute;
       will-change: width, transform;
       border-radius: var(--ch5-video-switcher--scrollbar-border-radius);
-      background: var(--ch5-video-switcher--scrollbar-background-color);
+      background: var(--ch5-video-switcher--scrollbar-thumb-color);
     }
   }
 

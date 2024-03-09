@@ -29,19 +29,12 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--background-color
   --ch5-video-switcher--background-color: var(--theme-ch5-video-switcher--background-color);
 
-  /// description: Background color for scrollbar container
+  /// description: Background color for scrollbar track
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #015181
-  /// related-theme-variable: --theme-ch5-video-switcher--scrollbar-container-background-color
-  --ch5-video-switcher--scrollbar-container-background-color: var(--theme-ch5-video-switcher--scrollbar-container-background-color);
-
-  /// description: Border radius for scrollbar container
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 5px
-  /// related-theme-variable: --theme-ch5-video-switcher--scrollbar-container-border-radius
-  --ch5-video-switcher--scrollbar-container-border-radius: var(--theme-ch5-video-switcher--scrollbar-container-border-radius);
+  /// related-theme-variable: --theme-ch5-video-switcher--scrollbar-track-color
+  --ch5-video-switcher--scrollbar-track-color: var(--theme-ch5-video-switcher--scrollbar-track-color);
 
   /// description: Border radius for scrollbar
   /// type: unit
@@ -50,14 +43,14 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--scrollbar-border-radius
   --ch5-video-switcher--scrollbar-border-radius: var(--theme-ch5-video-switcher--scrollbar-border-radius);
 
-  /// description: Background color for scrollbar
+  /// description: Background color for scrollbar thumb
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// example: #015181
-  /// related-theme-variable: --theme-ch5-video-switcher--scrollbar-background-color
-  --ch5-video-switcher--scrollbar-background-color: var(--theme-ch5-video-switcher--scrollbar-background-color);
+  /// related-theme-variable: --theme-ch5-video-switcher--scrollbar-thumb-color
+  --ch5-video-switcher--scrollbar-thumb-color: var(--theme-ch5-video-switcher--scrollbar-thumb-color);
 
-  /// description: Scrollbar width for container
+  /// description: Scrollbar width
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 7px 
