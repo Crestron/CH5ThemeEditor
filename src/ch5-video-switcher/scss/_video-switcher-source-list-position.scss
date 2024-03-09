@@ -17,10 +17,10 @@
     --number-of-source-list-divisions: 1;
     gap: calc(var(--ch5-video-switcher--source-list-gap) / var(--number-of-source-list-divisions));
 
-    // align-content: start;
-    // justify-content: start;
     display: grid;
-		place-items: center;
+    align-content: center;
+    justify-content: start;
+    place-items: center;
     overflow: scroll;
     // padding: 5px;
     position: relative;
@@ -195,11 +195,11 @@
       width: calc((calc(100% / 3)) - var(--ch5-video-switcher--source-list-padding));
       // flex-direction: row;
 
-			      // ---- //
-						grid-template-columns: repeat(var(--number-of-source-list-divisions), 1fr);
-						grid-auto-flow: row;
-						// width: 100%;
-			
+      // ---- //
+      grid-template-columns: repeat(var(--number-of-source-list-divisions), 1fr);
+      grid-auto-flow: row;
+      // width: 100%;
+
       .source-container {
         // width: calc(calc(100% / var(--number-of-source-list-divisions) - var(--ch5-video-switcher--source-list-gap)));
       }
