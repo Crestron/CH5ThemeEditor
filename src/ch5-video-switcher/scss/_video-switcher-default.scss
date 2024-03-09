@@ -24,6 +24,8 @@ ch5-video-switcher {
   min-width: 500px;
   aspect-ratio: 9/6;
   // padding: 5px;
+  padding: var(--ch5-video-switcher--screen-padding);
+
   display: flex;
   overflow: hidden;
   gap: var(--ch5-video-switcher--scrollbar-width);
@@ -54,117 +56,6 @@ ch5-video-switcher {
     }
   }
 
-  /// @require .ch5-video-switcher
-  /// Applied when display screen label  is set to true
-  &--screen-list-display-screen-label-true {
-    .ch5-video-switcher--screen-list-label {
-      display: block;
-    }
-  }
-
-  /// @require .ch5-video-switcher
-  /// Applied when display screen label  is set to false
-  &--screen-list-display-screen-label-false {
-    .ch5-video-switcher--screen-list-label {
-      display: none;
-    }
-  }
-
-  /// @require .ch5-video-switcher
-  /// Applied to the list of screens
-  &--screen-list {
-    display: grid;
-    grid-gap: 2px;
-    overflow: hidden;
-    align-items: center;
-
-    .screen-container {
-      border-radius: var(--ch5-video-switcher--screen-container-border-radius);
-      border-width: var(--ch5-video-switcher--screen-container-border-width);
-      border-style: var(--ch5-video-switcher--screen-container-border-style);
-      border-color: var(--ch5-video-switcher--screen-container-border-color);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: var(--ch5-video-switcher--screen-container-background-color);
-      position: relative;
-      /* flex-direction: column; */
-      padding: var(--ch5-video-switcher--screen-padding);
-
-      .source-onscreen {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // flex-wrap: wrap;
-        flex-direction: column;
-        // aspect-ratio: 1/1;
-        width: 100% !important; // TODO - remove importnat after fixing in crcomlib
-        height: auto !important; // TODO - still checking if this makes sense
-        font-size: var(--ch5-video-switcher--screen-icon-size);
-
-        .source-icon {
-          font-size: 1em;
-          width: 80%;
-          height: 80%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: var(--ch5-video-switcher--source-list-label-color);
-        }
-
-        .ch5-video-switcher--source-list-label {
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          width: 100%;
-          text-align: center;
-          font-size: calc(0.2em + 10px);
-          font-weight: var(--ch5-video-switcher--source-list-label-weight);
-          font-style: var(--ch5-video-switcher--source-list-label-style);
-          color: var(--ch5-video-switcher--source-list-label-color);
-        }
-      }
-    }
-
-    .ch5-video-switcher--screen-list-label {
-      position: absolute;
-      color: var(--ch5-video-switcher--screen-list-label-color);
-      font-style: var(--ch5-video-switcher--screen-list-label-style);
-      font-weight: var(--ch5-video-switcher--screen-list-label-weight);
-      font-size: var(--ch5-video-switcher--screen-list-label-size);
-      width: 100%;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      line-height: 1;
-      min-height: var(--ch5-video-switcher--screen-list-label-size);
-      top: var(--ch5-video-switcher--screen-padding);
-      user-select: none;
-    }
-
-    &-label {
-      &-right {
-        .ch5-video-switcher--screen-list-label {
-          text-align: right;
-          right: var(--ch5-video-switcher--screen-padding);
-        }
-      }
-
-      &-left {
-        .ch5-video-switcher--screen-list-label {
-          text-align: left;
-          left: var(--ch5-video-switcher--screen-padding);
-        }
-      }
-
-      &-center {
-        .ch5-video-switcher--screen-list-label {
-          text-align: center;
-        }
-      }
-    }
-  }
 }
 
 /// Applied when the video switcher is disabled

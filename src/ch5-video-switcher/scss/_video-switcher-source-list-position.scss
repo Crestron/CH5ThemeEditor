@@ -16,7 +16,6 @@
   &--source-list {
     --number-of-source-list-divisions: 1;
     gap: calc(var(--ch5-video-switcher--source-list-gap) / var(--number-of-source-list-divisions));
-    padding: var(--ch5-video-switcher--source-list-padding);
 
     // align-content: start;
     // justify-content: start;
@@ -158,7 +157,7 @@
   &.ch5-video-switcher--source-list-position-top,
   &.ch5-video-switcher--source-list-position-bottom {
     .ch5-video-switcher--source-list {
-      height: calc((calc(100% / 3)) - var(--ch5-video-switcher--source-list-padding));
+      height: calc($ch5-video-switcher--source-size - var(--ch5-video-switcher--source-list-padding));
       // flex-direction: column;
 
       // ---- //
@@ -173,7 +172,7 @@
 
     // TODO -same comment
     .ch5-video-switcher--screen-list {
-      height: calc(calc(100% / 3) * 2);
+      // height: calc(calc(100% / 3) * 2);
     }
 
     &.ch5-video-switcher--source-list-scrollbar-true {
