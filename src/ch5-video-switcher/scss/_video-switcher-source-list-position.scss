@@ -202,7 +202,7 @@
 
     // TODO - why is this here? though this is required
     .ch5-video-switcher--screen-list {
-      height: 100%;
+      height: auto;
       width: calc(calc(100% / 3) * 2);
     }
 
