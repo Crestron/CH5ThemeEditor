@@ -155,12 +155,12 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--screen-list-label-size
   --ch5-video-switcher--screen-list-label-size: var(--theme-ch5-video-switcher--screen-list-label-size);
 
-  /// description: Screen padding
+  /// description: Video Switcher padding
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 1px
-  /// related-theme-variable: --theme-ch5-video-switcher--screen-padding
-  --ch5-video-switcher--screen-padding: var(--theme-ch5-video-switcher--screen-padding);
+  /// related-theme-variable: --theme-ch5-video-switcher--padding
+  --ch5-video-switcher--padding: var(--theme-ch5-video-switcher--padding);
 
   /// description: Source list padding
   /// type: unit

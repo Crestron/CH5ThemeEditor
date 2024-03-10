@@ -97,7 +97,8 @@ function getVariables(data, sectionName) {
 		const splitLine = line.split(':');
 		if (splitLine.length === 2 && splitLine[0].includes('--')) {
 
-			if (sectionName !== 'theme' && sectionName !== 'global' && splitLine[0].trim().startsWith('--theme') === false) {
+			if (sectionName !== 'theme' && sectionName !== 'global' && splitLine[0].trim().startsWith('--theme') === false && splitLine[0].trim().startsWith('$') === false) {
+				// console.log("splitLine", splitLine[0]);
 				if (line.includes('var(') === false) {
 					console.log(`\x1b[31m '${splitLine[0].trim()}' missing theme variable \x1b[0m`)
 				}
@@ -261,7 +262,9 @@ function getUnusedVariables(css, variables) {
 	for (let i = 0; i < variables.length; i++) {
 		if (css.includes(`var(${variables[i].name})`) === false) {
 			if (globalVariables.some(variable => variable.name === variables[i].name) === false) {
-				unusedVariables.add(variables[i].name);
+				if (variables[i].name.toString().startsWith("$") === false) {
+					unusedVariables.add(variables[i].name);
+				}
 			}
 		}
 	}
@@ -375,9 +378,11 @@ function checkComponentVariable() {
 
 			if (componentThemeVariables) {
 				componentVariables.forEach(element => {
-					const variable = componentThemeVariables['variables'].find(t => t.name === element.name.replace('-', '--theme'))
-					if (variable === undefined) {
-						missingVariables.push(`${component.name} ${element.name} missing at ${theme.themeName} theme`)
+					if (!element.name.startsWith("$")) {
+						const variable = componentThemeVariables['variables'].find(t => t.name === element.name.replace('-', '--theme'))
+						if (variable === undefined) {
+							missingVariables.push(`${component.name} ${element.name} missing at ${theme.themeName} theme`)
+						}
 					}
 				});
 				componentThemeVariables['variables'].forEach(element => {
@@ -395,7 +400,7 @@ function checkComponentVariable() {
 		const variables = component['variables'];
 
 		for (const variable of variables) {
-			if (variable.relatedThemeVariable.startsWith('--theme') === false) {
+			if (variable.relatedThemeVariable && variable.relatedThemeVariable.startsWith('--theme') === false) {
 				relatedThemeDescription.push(`validate ${variable.name} relatedThemeVariable variable`);
 			}
 		}
@@ -406,7 +411,7 @@ function checkComponentVariable() {
 		const variables = component['variables'];
 
 		for (const variable of variables) {
-			if (variable.value.startsWith('var(--theme-') === false) {
+			if (variable.value.startsWith('var(--theme-') === false && variable.name.startsWith('$') === false) {
 				variableThemeVariables.push(`validate ${variable.name} theme variable`);
 			}
 		}
