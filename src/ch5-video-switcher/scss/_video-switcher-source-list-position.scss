@@ -155,8 +155,7 @@
   &.ch5-video-switcher--source-list-position-top,
   &.ch5-video-switcher--source-list-position-bottom {
     .ch5-video-switcher--source-list {
-      height: calc($ch5-video-switcher--source-size - var(--ch5-video-switcher--source-list-padding) - var(--ch5-video-switcher--scrollbar-width));
-      align-content: center;
+       align-content: center;
       justify-content: start;
 
       grid-template-rows: repeat(var(--number-of-source-list-divisions), 1fr);
@@ -170,6 +169,7 @@
     // TODO -same comment
     .ch5-video-switcher--screen-list {
       height: $ch5-video-switcher--screen-size;
+      height: 100%; // TODO
     }
 
     &.ch5-video-switcher--source-list-scrollbar-true {
@@ -188,6 +188,12 @@
 	&.ch5-video-switcher--source-list-position-top {
     .ch5-video-switcher--source-list {
       height: $ch5-video-switcher--source-size;
+		}
+  }
+
+	&.ch5-video-switcher--source-list-position-bottom {
+    .ch5-video-switcher--source-list {
+      height: calc($ch5-video-switcher--source-size - var(--ch5-video-switcher--source-list-padding) - var(--ch5-video-switcher--scrollbar-width));
 		}
   }
 
