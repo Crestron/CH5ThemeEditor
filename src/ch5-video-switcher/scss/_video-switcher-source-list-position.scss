@@ -11,108 +11,217 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-video-switcher {
+  /// @require .ch5-video-switcher
+  /// Applied to the list of sources
+  &--source-list {
+    --number-of-source-list-divisions: 1;
+    gap: calc(var(--ch5-video-switcher--source-list-gap) / var(--number-of-source-list-divisions));
 
-    /// Applied when sourceListPosition='top'
-    &.ch5-video-switcher--source-list-position-top {
-        flex-direction: column;
+    display: grid;
+    place-items: center;
+    overflow: scroll;
+    // padding: 5px;
+    position: relative;
+    scrollbar-width: none;
+    user-select: none;
+    white-space: nowrap;
+    will-change: transform;
 
-        &.ch5-video-switcher--source-list-scrollbar-true {
-            .scrollbar-container {
-                top: calc(calc(100% / 3) - 3px);
-            }
-        }
+    &.ch5-video-switcher-source-list::-webkit-scrollbar {
+      height: 0;
+      width: 0;
     }
 
-    /// Applied when sourceListPosition='bottom'
-    &.ch5-video-switcher--source-list-position-bottom {
-        flex-direction: column-reverse;
-
-        &.ch5-video-switcher--source-list-scrollbar-true {
-            .scrollbar-container {
-                bottom: 0;
-            }
-        }
+    &.active {
+      cursor: -webkit-grabbing;
     }
 
-    /// Applied when sourceListPosition='left'
-    &.ch5-video-switcher--source-list-position-left {
-        flex-direction: row;
+    .source-container {
+      aspect-ratio: 1/1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+      font-size: var(--ch5-video-switcher--source-icon-size);
+      // gap: calc(10px /  var(--number-of-source-list-divisions));
 
-        &.ch5-video-switcher--source-list-scrollbar-true {
-            .scrollbar-container {
-                left: calc(100% / 3);
-            }
+      height: calc(80px / var(--number-of-source-list-divisions));
+      width: calc(104px / var(--number-of-source-list-divisions));
+      // padding: 5px;
+
+      .source-icon {
+        font-size: calc(1em / var(--number-of-source-list-divisions));
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        color: var(--ch5-video-switcher--source-list-label-color); //TODo - check source list vs source icon
+
+        &.sg {
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 100%;
+          border: none;
         }
+      }
+
+      .ch5-video-switcher--source-list-label {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        width: 100%;
+        font-size: calc(calc(0.3em / var(--number-of-source-list-divisions)) + calc(4px / var(--number-of-source-list-divisions)));
+        line-height: 1.5;
+        font-weight: var(--ch5-video-switcher--source-list-label-weight);
+        font-style: var(--ch5-video-switcher--source-list-label-style);
+        color: var(--ch5-video-switcher--source-list-label-color);
+        flex: 0 0 calc(22px / var(--number-of-source-list-divisions));
+      }
+      .ch5-video-switcher--source-list-label:empty {
+        display: none;
+      }
+    }
+  }
+
+  /// @require .ch5-video-switcher
+  /// Applied when scrollbar is set to true
+  &--source-list-scrollbar-true {
+    .scrollbar-container {
+      display: block;
+    }
+  }
+
+  /// @require .ch5-video-switcher
+  /// Applied when scrollbar is set to false
+  &--source-list-scrollbar-false {
+    .scrollbar-container {
+      display: none;
+    }
+  }
+
+  /// Applied when sourceListPosition='top'
+  &.ch5-video-switcher--source-list-position-top {
+    flex-direction: column;
+    overflow-y: hidden;
+
+    &.ch5-video-switcher--source-list-scrollbar-true {
+      .scrollbar-container {
+        top: calc($ch5-video-switcher--source-size - 3px);
+      }
+    }
+  }
+
+  /// Applied when sourceListPosition='bottom'
+  &.ch5-video-switcher--source-list-position-bottom {
+    flex-direction: column-reverse;
+    overflow-y: hidden;
+
+    &.ch5-video-switcher--source-list-scrollbar-true {
+      .scrollbar-container {
+        bottom: 0;
+      }
+    }
+  }
+
+  /// Applied when sourceListPosition='left'
+  &.ch5-video-switcher--source-list-position-left {
+    flex-direction: row;
+    overflow-x: hidden;
+
+    &.ch5-video-switcher--source-list-scrollbar-true {
+      .scrollbar-container {
+        left: calc($ch5-video-switcher--source-size - var(--ch5-video-switcher--source-list-padding) - var(--ch5-video-switcher--scrollbar-width));
+      }
+    }
+  }
+
+  /// Applied when sourceListPosition='right'
+  &.ch5-video-switcher--source-list-position-right {
+    flex-direction: row-reverse;
+    overflow-x: hidden;
+
+    &.ch5-video-switcher--source-list-scrollbar-true {
+      .scrollbar-container {
+        right: 0;
+      }
+    }
+  }
+
+  // Common - Top and Bottom
+  &.ch5-video-switcher--source-list-position-top,
+  &.ch5-video-switcher--source-list-position-bottom {
+    .ch5-video-switcher--source-list {
+      height: calc($ch5-video-switcher--source-size - var(--ch5-video-switcher--source-list-padding) - var(--ch5-video-switcher--scrollbar-width));
+      align-content: center;
+      justify-content: start;
+
+      grid-template-rows: repeat(var(--number-of-source-list-divisions), 1fr);
+      grid-auto-flow: column;
+
+      .source-container {
+        // height: calc(calc(100% / var(--number-of-source-list-divisions) - var(--ch5-video-switcher--source-list-gap)));
+      }
     }
 
-    /// Applied when sourceListPosition='right'
-    &.ch5-video-switcher--source-list-position-right {
-        flex-direction: row-reverse;
-
-        &.ch5-video-switcher--source-list-scrollbar-true {
-            .scrollbar-container {
-                right: 0;
-            }
-        }
+    // TODO -same comment
+    .ch5-video-switcher--screen-list {
+      height: $ch5-video-switcher--screen-size;
     }
 
-    // Common - Top and Bottom
-    &.ch5-video-switcher--source-list-position-top,
-    &.ch5-video-switcher--source-list-position-bottom {
-        .ch5-video-switcher--source-list {
-            height: calc((calc(100% / 3)) - var(--ch5-video-switcher--source-list-padding));
-            flex-direction: column;
+    &.ch5-video-switcher--source-list-scrollbar-true {
+      .scrollbar-container {
+        width: 100%;
+        height: var(--ch5-video-switcher--scrollbar-width);
+        left: 0;
 
-            .source-container {
-                height: calc(calc(100% / var(--number-of-source-list-divisions) - var(--ch5-video-switcher--source-list-gap)));
-            }
+        .scrollbar {
+          height: 100%;
         }
+      }
+    }
+  }
 
-        .ch5-video-switcher--screen-list {
-            height: calc(calc(100% / 3) * 2);
-        }
+	&.ch5-video-switcher--source-list-position-top {
+    .ch5-video-switcher--source-list {
+      height: $ch5-video-switcher--source-size;
+		}
+  }
 
-        &.ch5-video-switcher--source-list-scrollbar-true {
-            .scrollbar-container {
-                width: 100%;
-                height: var(--ch5-video-switcher--scrollbar-width);
-                left: 0;
+  &.ch5-video-switcher--source-list-position-left,
+  &.ch5-video-switcher--source-list-position-right {
+    .ch5-video-switcher--source-list {
+      width: calc($ch5-video-switcher--source-size - var(--ch5-video-switcher--source-list-padding));
 
-                .scrollbar {
-                    height: 100%;
-                }
-            }
-        }
+      grid-template-columns: repeat(var(--number-of-source-list-divisions), 1fr);
+      grid-auto-flow: row;
+      align-content: start;
+      justify-content: center;
+
+      .source-container {
+        // width: calc(calc(100% / var(--number-of-source-list-divisions) - var(--ch5-video-switcher--source-list-gap)));
+      }
     }
 
-    &.ch5-video-switcher--source-list-position-left,
-    &.ch5-video-switcher--source-list-position-right {
-        .ch5-video-switcher--source-list {
-            height: 100%;
-            width: calc((calc(100% / 3)) - var(--ch5-video-switcher--source-list-padding));
-            flex-direction: row;
-
-            .source-container {
-                width: calc(calc(100% / var(--number-of-source-list-divisions) - var(--ch5-video-switcher--source-list-gap)));
-            }
-        }
-
-        .ch5-video-switcher--screen-list {
-            height: 100%;
-            width: calc(calc(100% / 3) * 2);
-        }
-
-        &.ch5-video-switcher--source-list-scrollbar-true {
-
-            .scrollbar-container {
-                top: 0px;
-                height: 100%;
-                width: var(--ch5-video-switcher--scrollbar-width);
-
-                .scrollbar {
-                    width: 100%;
-                }
-            }
-        }
+    // TODO - why is this here? though this is required
+    .ch5-video-switcher--screen-list {
+      height: auto;
+      width: $ch5-video-switcher--screen-size;
     }
+
+    &.ch5-video-switcher--source-list-scrollbar-true {
+      .scrollbar-container {
+        top: 0;
+        height: 100%;
+        width: var(--ch5-video-switcher--scrollbar-width);
+
+        .scrollbar {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

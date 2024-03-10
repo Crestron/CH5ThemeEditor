@@ -1894,13 +1894,11 @@
 
   --theme-ch5-video-switcher--scrollbar-width: var(--theme-others--scrollbar-width);
 
-  --theme-ch5-video-switcher--scrollbar-container-background-color: rgba(0, 0, 0, 0.1);
-
-  --theme-ch5-video-switcher--scrollbar-container-border-radius: 10px;
+  --theme-ch5-video-switcher--scrollbar-track-color: rgba(0, 0, 0, 0.1);
 
   --theme-ch5-video-switcher--scrollbar-border-radius: 10px;
 
-  --theme-ch5-video-switcher--scrollbar-background-color: rgba(0, 0, 0, 0.5);
+  --theme-ch5-video-switcher--scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
 
   --theme-ch5-video-switcher--source-list-gap: 20px;
 
@@ -1932,17 +1930,19 @@
 
   --theme-ch5-video-switcher--screen-list-label-size: var(--theme-fonts--font-size);
 
-  --theme-ch5-video-switcher--screen-padding: 5px;
+  --theme-ch5-video-switcher--padding: 5px;
+
+  --theme-ch5-video-switcher--screen-label-padding: 5px;
 
   --theme-ch5-video-switcher--source-list-padding: 5px;
 
-  --theme-ch5-video-switcher--container-border-radius: 2px;
+  --theme-ch5-video-switcher--border-radius: 2px;
 
-  --theme-ch5-video-switcher--container-border-width: 1px;
+  --theme-ch5-video-switcher--border-width: 1px;
 
-  --theme-ch5-video-switcher--container-border-style: solid;
+  --theme-ch5-video-switcher--border-style: solid;
 
-  --theme-ch5-video-switcher--container-border-color: var(--theme-colors--theme-border-color);
+  --theme-ch5-video-switcher--border-color: var(--theme-colors--theme-border-color);
 
   // ***************************************
   // ch5-wifi-signal-level-gauge

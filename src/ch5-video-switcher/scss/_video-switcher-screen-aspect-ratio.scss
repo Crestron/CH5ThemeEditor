@@ -11,29 +11,138 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-video-switcher {
-    &--screen-list {
+  /// @require .ch5-video-switcher
+  /// Applied when display screen label  is set to true
+  &--screen-list-display-screen-label-true {
+    .ch5-video-switcher--screen-list-label {
+      display: block;
+    }
+  }
 
-        /// Applied when screen aspect ratio is stretch
-        &.ch5-video-switcher--screen-aspect-ratio-stretch {
-            .screen-container {
-                min-width: 100%;
-                min-height: 100%;
-            }
+  /// @require .ch5-video-switcher
+  /// Applied when display screen label  is set to false
+  &--screen-list-display-screen-label-false {
+    .ch5-video-switcher--screen-list-label {
+      display: none;
+    }
+  }
+
+  /// @require .ch5-video-switcher
+  /// Applied to the list of screens
+  &--screen-list {
+    display: grid;
+    grid-gap: 2px; // TODO
+    overflow: hidden;
+    align-items: center;
+		height: $ch5-video-switcher--screen-size; // calc($ch5-video-switcher--screen-size + var(--ch5-video-switcher--source-list-padding));
+     
+    .screen-container {
+      border-radius: var(--ch5-video-switcher--screen-container-border-radius);
+      border-width: var(--ch5-video-switcher--screen-container-border-width);
+      border-style: var(--ch5-video-switcher--screen-container-border-style);
+      border-color: var(--ch5-video-switcher--screen-container-border-color);
+      display: flex;
+			flex-direction: column;
+      align-items: center;
+			justify-content: flex-start;
+      background-color: var(--ch5-video-switcher--screen-container-background-color);
+      position: relative;
+
+      .source-onscreen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100% !important; // TODO - remove important after fixing in crcomlib
+				height: 100% !important; // Checking for above
+
+        font-size: var(--ch5-video-switcher--screen-icon-size);
+
+        .source-icon {
+          font-size: 1em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--ch5-video-switcher--source-list-label-color);
         }
 
-        /// Applied when screen aspect ratio is 16:9
-        &.ch5-video-switcher--screen-aspect-ratio-16-9 {
-            .screen-container {
-                aspect-ratio: 16/9;
-            }
+        .ch5-video-switcher--source-list-label {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 100%;
+          text-align: center;
+          font-size: calc(0.2em + 10px);
+          font-weight: var(--ch5-video-switcher--source-list-label-weight);
+          font-style: var(--ch5-video-switcher--source-list-label-style);
+          color: var(--ch5-video-switcher--source-list-label-color);
         }
-
-        /// Applied when screen aspect ratio is 4:3
-        &.ch5-video-switcher--screen-aspect-ratio-4-3 {
-            .screen-container {
-                aspect-ratio: 4/3;
-            }
-        }
+      }
     }
 
+		.ch5-video-switcher--screen-list-label:empty {
+			display: none;
+		}
+    .ch5-video-switcher--screen-list-label {
+      color: var(--ch5-video-switcher--screen-list-label-color);
+      font-style: var(--ch5-video-switcher--screen-list-label-style);
+      font-weight: var(--ch5-video-switcher--screen-list-label-weight);
+      font-size: var(--ch5-video-switcher--screen-list-label-size);
+      width: 100%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1;
+      min-height: var(--ch5-video-switcher--screen-list-label-size);
+      user-select: none;
+    }
+
+    &-label {
+      &-right {
+        .ch5-video-switcher--screen-list-label {
+          text-align: right;
+					padding: var(--ch5-video-switcher--screen-label-padding);
+        }
+      }
+
+      &-left {
+        .ch5-video-switcher--screen-list-label {
+          text-align: left;
+					padding: var(--ch5-video-switcher--screen-label-padding);
+        }
+      }
+
+      &-center {
+        .ch5-video-switcher--screen-list-label {
+          text-align: center;
+					padding: var(--ch5-video-switcher--screen-label-padding);
+        }
+      }
+    }
+  }
+
+  &--screen-list {
+    /// Applied when screen aspect ratio is stretch
+    &.ch5-video-switcher--screen-aspect-ratio-stretch {
+      .screen-container {
+				width: 100% !important;
+        height: 100% !important;
+      }
+    }
+
+    /// Applied when screen aspect ratio is 16:9
+    &.ch5-video-switcher--screen-aspect-ratio-16-9 {
+      .screen-container {
+        aspect-ratio: 16/9;
+      }
+    }
+
+    /// Applied when screen aspect ratio is 4:3
+    &.ch5-video-switcher--screen-aspect-ratio-4-3 {
+      .screen-container {
+        aspect-ratio: 4/3;
+      }
+    }
+  }
 }
