@@ -162,6 +162,13 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--padding
   --ch5-video-switcher--padding: var(--theme-ch5-video-switcher--padding);
 
+  /// description: Screen label padding
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 5px
+  /// related-theme-variable: --theme-ch5-video-switcher--screen-label-padding
+  --ch5-video-switcher--screen-label-padding: var(--theme-ch5-video-switcher--screen-label-padding);
+
   /// description: Source list padding
   /// type: unit
   /// values: px, vw, vh, em, rem, %
