@@ -10,6 +10,9 @@
 /// @group ch5-video-switcher
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+$ch5-video-switcher--source-size: 34%;
+$ch5-video-switcher--screen-size: 66%;
+
 ch5-video-switcher {
   @include ch5-component-base();
 

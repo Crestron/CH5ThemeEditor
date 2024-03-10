@@ -10,9 +10,6 @@
 /// @group ch5-video-switcher-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-$ch5-video-switcher--source-size: 34%;
-$ch5-video-switcher--screen-size: 66%;
-
 ch5-video-switcher {
 
   /// description: Width for the video switcher. Setting the width will automatically set the height based on aspect ratio. Minimum width set is 500px
