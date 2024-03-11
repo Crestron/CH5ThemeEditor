@@ -27,26 +27,51 @@
     }
   }
 
+  &.ch5-video-switcher--source-list-position-top,
+  &.ch5-video-switcher--source-list-position-bottom {
+    .ch5-video-switcher--screen-list-parent {
+      height: $ch5-video-switcher--screen-size;
+      width: 100%;
+			padding: 5px; // Do Not create variable
+      .ch5-video-switcher--screen-list {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  &.ch5-video-switcher--source-list-position-left,
+  &.ch5-video-switcher--source-list-position-right {
+    .ch5-video-switcher--screen-list-parent {
+      height: 100%;
+      width: $ch5-video-switcher--screen-size; 
+			padding: 5px; // Do Not create variable
+      .ch5-video-switcher--screen-list {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
   /// @require .ch5-video-switcher
   /// Applied to the list of screens
   &--screen-list {
     display: grid;
-    grid-gap: 2px; // TODO
+    grid-gap: 2px; // Do not allow access as a variable
     overflow: hidden;
     align-items: center;
-		height: $ch5-video-switcher--screen-size; // calc($ch5-video-switcher--screen-size + var(--ch5-video-switcher--source-list-padding));
-     
+
     .screen-container {
       border-radius: var(--ch5-video-switcher--screen-container-border-radius);
       border-width: var(--ch5-video-switcher--screen-container-border-width);
       border-style: var(--ch5-video-switcher--screen-container-border-style);
       border-color: var(--ch5-video-switcher--screen-container-border-color);
       display: flex;
-			flex-direction: column;
+      flex-direction: column;
       align-items: center;
-			justify-content: flex-start;
+      justify-content: flex-start;
       background-color: var(--ch5-video-switcher--screen-container-background-color);
       position: relative;
+			padding: var(--ch5-video-switcher--screen-item-padding);
 
       .source-onscreen {
         display: flex;
@@ -54,16 +79,24 @@
         align-items: center;
         flex-direction: column;
         width: 100% !important; // TODO - remove important after fixing in crcomlib
-				height: 100% !important; // Checking for above
+        height: 100% !important; // Checking for above
 
         font-size: var(--ch5-video-switcher--screen-icon-size);
 
         .source-icon {
-          font-size: 1em;
+          font-size: calc(1em - var(--ch5-video-switcher--screen-item-padding));
           display: flex;
           align-items: center;
           justify-content: center;
           color: var(--ch5-video-switcher--source-list-label-color);
+					&.sg {
+						background-position: 50%;
+						background-repeat: no-repeat;
+						background-size: contain;
+						width: inherit;
+						height: 30%;
+						border: none;
+					}
         }
 
         .ch5-video-switcher--source-list-label {
@@ -76,13 +109,14 @@
           font-weight: var(--ch5-video-switcher--source-list-label-weight);
           font-style: var(--ch5-video-switcher--source-list-label-style);
           color: var(--ch5-video-switcher--source-list-label-color);
+					padding: 0 5px;
         }
       }
     }
 
-		.ch5-video-switcher--screen-list-label:empty {
-			display: none;
-		}
+    .ch5-video-switcher--screen-list-label:empty {
+      display: none;
+    }
     .ch5-video-switcher--screen-list-label {
       color: var(--ch5-video-switcher--screen-list-label-color);
       font-style: var(--ch5-video-switcher--screen-list-label-style);
@@ -102,21 +136,21 @@
       &-right {
         .ch5-video-switcher--screen-list-label {
           text-align: right;
-					padding: var(--ch5-video-switcher--screen-label-padding);
+          padding: 0 var(--ch5-video-switcher--screen-label-padding);
         }
       }
 
       &-left {
         .ch5-video-switcher--screen-list-label {
           text-align: left;
-					padding: var(--ch5-video-switcher--screen-label-padding);
+          padding: 0 var(--ch5-video-switcher--screen-label-padding);
         }
       }
 
       &-center {
         .ch5-video-switcher--screen-list-label {
           text-align: center;
-					padding: var(--ch5-video-switcher--screen-label-padding);
+          padding: 0 var(--ch5-video-switcher--screen-label-padding);
         }
       }
     }
@@ -126,7 +160,7 @@
     /// Applied when screen aspect ratio is stretch
     &.ch5-video-switcher--screen-aspect-ratio-stretch {
       .screen-container {
-				width: 100% !important;
+        width: 100% !important;
         height: 100% !important;
       }
     }
@@ -144,5 +178,20 @@
         aspect-ratio: 4/3;
       }
     }
+  }
+}
+
+ch5-video-switcher[screenaspectratio="4:3"],
+ch5-video-switcher[screenaspectratio="16:9"] {
+  .ch5-video-switcher--screen-list-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+		align-items: center;
+  }
+
+  .ch5-video-switcher.ch5-video-switcher--source-list-position-top .ch5-video-switcher--screen-list,
+  .ch5-video-switcher.ch5-video-switcher--source-list-position-bottom .ch5-video-switcher--screen-list {
+    height: auto;
   }
 }

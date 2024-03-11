@@ -16,11 +16,11 @@
   &--source-list {
     --number-of-source-list-divisions: 1;
     gap: calc(var(--ch5-video-switcher--source-list-gap) / var(--number-of-source-list-divisions));
+		padding: 5px; // Do Not create variable 
 
     display: grid;
     place-items: center;
     overflow: scroll;
-    // padding: 5px;
     position: relative;
     scrollbar-width: none;
     user-select: none;
@@ -43,12 +43,11 @@
       align-items: center;
       flex-direction: column;
       overflow: hidden;
-      font-size: var(--ch5-video-switcher--source-icon-size);
+			padding: var(--ch5-video-switcher--source-item-padding);
+      font-size: calc(var(--ch5-video-switcher--source-icon-size) - var(--ch5-video-switcher--source-item-padding));
       // gap: calc(10px /  var(--number-of-source-list-divisions));
-
       height: calc(80px / var(--number-of-source-list-divisions));
       width: calc(104px / var(--number-of-source-list-divisions));
-      // padding: 5px;
 
       .source-icon {
         font-size: calc(1em / var(--number-of-source-list-divisions));
@@ -134,7 +133,7 @@
 
     &.ch5-video-switcher--source-list-scrollbar-true {
       .scrollbar-container {
-        left: calc($ch5-video-switcher--source-size - var(--ch5-video-switcher--source-list-padding) - var(--ch5-video-switcher--scrollbar-width));
+        left: $ch5-video-switcher--source-size; // calc($ch5-video-switcher--source-size - var(--ch5-video-switcher--scrollbar-width));
       }
     }
   }
@@ -155,8 +154,8 @@
   &.ch5-video-switcher--source-list-position-top,
   &.ch5-video-switcher--source-list-position-bottom {
     .ch5-video-switcher--source-list {
-      height: calc($ch5-video-switcher--source-size - var(--ch5-video-switcher--source-list-padding) - var(--ch5-video-switcher--scrollbar-width));
-      align-content: center;
+			height: $ch5-video-switcher--source-size;
+			align-content: center;
       justify-content: start;
 
       grid-template-rows: repeat(var(--number-of-source-list-divisions), 1fr);
@@ -165,11 +164,6 @@
       .source-container {
         // height: calc(calc(100% / var(--number-of-source-list-divisions) - var(--ch5-video-switcher--source-list-gap)));
       }
-    }
-
-    // TODO -same comment
-    .ch5-video-switcher--screen-list {
-      height: $ch5-video-switcher--screen-size;
     }
 
     &.ch5-video-switcher--source-list-scrollbar-true {
@@ -185,16 +179,10 @@
     }
   }
 
-	&.ch5-video-switcher--source-list-position-top {
-    .ch5-video-switcher--source-list {
-      height: $ch5-video-switcher--source-size;
-		}
-  }
-
   &.ch5-video-switcher--source-list-position-left,
   &.ch5-video-switcher--source-list-position-right {
     .ch5-video-switcher--source-list {
-      width: calc($ch5-video-switcher--source-size - var(--ch5-video-switcher--source-list-padding));
+      width: $ch5-video-switcher--source-size;
 
       grid-template-columns: repeat(var(--number-of-source-list-divisions), 1fr);
       grid-auto-flow: row;
@@ -204,12 +192,6 @@
       .source-container {
         // width: calc(calc(100% / var(--number-of-source-list-divisions) - var(--ch5-video-switcher--source-list-gap)));
       }
-    }
-
-    // TODO - why is this here? though this is required
-    .ch5-video-switcher--screen-list {
-      height: auto;
-      width: $ch5-video-switcher--screen-size;
     }
 
     &.ch5-video-switcher--source-list-scrollbar-true {
