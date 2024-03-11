@@ -63,6 +63,7 @@
     grid-gap: 2px; // Do not allow access as a variable
     overflow: hidden;
     align-items: center;
+    justify-content: center;
 
     .screen-container {
       border-radius: var(--ch5-video-switcher--screen-container-border-radius);
