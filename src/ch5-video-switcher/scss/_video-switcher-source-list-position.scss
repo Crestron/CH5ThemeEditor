@@ -43,9 +43,9 @@
       align-items: center;
       flex-direction: column;
       overflow: hidden;
-      font-size: var(--ch5-video-switcher--source-icon-size);
+			padding: var(--ch5-video-switcher--source-list-padding);
+      font-size: calc(var(--ch5-video-switcher--source-icon-size) - var(--ch5-video-switcher--source-list-padding));
       // gap: calc(10px /  var(--number-of-source-list-divisions));
-
       height: calc(80px / var(--number-of-source-list-divisions));
       width: calc(104px / var(--number-of-source-list-divisions));
 

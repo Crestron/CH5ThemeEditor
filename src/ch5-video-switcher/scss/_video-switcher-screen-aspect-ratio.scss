@@ -33,10 +33,6 @@
       height: $ch5-video-switcher--screen-size; // calc($ch5-video-switcher--screen-size + var(--ch5-video-switcher--source-list-padding));
       width: 100%;
 			padding: 5px; // Do Not create variable - var(--ch5-video-switcher--screen-list-container-padding);
-      // display: flex;
-      // flex-direction: column; // TODO - must be chagned for left and right
-      // justify-content: center;
-      // align-items: center;
       .ch5-video-switcher--screen-list {
         height: 100%;
         width: 100%;
@@ -49,11 +45,6 @@
       height: 100%;
       width: $ch5-video-switcher--screen-size; // calc($ch5-video-switcher--screen-size + var(--ch5-video-switcher--source-list-padding));
 			padding: 5px; // Do Not create variable - var(--ch5-video-switcher--screen-list-container-padding);
-      // display: flex;
-      // flex-direction: row; // TODO - must be chagned for left and right
-      // justify-content: center;
-      // align-items: center;
-
       .ch5-video-switcher--screen-list {
         height: 100%;
         width: 100%;
@@ -117,6 +108,7 @@
           font-weight: var(--ch5-video-switcher--source-list-label-weight);
           font-style: var(--ch5-video-switcher--source-list-label-style);
           color: var(--ch5-video-switcher--source-list-label-color);
+					padding: 0 5px;
         }
       }
     }
@@ -143,21 +135,21 @@
       &-right {
         .ch5-video-switcher--screen-list-label {
           text-align: right;
-          padding: var(--ch5-video-switcher--screen-label-padding);
+          padding: 0 var(--ch5-video-switcher--screen-label-padding);
         }
       }
 
       &-left {
         .ch5-video-switcher--screen-list-label {
           text-align: left;
-          padding: var(--ch5-video-switcher--screen-label-padding);
+          padding: 0 var(--ch5-video-switcher--screen-label-padding);
         }
       }
 
       &-center {
         .ch5-video-switcher--screen-list-label {
           text-align: center;
-          padding: var(--ch5-video-switcher--screen-label-padding);
+          padding: 0 var(--ch5-video-switcher--screen-label-padding);
         }
       }
     }
@@ -194,6 +186,7 @@ ch5-video-switcher[screenaspectratio="16:9"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
+		align-items: center;
   }
 
   .ch5-video-switcher.ch5-video-switcher--source-list-position-top .ch5-video-switcher--screen-list,
