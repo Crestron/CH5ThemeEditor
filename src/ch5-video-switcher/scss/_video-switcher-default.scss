@@ -15,6 +15,7 @@ $ch5-video-switcher--screen-size: 66%;
 
 ch5-video-switcher {
   @include ch5-component-base();
+  display: inline-flex;
 
   ::-webkit-scrollbar {
     display: none;
