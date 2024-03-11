@@ -159,13 +159,6 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--screen-item-padding
   --ch5-video-switcher--screen-item-padding: var(--theme-ch5-video-switcher--screen-item-padding);
 
-  /// description: Screen label padding
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 5px
-  /// related-theme-variable: --theme-ch5-video-switcher--screen-label-padding
-  --ch5-video-switcher--screen-label-padding: var(--theme-ch5-video-switcher--screen-label-padding);
-
   /// description: Source item padding
   /// type: unit
   /// values: px, vw, vh, em, rem, %
@@ -200,11 +193,4 @@ ch5-video-switcher {
   /// example: #0091ea
   /// related-theme-variable: --theme-ch5-video-switcher--border-color
   --ch5-video-switcher--border-color: var(--theme-ch5-video-switcher--border-color);
-
-  /// description: Icon size for screen icon
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 36px
-  /// related-theme-variable: --theme-ch5-video-switcher--screen-icon-size
-  --ch5-video-switcher--screen-icon-size: var(--theme-ch5-video-switcher--screen-icon-size);
 }
