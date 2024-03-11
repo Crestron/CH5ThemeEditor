@@ -115,6 +115,10 @@
           padding: 0 5px;
         }
       }
+
+      &.hideScreen {
+        display: none;
+      }
     }
 
     .ch5-video-switcher--screen-list-label:empty {
