@@ -152,12 +152,12 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--screen-list-label-size
   --ch5-video-switcher--screen-list-label-size: var(--theme-ch5-video-switcher--screen-list-label-size);
 
-  /// description: Screen list container padding
+  /// description: Screen item padding
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 5px
-  /// related-theme-variable: --theme-ch5-video-switcher--screen-list-container-padding
-  --ch5-video-switcher--screen-list-container-padding: var(--theme-ch5-video-switcher--screen-list-container-padding);
+  /// related-theme-variable: --theme-ch5-video-switcher--screen-item-padding
+  --ch5-video-switcher--screen-item-padding: var(--theme-ch5-video-switcher--screen-item-padding);
 
   /// description: Screen label padding
   /// type: unit
@@ -166,12 +166,12 @@ ch5-video-switcher {
   /// related-theme-variable: --theme-ch5-video-switcher--screen-label-padding
   --ch5-video-switcher--screen-label-padding: var(--theme-ch5-video-switcher--screen-label-padding);
 
-  /// description: Source list padding
+  /// description: Source item padding
   /// type: unit
   /// values: px, vw, vh, em, rem, %
-  /// example: 1px
-  /// related-theme-variable: --theme-ch5-video-switcher--source-list-padding
-  --ch5-video-switcher--source-list-padding: var(--theme-ch5-video-switcher--source-list-padding);
+  /// example: 3px
+  /// related-theme-variable: --theme-ch5-video-switcher--source-item-padding
+  --ch5-video-switcher--source-item-padding: var(--theme-ch5-video-switcher--source-item-padding);
 
   /// description: Border radius for video switcher container
   /// type: unit

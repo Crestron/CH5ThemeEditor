@@ -43,8 +43,8 @@
       align-items: center;
       flex-direction: column;
       overflow: hidden;
-			padding: var(--ch5-video-switcher--source-list-padding);
-      font-size: calc(var(--ch5-video-switcher--source-icon-size) - var(--ch5-video-switcher--source-list-padding));
+			padding: var(--ch5-video-switcher--source-item-padding);
+      font-size: calc(var(--ch5-video-switcher--source-icon-size) - var(--ch5-video-switcher--source-item-padding));
       // gap: calc(10px /  var(--number-of-source-list-divisions));
       height: calc(80px / var(--number-of-source-list-divisions));
       width: calc(104px / var(--number-of-source-list-divisions));
@@ -182,7 +182,7 @@
   &.ch5-video-switcher--source-list-position-left,
   &.ch5-video-switcher--source-list-position-right {
     .ch5-video-switcher--source-list {
-      width: $ch5-video-switcher--source-size; // calc($ch5-video-switcher--source-size - var(--ch5-video-switcher--source-list-padding));
+      width: $ch5-video-switcher--source-size;
 
       grid-template-columns: repeat(var(--number-of-source-list-divisions), 1fr);
       grid-auto-flow: row;

@@ -30,9 +30,9 @@
   &.ch5-video-switcher--source-list-position-top,
   &.ch5-video-switcher--source-list-position-bottom {
     .ch5-video-switcher--screen-list-parent {
-      height: $ch5-video-switcher--screen-size; // calc($ch5-video-switcher--screen-size + var(--ch5-video-switcher--source-list-padding));
+      height: $ch5-video-switcher--screen-size;
       width: 100%;
-			padding: 5px; // Do Not create variable - var(--ch5-video-switcher--screen-list-container-padding);
+			padding: 5px; // Do Not create variable
       .ch5-video-switcher--screen-list {
         height: 100%;
         width: 100%;
@@ -43,8 +43,8 @@
   &.ch5-video-switcher--source-list-position-right {
     .ch5-video-switcher--screen-list-parent {
       height: 100%;
-      width: $ch5-video-switcher--screen-size; // calc($ch5-video-switcher--screen-size + var(--ch5-video-switcher--source-list-padding));
-			padding: 5px; // Do Not create variable - var(--ch5-video-switcher--screen-list-container-padding);
+      width: $ch5-video-switcher--screen-size; 
+			padding: 5px; // Do Not create variable
       .ch5-video-switcher--screen-list {
         height: 100%;
         width: 100%;
@@ -71,6 +71,7 @@
       justify-content: flex-start;
       background-color: var(--ch5-video-switcher--screen-container-background-color);
       position: relative;
+			padding: var(--ch5-video-switcher--screen-item-padding);
 
       .source-onscreen {
         display: flex;
@@ -83,7 +84,7 @@
         font-size: var(--ch5-video-switcher--screen-icon-size);
 
         .source-icon {
-          font-size: 1em;
+          font-size: calc(1em - var(--ch5-video-switcher--screen-item-padding));
           display: flex;
           align-items: center;
           justify-content: center;
