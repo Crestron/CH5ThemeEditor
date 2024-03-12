@@ -8,10 +8,13 @@ const OptimizeCSSAssetsPlugin = require('css-minimizer-webpack-plugin');
 
 const distDir = 'output';
 const basePath = path.resolve(__dirname);
-const fileList = glob.sync('themes/**/*.scss', {posix: true, dotRelative: true});
+const fileList = glob.sync('themes/**/*.scss', { posix: true, dotRelative: true });
 const nodeModules = `./node_modules/`;
 const fontAwesomeCssBasePath = `${nodeModules}@fortawesome/fontawesome-free/css`;
+const fontAwesomeWebFontBasePath = `${nodeModules}@fortawesome/fontawesome-free`;
 const materialIconsFilePath = `${nodeModules}@material-icons/font/css`;
+const materialIconsFontFilePath = `${nodeModules}@material-icons/font`;
+
 const sgIconsPath = "./sg-icons";
 
 const processArgs = () => {
@@ -40,14 +43,10 @@ const inputArgs = processArgs();
 
 const manifestSourceFilePath = "./app.manifest.json";
 const themeList = {};
-themeList.themeName = glob.sync(distDir + '/themes/*-theme.css');
+themeList.themeName = glob.sync(distDir + '/themes/css/*-theme.css');
 
 const jsonData = JSON.stringify(themeList, null, 4);
 fs.writeFileSync(manifestSourceFilePath, jsonData); // TODO - write manifest file
-
-let fontAwesomeDestinationFilePath = "";
-let materialIconsDestinationFilePath = "";
-let sgIconsDestinationFilePath = "";
 
 const outputPathVariable = 'output-path';
 
@@ -96,9 +95,6 @@ entryList['external'] = [
 
 if (inputArgs[outputPathVariable] !== "") {
 	destinationFilePath = inputArgs[outputPathVariable];
-	fontAwesomeDestinationFilePath = inputArgs[outputPathVariable] + '/font-awesome/';
-	materialIconsDestinationFilePath = inputArgs[outputPathVariable] + '/material-icons/';
-	sgIconsDestinationFilePath = inputArgs[outputPathVariable];
 } else {
 	// Throw error
 }
@@ -150,30 +146,22 @@ module.exports = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "[name].css"
+			filename: "css/[name].css"
 		}),
 		new Without([/.js?$/]), // just give a list with regex patterns that should be excluded like /\.css\.js(\.map)?$
 		new CopyPlugin({
 			patterns: [
 				{
-					from: path.resolve(basePath, fontAwesomeCssBasePath + "/all.css"),
-					to: path.resolve(fontAwesomeDestinationFilePath + "/css/all.css")
+					from: path.resolve(basePath, fontAwesomeWebFontBasePath + "/webfonts/"),
+					to: path.resolve(destinationFilePath + "/webfonts/")
 				},
 				{
-					from: path.resolve(basePath, materialIconsFilePath + "/all.css"),
-					to: path.resolve(materialIconsDestinationFilePath + "/css/all.css")
+					from: path.resolve(basePath, materialIconsFontFilePath + "/font/"),
+					to: path.resolve(destinationFilePath + "/font/")
 				},
 				{
-					from: path.resolve(basePath, sgIconsPath + "/css/all.css"),
-					to: path.resolve(sgIconsDestinationFilePath + "/sg-icons/css/all.css")
-				},
-				{
-					from: path.resolve(basePath, sgIconsPath + "/svgs/icons/"),
-					to: path.resolve(sgIconsDestinationFilePath + "/sg-icons/svgs/icons/")
-				},
-				{
-					from: path.resolve(basePath, sgIconsPath + "/svgs/media-transports/"),
-					to: path.resolve(sgIconsDestinationFilePath + "/sg-icons/svgs/media-transports/")
+					from: path.resolve(basePath, sgIconsPath + "/svgs/"),
+					to: path.resolve(destinationFilePath + "/svgs/")
 				}
 			]
 		})
