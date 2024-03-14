@@ -1,0 +1,1959 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-dark-theme-mixin
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@mixin ch5-themes-dark() {
+  // ***************************************
+  // Fonts
+  // ***************************************
+
+  /// Theme body font color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #fff
+  --theme-colors--theme-body-font-color: #fff;
+
+  /// Theme header font color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f8f8f8
+  --theme-colors--theme-header-font-color: #f8f8f8;
+
+  /// Theme background color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #1a1a1a
+  --theme-colors--theme-background-color: #1a1a1a;
+
+  /// Theme border color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #9e9e9e
+  --theme-colors--theme-border-color: #9e9e9e;
+
+  /// Font size at the theme level
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 16px
+  --theme-fonts--font-size: 16px;
+
+  /// Font style at the theme level
+  /// type: list
+  /// values: normal, italic
+  /// example: normal
+  --theme-fonts--font-style: normal;
+
+  /// Font weight at the theme level
+  /// type: list
+  /// values: normal, bold
+  /// example: normal
+  --theme-fonts--font-weight: normal;
+
+  /// Scrollbar width at the theme level
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 7px
+  --theme-others--scrollbar-width: 7px;
+
+  /// Scrollbar border radius at the theme level
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 10px
+  --theme-others--scrollbar-border-radius: 10px;
+
+  /// Scrollbar track color at the theme level
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: rgba(0, 0, 0, 0.1)
+  --theme-others--scrollbar-track-color: rgba(0, 0, 0, 0.1);
+
+  /// Scrollbar thumb color at the theme level
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: rgba(0, 0, 0, 0.5)
+  --theme-others--scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
+
+  /// Disabled opacity value at the theme level
+  /// type: number
+  /// values: 1, 10, 100
+  /// example: 0.5
+  --theme-others--disabled-opacity: 0.5;
+
+  // ***************************************
+  // Color system
+  // ***************************************
+
+  /// Background color for type="default"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #0099ff
+  --theme-colors--default-background-color: #0099ff;
+
+  /// Border color for type="default"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #0099ff
+  --theme-colors--default-border-color: #0099ff;
+
+  /// Font color for type="default"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--default-font-color: #ffffff;
+
+  /// Pressed background color for type="default"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #008ae6
+  --theme-colors--default-pressed-background-color: #008ae6;
+
+  /// Pressed border color for type="default"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #0099ff
+  --theme-colors--default-pressed-border-color: #0099ff;
+
+  /// Pressed font color for type="default"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--default-pressed-font-color: #ffffff;
+
+  /// Selected background color for type="default"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #0079c9
+  --theme-colors--default-selected-background-color: #0079c9;
+
+  /// Selected border color for type="default"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #0099ff
+  --theme-colors--default-selected-border-color: #0099ff;
+
+  /// Selected font color for type="default"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--default-selected-font-color: #ffffff;
+
+  /// Background color for type="primary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #17171a
+  --theme-colors--primary-background-color: #17171a;
+
+  /// Border color for type="primary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f8f7f8
+  --theme-colors--primary-border-color: #f8f7f8;
+
+  /// Font color for type="primary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--primary-font-color: #ffffff;
+
+  /// Pressed background color for type="primary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #353539
+  --theme-colors--primary-pressed-background-color: #353539;
+
+  /// Pressed border color for type="primary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f8f7f8
+  --theme-colors--primary-pressed-border-color: #f8f7f8;
+
+  /// Pressed font color for type="primary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--primary-pressed-font-color: #ffffff;
+
+  /// Selected background color for type="primary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #29292e
+  --theme-colors--primary-selected-background-color: #29292e;
+
+  /// Selected border color for type="primary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f8f7f8
+  --theme-colors--primary-selected-border-color: #f8f7f8;
+
+  /// Selected font color for type="primary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--primary-selected-font-color: #ffffff;
+
+  /// Background color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #00bcd4
+  --theme-colors--info-background-color: #00bcd4;
+
+  /// Border color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #00bcd4
+  --theme-colors--info-border-color: #00bcd4;
+
+  /// Font color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--info-font-color: #ffffff;
+
+  /// Pressed background color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #0097a7
+  --theme-colors--info-pressed-background-color: #0097a7;
+
+  /// Pressed border color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #00bcd4
+  --theme-colors--info-pressed-border-color: #00bcd4;
+
+  /// Pressed font color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--info-pressed-font-color: #ffffff;
+
+  /// Selected background color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #0094a7
+  --theme-colors--info-selected-background-color: #0094a7;
+
+  /// Selected border color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #00bcd4
+  --theme-colors--info-selected-border-color: #00bcd4;
+
+  /// Selected font color for type="info"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--info-selected-font-color: #ffffff;
+
+  /// Background color for type="danger"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f44336
+  --theme-colors--danger-background-color: #f44336;
+
+  /// Border color for type="danger"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f44337
+  --theme-colors--danger-border-color: #f44337;
+
+  /// Font color for type="danger"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--danger-font-color: #ffffff;
+
+  /// Pressed background color for type="danger"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #b71c1c
+  --theme-colors--danger-pressed-background-color: #b71c1c;
+
+  /// Pressed border color for type="danger"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f44337
+  --theme-colors--danger-pressed-border-color: #f44337;
+
+  /// Pressed font color for type="danger"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--danger-pressed-font-color: #ffffff;
+
+  /// Selected background color for type="danger"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #c62828
+  --theme-colors--danger-selected-background-color: #c62828;
+
+  /// Selected border color for type="danger"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f44337
+  --theme-colors--danger-selected-border-color: #f44337;
+
+  /// Selected font color for type="danger"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--danger-selected-font-color: #ffffff;
+
+  /// Background color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #5e5e66
+  --theme-colors--secondary-background-color: #5e5e66;
+
+  /// Border color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #9e9e9e
+  --theme-colors--secondary-border-color: #9e9e9e;
+
+  /// Font color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--secondary-font-color: #ffffff;
+
+  /// Pressed background color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #9e9e9e
+  --theme-colors--secondary-pressed-background-color: #9e9e9e;
+
+  /// Pressed border color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #9e9e9e
+  --theme-colors--secondary-pressed-border-color: #9e9e9e;
+
+  /// Pressed font color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--secondary-pressed-font-color: #ffffff;
+
+  /// Selected background color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #4a4a50
+  --theme-colors--secondary-selected-background-color: #4a4a50;
+
+  /// Selected border color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #9e9e9e
+  --theme-colors--secondary-selected-border-color: #9e9e9e;
+
+  /// Selected font color for type="secondary"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  --theme-colors--secondary-selected-font-color: #ffffff;
+
+  /// Background color for type="success"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #4caf50
+  --theme-colors--success-background-color: #4caf50;
+
+  /// Border color for type="success"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #4caf50
+  --theme-colors--success-border-color: #4caf50;
+
+  /// Font color for type="success"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f0fff0
+  --theme-colors--success-font-color: #f0fff0;
+
+  /// Pressed background color for type="success"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #388e3c
+  --theme-colors--success-pressed-background-color: #388e3c;
+
+  /// Pressed border color for type="success"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #4caf50
+  --theme-colors--success-pressed-border-color: #4caf50;
+
+  /// Pressed font color for type="success"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f0fff0
+  --theme-colors--success-pressed-font-color: #f0fff0;
+
+  /// Selected background color for type="success"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #3c8a3f
+  --theme-colors--success-selected-background-color: #3c8a3f;
+
+  /// Selected border color for type="success"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #4caf50
+  --theme-colors--success-selected-border-color: #4caf50;
+
+  /// Selected font color for type="success"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f0fff0
+  --theme-colors--success-selected-font-color: #f0fff0;
+
+  /// Background color for type="warning"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffc009
+  --theme-colors--warning-background-color: #ffc009;
+
+  /// Border color for type="warning"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffc009
+  --theme-colors--warning-border-color: #ffc009;
+
+  /// Font color for type="warning"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #333
+  --theme-colors--warning-font-color: #333;
+
+  /// Pressed background color for type="warning"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f7cd4f
+  --theme-colors--warning-pressed-background-color: #f7cd4f;
+
+  /// Pressed border color for type="warning"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffc009
+  --theme-colors--warning-pressed-border-color: #ffc009;
+
+  /// Pressed font color for type="warning"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #333
+  --theme-colors--warning-pressed-font-color: #333;
+
+  /// Selected background color for type="warning"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #c99807
+  --theme-colors--warning-selected-background-color: #c99807;
+
+  /// Selected border color for type="warning"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffc009
+  --theme-colors--warning-selected-border-color: #ffc009;
+
+  /// Selected font color for type="warning"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #333
+  --theme-colors--warning-selected-font-color: #333;
+
+  /// Background color for type="text"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #efefef
+  --theme-colors--text-background-color: #efefef;
+
+  /// Border color for type="text"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #9e9e9e
+  --theme-colors--text-border-color: #9e9e9e;
+
+  /// Font color for type="text"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #6d6d6d
+  --theme-colors--text-font-color: #6d6d6d;
+
+  /// Pressed background color for type="text"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #d7d4d4
+  --theme-colors--text-pressed-background-color: #d7d4d4;
+
+  /// Pressed border color for type="text"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #9e9e9e
+  --theme-colors--text-pressed-border-color: #9e9e9e;
+
+  /// Pressed font color for type="text"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #6d6d6d
+  --theme-colors--text-pressed-font-color: #6d6d6d;
+
+  /// Selected background color for type="text"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #bdbdbd
+  --theme-colors--text-selected-background-color: #bdbdbd;
+
+  /// Selected border color for type="text"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #9e9e9e
+  --theme-colors--text-selected-border-color: #9e9e9e;
+
+  /// Selected font color for type="text"
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #6d6d6d
+  --theme-colors--text-selected-font-color: #6d6d6d;
+
+  // ***************************************
+  // ch5-animation
+  // ***************************************
+
+  --theme-ch5-animation--color: #fff;
+
+  --theme-ch5-animation--size-regular: 72px;
+
+  --theme-ch5-animation--size-small: 40px;
+
+  --theme-ch5-animation--size-large: 104px;
+
+  --theme-ch5-animation--size-x-large: 136px;
+
+  // ***************************************
+  // ch5-background
+  // ***************************************
+
+  --theme-ch5-background--transition-duration: 1s;
+
+  --theme-ch5-background--transition-timing-function: ease;
+
+  // ***************************************
+  // ch5-button
+  // ***************************************
+
+  --theme-ch5-button--line-height: 1.2;
+
+  --theme-ch5-button--padding: 0.25rem;
+
+  --theme-ch5-button--regular-font-size: 14px;
+
+  --theme-ch5-button--regular-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-button--regular-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--icon-color: inherit; // TODO - why Inherit.
+
+  --theme-ch5-button--regular-icon-size: var(--theme-ch5-button--regular-font-size);
+
+  --theme-ch5-button--x-small-icon-size: var(--theme-ch5-button--x-small-font-size);
+
+  --theme-ch5-button--small-icon-size: var(--theme-ch5-button--small-font-size);
+
+  --theme-ch5-button--large-icon-size: var(--theme-ch5-button--large-font-size);
+
+  --theme-ch5-button--x-large-icon-size: var(--theme-ch5-button--x-large-font-size);
+
+  --theme-ch5-button--default-border-width: 1px;
+
+  --theme-ch5-button--primary-border-width: 1px;
+
+  --theme-ch5-button--secondary-border-width: 1px;
+
+  --theme-ch5-button--success-border-width: 1px;
+
+  --theme-ch5-button--info-border-width: 1px;
+
+  --theme-ch5-button--warning-border-width: 1px;
+
+  --theme-ch5-button--danger-border-width: 1px;
+
+  --theme-ch5-button--text-border-width: 1px;
+
+  --theme-ch5-button--default-border-style: solid;
+
+  --theme-ch5-button--primary-border-style: solid;
+
+  --theme-ch5-button--secondary-border-style: solid;
+
+  --theme-ch5-button--success-border-style: solid;
+
+  --theme-ch5-button--info-border-style: solid;
+
+  --theme-ch5-button--warning-border-style: solid;
+
+  --theme-ch5-button--danger-border-style: solid;
+
+  --theme-ch5-button--text-border-style: solid;
+
+  --theme-ch5-button--rounded-rectangle-border-radius: 5px;
+
+  --theme-ch5-button--oval-border-radius: 50%;
+
+  --theme-ch5-button--tab-border-radius: 10px 10px 0 0;
+
+  --theme-ch5-button--regular-width: 84px;
+
+  --theme-ch5-button--regular-height: 42px;
+
+  --theme-ch5-button--x-small-font-size: 11px;
+
+  --theme-ch5-button--x-small-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-button--x-small-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--x-small-width: 64px;
+
+  --theme-ch5-button--x-small-height: 32px;
+
+  --theme-ch5-button--small-font-size: 13px;
+
+  --theme-ch5-button--small-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-button--small-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--small-width: 72px;
+
+  --theme-ch5-button--small-height: 36px;
+
+  --theme-ch5-button--large-font-size: 16px;
+
+  --theme-ch5-button--large-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-button--large-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--large-width: 104px;
+
+  --theme-ch5-button--large-height: 52px;
+
+  --theme-ch5-button--x-large-font-size: 18px;
+
+  --theme-ch5-button--x-large-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-button--x-large-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--x-large-width: 144px;
+
+  --theme-ch5-button--x-large-height: 72px;
+
+  --theme-ch5-button--checkbox-padding: 5px;
+
+  --theme-ch5-button--default-background-color: var(--theme-colors--default-background-color);
+
+  --theme-ch5-button--default-border-color: var(--theme-colors--default-border-color);
+
+  --theme-ch5-button--default-font-color: var(--theme-colors--default-font-color);
+
+  --theme-ch5-button--default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
+
+  --theme-ch5-button--default-pressed-border-color: var(--theme-colors--default-pressed-border-color);
+
+  --theme-ch5-button--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
+
+  --theme-ch5-button--default-selected-background-color: var(--theme-colors--default-selected-background-color);
+
+  --theme-ch5-button--default-selected-border-color: var(--theme-colors--default-selected-border-color);
+
+  --theme-ch5-button--default-selected-font-color: var(--theme-colors--default-selected-font-color);
+
+  --theme-ch5-button--primary-background-color: var(--theme-colors--primary-background-color);
+
+  --theme-ch5-button--primary-border-color: var(--theme-colors--primary-border-color);
+
+  --theme-ch5-button--primary-font-color: var(--theme-colors--primary-font-color);
+
+  --theme-ch5-button--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
+
+  --theme-ch5-button--primary-pressed-border-color: var(--theme-colors--primary-pressed-border-color);
+
+  --theme-ch5-button--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
+
+  --theme-ch5-button--primary-selected-background-color: var(--theme-colors--primary-selected-background-color);
+
+  --theme-ch5-button--primary-selected-border-color: var(--theme-colors--primary-selected-border-color);
+
+  --theme-ch5-button--primary-selected-font-color: var(--theme-colors--primary-selected-font-color);
+
+  --theme-ch5-button--info-background-color: var(--theme-colors--info-background-color);
+
+  --theme-ch5-button--info-border-color: var(--theme-colors--info-border-color);
+
+  --theme-ch5-button--info-font-color: var(--theme-colors--info-font-color);
+
+  --theme-ch5-button--info-pressed-background-color: var(--theme-colors--info-pressed-background-color);
+
+  --theme-ch5-button--info-pressed-border-color: var(--theme-colors--info-pressed-border-color);
+
+  --theme-ch5-button--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
+
+  --theme-ch5-button--info-selected-background-color: var(--theme-colors--info-selected-background-color);
+
+  --theme-ch5-button--info-selected-border-color: var(--theme-colors--info-selected-border-color);
+
+  --theme-ch5-button--info-selected-font-color: var(--theme-colors--info-selected-font-color);
+
+  --theme-ch5-button--danger-background-color: var(--theme-colors--danger-background-color);
+
+  --theme-ch5-button--danger-border-color: var(--theme-colors--danger-border-color);
+
+  --theme-ch5-button--danger-font-color: var(--theme-colors--danger-font-color);
+
+  --theme-ch5-button--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
+
+  --theme-ch5-button--danger-pressed-border-color: var(--theme-colors--danger-pressed-border-color);
+
+  --theme-ch5-button--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
+
+  --theme-ch5-button--danger-selected-background-color: var(--theme-colors--danger-selected-background-color);
+
+  --theme-ch5-button--danger-selected-border-color: var(--theme-colors--danger-selected-border-color);
+
+  --theme-ch5-button--danger-selected-font-color: var(--theme-colors--danger-selected-font-color);
+
+  --theme-ch5-button--secondary-background-color: var(--theme-colors--secondary-background-color);
+
+  --theme-ch5-button--secondary-border-color: var(--theme-colors--secondary-border-color);
+
+  --theme-ch5-button--secondary-font-color: var(--theme-colors--secondary-font-color);
+
+  --theme-ch5-button--secondary-pressed-background-color: var(--theme-colors--secondary-pressed-background-color);
+
+  --theme-ch5-button--secondary-pressed-border-color: var(--theme-colors--secondary-pressed-border-color);
+
+  --theme-ch5-button--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
+
+  --theme-ch5-button--secondary-selected-background-color: var(--theme-colors--secondary-selected-background-color);
+
+  --theme-ch5-button--secondary-selected-border-color: var(--theme-colors--secondary-selected-border-color);
+
+  --theme-ch5-button--secondary-selected-font-color: var(--theme-colors--secondary-selected-font-color);
+
+  --theme-ch5-button--success-background-color: var(--theme-colors--success-background-color);
+
+  --theme-ch5-button--success-border-color: var(--theme-colors--success-border-color);
+
+  --theme-ch5-button--success-font-color: var(--theme-colors--success-font-color);
+
+  --theme-ch5-button--success-pressed-background-color: var(--theme-colors--success-pressed-background-color);
+
+  --theme-ch5-button--success-pressed-border-color: var(--theme-colors--success-pressed-border-color);
+
+  --theme-ch5-button--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
+
+  --theme-ch5-button--success-selected-background-color: var(--theme-colors--success-selected-background-color);
+
+  --theme-ch5-button--success-selected-border-color: var(--theme-colors--success-selected-border-color);
+
+  --theme-ch5-button--success-selected-font-color: var(--theme-colors--success-selected-font-color);
+
+  --theme-ch5-button--warning-background-color: var(--theme-colors--warning-background-color);
+
+  --theme-ch5-button--warning-border-color: var(--theme-colors--warning-border-color);
+
+  --theme-ch5-button--warning-font-color: var(--theme-colors--warning-font-color);
+
+  --theme-ch5-button--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
+
+  --theme-ch5-button--warning-pressed-border-color: var(--theme-colors--warning-pressed-border-color);
+
+  --theme-ch5-button--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
+
+  --theme-ch5-button--warning-selected-background-color: var(--theme-colors--warning-selected-background-color);
+
+  --theme-ch5-button--warning-selected-border-color: var(--theme-colors--warning-selected-border-color);
+
+  --theme-ch5-button--warning-selected-font-color: var(--theme-colors--warning-selected-font-color);
+
+  --theme-ch5-button--text-background-color: var(--theme-colors--text-background-color);
+
+  --theme-ch5-button--text-border-color: var(--theme-colors--text-border-color);
+
+  --theme-ch5-button--text-font-color: var(--theme-colors--text-font-color);
+
+  --theme-ch5-button--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
+
+  --theme-ch5-button--text-pressed-border-color: var(--theme-colors--text-pressed-border-color);
+
+  --theme-ch5-button--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
+
+  --theme-ch5-button--text-selected-background-color: var(--theme-colors--text-selected-background-color);
+
+  --theme-ch5-button--text-selected-border-color: var(--theme-colors--text-selected-border-color);
+
+  --theme-ch5-button--text-selected-font-color: var(--theme-colors--text-selected-font-color);
+
+  // ***************************************
+  // ch5-button-list
+  // ***************************************
+
+  --theme-ch5-button-list--container-padding: 5px;
+
+  --theme-ch5-button-list--button-container-width: 100px;
+
+  --theme-ch5-button-list--button-container-height: 58px;
+
+  --theme-ch5-button-list--button-container-padding: 5px;
+
+  --theme-ch5-button-list--scrollbar-width: var(--theme-others--scrollbar-width);
+
+  --theme-ch5-button-list--scrollbar-border-radius: var(--theme-others--scrollbar-border-radius);
+
+  --theme-ch5-button-list--scrollbar-thumb-color: var(--theme-others--scrollbar-thumb-color);
+
+  --theme-ch5-button-list--scrollbar-track-color: var(--theme-others--scrollbar-track-color);
+
+  // ***************************************
+  // ch5-color-chip
+  // ***************************************
+
+  --theme-ch5-color-chip--height: 40px;
+
+  --theme-ch5-color-chip--width: 40px;
+
+  --theme-ch5-color-chip--background-color: #000;
+
+  // ***************************************
+  // ch5-color-picker
+  // ***************************************
+
+  --theme-ch5-color-picker--height: 240px;
+
+  --theme-ch5-color-picker--width: 240px;
+
+  // ***************************************
+  // ch5-date-time
+  // ***************************************
+
+  --theme-ch5-datetime--font-size: 14px;
+
+  --theme-ch5-datetime--height: 35px;
+
+  --theme-ch5-datetime--width: 200px;
+
+  --theme-ch5-datetime--background-color: transparent;
+
+  --theme-ch5-datetime--font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-datetime--font-style: var(--theme-fonts--font-style);
+
+  // ***************************************
+  // ch5-dpad
+  // ***************************************
+
+  --theme-ch5-dpad--regular-size: 150px;
+
+  --theme-ch5-dpad--x-small-size: 100px;
+
+  --theme-ch5-dpad--small-size: 130px;
+
+  --theme-ch5-dpad--large-size: 180px;
+
+  --theme-ch5-dpad--x-large-size: 200px;
+
+  --theme-ch5-dpad--regular-border-radius: 10px;
+
+  --theme-ch5-dpad--x-small-border-radius: 6px;
+
+  --theme-ch5-dpad--small-border-radius: 10px;
+
+  --theme-ch5-dpad--large-border-radius: 10px;
+
+  --theme-ch5-dpad--x-large-border-radius: 10px;
+
+  --theme-ch5-dpad--label-font-size: 1.5rem;
+
+  --theme-ch5-dpad--icon-size-x-small: 1.3rem;
+
+  --theme-ch5-dpad--icon-size-small: 1.8rem;
+
+  --theme-ch5-dpad--icon-size-regular: 2rem;
+
+  --theme-ch5-dpad--icon-size-large: 2.2rem;
+
+  --theme-ch5-dpad--icon-size-x-large: 2.4rem;
+
+  --theme-ch5-dpad--default-background-color: var(--theme-colors--default-background-color);
+
+  --theme-ch5-dpad--default-color: var(--theme-colors--default-font-color);
+
+  --theme-ch5-dpad--default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
+
+  --theme-ch5-dpad--default-pressed-color: var(--theme-colors--default-pressed-font-color);
+
+  --theme-ch5-dpad--primary-background-color: var(--theme-colors--primary-background-color);
+
+  --theme-ch5-dpad--primary-color: var(--theme-colors--primary-font-color);
+
+  --theme-ch5-dpad--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
+
+  --theme-ch5-dpad--primary-pressed-color: var(--theme-colors--primary-pressed-font-color);
+
+  --theme-ch5-dpad--info-background-color: var(--theme-colors--info-background-color);
+
+  --theme-ch5-dpad--info-color: var(--theme-colors--info-font-color);
+
+  --theme-ch5-dpad--info-pressed-background-color: var(--theme-colors--info-pressed-background-color);
+
+  --theme-ch5-dpad--info-pressed-color: var(--theme-colors--info-pressed-font-color);
+
+  --theme-ch5-dpad--danger-background-color: var(--theme-colors--danger-background-color);
+
+  --theme-ch5-dpad--danger-color: var(--theme-colors--danger-font-color);
+
+  --theme-ch5-dpad--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
+
+  --theme-ch5-dpad--danger-pressed-color: var(--theme-colors--danger-pressed-font-color);
+
+  --theme-ch5-dpad--secondary-background-color: var(--theme-colors--secondary-background-color);
+
+  --theme-ch5-dpad--secondary-color: var(--theme-colors--secondary-font-color);
+
+  --theme-ch5-dpad--secondary-pressed-background-color: var(--theme-colors--secondary-pressed-background-color);
+
+  --theme-ch5-dpad--secondary-pressed-color: var(--theme-colors--secondary-pressed-font-color);
+
+  --theme-ch5-dpad--success-background-color: var(--theme-colors--success-background-color);
+
+  --theme-ch5-dpad--success-color: var(--theme-colors--success-font-color);
+
+  --theme-ch5-dpad--success-pressed-background-color: var(--theme-colors--success-pressed-background-color);
+
+  --theme-ch5-dpad--success-pressed-color: var(--theme-colors--success-pressed-font-color);
+
+  --theme-ch5-dpad--warning-background-color: var(--theme-colors--warning-background-color);
+
+  --theme-ch5-dpad--warning-color: var(--theme-colors--warning-font-color);
+
+  --theme-ch5-dpad--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
+
+  --theme-ch5-dpad--warning-pressed-color: var(--theme-colors--warning-pressed-font-color);
+
+  --theme-ch5-dpad--text-background-color: var(--theme-colors--text-background-color);
+
+  --theme-ch5-dpad--text-color: var(--theme-colors--text-font-color);
+
+  --theme-ch5-dpad--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
+
+  --theme-ch5-dpad--text-pressed-color: var(--theme-colors--text-pressed-font-color);
+
+  // ***************************************
+  // ch5-form
+  // ***************************************
+
+  --theme-ch5-form--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-form--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-form--font-weight: var(--theme-fonts--font-weight);
+
+  // ***************************************
+  // ch5-image
+  // ***************************************
+
+  --theme-ch5-image--object-fit: contain;
+
+  // ***************************************
+  // ch5-keypad
+  // ***************************************
+
+  --theme-ch5-keypad--gap-between-buttons: 6px;
+
+  --theme-ch5-keypad--padding: 6px;
+
+  --theme-ch5-keypad--x-small-container-width: 210px;
+
+  --theme-ch5-keypad--x-small-font-size-major: 1.8rem;
+
+  --theme-ch5-keypad--x-small-font-size-minor: 0.65rem;
+
+  --theme-ch5-keypad--small-container-width: 249px;
+
+  --theme-ch5-keypad--small-font-size-major: 2rem;
+
+  --theme-ch5-keypad--small-font-size-minor: 0.75rem;
+
+  --theme-ch5-keypad--regular-container-width: 267px;
+
+  --theme-ch5-keypad--regular-font-size-major: 2.4rem;
+
+  --theme-ch5-keypad--regular-font-size-minor: 0.85rem;
+
+  --theme-ch5-keypad--large-container-width: 294px;
+
+  --theme-ch5-keypad--large-font-size-major: 2.8rem;
+
+  --theme-ch5-keypad--large-font-size-minor: 0.95rem;
+
+  --theme-ch5-keypad--x-large-container-width: 312px;
+
+  --theme-ch5-keypad--x-large-font-size-major: 3rem;
+
+  --theme-ch5-keypad--x-large-font-size-minor: 1.05rem;
+
+  --theme-ch5-keypad--default-background-color: var(--theme-colors--default-background-color);
+
+  --theme-ch5-keypad--default-border-color: var(--theme-colors--default-border-color);
+
+  --theme-ch5-keypad--default-border-width: 1px;
+
+  --theme-ch5-keypad--default-border-style: solid;
+
+  --theme-ch5-keypad--default-font-color: var(--theme-colors--default-font-color);
+
+  --theme-ch5-keypad--default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
+
+  --theme-ch5-keypad--default-pressed-border-color: var(--theme-colors--default-pressed-border-color);
+
+  --theme-ch5-keypad--default-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--default-pressed-border-style: solid;
+
+  --theme-ch5-keypad--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
+
+  --theme-ch5-keypad--primary-background-color: var(--theme-colors--primary-background-color);
+
+  --theme-ch5-keypad--primary-border-color: var(--theme-colors--primary-border-color);
+
+  --theme-ch5-keypad--primary-border-width: 1px;
+
+  --theme-ch5-keypad--primary-border-style: solid;
+
+  --theme-ch5-keypad--primary-font-color: var(--theme-colors--primary-font-color);
+
+  --theme-ch5-keypad--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
+
+  --theme-ch5-keypad--primary-pressed-border-color: var(--theme-colors--primary-pressed-border-color);
+
+  --theme-ch5-keypad--primary-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--primary-pressed-border-style: solid;
+
+  --theme-ch5-keypad--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
+
+  --theme-ch5-keypad--info-background-color: var(--theme-colors--info-background-color);
+
+  --theme-ch5-keypad--info-border-color: var(--theme-colors--info-border-color);
+
+  --theme-ch5-keypad--info-border-width: 1px;
+
+  --theme-ch5-keypad--info-border-style: solid;
+
+  --theme-ch5-keypad--info-font-color: var(--theme-colors--info-font-color);
+
+  --theme-ch5-keypad--info-pressed-background-color: var(--theme-colors--info-pressed-background-color);
+
+  --theme-ch5-keypad--info-pressed-border-color: var(--theme-colors--info-pressed-border-color);
+
+  --theme-ch5-keypad--info-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--info-pressed-border-style: solid;
+
+  --theme-ch5-keypad--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
+
+  --theme-ch5-keypad--danger-background-color: var(--theme-colors--danger-background-color);
+
+  --theme-ch5-keypad--danger-border-color: var(--theme-colors--danger-border-color);
+
+  --theme-ch5-keypad--danger-border-width: 1px;
+
+  --theme-ch5-keypad--danger-border-style: solid;
+
+  --theme-ch5-keypad--danger-font-color: var(--theme-colors--danger-font-color);
+
+  --theme-ch5-keypad--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
+
+  --theme-ch5-keypad--danger-pressed-border-color: var(--theme-colors--danger-pressed-border-color);
+
+  --theme-ch5-keypad--danger-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--danger-pressed-border-style: solid;
+
+  --theme-ch5-keypad--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
+
+  --theme-ch5-keypad--secondary-background-color: var(--theme-colors--secondary-background-color);
+
+  --theme-ch5-keypad--secondary-border-color: var(--theme-colors--secondary-border-color);
+
+  --theme-ch5-keypad--secondary-border-width: 1px;
+
+  --theme-ch5-keypad--secondary-border-style: solid;
+
+  --theme-ch5-keypad--secondary-font-color: var(--theme-colors--secondary-font-color);
+
+  --theme-ch5-keypad--secondary-pressed-background-color: var(--theme-colors--secondary-pressed-background-color);
+
+  --theme-ch5-keypad--secondary-pressed-border-color: var(--theme-colors--secondary-pressed-border-color);
+
+  --theme-ch5-keypad--secondary-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--secondary-pressed-border-style: solid;
+
+  --theme-ch5-keypad--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
+
+  --theme-ch5-keypad--success-background-color: var(--theme-colors--success-background-color);
+
+  --theme-ch5-keypad--success-border-color: var(--theme-colors--success-border-color);
+
+  --theme-ch5-keypad--success-border-width: 1px;
+
+  --theme-ch5-keypad--success-border-style: solid;
+
+  --theme-ch5-keypad--success-font-color: var(--theme-colors--success-font-color);
+
+  --theme-ch5-keypad--success-pressed-background-color: var(--theme-colors--success-pressed-background-color);
+
+  --theme-ch5-keypad--success-pressed-border-color: var(--theme-colors--success-pressed-border-color);
+
+  --theme-ch5-keypad--success-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--success-pressed-border-style: solid;
+
+  --theme-ch5-keypad--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
+
+  --theme-ch5-keypad--warning-background-color: var(--theme-colors--warning-background-color);
+
+  --theme-ch5-keypad--warning-border-color: var(--theme-colors--warning-border-color);
+
+  --theme-ch5-keypad--warning-border-width: 1px;
+
+  --theme-ch5-keypad--warning-border-style: solid;
+
+  --theme-ch5-keypad--warning-font-color: var(--theme-colors--warning-font-color);
+
+  --theme-ch5-keypad--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
+
+  --theme-ch5-keypad--warning-pressed-border-color: var(--theme-colors--warning-pressed-border-color);
+
+  --theme-ch5-keypad--warning-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--warning-pressed-border-style: solid;
+
+  --theme-ch5-keypad--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
+
+  --theme-ch5-keypad--text-background-color: var(--theme-colors--text-background-color);
+
+  --theme-ch5-keypad--text-border-color: var(--theme-colors--text-border-color);
+
+  --theme-ch5-keypad--text-border-width: 1px;
+
+  --theme-ch5-keypad--text-border-style: solid;
+
+  --theme-ch5-keypad--text-font-color: var(--theme-colors--text-font-color);
+
+  --theme-ch5-keypad--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
+
+  --theme-ch5-keypad--text-pressed-border-color: var(--theme-colors--text-pressed-border-color);
+
+  --theme-ch5-keypad--text-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--text-pressed-border-style: solid;
+
+  --theme-ch5-keypad--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
+
+  --theme-ch5-keypad--extra-button-background-color: var(--theme-colors--success-background-color);
+
+  --theme-ch5-keypad--extra-button-border-color: var(--theme-colors--success-border-color);
+
+  --theme-ch5-keypad--extra-button-border-width: 1px;
+
+  --theme-ch5-keypad--extra-button-border-style: solid;
+
+  --theme-ch5-keypad--extra-button-font-color: var(--theme-colors--success-font-color);
+
+  --theme-ch5-keypad--extra-button-pressed-background-color: var(--theme-colors--success-pressed-background-color);
+
+  --theme-ch5-keypad--extra-button-pressed-border-color: var(--theme-colors--success-pressed-border-color);
+
+  --theme-ch5-keypad--extra-button-pressed-border-width: 1px;
+
+  --theme-ch5-keypad--extra-button-pressed-border-style: solid;
+
+  --theme-ch5-keypad--extra-button-pressed-font-color: var(--theme-colors--success-pressed-font-color);
+
+  // ***************************************
+  // ch5-overlay-panel
+  // ***************************************
+
+  --theme-ch5-overlay-panel--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-overlay-panel--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-overlay-panel--font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-overlay-panel--close-icon-color: #fefefe;
+
+  --theme-ch5-overlay-panel--close-icon-color-hover: #9898a6;
+
+  --theme-ch5-overlay-panel--close-icon-background-color: #17171a;
+
+  --theme-ch5-overlay-panel--background-color: #17171a;
+
+  --theme-ch5-overlay-panel--border-color: #000000;
+
+  --theme-ch5-overlay-panel--text-color: #fefefe;
+
+  --theme-ch5-overlay-panel--contents-font-color: #fefefe;
+
+  --theme-ch5-overlay-panel--border-width: 1px;
+
+  --theme-ch5-overlay-panel--border-style: solid;
+
+  --theme-ch5-overlay-panel--border-radius: 6px;
+
+  --theme-ch5-overlay-panel--padding: 1.25em;
+
+  --theme-ch5-overlay-panel--close-icon-margin: 0 5px;
+
+  --theme-ch5-overlay-panel--close-icon-padding: 0 5px 5px;
+
+  --theme-ch5-overlay-panel--close-button-width: 20px;
+
+  --theme-ch5-overlay-panel--close-icon-size: 24px;
+
+  --theme-ch5-overlay-panel--contents-padding: 20px;
+
+  --theme-ch5-overlay-panel--contents-font-size: 18px;
+
+  --theme-ch5-overlay-panel--contents-font-style: var(--theme-fonts--font-weight);
+
+  --theme-ch5-overlay-panel--contents-font-weight: var(--theme-fonts--font-style);
+
+  // ***************************************
+  // ch5-segmented-gauge
+  // ***************************************
+
+  --theme-ch5-segmented-gauge--rectangle-each-gauge-height: 20px;
+
+  --theme-ch5-segmented-gauge--rectangle-each-gauge-width: 20px;
+
+  --theme-ch5-segmented-gauge--circle-each-gauge-size: 20px;
+
+  --theme-ch5-segmented-gauge--state-graphic-green: #22c55e;
+
+  --theme-ch5-segmented-gauge--state-graphic-inactive: #909090;
+
+  --theme-ch5-segmented-gauge--state-graphic-yellow: #eab308;
+
+  --theme-ch5-segmented-gauge--state-graphic-red: #ef4444;
+
+  --theme-ch5-segmented-gauge--state-graphic-blue: #3b82f6;
+
+  --theme-ch5-segmented-gauge--state-graphic-orange: #f97316;
+
+  --theme-ch5-segmented-gauge--state-graphic-white: #f8fafc;
+
+  // ***************************************
+  // ch5-select
+  // ***************************************
+
+  --theme-ch5-select--border-style: solid;
+
+  --theme-ch5-select--border-color: #5e5e66;
+
+  --theme-ch5-select--font-color: #797979;
+
+  --theme-ch5-select--option-item-selected-background-color: #004d80;
+
+  --theme-ch5-select--option-item-border-color: transparent;
+
+  --theme-ch5-select--option-item-color: #9898a6;
+
+  --theme-ch5-select--option-item-background-color: transparent;
+
+  --theme-ch5-select--option-item-hover-background-color: #fefefe;
+
+  --theme-ch5-select--option-background-color: #3b3b40;
+
+  --theme-ch5-select--padding: 4px;
+
+  --theme-ch5-select--border-width: 1px;
+
+  --theme-ch5-select--border-radius: 2px;
+
+  --theme-ch5-select--dropdown-icon-margin: 0;
+
+  --theme-ch5-select--dropdown-icon-width: 24px;
+
+  --theme-ch5-select--dropdown-icon-height: 24px;
+
+  --theme-ch5-select--option-item-border-width: 1px;
+
+  --theme-ch5-select--option-item-padding: 8px;
+
+  --theme-ch5-select--option-item-border-style: solid;
+
+  --theme-ch5-select--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-select--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-select--font-weight: var(--theme-fonts--font-weight);
+
+  // ***************************************
+  // ch5-signal-level-gauge
+  // ***************************************
+
+  --theme-ch5-signal-level-gauge--small-height: 24px;
+
+  --theme-ch5-signal-level-gauge--small-width: 36px;
+
+  --theme-ch5-signal-level-gauge--regular-height: 35px;
+
+  --theme-ch5-signal-level-gauge--regular-width: 45px;
+
+  --theme-ch5-signal-level-gauge--large-height: 60px;
+
+  --theme-ch5-signal-level-gauge--large-width: 90px;
+
+  --theme-ch5-signal-level-gauge--x-large-height: 96px;
+
+  --theme-ch5-signal-level-gauge--x-large-width: 180px;
+
+  --theme-ch5-signal-level-gauge--bar-color: #808080;
+
+  --theme-ch5-signal-level-gauge--selected-bar-color: #67bef0;
+
+  // ***************************************
+  // ch5-spinner
+  // ***************************************
+
+  --theme-ch5-spinner--active-item-color: #fff;
+
+  --theme-ch5-spinner--font-size: 22px;
+
+  --theme-ch5-spinner--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-spinner--font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-spinner--icon-size: var(--theme-ch5-spinner-font-size);
+
+  --theme-ch5-spinner--item-color: #9898a6;
+
+  --theme-ch5-spinner--overlay-background-color: #ff0000;
+
+  --theme-ch5-spinner--highlight-box-shadow-color: rgba(0, 0, 0, 0.3);
+
+  --theme-ch5-spinner--highlight-border-color: #ff0000;
+
+  --theme-ch5-spinner--background-color: #3b3b40;
+
+  --theme-ch5-spinner--border-width: 1px;
+
+  --theme-ch5-spinner--border-style: solid;
+
+  --theme-ch5-spinner--icon-padding: 0 0;
+
+  --theme-ch5-spinner--icon-margin: 0 0;
+
+  // ***************************************
+  // ch5-subpage-reference-list
+  // ***************************************
+
+  --theme-ch5-subpage-reference-list--container-padding: 5px;
+
+  --theme-ch5-subpage-reference-list--scrollbar-thumb-color: var(--theme-others--scrollbar-thumb-color);
+
+  --theme-ch5-subpage-reference-list--scrollbar-border-radius: var(--theme-others--scrollbar-border-radius);
+
+  --theme-ch5-subpage-reference-list--scrollbar-track-color: var(--theme-others--scrollbar-track-color);
+
+  --theme-ch5-subpage-reference-list--scrollbar-width: var(--theme-others--scrollbar-width);
+
+  // ***************************************
+  // ch5-tab-button
+  // ***************************************
+
+  --theme-ch5-tab-button--button-container-width: 100%;
+
+  --theme-ch5-tab-button--button-container-height: 100%;
+
+  // ***************************************
+  // ch5-text
+  // ***************************************
+
+  --theme-ch5-text--width: 150px;
+
+  --theme-ch5-text--height: 48px;
+
+  --theme-ch5-text--padding: 10px;
+
+  --theme-ch5-text--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-text--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-text--font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-text--font-color: var(--theme-colors--default-font-color);
+
+  // ***************************************
+  // ch5-textinput
+  // ***************************************
+
+  --theme-ch5-textinput--regular-mask-font-size: 14px;
+
+  --theme-ch5-textinput--small-mask-font-size: 13px;
+
+  --theme-ch5-textinput--x-small-mask-font-size: 11px;
+
+  --theme-ch5-textinput--large-mask-font-size: 14px;
+
+  --theme-ch5-textinput--x-large-mask-font-size: 18px;
+
+  --theme-ch5-textinput--regular-font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-textinput--regular-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-textinput--regular-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-textinput--small-font-size: 14px;
+
+  --theme-ch5-textinput--small-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-textinput--small-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-textinput--large-font-size: 18px;
+
+  --theme-ch5-textinput--large-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-textinput--large-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-textinput--x-large-font-size: 22px;
+
+  --theme-ch5-textinput--x-large-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-textinput--x-large-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-textinput--x-small-font-size: 12px;
+
+  --theme-ch5-textinput--x-small-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-textinput--x-small-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-textinput--mask-text-color: #efefef;
+
+  --theme-ch5-textinput--input-text-color: var(--theme-ch5-textinput--mask-text-color);
+
+  --theme-ch5-textinput--icon-text-color: var(--theme-colors--success-background-color);
+
+  --theme-ch5-textinput--label-text-color: var(--theme-ch5-textinput--mask-text-color);
+
+  --theme-ch5-textinput--input-border-color: #efefef;
+
+  --theme-ch5-textinput--input-background-color: transparent;
+
+  --theme-ch5-textinput--input-border-radius: 5px;
+
+  --theme-ch5-textinput--input-border-width: 2px;
+
+  --theme-ch5-textinput--input-border-style: solid;
+
+  --theme-ch5-textinput--regular-input-padding: 15px 20px;
+
+  --theme-ch5-textinput--regular-width: 400px;
+
+  --theme-ch5-textinput--regular-icon-margin: 16px 18px;
+
+  --theme-ch5-textinput--x-small-input-padding: 10px 10px;
+
+  --theme-ch5-textinput--x-small-width: 200px;
+
+  --theme-ch5-textinput--x-small-icon-margin: 12px 12px;
+
+  --theme-ch5-textinput--small-input-padding: 15px 15px;
+
+  --theme-ch5-textinput--small-width: 250px;
+
+  --theme-ch5-textinput--small-icon-margin: 14px 14px;
+
+  --theme-ch5-textinput--large-input-padding: 15px 20px;
+
+  --theme-ch5-textinput--large-width: 500px;
+
+  --theme-ch5-textinput--x-large-width: 500px;
+
+  --theme-ch5-textinput--large-icon-margin: 18px 18px;
+
+  --theme-ch5-textinput--x-large-input-padding: 15px 20px;
+
+  --theme-ch5-textinput--x-large-icon-margin: 22px 22px;
+
+  --theme-ch5-textinput--x-small-height: 40px;
+
+  --theme-ch5-textinput--small-height: 48px;
+
+  --theme-ch5-textinput--regular-height: 52px;
+
+  --theme-ch5-textinput--large-height: 56px;
+
+  --theme-ch5-textinput--x-large-height: 60px;
+
+  // ***************************************
+  // ch5-toggle
+  // ***************************************
+
+  --theme-ch5-toggle--label-font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-toggle--label-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-toggle--label-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-toggle--regular-font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-toggle--x-small-font-size: 10px;
+
+  --theme-ch5-toggle--small-font-size: 12px;
+
+  --theme-ch5-toggle--large-font-size: 18px;
+
+  --theme-ch5-toggle--x-large-font-size: 20px;
+
+  --theme-ch5-toggle--text-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-toggle--text-font-weight: 900;
+
+  --theme-ch5-toggle--regular-icon-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-toggle--x-small-icon-size: 10px;
+
+  --theme-ch5-toggle--small-icon-size: 12px;
+
+  --theme-ch5-toggle--large-icon-size: 18px;
+
+  --theme-ch5-toggle--x-large-icon-size: 20px;
+
+  --theme-ch5-toggle--rectangle-handle-on-background-color: #3aa64e;
+
+  --theme-ch5-toggle--circle-handle-on-background-color: #3aa64e;
+
+  --theme-ch5-toggle--circle-handle-on-border-color: #3aa64e;
+
+  --theme-ch5-toggle--label-font-color: #efefef;
+
+  --theme-ch5-toggle--text-font-color: #17171a;
+
+  --theme-ch5-toggle--regular-icon-color: #17171a;
+
+  --theme-ch5-toggle--small-icon-color: #17171a;
+
+  --theme-ch5-toggle--x-small-icon-color: #17171a;
+
+  --theme-ch5-toggle--large-icon-color: #17171a;
+
+  --theme-ch5-toggle--x-large-icon-color: #17171a;
+
+  --theme-ch5-toggle--circle-handle-off-border-color: #797979;
+
+  --theme-ch5-toggle--circle-handle-border-width: 0.25em;
+
+  --theme-ch5-toggle--circle-handle-border-style: solid;
+
+  --theme-ch5-toggle--circle-background-color: #797979;
+
+  --theme-ch5-toggle--circle-knob-background-color: #17171a;
+
+  --theme-ch5-toggle--rectangle-background-color: #383840;
+
+  --theme-ch5-toggle--rectangle-handle-off-background-color: #7b7b8c;
+
+  --theme-ch5-toggle--label-margin: 10px;
+
+  --theme-ch5-toggle--handle-circle-margin: 10px;
+
+  --theme-ch5-toggle--handle-rectangle-margin: 10px;
+
+  // ***************************************
+  // ch5-triggerview
+  // ***************************************
+
+  --theme-ch5-triggerview--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-triggerview--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-triggerview--font-weight: var(--theme-fonts--font-weight);
+
+  // ***************************************
+  // ch5-modal-dialog
+  // ***************************************
+
+  --theme-ch5-modal-dialog--close-icon-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-modal-dialog--contents-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-modal-dialog--contents-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-modal-dialog--prompt-icon-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-modal-dialog--prompt-text-font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-modal-dialog--prompt-text-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-modal-dialog--close-icon-color: #000;
+
+  --theme-ch5-modal-dialog--close-icon-color-hover: #333;
+
+  --theme-ch5-modal-dialog--mask-bg-color: rgba(72, 72, 72, 0.7);
+
+  --theme-ch5-modal-dialog--close-icon-background-color: #17171a;
+
+  --theme-ch5-modal-dialog--background-color: #17171a;
+
+  --theme-ch5-modal-dialog--text-color: #4a4a4a;
+
+  --theme-ch5-modal-dialog--contents-font-color: #333;
+
+  --theme-ch5-modal-dialog--border-color: #efefef;
+
+  --theme-ch5-modal-dialog--prompt-text-font-color: #4a4a4a;
+
+  --theme-ch5-modal-dialog--border-width: 1px;
+
+  --theme-ch5-modal-dialog--border-style: solid;
+
+  --theme-ch5-modal-dialog--border-radius: 6px;
+
+  --theme-ch5-modal-dialog--padding: 1.25em;
+
+  --theme-ch5-modal-dialog--close-icon-margin: 0 5px;
+
+  --theme-ch5-modal-dialog--close-icon-padding: 0 5px 5px;
+
+  --theme-ch5-modal-dialog--close-button-width: 20px;
+
+  --theme-ch5-modal-dialog--default-close-icon-size: 24px;
+
+  --theme-ch5-modal-dialog--contents-padding: 10px;
+
+  --theme-ch5-modal-dialog--contents-font-size: 18px;
+
+  --theme-ch5-modal-dialog--prompt-padding: 30px 0 30px 0;
+
+  --theme-ch5-modal-dialog--prompt-icon-margin-right: 10px;
+
+  --theme-ch5-modal-dialog--prompt-text-font-size: 16px;
+
+  // ***************************************
+  // ch5-slider
+  // ***************************************
+
+  --theme-ch5-slider--tooltip-font-size: 14px;
+
+  --theme-ch5-slider--tooltip-font-style: normal;
+
+  --theme-ch5-slider--tooltip-font-weight: normal;
+
+  --theme-ch5-slider--connect-background-color: #0099ff;
+
+  --theme-ch5-slider--target-background-color: #2f2f33;
+
+  --theme-ch5-slider--target-border-color: #efefef;
+
+  --theme-ch5-slider--handle-background-color: #efefef;
+
+  --theme-ch5-slider--handle-border-color: #efefef;
+
+  --theme-ch5-slider--pips-color: #efefef;
+
+  --theme-ch5-slider--height: 18px;
+
+  --theme-ch5-slider--target-border-width: 1px;
+
+  --theme-ch5-slider--handle-border-width: 1px;
+
+  --theme-ch5-slider--target-border-style: solid;
+
+  --theme-ch5-slider--handle-border-style: solid;
+
+  --theme-ch5-slider--width-x-small: 200px;
+
+  --theme-ch5-slider--width-small: 250px;
+
+  --theme-ch5-slider--width-regular: 300px;
+
+  --theme-ch5-slider--width-large: 400px;
+
+  --theme-ch5-slider--width-x-large: 500px;
+
+  --theme-ch5-slider--shape-rectangle-border-radius: 0;
+
+  --theme-ch5-slider--shape-circle-border-radius: 8px;
+
+  --theme-ch5-slider--shape-rounded-rectangle-border-radius: 3px;
+
+  --theme-ch5-slider--shape-oval-border-radius: 10px;
+
+  --theme-ch5-slider--shape-oval-handle-border-radius: 50%;
+
+  --theme-ch5-slider--size-x-small-handle-height-oval: 17.3px;
+
+  --theme-ch5-slider--size-small-handle-height-oval: 20px;
+
+  --theme-ch5-slider--size-regular-handle-height-oval: 24px;
+
+  --theme-ch5-slider--size-large-handle-height-oval: 28px;
+
+  --theme-ch5-slider--size-x-large-handle-height-oval: 36px;
+
+  /* == Button sizes == */
+
+  --theme-ch5-slider--size-x-small-button-width: 24px;
+
+  --theme-ch5-slider--size-x-small-button-height: 26px;
+
+  --theme-ch5-slider--size-small-button-width: 26px;
+
+  --theme-ch5-slider--size-small-button-height: 30px;
+
+  --theme-ch5-slider--size-regular-button-width: 30px;
+
+  --theme-ch5-slider--size-regular-button-height: 36px;
+
+  --theme-ch5-slider--size-large-button-width: 34px;
+
+  --theme-ch5-slider--size-large-button-height: 42px;
+
+  --theme-ch5-slider--size-x-large-button-width: 40px;
+
+  --theme-ch5-slider--size-x-large-button-height: 54px;
+
+  /* == Handle sizes == */
+
+  // rounded-rectangle
+
+  --theme-ch5-slider--size-x-small-handle-width-rounded-rectangle: 26px;
+
+  --theme-ch5-slider--size-x-small-handle-height-rounded-rectangle: 24px;
+
+  --theme-ch5-slider--size-small-handle-width-rounded-rectangle: 30px;
+
+  --theme-ch5-slider--size-small-handle-height-rounded-rectangle: 26px;
+
+  --theme-ch5-slider--size-regular-handle-width-rounded-rectangle: 36px;
+
+  --theme-ch5-slider--size-regular-handle-height-rounded-rectangle: 30px;
+
+  --theme-ch5-slider--size-large-handle-width-rounded-rectangle: 42px;
+
+  --theme-ch5-slider--size-large-handle-height-rounded-rectangle: 34px;
+
+  --theme-ch5-slider--size-x-large-handle-width-rounded-rectangle: 54px;
+
+  --theme-ch5-slider--size-x-large-handle-height-rounded-rectangle: 40px;
+
+  // rectangle
+
+  --theme-ch5-slider--size-x-small-handle-width-rectangle: 26px;
+
+  --theme-ch5-slider--size-x-small-handle-height-rectangle: 24px;
+
+  --theme-ch5-slider--size-small-handle-width-rectangle: 30px;
+
+  --theme-ch5-slider--size-small-handle-height-rectangle: 26px;
+
+  --theme-ch5-slider--size-regular-handle-width-rectangle: 36px;
+
+  --theme-ch5-slider--size-regular-handle-height-rectangle: 30px;
+
+  --theme-ch5-slider--size-large-handle-width-rectangle: 42px;
+
+  --theme-ch5-slider--size-large-handle-height-rectangle: 34px;
+
+  --theme-ch5-slider--size-x-large-handle-width-rectangle: 54px;
+
+  --theme-ch5-slider--size-x-large-handle-height-rectangle: 40px;
+
+  // circle
+
+  --theme-ch5-slider--size-x-small-handle-width-circle: 26px;
+
+  --theme-ch5-slider--size-small-handle-width-circle: 30px;
+
+  --theme-ch5-slider--size-regular-handle-width-circle: 36px;
+
+  --theme-ch5-slider--size-large-handle-width-circle: 42px;
+
+  --theme-ch5-slider--size-x-large-handle-width-circle: 54px;
+
+  // oval
+
+  --theme-ch5-slider--size-x-small-handle-width-oval: 26px;
+
+  --theme-ch5-slider--size-small-handle-width-oval: 30px;
+
+  --theme-ch5-slider--size-regular-handle-width-oval: 36px;
+
+  --theme-ch5-slider--size-large-handle-width-oval: 42px;
+
+  --theme-ch5-slider--size-x-large-handle-width-oval: 54px;
+
+  // Horizontal and Vertical
+
+  --theme-ch5-slider--tooltip-on-spacing-vertical-advanced: 60px;
+
+  --theme-ch5-slider--tooltip-on-spacing-vertical-normal: 58px;
+
+  --theme-ch5-slider--tooltip-on-spacing-horizontal-advanced: 40px;
+
+  --theme-ch5-slider--tooltip-on-spacing-horizontal-normal: 40px;
+
+  --theme-ch5-slider--button-content-line-height: 1.2;
+
+  --theme-ch5-slider--button-padding: 0.25rem;
+
+  // ***************************************
+  // ch5-list
+  // ***************************************
+
+  --theme-ch5-list--item-color: #fff;
+
+  --theme-ch5-list--item-background-color: #3b3b40;
+
+  --theme-ch5-list--item-border-color: #5e5e66;
+
+  --theme-ch5-list--item-border-width: 1px;
+
+  --theme-ch5-list--item-border-style: solid;
+
+  --theme-ch5-list--item-padding: 10px;
+
+  --theme-ch5-list--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-list--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-list--font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-list--scrollbar-border-radius: var(--theme-others--scrollbar-border-radius);
+
+  --theme-ch5-list--scrollbar-thumb-color: var(--theme-others--scrollbar-thumb-color);
+
+  --theme-ch5-list--scrollbar-track-color: var(--theme-others--scrollbar-track-color);
+
+  --theme-ch5-list--scrollbar-width: var(--theme-others--scrollbar-width);
+
+  // ***************************************
+  // ch5-video
+  // ***************************************
+
+  --theme-ch5-video--background-color: #000;
+
+  --theme-ch5-video--full-screen-icon-background-color: rgb(0, 0, 0, 0.2);
+
+  --theme-ch5-video--full-screen-icon-fill-color: #fff;
+
+  --theme-ch5-video--full-screen-icon-size: 32px;
+
+  --theme-ch5-video--size-xx-large-min-w-651: 600px;
+
+  --theme-ch5-video--size-x-large-min-w-651: 560px;
+
+  --theme-ch5-video--size-large-min-w-651: 520px;
+
+  --theme-ch5-video--size-regular-min-w-651: 480px;
+
+  --theme-ch5-video--size-small-min-w-651: 440px;
+
+  --theme-ch5-video--size-x-small-min-w-651: 400px;
+
+  --theme-ch5-video--size-xx-large-max-w-650: 300px;
+
+  --theme-ch5-video--size-x-large-max-w-650: 280px;
+
+  --theme-ch5-video--size-large-max-w-650: 260px;
+
+  --theme-ch5-video--size-regular-max-w-650: 240px;
+
+  --theme-ch5-video--size-small-max-w-650: 220px;
+
+  --theme-ch5-video--size-x-small-max-w-650: 200px;
+
+  // ***************************************
+  // ch5-video-switcher
+  // ***************************************
+
+  --theme-ch5-video-switcher--width: 500px;
+
+  --theme-ch5-video-switcher--background-color: transparent;
+
+  --theme-ch5-video-switcher--scrollbar-width: var(--theme-others--scrollbar-width);
+
+  --theme-ch5-video-switcher--scrollbar-track-color: rgba(0, 0, 0, 0.1);
+
+  --theme-ch5-video-switcher--scrollbar-border-radius: 10px;
+
+  --theme-ch5-video-switcher--scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
+
+  --theme-ch5-video-switcher--source-list-gap: 20px;
+
+  --theme-ch5-video-switcher--source-icon-size: 40px;
+
+  --theme-ch5-video-switcher--source-list-label-color: var(--theme-colors--theme-body-font-color);
+
+  --theme-ch5-video-switcher--source-list-label-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-video-switcher--source-list-label-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-video-switcher--screen-container-background-color: #4d4d4d;
+
+  --theme-ch5-video-switcher--screen-container-border-radius: 10px;
+
+  --theme-ch5-video-switcher--screen-container-border-width: 1px;
+
+  --theme-ch5-video-switcher--screen-container-border-style: solid;
+
+  --theme-ch5-video-switcher--screen-container-border-color: var(--theme-colors--theme-border-color);
+
+  --theme-ch5-video-switcher--screen-list-label-color: var(--theme-colors--theme-body-font-color);
+
+  --theme-ch5-video-switcher--screen-list-label-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-video-switcher--screen-list-label-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-video-switcher--screen-list-label-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-video-switcher--screen-item-padding: 3px;
+
+  --theme-ch5-video-switcher--source-item-padding: 3px;
+
+  --theme-ch5-video-switcher--border-radius: 2px;
+
+  --theme-ch5-video-switcher--border-width: 1px;
+
+  --theme-ch5-video-switcher--border-style: solid;
+
+  --theme-ch5-video-switcher--border-color: var(--theme-colors--theme-border-color);
+
+  // ***************************************
+  // ch5-wifi-signal-level-gauge
+  // ***************************************
+
+  --theme-ch5-wifi-signal-level-gauge--small-size: 24px;
+
+  --theme-ch5-wifi-signal-level-gauge--regular-size: 36px;
+
+  --theme-ch5-wifi-signal-level-gauge--large-size: 60px;
+
+  --theme-ch5-wifi-signal-level-gauge--x-large-size: 96px;
+
+  --theme-ch5-wifi-signal-level-gauge--style-accents: #87ceeb;
+
+  --theme-ch5-wifi-signal-level-gauge--style-light: #ffffff;
+
+  --theme-ch5-wifi-signal-level-gauge--style-dark: #000000;
+
+  --theme-ch5-wifi-signal-level-gauge--bar-color: #939393;
+}
