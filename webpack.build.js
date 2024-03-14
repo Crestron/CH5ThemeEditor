@@ -146,7 +146,7 @@ module.exports = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "css/[name].css"
+			filename: ({ chunk }) => (chunk.name === 'ch5-theme' || chunk.name === 'external') ? "css/[name].css" : "[name].css"
 		}),
 		new Without([/.js?$/]), // just give a list with regex patterns that should be excluded like /\.css\.js(\.map)?$
 		new CopyPlugin({
