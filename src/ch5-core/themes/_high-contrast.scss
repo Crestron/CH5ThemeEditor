@@ -1396,6 +1396,16 @@
 
   --theme-ch5-text--padding: 10px;
 
+  --theme-ch5-text--font-size: var(--theme-fonts--font-size);
+
+  --theme-ch5-text--font-style: var(--theme-fonts--font-style);
+
+  --theme-ch5-text--font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-text--font-color: #000;
+
+  --theme-ch5-text--word-break: break-word;
+
   // ***************************************
   // ch5-textinput
   // ***************************************
@@ -1497,14 +1507,6 @@
   --theme-ch5-textinput--large-height: 56px;
 
   --theme-ch5-textinput--x-large-height: 60px;
-
-  --theme-ch5-text--font-size: var(--theme-fonts--font-size);
-
-  --theme-ch5-text--font-style: var(--theme-fonts--font-style);
-
-  --theme-ch5-text--font-weight: var(--theme-fonts--font-weight);
-
-  --theme-ch5-text--font-color: var(--theme-fonts--font-color);
 
   // ***************************************
   // ch5-toggle

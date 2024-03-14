@@ -32,7 +32,8 @@ ch5-text {
   font-size: var(--ch5-text--font-size);
   font-weight: var(--ch5-text--font-weight);
 
-  span {
+  /// Applied for the span element
+  .ch5-text--span {
     display: inline-block;
     width: 100%;
 
@@ -56,7 +57,7 @@ ch5-text {
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3; // start showing ellipsis when 3rd line is reached
       white-space: pre-wrap !important; // let the text wrap preserving spaces
-      word-break: break-all;
+      word-break: var(--ch5-text--word-break);
     }
 
     /// Applied when multilineSupport='false'
