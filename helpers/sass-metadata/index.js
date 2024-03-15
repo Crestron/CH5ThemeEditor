@@ -511,13 +511,13 @@ async function initialize() {
 	});
 
 	let undefinedVariables = [];
-	undefinedVars.forEach(({ name, variables }) => {
-		variables.forEach((variable) => {
-			if (!components[name]['undefined']?.includes(variable)) {
-				undefinedVariables.push({ name, variable });
-			}
-		});
-	});
+	// undefinedVars.forEach(({ name, variables }) => {
+	// 	variables.forEach((variable) => {
+	// 		if (!components[name]['undefined']?.includes(variable)) {
+	// 			undefinedVariables.push({ name, variable });
+	// 		}
+	// 	});
+	// });
 
 	if (unusedVariables.length !== 0 || undefinedVariables.length !== 0 || globalVariablesInComponent.length !== 0) {
 		if (unusedVariables.length !== 0) {
