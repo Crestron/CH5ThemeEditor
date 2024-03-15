@@ -559,7 +559,7 @@
 
   --theme-ch5-button--regular-font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-button--icon-color: inherit; // TODO - why Inherit.
+  --theme-ch5-button--icon-color: inherit; 
 
   --theme-ch5-button--regular-icon-size: var(--theme-ch5-button--regular-font-size);
 
@@ -1341,7 +1341,7 @@
 
   --theme-ch5-spinner--font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-spinner--icon-size: var(--theme-ch5-spinner-font-size);
+  --theme-ch5-spinner--icon-size: var(--theme-ch5-spinner--font-size);
 
   --theme-ch5-spinner--item-color: #9898a6;
 
@@ -1399,7 +1399,7 @@
 
   --theme-ch5-text--font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-text--font-color: var(--theme-colors--default-font-color);
+  --theme-ch5-text--font-color: var(--theme-colors--theme-body-font-color);
 
   // ***************************************
   // ch5-textinput
