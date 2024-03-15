@@ -5,6 +5,8 @@ const fs = require('fs');
 const glob = require('glob');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('css-minimizer-webpack-plugin');
+const { Compilation, sources } = require('webpack');
+const { buildHelper } = require('./helpers/processVariables');
 
 const distDir = 'output';
 const basePath = path.resolve(__dirname);
@@ -71,6 +73,26 @@ class Without {
 				});
 
 			callback();
+		});
+	}
+}
+
+class Replace {
+	apply(compiler) {
+		compiler.hooks.thisCompilation.tap('Replace', (compilation) => {
+			compilation.hooks.processAssets.tap(
+				{
+					name: 'Replace',
+					stage: Compilation.PROCESS_ASSETS_STAGE_OPTIMIZE,
+				},
+				() => {
+					const themes = ['light-theme.css', 'dark-theme.css', 'high-contrast-theme.css', 'zoom-dark-theme.css', 'zoom-light-theme.css'];
+					themes.forEach((theme) => {
+						const themeFile = compilation.getAsset(theme);
+						compilation.updateAsset(theme, new sources.RawSource(buildHelper(themeFile.source.source())));
+					})
+				}
+			);
 		});
 	}
 }
@@ -146,8 +168,9 @@ module.exports = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "css/[name].css"
+			filename: ({ chunk }) => (chunk.name === 'ch5-theme' || chunk.name === 'external') ? "css/[name].css" : "[name].css"
 		}),
+		new Replace(),
 		new Without([/.js?$/]), // just give a list with regex patterns that should be excluded like /\.css\.js(\.map)?$
 		new CopyPlugin({
 			patterns: [
