@@ -13,7 +13,6 @@
 @import "../../ch5-core/variables";
 @import "../../ch5-core/themes/mixins/zoom-light-mixin";
 
-[data-theme="zoom-light-theme"],
-.zoom-light-theme {
+:root {
   @include ch5-themes-zoom-light();
 }

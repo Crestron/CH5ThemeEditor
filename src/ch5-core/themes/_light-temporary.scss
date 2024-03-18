@@ -13,8 +13,6 @@
 @import "../../ch5-core/variables";
 @import "../../ch5-core/themes/mixins/light-mixin";
 
-:root,
-[data-theme="light-theme"],
-.light-theme {
+:root {
   @include ch5-themes-light();
 }

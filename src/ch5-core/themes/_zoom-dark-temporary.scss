@@ -7,13 +7,12 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-zoom-light-theme-variables
+/// @group ch5-zoom-dark-theme-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @import "../../ch5-core/variables";
-@import "../../ch5-core/themes/mixins/zoom-light-mixin";
+@import "../../ch5-core/themes/mixins/zoom-dark-mixin";
 
-[data-theme="zoom-light-theme"],
-.zoom-light-theme {
-  @include ch5-themes-zoom-light();
+:root {
+  @include ch5-themes-zoom-dark();
 }
