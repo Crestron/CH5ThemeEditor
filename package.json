@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "build:dev": "npm run clean && webpack --config webpack.build.js --output-path ./output/themes",
-    "build:prod": "npm run clean && webpack --config webpack.build.js --output-path ./output/themes --mode production",
+    "build:prod": "npm run clean && webpack --config webpack.build.js --output-path ./output/themes",
     "clean": "rimraf output",
     "create-theme": "node ./helpers/create-theme.js",
     "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json",
@@ -30,7 +30,7 @@
   "config": {
     "local": "./output/themes",
     "showcase": "./../../CH5/CH5ShowcaseApp/node_modules/@crestron/ch5-theme/output/themes/",
-    "testing": "../../JiraDefects/CH5C-3025/shell-template/node_modules/@crestron/ch5-theme/output/themes/",
+    "testing": "/Users/rdabbir/Downloads/shell/node_modules/@crestron/ch5-theme/output/themes/",
     "shell": "./../../CH5/CH5SampleProjects/UISampleProjects/Shell/node_modules/@crestron/ch5-theme/output/themes/"
   },
   "dependencies": {},
