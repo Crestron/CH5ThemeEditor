@@ -1,9 +1,9 @@
 {
     "THEME_EDITOR_SOURCE_FILES_PATH": "./src/",
-    "THEME_EDITOR_THEME_FILES_PATH": "./src/ch5-core/themes/",
+    "THEME_EDITOR_THEME_FILES_PATH": "./src/ch5-core/themes/mixins/",
     "GLOBAL_VARIABLES_FILE_PATH": "./src/ch5-core/_variables.scss",
     "GLOBAL_MIXINS_FILE_PATH": "./src/style/_mixins.scss",
-    "SAMPLE_THEME_VARIABLES_FILE": "./src/ch5-core/themes/_light.scss",
+    "SAMPLE_THEME_VARIABLES_FILE": "./src/ch5-core/themes/mixins/_light-mixin.scss",
     "CSS_INPUT_FILE_NAME": "sass-metadata-input.scss",
     "CSS_OUTPUT_FILE_NAME": "sass-metadata-output.css",
     "GLOBAL_VARIABLES_VERSION": "1.0.0",
