@@ -140,7 +140,7 @@ ch5-slider {
 
     &.ch5-slider-ticks {
       .noUi-base {
-        height: var(--ch5-slider--height);
+        height: 100%;
       }
     }
   }
@@ -160,7 +160,7 @@ ch5-slider {
 
     &.ch5-slider-ticks {
       .noUi-base {
-        width: var(--ch5-slider--height);
+        width: 100%;
       }
     }
   }
