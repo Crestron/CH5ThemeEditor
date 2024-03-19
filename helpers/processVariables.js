@@ -1,7 +1,15 @@
 const fs = require('fs');
 
- function buildHelper(data) {
-    data = data.split('\n')
+function replaceAll(str, find, replace) {
+    if (str && String(str).trim() !== "") {
+        return String(str).split(find).join(replace);
+    } else {
+        return str;
+    }
+}
+
+function buildHelper(theme) {
+    data = theme.split('{').map(str => str.split('}')).flat(5).map(str => str.split(';')).flat(4).map(str => str.trim());
 
     const configComponents = JSON.parse(fs.readFileSync('./helpers/sass-metadata/config.json', 'utf-8'))['COMPONENTS'];
     const undefinedVariables = []
@@ -31,20 +39,17 @@ const fs = require('fs');
         }
     }
 
-
-    // replace variables
-    for (let i = 0; i < data.length; i++) {
-        if (!data[i]) { continue; }
-        for (const variable in variables) {
-            if (data[i] && data[i].includes(`var(${variable})`)) {
-                data[i] = data[i].replaceAll(`var(${variable})`, variables[variable])
-            }
-        }
+    for (const variable in variables) {
+        theme = replaceAll(theme, `var(${variable})`, variables[variable]);
+        theme = replaceAll(theme,`${variable}: ${variables[variable]};`,'')
+        theme = replaceAll(theme,`${variable}: ${variables[variable]}`,'')
+        theme = replaceAll(theme,`${variable}:${variables[variable]};`,'')
+        theme = replaceAll(theme, `${variable}:${variables[variable]}`, '')
     }
+    
 
-
-    // // remove null lines from data and return
-    return data.filter(line => line !== null).join('\n');
+    return theme;
 }
 
-module.exports = {buildHelper}
+
+module.exports = { buildHelper }

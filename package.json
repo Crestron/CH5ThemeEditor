@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "build:dev": "npm run clean && webpack --config webpack.build.js --output-path ./output/themes",
-    "build:prod": "npm run clean && webpack --config webpack.build.js --output-path ./output/themes",
+    "build:prod": "npm run clean && webpack --config webpack.build.js --output-path ./output/themes --mode production",
     "clean": "rimraf output",
     "create-theme": "node ./helpers/create-theme.js",
     "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json",
