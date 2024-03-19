@@ -563,14 +563,6 @@
 
   --theme-ch5-button--regular-icon-size: var(--theme-ch5-button--regular-font-size);
 
-  --theme-ch5-button--x-small-icon-size: var(--theme-ch5-button--x-small-font-size);
-
-  --theme-ch5-button--small-icon-size: var(--theme-ch5-button--small-font-size);
-
-  --theme-ch5-button--large-icon-size: var(--theme-ch5-button--large-font-size);
-
-  --theme-ch5-button--x-large-icon-size: var(--theme-ch5-button--x-large-font-size);
-
   --theme-ch5-button--default-border-width: 1px;
 
   --theme-ch5-button--primary-border-width: 1px;
@@ -654,6 +646,14 @@
   --theme-ch5-button--x-large-height: 72px;
 
   --theme-ch5-button--checkbox-padding: 5px;
+
+  --theme-ch5-button--x-small-icon-size: var(--theme-ch5-button--x-small-font-size);
+
+  --theme-ch5-button--small-icon-size: var(--theme-ch5-button--small-font-size);
+
+  --theme-ch5-button--large-icon-size: var(--theme-ch5-button--large-font-size);
+
+  --theme-ch5-button--x-large-icon-size: var(--theme-ch5-button--x-large-font-size);
 
   --theme-ch5-button--default-background-color: var(--theme-colors--default-background-color);
 
@@ -1805,13 +1805,9 @@
 
   // Horizontal and Vertical
 
-  --theme-ch5-slider--tooltip-on-spacing-vertical-advanced: 60px;
+  --theme-ch5-slider--tooltip-on-spacing-vertical-orientation: 60px;
 
-  --theme-ch5-slider--tooltip-on-spacing-vertical-normal: 58px;
-
-  --theme-ch5-slider--tooltip-on-spacing-horizontal-advanced: 40px;
-
-  --theme-ch5-slider--tooltip-on-spacing-horizontal-normal: 40px;
+  --theme-ch5-slider--tooltip-on-spacing-horizontal-orientation: 40px;
 
   --theme-ch5-slider--button-content-line-height: 1.2;
 

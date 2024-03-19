@@ -133,14 +133,13 @@ ch5-slider {
 
     &.ch5-slider--tooltip--on.ch5-advanced-slider-container {
       &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
-        margin-top: var(--ch5-slider--tooltip-on-spacing-horizontal-advanced);
         min-height: 30px;
       }
     }
 
     &.ch5-slider-ticks {
       .noUi-base {
-        height: var(--ch5-slider--height);
+        height: 100%;
       }
     }
   }
@@ -153,14 +152,14 @@ ch5-slider {
 
     &.ch5-slider--tooltip--on:not(.ch5-advanced-slider-container) {
       &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
-        margin-left: var(--ch5-slider--tooltip-on-spacing-vertical-normal);
+        margin-left: var(--ch5-slider--tooltip-on-spacing-vertical-orientation);
         min-width: 30px;
       }
     }
 
     &.ch5-slider-ticks {
       .noUi-base {
-        width: var(--ch5-slider--height);
+        width: 100%;
       }
     }
   }
