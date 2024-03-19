@@ -86,11 +86,13 @@ class Replace {
 					stage: Compilation.PROCESS_ASSETS_STAGE_OPTIMIZE,
 				},
 				() => {
-					const themes = ['light-theme.css', 'dark-theme.css', 'high-contrast-theme.css', 'zoom-dark-theme.css', 'zoom-light-theme.css'];
-					themes.forEach((theme) => {
-						const themeFile = compilation.getAsset(theme);
-						compilation.updateAsset(theme, new sources.RawSource(buildHelper(themeFile.source.source())));
-					})
+					if ((inputArgs["mode"] && inputArgs["mode"] !== "" && inputArgs["mode"] === "production")) {
+						const themes = ['light-theme.css', 'dark-theme.css', 'high-contrast-theme.css', 'zoom-dark-theme.css', 'zoom-light-theme.css'];
+						themes.forEach((theme) => {
+							const themeFile = compilation.getAsset(theme);
+							compilation.updateAsset(theme, new sources.RawSource(buildHelper(themeFile.source.source())));
+						})
+					}
 				}
 			);
 		});
