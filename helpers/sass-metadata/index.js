@@ -30,7 +30,7 @@ function findMissingThemeVariables() {
 
 	// Add theme variables
 	for (const theme in themes) {
-		const data = fs.readFileSync(CONFIG.THEME_EDITOR_THEME_FILES_PATH + "_" + theme + '.scss', 'utf-8');
+		const data = fs.readFileSync(CONFIG.THEME_EDITOR_THEME_FILES_PATH + "_" + theme + '-mixin.scss', 'utf-8');
 		themesVariables.push({
 			name: themes[theme]['value'],
 			variables: getVariables(data)
@@ -487,7 +487,7 @@ async function initialize() {
 	// Theme variables
 	for (const theme in themes) {
 		const basePath = CONFIG.THEME_EDITOR_THEME_FILES_PATH;
-		const data = fs.readFileSync(basePath + "_" + theme + '.scss', 'utf8');
+		const data = fs.readFileSync(basePath + "_" + theme + '-mixin.scss', 'utf8');
 
 		const variables = getVariables(data, "theme");
 
@@ -506,18 +506,17 @@ async function initialize() {
 			if (!components[name]['unused']?.includes(variable)) {
 				unusedVariables.push({ name, variable });
 			}
-
 		});
 	});
 
 	let undefinedVariables = [];
-	// undefinedVars.forEach(({ name, variables }) => {
-	// 	variables.forEach((variable) => {
-	// 		if (!components[name]['undefined']?.includes(variable)) {
-	// 			undefinedVariables.push({ name, variable });
-	// 		}
-	// 	});
-	// });
+	undefinedVars.forEach(({ name, variables }) => {
+		variables.forEach((variable) => {
+			if (!components[name]['undefined']?.includes(variable)) {
+				undefinedVariables.push({ name, variable });
+			}
+		});
+	});
 
 	if (unusedVariables.length !== 0 || undefinedVariables.length !== 0 || globalVariablesInComponent.length !== 0) {
 		if (unusedVariables.length !== 0) {

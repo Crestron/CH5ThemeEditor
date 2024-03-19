@@ -30,7 +30,7 @@
   "config": {
     "local": "./output/themes",
     "showcase": "./../../CH5/CH5ShowcaseApp/node_modules/@crestron/ch5-theme/output/themes/",
-    "testing": "../../JiraDefects/CH5C-3025/shell-template/node_modules/@crestron/ch5-theme/output/themes/",
+    "testing": "/Users/rdabbir/Downloads/shell/node_modules/@crestron/ch5-theme/output/themes/",
     "shell": "./../../CH5/CH5SampleProjects/UISampleProjects/Shell/node_modules/@crestron/ch5-theme/output/themes/"
   },
   "dependencies": {},

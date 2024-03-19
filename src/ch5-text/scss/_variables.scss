@@ -59,4 +59,11 @@ ch5-text {
   /// example: #4a4a4a
   /// related-theme-variable: --theme-ch5-text--font-color
   --ch5-text--font-color: var(--theme-ch5-text--font-color);
+
+  /// description: Word break property for ch5-text
+  /// type: list
+  /// values: break-word, break-all, keep-all, normal
+  /// example: break-word
+  /// related-theme-variable: --theme-ch5-text--word-break
+  --ch5-text--word-break: var(--theme-ch5-text--word-break);
 }
