@@ -57,7 +57,7 @@
 
     &.ch5-slider--tooltip--on {
       &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
-        margin-top: var(--ch5-slider--tooltip-on-spacing-horizontal-normal);
+        margin-top: var(--ch5-slider--tooltip-on-spacing-horizontal-orientation);
       }
     }
 
@@ -91,7 +91,7 @@
 
     &.ch5-slider--tooltip--on {
       &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--height) .ch5-slider-button-container {
-        margin-top: var(--ch5-slider--tooltip-on-spacing-horizontal-normal);
+        margin-top: var(--ch5-slider--tooltip-on-spacing-horizontal-orientation);
       }
     }
 
@@ -147,7 +147,7 @@
 
     &.ch5-slider--tooltip--on {
       &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width) .ch5-slider-button-container {
-        margin-left: var(--ch5-slider--tooltip-on-spacing-vertical-normal);
+        margin-left: var(--ch5-slider--tooltip-on-spacing-vertical-orientation);
       }
     }
 
@@ -180,11 +180,11 @@
 
     &.ch5-slider--tooltip--on {
       &:not(.ch5-slider--stretch--both):not(.ch5-slider--stretch--width) .ch5-slider-button-container {
-        margin-left: var(--ch5-slider--tooltip-on-spacing-vertical-advanced);
+        margin-left: var(--ch5-slider--tooltip-on-spacing-vertical-orientation);
       }
 
       .ch5-title-container {
-        max-width: calc(var(#{$handle-width}) + var(--ch5-slider--tooltip-on-spacing-vertical-advanced));
+        max-width: calc(var(#{$handle-width}) + var(--ch5-slider--tooltip-on-spacing-vertical-orientation));
       }
     }
 
@@ -198,12 +198,12 @@
 
     &.ch5-slider-ticks {
       .ch5-title-container {
-        max-width: calc(var(--ch5-slider--tooltip-on-spacing-vertical-advanced) + var(#{$handle-width}));
+        max-width: calc(var(--ch5-slider--tooltip-on-spacing-vertical-orientation) + var(#{$handle-width}));
       }
 
       &.ch5-slider--tooltip--on {
         .ch5-title-container {
-          max-width: calc(var(--ch5-slider--tooltip-on-spacing-vertical-advanced) + var(#{$handle-width}) + 60px);
+          max-width: calc(var(--ch5-slider--tooltip-on-spacing-vertical-orientation) + var(#{$handle-width}) + 60px);
         }
       }
 
@@ -222,7 +222,7 @@
         max-width: calc(calc(var(#{$handle-height}) * 1.2) + 65px);
 
         &.ch5-slider--tooltip--on {
-          max-width: calc(var(--ch5-slider--tooltip-on-spacing-vertical-advanced) + calc(var(#{$handle-height}) * 1.2) + 65px);
+          max-width: calc(var(--ch5-slider--tooltip-on-spacing-vertical-orientation) + calc(var(#{$handle-height}) * 1.2) + 65px);
         }
       }
     }

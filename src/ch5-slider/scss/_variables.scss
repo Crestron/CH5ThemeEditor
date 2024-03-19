@@ -416,33 +416,19 @@ ch5-slider {
   /// related-theme-variable: --theme-ch5-slider--tooltip-font-weight
   --ch5-slider--tooltip-font-weight: var(--theme-ch5-slider--tooltip-font-weight);
 
-  /// description: Tooltip spacing for vertical advanced slider
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 60px 
-  /// related-theme-variable: --theme-ch5-slider--tooltip-on-spacing-vertical-advanced
-  --ch5-slider--tooltip-on-spacing-vertical-advanced: var(--theme-ch5-slider--tooltip-on-spacing-vertical-advanced);
-
-  /// description: Tooltip spacing vertical normal
+  /// description: Tooltip spacing vertical slider
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 58px 
-  /// related-theme-variable: --theme-ch5-slider--tooltip-on-spacing-vertical-normal
-  --ch5-slider--tooltip-on-spacing-vertical-normal: var(--theme-ch5-slider--tooltip-on-spacing-vertical-normal);
-
-  /// description: Tooltip spacing for advanced slider when orientation="horizontal"
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 40px 
-  /// related-theme-variable: --theme-ch5-slider--tooltip-on-spacing-horizontal-advanced
-  --ch5-slider--tooltip-on-spacing-horizontal-advanced: var(--theme-ch5-slider--tooltip-on-spacing-horizontal-advanced);
+  /// related-theme-variable: --theme-ch5-slider--tooltip-on-spacing-vertical-orientation
+  --ch5-slider--tooltip-on-spacing-vertical-orientation: var(--theme-ch5-slider--tooltip-on-spacing-vertical-orientation);
 
   /// description: Tooltip spacing for horizontal slider
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 40px 
-  /// related-theme-variable: --theme-ch5-slider--tooltip-on-spacing-horizontal-normal
-  --ch5-slider--tooltip-on-spacing-horizontal-normal: var(--theme-ch5-slider--tooltip-on-spacing-horizontal-normal);
+  /// related-theme-variable: --theme-ch5-slider--tooltip-on-spacing-horizontal-orientation
+  --ch5-slider--tooltip-on-spacing-horizontal-orientation: var(--theme-ch5-slider--tooltip-on-spacing-horizontal-orientation);
 
   /// description: Border color for slider target
   /// type: color
