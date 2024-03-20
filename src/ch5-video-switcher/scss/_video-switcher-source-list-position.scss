@@ -44,10 +44,10 @@
       flex-direction: column;
       overflow: hidden;
 			padding: var(--ch5-video-switcher--source-item-padding);
-      font-size: calc(var(--ch5-video-switcher--source-icon-size) - var(--ch5-video-switcher--source-item-padding));
-      // gap: calc(10px /  var(--number-of-source-list-divisions));
-      height: calc(80px / var(--number-of-source-list-divisions));
-      width: calc(104px / var(--number-of-source-list-divisions));
+      // font-size: calc(var(--ch5-video-switcher--source-icon-size) - var(--ch5-video-switcher--source-item-padding));
+      font-size: calc(var(--ch5-video-switcher--width) / calc( 10 * var(--number-of-source-list-divisions))); //calc(calc(calc(var(--ch5-video-switcher--source-icon-size) - var(--ch5-video-switcher--source-item-padding))) * 0.5);
+      height: calc(100% / var(--number-of-source-list-divisions)); //calc(80px / var(--number-of-source-list-divisions));
+      width: calc(100% / var(--number-of-source-list-divisions)); //calc(104px / var(--number-of-source-list-divisions));
 
       .source-icon {
         font-size: calc(1em / var(--number-of-source-list-divisions));
