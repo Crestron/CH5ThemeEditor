@@ -197,8 +197,7 @@ ch5-video-switcher[screenaspectratio="16:9"] {
     align-items: center;
   }
 
-  .ch5-video-switcher.ch5-video-switcher--source-list-position-top .ch5-video-switcher--screen-list,
-  .ch5-video-switcher.ch5-video-switcher--source-list-position-bottom .ch5-video-switcher--screen-list {
-    height: auto;
+  .ch5-video-switcher--screen-list {
+    height: auto !important;
   }
 }
