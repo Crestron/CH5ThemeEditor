@@ -162,10 +162,8 @@
 
       .source-container {
         // 1.5 denotes 9:6 aspect ratio - $ch5-video-switcher--source-size is 0.34
-        width: calc(calc(0.34 * var(--ch5-video-switcher--width) / 1.5) / var(--number-of-source-list-divisions)); //calc(104px / var(--number-of-source-list-divisions));
+        width: calc(calc(0.34 * var(--ch5-video-switcher--width) / 1.5) / var(--number-of-source-list-divisions));
         height: 100%;
-        // height: calc(100% / var(--number-of-source-list-divisions)); //calc(80px / var(--number-of-source-list-divisions));
-        // width: calc(100% / var(--number-of-source-list-divisions)); //calc(104px / var(--number-of-source-list-divisions));
       }
     }
 
@@ -193,14 +191,9 @@
       justify-content: center;
 
       .source-container {
-        // width: calc(calc(100% / var(--number-of-source-list-divisions) - var(--ch5-video-switcher--source-list-gap)));
-      }
-      .source-container {
         // 1.5 denotes 9:6 aspect ratio - $ch5-video-switcher--source-size is 0.34
-        height: calc(calc(0.34 * var(--ch5-video-switcher--width) / 1.5) / var(--number-of-source-list-divisions)); //calc(104px / var(--number-of-source-list-divisions));
+        height: calc(calc(0.34 * var(--ch5-video-switcher--width) / 1.5) / var(--number-of-source-list-divisions));
         width: 100%;
-        // height: calc(100% / var(--number-of-source-list-divisions)); //calc(80px / var(--number-of-source-list-divisions));
-        // width: calc(100% / var(--number-of-source-list-divisions)); //calc(104px / var(--number-of-source-list-divisions));
       }
     }
 
