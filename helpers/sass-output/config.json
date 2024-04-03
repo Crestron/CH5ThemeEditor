@@ -127,6 +127,10 @@
         "ch5-wifi-signal-level-gauge": {
             "value": "Ch5WifiSignalLevelGauge",
             "version": "1.0.0"
+        },
+        "ch5-qrcode": {
+            "value": "Ch5Qrcode",
+            "version": "2.10.0"
         }
     }
 }
