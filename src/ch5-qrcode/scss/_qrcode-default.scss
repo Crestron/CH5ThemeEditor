@@ -10,9 +10,14 @@
 /// @group ch5-qrcode
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-qrcode {
+  @include ch5-component-base();
+}
+
 /// Main class
 .ch5-qrcode {
   position: relative;
+  display: inline-flex;
 }
 
 .ch5-qrcode--disabled {
