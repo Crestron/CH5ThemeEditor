@@ -18,8 +18,8 @@ ch5-qrcode {
 .ch5-qrcode {
   position: relative;
   display: inline-flex;
-}
-
-.ch5-qrcode--disabled {
-  @include ch5-component-disabled();
+  min-width: 100px;
+  min-height: 100px;
+  width: var(--ch5-qrcode--size);
+  aspect-ratio: 1 / 1;
 }
