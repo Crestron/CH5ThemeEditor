@@ -22,4 +22,10 @@ ch5-qrcode {
   min-height: 100px;
   width: var(--ch5-qrcode--size);
   aspect-ratio: 1 / 1;
+
+  canvas {
+    border-width: var(--ch5-qrcode--border-width);
+    border-style: var(--ch5-qrcode--border-style);
+    border-color: var(--ch5-qrcode--border-color);
+  }
 }
