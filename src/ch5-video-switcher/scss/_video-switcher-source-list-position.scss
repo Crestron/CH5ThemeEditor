@@ -48,6 +48,12 @@
       // font-size: calc(var(--ch5-video-switcher--width) / calc(10 * var(--number-of-source-list-divisions))); //calc(calc(calc(var(--ch5-video-switcher--source-icon-size) - var(--ch5-video-switcher--source-item-padding))) * 0.5);
       font-size: calc(var(--ch5-video-switcher--width) / 10);
       
+      .source-icon-url {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+
       .source-icon {
         font-size: calc(1em / var(--number-of-source-list-divisions));
         aspect-ratio: 1/1;
