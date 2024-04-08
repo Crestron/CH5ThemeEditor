@@ -11,31 +11,11 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-qrcode {
-  /// description: Size for the qrcode
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 200px
-  /// related-theme-variable: --theme-ch5-qrcode--size
-  --ch5-qrcode--size: var(--theme-ch5-qrcode--size);
-
-  /// description: Color for qrcode
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #0099ff
-  /// related-theme-variable: --theme--ch5-qrcode--color
-  --ch5-qrcode--color: var(--theme-ch5-qrcode--color);
-
-  /// description: Background color for qrcode
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #0099ff
-  /// related-theme-variable: --theme-ch5-qrcode--background-color
-  --ch5-qrcode--background-color: var(--theme-ch5-qrcode--background-color);
 
   /// description: Border width for qrcode
   /// type: unit
   /// values: px, vw, vh, em, rem, %
-  /// example: 1px
+  /// example: 0px
   /// related-theme-variable: --theme-ch5-qrcode--border-width
   --ch5-qrcode--border-width: var(--theme-ch5-qrcode--border-width);
 
@@ -49,7 +29,7 @@ ch5-qrcode {
   /// description: Border color for qrcode
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #0091ea
+  /// example: transparent
   /// related-theme-variable: --theme-ch5-qrcode--border-color
   --ch5-qrcode--border-color: var(--theme-ch5-qrcode--border-color);
 }

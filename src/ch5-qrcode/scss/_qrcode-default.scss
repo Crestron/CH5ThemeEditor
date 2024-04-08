@@ -18,9 +18,8 @@ ch5-qrcode {
 .ch5-qrcode {
   position: relative;
   display: inline-flex;
-  min-width: 100px;
-  min-height: 100px;
-  width: var(--ch5-qrcode--size);
+  min-width: 160px;
+  min-height: 160px;
   aspect-ratio: 1 / 1;
 
   canvas {
