@@ -12,94 +12,95 @@
 
 /// Add the "disabled" attribute to the ch5-list tag in order to disable the list.
 .ch5-list--disabled {
-    pointer-events: none;
-    opacity: 0.5;
+  @include ch5-component-disabled();
 }
 
 /// The list is displayed vertically by default, you can explicitly add the attribute orientation="vertical".
 .ch5-list-vertical {
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-y !important;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y !important;
 
-    & * {
-        touch-action: pan-y !important;
-    }
+  & * {
+    touch-action: pan-y !important;
+  }
 }
 
 /// Applied when orientation="horizontal" to display the list horizontally.
 .ch5-list-horizontal {
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-x !important;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x !important;
 
-    & * {
-        touch-action: pan-x !important;
-    }
+  & * {
+    touch-action: pan-x !important;
+  }
 }
 
 .ch5-list-pointer-events-disabled > div {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 ch5-list {
-    cursor: grab;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    font-size: $ch5-list-font-size;
-    font-style: $ch5-list-font-style;
-    font-weight: $ch5-list-font-weight;
+  @include ch5-component-base();
+  cursor: grab;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  font-size: var(--ch5-list--font-size);
+  font-style: var(--ch5-list--font-style);
+  font-weight: var(--ch5-list--font-weight);
+  vertical-align: text-top;
+
+  .scrollbar-container {
+    position: absolute;
+    height: var(--ch5-list--scrollbar-width);
+    width: var(--ch5-list--scrollbar-width);
+    background-color: var(--ch5-list--scrollbar-track-color);
+    border-radius: var(--ch5-list--scrollbar-border-radius);
+  }
+
+  .scrollbar {
+    will-change: width, transform;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--ch5-list--scrollbar-border-radius);
+    background: var(--ch5-list--scrollbar-thumb-color);
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /// Applied when the list is displayed vertically and scrollbar="true" is added
+  .ch5-list-vertical-scrollbar {
+    padding-right: var(--ch5-list--scrollbar-width);
+
+    & ~ .scrollbar-container {
+      top: 0;
+      height: 100%;
+      right: 0;
+      left: auto;
+    }
+  }
+
+  /// Applied when scrollbar="true" is added
+  .ch5-list-horizontal-scrollbar {
+    padding-bottom: var(--ch5-list--scrollbar-width);
+
+    & ~ .scrollbar-container {
+      width: 100%;
+      bottom: 0;
+    }
+  }
+
+  .list-item {
+    background-color: var(--ch5-list--item-background-color);
+    border-width: var(--ch5-list--item-border-width);
+    border-style: var(--ch5-list--item-border-style);
+    border-color: var(--ch5-list--item-border-color);
+    padding: var(--ch5-list--item-padding);
+    color: var(--ch5-list--item-color);
     vertical-align: text-top;
-
-    .scrollbar-container {
-        position: absolute;
-        height: $ch5-scrollbar-width;
-        width: $ch5-scrollbar-width;
-        background-color: $ch5-scrollbar-track-color;
-        border-radius: $ch5-scrollbar-border-radius;
-    }
-
-    .scrollbar {
-        will-change: width, transform;
-        position: absolute;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        border-radius: $ch5-scrollbar-border-radius;
-        background: $ch5-scrollbar-thumb-color;
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    /// Applied when the list is displayed vertically and scrollbar="true" is added
-    .ch5-list-vertical-scrollbar {
-        padding-right: $ch5-scrollbar-width;
-
-        & ~ .scrollbar-container {
-            top: 0;
-            height: 100%;
-            right: 0;
-            left: auto;
-        }
-    }
-
-    /// Applied when scrollbar="true" is added
-    .ch5-list-horizontal-scrollbar {
-        padding-bottom: $ch5-scrollbar-width;
-
-        & ~ .scrollbar-container {
-            width: 100%;
-            bottom: 0;
-        }
-    }
-
-    .list-item {
-        background-color: $ch5-list-item-background-color;
-        border: $ch5-list-item-border;
-        padding: $ch5-list-item-padding;
-        border-color: $ch5-list-item-border-color;
-        color: $ch5-list-item-color;
-        vertical-align: text-top;
-    }
+  }
 }

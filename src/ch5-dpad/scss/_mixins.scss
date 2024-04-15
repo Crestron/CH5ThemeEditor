@@ -1,0 +1,275 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2021 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-dpad-mixins
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@mixin ch5-dpad-child-content($property-background-color, $property-color) {
+  background-color: var(#{$property-background-color});
+  color: var(#{$property-color});
+}
+
+@mixin ch5-dpad-content($property-value) {
+  $property-background-color: "--ch5-dpad--" + $property-value + "-background-color";
+  $property-color: "--ch5-dpad--" + $property-value + "-color";
+  $property-pressed-background-color: "--ch5-dpad--" + $property-value + "-pressed-background-color";
+  $property-pressed-color: "--ch5-dpad--" + $property-value + "-pressed-color";
+
+  .ch5-dpad-child {
+    @include ch5-dpad-child-content($property-background-color, $property-color);
+  }
+
+  $dpadSizes: ("regular", "x-small", "small", "large", "x-large");
+  @each $size in $dpadSizes {
+    &.ch5-dpad--size-#{$size} {
+      $borderRadius: "--ch5-dpad--" + $size + "-border-radius";
+
+      &.ch5-dpad--shape-plus {
+        .direction-btn {
+          &.up {
+            @include ch5-dpad-content-plus-top($borderRadius, $property-background-color);
+          }
+
+          &.left {
+            @include ch5-dpad-content-plus-left($borderRadius, $property-background-color);
+          }
+
+          &.right {
+            @include ch5-dpad-content-plus-right($borderRadius, $property-background-color);
+          }
+
+          &.down {
+            @include ch5-dpad-content-plus-bottom($borderRadius, $property-background-color);
+          }
+        }
+      }
+
+      &.ch5-dpad--shape-plus,
+      &.ch5-dpad--shape-circle {
+        .direction-btn {
+          /// Applied when up button is in the pressed state
+          &.ch5-dpad-button-up--pressed {
+            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-color);
+          }
+          /// Applied when left button is in the pressed state
+          &.ch5-dpad-button-left--pressed {
+            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-color);
+          }
+
+          /// Applied when right button is in the pressed state
+          &.ch5-dpad-button-right--pressed {
+            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-color);
+          }
+
+          /// Applied when down button is in the pressed state
+          &.ch5-dpad-button-down--pressed {
+            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-color);
+          }
+        }
+
+        .center {
+          /// Applied when center button is in the pressed state
+          &.ch5-dpad-button-center--pressed {
+            @include ch5-dpad-content--pressed($borderRadius, $property-pressed-background-color, $property-pressed-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin ch5-dpad-content--selected($property-background-color, $property-color) {
+  .ch5-dpad-child {
+    @include ch5-dpad-child-content($property-background-color, $property-color);
+  }
+}
+
+@mixin ch5-dpad-content--pressed($property-border-radius, $property-background-color, $property-color) {
+  &.ch5-dpad-child {
+    @include ch5-dpad-child-content($property-background-color, $property-color);
+  }
+
+  &.direction-btn.up:after,
+  &.direction-btn.down:before {
+    box-shadow: calc(-1 * var(#{$property-border-radius})) 0 0 0 var(#{$property-background-color});
+    z-index: 10;
+  }
+
+  &.direction-btn.up:before,
+  &.direction-btn.down:after {
+    box-shadow: var(#{$property-border-radius}) 0 0 0 var(#{$property-background-color});
+    z-index: 10;
+  }
+
+  &.direction-btn.left:before,
+  &.direction-btn.right:after {
+    box-shadow: calc(-1 * var(#{$property-border-radius})) 0 0 0 var(#{$property-background-color});
+    z-index: 10;
+  }
+
+  &.direction-btn.left:after,
+  &.direction-btn.right:before {
+    box-shadow: var(#{$property-border-radius}) 0 0 0 var(#{$property-background-color});
+    z-index: 10;
+  }
+}
+
+@mixin ch5-dpad-content-plus-top($property-border-radius, $property-background-color) {
+  margin: 0 33.33%;
+
+  border-top-left-radius: var(#{$property-border-radius});
+  border-top-right-radius: var(#{$property-border-radius});
+
+  &:before {
+    top: calc(100% - 20px);
+    right: 100%;
+    border-radius: 0 0 var(#{$property-border-radius}) 0;
+    -moz-border-radius: 0 0 var(#{$property-border-radius}) 0;
+    -webkit-border-radius: 0 0 var(#{$property-border-radius}) 0;
+    -webkit-box-shadow: var(#{$property-border-radius}) 0 0 0 var(#{$property-background-color});
+    box-shadow: var(#{$property-border-radius}) 0 0 0 var(#{$property-background-color});
+  }
+
+  &:after {
+    top: calc(100% - 20px);
+    left: 100%;
+    border-radius: 0 0 0 var(#{$property-border-radius});
+    -moz-border-radius: 0 0 0 var(#{$property-border-radius});
+    -webkit-border-radius: 0 0 0 var(#{$property-border-radius});
+    -webkit-box-shadow: calc(-1 * var(#{$property-border-radius})) 0 0 0 var(#{$property-background-color});
+    box-shadow: calc(-1 * var(#{$property-border-radius})) 0 0 0 var(#{$property-background-color});
+  }
+}
+
+@mixin ch5-dpad-content-plus-bottom($property-border-radius, $property-background-color) {
+  margin: 0 33.33%;
+  border-bottom-left-radius: var(#{$property-border-radius});
+  border-bottom-right-radius: var(#{$property-border-radius});
+
+  &:before {
+    top: 0;
+    left: 100%;
+    border-radius: var(#{$property-border-radius}) 0 0 0;
+    -moz-border-radius: var(#{$property-border-radius}) 0 0 0;
+    -webkit-border-radius: var(#{$property-border-radius}) 0 0 0;
+    -webkit-box-shadow: calc(-1 * var(#{$property-border-radius})) 0 0 0 var(#{$property-background-color});
+    box-shadow: calc(-1 * var(#{$property-border-radius})) 0 0 0 var(#{$property-background-color});
+  }
+
+  &:after {
+    top: 0;
+    right: 100%;
+    border-radius: 0 var(#{$property-border-radius}) 0 0;
+    -moz-border-radius: 0 var(#{$property-border-radius}) 0 0;
+    -webkit-border-radius: 0 var(#{$property-border-radius}) 0 0;
+    -webkit-box-shadow: var(#{$property-border-radius}) 0 0 0 var(#{$property-background-color});
+    box-shadow: var(#{$property-border-radius}) 0 0 0 var(#{$property-background-color});
+  }
+}
+
+@mixin ch5-dpad-content-plus-left($property-border-radius, $property-background-color) {
+  margin-right: calc(33% / 2);
+  border-bottom-left-radius: var(#{$property-border-radius});
+  border-top-left-radius: var(#{$property-border-radius});
+
+  &:before {
+    top: 100%;
+    left: calc(100% - 20px);
+    transform: rotate(90deg);
+    border-radius: var(#{$property-border-radius}) 0 0 0;
+    -moz-border-radius: var(#{$property-border-radius}) 0 0 0;
+    -webkit-border-radius: var(#{$property-border-radius}) 0 0 0;
+    -webkit-box-shadow: calc(-1 * var(#{$property-border-radius})) 0 0 0 var(#{$property-background-color});
+    box-shadow: calc(-1 * var(#{$property-border-radius})) 0 0 0 var(#{$property-background-color});
+  }
+
+  &:after {
+    top: -20px;
+    right: 0%;
+    transform: rotate(90deg);
+    border-radius: 0 var(#{$property-border-radius}) 0 0;
+    -moz-border-radius: 0 var(#{$property-border-radius}) 0 0;
+    -webkit-border-radius: 0 var(#{$property-border-radius}) 0 0;
+    -webkit-box-shadow: var(#{$property-border-radius}) 0 0 0 var(#{$property-background-color});
+    box-shadow: var(#{$property-border-radius}) 0 0 0 var(#{$property-background-color});
+  }
+}
+
+@mixin ch5-dpad-content-plus-right($property-border-radius, $property-background-color) {
+  margin-left: calc(33% / 2);
+  border-bottom-right-radius: var(#{$property-border-radius});
+  border-top-right-radius: var(#{$property-border-radius});
+
+  &:before {
+    top: 100%;
+    right: calc(100% - 20px);
+    transform: rotate(270deg);
+    border-radius: 0 var(#{$property-border-radius}) 0 0;
+    -moz-border-radius: 0 var(#{$property-border-radius}) 0 0;
+    -webkit-border-radius: 0 var(#{$property-border-radius}) 0 0;
+    -webkit-box-shadow: var(#{$property-border-radius}) 0 0 0 var(#{$property-background-color});
+    box-shadow: var(#{$property-border-radius}) 0 0 0 var(#{$property-background-color});
+  }
+
+  &:after {
+    top: -20px;
+    left: 0%;
+    transform: rotate(270deg);
+    border-radius: var(#{$property-border-radius}) 0 0 0;
+    -moz-border-radius: var(#{$property-border-radius}) 0 0 0;
+    -webkit-border-radius: var(#{$property-border-radius}) 0 0 0;
+    -webkit-box-shadow: calc(-1 * var(#{$property-border-radius})) 0 0 0 var(#{$property-background-color});
+    box-shadow: calc(-1 * var(#{$property-border-radius})) 0 0 0 var(#{$property-background-color});
+  }
+}
+
+@mixin ch5-dpad-content-plus-direction-btn($property-value) {
+  $property-size: "--ch5-dpad--" + $property-value + "-size";
+  $property-icon-font-size: "--ch5-dpad--icon-size-" + $property-value;
+
+  .dpad-container {
+    width: var(#{$property-size});
+    height: var(#{$property-size});
+    min-width: 100px;
+    min-height: 100px;
+
+    /// Apply to icons
+    .dpad-btn-icon {
+      font-size: var(#{$property-icon-font-size});
+    }
+  }
+
+  &.ch5-dpad--shape-plus {
+    .direction-btn {
+      span {
+        line-height: calc(var(#{$property-size}) / 3);
+      }
+    }
+
+    // .direction-btn.up {
+    //   border-top-left-radius: var(#{$property-border-radius});
+    //   border-top-right-radius: var(#{$property-border-radius});
+    // }
+
+    // .direction-btn.left {
+    //   border-bottom-left-radius: var(#{$property-border-radius});
+    //   border-top-left-radius: var(#{$property-border-radius});
+    // }
+
+    // .direction-btn.right {
+    //   border-bottom-right-radius: var(#{$property-border-radius});
+    //   border-top-right-radius: var(#{$property-border-radius});
+    // }
+
+    // .direction-btn.down {
+    //   border-bottom-left-radius: var(#{$property-border-radius});
+    //   border-bottom-right-radius: var(#{$property-border-radius});
+    // }
+  }
+}

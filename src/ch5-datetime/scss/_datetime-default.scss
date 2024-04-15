@@ -10,20 +10,22 @@
 /// @group ch5-datetime
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Main class
 ch5-datetime {
+  @include ch5-component-base();
+  
   display: inline-block;
 }
 
 /// Class to set the container properties of ch5-datetime
 .ch5-datetime {
-  width: 200px;
-  height: 35px;
-  font-size: 14px;
-  background-color: transparent;
+  width: var(--ch5-datetime--width);
+  height: var(--ch5-datetime--height);
+  font-size: var(--ch5-datetime--font-size);
+  font-weight: var(--ch5-datetime--font-weight);
+  font-style: var(--ch5-datetime--font-style);
+  background-color: var(--ch5-datetime--background-color);
   white-space: nowrap;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
-

@@ -10,10 +10,11 @@
 /// @group ch5-image-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Set height of image
-$ch5-image-height: inherit !default;
-
-/// Set width of image
-$ch5-image-width: inherit !default;
-
-$ch5-image-object-fit: contain !default;
+ch5-image {
+  /// description: Sets object fit property of image
+  /// type: list 
+  /// values: fill, contain, cover, none, scale-down 
+  /// example: contain 
+  /// related-theme-variable: --theme-ch5-image--object-fit
+  --ch5-image--object-fit: var(--theme-ch5-image--object-fit);
+}

@@ -10,36 +10,5 @@
 /// @group ch5-core-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Font size unit
-$ch5-font-size-unit: px !default;
-
-/// Font size value
-$ch5-font-size-value: 16 !default;
-
-/// Font size 
-$ch5-font-size: $ch5-font-size-value + $ch5-font-size-unit !default;
-
-/// Font style
-$ch5-font-style: normal !default;
-
-/// Font weight
-$ch5-font-weight: normal !default;
-
-/// Scrollbar width
-$ch5-scrollbar-width: 7px !default;
-
-/// Scrollbar border radius
-$ch5-scrollbar-border-radius: 10px !default;
-
-/// Scrollbar track color
-$ch5-scrollbar-track-color: rgba(0, 0, 0, 0.1) !default;
-
-/// Scrollbar thumb color
-$ch5-scrollbar-thumb-color: rgba(0, 0, 0, 0.5) !default;
-
-/// Disabled opacity
-$ch5-disabled-opacity: 0.5 !default;
-
 $white: #fff;
 $black: #000;
-

@@ -10,5 +10,19 @@
 /// @group ch5-background-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-$ch5-background-z-index: -1 !default;
-$ch5-background-parent-z-index: 1 !default;
+ch5-background {
+
+  /// description: Transition effect. This value can be set as 'transitionEffect' attribute for the component. The component value will override CSS value.
+  /// type: list 
+  /// values: ease-in, ease-out, linear, ease, ease-in-out
+  /// example: ease
+  /// related-theme-variable: --theme-ch5-background--transition-timing-function
+  --ch5-background--transition-timing-function: var(--theme-ch5-background--transition-timing-function);
+
+  /// description: Transition duration. This value can be set as 'transitionDuration' attribute for the component. The component value will override CSS value.
+  /// type: unit 
+  /// values: s 
+  /// example: 1s
+  /// related-theme-variable: --theme-ch5-background--transition-duration
+  --ch5-background--transition-duration: var(--theme-ch5-background--transition-duration);
+}

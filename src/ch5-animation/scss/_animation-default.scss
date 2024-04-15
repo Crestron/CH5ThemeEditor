@@ -10,11 +10,15 @@
 /// @group ch5-animation
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ch5-animation {
+  @include ch5-component-base();
+}
+
 /// Main Class
 .ch5-animation {
   position: relative;
   display: inline-block;
-  color: $ch5-animation-color;
+  color: var(--ch5-animation--color);
 
   /// Applied when startAnimating='true'
   .ch5-animation--start-animating-true {
@@ -29,6 +33,5 @@
 
 /// Applied when disabled='true'
 .ch5-animation--disabled {
-  pointer-events: none;
-  opacity: $ch5-disabled-opacity;
+  @include ch5-component-disabled();
 }

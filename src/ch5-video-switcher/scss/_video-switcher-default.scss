@@ -1,0 +1,67 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2024 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-video-switcher
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$ch5-video-switcher--source-size: 34%;
+$ch5-video-switcher--screen-size: 66%;
+
+ch5-video-switcher {
+  @include ch5-component-base();
+  display: inline-flex;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/// Class to set the container properties of ch5-video-switcher
+.ch5-video-switcher {
+  width: var(--ch5-video-switcher--width);
+  min-width: 240px;
+  min-height: 200px;
+  aspect-ratio: 9/6;
+
+  display: flex;
+  overflow: hidden;
+  gap: var(--ch5-video-switcher--scrollbar-width);
+  background-color: var(--ch5-video-switcher--background-color);
+  scrollbar-width: none; // needed to hide the firefox scrollbar
+  position: relative;
+  border-radius: var(--ch5-video-switcher--border-radius);
+  border-width: var(--ch5-video-switcher--border-width);
+  border-style: var(--ch5-video-switcher--border-style);
+  border-color: var(--ch5-video-switcher--border-color);
+
+  &.ch5-video-switcher::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+
+  // This is for source-list only
+  .scrollbar-container {
+    position: absolute;
+    background-color: var(--ch5-video-switcher--scrollbar-track-color);
+    border-radius: var(--ch5-video-switcher--scrollbar-border-radius);
+
+    .scrollbar {
+      position: absolute;
+      will-change: width, transform;
+      border-radius: var(--ch5-video-switcher--scrollbar-border-radius);
+      background: var(--ch5-video-switcher--scrollbar-thumb-color);
+    }
+  }
+
+}
+
+/// Applied when the video switcher is disabled
+.ch5-video-switcher--disabled {
+  @include ch5-component-disabled();
+}

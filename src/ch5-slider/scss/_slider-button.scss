@@ -11,13 +11,14 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-slider {
-  
+
   .slider-off-button,
   .slider-on-button {
     display: inline-flex;
     pointer-events: none;
     vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
     z-index: 1;
+
     .ch5-button {
       display: flex;
       max-width: 100%;
@@ -31,29 +32,31 @@
         background-color: transparent;
         border: none;
         color: inherit;
+
         &:focus {
           outline: none;
         }
       }
+
       .ch5-button--label {
         display: block;
-        @include text-truncate;
+        @include text-truncate();
       }
 
       .cb-btn {
         display: inline-flex;
         align-items: center;
         justify-content: space-between;
-        line-height: $ch5-button-content-line-height;
-        padding: $ch5-button-padding;
+        line-height: var(--ch5-slider--button-content-line-height);
+        padding: var(--ch5-slider--button-padding);
         vertical-align: middle;
-        padding-top: calc($ch5-button-padding / 2);
-        padding-bottom: calc($ch5-button-padding / 2);
+        padding-top: calc(var(--ch5-slider--button-padding) / 2);
+        padding-bottom: calc(var(--ch5-slider--button-padding) / 2);
       }
 
       .ch5-button--label {
-        padding-left: calc($ch5-button-padding / 2);
-        padding-right: calc($ch5-button-padding / 2);
+        padding-left: calc(var(--ch5-slider--button-padding) / 2);
+        padding-right: calc(var(--ch5-slider--button-padding) / 2);
       }
     }
 
@@ -66,6 +69,7 @@
       flex: none;
       height: 100%;
     }
+
     .ch5-button--icon-url-fill-type-stretch,
     .ch5-button--icon-url-fill-type-stretch-aspect,
     .ch5-button--icon-url-fill-type-center,
@@ -129,10 +133,12 @@
     position: relative;
     cursor: pointer;
     user-select: none;
+    flex-shrink: 1;
   }
+
   .ch5-button--icon,
   .ch5-button--img {
-    line-height: $ch5-button-content-line-height;
+    line-height: var(--ch5-slider--button-content-line-height);
   }
 
   // icon positions
@@ -155,101 +161,101 @@
     overflow: hidden;
   }
 
-	.ch5-button--horizontal-left {
-		justify-content: flex-start;
-	}
+  .ch5-button--horizontal-left {
+    justify-content: flex-start;
+  }
 
-	.ch5-button--horizontal-center {
-		justify-content: center;
-	}
+  .ch5-button--horizontal-center {
+    justify-content: center;
+  }
 
-	.ch5-button--horizontal-right {
-		justify-content: flex-end;
-	}
+  .ch5-button--horizontal-right {
+    justify-content: flex-end;
+  }
 
-	.ch5-button--vertical-middle {
-		align-items: center;
-	}
+  .ch5-button--vertical-middle {
+    align-items: center;
+  }
 
-	.ch5-button--vertical-top {
-		align-items: flex-start;
-	}
+  .ch5-button--vertical-top {
+    align-items: flex-start;
+  }
 
-	.ch5-button--vertical-bottom {
-		align-items: flex-end;
-	}
+  .ch5-button--vertical-bottom {
+    align-items: flex-end;
+  }
 
-	.ch5-button--iconposition-bottom,
-	.ch5-button--iconposition-top {
-		.ch5-button--span {
-			display: flex;
-			flex-direction: column;
-		}
+  .ch5-button--iconposition-bottom,
+  .ch5-button--iconposition-top {
+    .ch5-button--span {
+      display: flex;
+      flex-direction: column;
+    }
 
-		.ch5-button--horizontal-left {
-			align-items: flex-start;
-		}
+    .ch5-button--horizontal-left {
+      align-items: flex-start;
+    }
 
-		.ch5-button--horizontal-center {
-			align-items: center;
-		}
+    .ch5-button--horizontal-center {
+      align-items: center;
+    }
 
-		.ch5-button--horizontal-right {
-			align-items: flex-end;
-		}
+    .ch5-button--horizontal-right {
+      align-items: flex-end;
+    }
 
-		.ch5-button--vertical-middle {
-			justify-content: center;
-		}
+    .ch5-button--vertical-middle {
+      justify-content: center;
+    }
 
-		.ch5-button--vertical-top {
-			justify-content: flex-start;
-		}
+    .ch5-button--vertical-top {
+      justify-content: flex-start;
+    }
 
-		.ch5-button--vertical-bottom {
-			justify-content: flex-end;
-		}
-	}
+    .ch5-button--vertical-bottom {
+      justify-content: flex-end;
+    }
+  }
 
-	.ch5-button--circle:not(.ch5-button--iconposition-top):not(.ch5-button--iconposition-bottom),
-	.ch5-button--oval:not(.ch5-button--iconposition-top):not(.ch5-button--iconposition-bottom) {
+  .ch5-button--circle:not(.ch5-button--iconposition-top):not(.ch5-button--iconposition-bottom),
+  .ch5-button--oval:not(.ch5-button--iconposition-top):not(.ch5-button--iconposition-bottom) {
 
-		.ch5-button--vertical-middle,
-		.ch5-button--vertical-top,
-		.ch5-button--vertical-bottom {
-			align-items: center;
-		}
-	}
+    .ch5-button--vertical-middle,
+    .ch5-button--vertical-top,
+    .ch5-button--vertical-bottom {
+      align-items: center;
+    }
+  }
 
-	.ch5-button--iconposition-top.ch5-button--circle,
-	.ch5-button--iconposition-bottom.ch5-button--circle,
-	.ch5-button--iconposition-top.ch5-button--oval,
-	.ch5-button--iconposition-bottom.ch5-button--oval {
+  .ch5-button--iconposition-top.ch5-button--circle,
+  .ch5-button--iconposition-bottom.ch5-button--circle,
+  .ch5-button--iconposition-top.ch5-button--oval,
+  .ch5-button--iconposition-bottom.ch5-button--oval {
 
-		.ch5-button--vertical-middle,
-		.ch5-button--vertical-top,
-		.ch5-button--vertical-bottom {
-			justify-content: center;
-		}
-	}
+    .ch5-button--vertical-middle,
+    .ch5-button--vertical-top,
+    .ch5-button--vertical-bottom {
+      justify-content: center;
+    }
+  }
 
-	.ch5-button--iconposition-bottom:not(.ch5-button--circle):not(.ch5-button--oval),
-	.ch5-button--iconposition-top:not(.ch5-button--circle):not(.ch5-button--oval) {
-		.cb-btn {
-			display: flex;
-		}
-	}
+  .ch5-button--iconposition-bottom:not(.ch5-button--circle):not(.ch5-button--oval),
+  .ch5-button--iconposition-top:not(.ch5-button--circle):not(.ch5-button--oval) {
+    .cb-btn {
+      display: flex;
+    }
+  }
 
-	.ch5-button__checkbox {
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-font-smoothing: antialiased;
-		display: inline-block;
-		font-style: normal;
-		font-variant: normal;
-		text-rendering: auto;
-		line-height: 1;
-		z-index: 2;
-	}
+  .ch5-button__checkbox {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    z-index: 2;
+  }
 
   i.cb-icon.material-icons,
   i.cb-icon.material-icons-outline,
@@ -265,6 +271,7 @@
     margin-left: unset;
     margin-right: unset;
   }
+
   .ch5-slider-iconfill {
     .cb-btn {
       display: inline !important;
@@ -284,13 +291,5 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-
-  .ch5-slider-button--pressed {
-    .ch5-button {
-      border-color: $default-pressed-border-color;
-      background-color: $default-pressed-background-color;
-      color: $default-pressed-font-color;
-    }
   }
 }

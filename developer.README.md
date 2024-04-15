@@ -12,20 +12,22 @@ Crestron provides three standard themes for CH5 components.
 * light theme - dark text on light backgrounds
 * dark theme - light text on dark backgrounds
 * high-contrast theme - to aid visually impaired, easily discernable colors with larger fonts
+* zoom-light theme - dark text on light backgrounds specific to zoom projects only
+* zoom-dark theme - light text on dark backgrounds specific to zoom projects only
 
-This project provides the source code to reproduce the Crestron provided themes and scripts to extend those themes as 'custom' themes for your projects. 
+This project provides the source code for Crestron provided themes and scripts to extend those themes as 'custom' themes for projects. 
 
 ## Workstation setup 
 
 ### Node
 
-install Node from https://nodejs.org
+Install Node from https://nodejs.org
 
 ### Code Editor
 
 Many choices of available to edit the SASS source code used to create themes. 
 
-A fine choice is Visual Studio Code is https://code.visualstudio.com/ with built in support for .css and .scss file editing
+A fine choice is Visual Studio Code is https://code.visualstudio.com/ with built in support for .css and .scss file editing.
 
 
 ## Theme building project install
@@ -102,7 +104,7 @@ Add given below property and value to env file:-
 DESTINATION_THEMES_FILE_PATH = RELATIVE_PATH_FOR_DESTINATION_DIRECTORY
 ex:-
 DESTINATION_THEMES_FILE_PATH = '../showcase-app/dist/crestron-components-assets'
-and also update the --outputpath of "webpack shell command" in package.json.
+and also update the --output-path of "webpack shell command" in package.json.
 copy fonts and webfonts:-
 fonts, web fonts and theme directories should be at the same level.
 DESTINATION_WEBFONTS_FILE_PATH = RELATIVE_PATH_FOR_WEBFONTS
@@ -138,7 +140,7 @@ A future change to the existing theme will be incorporated into the custom theme
 
 ### Theme specific directives and files 
 
-The difference between the themes are introduced in directories and files of the 'themes' directory.  As example, changes to themes/big-bucks-customer/big-bucks-customer-theme.scss will only change the big-bucks-customer theme output. 
+The difference between the themes are introduced in directories and files of the 'themes' directory.  As example, changes to themes/big-bucks-customer/big-bucks-customer-theme.scss will only change the big-bucks-customer theme. 
 
 ### Theme independent directives and files
 
@@ -157,7 +159,17 @@ Also, please ensure to add a comment with three slashes in each file. If not, th
 
 ## How to create component level scss
 
-1. Use variables when the expectation is that CCIDE should have the opportunity to override it. This will be reflected in sass based json files.
+1. Use variables when the expectation is that CONSTRUCT should have the opportunity to override it. This will be reflected in sass based json files.
 
 ### Unused scss variables
 node helpers/unused-scss-variables.mjs > output.txt
+
+### CSS Variables naming convention
+
+#### Theme Variables
+
+#### Component Variables
+
+min-width and min-height should not be customizable.
+
+## How to upgrade font aweseome and material icons

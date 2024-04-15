@@ -10,51 +10,151 @@
 /// @group ch5-select-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// component main font size unit
-$ch5-select-font-size-unit: $ch5-font-size-unit !default;
+ch5-select {
+  /// description: Font size for select
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 16px
+  /// related-theme-variable: --theme-ch5-select--font-size
+  --ch5-select--font-size: var(--theme-ch5-select--font-size);
 
-/// component main font size value
-$ch5-select-font-size-value: $ch5-font-size-value !default;
+  /// description: Font style for select
+  /// type: list
+  /// values: normal, italic
+  /// example: normal
+  /// related-theme-variable: --theme-ch5-select--font-style
+  --ch5-select--font-style: var(--theme-ch5-select--font-style);
 
-/// component main font size
-$ch5-select-font-size: $ch5-select-font-size-value + $ch5-select-font-size-unit !default;
+  /// description: Font weight for select
+  /// type: list
+  /// values: normal, bold
+  /// example: normal
+  /// related-theme-variable: --theme-ch5-select--font-weight
+  --ch5-select--font-weight: var(--theme-ch5-select--font-weight);
 
-/// component main font style
-$ch5-select-font-style: $ch5-font-style !default;
+  /// description: Font color for select
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #000
+  /// related-theme-variable: --theme-ch5-select--font-color
+  --ch5-select--font-color: var(--theme-ch5-select--font-color);
 
-/// component main font weight
-$ch5-select-font-weight: $ch5-font-weight !default;
+  /// description: Padding for select
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 4px 
+  /// related-theme-variable: --theme-ch5-select--padding
+  --ch5-select--padding: var(--theme-ch5-select--padding);
 
-/// top line content padding
-$ch5-select-padding: 4px !default;
+  /// description: Border width for select
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 1px 
+  /// related-theme-variable: --theme-ch5-select--border-width
+  --ch5-select--border-width: var(--theme-ch5-select--border-width);
 
-/// component border width
-$ch5-select-border-width: 1px !default;
+  /// description: Border style for select
+  /// type: list
+  /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// example: solid
+  /// related-theme-variable: --theme-ch5-select--border-style
+  --ch5-select--border-style: var(--theme-ch5-select--border-style);
 
-/// component border radius
-$ch5-select-border-radius: 2px !default;
+  /// description: Border radius for select
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-select--border-radius
+  --ch5-select--border-radius: var(--theme-ch5-select--border-radius);
 
-/// combo trigger button margin
-$ch5-select-combo-trigger-margin: 0 !default;
+  /// description: Border color for select
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #c6c8ca 
+  /// related-theme-variable: --theme-ch5-select--border-color
+  --ch5-select--border-color: var(--theme-ch5-select--border-color);
 
-/// combo trigger button width
-$ch5-select-combo-trigger-width: 24px !default;
+  /// description: Dropdown icon button margin
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-select--dropdown-icon-margin
+  --ch5-select--dropdown-icon-margin: var(--theme-ch5-select--dropdown-icon-margin);
 
-/// combo trigger button height
-$ch5-select-combo-trigger-height: 24px !default;
+  /// description: Dropdown icon button width
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 24px 
+  /// related-theme-variable: --theme-ch5-select--dropdown-icon-width
+  --ch5-select--dropdown-icon-width: var(--theme-ch5-select--dropdown-icon-width);
 
-/// top line width
-$ch5-select-item-selected-width: calc(100% - 40px) !default;
+  /// description: Dropdown icon button height
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 24px 
+  /// related-theme-variable: --theme-ch5-select--dropdown-icon-height
+  --ch5-select--dropdown-icon-height: var(--theme-ch5-select--dropdown-icon-height);
 
-/// item border width
-$ch5-select-panel-item-border-width: 1px !default;
+  /// description: Border width for select option item
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 1px 
+  /// related-theme-variable: --theme-ch5-select--option-item-border-width
+  --ch5-select--option-item-border-width: var(--theme-ch5-select--option-item-border-width);
 
-/// item padding
-$ch5-select-panel-item-padding: 8px !default;
+  /// description: Border color for select option item
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: transparent 
+  /// related-theme-variable: --theme-ch5-select--option-item-border-color
+  --ch5-select--option-item-border-color: var(--theme-ch5-select--option-item-border-color);
 
-/// select panel shadow
-$ch5-select-panel-items-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-                                      0 1px 5px 0 rgba(0, 0, 0, 0.12),
-                                      0 3px 1px -2px rgba(0, 0, 0, 0.2) !default;
+  /// description: Border style for select option item
+  /// type: list
+  /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// example: solid
+  /// related-theme-variable: --theme-ch5-select--option-item-border-style
+  --ch5-select--option-item-border-style: var(--theme-ch5-select--option-item-border-style);
 
-$ch5-select-panel-z-index: 10000 !default;
+  /// description: Padding for select option item
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 8px 
+  /// related-theme-variable: --theme-ch5-select--option-item-padding
+  --ch5-select--option-item-padding: var(--theme-ch5-select--option-item-padding);
+
+  /// description: Background color for select option item
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #fff 
+  /// related-theme-variable: --theme-ch5-select--option-background-color
+  --ch5-select--option-background-color: var(--theme-ch5-select--option-background-color);
+
+  /// description: Hover background color for select option item
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #f8f9fa 
+  /// related-theme-variable: --theme-ch5-select--option-item-hover-background-color
+  --ch5-select--option-item-hover-background-color: var(--theme-ch5-select--option-item-hover-background-color);
+
+  /// description: Background color for select option item
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: transparent 
+  /// related-theme-variable: --theme-ch5-select--option-item-background-color
+  --ch5-select--option-item-background-color: var(--theme-ch5-select--option-item-background-color);
+
+  /// description: Color for select option item
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #212529 
+  /// related-theme-variable: --theme-ch5-select--option-item-color
+  --ch5-select--option-item-color: var(--theme-ch5-select--option-item-color);
+
+  /// description: Selected background color for select option item
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #cce5ff
+  /// related-theme-variable: --theme-ch5-select--option-item-selected-background-color
+  --ch5-select--option-item-selected-background-color: var(--theme-ch5-select--option-item-selected-background-color);
+}

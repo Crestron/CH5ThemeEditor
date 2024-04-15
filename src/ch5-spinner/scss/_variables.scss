@@ -10,38 +10,102 @@
 /// @group ch5-spinner-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// default
-$ch5-spinner-border-width: 1px !default;
-$ch5-spinner-border-style: solid !default;
+ch5-spinner {
+  /// description: Border width for spinner
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 1px 
+  /// related-theme-variable: --theme-ch5-spinner--border-width
+  --ch5-spinner--border-width: var(--theme-ch5-spinner--border-width);
 
-/// the default font size unit of the spinner
-$ch5-spinner-font-size-unit: $ch5-font-size-unit !default;
+  /// description: Border style for spinner
+  /// type: list
+  /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// example: solid 
+  /// related-theme-variable: --theme-ch5-spinner--border-style
+  --ch5-spinner--border-style: var(--theme-ch5-spinner--border-style);
 
-/// the default font size value of the spinner
-$ch5-spinner-font-size-value: 22 !default;
+  /// description: Font size for spinner
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 22px 
+  /// related-theme-variable: --theme-ch5-spinner--font-size
+  --ch5-spinner--font-size: var(--theme-ch5-spinner--font-size);
 
-/// the default font size of the spinner
-$ch5-spinner-font-size: $ch5-spinner-font-size-value + $ch5-spinner-font-size-unit !default;
+  /// description: Font style for spinner
+  /// type: list 
+  /// values: normal, italic 
+  /// example: normal
+  /// related-theme-variable: --theme-ch5-spinner--font-style
+  --ch5-spinner--font-style: var(--theme-ch5-spinner--font-style);
 
-/// the default font style of the spinner
-$ch5-spinner-font-style: $ch5-font-style !default;
+  /// description: Font weight for spinner
+  /// type: list
+  /// values: normal, bold
+  /// example: normal
+  /// related-theme-variable: --theme-ch5-spinner--font-weight
+  --ch5-spinner--font-weight: var(--theme-ch5-spinner--font-weight);
 
-/// the default font weight of the spinner
-$ch5-spinner-font-weight: $ch5-font-weight !default;
+  /// description: Size of icon used in spinner
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 22px 
+  /// related-theme-variable: --theme-ch5-spinner--icon-size
+  --ch5-spinner--icon-size: var(--theme-ch5-spinner--icon-size);
 
-/// the default font size for icon
-$ch5-spinner-icon-font-size: $ch5-spinner-font-size !default;
+  /// description: Icon padding in spinner item
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, %
+  /// example: 0
+  /// related-theme-variable: --theme-ch5-spinner--icon-padding
+  --ch5-spinner--icon-padding: var(--theme-ch5-spinner--icon-padding);
 
+  /// description: Icon margin in spinner item
+  /// type: unit 
+  /// values: px, vw, vh, em, rem, %
+  /// example: 0
+  /// related-theme-variable: --theme-ch5-spinner--icon-margin
+  --ch5-spinner--icon-margin: var(--theme-ch5-spinner--icon-margin);
 
-/// the padding of the icon within the slider item
-$ch5-spinner-icon-padding: 0px 0 !default;
+  /// description: Background color for spinner overlay
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #000 
+  /// related-theme-variable: --theme-ch5-spinner--overlay-background-color
+  --ch5-spinner--overlay-background-color: var(--theme-ch5-spinner--overlay-background-color);
 
+  /// description: Highlight border color for spinner
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #00ff00 
+  /// related-theme-variable: --theme-ch5-spinner--highlight-border-color
+  --ch5-spinner--highlight-border-color: var(--theme-ch5-spinner--highlight-border-color);
 
-/// the margin of the icon within the slider item
-$ch5-spinner-icon-margin: 0px 0 !default;
+  /// description: Highlight box shadow color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: rgba(0, 0, 0, 0.3)  
+  /// related-theme-variable: --theme-ch5-spinner--highlight-box-shadow-color
+  --ch5-spinner--highlight-box-shadow-color: var(--theme-ch5-spinner--highlight-box-shadow-color);
 
-/// the opacity for the overlay of the spinner
-$ch5-spinner-overlay-opacity: 0.0 !default;
+  /// description: Spinner item color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #333 
+  /// related-theme-variable: --theme-ch5-spinner--item-color
+  --ch5-spinner--item-color: var(--theme-ch5-spinner--item-color);
 
-$ch5-spinner-wrapper-z-index: 9999 !default;
-$ch5-spinner-overlay-z-index: 999 !default;
+  /// description: Spinner active item color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #000 
+  /// related-theme-variable: --theme-ch5-spinner--active-item-color
+  --ch5-spinner--active-item-color: var(--theme-ch5-spinner--active-item-color);
+
+  /// description: Spinner background color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: transparent 
+  /// related-theme-variable: --theme-ch5-spinner--background-color
+  --ch5-spinner--background-color: var(--theme-ch5-spinner--background-color);
+}

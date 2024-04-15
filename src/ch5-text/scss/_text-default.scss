@@ -11,9 +11,11 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-text {
+  @include ch5-component-base();
+
   display: inline-block;
-  width: -moz-available;          // WebKit-based browsers will ignore this. 
-  width: -webkit-fill-available;  // Mozilla-based browsers will ignore this.
+  width: -moz-available; // WebKit-based browsers will ignore this.
+  width: -webkit-fill-available; // Mozilla-based browsers will ignore this.
 }
 
 /// Main Class
@@ -21,12 +23,17 @@ ch5-text {
   position: relative;
   min-width: 64px;
   min-height: 44px;
-  width: 150px;
-  height: 48px;
+  width: var(--ch5-text--width);
+  height: var(--ch5-text--height);
   overflow: hidden;
-  padding: 10px;
+  padding: var(--ch5-text--padding);
+  color: var(--ch5-text--font-color);
+  font-style: var(--ch5-text--font-style);
+  font-size: var(--ch5-text--font-size);
+  font-weight: var(--ch5-text--font-weight);
 
-  span {
+  /// Applied for the span element
+  .ch5-text--span {
     display: inline-block;
     width: 100%;
 
@@ -49,8 +56,8 @@ ch5-text {
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3; // start showing ellipsis when 3rd line is reached
-      white-space: pre-wrap !important; // let the text wrap preserving spaces 
-      word-break: break-all;
+      white-space: pre-wrap !important; // let the text wrap preserving spaces
+      word-break: var(--ch5-text--word-break);
     }
 
     /// Applied when multilineSupport='false'
@@ -61,9 +68,7 @@ ch5-text {
   }
 }
 
-
 /// Applied when disabled='true'
 .ch5-text--disabled {
-  pointer-events: none;
-  opacity: $ch5-text-disabled-opacity;
+  @include ch5-component-disabled();
 }

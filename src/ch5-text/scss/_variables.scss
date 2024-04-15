@@ -10,6 +10,60 @@
 /// @group ch5-text-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Variables below
+ch5-text {
+  /// description: Width of text component
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 150px 
+  /// related-theme-variable: --theme-ch5-text--width
+  --ch5-text--width: var(--theme-ch5-text--width);
 
-$ch5-text-disabled-opacity: 0.5 !default;
+  /// description: Height of text component
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 48px 
+  /// related-theme-variable: --theme-ch5-text--height
+  --ch5-text--height: var(--theme-ch5-text--height);
+
+  /// description: Padding for the text component
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 10px 
+  /// related-theme-variable: --theme-ch5-text--padding
+  --ch5-text--padding: var(--theme-ch5-text--padding);
+
+  /// description: Font size of the text
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 16px 
+  /// related-theme-variable: --theme-ch5-text--font-size
+  --ch5-text--font-size: var(--theme-ch5-text--font-size);
+
+  /// description: Font style of the text
+  /// type: list
+  /// values: normal, italic
+  /// example: normal 
+  /// related-theme-variable: --theme-ch5-text--font-style
+  --ch5-text--font-style: var(--theme-ch5-text--font-style);
+
+  /// description: Font weight of the text
+  /// type: list
+  /// values: normal, bold
+  /// example: normal 
+  /// related-theme-variable: --theme-ch5-text--font-weight
+  --ch5-text--font-weight: var(--theme-ch5-text--font-weight);
+
+  /// description: Font color of the text
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #4a4a4a
+  /// related-theme-variable: --theme-ch5-text--font-color
+  --ch5-text--font-color: var(--theme-ch5-text--font-color);
+
+  /// description: Word break property for ch5-text
+  /// type: list
+  /// values: break-word, break-all, keep-all, normal
+  /// example: break-word
+  /// related-theme-variable: --theme-ch5-text--word-break
+  --ch5-text--word-break: var(--theme-ch5-text--word-break);
+}

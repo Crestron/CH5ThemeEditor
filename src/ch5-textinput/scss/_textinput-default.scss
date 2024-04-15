@@ -1,0 +1,333 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-textinput
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ch5-textinput {
+  @include ch5-component-base();
+
+  display: inline-block;
+  vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
+
+  &[dir="rtl"] {
+    .ch5-textinput-container {
+
+      /// Applied on the icon when iconPosition attribute is set to 'last'
+      .ch5-textinput--icon.ch5-textinput--icon-position-last {
+        margin-right: 0;
+      }
+
+      /// Applied on the icon when iconPosition attribute is set to 'first'
+      .ch5-textinput--icon.ch5-textinput--icon-position-first {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &[dir="ltr"] {
+    .ch5-textinput-container {
+      .ch5-textinput--icon.ch5-textinput--icon-position-first {
+        margin-right: 0;
+      }
+
+      .ch5-textinput--icon.ch5-textinput--icon-position-last {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+/// Main class
+.ch5-textinput {
+  color: var(--ch5-textinput--mask-text-color);
+
+  /// Applied on the label
+  .ch5-textinput--label {
+    display: block;
+    color: var(--ch5-textinput--label-text-color);
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .ch5-textinput-container {
+    display: flex;
+    align-items: center;
+    border: var(--ch5-textinput--input-border-width) var(--ch5-textinput--input-border-style) var(--ch5-textinput--input-border-color);
+    border-radius: var(--ch5-textinput--input-border-radius);
+    height: 100%;
+    width: 100%;
+
+    /// Applied on the icon
+    .ch5-textinput--icon {
+      color: var(--ch5-textinput--icon-text-color);
+    }
+
+    >span {
+      display: flex;
+      position: relative;
+      align-items: center;
+      width: 100%;
+    }
+
+    /// Applied on the input
+    .ch5-textinput--input {
+      background: var(--ch5-textinput--input-background-color);
+      border: 0;
+      color: var(--ch5-textinput--input-text-color);
+      width: 100%;
+
+      /// Applied on the input when text-transform="none"
+      &.ch5-textinput--text-transform-none {
+        text-transform: none;
+      }
+
+      /// Applied on the input when text-transform="capitalize"
+      &.ch5-textinput--text-transform-capitalize {
+        text-transform: capitalize;
+      }
+
+      /// Applied on the input when text-transform="uppercase"
+      &.ch5-textinput--text-transform-uppercase {
+        text-transform: uppercase;
+      }
+
+      /// Applied on the input when text-transform="lowercase"
+      &.ch5-textinput--text-transform-lowercase {
+        text-transform: lowercase;
+      }
+    }
+
+    .ch5-textinput-mask {
+      width: 100%;
+      font-style: var(--ch5-textinput--regular-font-style);
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+  }
+
+  /// Applied to main class when size="regular"
+  &.ch5-textinput--size-regular {
+    width: var(--ch5-textinput--regular-width);
+
+    .ch5-textinput--label {
+      font-style: var(--ch5-textinput--regular-font-style);
+      font-size: var(--ch5-textinput--regular-font-size);
+      font-weight: var(--ch5-textinput--regular-font-weight);
+    }
+
+    .ch5-textinput-container {
+      .ch5-textinput--icon {
+        font-size: var(--ch5-textinput--regular-font-size);
+        margin: var(--ch5-textinput--regular-icon-margin);
+      }
+
+      .ch5-textinput--input {
+        padding: var(--ch5-textinput--regular-input-padding);
+        font-style: var(--ch5-textinput--regular-font-style);
+        font-size: var(--ch5-textinput--regular-font-size);
+        font-weight: var(--ch5-textinput--regular-font-weight);
+        height: var(--ch5-textinput--regular-height);
+      }
+
+      .ch5-textinput-mask {
+        padding: 0 20px;
+        font-size: var(--ch5-textinput--regular-font-size);
+        font-weight: var(--ch5-textinput--regular-font-weight);
+      }
+
+      .ch5-textinput-mask--letter {
+        font-size: var(--ch5-textinput--regular-mask-font-size);
+      }
+    }
+  }
+
+  /// Applied to main class when size="x-small"
+  &.ch5-textinput--size-x-small {
+    width: var(--ch5-textinput--x-small-width);
+
+    .ch5-textinput--label {
+      font-style: var(--ch5-textinput--x-small-font-style);
+      font-size: var(--ch5-textinput--x-small-font-size);
+      font-weight: var(--ch5-textinput--x-small-font-weight);
+    }
+
+    .ch5-textinput-container {
+      .ch5-textinput--icon {
+        font-size: var(--ch5-textinput--x-small-font-size);
+        margin: var(--ch5-textinput--x-small-icon-margin);
+      }
+
+      .ch5-textinput--input {
+        padding: var(--ch5-textinput--x-small-input-padding);
+        font-style: var(--ch5-textinput--x-small-font-style);
+        font-size: var(--ch5-textinput--x-small-font-size);
+        font-weight: var(--ch5-textinput--x-small-font-weight);
+        height: var(--ch5-textinput--x-small-height);
+      }
+
+      .ch5-textinput-mask {
+        padding: 0 10px;
+        font-size: var(--ch5-textinput--x-small-font-size);
+        font-weight: var(--ch5-textinput--x-small-font-weight);
+      }
+
+      .ch5-textinput-mask--letter {
+        font-size: var(--ch5-textinput--x-small-mask-font-size);
+      }
+    }
+  }
+
+  /// Applied to main class when size="small"
+  &.ch5-textinput--size-small {
+    width: var(--ch5-textinput--small-width);
+
+    .ch5-textinput--label {
+      font-style: var(--ch5-textinput--small-font-style);
+      font-size: var(--ch5-textinput--small-font-size);
+      font-weight: var(--ch5-textinput--small-font-weight);
+    }
+
+    .ch5-textinput-container {
+      .ch5-textinput--icon {
+        font-size: var(--ch5-textinput--small-font-size);
+        margin: var(--ch5-textinput--small-icon-margin);
+      }
+
+      .ch5-textinput--input {
+        padding: var(--ch5-textinput--small-input-padding);
+        font-style: var(--ch5-textinput--small-font-style);
+        font-size: var(--ch5-textinput--small-font-size);
+        font-weight: var(--ch5-textinput--small-font-weight);
+        height: var(--ch5-textinput--small-height);
+      }
+
+      .ch5-textinput-mask {
+        padding: 0 15px;
+        font-size: var(--ch5-textinput--small-font-size);
+        font-weight: var(--ch5-textinput--small-font-weight);
+      }
+
+      .ch5-textinput-mask--letter {
+        font-size: var(--ch5-textinput--small-mask-font-size);
+      }
+    }
+  }
+
+  /// Applied to main class when size="large"
+  &.ch5-textinput--size-large {
+    width: var(--ch5-textinput--large-width);
+
+    .ch5-textinput--label {
+      font-style: var(--ch5-textinput--large-font-style);
+      font-size: var(--ch5-textinput--large-font-size);
+      font-weight: var(--ch5-textinput--large-font-weight);
+    }
+
+    .ch5-textinput-container {
+      .ch5-textinput--icon {
+        font-size: var(--ch5-textinput--large-font-size);
+        margin: var(--ch5-textinput--large-icon-margin);
+      }
+
+      .ch5-textinput--input {
+        padding: var(--ch5-textinput--large-input-padding);
+        font-style: var(--ch5-textinput--large-font-style);
+        font-size: var(--ch5-textinput--large-font-size);
+        font-weight: var(--ch5-textinput--large-font-weight);
+        height: var(--ch5-textinput--large-height);
+      }
+
+      .ch5-textinput-mask {
+        padding: 0 20px;
+        font-size: var(--ch5-textinput--large-font-size);
+        font-weight: var(--ch5-textinput--large-font-weight);
+      }
+
+      .ch5-textinput-mask--letter {
+        font-size: var(--ch5-textinput--large-mask-font-size);
+      }
+    }
+  }
+
+  /// Applied to main class when size="x-large"
+  &.ch5-textinput--size-x-large {
+    width: var(--ch5-textinput--x-large-width);
+
+    .ch5-textinput--label {
+      font-style: var(--ch5-textinput--x-large-font-style);
+      font-size: var(--ch5-textinput--x-large-font-size);
+      font-weight: var(--ch5-textinput--x-large-font-weight);
+    }
+
+    .ch5-textinput-container {
+      .ch5-textinput--icon {
+        font-size: var(--ch5-textinput--x-large-font-size);
+        margin: var(--ch5-textinput--x-large-icon-margin);
+      }
+
+      .ch5-textinput--input {
+        padding: var(--ch5-textinput--x-large-input-padding);
+        font-style: var(--ch5-textinput--x-large-font-style);
+        font-size: var(--ch5-textinput--x-large-font-size);
+        font-weight: var(--ch5-textinput--x-large-font-weight);
+        height: var(--ch5-textinput--x-large-height);
+      }
+
+      .ch5-textinput-mask {
+        padding: 0 22px;
+        font-size: var(--ch5-textinput--x-large-font-size);
+        font-weight: var(--ch5-textinput--x-large-font-weight);
+      }
+
+      .ch5-textinput-mask--letter {
+        font-size: var(--ch5-textinput--x-large-mask-font-size);
+      }
+    }
+  }
+
+  &[stretch="content"] {
+    height: 100%;
+    width: 100%;
+
+    .ch5-textinput-container {
+      height: 100%;
+      width: 100%;
+
+      .ch5-textinput--input {
+        height: 100%;
+      }
+    }
+  }
+
+  &[stretch="width"] {
+    width: 100%;
+
+    .ch5-textinput-container {
+      width: 100%;
+    }
+  }
+
+  &[stretch="fixed"] {
+    width: 400px;
+
+    .ch5-textinput-container {
+      width: 100%;
+    }
+  }
+}
+
+/// Added automatically based on the disabled attribute or by receiveStateEnable
+.ch5-textinput--disabled {
+  @include ch5-component-disabled();
+}

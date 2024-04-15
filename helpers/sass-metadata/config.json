@@ -1,0 +1,172 @@
+{
+    "THEME_EDITOR_SOURCE_FILES_PATH": "./src/",
+    "THEME_EDITOR_THEME_FILES_PATH": "./src/ch5-core/themes/mixins/",
+    "GLOBAL_VARIABLES_FILE_PATH": "./src/ch5-core/_variables.scss",
+    "GLOBAL_MIXINS_FILE_PATH": "./src/style/_mixins.scss",
+    "SAMPLE_THEME_VARIABLES_FILE": "./src/ch5-core/themes/mixins/_light-mixin.scss",
+    "CSS_INPUT_FILE_NAME": "sass-metadata-input.scss",
+    "CSS_OUTPUT_FILE_NAME": "sass-metadata-output.css",
+    "GLOBAL_VARIABLES_VERSION": "1.0.0",
+    "DEFAULT_OUTPUT_PATH": "./generated-metadata/sass-metadata.json",
+    "VARIABLES_PATH": "/scss/_variables.scss",
+    "COMPONENTS": {
+        "ch5-animation": {
+            "value": "Ch5Animation",
+            "version": "1.0.0"
+        },
+        "ch5-background": {
+            "value": "Ch5Background",
+            "version": "1.0.0"
+        },
+        "ch5-button": {
+            "value": "Ch5Button",
+            "version": "1.0.0",
+            "undefined": [
+                "--fa-style-family-classic"
+            ]
+        },
+        "ch5-button-list": {
+            "value": "Ch5ButtonList",
+            "version": "1.0.0"
+        },
+        "ch5-color-chip": {
+            "value": "Ch5ColorChip",
+            "version": "1.0.0"
+        },
+        "ch5-color-picker": {
+            "value": "Ch5ColorPicker",
+            "version": "1.0.0"
+        },
+        "ch5-datetime": {
+            "value": "Ch5DateTime",
+            "version": "1.0.0"
+        },
+        "ch5-dpad": {
+            "value": "Ch5Dpad",
+            "version": "1.0.0"
+        },
+        "ch5-form": {
+            "value": "ch5Form",
+            "version": "1.0.0"
+        },
+        "ch5-image": {
+            "value": "Ch5Image",
+            "version": "1.0.0"
+        },
+        "ch5-keypad": {
+            "value": "Ch5Keypad",
+            "version": "1.0.0"
+        },
+        "ch5-list": {
+            "value": "Ch5List",
+            "version": "1.0.0"
+        },
+        "ch5-modal-dialog": {
+            "value": "Ch5ModalDialog",
+            "version": "1.0.0"
+        },
+        "ch5-overlay-panel": {
+            "value": "Ch5OverlayPanel",
+            "version": "1.0.0"
+        },
+        "ch5-segmented-gauge": {
+            "value": "Ch5SegmentedGauge",
+            "version": "1.0.0"
+        },
+        "ch5-select": {
+            "value": "Ch5Select",
+            "version": "1.0.0"
+        },
+        "ch5-signal-level-gauge": {
+            "value": "Ch5SignalLevelGauge",
+            "version": "1.0.0"
+        },
+        "ch5-subpage-reference-list": {
+            "value": "Ch5SubpageReferenceList",
+            "version": "1.0.0"
+        },
+        "ch5-slider": {
+            "value": "Ch5Slider",
+            "version": "1.0.0",
+            "undefined": [
+                "--temp-var",
+                "--ch5-slider--size-x-small-handle-height-oval",
+                "--ch5-slider--size-small-handle-height-oval",
+                "--ch5-slider--size-regular-handle-height-oval",
+                "--ch5-slider--size-large-handle-height-oval",
+                "--ch5-slider--size-x-large-handle-height-oval"
+            ]
+        },
+        "ch5-spinner": {
+            "value": "Ch5Spinner",
+            "version": "1.0.0"
+        },
+        "ch5-tab-button": {
+            "value": "Ch5TabButton",
+            "version": "1.0.0"
+        },
+        "ch5-template": {
+            "value": "ch5Template",
+            "version": "1.0.0"
+        },
+        "ch5-text": {
+            "value": "Ch5Text",
+            "version": "1.0.0"
+        },
+        "ch5-textinput": {
+            "value": "Ch5TextInput",
+            "version": "1.0.0"
+        },
+        "ch5-toggle": {
+            "value": "Ch5Toggle",
+            "version": "1.0.0"
+        },
+        "ch5-triggerview": {
+            "value": "ch5Triggerview",
+            "version": "1.0.0",
+            "unused": [
+                "--ch5-triggerview--gap",
+                "--ch5-triggerview--slide-max-height",
+                "--ch5-triggerview--slide-min-height",
+                "--ch5-triggerview--transition-duration"
+            ]
+        },
+        "ch5-video": {
+            "value": "Ch5Video",
+            "version": "1.0.0"
+        },
+        "ch5-video-switcher": {
+            "value": "Ch5VideoSwitcher",
+            "version": "1.0.0",
+            "undefined": [
+                "--number-of-source-list-divisions"
+            ]
+        },
+        "ch5-wifi-signal-level-gauge": {
+            "value": "Ch5WifiSignalLevelGauge",
+            "version": "1.0.0"
+        }
+    },
+    "THEMES": {
+        "dark": {
+            "value": "Dark Theme",
+            "version": "1.0.0"
+        },
+        "light": {
+            "value": "Light Theme",
+            "version": "1.0.0"
+        },
+        "high-contrast": {
+            "value": "High Contrast Theme",
+            "version": "1.0.0"
+        },
+        "zoom-dark": {
+            "value": "Zoom Dark Theme",
+            "version": "1.0.0"
+        },
+        "zoom-light": {
+            "value": "Zoom Light Theme",
+            "version": "1.0.0"
+        }
+    }
+}

@@ -10,50 +10,54 @@
 /// @group ch5-keypad-mixins
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@mixin ch5-keypad-content($property-default-background-color,
-	$property-default-border-color,
-	$property-default-font-color) {
+@mixin ch5-keypad-content($property-value) {
+  $property-background-color: "--ch5-keypad--" + $property-value + "-background-color";
+  $property-border-color: "--ch5-keypad--" + $property-value + "-border-color";
+  $property-border-style: "--ch5-keypad--" + $property-value + "-border-style";
+  $property-border-width: "--ch5-keypad--" + $property-value + "-border-width";
+  $property-font-color: "--ch5-keypad--" + $property-value + "-font-color";
+  $property-pressed-background-color: "--ch5-keypad--" + $property-value + "-pressed-background-color";
+  $property-pressed-border-color: "--ch5-keypad--" + $property-value + "-pressed-border-color";
+  $property-pressed-border-style: "--ch5-keypad--" + $property-value + "-pressed-border-style";
+  $property-pressed-border-width: "--ch5-keypad--" + $property-value + "-pressed-border-width";
+  $property-pressed-font-color: "--ch5-keypad--" + $property-value + "-pressed-font-color";
 
-	.keypad-btn {
-		color: $property-default-font-color;
+  .keypad-btn {
+    color: var(#{$property-font-color});
 
-		button {
-			background-color: $property-default-background-color;
-			border: 1px solid $property-default-border-color;
-		}
-	}
+    button {
+      background-color: var(#{$property-background-color});
+      border: var(#{$property-border-width}) var(#{$property-border-style}) var(#{$property-border-color});
+    }
+  }
+
+  .keypad-btn-pressed {
+    &.keypad-btn {
+      button {
+        background-color: var(#{$property-pressed-background-color});
+        border: var(#{$property-pressed-border-width}) var(#{$property-pressed-border-style}) var(#{$property-pressed-border-color});
+        color: var(#{$property-pressed-font-color});
+      }
+    }
+  }
 }
 
-@mixin ch5-keypad-content--pressed($property-pressed-background-color,
-	$property-pressed-border-color,
-	$property-pressed-font-color) {
-	&.keypad-btn {
-		button {
-			background-color: $property-pressed-background-color;
-			border: 1px solid $property-pressed-border-color;
-			color: $property-pressed-font-color;
-		}
-	}
-}
+@mixin ch5-keypad-fonts-sizes($property-value) {
+  $property-container-width: "--ch5-keypad--" + $property-value + "-container-width";
+  $property-container-font-major: "--ch5-keypad--" + $property-value + "-font-size-major";
+  $property-container-font-minor: "--ch5-keypad--" + $property-value + "-font-size-minor";
 
-@mixin ch5-keypad-fonts-sizes($property-container-width,
-	$property-container-height,
-	$property-container-height-extra,
-	$property-container-font-major,
-	$property-container-font-minor) {
-	width: $property-container-width;
+  width: var(#{$property-container-width});
 
-	button {
-		.label-major {
-			font-size: $property-container-font-major;
-			line-height: $property-container-font-major;
-		}
-
-		.label-minor {
-			font-size: $property-container-font-minor;
-		}
-
-	}
-
-
+  button {
+    line-height: inherit;
+    
+    .label-major {
+      font-size: var(#{$property-container-font-major});
+      line-height: var(#{$property-container-font-major});
+    }
+    .label-minor {
+      font-size: var(#{$property-container-font-minor});
+    }
+  }
 }

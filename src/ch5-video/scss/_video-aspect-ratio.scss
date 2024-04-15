@@ -11,7 +11,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-video {
-
   /// Aspect Ratio 16:9
   &.ch5-video--aspect-ratio-16-9 {
     aspect-ratio: 16/9;
@@ -22,62 +21,59 @@
     aspect-ratio: 4/3;
   }
 
-  @media only screen and (min-width: 651px) {
+  /// size=xx-large
+  &.ch5-video--size-xx-large {
+    width: var(--ch5-video--size-xx-large-min-w-651);
+  }
 
-    /// size xx-large
-    &.ch5-video--size-xx-large {
-      width: 600px;
-    }
+  /// size=x-large
+  &.ch5-video--size-x-large {
+    width: var(--ch5-video--size-x-large-min-w-651);
+  }
 
-    /// size x-large
-    &.ch5-video--size-x-large {
-      width: 560px;
-    }
+  /// size=large
+  &.ch5-video--size-large {
+    width: var(--ch5-video--size-large-min-w-651);
+  }
 
-    /// size large
-    &.ch5-video--size-large {
-      width: 520px;
-    }
+  /// size=regular
+  &.ch5-video--size-regular {
+    width: var(--ch5-video--size-regular-min-w-651);
+  }
 
-    /// size regular
-    &.ch5-video--size-regular {
-      width: 480px;
-    }
+  /// size=small
+  &.ch5-video--size-small {
+    width: var(--ch5-video--size-small-min-w-651);
+  }
 
-    /// size small
-    &.ch5-video--size-small {
-      width: 440px;
-    }
-
-    /// size x-small
-    &.ch5-video--size-x-small {
-      width: 400px;
-    }
+  /// size=x-small
+  &.ch5-video--size-x-small {
+    width: var(--ch5-video--size-x-small-min-w-651);
   }
 
   @media only screen and (max-width: 650px) {
     &.ch5-video--size-xx-large {
-      width: 300px;
+      width: var(--ch5-video--size-xx-large-max-w-650);
     }
 
     &.ch5-video--size-x-large {
-      width: 280px;
+      width: var(--ch5-video--size-x-large-max-w-650);
     }
 
     &.ch5-video--size-large {
-      width: 260px;
+      width: var(--ch5-video--size-large-max-w-650);
     }
 
     &.ch5-video--size-regular {
-      width: 240px;
+      width: var(--ch5-video--size-regular-max-w-650);
     }
 
     &.ch5-video--size-small {
-      width: 220px;
+      width: var(--ch5-video--size-small-max-w-650);
     }
 
     &.ch5-video--size-x-small {
-      width: 200px;
+      width: var(--ch5-video--size-x-small-max-w-650);
     }
   }
 

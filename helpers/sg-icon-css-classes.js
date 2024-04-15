@@ -15,12 +15,12 @@ const fse = require('fs-extra');
   const sgIconFamiliesJSONPath = `./sg-icons/metadata.json`;
 
   try {
-    const outputArray = [];
+    const responseArray = [];
 
     {
       // sg icons
       const data = JSON.parse(fs.readFileSync(sgIconFamiliesJSONPath));
-      outputArray.push(`
+      responseArray.push(`
 .sg {
 }
 `);
@@ -40,7 +40,7 @@ const fse = require('fs-extra');
             const propVal = prop.themes[i].split("-");
             filePathForIcon = "./../svgs/media-transports/" + propVal[propVal.length - 1] + "/";
           }
-          outputArray.push(`
+          responseArray.push(`
 ${finalStringValue} {
   background-image: url('${filePathForIcon}${prop.fileName}');
   height: ${prop.themes[i] === 'icons-sm' ? 20 : 32}px;
@@ -50,8 +50,8 @@ ${finalStringValue} {
       }
     }
 
-    const outputPath = process.argv[3] !== undefined ? process.argv[3] : './sg-icons/css/all.css';
-    fse.outputFileSync(outputPath, outputArray.join("\n"));
+    const allCssPath = process.argv[3] !== undefined ? process.argv[3] : './sg-icons/css/all.css';
+    fse.outputFileSync(allCssPath, responseArray.join("\n"));
 
   } catch (err) {
     console.error(err);

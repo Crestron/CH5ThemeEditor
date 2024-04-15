@@ -1,0 +1,203 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2023 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-video-switcher
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.ch5-video-switcher {
+
+  /// @require .ch5-video-switcher
+  /// Applied when display screen label  is set to true
+  &--screen-list-display-screen-label-true {
+    .ch5-video-switcher--screen-list-label {
+      display: block;
+    }
+  }
+
+  /// @require .ch5-video-switcher
+  /// Applied when display screen label  is set to false
+  &--screen-list-display-screen-label-false {
+    .ch5-video-switcher--screen-list-label {
+      display: none;
+    }
+  }
+
+  &.ch5-video-switcher--source-list-position-top,
+  &.ch5-video-switcher--source-list-position-bottom {
+    .ch5-video-switcher--screen-list-parent {
+      height: $ch5-video-switcher--screen-size;
+      width: 100%;
+      padding: 5px; // Do Not create variable
+
+      .ch5-video-switcher--screen-list {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  &.ch5-video-switcher--source-list-position-left,
+  &.ch5-video-switcher--source-list-position-right {
+    .ch5-video-switcher--screen-list-parent {
+      height: 100%;
+      width: $ch5-video-switcher--screen-size;
+      padding: 5px; // Do Not create variable
+
+      .ch5-video-switcher--screen-list {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  /// @require .ch5-video-switcher
+  /// Applied to the list of screens
+  &--screen-list {
+    display: grid;
+    grid-gap: 2px; // Do not allow access as a variable
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+    .screen-container {
+      border-radius: var(--ch5-video-switcher--screen-container-border-radius);
+      border-width: var(--ch5-video-switcher--screen-container-border-width);
+      border-style: var(--ch5-video-switcher--screen-container-border-style);
+      border-color: var(--ch5-video-switcher--screen-container-border-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: var(--ch5-video-switcher--screen-container-background-color);
+      position: relative;
+      padding: var(--ch5-video-switcher--screen-item-padding);
+
+      .source-onscreen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100% !important; // TODO - remove important after fixing in crcomlib
+        height: 100% !important; // Checking for above
+
+        .source-icon {
+          font-size: calc(1em - var(--ch5-video-switcher--screen-item-padding));
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--ch5-video-switcher--source-list-label-color);
+
+          &.sg {
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: inherit;
+            height: 30%;
+            border: none;
+          }
+        }
+
+        .ch5-video-switcher--source-list-label {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 100%;
+          text-align: center;
+          font-size: calc(0.2em + 10px);
+          font-weight: var(--ch5-video-switcher--source-list-label-weight);
+          font-style: var(--ch5-video-switcher--source-list-label-style);
+          color: var(--ch5-video-switcher--source-list-label-color);
+          padding: 0 5px;
+        }
+      }
+
+      &.hideScreen {
+        display: none;
+      }
+    }
+
+    .ch5-video-switcher--screen-list-label:empty {
+      display: none;
+    }
+
+    .ch5-video-switcher--screen-list-label {
+      color: var(--ch5-video-switcher--screen-list-label-color);
+      font-style: var(--ch5-video-switcher--screen-list-label-style);
+      font-weight: var(--ch5-video-switcher--screen-list-label-weight);
+      font-size: var(--ch5-video-switcher--screen-list-label-size);
+      width: 100%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1;
+      min-height: var(--ch5-video-switcher--screen-list-label-size);
+      user-select: none;
+    }
+
+    &-label {
+      &-right {
+        .ch5-video-switcher--screen-list-label {
+          text-align: right;
+        }
+      }
+
+      &-left {
+        .ch5-video-switcher--screen-list-label {
+          text-align: left;
+        }
+      }
+
+      &-center {
+        .ch5-video-switcher--screen-list-label {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &--screen-list {
+
+    /// Applied when screen aspect ratio is stretch
+    &.ch5-video-switcher--screen-aspect-ratio-stretch {
+      .screen-container {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+
+    /// Applied when screen aspect ratio is 16:9
+    &.ch5-video-switcher--screen-aspect-ratio-16-9 {
+      .screen-container {
+        aspect-ratio: 16/9;
+      }
+    }
+
+    /// Applied when screen aspect ratio is 4:3
+    &.ch5-video-switcher--screen-aspect-ratio-4-3 {
+      .screen-container {
+        aspect-ratio: 4/3;
+      }
+    }
+  }
+}
+
+ch5-video-switcher[screenaspectratio="4:3"],
+ch5-video-switcher[screenaspectratio="16:9"] {
+  .ch5-video-switcher--screen-list-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ch5-video-switcher--screen-list {
+    height: auto !important;
+  }
+}

@@ -10,32 +10,25 @@
 /// @group ch5-triggerview-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// default font size unit for the triggerview
-$ch5-triggerview-font-size-unit: $ch5-font-size-unit !default;
+ch5-triggerview {
+  /// description: Font size for the triggerview
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 16px 
+  /// related-theme-variable: --theme-ch5-triggerview--font-size
+  --ch5-triggerview--font-size: var(--theme-ch5-triggerview--font-size);
 
-/// default font size value for the triggerview
-$ch5-triggerview-font-size-value: $ch5-font-size-value !default;
+  /// description: Font style for the triggerview
+  /// type: list
+  /// values: normal, italic
+  /// example: normal 
+  /// related-theme-variable: --theme-ch5-triggerview--font-style
+  --ch5-triggerview--font-style: var(--theme-ch5-triggerview--font-style);
 
-/// default font size for the triggerview
-$ch5-triggerview-font-size: $ch5-triggerview-font-size-value + $ch5-triggerview-font-size-unit !default;
-
-/// default font style for the triggerview
-$ch5-triggerview-font-style: $ch5-font-style !default;
-
-/// default font weight for the triggerview
-$ch5-triggerview-font-weight: $ch5-font-weight !default;
-
-/// gap between views in px
-$ch5-triggerview-gap: 16px !default;
-
-/// triggerview minimum height in px
-$ch5-triggerview-slide-min-height: 0px !default;
-
-/// triggerview maximum height in px
-$ch5-triggerview-slide-max-height: none !default;
-
-/// duration of changing from one view to another.
-$ch5-triggerview-transition-duration: 0.6s !default;
-
-/// transition effect(describe animation on content of the child view)
-$ch5-triggerview-transition-timing-function: ease-out !default;
+  /// description: Font weight for the triggerview
+  /// type: list
+  /// values: normal, bold
+  /// example: normal
+  /// related-theme-variable: --theme-ch5-triggerview--font-weight
+  --ch5-triggerview--font-weight: var(--theme-ch5-triggerview--font-weight);
+}

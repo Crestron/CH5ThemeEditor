@@ -12,26 +12,12 @@
 
 .ch5-slider {
 
-	.ch5-slider-ticks {
-		.noUi-target {
-			border: 0;
-		}
-		.noUi-base {
-			border-radius: 4px;
-		}
-	}
-
 	/// Applied when slider shape="rectangle"
 	&.ch5-slider--shape--rectangle {
 		.noUi-handle,
 		.noUi-target,
 		.noUi-connects {
-			border-radius: 0;
-		}
-		&.ch5-slider-ticks {
-			.noUi-base {
-				border-radius: 0;
-			}
+			border-radius: var(--ch5-slider--shape-rectangle-border-radius);
 		}
 	}
 
@@ -39,31 +25,30 @@
 	&.ch5-slider--shape--circle {
 		.noUi-target,
 		.noUi-connects {
-			border-radius: 8px;
+			border-radius: var(--ch5-slider--shape-circle-border-radius);
 		}
 		.noUi-handle {
 			border-radius: 50%;
 		}
-		&.ch5-slider-ticks {
-			.noUi-base {
-				border-radius: 8px;
+	}
+
+		/// Applied when slider shape="rounded-rectangle"
+		&.ch5-slider--shape--rounded-rectangle {
+			.noUi-target,
+			.noUi-connects,
+			.noUi-handle {
+				border-radius: var(--ch5-slider--shape-rounded-rectangle-border-radius);
 			}
 		}
-	}
 
 	/// Applied when slider shape="oval"
 	&.ch5-slider--shape--oval {
 		.noUi-target,
 		.noUi-connects {
-			border-radius: 10px;
+			border-radius: var(--ch5-slider--shape-oval-border-radius);
 		}
 		.noUi-handle {
-			border-radius: 50%;
-		}
-		&.ch5-slider-ticks {
-			.noUi-base {
-				border-radius: 10px;
-			}
+			border-radius: var(--ch5-slider--shape-oval-handle-border-radius);
 		}
 	}
 }

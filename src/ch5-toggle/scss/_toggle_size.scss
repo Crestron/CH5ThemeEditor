@@ -11,99 +11,106 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-toggle {
-    /// Applied when size='regular'
-    .ch5-toggle__handle--size-regular {
-        width: 100px;
+  /// Applied when size='regular'
+  .ch5-toggle__handle--size-regular {
+    width: 100px;
 
-        .ch5-toggle__off-label,
-        .ch5-toggle__on-label {
-            display: table-cell;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-
-        /* height: 33.3px; */
+    .ch5-toggle__off-label,
+    .ch5-toggle__on-label {
+      display: table-cell;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
-    /// Applied when size='x-small'
-    .ch5-toggle__handle--size-x-small {
-        min-width: 80px;
+    .ch5-toggle__on-icon,
+    .ch5-toggle__off-icon {
+      color: var(--ch5-toggle--regular-icon-color);
+      font-size: var(--ch5-toggle--regular-icon-size);
+    }
+  }
 
-        /* height: 16.66px; */
-        .ch5-toggle__off-label,
-        .ch5-toggle__on-label {
-            font-size: 10px;
-            display: table-cell;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
+  /// Applied when size='x-small'
+  .ch5-toggle__handle--size-x-small {
+    min-width: 80px;
 
-        .ch5-toggle__off-icon,
-        .ch5-toggle__on-icon {
-            font-size: 10px;
-        }
+    /* height: 16.66px; */
+    .ch5-toggle__off-label,
+    .ch5-toggle__on-label {
+      font-size: var(--ch5-toggle--x-small-font-size);
+      display: table-cell;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
-    /// Applied when size='small'
-    .ch5-toggle__handle--size-small {
-        min-width: 90px;
+    .ch5-toggle__off-icon,
+    .ch5-toggle__on-icon {
+      color: var(--ch5-toggle--x-small-icon-color);
+      font-size: var(--ch5-toggle--x-small-icon-size);
+    }
+  }
 
-        /*  height: 25px; */
-        .ch5-toggle__off-label,
-        .ch5-toggle__on-label {
-            font-size: 12px;
-            display: table-cell;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
+  /// Applied when size='small'
+  .ch5-toggle__handle--size-small {
+    min-width: 90px;
 
-        .ch5-toggle__off-icon,
-        .ch5-toggle__on-icon {
-            font-size: 12px;
-        }
+    /*  height: 25px; */
+    .ch5-toggle__off-label,
+    .ch5-toggle__on-label {
+      font-size: var(--ch5-toggle--small-font-size);
+      display: table-cell;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
-    /// Applied when size='large'
-    .ch5-toggle__handle--size-large {
-        width: 125px;
+    .ch5-toggle__off-icon,
+    .ch5-toggle__on-icon {
+      color: var(--ch5-toggle--small-icon-color);
+      font-size: var(--ch5-toggle--small-icon-size);
+    }
+  }
 
-        /*  height: 41.66px; */
-        .ch5-toggle__off-label,
-        .ch5-toggle__on-label {
-            font-size: 18px;
-            display: table-cell;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
+  /// Applied when size='large'
+  .ch5-toggle__handle--size-large {
+    width: 125px;
 
-        .ch5-toggle__off-icon,
-        .ch5-toggle__on-icon {
-            font-size: 18px;
-        }
+    /*  height: 41.66px; */
+    .ch5-toggle__off-label,
+    .ch5-toggle__on-label {
+      font-size: var(--ch5-toggle--large-font-size);
+      display: table-cell;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
-    /// Applied when size='x-large'
-    .ch5-toggle__handle--size-x-large {
-        width: 150px;
+    .ch5-toggle__off-icon,
+    .ch5-toggle__on-icon {
+      color: var(--ch5-toggle--large-icon-color);  
+      font-size: var(--ch5-toggle--large-icon-size);
+    }
+  }
 
-        /*   height: 50px; */
-        .ch5-toggle__off-label,
-        .ch5-toggle__on-label {
-            font-size: 20px;
-            display: table-cell;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
+  /// Applied when size='x-large'
+  .ch5-toggle__handle--size-x-large {
+    width: 150px;
 
-        .ch5-toggle__off-icon,
-        .ch5-toggle__on-icon {
-            font-size: 20px;
-        }
+    /*   height: 50px; */
+    .ch5-toggle__off-label,
+    .ch5-toggle__on-label {
+      font-size: var(--ch5-toggle--x-large-font-size);
+      display: table-cell;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
+    .ch5-toggle__off-icon,
+    .ch5-toggle__on-icon {
+      color: var(--ch5-toggle--x-large-icon-color);
+      font-size: var(--ch5-toggle--x-large-icon-size);
+    }
+  }
 }

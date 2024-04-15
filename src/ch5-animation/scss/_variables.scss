@@ -10,17 +10,39 @@
 /// @group ch5-animation-variables
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/// Font size regular
-$ch5-animation-font-size-regular: 72px !default;
+ch5-animation {
+  /// description: Animation size = regular
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 72px 
+  /// related-theme-variable: --theme-ch5-animation--size-regular
+  --ch5-animation--size-regular: var(--theme-ch5-animation--size-regular);
 
-/// Font size small
-$ch5-animation-font-size-small: 40px !default;
+  /// description: Animation size = small
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 40px 
+  /// related-theme-variable: --theme-ch5-animation--size-small
+  --ch5-animation--size-small: var(--theme-ch5-animation--size-small);
 
-/// Font size large
-$ch5-animation-font-size-large: 104px !default;
+  /// description: Animation size = large
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 104px 
+  /// related-theme-variable: --theme-ch5-animation--size-large
+  --ch5-animation--size-large: var(--theme-ch5-animation--size-large);
 
-/// Font size x-large
-$ch5-animation-font-size-x-large: 136px !default;
+  /// description: Animation size = x-large
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 136px 
+  /// related-theme-variable: --theme-ch5-animation--size-x-large
+  --ch5-animation--size-x-large: var(--theme-ch5-animation--size-x-large);
 
-/// Animation color
-$ch5-animation-color: $theme-foreground-color !default;
+  /// description: Animation color
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #3f3f3f 
+  /// related-theme-variable: --theme-ch5-animation--color
+  --ch5-animation--color: var(--theme-ch5-animation--color);
+}
