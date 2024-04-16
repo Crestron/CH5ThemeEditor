@@ -52,8 +52,8 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-        height: calc(1em / var(--number-of-source-list-divisions));
-        width: calc(1em / var(--number-of-source-list-divisions));
+        height: calc(1.5 * var(--number-of-source-list-divisions));
+        width: calc(1.5 * var(--number-of-source-list-divisions));
       }
 
       .source-icon {
@@ -173,6 +173,11 @@
         width: calc(calc(0.34 * var(--ch5-video-switcher--width) / 1.5) / var(--number-of-source-list-divisions));
         height: 100%;
       }
+
+      .source-icon-url {
+        width: calc(1.5 * var(--number-of-source-list-divisions));
+        height: calc(1.5 * var(--number-of-source-list-divisions));
+      }
     }
 
     &.ch5-video-switcher--source-list-scrollbar-true {
@@ -202,6 +207,11 @@
         // 1.5 denotes 9:6 aspect ratio - $ch5-video-switcher--source-size is 0.34
         height: calc(calc(0.34 * var(--ch5-video-switcher--width) / 1.5) / var(--number-of-source-list-divisions));
         width: 100%;
+      }
+
+      .source-icon-url {
+        height: calc(1.5 * var(--number-of-source-list-divisions));
+        width: calc(1.5 * var(--number-of-source-list-divisions));
       }
     }
 
