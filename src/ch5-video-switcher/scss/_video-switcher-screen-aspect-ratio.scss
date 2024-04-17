@@ -77,6 +77,7 @@
       background-color: var(--ch5-video-switcher--screen-container-background-color);
       position: relative;
       padding: var(--ch5-video-switcher--screen-item-padding);
+      overflow: hidden;
 
       .source-onscreen {
         display: flex;
