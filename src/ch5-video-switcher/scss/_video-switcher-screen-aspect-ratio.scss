@@ -87,6 +87,12 @@
         width: 100% !important; // TODO - remove important after fixing in crcomlib
         height: 100% !important; // Checking for above
 
+        .source-icon-url {
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+
         .source-icon {
           font-size: calc(1em - var(--ch5-video-switcher--screen-item-padding));
           display: flex;
