@@ -1,55 +1,55 @@
 {
-  "name": "@crestron/ch5-theme",
-  "version": "2.8.0",
-  "description": "Crestron HTML5 (CH5) Themes CSS",
-  "author": "Crestron",
-  "license": "SEE LICENSE IN LICENSE.txt",
-  "files": [
-    "LICENSE.txt",
-    "output/themes"
-  ],
-  "repository": {
-    "url": "https://github.com/Crestron/CH5ThemeEditor.git",
-    "type": "git"
-  },
-  "keywords": [
-    "ch5",
-    "Theme"
-  ],
-  "scripts": {
-    "build:dev": "npm run clean && webpack --config webpack.build.js --output-path ./output/themes",
-    "build:prod": "npm run clean && webpack --config webpack.build.js --output-path ./output/themes --mode production",
-    "clean": "rimraf output",
-    "create-theme": "node ./helpers/create-theme.js",
-    "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json",
-    "gen:sass-output": "node ./helpers/sass-output/index.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json",
-    "gen:sass-schema": "node ./helpers/metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json",
-    "gen:sass-metadata": "node ./helpers/sass-metadata/index.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-metadata.json",
-    "gen:sass:all": "npm run gen:sass-metadata && npm run gen:sass-output && npm run gen:sass-schema && npm run gen:icon-library"
-  },
-  "config": {
-    "local": "./output/themes",
-    "showcase": "./../../CH5/CH5ShowcaseApp/node_modules/@crestron/ch5-theme/output/themes/",
-    "testing": "/Users/rdabbir/Downloads/shell/node_modules/@crestron/ch5-theme/output/themes/",
-    "shell": "./../../CH5/CH5SampleProjects/UISampleProjects/Shell/node_modules/@crestron/ch5-theme/output/themes/"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@fortawesome/fontawesome-free": "^6.3.0",
-    "@material-icons/font": "^1.0.25",
-    "@types/node": "^20.4.0",
-    "copy-webpack-plugin": "^11.0.0",
-    "css-loader": "^5.0.0",
-    "css-minimizer-webpack-plugin": "^5.0.1",
-    "dotenv": "^16.3.1",
-    "glob": "^10.3.10",
-    "mini-css-extract-plugin": "^2.7.6",
-    "nouislider": "^15.7.1",
-    "path": "^0.12.7",
-    "rimraf": "^5.0.5",
-    "sass": "^1.63.6",
-    "sass-loader": "^13.3.2",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^5.1.4"
-  }
+    "name": "@crestron/ch5-theme", 
+    "version": "2.9.1", 
+    "description": "Crestron HTML5 (CH5) Themes CSS", 
+    "author": "Crestron", 
+    "license": "SEE LICENSE IN LICENSE.txt", 
+    "files": [
+        "LICENSE.txt", 
+        "output/themes"
+    ], 
+    "repository": {
+        "url": "https://github.com/Crestron/CH5ThemeEditor.git", 
+        "type": "git"
+    }, 
+    "keywords": [
+        "ch5", 
+        "Theme"
+    ], 
+    "scripts": {
+        "build:dev": "npm run clean && webpack --config webpack.build.js --output-path ./output/themes", 
+        "build:prod": "npm run clean && webpack --config webpack.build.js --output-path ./output/themes --mode production", 
+        "clean": "rimraf output", 
+        "create-theme": "node ./helpers/create-theme.js", 
+        "gen:icon-library": "node ./helpers/icon-library.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/icon-library.json", 
+        "gen:sass-output": "node ./helpers/sass-output/index.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json", 
+        "gen:sass-schema": "node ./helpers/metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json", 
+        "gen:sass-metadata": "node ./helpers/sass-metadata/index.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-metadata.json", 
+        "gen:sass:all": "npm run gen:sass-metadata && npm run gen:sass-output && npm run gen:sass-schema && npm run gen:icon-library"
+    }, 
+    "config": {
+        "local": "./output/themes", 
+        "showcase": "./../../CH5/CH5ShowcaseApp/node_modules/@crestron/ch5-theme/output/themes/", 
+        "testing": "/Users/rdabbir/Downloads/shell/node_modules/@crestron/ch5-theme/output/themes/", 
+        "shell": "./../../CH5/CH5SampleProjects/UISampleProjects/Shell/node_modules/@crestron/ch5-theme/output/themes/"
+    }, 
+    "dependencies": {}, 
+    "devDependencies": {
+        "@fortawesome/fontawesome-free": "^6.3.0", 
+        "@material-icons/font": "^1.0.25", 
+        "@types/node": "^20.4.0", 
+        "copy-webpack-plugin": "^11.0.0", 
+        "css-loader": "^5.0.0", 
+        "css-minimizer-webpack-plugin": "^5.0.1", 
+        "dotenv": "^16.3.1", 
+        "glob": "^10.3.10", 
+        "mini-css-extract-plugin": "^2.7.6", 
+        "nouislider": "^15.7.1", 
+        "path": "^0.12.7", 
+        "rimraf": "^5.0.5", 
+        "sass": "^1.63.6", 
+        "sass-loader": "^13.3.2", 
+        "webpack": "^5.74.0", 
+        "webpack-cli": "^5.1.4"
+    }
 }
