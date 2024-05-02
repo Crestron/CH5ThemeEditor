@@ -12,19 +12,22 @@
 
 ch5-qrcode {
   @include ch5-component-base();
+  display: inline-flex;
+  position: relative;
 }
 
 /// Main class
 .ch5-qrcode {
   position: relative;
   display: inline-flex;
-  min-width: 160px;
-  min-height: 160px;
-  aspect-ratio: 1 / 1;
 
   canvas {
+    min-width: 160px;
+    min-height: 160px;
+    aspect-ratio: 1 / 1;  
     border-width: var(--ch5-qrcode--border-width);
     border-style: var(--ch5-qrcode--border-style);
     border-color: var(--ch5-qrcode--border-color);
   }
+
 }
