@@ -53,13 +53,15 @@ ch5-text {
     /// Applied when multilineSupport='true'
     &.ch5-text--multiline-support-true {
       overflow: hidden;
-      display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3; // start showing ellipsis when 3rd line is reached
       white-space: pre-wrap !important; // let the text wrap preserving spaces
       word-break: var(--ch5-text--word-break);
     }
 
+    &.ch5-text--multiline-support-true.ch5-text--truncate-text-true {
+      display: -webkit-box;      
+    }
     /// Applied when multilineSupport='false'
     &.ch5-text--multiline-support-false {
       white-space: nowrap; // keeps the text in a single line
