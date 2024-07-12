@@ -35,7 +35,6 @@ ch5-slider {
 }
 
 .ch5-slider--disabled {
-
   .slider-off-button,
   .slider-on-button {
     @include ch5-component-disabled();
@@ -115,6 +114,14 @@ ch5-slider {
     border-width: var(--ch5-slider--handle-border-width);
     background: var(--ch5-slider--handle-background-color);
     box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .noUi-touch-area {
+    padding: var(--ch5-slider--handle-touch-padding);
   }
 
   .ch5-slider-ticks {
