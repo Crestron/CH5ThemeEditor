@@ -558,7 +558,7 @@ ch5-slider {
 
   /// description: Handle touch padding for slider
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, vw, vh, em, rem
   /// example: 0px 
   /// related-theme-variable: --theme-ch5-slider--size-x-large-handle-height-oval
   --ch5-slider--handle-touch-padding: var(--theme-ch5-slider--handle-touch-padding);
