@@ -555,6 +555,13 @@ ch5-slider {
   /// example: 36px 
   /// related-theme-variable: --theme-ch5-slider--size-x-large-handle-height-oval
   --ch5-slider--size-x-large-handle-height-oval: var(--theme-ch5-slider--size-x-large-handle-height-oval);
+
+  /// description: Handle touch padding for slider
+  /// type: unit
+  /// values: px, vw, vh, em, rem
+  /// example: 0px 
+  /// related-theme-variable: --theme-ch5-slider--size-x-large-handle-height-oval
+  --ch5-slider--handle-touch-padding: var(--theme-ch5-slider--handle-touch-padding);
 }
 
 // extending the variables by button
