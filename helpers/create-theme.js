@@ -9,64 +9,60 @@ const path = require('path'),
   fs = require('fs'),
   logging = require('./logging');
 
-(function(path, fs, logging) {
+(function (path, fs, logging) {
 
   let themesPath = path.resolve(__dirname + '/../themes');
   let themesVariablesDirectory = path.resolve(__dirname + '/../src/ch5-core/themes');
   let themeName = process.argv[2];
   let themeIdentifier = '-theme';
+  let ext = ".scss";
   let baseThemes = ['dark', 'light'];
-  let ext = '.scss';
   let linkingType = '';
   let extendedTheme = process.argv[3] !== undefined ? process.argv[3] : 'light';
 
-  if(isLinkingArgument(3)) {
+  if (isLinkingArgument(3)) {
     linkingType = process.argv[3];
     extendedTheme = 'high-contrast';
-  } else if(isLinkingArgument(4)) {
+  } else if (isLinkingArgument(4)) {
     linkingType = process.argv[4];
   }
 
-  if(themeName === undefined) {
+  if (themeName === undefined) {
     logging.error(`Please provide a theme name: npm run create-theme <your-theme-name> <base-theme-name>\nExample npm run create-theme mycustom light`);
     return;
-  } 
+  }
 
   let themeGeneration = {
-    
+
     theme: themeName,
     extendedTheme: extendedTheme,
-    fullPath: `${themesPath}/${themeName}`,
+    fullPath: `${themesPath}`,
     themeFilePath: `${themesPath}/${themeName}`,
     attempts: 0,
     maxAttempts: 20,
 
-    generate: function() {
-      console.log('Dirname ', __dirname);
-      if(this.themeExists() === false) {
+    generate: function () {
+      if (this.themeExists() === false) {
         this.addThemeStructure();
       }
     },
 
-    themeExists: function() {
+    themeExists: function () {
       logging.loading(`Checking if theme "${this.theme}" exists...`);
 
       logging.loading(`Checking if extendedTheme exists ${this.extendedTheme}`);
 
-      if(!existsTheme(this.extendedTheme)) {
+      if (!existsTheme(this.extendedTheme)) {
         logging.error(`Extended theme ${this.extendedTheme} doesn't exists`);
         return;
       }
 
-      if(
-        fs.existsSync(this.fullPath) === true ||
-        fs.existsSync(this.fullPath) === true
-      ) {
+      if (fs.existsSync(this.themeFilePath) === true) {
         logging.error(`The theme "${this.theme}" already exists`);
         return true;
       }
 
-      if(fs.existsSync(path.resolve(__dirname, themesVariablesDirectory, `${this.theme}${ext}`))) {
+      if (fs.existsSync(path.resolve(__dirname, themesVariablesDirectory, `${this.theme}${ext}`))) {
         logging.error(`A file related to "${this.theme}" theme was found in ./src/ch5-core/themes. Resolve the conflict or change the theme name and run the command again`);
         return true;
       }
@@ -75,28 +71,29 @@ const path = require('path'),
       return false;
     },
 
-    addThemeStructure: function() {
-
+    addThemeStructure: function () {
       logging.loading('Creating base structure for theme...');
-      fs.mkdirSync(this.fullPath);
 
-      if(linkingType.trim() === '--hard-link') { 
-        
-        fs.copyFileSync(path.resolve(themesVariablesDirectory ,`${this.extendedTheme}${ext}`) ,path.resolve(themesVariablesDirectory, `${this.theme}${ext}`));
+      if (linkingType.trim() === '--hard-link') {
+        fs.copyFileSync(path.resolve(themesVariablesDirectory, `${this.extendedTheme}${ext}`), path.resolve(themesVariablesDirectory, `${this.theme}${ext}`));
       } else {
-        let themeVariablesFile = fs.createWriteStream(path.resolve(themesVariablesDirectory, `${this.theme}${ext}`));
-        themeVariablesFile.write(`// this file provides location where you override variables used in extended theme`);
-        themeVariablesFile.write(`\n\n\n// put your variables before the @import below \n`);
-        themeVariablesFile.write(`@import "./${this.extendedTheme}${ext}";`);
-        themeVariablesFile.end();
+        copyFileAndContentsForNewTheme(path.resolve(themesVariablesDirectory, "mixins", `_${this.theme}-mixin${ext}`),
+          path.resolve(themesVariablesDirectory, "mixins", `_${this.extendedTheme}-mixin${ext}`),
+          this.theme,
+          this.extendedTheme);
+        copyFileAndContentsForNewTheme(path.resolve(themesVariablesDirectory, `_${this.theme}-temporary${ext}`),
+          path.resolve(themesVariablesDirectory, `_${this.extendedTheme}-temporary${ext}`),
+          this.theme,
+          this.extendedTheme);
+        copyFileAndContentsForNewTheme(path.resolve(themesVariablesDirectory, `_${this.theme}${ext}`),
+          path.resolve(themesVariablesDirectory, `_${this.extendedTheme}${ext}`),
+          this.theme,
+          this.extendedTheme);
       }
-      
-      const extendedThemeScssFile = fs.readFileSync(path.resolve(themesPath, this.extendedTheme, `${this.extendedTheme}${themeIdentifier}${ext}`));
-      const themeNamePattern = new RegExp("(?=[^!\s])" + this.extendedTheme, "gm");
-      const themeScssDefinition = extendedThemeScssFile.toString().replace(themeNamePattern, this.theme);
-      const currentScssFile = fs.createWriteStream(path.resolve(this.fullPath, `${this.theme}${themeIdentifier}${ext}`), 'utf8');
-      currentScssFile.write(themeScssDefinition);
-      currentScssFile.end();
+      copyFileAndContentsForNewTheme(path.resolve(this.fullPath, `${this.theme}${themeIdentifier}${ext}`),
+        path.resolve(themesPath, `${this.extendedTheme}${themeIdentifier}${ext}`),
+        this.theme,
+        this.extendedTheme);
 
       logging.success('Base structure was successfully created');
       logging.message(`Congrats!!! ->>> Go modify your theme in ./ch5-core/themes/${this.theme}.scss`);
@@ -111,7 +108,22 @@ const path = require('path'),
   }
 
   function existsTheme(themeName) {
-    return fs.existsSync(path.resolve(themesPath, themeName));
+    return fs.existsSync(path.resolve(themesPath, themeName + themeIdentifier + ext));
+  }
+
+  function copyFileAndContentsForNewTheme(pathVariableTo, pathVariableFrom, toTheme, fromTheme) {
+    const extendedThemeScssFile = fs.readFileSync(pathVariableFrom);
+    const themeNamePattern = new RegExp("(?=[^!\s])" + toTheme, "gm");
+    let themeScssDefinition = extendedThemeScssFile.toString().replace(themeNamePattern, fromTheme);
+    themeScssDefinition = themeScssDefinition.replace("ch5-" + fromTheme + "-theme", "ch5-" + toTheme + "-theme");
+    themeScssDefinition = themeScssDefinition.replace("ch5-themes-" + fromTheme, "ch5-themes-" + toTheme);
+    themeScssDefinition = themeScssDefinition.replace("../../ch5-core/themes/mixins/" + fromTheme + "-mixin", "../../ch5-core/themes/mixins/" + toTheme + "-mixin");
+    themeScssDefinition = themeScssDefinition.replace('[data-theme="' + fromTheme + '-theme"', '[data-theme="' + toTheme + '-theme"');
+    themeScssDefinition = themeScssDefinition.replace("." + fromTheme + "-theme {", "." + toTheme + "-theme {");
+    themeScssDefinition = themeScssDefinition.replace("ch5-core/themes/" + fromTheme + "-temporary", "ch5-core/themes/" + toTheme + "-temporary");
+    const themeVariablesFile = fs.createWriteStream(pathVariableTo, 'utf8');
+    themeVariablesFile.write(themeScssDefinition);
+    themeVariablesFile.end();
   }
 
 })(path, fs, logging);
