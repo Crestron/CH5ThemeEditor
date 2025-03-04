@@ -14,6 +14,7 @@ ch5-image {
   @include ch5-component-base();
 
   display: inline-block;
+  touch-action: none;
 }
 
 /// Added automatically on the first child of the ch5-image element.

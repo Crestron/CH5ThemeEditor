@@ -11,20 +11,22 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ch5-tab-button {
+  height: var(--ch5-tab-button--button-container-height);
+  width: var(--ch5-tab-button--button-container-width);
 
   /// Applied when orientation is horizontal
   &.ch5-tab-button--orientation-horizontal {
-    .ch5-tab-button--button-container {
-      height: var(--ch5-tab-button--button-container-height);
+    .ch5-tab-button--button-container {      
+      flex: 1 1;
     }
   }
-
+  .ch5-tab-button--button-container {
+    width: 100%;
+    height: 100%;
+  }
+  
   /// Applied when orientation is vertical
   &.ch5-tab-button--orientation-vertical {
     flex-direction: column;
-
-    .ch5-tab-button--button-container {
-      width: var(--ch5-tab-button--button-container-width);
-    }
   }
 }

@@ -35,6 +35,7 @@ ch5-slider {
 }
 
 .ch5-slider--disabled {
+
   .slider-off-button,
   .slider-on-button {
     @include ch5-component-disabled();
@@ -102,6 +103,9 @@ ch5-slider {
 
   .noUi-connect {
     background: var(--ch5-slider--connect-background-color);
+    border-color: var(--ch5-slider--connect-border-color);
+    border-style: var(--ch5-slider--connect-border-style);
+    border-width: var(--ch5-slider--connect-border-width);
   }
 
   .noUi-connects {

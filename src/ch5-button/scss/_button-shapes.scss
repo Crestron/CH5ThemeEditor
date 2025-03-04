@@ -14,12 +14,20 @@
 /// Applied when shape='rectangle'
 .ch5-button--rectangle {
 	@include border-radius(0);
+	.cb-btn {
+		@include border-radius(0);
+	}
 	overflow: hidden;
 }
 
 /// Applied when shape='rounded-rectangle'
 .ch5-button--rounded-rectangle {
-	@include border-radius(var(--ch5-button--rounded-rectangle-border-radius));
+	@include border-radius-rounded-rectangle(
+		--ch5-button--rounded-rectangle-border-radius-top-left,
+		--ch5-button--rounded-rectangle-border-radius-top-right,
+		--ch5-button--rounded-rectangle-border-radius-bottom-left,
+		--ch5-button--rounded-rectangle-border-radius-bottom-right
+	);
 	overflow: hidden;
 }
 
@@ -32,7 +40,9 @@
 	text-align: center;
 	overflow: hidden;
 	@include border-radius(50%);
+
 	.cb-btn {
+		@include border-radius(50%);
 		display: inline-flex;
 		vertical-align: middle;
 		width: 100%;
@@ -43,12 +53,17 @@
 /// Applied when shape='oval'
 .ch5-button--oval {
 	@include border-radius(var(--ch5-button--oval-border-radius));
-	// overflow: auto;
+	.cb-btn {
+		@include border-radius(var(--ch5-button--oval-border-radius));
+	}
 	overflow: hidden;
 }
 
 /// Applied when shape='tab'
 .ch5-button--tab {
 	@include border-radius(var(--ch5-button--tab-border-radius));
+	.cb-btn {
+		@include border-radius(var(--ch5-button--tab-border-radius));
+	}
 	overflow: hidden;
 }

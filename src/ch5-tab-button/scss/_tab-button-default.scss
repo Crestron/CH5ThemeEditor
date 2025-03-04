@@ -14,7 +14,8 @@ ch5-tab-button {
   @include ch5-component-base();
 
   position: relative;
-  display: grid;
+  // display: grid;
+  display: flex;
 }
 
 /// Main class
@@ -40,15 +41,14 @@ ch5-tab-button {
 }
 
 .ch5-tab-button.ch5-tab-button--disabled {
-  &~.scrollbar-container {
+  & ~ .scrollbar-container {
     @include ch5-component-disabled();
   }
 }
 
 .ch5-tab-button--button-container {
-  width: 5px;
-  height: 5px;
+  // width: 5px;
+  // height: 5px;
   min-width: 5px;
   min-height: 5px;
-  flex: 1 1;
 }

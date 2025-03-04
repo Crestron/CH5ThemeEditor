@@ -444,6 +444,27 @@ ch5-slider {
   /// related-theme-variable: --theme-ch5-slider--connect-background-color
   --ch5-slider--connect-background-color: var(--theme-ch5-slider--connect-background-color);
 
+  /// description: Border color for slider connect
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #efefef
+  /// related-theme-variable: --theme-ch5-slider--connect-border-color
+  --ch5-slider--connect-border-color: var(--theme-ch5-slider--connect-border-color);
+
+  /// description: Border style for Slider connect
+  /// type: list
+  /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// example: solid 
+  /// related-theme-variable: --theme-ch5-slider--connect-border-style
+  --ch5-slider--connect-border-style: var(--theme-ch5-slider--connect-border-style);
+
+  /// description: Width for slider connect
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 1px 
+  /// related-theme-variable: --theme-ch5-slider--connect-border-width
+  --ch5-slider--connect-border-width: var(--theme-ch5-slider--connect-border-width);
+
   /// description: Slider target background color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
@@ -562,6 +583,41 @@ ch5-slider {
   /// example: 0px 
   /// related-theme-variable: --theme-ch5-slider--size-x-large-handle-height-oval
   --ch5-slider--handle-touch-padding: var(--theme-ch5-slider--handle-touch-padding);
+
+  /// description: Text decoration for the slider label
+  /// type: list
+  /// values: none, underline, strike-through
+  /// example: none
+  /// related-theme-variable: --theme-ch5-slider--label-text-decoration
+  --ch5-slider--label-text-decoration: var(--theme-ch5-slider--label-text-decoration);
+
+  /// description: Font size for the slider label
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 14px
+  /// related-theme-variable: --theme-ch5-slider--label-font-size
+  --ch5-slider--label-font-size: var(--theme-ch5-slider--label-font-size);
+
+  /// description: Font weight for the slider label
+  /// type: list
+  /// values: normal, bold
+  /// example: normal
+  /// related-theme-variable: --theme-ch5-slider--label-font-weight
+  --ch5-slider--label-font-weight: var(--theme-ch5-slider--label-font-weight);
+
+  /// description: Font color for the slider label
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #ffffff
+  /// related-theme-variable: --theme-ch5-slider--label-font-color
+  --ch5-slider--label-font-color: var(--theme-ch5-slider--label-font-color);
+
+  /// description: Letter spacing for the slider label
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 72px
+  /// related-theme-variable: --theme-ch5-slider--label-letter-spacing
+  --ch5-slider--label-letter-spacing: var(--theme-ch5-slider--label-letter-spacing);
 }
 
 // extending the variables by button

@@ -10,39 +10,25 @@
 /// @group ch5-button
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@mixin ch5-button-set-icon-classes($property-image-height, $property-icon-color, $property-icon-font-size) {
-  /// Applied on images
-  .ch5-button--img {
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    color: inherit;
-    height: calc(var(#{$property-image-height}) * 1.5);
-    width: calc(var(#{$property-image-height}) * 1.5);
-
-    &::before,
-    &::after {
-      content: none;
-    }
-  }
-
-  /// Applied on icons
-  .ch5-button--icon {
-    vertical-align: middle;
-    color: var(#{$property-icon-color});
-    font-size: var(#{$property-icon-font-size});
-  }
-}
-
 @mixin ch5-button-size-set($property-value) {
   $property-width: "--ch5-button--" + $property-value + "-width";
   $property-height: "--ch5-button--" + $property-value + "-height";
   $property-font-size: "--ch5-button--" + $property-value + "-font-size";
   $property-font-style: "--ch5-button--" + $property-value + "-font-style";
   $property-font-weight: "--ch5-button--" + $property-value + "-font-weight";
-  $property-icon-color: "--ch5-button--icon-color";
+  $property-pressed-icon-font-size: "--ch5-button--" + $property-value + "-pressed-icon-size";
+  $property-selected-icon-font-size: "--ch5-button--" + $property-value + "-selected-icon-size";
   $property-icon-font-size: "--ch5-button--" + $property-value + "-icon-size";
+  $property-font-image-width: "--ch5-button--" + $property-value + "-image-width";
+  $property-font-image-height: "--ch5-button--" + $property-value + "-image-height";
+  $property-font-pressed-image-width: "--ch5-button--" + $property-value + "-pressed-image-width";
+  $property-font-pressed-image-height: "--ch5-button--" + $property-value + "-pressed-image-height";
+  $property-font-selected-image-width: "--ch5-button--" + $property-value + "-selected-image-width";
+  $property-font-selected-image-height: "--ch5-button--" + $property-value + "-selected-image-height";
+  $property-pressed-font-size: "--ch5-button--" + $property-value + "-pressed-font-size";
+  $property-selected-font-size: "--ch5-button--" + $property-value + "-selected-font-size";
+  $property-pressed-font-weight: "--ch5-button--" + $property-value + "-pressed-font-weight";
+  $property-selected-font-weight: "--ch5-button--" + $property-value + "-selected-font-weight";
 
   .cb-btn {
     width: var(#{$property-width});
@@ -57,25 +43,275 @@
     font-size: var(#{$property-font-size});
   }
 
-  @include ch5-button-set-icon-classes($property-font-size, $property-icon-color, $property-icon-font-size);
+  /// Applied on images
+  .ch5-button--img {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    // color: inherit;
+    height: var(#{$property-font-image-height});
+    width: var(#{$property-font-image-width});
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+
+  /// Applied on icons
+  .ch5-button--icon {
+    vertical-align: middle;
+    // color: var(#{$property-icon-color});
+    font-size: var(#{$property-icon-font-size});
+    margin-top: var(--ch5-button--icon-margin-top);
+    margin-bottom: var(--ch5-button--icon-margin-bottom);
+    margin-left: var(--ch5-button--icon-margin-left);
+    margin-right: var(--ch5-button--icon-margin-right);
+  }
+
+  // .cb-checkbox-icon {
+  //   color: var(#{$property-checkbox-icon-color});
+  // }
+
+  &.ch5-button--pressed {
+    .cb-btn {
+      font-size: var(#{$property-pressed-font-size});
+      font-weight: var(#{$property-pressed-font-weight});
+    }
+
+    .ch5-button--img {
+      height: var(#{$property-font-pressed-image-height});
+      width: var(#{$property-font-pressed-image-width});
+    }
+
+    .ch5-button--icon {
+      // color: var(#{$property-pressed-icon-color});
+      font-size: var(#{$property-pressed-icon-font-size});
+    }
+
+    // .cb-checkbox-icon {
+    //   color: var(#{$property-pressed-checkbox-icon-color});
+    // }
+  }
+
+  &.ch5-button--selected {
+    .cb-btn {
+      font-size: var(#{$property-selected-font-size});
+      font-weight: var(#{$property-selected-font-weight});
+    }
+
+    .ch5-button--img {
+      height: var(#{$property-font-selected-image-height});
+      width: var(#{$property-font-selected-image-width});
+    }
+
+    .ch5-button--icon {
+      // color: var(#{$property-selected-icon-color});
+      font-size: var(#{$property-selected-icon-font-size});
+    }
+
+    // .cb-checkbox-icon {
+    //   color: var(#{$property-selected-checkbox-icon-color});
+    // }
+  }
 }
 
-@mixin ch5-button-content--selected($property-selected-border-color, $property-selected-background-color, $property-selected-font-color) {
-  border-color: var(#{$property-selected-border-color});
+@mixin ch5-button-content--selected($property-value) {
+  $property-selected-border-color: "--ch5-button--" + $property-value + "-selected-border-color";
+  $property-selected-background-color: "--ch5-button--" + $property-value + "-selected-background-color";
+  $property-selected-label-font-color: "--ch5-button--" + $property-value + "-selected-label-font-color";
+  $property-selected-icon-color: "--ch5-button--" + $property-value + "-selected-icon-color";
+  $property-selected-checkbox-color: "--ch5-button--" + $property-value + "-selected-checkbox-color";
+  $property-selected-border-style: "--ch5-button--" + $property-value + "-selected-border-style";
+  $property-selected-border-width: "--ch5-button--" + $property-value + "-selected-border-width";
+
   background-color: var(#{$property-selected-background-color});
-  color: var(#{$property-selected-font-color});
+
+  .ch5-button--icon {
+    color: var(#{$property-selected-icon-color});
+  }
+
+  .cb-checkbox-icon {
+    color: var(#{$property-selected-checkbox-color});
+  }
+
+  .ch5-button--label {
+    color: var(#{$property-selected-label-font-color});
+    text-decoration: var(--ch5-button--selected-label-text-decoration);
+    letter-spacing: var(--ch5-button--selected-label-letter-spacing);
+    text-underline-offset: var(--ch5-button--selected-label-text-underline-offset);
+    margin-left: var(--ch5-button--selected-label-margin-left);
+    margin-right: var(--ch5-button--selected-label-margin-right);
+    margin-top: var(--ch5-button--selected-label-margin-top);
+    margin-bottom: var(--ch5-button--selected-label-margin-bottom);
+  }
+
+  .ch5-button--icon {
+    margin-top: var(--ch5-button--selected-icon-margin-top);
+    margin-bottom: var(--ch5-button--selected-icon-margin-bottom);
+    margin-left: var(--ch5-button--selected-icon-margin-left);
+    margin-right: var(--ch5-button--selected-icon-margin-right);
+  }
+
+  .cb-btn {
+    border-color: var(#{$property-selected-border-color});
+    border-style: var(#{$property-selected-border-style});
+    border-width: var(#{$property-selected-border-width});
+    line-height: var(--ch5-button--selected-line-height);
+  }
+
+  &.ch5-button--rounded-rectangle {
+    @include border-radius-rounded-rectangle(
+      --ch5-button--selected-rounded-rectangle-border-radius-top-left,
+      --ch5-button--selected-rounded-rectangle-border-radius-top-right,
+      --ch5-button--selected-rounded-rectangle-border-radius-bottom-left,
+      --ch5-button--selected-rounded-rectangle-border-radius-bottom-right
+    );
+  }
 }
 
-@mixin ch5-button-content--pressed($property-pressed-border-color, $property-pressed-background-color, $property-pressed-font-color) {
-  border-color: var(#{$property-pressed-border-color});
+@mixin ch5-button-content--pressed($property-value) {
+  $property-pressed-border-color: "--ch5-button--" + $property-value + "-pressed-border-color";
+  $property-pressed-background-color: "--ch5-button--" + $property-value + "-pressed-background-color";
+  $property-pressed-label-font-color: "--ch5-button--" + $property-value + "-pressed-label-font-color";
+  $property-pressed-icon-color: "--ch5-button--" + $property-value + "-pressed-icon-color";
+  $property-pressed-checkbox-color: "--ch5-button--" + $property-value + "-pressed-checkbox-color";
+  $property-pressed-border-style: "--ch5-button--" + $property-value + "-pressed-border-style";
+  $property-pressed-border-width: "--ch5-button--" + $property-value + "-pressed-border-width";
+
   background-color: var(#{$property-pressed-background-color});
-  color: var(#{$property-pressed-font-color});
+
+  .ch5-button--icon {
+    color: var(#{$property-pressed-icon-color});
+  }
+
+  .cb-checkbox-icon {
+    color: var(#{$property-pressed-checkbox-color});
+  }
+
+  .ch5-button--label {
+    color: var(#{$property-pressed-label-font-color});
+    text-decoration: var(--ch5-button--pressed-label-text-decoration);
+    letter-spacing: var(--ch5-button--pressed-label-letter-spacing);
+    text-underline-offset: var(--ch5-button--pressed-label-text-underline-offset);
+    margin-left: var(--ch5-button--pressed-label-margin-left);
+    margin-right: var(--ch5-button--pressed-label-margin-right);
+    margin-top: var(--ch5-button--pressed-label-margin-top);
+    margin-bottom: var(--ch5-button--pressed-label-margin-bottom);
+  }
+
+  .ch5-button--icon {
+    margin-top: var(--ch5-button--pressed-icon-margin-top);
+    margin-bottom: var(--ch5-button--pressed-icon-margin-bottom);
+    margin-left: var(--ch5-button--pressed-icon-margin-left);
+    margin-right: var(--ch5-button--pressed-icon-margin-right);
+  }
+
+  .cb-btn {
+    border-color: var(#{$property-pressed-border-color});
+    border-style: var(#{$property-pressed-border-style});
+    border-width: var(#{$property-pressed-border-width});
+    line-height: var(--ch5-button--pressed-line-height);
+  }
+
+  &.ch5-button--rounded-rectangle {
+    @include border-radius-rounded-rectangle(
+      --ch5-button--pressed-rounded-rectangle-border-radius-top-left,
+      --ch5-button--pressed-rounded-rectangle-border-radius-top-right,
+      --ch5-button--pressed-rounded-rectangle-border-radius-bottom-left,
+      --ch5-button--pressed-rounded-rectangle-border-radius-bottom-right
+    );
+  }
 }
 
-@mixin ch5-button-content($property-border-width, $property-border-style, $property-default-border-color, $property-default-background-color, $property-default-font-color) {
-  border-style: var(#{$property-border-style});
-  border-width: var(#{$property-border-width});
-  border-color: var(#{$property-default-border-color});
-  background-color: var(#{$property-default-background-color});
-  color: var(#{$property-default-font-color});
+@mixin ch5-button-content($property-value) {
+  $property-border-width: "--ch5-button--" + $property-value + "-border-width";
+  $property-border-style: "--ch5-button--" + $property-value + "-border-style";
+  $property-border-color: "--ch5-button--" + $property-value + "-border-color";
+  $property-background-color: "--ch5-button--" + $property-value + "-background-color";
+  $property-label-font-color: "--ch5-button--" + $property-value + "-label-font-color";
+  $property-icon-color: "--ch5-button--" + $property-value + "-icon-color";
+  $property-checkbox-color: "--ch5-button--" + $property-value + "-checkbox-color";
+
+  background-color: var(#{$property-background-color});
+
+  .ch5-button--icon {
+    color: var(#{$property-icon-color});
+  }
+
+  .cb-checkbox-icon {
+    color: var(#{$property-checkbox-color});
+  }
+
+  .ch5-button--label {
+    color: var(#{$property-label-font-color});
+    text-decoration: var(--ch5-button--label-text-decoration);
+    letter-spacing: var(--ch5-button--label-letter-spacing);
+    text-underline-offset: var(--ch5-button--label-text-underline-offset);
+    margin-left: var(--ch5-button--label-margin-left);
+    margin-right: var(--ch5-button--label-margin-right);
+    margin-top: var(--ch5-button--label-margin-top);
+    margin-bottom: var(--ch5-button--label-margin-bottom);
+  }
+
+  .ch5-button--icon {
+    margin-top: var(--ch5-button--icon-margin-top);
+    margin-bottom: var(--ch5-button--icon-margin-bottom);
+    margin-left: var(--ch5-button--icon-margin-left);
+    margin-right: var(--ch5-button--icon-margin-right);
+  }
+
+  .cb-btn {
+    border-color: var(#{$property-border-color});
+    border-style: var(#{$property-border-style});
+    border-width: var(#{$property-border-width});
+    line-height: var(--ch5-button--line-height);
+  }
+
+  &.ch5-button--rounded-rectangle {
+    @include border-radius-rounded-rectangle(
+      --ch5-button--rounded-rectangle-border-radius-top-left,
+      --ch5-button--rounded-rectangle-border-radius-top-right,
+      --ch5-button--rounded-rectangle-border-radius-bottom-left,
+      --ch5-button--rounded-rectangle-border-radius-bottom-right
+    );
+  }
+
+  /// Applied when selected signal is applied
+  &.ch5-button--selected {
+    @include ch5-button-content--selected($property-value);
+  }
+
+  /// Applied when selected signal is pressed
+  &.ch5-button--pressed {
+    @include ch5-button-content--pressed($property-value);
+  }
+}
+
+@mixin border-radius-rounded-rectangle($radius-top-left, $radius-top-right, $radius-bottom-left, $radius-bottom-right) {
+  border-top-left-radius: var(#{$radius-top-left});
+  border-top-right-radius: var(#{$radius-top-right});
+  border-bottom-left-radius: var(#{$radius-bottom-left});
+  border-bottom-right-radius: var(#{$radius-bottom-right});
+  // &.ch5-button--vertical {
+  //   border-top-left-radius: var(#{$radius-bottom-left});
+  //   border-top-right-radius: var(#{$radius-top-left});
+  //   border-bottom-left-radius: var(#{$radius-bottom-right});
+  //   border-bottom-right-radius: var(#{$radius-top-right});
+  // }
+  .cb-btn {
+    border-top-left-radius: var(#{$radius-top-left});
+    border-top-right-radius: var(#{$radius-top-right});
+    border-bottom-left-radius: var(#{$radius-bottom-left});
+    border-bottom-right-radius: var(#{$radius-bottom-right});
+  }
+  &.ch5-button--vertical {
+    .cb-btn {
+        border-top-left-radius: var(#{$radius-bottom-left});
+    border-top-right-radius: var(#{$radius-top-left});
+    border-bottom-left-radius: var(#{$radius-bottom-right});
+    border-bottom-right-radius: var(#{$radius-top-right});
+    }
+  }
 }

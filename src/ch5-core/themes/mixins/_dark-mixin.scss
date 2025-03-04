@@ -551,15 +551,25 @@
 
   --theme-ch5-button--line-height: 1.2;
 
+  --theme-ch5-button--pressed-line-height: 1.2;
+
+  --theme-ch5-button--selected-line-height: 1.2;
+
   --theme-ch5-button--padding: 0.25rem;
 
   --theme-ch5-button--regular-font-size: 14px;
+
+  --theme-ch5-button--regular-pressed-font-size: 14px;
+
+  --theme-ch5-button--regular-selected-font-size: 14px;
 
   --theme-ch5-button--regular-font-style: var(--theme-fonts--font-style);
 
   --theme-ch5-button--regular-font-weight: var(--theme-fonts--font-weight);
 
-  --theme-ch5-button--icon-color: inherit; 
+  --theme-ch5-button--regular-selected-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--regular-pressed-font-weight: var(--theme-fonts--font-weight);
 
   --theme-ch5-button--regular-icon-size: var(--theme-ch5-button--regular-font-size);
 
@@ -579,6 +589,38 @@
 
   --theme-ch5-button--text-border-width: 1px;
 
+  --theme-ch5-button--default-pressed-border-width: 1px;
+
+  --theme-ch5-button--primary-pressed-border-width: 1px;
+
+  --theme-ch5-button--secondary-pressed-border-width: 1px;
+
+  --theme-ch5-button--success-pressed-border-width: 1px;
+
+  --theme-ch5-button--info-pressed-border-width: 1px;
+
+  --theme-ch5-button--warning-pressed-border-width: 1px;
+
+  --theme-ch5-button--danger-pressed-border-width: 1px;
+
+  --theme-ch5-button--text-pressed-border-width: 1px;
+
+  --theme-ch5-button--default-selected-border-width: 1px;
+
+  --theme-ch5-button--primary-selected-border-width: 1px;
+
+  --theme-ch5-button--secondary-selected-border-width: 1px;
+
+  --theme-ch5-button--success-selected-border-width: 1px;
+
+  --theme-ch5-button--info-selected-border-width: 1px;
+
+  --theme-ch5-button--warning-selected-border-width: 1px;
+
+  --theme-ch5-button--danger-selected-border-width: 1px;
+
+  --theme-ch5-button--text-selected-border-width: 1px;
+
   --theme-ch5-button--default-border-style: solid;
 
   --theme-ch5-button--primary-border-style: solid;
@@ -595,7 +637,29 @@
 
   --theme-ch5-button--text-border-style: solid;
 
-  --theme-ch5-button--rounded-rectangle-border-radius: 5px;
+  --theme-ch5-button--rounded-rectangle-border-radius-top-left: 5px;
+
+  --theme-ch5-button--rounded-rectangle-border-radius-top-right: 5px;
+
+  --theme-ch5-button--rounded-rectangle-border-radius-bottom-left: 5px;
+
+  --theme-ch5-button--rounded-rectangle-border-radius-bottom-right: 5px;
+
+  --theme-ch5-button--pressed-rounded-rectangle-border-radius-top-left: 5px;
+
+  --theme-ch5-button--pressed-rounded-rectangle-border-radius-top-right: 5px;
+
+  --theme-ch5-button--pressed-rounded-rectangle-border-radius-bottom-left: 5px;
+
+  --theme-ch5-button--pressed-rounded-rectangle-border-radius-bottom-right: 5px;
+
+  --theme-ch5-button--selected-rounded-rectangle-border-radius-top-left: 5px;
+
+  --theme-ch5-button--selected-rounded-rectangle-border-radius-top-right: 5px;
+
+  --theme-ch5-button--selected-rounded-rectangle-border-radius-bottom-left: 5px;
+
+  --theme-ch5-button--selected-rounded-rectangle-border-radius-bottom-right: 5px;
 
   --theme-ch5-button--oval-border-radius: 50%;
 
@@ -607,9 +671,17 @@
 
   --theme-ch5-button--x-small-font-size: 11px;
 
+  --theme-ch5-button--x-small-pressed-font-size: 11px;
+
+  --theme-ch5-button--x-small-selected-font-size: 11px;
+
   --theme-ch5-button--x-small-font-style: var(--theme-fonts--font-style);
 
   --theme-ch5-button--x-small-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--x-small-pressed-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--x-small-selected-font-weight: var(--theme-fonts--font-weight);
 
   --theme-ch5-button--x-small-width: 64px;
 
@@ -617,9 +689,17 @@
 
   --theme-ch5-button--small-font-size: 13px;
 
+  --theme-ch5-button--small-pressed-font-size: 13px;
+
+  --theme-ch5-button--small-selected-font-size: 13px;
+
   --theme-ch5-button--small-font-style: var(--theme-fonts--font-style);
 
   --theme-ch5-button--small-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--small-selected-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--small-pressed-font-weight: var(--theme-fonts--font-weight);
 
   --theme-ch5-button--small-width: 72px;
 
@@ -627,9 +707,17 @@
 
   --theme-ch5-button--large-font-size: 16px;
 
+  --theme-ch5-button--large-pressed-font-size: 16px;
+
+  --theme-ch5-button--large-selected-font-size: 16px;
+
   --theme-ch5-button--large-font-style: var(--theme-fonts--font-style);
 
   --theme-ch5-button--large-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--large-selected-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--large-pressed-font-weight: var(--theme-fonts--font-weight);
 
   --theme-ch5-button--large-width: 104px;
 
@@ -637,15 +725,43 @@
 
   --theme-ch5-button--x-large-font-size: 18px;
 
+  --theme-ch5-button--x-large-pressed-font-size: 18px;
+
+  --theme-ch5-button--x-large-selected-font-size: 18px;
+
   --theme-ch5-button--x-large-font-style: var(--theme-fonts--font-style);
 
   --theme-ch5-button--x-large-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--x-large-pressed-font-weight: var(--theme-fonts--font-weight);
+
+  --theme-ch5-button--x-large-selected-font-weight: var(--theme-fonts--font-weight);
 
   --theme-ch5-button--x-large-width: 144px;
 
   --theme-ch5-button--x-large-height: 72px;
 
   --theme-ch5-button--checkbox-padding: 5px;
+
+  --theme-ch5-button--regular-pressed-icon-size: var(--theme-ch5-button--regular-font-size);
+
+  --theme-ch5-button--x-small-pressed-icon-size: var(--theme-ch5-button--x-small-font-size);
+
+  --theme-ch5-button--small-pressed-icon-size: var(--theme-ch5-button--small-font-size);
+
+  --theme-ch5-button--large-pressed-icon-size: var(--theme-ch5-button--large-font-size);
+
+  --theme-ch5-button--x-large-pressed-icon-size: var(--theme-ch5-button--x-large-font-size);
+
+  --theme-ch5-button--regular-selected-icon-size: var(--theme-ch5-button--regular-font-size);
+
+  --theme-ch5-button--x-small-selected-icon-size: var(--theme-ch5-button--x-small-font-size);
+
+  --theme-ch5-button--small-selected-icon-size: var(--theme-ch5-button--small-font-size);
+
+  --theme-ch5-button--large-selected-icon-size: var(--theme-ch5-button--large-font-size);
+
+  --theme-ch5-button--x-large-selected-icon-size: var(--theme-ch5-button--x-large-font-size);
 
   --theme-ch5-button--x-small-icon-size: var(--theme-ch5-button--x-small-font-size);
 
@@ -659,145 +775,399 @@
 
   --theme-ch5-button--default-border-color: var(--theme-colors--default-border-color);
 
-  --theme-ch5-button--default-font-color: var(--theme-colors--default-font-color);
+  --theme-ch5-button--default-label-font-color: var(--theme-colors--default-font-color);
+
+  --theme-ch5-button--default-icon-color: var(--theme-colors--default-font-color);
+
+  --theme-ch5-button--default-checkbox-color: var(--theme-colors--default-font-color);
 
   --theme-ch5-button--default-pressed-background-color: var(--theme-colors--default-pressed-background-color);
 
   --theme-ch5-button--default-pressed-border-color: var(--theme-colors--default-pressed-border-color);
 
-  --theme-ch5-button--default-pressed-font-color: var(--theme-colors--default-pressed-font-color);
+  --theme-ch5-button--default-pressed-label-font-color: var(--theme-colors--default-pressed-font-color);
+
+  --theme-ch5-button--default-pressed-icon-color: var(--theme-colors--default-pressed-font-color);
+
+  --theme-ch5-button--default-pressed-checkbox-color: var(--theme-colors--default-pressed-font-color);
 
   --theme-ch5-button--default-selected-background-color: var(--theme-colors--default-selected-background-color);
 
   --theme-ch5-button--default-selected-border-color: var(--theme-colors--default-selected-border-color);
 
-  --theme-ch5-button--default-selected-font-color: var(--theme-colors--default-selected-font-color);
+  --theme-ch5-button--default-selected-label-font-color: var(--theme-colors--default-selected-font-color);
+
+  --theme-ch5-button--default-selected-icon-color: var(--theme-colors--default-selected-font-color);
+
+  --theme-ch5-button--default-selected-checkbox-color: var(--theme-colors--default-selected-font-color);
 
   --theme-ch5-button--primary-background-color: var(--theme-colors--primary-background-color);
 
   --theme-ch5-button--primary-border-color: var(--theme-colors--primary-border-color);
 
-  --theme-ch5-button--primary-font-color: var(--theme-colors--primary-font-color);
+  --theme-ch5-button--primary-label-font-color: var(--theme-colors--primary-font-color);
+
+  --theme-ch5-button--primary-icon-color: var(--theme-colors--primary-font-color);
+
+  --theme-ch5-button--primary-checkbox-color: var(--theme-colors--primary-font-color);
 
   --theme-ch5-button--primary-pressed-background-color: var(--theme-colors--primary-pressed-background-color);
 
   --theme-ch5-button--primary-pressed-border-color: var(--theme-colors--primary-pressed-border-color);
 
-  --theme-ch5-button--primary-pressed-font-color: var(--theme-colors--primary-pressed-font-color);
+  --theme-ch5-button--primary-pressed-label-font-color: var(--theme-colors--primary-pressed-font-color);
+
+  --theme-ch5-button--primary-pressed-icon-color: var(--theme-colors--primary-pressed-font-color);
+
+  --theme-ch5-button--primary-pressed-checkbox-color: var(--theme-colors--primary-pressed-font-color);
 
   --theme-ch5-button--primary-selected-background-color: var(--theme-colors--primary-selected-background-color);
 
   --theme-ch5-button--primary-selected-border-color: var(--theme-colors--primary-selected-border-color);
 
-  --theme-ch5-button--primary-selected-font-color: var(--theme-colors--primary-selected-font-color);
+  --theme-ch5-button--primary-selected-label-font-color: var(--theme-colors--primary-selected-font-color);
+
+  --theme-ch5-button--primary-selected-icon-color: var(--theme-colors--primary-selected-font-color);
+
+  --theme-ch5-button--primary-selected-checkbox-color: var(--theme-colors--primary-selected-font-color);
 
   --theme-ch5-button--info-background-color: var(--theme-colors--info-background-color);
 
   --theme-ch5-button--info-border-color: var(--theme-colors--info-border-color);
 
-  --theme-ch5-button--info-font-color: var(--theme-colors--info-font-color);
+  --theme-ch5-button--info-label-font-color: var(--theme-colors--info-font-color);
+
+  --theme-ch5-button--info-icon-color: var(--theme-colors--info-font-color);
+
+  --theme-ch5-button--info-checkbox-color: var(--theme-colors--info-font-color);
 
   --theme-ch5-button--info-pressed-background-color: var(--theme-colors--info-pressed-background-color);
 
   --theme-ch5-button--info-pressed-border-color: var(--theme-colors--info-pressed-border-color);
 
-  --theme-ch5-button--info-pressed-font-color: var(--theme-colors--info-pressed-font-color);
+  --theme-ch5-button--info-pressed-label-font-color: var(--theme-colors--info-pressed-font-color);
+
+  --theme-ch5-button--info-pressed-icon-color: var(--theme-colors--info-pressed-font-color);
+
+  --theme-ch5-button--info-pressed-checkbox-color: var(--theme-colors--info-pressed-font-color);
 
   --theme-ch5-button--info-selected-background-color: var(--theme-colors--info-selected-background-color);
 
   --theme-ch5-button--info-selected-border-color: var(--theme-colors--info-selected-border-color);
 
-  --theme-ch5-button--info-selected-font-color: var(--theme-colors--info-selected-font-color);
+  --theme-ch5-button--info-selected-label-font-color: var(--theme-colors--info-selected-font-color);
+
+  --theme-ch5-button--info-selected-icon-color: var(--theme-colors--info-selected-font-color);
+
+  --theme-ch5-button--info-selected-checkbox-color: var(--theme-colors--info-selected-font-color);
 
   --theme-ch5-button--danger-background-color: var(--theme-colors--danger-background-color);
 
   --theme-ch5-button--danger-border-color: var(--theme-colors--danger-border-color);
 
-  --theme-ch5-button--danger-font-color: var(--theme-colors--danger-font-color);
+  --theme-ch5-button--danger-label-font-color: var(--theme-colors--danger-font-color);
+
+  --theme-ch5-button--danger-icon-color: var(--theme-colors--danger-font-color);
+
+  --theme-ch5-button--danger-checkbox-color: var(--theme-colors--danger-font-color);
 
   --theme-ch5-button--danger-pressed-background-color: var(--theme-colors--danger-pressed-background-color);
 
   --theme-ch5-button--danger-pressed-border-color: var(--theme-colors--danger-pressed-border-color);
 
-  --theme-ch5-button--danger-pressed-font-color: var(--theme-colors--danger-pressed-font-color);
+  --theme-ch5-button--danger-pressed-label-font-color: var(--theme-colors--danger-pressed-font-color);
+
+  --theme-ch5-button--danger-pressed-icon-color: var(--theme-colors--danger-pressed-font-color);
+
+  --theme-ch5-button--danger-pressed-checkbox-color: var(--theme-colors--danger-pressed-font-color);
 
   --theme-ch5-button--danger-selected-background-color: var(--theme-colors--danger-selected-background-color);
 
   --theme-ch5-button--danger-selected-border-color: var(--theme-colors--danger-selected-border-color);
 
-  --theme-ch5-button--danger-selected-font-color: var(--theme-colors--danger-selected-font-color);
+  --theme-ch5-button--danger-selected-label-font-color: var(--theme-colors--danger-selected-font-color);
+
+  --theme-ch5-button--danger-selected-icon-color: var(--theme-colors--danger-selected-font-color);
+
+  --theme-ch5-button--danger-selected-checkbox-color: var(--theme-colors--danger-selected-font-color);
 
   --theme-ch5-button--secondary-background-color: var(--theme-colors--secondary-background-color);
 
   --theme-ch5-button--secondary-border-color: var(--theme-colors--secondary-border-color);
 
-  --theme-ch5-button--secondary-font-color: var(--theme-colors--secondary-font-color);
+  --theme-ch5-button--secondary-label-font-color: var(--theme-colors--secondary-font-color);
+
+  --theme-ch5-button--secondary-icon-color: var(--theme-colors--secondary-font-color);
+
+  --theme-ch5-button--secondary-checkbox-color: var(--theme-colors--secondary-font-color);
 
   --theme-ch5-button--secondary-pressed-background-color: var(--theme-colors--secondary-pressed-background-color);
 
   --theme-ch5-button--secondary-pressed-border-color: var(--theme-colors--secondary-pressed-border-color);
 
-  --theme-ch5-button--secondary-pressed-font-color: var(--theme-colors--secondary-pressed-font-color);
+  --theme-ch5-button--secondary-pressed-label-font-color: var(--theme-colors--secondary-pressed-font-color);
+
+  --theme-ch5-button--secondary-pressed-icon-color: var(--theme-colors--secondary-pressed-font-color);
+
+  --theme-ch5-button--secondary-pressed-checkbox-color: var(--theme-colors--secondary-pressed-font-color);
 
   --theme-ch5-button--secondary-selected-background-color: var(--theme-colors--secondary-selected-background-color);
 
   --theme-ch5-button--secondary-selected-border-color: var(--theme-colors--secondary-selected-border-color);
 
-  --theme-ch5-button--secondary-selected-font-color: var(--theme-colors--secondary-selected-font-color);
+  --theme-ch5-button--secondary-selected-label-font-color: var(--theme-colors--secondary-selected-font-color);
+
+  --theme-ch5-button--secondary-selected-icon-color: var(--theme-colors--secondary-selected-font-color);
+
+  --theme-ch5-button--secondary-selected-checkbox-color: var(--theme-colors--secondary-selected-font-color);
 
   --theme-ch5-button--success-background-color: var(--theme-colors--success-background-color);
 
   --theme-ch5-button--success-border-color: var(--theme-colors--success-border-color);
 
-  --theme-ch5-button--success-font-color: var(--theme-colors--success-font-color);
+  --theme-ch5-button--success-label-font-color: var(--theme-colors--success-font-color);
+
+  --theme-ch5-button--success-icon-color: var(--theme-colors--success-font-color);
+
+  --theme-ch5-button--success-checkbox-color: var(--theme-colors--success-font-color);
 
   --theme-ch5-button--success-pressed-background-color: var(--theme-colors--success-pressed-background-color);
 
   --theme-ch5-button--success-pressed-border-color: var(--theme-colors--success-pressed-border-color);
 
-  --theme-ch5-button--success-pressed-font-color: var(--theme-colors--success-pressed-font-color);
+  --theme-ch5-button--success-pressed-label-font-color: var(--theme-colors--success-pressed-font-color);
+
+  --theme-ch5-button--success-pressed-icon-color: var(--theme-colors--success-pressed-font-color);
+
+  --theme-ch5-button--success-pressed-checkbox-color: var(--theme-colors--success-pressed-font-color);
 
   --theme-ch5-button--success-selected-background-color: var(--theme-colors--success-selected-background-color);
 
   --theme-ch5-button--success-selected-border-color: var(--theme-colors--success-selected-border-color);
 
-  --theme-ch5-button--success-selected-font-color: var(--theme-colors--success-selected-font-color);
+  --theme-ch5-button--success-selected-label-font-color: var(--theme-colors--success-selected-font-color);
+
+  --theme-ch5-button--success-selected-icon-color: var(--theme-colors--success-selected-font-color);
+
+  --theme-ch5-button--success-selected-checkbox-color: var(--theme-colors--success-selected-font-color);
 
   --theme-ch5-button--warning-background-color: var(--theme-colors--warning-background-color);
 
   --theme-ch5-button--warning-border-color: var(--theme-colors--warning-border-color);
 
-  --theme-ch5-button--warning-font-color: var(--theme-colors--warning-font-color);
+  --theme-ch5-button--warning-label-font-color: var(--theme-colors--warning-font-color);
+
+  --theme-ch5-button--warning-icon-color: var(--theme-colors--warning-font-color);
+
+  --theme-ch5-button--warning-checkbox-color: var(--theme-colors--warning-font-color);
 
   --theme-ch5-button--warning-pressed-background-color: var(--theme-colors--warning-pressed-background-color);
 
   --theme-ch5-button--warning-pressed-border-color: var(--theme-colors--warning-pressed-border-color);
 
-  --theme-ch5-button--warning-pressed-font-color: var(--theme-colors--warning-pressed-font-color);
+  --theme-ch5-button--warning-pressed-label-font-color: var(--theme-colors--warning-pressed-font-color);
+
+  --theme-ch5-button--warning-pressed-icon-color: var(--theme-colors--warning-pressed-font-color);
+
+  --theme-ch5-button--warning-pressed-checkbox-color: var(--theme-colors--warning-pressed-font-color);
 
   --theme-ch5-button--warning-selected-background-color: var(--theme-colors--warning-selected-background-color);
 
   --theme-ch5-button--warning-selected-border-color: var(--theme-colors--warning-selected-border-color);
 
-  --theme-ch5-button--warning-selected-font-color: var(--theme-colors--warning-selected-font-color);
+  --theme-ch5-button--warning-selected-label-font-color: var(--theme-colors--warning-selected-font-color);
+
+  --theme-ch5-button--warning-selected-icon-color: var(--theme-colors--warning-selected-font-color);
+
+  --theme-ch5-button--warning-selected-checkbox-color: var(--theme-colors--warning-selected-font-color);
 
   --theme-ch5-button--text-background-color: var(--theme-colors--text-background-color);
 
   --theme-ch5-button--text-border-color: var(--theme-colors--text-border-color);
 
-  --theme-ch5-button--text-font-color: var(--theme-colors--text-font-color);
+  --theme-ch5-button--text-label-font-color: var(--theme-colors--text-font-color);
+
+  --theme-ch5-button--text-icon-color: var(--theme-colors--text-font-color);
+
+  --theme-ch5-button--text-checkbox-color: var(--theme-colors--text-font-color);
 
   --theme-ch5-button--text-pressed-background-color: var(--theme-colors--text-pressed-background-color);
 
   --theme-ch5-button--text-pressed-border-color: var(--theme-colors--text-pressed-border-color);
 
-  --theme-ch5-button--text-pressed-font-color: var(--theme-colors--text-pressed-font-color);
+  --theme-ch5-button--text-pressed-label-font-color: var(--theme-colors--text-pressed-font-color);
+
+  --theme-ch5-button--text-pressed-icon-color: var(--theme-colors--text-pressed-font-color);
+
+  --theme-ch5-button--text-pressed-checkbox-color: var(--theme-colors--text-pressed-font-color);
 
   --theme-ch5-button--text-selected-background-color: var(--theme-colors--text-selected-background-color);
 
   --theme-ch5-button--text-selected-border-color: var(--theme-colors--text-selected-border-color);
 
-  --theme-ch5-button--text-selected-font-color: var(--theme-colors--text-selected-font-color);
+  --theme-ch5-button--text-selected-label-font-color: var(--theme-colors--text-selected-font-color);
+
+  --theme-ch5-button--text-selected-icon-color: var(--theme-colors--text-selected-font-color);
+
+  --theme-ch5-button--text-selected-checkbox-color: var(--theme-colors--text-selected-font-color);
+
+  --theme-ch5-button--label-text-decoration: none;
+
+  --theme-ch5-button--label-letter-spacing: 0px;
+
+  --theme-ch5-button--label-text-underline-offset: 0px;
+
+  --theme-ch5-button--selected-label-text-decoration: none;
+
+  --theme-ch5-button--selected-label-letter-spacing: 0px;
+
+  --theme-ch5-button--pressed-label-text-decoration: none;
+
+  --theme-ch5-button--pressed-label-letter-spacing: 0px;
+
+  --theme-ch5-button--selected-label-text-underline-offset: 0px;
+
+  --theme-ch5-button--pressed-label-text-underline-offset: 0px;
+
+  --theme-ch5-button--text-selected-border-style: solid;
+
+  --theme-ch5-button--danger-selected-border-style: solid;
+
+  --theme-ch5-button--warning-selected-border-style: solid;
+
+  --theme-ch5-button--info-selected-border-style: solid;
+
+  --theme-ch5-button--success-selected-border-style: solid;
+
+  --theme-ch5-button--default-selected-border-style: solid;
+
+  --theme-ch5-button--primary-selected-border-style: solid;
+
+  --theme-ch5-button--secondary-selected-border-style: solid;
+
+  --theme-ch5-button--text-pressed-border-style: solid;
+
+  --theme-ch5-button--danger-pressed-border-style: solid;
+
+  --theme-ch5-button--warning-pressed-border-style: solid;
+
+  --theme-ch5-button--info-pressed-border-style: solid;
+
+  --theme-ch5-button--success-pressed-border-style: solid;
+
+  --theme-ch5-button--default-pressed-border-style: solid;
+
+  --theme-ch5-button--primary-pressed-border-style: solid;
+
+  --theme-ch5-button--secondary-pressed-border-style: solid;
+
+  --theme-ch5-button--label-margin-left: 0px;
+
+  --theme-ch5-button--label-margin-right: 0px;
+
+  --theme-ch5-button--label-margin-top: 0px;
+
+  --theme-ch5-button--label-margin-bottom: 0px;
+
+  --theme-ch5-button--icon-margin-left: 0px;
+
+  --theme-ch5-button--icon-margin-right: 0px;
+
+  --theme-ch5-button--icon-margin-top: 0px;
+
+  --theme-ch5-button--icon-margin-bottom: 0px;
+
+  --theme-ch5-button--pressed-icon-margin-left: 0px;
+
+  --theme-ch5-button--pressed-icon-margin-right: 0px;
+
+  --theme-ch5-button--pressed-icon-margin-top: 0px;
+
+  --theme-ch5-button--pressed-icon-margin-bottom: 0px;
+
+  --theme-ch5-button--selected-icon-margin-left: 0px;
+
+  --theme-ch5-button--selected-icon-margin-right: 0px;
+
+  --theme-ch5-button--selected-icon-margin-top: 0px;
+
+  --theme-ch5-button--selected-icon-margin-bottom: 0px;
+
+  --theme-ch5-button--pressed-label-margin-left: 0px;
+
+  --theme-ch5-button--pressed-label-margin-right: 0px;
+
+  --theme-ch5-button--pressed-label-margin-top: 0px;
+
+  --theme-ch5-button--pressed-label-margin-bottom: 0px;
+
+  --theme-ch5-button--selected-label-margin-left: 0px;
+
+  --theme-ch5-button--selected-label-margin-right: 0px;
+
+  --theme-ch5-button--selected-label-margin-top: 0px;
+
+  --theme-ch5-button--selected-label-margin-bottom: 0px;
+
+  --theme-ch5-button--x-small-image-height: calc(var(--theme-ch5-button--x-small-font-size) * 1.5);
+
+  --theme-ch5-button--small-image-height: calc(var(--theme-ch5-button--small-font-size) * 1.5);
+
+  --theme-ch5-button--regular-image-height: calc(var(--theme-ch5-button--regular-font-size) * 1.5);
+
+  --theme-ch5-button--large-image-height: calc(var(--theme-ch5-button--large-font-size) * 1.5);
+
+  --theme-ch5-button--x-large-image-height: calc(var(--theme-ch5-button--x-large-font-size) * 1.5);
+
+  --theme-ch5-button--x-small-image-width: calc(var(--theme-ch5-button--x-small-font-size) * 1.5);
+
+  --theme-ch5-button--small-image-width: calc(var(--theme-ch5-button--small-font-size) * 1.5);
+
+  --theme-ch5-button--regular-image-width: calc(var(--theme-ch5-button--regular-font-size) * 1.5);
+
+  --theme-ch5-button--large-image-width: calc(var(--theme-ch5-button--large-font-size) * 1.5);
+
+  --theme-ch5-button--x-large-image-width: calc(var(--theme-ch5-button--x-large-font-size) * 1.5);
+
+  --theme-ch5-button--x-small-pressed-image-height: calc(var(--theme-ch5-button--x-small-font-size) * 1.5);
+
+  --theme-ch5-button--small-pressed-image-height: calc(var(--theme-ch5-button--small-font-size) * 1.5);
+
+  --theme-ch5-button--regular-pressed-image-height: calc(var(--theme-ch5-button--regular-font-size) * 1.5);
+
+  --theme-ch5-button--large-pressed-image-height: calc(var(--theme-ch5-button--large-font-size) * 1.5);
+
+  --theme-ch5-button--x-large-pressed-image-height: calc(var(--theme-ch5-button--x-large-font-size) * 1.5);
+
+  --theme-ch5-button--x-small-pressed-image-width: calc(var(--theme-ch5-button--x-small-font-size) * 1.5);
+
+  --theme-ch5-button--small-pressed-image-width: calc(var(--theme-ch5-button--small-font-size) * 1.5);
+
+  --theme-ch5-button--regular-pressed-image-width: calc(var(--theme-ch5-button--regular-font-size) * 1.5);
+
+  --theme-ch5-button--large-pressed-image-width: calc(var(--theme-ch5-button--large-font-size) * 1.5);
+
+  --theme-ch5-button--x-large-pressed-image-width: calc(var(--theme-ch5-button--x-large-font-size) * 1.5);
+
+  --theme-ch5-button--x-small-selected-image-height: calc(var(--theme-ch5-button--x-small-font-size) * 1.5);
+
+  --theme-ch5-button--small-selected-image-height: calc(var(--theme-ch5-button--small-font-size) * 1.5);
+
+  --theme-ch5-button--regular-selected-image-height: calc(var(--theme-ch5-button--regular-font-size) * 1.5);
+
+  --theme-ch5-button--large-selected-image-height: calc(var(--theme-ch5-button--large-font-size) * 1.5);
+
+  --theme-ch5-button--x-large-selected-image-height: calc(var(--theme-ch5-button--x-large-font-size) * 1.5);
+
+  --theme-ch5-button--x-small-selected-image-width: calc(var(--theme-ch5-button--x-small-font-size) * 1.5);
+
+  --theme-ch5-button--small-selected-image-width: calc(var(--theme-ch5-button--small-font-size) * 1.5);
+
+  --theme-ch5-button--regular-selected-image-width: calc(var(--theme-ch5-button--regular-font-size) * 1.5);
+
+  --theme-ch5-button--large-selected-image-width: calc(var(--theme-ch5-button--large-font-size) * 1.5);
+
+  --theme-ch5-button--x-large-selected-image-width: calc(var(--theme-ch5-button--x-large-font-size) * 1.5);
 
   // ***************************************
   // ch5-button-list
@@ -1671,6 +2041,12 @@
 
   --theme-ch5-slider--connect-background-color: #0099ff;
 
+  --theme-ch5-slider--connect-border-color: #efefef;
+
+  --theme-ch5-slider--connect-border-style: none;
+
+  --theme-ch5-slider--connect-border-width: 1px;
+
   --theme-ch5-slider--target-background-color: #2f2f33;
 
   --theme-ch5-slider--target-border-color: #efefef;
@@ -1820,6 +2196,18 @@
   --theme-ch5-slider--tooltip-on-spacing-vertical-orientation: 60px;
 
   --theme-ch5-slider--tooltip-on-spacing-horizontal-orientation: 40px;
+
+  // slider label
+
+  --theme-ch5-slider--label-font-size: 16px;
+
+  --theme-ch5-slider--label-font-color: #000000;
+
+  --theme-ch5-slider--label-font-weight: 400;
+
+  --theme-ch5-slider--label-text-decoration: none;
+
+  --theme-ch5-slider--label-letter-spacing: 0px;
 
   --theme-ch5-slider--button-content-line-height: 1.2;
 

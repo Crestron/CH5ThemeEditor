@@ -11,169 +11,46 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @mixin ch5-button-set-types() {
+
   /// Applied when type='text'
   .ch5-button--text {
-    @include ch5-button-content(
-      --ch5-button--text-border-width,
-      --ch5-button--text-border-style,
-      --ch5-button--text-border-color,
-      --ch5-button--text-background-color,
-      --ch5-button--text-font-color
-    );
-
-    &.ch5-button--selected {
-      @include ch5-button-content--selected(--ch5-button--text-selected-border-color, --ch5-button--text-selected-background-color, --ch5-button--text-selected-font-color);
-    }
-
-    &.ch5-button--pressed {
-      @include ch5-button-content--pressed(--ch5-button--text-pressed-border-color, --ch5-button--text-pressed-background-color, --ch5-button--text-pressed-font-color);
-    }
+    @include ch5-button-content("text");
   }
 
   /// Applied when type='danger'
   .ch5-button--danger {
-    @include ch5-button-content(
-      --ch5-button--danger-border-width,
-      --ch5-button--danger-border-style,
-      --ch5-button--danger-border-color,
-      --ch5-button--danger-background-color,
-      --ch5-button--danger-font-color
-    );
-
-    &.ch5-button--selected {
-      @include ch5-button-content--selected(--ch5-button--danger-selected-border-color, --ch5-button--danger-selected-background-color, --ch5-button--danger-selected-font-color);
-    }
-
-    &.ch5-button--pressed {
-      @include ch5-button-content--pressed(--ch5-button--danger-pressed-border-color, --ch5-button--danger-pressed-background-color, --ch5-button--danger-pressed-font-color);
-    }
+    @include ch5-button-content("danger");
   }
 
   /// Applied when type='warning'
   .ch5-button--warning {
-    @include ch5-button-content(
-      --ch5-button--warning-border-width,
-      --ch5-button--warning-border-style,
-      --ch5-button--warning-border-color,
-      --ch5-button--warning-background-color,
-      --ch5-button--warning-font-color
-    );
-
-    &.ch5-button--selected {
-      @include ch5-button-content--selected(--ch5-button--warning-selected-border-color, --ch5-button--warning-selected-background-color, --ch5-button--warning-selected-font-color);
-    }
-
-    &.ch5-button--pressed {
-      @include ch5-button-content--pressed(--ch5-button--warning-pressed-border-color, --ch5-button--warning-pressed-background-color, --ch5-button--warning-pressed-font-color);
-    }
+    @include ch5-button-content("warning");
   }
 
   /// Applied when type='info'
   .ch5-button--info {
-    @include ch5-button-content(
-      --ch5-button--info-border-width,
-      --ch5-button--info-border-style,
-      --ch5-button--info-border-color,
-      --ch5-button--info-background-color,
-      --ch5-button--info-font-color
-    );
-
-    &.ch5-button--selected {
-      @include ch5-button-content--selected(--ch5-button--info-selected-border-color, --ch5-button--info-selected-background-color, --ch5-button--info-selected-font-color);
-    }
-
-    &.ch5-button--pressed {
-      @include ch5-button-content--pressed(--ch5-button--info-pressed-border-color, --ch5-button--info-pressed-background-color, --ch5-button--info-pressed-font-color);
-    }
+    @include ch5-button-content("info");
   }
 
   /// Applied when type='success'
   .ch5-button--success {
-    @include ch5-button-content(
-      --ch5-button--success-border-width,
-      --ch5-button--success-border-style,
-      --ch5-button--success-border-color,
-      --ch5-button--success-background-color,
-      --ch5-button--success-font-color
-    );
-
-    &.ch5-button--selected {
-      @include ch5-button-content--selected(--ch5-button--success-selected-border-color, --ch5-button--success-selected-background-color, --ch5-button--success-selected-font-color);
-    }
-
-    &.ch5-button--pressed {
-      @include ch5-button-content--pressed(--ch5-button--success-pressed-border-color, --ch5-button--success-pressed-background-color, --ch5-button--success-pressed-font-color);
-    }
+    @include ch5-button-content("success");
   }
 
   /// Default button
   .ch5-button--default {
-    @include ch5-button-content(
-      --ch5-button--default-border-width,
-      --ch5-button--default-border-style,
-      --ch5-button--default-border-color,
-      --ch5-button--default-background-color,
-      --ch5-button--default-font-color
-    );
-
-    /// Applied when selected signal is applied
-    &.ch5-button--selected {
-      @include ch5-button-content--selected(--ch5-button--default-selected-border-color, --ch5-button--default-selected-background-color, --ch5-button--default-selected-font-color);
-    }
-
-    /// Applied on press event
-    &.ch5-button--pressed {
-      @include ch5-button-content--pressed(--ch5-button--default-pressed-border-color, --ch5-button--default-pressed-background-color, --ch5-button--default-pressed-font-color);
-    }
+    @include ch5-button-content("default");
   }
 
   /// Applied when type='primary'
   .ch5-button--primary {
-    @include ch5-button-content(
-      --ch5-button--primary-border-width,
-      --ch5-button--primary-border-style,
-      --ch5-button--primary-border-color,
-      --ch5-button--primary-background-color,
-      --ch5-button--primary-font-color
-    );
-
-    &.ch5-button--selected {
-      @include ch5-button-content--selected(--ch5-button--primary-selected-border-color, --ch5-button--primary-selected-background-color, --ch5-button--primary-selected-font-color);
-    }
-
-    &.ch5-button--pressed {
-      @include ch5-button-content--pressed(--ch5-button--primary-pressed-border-color, --ch5-button--primary-pressed-background-color, --ch5-button--primary-pressed-font-color);
-    }
+    @include ch5-button-content("primary");
   }
 
   /// Applied when type='secondary'
   .ch5-button--secondary {
-    @include ch5-button-content(
-      --ch5-button--secondary-border-width,
-      --ch5-button--secondary-border-style,
-      --ch5-button--secondary-border-color,
-      --ch5-button--secondary-background-color,
-      --ch5-button--secondary-font-color
-    );
-
-    &.ch5-button--selected {
-      @include ch5-button-content--selected(--ch5-button--secondary-selected-border-color, --ch5-button--secondary-selected-background-color, --ch5-button--secondary-selected-font-color);
-    }
-
-    &.ch5-button--pressed {
-      @include ch5-button-content--pressed(--ch5-button--secondary-pressed-border-color, --ch5-button--secondary-pressed-background-color, --ch5-button--secondary-pressed-font-color);
-    }
+    @include ch5-button-content("secondary");
   }
 }
 
 @include ch5-button-set-types();
-
-ch5-button[mode="?"] {
-  @include ch5-button-set-types();
-
-  ch5-button-mode-state[state="normal"],
-  ch5-button-mode-state[state="pressed"],
-  ch5-button-mode-state[state="selected"] {
-    @include ch5-button-set-types();
-  }
-}
