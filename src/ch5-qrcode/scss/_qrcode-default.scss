@@ -10,6 +10,9 @@
 /// @group ch5-qrcode
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+$max-size: 4000;
+$min-size: 160;
+
 ch5-qrcode {
   @include ch5-component-base();
   display: inline-flex;
@@ -21,13 +24,20 @@ ch5-qrcode {
   position: relative;
   display: inline-flex;
 
+  /// Class applied for qrcode size
+  &.ch5-qrcode--size-css {
+    width: clamp(calc($min-size * 1px), calc(var(--ch5-qrcode--size) * 1px), calc($max-size * 1px));
+    height: clamp(calc($min-size * 1px), calc(var(--ch5-qrcode--size) * 1px), calc($max-size * 1px));
+    min-width: calc($min-size * 1px);
+    min-height: calc($min-size * 1px);
+  }
+
   canvas {
-    min-width: 160px;
-    min-height: 160px;
-    aspect-ratio: 1 / 1;  
+    min-width: calc($min-size * 1px);
+    min-height: calc($min-size * 1px);
+    aspect-ratio: 1 / 1;
     border-width: var(--ch5-qrcode--border-width);
     border-style: var(--ch5-qrcode--border-style);
     border-color: var(--ch5-qrcode--border-color);
   }
-
 }

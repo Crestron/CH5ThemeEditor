@@ -25,6 +25,9 @@ ch5-image {
     max-height: 100%;
     max-width: 100%;
     object-fit: var(--ch5-image--object-fit);
+    border-color: var(--ch5-image--border-color);
+    border-width: var(--ch5-image--border-width);
+    border-style: var(--ch5-image--border-style);
     display: inline-block;
   }
   // flip image

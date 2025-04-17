@@ -34,7 +34,7 @@
     /// Applied for the container of subpage
     .ch5-subpage-reference-list--subpage-container {
       height: 100%;
-      padding: var(--ch5-subpage-reference-list--container-padding);
+      padding: var(--ch5-subpage-reference-list--item-padding);
     }
 
     &.ch5-subpage-reference-list--stretch-both {
@@ -44,11 +44,11 @@
     }
 
     &.ch5-subpage-reference-list--scrollbar-true {
-      padding-bottom: var(--ch5-subpage-reference-list--scrollbar-width);
+      //padding-bottom: var(--ch5-subpage-reference-list--scrollbar-width);
 
       &~.scrollbar-container {
         width: 100%;
-        bottom: 0;
+        bottom: calc(-1 * var(--ch5-subpage-reference-list--scrollbar-width));
         height: var(--ch5-subpage-reference-list--scrollbar-width);
 
         .scrollbar {
@@ -84,12 +84,12 @@
     }
 
     &.ch5-subpage-reference-list--scrollbar-true {
-      padding-right: var(--ch5-subpage-reference-list--scrollbar-width);
+      //padding-right: var(--ch5-subpage-reference-list--scrollbar-width);
 
       &~.scrollbar-container {
         top: 0;
         height: 100%;
-        right: 0;
+        right: calc(-1 * var(--ch5-subpage-reference-list--scrollbar-width));
         left: auto;
         width: var(--ch5-subpage-reference-list--scrollbar-width);
 
@@ -101,7 +101,7 @@
 
     .ch5-subpage-reference-list--subpage-container {
       width: 100%;
-      padding: var(--ch5-subpage-reference-list--container-padding);
+      padding: var(--ch5-subpage-reference-list--item-padding);
     }
 
     &.ch5-subpage-reference-list--stretch-both {

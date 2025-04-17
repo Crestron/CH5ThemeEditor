@@ -31,6 +31,16 @@ ch5-text {
   font-style: var(--ch5-text--font-style);
   font-size: var(--ch5-text--font-size);
   font-weight: var(--ch5-text--font-weight);
+  letter-spacing: var(--ch5-text--letter-spacing);
+  text-decoration: var(--ch5-text--text-decoration);
+  background-color: var(--ch5-text--background-color);
+  border-color: var(--ch5-text--border-color);
+  border-width: var(--ch5-text--border-width);
+  border-style: var(--ch5-text--border-style);
+  border-top-left-radius: var(--ch5-text--border-top-left-radius);
+  border-top-right-radius: var(--ch5-text--border-top-right-radius);
+  border-bottom-left-radius: var(--ch5-text--border-bottom-left-radius);
+  border-bottom-right-radius: var(--ch5-text--border-bottom-right-radius);
 
   /// Applied for the span element
   .ch5-text--span {

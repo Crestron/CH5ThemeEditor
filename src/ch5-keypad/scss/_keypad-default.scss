@@ -186,6 +186,22 @@ ch5-keypad {
   &.ch5-keypad--size-x-large {
     @include ch5-keypad-fonts-sizes("x-large");
   }
+
+  &.ch5-keypad--display-label-major-only-true {
+    button {
+      .label-minor {
+        display: none;
+      }
+    }
+  }
+ 
+  &.ch5-keypad--display-label-major-only-false {
+    button {
+      .label-minor {
+        display: block;
+      }
+    }
+  }
 }
 
 /// Add styles for all buttons inside the keypad

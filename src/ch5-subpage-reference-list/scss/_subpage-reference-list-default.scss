@@ -24,6 +24,11 @@ ch5-subpage-reference-list {
   display: grid;
   height: 100%;
   scrollbar-width: none; // needed to hide the firefox scrollbar
+  background-color: var(--ch5-subpage-reference-list--background-color);
+  padding-left: var(--ch5-subpage-reference-list--container-padding-left);
+  padding-right: var(--ch5-subpage-reference-list--container-padding-right);
+  padding-top: var(--ch5-subpage-reference-list--container-padding-top);
+  padding-bottom: var(--ch5-subpage-reference-list--container-padding-bottom);
 
   &.active {
     cursor: -webkit-grabbing;
@@ -75,6 +80,7 @@ ch5-subpage-reference-list {
 .ch5-subpage-reference-list--disabled div {
   pointer-events: none !important;
 }
+
 /// Applied when the subpage reference list is disabled
 .ch5-subpage-reference-list--disabled {
   @include ch5-component-disabled();

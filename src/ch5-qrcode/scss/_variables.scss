@@ -32,4 +32,11 @@ ch5-qrcode {
   /// example: transparent
   /// related-theme-variable: --theme-ch5-qrcode--border-color
   --ch5-qrcode--border-color: var(--theme-ch5-qrcode--border-color);
+
+  /// description: Size for qrcode
+  /// type: number
+  /// values: 160, 200, 4000
+  /// example: 160
+  /// related-theme-variable: --theme-ch5-qrcode--size
+  --ch5-qrcode--size: var(--theme-ch5-qrcode--size);
 }

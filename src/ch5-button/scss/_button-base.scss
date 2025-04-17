@@ -55,6 +55,7 @@ ch5-button {
     }
 
     .cb-btn {
+      position: relative;
       display: inline-flex;
       line-height: var(--ch5-button--line-height);
       padding: var(--ch5-button--padding);

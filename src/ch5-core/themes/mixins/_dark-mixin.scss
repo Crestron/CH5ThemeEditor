@@ -1223,6 +1223,36 @@
 
   --theme-ch5-datetime--font-style: var(--theme-fonts--font-style);
 
+  --theme-ch5-datetime--color: rgb(255, 255, 255);
+
+  --theme-ch5-datetime--letter-spacing: 0;
+
+  --theme-ch5-datetime--text-decoration: none;
+
+  --theme-ch5-datetime--white-space: nowrap;
+
+  --theme-ch5-datetime--border-color: transparent;
+
+  --theme-ch5-datetime--border-width: 0;
+
+  --theme-ch5-datetime--border-style: none;
+
+  --theme-ch5-datetime--padding-top: 0;
+
+  --theme-ch5-datetime--padding-right: 0;
+
+  --theme-ch5-datetime--padding-bottom: 0;
+
+  --theme-ch5-datetime--padding-left: 0;
+
+  --theme-ch5-datetime--border-top-left-radius: 0;
+
+  --theme-ch5-datetime--border-top-right-radius: 0;
+
+  --theme-ch5-datetime--border-bottom-left-radius: 0;
+
+  --theme-ch5-datetime--border-bottom-right-radius: 0;
+
   // ***************************************
   // ch5-dpad
   // ***************************************
@@ -1338,6 +1368,12 @@
   // ***************************************
 
   --theme-ch5-image--object-fit: contain;
+
+  --theme-ch5-image--border-color: transparent;
+
+  --theme-ch5-image--border-width: 0;
+
+  --theme-ch5-image--border-style: none;
 
   // ***************************************
   // ch5-keypad
@@ -1615,6 +1651,8 @@
 
   --theme-ch5-qrcode--border-color: transparent;
 
+  --theme-ch5-qrcode--size: 160;
+
   // ***************************************
   // ch5-segmented-gauge
   // ***************************************
@@ -1745,7 +1783,7 @@
   // ch5-subpage-reference-list
   // ***************************************
 
-  --theme-ch5-subpage-reference-list--container-padding: 5px;
+  --theme-ch5-subpage-reference-list--item-padding: 5px;
 
   --theme-ch5-subpage-reference-list--scrollbar-thumb-color: var(--theme-others--scrollbar-thumb-color);
 
@@ -1754,6 +1792,16 @@
   --theme-ch5-subpage-reference-list--scrollbar-track-color: var(--theme-others--scrollbar-track-color);
 
   --theme-ch5-subpage-reference-list--scrollbar-width: var(--theme-others--scrollbar-width);
+
+  --theme-ch5-subpage-reference-list--background-color: transparent;
+
+  --theme-ch5-subpage-reference-list--container-padding-right: 0;
+
+  --theme-ch5-subpage-reference-list--container-padding-left: 0;
+
+  --theme-ch5-subpage-reference-list--container-padding-top: 0;
+
+  --theme-ch5-subpage-reference-list--container-padding-bottom: 0;
 
   // ***************************************
   // ch5-tab-button
@@ -1782,6 +1830,26 @@
   --theme-ch5-text--font-color: var(--theme-colors--theme-body-font-color);
 
   --theme-ch5-text--word-break: break-word;
+
+  --theme-ch5-text--letter-spacing: 0;
+
+  --theme-ch5-text--text-decoration: none;
+
+  --theme-ch5-text--background-color: transparent;
+
+  --theme-ch5-text--border-color: transparent;
+
+  --theme-ch5-text--border-width: 0;
+
+  --theme-ch5-text--border-style: none;
+
+  --theme-ch5-text--border-top-left-radius: 0;
+
+  --theme-ch5-text--border-top-right-radius: 0;
+
+  --theme-ch5-text--border-bottom-right-radius: 0;
+
+  --theme-ch5-text--border-bottom-left-radius: 0;
 
   // ***************************************
   // ch5-textinput
@@ -1849,19 +1917,13 @@
 
   --theme-ch5-textinput--regular-width: 400px;
 
-  --theme-ch5-textinput--regular-icon-margin: 16px 18px;
-
   --theme-ch5-textinput--x-small-input-padding: 10px 10px;
 
   --theme-ch5-textinput--x-small-width: 200px;
 
-  --theme-ch5-textinput--x-small-icon-margin: 12px 12px;
-
   --theme-ch5-textinput--small-input-padding: 15px 15px;
 
   --theme-ch5-textinput--small-width: 250px;
-
-  --theme-ch5-textinput--small-icon-margin: 14px 14px;
 
   --theme-ch5-textinput--large-input-padding: 15px 20px;
 
@@ -1869,11 +1931,7 @@
 
   --theme-ch5-textinput--x-large-width: 500px;
 
-  --theme-ch5-textinput--large-icon-margin: 18px 18px;
-
   --theme-ch5-textinput--x-large-input-padding: 15px 20px;
-
-  --theme-ch5-textinput--x-large-icon-margin: 22px 22px;
 
   --theme-ch5-textinput--x-small-height: 40px;
 
@@ -1884,6 +1942,14 @@
   --theme-ch5-textinput--large-height: 56px;
 
   --theme-ch5-textinput--x-large-height: 60px;
+
+  --theme-ch5-textinput--margin-top: 14px;
+
+  --theme-ch5-textinput--margin-right: 14px;
+
+  --theme-ch5-textinput--margin-bottom: 14px;
+
+  --theme-ch5-textinput--margin-left: 14px;
 
   // ***************************************
   // ch5-toggle

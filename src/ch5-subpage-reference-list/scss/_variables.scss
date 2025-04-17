@@ -11,12 +11,12 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ch5-subpage-reference-list {
-  /// description: Padding for the subpage reference list container
+  /// description: Padding for the subpage reference list item
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 5px 
-  /// related-theme-variable: --theme-ch5-subpage-reference-list--container-padding
-  --ch5-subpage-reference-list--container-padding: var(--theme-ch5-subpage-reference-list--container-padding);
+  /// related-theme-variable: --theme-ch5-subpage-reference-list--item-padding
+  --ch5-subpage-reference-list--item-padding: var(--theme-ch5-subpage-reference-list--item-padding);
 
   /// description: Scrollbar width for subpage reference list
   /// type: unit
@@ -45,4 +45,39 @@ ch5-subpage-reference-list {
   /// example: rgba(0, 0, 0, 0.5)
   /// related-theme-variable: --theme-ch5-subpage-reference-list--scrollbar-thumb-color
   --ch5-subpage-reference-list--scrollbar-thumb-color: var(--theme-ch5-subpage-reference-list--scrollbar-thumb-color);
+
+  /// description: Background color for subpage reference list
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: transparent 
+  /// related-theme-variable: --theme-ch5-subpage-reference-list--background-color
+  --ch5-subpage-reference-list--background-color: var(--theme-ch5-subpage-reference-list--background-color);
+
+  /// description: Padding left for the subpage reference list container
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 5px 
+  /// related-theme-variable: --theme-ch5-subpage-reference-list--container-padding-left
+  --ch5-subpage-reference-list--container-padding-left: var(--theme-ch5-subpage-reference-list--container-padding-left);
+
+  /// description: Padding right for the subpage reference list container
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 5px 
+  /// related-theme-variable: --theme-ch5-subpage-reference-list--container-padding-right
+  --ch5-subpage-reference-list--container-padding-right: var(--theme-ch5-subpage-reference-list--container-padding-right);
+
+  /// description: Padding top for the subpage reference list container
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 5px 
+  /// related-theme-variable: --theme-ch5-subpage-reference-list--container-padding-top
+  --ch5-subpage-reference-list--container-padding-top: var(--theme-ch5-subpage-reference-list--container-padding-top);
+
+  /// description: Padding bottom for the subpage reference list container
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 5px 
+  /// related-theme-variable: --theme-ch5-subpage-reference-list--container-padding-bottom
+  --ch5-subpage-reference-list--container-padding-bottom: var(--theme-ch5-subpage-reference-list--container-padding-bottom);
 }

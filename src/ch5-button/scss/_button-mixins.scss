@@ -85,6 +85,16 @@
       width: var(#{$property-font-pressed-image-width});
     }
 
+    .ch5-button--icon-url-fill-type-stretch,
+    .ch5-button--icon-url-fill-type-stretch-aspect,
+    .ch5-button--icon-url-fill-type-center,
+    .ch5-button--icon-url-fill-type-tile {
+      .ch5-button--img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
     .ch5-button--icon {
       // color: var(#{$property-pressed-icon-color});
       font-size: var(#{$property-pressed-icon-font-size});
@@ -104,6 +114,16 @@
     .ch5-button--img {
       height: var(#{$property-font-selected-image-height});
       width: var(#{$property-font-selected-image-width});
+    }
+
+    .ch5-button--icon-url-fill-type-stretch,
+    .ch5-button--icon-url-fill-type-stretch-aspect,
+    .ch5-button--icon-url-fill-type-center,
+    .ch5-button--icon-url-fill-type-tile {
+      .ch5-button--img {
+        height: 100%;
+        width: 100%;
+      }
     }
 
     .ch5-button--icon {

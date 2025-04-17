@@ -15,3 +15,8 @@
 Copyright (C) 2023 to the present, Crestron Electronics, Inc. All rights reserved. No part of this software may be reproduced in any form, machine or natural, without the express written consent of Crestron Electronics. Use of this source code is subject to the terms of the Crestron Software Development Tools License Agreement under which you licensed this source code.
 
 If you did not accept the terms of the license agreement, you are not authorized to use this software. For the terms of the license, please see the license agreement between you and Crestron at http://www.crestron.com/sla.
+
+## What's New
+
+Updates to the Crestron HTML5 User Interface and documentation are avalilable in the following link
+https://sdkcon78221.crestron.com/sdk/Crestron_HTML5UI/Content/Topics/Whats-New.htm

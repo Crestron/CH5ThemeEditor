@@ -69,6 +69,10 @@ ch5-textinput {
     /// Applied on the icon
     .ch5-textinput--icon {
       color: var(--ch5-textinput--icon-text-color);
+      margin-top: var(--ch5-textinput--margin-top);
+      margin-right: var(--ch5-textinput--margin-right);
+      margin-bottom: var(--ch5-textinput--margin-bottom);
+      margin-left: var(--ch5-textinput--margin-left);
     }
 
     >span {
@@ -129,7 +133,6 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: var(--ch5-textinput--regular-font-size);
-        margin: var(--ch5-textinput--regular-icon-margin);
       }
 
       .ch5-textinput--input {
@@ -165,7 +168,6 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: var(--ch5-textinput--x-small-font-size);
-        margin: var(--ch5-textinput--x-small-icon-margin);
       }
 
       .ch5-textinput--input {
@@ -201,7 +203,6 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: var(--ch5-textinput--small-font-size);
-        margin: var(--ch5-textinput--small-icon-margin);
       }
 
       .ch5-textinput--input {
@@ -237,7 +238,6 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: var(--ch5-textinput--large-font-size);
-        margin: var(--ch5-textinput--large-icon-margin);
       }
 
       .ch5-textinput--input {
@@ -273,7 +273,6 @@ ch5-textinput {
     .ch5-textinput-container {
       .ch5-textinput--icon {
         font-size: var(--ch5-textinput--x-large-font-size);
-        margin: var(--ch5-textinput--x-large-icon-margin);
       }
 
       .ch5-textinput--input {

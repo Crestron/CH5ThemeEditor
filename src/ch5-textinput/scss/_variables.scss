@@ -123,13 +123,6 @@ ch5-textinput {
   /// related-theme-variable: --theme-ch5-textinput--regular-mask-font-size
   --ch5-textinput--regular-mask-font-size: var(--theme-ch5-textinput--regular-mask-font-size);
 
-  /// description: Margin for icon for size=regular of the textinput
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 16px 16px
-  /// related-theme-variable: --theme-ch5-textinput--regular-icon-margin
-  --ch5-textinput--regular-icon-margin: var(--theme-ch5-textinput--regular-icon-margin);
-
   /// description: Font size for size=x-small of the textinput
   /// type: unit
   /// values: px, vw, vh, em, rem, %
@@ -171,13 +164,6 @@ ch5-textinput {
   /// example: 200px
   /// related-theme-variable: --theme-ch5-textinput--x-small-width
   --ch5-textinput--x-small-width: var(--theme-ch5-textinput--x-small-width);
-
-  /// description: Margin for icon for size=x-small of the textinput
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 12px 12px
-  /// related-theme-variable: --theme-ch5-textinput--x-small-icon-margin
-  --ch5-textinput--x-small-icon-margin: var(--theme-ch5-textinput--x-small-icon-margin);
 
   /// description: Height of input field for size=x-small of the textinput
   /// type: unit
@@ -228,13 +214,6 @@ ch5-textinput {
   /// related-theme-variable: --theme-ch5-textinput--small-width
   --ch5-textinput--small-width: var(--theme-ch5-textinput--small-width);
 
-  /// description: Margin for icon for size=small of the textinput
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 14px 14px
-  /// related-theme-variable: --theme-ch5-textinput--small-icon-margin
-  --ch5-textinput--small-icon-margin: var(--theme-ch5-textinput--small-icon-margin);
-
   /// description: Height of input field for size=small of the textinput
   /// type: unit
   /// values: px, vw, vh, em, rem, %
@@ -283,13 +262,6 @@ ch5-textinput {
   /// example: 500px
   /// related-theme-variable: --theme-ch5-textinput--large-width
   --ch5-textinput--large-width: var(--theme-ch5-textinput--large-width);
-
-  /// description: Margin for icon for size=large of the textinput
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 18px 18px
-  /// related-theme-variable: --theme-ch5-textinput--large-icon-margin
-  --ch5-textinput--large-icon-margin: var(--theme-ch5-textinput--large-icon-margin);
 
   /// description: Height of input field for size=large of the textinput
   /// type: unit
@@ -340,17 +312,38 @@ ch5-textinput {
   /// related-theme-variable: --theme-ch5-textinput--x-large-width
   --ch5-textinput--x-large-width: var(--theme-ch5-textinput--x-large-width);
 
-  /// description: Margin for icon for size=x-large of the textinput
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 22px 22px
-  /// related-theme-variable: --theme-ch5-textinput--x-large-icon-margin
-  --ch5-textinput--x-large-icon-margin: var(--theme-ch5-textinput--x-large-icon-margin);
-
   /// description: Height of input field for size=x-large of the textinput
   /// type: unit
   /// values: px, vw, vh, em, rem, %
   /// example: 60px
   /// related-theme-variable: --theme-ch5-textinput--x-large-height
   --ch5-textinput--x-large-height: var(--theme-ch5-textinput--x-large-height);
+
+  /// description: Margin top for the textinput
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-textinput--margin-top
+  --ch5-textinput--margin-top: var(--theme-ch5-textinput--margin-top);
+
+  /// description: Margin right for the textinput
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-textinput--margin-right
+  --ch5-textinput--margin-right: var(--theme-ch5-textinput--margin-right);
+
+  /// description: Margin bottom for the textinput
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-textinput--margin-bottom
+  --ch5-textinput--margin-bottom: var(--theme-ch5-textinput--margin-bottom);
+
+  /// description: Margin left for the textinput
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-textinput--margin-left
+  --ch5-textinput--margin-left: var(--theme-ch5-textinput--margin-left);
 }

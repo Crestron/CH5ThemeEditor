@@ -66,4 +66,74 @@ ch5-text {
   /// example: break-word
   /// related-theme-variable: --theme-ch5-text--word-break
   --ch5-text--word-break: var(--theme-ch5-text--word-break);
+
+  /// description: Letter spacing for ch5 text
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 72px
+  /// related-theme-variable: --theme-ch5-text--letter-spacing
+  --ch5-text--letter-spacing: var(--theme-ch5-text--letter-spacing);
+
+  /// description: Text decoration for ch5 text
+  /// type: list
+  /// values: none, underline, strike-through
+  /// example: none
+  /// related-theme-variable: --theme-ch5-text--text-decoration
+  --ch5-text--text-decoration: var(--theme-ch5-text--text-decoration);
+
+  /// description: Background color for ch5 text
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: transparent 
+  /// related-theme-variable: --theme-ch5-text--background-color
+  --ch5-text--background-color: var(--theme-ch5-text--background-color);
+
+  /// description: Border color property for ch5 text
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// example: #0091ea
+  /// related-theme-variable: --theme-ch5-text--border-color
+  --ch5-text--border-color: var(--theme-ch5-text--border-color);
+
+  /// description: Border width property for ch5 text
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 1px
+  /// related-theme-variable: --theme-ch5-text--border-width
+  --ch5-text--border-width: var(--theme-ch5-text--border-width);
+
+  /// description: Border style property for ch5 text
+  /// type: list
+  /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// example: solid
+  /// related-theme-variable: --theme-ch5-text--border-style
+  --ch5-text--border-style: var(--theme-ch5-text--border-style);
+
+  /// description: Border top left radius property for ch5 text
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 1px
+  /// related-theme-variable: --theme-ch5-text--border-top-left-radius
+  --ch5-text--border-top-left-radius: var(--theme-ch5-text--border-top-left-radius);
+
+  /// description: Border top right radius property for ch5 text
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 1px
+  /// related-theme-variable: --theme-ch5-text--border-top-right-radius
+  --ch5-text--border-top-right-radius: var(--theme-ch5-text--border-top-right-radius);
+
+  /// description: Border bottom right radius property for ch5 text
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 1px
+  /// related-theme-variable: --theme-ch5-text--border-bottom-right-radius
+  --ch5-text--border-bottom-right-radius: var(--theme-ch5-text--border-bottom-right-radius);
+
+  /// description: Border bottom left radius property for ch5 text
+  /// type: unit
+  /// values: px, vw, vh, em, rem, %
+  /// example: 1px
+  /// related-theme-variable: --theme-ch5-text--border-bottom-left-radius
+  --ch5-text--border-bottom-left-radius: var(--theme-ch5-text--border-bottom-left-radius);
 }
