@@ -13,7 +13,8 @@
 ch5-toggle {
   /// description: Font size for toggle label
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 16px
   /// related-theme-variable: --theme-ch5-toggle--label-font-size
   --ch5-toggle--label-font-size: var(--theme-ch5-toggle--label-font-size);
@@ -21,6 +22,7 @@ ch5-toggle {
   /// description: Font style for toggle label
   /// type: list
   /// values: normal, italic
+  /// show-theme-editor: true
   /// example: normal
   /// related-theme-variable: --theme-ch5-toggle--label-font-style
   --ch5-toggle--label-font-style: var(--theme-ch5-toggle--label-font-style);
@@ -28,111 +30,231 @@ ch5-toggle {
   /// description: Font weight for toggle label
   /// type: list
   /// values: normal, bold
+  /// show-theme-editor: true
   /// example: normal
   /// related-theme-variable: --theme-ch5-toggle--label-font-weight
   --ch5-toggle--label-font-weight: var(--theme-ch5-toggle--label-font-weight);
 
-  /// description: Margin for toggle label
+  /// description: Font size applied on the on label when size="regular"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 10px
-  /// related-theme-variable: --theme-ch5-toggle-label-margin
-  --ch5-toggle--label-margin: var(--theme-ch5-toggle--label-margin);
+  /// related-theme-variable: --theme-ch5-toggle--on-label-regular-font-size
+  --ch5-toggle--on-label-regular-font-size: var(--theme-ch5-toggle--on-label-regular-font-size);
 
-  /// description: Font size applied on the on|off label when size="regular"
+  /// description: Font size applied on the off label when size="regular"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 16px
-  /// related-theme-variable: --theme-ch5-toggle--regular-font-size
-  --ch5-toggle--regular-font-size: var(--theme-ch5-toggle--regular-font-size); 
-
-  /// description: Font size applied on the on|off label when size="small"
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 12px
-  /// related-theme-variable: --theme-ch5-toggle--small-font-size
-  --ch5-toggle--small-font-size: var(--theme-ch5-toggle--small-font-size);
-
-  /// description: Font size applied on the on|off label when size="x-small"
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 10px
-  /// related-theme-variable: --theme-ch5-toggle--x-small-font-size
-  --ch5-toggle--x-small-font-size: var(--theme-ch5-toggle--x-small-font-size);
+  /// related-theme-variable: --theme-ch5-toggle--off-label-regular-font-size
+  --ch5-toggle--off-label-regular-font-size: var(--theme-ch5-toggle--off-label-regular-font-size);
 
-  /// description: Font size applied on the on|off label when size="large"
+  /// description: Font size applied on the on label when size="small"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 18px
-  /// related-theme-variable: --theme-ch5-toggle--large-font-size
-  --ch5-toggle--large-font-size: var(--theme-ch5-toggle--large-font-size);
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 10px
+  /// related-theme-variable: --theme-ch5-toggle--on-label-small-font-size
+  --ch5-toggle--on-label-small-font-size: var(--theme-ch5-toggle--on-label-small-font-size);
 
-  /// description: Font size applied on the on|off label when size="x-large"
+  /// description: Font size applied on the off label when size="small"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 20px
-  /// related-theme-variable: --theme-ch5-toggle--x-large-font-size
-  --ch5-toggle--x-large-font-size: var(--theme-ch5-toggle--x-large-font-size);
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 10px
+  /// related-theme-variable: --theme-ch5-toggle--off-label-small-font-size
+  --ch5-toggle--off-label-small-font-size: var(--theme-ch5-toggle--off-label-small-font-size);
 
-  /// description: Font style applied on the on|off label
+  /// description: Font size applied on the on label when size="x-small"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 10px
+  /// related-theme-variable: --theme-ch5-toggle--on-label-x-small-font-size
+  --ch5-toggle--on-label-x-small-font-size: var(--theme-ch5-toggle--on-label-x-small-font-size);
+
+  /// description: Font size applied on the off label when size="x-small"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 10px
+  /// related-theme-variable: --theme-ch5-toggle--off-label-x-small-font-size
+  --ch5-toggle--off-label-x-small-font-size: var(--theme-ch5-toggle--off-label-x-small-font-size);
+
+  /// description: Font size applied on the on label when size="large"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 10px
+  /// related-theme-variable: --theme-ch5-toggle--on-label-large-font-size
+  --ch5-toggle--on-label-large-font-size: var(--theme-ch5-toggle--on-label-large-font-size);
+
+  /// description: Font size applied on the off label when size="large"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 10px
+  /// related-theme-variable: --theme-ch5-toggle--off-label-large-font-size
+  --ch5-toggle--off-label-large-font-size: var(--theme-ch5-toggle--off-label-large-font-size);
+
+  /// description: Font size applied on the on label when size="x-large"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 10px
+  /// related-theme-variable: --theme-ch5-toggle--on-label-x-large-font-size
+  --ch5-toggle--on-label-x-large-font-size: var(--theme-ch5-toggle--on-label-x-large-font-size);
+
+  /// description: Font size applied on the off label when size="x-large"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 10px
+  /// related-theme-variable: --theme-ch5-toggle--off-label-x-large-font-size
+  --ch5-toggle--off-label-x-large-font-size: var(--theme-ch5-toggle--off-label-x-large-font-size);
+
+  /// description: Font style applied on the on label
   /// type: list
   /// values: normal, italic
+  /// show-theme-editor: true
   /// example: normal
-  /// related-theme-variable: --theme-ch5-toggle--text-font-style
-  --ch5-toggle--text-font-style: var(--theme-ch5-toggle--text-font-style);
+  /// related-theme-variable: --theme-ch5-toggle--on-text-font-style
+  --ch5-toggle--on-text-font-style: var(--theme-ch5-toggle--on-text-font-style);
 
-  /// description: Font weight applied on the on|off label
+  /// description: Font style applied on the off label
+  /// type: list
+  /// values: normal, italic
+  /// show-theme-editor: true
+  /// example: normal
+  /// related-theme-variable: --theme-ch5-toggle--off-text-font-style
+  --ch5-toggle--off-text-font-style: var(--theme-ch5-toggle--off-text-font-style);
+
+  /// description: Font weight applied on the on label
   /// type: list
   /// values: normal, bold
+  /// show-theme-editor: true
   /// example: normal
-  /// related-theme-variable: --theme-ch5-toggle--text-font-weight
-  --ch5-toggle--text-font-weight: var(--theme-ch5-toggle--text-font-weight);
+  /// related-theme-variable: --theme-ch5-toggle--on-text-font-weight
+  --ch5-toggle--on-text-font-weight: var(--theme-ch5-toggle--on-text-font-weight);
 
-  /// description: Icon size applied on the on|off icon when size="x-small"
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 10px
-  /// related-theme-variable: --theme-ch5-toggle--x-small-icon-size
-  --ch5-toggle--x-small-icon-size: var(--theme-ch5-toggle--x-small-icon-size);
+  /// description: Font weight applied on the off label
+  /// type: list
+  /// values: normal, bold
+  /// show-theme-editor: true
+  /// example: normal
+  /// related-theme-variable: --theme-ch5-toggle--off-text-font-weight
+  --ch5-toggle--off-text-font-weight: var(--theme-ch5-toggle--off-text-font-weight);
 
-  /// description: Icon size applied on the on|off icon when size="small"
-  /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 16px
-  /// related-theme-variable: --theme-ch5-toggle--small-icon-size
-  --ch5-toggle--small-icon-size: var(--theme-ch5-toggle--small-icon-size);
+  /// description: Font weight applied on the on icon
+  /// type: list
+  /// values: normal, bold
+  /// show-theme-editor: true
+  /// example: normal
+  /// related-theme-variable: --theme-ch5-toggle--icon-on-font-weight
+  --ch5-toggle--icon-on-font-weight: var(--theme-ch5-toggle--icon-on-font-weight);
 
-  /// description: Icon size applied on the on|off icon when size="regular"
+  /// description: Font weight applied on the off icon
+  /// type: list
+  /// values: normal, bold
+  /// show-theme-editor: true
+  /// example: normal
+  /// related-theme-variable: --theme-ch5-toggle--icon-off-font-weight
+  --ch5-toggle--icon-off-font-weight: var(--theme-ch5-toggle--icon-off-font-weight);
+
+  /// description: Icon size applied on the on icon when size="x-small"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 12px
-  /// related-theme-variable: --theme-ch5-toggle--regular-icon-size
-  --ch5-toggle--regular-icon-size: var(--theme-ch5-toggle--regular-icon-size);
+  /// related-theme-variable: --theme-ch5-toggle--on-x-small-icon-size
+  --ch5-toggle--on-x-small-icon-size: var(--theme-ch5-toggle--on-x-small-icon-size);
 
-  /// description: Icon size applied on the on|off icon when size="large"
+  /// description: Icon size applied on the off icon when size="x-small"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 18px
-  /// related-theme-variable: --theme-ch5-toggle--large-icon-size
-  --ch5-toggle--large-icon-size: var(--theme-ch5-toggle--large-icon-size);
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 12px
+  /// related-theme-variable: --theme-ch5-toggle--off-x-small-icon-size
+  --ch5-toggle--off-x-small-icon-size: var(--theme-ch5-toggle--off-x-small-icon-size);
 
-  /// description: Icon size applied on the on|off icon when size="x-large"
+  /// description: Icon size applied on the on icon when size="small"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 20px
-  /// related-theme-variable: --theme-ch5-toggle--x-large-icon-size
-  --ch5-toggle--x-large-icon-size: var(--theme-ch5-toggle--x-large-icon-size);
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 12px
+  /// related-theme-variable: --theme-ch5-toggle--on-small-icon-size
+  --ch5-toggle--on-small-icon-size: var(--theme-ch5-toggle--on-small-icon-size);
+
+  /// description: Icon size applied on the off icon when size="small"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 12px
+  /// related-theme-variable: --theme-ch5-toggle--off-small-icon-size
+  --ch5-toggle--off-small-icon-size: var(--theme-ch5-toggle--off-small-icon-size);
+
+  /// description: Icon size applied on the on icon when size="regular"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 12px
+  /// related-theme-variable: --theme-ch5-toggle--on-regular-icon-size
+  --ch5-toggle--on-regular-icon-size: var(--theme-ch5-toggle--on-regular-icon-size);
+
+  /// description: Icon size applied on the off icon when size="regular"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 12px
+  /// related-theme-variable: --theme-ch5-toggle--off-regular-icon-size
+  --ch5-toggle--off-regular-icon-size: var(--theme-ch5-toggle--off-regular-icon-size);
+
+  /// description: Icon size applied on the on icon when size="large"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 12px
+  /// related-theme-variable: --theme-ch5-toggle--on-large-icon-size
+  --ch5-toggle--on-large-icon-size: var(--theme-ch5-toggle--on-large-icon-size);
+
+  /// description: Icon size applied on the off icon when size="large"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 12px
+  /// related-theme-variable: --theme-ch5-toggle--off-large-icon-size
+  --ch5-toggle--off-large-icon-size: var(--theme-ch5-toggle--off-large-icon-size);
+
+  /// description: Icon size applied on the on icon when size="x-large"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 12px
+  /// related-theme-variable: --theme-ch5-toggle--on-x-large-icon-size
+  --ch5-toggle--on-x-large-icon-size: var(--theme-ch5-toggle--on-x-large-icon-size);
+
+  /// description: Icon size applied on the off icon when size="x-large"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 12px
+  /// related-theme-variable: --theme-ch5-toggle--off-x-large-icon-size
+  --ch5-toggle--off-x-large-icon-size: var(--theme-ch5-toggle--off-x-large-icon-size);
 
   /// description: Handle margin when the shape="circle"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 10px
   /// related-theme-variable: --theme-ch5-toggle--handle-circle-margin
   --ch5-toggle--handle-circle-margin: var(--theme-ch5-toggle--handle-circle-margin);
 
   /// description: Handle margin when the shape="rectangle"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 10px
   /// related-theme-variable: --theme-ch5-toggle--handle-rectangle-margin
   --ch5-toggle--handle-rectangle-margin: var(--theme-ch5-toggle--handle-rectangle-margin);
@@ -140,13 +262,15 @@ ch5-toggle {
   /// description: Border color of the handle when shape="circle" and value="false".
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #d8d9db
   /// related-theme-variable: --theme-ch5-toggle--circle-handle-off-border-color
   --ch5-toggle--circle-handle-off-border-color: var(--theme-ch5-toggle--circle-handle-off-border-color);
 
   /// description: Border width of the handle when shape="circle"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-toggle--circle-handle-border-width
   --ch5-toggle--circle-handle-border-width: var(--theme-ch5-toggle--circle-handle-border-width);
@@ -154,6 +278,7 @@ ch5-toggle {
   /// description: Border style of the handle when shape="circle"
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-toggle--circle-handle-border-style
   --ch5-toggle--circle-handle-border-style: var(--theme-ch5-toggle--circle-handle-border-style);
@@ -161,6 +286,7 @@ ch5-toggle {
   /// description: Border color of the handle when shape="circle" and value="true".
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #d8d9db
   /// related-theme-variable: --theme-ch5-toggle--circle-handle-on-border-color
   --ch5-toggle--circle-handle-on-border-color: var(--theme-ch5-toggle--circle-handle-on-border-color);
@@ -168,6 +294,7 @@ ch5-toggle {
   /// description: Background color of the toggle when shape="circle"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #d8d9db
   /// related-theme-variable: --theme-ch5-toggle--circle-background-color
   --ch5-toggle--circle-background-color: var(--theme-ch5-toggle--circle-background-color);
@@ -175,6 +302,7 @@ ch5-toggle {
   /// description: Background color of the knob when shape="circle"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #fff
   /// related-theme-variable: --theme-ch5-toggle--circle-knob-background-color
   --ch5-toggle--circle-knob-background-color: var(--theme-ch5-toggle--circle-knob-background-color);
@@ -182,56 +310,48 @@ ch5-toggle {
   /// description: Text color of the label
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #4a4a4a
   /// related-theme-variable: --theme-ch5-toggle--label-font-color
   --ch5-toggle--label-font-color: var(--theme-ch5-toggle--label-font-color);
 
-  /// description: Text color of the on|off label
+  /// description: Text color of the on label
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #4a4a4a
-  /// related-theme-variable: --theme-ch5-toggle--text-font-color
-  --ch5-toggle--text-font-color: var(--theme-ch5-toggle--text-font-color);
+  /// related-theme-variable: --theme-ch5-toggle--on-text-font-color
+  --ch5-toggle--on-text-font-color: var(--theme-ch5-toggle--on-text-font-color);
 
-  /// description: Color of the on|off icon when size="regular"
+  /// description: Text color of the off label
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #fff
-  /// related-theme-variable: --theme-ch5-toggle--regular-icon-color
-  --ch5-toggle--regular-icon-color: var(--theme-ch5-toggle--regular-icon-color);
+  /// show-theme-editor: true
+  /// example: #4a4a4a
+  /// related-theme-variable: --theme-ch5-toggle--off-text-font-color
+  --ch5-toggle--off-text-font-color: var(--theme-ch5-toggle--off-text-font-color);
 
-  /// description: Color of the on|off icon when size="small"
+  /// description: Color of the on icon
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #fff
-  /// related-theme-variable: --theme-ch5-toggle--small-icon-color
-  --ch5-toggle--small-icon-color: var(--theme-ch5-toggle--small-icon-color);
+  /// related-theme-variable: --theme-ch5-toggle--icon-on-font-color
+  --ch5-toggle--icon-on-font-color: var(--theme-ch5-toggle--icon-on-font-color);
 
-  /// description: Color of the on|off icon when size="x-small"
+  /// description: Color of the off icon
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #fff
-  /// related-theme-variable: --theme-ch5-toggle--x-small-icon-color
-  --ch5-toggle--x-small-icon-color: var(--theme-ch5-toggle--x-small-icon-color);
-
-  /// description: Color of the on|off icon when size="large"
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #fff
-  /// related-theme-variable: --theme-ch5-toggle--large-icon-color
-  --ch5-toggle--large-icon-color: var(--theme-ch5-toggle--large-icon-color);
-
-  /// description: Color of the on|off icon when size="x-large"
-  /// type: color
-  /// values: rgb(35,35,35), #1a1a1a, red
-  /// example: #fff
-  /// related-theme-variable: --theme-ch5-toggle--x-large-icon-color
-  --ch5-toggle--x-large-icon-color: var(--theme-ch5-toggle--x-large-icon-color);
+  /// related-theme-variable: --theme-ch5-toggle--icon-off-font-color
+  --ch5-toggle--icon-off-font-color: var(--theme-ch5-toggle--icon-off-font-color);
 
   // rectangle
   /// description: Background color of toggle when shape="rectangle"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #464747
   /// related-theme-variable: --theme-ch5-toggle--rectangle-background-color
   --ch5-toggle--rectangle-background-color: var(--theme-ch5-toggle--rectangle-background-color);
@@ -239,6 +359,7 @@ ch5-toggle {
   /// description: Background color of the handle when value is false(off) and shape="rectangle"
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #888
   /// related-theme-variable: --theme-ch5-toggle--rectangle-handle-off-background-color
   --ch5-toggle--rectangle-handle-off-background-color: var(--theme-ch5-toggle--rectangle-handle-off-background-color);
@@ -246,6 +367,7 @@ ch5-toggle {
   /// description: Background color of the handle when value is true (on) and shape="rectangle".
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #4bd865
   /// related-theme-variable: --theme-ch5-toggle--rectangle-handle-on-background-color
   --ch5-toggle--rectangle-handle-on-background-color: var(--theme-ch5-toggle--rectangle-handle-on-background-color);
@@ -253,7 +375,147 @@ ch5-toggle {
   /// description: Background color of the handle when value is true (on) when shape="circle".
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #4bd865
   /// related-theme-variable: --theme-ch5-toggle--circle-handle-on-background-color
   --ch5-toggle--circle-handle-on-background-color: var(--theme-ch5-toggle--circle-handle-on-background-color);
+
+  /// description: Margin top for toggle label
+  /// type: unit
+  /// values: px, %, vh
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-toggle--label-margin-top
+  --ch5-toggle--label-margin-top: var(--theme-ch5-toggle--label-margin-top);
+
+  /// description: Margin left for toggle label
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-toggle--label-margin-left
+  --ch5-toggle--label-margin-left: var(--theme-ch5-toggle--label-margin-left);
+
+  /// description:Margin right for toggle label
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-toggle--label-margin-right
+  --ch5-toggle--label-margin-right: var(--theme-ch5-toggle--label-margin-right);
+
+  /// description: Margin bottom for toggle label
+  /// type: unit
+  /// values: px, %, vh
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-toggle--label-margin-bottom
+  --ch5-toggle--label-margin-bottom: var(--theme-ch5-toggle--label-margin-bottom);
+
+  /// description: Margin top for toggle icon on
+  /// type: unit
+  /// values: px, %, vh
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-toggle--icon-on-margin-top
+  --ch5-toggle--icon-on-margin-top: var(--theme-ch5-toggle--icon-on-margin-top);
+
+  /// description: Margin left for toggle icon on
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-toggle--icon-on-margin-left
+  --ch5-toggle--icon-on-margin-left: var(--theme-ch5-toggle--icon-on-margin-left);
+
+  /// description:Margin right for toggle icon on
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-toggle--icon-on-margin-right
+  --ch5-toggle--icon-on-margin-right: var(--theme-ch5-toggle--icon-on-margin-right);
+
+  /// description: Margin bottom for toggle icon on
+  /// type: unit
+  /// values: px, %, vh
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-toggle--icon-on-margin-bottom
+  --ch5-toggle--icon-on-margin-bottom: var(--theme-ch5-toggle--icon-on-margin-bottom);
+
+  /// description: Margin top for toggle icon off
+  /// type: unit
+  /// values: px, %, vh
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-toggle--icon-off-margin-top
+  --ch5-toggle--icon-off-margin-top: var(--theme-ch5-toggle--icon-off-margin-top);
+
+  /// description: Margin left for toggle icon off
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-toggle--icon-off-margin-left
+  --ch5-toggle--icon-off-margin-left: var(--theme-ch5-toggle--icon-off-margin-left);
+
+  /// description:Margin right for toggle icon off
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-toggle--icon-off-margin-right
+  --ch5-toggle--icon-off-margin-right: var(--theme-ch5-toggle--icon-off-margin-right);
+
+  /// description: Margin bottom for toggle icon off
+  /// type: unit
+  /// values: px, %, vh
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-toggle--icon-off-margin-bottom
+  --ch5-toggle--icon-off-margin-bottom: var(--theme-ch5-toggle--icon-off-margin-bottom);
+
+  /// description: Toggle handel size for regular
+  /// type: unit
+  /// values: px
+  /// show-theme-editor: true
+  /// example: 1px
+  /// related-theme-variable: --theme-ch5-toggle--handle-size-regular
+  --ch5-toggle--handle-size-regular: var(--theme-ch5-toggle--handle-size-regular);
+
+  /// description: Toggle handel size for x-small
+  /// type: unit
+  /// values: px
+  /// show-theme-editor: true
+  /// example: 1px
+  /// related-theme-variable: --theme-ch5-toggle--handle-size-x-small
+  --ch5-toggle--handle-size-x-small: var(--theme-ch5-toggle--handle-size-x-small);
+
+  /// description: Toggle handel size for small
+  /// type: unit
+  /// values: px
+  /// show-theme-editor: true
+  /// example: 1px
+  /// related-theme-variable: --theme-ch5-toggle--handle-size-small
+  --ch5-toggle--handle-size-small: var(--theme-ch5-toggle--handle-size-small);
+
+
+  /// description: Toggle handel size for large
+  /// type: unit
+  /// values: px
+  /// show-theme-editor: true
+  /// example: 1px
+  /// related-theme-variable: --theme-ch5-toggle--handle-size-large
+  --ch5-toggle--handle-size-large: var(--theme-ch5-toggle--handle-size-large);
+
+  /// description: Toggle handel size for x-large
+  /// type: unit
+  /// values: px
+  /// show-theme-editor: true
+  /// example: 1px
+  /// related-theme-variable: --theme-ch5-toggle--handle-size-x-large
+  --ch5-toggle--handle-size-x-large: var(--theme-ch5-toggle--handle-size-x-large);
+
+
 }

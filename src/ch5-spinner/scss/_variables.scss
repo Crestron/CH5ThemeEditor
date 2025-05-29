@@ -14,6 +14,7 @@ ch5-spinner {
   /// description: Border width for spinner
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 1px 
   /// related-theme-variable: --theme-ch5-spinner--border-width
   --ch5-spinner--border-width: var(--theme-ch5-spinner--border-width);
@@ -21,6 +22,7 @@ ch5-spinner {
   /// description: Border style for spinner
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid 
   /// related-theme-variable: --theme-ch5-spinner--border-style
   --ch5-spinner--border-style: var(--theme-ch5-spinner--border-style);
@@ -28,6 +30,7 @@ ch5-spinner {
   /// description: Font size for spinner
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 22px 
   /// related-theme-variable: --theme-ch5-spinner--font-size
   --ch5-spinner--font-size: var(--theme-ch5-spinner--font-size);
@@ -35,6 +38,7 @@ ch5-spinner {
   /// description: Font style for spinner
   /// type: list 
   /// values: normal, italic 
+  /// show-theme-editor: true
   /// example: normal
   /// related-theme-variable: --theme-ch5-spinner--font-style
   --ch5-spinner--font-style: var(--theme-ch5-spinner--font-style);
@@ -42,6 +46,7 @@ ch5-spinner {
   /// description: Font weight for spinner
   /// type: list
   /// values: normal, bold
+  /// show-theme-editor: true
   /// example: normal
   /// related-theme-variable: --theme-ch5-spinner--font-weight
   --ch5-spinner--font-weight: var(--theme-ch5-spinner--font-weight);
@@ -49,6 +54,7 @@ ch5-spinner {
   /// description: Size of icon used in spinner
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 22px 
   /// related-theme-variable: --theme-ch5-spinner--icon-size
   --ch5-spinner--icon-size: var(--theme-ch5-spinner--icon-size);
@@ -56,6 +62,7 @@ ch5-spinner {
   /// description: Icon padding in spinner item
   /// type: unit 
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 0
   /// related-theme-variable: --theme-ch5-spinner--icon-padding
   --ch5-spinner--icon-padding: var(--theme-ch5-spinner--icon-padding);
@@ -63,6 +70,7 @@ ch5-spinner {
   /// description: Icon margin in spinner item
   /// type: unit 
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 0
   /// related-theme-variable: --theme-ch5-spinner--icon-margin
   --ch5-spinner--icon-margin: var(--theme-ch5-spinner--icon-margin);
@@ -70,6 +78,7 @@ ch5-spinner {
   /// description: Background color for spinner overlay
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #000 
   /// related-theme-variable: --theme-ch5-spinner--overlay-background-color
   --ch5-spinner--overlay-background-color: var(--theme-ch5-spinner--overlay-background-color);
@@ -77,6 +86,7 @@ ch5-spinner {
   /// description: Highlight border color for spinner
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #00ff00 
   /// related-theme-variable: --theme-ch5-spinner--highlight-border-color
   --ch5-spinner--highlight-border-color: var(--theme-ch5-spinner--highlight-border-color);
@@ -84,6 +94,7 @@ ch5-spinner {
   /// description: Highlight box shadow color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: false
   /// example: rgba(0, 0, 0, 0.3)  
   /// related-theme-variable: --theme-ch5-spinner--highlight-box-shadow-color
   --ch5-spinner--highlight-box-shadow-color: var(--theme-ch5-spinner--highlight-box-shadow-color);
@@ -91,6 +102,7 @@ ch5-spinner {
   /// description: Spinner item color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #333 
   /// related-theme-variable: --theme-ch5-spinner--item-color
   --ch5-spinner--item-color: var(--theme-ch5-spinner--item-color);
@@ -98,6 +110,7 @@ ch5-spinner {
   /// description: Spinner active item color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #000 
   /// related-theme-variable: --theme-ch5-spinner--active-item-color
   --ch5-spinner--active-item-color: var(--theme-ch5-spinner--active-item-color);
@@ -105,6 +118,7 @@ ch5-spinner {
   /// description: Spinner background color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: transparent 
   /// related-theme-variable: --theme-ch5-spinner--background-color
   --ch5-spinner--background-color: var(--theme-ch5-spinner--background-color);

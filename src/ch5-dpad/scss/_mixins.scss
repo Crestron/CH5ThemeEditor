@@ -227,6 +227,7 @@
 @mixin ch5-dpad-content-plus-direction-btn($property-value) {
   $property-size: "--ch5-dpad--" + $property-value + "-size";
   $property-icon-font-size: "--ch5-dpad--icon-size-" + $property-value;
+  $property-pressed-icon-font-size: "--ch5-dpad--pressed-icon-size-" + $property-value;
 
   .dpad-container {
     width: var(#{$property-size});
@@ -237,6 +238,39 @@
     /// Apply to icons
     .dpad-btn-icon {
       font-size: var(#{$property-icon-font-size});
+    }
+
+    .ch5-dpad-button-up--pressed {
+      .dpad-btn-icon {
+        font-size:  var(#{$property-pressed-icon-font-size});
+      }
+    }
+    /// Applied when left button is in the pressed state
+    .ch5-dpad-button-left--pressed {
+      .dpad-btn-icon {
+        font-size:  var(#{$property-pressed-icon-font-size});
+      }
+    }
+
+    /// Applied when right button is in the pressed state
+    .ch5-dpad-button-right--pressed {
+      .dpad-btn-icon {
+        font-size:  var(#{$property-pressed-icon-font-size});
+      }
+    }
+
+    /// Applied when down button is in the pressed state
+    .ch5-dpad-button-down--pressed {
+      .dpad-btn-icon {
+        font-size:  var(#{$property-pressed-icon-font-size});
+      }
+    }
+   
+    /// Applied when center button is in the pressed state
+    .ch5-dpad-button-center--pressed {
+        .dpad-btn-icon {
+          font-size: var(#{$property-pressed-icon-font-size});
+        }
     }
   }
 

@@ -13,14 +13,16 @@
 ch5-subpage-reference-list {
   /// description: Padding for the subpage reference list item
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 5px 
   /// related-theme-variable: --theme-ch5-subpage-reference-list--item-padding
   --ch5-subpage-reference-list--item-padding: var(--theme-ch5-subpage-reference-list--item-padding);
 
   /// description: Scrollbar width for subpage reference list
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: false
   /// example: 7px
   /// related-theme-variable: --theme-ch5-subpage-reference-list--scrollbar-width
   --ch5-subpage-reference-list--scrollbar-width: var(--theme-ch5-subpage-reference-list--scrollbar-width);
@@ -28,13 +30,15 @@ ch5-subpage-reference-list {
   /// description: Scrollbar track color for subpage reference list
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: false
   /// example: rgba(0, 0, 0, 0.1)
   /// related-theme-variable: --theme-ch5-subpage-reference-list--scrollbar-track-color
   --ch5-subpage-reference-list--scrollbar-track-color: var(--theme-ch5-subpage-reference-list--scrollbar-track-color);
 
   /// description: Scrollbar border radius for subpage reference list
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: false
   /// example: 10px
   /// related-theme-variable: --theme-ch5-subpage-reference-list--scrollbar-border-radius
   --ch5-subpage-reference-list--scrollbar-border-radius: var(--theme-ch5-subpage-reference-list--scrollbar-border-radius);
@@ -42,6 +46,7 @@ ch5-subpage-reference-list {
   /// description: Scrollbar thumb color for subpage reference list
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: false
   /// example: rgba(0, 0, 0, 0.5)
   /// related-theme-variable: --theme-ch5-subpage-reference-list--scrollbar-thumb-color
   --ch5-subpage-reference-list--scrollbar-thumb-color: var(--theme-ch5-subpage-reference-list--scrollbar-thumb-color);
@@ -49,34 +54,39 @@ ch5-subpage-reference-list {
   /// description: Background color for subpage reference list
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: transparent 
   /// related-theme-variable: --theme-ch5-subpage-reference-list--background-color
   --ch5-subpage-reference-list--background-color: var(--theme-ch5-subpage-reference-list--background-color);
 
   /// description: Padding left for the subpage reference list container
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 5px 
   /// related-theme-variable: --theme-ch5-subpage-reference-list--container-padding-left
   --ch5-subpage-reference-list--container-padding-left: var(--theme-ch5-subpage-reference-list--container-padding-left);
 
   /// description: Padding right for the subpage reference list container
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 5px 
   /// related-theme-variable: --theme-ch5-subpage-reference-list--container-padding-right
   --ch5-subpage-reference-list--container-padding-right: var(--theme-ch5-subpage-reference-list--container-padding-right);
 
   /// description: Padding top for the subpage reference list container
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 5px 
   /// related-theme-variable: --theme-ch5-subpage-reference-list--container-padding-top
   --ch5-subpage-reference-list--container-padding-top: var(--theme-ch5-subpage-reference-list--container-padding-top);
 
   /// description: Padding bottom for the subpage reference list container
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 5px 
   /// related-theme-variable: --theme-ch5-subpage-reference-list--container-padding-bottom
   --ch5-subpage-reference-list--container-padding-bottom: var(--theme-ch5-subpage-reference-list--container-padding-bottom);

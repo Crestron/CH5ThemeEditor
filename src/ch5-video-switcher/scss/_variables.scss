@@ -14,7 +14,8 @@ ch5-video-switcher {
 
   /// description: Width for the video switcher. Setting the width will automatically set the height based on aspect ratio(9/6). Minimum width set is 240px
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 500px
   /// related-theme-variable: --theme-ch5-video-switcher--width
   --ch5-video-switcher--width: var(--theme-ch5-video-switcher--width);
@@ -22,6 +23,7 @@ ch5-video-switcher {
   /// description: Background color for video switcher
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #015181
   /// related-theme-variable: --theme-ch5-video-switcher--background-color
   --ch5-video-switcher--background-color: var(--theme-ch5-video-switcher--background-color);
@@ -29,6 +31,7 @@ ch5-video-switcher {
   /// description: Background color for scrollbar track
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #015181
   /// related-theme-variable: --theme-ch5-video-switcher--scrollbar-track-color
   --ch5-video-switcher--scrollbar-track-color: var(--theme-ch5-video-switcher--scrollbar-track-color);
@@ -36,6 +39,7 @@ ch5-video-switcher {
   /// description: Border radius for scrollbar
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 5px
   /// related-theme-variable: --theme-ch5-video-switcher--scrollbar-border-radius
   --ch5-video-switcher--scrollbar-border-radius: var(--theme-ch5-video-switcher--scrollbar-border-radius);
@@ -43,6 +47,7 @@ ch5-video-switcher {
   /// description: Background color for scrollbar thumb
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #015181
   /// related-theme-variable: --theme-ch5-video-switcher--scrollbar-thumb-color
   --ch5-video-switcher--scrollbar-thumb-color: var(--theme-ch5-video-switcher--scrollbar-thumb-color);
@@ -50,6 +55,7 @@ ch5-video-switcher {
   /// description: Scrollbar width
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 7px 
   /// related-theme-variable: --theme-ch5-video-switcher--scrollbar-width
   --ch5-video-switcher--scrollbar-width: var(--theme-ch5-video-switcher--scrollbar-width);
@@ -57,6 +63,7 @@ ch5-video-switcher {
   /// description: Gap between each source
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 6px
   /// related-theme-variable: --theme-ch5-video-switcher--source-list-gap
   --ch5-video-switcher--source-list-gap: var(--theme-ch5-video-switcher--source-list-gap);
@@ -65,13 +72,23 @@ ch5-video-switcher {
   /// description: Color for source list label
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #015181
   /// related-theme-variable: --theme-ch5-video-switcher--source-list-label-color
   --ch5-video-switcher--source-list-label-color: var(--theme-ch5-video-switcher--source-list-label-color);
 
+  /// description: Color for source list icon
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
+  /// example: #015181
+  /// related-theme-variable: --theme-ch5-video-switcher--source-list-icon-color
+  --ch5-video-switcher--source-list-icon-color: var(--theme-ch5-video-switcher--source-list-icon-color);
+
   /// description: Font style for source list label
   /// type: list
   /// values: normal, italic
+  /// show-theme-editor: true
   /// example: normal 
   /// related-theme-variable: --theme-ch5-video-switcher--source-list-label-style
   --ch5-video-switcher--source-list-label-style: var(--theme-ch5-video-switcher--source-list-label-style);
@@ -79,6 +96,7 @@ ch5-video-switcher {
   /// description: Font weight for source list label
   /// type: list
   /// values: normal, bold
+  /// show-theme-editor: true
   /// example: normal 
   /// related-theme-variable: --theme-ch5-video-switcher--source-list-label-weight
   --ch5-video-switcher--source-list-label-weight: var(--theme-ch5-video-switcher--source-list-label-weight);
@@ -86,6 +104,7 @@ ch5-video-switcher {
   /// description: Background color for screen container
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #015181
   /// related-theme-variable: --theme-ch5-video-switcher--screen-container-background-color
   --ch5-video-switcher--screen-container-background-color: var(--theme-ch5-video-switcher--screen-container-background-color);
@@ -93,6 +112,7 @@ ch5-video-switcher {
   /// description: Border radius for screen container
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 5px
   /// related-theme-variable: --theme-ch5-video-switcher--screen-container-border-radius
   --ch5-video-switcher--screen-container-border-radius: var(--theme-ch5-video-switcher--screen-container-border-radius);
@@ -100,6 +120,7 @@ ch5-video-switcher {
   /// description: Border width for screen container
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-video-switcher--screen-container-border-width
   --ch5-video-switcher--screen-container-border-width: var(--theme-ch5-video-switcher--screen-container-border-width);
@@ -107,6 +128,7 @@ ch5-video-switcher {
   /// description: Border style for the video switcher screen container
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-video-switcher--screen-container-border-style
   --ch5-video-switcher--screen-container-border-style: var(--theme-ch5-video-switcher--screen-container-border-style);
@@ -114,6 +136,7 @@ ch5-video-switcher {
   /// description: Border color for screen container
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #0091ea
   /// related-theme-variable: --theme-ch5-video-switcher--screen-container-border-color
   --ch5-video-switcher--screen-container-border-color: var(--theme-ch5-video-switcher--screen-container-border-color);
@@ -121,6 +144,7 @@ ch5-video-switcher {
   /// description: Color for screen list label
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #015181
   /// related-theme-variable: --theme-ch5-video-switcher--screen-list-label-color
   --ch5-video-switcher--screen-list-label-color: var(--theme-ch5-video-switcher--screen-list-label-color);
@@ -128,6 +152,7 @@ ch5-video-switcher {
   /// description: Font style for screen list label
   /// type: list
   /// values: normal, italic
+  /// show-theme-editor: true
   /// example: normal 
   /// related-theme-variable: --theme-ch5-video-switcher--screen-list-label-style
   --ch5-video-switcher--screen-list-label-style: var(--theme-ch5-video-switcher--screen-list-label-style);
@@ -135,13 +160,15 @@ ch5-video-switcher {
   /// description: Font weight for screen list label
   /// type: list
   /// values: normal, bold
+  /// show-theme-editor: true
   /// example: normal 
   /// related-theme-variable: --theme-ch5-video-switcher--screen-list-label-weight
   --ch5-video-switcher--screen-list-label-weight: var(--theme-ch5-video-switcher--screen-list-label-weight);
 
   /// description: Font size for screen list label
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 16px 
   /// related-theme-variable: --theme-ch5-video-switcher--screen-list-label-size
   --ch5-video-switcher--screen-list-label-size: var(--theme-ch5-video-switcher--screen-list-label-size);
@@ -149,6 +176,7 @@ ch5-video-switcher {
   /// description: Screen item padding
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 5px
   /// related-theme-variable: --theme-ch5-video-switcher--screen-item-padding
   --ch5-video-switcher--screen-item-padding: var(--theme-ch5-video-switcher--screen-item-padding);
@@ -156,6 +184,7 @@ ch5-video-switcher {
   /// description: Source item padding
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 3px
   /// related-theme-variable: --theme-ch5-video-switcher--source-item-padding
   --ch5-video-switcher--source-item-padding: var(--theme-ch5-video-switcher--source-item-padding);
@@ -163,6 +192,7 @@ ch5-video-switcher {
   /// description: Border radius for video switcher container
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 5px
   /// related-theme-variable: --theme-ch5-video-switcher--border-radius
   --ch5-video-switcher--border-radius: var(--theme-ch5-video-switcher--border-radius);
@@ -170,6 +200,7 @@ ch5-video-switcher {
   /// description: Border width for video switcher
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-video-switcher--border-width
   --ch5-video-switcher--border-width: var(--theme-ch5-video-switcher--border-width);
@@ -177,6 +208,7 @@ ch5-video-switcher {
   /// description: Border style for the video switcher
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-video-switcher--border-style
   --ch5-video-switcher--border-style: var(--theme-ch5-video-switcher--border-style);
@@ -184,7 +216,27 @@ ch5-video-switcher {
   /// description: Border color for video switcher
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #0091ea
   /// related-theme-variable: --theme-ch5-video-switcher--border-color
   --ch5-video-switcher--border-color: var(--theme-ch5-video-switcher--border-color);
+
+  /// description: Letter spacing for Video switcher source list label
+  /// type: unit
+  /// values: px, em, rem
+  /// show-theme-editor: true
+  /// example: 72px
+  /// related-theme-variable: --theme-ch5-video-switcher--source-list-label-letter-spacing
+  --ch5-video-switcher--source-list-label-letter-spacing: var(--theme-ch5-video-switcher--source-list-label-letter-spacing);
+
+
+  /// description: Letter spacing for Video switcher screen list label
+  /// type: unit
+  /// values: px, em, rem
+  /// show-theme-editor: true
+  /// example: 72px
+  /// related-theme-variable: --theme-ch5-video-switcher--screen-list-label-letter-spacing
+  --ch5-video-switcher--screen-list-label-letter-spacing: var(--theme-ch5-video-switcher--screen-list-label-letter-spacing);
+
+
 }

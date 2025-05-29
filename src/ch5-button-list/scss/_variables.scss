@@ -13,28 +13,32 @@
 ch5-button-list {
   /// description: Padding for the button list container
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 5px 
   /// related-theme-variable: --theme-ch5-button-list--container-padding 
   --ch5-button-list--container-padding: var(--theme-ch5-button-list--container-padding);
 
   /// description: Width for the container of each button in button list
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 100px
   /// related-theme-variable: --theme-ch5-button-list--button-container-width
   --ch5-button-list--button-container-width: var(--theme-ch5-button-list--button-container-width);
 
   /// description: Height for the container of each button in button list
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 58px
   /// related-theme-variable: --theme-ch5-button-list--button-container-height
   --ch5-button-list--button-container-height: var(--theme-ch5-button-list--button-container-height);
 
   /// description: Padding for the container of each button in button list
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 5px
   /// related-theme-variable: --theme-ch5-button-list--button-container-padding
   --ch5-button-list--button-container-padding: var(--theme-ch5-button-list--button-container-padding);
@@ -42,6 +46,7 @@ ch5-button-list {
   /// description: Scrollbar border radius for button list
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 10px
   /// related-theme-variable: --theme-ch5-button-list--scrollbar-border-radius
   --ch5-button-list--scrollbar-border-radius: var(--theme-ch5-button-list--scrollbar-border-radius);
@@ -49,13 +54,15 @@ ch5-button-list {
   /// description: Scrollbar thumb color for button list
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: rgba(0, 0, 0, 0.5)
   /// related-theme-variable: --theme-ch5-button-list--scrollbar-thumb-color
   --ch5-button-list--scrollbar-thumb-color: var(--theme-ch5-button-list--scrollbar-thumb-color);
 
   /// description: Scrollbar width for button list
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 7px 
   /// related-theme-variable: --theme-ch5-button-list--scrollbar-width
   --ch5-button-list--scrollbar-width: var(--theme-ch5-button-list--scrollbar-width);
@@ -63,6 +70,7 @@ ch5-button-list {
   /// description: Scrollbar track color for button list
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: rgba(0, 0, 0, 0.1)
   /// related-theme-variable: --theme-ch5-button-list--scrollbar-track-color
   --ch5-button-list--scrollbar-track-color: var(--theme-ch5-button-list--scrollbar-track-color);

@@ -14,7 +14,8 @@ ch5-qrcode {
 
   /// description: Border width for qrcode
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 0px
   /// related-theme-variable: --theme-ch5-qrcode--border-width
   --ch5-qrcode--border-width: var(--theme-ch5-qrcode--border-width);
@@ -22,6 +23,7 @@ ch5-qrcode {
   /// description: Border style for qrcode
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-qrcode--border-style
   --ch5-qrcode--border-style: var(--theme-ch5-qrcode--border-style);
@@ -29,6 +31,7 @@ ch5-qrcode {
   /// description: Border color for qrcode
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: transparent
   /// related-theme-variable: --theme-ch5-qrcode--border-color
   --ch5-qrcode--border-color: var(--theme-ch5-qrcode--border-color);
@@ -36,6 +39,7 @@ ch5-qrcode {
   /// description: Size for qrcode
   /// type: number
   /// values: 160, 200, 4000
+  /// show-theme-editor: true
   /// example: 160
   /// related-theme-variable: --theme-ch5-qrcode--size
   --ch5-qrcode--size: var(--theme-ch5-qrcode--size);

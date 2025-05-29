@@ -44,7 +44,11 @@ ch5-toggle:focus {
     font-size: var(--ch5-toggle--label-font-size);
     font-weight: var(--ch5-toggle--label-font-weight);
     color: var(--ch5-toggle--label-font-color);
-    margin: var(--ch5-toggle--label-margin);
+    // margin: var(--ch5-toggle--label-margin);
+    margin-top: var(--ch5-toggle--label-margin-top);
+    margin-left: var(--ch5-toggle--label-margin-left);
+    margin-bottom: var(--ch5-toggle--label-margin-bottom);
+    margin-right: var(--ch5-toggle--label-margin-right);
 
     &[hidden] {
       display: none;
@@ -54,21 +58,46 @@ ch5-toggle:focus {
   .ch5-toggle__on-label,
   .ch5-toggle__off-label {
     word-wrap: normal;
-    color: var(--ch5-toggle--text-font-color);
-    font-style: var(--ch5-toggle--text-font-style);
-    font-size: var(--ch5-toggle--regular-font-size);
-    font-weight: var(--ch5-toggle--text-font-weight);
+  }
+
+  .ch5-toggle__on-label {
+    color: var(--ch5-toggle--on-text-font-color);
+    font-style: var(--ch5-toggle--on-text-font-style);
+    font-weight: var(--ch5-toggle--on-text-font-weight);
+  }
+
+  .ch5-toggle__off-label {
+    color: var(--ch5-toggle--off-text-font-color);
+    font-style: var(--ch5-toggle--off-text-font-style);
+    font-weight: var(--ch5-toggle--off-text-font-weight);
   }
 
   /// Applied for on label
   .ch5-toggle__on-label,
   /// Applied for off label
-  .ch5-toggle__off-label,
+  .ch5-toggle__off-label {
+    margin: 0 2px 0 2px;
+  }
+
+
   /// Applied for icon-on
-  .ch5-toggle__on-icon,
+  .ch5-toggle__on-icon {
+    margin-top: var(--ch5-toggle--icon-on-margin-top);
+    margin-bottom: var(--ch5-toggle--icon-on-margin-bottom);
+    margin-left: var(--ch5-toggle--icon-on-margin-left);
+    margin-right: var(--ch5-toggle--icon-on-margin-right);
+    font-weight: var(--ch5-toggle--icon-on-font-weight);
+    color: var(--ch5-toggle--icon-on-font-color);
+  }
+
   /// Applied for icon-off
   .ch5-toggle__off-icon {
-    margin: 0 2px 0 2px;
+    margin-top: var(--ch5-toggle--icon-off-margin-top);
+    margin-bottom: var(--ch5-toggle--icon-off-margin-bottom);
+    margin-left: var(--ch5-toggle--icon-off-margin-left);
+    margin-right: var(--ch5-toggle--icon-off-margin-right);
+    font-weight: var(--ch5-toggle--icon-off-font-weight);
+    color: var(--ch5-toggle--icon-off-font-color);
   }
 
   /* ch5-toggle - handle default */
@@ -237,7 +266,7 @@ ch5-toggle:focus {
 
   /// Class applied when orientation='vertical'
   &.ch5-toggle--vertical {
-    > div {
+    >div {
       padding: 50% 0;
       height: 0;
       -webkit-transform: rotate(90deg);

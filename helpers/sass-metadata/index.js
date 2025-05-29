@@ -8,6 +8,20 @@ const { execSync } = require("child_process");
 const components = CONFIG.COMPONENTS;
 const themes = CONFIG.THEMES;
 
+function toBoolean(val) {
+	const str = String(val).toLowerCase().trim();
+	switch (str) {
+	  case "true": case "yes": case "1":
+		return true;
+	  case "false": case "no": case "0":
+		return false;
+	  case "": case null: case undefined: case "null": case "undefined":
+		return true;
+	  default:
+		return false;
+	}
+  }
+
 // TODO - Need all corner cases
 
 const outputJSON = {
@@ -116,22 +130,23 @@ function getVariables(data, sectionName) {
 				}
 				start = j;
 			}
-
+/*
 			let description = '';
 			let type = '';
 			let valueMetadata = '';
 			let possibleValues = '';
+			let showThemeEditor = '';
 			let example = '';
-
+*/
 			const variableMetaData = lines.slice(start, i).join('\n').split('///').map(str => str.trim()).filter(str => str.length !== 0);
-
+			
 
 			const dataObj = {
 				name,
 				value: splitLine[1].trim().replaceAll(';', '')
 			}
 
-			if (variableMetaData.length < 4) {
+			if (variableMetaData.length < 5) {
 				// console.log(name + 'invalid metadata')
 				// process.exit(1);
 
@@ -139,7 +154,7 @@ function getVariables(data, sectionName) {
 					const componentName = name.replace('--theme-', '').split('--')[0];
 					const componentVariables = outputJSON['ch5Components'].find(t => t.name === componentName)['variables'];
 					const variableObj = componentVariables.find(t => t.name === name.replace('--theme', '-'));
-
+					
 					if (variableObj) {
 						variableObj.description = variableObj.description.trim();
 						if (variableObj.description.endsWith(".")) {
@@ -147,18 +162,18 @@ function getVariables(data, sectionName) {
 						}
 						dataObj.description = variableObj.description + ' at theme level';
 						dataObj.type = variableObj.type
+						dataObj.showThemeEditor = toBoolean(variableObj.showThemeEditor);
 						dataObj.example = variableObj.example
 						dataObj.possibleValues = variableObj.possibleValues
-						if (dataObj.type === 'multiUnit') {
-							dataObj.childTypes = ['top', 'right', 'bottom', 'left'];
-						}
 					}
 				}
 			} else {
 				dataObj.description = variableMetaData[0].replace("description:", '').trim();
 				dataObj.type = variableMetaData[1].replace('type:', '').trim();
-				dataObj.possibleValues = variableMetaData[2].replace('values:', '').trim().split(',').map((str) => str.trim()).filter((str) => str.trim())
-				dataObj.example = variableMetaData[3].replace('example:', '').trim()
+				dataObj.possibleValues = variableMetaData[2].replace('values:', '').trim().split(',').map((str) => str.trim()).filter((str) => str.trim());
+				dataObj.showThemeEditor = toBoolean(variableMetaData[3].replace('show-theme-editor:', '').trim());
+				dataObj.example = variableMetaData[4].replace('example:', '').trim();
+				
 			}
 
 			// corner case
@@ -171,13 +186,10 @@ function getVariables(data, sectionName) {
 			if (dataObj.value === '#{$white}') {
 				dataObj.value = '#fff';
 			}
-			if (variableMetaData.length === 5) {
-				dataObj.relatedThemeVariable = variableMetaData[4].replace('related-theme-variable:', '').trim();
+			if (variableMetaData.length === 6) {
+				dataObj.relatedThemeVariable = variableMetaData[5].replace('related-theme-variable:', '').trim();
 			}
-			if (dataObj.type === "unit" && ((dataObj.value.includes('border') && !dataObj.value.includes('border-width')) || dataObj.value.includes('margin') || dataObj.value.includes('padding'))) {
-				dataObj.type = 'multiUnit';
-				dataObj.childTypes = ['top', 'right', 'bottom', 'left'];
-			}
+		
 
 
 			if (sectionName === "theme") {

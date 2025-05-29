@@ -14,28 +14,32 @@ ch5-wifi-signal-level-gauge {
 
   /// description: Height (for alignment="up" and alignment="down") or Width (for alignment="left" and alignment="right") of the signal level gauge for size="small". Corresponding width and height will be automatically calculated.
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 36px 
   /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--small-size
   --ch5-wifi-signal-level-gauge--small-size: var(--theme-ch5-wifi-signal-level-gauge--small-size);
 
   /// description: Height (for alignment="up" and alignment="down") or Width (for alignment="left" and alignment="right") of the signal level gauge for size="regular". Corresponding width and height will be automatically calculated.
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 54px 
   /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--regular-size
   --ch5-wifi-signal-level-gauge--regular-size: var(--theme-ch5-wifi-signal-level-gauge--regular-size);
 
   /// description: Height (for alignment="up" and alignment="down") or Width (for alignment="left" and alignment="right") of the signal level gauge for size="large". Corresponding width and height will be automatically calculated.
   /// type: unit
-  /// values: px, vw, vh, em, rem, 54
+  /// values: px
+  /// show-theme-editor: true
   /// example: 90px 
   /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--large-size
   --ch5-wifi-signal-level-gauge--large-size: var(--theme-ch5-wifi-signal-level-gauge--large-size);
 
   /// description: Height (for alignment="up" and alignment="down") or Width (for alignment="left" and alignment="right") of the signal level gauge for size="x-large". Corresponding width and height will be automatically calculated.
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 144px 
   /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--x-large-size
   --ch5-wifi-signal-level-gauge--x-large-size: var(--theme-ch5-wifi-signal-level-gauge--x-large-size);
@@ -43,6 +47,7 @@ ch5-wifi-signal-level-gauge {
   /// description: Selected color for gaugeStyle accents
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #87ceeb 
   /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--style-accents
   --ch5-wifi-signal-level-gauge--style-accents: var(--theme-ch5-wifi-signal-level-gauge--style-accents);
@@ -50,6 +55,7 @@ ch5-wifi-signal-level-gauge {
   /// description: Selected color for gaugeStyle light
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #ffffff 
   /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--style-light
   --ch5-wifi-signal-level-gauge--style-light: var(--theme-ch5-wifi-signal-level-gauge--style-light);
@@ -57,6 +63,7 @@ ch5-wifi-signal-level-gauge {
   /// description: Selected color for gaugeStyle dark
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #000000 
   /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--style-dark
   --ch5-wifi-signal-level-gauge--style-dark: var(--theme-ch5-wifi-signal-level-gauge--style-dark);
@@ -64,6 +71,7 @@ ch5-wifi-signal-level-gauge {
   /// description: Deselected Bar color 
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #939393 
   /// related-theme-variable: --theme-ch5-wifi-signal-level-gauge--bar-color
   --ch5-wifi-signal-level-gauge--bar-color: var(--theme-ch5-wifi-signal-level-gauge--bar-color);

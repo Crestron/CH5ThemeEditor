@@ -14,6 +14,7 @@ ch5-form {
   /// description: Font size for the form
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 16px
   /// related-theme-variable: --theme-ch5-form-font-size
   --ch5-form--font-size: var(--theme-ch5-form--font-size);
@@ -21,6 +22,7 @@ ch5-form {
   /// description: Font style for the form
   /// type: list
   /// values: normal, italic
+  /// show-theme-editor: true
   /// example: normal
   /// related-theme-variable: --theme-ch5-form-font-style
   --ch5-form--font-style: var(--theme-ch5-form--font-style);
@@ -28,6 +30,7 @@ ch5-form {
   /// description: Font weight for the form
   /// type: list
   /// values: normal, bold
+  /// show-theme-editor: true
   /// example: normal
   /// related-theme-variable: --theme-ch5-form-font-weight
   --ch5-form--font-weight: var(--theme-ch5-form--font-weight);

@@ -1,0 +1,2077 @@
+[
+  {
+      "U": "px",
+      "Component": "ch5-animation",
+      "Variables": " --theme-ch5-animation--size-large"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-animation",
+      "Variables": " --theme-ch5-animation--size-regular"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-animation",
+      "Variables": " --theme-ch5-animation--size-small"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-animation",
+      "Variables": " --theme-ch5-animation--size-x-large"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button---x-small-pressed-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button---x-small-pressed-image-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--checkbox-padding"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--danger-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--danger-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--danger-selected-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--default-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--default-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--default-selected-border-width"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--icon-margin-bottom"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--icon-margin-left"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--icon-margin-right"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--icon-margin-top"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--info-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--info-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--info-selected-border-width"
+  },
+  {
+      "U": "px, em, rem",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--label-letter-spacing"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--label-margin-bottom"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--label-margin-left"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--label-margin-right"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--label-margin-top"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-image-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-pressed-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-pressed-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-pressed-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-pressed-image-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-selected-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-selected-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-selected-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-selected-image-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--large-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--oval-border-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--padding"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--pressed-icon-margin-bottom"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--pressed-icon-margin-left"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--pressed-icon-margin-right"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--pressed-icon-margin-top"
+  },
+  {
+      "U": "px, em, rem",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--pressed-label-letter-spacing"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--pressed-label-margin-bottom"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--pressed-label-margin-left"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--pressed-label-margin-right"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--pressed-label-margin-top"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--pressed-rounded-rectangle-border-radius-bottom-left"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--pressed-rounded-rectangle-border-radius-bottom-right"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--pressed-rounded-rectangle-border-radius-top-left"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--pressed-rounded-rectangle-border-radius-top-right"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--primary-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--primary-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--primary-selected-border-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-image-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-pressed-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-pressed-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-pressed-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-pressed-image-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-selected-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-selected-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-selected-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-selected-image-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--regular-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--rounded-rectangle-border-radius-bottom-left"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--rounded-rectangle-border-radius-bottom-right"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--rounded-rectangle-border-radius-top-left"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--rounded-rectangle-border-radius-top-right"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--secondary-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--secondary-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--secondary-selected-border-width"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--selected-icon-margin-bottom"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--selected-icon-margin-left"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--selected-icon-margin-right"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--selected-icon-margin-top"
+  },
+  {
+      "U": "px, em, rem",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--selected-label-letter-spacing"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--selected-label-margin-bottom"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--selected-label-margin-left"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--selected-label-margin-right"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--selected-label-margin-top"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--selected-rounded-rectangle-border-radius-bottom-left"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--selected-rounded-rectangle-border-radius-bottom-right"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--selected-rounded-rectangle-border-radius-top-left"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--selected-rounded-rectangle-border-radius-top-right"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-image-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-pressed-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-pressed-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-pressed-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-pressed-image-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-selected-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-selected-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-selected-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-selected-image-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--small-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--success-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--success-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--success-selected-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--tab-border-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--text-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--text-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--text-selected-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--warning-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--warning-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--warning-selected-border-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-large-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-large-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-large-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-large-image-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-large-pressed-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-large-pressed-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-large-pressed-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-large-pressed-image-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-large-selected-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-large-selected-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-large-selected-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-large-selected-image-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-small-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-small-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-small-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-small-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-small-image-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-small-pressed-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-small-pressed-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-small-selected-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-small-selected-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-small-selected-image-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-small-selected-image-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button",
+      "Variables": " --theme-ch5-button--x-small-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button-list",
+      "Variables": " --theme-ch5-button-list--button-container-height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button-list",
+      "Variables": " --theme-ch5-button-list--button-container-padding"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button-list",
+      "Variables": " --theme-ch5-button-list--button-container-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button-list",
+      "Variables": " --theme-ch5-button-list--container-padding"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-button-list",
+      "Variables": " --theme-ch5-button-list--scrollbar-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-color-chip",
+      "Variables": " --theme-ch5-color-chip--height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-color-chip",
+      "Variables": " --theme-ch5-color-chip--width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-color-picker",
+      "Variables": " --theme-ch5-color-picker--height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-color-picker",
+      "Variables": " --theme-ch5-color-picker--width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-datetime",
+      "Variables": " --theme-ch5-datetime--border-bottom-left-radius"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-datetime",
+      "Variables": " --theme-ch5-datetime--border-bottom-right-radius"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-datetime",
+      "Variables": " --theme-ch5-datetime--border-top-left-radius"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-datetime",
+      "Variables": " --theme-ch5-datetime--border-top-right-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-datetime",
+      "Variables": " --theme-ch5-datetime--border-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-datetime",
+      "Variables": " --theme-ch5-datetime--font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-datetime",
+      "Variables": " --theme-ch5-datetime--height"
+  },
+  {
+      "U": "px, em, rem",
+      "Component": "ch5-datetime",
+      "Variables": " --theme-ch5-datetime--letter-spacing"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-datetime",
+      "Variables": " --theme-ch5-datetime--padding-bottom"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-datetime",
+      "Variables": " --theme-ch5-datetime--padding-left"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-datetime",
+      "Variables": " --theme-ch5-datetime--padding-right"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-datetime",
+      "Variables": " --theme-ch5-datetime--padding-top"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-datetime",
+      "Variables": " --theme-ch5-datetime--width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--icon-size-large"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--icon-size-regular"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--icon-size-small"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--icon-size-x-large"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--icon-size-x-small"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--label-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--large-border-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--large-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--pressed-icon-size-large"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--pressed-icon-size-regular"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--pressed-icon-size-small"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--pressed-icon-size-x-large"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--pressed-icon-size-x-small"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--pressed-label-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--regular-border-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--regular-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--small-border-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--small-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--x-large-border-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--x-large-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--x-small-border-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-dpad",
+      "Variables": " --theme-ch5-dpad--x-small-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-image",
+      "Variables": " --theme-ch5-image--border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--danger-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--danger-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--default-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--default-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--extra-button-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--extra-button-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--info-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--info-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--large-container-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--large-font-size-major"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--large-font-size-minor"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--pressed-large-font-size-major"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--pressed-large-font-size-minor"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--pressed-regular-font-size-major"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--pressed-regular-font-size-minor"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--pressed-small-font-size-major"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--pressed-small-font-size-minor"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--pressed-x-large-font-size-major"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--pressed-x-large-font-size-minor"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--pressed-x-small-font-size-major"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--pressed-x-small-font-size-minor"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--primary-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--primary-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--regular-container-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--regular-font-size-major"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--regular-font-size-minor"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--secondary-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--secondary-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--small-container-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--small-font-size-major"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--small-font-size-minor"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--success-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--success-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--text-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--text-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--warning-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--warning-pressed-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--x-large-container-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--x-large-font-size-major"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--x-large-font-size-minor"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--x-small-container-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--x-small-font-size-major"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-keypad",
+      "Variables": " --theme-ch5-keypad--x-small-font-size-minor"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-qrcode",
+      "Variables": " --theme-ch5-qrcode--border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-segmented-gauge",
+      "Variables": " --theme-ch5-segmented-gauge--circle-each-gauge-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-segmented-gauge",
+      "Variables": " --theme-ch5-segmented-gauge--rectangle-each-gauge-height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-segmented-gauge",
+      "Variables": " --theme-ch5-segmented-gauge--rectangle-each-gauge-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-signal-level-gauge",
+      "Variables": " --theme-ch5-signal-level-gauge--large-height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-signal-level-gauge",
+      "Variables": " --theme-ch5-signal-level-gauge--large-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-signal-level-gauge",
+      "Variables": " --theme-ch5-signal-level-gauge--regular-height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-signal-level-gauge",
+      "Variables": " --theme-ch5-signal-level-gauge--regular-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-signal-level-gauge",
+      "Variables": " --theme-ch5-signal-level-gauge--small-height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-signal-level-gauge",
+      "Variables": " --theme-ch5-signal-level-gauge--small-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-signal-level-gauge",
+      "Variables": " --theme-ch5-signal-level-gauge--x-large-height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-signal-level-gauge",
+      "Variables": " --theme-ch5-signal-level-gauge--x-large-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--button-padding"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--connect-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--handle-border-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--handle-touch-padding"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--label-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--label-letter-spacing"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--shape-circle-border-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--shape-oval-border-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--shape-oval-handle-border-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--shape-rectangle-border-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--shape-rounded-rectangle-border-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-large-button-height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-large-button-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-large-handle-height-oval"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-large-handle-height-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-large-handle-height-rounded-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-large-handle-width-circle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-large-handle-width-oval"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-large-handle-width-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-large-handle-width-rounded-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-regular-button-height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-regular-button-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-regular-handle-height-oval"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-regular-handle-height-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-regular-handle-height-rounded-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-regular-handle-width-circle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-regular-handle-width-oval"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-regular-handle-width-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-regular-handle-width-rounded-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-small-button-height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-small-button-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-small-handle-height-oval"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-small-handle-height-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-small-handle-height-rounded-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-small-handle-width-circle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-small-handle-width-oval"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-small-handle-width-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-small-handle-width-rounded-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-large-button-height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-large-button-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-large-handle-height-oval"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-large-handle-height-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-large-handle-height-rounded-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-large-handle-width-circle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-large-handle-width-oval"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-large-handle-width-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-large-handle-width-rounded-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-small-button-height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-small-button-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-small-handle-height-oval"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-small-handle-height-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-small-handle-height-rounded-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-small-handle-width-circle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-small-handle-width-oval"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-small-handle-width-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--size-x-small-handle-width-rounded-rectangle"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--target-border-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--tooltip-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--tooltip-on-spacing-horizontal-orientation"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--tooltip-on-spacing-vertical-orientation"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--width-large"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--width-regular"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--width-small"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--width-x-large"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-slider",
+      "Variables": " --theme-ch5-slider--width-x-small"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-subpage-reference-list",
+      "Variables": " --theme-ch5-subpage-reference-list--container-padding-bottom"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-subpage-reference-list",
+      "Variables": " --theme-ch5-subpage-reference-list--container-padding-left"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-subpage-reference-list",
+      "Variables": " --theme-ch5-subpage-reference-list--container-padding-right"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-subpage-reference-list",
+      "Variables": " --theme-ch5-subpage-reference-list--container-padding-top"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-subpage-reference-list",
+      "Variables": " --theme-ch5-subpage-reference-list--item-padding"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-subpage-reference-list",
+      "Variables": " --theme-ch5-subpage-reference-list--scrollbar-border-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-subpage-reference-list",
+      "Variables": " --theme-ch5-subpage-reference-list--scrollbar-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-tab-button",
+      "Variables": " --theme-ch5-tab-button--button-container-height"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-tab-button",
+      "Variables": " --theme-ch5-tab-button--button-container-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-text",
+      "Variables": " --theme-ch5-text--border-bottom-left-radius"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-text",
+      "Variables": " --theme-ch5-text--border-bottom-right-radius"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-text",
+      "Variables": " --theme-ch5-text--border-top-left-radius"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-text",
+      "Variables": " --theme-ch5-text--border-top-right-radius"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-text",
+      "Variables": " --theme-ch5-text--border-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-text",
+      "Variables": " --theme-ch5-text--font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-text",
+      "Variables": " --theme-ch5-text--height"
+  },
+  {
+      "U": "px, em, rem",
+      "Component": "ch5-text",
+      "Variables": " --theme-ch5-text--letter-spacing"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-text",
+      "Variables": " --theme-ch5-text--padding "
+  },
+  {
+      "U": "px",
+      "Component": "ch5-text",
+      "Variables": " --theme-ch5-text--width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--large-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--large-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--large-icon-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--large-mask-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--large-width"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--margin-bottom"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--margin-left"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--margin-right"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--margin-top"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--regular-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--regular-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--regular-icon-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--regular-mask-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--regular-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--small-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--small-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--small-icon-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--small-mask-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--small-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--x-large-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--x-large-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--x-large-icon-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--x-large-mask-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--x-large-width"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--x-small-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--x-small-height"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--x-small-icon-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--x-small-mask-font-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-textinput",
+      "Variables": " --theme-ch5-textinput--x-small-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--circle-handle-border-width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--handle-circle-margin"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--handle-rectangle-margin"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--handle-size-large"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--handle-size-regular"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--handle-size-small"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--handle-size-x-large"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--handle-size-x-small"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--icon-off-margin-bottom"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--icon-off-margin-left"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--icon-off-margin-right"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--icon-off-margin-top"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--icon-on-margin-bottom"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--icon-on-margin-left"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--icon-on-margin-right"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--icon-on-margin-top"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--label-font-size"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--label-margin-bottom"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--label-margin-left"
+  },
+  {
+      "U": "px, %, vw",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--label-margin-right"
+  },
+  {
+      "U": "px, %, vh",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--label-margin-top"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--off-label-large-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--off-label-regular-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--off-label-small-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--off-label-x-large-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--off-label-x-small-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--off-large-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--off-regular-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--off-small-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--off-x-large-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--off-x-small-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--on-label-large-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--on-label-regular-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--on-label-small-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--on-label-x-large-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--on-label-x-small-font-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--on-large-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--on-regular-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--on-small-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--on-x-large-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--on-x-small-icon-size"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-video",
+      "Variables": " --theme-ch5-video--full-screen-icon-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-video",
+      "Variables": " --theme-ch5-video--size-large-max-w-650"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-video",
+      "Variables": " --theme-ch5-video--size-large-min-w-651"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-video",
+      "Variables": " --theme-ch5-video--size-regular-max-w-650"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-video",
+      "Variables": " --theme-ch5-video--size-regular-min-w-651"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-video",
+      "Variables": " --theme-ch5-video--size-small-max-w-650"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-video",
+      "Variables": " --theme-ch5-video--size-small-min-w-651"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-video",
+      "Variables": " --theme-ch5-video--size-x-large-max-w-650"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-video",
+      "Variables": " --theme-ch5-video--size-x-large-min-w-651"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-video",
+      "Variables": " --theme-ch5-video--size-x-small-max-w-650"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-video",
+      "Variables": " --theme-ch5-video--size-x-small-min-w-651"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-video",
+      "Variables": " --theme-ch5-video--size-xx-large-max-w-650"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-video",
+      "Variables": " --theme-ch5-video--size-xx-large-min-w-651"
+  },
+  {
+      "U": "px, em, rem",
+      "Component": "ch5-video-switcher",
+      "Variables": " --theme-ch5-video-switcher--screen-list-label-letter-spacing"
+  },
+  {
+      "U": "px, %",
+      "Component": "ch5-video-switcher",
+      "Variables": " --theme-ch5-video-switcher--screen-list-label-size"
+  },
+  {
+      "U": "px, em, rem",
+      "Component": "ch5-video-switcher",
+      "Variables": " --theme-ch5-video-switcher--source-list-label-letter-spacing"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-video-switcher",
+      "Variables": " --theme-ch5-video-switcher--width"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-wifi-signal-level-gauge",
+      "Variables": " --theme-ch5-wifi-signal-level-gauge--large-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-wifi-signal-level-gauge",
+      "Variables": " --theme-ch5-wifi-signal-level-gauge--regular-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-wifi-signal-level-gauge",
+      "Variables": " --theme-ch5-wifi-signal-level-gauge--small-size"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-wifi-signal-level-gauge",
+      "Variables": " --theme-ch5-wifi-signal-level-gauge--x-large-size"
+  }
+]

@@ -98,7 +98,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          color: var(--ch5-video-switcher--source-list-label-color);
+          color: var(--ch5-video-switcher--source-list-icon-color);
 
           &.sg {
             background-position: 50%;
@@ -120,6 +120,7 @@
           font-weight: var(--ch5-video-switcher--source-list-label-weight);
           font-style: var(--ch5-video-switcher--source-list-label-style);
           color: var(--ch5-video-switcher--source-list-label-color);
+          letter-spacing: var(--ch5-video-switcher--source-list-label-letter-spacing);
           padding: 0 5px;
         }
       }
@@ -138,6 +139,7 @@
       font-style: var(--ch5-video-switcher--screen-list-label-style);
       font-weight: var(--ch5-video-switcher--screen-list-label-weight);
       font-size: var(--ch5-video-switcher--screen-list-label-size);
+      letter-spacing: var( --ch5-video-switcher--screen-list-label-letter-spacing);
       width: 100%;
       text-align: center;
       white-space: nowrap;

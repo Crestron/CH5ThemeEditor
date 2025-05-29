@@ -13,14 +13,16 @@
 ch5-color-chip {
   /// description: Height of the color-chip
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 40px 
   /// related-theme-variable: --theme-ch5-color-chip--height
   --ch5-color-chip--height: var(--theme-ch5-color-chip--height);
 
   /// description: Width of the color-chip
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 40px 
   /// related-theme-variable: --theme-ch5-color-chip--width
   --ch5-color-chip--width: var(--theme-ch5-color-chip--width);
@@ -28,6 +30,7 @@ ch5-color-chip {
   /// description: Initial background color for color-chip
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #000 
   /// related-theme-variable: --theme-ch5-color-chip--background-color
   --ch5-color-chip--background-color: var(--theme-ch5-color-chip--background-color);

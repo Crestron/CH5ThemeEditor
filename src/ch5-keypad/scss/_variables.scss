@@ -13,120 +13,217 @@
 ch5-keypad {
   /// description: Container width for size="x-small"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 210px
   /// related-theme-variable: --theme-ch5-keypad--x-small-container-width
   --ch5-keypad--x-small-container-width: var(--theme-ch5-keypad--x-small-container-width);
 
   /// description: Font size major for size="x-small"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 1.8rem
   /// related-theme-variable: --theme-ch5-keypad--x-small-font-size-major
   --ch5-keypad--x-small-font-size-major: var(--theme-ch5-keypad--x-small-font-size-major);
 
   /// description: Font size minor for size="x-small"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 0.65rema
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 0.65rem
   /// related-theme-variable: --theme-ch5-keypad--x-small-font-size-minor
   --ch5-keypad--x-small-font-size-minor: var(--theme-ch5-keypad--x-small-font-size-minor);
+
+  /// description: Font size major for pressed size="x-small"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 1.8rem
+  /// related-theme-variable: --theme-ch5-keypad--pressed-x-small-font-size-major
+  --ch5-keypad--pressed-x-small-font-size-major: var(--theme-ch5-keypad--pressed-x-small-font-size-major);
+
+  /// description: Font size minor for pressed size="x-small"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 0.65rem
+  /// related-theme-variable: --theme-ch5-keypad--pressed-x-small-font-size-minor
+  --ch5-keypad--pressed-x-small-font-size-minor: var(--theme-ch5-keypad--pressed-x-small-font-size-minor);
 
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
   /// description: Container width for size="small"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 249px
   /// related-theme-variable: --theme-ch5-keypad--small-container-width
   --ch5-keypad--small-container-width: var(--theme-ch5-keypad--small-container-width);
 
   /// description: Font size major for size="small"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 2rem
   /// related-theme-variable: --theme-ch5-keypad--small-font-size-major
   --ch5-keypad--small-font-size-major: var(--theme-ch5-keypad--small-font-size-major);
 
   /// description: Font size minor for size="small"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 0.75rem
   /// related-theme-variable: --theme-ch5-keypad--small-font-size-minor
   --ch5-keypad--small-font-size-minor: var(--theme-ch5-keypad--small-font-size-minor);
+
+
+  /// description: Font size major for pressed size="small"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 2rem
+  /// related-theme-variable: --theme-ch5-keypad--pressed-small-font-size-major
+  --ch5-keypad--pressed-small-font-size-major: var(--theme-ch5-keypad--pressed-small-font-size-major);
+
+  /// description: Font size minor for pressed size="small"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 0.75rem
+  /// related-theme-variable: --theme-ch5-keypad--pressed-small-font-size-minor
+  --ch5-keypad--pressed-small-font-size-minor: var(--theme-ch5-keypad--pressed-small-font-size-minor);
 
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
   /// description: Container width for size="regular"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 267px
   /// related-theme-variable: --theme-ch5-keypad--regular-container-width
   --ch5-keypad--regular-container-width: var(--theme-ch5-keypad--regular-container-width);
 
   /// description: Font size major for size="regular"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 2.4rem
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 38px
   /// related-theme-variable: --theme-ch5-keypad--regular-font-size-major
   --ch5-keypad--regular-font-size-major: var(--theme-ch5-keypad--regular-font-size-major);
 
   /// description: Font size minor for size="regular"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
-  /// example: 0.85rem
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 14px
   /// related-theme-variable: --theme-ch5-keypad--regular-font-size-minor
   --ch5-keypad--regular-font-size-minor: var(--theme-ch5-keypad--regular-font-size-minor);
+
+  /// description: Font size major for pressed size="regular"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 38px
+  /// related-theme-variable: --theme-ch5-keypad--pressed-regular-font-size-major
+  --ch5-keypad--pressed-regular-font-size-major: var(--theme-ch5-keypad--pressed-regular-font-size-major);
+
+  /// description: Font size minor for pressed size="regular"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 14px
+  /// related-theme-variable: --theme-ch5-keypad--pressed-regular-font-size-minor
+  --ch5-keypad--pressed-regular-font-size-minor: var(--theme-ch5-keypad--pressed-regular-font-size-minor);
 
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
   /// description: Container width for size="large"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 294px
   /// related-theme-variable: --theme-ch5-keypad--large-container-width
   --ch5-keypad--large-container-width: var(--theme-ch5-keypad--large-container-width);
 
   /// description: Font size major for size="large"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 2.8rem
   /// related-theme-variable: --theme-ch5-keypad--large-font-size-major
   --ch5-keypad--large-font-size-major: var(--theme-ch5-keypad--large-font-size-major);
 
   /// description: Font size minor for size="large"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 0.95rem
   /// related-theme-variable: --theme-ch5-keypad--large-font-size-minor
   --ch5-keypad--large-font-size-minor: var(--theme-ch5-keypad--large-font-size-minor);
+
+  /// description: Font size major for pressed size="large"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 2.8rem
+  /// related-theme-variable: --theme-ch5-keypad--pressed-large-font-size-major
+  --ch5-keypad--pressed-large-font-size-major: var(--theme-ch5-keypad--pressed-large-font-size-major);
+
+  /// description: Font size minor for pressed size="large"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 0.95rem
+  /// related-theme-variable: --theme-ch5-keypad--pressed-large-font-size-minor
+  --ch5-keypad--pressed-large-font-size-minor: var(--theme-ch5-keypad--pressed-large-font-size-minor);
 
   // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
   /// description: Container width for size="x-large"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 312px
   /// related-theme-variable: --theme-ch5-keypad--x-large-container-width
   --ch5-keypad--x-large-container-width: var(--theme-ch5-keypad--x-large-container-width);
 
   /// description: Font size major for size="x-large"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 3rem
   /// related-theme-variable: --theme-ch5-keypad--x-large-font-size-major
   --ch5-keypad--x-large-font-size-major: var(--theme-ch5-keypad--x-large-font-size-major);
 
   /// description: Font size minor for size="x-large"
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 1.05rem
   /// related-theme-variable: --theme-ch5-keypad--x-large-font-size-minor
   --ch5-keypad--x-large-font-size-minor: var(--theme-ch5-keypad--x-large-font-size-minor);
 
+  /// description: Font size major for pressed size="x-large"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 3rem
+  /// related-theme-variable: --theme-ch5-keypad--pressed-x-large-font-size-major
+  --ch5-keypad--pressed-x-large-font-size-major: var(--theme-ch5-keypad--pressed-x-large-font-size-major);
+
+  /// description: Font size minor for pressed size="x-large"
+  /// type: unit
+  /// values: px, %
+  /// show-theme-editor: true
+  /// example: 1.05rem
+  /// related-theme-variable: --theme-ch5-keypad--pressed-x-large-font-size-minor
+  --ch5-keypad--pressed-x-large-font-size-minor: var(--theme-ch5-keypad--pressed-x-large-font-size-minor);
+
   /// description: Gap between buttons for keypad
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 6px
   /// related-theme-variable: --theme-ch5-keypad--gap-between-buttons
   --ch5-keypad--gap-between-buttons: var(--theme-ch5-keypad--gap-between-buttons);
@@ -134,6 +231,7 @@ ch5-keypad {
   /// description: Padding for keypad
   /// type: unit
   /// values: px, vw, vh, em, rem, %
+  /// show-theme-editor: true
   /// example: 6px
   /// related-theme-variable: --theme-ch5-keypad--padding
   --ch5-keypad--padding: var(--theme-ch5-keypad--padding);
@@ -145,6 +243,7 @@ ch5-keypad {
   /// description: Background color for type="default" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #0099ff
   /// related-theme-variable: --theme-ch5-keypad--default-background-color
   --ch5-keypad--default-background-color: var(--theme-ch5-keypad--default-background-color);
@@ -152,6 +251,7 @@ ch5-keypad {
   /// description: Font color for type="default" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #ffffff
   /// related-theme-variable: --theme-ch5-keypad--default-font-color
   --ch5-keypad--default-font-color: var(--theme-ch5-keypad--default-font-color);
@@ -159,6 +259,7 @@ ch5-keypad {
   /// description: Border color for type="default" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #0091ea
   /// related-theme-variable: --theme-ch5-keypad--default-border-color
   --ch5-keypad--default-border-color: var(--theme-ch5-keypad--default-border-color);
@@ -166,13 +267,15 @@ ch5-keypad {
   /// description: Border style for type="default" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--default-border-style
   --ch5-keypad--default-border-style: var(--theme-ch5-keypad--default-border-style);
 
   /// description: Width for type="default" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--default-border-width
   --ch5-keypad--default-border-width: var(--theme-ch5-keypad--default-border-width);
@@ -180,6 +283,7 @@ ch5-keypad {
   /// description: Pressed background color for type="default" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #008ae6
   /// related-theme-variable: --theme-ch5-keypad--default-pressed-background-color
   --ch5-keypad--default-pressed-background-color: var(--theme-ch5-keypad--default-pressed-background-color);
@@ -187,6 +291,7 @@ ch5-keypad {
   /// description: Pressed font color for type="default" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-keypad--default-pressed-font-color
   --ch5-keypad--default-pressed-font-color: var(--theme-ch5-keypad--default-pressed-font-color);
@@ -194,6 +299,7 @@ ch5-keypad {
   /// description: Pressed border color for type="default" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #0091ea
   /// related-theme-variable: --theme-ch5-keypad--default-pressed-border-color
   --ch5-keypad--default-pressed-border-color: var(--theme-ch5-keypad--default-pressed-border-color);
@@ -201,13 +307,15 @@ ch5-keypad {
   /// description: Pressed border style for type="default" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--default-pressed-border-style
   --ch5-keypad--default-pressed-border-style: var(--theme-ch5-keypad--default-pressed-border-style);
 
   /// description: Pressed width size for type="default" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--default-pressed-border-width
   --ch5-keypad--default-pressed-border-width: var(--theme-ch5-keypad--default-pressed-border-width);
@@ -219,6 +327,7 @@ ch5-keypad {
   /// description: Background color for type="primary" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #fafafa
   /// related-theme-variable: --theme-ch5-keypad--primary-background-color
   --ch5-keypad--primary-background-color: var(--theme-ch5-keypad--primary-background-color);
@@ -226,6 +335,7 @@ ch5-keypad {
   /// description: Font color for type="primary" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #333
   /// related-theme-variable: --theme-ch5-keypad--primary-font-color
   --ch5-keypad--primary-font-color: var(--theme-ch5-keypad--primary-font-color);
@@ -233,6 +343,7 @@ ch5-keypad {
   /// description: Border color for type="primary" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #bdbdbd
   /// related-theme-variable: --theme-ch5-keypad--primary-border-color
   --ch5-keypad--primary-border-color: var(--theme-ch5-keypad--primary-border-color);
@@ -240,13 +351,15 @@ ch5-keypad {
   /// description: Border style for type="primary" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--primary-border-style
   --ch5-keypad--primary-border-style: var(--theme-ch5-keypad--primary-border-style);
 
   /// description: Width for type="primary" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--primary-border-width
   --ch5-keypad--primary-border-width: var(--theme-ch5-keypad--primary-border-width);
@@ -254,6 +367,7 @@ ch5-keypad {
   /// description: Pressed background color for type="primary" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #bdbdbd
   /// related-theme-variable: --theme-ch5-keypad--primary-pressed-background-color
   --ch5-keypad--primary-pressed-background-color: var(--theme-ch5-keypad--primary-pressed-background-color);
@@ -261,6 +375,7 @@ ch5-keypad {
   /// description: Pressed font color for type="primary" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #333
   /// related-theme-variable: --theme-ch5-keypad--primary-pressed-font-color
   --ch5-keypad--primary-pressed-font-color: var(--theme-ch5-keypad--primary-pressed-font-color);
@@ -268,6 +383,7 @@ ch5-keypad {
   /// description: Pressed border color for type="primary" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #bdbdbd
   /// related-theme-variable: --theme-ch5-keypad--primary-pressed-border-color
   --ch5-keypad--primary-pressed-border-color: var(--theme-ch5-keypad--primary-pressed-border-color);
@@ -275,13 +391,15 @@ ch5-keypad {
   /// description: Pressed border style for type="primary" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--primary-pressed-border-style
   --ch5-keypad--primary-pressed-border-style: var(--theme-ch5-keypad--primary-pressed-border-style);
 
   /// description: Pressed width size for type="primary" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--primary-pressed-border-width
   --ch5-keypad--primary-pressed-border-width: var(--theme-ch5-keypad--primary-pressed-border-width);
@@ -293,6 +411,7 @@ ch5-keypad {
   /// description: Background color for type="info" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #00bcd4
   /// related-theme-variable: --theme-ch5-keypad--info-background-color
   --ch5-keypad--info-background-color: var(--theme-ch5-keypad--info-background-color);
@@ -300,6 +419,7 @@ ch5-keypad {
   /// description: Font color for type="info" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-keypad--info-font-color
   --ch5-keypad--info-font-color: var(--theme-ch5-keypad--info-font-color);
@@ -307,6 +427,7 @@ ch5-keypad {
   /// description: Border color for type="info" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #00bcd4
   /// related-theme-variable: --theme-ch5-keypad--info-border-color
   --ch5-keypad--info-border-color: var(--theme-ch5-keypad--info-border-color);
@@ -314,13 +435,15 @@ ch5-keypad {
   /// description: Border style for type="info" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--info-border-style
   --ch5-keypad--info-border-style: var(--theme-ch5-keypad--info-border-style);
 
   /// description: Width for type="info" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--info-border-width
   --ch5-keypad--info-border-width: var(--theme-ch5-keypad--info-border-width);
@@ -328,6 +451,7 @@ ch5-keypad {
   /// description: Pressed background color for type="info" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #0097a7
   /// related-theme-variable: --theme-ch5-keypad--info-pressed-background-color
   --ch5-keypad--info-pressed-background-color: var(--theme-ch5-keypad--info-pressed-background-color);
@@ -335,6 +459,7 @@ ch5-keypad {
   /// description: Pressed font color for type="info" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-keypad--info-pressed-font-color
   --ch5-keypad--info-pressed-font-color: var(--theme-ch5-keypad--info-pressed-font-color);
@@ -342,6 +467,7 @@ ch5-keypad {
   /// description: Pressed border color for type="info" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #00bcd4
   /// related-theme-variable: --theme-ch5-keypad--info-pressed-border-color
   --ch5-keypad--info-pressed-border-color: var(--theme-ch5-keypad--info-pressed-border-color);
@@ -349,13 +475,15 @@ ch5-keypad {
   /// description: Pressed border style for type="info" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--info-pressed-border-style
   --ch5-keypad--info-pressed-border-style: var(--theme-ch5-keypad--info-pressed-border-style);
 
   /// description: Pressed width size for type="info" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--info-pressed-border-width
   --ch5-keypad--info-pressed-border-width: var(--theme-ch5-keypad--info-pressed-border-width);
@@ -367,6 +495,7 @@ ch5-keypad {
   /// description: Background color for type="danger" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #f44336
   /// related-theme-variable: --theme-ch5-keypad--danger-background-color
   --ch5-keypad--danger-background-color: var(--theme-ch5-keypad--danger-background-color);
@@ -374,6 +503,7 @@ ch5-keypad {
   /// description: Font color for type="danger" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #ffffff
   /// related-theme-variable: --theme-ch5-keypad--danger-font-color
   --ch5-keypad--danger-font-color: var(--theme-ch5-keypad--danger-font-color);
@@ -381,6 +511,7 @@ ch5-keypad {
   /// description: Border color for type="danger" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #e53935
   /// related-theme-variable: --theme-ch5-keypad--danger-border-color
   --ch5-keypad--danger-border-color: var(--theme-ch5-keypad--danger-border-color);
@@ -388,13 +519,15 @@ ch5-keypad {
   /// description: Border style for type="danger" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--danger-border-style
   --ch5-keypad--danger-border-style: var(--theme-ch5-keypad--danger-border-style);
 
   /// description: Width for type="danger" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--danger-border-width
   --ch5-keypad--danger-border-width: var(--theme-ch5-keypad--danger-border-width);
@@ -402,6 +535,7 @@ ch5-keypad {
   /// description: Pressed background color for type="danger" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #b71c1c
   /// related-theme-variable: --theme-ch5-keypad--danger-pressed-background-color
   --ch5-keypad--danger-pressed-background-color: var(--theme-ch5-keypad--danger-pressed-background-color);
@@ -409,6 +543,7 @@ ch5-keypad {
   /// description: Pressed font color for type="danger" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #ffffff
   /// related-theme-variable: --theme-ch5-keypad--danger-pressed-font-color
   --ch5-keypad--danger-pressed-font-color: var(--theme-ch5-keypad--danger-pressed-font-color);
@@ -416,6 +551,7 @@ ch5-keypad {
   /// description: Pressed border color for type="danger" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #e53935
   /// related-theme-variable: --theme-ch5-keypad--danger-pressed-border-color
   --ch5-keypad--danger-pressed-border-color: var(--theme-ch5-keypad--danger-pressed-border-color);
@@ -423,13 +559,15 @@ ch5-keypad {
   /// description: Pressed border style for type="danger" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--danger-pressed-border-style
   --ch5-keypad--danger-pressed-border-style: var(--theme-ch5-keypad--danger-pressed-border-style);
 
   /// description: Pressed width size for type="danger" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--danger-pressed-border-width
   --ch5-keypad--danger-pressed-border-width: var(--theme-ch5-keypad--danger-pressed-border-width);
@@ -441,6 +579,7 @@ ch5-keypad {
   /// description: Background color for type="secondary" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #bdbdbd
   /// related-theme-variable: --theme-ch5-keypad--secondary-background-color
   --ch5-keypad--secondary-background-color: var(--theme-ch5-keypad--secondary-background-color);
@@ -448,6 +587,7 @@ ch5-keypad {
   /// description: Font color for type="secondary" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #333
   /// related-theme-variable: --theme-ch5-keypad--secondary-font-color
   --ch5-keypad--secondary-font-color: var(--theme-ch5-keypad--secondary-font-color);
@@ -455,6 +595,7 @@ ch5-keypad {
   /// description: Border color for type="secondary" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #9e9e9e
   /// related-theme-variable: --theme-ch5-keypad--secondary-border-color
   --ch5-keypad--secondary-border-color: var(--theme-ch5-keypad--secondary-border-color);
@@ -462,13 +603,15 @@ ch5-keypad {
   /// description: Border style for type="secondary" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--secondary-border-style
   --ch5-keypad--secondary-border-style: var(--theme-ch5-keypad--secondary-border-style);
 
   /// description: Width for type="secondary" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--secondary-border-width
   --ch5-keypad--secondary-border-width: var(--theme-ch5-keypad--secondary-border-width);
@@ -476,6 +619,7 @@ ch5-keypad {
   /// description: Pressed background color for type="secondary" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #9e9e9e
   /// related-theme-variable: --theme-ch5-keypad--secondary-pressed-background-color
   --ch5-keypad--secondary-pressed-background-color: var(--theme-ch5-keypad--secondary-pressed-background-color);
@@ -483,6 +627,7 @@ ch5-keypad {
   /// description: Pressed font color for type="secondary" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #ffffff
   /// related-theme-variable: --theme-ch5-keypad--secondary-pressed-font-color
   --ch5-keypad--secondary-pressed-font-color: var(--theme-ch5-keypad--secondary-pressed-font-color);
@@ -490,6 +635,7 @@ ch5-keypad {
   /// description: Pressed border color for type="secondary" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #9e9e9e
   /// related-theme-variable: --theme-ch5-keypad--secondary-pressed-border-color
   --ch5-keypad--secondary-pressed-border-color: var(--theme-ch5-keypad--secondary-pressed-border-color);
@@ -497,13 +643,15 @@ ch5-keypad {
   /// description: Pressed border style for type="secondary" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--secondary-pressed-border-style
   --ch5-keypad--secondary-pressed-border-style: var(--theme-ch5-keypad--secondary-pressed-border-style);
 
   /// description: Pressed width size for type="secondary" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--secondary-pressed-border-width
   --ch5-keypad--secondary-pressed-border-width: var(--theme-ch5-keypad--secondary-pressed-border-width);
@@ -515,6 +663,7 @@ ch5-keypad {
   /// description: Background color for type="success" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #4caf50
   /// related-theme-variable: --theme-ch5-keypad--success-background-color
   --ch5-keypad--success-background-color: var(--theme-ch5-keypad--success-background-color);
@@ -522,6 +671,7 @@ ch5-keypad {
   /// description: Font color for type="success" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-keypad--success-font-color
   --ch5-keypad--success-font-color: var(--theme-ch5-keypad--success-font-color);
@@ -529,6 +679,7 @@ ch5-keypad {
   /// description: Border color for type="success" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #43a047
   /// related-theme-variable: --theme-ch5-keypad--success-border-color
   --ch5-keypad--success-border-color: var(--theme-ch5-keypad--success-border-color);
@@ -536,13 +687,15 @@ ch5-keypad {
   /// description: Border style for type="success" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--success-border-style
   --ch5-keypad--success-border-style: var(--theme-ch5-keypad--success-border-style);
 
   /// description: Width for type="success" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--success-border-width
   --ch5-keypad--success-border-width: var(--theme-ch5-keypad--success-border-width);
@@ -550,6 +703,7 @@ ch5-keypad {
   /// description: Pressed background color for type="success" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #388e3c
   /// related-theme-variable: --theme-ch5-keypad--success-pressed-background-color
   --ch5-keypad--success-pressed-background-color: var(--theme-ch5-keypad--success-pressed-background-color);
@@ -557,6 +711,7 @@ ch5-keypad {
   /// description: Pressed font color for type="success" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-keypad--success-pressed-font-color
   --ch5-keypad--success-pressed-font-color: var(--theme-ch5-keypad--success-pressed-font-color);
@@ -564,6 +719,7 @@ ch5-keypad {
   /// description: Pressed border color for type="success" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #43a047
   /// related-theme-variable: --theme-ch5-keypad--success-pressed-border-color
   --ch5-keypad--success-pressed-border-color: var(--theme-ch5-keypad--success-pressed-border-color);
@@ -571,13 +727,15 @@ ch5-keypad {
   /// description: Pressed border style for type="success" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--success-pressed-border-style
   --ch5-keypad--success-pressed-border-style: var(--theme-ch5-keypad--success-pressed-border-style);
 
   /// description: Pressed width size for type="success" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--success-pressed-border-width
   --ch5-keypad--success-pressed-border-width: var(--theme-ch5-keypad--success-pressed-border-width);
@@ -589,6 +747,7 @@ ch5-keypad {
   /// description: Background color for type="warning" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #ffc107
   /// related-theme-variable: --theme-ch5-keypad--warning-background-color
   --ch5-keypad--warning-background-color: var(--theme-ch5-keypad--warning-background-color);
@@ -596,6 +755,7 @@ ch5-keypad {
   /// description: Font color for type="warning" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #333
   /// related-theme-variable: --theme-ch5-keypad--warning-font-color
   --ch5-keypad--warning-font-color: var(--theme-ch5-keypad--warning-font-color);
@@ -603,6 +763,7 @@ ch5-keypad {
   /// description: Border color for type="warning" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #ffb300
   /// related-theme-variable: --theme-ch5-keypad--warning-border-color
   --ch5-keypad--warning-border-color: var(--theme-ch5-keypad--warning-border-color);
@@ -610,13 +771,15 @@ ch5-keypad {
   /// description: Border style for type="warning" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--warning-border-style
   --ch5-keypad--warning-border-style: var(--theme-ch5-keypad--warning-border-style);
 
   /// description: Width for type="warning" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--warning-border-width
   --ch5-keypad--warning-border-width: var(--theme-ch5-keypad--warning-border-width);
@@ -624,6 +787,7 @@ ch5-keypad {
   /// description: Pressed background color for type="warning" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #ff6f00
   /// related-theme-variable: --theme-ch5-keypad--warning-pressed-background-color
   --ch5-keypad--warning-pressed-background-color: var(--theme-ch5-keypad--warning-pressed-background-color);
@@ -631,6 +795,7 @@ ch5-keypad {
   /// description: Pressed font color for type="warning" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-keypad--warning-pressed-font-color
   --ch5-keypad--warning-pressed-font-color: var(--theme-ch5-keypad--warning-pressed-font-color);
@@ -638,6 +803,7 @@ ch5-keypad {
   /// description: Pressed border color for type="warning" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #ffb300
   /// related-theme-variable: --theme-ch5-keypad--warning-pressed-border-color
   --ch5-keypad--warning-pressed-border-color: var(--theme-ch5-keypad--warning-pressed-border-color);
@@ -645,13 +811,15 @@ ch5-keypad {
   /// description: Pressed border style for type="warning" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--warning-pressed-border-style
   --ch5-keypad--warning-pressed-border-style: var(--theme-ch5-keypad--warning-pressed-border-style);
 
   /// description: Pressed width size for type="warning" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--warning-pressed-border-width
   --ch5-keypad--warning-pressed-border-width: var(--theme-ch5-keypad--warning-pressed-border-width);
@@ -663,6 +831,7 @@ ch5-keypad {
   /// description: Background color for type="text" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #efefef
   /// related-theme-variable: --theme-ch5-keypad--text-background-color
   --ch5-keypad--text-background-color: var(--theme-ch5-keypad--text-background-color);
@@ -670,6 +839,7 @@ ch5-keypad {
   /// description: Font color for type="text" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #333
   /// related-theme-variable: --theme-ch5-keypad--text-font-color
   --ch5-keypad--text-font-color: var(--theme-ch5-keypad--text-font-color);
@@ -677,6 +847,7 @@ ch5-keypad {
   /// description: Border color for type="text" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #e0e0e0
   /// related-theme-variable: --theme-ch5-keypad--text-border-color
   --ch5-keypad--text-border-color: var(--theme-ch5-keypad--text-border-color);
@@ -684,13 +855,15 @@ ch5-keypad {
   /// description: Border style for type="text" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--text-border-style
   --ch5-keypad--text-border-style: var(--theme-ch5-keypad--text-border-style);
 
   /// description: Width for type="text" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--text-border-width
   --ch5-keypad--text-border-width: var(--theme-ch5-keypad--text-border-width);
@@ -698,6 +871,7 @@ ch5-keypad {
   /// description: Pressed background color for type="text" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #808080
   /// related-theme-variable: --theme-ch5-keypad--text-pressed-background-color
   --ch5-keypad--text-pressed-background-color: var(--theme-ch5-keypad--text-pressed-background-color);
@@ -705,6 +879,7 @@ ch5-keypad {
   /// description: Pressed font color for type="text" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #333
   /// related-theme-variable: --theme-ch5-keypad--text-pressed-font-color
   --ch5-keypad--text-pressed-font-color: var(--theme-ch5-keypad--text-pressed-font-color);
@@ -712,6 +887,7 @@ ch5-keypad {
   /// description: Pressed border color for type="text" of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #e0e0e0
   /// related-theme-variable: --theme-ch5-keypad--text-pressed-border-color
   --ch5-keypad--text-pressed-border-color: var(--theme-ch5-keypad--text-pressed-border-color);
@@ -719,13 +895,15 @@ ch5-keypad {
   /// description: Pressed border style for type="text" of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--text-pressed-border-style
   --ch5-keypad--text-pressed-border-style: var(--theme-ch5-keypad--text-pressed-border-style);
 
   /// description: Pressed width size for type="text" of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--text-pressed-border-width
   --ch5-keypad--text-pressed-border-width: var(--theme-ch5-keypad--text-pressed-border-width);
@@ -737,6 +915,7 @@ ch5-keypad {
   /// description: Background color for extra-button of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #4caf50
   /// related-theme-variable: --theme-ch5-keypad--extra-button-background-color
   --ch5-keypad--extra-button-background-color: var(--theme-ch5-keypad--extra-button-background-color);
@@ -744,6 +923,7 @@ ch5-keypad {
   /// description: Font color for extra-button of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-keypad--extra-button-font-color
   --ch5-keypad--extra-button-font-color: var(--theme-ch5-keypad--extra-button-font-color);
@@ -751,6 +931,7 @@ ch5-keypad {
   /// description: Border color for extra-button of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #43a047
   /// related-theme-variable: --theme-ch5-keypad--extra-button-border-color
   --ch5-keypad--extra-button-border-color: var(--theme-ch5-keypad--extra-button-border-color);
@@ -758,13 +939,15 @@ ch5-keypad {
   /// description: Border style for extra-button of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--extra-button-border-style
   --ch5-keypad--extra-button-border-style: var(--theme-ch5-keypad--extra-button-border-style);
 
   /// description: Width for extra-button of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--extra-button-border-width
   --ch5-keypad--extra-button-border-width: var(--theme-ch5-keypad--extra-button-border-width);
@@ -772,6 +955,7 @@ ch5-keypad {
   /// description: Pressed background color for extra-button of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #388e3c
   /// related-theme-variable: --theme-ch5-keypad--extra-button-pressed-background-color
   --ch5-keypad--extra-button-pressed-background-color: var(--theme-ch5-keypad--extra-button-pressed-background-color);
@@ -779,6 +963,7 @@ ch5-keypad {
   /// description: Pressed font color for extra-button of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #f0fff0
   /// related-theme-variable: --theme-ch5-keypad--extra-button-pressed-font-color
   --ch5-keypad--extra-button-pressed-font-color: var(--theme-ch5-keypad--extra-button-pressed-font-color);
@@ -786,6 +971,7 @@ ch5-keypad {
   /// description: Pressed border color for extra-button of keypad
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #43a047
   /// related-theme-variable: --theme-ch5-keypad--extra-button-pressed-border-color
   --ch5-keypad--extra-button-pressed-border-color: var(--theme-ch5-keypad--extra-button-pressed-border-color);
@@ -793,13 +979,15 @@ ch5-keypad {
   /// description: Pressed border style for extra-button of keypad
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-keypad--extra-button-pressed-border-style
   --ch5-keypad--extra-button-pressed-border-style: var(--theme-ch5-keypad--extra-button-pressed-border-style);
 
   /// description: Pressed width size for extra-button of keypad
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-keypad--extra-button-pressed-border-width
   --ch5-keypad--extra-button-pressed-border-width: var(--theme-ch5-keypad--extra-button-pressed-border-width);

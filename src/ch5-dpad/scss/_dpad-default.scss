@@ -71,6 +71,12 @@ ch5-dpad {
       font-size: var(--ch5-dpad--label-font-size);
     }
 
+    &.ch5-dpad-button-center--pressed {
+      .dpad-btn-label {
+        font-size: var(--ch5-dpad--pressed-label-font-size);
+      }
+    }
+
     overflow: hidden;
     z-index: 2;
     cursor: pointer;

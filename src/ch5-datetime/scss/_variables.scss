@@ -13,21 +13,24 @@
 ch5-datetime {
   /// description: Font size
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 14px 
   /// related-theme-variable: --theme-ch5-datetime--font-size
   --ch5-datetime--font-size: var(--theme-ch5-datetime--font-size);
 
   /// description: Height of Datetime component
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 35px 
   /// related-theme-variable: --theme-ch5-datetime--height
   --ch5-datetime--height: var(--theme-ch5-datetime--height);
 
   /// description: Width of Datetime component
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 200px 
   /// related-theme-variable: --theme-ch5-datetime--width
   --ch5-datetime--width: var(--theme-ch5-datetime--width);
@@ -35,6 +38,7 @@ ch5-datetime {
   /// description: Background color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: transparent 
   /// related-theme-variable: --theme-ch5-datetime--background-color
   --ch5-datetime--background-color: var(--theme-ch5-datetime--background-color);
@@ -42,6 +46,7 @@ ch5-datetime {
   /// description: Font weight
   /// type: list 
   /// values: normal, bold
+  /// show-theme-editor: true
   /// example: normal 
   /// related-theme-variable: --theme-ch5-datetime--font-weight
   --ch5-datetime--font-weight: var(--theme-ch5-datetime--font-weight);
@@ -49,6 +54,7 @@ ch5-datetime {
   /// description: Font style
   /// type: list 
   /// values: normal, italic
+  /// show-theme-editor: true
   /// example: normal 
   /// related-theme-variable: --theme-ch5-datetime--font-style
   --ch5-datetime--font-style: var(--theme-ch5-datetime--font-style);
@@ -56,20 +62,23 @@ ch5-datetime {
   /// description: Color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: transparent 
   /// related-theme-variable: --theme-ch5-datetime--color
   --ch5-datetime--color: var(--theme-ch5-datetime--color);
 
   /// description: Letter spacing for datetime
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, em, rem
+  /// show-theme-editor: false
   /// example: 72px
   /// related-theme-variable: --theme-ch5-datetime--letter-spacing
   --ch5-datetime--letter-spacing: var(--theme-ch5-datetime--letter-spacing);
 
   /// description: Text decoration for datetime
   /// type: list
-  /// values: none, underline, strike-through
+  /// values: none, underline, line-through
+  /// show-theme-editor: false
   /// example: none
   /// related-theme-variable: --theme-ch5-datetime--text-decoration
   --ch5-datetime--text-decoration: var(--theme-ch5-datetime--text-decoration);
@@ -77,6 +86,7 @@ ch5-datetime {
   /// description: White space for datetime
   /// type: list
   /// values: wrap, nowrap
+  /// show-theme-editor: false
   /// example: wrap
   /// related-theme-variable: --theme-ch5-datetime--white-space
   --ch5-datetime--white-space: var(--theme-ch5-datetime--white-space);
@@ -84,13 +94,15 @@ ch5-datetime {
   /// description: Border color property for datetime
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
   /// example: #0091ea
   /// related-theme-variable: --theme-ch5-datetime--border-color
   --ch5-datetime--border-color: var(--theme-ch5-datetime--border-color);
 
   /// description: Border width property for datetime
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-datetime--border-width
   --ch5-datetime--border-width: var(--theme-ch5-datetime--border-width);
@@ -98,62 +110,71 @@ ch5-datetime {
   /// description: Border style property for datetime
   /// type: list
   /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+  /// show-theme-editor: true
   /// example: solid
   /// related-theme-variable: --theme-ch5-datetime--border-style
   --ch5-datetime--border-style: var(--theme-ch5-datetime--border-style);
   
   /// description: Padding top property for datetime
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %, vh
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-datetime--padding-top
   --ch5-datetime--padding-top: var(--theme-ch5-datetime--padding-top);
 
   /// description: Padding right property for datetime
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %, vw
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-datetime--padding-right
   --ch5-datetime--padding-right: var(--theme-ch5-datetime--padding-right);
 
   /// description: Padding bottom property for datetime
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %, vh
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-datetime--padding-bottom
   --ch5-datetime--padding-bottom: var(--theme-ch5-datetime--padding-bottom);
 
   /// description: Padding left property for datetime
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %, vw
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-datetime--padding-left
   --ch5-datetime--padding-left: var(--theme-ch5-datetime--padding-left);
 
   /// description: Border top left property for datetime
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-datetime--border-top-left-radius
   --ch5-datetime--border-top-left-radius: var(--theme-ch5-datetime--border-top-left-radius);
 
   /// description: Border top right property for datetime
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-datetime--border-top-right-radius
   --ch5-datetime--border-top-right-radius: var(--theme-ch5-datetime--border-top-right-radius);
 
   /// description: Border bottom left property for datetime
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-datetime--border-bottom-left-radius
   --ch5-datetime--border-bottom-left-radius: var(--theme-ch5-datetime--border-bottom-left-radius);
   
   /// description: Border bottom right property for datetime
   /// type: unit
-  /// values: px, vw, vh, em, rem, %
+  /// values: px, %
+  /// show-theme-editor: true
   /// example: 1px
   /// related-theme-variable: --theme-ch5-datetime--border-bottom-right-radius
   --ch5-datetime--border-bottom-right-radius: var(--theme-ch5-datetime--border-bottom-right-radius);

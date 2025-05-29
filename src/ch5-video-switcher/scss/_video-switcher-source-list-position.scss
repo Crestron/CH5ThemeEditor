@@ -64,7 +64,7 @@
         align-items: center;
         justify-content: center;
         flex: 1;
-        color: var(--ch5-video-switcher--source-list-label-color); //TODo - check source list vs source icon
+        color: var(--ch5-video-switcher--source-list-icon-color); //TODo - check source list vs source icon
 
         &.sg {
           background-position: 50%;
@@ -87,6 +87,7 @@
         font-style: var(--ch5-video-switcher--source-list-label-style);
         color: var(--ch5-video-switcher--source-list-label-color);
         flex: 0 0 calc(22px / var(--number-of-source-list-divisions));
+        letter-spacing: var(--ch5-video-switcher--source-list-label-letter-spacing);
       }
 
       .ch5-video-switcher--source-list-label:empty {

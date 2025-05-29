@@ -46,18 +46,32 @@
   $property-container-width: "--ch5-keypad--" + $property-value + "-container-width";
   $property-container-font-major: "--ch5-keypad--" + $property-value + "-font-size-major";
   $property-container-font-minor: "--ch5-keypad--" + $property-value + "-font-size-minor";
+  $property-container-font-major-pressed: "--ch5-keypad--pressed-" + $property-value + "-font-size-major";
+  $property-container-font-minor-pressed: "--ch5-keypad--pressed-" + $property-value + "-font-size-minor";
 
   width: var(#{$property-container-width});
 
   button {
     line-height: inherit;
-    
     .label-major {
       font-size: var(#{$property-container-font-major});
       line-height: var(#{$property-container-font-major});
     }
     .label-minor {
       font-size: var(#{$property-container-font-minor});
+    }
+  }
+
+  .keypad-btn-pressed {
+    button {
+      .label-major {
+        font-size: var(#{$property-container-font-major-pressed});
+        line-height: var(#{$property-container-font-major-pressed});
+      }
+
+      .label-minor {
+        font-size: var(#{$property-container-font-minor-pressed});
+      }
     }
   }
 }

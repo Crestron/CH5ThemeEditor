@@ -132,7 +132,8 @@ ch5-textinput {
 
     .ch5-textinput-container {
       .ch5-textinput--icon {
-        font-size: var(--ch5-textinput--regular-font-size);
+        font-size: var(--ch5-textinput--regular-icon-font-size);
+        font-weight: var(--ch5-textinput--regular-icon-font-weight);
       }
 
       .ch5-textinput--input {
@@ -167,7 +168,8 @@ ch5-textinput {
 
     .ch5-textinput-container {
       .ch5-textinput--icon {
-        font-size: var(--ch5-textinput--x-small-font-size);
+        font-size: var(--ch5-textinput--x-small-icon-font-size);
+        font-weight: var(--ch5-textinput--x-small-icon-font-weight);
       }
 
       .ch5-textinput--input {
@@ -202,7 +204,8 @@ ch5-textinput {
 
     .ch5-textinput-container {
       .ch5-textinput--icon {
-        font-size: var(--ch5-textinput--small-font-size);
+        font-size: var(--ch5-textinput--small-icon-font-size);
+        font-weight: var(--ch5-textinput--small-icon-font-weight);
       }
 
       .ch5-textinput--input {
@@ -237,7 +240,8 @@ ch5-textinput {
 
     .ch5-textinput-container {
       .ch5-textinput--icon {
-        font-size: var(--ch5-textinput--large-font-size);
+        font-size: var(--ch5-textinput--large-icon-font-size);
+        font-weight: var(--ch5-textinput--large-icon-font-weight);
       }
 
       .ch5-textinput--input {
@@ -272,7 +276,8 @@ ch5-textinput {
 
     .ch5-textinput-container {
       .ch5-textinput--icon {
-        font-size: var(--ch5-textinput--x-large-font-size);
+        font-size: var(--ch5-textinput--x-large-icon-font-size);
+        font-weight: var(--ch5-textinput--x-large-icon-font-weight);
       }
 
       .ch5-textinput--input {
