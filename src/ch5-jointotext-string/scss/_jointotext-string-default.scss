@@ -7,19 +7,18 @@
 /// under which you licensed this source code.
 ///
 /// @author Crestron
-/// @group ch5-template
+/// @group ch5-jointotext-string
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-ch5-template {
-    --animate-duration: 1s; // Widget animation duration
-    --animate-delay: 0s; // Widget animation delay
-    display: inline;
+ch5-jointotext-string {
+    color: var(--ch5-jointotext-string--color);
+    font-size: var(--ch5-jointotext-string--font-size);
+}
 
-    &.inline-element {
-        display: inline !important; // noshowType="display"
-    }
-
-    &.visible-element {
-        visibility: visible !important; // noshowType="visibility"
+// When we use it inside the button, the button color and size will be inherited.
+ch5-button, ch5-modal-dialog, ch5-overlay-panel {
+    ch5-jointotext-string {
+        color: inherit;
+        font-size: inherit;
     }
 }

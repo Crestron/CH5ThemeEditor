@@ -120,7 +120,7 @@ ch5-select-option {
   color: var(--ch5-select--option-item-color);
   border: var(--ch5-select--option-item-border-width) var(--ch5-select--option-item-border-style) var(--ch5-select--option-item-border-color);
   background-color: var(--ch5-select--option-item-background-color);
-
+  font-size: var(--ch5-select--font-size);
   &[dir="rtl"] {
     @include rtl-style;
   }

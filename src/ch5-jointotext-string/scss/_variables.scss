@@ -1,0 +1,28 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2023 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-jointotext-string
+////////////////////////////////////////////////////////////////////////////////////////////////////
+ch5-jointotext-string{
+    /// description: Font size for the jointotext-string
+    /// type: unit
+    /// values: px, vw, vh, em, rem, %
+    /// show-theme-editor: true
+    /// example: 16px
+    /// related-theme-variable: --theme-ch5-jointotext-string--font-size
+    --ch5-jointotext-string--font-size: var(--theme-ch5-jointotext-string--font-size);
+
+    /// description: Text color for jointotext-string
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: rgba(0, 0, 0, 0.1)
+    /// related-theme-variable: --theme-ch5-jointotext-string--color
+    --ch5-jointotext-string--color: var(--theme-ch5-jointotext-string--color);
+} 

@@ -27,12 +27,17 @@
         cursor: pointer;
       }
 
-      button,
+      //button,
       .ch5-button--label {
         background-color: transparent;
         border: none;
         // color: inherit;
 
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
         &:focus {
           outline: none;
         }

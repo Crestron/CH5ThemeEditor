@@ -27,7 +27,7 @@ ch5-color-chip {
   /// related-theme-variable: --theme-ch5-color-chip--width
   --ch5-color-chip--width: var(--theme-ch5-color-chip--width);
 
-  /// description: Initial background color for color-chip
+  /// description: Initial background color for color-chip. Please note that alpha colors are not supported for color-chip
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// show-theme-editor: true

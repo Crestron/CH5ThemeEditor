@@ -1,6 +1,6 @@
 {
     "name": "@crestron/ch5-theme", 
-    "version": "2.14.0", 
+    "version": "2.15.0", 
     "description": "Crestron HTML5 (CH5) Themes CSS", 
     "author": "Crestron", 
     "license": "SEE LICENSE IN LICENSE.txt", 
@@ -25,7 +25,8 @@
         "gen:sass-output": "node ./helpers/sass-output/index.js --writeTo ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-output.json", 
         "gen:sass-schema": "node ./helpers/metadata-generator.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-schema.json", 
         "gen:sass-metadata": "node ./helpers/sass-metadata/index.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/sass-metadata.json", 
-        "gen:sass:all": "npm run gen:sass-metadata && npm run gen:sass-output && npm run gen:sass-schema && npm run gen:icon-library"
+        "gen:animation-data": "node ./helpers/animate/animate-data.js --writetofilepath ../CH5ComponentLibrary/src/_interfaces/generated-metadata/animation-data.json", 
+        "gen:sass:all": "npm run gen:sass-metadata && npm run gen:sass-output && npm run gen:sass-schema && npm run gen:icon-library && npm run gen:animation-data"
     }, 
     "config": {
         "local": "./output/themes", 

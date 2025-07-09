@@ -3,6 +3,8 @@
 @import "style/global";
 @import "style/mixins";
 @import "style/ch5-custom-classes";
+@import "style/animate";
+
 
 @import "ch5-animation/ch5-animation";
 
@@ -23,6 +25,12 @@
 @import "ch5-form/ch5-form";
 
 @import "ch5-image/ch5-image";
+
+@import "ch5-jointotext-boolean/ch5-jointotext-boolean";
+
+@import "ch5-jointotext-numeric/ch5-jointotext-numeric";
+
+@import "ch5-jointotext-string/ch5-jointotext-string";
 
 @import "ch5-keypad/ch5-keypad";
 

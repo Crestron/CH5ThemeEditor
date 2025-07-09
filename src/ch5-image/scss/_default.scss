@@ -15,6 +15,7 @@ ch5-image {
 
   display: inline-block;
   touch-action: none;
+  color: var(--ch5-image--text-color); // added for alt text color
 }
 
 /// Added automatically on the first child of the ch5-image element.

@@ -42,4 +42,12 @@ ch5-image {
   /// example: solid
   /// related-theme-variable: --theme-ch5-image--border-style
   --ch5-image--border-style: var(--theme-ch5-image--border-style);
+
+  /// description: Text color for image component
+  /// type: color
+  /// values: rgb(35,35,35), #1a1a1a, red
+  /// show-theme-editor: true
+  /// example: rgba(0, 0, 0, 0.1)
+  /// related-theme-variable: --theme-ch5-image--text-color
+  --ch5-image--text-color: var(--theme-ch5-image--text-color);
 }
