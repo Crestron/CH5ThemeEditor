@@ -16,7 +16,7 @@ ch5-jointotext-boolean {
 }
 
 // When we use it inside the button, the button color and size will be inherited.
-ch5-button, ch5-modal-dialog, ch5-overlay-panel {
+ch5-button, ch5-modal-dialog, ch5-overlay-panel, ch5-text, ch5-video-switcher, ch5-slider {
     ch5-jointotext-boolean {
         color: inherit;
         font-size: inherit;

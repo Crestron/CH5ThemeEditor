@@ -208,7 +208,7 @@
       }
 
       .noUi-pips-vertical {
-        left: calc(calc((var(#{$handle-width}) - var(--ch5-slider--height))) + 4);
+        left: calc(calc((var(#{$handle-width}) - var(--ch5-slider--height))) + 4px);
         width: 65px;
       }
 
