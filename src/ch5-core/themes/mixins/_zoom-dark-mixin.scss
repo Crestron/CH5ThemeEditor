@@ -621,7 +621,7 @@
   /// example: #cacaca
   --theme-shell--navigation-button-background-color: #000000;
 
-  /// Shell template collapsible icon color for show/hide navigation button list  
+  /// Shell template collapsible icon color for show/hide navigation button list
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// show-theme-editor: false
@@ -682,8 +682,8 @@
   /// values: rgb(35,35,35), #1a1a1a, red
   /// show-theme-editor: false
   /// example: #efefef
-  --theme-shell--version-info-modal-table-header-background-color: #505050; 
-  
+  --theme-shell--version-info-modal-table-header-background-color: #505050;
+
   /// Shell template version info modal tab buttons border color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
@@ -1574,7 +1574,7 @@
 
   // ***************************************
   // ch5-jointotext-numeric
-  // *************************************** 
+  // ***************************************
 
   --theme-ch5-jointotext-numeric--font-size: var(--theme-fonts--font-size);
 
@@ -1825,6 +1825,106 @@
   --theme-ch5-keypad--pressed-x-large-font-size-major: 48px;
 
   --theme-ch5-keypad--pressed-x-large-font-size-minor: 17px;
+
+  // ***************************************
+  // ch5-media-player
+  // ***************************************
+
+  --theme-ch5-media-player--background-color: #242424;
+
+  --theme-ch5-media-player--border-color: #000000;
+
+  --theme-ch5-media-player--border-width: 1px;
+
+  --theme-ch5-media-player--border-style: solid;
+  
+  --theme-ch5-media-player--popup-input-border-color: #000000;
+  
+  --theme-ch5-media-player--popup-border-color: #000000;
+
+  --theme-ch5-media-player--popup-border-width: 1px;
+
+  --theme-ch5-media-player--popup-border-style: solid;
+  
+  --theme-ch5-media-player--menu-items-border-color: #000000;
+
+  --theme-ch5-media-player--menu-items-border-width: 1px;
+
+  --theme-ch5-media-player--menu-items-border-style: solid;
+
+  --theme-ch5-media-player--now-playing-icon-size: 24px;
+
+  --theme-ch5-media-player--now-playing-icon-color: #ffffff;
+  
+  --theme-ch5-media-player--header-icon-color: #ffffff;
+
+  --theme-ch5-media-player--primary-font-color: #ffffff;
+  
+  --theme-ch5-media-player--popup-font-color: #ffffff;
+  
+  --theme-ch5-media-player--loading-indicator-color: #ffffff;
+
+  --theme-ch5-media-player--secondary-font-color: #a9a9ab;
+
+  --theme-ch5-media-player--my-music-menu-icon-color: #a9a9ab;
+
+  --theme-ch5-media-player--header-icon-background-color: #2c2c2e;
+  
+  --theme-ch5-media-player--player-name-background-color: #2c2c2e;
+
+  --theme-ch5-media-player--width: 800px;
+
+  --theme-ch5-media-player--height: 600px;
+
+  --theme-ch5-media-player--active-icon-background-color: #e91e63;
+
+  --theme-ch5-media-player--progressbar-background-color: #e91e63;
+  
+  --theme-ch5-media-player--progressbar-track-color: #000000;
+
+  --theme-ch5-media-player--active-icon-color: #ffffff;
+
+  --theme-ch5-media-player--text-font-size: 16px;
+  
+  --theme-ch5-media-player--popup-text-font-size: 16px;
+
+  --theme-ch5-media-player--popup-overlay-background-color: rgba(72, 72, 72, 0.7);
+
+  --theme-ch5-media-player--default-border-color: #2c2c2e;
+  
+  --theme-ch5-media-player--default-border-width: 1px;
+
+  --theme-ch5-media-player--default-border-style: solid;
+  
+  --theme-ch5-media-player--default-menu-items-border-color: #2c2c2e;
+  
+  --theme-ch5-media-player--default-menu-items-border-width: 1px;
+
+  --theme-ch5-media-player--default-menu-items-border-style: solid;
+
+  --theme-ch5-media-player--default-provider-text-color: #f2f2f7;
+
+  --theme-ch5-media-player--default-album-art-placeholder-color: #29323c;
+
+  --theme-ch5-media-player--default-track-info-text-color: #717174;
+
+  --theme-ch5-media-player--default-progressbar-color: #2c2c2e;
+
+  --theme-ch5-media-player--default-progressbar-time-color: #9f9fa0;
+
+  --theme-ch5-media-player--default-icon-color: #404041;
+
+  --theme-ch5-media-player--default-mp-back-icon-color: #28282a;
+
+  --theme-ch5-media-player--default-header-text-color: #818185;
+
+  --theme-ch5-media-player--active-menu-list-item-background-color: #2c2c2e;
+
+  --theme-ch5-media-player--popup-active-button-background-color: #2c2c2e;
+
+  --theme-ch5-media-player--popup-active-button-color: #fff;
+
+  --theme-ch5-media-player--icon-button-pressed-background-color: #2c2c2e;
 
   // ***************************************
   // ch5-overlay-panel
@@ -2277,7 +2377,7 @@
   --theme-ch5-toggle--on-text-font-color: #17171a;
 
   --theme-ch5-toggle--off-text-font-color: #17171a;
-  
+
   --theme-ch5-toggle--icon-on-font-color: #17171a;
 
   --theme-ch5-toggle--icon-off-font-color: #17171a;

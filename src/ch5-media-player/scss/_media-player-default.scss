@@ -1,0 +1,537 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2025 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-media-player
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$ch5-media-player--padding: 16px;
+
+ch5-media-player {
+  @include ch5-component-base();
+  display: inline-flex;
+}
+
+/// Main class
+.ch5-media-player {
+  position: relative;
+  width: var(--ch5-media-player--width);
+  height: var(--ch5-media-player--height);
+  min-width: 360px;
+  min-height: 360px;
+  background-color: var(--ch5-media-player--background-color);
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: var(--ch5-media-player--border-style) var(--ch5-media-player--border-width) var(--ch5-media-player--border-color);
+
+  .ch5-media-player--popup-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--ch5-media-player--popup-overlay-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ch5-media-player--popup-content-generic {
+      background-color: var(--ch5-media-player--background-color);
+      color: var(--ch5-media-player--popup-font-color);
+      width: 60%;
+      border-radius: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: var(--ch5-media-player--popup-text-font-size);
+
+      .generic-dialog-title {
+        padding: $ch5-media-player--padding;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: inherit;
+      }
+
+      .dialog-content {
+        display: flex;
+        padding: 0 $ch5-media-player--padding $ch5-media-player--padding $ch5-media-player--padding;
+
+        .dialog-content-input {
+          width: 100%;
+          border: none;
+          outline: none;
+          border-bottom: var(--ch5-media-player--popup-border-width) var(--ch5-media-player--popup-border-style) var(--ch5-media-player--popup-input-border-color);
+          padding: 0.25em;
+          background-color: inherit;
+          color: inherit;
+          font-size: inherit;
+        }
+      }
+
+      .generic-dialog-footer {
+        display: flex;
+        justify-content: space-between;
+
+        &--column {
+          flex-direction: column;
+
+          >.generic-dialog-button:last-child {
+            &:active {
+              border-bottom-left-radius: 1em;
+              border-bottom-right-radius: 1em;
+            }
+          }
+        }
+
+        &--row {
+          flex-direction: row;
+
+          >.generic-dialog-button:nth-child(2) {
+            border-left: var(--ch5-media-player--popup-border-width) var(--ch5-media-player--popup-border-style) var(--ch5-media-player--popup-border-color);
+
+            &:active {
+              border-bottom-right-radius: 1em;
+            }
+          }
+
+          >.generic-dialog-button:first-child {
+            &:active {
+              border-bottom-left-radius: 1em;
+            }
+          }
+        }
+
+        .generic-dialog-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: $ch5-media-player--padding;
+          flex: 1;
+          cursor: pointer;
+          background: none;
+          border: none;
+          color: var(--ch5-media-player--popup-font-color);
+          border-top: var(--ch5-media-player--popup-border-width) var(--ch5-media-player--popup-border-style) var(--ch5-media-player--popup-border-color);
+          font-size: inherit;
+
+          &:active {
+            background-color: var(--ch5-media-player--popup-active-button-background-color);
+            color: var(--ch5-media-player--popup-active-button-color);
+          }
+        }
+
+        .primary-dialog-button {
+          font-weight: 600;
+          font-size: inherit;
+        }
+      }
+
+      .action-group-dialog-footer {
+        .action-group-dialog-button {
+          font-size: inherit;
+          display: flex;
+          justify-content: center;
+          padding: $ch5-media-player--padding;
+          border-top: var(--ch5-media-player--popup-border-width) var(--ch5-media-player--popup-border-style) var(--ch5-media-player--popup-border-color);
+          cursor: pointer;
+        }
+
+        .primary-dialog-button {
+          font-weight: 600;
+          font-size: inherit;
+        }
+      }
+    }
+  }
+}
+
+.mp-loading-indicator {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--ch5-media-player--popup-overlay-background-color);
+
+  .mp-loading-indicator-text {
+    position: absolute;
+    background-color: var(--ch5-media-player--background-color);
+    padding: 2em;
+    border-radius: 0.5em;
+
+    .mp-loader-icon-size {
+      font-size: calc(var(--ch5-media-player--text-font-size) + 1.5em);
+      color: var(--ch5-media-player--loading-indicator-color);
+    }
+  }
+}
+
+.hide-loading-indicator {
+  display: none;
+}
+
+.ch5-media-player--individual-icon-button-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75em;
+  min-height: 2.75em;
+  max-height: 5em;
+  max-width: 5em;
+  cursor: pointer;
+  border: none;
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  width: 100%;
+
+  &:active {
+    background: var(--ch5-media-player--icon-button-pressed-background-color);
+    border-radius: 50%;
+  }
+
+  .ch5-media-player--individual-icon-button {
+    border: none;
+    height: 100%;
+    width: 100%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mp-icon {
+      font-size: var(--ch5-media-player--now-playing-icon-size);
+    }
+  }
+}
+
+.ch5-media-player--disabled {
+  @include ch5-component-disabled();
+}
+
+@mixin setMediaPlayerHeightsForNowPlaying($size, $ratio) {
+  .ch5-media-player {
+    &.ch5-media-player--width-#{$size} {
+      .ch5-media-player--now-playing {
+        .now-playing-controls-container {
+
+          .now-playing-action-buttons-container,
+          .now-playing-more-action-buttons-container {
+            gap: calc(#{$ratio}em - 0.25em);
+
+            .ch5-media-player--individual-icon-button-container {
+              height: calc(#{$ratio}em + 1.5em);
+              width: calc(#{$ratio}em + 1.5em);
+              min-width: 2.25em;
+              min-height: 2.25em;
+
+              .ch5-media-player--individual-icon-button {
+                .mp-icon {
+                  font-size: calc(#{$ratio}em + var(--ch5-media-player--now-playing-icon-size) - 1.25em);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .ch5-media-player--popup-overlay {
+        .ch5-media-player--popup-content-generic {
+          font-size: calc(#{$ratio}em + var(--ch5-media-player--popup-text-font-size) - 0.75em);
+          width: calc(12em + #{$ratio*10}em);
+        }
+      }
+    }
+  }
+
+  .portrait-mode-active {
+    .ch5-media-player--my-music {
+      width: 100%;
+      position: absolute;
+      right: -100%;
+      opacity: 0;
+      transition:
+        right 1s ease-in-out,
+        opacity 3s ease-in-out;
+      height: 100%;
+      border: none;
+
+      .my-music-header-now-playing-button {
+        visibility: visible;
+
+        .mp-logo {
+          width: 60%;
+          height: 60%;
+        }
+      }
+    }
+
+    .my-music-transition {
+      right: 0;
+      opacity: 1;
+      transition:
+        right 1s ease-in-out,
+        opacity 0.3s ease-in-out;
+    }
+
+    .ch5-media-player--now-playing {
+      width: 100%;
+      height: 100%;
+      border: none;
+
+      .now-playing-player-container {
+        width: 100%;
+
+        .now-playing-player-name-container {
+          justify-content: flex-start;
+        }
+
+        .now-playing-player-music-note-button {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        justify-content: space-between;
+      }
+    }
+
+    .ch5-media-player--now-playing-default {
+      width: 100%;
+      position: absolute;
+      border-right: none;
+    }
+
+    .ch5-media-player--my-music-default {
+      width: 100%;
+      position: absolute;
+      right: -100%;
+      border-left: none;
+    }
+
+    &.ch5-media-player--width-#{$size} {
+      .ch5-media-player--now-playing {
+        .now-playing-player-container {
+          .now-playing-player-name-container {
+            width: calc(72.5% + #{$ratio*10%});
+          }
+        }
+
+        .now-playing-controls-container {
+
+          .now-playing-action-buttons-container,
+          .now-playing-more-action-buttons-container {
+            gap: calc(#{$ratio}em - 0.35em);
+
+            .ch5-media-player--individual-icon-button-container {
+              height: calc(#{$ratio}em + 2.25em);
+              width: calc(#{$ratio}em + 2.25em);
+              min-width: 2.25em;
+              min-height: 2.25em;
+
+              .ch5-media-player--individual-icon-button {
+                .mp-icon {
+                  font-size: calc(#{$ratio}em + var(--ch5-media-player--now-playing-icon-size) - 1em);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ch5-media-player--now-playing-default {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  padding: 1em;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 1em;
+  border-right: var(--ch5-media-player--default-border-width) var(--ch5-media-player--default-border-style) var(--ch5-media-player--default-border-color);
+
+  .default-provider-container,
+  .default-album-art-container,
+  .default-track-info-container,
+  .default-progressbar-container,
+  .default-actions-container {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .default-provider-container {
+    color: var(--ch5-media-player--default-provider-text-color);
+    padding-bottom: 1.25em;
+  }
+
+  .default-album-art-container {
+    display: flex;
+    flex-grow: 1;
+    aspect-ratio: 1 / 1;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5em;
+    background: var(--ch5-media-player--default-album-art-placeholder-color);
+  }
+
+  .default-track-info-container {
+    flex-direction: column;
+    color: var(--ch5-media-player--default-track-info-text-color);
+
+    :first-child {
+      font-size: calc(var(--ch5-media-player--text-font-size) + 0.25em);
+      font-weight: 500;
+    }
+  }
+
+  .default-progressbar-container {
+    flex-direction: column;
+    padding: 0 2em;
+
+    .progressbar-default {
+      height: 0.25em;
+      background: var(--ch5-media-player--default-progressbar-color);
+      width: 100%;
+      border-radius: 0.25em;
+    }
+
+    .progressbar-default-time {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--ch5-media-player--default-progressbar-time-color);
+      width: 100%;
+    }
+  }
+
+  .default-actions-container {
+    .ch5-media-player--individual-icon-button-container {
+      max-width: 4em;
+      max-height: 4em;
+
+      .mp-icon {
+        color: var(--ch5-media-player--default-icon-color);
+        height: 1.75em;
+        width: 1.75em;
+      }
+    }
+  }
+}
+
+.ch5-media-player--my-music-default {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 1em;
+  border-left: var(--ch5-media-player--default-border-width) var(--ch5-media-player--default-border-style) var(--ch5-media-player--default-border-color);
+
+  .default-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5em 0;
+
+    .ch5-media-player--individual-icon-button-container {
+      max-width: 2.5em;
+      max-height: 2.5em;
+
+      .mp-icon {
+        color: var(--ch5-media-player--default-mp-back-icon-color);
+      }
+
+      .mp-animated-bar {
+        visibility: hidden;
+      }
+    }
+
+    .header-title-none {
+      flex: 1 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ch5-media-player--default-header-text-color);
+      font-size: calc(var(--ch5-media-player--text-font-size) + 0.125em);
+      font-weight: 700;
+    }
+  }
+
+  .default-item-container {
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    flex: 1 0 0;
+    width: 100%;
+    padding-left: 1.25em;
+
+    .default-item {
+      padding: 0.5em 0;
+      border-bottom: var(--ch5-media-player--default-menu-items-border-width) var(--ch5-media-player--default-menu-items-border-style) var(--ch5-media-player--default-menu-items-border-color);
+      width: 100%;
+      font-size: calc(var(--ch5-media-player--text-font-size) + 0.125em);
+      color: var(--ch5-media-player--default-track-info-text-color);
+      font-weight: 500;
+    }
+  }
+
+  .default-footer-container {
+    display: flex;
+    border-top: var(--ch5-media-player--default-menu-items-border-width) var(--ch5-media-player--default-menu-items-border-style) var(--ch5-media-player--default-menu-items-border-color);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    .ch5-media-player--individual-icon-button-container {
+      max-height: 3.5em;
+      max-width: 3.5em;
+
+      .mp-icon {
+        color: var(--ch5-media-player--default-icon-color);
+      }
+    }
+  }
+}
+
+.now-playing-image-container {
+  display: flex;
+  flex-grow: 1;
+  width: auto;
+  max-width: 70%;
+  max-height: 100%;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-visibility {
+  visibility: hidden;
+}
+
+@include setMediaPlayerHeightsForNowPlaying("xl", 1.5);
+@include setMediaPlayerHeightsForNowPlaying("lg", 1.25);
+@include setMediaPlayerHeightsForNowPlaying("md", 1);
+@include setMediaPlayerHeightsForNowPlaying("sm", 0.75);
+@include setMediaPlayerHeightsForNowPlaying("xs", 0.5);

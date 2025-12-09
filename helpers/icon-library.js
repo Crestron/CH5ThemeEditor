@@ -15,6 +15,7 @@ const fse = require('fs-extra');
   const fontAwesomeIconFamiliesJSONPath = `./node_modules/@fortawesome/fontawesome-free/metadata/icon-families.json`;
   const materialIconFamiliesJSONPath = `./node_modules/@material-icons/font/data.json`;
   const sgIconFamiliesJSONPath = `./sg-icons/metadata.json`;
+  const mpIconFamiliesJSONPath = `./mp-icons/metadata.json`;
 
   const filterArray = (completeArray, toRemoveElementsArray) => {
     // make a Set to hold values from toRemoveElementsArray
@@ -88,11 +89,25 @@ const fse = require('fs-extra');
               "name": prop.label,
               "value": ".sg " + stringValue + " .sg-" + prop.alias[j]
             });
-            }
+          }
         }
       }
 
       responseArray.sgIcons = itemArray;
+    }
+
+    {
+      // mp icons
+      const data = JSON.parse(fs.readFileSync(mpIconFamiliesJSONPath));
+      const itemArray = [];
+      for (const prop of data.icons) {
+        itemArray.push({
+          "name": prop.label,
+          "value": ".mp .mp-size ." + prop.alias
+        });
+      }
+
+      responseArray.mpIcons = itemArray;
     }
 
     const outputPath = process.argv[3] !== undefined ? process.argv[3] : './generated-metadata/icon-library.json';

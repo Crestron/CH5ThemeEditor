@@ -1,0 +1,398 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2025 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-media-player-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ch5-media-player {
+
+    /// description: Sets the background color for the component
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: transparent
+    /// related-theme-variable: --theme-ch5-media-player--background-color
+    --ch5-media-player--background-color: var(--theme-ch5-media-player--background-color);
+
+    /// description: Sets the border color for the component
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #d8d8d8
+    /// related-theme-variable: --theme-ch5-media-player--border-color
+    --ch5-media-player--border-color: var(--theme-ch5-media-player--border-color);
+
+    /// description: Sets the border width for the component
+    /// type: unit
+    /// values: px
+    /// show-theme-editor: true
+    /// example: 1px 
+    /// related-theme-variable: --theme-ch5-media-player--border-width
+    --ch5-media-player--border-width: var(--theme-ch5-media-player--border-width);
+
+    /// description: Sets the border style for the component
+    /// type: list
+    /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+    /// show-theme-editor: true
+    /// example: solid
+    /// related-theme-variable: --theme-ch5-media-player--border-style
+    --ch5-media-player--border-style: var(--theme-ch5-media-player--border-style);
+    
+    /// description: Sets the border color for the popup input of the component
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #d8d8d8
+    /// related-theme-variable: --theme-ch5-media-player--popup-input-border-color
+    --ch5-media-player--popup-input-border-color: var(--theme-ch5-media-player--popup-input-border-color);
+    
+    /// description: Sets the border color for the popup of the component
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #d8d8d8
+    /// related-theme-variable: --theme-ch5-media-player--popup-border-color
+    --ch5-media-player--popup-border-color: var(--theme-ch5-media-player--popup-border-color);
+
+    /// description: Sets the border width for the popup of the component
+    /// type: unit
+    /// values: px
+    /// show-theme-editor: true
+    /// example: 1px 
+    /// related-theme-variable: --theme-ch5-media-player--popup-border-width
+    --ch5-media-player--popup-border-width: var(--theme-ch5-media-player--popup-border-width);
+
+    /// description: Sets the border style for the popup of the component
+    /// type: list
+    /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+    /// show-theme-editor: true
+    /// example: solid
+    /// related-theme-variable: --theme-ch5-media-player--popup-border-style
+    --ch5-media-player--popup-border-style: var(--theme-ch5-media-player--popup-border-style);
+    
+    /// description: Sets the border color for the menu items in my-music of the component
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #d8d8d8
+    /// related-theme-variable: --theme-ch5-media-player--menu-items-border-color
+    --ch5-media-player--menu-items-border-color: var(--theme-ch5-media-player--menu-items-border-color);
+
+    /// description: Sets the border width for the menu items in my-music of the component
+    /// type: unit
+    /// values: px
+    /// show-theme-editor: true
+    /// example: 1px 
+    /// related-theme-variable: --theme-ch5-media-player--menu-items-border-width
+    --ch5-media-player--menu-items-border-width: var(--theme-ch5-media-player--menu-items-border-width);
+
+    /// description: Sets the border style for the menu items in my-music of the component
+    /// type: list
+    /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+    /// show-theme-editor: true
+    /// example: solid
+    /// related-theme-variable: --theme-ch5-media-player--menu-items-border-style
+    --ch5-media-player--menu-items-border-style: var(--theme-ch5-media-player--menu-items-border-style);
+
+    /// description: Media player now playing icon size
+    /// type: unit
+    /// values: px
+    /// show-theme-editor: true
+    /// example: 24px 
+    /// related-theme-variable: --theme-ch5-media-player--now-playing-icon-size
+    --ch5-media-player--now-playing-icon-size: var(--theme-ch5-media-player--now-playing-icon-size);
+
+    /// description: Media player now playing icon color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #000 
+    /// related-theme-variable: --theme-ch5-media-player--now-playing-icon-color
+    --ch5-media-player--now-playing-icon-color: var(--theme-ch5-media-player--now-playing-icon-color);
+    
+    /// description: Media player header section icon color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #000
+    /// related-theme-variable: --theme-ch5-media-player--header-icon-color
+    --ch5-media-player--header-icon-color: var(--theme-ch5-media-player--header-icon-color);
+
+    /// description: Media Player primary font color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #000
+    /// related-theme-variable: --theme-ch5-media-player--primary-font-color
+    --ch5-media-player--primary-font-color: var(--theme-ch5-media-player--primary-font-color);
+    
+    /// description: Media Player popup font color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #000
+    /// related-theme-variable: --theme-ch5-media-player--popup-font-color
+    --ch5-media-player--popup-font-color: var(--theme-ch5-media-player--popup-font-color);
+    
+    /// description: Media Player loading indicator color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #000
+    /// related-theme-variable: --theme-ch5-media-player--loading-indicator-color
+    --ch5-media-player--loading-indicator-color: var(--theme-ch5-media-player--loading-indicator-color);
+
+    /// description:  Icon Background color for header section of Media Player
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #0091ea
+    /// related-theme-variable: --theme-ch5-media-player--header-icon-background-color
+    --ch5-media-player--header-icon-background-color: var(--theme-ch5-media-player--header-icon-background-color);
+    
+    /// description:  Background color for player name in header section of Media Player
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #0091ea
+    /// related-theme-variable: --theme-ch5-media-player--player-name-background-color
+    --ch5-media-player--player-name-background-color: var(--theme-ch5-media-player--player-name-background-color);
+
+    /// description: Media Player secondary font color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #0091ea
+    /// related-theme-variable: --theme-ch5-media-player--secondary-font-color
+    --ch5-media-player--secondary-font-color: var(--theme-ch5-media-player--secondary-font-color);
+
+    /// description: My Music section Menu Buttons Icon Color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #0091ea
+    /// related-theme-variable: --theme-ch5-media-player--my-music-menu-icon-color
+    --ch5-media-player--my-music-menu-icon-color: var(--theme-ch5-media-player--my-music-menu-icon-color);
+
+    /// description: Sets the width for the component
+    /// type: unit
+    /// values: px
+    /// show-theme-editor: true
+    /// example: 800px 
+    /// related-theme-variable: --theme-ch5-media-player--width
+    --ch5-media-player--width: var(--theme-ch5-media-player--width); 
+
+    /// description: Sets the height for the component
+    /// type: unit
+    /// values: px
+    /// show-theme-editor: true
+    /// example: 600px 
+    /// related-theme-variable: --theme-ch5-media-player--height
+    --ch5-media-player--height: var(--theme-ch5-media-player--height); 
+
+    /// description: Sets Media Player Active Icon background color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #e91e63
+    /// related-theme-variable: --theme-ch5-media-player--active-icon-background-color
+    --ch5-media-player--active-icon-background-color: var(--theme-ch5-media-player--active-icon-background-color);
+
+    /// description: Sets Media Player progress bar background color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #e91e63
+    /// related-theme-variable: --theme-ch5-media-player--progressbar-background-color
+    --ch5-media-player--progressbar-background-color: var(--theme-ch5-media-player--progressbar-background-color);
+    
+    /// description: Sets Media Player Progress bar track color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #d8d8d8
+    /// related-theme-variable: --theme-ch5-media-player--progressbar-track-color
+    --ch5-media-player--progressbar-track-color: var(--theme-ch5-media-player--progressbar-track-color);
+
+    /// description: Sets Media Player Active Icon color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #fff
+    /// related-theme-variable: --theme-ch5-media-player--active-icon-color
+    --ch5-media-player--active-icon-color: var(--theme-ch5-media-player--active-icon-color);
+
+    /// description: Sets the font size for the component
+    /// type: unit
+    /// values: px
+    /// show-theme-editor: true
+    /// example: 16px 
+    /// related-theme-variable: --theme-ch5-media-player--text-font-size
+    --ch5-media-player--text-font-size: var(--theme-ch5-media-player--text-font-size);
+    
+    /// description: Sets the font size for the component’s popups
+    /// type: unit
+    /// values: px
+    /// show-theme-editor: true
+    /// example: 16px 
+    /// related-theme-variable: --theme-ch5-media-player--popup-text-font-size
+    --ch5-media-player--popup-text-font-size: var(--theme-ch5-media-player--popup-text-font-size);
+
+    /// description: Popup overlay background color for Media Player
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: rgba(72, 72, 72, 0.7)
+    /// related-theme-variable: --theme-ch5-media-player--popup-overlay-background-color
+    --ch5-media-player--popup-overlay-background-color: var(--theme-ch5-media-player--popup-overlay-background-color);
+
+    /// description: Sets the default screen border color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #dadade
+    /// related-theme-variable: --theme-ch5-media-player--default-border-color
+    --ch5-media-player--default-border-color: var(--theme-ch5-media-player--default-border-color);
+    
+    /// description: Sets the default screen border width
+    /// type: unit
+    /// values: px
+    /// show-theme-editor: true
+    /// example: 1px 
+    /// related-theme-variable: --theme-ch5-media-player--default-border-width
+    --ch5-media-player--default-border-width: var(--theme-ch5-media-player--default-border-width);
+
+    /// description: Sets the default screen border style
+    /// type: list
+    /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+    /// show-theme-editor: true
+    /// example: solid
+    /// related-theme-variable: --theme-ch5-media-player--default-border-style
+    --ch5-media-player--default-border-style: var(--theme-ch5-media-player--default-border-style);
+    
+    /// description: Sets the default screen menu items border color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #dadade
+    /// related-theme-variable: --theme-ch5-media-player--default-menu-items-border-color
+    --ch5-media-player--default-menu-items-border-color: var(--theme-ch5-media-player--default-menu-items-border-color);
+    
+    /// description: Sets the default screen menu items border width
+    /// type: unit
+    /// values: px
+    /// show-theme-editor: true
+    /// example: 1px 
+    /// related-theme-variable: --theme-ch5-media-player--default-menu-items-border-width
+    --ch5-media-player--default-menu-items-border-width: var(--theme-ch5-media-player--default-menu-items-border-width);
+
+    /// description: Sets the default screen menu items border style
+    /// type: list
+    /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+    /// show-theme-editor: true
+    /// example: solid
+    /// related-theme-variable: --theme-ch5-media-player--default-menu-items-border-style
+    --ch5-media-player--default-menu-items-border-style: var(--theme-ch5-media-player--default-menu-items-border-style);
+
+    /// description: Sets the default screen provider text color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #1c1c1e
+    /// related-theme-variable: --theme-ch5-media-player--default-provider-text-color
+    --ch5-media-player--default-provider-text-color: var(--theme-ch5-media-player--default-provider-text-color);
+
+    /// description:  Sets the default screen album art placeholder container background color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #EEF1F5
+    /// related-theme-variable: --theme-ch5-media-player--default-album-art-placeholder-color
+    --ch5-media-player--default-album-art-placeholder-color: var(--theme-ch5-media-player--default-album-art-placeholder-color);
+
+    /// description: Sets the default screen track info text color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #9c9c9d
+    /// related-theme-variable: --theme-ch5-media-player--default-track-info-text-color
+    --ch5-media-player--default-track-info-text-color: var(--theme-ch5-media-player--default-track-info-text-color);
+
+    /// description: Sets the default screen progress-bar background color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #ebebeb
+    /// related-theme-variable: --theme-ch5-media-player--default-progressbar-color
+    --ch5-media-player--default-progressbar-color: var(--theme-ch5-media-player--default-progressbar-color);
+
+    /// description: Sets the default screen progress-bar time color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #9f9f9f
+    /// related-theme-variable: --theme-ch5-media-player--default-progressbar-time-color
+    --ch5-media-player--default-progressbar-time-color: var(--theme-ch5-media-player--default-progressbar-time-color);
+
+    /// description: Sets the default screen mp icon color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #d2d2d2
+    /// related-theme-variable: --theme-ch5-media-player--default-icon-color
+    --ch5-media-player--default-icon-color: var(--theme-ch5-media-player--default-icon-color);
+
+    /// description: Sets the default screen mp back icon color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #e8e8e8
+    /// related-theme-variable: --theme-ch5-media-player--default-mp-back-icon-color
+    --ch5-media-player--default-mp-back-icon-color: var(--theme-ch5-media-player--default-mp-back-icon-color);
+
+    /// description: Sets the default screen my-music header title text color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #8d8d8e
+    /// related-theme-variable: --theme-ch5-media-player--default-header-text-color
+    --ch5-media-player--default-header-text-color: var(--theme-ch5-media-player--default-header-text-color);
+
+    /// description: Sets the Media Player Active Menu List Item background color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #8d8d8e
+    /// related-theme-variable: --theme-ch5-media-player--active-menu-list-item-background-color
+    --ch5-media-player--active-menu-list-item-background-color: var(--theme-ch5-media-player--active-menu-list-item-background-color);
+
+    /// description: Sets Media Player popup active button background color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #8d8d8e
+    /// related-theme-variable: --theme-ch5-media-player--popup-active-button-background-color
+    --ch5-media-player--popup-active-button-background-color: var(--theme-ch5-media-player--popup-active-button-background-color);
+
+    /// description: Sets Media Player popup active button text color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #8d8d8e
+    /// related-theme-variable: --theme-ch5-media-player--popup-active-button-color
+    --ch5-media-player--popup-active-button-color: var(--theme-ch5-media-player--popup-active-button-color);
+
+    /// description: Sets the icon buttons pressed state background color
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #1c1c1e1a
+    /// related-theme-variable: --theme-ch5-media-player--icon-button-pressed-background-color
+    --ch5-media-player--icon-button-pressed-background-color: var(--theme-ch5-media-player--icon-button-pressed-background-color);
+}

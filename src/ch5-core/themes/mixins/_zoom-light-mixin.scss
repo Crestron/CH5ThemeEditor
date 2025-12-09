@@ -621,7 +621,7 @@
   /// example: #cacaca
   --theme-shell--navigation-button-background-color: #cacaca;
 
-  /// Shell template collapsible icon color for show/hide navigation button list  
+  /// Shell template collapsible icon color for show/hide navigation button list
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
   /// show-theme-editor: false
@@ -676,7 +676,7 @@
   /// show-theme-editor: false
   /// example: #efefef
   --theme-shell--version-info-table-row-odd-background-color: #fff;
-  
+
   /// Shell template version info modal table header background color
   /// type: color
   /// values: rgb(35,35,35), #1a1a1a, red
@@ -1574,7 +1574,7 @@
 
   // ***************************************
   // ch5-jointotext-numeric
-  // *************************************** 
+  // ***************************************
 
   --theme-ch5-jointotext-numeric--font-size: var(--theme-fonts--font-size);
 
@@ -1825,6 +1825,106 @@
   --theme-ch5-keypad--pressed-x-large-font-size-major: 48px;
 
   --theme-ch5-keypad--pressed-x-large-font-size-minor: 17px;
+
+  // ***************************************
+  // ch5-media-player
+  // ***************************************
+
+  --theme-ch5-media-player--background-color: #f7f7fc;
+
+  --theme-ch5-media-player--border-color: #b3b3b3;
+
+  --theme-ch5-media-player--border-width: 1px;
+
+  --theme-ch5-media-player--border-style: solid;
+  
+  --theme-ch5-media-player--popup-input-border-color: #b3b3b3;
+  
+  --theme-ch5-media-player--popup-border-color: #b3b3b3;
+
+  --theme-ch5-media-player--popup-border-width: 1px;
+
+  --theme-ch5-media-player--popup-border-style: solid;
+  
+  --theme-ch5-media-player--menu-items-border-color: #b3b3b3;
+
+  --theme-ch5-media-player--menu-items-border-width: 1px;
+
+  --theme-ch5-media-player--menu-items-border-style: solid;
+
+  --theme-ch5-media-player--now-playing-icon-size: 24px;
+
+  --theme-ch5-media-player--now-playing-icon-color: #000000;
+  
+  --theme-ch5-media-player--header-icon-color: #000000;
+
+  --theme-ch5-media-player--primary-font-color: #000000;
+  
+  --theme-ch5-media-player--popup-font-color: #000000;
+  
+  --theme-ch5-media-player--loading-indicator-color: #000000;
+
+  --theme-ch5-media-player--secondary-font-color: #7b7b7e;
+
+  --theme-ch5-media-player--my-music-menu-icon-color: #7b7b7e;
+
+  --theme-ch5-media-player--header-icon-background-color: #f2f2f7;
+  
+  --theme-ch5-media-player--player-name-background-color: #f2f2f7;
+
+  --theme-ch5-media-player--width: 800px;
+
+  --theme-ch5-media-player--height: 600px;
+
+  --theme-ch5-media-player--active-icon-background-color: #e91e63;
+
+  --theme-ch5-media-player--progressbar-background-color: #e91e63;
+  
+  --theme-ch5-media-player--progressbar-track-color: #b3b3b3;
+
+  --theme-ch5-media-player--active-icon-color: #ffffff;
+
+  --theme-ch5-media-player--text-font-size: 16px;
+  
+  --theme-ch5-media-player--popup-text-font-size: 16px;
+
+  --theme-ch5-media-player--popup-overlay-background-color: rgba(150, 150, 150, 0.3);
+
+  --theme-ch5-media-player--default-border-color: #dadade;
+  
+  --theme-ch5-media-player--default-border-width: 1px;
+
+  --theme-ch5-media-player--default-border-style: solid;
+  
+  --theme-ch5-media-player--default-menu-items-border-color: #dadade;
+  
+  --theme-ch5-media-player--default-menu-items-border-width: 1px;
+
+  --theme-ch5-media-player--default-menu-items-border-style: solid;
+
+  --theme-ch5-media-player--default-provider-text-color: #1c1c1e;
+
+  --theme-ch5-media-player--default-album-art-placeholder-color: #eef1f5;
+
+  --theme-ch5-media-player--default-track-info-text-color: #9c9c9d;
+
+  --theme-ch5-media-player--default-progressbar-color: #ebebeb;
+
+  --theme-ch5-media-player--default-progressbar-time-color: #9f9f9f;
+
+  --theme-ch5-media-player--default-icon-color: #d2d2d2;
+
+  --theme-ch5-media-player--default-mp-back-icon-color: #e8e8e8;
+
+  --theme-ch5-media-player--default-header-text-color: #8d8d8e;
+
+  --theme-ch5-media-player--active-menu-list-item-background-color: #f2f2f7;
+
+  --theme-ch5-media-player--popup-active-button-background-color: #f2f2f7;
+
+  --theme-ch5-media-player--popup-active-button-color: #000;
+
+  --theme-ch5-media-player--icon-button-pressed-background-color: #f2f2f7;
 
   // ***************************************
   // ch5-overlay-panel
@@ -2277,7 +2377,7 @@
   --theme-ch5-toggle--on-text-font-color: #{$white};
 
   --theme-ch5-toggle--off-text-font-color: #{$white};
-  
+
   --theme-ch5-toggle--icon-on-font-color: #{$white};
 
   --theme-ch5-toggle--icon-off-font-color: #{$white};

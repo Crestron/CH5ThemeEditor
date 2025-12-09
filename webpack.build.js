@@ -18,6 +18,7 @@ const materialIconsFilePath = `${nodeModules}@material-icons/font/css`;
 const materialIconsFontFilePath = `${nodeModules}@material-icons/font`;
 
 const sgIconsPath = "./sg-icons";
+const mpIconsPath = "./mp-icons";
 
 const processArgs = () => {
 	const args = process.argv.slice(2);
@@ -114,7 +115,8 @@ const entryList = createEntryList();
 entryList['external'] = [
 	path.resolve(basePath, `${fontAwesomeCssBasePath}/all.min.css`),
 	path.resolve(basePath, `${materialIconsFilePath}/all.css`),
-	path.resolve(basePath, `${sgIconsPath}/css/all.css`)
+	path.resolve(basePath, `${sgIconsPath}/css/all.css`),
+	path.resolve(basePath, `${mpIconsPath}/css/all.css`)
 ];
 
 if (inputArgs[outputPathVariable] !== "") {
@@ -187,6 +189,18 @@ module.exports = {
 				{
 					from: path.resolve(basePath, sgIconsPath + "/svgs/"),
 					to: path.resolve(destinationFilePath + "/svgs/")
+				},
+				{
+					from: path.resolve(basePath, mpIconsPath + "/svgs/images/"),
+					to: path.resolve(destinationFilePath + "/svgs/images/")
+				},
+				{
+					from: path.resolve(basePath, mpIconsPath + "/svgs/logos/"),
+					to: path.resolve(destinationFilePath + "/svgs/logos/")
+				},
+				{
+					from: path.resolve(basePath, mpIconsPath + "/fonts/"),
+					to: path.resolve(destinationFilePath + "/fonts/")
 				}
 			]
 		})

@@ -1,0 +1,244 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2025 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-media-player
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$ch5-media-player--my-music-default-border-radius: 16px;
+$ch5-media-player--my-music-gap: 10px;
+$ch5-media-player--my-music-padding: 16px;
+
+.ch5-media-player--my-music {
+  flex-direction: column;
+  border-left: var(--ch5-media-player--border-width) var(--ch5-media-player--border-style) var(--ch5-media-player--border-color);
+  display: flex;
+  background-color: var(--ch5-media-player--background-color);
+  justify-content: space-between;
+  height: 100%;
+  width: 50%;
+  box-sizing: border-box;
+
+  .my-music-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .my-music-header-back-button {
+      min-width: 2.125em;
+      min-height: 2.125em;
+      width: 2.125em;
+      height: 2.125em;
+
+      .ch5-media-player--individual-icon-button {
+        color: var(--ch5-media-player--header-icon-color);
+        background: var(--ch5-media-player--header-icon-background-color);
+        border-radius: 50%;
+      }
+    }   
+  }
+
+  .my-music-header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    min-width: 40%;
+  }
+
+  .my-music-header-title-text {
+    font-size: calc(var(--ch5-media-player--text-font-size) + 0.125em);
+    font-weight: 700;
+    color: var(--ch5-media-player--primary-font-color);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .my-music-header-subtitle {
+    font-size: calc(var(--ch5-media-player--text-font-size) - 0.125em);
+    color: var(--ch5-media-player--secondary-font-color);
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .my-music-header-now-playing-button {
+    visibility: hidden;
+    min-width: 2.125em;
+    min-height: 2.125em;
+    width: 2.125em;
+    height: 2.125em;
+
+    .ch5-media-player--individual-icon-button {
+      background: var(--ch5-media-player--header-icon-background-color);
+      border-radius: 50%;
+    }
+  }
+
+  .my-music-content {
+    overflow-y: auto;
+    padding-left: 1.75em;
+    padding-top: 0.5em;
+    height: 50%;
+    flex: 1;
+
+    .my-music-content-item {
+      border-bottom: var(--ch5-media-player--menu-items-border-width) var(--ch5-media-player--menu-items-border-style) var(--ch5-media-player--menu-items-border-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      height: 3.5em;
+
+      &:active, &.active { //.active class only for demomode
+        background-color: var(--ch5-media-player--active-menu-list-item-background-color);
+      }
+
+      .my-music-content-item-title {
+        font-size: calc(var(--ch5-media-player--text-font-size) + 0.125em);
+        font-weight: 600;
+        color: var(--ch5-media-player--primary-font-color);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .my-music-content-item-subtitle {
+        font-size: var(--ch5-media-player--text-font-size) + 0.25em;
+        color: var(--ch5-media-player--secondary-font-color);
+        font-weight: 400;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-right: 0.5em;
+      }
+    }
+  }
+
+  .my-music-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--ch5-media-player--menu-items-border-width) var(--ch5-media-player--menu-items-border-style) var(--ch5-media-player--menu-items-border-color);
+    justify-content: space-evenly;
+  }
+
+  .my-music-footer {
+    .ch5-media-player--individual-icon-button-container {
+
+      &.active, &:active {  //.active class only for demomode
+        background-color: var(--ch5-media-player--icon-button-pressed-background-color);
+        border-radius: 50%;
+      }
+      .ch5-media-player--individual-icon-button {
+        .mp-icon {
+          color: var(--ch5-media-player--my-music-menu-icon-color);
+          font-size: var(--ch5-media-player--now-playing-icon-size);
+        }
+      }
+    }
+  }
+}
+
+@mixin setMediaPlayerHeightsForMyMusic($size, $ratio) {
+  .ch5-media-player--height-#{$size} {
+    .ch5-media-player--my-music {
+      gap: $ch5-media-player--my-music-gap * $ratio;
+
+      .my-music-header {
+        margin: $ch5-media-player--my-music-padding * $ratio;
+
+        .my-music-header-title {
+          justify-content: center;
+          max-width: calc(70% - #{$ratio * 20%});
+
+          .my-music-header-title-text {
+            font-size: calc(#{$ratio}em + var(--ch5-media-player--text-font-size) - 0.75em);
+          }
+
+          .my-music-header-subtitle {
+            font-size: calc(#{$ratio}em + var(--ch5-media-player--text-font-size) - 0.875em);
+          }
+        }
+
+        .my-music-header-back-button,
+        .my-music-header-now-playing-button {
+          width: auto;
+          height: 100%;
+
+          .ch5-media-player--individual-icon-button {
+            .mp-icon {
+              font-size: calc(#{$ratio}em + var(--ch5-media-player--now-playing-icon-size) - 0.75em);
+            }
+          }
+        }
+      }
+
+      .my-music-content {
+        .my-music-content-item {
+          height: calc(#{$ratio}em + 2*var(--ch5-media-player--text-font-size) + 1.5em);
+
+          .my-music-content-item-title {
+            font-size: calc(#{$ratio}em + var(--ch5-media-player--text-font-size) - 0.75em);
+          }
+
+          .my-music-content-item-subtitle {
+            font-size: calc(#{$ratio}em + var(--ch5-media-player--text-font-size) - 0.8em);
+          }
+        }
+      }
+
+      .my-music-footer {
+        height: calc(#{$ratio}em + 3.5em);
+        .ch5-media-player--individual-icon-button-container {
+          height: calc(#{$ratio}em + 2.5em);
+          width: calc(#{$ratio}em + 2.5em);
+
+          .ch5-media-player--individual-icon-button {
+            .mp-icon {
+              font-size: calc(#{$ratio}em + var(--ch5-media-player--now-playing-icon-size) - 0.75em);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ch5-media-player--width-#{$size} {
+    .ch5-media-player--my-music {
+      .my-music-footer {
+        height: calc(#{$ratio}em + 3.5em);
+        .ch5-media-player--individual-icon-button-container {
+          height: calc(#{$ratio}em + 2.5em);
+          width: calc(#{$ratio}em + 2.5em);
+
+          .ch5-media-player--individual-icon-button {
+            .mp-icon {
+              font-size: calc(#{$ratio}em + var(--ch5-media-player--now-playing-icon-size) - 0.75em);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include setMediaPlayerHeightsForMyMusic("xl", 1.5);
+@include setMediaPlayerHeightsForMyMusic("lg", 1.25);
+@include setMediaPlayerHeightsForMyMusic("md", 1);
+@include setMediaPlayerHeightsForMyMusic("sm", 0.75);
+@include setMediaPlayerHeightsForMyMusic("xs", 0.5);
+
+

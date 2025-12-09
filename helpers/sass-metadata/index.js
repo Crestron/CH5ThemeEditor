@@ -11,16 +11,16 @@ const themes = CONFIG.THEMES;
 function toBoolean(val) {
 	const str = String(val).toLowerCase().trim();
 	switch (str) {
-	  case "true": case "yes": case "1":
-		return true;
-	  case "false": case "no": case "0":
-		return false;
-	  case "": case null: case undefined: case "null": case "undefined":
-		return true;
-	  default:
-		return false;
+		case "true": case "yes": case "1":
+			return true;
+		case "false": case "no": case "0":
+			return false;
+		case "": case null: case undefined: case "null": case "undefined":
+			return true;
+		default:
+			return false;
 	}
-  }
+}
 
 // TODO - Need all corner cases
 
@@ -130,16 +130,16 @@ function getVariables(data, sectionName) {
 				}
 				start = j;
 			}
-/*
-			let description = '';
-			let type = '';
-			let valueMetadata = '';
-			let possibleValues = '';
-			let showThemeEditor = '';
-			let example = '';
-*/
+			/*
+						let description = '';
+						let type = '';
+						let valueMetadata = '';
+						let possibleValues = '';
+						let showThemeEditor = '';
+						let example = '';
+			*/
 			const variableMetaData = lines.slice(start, i).join('\n').split('///').map(str => str.trim()).filter(str => str.length !== 0);
-			
+
 
 			const dataObj = {
 				name,
@@ -173,7 +173,7 @@ function getVariables(data, sectionName) {
 				dataObj.possibleValues = variableMetaData[2].replace('values:', '').trim().split(',').map((str) => str.trim()).filter((str) => str.trim());
 				dataObj.showThemeEditor = toBoolean(variableMetaData[3].replace('show-theme-editor:', '').trim());
 				dataObj.example = variableMetaData[4].replace('example:', '').trim();
-				
+
 			}
 
 			// corner case
