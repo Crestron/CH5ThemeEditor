@@ -18,7 +18,7 @@ $ch5-media-player--now-playing-padding: 16px;
   display: flex;
   flex-direction: column;
   color: var(--ch5-media-player--primary-font-color);
-  background-color: var(--ch5-media-player--background-color);
+  background-color: var(--ch5-media-player--now-playing-background-color);
   align-items: center;
   justify-content: space-between;
   height: 100%;
@@ -98,6 +98,7 @@ $ch5-media-player--now-playing-padding: 16px;
       width: 100%;
       max-width: 100%;
       display: block;
+
       span {
         font-size: inherit;
       }
@@ -109,6 +110,7 @@ $ch5-media-player--now-playing-padding: 16px;
       overflow: hidden;
       text-overflow: ellipsis;
       width: 100%;
+
       span {
         font-size: inherit;
       }
@@ -177,7 +179,7 @@ $ch5-media-player--now-playing-padding: 16px;
         width: 1em;
         height: 1em;
         background-color: var(--ch5-media-player--progressbar-background-color);
-        border: 1px solid #b3b3b3;
+        border: 1px solid var(--ch5-media-player--progressbar-track-color);
         border-radius: 50%;
         cursor: pointer;
       }
@@ -199,7 +201,7 @@ $ch5-media-player--now-playing-padding: 16px;
         width: 1em;
         height: 1em;
         background-color: var(--ch5-media-player--progressbar-background-color);
-        border: 1px solid #b3b3b3;
+        border: 1px solid var(--ch5-media-player--progressbar-track-color);
       }
 
       .now-playing-progressbar-current-time-duration-container {
@@ -211,6 +213,7 @@ $ch5-media-player--now-playing-padding: 16px;
         line-height: normal;
         font-weight: 400;
         color: var(--ch5-media-player--secondary-font-color);
+
         span {
           font-size: inherit;
         }
@@ -220,10 +223,12 @@ $ch5-media-player--now-playing-padding: 16px;
         visibility: hidden;
         pointer-events: none;
       }
+
       .hide-progressbar-thumb::-moz-range-thumb {
         visibility: hidden;
         pointer-events: none;
       }
+
       .hide-progressbar-thumb::-ms-thumb {
         visibility: hidden;
         pointer-events: none;
@@ -257,6 +262,7 @@ $ch5-media-player--now-playing-padding: 16px;
       font-size: calc(var(--ch5-media-player--text-font-size) - 0.125em);
       line-height: normal;
       font-weight: 400;
+
       span {
         font-size: inherit;
       }
@@ -291,7 +297,7 @@ $ch5-media-player--now-playing-padding: 16px;
     }
 
     7.4% {
-      transform: translate(0);// 2s pause
+      transform: translate(0); // 2s pause
     }
 
     100% {
@@ -350,8 +356,6 @@ $ch5-media-player--now-playing-padding: 16px;
         }
       }
 
-      .now-playing-image {}
-
       .now-playing-track-info {
         .now-playing-song-title {
           font-size: calc(#{$ratio}em + var(--ch5-media-player--text-font-size) - 0.65em);
@@ -365,28 +369,12 @@ $ch5-media-player--now-playing-padding: 16px;
         .now-playing-player-icon-name {
           font-size: calc(#{$ratio}em + var(--ch5-media-player--text-font-size) - 0.8em);
         }
-
-        .now-playing-player-icon-container {
-          .now-playing-player-icon-image {}
-        }
       }
 
       .now-playing-controls-container {
         gap: $ch5-media-player--now-playing-gap * $ratio;
 
         .now-playing-progressbar-container {
-          .now-playing-progressbar-input {}
-
-          /* Hide the thumb (WebKit browsers) */
-          .now-playing-progressbar-input::-webkit-slider-thumb {}
-
-          /* Firefox progress (filled part) */
-          .now-playing-progressbar-input::-moz-range-progress {}
-
-          .now-playing-progressbar-input::-moz-range-track {}
-
-          .now-playing-progressbar-input::-moz-range-thumb {}
-
           .now-playing-progressbar-current-time-duration-container {
             font-size: calc(#{$ratio}em + var(--ch5-media-player--text-font-size) - 0.95em);
           }
@@ -413,10 +401,6 @@ $ch5-media-player--now-playing-padding: 16px;
         .now-playing-next-song-container {
           font-size: calc(#{$ratio}em + var(--ch5-media-player--text-font-size) - 0.9em);
         }
-
-        .now-playing-next-song-label {}
-
-        .now-playing-next-song-text {}
       }
     }
   }
@@ -424,6 +408,7 @@ $ch5-media-player--now-playing-padding: 16px;
   .ch5-media-player--width-#{$size} {
     .ch5-media-player--now-playing {
       .now-playing-controls-container {
+
         .now-playing-action-buttons-container,
         .now-playing-more-action-buttons-container {
           gap: calc(#{$ratio}em - 0.5em);
@@ -450,6 +435,3 @@ $ch5-media-player--now-playing-padding: 16px;
 @include setMediaPlayerHeightsForNowPlaying("md", 1);
 @include setMediaPlayerHeightsForNowPlaying("sm", 0.75);
 @include setMediaPlayerHeightsForNowPlaying("xs", 0.5);
-
-
-

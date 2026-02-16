@@ -18,7 +18,7 @@ $ch5-media-player--my-music-padding: 16px;
   flex-direction: column;
   border-left: var(--ch5-media-player--border-width) var(--ch5-media-player--border-style) var(--ch5-media-player--border-color);
   display: flex;
-  background-color: var(--ch5-media-player--background-color);
+  background-color: var(--ch5-media-player--my-music-background-color);
   justify-content: space-between;
   height: 100%;
   width: 50%;
@@ -102,8 +102,11 @@ $ch5-media-player--my-music-padding: 16px;
       cursor: pointer;
       height: 3.5em;
 
-      &:active, &.active { //.active class only for demomode
+      &:active,
+      &:focus-visible,
+      &.active { // .active class only for demomode
         background-color: var(--ch5-media-player--active-menu-list-item-background-color);
+        outline: none;
       }
 
       .my-music-content-item-title {
@@ -116,7 +119,7 @@ $ch5-media-player--my-music-padding: 16px;
       }
 
       .my-music-content-item-subtitle {
-        font-size: var(--ch5-media-player--text-font-size) + 0.25em;
+        font-size: calc(var(--ch5-media-player--text-font-size) + 0.25em);
         color: var(--ch5-media-player--secondary-font-color);
         font-weight: 400;
         overflow: hidden;
@@ -129,7 +132,6 @@ $ch5-media-player--my-music-padding: 16px;
 
   .my-music-footer {
     display: flex;
-    justify-content: center;
     align-items: center;
     border-top: var(--ch5-media-player--menu-items-border-width) var(--ch5-media-player--menu-items-border-style) var(--ch5-media-player--menu-items-border-color);
     justify-content: space-evenly;
@@ -138,9 +140,12 @@ $ch5-media-player--my-music-padding: 16px;
   .my-music-footer {
     .ch5-media-player--individual-icon-button-container {
 
-      &.active, &:active {  //.active class only for demomode
+      &.active,
+      &:active,
+      &:focus-visible { // .active class only for demomode
         background-color: var(--ch5-media-player--icon-button-pressed-background-color);
         border-radius: 50%;
+        outline: none;
       }
       .ch5-media-player--individual-icon-button {
         .mp-icon {
@@ -240,5 +245,3 @@ $ch5-media-player--my-music-padding: 16px;
 @include setMediaPlayerHeightsForMyMusic("md", 1);
 @include setMediaPlayerHeightsForMyMusic("sm", 0.75);
 @include setMediaPlayerHeightsForMyMusic("xs", 0.5);
-
-

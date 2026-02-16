@@ -20,6 +20,22 @@ ch5-media-player {
     /// related-theme-variable: --theme-ch5-media-player--background-color
     --ch5-media-player--background-color: var(--theme-ch5-media-player--background-color);
 
+    /// description: Sets the background color for the my-music section of the component
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: transparent
+    /// related-theme-variable: --theme-ch5-media-player--my-music-background-color
+    --ch5-media-player--my-music-background-color: var(--theme-ch5-media-player--my-music-background-color);
+
+    /// description: Sets the background color for the now-playing section of the component
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: transparent
+    /// related-theme-variable: --theme-ch5-media-player--now-playing-background-color
+    --ch5-media-player--now-playing-background-color: var(--theme-ch5-media-player--now-playing-background-color);
+
     /// description: Sets the border color for the component
     /// type: color
     /// values: rgb(35,35,35), #1a1a1a, red
@@ -148,7 +164,7 @@ ch5-media-player {
     /// related-theme-variable: --theme-ch5-media-player--loading-indicator-color
     --ch5-media-player--loading-indicator-color: var(--theme-ch5-media-player--loading-indicator-color);
 
-    /// description:  Icon Background color for header section of Media Player
+    /// description: Icon Background color for header section of Media Player
     /// type: color
     /// values: rgb(35,35,35), #1a1a1a, red
     /// show-theme-editor: true
@@ -156,7 +172,7 @@ ch5-media-player {
     /// related-theme-variable: --theme-ch5-media-player--header-icon-background-color
     --ch5-media-player--header-icon-background-color: var(--theme-ch5-media-player--header-icon-background-color);
     
-    /// description:  Background color for player name in header section of Media Player
+    /// description: Background color for player name in header section of Media Player
     /// type: color
     /// values: rgb(35,35,35), #1a1a1a, red
     /// show-theme-editor: true
@@ -308,7 +324,7 @@ ch5-media-player {
     /// related-theme-variable: --theme-ch5-media-player--default-provider-text-color
     --ch5-media-player--default-provider-text-color: var(--theme-ch5-media-player--default-provider-text-color);
 
-    /// description:  Sets the default screen album art placeholder container background color
+    /// description: Sets the default screen album art placeholder container background color
     /// type: color
     /// values: rgb(35,35,35), #1a1a1a, red
     /// show-theme-editor: true
