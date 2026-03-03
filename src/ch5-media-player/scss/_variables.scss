@@ -20,22 +20,6 @@ ch5-media-player {
     /// related-theme-variable: --theme-ch5-media-player--background-color
     --ch5-media-player--background-color: var(--theme-ch5-media-player--background-color);
 
-    /// description: Sets the background color for the my-music section of the component
-    /// type: color
-    /// values: rgb(35,35,35), #1a1a1a, red
-    /// show-theme-editor: true
-    /// example: transparent
-    /// related-theme-variable: --theme-ch5-media-player--my-music-background-color
-    --ch5-media-player--my-music-background-color: var(--theme-ch5-media-player--my-music-background-color);
-
-    /// description: Sets the background color for the now-playing section of the component
-    /// type: color
-    /// values: rgb(35,35,35), #1a1a1a, red
-    /// show-theme-editor: true
-    /// example: transparent
-    /// related-theme-variable: --theme-ch5-media-player--now-playing-background-color
-    --ch5-media-player--now-playing-background-color: var(--theme-ch5-media-player--now-playing-background-color);
-
     /// description: Sets the border color for the component
     /// type: color
     /// values: rgb(35,35,35), #1a1a1a, red
