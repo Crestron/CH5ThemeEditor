@@ -315,6 +315,12 @@ $ch5-media-player--now-playing-padding: 16px;
         color: var(--ch5-media-player--active-icon-color);
       }
     }
+
+    &:active {
+      .ch5-media-player--individual-icon-button {
+        opacity: 0.4;
+      }
+    }
   }
 
   .ch5-media-player--individual-icon-button-container[iconClass="mp-icon mp-thumbs-up"].active,

@@ -40,7 +40,7 @@ ch5-media-player {
     align-items: center;
 
     .ch5-media-player--popup-content-generic {
-      background-color: var(--ch5-media-player--background-color);
+      background-color: var(--ch5-media-player--popup-background-color);
       color: var(--ch5-media-player--popup-font-color);
       width: 60%;
       border-radius: 1em;
@@ -166,9 +166,8 @@ ch5-media-player {
   flex: 0;
   border-top: none;
   font-weight: 600;
-  background: white;
   border-radius: 1em;
-  background-color: var(--ch5-media-player--background-color);
+  background-color: var(--ch5-media-player--popup-background-color);
 
   &:active {
     background-color: var(--ch5-media-player--popup-active-button-background-color);
@@ -189,7 +188,7 @@ ch5-media-player {
 
   .mp-loading-indicator-text {
     position: absolute;
-    background-color: var(--ch5-media-player--background-color);
+    background-color: var(--ch5-media-player--popup-background-color);
     padding: 2em;
     border-radius: 0.5em;
 
@@ -287,9 +286,9 @@ ch5-media-player {
       position: absolute;
       right: -100%;
       opacity: 0;
-      transition:
+     /*  transition:
         right 1s ease-in-out,
-        opacity 3s ease-in-out;
+        opacity 3s ease-in-out; */
       height: 100%;
       border: none;
 
@@ -306,9 +305,9 @@ ch5-media-player {
     .my-music-transition {
       right: 0;
       opacity: 1;
-      transition:
+   /*    transition:
         right 1s ease-in-out,
-        opacity 0.3s ease-in-out;
+        opacity 0.3s ease-in-out; */
     }
 
     .ch5-media-player--now-playing {
