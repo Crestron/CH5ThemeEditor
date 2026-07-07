@@ -12,6 +12,7 @@
 
 ch5-button {
   @include ch5-component-base();
+  @include reset-to-browser-defaults();
 }
 
 ch5-button {
@@ -51,7 +52,39 @@ ch5-button {
       text-decoration: var(--ch5-button--label-text-decoration);
       letter-spacing: var(--ch5-button--label-letter-spacing);
       text-underline-offset: var(--ch5-button--label-text-underline-offset);
-      @include text-truncate();
+      max-width: 100%;
+
+      /// Applied when truncateText='true'
+      &.ch5-button--label-truncate-text-true {
+        text-overflow: ellipsis; // enables ellipsis
+        white-space: nowrap; // keeps the text in a single line
+        overflow: hidden; // keeps the element from overflowing its parent */
+      }
+
+      /// Applied when truncateText='false'
+      &.ch5-button--label-truncate-text-false {
+        white-space: nowrap; // keeps the text in a single line
+        overflow: hidden; // keeps the element from overflowing its parent
+      }
+
+      /// Applied when multilineSupport='true'
+      &.ch5-button--label-multiline-support-true {
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; // start showing ellipsis when 3rd line is reached
+        white-space: normal;
+        word-break: break-word;
+      }
+
+      &.ch5-button--label-multiline-support-true.ch5-button--label-truncate-text-true {
+        display: -webkit-box;
+      }
+
+      /// Applied when multilineSupport='false'
+      &.ch5-button--label-multiline-support-false {
+        white-space: nowrap; // keeps the text in a single line
+        overflow: hidden; // keeps the element from overflowing its parent
+      }
     }
 
     .cb-btn {
@@ -317,6 +350,24 @@ ch5-button {
     height: 100%;
     display: flex;
     overflow: hidden;
+
+    &.ch5-button--horizontal-left {
+      .ch5-button--label.ch5-button--label-multiline-support-true {
+        text-align: left;
+      }
+    }
+
+    &.ch5-button--horizontal-center {
+      .ch5-button--label.ch5-button--label-multiline-support-true {
+        text-align: center;
+      }
+    }
+
+    &.ch5-button--horizontal-right {
+      .ch5-button--label.ch5-button--label-multiline-support-true {
+        text-align: right;
+      }
+    }
   }
 
   .ch5-button--horizontal-left {
@@ -352,6 +403,7 @@ ch5-button {
 
     .ch5-button--horizontal-left {
       align-items: flex-start;
+      text-align: left;
     }
 
     .ch5-button--horizontal-center {
@@ -360,6 +412,7 @@ ch5-button {
 
     .ch5-button--horizontal-right {
       align-items: flex-end;
+      text-align: right;
     }
 
     .ch5-button--vertical-middle {

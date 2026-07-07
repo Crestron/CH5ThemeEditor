@@ -52,6 +52,10 @@
     // color: inherit;
     height: var(#{$property-font-image-height});
     width: var(#{$property-font-image-width});
+    margin-top: var(--ch5-button--img-margin-top);
+    margin-bottom: var(--ch5-button--img-margin-bottom);
+    margin-left: var(--ch5-button--img-margin-left);
+    margin-right: var(--ch5-button--img-margin-right);
 
     &::before,
     &::after {
@@ -174,6 +178,13 @@
     margin-right: var(--ch5-button--selected-icon-margin-right);
   }
 
+  .ch5-button--img {
+    margin-top: var(--ch5-button--selected-img-margin-top);
+    margin-bottom: var(--ch5-button--selected-img-margin-bottom);
+    margin-left: var(--ch5-button--selected-img-margin-left);
+    margin-right: var(--ch5-button--selected-img-margin-right);
+  }
+
   .cb-btn {
     border-color: var(#{$property-selected-border-color});
     border-style: var(#{$property-selected-border-style});
@@ -228,6 +239,13 @@
     margin-right: var(--ch5-button--pressed-icon-margin-right);
   }
 
+  .ch5-button--img {
+    margin-top: var(--ch5-button--pressed-img-margin-top);
+    margin-bottom: var(--ch5-button--pressed-img-margin-bottom);
+    margin-left: var(--ch5-button--pressed-img-margin-left);
+    margin-right: var(--ch5-button--pressed-img-margin-right);
+  }
+
   .cb-btn {
     border-color: var(#{$property-pressed-border-color});
     border-style: var(#{$property-pressed-border-style});
@@ -280,6 +298,14 @@
     margin-bottom: var(--ch5-button--icon-margin-bottom);
     margin-left: var(--ch5-button--icon-margin-left);
     margin-right: var(--ch5-button--icon-margin-right);
+  }
+
+  //margins for iconUrl applied on button content
+  .ch5-button--img {
+    margin-top: var(--ch5-button--img-margin-top);
+    margin-bottom: var(--ch5-button--img-margin-bottom);
+    margin-left: var(--ch5-button--img-margin-left);
+    margin-right: var(--ch5-button--img-margin-right);
   }
 
   .cb-btn {

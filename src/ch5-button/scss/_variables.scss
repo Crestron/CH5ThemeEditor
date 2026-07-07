@@ -2521,4 +2521,100 @@ ch5-button {
   /// example: normal
   /// related-theme-variable:--theme-ch5-button--x-large-selected-font-weight
   --ch5-button--x-large-selected-font-weight: var(--theme-ch5-button--x-large-selected-font-weight);
+
+  /// description: Margin left for the button image
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-button--img-margin-left
+  --ch5-button--img-margin-left: var(--theme-ch5-button--img-margin-left);
+
+  /// description: Margin right for the button image
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-button--img-margin-right
+  --ch5-button--img-margin-right: var(--theme-ch5-button--img-margin-right);
+
+  /// description: Margin top for the button image
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-button--img-margin-top
+  --ch5-button--img-margin-top: var(--theme-ch5-button--img-margin-top);
+
+  /// description: Margin bottom for the button image
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-button--img-margin-bottom
+  --ch5-button--img-margin-bottom: var(--theme-ch5-button--img-margin-bottom);
+
+  /// description: Margin left for the button pressed image
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-button--pressed-img-margin-left
+  --ch5-button--pressed-img-margin-left: var(--theme-ch5-button--pressed-img-margin-left);
+
+  /// description: Margin right for the button pressed image
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-button--pressed-img-margin-right
+  --ch5-button--pressed-img-margin-right: var(--theme-ch5-button--pressed-img-margin-right);
+
+  /// description: Margin top for the button pressed image
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-button--pressed-img-margin-top
+  --ch5-button--pressed-img-margin-top: var(--theme-ch5-button--pressed-img-margin-top);
+
+  /// description: Margin bottom for the button pressed image
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-button--pressed-img-margin-bottom
+  --ch5-button--pressed-img-margin-bottom: var(--theme-ch5-button--pressed-img-margin-bottom);
+
+  /// description: Margin left for the button selected image
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-button--selected-img-margin-left
+  --ch5-button--selected-img-margin-left: var(--theme-ch5-button--selected-img-margin-left);
+
+  /// description: Margin right for the button selected image
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-button--selected-img-margin-right
+  --ch5-button--selected-img-margin-right: var(--theme-ch5-button--selected-img-margin-right);
+
+  /// description: Margin top for the button selected image
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-button--selected-img-margin-top
+  --ch5-button--selected-img-margin-top: var(--theme-ch5-button--selected-img-margin-top);
+
+  /// description: Margin bottom for the button selected image
+  /// type: unit
+  /// values: px, %, vw
+  /// show-theme-editor: true
+  /// example: 2px 
+  /// related-theme-variable: --theme-ch5-button--selected-img-margin-bottom
+  --ch5-button--selected-img-margin-bottom: var(--theme-ch5-button--selected-img-margin-bottom);
 }

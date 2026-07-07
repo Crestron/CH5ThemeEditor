@@ -1,0 +1,34 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-html-div
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Main class
+.ch5-html-div {
+  position: relative;
+  height: var(--ch5-html-div--height);
+  width: var(--ch5-html-div--width);
+  background-color: var(--ch5-html-div--background-color);
+  border-color: var(--ch5-html-div--border-color);
+  border-width: var(--ch5-html-div--border-width);
+  border-style: var(--ch5-html-div--border-style);
+  border-top-left-radius: var(--ch5-html-div--border-top-left-radius);
+  border-top-right-radius: var(--ch5-html-div--border-top-right-radius);
+  border-bottom-left-radius: var(--ch5-html-div--border-bottom-left-radius);
+  border-bottom-right-radius: var(--ch5-html-div--border-bottom-right-radius);
+  font-size: var(--ch5-html-div--font-size);
+  color: var(--ch5-html-div--font-color);
+  overflow: hidden;
+}
+
+/// Applied when disabled='true'
+.ch5-html-div--disabled {
+  @include ch5-component-disabled();
+}

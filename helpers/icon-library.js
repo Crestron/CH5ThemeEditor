@@ -5,136 +5,266 @@
 // Use of this source code is subject to the terms of the Crestron Software License Agreement
 // under which you licensed this source code.
 
-const path = require('path');
 const fs = require('fs');
-const logging = require('./logging');
 const fse = require('fs-extra');
 
-(function (path, fs, logging) {
+const fontAwesomeIconFamiliesJSONPath = `./node_modules/@fortawesome/fontawesome-free/metadata/icon-families.json`;
+const fontAwesomePackageJSONPath = `./node_modules/@fortawesome/fontawesome-free/package.json`;
+const materialIconFamiliesJSONPath = `./node_modules/@material-icons/font/data.json`;
+const materialIconsPackageJSONPath = `./node_modules/@material-icons/font/package.json`;
+const materialSymbolsTypesPath = `./node_modules/material-symbols/index.d.ts`;
+const materialSymbolsPackageJSONPath = `./node_modules/material-symbols/package.json`;
+const sgIconFamiliesJSONPath = `./sg-icons/metadata.json`;
+const mpIconFamiliesJSONPath = `./mp-icons/metadata.json`;
 
-  const fontAwesomeIconFamiliesJSONPath = `./node_modules/@fortawesome/fontawesome-free/metadata/icon-families.json`;
-  const materialIconFamiliesJSONPath = `./node_modules/@material-icons/font/data.json`;
-  const sgIconFamiliesJSONPath = `./sg-icons/metadata.json`;
-  const mpIconFamiliesJSONPath = `./mp-icons/metadata.json`;
+const VERSION = "1.0.0";
+const URL = "";
 
-  const filterArray = (completeArray, toRemoveElementsArray) => {
-    // make a Set to hold values from toRemoveElementsArray
-    const namesToDeleteSet = new Set(toRemoveElementsArray);
-    // use filter() method to filter only those elements that need not to be deleted from the array
-    const newArr = completeArray.filter((name) => {
-      // return those elements not in the namesToDeleteSet
-      return !namesToDeleteSet.has(name);
-    });
-    return newArr;
+const filterArray = (completeArray, toRemoveElementsArray) => {
+  const namesToDeleteSet = new Set(toRemoveElementsArray);
+  return completeArray.filter((name) => !namesToDeleteSet.has(name));
+};
+
+// v5/v6 use shorthand prefixes (fas, far, fab, fal, fad)
+// v7+ use long-form prefixes (fa-solid, fa-regular, fa-brands, fa-light, fa-thin)
+const FA_SHORTHAND = { solid: 'fas', regular: 'far', brands: 'fab', light: 'fal', duotone: 'fad', thin: 'fat' };
+const faStylePrefix = (style, faMajor) => {
+  if (faMajor >= 7) {
+    return `fa-${style}`;
   }
+  return FA_SHORTHAND[style] || `fa${style.charAt(0)}`;
+};
 
-  try {
-    const responseArray = {};
+const extractMaterialSymbolNames = (dTsContent) => {
+  const tupleMatch = dTsContent.match(/type MaterialSymbols = \[([\s\S]*?)\];/);
+  if (!tupleMatch) {
+    throw new Error('Unable to parse Material Symbols names from type definition.');
+  }
+  const uniqueNames = new Set();
+  const nameMatches = tupleMatch[1].matchAll(/"([^"]+)"/g);
+  for (const match of nameMatches) {
+    uniqueNames.add(match[1]);
+  }
+  return Array.from(uniqueNames);
+};
 
-    {
-      // font awesome
-      const data = JSON.parse(fs.readFileSync(fontAwesomeIconFamiliesJSONPath));
-      const itemArray = [];
-      for (const prop in data) {
-        if (Object.prototype.hasOwnProperty.call(data, prop)) {
-          if (data[prop] && data[prop].familyStylesByLicense && data[prop].familyStylesByLicense.free && data[prop].familyStylesByLicense.free.length > 0) {
-            for (let i = 0; i < data[prop].familyStylesByLicense.free.length; i++) {
-              itemArray.push({
-                "name": data[prop].label,
-                "value": "fa" + data[prop].familyStylesByLicense.free[i].style.charAt(0) + " fa-" + prop
-              });
-            }
-          }
-        }
-      }
-      responseArray.fontAwesome = itemArray;
+const groupItemsByStyle = (items, getStyleName, getAlias, getAliasPrefix) => {
+  const groupsMap = new Map();
+  for (const item of items) {
+    const styleKey = item.style || 'default';
+    if (!groupsMap.has(styleKey)) {
+      groupsMap.set(styleKey, {
+        style: styleKey,
+        styleName: getStyleName(styleKey),
+        alias: getAlias ? getAlias(styleKey) : [],
+        aliasPrefix: getAliasPrefix ? getAliasPrefix(styleKey) : [],
+        data: []
+      });
     }
+    groupsMap.get(styleKey).data.push(item);
+  }
+  return Array.from(groupsMap.values());
+};
 
-    {
-      // material icons
-      const data = JSON.parse(fs.readFileSync(materialIconFamiliesJSONPath));
-      const itemArray = [];
-      const families = [
-        "baseline",
-        "outline",
-        "round",
-        "sharp",
-        "twotone"
-      ];
-      for (const prop of data.icons) {
-        const supportedFamilies = (prop.unsupported_families && prop.unsupported_families.length > 0) ? filterArray(families, prop.unsupported_families) : [];
-        for (let i = 0; i < supportedFamilies.length; i++) {
-          let value = "";
-          if (supportedFamilies[i] !== "baseline") {
-            value = "-" + supportedFamilies[i];
-          }
+const toTitleCase = (value) => value
+  .split('-')
+  .filter(Boolean)
+  .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+  .join(' ');
+
+const faStyleName = (style) => {
+  const normalized = style || 'default';
+  const known = {
+    solid: 'FA Classic Solid',
+    regular: 'FA Classic Regular',
+    brands: 'FA Brands',
+    light: 'FA Light',
+    duotone: 'FA Duotone',
+    thin: 'FA Thin'
+  };
+  return known[normalized] || `FA ${toTitleCase(normalized)}`;
+};
+
+const materialIconsStyleName = (style) => {
+  const normalized = style || 'default';
+  const known = {
+    baseline: 'Material Icons',
+    outline: 'Material Icons Outlined',
+    round: 'Material Icons Round',
+    sharp: 'Material Icons Sharp',
+    twotone: 'Material Icons Two Tone'
+  };
+  return known[normalized] || `Material Icons ${toTitleCase(normalized)}`;
+};
+
+const defaultStyleName = (style) => toTitleCase(style || 'default');
+
+const output = {};
+
+try {
+  // font awesome
+  const data = JSON.parse(fs.readFileSync(fontAwesomeIconFamiliesJSONPath));
+  const faPkg = JSON.parse(fs.readFileSync(fontAwesomePackageJSONPath));
+  const faVersion = faPkg.version;
+  const faMajor = parseInt(faVersion.split('.')[0], 10);
+  const faUrl = `https://fontawesome.com/v${faMajor}/search`;
+  const itemArray = [];
+  for (const prop in data) {
+    if (Object.prototype.hasOwnProperty.call(data, prop)) {
+      if (data[prop] && data[prop].familyStylesByLicense && data[prop].familyStylesByLicense.free && data[prop].familyStylesByLicense.free.length > 0) {
+        const aliases = (data[prop].aliases && Array.isArray(data[prop].aliases.names)) ? data[prop].aliases.names : [];
+        for (let i = 0; i < data[prop].familyStylesByLicense.free.length; i++) {
+          const freeDataProp = data[prop].familyStylesByLicense.free[i];
           itemArray.push({
-            "name": prop.name,
-            "value": "material-icons" + value + " md-" + prop.name
+            "name": data[prop].label,
+            "value": faStylePrefix(freeDataProp.style, faMajor) + " fa-" + prop,
+            "alternateValue": faStylePrefix(freeDataProp.style, 5) + " fa-" + prop,
+            "style": freeDataProp.style,
+            "alias": aliases
           });
         }
       }
-      responseArray.materialIcons = itemArray;
     }
+  }
+  output.fontAwesome = {
+    version: faVersion,
+    url: faUrl,
+    styles: groupItemsByStyle(
+      itemArray,
+      faStyleName,
+      (style) => faStylePrefix(style, faMajor) + " fa-",
+      (style) => faStylePrefix(style, 5) + " fa-"
+    )
+  };
+} catch (err) {
+  console.error('Font Awesome processing failed:', err);
+  throw err; // Rethrow to prevent writing incomplete data since MP Icons are likely critical
+}
 
-    {
-      // sg icons
-      const data = JSON.parse(fs.readFileSync(sgIconFamiliesJSONPath));
-      const itemArray = [];
-      for (const prop of data.icons) {
-        for (let i = 0; i < prop.themes.length; i++) {
-          let stringValue = ".sg-" + prop.themes[i];
-          for (let j = 0; j < prop.alias.length; j++) {
-            itemArray.push({
-              "name": prop.label,
-              "value": ".sg " + stringValue + " .sg-" + prop.alias[j]
-            });
-          }
-        }
+try {
+  // material icons
+  const data = JSON.parse(fs.readFileSync(materialIconFamiliesJSONPath));
+  const materialIconsPkg = JSON.parse(fs.readFileSync(materialIconsPackageJSONPath));
+  const itemArray = [];
+  const families = ["baseline", "outline", "round", "sharp", "twotone"];
+  const materialIconsUrl = "https://fonts.google.com/icons?icon.set=Material+Icons";
+
+  for (const icon of data.icons) {
+    const iconName = icon.name;
+    const unsupportedFamilies = Array.isArray(icon.unsupported_families) ? icon.unsupported_families : [];
+    for (const family of families) {
+      if (unsupportedFamilies.includes(family)) {
+        continue;
       }
-
-      responseArray.sgIcons = itemArray;
+      const value = family !== "baseline" ? "-" + family : "";
+      itemArray.push({
+        "name": iconName,
+        "value": "material-icons" + value + " md-" + iconName,
+        "alternateValue": "material-icons" + value + " md-" + iconName,
+        "style": family,
+        "alias": [iconName]
+      });
     }
+  }
+  const materialIconsPrefix = (family) => "material-icons" + (family !== "baseline" ? "-" + family : "") + " md-";
+  output.materialIcons = {
+    version: materialIconsPkg.version,
+    url: materialIconsUrl,
+    styles: groupItemsByStyle(itemArray, materialIconsStyleName, materialIconsPrefix, materialIconsPrefix)
+  };
+} catch (err) {
+  console.error('Material Icons processing failed:', err);
+  throw err; // Rethrow to prevent further processing since Material Icons are likely critical
+}
 
-    {
-      // mp icons
-      const data = JSON.parse(fs.readFileSync(mpIconFamiliesJSONPath));
-      const itemArray = [];
-      for (const prop of data.icons) {
-        itemArray.push({
-          "name": prop.label,
-          "value": ".mp .mp-size ." + prop.alias
-        });
-      }
+try {
+  // material symbols
+  const typeDef = fs.readFileSync(materialSymbolsTypesPath, 'utf8');
+  const pkg = JSON.parse(fs.readFileSync(materialSymbolsPackageJSONPath));
+  const names = extractMaterialSymbolNames(typeDef);
+  const itemArray = [];
+  const families = ["outlined", "rounded", "sharp"];
 
-      responseArray.mpIcons = itemArray;
+  for (const name of names) {
+    for (const family of families) {
+      itemArray.push({
+        "name": name,
+        "value": `material-symbols-${family} ${name}`,
+        "alternateValue": `material-symbols-${family} ${name}`,
+        "style": family,
+        "alias": [name]
+      });
     }
-
-    const outputPath = process.argv[3] !== undefined ? process.argv[3] : './generated-metadata/icon-library.json';
-    fse.outputFileSync(outputPath, JSON.stringify(responseArray, null, 4));
-
-  } catch (err) {
-    console.error(err);
   }
 
-  // let themesPath = path.resolve(__dirname + '/../themes');
-  // let themesVariablesDirectory = path.resolve(__dirname + '/../ch5-core/themes');
-  // let themeName = process.argv[2];
-  // let themeIdentifier = '-theme';
-  // let ext = '.scss';
-  // let linkingType = '';
-  // let extendedTheme = process.argv[3] !== undefined ? process.argv[3] : 'light';
+  const materialSymbolsPrefix = (family) => `material-symbols-${family} `;
+  output.materialSymbols = {
+    version: pkg.version,
+    url: pkg.homepage,
+    styles: groupItemsByStyle(itemArray, defaultStyleName, materialSymbolsPrefix, materialSymbolsPrefix)
+  };
+} catch (err) {
+  console.error('Material Symbols processing failed:', err);
+  throw err; // Rethrow to prevent writing incomplete data since MP Icons are likely critical
+}
 
-  // if (isLinkingArgument(3)) {
-  //   linkingType = process.argv[3];
-  //   extendedTheme = 'high-contrast';
-  // } else if (isLinkingArgument(4)) {
-  //   linkingType = process.argv[4];
-  // }
+try {
+  // sg icons
+  const data = JSON.parse(fs.readFileSync(sgIconFamiliesJSONPath));
+  const itemArray = [];
+  for (const prop of data.icons) {
+    for (let i = 0; i < prop.themes.length; i++) {
+      const stringValue = "sg-" + prop.themes[i];
+      for (let j = 0; j < prop.alias.length; j++) {
+        itemArray.push({
+          "name": prop.label,
+          "value": "sg " + stringValue + " sg-" + prop.alias[j],
+          "alternateValue": "sg " + stringValue + " sg-" + prop.alias[j],
+          "style": prop.themes[i],
+          "alias": [prop.alias[j]]
+        });
+      }
+    }
+  }
+  const sgIconsPrefix = (theme) => "sg sg-" + theme + " sg-";
+  output.sgIcons = {
+    version: VERSION,
+    url: URL,
+    styles: groupItemsByStyle(itemArray, defaultStyleName, sgIconsPrefix, sgIconsPrefix)
+  };
+} catch (err) {
+  console.error('SG Icons processing failed:', err);
+  throw err; // Rethrow to prevent writing incomplete data since MP Icons are likely critical
+}
 
-  // if (themeName === undefined) {
-  //   logging.error(`Please provide a theme name: npm run create-theme <your-theme-name> <base-theme-name>\nExample npm run create-theme mycustom light`);
-  //   return;
-  // }
+try {
+  // mp icons
+  const data = JSON.parse(fs.readFileSync(mpIconFamiliesJSONPath));
+  const itemArray = [];
+  for (const prop of data.icons) {
+    itemArray.push({
+      "name": prop.label,
+      "value": "mp mp-icon " + prop.alias,
+      "alternateValue": "mp mp-icon " + prop.alias,
+      "style": "",
+      "alias": [prop.alias]
+    });
+  }
+  const mpIconsPrefix = () => "mp mp-icon ";
+  output.mpIcons = {
+    version: VERSION,
+    url: URL,
+    styles: groupItemsByStyle(itemArray, defaultStyleName, mpIconsPrefix, mpIconsPrefix)
+  };
+} catch (err) {
+  console.error('MP Icons processing failed:', err);
+  throw err; // Rethrow to prevent writing incomplete data since MP Icons are likely critical
+}
 
-})(path, fs, logging);
+try {
+  const outputPath = process.argv[3] !== undefined ? process.argv[3] : './generated-metadata/icon-library.json';
+  fse.outputFileSync(outputPath, JSON.stringify(output, null, 4));
+} catch (err) {
+  console.error('Failed to write output file:', err);
+  throw err; // Rethrow to prevent writing incomplete data since MP Icons are likely critical
+}

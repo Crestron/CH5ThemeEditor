@@ -12,6 +12,7 @@
 
 ch5-dpad {
   @include ch5-component-base();
+  //@include reset-to-browser-defaults();
 }
 
 /// Primary Class
@@ -69,6 +70,12 @@ ch5-dpad {
 
     .dpad-btn-label {
       font-size: var(--ch5-dpad--label-font-size);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      display: block;
+      width: 100%;
+      padding: 0 15%;
     }
 
     &.ch5-dpad-button-center--pressed {
@@ -127,16 +134,19 @@ ch5-dpad {
 
     .dpad-container {
       transform: rotate(45deg);
-      .ch5-disable-child-button > span {
+
+      .ch5-disable-child-button>span {
         @include ch5-component-disabled();
         cursor: default;
         pointer-events: auto; // Note that pointer events should NOT be set to none here for circle shape only
       }
+
       /// Applied when hideCenterButton = "true"
       .ch5-hide-child-button {
         visibility: hidden !important;
         cursor: default;
-        > span {
+
+        >span {
           opacity: 0.5;
           cursor: default;
         }
@@ -148,13 +158,7 @@ ch5-dpad {
       z-index: 3;
 
       .dpad-btn-label {
-        display: block;
-        width: 100%;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
         transform: rotate(-45deg);
-        padding: 0 15%;
       }
 
       span.dpad-btn-icon {
@@ -192,6 +196,7 @@ ch5-dpad {
 
   /// Defines the dpad shape plus
   &.ch5-dpad--shape-plus {
+
     /// Applied when disableCenterButton="true"
     .ch5-disable-child-button {
       pointer-events: none; // Do not set opacity here
@@ -199,13 +204,15 @@ ch5-dpad {
     }
 
     .dpad-container {
-      .ch5-disable-child-button > span {
+      .ch5-disable-child-button>span {
         @include ch5-component-disabled();
         cursor: default;
       }
+
       .ch5-hide-child-button {
         cursor: default;
-        > span {
+
+        >span {
           visibility: hidden !important;
           cursor: default;
         }

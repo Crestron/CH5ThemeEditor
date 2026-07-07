@@ -12,7 +12,7 @@
 
 ch5-textinput {
   @include ch5-component-base();
-
+  //@include reset-to-browser-defaults();
   display: inline-block;
   vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
 

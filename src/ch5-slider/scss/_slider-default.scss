@@ -18,6 +18,7 @@ ch5-slider:focus {
 
 ch5-slider {
   @include ch5-component-base();
+ // @include reset-to-browser-defaults();
   position: relative;
   display: inline-block;
   display: inline-flex;

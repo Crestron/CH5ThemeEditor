@@ -12,6 +12,7 @@
 
 ch5-toggle {
   @include ch5-component-base();
+  //@include reset-to-browser-defaults();
 }
 
 ch5-toggle:focus {

@@ -12,6 +12,7 @@
 
 ch5-text {
   @include ch5-component-base();
+  //@include reset-to-browser-defaults();
 
   display: inline-block;
   width: -moz-available; // WebKit-based browsers will ignore this.
@@ -21,8 +22,8 @@ ch5-text {
 /// Main Class
 .ch5-text {
   position: relative;
-  min-width: 64px;
-  min-height: 44px;
+  min-width: 10px;
+  min-height: 10px;
   width: var(--ch5-text--width);
   height: var(--ch5-text--height);
   overflow: hidden;

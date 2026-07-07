@@ -12,6 +12,7 @@
 
 ch5-button-list {
   @include ch5-component-base();
+  //@include reset-to-browser-defaults();
 }
 
 /// Main class

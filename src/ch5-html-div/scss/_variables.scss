@@ -1,0 +1,111 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-html-div-variables
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Variables below
+ch5-html-div {
+
+    /// description: Height for the HTML div component
+    /// type: unit
+    /// values: px
+    /// show-theme-editor: true
+    /// example: 33.33px
+    /// related-theme-variable: --theme-ch5-html-div--height
+    --ch5-html-div--height: var(--theme-ch5-html-div--height);
+
+    /// description: Width for the HTML div component
+    /// type: unit
+    /// values: px
+    /// show-theme-editor: true
+    /// example: 33.33px
+    /// related-theme-variable: --theme-ch5-html-div--width
+    --ch5-html-div--width: var(--theme-ch5-html-div--width);
+
+    /// description: Sets the background color for the component
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: transparent
+    /// related-theme-variable: --theme-ch5-html-div--background-color
+    --ch5-html-div--background-color: var(--theme-ch5-html-div--background-color);
+
+    /// description: Sets the border color for the component
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #d8d8d8
+    /// related-theme-variable: --theme-ch5-html-div--border-color
+    --ch5-html-div--border-color: var(--theme-ch5-html-div--border-color);
+
+    /// description: Sets the border width for the component
+    /// type: unit
+    /// values: px
+    /// show-theme-editor: true
+    /// example: 1px 
+    /// related-theme-variable: --theme-ch5-html-div--border-width
+    --ch5-html-div--border-width: var(--theme-ch5-html-div--border-width);
+
+    /// description: Sets the border style for the component
+    /// type: list
+    /// values: none, solid, dotted, dashed, double, groove, ridge, inset, outset
+    /// show-theme-editor: true
+    /// example: solid
+    /// related-theme-variable: --theme-ch5-html-div--border-style
+    --ch5-html-div--border-style: var(--theme-ch5-html-div--border-style);
+
+    /// description: Border top left property for html div
+    /// type: unit
+    /// values: px, %
+    /// show-theme-editor: true
+    /// example: 1px
+    /// related-theme-variable: --theme-ch5-html-div--border-top-left-radius
+    --ch5-html-div--border-top-left-radius: var(--theme-ch5-html-div--border-top-left-radius);
+
+    /// description: Border top right property for html div
+    /// type: unit
+    /// values: px, %
+    /// show-theme-editor: true
+    /// example: 1px
+    /// related-theme-variable: --theme-ch5-html-div--border-top-right-radius
+    --ch5-html-div--border-top-right-radius: var(--theme-ch5-html-div--border-top-right-radius);
+
+    /// description: Border bottom left property for html div
+    /// type: unit
+    /// values: px, %
+    /// show-theme-editor: true
+    /// example: 1px
+    /// related-theme-variable: --theme-ch5-html-div--border-bottom-left-radius
+    --ch5-html-div--border-bottom-left-radius: var(--theme-ch5-html-div--border-bottom-left-radius);
+
+    /// description: Border bottom right property for html div
+    /// type: unit
+    /// values: px, %
+    /// show-theme-editor: true
+    /// example: 1px
+    /// related-theme-variable: --theme-ch5-html-div--border-bottom-right-radius
+    --ch5-html-div--border-bottom-right-radius: var(--theme-ch5-html-div--border-bottom-right-radius);
+
+    /// description: Font size for the HTML div component
+    /// type: unit
+    /// values: px, %
+    /// show-theme-editor: true
+    /// example: 16px
+    /// related-theme-variable: --theme-ch5-html-div--font-size
+    --ch5-html-div--font-size: var(--theme-ch5-html-div--font-size);
+
+    /// description: Font color for the HTML div component
+    /// type: color
+    /// values: rgb(35,35,35), #1a1a1a, red
+    /// show-theme-editor: true
+    /// example: #000
+    /// related-theme-variable: --theme-ch5-html-div--font-color
+    --ch5-html-div--font-color: var(--theme-ch5-html-div--font-color);
+}

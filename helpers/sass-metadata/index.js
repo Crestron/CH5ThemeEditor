@@ -478,6 +478,47 @@ function sortOutputJSON() {
 
 }
 
+function validateBusinessRules() {
+	const allowedTypes = new Set(['color', 'unit', 'number', 'list', 'multiunit']);
+	const invalidTypes = [];
+
+	for (const component of outputJSON['ch5Components']) {
+		for (const variable of component['variables']) {
+			const type = (variable?.type ?? '').toString().trim().toLowerCase();
+			if (!allowedTypes.has(type)) {
+				invalidTypes.push({
+					location: `component:${component.name}`,
+					name: variable.name,
+					type: variable.type
+				});
+			}
+		}
+	}
+
+	for (const theme of outputJSON['ch5Themes']) {
+		for (const section of theme['variables']) {
+			for (const variable of section['variables']) {
+				const type = (variable?.type ?? '').toString().trim().toLowerCase();
+				if (!allowedTypes.has(type)) {
+					invalidTypes.push({
+						location: `theme:${theme.themeName}/${section.name}`,
+						name: variable.name,
+						type: variable.type
+					});
+				}
+			}
+		}
+	}
+
+	if (invalidTypes.length !== 0) {
+		console.error(`\x1b[31m Invalid 'type' found. Allowed values: color, unit, list, multiunit \x1b[0m`);
+		invalidTypes.forEach(({ location, name, type }) => {
+			console.error(`\x1b[31m ${location} -> ${name}: '${type ?? 'undefined'}' \x1b[0m`);
+		});
+		process.exit(1);
+	}
+}
+
 async function initialize() {
 	const start = Date.now();
 	for (const component in components) {
@@ -565,3 +606,4 @@ async function initialize() {
 
 findMissingThemeVariables();
 initialize();
+validateBusinessRules();

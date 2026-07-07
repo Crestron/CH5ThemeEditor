@@ -7,6 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('css-minimizer-webpack-plugin');
 const { Compilation, sources } = require('webpack');
 const { buildHelper } = require('./helpers/processVariables');
+const { generateMaterialSymbolsCss } = require('./helpers/material-symbols-css-classes');
 
 const distDir = 'output';
 const basePath = path.resolve(__dirname);
@@ -16,6 +17,8 @@ const fontAwesomeCssBasePath = `${nodeModules}@fortawesome/fontawesome-free/css`
 const fontAwesomeWebFontBasePath = `${nodeModules}@fortawesome/fontawesome-free`;
 const materialIconsFilePath = `${nodeModules}@material-icons/font/css`;
 const materialIconsFontFilePath = `${nodeModules}@material-icons/font`;
+const materialSymbolsFilePath = `${nodeModules}material-symbols`;
+const materialSymbolsClassesPath = `./generated-metadata/material-symbols-icons.css`;
 
 const sgIconsPath = "./sg-icons";
 const mpIconsPath = "./mp-icons";
@@ -50,6 +53,9 @@ themeList.themeName = glob.sync(distDir + '/themes/css/*-theme.css');
 
 const jsonData = JSON.stringify(themeList, null, 4);
 fs.writeFileSync(manifestSourceFilePath, jsonData); // TODO - write manifest file
+
+// Generate the Material Symbols per-icon helper classes so they exist before the bundle is built.
+generateMaterialSymbolsCss(materialSymbolsClassesPath);
 
 const outputPathVariable = 'output-path';
 
@@ -100,6 +106,36 @@ class Replace {
 	}
 }
 
+// material-symbols ships its CSS with same-directory font URLs (e.g. url("./material-symbols-outlined.woff2")).
+// In the packaged output the bundled CSS lands in css/external.css while the fonts are copied to the sibling
+// font/ folder, so those references must be rewritten to ../font/ to resolve correctly.
+class FixMaterialSymbolsFontPaths {
+	apply(compiler) {
+		compiler.hooks.thisCompilation.tap('FixMaterialSymbolsFontPaths', (compilation) => {
+			compilation.hooks.processAssets.tap(
+				{
+					name: 'FixMaterialSymbolsFontPaths',
+					stage: Compilation.PROCESS_ASSETS_STAGE_OPTIMIZE,
+				},
+				() => {
+					Object.keys(compilation.assets)
+						.filter((assetName) => /external\.css$/.test(assetName))
+						.forEach((assetName) => {
+							const original = compilation.getAsset(assetName).source.source().toString();
+							const updated = original.replace(
+								/url\((['"]?)(?:\.\/)?(material-symbols-[\w-]+\.woff2?)\1\)/g,
+								'url($1../font/$2$1)'
+							);
+							if (updated !== original) {
+								compilation.updateAsset(assetName, new sources.RawSource(updated));
+							}
+						});
+				}
+			);
+		});
+	}
+}
+
 const createEntryList = function () {
 	let filesObj = {};
 	fileList.map((item) => {
@@ -115,6 +151,8 @@ const entryList = createEntryList();
 entryList['external'] = [
 	path.resolve(basePath, `${fontAwesomeCssBasePath}/all.min.css`),
 	path.resolve(basePath, `${materialIconsFilePath}/all.css`),
+	path.resolve(basePath, `${materialSymbolsFilePath}/index.css`),
+	path.resolve(basePath, `${materialSymbolsClassesPath}`),
 	path.resolve(basePath, `${sgIconsPath}/css/all.css`),
 	path.resolve(basePath, `${mpIconsPath}/css/all.css`)
 ];
@@ -160,7 +198,14 @@ module.exports = {
 						loader: MiniCssExtractPlugin.loader,
 					},
 					'css-loader',
-					'sass-loader',
+					{
+						loader: 'sass-loader',
+						options: {
+							sassOptions: {
+								quietDeps: true
+							}
+						}
+					}
 				]
 			}
 		],
@@ -175,6 +220,7 @@ module.exports = {
 			filename: ({ chunk }) => (chunk.name === 'ch5-theme' || chunk.name === 'external') ? "css/[name].css" : "[name].css"
 		}),
 		new Replace(),
+		new FixMaterialSymbolsFontPaths(),
 		new Without([/.js?$/]), // just give a list with regex patterns that should be excluded like /\.css\.js(\.map)?$
 		new CopyPlugin({
 			patterns: [
@@ -185,6 +231,11 @@ module.exports = {
 				{
 					from: path.resolve(basePath, materialIconsFontFilePath + "/font/"),
 					to: path.resolve(destinationFilePath + "/font/")
+				},
+				{
+					from: path.resolve(basePath, materialSymbolsFilePath + "/"),
+					to: path.resolve(destinationFilePath + "/font/"),
+					filter: async (resourcePath) => /\.(woff|woff2|ttf)$/i.test(resourcePath)
 				},
 				{
 					from: path.resolve(basePath, sgIconsPath + "/svgs/"),
