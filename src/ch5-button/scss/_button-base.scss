@@ -17,6 +17,8 @@ ch5-button {
 
 ch5-button {
   display: inline-block;
+  position: relative;
+  isolation: isolate;
   pointer-events: none;
   vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
 
@@ -174,10 +176,6 @@ ch5-button {
       position: absolute;
       width: 100%;
       height: 100%;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
     }
   }
 
@@ -341,8 +339,6 @@ ch5-button {
   i.cb-icon.cx-button-icon-pos-top,
   i.cb-icon.cx-button-icon-pos-bottom {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .ch5-button--span {
@@ -499,8 +495,6 @@ ch5-button {
   i.cb-icon.cx-button-icon-pos-bottom,
   i.cb-icon.cx-button-icon-pos-top {
     display: flex;
-    margin-left: unset;
-    margin-right: unset;
   }
 }
 

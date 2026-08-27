@@ -172,6 +172,7 @@ ch5-dpad {
       overflow: hidden;
 
       span {
+        transform-style: preserve-3d;
         transform: rotate(-45deg);
         background-size: 50%;
       }

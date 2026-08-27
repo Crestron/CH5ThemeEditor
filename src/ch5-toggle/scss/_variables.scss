@@ -476,46 +476,84 @@ ch5-toggle {
   /// related-theme-variable: --theme-ch5-toggle--icon-off-margin-bottom
   --ch5-toggle--icon-off-margin-bottom: var(--theme-ch5-toggle--icon-off-margin-bottom);
 
-  /// description: Toggle handel size for regular
+  /// description: Toggle handle width for regular
   /// type: unit
   /// values: px
   /// show-theme-editor: true
   /// example: 1px
-  /// related-theme-variable: --theme-ch5-toggle--handle-size-regular
-  --ch5-toggle--handle-size-regular: var(--theme-ch5-toggle--handle-size-regular);
+  /// related-theme-variable: --theme-ch5-toggle--handle-width-regular
+  --ch5-toggle--handle-width-regular: var(--theme-ch5-toggle--handle-width-regular);
 
-  /// description: Toggle handel size for x-small
+  /// description: Toggle handle width for x-small
   /// type: unit
   /// values: px
   /// show-theme-editor: true
   /// example: 1px
-  /// related-theme-variable: --theme-ch5-toggle--handle-size-x-small
-  --ch5-toggle--handle-size-x-small: var(--theme-ch5-toggle--handle-size-x-small);
+  /// related-theme-variable: --theme-ch5-toggle--handle-width-x-small
+  --ch5-toggle--handle-width-x-small: var(--theme-ch5-toggle--handle-width-x-small);
 
-  /// description: Toggle handel size for small
+  /// description: Toggle handle width for small
   /// type: unit
   /// values: px
   /// show-theme-editor: true
   /// example: 1px
-  /// related-theme-variable: --theme-ch5-toggle--handle-size-small
-  --ch5-toggle--handle-size-small: var(--theme-ch5-toggle--handle-size-small);
+  /// related-theme-variable: --theme-ch5-toggle--handle-width-small
+  --ch5-toggle--handle-width-small: var(--theme-ch5-toggle--handle-width-small);
 
-
-  /// description: Toggle handel size for large
+  /// description: Toggle handle width for large
   /// type: unit
   /// values: px
   /// show-theme-editor: true
   /// example: 1px
-  /// related-theme-variable: --theme-ch5-toggle--handle-size-large
-  --ch5-toggle--handle-size-large: var(--theme-ch5-toggle--handle-size-large);
+  /// related-theme-variable: --theme-ch5-toggle--handle-width-large
+  --ch5-toggle--handle-width-large: var(--theme-ch5-toggle--handle-width-large);
 
-  /// description: Toggle handel size for x-large
+  /// description: Toggle handle width for x-large
   /// type: unit
   /// values: px
   /// show-theme-editor: true
   /// example: 1px
-  /// related-theme-variable: --theme-ch5-toggle--handle-size-x-large
-  --ch5-toggle--handle-size-x-large: var(--theme-ch5-toggle--handle-size-x-large);
+  /// related-theme-variable: --theme-ch5-toggle--handle-width-x-large
+  --ch5-toggle--handle-width-x-large: var(--theme-ch5-toggle--handle-width-x-large);
 
+  /// description: Toggle handle height for x-small
+  /// type: unit
+  /// values: px
+  /// show-theme-editor: true
+  /// example: 27px
+  /// related-theme-variable: --theme-ch5-toggle--handle-height-x-small
+  --ch5-toggle--handle-height-x-small: var(--theme-ch5-toggle--handle-height-x-small);
+
+  /// description: Toggle handle height for small
+  /// type: unit
+  /// values: px
+  /// show-theme-editor: true
+  /// example: 30px
+  /// related-theme-variable: --theme-ch5-toggle--handle-height-small
+  --ch5-toggle--handle-height-small: var(--theme-ch5-toggle--handle-height-small);
+
+  /// description: Toggle handle height for regular
+  /// type: unit
+  /// values: px
+  /// show-theme-editor: true
+  /// example: 33px
+  /// related-theme-variable: --theme-ch5-toggle--handle-height-regular
+  --ch5-toggle--handle-height-regular: var(--theme-ch5-toggle--handle-height-regular);
+
+  /// description: Toggle handle height for large
+  /// type: unit
+  /// values: px
+  /// show-theme-editor: true
+  /// example: 42px
+  /// related-theme-variable: --theme-ch5-toggle--handle-height-large
+  --ch5-toggle--handle-height-large: var(--theme-ch5-toggle--handle-height-large);
+
+  /// description: Toggle handle height for x-large
+  /// type: unit
+  /// values: px
+  /// show-theme-editor: true
+  /// example: 50px
+  /// related-theme-variable: --theme-ch5-toggle--handle-height-x-large
+  --ch5-toggle--handle-height-x-large: var(--theme-ch5-toggle--handle-height-x-large);
 
 }

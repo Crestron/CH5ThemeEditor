@@ -1,6 +1,6 @@
 {
     "name": "@crestron/ch5-theme", 
-    "version": "2.18.0", 
+    "version": "2.19.0", 
     "description": "Crestron HTML5 (CH5) Themes CSS", 
     "author": "Crestron", 
     "license": "SEE LICENSE IN LICENSE.txt", 
@@ -38,7 +38,7 @@
         "@fortawesome/fontawesome-free": "7.2.0", 
         "@material-icons/font": "1.0.36", 
         "material-symbols": "0.44.9", 
-        "@types/node": "^20.4.0", 
+        "@types/node": "^24.0.0", 
         "copy-webpack-plugin": "^14.0.0", 
         "css-loader": "^5.0.0", 
         "css-minimizer-webpack-plugin": "^8.0.0", 

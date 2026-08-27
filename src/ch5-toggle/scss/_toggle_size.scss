@@ -14,7 +14,8 @@
 
   /// Applied when size='regular'
   .ch5-toggle__handle--size-regular {
-    width: var(--ch5-toggle--handle-size-regular);
+    width: var(--ch5-toggle--handle-width-regular);
+    height: var(--ch5-toggle--handle-height-regular);
 
     .ch5-toggle__off-label,
     .ch5-toggle__on-label {
@@ -44,7 +45,8 @@
   /// Applied when size='x-small'
   .ch5-toggle__handle--size-x-small {
     min-width: 80px;
-    width: var(--ch5-toggle--handle-size-x-small);
+    width: var(--ch5-toggle--handle-width-x-small);
+    height: var(--ch5-toggle--handle-height-x-small);
 
     /* height: 16.66px; */
     .ch5-toggle__off-label,
@@ -74,7 +76,8 @@
 
   /// Applied when size='small'
   .ch5-toggle__handle--size-small {
-    width: var(--ch5-toggle--handle-size-small);
+    width: var(--ch5-toggle--handle-width-small);
+    height: var(--ch5-toggle--handle-height-small);
 
     /*  height: 25px; */
     .ch5-toggle__off-label,
@@ -104,7 +107,8 @@
 
   /// Applied when size='large'
   .ch5-toggle__handle--size-large {
-    width: var(--ch5-toggle--handle-size-large);
+    width: var(--ch5-toggle--handle-width-large);
+    height: var(--ch5-toggle--handle-height-large);
 
     /*  height: 41.66px; */
     .ch5-toggle__off-label,
@@ -134,7 +138,8 @@
 
   /// Applied when size='x-large'
   .ch5-toggle__handle--size-x-large {
-    width: var(--ch5-toggle--handle-size-x-large);
+    width: var(--ch5-toggle--handle-width-x-large);
+    height: var(--ch5-toggle--handle-height-x-large);
 
     /*   height: 50px; */
     .ch5-toggle__off-label,

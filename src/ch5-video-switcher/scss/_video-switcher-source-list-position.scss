@@ -40,7 +40,7 @@
     .source-container {
       // aspect-ratio: 1/1;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       flex-direction: column;
       overflow: hidden;
@@ -63,7 +63,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex: 1;
         color: var(--ch5-video-switcher--source-list-icon-color); //TODo - check source list vs source icon
 
         &.sg {

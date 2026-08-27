@@ -27,11 +27,7 @@
         },
         "ch5-button-list": {
             "value": "Ch5ButtonList",
-            "version": "1.0.0",
-            "undefined": [
-                "--grid-template-columns, repeat(1, 1fr",
-                "--grid-template-rows, repeat(1, 1fr"
-            ]
+            "version": "1.0.0"
         },
         "ch5-color-chip": {
             "value": "Ch5ColorChip",
@@ -103,11 +99,7 @@
         },
         "ch5-subpage-reference-list": {
             "value": "Ch5SubpageReferenceList",
-            "version": "1.0.0",
-            "undefined": [
-                "--grid-template-columns, repeat(1, 1fr",
-                "--grid-template-rows, repeat(1, 1fr"
-            ]
+            "version": "1.0.0"
         },
         "ch5-slider": {
             "value": "Ch5Slider",

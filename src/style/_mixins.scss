@@ -78,6 +78,11 @@
 @mixin ch5-component-disabled() {
   pointer-events: none;
   opacity: var(--theme-others--disabled-opacity);
+
+  // added to fix the issue of button not being disabled when used inside other components like slider, triggerview, html-div, modal, overly, form etc.
+  .ch5-button {
+    pointer-events: none;
+  }
 }
 
 

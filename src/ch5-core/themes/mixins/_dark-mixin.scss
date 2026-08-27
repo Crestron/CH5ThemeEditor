@@ -838,7 +838,7 @@
 
   --theme-ch5-button--oval-border-radius: 50%;
 
-  --theme-ch5-button--tab-border-radius: 10px 10px 0 0;
+  --theme-ch5-button--tab-border-radius: 10px;
 
   --theme-ch5-button--regular-width: 84px;
 
@@ -2478,15 +2478,25 @@
 
   --theme-ch5-toggle--icon-off-margin-bottom: 0px;
 
-  --theme-ch5-toggle--handle-size-regular: 100px;
+  --theme-ch5-toggle--handle-width-regular: 100px;
 
-  --theme-ch5-toggle--handle-size-x-small: 80px;
+  --theme-ch5-toggle--handle-width-x-small: 80px;
 
-  --theme-ch5-toggle--handle-size-small: 90px;
+  --theme-ch5-toggle--handle-width-small: 90px;
 
-  --theme-ch5-toggle--handle-size-large: 125px;
+  --theme-ch5-toggle--handle-width-large: 125px;
 
-  --theme-ch5-toggle--handle-size-x-large: 150px;
+  --theme-ch5-toggle--handle-width-x-large: 150px;
+  
+  --theme-ch5-toggle--handle-height-x-small: 27px;
+
+  --theme-ch5-toggle--handle-height-small: 30px;
+
+  --theme-ch5-toggle--handle-height-regular: 33px;
+
+  --theme-ch5-toggle--handle-height-large: 42px;
+
+  --theme-ch5-toggle--handle-height-x-large: 50px;
 
   // ***************************************
   // ch5-triggerview

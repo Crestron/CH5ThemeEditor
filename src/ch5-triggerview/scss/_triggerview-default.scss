@@ -41,9 +41,19 @@ ch5-triggerview {
   .slider-full-width-page {
     width: 100%;
   }
+
+  /// Applied when disabled='true' on the triggerview component
+  &.ch5-triggerview--disabled {
+    @include ch5-component-disabled();
+  }
 }
 
 /// The class added on the triggeview child component
 .ch5-viewchild {
   box-sizing: border-box;
+
+  /// Applied when disabled='true' on the triggerview child component
+  &.ch5-viewchild--disabled {
+    @include ch5-component-disabled();
+  }
 }

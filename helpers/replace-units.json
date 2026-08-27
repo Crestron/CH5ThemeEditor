@@ -1782,27 +1782,52 @@
   {
       "U": "px",
       "Component": "ch5-toggle",
-      "Variables": " --theme-ch5-toggle--handle-size-large"
+      "Variables": " --theme-ch5-toggle--handle-width-large"
   },
   {
       "U": "px",
       "Component": "ch5-toggle",
-      "Variables": " --theme-ch5-toggle--handle-size-regular"
+      "Variables": " --theme-ch5-toggle--handle-width-regular"
   },
   {
       "U": "px",
       "Component": "ch5-toggle",
-      "Variables": " --theme-ch5-toggle--handle-size-small"
+      "Variables": " --theme-ch5-toggle--handle-width-small"
   },
   {
       "U": "px",
       "Component": "ch5-toggle",
-      "Variables": " --theme-ch5-toggle--handle-size-x-large"
+      "Variables": " --theme-ch5-toggle--handle-width-x-large"
   },
   {
       "U": "px",
       "Component": "ch5-toggle",
-      "Variables": " --theme-ch5-toggle--handle-size-x-small"
+      "Variables": " --theme-ch5-toggle--handle-width-x-small"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--handle-height-large"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--handle-height-regular"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--handle-height-small"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--handle-height-x-large"
+  },
+  {
+      "U": "px",
+      "Component": "ch5-toggle",
+      "Variables": " --theme-ch5-toggle--handle-height-x-small"
   },
   {
       "U": "px, %, vh",

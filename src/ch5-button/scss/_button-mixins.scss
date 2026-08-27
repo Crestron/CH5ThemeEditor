@@ -33,7 +33,6 @@
   .cb-btn {
     width: var(#{$property-width});
     height: var(#{$property-height});
-    font-size: var(#{$property-font-size});
     font-style: var(#{$property-font-style});
     font-weight: var(#{$property-font-weight});
   }
@@ -74,13 +73,16 @@
     margin-right: var(--ch5-button--icon-margin-right);
   }
 
+  .ch5-button--label {
+    font-size: var(#{$property-font-size});
+  }
+
   // .cb-checkbox-icon {
   //   color: var(#{$property-checkbox-icon-color});
   // }
 
   &.ch5-button--pressed {
     .cb-btn {
-      font-size: var(#{$property-pressed-font-size});
       font-weight: var(#{$property-pressed-font-weight});
     }
 
@@ -99,6 +101,10 @@
       }
     }
 
+    .ch5-button--label {
+      font-size: var(#{$property-pressed-font-size});
+    }
+
     .ch5-button--icon {
       // color: var(#{$property-pressed-icon-color});
       font-size: var(#{$property-pressed-icon-font-size});
@@ -111,7 +117,6 @@
 
   &.ch5-button--selected {
     .cb-btn {
-      font-size: var(#{$property-selected-font-size});
       font-weight: var(#{$property-selected-font-weight});
     }
 
@@ -128,6 +133,10 @@
         height: 100%;
         width: 100%;
       }
+    }
+
+    .ch5-button--label {
+      font-size: var(#{$property-selected-font-size});
     }
 
     .ch5-button--icon {

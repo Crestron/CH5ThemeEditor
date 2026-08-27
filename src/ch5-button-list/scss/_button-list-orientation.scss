@@ -15,7 +15,6 @@
   /// Applied when orientation='horizontal'
   &.ch5-button-list--orientation-horizontal {
     grid-auto-flow: column;
-    grid-template-rows: var(--grid-template-rows, repeat(1, 1fr));
 
     &.ch5-button-list--center-items-true {
       justify-content: center;
@@ -55,13 +54,11 @@
         }
       }
     }
-
   }
 
   /// Applied when orientation='vertical'
   &.ch5-button-list--orientation-vertical {
     grid-auto-flow: row;
-    grid-template-columns: var(--grid-template-columns, repeat(1, 1fr));
 
     &.ch5-button-list--center-items-true {
       justify-content: start;
@@ -103,6 +100,5 @@
         height: 100%;
       }
     }
-
   }
 }
