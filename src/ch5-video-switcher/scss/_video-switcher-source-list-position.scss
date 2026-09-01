@@ -55,6 +55,7 @@
         background-position: center;
         height: calc(1.5 * var(--number-of-source-list-divisions));
         width: calc(1.5 * var(--number-of-source-list-divisions));
+        flex: 1;
       }
 
       .source-icon {
@@ -71,6 +72,7 @@
           background-size: contain;
           width: 100%;
           border: none;
+          flex: 1;
         }
       }
 
