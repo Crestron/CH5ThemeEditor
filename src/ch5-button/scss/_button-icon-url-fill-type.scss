@@ -1,0 +1,136 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// For stretch, stretch-aspect, center and tile the image is taken out of the flow and
+// stretched to fill the whole button, with the label kept on top of it.
+ch5-button[iconurlfilltype="stretch"],
+ch5-button[iconurlfilltype="stretch-aspect"],
+ch5-button[iconurlfilltype="center"],
+ch5-button[iconurlfilltype="tile"] {
+  button {
+    .ch5-button--label {
+      z-index: 2;
+    }
+
+    .ch5-button--img {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}
+
+// Render the vertical stretch image through a pseudo-element so its bitmap can
+// rotate independently from the image box.
+ch5-button[orientation="vertical"][stretch][iconurlfilltype="stretch"],
+ch5-button[orientation="vertical"][stretch][iconurlfilltype="stretch-aspect"],
+ch5-button[orientation="vertical"][stretch][iconurlfilltype="center"],
+ch5-button[orientation="vertical"][stretch][iconurlfilltype="tile"] {
+  container-type: size;
+
+  button {
+    .ch5-button--img {
+      background-size: 0 0 !important;
+      transform: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100cqh;
+        height: 100cqw;
+        background-image: inherit;
+        transform: rotate(270deg) translateX(-100%);
+        transform-origin: top left;
+      }
+    }
+  }
+}
+
+ch5-button[orientation="vertical"][stretch][iconurlfilltype="stretch"] button .ch5-button--img::before {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ch5-button[orientation="vertical"][stretch]:is(
+  [iconurlfilltype="stretch-aspect"],
+  [iconurlfilltype="center"]
+) button .ch5-button--img::before {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ch5-button[orientation="vertical"][stretch][iconurlfilltype="tile"] button .ch5-button--img::before {
+  background-size: auto;
+  background-position: 0;
+  background-repeat: repeat;
+}
+
+// Applied when iconUrlFillType="stretch"
+ch5-button[iconurlfilltype="stretch"] {
+  button {
+    .ch5-button--img {
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+// Applied when iconUrlFillType="stretch-aspect"
+ch5-button[iconurlfilltype="stretch-aspect"] {
+  button {
+    .ch5-button--img {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+// Applied when iconUrlFillType="center"
+ch5-button[iconurlfilltype="center"] {
+  button {
+    .ch5-button--img {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+// Applied when iconUrlFillType="tile"
+ch5-button[iconurlfilltype="tile"] {
+  button {
+    .ch5-button--img {
+      background-size: auto;
+      background-position: 0;
+      background-repeat: repeat;
+    }
+  }
+}
+
+// Applied when iconUrlFillType="initial"
+ch5-button[iconurlfilltype="initial"] {
+  button {
+    .ch5-button--img {
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

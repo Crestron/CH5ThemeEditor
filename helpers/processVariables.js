@@ -2,6 +2,9 @@ const fs = require('fs');
 
 function replaceAll(str, find, replace) {
     if (str && String(str).trim() !== "") {
+        if (replace === undefined || replace === null) {
+            return str;
+        }
         return String(str).split(find).join(replace);
     } else {
         return str;
@@ -31,15 +34,27 @@ function buildHelper(theme) {
         data[i] = null;
     }
 
-    // Run twice to replace all variables nesting
+    // Resolve direct variable aliases only (e.g. --a: var(--b)).
+    // Do not attempt to resolve complex values such as calc(var(--b) * 1.5).
     for (const variable in variables) {
-        if (variables[variable].includes('var(')) {
-            const valueVariable = variables[variable].replace('var(', '').slice(0, -1);
-            variables[variable] = variables[valueVariable];
+        const currentValue = variables[variable];
+        if (!currentValue) {
+            continue;
+        }
+
+        const aliasMatch = currentValue.match(/^var\(\s*(--[\w-]+)\s*\)$/);
+        if (aliasMatch) {
+            const valueVariable = aliasMatch[1];
+            if (variables[valueVariable] !== undefined) {
+                variables[variable] = variables[valueVariable];
+            }
         }
     }
 
     for (const variable in variables) {
+        if (variables[variable] === undefined || variables[variable] === null) {
+            continue;
+        }
         theme = replaceAll(theme, `var(${variable})`, variables[variable]);
         theme = replaceAll(theme,`${variable}: ${variables[variable]};`,'')
         theme = replaceAll(theme,`${variable}: ${variables[variable]}`,'')

@@ -25,28 +25,28 @@
           ],
           "type": [
             "If 'className' contains value of classListPrefix specified in the buttonHelper + one value from the array of possible values we display that value",
-            "i.e. className = 'ch5-button--primary' classListPrefix is 'ch5-button--' and a possible value is 'primary' we will show type: ['primary']",
-            "i.e. if className = ':not(ch5-button--primary)' we will display all the other values except primary"
+            "i.e. className = 'ch5-advanced-button--primary' classListPrefix is 'ch5-advanced-button--' and a possible value is 'primary' we will show type: ['primary']",
+            "i.e. if className = ':not(ch5-advanced-button--primary)' we will display all the other values except primary"
           ],
           "orientation": [
             "If 'className' contains value of classListPrefix specified in the buttonHelper + one value from the array of possible values we display that value",
-            "i.e. className = 'ch5-button--vertical' classListPrefix is 'ch5-button--' and a possible value is 'vertical' we will show type: ['vertical']",
-            "i.e. if className = ':not(ch5-button--vertical)' we will display all the other values except vertical"
+            "i.e. className = 'ch5-advanced-button--vertical' classListPrefix is 'ch5-advanced-button--' and a possible value is 'vertical' we will show type: ['vertical']",
+            "i.e. if className = ':not(ch5-advanced-button--vertical)' we will display all the other values except vertical"
           ],
           "shape": [
             "If 'className' contains value of classListPrefix specified in the buttonHelper + one value from the array of possible values we display that value",
-            "i.e. className = 'ch5-button--circle' classListPrefix is 'ch5-button--' and a possible value is 'circle' we will show type: ['circle']",
-            "i.e. if className = ':not(ch5-button--circle)' we will display all the other values except circle"
+            "i.e. className = 'ch5-advanced-button--circle' classListPrefix is 'ch5-advanced-button--' and a possible value is 'circle' we will show type: ['circle']",
+            "i.e. if className = ':not(ch5-advanced-button--circle)' we will display all the other values except circle"
           ],
           "size": [
             "If 'className' contains value of classListPrefix specified in the buttonHelper + one value from the array of possible values we display that value",
-            "i.e. className = 'ch5-button--small' classListPrefix is 'ch5-button--' and a possible value is 'small' we will show type: ['small']",
-            "i.e. if className = ':not(ch5-button--small)' we will display all the other values except small"
+            "i.e. className = 'ch5-advanced-button--small' classListPrefix is 'ch5-advanced-button--' and a possible value is 'small' we will show type: ['small']",
+            "i.e. if className = ':not(ch5-advanced-button--small)' we will display all the other values except small"
           ],
           "stretch": [
             "If 'className' contains value of classListPrefix specified in the buttonHelper + one value from the array of possible values we display that value",
-            "i.e. className = 'ch5-button--height' classListPrefix is 'ch5-button--' and a possible value is 'height' we will show type: ['height']",
-            "i.e. if className = ':not(ch5-button--height)' we will display all the other values except height"
+            "i.e. className = 'ch5-advanced-button--height' classListPrefix is 'ch5-advanced-button--' and a possible value is 'height' we will show type: ['height']",
+            "i.e. if className = ':not(ch5-advanced-button--height)' we will display all the other values except height"
           ]
         }
       }

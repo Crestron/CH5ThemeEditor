@@ -22,6 +22,14 @@
             "value": "Ch5Button",
             "version": "1.0.0",
             "undefined": [
+                "--fa-style-family-classic",
+                "--temp-ch5-button--checkbox-glyph-width"
+            ]
+        },
+        "ch5-advanced-button": {
+            "value": "Ch5AdvancedButton",
+            "version": "1.0.0",
+            "undefined": [
                 "--fa-style-family-classic"
             ]
         },

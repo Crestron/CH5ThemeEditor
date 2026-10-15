@@ -1,0 +1,131 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// `checkboxshow` (boolean) shows a checkbox glyph; `checkboxposition` (left|right,
+// default left) picks its side. Rendered via a `::before` on <button> - no extra
+// DOM, no JS. The checked look follows `selected`, static or via the
+// `receivestateselected` signal (signal always wins - see _button-selected.scss).
+// Every rule below shares the `ch5-button` + `checkboxshow` prefix, so it's nested
+// once here instead of repeated on every selector.
+ch5-button {
+  &#{ch5-attr-true("checkboxshow")} {
+    --temp-ch5-button--checkbox-glyph-width: calc(var(--ch5-button--regular-font-size) * 0.875);
+
+    // Structure: no cross-attribute deps. Absolute positioning (not flex `order`)
+    // keeps the glyph on an edge for every iconposition/shape, since <button> has
+    // no wrapper element to anchor an order-based flex sibling to.
+    button {
+      position: relative; // for the ::before glyph below
+      box-sizing: border-box; // keeps checkbox padding inside the existing size
+
+      &::before {
+        font-family: var(--fa-style-family-classic);
+        content: "\f0c8";
+        font-weight: 400;
+        line-height: 1;
+        font-style: normal;
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    // Glyph scale, depends on `size`.
+    @each $size in $ch5-button--sizes {
+      $property-size: $ch5-button--component-prefix + $size + "-font-size";
+
+      &[size="#{$size}"] {
+        --temp-ch5-button--checkbox-glyph-width: calc(var(#{$property-size}) * 0.875);
+
+        button::before {
+          font-size: var(#{$property-size});
+        }
+      }
+    }
+
+    // Edge placement, depends on `checkboxposition`/`dir` (RTL flips the side).
+
+    // LEFT edge: LTR default, or RTL mirror of checkboxposition="right".
+    &:not([checkboxposition="right"]):not([dir="rtl"]),
+    &[dir="rtl"][checkboxposition="right"] {
+      button {
+        padding-left: calc(var(--ch5-button--padding) + var(--temp-ch5-button--checkbox-glyph-width) + var(--ch5-button--checkbox-padding));
+        padding-right: var(--ch5-button--padding);
+
+        &::before {
+          left: var(--ch5-button--padding);
+          right: auto;
+        }
+      }
+    }
+
+    // RIGHT edge: LTR checkboxposition="right", or RTL mirror of default.
+    &[checkboxposition="right"]:not([dir="rtl"]),
+    &[dir="rtl"]:not([checkboxposition="right"]) {
+      button {
+        padding-left: var(--ch5-button--padding);
+        padding-right: calc(var(--ch5-button--padding) + var(--temp-ch5-button--checkbox-glyph-width) + var(--ch5-button--checkbox-padding));
+
+        &::before {
+          left: auto;
+          right: var(--ch5-button--padding);
+        }
+      }
+    }
+
+    // Vertical stretch keeps the button box unrotated. Map logical left/right
+    // to the bottom/top edges produced by advanced-button's rotated box.
+    &[orientation="vertical"][stretch] button {
+      position: absolute;
+      padding-left: calc(var(--ch5-button--padding) / 2);
+      padding-right: calc(var(--ch5-button--padding) / 2);
+
+      &::before {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%) rotate(270deg);
+      }
+    }
+
+    &[orientation="vertical"][stretch]:not([checkboxposition="right"]):not([dir="rtl"]) button,
+    &[orientation="vertical"][stretch][dir="rtl"][checkboxposition="right"] button {
+      padding-top: var(--ch5-button--padding);
+      padding-bottom: calc(var(--ch5-button--padding) + var(--temp-ch5-button--checkbox-glyph-width) + var(--ch5-button--checkbox-padding));
+
+      &::before {
+        top: auto;
+        bottom: var(--ch5-button--padding);
+      }
+    }
+
+    &[orientation="vertical"][stretch][checkboxposition="right"]:not([dir="rtl"]) button,
+    &[orientation="vertical"][stretch][dir="rtl"]:not([checkboxposition="right"]) button {
+      padding-top: calc(var(--ch5-button--padding) + var(--temp-ch5-button--checkbox-glyph-width) + var(--ch5-button--checkbox-padding));
+      padding-bottom: var(--ch5-button--padding);
+
+      &::before {
+        top: var(--ch5-button--padding);
+        bottom: auto;
+      }
+    }
+
+    // Checked glyph: static `selected` must precede the signal rule so the signal
+    // wins on a specificity tie (mirrors _button-selected.scss).
+    // Or
+    // Signal channel: "true" = checked; "false" still suppresses the static attribute.
+    &#{ch5-attr-and-signal-true("data-signal-selected","selected")} button::before {
+      font-family: var(--fa-style-family-classic);
+      content: "\f14a";
+    }
+  }
+}

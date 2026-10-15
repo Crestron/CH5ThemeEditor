@@ -1,12 +1,29 @@
-// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
 // All rights reserved.
 // No part of this software may be reproduced in any form, machine
 // or natural, without the express written consent of Crestron Electronics.
 // Use of this source code is subject to the terms of the Crestron Software License Agreement
 // under which you licensed this source code.
 
+@import "./scss/scss-variables";
 @import "./scss/variables";
+@import "./scss/button-attr-helpers";
 @import "./scss/button-mixins";
-@import "./scss/button-base";
-@import "./scss/button-shapes";
-@import "./scss/button-types";
+
+// Base host/button structure and standalone attributes (no cross-attribute deps)
+@import "./scss/button-default";
+@import "./scss/button-disabled";
+@import "./scss/button-background-image-fill-type";
+@import "./scss/button-truncate-multiline";
+@import "./scss/button-checkbox";
+
+// Box model: each depends on the one(s) above it (shape -> size -> stretch -> orientation)
+@import "./scss/button-shape-size";
+
+// Content layout: halign/valign read the flex axis iconposition establishes
+@import "./scss/button-icon-position";
+@import "./scss/button-halign-valign";
+
+// Color/state: selected must precede pressed so pressed wins on equal specificity
+@import "./scss/button-type";
+@import "./scss/button-icon-url-fill-type";

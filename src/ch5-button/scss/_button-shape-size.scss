@@ -1,0 +1,108 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Size requires that we address pressed and selected in it. ch5-button--set-size ensures this.
+// It does NOT require us to handle receiveState signals.
+// For shape 'circle', the width and height are set to be equal. So shape attribute has a dependency. ch5-button--set-size ensures this.
+// We do not need to worry about shape or any other attribute when setting the size.
+
+// If not valid shape or not defined shape but size is valid, then apply the size without any shape context.
+@each $size in $ch5-button--sizes {
+  ch5-button[size="#{$size}"] {
+    @include ch5-button--set-size($size, '');
+  }
+}
+
+@each $size in $ch5-button--sizes {
+  ch5-button[size="#{$size}"][orientation="vertical"] {
+    @include ch5-button--set-size($size, '', 'vertical');
+  }
+}
+
+// Applies shape styling for each supported shape value. The default shape is `$ch5-button--default-shape` (rounded-rectangle).
+@each $shape in $ch5-button--shapes {
+  ch5-button[shape="#{$shape}"] {
+    @include ch5-button--set-shape($shape);
+
+    @if ($shape =="circle") {
+      --ch5-button--regular-height: var(--ch5-button--regular-width) !important;
+      --ch5-button--x-small-height: var(--ch5-button--x-small-width) !important;
+      --ch5-button--small-height: var(--ch5-button--small-width) !important;
+      --ch5-button--large-height: var(--ch5-button--large-width) !important;
+      --ch5-button--x-large-height: var(--ch5-button--x-large-width) !important;
+    }
+  }
+}
+
+// Applied when stretch="width"
+ch5-button[stretch="width"],
+ch5-button[stretch="both"] {
+  width: 100%;
+
+  // min-width is required here to manage the min width of the button when stretched
+  button {
+    min-width: var(#{$ch5-button--component-prefix + $ch5-button--default-size + "-width"});
+  }
+}
+
+// Applied when stretch="height"
+ch5-button[stretch="height"],
+ch5-button[stretch="both"] {
+  height: 100%;
+
+  // min-height is required here to manage the min height of the button when stretched
+  button {
+    min-height: var(#{$ch5-button--component-prefix + $ch5-button--default-size + "-height"});
+  }
+}
+
+// Match the specificity of the explicit size + vertical rules above so stretch
+// continues to control the host footprint when both attributes are present.
+ch5-button[orientation="vertical"][stretch="width"],
+ch5-button[orientation="vertical"][stretch="both"] {
+  width: 100%;
+}
+
+ch5-button[orientation="vertical"][stretch="height"],
+ch5-button[orientation="vertical"][stretch="both"] {
+  height: 100%;
+}
+
+@each $size in $ch5-button--sizes {
+  ch5-button[stretch="width"][size="#{$size}"] button,
+  ch5-button[stretch="both"][size="#{$size}"] button {
+    min-width: var(#{$ch5-button--component-prefix + $size + "-width"});
+  }
+}
+
+// For shape="circle", use the host as a measurement box and size the visible
+// button from its smaller axis so the circle remains contained in either direction.
+ch5-button[shape="circle"][stretch="width"],
+ch5-button[shape="circle"][stretch="height"],
+ch5-button[shape="circle"][stretch="both"] {
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0;
+  min-height: 0;
+  border-radius: 0;
+  container-type: size;
+
+  button {
+    position: absolute;
+    inset: 0;
+    width: 100cqmin !important;
+    height: 100cqmin !important;
+    min-width: 0;
+    min-height: 0;
+  }
+}

@@ -144,7 +144,7 @@ The difference between the themes are introduced in directories and files of the
 
 ### Theme independent directives and files
 
-The theme definition that is common across all themes, both Crestron standard themes and Custom themes are in directories and files with names of the CH5 components.  For instance the ch5-button (previously it was ch5-button) directory contains directives for ch5-buttons in all themes.
+The theme definition that is common across all themes, both Crestron standard themes and Custom themes are in directories and files with names of the CH5 components.  For instance the ch5-advanced-button (previously it was ch5-button) directory contains directives for ch5-advanced-buttons in all themes.
 
 ### Promoting theme independent directives to a Custom Theme. 
 

@@ -29,6 +29,10 @@ ch5-modal-dialog {
   color: var(--ch5-modal-dialog--text-color);
   padding: var(--ch5-modal-dialog--padding);
   min-width: 200px;
+ 
+  &.ch5-disabled {
+    @include ch5-component-disabled;
+  }
 
   .ch5-modal-dialog-close-icon-btn {
     border: none;

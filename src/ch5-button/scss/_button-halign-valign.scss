@@ -1,0 +1,117 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// ---------------------------------------------------------------------------
+// Text alignment of the label itself (helps multi-line labels line up with the
+// chosen horizontal alignment). Independent of iconposition.
+// ---------------------------------------------------------------------------
+ch5-button[halignlabel="left"] button .ch5-button--label {
+  text-align: left;
+}
+
+ch5-button[halignlabel="right"] button .ch5-button--label {
+  text-align: right;
+}
+
+ch5-button[halignlabel="center"] button .ch5-button--label {
+  text-align: center;
+}
+
+// ---------------------------------------------------------------------------
+// ROW layouts (iconposition: default / first / last)
+// ---------------------------------------------------------------------------
+
+// halignlabel -> horizontal is the MAIN axis (justify-content)
+ch5-button:not([iconposition])[halignlabel="left"] button,
+ch5-button[iconposition="first"][halignlabel="left"] button,
+ch5-button[iconposition="last"][halignlabel="left"] button {
+  justify-content: flex-start;
+}
+
+ch5-button:not([iconposition])[halignlabel="right"] button,
+ch5-button[iconposition="first"][halignlabel="right"] button,
+ch5-button[iconposition="last"][halignlabel="right"] button {
+  justify-content: flex-end;
+}
+
+// valignlabel -> vertical is the CROSS axis (align-items)
+ch5-button:not([iconposition])[valignlabel="top"] button,
+ch5-button[iconposition="first"][valignlabel="top"] button,
+ch5-button[iconposition="last"][valignlabel="top"] button {
+  align-items: flex-start;
+}
+
+ch5-button:not([iconposition])[valignlabel="bottom"] button,
+ch5-button[iconposition="first"][valignlabel="bottom"] button,
+ch5-button[iconposition="last"][valignlabel="bottom"] button {
+  align-items: flex-end;
+}
+
+// ---------------------------------------------------------------------------
+// COLUMN layouts (iconposition: top / bottom)
+// ---------------------------------------------------------------------------
+
+// halignlabel -> horizontal is the CROSS axis (align-items)
+ch5-button[iconposition="top"][halignlabel="left"] button,
+ch5-button[iconposition="bottom"][halignlabel="left"] button {
+  align-items: flex-start;
+}
+
+ch5-button[iconposition="top"][halignlabel="right"] button,
+ch5-button[iconposition="bottom"][halignlabel="right"] button {
+  align-items: flex-end;
+}
+
+// Vertical stretch maps top/bottom layouts to an unrotated row. Match the
+// visual edges produced when advanced-button rotates its whole column layout.
+ch5-button[orientation="vertical"][stretch][iconposition="top"][halignlabel="left"] button,
+ch5-button[orientation="vertical"][stretch][iconposition="bottom"][halignlabel="left"] button {
+  align-items: flex-end;
+}
+
+ch5-button[orientation="vertical"][stretch][iconposition="top"][halignlabel="right"] button,
+ch5-button[orientation="vertical"][stretch][iconposition="bottom"][halignlabel="right"] button {
+  align-items: flex-start;
+}
+
+// valignlabel -> vertical is the MAIN axis (justify-content)
+ch5-button[iconposition="top"][valignlabel="top"] button,
+ch5-button[iconposition="bottom"][valignlabel="top"] button {
+  justify-content: flex-start;
+}
+
+ch5-button[iconposition="top"][valignlabel="bottom"] button,
+ch5-button[iconposition="bottom"][valignlabel="bottom"] button {
+  justify-content: flex-end;
+}
+
+// ---------------------------------------------------------------------------
+// Circle/Oval special case: `valignlabel` is NOT applicable.
+// For both horizontal and vertical orientations, top/bottom must behave as
+// middle to mirror ch5-advanced-button behavior.
+// ---------------------------------------------------------------------------
+
+// ROW layouts (default / first / last / invalid non-top-bottom iconposition):
+// keep vertical alignment centered even when valignlabel="top" or "bottom".
+ch5-button:is([shape="circle"], [shape="oval"]):not([iconposition="top"]):not([iconposition="bottom"])[valignlabel="top"] button,
+ch5-button:is([shape="circle"], [shape="oval"]):not([iconposition="top"]):not([iconposition="bottom"])[valignlabel="bottom"] button {
+  align-items: center;
+}
+
+// COLUMN layouts (iconposition top / bottom): keep main-axis alignment centered
+// even when valignlabel="top" or "bottom".
+ch5-button:is([shape="circle"], [shape="oval"])[iconposition="top"][valignlabel="top"] button,
+ch5-button:is([shape="circle"], [shape="oval"])[iconposition="bottom"][valignlabel="top"] button,
+ch5-button:is([shape="circle"], [shape="oval"])[iconposition="top"][valignlabel="bottom"] button,
+ch5-button:is([shape="circle"], [shape="oval"])[iconposition="bottom"][valignlabel="bottom"] button {
+  justify-content: center;
+}

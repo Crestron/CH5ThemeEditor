@@ -1,0 +1,28 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Type requires that we address pressed and selected in it. ch5-button--set-type ensures this.
+// It also requires us to handle receiveStateType signals.
+// We do not need to worry about orientation, or size or shape or any other attribute when setting the type.
+// Repeat the $ch5-button--types for specificity purpose
+
+@each $type in $ch5-button--types {
+  ch5-button[type="#{$type}"] {
+    @include ch5-button--set-type($type);
+  }
+}
+
+@each $type in $ch5-button--types {
+  ch5-button[data-signal-type="#{$type}"] {
+    @include ch5-button--set-type($type);
+  }
+}

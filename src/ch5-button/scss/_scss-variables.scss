@@ -1,0 +1,35 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Supported button sizes.
+$ch5-button--sizes: "x-small", "small", "regular", "large", "x-large";
+$ch5-button--default-size: "regular";
+$ch5-button--sizes-except-default: "x-small", "small", "large", "x-large";
+
+// Supported button shapes.
+$ch5-button--shapes: "rectangle", "rounded-rectangle", "circle", "oval", "tab";
+$ch5-button--default-shape: "rounded-rectangle";
+$ch5-button--shapes-except-default: "rectangle", "circle", "oval", "tab";
+
+// Supported button types.
+$ch5-button--types: "default", "text", "danger", "warning", "info", "success", "primary", "secondary";
+$ch5-button--default-type: "default";
+$ch5-button--types-except-default: "text", "danger", "warning", "info", "success", "primary", "secondary";
+
+// CSS custom-property prefix for ch5-button theme variables.
+$ch5-button--component-prefix: "--ch5-button--";
+
+// Supported button iconposition values.
+$ch5-button--icon-positions: "first", "last", "top", "bottom";
+
+// Supported button backgroundimagefilltype values.
+$ch5-button--background-image-fill-types: "stretch", "stretch-aspect", "center", "tile";

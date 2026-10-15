@@ -81,6 +81,13 @@ ch5-subpage-reference-list {
   pointer-events: none !important;
 }
 
+// // Light ch5-button uses a native <button> for interactions, so explicitly
+// // disable it when SRL is disabled.
+// .ch5-subpage-reference-list--disabled ch5-button,
+// .ch5-subpage-reference-list--disabled ch5-button button {
+//   pointer-events: none !important;
+// }
+
 /// Applied when the subpage reference list is disabled
 .ch5-subpage-reference-list--disabled {
   @include ch5-component-disabled();

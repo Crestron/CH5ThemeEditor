@@ -703,6 +703,6 @@ ch5-slider {
 }
 
 // extending the variables by button
-ch5-slider-button {
+.ch5-advanced-slider-container ch5-slider-button {
   @extend ch5-button !optional;
 }

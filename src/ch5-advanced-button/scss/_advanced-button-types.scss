@@ -1,0 +1,56 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-advanced-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@mixin ch5-advanced-button-set-types() {
+
+  /// Applied when type='text'
+  .ch5-advanced-button--text {
+    @include ch5-advanced-button-content("text");
+  }
+
+  /// Applied when type='danger'
+  .ch5-advanced-button--danger {
+    @include ch5-advanced-button-content("danger");
+  }
+
+  /// Applied when type='warning'
+  .ch5-advanced-button--warning {
+    @include ch5-advanced-button-content("warning");
+  }
+
+  /// Applied when type='info'
+  .ch5-advanced-button--info {
+    @include ch5-advanced-button-content("info");
+  }
+
+  /// Applied when type='success'
+  .ch5-advanced-button--success {
+    @include ch5-advanced-button-content("success");
+  }
+
+  /// Default button
+  .ch5-advanced-button--default {
+    @include ch5-advanced-button-content("default");
+  }
+
+  /// Applied when type='primary'
+  .ch5-advanced-button--primary {
+    @include ch5-advanced-button-content("primary");
+  }
+
+  /// Applied when type='secondary'
+  .ch5-advanced-button--secondary {
+    @include ch5-advanced-button-content("secondary");
+  }
+}
+
+@include ch5-advanced-button-set-types();

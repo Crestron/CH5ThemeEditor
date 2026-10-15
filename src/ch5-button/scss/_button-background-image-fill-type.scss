@@ -1,0 +1,105 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Performance notes:
+//  - Rules are scoped to `ch5-button[backgroundimageurl]` so buttons without a
+//    background image are never matched (no wasted style recalculation at scale).
+//  - The default and the explicit `stretch-aspect` case share one rule to avoid duplicate declarations.
+//  - Only the properties that differ per fill type are declared.
+
+// stretch-aspect (default): scale the image to fit while preserving its aspect ratio.
+
+// Applied when no fill type is set, when explicitly "stretch-aspect", and
+// when a non-supported (junk) fill type is provided.
+ch5-button[backgroundimageurl]:not([backgroundimagefilltype]),
+ch5-button[backgroundimageurl][backgroundimagefilltype="stretch-aspect"],
+ch5-button[backgroundimageurl][backgroundimagefilltype]#{ch5-attr-default("backgroundimagefilltype", $ch5-button--background-image-fill-types)} {
+  button {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+// stretch: stretch the image to completely fill the button (aspect ratio not preserved).
+ch5-button[backgroundimageurl][backgroundimagefilltype="stretch"] {
+  button {
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+// center: scale the image to fit while preserving aspect ratio, centered, no repeat
+// (matches ch5-advanced-button, where "center" and "stretch-aspect" behave the same).
+ch5-button[backgroundimageurl][backgroundimagefilltype="center"] {
+  button {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+// tile: keep the image at its natural size and repeat it to fill the button.
+ch5-button[backgroundimageurl][backgroundimagefilltype="tile"] {
+  button {
+    background-size: auto;
+    background-position: 0 0;
+    background-repeat: repeat;
+  }
+}
+
+// Render the vertical stretch background through a pseudo-element so its bitmap
+// can rotate independently from the unrotated button box.
+ch5-button[orientation="vertical"][stretch][backgroundimageurl] {
+  container-type: size;
+
+  button {
+    isolation: isolate;
+    background-size: 0 0 !important;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100cqh;
+      height: 100cqw;
+      z-index: -1;
+      pointer-events: none;
+      background-image: inherit;
+      transform: rotate(270deg) translateX(-100%);
+      transform-origin: top left;
+    }
+  }
+}
+
+ch5-button[orientation="vertical"][stretch][backgroundimageurl][backgroundimagefilltype="stretch"] button::after {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ch5-button[orientation="vertical"][stretch][backgroundimageurl]:not([backgroundimagefilltype]) button::after,
+ch5-button[orientation="vertical"][stretch][backgroundimageurl][backgroundimagefilltype="stretch-aspect"] button::after,
+ch5-button[orientation="vertical"][stretch][backgroundimageurl][backgroundimagefilltype="center"] button::after,
+ch5-button[orientation="vertical"][stretch][backgroundimageurl][backgroundimagefilltype]#{ch5-attr-default("backgroundimagefilltype", $ch5-button--background-image-fill-types)} button::after {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ch5-button[orientation="vertical"][stretch][backgroundimageurl][backgroundimagefilltype="tile"] button::after {
+  background-size: auto;
+  background-position: 0 0;
+  background-repeat: repeat;
+}

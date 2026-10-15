@@ -1,0 +1,66 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ch5-button {
+	button {
+
+		// `multilineSupport` / `truncateText` are class-driven; the CSS defaults
+		// (multiline-off + truncate-on) give the single-line ellipsis look. When
+		// multiline is on, the component sets an inline `-webkit-line-clamp` (or
+		// `max-height`) from the button height, overriding the static clamp below.
+		// Applied when truncateText="true" - truncates the label to a single line with an ellipsis
+		.ch5-button--label-truncate-text-true {
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+		// Applied when truncateText="false" - clips the overflowing label without an ellipsis
+		.ch5-button--label-truncate-text-false {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: initial;
+		}
+
+		// Applied when multilineSupport="true" - allows the label to wrap across up to 3 lines
+		.ch5-button--label-multiline-support-true {
+			overflow: hidden;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 3;
+			line-clamp: 3;
+			white-space: pre-wrap !important;
+			word-break: break-word;
+		}
+
+		// Applied when multilineSupport="false" - keeps the label on a single line
+		.ch5-button--label-multiline-support-false {
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+		.ch5-button--label-multiline-support-true.ch5-button--label-truncate-text-true {
+			display: -webkit-box;
+		}
+
+	}
+}
+
+// iOS WebKit applies `-webkit-box-orient` as a physical orientation when it is
+// combined with vertical writing mode, causing the clamped label to render at
+// the wrong angle. Keep native vertical flow and clip overflow in this path.
+ch5-button[orientation="vertical"][stretch] button
+	.ch5-button--label-multiline-support-true.ch5-button--label-truncate-text-true {
+	display: block;
+	-webkit-box-orient: initial;
+	-webkit-line-clamp: unset !important;
+	line-clamp: unset !important;
+}

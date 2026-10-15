@@ -1,0 +1,180 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ch5-button {
+  @include ch5-component-base();
+  @include reset-to-browser-defaults();
+
+  display: inline-block;
+  isolation: isolate;
+  pointer-events: none;
+  vertical-align: middle; // this is used to align buttons in same line for vertical oriented buttons
+  overflow: hidden;
+
+  button {
+    max-width: 100%;
+    cursor: pointer;
+    pointer-events: all;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    position: relative;
+    overflow: hidden;
+    
+    // Prevent the browser from treating a finger drag as a scroll gesture (which
+    // fires `pointercancel` and releases the press mid-drag). Keeps the pressed
+    // state held while a finger moves within the button on touch panels.
+    touch-action: none;
+
+    // change with orientation
+    padding: var(--ch5-button--padding);
+    padding-top: calc(var(--ch5-button--padding) / 2);
+    padding-bottom: calc(var(--ch5-button--padding) / 2);
+    // change with orientation
+
+    // Applied on label
+    .ch5-button--label {
+      background-color: transparent;
+      border: none;
+      display: block;
+      margin-left: var(--ch5-button--label-margin-left);
+      margin-right: var(--ch5-button--label-margin-right);
+      margin-top: var(--ch5-button--label-margin-top);
+      margin-bottom: var(--ch5-button--label-margin-bottom);
+      text-decoration: var(--ch5-button--label-text-decoration);
+      letter-spacing: var(--ch5-button--label-letter-spacing);
+      text-underline-offset: var(--ch5-button--label-text-underline-offset);
+      padding-left: calc(var(--ch5-button--padding) / 2);
+      padding-right: calc(var(--ch5-button--padding) / 2);
+      max-width: 100%;
+
+      // `min-width: 0` lets the label (a flex item) shrink below its content
+      // width; without it flex's default `min-width: auto` blocks the ellipsis.
+      min-width: 0;
+
+      // keeping default ellipsis
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .ch5-button--icon {
+      width: auto;
+    }
+
+    // Applied on the icon rendered from an iconUrl (background image)
+    .ch5-button--img {
+      position: relative;
+      display: block;
+      width: auto;
+      cursor: pointer;
+      user-select: none;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+    &::before,
+    &::after {
+      content: none;
+      font-size: var(--ch5-button--regular-font-size);
+    }
+  }
+
+  // Set default attributes
+  @include ch5-button--set-type($ch5-button--default-type);
+  @include ch5-button--set-size($ch5-button--default-size, $ch5-button--default-shape);
+  @include ch5-button--set-shape($ch5-button--default-shape);
+}
+
+ch5-button[orientation="vertical"] {
+  // position: relative;
+
+  @include ch5-button--set-size($ch5-button--default-size, $ch5-button--default-shape, 'vertical');
+
+  &:not([stretch]) button {
+    // Base styling sets `max-width: 100%` on all buttons. In vertical mode the
+    // host width is intentionally the swapped *height* token (smaller), so that
+    // max-width clamp shrinks the inner rotated button and over-truncates label
+    // content. Remove the clamp here to match advanced-button rendering.
+    max-width: none;
+    transform: rotate(270deg) translateX(-100%);
+    transform-origin: top left;
+  }
+
+  // The host footprint is already swapped by the mixin above; the inner button must
+  // keep the ORIGINAL (horizontal) width/height, otherwise the 270deg rotation swaps
+  // the axes a second time and the rotated box no longer fills the host, clipping the label.
+  // This only applies to non-stretched buttons; stretched buttons keep the box
+  // unrotated and rotate their content instead. Skipped for circle (already square).
+  &:not([stretch]):not([shape="circle"])#{ch5-attr-default("size", $ch5-button--sizes)} button {
+    width: var(#{$ch5-button--component-prefix + $ch5-button--default-size + "-width"});
+    height: var(#{$ch5-button--component-prefix + $ch5-button--default-size + "-height"});
+  }
+
+  @each $size in $ch5-button--sizes {
+    &:not([stretch]):not([shape="circle"])[size="#{$size}"] button {
+      width: var(#{$ch5-button--component-prefix + $size + "-width"});
+      height: var(#{$ch5-button--component-prefix + $size + "-height"});
+    }
+  }
+
+  // Keeping the stretched box unrotated avoids a circular cross-axis dependency
+  // between percentage sizing and container-query units.
+  &[stretch] {
+    position: relative;
+    min-height: var(#{$ch5-button--component-prefix + $ch5-button--default-size + "-height"});
+  }
+
+  &:not([shape="circle"]):is([stretch="height"], [stretch="both"]) {
+    aspect-ratio: 1 / 1;
+
+    button {
+      min-width: var(#{$ch5-button--component-prefix + $ch5-button--default-size + "-height"});
+    }
+  }
+
+  &[stretch] button {
+    position: absolute;
+    inset: 0;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    padding: var(--ch5-button--padding) calc(var(--ch5-button--padding) / 2);
+
+    .ch5-button--label {
+      writing-mode: vertical-rl;
+      text-orientation: sideways;
+      transform: rotate(180deg);
+      padding: calc(var(--ch5-button--padding) / 2) 0;
+      max-width: none;
+      max-height: 100%;
+      min-width: 0;
+      min-height: 0;
+    }
+
+    .ch5-button--icon,
+    .ch5-button--img {
+      transform: rotate(270deg);
+    }
+  }
+}

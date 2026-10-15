@@ -74,17 +74,22 @@
     // display:none;
   }
 }
-
-@mixin ch5-component-disabled() {
-  pointer-events: none;
+@mixin ch5-component-disabled-opacity() {
   opacity: var(--theme-others--disabled-opacity);
-
-  // added to fix the issue of button not being disabled when used inside other components like slider, triggerview, html-div, modal, overly, form etc.
-  .ch5-button {
-    pointer-events: none;
-  }
 }
 
+@mixin ch5-component-disabled() {
+  pointer-events: none !important;
+  @include ch5-component-disabled-opacity();
+
+  // added to fix the issue of button not being disabled when used inside other components like slider, triggerview, html-div, modal, overly, form etc.
+  .ch5-advanced-button, ch5-button, ch5-button button, ch5-slider-button button {
+    cursor: not-allowed;
+    pointer-events: none !important;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
 
 /// Resets Bootstrap overridden CSS properties back to browser default values
 /// This mixin is essential when using ch5-components with Bootstrap to prevent

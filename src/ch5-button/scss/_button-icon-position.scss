@@ -1,0 +1,89 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Applied when iconPosition="first" (default) - icon is placed before the label
+ch5-button#{ch5-attr-default("iconposition", $ch5-button--icon-positions)},
+ch5-button[iconposition="first"] {
+  button {
+    flex-direction: row;
+
+    .ch5-button--icon,
+    .ch5-button--img {
+      order: 0;
+    }
+
+    .ch5-button--label {
+      order: 1;
+    }
+  }
+}
+
+// Applied when iconPosition="last" - icon is placed after the label
+ch5-button[iconposition="last"] {
+  button {
+    flex-direction: row;
+
+    .ch5-button--icon,
+    .ch5-button--img {
+      order: 1;
+    }
+
+    .ch5-button--label {
+      order: 0;
+    }
+  }
+}
+
+// Applied when iconPosition="top" - icon is placed above the label
+ch5-button[iconposition="top"] {
+  button {
+    flex-direction: column;
+
+    .ch5-button--icon,
+    .ch5-button--img {
+      order: 0;
+    }
+
+    .ch5-button--label {
+      order: 1;
+    }
+  }
+}
+
+// Applied when iconPosition="bottom" - icon is placed below the label
+ch5-button[iconposition="bottom"] {
+  button {
+    flex-direction: column;
+
+    .ch5-button--icon,
+    .ch5-button--img {
+      order: 1;
+    }
+
+    .ch5-button--label {
+      order: 0;
+    }
+  }
+}
+
+// Vertical stretch keeps the button box unrotated, so map the original rotated
+// content axes directly while preserving advanced-button's visual ordering.
+ch5-button[orientation="vertical"][stretch]#{ch5-attr-default("iconposition", $ch5-button--icon-positions)} button,
+ch5-button[orientation="vertical"][stretch][iconposition="first"] button,
+ch5-button[orientation="vertical"][stretch][iconposition="last"] button {
+  flex-direction: column-reverse;
+}
+
+ch5-button[orientation="vertical"][stretch][iconposition="top"] button,
+ch5-button[orientation="vertical"][stretch][iconposition="bottom"] button {
+  flex-direction: row;
+}

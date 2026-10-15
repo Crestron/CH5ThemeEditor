@@ -1,0 +1,42 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2026 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@mixin ch5-button--set-disabled {
+  pointer-events: none !important;
+
+  button {
+    cursor: not-allowed;
+    pointer-events: none !important;
+    user-select: none;
+    -webkit-user-select: none;
+    @include ch5-component-disabled-opacity();
+  }
+}
+
+ch5-button {
+  // --- Static `disabled` attribute channel -----------------------------------
+  // Suppressed when a `receivestateenable` signal is active (host then has
+  // `data-signal-enable`), so the signal channel below wins with no specificity
+  // war or JS render step.
+  &#{ch5-attr-true("disabled")}:not(#{ch5-attr-true("data-signal-enable")}) {
+    @include ch5-button--set-disabled;
+  }
+
+  // --- Signal styling channel (`receivestateenable`) -------------------------
+  // The component writes the resolved state to `data-signal-enable` (never to
+  // the author's `disabled`), so the static attribute is restored by removing
+  // this one. `="false"` = disabled; `="true"` = enabled look. Takes priority
+  // over the static `disabled` even if the author toggles it at runtime.
+  &#{ch5-attr-explicit-false("data-signal-enable")} {
+    @include ch5-button--set-disabled;
+  }
+}

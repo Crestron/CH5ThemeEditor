@@ -1,0 +1,69 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// *** Reusable attribute-selector helpers ***
+// Shared across the ch5-button scss partials so every enumerated/boolean host
+// attribute (size, shape, type, iconposition, backgroundimagefilltype, the
+// boolean-like checkboxshow/selected, ...) is matched with one consistent rule
+// instead of each file hand-rolling its own `:not(...)` / `:is(...)` chain.
+
+// Returns a `:not([$attr="value"])` chain (one per entry in $valid-values) that
+// matches when $attr is either absent or set to a value outside the valid list -
+// i.e. the "falls back to default" state for an enumerated attribute.
+// Usage: ch5-button#{ch5-attr-default("size", $ch5-button--sizes)} { ... }
+@function ch5-attr-default($attr, $valid-values) {
+	$selector: "";
+
+	@each $value in $valid-values {
+		$selector: $selector + ':not([#{$attr}="#{$value}"])';
+	}
+
+	@return $selector;
+}
+
+// Returns the boolean-attribute selector for attributes considered "true": a bare/empty
+// attribute or "true" (case-insensitive). Any other value - including "false", "1" or an
+// unrecognized/junk value - is not true.
+// Usage: ch5-button#{ch5-attr-true("checkboxshow")} button { ... }
+@function ch5-attr-true($attr) {
+	@return ':is([#{$attr}=""], [#{$attr}="true" i])';
+}
+
+@function ch5-attr-and-signal-true($signal, $attr) {
+	@return ':is([#{$signal}="true" i], :not([#{$signal}])#{ch5-attr-true($attr)})';
+}
+
+// Returns the boolean-attribute selector for attributes considered "false": the attribute is
+// absent, or present with anything other than the ch5-attr-true() values (so an explicit
+// "false" and an unrecognized/junk value both count as false).
+// Usage: ch5-button#{ch5-attr-false("pressed")} { ... }
+@function ch5-attr-false($attr) {
+	@return ':not(#{ch5-attr-true($attr)})';
+}
+
+// Returns the selector for "$attr is present AND its value is explicitly false" (case-insensitive).
+// Usage: ch5-button#{ch5-attr-explicit-false("data-signal-enable")} { ... }
+@function ch5-attr-explicit-false($attr) {
+    @return '[#{$attr}][#{$attr}="false" i]';
+}
+
+// Appends a trailing "-" to $stateValue for "selected"/"pressed" (used to build the
+// theme-property-name suffix); any other value (e.g. the default "" state) passes through.
+@function ch5-button--get-state-value($stateValue) {
+	$state: $stateValue;
+
+	@if $stateValue =="selected" or $stateValue =="pressed" {
+		$state: $state + "-";
+	}
+
+	@return $state;
+}

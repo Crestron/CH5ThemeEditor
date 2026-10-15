@@ -21,11 +21,11 @@
 @mixin ch5SliderSetButtonSize($button-width, $button-height, $shape) {
   .slider-on-button,
   .slider-off-button {
-    .ch5-button--#{$shape} {
-      .cb-btn {
-        width: var(#{$button-width});
-        height: var(#{$button-height});
-      }
+    ch5-slider-button:not([shape="rectangle"]):not([shape="rounded-rectangle"]):not([shape="circle"]):not([shape="oval"]):not([shape="tab"]),
+    ch5-slider-button[shape="#{$shape}"]:not([size]),
+    ch5-slider-button[shape="#{$shape}"]:not([size="regular"]):not([size="x-small"]):not([size="small"]):not([size="large"]):not([size="x-large"]) {
+      width: var(#{$button-width});
+      height: var(#{$button-height});
     }
   }
 }

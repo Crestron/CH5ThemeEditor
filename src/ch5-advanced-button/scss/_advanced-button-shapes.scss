@@ -1,0 +1,82 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/// Copyright (C) 2018 to the present, Crestron Electronics, Inc.
+/// All rights reserved.
+/// No part of this software may be reproduced in any form, machine
+/// or natural, without the express written consent of Crestron Electronics.
+/// Use of this source code is subject to the terms of the Crestron Software License Agreement
+/// under which you licensed this source code.
+///
+/// @author Crestron
+/// @group ch5-advanced-button
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// *** Button 'shape' attribute ***
+/// Applied when shape='rectangle'
+.ch5-advanced-button--rectangle {
+	@include border-radius(0);
+
+	.cb-btn {
+		@include border-radius(0);
+	}
+
+	overflow: hidden;
+}
+
+/// Applied when shape='rounded-rectangle'
+.ch5-advanced-button--rounded-rectangle {
+	@include border-radius-rounded-rectangle(
+		--ch5-advanced-button--rounded-rectangle-border-radius-top-left,
+		--ch5-advanced-button--rounded-rectangle-border-radius-top-right,
+		--ch5-advanced-button--rounded-rectangle-border-radius-bottom-left,
+		--ch5-advanced-button--rounded-rectangle-border-radius-bottom-right
+	);
+	overflow: hidden;
+}
+
+/// Applied when shape='circle'
+.ch5-advanced-button--circle {
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	border-style: none;
+	text-align: center;
+	overflow: hidden;
+	@include border-radius(50%);
+
+	.cb-btn {
+		@include border-radius(50%);
+		display: inline-flex;
+		vertical-align: middle;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/// Applied when shape='oval'
+.ch5-advanced-button--oval {
+	@include border-radius(var(--ch5-advanced-button--oval-border-radius));
+
+	.cb-btn {
+		@include border-radius(var(--ch5-advanced-button--oval-border-radius));
+	}
+
+	overflow: hidden;
+}
+
+/// Applied when shape='tab'
+.ch5-advanced-button--tab {
+	border-radius: var(--ch5-advanced-button--tab-border-radius) var(--ch5-advanced-button--tab-border-radius) 0 0;
+
+	.cb-btn {
+		border-radius: var(--ch5-advanced-button--tab-border-radius) var(--ch5-advanced-button--tab-border-radius) 0 0;
+	}
+
+	// Added for vertical tab shape
+	&.ch5-advanced-button--vertical {
+		.cb-btn {
+			border-radius: 0 var(--ch5-advanced-button--tab-border-radius) var(--ch5-advanced-button--tab-border-radius) 0;
+		}
+	}
+
+	overflow: hidden;
+}

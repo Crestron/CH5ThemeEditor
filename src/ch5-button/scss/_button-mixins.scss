@@ -10,363 +10,360 @@
 /// @group ch5-button
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@mixin ch5-button-size-set($property-value) {
-  $property-width: "--ch5-button--" + $property-value + "-width";
-  $property-height: "--ch5-button--" + $property-value + "-height";
-  $property-font-size: "--ch5-button--" + $property-value + "-font-size";
-  $property-font-style: "--ch5-button--" + $property-value + "-font-style";
-  $property-font-weight: "--ch5-button--" + $property-value + "-font-weight";
-  $property-pressed-icon-font-size: "--ch5-button--" + $property-value + "-pressed-icon-size";
-  $property-selected-icon-font-size: "--ch5-button--" + $property-value + "-selected-icon-size";
-  $property-icon-font-size: "--ch5-button--" + $property-value + "-icon-size";
-  $property-font-image-width: "--ch5-button--" + $property-value + "-image-width";
-  $property-font-image-height: "--ch5-button--" + $property-value + "-image-height";
-  $property-font-pressed-image-width: "--ch5-button--" + $property-value + "-pressed-image-width";
-  $property-font-pressed-image-height: "--ch5-button--" + $property-value + "-pressed-image-height";
-  $property-font-selected-image-width: "--ch5-button--" + $property-value + "-selected-image-width";
-  $property-font-selected-image-height: "--ch5-button--" + $property-value + "-selected-image-height";
-  $property-pressed-font-size: "--ch5-button--" + $property-value + "-pressed-font-size";
-  $property-selected-font-size: "--ch5-button--" + $property-value + "-selected-font-size";
-  $property-pressed-font-weight: "--ch5-button--" + $property-value + "-pressed-font-weight";
-  $property-selected-font-weight: "--ch5-button--" + $property-value + "-selected-font-weight";
+@mixin ch5-button--set-size($size, $shape, $orientation: 'horizontal') {
+	$property-size-for-circle: $ch5-button--component-prefix + $size + "-width";
+	$property-width: $ch5-button--component-prefix + $size + "-width";
+	$property-height: $ch5-button--component-prefix + $size + "-height";
 
-  .cb-btn {
-    width: var(#{$property-width});
-    height: var(#{$property-height});
-    font-style: var(#{$property-font-style});
-    font-weight: var(#{$property-font-weight});
-  }
+	@if ($orientation =='vertical') {
+		$property-width: $ch5-button--component-prefix + $size + "-height";
+		$property-height: $ch5-button--component-prefix + $size + "-width";
+	}
 
-  .ch5-button__checkbox--checked:before,
-  .ch5-button__checkbox--unchecked:before {
-    font-size: var(#{$property-font-size});
-  }
+	$property-font-style: $ch5-button--component-prefix + $size + "-font-style";
+	$property-font-size: $ch5-button--component-prefix + $size + "-font-size";
+	$property-font-weight: $ch5-button--component-prefix + $size + "-font-weight";
+	$property-icon-font-size: $ch5-button--component-prefix + $size + "-icon-size";
+	$property-font-image-width: $ch5-button--component-prefix + $size + "-image-width";
+	$property-font-image-height: $ch5-button--component-prefix + $size + "-image-height";
 
-  /// Applied on images
-  .ch5-button--img {
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    // color: inherit;
-    height: var(#{$property-font-image-height});
-    width: var(#{$property-font-image-width});
-    margin-top: var(--ch5-button--img-margin-top);
-    margin-bottom: var(--ch5-button--img-margin-bottom);
-    margin-left: var(--ch5-button--img-margin-left);
-    margin-right: var(--ch5-button--img-margin-right);
+	// The image (like the host width/height above) must also swap axes in vertical orientation.
+	@if ($orientation =='vertical') {
+		$property-font-image-width: $ch5-button--component-prefix + $size + "-image-height";
+		$property-font-image-height: $ch5-button--component-prefix + $size + "-image-width";
+	}
 
-    &::before,
-    &::after {
-      content: none;
-    }
-  }
+	@if $shape =="circle" {
+		width: var(#{$property-size-for-circle});
+		height: var(#{$property-size-for-circle});
+	}
 
-  /// Applied on icons
-  .ch5-button--icon {
-    vertical-align: middle;
-    // color: var(#{$property-icon-color});
-    font-size: var(#{$property-icon-font-size});
-    margin-top: var(--ch5-button--icon-margin-top);
-    margin-bottom: var(--ch5-button--icon-margin-bottom);
-    margin-left: var(--ch5-button--icon-margin-left);
-    margin-right: var(--ch5-button--icon-margin-right);
-  }
+	@else {
+		width: var(#{$property-width});
+		height: var(#{$property-height});
+	}
 
-  .ch5-button--label {
-    font-size: var(#{$property-font-size});
-  }
+	button {
+		font-style: var(#{$property-font-style});
+		font-weight: var(#{$property-font-weight});
 
-  // .cb-checkbox-icon {
-  //   color: var(#{$property-checkbox-icon-color});
-  // }
+		.ch5-button--img {
+			height: var(#{$property-font-image-height});
+			width: var(#{$property-font-image-width});
+		}
 
-  &.ch5-button--pressed {
-    .cb-btn {
-      font-weight: var(#{$property-pressed-font-weight});
-    }
+		// Applied on icons
+		.ch5-button--icon {
+			font-size: var(#{$property-icon-font-size});
+		}
 
-    .ch5-button--img {
-      height: var(#{$property-font-pressed-image-height});
-      width: var(#{$property-font-pressed-image-width});
-    }
+		.ch5-button--label {
+			font-size: var(#{$property-font-size});
+		}
+	}
 
-    .ch5-button--icon-url-fill-type-stretch,
-    .ch5-button--icon-url-fill-type-stretch-aspect,
-    .ch5-button--icon-url-fill-type-center,
-    .ch5-button--icon-url-fill-type-tile {
-      .ch5-button--img {
-        height: 100%;
-        width: 100%;
-      }
-    }
+	@include ch5-button--set-size-for-all-states($size, $shape, '', $orientation);
 
-    .ch5-button--label {
-      font-size: var(#{$property-pressed-font-size});
-    }
+	&#{ch5-attr-and-signal-true("data-signal-selected","selected")} {
+		@include ch5-button--set-size-for-all-states($size, $shape, 'selected', $orientation);
+	}
 
-    .ch5-button--icon {
-      // color: var(#{$property-pressed-icon-color});
-      font-size: var(#{$property-pressed-icon-font-size});
-    }
-
-    // .cb-checkbox-icon {
-    //   color: var(#{$property-pressed-checkbox-icon-color});
-    // }
-  }
-
-  &.ch5-button--selected {
-    .cb-btn {
-      font-weight: var(#{$property-selected-font-weight});
-    }
-
-    .ch5-button--img {
-      height: var(#{$property-font-selected-image-height});
-      width: var(#{$property-font-selected-image-width});
-    }
-
-    .ch5-button--icon-url-fill-type-stretch,
-    .ch5-button--icon-url-fill-type-stretch-aspect,
-    .ch5-button--icon-url-fill-type-center,
-    .ch5-button--icon-url-fill-type-tile {
-      .ch5-button--img {
-        height: 100%;
-        width: 100%;
-      }
-    }
-
-    .ch5-button--label {
-      font-size: var(#{$property-selected-font-size});
-    }
-
-    .ch5-button--icon {
-      // color: var(#{$property-selected-icon-color});
-      font-size: var(#{$property-selected-icon-font-size});
-    }
-
-    // .cb-checkbox-icon {
-    //   color: var(#{$property-selected-checkbox-icon-color});
-    // }
-  }
+	&#{ch5-attr-true("pressed")} {
+		@include ch5-button--set-size-for-all-states($size, $shape, 'pressed', $orientation);
+	}
 }
 
-@mixin ch5-button-content--selected($property-value) {
-  $property-selected-border-color: "--ch5-button--" + $property-value + "-selected-border-color";
-  $property-selected-background-color: "--ch5-button--" + $property-value + "-selected-background-color";
-  $property-selected-label-font-color: "--ch5-button--" + $property-value + "-selected-label-font-color";
-  $property-selected-icon-color: "--ch5-button--" + $property-value + "-selected-icon-color";
-  $property-selected-checkbox-color: "--ch5-button--" + $property-value + "-selected-checkbox-color";
-  $property-selected-border-style: "--ch5-button--" + $property-value + "-selected-border-style";
-  $property-selected-border-width: "--ch5-button--" + $property-value + "-selected-border-width";
+@mixin ch5-button--set-size-for-all-states($size, $shape, $stateValue, $orientation: 'horizontal') {
+	$state: ch5-button--get-state-value($stateValue);
 
-  background-color: var(#{$property-selected-background-color});
+	$property-line-height: $ch5-button--component-prefix + "#{$state}line-height";
+	$property-label-text-decoration: $ch5-button--component-prefix + "#{$state}label-text-decoration";
+	$property-label-letter-spacing: $ch5-button--component-prefix + "#{$state}label-letter-spacing";
+	$property-label-text-underline-offset: $ch5-button--component-prefix + "#{$state}label-text-underline-offset";
+	$property-label-margin-left: $ch5-button--component-prefix + "#{$state}label-margin-left";
+	$property-label-margin-right: $ch5-button--component-prefix + "#{$state}label-margin-right";
+	$property-label-margin-top: $ch5-button--component-prefix + "#{$state}label-margin-top";
+	$property-label-margin-bottom: $ch5-button--component-prefix + "#{$state}label-margin-bottom";
+	$property-icon-margin-top: $ch5-button--component-prefix + "#{$state}icon-margin-top";
+	$property-icon-margin-bottom: $ch5-button--component-prefix + "#{$state}icon-margin-bottom";
+	$property-icon-margin-left: $ch5-button--component-prefix + "#{$state}icon-margin-left";
+	$property-icon-margin-right: $ch5-button--component-prefix + "#{$state}icon-margin-right";
+	$property-img-margin-top: $ch5-button--component-prefix + "#{$state}img-margin-top";
+	$property-img-margin-bottom: $ch5-button--component-prefix + "#{$state}img-margin-bottom";
+	$property-img-margin-left: $ch5-button--component-prefix + "#{$state}img-margin-left";
+	$property-img-margin-right: $ch5-button--component-prefix + "#{$state}img-margin-right";
+	$property-font-image-width: $ch5-button--component-prefix + $size + "-#{$state}image-width";
+	$property-font-image-height: $ch5-button--component-prefix + $size + "-#{$state}image-height";
+	$property-icon-font-size: $ch5-button--component-prefix + $size + "-#{$state}icon-size";
+	$property-font-size: $ch5-button--component-prefix + $size + "-#{$state}font-size";
+	$property-font-weight: $ch5-button--component-prefix + $size + "-#{$state}font-weight";
 
-  .ch5-button--icon {
-    color: var(#{$property-selected-icon-color});
-  }
+	// The image (like the host width/height above) must also swap axes in vertical orientation.
+	@if ($orientation =='vertical') {
+		$property-font-image-width: $ch5-button--component-prefix + $size + "-#{$state}image-height";
+		$property-font-image-height: $ch5-button--component-prefix + $size + "-#{$state}image-width";
+	}
 
-  .cb-checkbox-icon {
-    color: var(#{$property-selected-checkbox-color});
-  }
+	button {
+		line-height: var(#{$property-line-height});
+		font-weight: var(#{$property-font-weight});
 
-  .ch5-button--label {
-    color: var(#{$property-selected-label-font-color});
-    text-decoration: var(--ch5-button--selected-label-text-decoration);
-    letter-spacing: var(--ch5-button--selected-label-letter-spacing);
-    text-underline-offset: var(--ch5-button--selected-label-text-underline-offset);
-    margin-left: var(--ch5-button--selected-label-margin-left);
-    margin-right: var(--ch5-button--selected-label-margin-right);
-    margin-top: var(--ch5-button--selected-label-margin-top);
-    margin-bottom: var(--ch5-button--selected-label-margin-bottom);
-  }
+		.ch5-button--label {
+			text-decoration: var(#{$property-label-text-decoration});
+			letter-spacing: var(#{$property-label-letter-spacing});
+			text-underline-offset: var(#{$property-label-text-underline-offset});
+			margin-left: var(#{$property-label-margin-left});
+			margin-right: var(#{$property-label-margin-right});
+			margin-top: var(#{$property-label-margin-top});
+			margin-bottom: var(#{$property-label-margin-bottom});
+			font-size: var(#{$property-font-size});
+		}
 
-  .ch5-button--icon {
-    margin-top: var(--ch5-button--selected-icon-margin-top);
-    margin-bottom: var(--ch5-button--selected-icon-margin-bottom);
-    margin-left: var(--ch5-button--selected-icon-margin-left);
-    margin-right: var(--ch5-button--selected-icon-margin-right);
-  }
+		.ch5-button--icon {
+			margin-top: var(#{$property-icon-margin-top});
+			margin-bottom: var(#{$property-icon-margin-bottom});
+			margin-left: var(#{$property-icon-margin-left});
+			margin-right: var(#{$property-icon-margin-right});
+			line-height: var(#{$property-line-height});
+			font-size: var(#{$property-icon-font-size});
+		}
 
-  .ch5-button--img {
-    margin-top: var(--ch5-button--selected-img-margin-top);
-    margin-bottom: var(--ch5-button--selected-img-margin-bottom);
-    margin-left: var(--ch5-button--selected-img-margin-left);
-    margin-right: var(--ch5-button--selected-img-margin-right);
-  }
-
-  .cb-btn {
-    border-color: var(#{$property-selected-border-color});
-    border-style: var(#{$property-selected-border-style});
-    border-width: var(#{$property-selected-border-width});
-    line-height: var(--ch5-button--selected-line-height);
-  }
-
-  &.ch5-button--rounded-rectangle {
-    @include border-radius-rounded-rectangle(
-      --ch5-button--selected-rounded-rectangle-border-radius-top-left,
-      --ch5-button--selected-rounded-rectangle-border-radius-top-right,
-      --ch5-button--selected-rounded-rectangle-border-radius-bottom-left,
-      --ch5-button--selected-rounded-rectangle-border-radius-bottom-right
-    );
-  }
+		.ch5-button--img {
+			height: var(#{$property-font-image-height});
+			width: var(#{$property-font-image-width});
+			margin-top: var(#{$property-img-margin-top});
+			margin-bottom: var(#{$property-img-margin-bottom});
+			margin-left: var(#{$property-img-margin-left});
+			margin-right: var(#{$property-img-margin-right});
+			line-height: var(#{$property-line-height});
+		}
+	}
 }
 
-@mixin ch5-button-content--pressed($property-value) {
-  $property-pressed-border-color: "--ch5-button--" + $property-value + "-pressed-border-color";
-  $property-pressed-background-color: "--ch5-button--" + $property-value + "-pressed-background-color";
-  $property-pressed-label-font-color: "--ch5-button--" + $property-value + "-pressed-label-font-color";
-  $property-pressed-icon-color: "--ch5-button--" + $property-value + "-pressed-icon-color";
-  $property-pressed-checkbox-color: "--ch5-button--" + $property-value + "-pressed-checkbox-color";
-  $property-pressed-border-style: "--ch5-button--" + $property-value + "-pressed-border-style";
-  $property-pressed-border-width: "--ch5-button--" + $property-value + "-pressed-border-width";
+@mixin ch5-button--set-type($type) {
+	@include ch5-button--set-type-for-all-states($type, "");
 
-  background-color: var(#{$property-pressed-background-color});
+	&#{ch5-attr-and-signal-true("data-signal-selected","selected")}:not(#{ch5-attr-true("pressed")}) {
+		@include ch5-button--set-type-for-all-states($type, "selected");
+	}
 
-  .ch5-button--icon {
-    color: var(#{$property-pressed-icon-color});
-  }
-
-  .cb-checkbox-icon {
-    color: var(#{$property-pressed-checkbox-color});
-  }
-
-  .ch5-button--label {
-    color: var(#{$property-pressed-label-font-color});
-    text-decoration: var(--ch5-button--pressed-label-text-decoration);
-    letter-spacing: var(--ch5-button--pressed-label-letter-spacing);
-    text-underline-offset: var(--ch5-button--pressed-label-text-underline-offset);
-    margin-left: var(--ch5-button--pressed-label-margin-left);
-    margin-right: var(--ch5-button--pressed-label-margin-right);
-    margin-top: var(--ch5-button--pressed-label-margin-top);
-    margin-bottom: var(--ch5-button--pressed-label-margin-bottom);
-  }
-
-  .ch5-button--icon {
-    margin-top: var(--ch5-button--pressed-icon-margin-top);
-    margin-bottom: var(--ch5-button--pressed-icon-margin-bottom);
-    margin-left: var(--ch5-button--pressed-icon-margin-left);
-    margin-right: var(--ch5-button--pressed-icon-margin-right);
-  }
-
-  .ch5-button--img {
-    margin-top: var(--ch5-button--pressed-img-margin-top);
-    margin-bottom: var(--ch5-button--pressed-img-margin-bottom);
-    margin-left: var(--ch5-button--pressed-img-margin-left);
-    margin-right: var(--ch5-button--pressed-img-margin-right);
-  }
-
-  .cb-btn {
-    border-color: var(#{$property-pressed-border-color});
-    border-style: var(#{$property-pressed-border-style});
-    border-width: var(#{$property-pressed-border-width});
-    line-height: var(--ch5-button--pressed-line-height);
-  }
-
-  &.ch5-button--rounded-rectangle {
-    @include border-radius-rounded-rectangle(
-      --ch5-button--pressed-rounded-rectangle-border-radius-top-left,
-      --ch5-button--pressed-rounded-rectangle-border-radius-top-right,
-      --ch5-button--pressed-rounded-rectangle-border-radius-bottom-left,
-      --ch5-button--pressed-rounded-rectangle-border-radius-bottom-right
-    );
-  }
+	// Pressed should be after selected for specificity
+	&#{ch5-attr-true("pressed")} {
+		@include ch5-button--set-type-for-all-states($type, "pressed");
+	}
 }
 
-@mixin ch5-button-content($property-value) {
-  $property-border-width: "--ch5-button--" + $property-value + "-border-width";
-  $property-border-style: "--ch5-button--" + $property-value + "-border-style";
-  $property-border-color: "--ch5-button--" + $property-value + "-border-color";
-  $property-background-color: "--ch5-button--" + $property-value + "-background-color";
-  $property-label-font-color: "--ch5-button--" + $property-value + "-label-font-color";
-  $property-icon-color: "--ch5-button--" + $property-value + "-icon-color";
-  $property-checkbox-color: "--ch5-button--" + $property-value + "-checkbox-color";
+@mixin ch5-button--set-type-for-all-states($type, $stateValue) {
+	$state: ch5-button--get-state-value($stateValue);
 
-  background-color: var(#{$property-background-color});
+	$property-background-color: $ch5-button--component-prefix + $type + "-#{$state}background-color";
+	$property-border-color: $ch5-button--component-prefix + $type + "-#{$state}border-color";
+	$property-border-style: $ch5-button--component-prefix + $type + "-#{$state}border-style";
+	$property-border-width: $ch5-button--component-prefix + $type + "-#{$state}border-width";
+	$property-label-font-color: $ch5-button--component-prefix + $type + "-#{$state}label-font-color";
+	$property-icon-color: $ch5-button--component-prefix + $type + "-#{$state}icon-color";
+	$property-checkbox-color: $ch5-button--component-prefix + $type + "-#{$state}checkbox-color";
 
-  .ch5-button--icon {
-    color: var(#{$property-icon-color});
-  }
+	button {
+		background-color: var(#{$property-background-color});
+		border-color: var(#{$property-border-color});
+		border-style: var(#{$property-border-style});
+		border-width: var(#{$property-border-width});
 
-  .cb-checkbox-icon {
-    color: var(#{$property-checkbox-color});
-  }
+		.ch5-button--label {
+			color: var(#{$property-label-font-color});
+		}
 
-  .ch5-button--label {
-    color: var(#{$property-label-font-color});
-    text-decoration: var(--ch5-button--label-text-decoration);
-    letter-spacing: var(--ch5-button--label-letter-spacing);
-    text-underline-offset: var(--ch5-button--label-text-underline-offset);
-    margin-left: var(--ch5-button--label-margin-left);
-    margin-right: var(--ch5-button--label-margin-right);
-    margin-top: var(--ch5-button--label-margin-top);
-    margin-bottom: var(--ch5-button--label-margin-bottom);
-  }
+		.ch5-button--icon {
+			color: var(#{$property-icon-color});
+		}
+	}
 
-  .ch5-button--icon {
-    margin-top: var(--ch5-button--icon-margin-top);
-    margin-bottom: var(--ch5-button--icon-margin-bottom);
-    margin-left: var(--ch5-button--icon-margin-left);
-    margin-right: var(--ch5-button--icon-margin-right);
-  }
-
-  //margins for iconUrl applied on button content
-  .ch5-button--img {
-    margin-top: var(--ch5-button--img-margin-top);
-    margin-bottom: var(--ch5-button--img-margin-bottom);
-    margin-left: var(--ch5-button--img-margin-left);
-    margin-right: var(--ch5-button--img-margin-right);
-  }
-
-  .cb-btn {
-    border-color: var(#{$property-border-color});
-    border-style: var(#{$property-border-style});
-    border-width: var(#{$property-border-width});
-    line-height: var(--ch5-button--line-height);
-  }
-
-  &.ch5-button--rounded-rectangle {
-    @include border-radius-rounded-rectangle(
-      --ch5-button--rounded-rectangle-border-radius-top-left,
-      --ch5-button--rounded-rectangle-border-radius-top-right,
-      --ch5-button--rounded-rectangle-border-radius-bottom-left,
-      --ch5-button--rounded-rectangle-border-radius-bottom-right
-    );
-  }
-
-  /// Applied when selected signal is applied
-  &.ch5-button--selected {
-    @include ch5-button-content--selected($property-value);
-  }
-
-  /// Applied when selected signal is pressed
-  &.ch5-button--pressed {
-    @include ch5-button-content--pressed($property-value);
-  }
+	// Checkbox glyph colour for this state; inert when `checkboxshow` is off
+	// (the `::before` has no content, so nothing renders).
+	button::before {
+		color: var(#{$property-checkbox-color});
+	}
 }
 
-@mixin border-radius-rounded-rectangle($radius-top-left, $radius-top-right, $radius-bottom-left, $radius-bottom-right) {
-  border-top-left-radius: var(#{$radius-top-left});
-  border-top-right-radius: var(#{$radius-top-right});
-  border-bottom-left-radius: var(#{$radius-bottom-left});
-  border-bottom-right-radius: var(#{$radius-bottom-right});
-  // &.ch5-button--vertical {
-  //   border-top-left-radius: var(#{$radius-bottom-left});
-  //   border-top-right-radius: var(#{$radius-top-left});
-  //   border-bottom-left-radius: var(#{$radius-bottom-right});
-  //   border-bottom-right-radius: var(#{$radius-top-right});
-  // }
-  .cb-btn {
-    border-top-left-radius: var(#{$radius-top-left});
-    border-top-right-radius: var(#{$radius-top-right});
-    border-bottom-left-radius: var(#{$radius-bottom-left});
-    border-bottom-right-radius: var(#{$radius-bottom-right});
-  }
-  &.ch5-button--vertical {
-    .cb-btn {
-        border-top-left-radius: var(#{$radius-bottom-left});
-    border-top-right-radius: var(#{$radius-top-left});
-    border-bottom-left-radius: var(#{$radius-bottom-right});
-    border-bottom-right-radius: var(#{$radius-top-right});
-    }
-  }
+// Applies the shape related css properties based on the shape attribute value.
+@mixin ch5-button--set-shape($shape) {
+	@if $shape =="rectangle" {
+		button {
+			@include border-radius(0);
+		}
+
+		&[iconurlfilltype="stretch"],
+		&[iconurlfilltype="stretch-aspect"],
+		&[iconurlfilltype="center"],
+		&[iconurlfilltype="tile"] {
+			button .ch5-button--img {
+				@include border-radius(0);
+			}
+		}
+
+		&#{ch5-attr-and-signal-true("data-signal-selected","selected")} {
+			button {
+				@include border-radius(0);
+			}
+		}
+
+		&#{ch5-attr-true("pressed")} {
+			button {
+				@include border-radius(0);
+			}
+		}
+	}
+
+	@else if $shape =="rounded-rectangle" {
+		@include ch5-button--set-border-radius("rounded-rectangle");
+	}
+
+	@else if $shape =="circle" {
+		display: inline-block;
+		text-decoration: none;
+		outline: none;
+		border-style: none;
+		text-align: center;
+
+		button {
+			@include border-radius(50%);
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			vertical-align: middle;
+			width: 100%;
+			height: 100%;
+		}
+
+		&[iconurlfilltype="stretch"],
+		&[iconurlfilltype="stretch-aspect"],
+		&[iconurlfilltype="center"],
+		&[iconurlfilltype="tile"] {
+			button .ch5-button--img {
+				@include border-radius(50%);
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				vertical-align: middle;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&#{ch5-attr-and-signal-true("data-signal-selected","selected")} {
+			button {
+				@include border-radius(50%);
+			}
+		}
+
+		&#{ch5-attr-true("pressed")} {
+			button {
+				@include border-radius(50%);
+			}
+		}
+	}
+
+	@else if $shape =="oval" {
+		button {
+			@include border-radius(var(--ch5-button--oval-border-radius));
+		}
+
+		&[iconurlfilltype="stretch"],
+		&[iconurlfilltype="stretch-aspect"],
+		&[iconurlfilltype="center"],
+		&[iconurlfilltype="tile"] {
+			button .ch5-button--img {
+				@include border-radius(var(--ch5-button--oval-border-radius));
+			}
+		}
+
+		&#{ch5-attr-and-signal-true("data-signal-selected","selected")} {
+			button {
+				@include border-radius(var(--ch5-button--oval-border-radius));
+			}
+		}
+
+		&#{ch5-attr-true("pressed")} {
+			button {
+				@include border-radius(var(--ch5-button--oval-border-radius));
+			}
+		}
+	}
+
+	@else if $shape =="tab" {
+		button {
+			border-radius: var(--ch5-button--tab-border-radius) var(--ch5-button--tab-border-radius) 0 0;
+		}
+
+		&#{ch5-attr-and-signal-true("data-signal-selected","selected")} {
+			button {
+				border-radius: var(--ch5-button--tab-border-radius) var(--ch5-button--tab-border-radius) 0 0;
+			}
+		}
+
+		&#{ch5-attr-true("pressed")} {
+			button {
+				border-radius: var(--ch5-button--tab-border-radius) var(--ch5-button--tab-border-radius) 0 0;
+			}
+		}
+
+		&[orientation="vertical"]:not([stretch]) {
+			button {
+				border-radius: 0 var(--ch5-button--tab-border-radius) var(--ch5-button--tab-border-radius) 0;
+			}
+
+			&#{ch5-attr-and-signal-true("data-signal-selected","selected")} {
+				button {
+					border-radius: 0 var(--ch5-button--tab-border-radius) var(--ch5-button--tab-border-radius) 0;
+				}
+			}
+
+			&#{ch5-attr-true("pressed")} {
+				button {
+					border-radius: 0 var(--ch5-button--tab-border-radius) var(--ch5-button--tab-border-radius) 0;
+				}
+			}
+		}
+	}
+}
+
+@mixin ch5-button--set-border-radius($property-value) {
+	$property-border-radius-top-left: var(#{$ch5-button--component-prefix + $property-value + "-border-radius-top-left"});
+	$property-border-radius-top-right: var(#{$ch5-button--component-prefix + $property-value + "-border-radius-top-right"});
+	$property-border-radius-bottom-left: var(#{$ch5-button--component-prefix + $property-value + "-border-radius-bottom-left"});
+	$property-border-radius-bottom-right: var(#{$ch5-button--component-prefix + $property-value + "-border-radius-bottom-right"});
+	$property-border-pressed-radius-top-left: var(#{$ch5-button--component-prefix + "pressed-" + $property-value + "-border-radius-top-left"});
+	$property-border-pressed-radius-top-right: var(#{$ch5-button--component-prefix + "pressed-" + $property-value + "-border-radius-top-right"});
+	$property-border-pressed-radius-bottom-left: var(#{$ch5-button--component-prefix + "pressed-" + $property-value + "-border-radius-bottom-left"});
+	$property-border-pressed-radius-bottom-right: var(#{$ch5-button--component-prefix + "pressed-" + $property-value + "-border-radius-bottom-right"});
+	$property-border-selected-radius-top-left: var(#{$ch5-button--component-prefix + "selected-" + $property-value + "-border-radius-top-left"});
+	$property-border-selected-radius-top-right: var(#{$ch5-button--component-prefix + "selected-" + $property-value + "-border-radius-top-right"});
+	$property-border-selected-radius-bottom-left: var(#{$ch5-button--component-prefix + "selected-" + $property-value + "-border-radius-bottom-left"});
+	$property-border-selected-radius-bottom-right: var(#{$ch5-button--component-prefix + "selected-" + $property-value + "-border-radius-bottom-right"});
+
+	button {
+		border-top-left-radius: $property-border-radius-top-left;
+		border-top-right-radius: $property-border-radius-top-right;
+		border-bottom-left-radius: $property-border-radius-bottom-left;
+		border-bottom-right-radius: $property-border-radius-bottom-right;
+	}
+
+	&#{ch5-attr-and-signal-true("data-signal-selected","selected")} {
+		button {
+			border-top-left-radius: $property-border-selected-radius-top-left;
+			border-top-right-radius: $property-border-selected-radius-top-right;
+			border-bottom-left-radius: $property-border-selected-radius-bottom-left;
+			border-bottom-right-radius: $property-border-selected-radius-bottom-right;
+		}
+	}
+
+	&#{ch5-attr-true("pressed")} {
+		button {
+			border-top-left-radius: $property-border-pressed-radius-top-left;
+			border-top-right-radius: $property-border-pressed-radius-top-right;
+			border-bottom-left-radius: $property-border-pressed-radius-bottom-left;
+			border-bottom-right-radius: $property-border-pressed-radius-bottom-right;
+		}
+	}
 }
